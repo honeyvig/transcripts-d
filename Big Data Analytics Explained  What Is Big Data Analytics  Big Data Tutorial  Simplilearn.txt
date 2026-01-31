@@ -1,0 +1,344 @@
+everyone knows there is an enormous
+amount of data generated every second it
+has become crucial to analyze those data
+as they can be very useful everyone is
+aware of the importance of big data
+analytics from
+big retail markets to education from the
+banking sector to clothing brands it is
+everywhere how do you handle them how do
+you process them at all the answer to
+all these questions is big data
+analytics hi this is sahana from simply
+learn today we will learn interesting
+terms about big data analytics which has
+become a buzzword everywhere error
+before we start please make sure you
+subscribe to our channel and press the
+bell icon to never miss an update
+so let's go through the topics to be
+covered in today's video
+we start by getting introduced to what
+is big data analytics
+next we will learn about importance of
+big data analytics
+types of big data analytics
+followed by life cycle of big data
+analytics
+tools
+and advantages of big data analytics and
+finally will go through use cases of big
+data analytics
+first we must understand what do you
+mean by big data analytics
+big data analytics is the technique to
+analyze valuable data sets having any
+format like structured unstructured or
+semi-structured for example music
+industries like spotify the company has
+nearly 96 million users that generate
+tremendous amount of data every day
+using this information the application
+generates suggestive songs through smart
+recommendation techniques based on likes
+shares search history and many more
+playlists are created automatically and
+many more automated processes can happen
+what enables this is the techniques
+tools and frameworks that are a result
+of big data analytics if you are a
+spotify user then you must have come
+across the top recommendation sections
+which is based on your life past history
+and other things utilizing a
+recommendation engine that leverages
+data filtering tools that collect data
+and then filter it using algorithm
+this is how spotify works
+by collecting and analyzing proper data
+and incorporating it into business plans
+which will further help them in decision
+making this is how big data analytics
+helps big
+business organizations
+72 percent of e-commerce companies rely
+on data produced from big data analytics
+and this data is increasing day by day
+any youtube channel can use data
+analytics to analyze user interest and
+develop his next project based on that
+what is the importance of the topic why
+do we need to study big data analytics
+is the biggest question it is observed
+that every organization adopts this
+technique for a better understanding of
+data and its use
+cloud based analytics can store a large
+amount of data with minimal cost for
+example tools like zoho analytics
+microsoft power bi and many more thus
+big data analytics can result as cost
+efficient
+the way of analyzing it is very swift
+which will help to analyze all the
+sources this will contribute to quick
+decision making in any organization
+the result of such analysis will help to
+develop new products as due to these
+products analysis of the companies will
+know about their customer likings and
+behavior due to all these efficient
+strategies big data analytics is very
+crucial
+let's move forward and understand what
+are the types in big data analytics
+types of big data analytics
+first let's try and understand
+descriptive analysis it includes
+processing past and present data set
+which will lead to help in trend
+analysis
+in predictive analysis it makes future
+predictions based on past or historical
+datasets which will help in decision
+making
+the diagnostic analysis is an advanced
+analysis system in which introspections
+are made based on why that has happened
+and further decisions are taken based on
+the available datasets
+prescriptive analytics is the process of
+using data to determine an optimal
+course of action
+the next topic we are covering is
+life cycle of data analytics
+first is business case evaluation will
+help decision makers to understand the
+source of business in this case the
+learner or the team will learn about the
+business domain which presents the
+motivation and goals for carrying out
+the analysis in this point the problems
+get identified and assumptions are made
+based on the available datasets
+in the identification of data once the
+business case is identified now it's
+time to find the appropriate datasets to
+work with in this stage analysis is done
+to see what other companies have done
+for its similar datasets
+in data filtration once the source of
+data is identified now it's time to
+gather data from such resources this
+kind of data is mostly unstructured then
+it is subjected to filtration such as
+removal of corrupt data or irrelevant
+data
+which is of no scope further now the
+data is filtered but there might be a
+possibility that some of the entries of
+such data is incompatible to rectify
+this issue a separate phase is created
+called as extraction phase in this phase
+the data which don't match the
+underlining scope of the analysis are
+extracted and transformed
+in data aggregations data sets are
+validated and combined with common field
+for instance we can
+take data set of a student
+one data set can be named as student
+academic section and the other can be
+named as student personal details then
+both can be joined together via common
+field we can take it as role number
+depending on the nature of big data
+problem analysis is carried out data
+analysis can be classified as
+confirmatory analysis and exploratory
+analysis in conformity analysis the
+cause of the phenomenon is analyzed
+before the assumption is called
+hypothesis the data is analyzed to
+approve or disapprove the hypothesis
+such kind of analysis will provide
+definitive answer to some specific
+questions and confirms whether an
+assumption was true or not in
+exploratory analysis the data is
+explored to obtain information that why
+a phenomenon has occurred this type of
+analysis answer why a phenomenon
+occurred this kind of analysis doesn't
+provide definitive information meanwhile
+it can provide discovery of certain
+patterns
+visualization or data visualization is
+said to influence the interpretation of
+the results moreover it will allow the
+user to discover answer to certain
+questions that are yet to be formulated
+the analysis is done the results are
+visualized now it's time for the
+business user to
+make decisions
+using the result the result can be used
+for optimization to define business
+processes it can be used as an input for
+the system to enhance performance
+this is all about life cycle of data
+analytics
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+there are multiple tools available on
+the market which can help companies in
+big data analytics let us go through
+some of these tools
+mongodb
+hadoop
+tablo
+cassandra these are the main tools which
+are used in big data analytics
+let's go for mongodb
+mongodb is an open source tool that
+support data storage it is a nosql
+document oriented database mongodb is
+used by facebook and google for data
+storage mongodb is best suited for big
+data by resulting data and further
+manipulation for the desired output some
+of the powerful resources are crud
+operations aggregation framework text
+research and the map reduced features
+apache hadoop is the most famous tool it
+is an open source software utility to
+store and process gigabytes and
+terabytes of dataset it uses the
+mapreduce programming module to solve
+problems of analyzing massive data
+mapreduce is a framework that helps
+programs do the parallel computation on
+data the mark task takes
+input data and converts it into a data
+set that can be computed in key value
+pace the output of the map task is
+consumed by reducing task to aggregate
+output and provide the desired result
+tableau is a software company that
+offers collaborative data visualizations
+software for organizing working with
+business information analytics
+organizations use tableau to visualize
+data and reveal pattern for analysis in
+business intelligence
+apache cassandra is highly scalable high
+performed distributed database designed
+to handle large amount of data across
+many commodities like servers providing
+high availability with no single point
+of failure it is a type of no sql
+database
+now we have covered the important tools
+used by big data analytics let us go and
+cover distinct advantage of big data
+technology
+advantages of big data analytics
+innovation of new ideas leading to
+product development which means
+developing new products provides a means
+to target new markets increase market
+share sell more and increase revenue
+streams meanwhile redesigning existing
+products enables cost to be cut margins
+to be decreased and ultimately more
+profits to be made
+risk management insights about customers
+likings and behavior and market trends
+will help decision maker to take their
+position on top of that it will help to
+get rid of financial risk it will also
+assist to detect potential cyber risk
+one benefit from big data and business
+analytics can help improve decision
+making by identifying patterns
+identifying problems and providing data
+to back up the solution is beneficial
+whether the solution is solving the
+problem improving the situation or it
+has an insignificant effect
+here customer engagement specifically
+how your customers view and interact
+with your brand is a key factor
+big data analytics provides the business
+intelligence you need to bring about
+positive changes like improving existing
+products or increasing revenue per
+customer
+next improving data quality will improve
+operational efficiency and valued
+feedback from customer which will help
+businesses to handle vast amounts of
+data it will also help in enabling data
+driven decision
+but how do these advantages related to
+the real world let us cover some real
+life use cases empowered by big data
+analytics
+use cases of big data and analytics
+amazon is a well-known name to all of us
+it is among the leading e-commerce
+platforms apart from offering online
+shopping amazon serves us with different
+services like amazon pay amazon web
+services and many more for a company
+like amazon the amount of data collected
+on a regular basis is very big to manage
+such vast amount of data companies
+leverage big data technology
+for any company like netflix one of the
+most valuable asset is the customer base
+because it is the customer who turns the
+company into a brand and if a company
+fails to meet the expectations of the
+customer that probably leads to its
+decline big data is a technology that
+helps in the management of large amount
+of data
+big data is like a heart for american
+express decision making
+their main goal is to detect fraudulent
+transaction as soon as possible for
+reducing laws and in this big data plays
+a very important role they use big data
+for anticipating and analyzing customers
+behavior by looking at recorded
+transactions and incorporating more than
+100 variables the company assigns modern
+predictive models instead of customary
+businesses
+next is
+very important that is google
+google uses big data to understand what
+we want from it based on several
+parameters such as search history
+locations trends and many
+more after that it goes through an
+algorithm where complex estimations are
+done and afterwards google easily shows
+the arranged or positioned index list
+as far as significance and authority
+intended to coordinate the users
+this is all about use cases of big data
+analytics
+thank you for watching the video please
+leave your comments below in the comment
+section in case of any doubts and
+clarifications
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

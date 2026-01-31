@@ -1,0 +1,1126 @@
+[Music]
+hey everyone welcome to another episode
+of Visual Studio toolbox I'm your host
+Leslie Richardson and today I'm excited
+because we're talking about one of my
+favorite topics good old debugging you
+know the the topic that everyone dreads
+but we're all having to do as developers
+but uh yeah we're going to start from
+square one today talking to all about
+how to get started debugging for the
+first time in visual studio and joining
+me to do that today is Nick
+hey Nick hi Leslie nice to see you nice
+to see you too so before we uh jump into
+debugging do you want to tell us a
+little bit about
+yourself yeah sure so um my name is Nick
+I'm a software developer from the UK uh
+near Manchester uh I'm currently working
+as a director of software engineering
+for a uh robotic process automation
+company we use a lot of net in our stack
+um and yeah just excited to talk about
+uh debu B okay awesome I'm excited too I
+used to work on the visual studio
+debugger so yeah debugging is near and
+dear to my
+heart yeah definitely yeah so for those
+who don't know what that is or maybe are
+getting started in their coding Journey
+what is debugging and why are we stuck
+doing
+it yeah yeah so unfortunately like it
+will be like a really common practice
+for you you know so many times people
+say what you working on I'm just
+debugging this I'm bugging that um and
+it's it's kind of quite a negative
+connotation to it but it's actually it's
+essential and um it the the simplest way
+I could describe it is you're tracking
+down that pesky buug you know you're
+trying to find the root cause of a
+behavior that's um happening that's
+unexpected uh and so using visual studio
+we can um rather than let the code just
+run through in its normal State we can
+actually pause the code and inspect it
+to see what the current state is and how
+that might be contributing to the issue
+that you
+see awesome yeah I think that's a great
+definition so yeah should we hop into
+visual studio and see how to get started
+yeah let's go for
+[Music]
+it so I've just created uh a typical
+console application so whenever I do a
+demo I find it really easy to just build
+a a normal C console application with a
+main method uh and then to to jump right
+into it and so the first thing that I
+want to talk about is um the compilation
+modes that you can see in visual studio
+uh so you've probably seen already that
+you've got this debug drop down and you
+get the debug or release options in
+there and now for the purposes of what
+we're doing we obviously want to be in
+debug but it's not obvious what the
+reason for that is um so there's
+different modes of compilation for uh
+for C in particular um in visual studio
+and the difference being that when
+you're in debug mode which will be your
+um default mode there's a there's a
+little bit of a difference in terms of
+the way things are compiled we have
+things called symbols uh that allow the
+application will allow Visual Studio to
+know where you are in the code uh and
+it's less optimized it's quite I mean as
+you know Leslie it's quite a complicated
+subject I won't go too deep on that but
+just so you're aware of its existence
+the default mode will be debug uh and
+then on the flip side of that release
+mode is it's kind of the opposite of
+that there's less optimiz there's sorry
+more optimization uh you don't have
+those symbols uh that are telling you
+where you are in the code simply because
+you aren't expected to be debugging in
+release mode uh so so that's the
+difference between the
+two um and the reason I talk about this
+is because one of the uh debugging
+aspects that you can take advantage of
+in Visual Studio is something called uh
+pre-processor directives uh so these are
+the lines you see here where we've got
+this little hashtag symbol um and this
+is where you're adding a condition into
+the way the application is being
+compiled so it's not the same as like a
+conventional if statement uh it's
+something that sort of sits outside of
+the code it's more for visual studios's
+benefit uh so for here for example we're
+simply saying that if the current mode
+is debug then we want to execute some
+spefic specific code uh otherwise it's
+going to be in release mode and we can
+execute this code so I can demonstrate
+that and it will also demonstrate a
+break point so we're kind of killing two
+birds with one stone there
+hopefully
+great so I'm currently in debug so I
+would expect to uh put a breakpoint in
+here um a breakpoint is what we were
+saying before about pausing your code it
+say um it's a point in the code where
+you can say I don't want you to run
+further than this point I want you to
+stop at that point so I can take a look
+around and see what's happening in the
+application now obviously if your
+breakpoint is inside an if statement and
+that if statement uh doesn't evaluate to
+true you won't hit your breakpoint so
+we're kind of testing the if debug
+scenario by saying we're expecting this
+to hit that break point because we're in
+debug
+Y and so in Visual Studio to kick the
+program off uh and start debugging we
+can go to the top here and click the
+play
+button and let the application fire up
+and then as you can see we've hit our
+break point and as we said the reason
+we've hit that is because we're saying
+only go to that break point sorry only
+write out this line to the console if
+we're in debug and we are and we've also
+put a break point there so we're now
+paused
+great pretty simple also I gotta say
+shout out to the debugger team for uh
+make for adding the ability to see that
+you can actually add a breakpoint in the
+first place by hovering over the gutter
+where you just added that break point
+that used to not exist and I can imagine
+if you're like brand new because a lot
+of schools and a lot of uh classes that
+you take don't always teach debugging so
+if you're just trying to figure this out
+on your own it's like not very intuitive
+maybe to to know that oh a breakpoint is
+here so yeah yeah absolutely Echo that
+and you know you guys uh if you're
+picking up visual studio for the first
+time you know you got kind of spoiled to
+be honest the featur feature sets
+amazing I was writing uh VB6 in the old
+Visual Basic and it was a fantastic tool
+but it's come so far the debugging
+experience has since then so oh yeah
+yeah it's super
+powerful uh and obviously if um we want
+to test our theory around um whether the
+release uh breakpoint would hit we can
+add another break point here uh and then
+change the mode over to release so now
+this pre-process cessor uh for if debug
+it should evaluate to false so we
+shouldn't see it hit that break point so
+I'll just click play there and there we
+go we've hit the other break point
+instead because we're now in release
+mode so you can see the way that break
+points can be affected by the position
+you you put them in if they're inside
+some logic which wouldn't normally be
+hit in the code you can guarantee the
+break point won't be hit
+either Okay so we've talked a lot about
+break point
+um so along this part of Visual Studio
+you can tap those in and they'll uh
+appear and disappear um you can also um
+this quite a handy function that you can
+use in the debug um part of the ribbon
+where you can say I just want to turn
+off my break points I don't want to
+delete them uh but I just want to
+disable them and I find that quite
+useful if I've been uh debugging
+something um for a specific change
+because there's a common um misconcep
+ception around debugging in my opinion
+that it's always to do with bugs it's
+actually sometimes around testing as
+well you've got a a feature that you're
+adding you want to make sure that the
+codes running the way you want it to um
+and I find that using break points for
+that is a fantastic way to to verify
+what I'm doing and so when I've made
+that change I want to see that it
+carries on through without um me
+stopping it all the time so being able
+to disable things in one place and then
+reenable them is really really
+useful
+so I want to talk about uh steps so
+there's lots of different ways uh you
+can perform these steps and steps for me
+um essentially are ways that you can
+move around uh the code once you've
+break pointed so once you paused the
+execution of your overall application
+you've got lots of different options you
+can either step into something you can
+step over something and you can step out
+of something
+when I say step into something it has to
+be something that you're capable of
+stepping into so if it's a variable if
+it's just a uh a variable like this
+where we're specifying or defining an
+integer um you're not going to be able
+to step into that because there's
+nothing inside to uh step into as far as
+debugging goes but for a method or a
+function you've got code inside that so
+you can choose to either step over it
+and Skip uh going through every single
+bit of code inside that method or you
+can step into it but don't forget that
+the code inside it if you go over it it
+will still run it will it's not saying
+we're not going to run this code we're
+just not going to follow it through for
+the purposes of
+debugging so I've got a method here
+called step into method and if I go to
+the definition of that everything I'm
+doing here is really super simple I'm
+just writing things out to the console
+uh but if I'm debugging I can choose
+whether I want to see uh the code go
+into this method or if I want to just
+step over it so I'm going to set a
+breakpoint here and then I'm going to
+run the application and let it just
+breakpoint onto that method and then up
+on the top left here are your step
+actions uh and as you get really good at
+debugging um and it becomes second
+nature I'm sure Leslie this is you
+you're just tapping the key combination
+F10 F10 F10 f11 step in it just becomes
+like muscle memory right it's just it's
+amazing how quickly that can just become
+uh done without thinking oh yeah and
+plus I mean again you're probably gonna
+be de debugging a lot in your coding
+career coding Journey so yeah you're
+probably gonna learn those keyboard
+shortcuts very quickly as somebody who
+does not usually remember keyboard
+shortcuts f 10 F 11 yeah yeah because I
+was thinking about the um disable all
+break points and delete all break points
+all that sort of stuff and I was like
+what is the
+keyboard
+but yeah stepping in stepping around is
+that is like just one tap it's and it's
+sometimes you can go a little bit too
+fast as well I can just step through
+things and go oh I've gone past it and
+yeah luckily there are additional
+Advanced debugging Tools in VSS that can
+help you backtrack if you do that but we
+won't get into it that's thinking of
+everything
+[Laughter]
+great so for this one um I want to step
+into it so I want to actually go in and
+see the code that's going to execute so
+um I'm going to hit this step into
+button or I can press
+f11 and you can see we've actually gone
+into that method and then we can do the
+same thing for the lines of code that
+are inside the method so you may have a
+method within a method and so you step
+into the first method and then you
+decide actually I want to look inside
+that method as well or you might think
+no I I know that one's good I've tested
+that one I'm going to step over it in
+which case you can just do the step over
+here so you can see these arrows handy
+little arrows that just explain uh what
+kind of Step we're doing and there you
+go we've come out of that now because it
+was the last line of code for that
+method and we're on to our next
+one so I I'm sure you can guess what I'm
+going to do next for step over method uh
+I'm going to decide that I don't want to
+look inside this so I'm just going to
+click step over and the last one is one
+that I I think a lot of developers in my
+opinion I don't know what what you think
+Leslie but they potentially use the
+least
+yeah yeah it scared me a little bit when
+I first uh when I first got into into
+code because I was I wasn't sure where
+it was going to go even though now it's
+more obvious to me with experience but
+um I don't know I think there's a
+tendency to rather than stepping out
+once you've decided that your code is
+good
+um that I you just keep going through is
+that the same for you yeah I kind of
+feel the same way I I Rely you step out
+and Par because I get worried I'm like I
+mean I think I'm pretty sure I know
+where it's gonna go but let's just go
+through the rest of this method anyway
+exactly it's just safer to keep
+going yeah that 2% un uncertainty is
+like yeah but that's really interesting
+because it it shows that there's people
+have their own debugging habits there's
+different debugging Styles and um you
+will get that person who will be stepp
+to everything and that's fine you know
+that's absolutely fine uh because if
+that's going to give you the the
+information you need that's that's the
+way but just to explain step out
+essentially it's whichever um method or
+function you stepped into uh by pressing
+step out you can essentially go back up
+into the um the next uh level up
+basically so like with um if I look at
+at step
+into so another handy thing you can do
+just press the method and then press F12
+and you can go to its definition we
+stepped into this but say this had a a
+long um block of code and we got halfway
+down um and thought you know I'm I'm
+okay I don't need to look at this
+anymore you can press step out and it
+would go back up to the point you were
+in the next level up uh obviously not me
+and Leslie because we want to play it
+safe yeah but it's cool something I do
+want to point out is that um breakpoints
+and the stepping tools those are pretty
+commonplace in the IDE world so yeah if
+for whatever reason you're deciding to
+use something other than visual cudio
+whether that's vs code or uh another IDE
+or Advanced editor experience like BS
+code those tools will at the very least
+be there in some Capac capacity so
+you'll always have break points you'll
+always have ways to step through to see
+what you want to see yeah and in the in
+the browser as well that's a that's one
+that a lot of um I find that a lot of
+developers that I I bring in who are
+fairly new um they're less exposed to
+the browser debugging experience but the
+concept is the same essentially a lot of
+the same tools
+too cool right this is one of my
+favorite features because it helps
+is so good it helps you to debug very
+very specific uh edge cases you might be
+trying to figure out what would be
+causing a bug but you know that it's
+only in a very specific situation and
+this is the conditional breakpoints um
+and this is a breakpoint where it starts
+off as a normal breakpoint um but then
+once you've created it you can then
+specify that it is conditional so I'm
+just going to get rid of this one here
+and I'm going to put a a conditional
+break point inside this for Loop uh so
+this is a loop where we're going to be
+iterating until we've reached uh our top
+index and inside the body of this loop
+we're going to be multiplying a variable
+by two um but what I want to do is say I
+don't want to be hitting this breake
+point for every single iteration I only
+want to hit the breake point if a
+certain condition is
+true uh and that condition for me could
+be
+uh that the variable condition demo
+value is greater than five because for
+some reason I've got a theory that
+something breaks when it gets to that
+that value
+essentially so the way we can do this is
+once you've already set your uh break
+point you can hover over it and you'll
+see there's a settings button uh and if
+you click that settings button you get
+some uh really cool features that you
+can uh take advantage of so in here we
+want to first look at conditions so I
+can check this conditions
+box and it will give you lots of
+different options for the condition but
+I think the most common one is going to
+be conditional expression so this is a
+condition Builder that you can use to
+say if this condition is true that's the
+only time I expect you to hit the break
+point you can also do it based on how
+many times it it's already hit that line
+of code so that's a similar sort of sort
+of deal you could say if this line of
+code gets hit x times then stop the flow
+of the application I want to debug it um
+filter this is one I I don't think I've
+ever used it Leslie do you want to share
+some insights into this one oh goodness
+oh filter I because I barely demo that
+one either so um I'm blinking out I feel
+like it's a slightly it's it's kind of
+like hit count and that it's a slightly
+different variation of a conditional
+expression last time I I checked except
+okay it it looks like it's like um a com
+just hit my mic sorry it looks like it's
+a combination of conditional Expressions
+yeah based on because the debugging team
+put a handy example in there so there
+you
+go pretty great and uh I do want to
+point out you can add multiple
+conditions if you want so like there is
+the add
+condition uh yeah the add condition
+button right below it where you can add
+more than one condition for whatever
+reason that is an option as well I think
+I need to I think I need to put one in
+before I can do that don't I so if I did
+I think so
+yeah so if I said so it's kind of like a
+Boolean expression isn't it so it would
+be condition demo value is greater than
+five and then press enter and then I
+should be able to add another one and
+the hit count is two um which it would
+be or at least one yeah math is is
+failing on me today it's nearly nearly
+night time in the
+UK but but yeah for this one we're
+essentially saying the condition is I
+only want you to hit that break point if
+my variable condition demo value is
+greater than five um so for that uh we
+can test that out you can see oh I've
+just deleted it that's always
+good put that in
+again okay Enter and then close there we
+go and you can see when you've got a
+conditional break point because you'll
+have a little cross in the middle of it
+uh so from that you'll always be able to
+see uh that it's slightly different and
+also hovering over it gives you uh the
+conditions that you set up as
+well uh so I'm going to let this
+continue to run so because we're already
+breakpoint um the play button says that
+we want to gives you the option to
+continue um and then you might be
+thinking how do we know that it's
+actually a above five at this point sure
+could it not just be highlighting it uh
+on its first iteration and this brings
+us to inspecting variables so what we
+can do to verify that it is actually
+hitting that condition is we can hover
+over a variable while we're break
+pointed uh and you can see here that it
+shows a little tool tip telling you what
+the current value of that variable is so
+we have indeed met that condition that
+variable is 10 so it's greater than five
+and it hasn't breakpoint did before that
+so our conditional breakpoint was
+successful okay so I'm going to stop the
+application otherwise we're going to be
+constantly shifting down also before you
+uh go on as we pivot away from break
+points those aren't the only break
+points fun fact so the lesson here is to
+definitely take a minute to explore the
+visual studio debugger because there's
+tons of additional break points yeah we
+got like Trace points uh which is what
+Nick just highlighted there's dependent
+break points there's uh function
+breakpoints data
+breakpoints so many to explore that can
+help you be a lot more productive in
+your debugging Journey that are worth
+checking out absolutely absolutely it's
+um it's so important isn't it you know
+it's all very well and good being good
+at of solving problems through your
+design of code but if you don't know how
+to use the debugging features you're
+going to be a a little bit of a
+disadvantage um but um the the sort of
+the very there's so many Advanced
+features like you said yeah like I can't
+speak for every IDE but Visual Studio I
+mean the debugger is a lot of what makes
+Visual Studio really cool if you take
+the the time to check out some of its
+more advanced features it's awesome yeah
+it it blows my mind because it it's the
+team has has built something that's
+working on a running application that's
+like next level for me um how how do you
+interrupt the flow of the comp of the
+application I I wouldn't even know where
+to
+start uh so another really cool feature
+um is uh the watch feature and a watch
+is essentially where you've got uh a
+variable of some sort um and you want to
+know while the application is running uh
+what its value is so it's the it's
+similar to where we hovered over that
+variable and said you know what's the
+value U but we were only doing it for
+that specific point that break point we
+were on um but if you're break pointing
+something else or you're debugging
+something else in the application and
+you want to keep one eye on another
+value to see if something's changing it
+and a watch is often a good shout um so
+for example if if I wanted to just keep
+an eye on this variable and make sure
+that it's definitely just 10 uh while
+things are running I can rightclick it
+and then I can go over
+to I may need to be debugging to
+actually see this so I'll just put a
+break point on it um there's several
+ways of doing it as is always the case
+with visual
+studio um but if I get
+to I'm in release now that's probably
+why
+there we go so I can actually see it in
+this watch window here but I'll just
+demonstrate here if you right click
+while you're break pointed you can see
+there's an add watch uh option if you
+just click that it will take you to the
+watch screen I already had it in there
+by the looks of it so I think I can
+rightclick it
+and delete Watch there we go um but
+essentially that's a screen that gives
+you all your watches so it's everything
+you've flagged as I want to keep an eye
+on that basically uh so we've got the
+the the variable name the current value
+and its type um now obviously we've set
+that to 10 and we're break pointed on it
+and this is really uh interesting the
+value here is zero which is not the same
+as what the value is in the code uh and
+the reason for this is that because when
+we hit a break point we're on that line
+of code but the code hasn't actually
+executed yet so we have a watch demo
+value but because uh we haven't executed
+we haven't initialized it with a value
+it's got its default value which is zero
+for the integer so if I then step over
+this and go to the next line that code
+has then executed the variable has been
+initialized to its value and we can see
+here the value in the watches screen has
+also changed so you can see how this
+would be really useful if you had other
+code which could potentially affect that
+variable uh I find this really useful
+when I'm iterating through uh lots of
+different data structures um I think
+recently I had uh a big array of Json
+objects and I was going through it U and
+there was an external variable that got
+set based on a very particular uh field
+inside these Json objects uh and I
+wanted to see the point at which that
+variable changed uh and so I could just
+put a watch against that variable run
+through the iteration and then I could
+see ah okay it changed at that point
+that's the bit that's setting it
+[Music]
+basically okay so immediates um so these
+are probably after the sort of usual
+break pointing aspects this is probably
+one of the things I use the most uh I
+don't know whether it's because uh I'm
+more of a backend engineer um but uh I
+don't know whether that that affects it
+or not but essentially immediates are
+kind of like um for the web developers
+they're kind of like the console in the
+browser it's kind of like where you can
+interact with the uh the code base while
+it's paused uh so by that I mean if I
+was to type um a variable which is in
+the code that has gone past the
+execution point
+so say watch demo value we're past that
+point now say I type that into here I
+get intell sense for that as well
+because the compiler knows that it's
+part of the uh the code base and I can
+say watch demo value press enter if I
+want to and it will give me the value of
+that um but I can so that is essentially
+me interacting with the code base um
+while it's in a paused State uh and this
+is uh valuable for lots of different
+different reasons it allows you to test
+different theories uh while the the code
+is paused so for example uh if you
+haven't got a watch on uh the watch demo
+value and you think oh I need to make
+sure that that is equal to 10 and um
+maybe it's not in view so you can't just
+hover over it and see it from there I'm
+just trying to find an example of why
+you would use this um in such a small
+application what you could do is say
+watch demo value and then similar to
+that conditional expression we used in
+the uh conditional break points you can
+use a Boolean expression so you can say
+watch demo value demo value is equal to
+10 and that will return a true or false
+so we can see here that's returned true
+so it's really useful I use this all the
+time when I'm looking to just check in
+on something that's still uh available
+to me as part of the code it's still in
+scope to some point uh but I'm probably
+halfway down the screen it's out of view
+I don't want to scroll back up to it I
+just want to quickly use the immediates
+to have more of a console
+experience you should also be able to
+set the value of things so you can start
+to um mess around with the state uh of
+the application while you're debugging
+it so if I did watch demo value equals 4
+it will just return the value that I've
+set but then if I hover over it you can
+see we've just set that to four so we've
+intervened in the state of the
+application while it's paused it's so
+powerful uh and and that allows you to
+test lots of different scenarios uh so
+very often you could say uh you might
+have an application which is um running
+only if an invoice value is over say
+$10,000 but the data you've got is all
+just below that and you want to try and
+test that other scenario well you could
+quite easily take a variable like
+invoice total and then change it inside
+the immediates window to test that um
+flow of
+code you can also do that from the
+variable itself uh in most cases so you
+can say change it from here and then if
+I go back and type this in again and you
+can press up as well just like you can
+in the command line to get what you've
+recently typed in I can see it's six
+because I've just set it from elsewhere
+in the code base so it's
+again this is where debugging gets a
+little bit um it's not just looking for
+bugs you might also be using it to
+influence uh State
+mhm yeah the immediate window is pretty
+powerful in its own
+right there there are lots of people who
+really kind of do all of their debugging
+in the immediate window a lot of the
+time I I'm personally one of those who
+doesn't really use it that much but yeah
+again whatever floats your boat there's
+lots of options in Visual
+Studio yeah yeah I mean if you if you
+were looking at say again I'll use the
+example of Json or or XML it might be
+just too much to look at in the debugger
+but there's nothing stopping you from
+doing a file. write all text in the
+immediate window and just then dumping
+all that information into a text file or
+or XML or Json file so that you can then
+look at it all the same time the
+application is still paused just giving
+yourself a bit more of a an opportunity
+to view it in something like Visual
+Studio code for
+example so it's just for me it's just
+super flexible that's I've got options
+all the time when I'm debugging in
+visual
+studio uh so inspecting variables we'
+we've pretty much covered uh that is
+where you can just hover over them you
+can see as we said this is still zero
+until uh we actually execute
+it and then we get on to something that
+has thrown me before honestly um because
+they I feel like they're quite similar I
+don't know where you are on this Lesly
+gosh I still struggle with it too
+sometimes
+um honestly I I think in most cases it's
+okay to lump autos and locals window
+together but if the watch window is like
+your inspection window for being a but
+you have to manually select which
+variables do you want to have persist
+and take a look at as you're going
+through your code the locals and Autos
+Windows automatically give you the
+variables that are currently in the
+scope of where you're at so if you
+swapped over to the locals or AOS window
+right now then you'd be getting a lot of
+the variables that are both within a
+scope or in proximity and I think the
+Autos window is really just more
+proximity focused more so than so it
+takes the nearby variables not
+necessarily all the the variables that
+are currently relevant so yeah I sorry
+Leslie you go no go ahead I was just
+gonna say I thought that was a really
+good explanation um I I think I looked
+for a definition before the show because
+I like to be prepared um but you know
+Autos it was It was kind of defined as
+um a a reference to any code which is
+relevant to the current line but that's
+a really vague definition isn't it it's
+really hard to to make that accessible I
+I agree so that is my best
+interpretation of it anyway just through
+observation but I think at the end of
+the day a lot of the time the autos and
+locals are windows are pretty much one
+and the same I I prefer the locals
+window because again you usually get
+more uh info that you'll probably need
+but yeah both are giving you the most
+relevant variables in some capacity in
+addition to other default Expressions
+that might come about which I talk about
+in uh other demos that I've done that
+are really cool stuff like return value
+uh which can tell you the the value of u
+a return statement in your method
+without having to necessarily set an
+arbitrary variable like the locals
+window and the Autos window can tell you
+that automatically the moment you step
+over that line which is really nice
+super cool it's really
+nice
+one thing I do really love as well that
+you guys have put in is this idea that
+um you can't get away with changing
+something and not being found out so
+here if you remember I've changed these
+values while the application was um
+paused uh and visual studio is flagging
+those in red to say hey these were
+changed uh which again is it's super
+important I think this this idea of
+traceability in debugging um it's it's
+got to be forensic hasn't it you've got
+to know absolutely every single thing
+that's happened and has changed so just
+that simple feature of coloring those in
+red I I love that feature I think it's
+really Co I
+agree so I think we've agreed most of
+the time we're going to use locals but
+again totally your choice but you know
+it's just about having as much
+visibility as possible and um I know
+that when I go to I'm always going to
+see things that are in scope which is
+most of the time what I'm concerned
+with so this brings me on to my my last
+example which is um one that definitely
+tripped me up when I was a junior
+developer I hated looking at it not
+because it was a visual studio thing but
+it was just a programming thing
+it just a wall of
+text but um it becomes less scary over
+time but and that's the call stack
+uh and actually Visual Studio does a
+really good job of visualizing it
+whereas the traditional call stack is
+just like a big line of text um block of
+text sorry but the the idea on the call
+stack is
+simply um the everything that's happened
+up until this current point and a
+representation of that so you'll often
+see these in exceptions so when you do a
+try catch uh and you hit that that catch
+there's going to be some kind of
+exception object and that exception
+object will have a call stack in it uh
+and that will say that the exception
+threw at uh a certain point in the code
+but before that lots of other things
+happened and those things could be other
+threads they could be parent functions
+but the the common denominator there is
+that it's before the current Point yeah
+I think timeline of yeah events that are
+going on in your code in a lot of ways a
+much nicer way of referring to a
+timeline um so what I've done here is uh
+just created uh a means of viewing the
+call stack so we've got a method here
+called call stack demo and I'm going to
+step into it so I want to go into the
+actual method I pressed f11 for that uh
+and then I'm going to let these uh
+pieces of code run so I'm going to press
+F10 to step over I'm going to step over
+again to get to this method so we've got
+method inside a method and then I'm
+going to step into that and we're going
+to run that method and then I'm going to
+pause it there for a second if I wanted
+to see the timeline as Leslie said uh
+which is the the call stack uh I can go
+again into debug and we've got a really
+uh useful Windows section here which
+gives us loads of different features
+some things that are more advanced uh
+than than this in the scope of this uh
+video I think uh but uh the one we're
+interested in is call stack and you can
+see here you can select it and it will
+open up the call stack
+window uh so I'm just going to move this
+I'm going to try and dock it up here
+there we go and just bring that across
+and so this gives us our timeline this
+is the stack of events that have
+happened to bring us to this point and
+at the top you'll have the method that
+you currently in or the break point that
+you're currently on so you can see here
+we're in call stack sub method at line
+73 but before that to get there we'd hit
+line 67 and if I double click it will
+take me to that line and again we can
+see at the bottom of the call stack that
+is going to be the first point of entry
+our entry point uh because it's the
+first thing we went into uh and that's
+main as it would be for our uh console
+application
+uh I think it just hasn't there we
+go oh sorry it's uh I am in main yes of
+course so it's highlighting call stack
+demo but that is in the scope of main so
+you can use this to trace back what's
+happened to that point uh so I often
+find it's a useful refreshing Tool uh if
+I'm doing a very long debugging session
+so and if I'm doing a long debugging
+session it's probably a pretty
+complicated bug um but what I mean by
+that is if you've spent a lot of time
+going through lots of different break
+points it's quite easy to sometimes
+forget what's happened up until that
+point and that might be really important
+because uh you might not be seeing any
+exceptions throwing but the data that
+you've passed through up to that point
+might be critical to understanding why
+something isn't running uh the way it
+should be so if you're in that really
+annoying situation where you know
+there's a bug but everything looks good
+uh the call Stack's really useful
+because you can say okay I'm going to
+retrace my steps uh and I guess that
+that's the main use case for me uh I
+don't know Leslie any other sort of
+go-to use cases for the call stack that
+from from your side yeah a kind of Niche
+one that I use it for is in the event
+you've got a variable that's being
+changed in a spot that you did not
+expect it to change but you act but you
+also don't really know where that change
+could be coming from there one of the
+breakpoints I hinted at earlier there's
+one called the data breakpoint that lets
+you break your uh at your or it lets you
+pause your application when a specified
+variable changes at any time so it's
+really nice because it'll take you to
+that exact place where that break where
+that variable was changed but there um
+there's a speci specific instance where
+in the event that variable is actually
+like a property in a class or something
+it's usually going to take you to like
+the setter that you probably set up for
+it but that's when you can use the call
+stack to figure out who you can really
+blame figure out what method just
+incremented that uh variable without
+your permission and navigate to it that
+way which is very helpful so in some
+ways the call stack is like the git
+blame equivalent of um debugging where
+it's like okay what what happened
+through my code and could there be a
+spot where I I didn't want that to
+happen or method to be called in a place
+that I did not expect it to be called so
+there you go so this no there's no
+escaping in Visual Studio forensic data
+everywhere you go everything's traceable
+yeah and you did mention also threads
+and stuff I I think the call stack is
+really useful for if you're dealing with
+multi-threaded or asynchronous
+applications there's lots of instances
+where you just want to be able to break
+down what is happening on a specific
+thread or across multiple threads uh
+having a call stack window for that is
+extremely important I think absolutely
+and and debugging multiple or parallel
+execution or concurrency is that's
+probably a video in itself isn't it that
+that's a oh yeah it's pretty Advanced
+but it's uh and it still hurts my brain
+but um you know there's a million
+different tools that I disposal here so
+it always makes it just that bit
+easier uh so I mean that's that's my My
+overall set of examples for um an
+introduction to debugging um but um I
+think key takeaways there are that uh
+the emphasis is as I said on being as
+forensic as possible and making um the
+state of any application available to
+you uh at that point in time and and I
+would my advice to any new developers or
+any uh people using uh visual studio for
+the first time would be to just start
+with breakpoints and and work your way
+up through these examples we've we've
+locked up um I'd say you know m around
+with the immediates figure out how you
+can influence the state of the
+application uh and break it essentially
+uh and maybe create some weird edge
+cases and I think once you've had that
+hands-on experience you become so much
+better at debugging in general um and uh
+and it's often a a process of
+elimination as well uh so you know you
+test your theories you you think I've
+got a bug I think it might be this let's
+try and disprove that uh and hopefully
+you're right and you don't have to
+disprove it so you can just put the fix
+in yeah I think something that helps me
+with debugging is just the whole
+expectations versus reality so like
+you're thinking about the
+meme like that's kind of the thought
+process with a lot of debugging it's
+like okay what did you expect to happen
+but what did you actually end up getting
+and that gives you a good starting where
+okay how do we get to that cake looking
+like what it was supposed to look like
+instead of my
+mess kind of looks like a tennis court
+but really it just looks like a
+blob that's yes definitely when I'm
+baking cakes for sure oh yeah
+yeah awesome well Nick that I thought
+that was a great introduction to
+debugging I think that's something that
+everyone needs like whether you're being
+formally taught it or not like I I was
+never formally taught how to use the
+debugger and then like I joined a
+debugger team fresh out of college and I
+was freaking out because I was like um
+yeah I just statements
+when I was debugging in school so like I
+don't know um yeah but I I think these
+are really useful tools that really you
+can take anywhere um whether you're in
+BS or in another IDE but you should
+totally use vs because the debugger is
+amazing um but yeah that's awesome so
+where can people go to learn even more
+about debugging
+Nick um well of course you can go over
+to to Microsoft learn um you've got lots
+of different videos there and
+documentation um and um I mean I think
+I've got a few videos on on debugging
+you want to head over to Nick proud
+programmer Shameless plug um but uh yeah
+the documentation for visual studio in
+general is is fantastic um you know I'm
+using Microsoft learn a lot myself uh
+spe specifically for the AO stuff as
+well um and you can you know there's
+nothing worse than poor documentation
+and I've just never had that issue uh
+with visual studio uh so um and
+obviously the help function in Visual
+Studio itself you can get through to all
+the documentation you need from the
+application uh in a lot of cases as well
+uh I've noticed in recently there's been
+um links to GitHub repos for specific uh
+items as well which is just so cool you
+know if you if you want to get some
+information on a specific element of net
+for example which is largely open source
+you can get straight through to the repo
+from visual studio so um you can't
+really go wrong with with the with the
+official docs and then um obviously
+resources on YouTube and uh places like
+that are probably an
+expert yeah awesome and then also more
+Shameless plugs on my end I know uh it's
+been a minute but this show the visual
+studio toolbox show actually we did do a
+couple episodes way back when about
+debugging so if you uh if you're on
+YouTube right now and you do vs toolbox
+debugging then there should be several
+videos that pop up including one that I
+did on more of those Advanced tips and
+tricks that we talked about most of them
+I I haven't done that talk on the show
+since BS 2019 but a lot of those tools
+are still very relevant uh for VSS 2022
+and also if you're on Twitter go to uh
+make sure you subscribe to vsor debugger
+that is a great Twitter channel that um
+that's run by the debugger team on
+visual studio and they drop just cool
+tips and tricks at random or sometimes
+not at random sometimes they're talking
+about new features because we're always
+working on new stuff too that are worth
+checking out so make sure you subscribe
+to
+that and yeah I think that's all of our
+resources for now hopefully that gets
+people started so yeah Nick thank you
+yeah but Nick thank you so much for
+coming on the show super informative
+very important stuff absolute pleasure
+thank you so much awesome and thanks to
+everyone who's been watching this and is
+ready to Kickstart their debugger
+journey and until next time happy coding
+[Music]
+y'all

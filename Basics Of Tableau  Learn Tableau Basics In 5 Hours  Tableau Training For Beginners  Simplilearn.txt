@@ -1,0 +1,4467 @@
+hey everyone welcome back to Simply
+learn YouTube channel in this video we
+are going to Deep dive into one of the
+most advanced data visualization tools
+that is W but before that let me give
+you an overview of Tableau so what
+exactly is W well Tableau is a data
+visualization tool that allows you to
+explore and analyze data in a way that
+is intuitive and easy to understand it's
+widely used by businesses and
+organizations to make sense of complex
+data and make informed decisions now you
+must be wondering what makes W so
+special well first of all it's
+incredibly user friendly you don't need
+to be a data expert to use Tableau
+anyone can pick it up and start creating
+visualizations in no time plus it's
+super powerful with features like
+interactive dashboards real-time data
+exploration and data blending secondly
+Tableau is incredibly versatile you can
+use it to analyze data from wide range
+of sources from spreadsheets to
+databases to cloud storage and viewing
+and it even has a built-in connectors
+for popular data sources like Salesforce
+Microsoft Azure and Google analytics but
+the best part it's a really fun tool to
+use whether you're analyzing marketing
+performance or identifying Trends in
+customer Behavior creating
+visualizations using Tableau is really
+satisfying you can make your data come
+alive with interactive maps live chats
+and Scatter Plots so if you are looking
+for a data visualization tool that's
+easy to use powerful and fun look no
+further than Tableau I promise you won't
+be disappointed hope this has built up
+your curiosity to jump in with us in
+this video and learn more about Tableau
+so without any further Ado let's start
+with our topic also if you're an
+aspiring data and is looking for online
+training and certifications from
+prestigious universities and in
+collaboration with leading experts and
+search no more simply learn Sports
+graduate program in data analysis from
+Purdue University in collaboration with
+IBM should be your right choice for more
+details use the link in the description
+box below and with that in mind over to
+our training experts hey everyone
+welcome to Simply learns YouTube channel
+in this session we will be learning the
+W expert full course let's have a look
+at the agenda for today's session first
+we will learn what exactly is W followed
+by that we will understand the data
+connections provided by Tableau then we
+will learn how to create data extracts
+using Tableau moving ahead we will
+understand the Tableau calculations
+aggregations and Tableau creating quick
+table calculations box and viscous plots
+Etc next we will learn each and every
+single type of charts available in
+Tableau then we will move ahead into
+formatting and annotations in Tableau
+then we will understand how to filter
+data in Tableau I hope I made myself
+clear over the agenda but before we
+begin make sure that you have subscribed
+to our YouTube channel and don't forget
+to hit that Bell icon to never miss an
+update from Simply learn this is Ben Ben
+started a store that sells automobile
+parts like brakes exhausts tires
+lubricants and car Interiors he made a
+good start with his business and
+achieved profits however as days passed
+by along with his growing business he
+faced some business challenges he
+received orders from a variety of
+customers with different needs and
+requirements for example the northern
+states had higher demand for performance
+parts than others in the eastern states
+demanded farm truck parts and lubricants
+more in apart from this a few products
+weren't performing well in the market
+and remained on sold with the unbalanced
+requirements and economy variations Ben
+had a tough time helping his customers
+with products on demand
+he slowly realized he needed something
+new that can help him tackle the store's
+problems
+what if Ben had a tool that could keep
+track of his store's inventory and sales
+a geographical map that can recognize
+the demand for various types of products
+from different regions
+a forecast feature that could predict
+the economic fluctuations in the market
+and help them visualize every single
+detail visually on one single dashboard
+this software could practically solve
+many business problems and also could
+identify new opportunities to improvise
+and grow the business such types of
+software tools are called business
+intelligence tools and one such tool is
+Tableau Tableau is capable of learning
+the store's business patterns and
+running queries against the data to help
+visualize the flaws and resolve them
+quickly now let us understand how Ben
+used Tableau and solve the issues
+related to his business Ben collected
+his store's entire sales data from the
+previous quarter and ingested it into
+tableau Now using Tableau Ben was able
+to categorize the data based on monthly
+sales it took the daily sales and
+considered it as the x-axis and then
+Tableau computed the sales in the store
+now then clearly understood the products
+that outperform the sales charts and the
+products that did not have much demand
+let us elaborate a little Ben found that
+the performance parts like sports
+exhaust turbochargers and engine
+management systems were selling well
+with the Tableau forecast feature Ben
+identified the demand for Performance
+Products in the next quarter so he
+raised the prices on a few products that
+had the peak demand and earned higher
+profits in the second forecast report
+Ben found no significant elevation nor a
+drop in the demand for the tractor parts
+and lubricants apart from this Ben saw
+the sales graphs of electronics
+encountered a drop in the current
+quarter compared to the previous quarter
+in the sales of electronics like the
+music and infotainment systems were low
+to improvise and stabilize the
+fluctuating sales of electronics Ben
+came up with some exciting clearance
+sale offers on electronic products using
+tablet's geographic map feature then
+understood the product demand at a
+regional level he found the northern
+regions were interested in performance
+kits for their imported sports cars the
+Eastern regions had good man for truck
+parts and lubricants using Tableau then
+could generate various visualizations
+based on his data and come up with
+business oriented decisions
+last but not least Ben could also
+monitor his decisions and was able to
+make some necessary modifications to his
+business model on the go Ben is now
+delighted as working with Tableau is a
+smooth and efficient process today
+Tableau is being recognized as one of
+the best in class business intelligence
+tools because of its powerful and
+dependable features Tableau can support
+and connect to a wide variety of data
+sources like the cloud dbms Excel sheets
+and even get connected to real-time data
+from websites and Bin keeps his
+customers happy using Tableau to solve
+his business problems today more and
+more leading business organizations are
+leaning towards business intelligence
+tools intending to improve their
+business
+upon quite a success in this business
+Ben decided to get a detailed
+understanding of Tableau by enrolling in
+simply learns Tableau training program
+which is led by industry experts who can
+train him according to the current
+business and I.T standards to make his
+business even more successful so what is
+w
+so before we understand what exactly is
+W let us imagine a simple situation
+imagine that you are an office worker
+and you get some loads of data uh maybe
+like millions of rows or billions of
+rows and you're supposed to extract the
+insights of that particular data so what
+do you do you basically load that data
+into a database and try to write the SQL
+commands and then try to extract the
+insights of that particular data
+so this kind of approach is basically
+time consuming and you get exhausted now
+what if you had a tool which could write
+all the SQL commands for you in the
+background and all you had to do is just
+to drag and drop the data
+sounds interesting right
+so Tableau is just the same all you have
+to do is just drag and drop the data and
+it will automatically write all the SQL
+commands you ever wanted to write on
+that particular data and it will give
+you live data interactions and advices
+for the future
+now with this let us understand the
+definition of w so basically Tableau is
+a business and analytical software tool
+developed in America W helps people to
+understand visualize and make data
+driven decisions in real time with
+extreme agility and accuracy
+now with this let us continue with the
+next topic which will be about the
+various versions of w so at first we
+have the Tableau desktop so Tableau
+desktop is a data visualization
+application to facilitate you to xmi in
+virtually any kind of structured data
+and generate highly interactive
+beautiful graphs dashboards and reports
+within minutes once a quick installation
+you can tie to virtually any data source
+from spreadsheets to data warehouses and
+display information in several graphic
+perspectives designed to be easy to
+utilize you'll be working more rapidly
+than ever before next we have the W
+server it is a business intelligence
+application that offers browser-based
+analytics anyone can utilize it is a
+rapid fire alternative to the slow pace
+of traditional business intelligence
+software it is an online solution meant
+for sharing Distributing and
+collaborating on content created in
+Tableau what makes W different it is
+proposed to everyone there is no
+scripting required so everyone can grow
+to be an analytics expert you can grow
+your deployment as you require it
+train online for free find answers and
+minutes and not in months that's the
+specialty of w
+now followed by the W server we have W
+online
+so Tableau online is a business
+intelligence application that offers
+browser-based analytics anyone can
+utilize as discussed before it is a
+rapid fire alternative to slow based
+additional business intelligence
+software so Tableau online is a secure
+cloud-based solution for sharing and
+collaborating on Tableau view views and
+dashboards next up we have the Tableau
+public
+so now I want to give you guys a serious
+heads up if you are a beginner in tab W
+public is like an open source whatever
+the data you choose to work on using
+table Republic it goes to public so kind
+of like Tableau public is not preferable
+if you want to work on your company
+sensitive and confidential data W public
+is a free software to facilitate anyone
+to get connected to a spreadsheet or a
+file and create interactive data
+visualizations for the web
+it is delivered as a service that
+permits the user to be up to and running
+overnight with table Republic users can
+construct amazing interactive visuals
+and publish them quickly without the
+help of programmers or ID
+it is designed for organizations to
+facilitate their websites with
+interactive data visualizations there
+are higher limits on the size of data
+you can work with and among other
+features you can keep your underlying
+data hidden and lastly we have W reader
+W reader is a free desktop application
+that you can use to open and interact
+with data visualizations built in
+Tableau desktop with tab new reader you
+can filter drill down and discover
+humongous loads of data now moving ahead
+we have the features of w
+so these are the few important features
+that you might want to consider
+those are the first one robust security
+table you take special care of data and
+user security it has a foolproof
+Security based authentication and
+permission systems for data connections
+and user success
+W also gives you the freedom to
+integrate with other security protocols
+such as active directory Kerberos Etc an
+important point to note here is that the
+W practices low level filtering which
+helps in keeping the data secure
+followed by that we have the
+collaboration and sharing feature tabli
+provides convenient options to
+collaborate with other users and
+instantly share data in the form of
+visualizations sheets dashboards Etc in
+real time it allows you to securely
+share data from various data sources
+such as on-premise on-cloud hybrid Etc
+instant and easy collaboration and data
+sharing helps in getting quick reviews
+or feedback on data leading to a better
+overall analysis of it another extremely
+useful feature of Tableau is the use of
+Time series and forecasting easy
+creation of trend lines and forecasting
+is possible due to tableau's powerful
+back-end and dynamic front-end you can
+easily get data predictions such as a
+forecast or a trend line by simply
+selecting some options and drag and drop
+operations using your concerned fields
+next up we have live and in-memory data
+W ensures connectivity with both live
+data sources and data extraction from
+external sources as in memory data this
+gives the user the flexibility to use
+the data from more than one type of data
+source without any restrictions you can
+use data directly from data source by
+establishing Library connections or keep
+that data in memory by extracting data
+from a data source as per their
+requirement
+tablely provides additional features to
+support data connectivity such as an
+automatic extract refreshes notifying
+the user upon live connection fail Etc
+next we have informative View and even
+the mobile view one of the key features
+of Tableau and the one that got its
+popularity is its wide range of
+visualizations in W you can make
+visualizations such as bar chart pie
+chart Gantt chart bullet chart motion
+chart tree map box plot and many more
+like you name it w got it you can select
+and create any kind of visualizations
+easily by selecting the visualization
+type from the show me tab apart from
+that it is capable to represent data in
+mobile view as well W acknowledges the
+importance of mobile phones and today's
+world and provides the mobile versions
+of Tableau app the next and the last
+feature is that being capable of
+accessing data from various kinds of
+data sources W offers a wide range of
+data source options where you can get
+connected and fetch data from data
+sources ranging from on-premise files
+spreadsheets relational databases
+non-relational databases online cloud
+data data warehouses and many more
+so followed by the features now we'll
+discuss about the advantages of w
+so following are the advantages of using
+Tableau first one it has remarkable
+visualization capabilities of course the
+unparalleled capabilities of visualizing
+information is on top of the list of tab
+values software benefits followed by
+that we have the ease of use the tools
+intuitive manner of creating graphics
+and a user-friendly interface allows
+non-developers to utilize the basic apps
+functionalities to the fullest users
+arrange raw data into catchy diagrams in
+a drag and drop way which facilitates
+information analyzing and eliminates the
+need for the help of IT department and
+patent building
+next high performance apart from its
+high visualization functionality users
+rates its overall performance as robust
+and reliable the tool also operates fast
+on big data which makes it powerful
+performance on an important point on the
+list of the advantages of Tableau and
+next is the mobile friendliness one of
+our best advantages out of the W
+benefits is its efficient mobile
+application which is available for both
+IOS and Android it adds Mobility to
+table users and allows them to keep
+statistics at their fingertips as well
+as supports their functionality that
+desktop and online versions have
+and finally we have a thriving community
+and Forum W has a rich Community the
+number of w fans who invest their
+expertise and skills in the community is
+increasing rapidly business users can
+beef up their knowledge on data
+processing and Reporting and get many
+useful insights in this community also
+Forum visitors are ready to help settle
+any user issues and also share their
+experience
+next up we have the disadvantages of w
+the first major disadvantage is the high
+cost the Tableau is not the most
+expensive visualization software
+especially compared to such business
+intelligence such as oracles and IBM
+Solutions all the same the license is
+quite costly for small and medium
+companies which makes it one of the
+considerable tablish disadvantages
+next is the inflexible pricing W sales
+team is not flexible enough to provide
+case-by-case approach for their
+customers ignoring the fact that each
+company has its own a unique
+requirements for visualization tool
+package the W sales model requires
+clients to purchase and extends license
+from the start
+as a result a lot of companies that you
+establu arrive at the conclusion that
+they don't need all their license
+features they would prefer to buying a
+set of requirements and scale them if
+necessary
+followed by that the next disadvantage
+is for after sales support on multiple
+message boards users complain that W
+software lacks proper after sales
+maintenance if customer has software
+performance problem the support team
+does not settle the matter by
+investigating the problems root and
+eliminating it next we have the power bi
+capability or the poor business
+intelligence capability as previously
+mentioned the tool provides
+best-in-class information visual
+interpretation however it lacks the
+functionality required for a fully
+flashed business intelligence tool such
+as large scale reporting the building of
+data tables and statistic layouts and
+lastly the poor versioning only the
+recent Tableau version support revision
+history while for the older ones
+software rolling back is impossible now
+with the advantages and disadvantages
+discussed let's move into the top
+companies hiring the companies which are
+desperately looking for Tableau experts
+are Accenture ey PepsiCo Deloitte Wells
+Fargo capgemini and many more
+now let's discuss the humongous and
+handsome salaries offered by this Tech
+Giants
+so according to Glassdoor the average
+salary of a tableau expert in America is
+82 000 grants and for a beginner it is
+somewhere around sixty thousand dollars
+per annum and at the highest rate it is
+1 lakh ten thousand dollars per annum
+similarly the average salary of a
+tableau expert in India is 5 lakh six
+thousand per annum and for a beginner it
+is somewhere around Three lakh Sixty
+thousand and
+and for a highly skilled experienced
+Tableau expert the salaries range from 8
+lakhs 75 000 per annum so let me now
+begin with connecting to data now in
+this particular topic
+we are at the end of this lesson you
+will be able to
+understand how you can connect to
+Tableau Data server you will be able to
+differentiate between a join and blend
+how can you perform a join on a data how
+can you blend a data we will discuss the
+various connection options available we
+will understand how tablet server Works
+in terms of the curb rocks
+authentication all right uh we will
+understand various performance
+optimization techniques as well Shadow
+extra extract as well as different
+methods that we can prepare in terms of
+the data that we want to analyze all
+right so let me begin now the very first
+topic which is uh connecting to chapter
+server so I'm going to first take you
+through a couple of presentation slides
+here and then quickly move on to the
+environment where we will actually then
+start exploring the topic so
+now when you want to connect to a data
+source in Tableau server it's pretty
+simple you can connect to a flat file in
+your local machine so one is you will
+click on to the server in the start
+screen and uh you can specify the server
+name you can specify and uh show your uh
+login your credentials the username and
+password and based on that you can
+perform the you can have your connection
+to the database all right so that's how
+you can connect to the tablet server as
+well all right so
+that's the very first basic so the
+Tableau administrator is the one who
+assigns the roles and creates these data
+sources all right and you have uh
+Tableau has the facility in order to
+import different forms of data for the
+analysis for your ease and once you're
+connected to the Tableau server then you
+need to select the taboo server data
+source on the data menu you will need to
+select a data source to download a local
+file a local copy you can select and
+create a local copy and then you can
+also duplicate a duplicate of that data
+source will be added up into your data
+window so that's how you can connect to
+Tableau server as well all right and it
+basically promotes various features
+wherein uh you can then connect to the
+taboo server for your data so you are in
+this example you can see that you're
+able to connect to the taboo server as
+an admin and connect to the sample
+Superstore and it downloads it creates a
+local copy and duplicates all the data
+in that particular data window
+that's how we can see the sample
+throughput shown and you can connect to
+the server uh next we are going to also
+understand what is joining and blending
+so before I move on to the presentation
+slides here what I'm going to do is I'm
+going to move on to the environment
+directly let us start exploring these
+blending and joining features or write
+therein all right I'm going to simply
+just clear all these sheets that we have
+and
+um let's go back to the connective data
+source window all right now in terms of
+uh this is where you're able to connect
+you can see the Tableau server so it's
+through the server that you can connect
+with and you can specify your server
+credentials and you can click on connect
+and uh based on that that's how then you
+can provide the credentials and login
+all right now I do not have a server or
+a connection wherein I can show that
+example but this is how you can click on
+any of these servers you would have to
+type in the URL click on connect and
+then provide the usernames and login
+provided and that's how you can connect
+to your data source using a server
+option all right I'm going to show you
+the file option wherein you can connect
+to an Excel and let us discuss the join
+and the blending parture all right so
+let me click on
+it says we have the sample support uh
+data store here and in this
+when I pulled in order all right I
+pulled in the first shape so there are
+three sheets in that particular Excel
+file when we pull an order this is how
+now you can identify that whatever are
+uh these are the header names these are
+the dimensions and measures that's how
+it's getting identified if you can
+notice all the dimensions are first
+place you have all your measures then
+you're able to identify the data type
+and the role on ABC which is a
+contextual value or numeric value that
+means it's a dimension with a pound sign
+what kind of a data role is it estabros
+automatically identifying each of these
+rules as well all right even in the
+metadata that's how you can see the
+field names the field uh name that you
+want to see onto your table onto your
+view and the table from which it's going
+to be getting pulled in from in this you
+can rename in case you want to change
+the particular name hide it or Alias it
+will describe it
+all right so this is how you connect now
+connections is where you have the option
+to connect between knife and extract now
+if you connect to live that's
+interconnected to this particular sheet
+live that means any updates happening
+onto your uh sheets any kind of updates
+on the sheet there is a light connection
+it will automatically update your views
+as well onto your sheets that you're
+creating and in case if you select on an
+extract all right this is what it means
+that it allows uh what it does is it it
+Imports that data into the Tableau Data
+engine first in the data engine where
+it's going to perform these queries it
+will create an extract and based on
+these we can then start using the
+connections all right so what it does is
+it disconnects it's more like a small
+extract more like a cube if you
+understand it in that manner taboo
+creates an extract of that file
+providing you a disconnected whether it
+allows you to give you a better
+performance a better query
+uh that's how you can then work on and
+start creating uh and working on these
+extracts so you can refresh these uh
+extracts at a timely manual as well so
+that is what the Tableau extracts are
+but it extracts it as a copy of the data
+uh and saves it in the engine and that's
+how then the performance as well gets
+better in terms of using where you can
+connect to your particular data all
+right so you can work with uh multiple
+data sources data sources can be of any
+type all right wherein you can edit from
+the number of lists that you can see it
+can be a flat file a server file as we
+saw or the saved one and we can also
+then join multiple tables within the
+data or we can also blend when it's
+coming in from different data sources
+then we can also perform a blending so
+let me first show you an option for
+joints now you can see we have the order
+table law when I drag and drop the
+people uh sheet as well here you can see
+that Tableau has automatically created
+or join all right it has automatically
+created a join when we have pulled in
+two tables coming in from the sheet and
+by default all right we have the inner
+joint that Tableau creates so it creates
+a inner join here wherein again you can
+then click on the join option here and
+you can specify and modify the join
+based on whether you want it as a inner
+join which is a default you want a left
+joint now if you see the right join has
+been disabled here okay I will show
+these options here by default the right
+join is uh disabled by a tableau by
+default by default and to enable that
+you will have to uh connect to your
+Excel sheet in a different manner I will
+show that your shortly so that's how you
+can change and you can perform your
+joints this is where you can explore and
+show The Joint cloth and here again then
+you can specify like you can see a join
+that's been created amongst the data
+source which is region and region people
+among these two data all right so it's
+also showing you the join and whether it
+is uh equal to or not equal to all right
+so you can connect to multiple tables
+and uh based on that you can add in
+tables you can decide the different
+joints and based on that then when you
+click on sheet uh you will then be able
+to see that there is a joint being
+performed there are two tables now the
+people stable also that has been added
+in and it has now performed and you know
+joined on our data and you can start
+using this particular option so let's
+say I'm going to pull in the region on
+my columns and I'm going to have my face
+onto my rows it's now providing me uh
+details of my sales at a regional basis
+now let's say I also want to analyze the
+people belonging to these regions
+depending on the color so it's going to
+change the colors based on the central
+East South and West all right that's how
+these are uh the people the number of
+people belonging to each region that it
+has identified so that's how it has
+taken up the region people as you saw
+there was a join that was created and
+it's giving us that particular option
+and based on that you can see your we
+just have this particular data source
+here and that's how you can see now I
+used it earlier as well if you remember
+we had pulled in one particular table
+hence the blue tick mark sign here
+enables and shows us that this is the
+primary data that they use now this
+comes in picture when we're using a
+particular join so let me right now just
+um uh use this particular detail here
+and we're not going to require this all
+right so let's just close this we just
+need one right now because we're
+discussing on blending I'm going to show
+you the blending part later right now
+we're discussing on joints so uh that's
+how you can join in your data sources
+and you can combine multiple Fields
+using these joints so when you have when
+you have multiple tables you can see
+simply connect to the data let me go
+back to the data source page this is a
+startup page the data source page and
+you can see the joints has been
+performed now let's say you want to
+create a join where you want to force
+due to certain situations and scenario
+where you want to post or write out a
+join all right or right join or for that
+matter you want to write a custom
+sequence now you're not able to write a
+SQL right here in the in the drag area
+pane where you can drag and drop your
+sheets from the Excel file or any kind
+of a file that you're connected to for
+that and to enable the right join you
+will need to uh connect to your data in
+a specific manner so let me open up a
+new instance of Tableau here
+and let me show that to you as to how we
+can enable the right choice and how we
+can have our custom sqls as well so in
+case if you want to write in a custom
+SQL on our view then how can we perform
+that initial custom SQL all right
+okay so let us connect to our data here
+and I'm going to take you on to the
+Excel file now when I click on the
+samples Focus store here okay uh what we
+have done is we clicked on open and
+that's how we opened up the uh file all
+right and that's how we could see the
+sheets now instead of using the open
+option directly what I'm going to do is
+in the drop down right here instead of
+open we have an option that says open
+with a legacy connection all right this
+is what is going to enable us to write a
+custom SQL where we can specify a query
+rather than using the entire data source
+or pulling in the entire table so quick
+clicking on the second option in the
+drop down in the open uh tab here you
+will be able to see the open with Legacy
+connection I'm going to uh so ensure
+that you've selected that and that's how
+you will then connect to the data source
+and with that you now have a new custom
+SQL option that's opened up for yours
+this is where you can once you've
+connected you can double click on the
+new custom SQL and you can write in your
+query you can write in the SQL where you
+want to perform the query and pull in
+your data all right you can have your
+select from
+foreign
+orders
+all right so that's how you can perform
+and you can write in a custom SQL and
+you can pull in the required data you
+can or have your required table that you
+can pull in in terms of creating a SQL
+that you want to pull in or and have
+your data on right so you can have your
+select from the
+overdose and
+preview the results
+so here you can see the order table has
+9940 we have a preview of the data
+available in that particular uh sheet
+that we pulled in all right and we can
+now parameters is what I'm going to
+cover when we come on to that particular
+topic so I'm going to leave this for now
+so that's how you can write your custom
+SQL and you can click on OK and that's
+going to pull in your entire data and as
+you can see now instead in the earlier
+views I'm going to just switch to the
+earlier instance of Tableau you could
+see that you could see the name of the
+table that I dragged and pulled in you
+could see the name order but in case
+when we write a custom SQL then it gives
+us the name which is written as custom
+SQL queries all right and this is where
+you can get the information you can edit
+the query in case you want to change the
+results and requirements so that's how
+instead of clicking on open you click on
+open Legacy connection and you can have
+your own custom SQL defined now along
+with this all right when you open and
+when you click on a legacy connection
+when I drag in the people's table here
+you can see that even the option for
+right joints have now been enabled so by
+default Tableau disables the option for
+right join and in case in certain
+situations and circumstances you want
+the right join to be enabled you win in
+the same manner you have to import and
+connect to your data you
+Legacy
+secret and you will have these right
+join which is going to be enabled there
+for you all so you can have your custom
+sqls or the right joints in that case
+which gets enabled and you can use the
+custom SQL or a right join right so that
+was custom SQL then uh joining is where
+you can as I mentioned identify and
+choose between the Clauses and the
+Clause that you want to add in right now
+let me show you an example of blending
+as well so I'm again going to open a new
+instance of tableau
+all right and uh with that I'm going to
+show you the example of blending so
+let's say you have uh you want to join
+in and when is the best time when is the
+best way that you should use now joining
+it when you have all your multiple
+tables that you want to join coming in
+from one data source blending would be
+required when you want to join in uh
+multiple tables coming in from different
+data sources or for that matter you can
+also blend even though the tables are
+coming in from a single data source
+there might be instances that you might
+want to have still perform a blend
+instead of a joint so let me show that
+option to you all right so let me
+connect to the data
+let's connect to excel pull in our
+sample supersoul file that we have we
+have the order tables all right and I'm
+going to go on to these sheets here all
+right so we have one order we have one
+data which is the order table now I am
+going to again click on add a new data
+source coming in from the same Excel
+file and this time I'm going to have the
+people's table
+and move to the sheet so now if you
+notice we can see two uh data sets here
+which is one for the orders and one for
+people here and uh in here now this is
+where the blending will will take place
+this is where you will have a blend
+automatically when you pull in a view if
+there is a common view that comes into
+picture now let's say I'm going to first
+pull in the order date onto the columns
+all right
+and as soon as I pull in you can see
+that my order table has now got a blue
+check mark which has become a primary
+data source all right and now let me
+pull in sales onto my rules
+and from people let me have
+uh from the people's table let's have
+region pulled in and added to the color
+so region has become a secondary data
+set and now you can see a blend sign
+right a linking a data blending that has
+automatically been performed on both
+these two data sets all right that we
+have the order table and the people's
+table blue being primary and people uh
+which is being secondary in this case
+all right so that's how you can mention
+now in terms of blending what happens is
+you cannot specify the joints here in
+this case there is a primary and
+secondary data and it is automatically
+blending in the data for you it is
+automatically pulling in uh the data you
+will not be able to your select on the
+kind of join you will not be able to
+manipulate the joints so that's how even
+though at times you have the same tables
+that are coming in as I mentioned there
+are times where you might want to
+perform and change the join so that's
+when you can use the joining table
+option that comes into picture so that's
+the difference
+you're blending and between joining the
+tables
+right so uh you can see this available
+link and you can see how it was simple
+to drag a particular View and uh pull in
+data and your as well region has been
+added to the color pin because of which
+the Legends have been created identify
+all four regions present in the data and
+it's also letting us know here in the
+marks that region is coming in from the
+secondary table you can see the orange
+ambotic marker and that's how you can
+identify that region is coming in from
+the secondary table that's been created
+all right in terms of uh connecting as
+well wherein you can combine and half
+the joint enabled now depending on the
+kind of data all right going back to the
+data source depending on the kind of
+tables and the kind of data that we have
+that's when we can enable and have the
+joints that we can decide on all right
+so one is you would require and need to
+have
+multiple uh Legacy connection with which
+you can then Define the right outer
+joints all right and that's how you can
+proceed and have additional uh joints
+that you can work on
+uh we also discussed how we could create
+and connect to a custom SQL query all
+right and uh that is how we could using
+the Legacy connection uh also enable the
+right outer join wherein we could then
+perform a right join on our tables as
+well all right and in case if it's a
+query then it gives them the name of uh
+the query uh as a custom query which is
+what we saw onto the preview and the
+extract there all right now in terms of
+extract all right now extracts are
+basically your saved subsets of the data
+source which will help you in improving
+the performance so instead of as I
+mentioned instead of being connected to
+a live connection it is better that we
+select an extract which creates a subset
+and sources in the uh Tableau engine
+wherein it performs the queries and it
+takes advantage of this functionality
+where it is not connected to the
+original data source and with this it
+can actually reduce the total amount of
+data in terms of defining and limiting
+it so that's how you can create an
+extract and let's say uh once you've
+created an extract you can then perform
+like I said you have the edit option
+where you can edit the additional
+detailing you can allow an incremental
+fetch happening where then you can
+refresh the data each time or your data
+is updated you can provide an
+information fair so this can help you in
+improving your performance you can take
+advantage of the functionality see in
+terms of the data source for using the
+discounts or the distinct counts as well
+and moreover it's more like an offline
+mode you're actually accessing your data
+as an offline access where it's not
+directly connected and you're able to
+use it like a data local data all right
+so that is the difference between a live
+and an extract so that's how you can
+make use of the Legacy connections as
+well so let's go back to the
+presentation slides and have a recap now
+[Music]
+um
+these are the joining tables that's what
+we discussed at in terms of the tables
+that we have we can join our table and
+we have various joints available where
+it makes it easy for us to uh analyze
+the data that we want to review we can
+join to multiple tables and based on
+that we can customize the inner the list
+the right or the full outer join now the
+full outer join also depends on the kind
+of data source that you're connected to
+all right so in case of an Excel file we
+still do not have the right outer join
+option which is enabled so this possible
+option again when you open with a legacy
+depending on the data type is how you
+will have the right Auto join that you
+can pause and have it enabled so this
+would be depending on the kind of data
+source file also that you have and you
+have these four joint types that you can
+use in terms of joining tables in
+Tableau now when would you want to use a
+join all right so uh a scenario is that
+you have a sales manager of an online
+shopping website and he wants to analyze
+the customers who have returned at least
+half the number of orders that they have
+placed now to fulfill this requirement
+he will require a worksheet wherein he
+can join the orders and the return
+tables on a particular common Dimension
+all right so that's how then he can
+create a join we can change this between
+uh the inner default to a left join
+between the order tables and the return
+tables and based on that we can then get
+to know the customers who have returned
+at least half the number of orders that
+were placed all right
+now in terms of enabling a right outer
+join uh this is taken care of by the
+Microsoft jet data engine driver so in
+case if you all are facing of trouble
+where you're not able to connect and see
+that particular option it's throwing an
+error this Legacy connection options
+comes in only when you're using a
+Microsoft jet data engine driver this is
+easily available in case if you do not
+have it you can install this driver and
+with this it will enable the right outer
+joy and the custom SQL for us all right
+to enable the uh right out of join here
+that's how you open it with a particular
+or Legacy connection now in terms of a
+write out a join we saw an example we
+can force and use the right outer joint
+we can select on a new custom SQL where
+we can type in and have a custom uh SQL
+generated
+and that's how we can work on with the
+SQL where we can provide the SQL syntax
+and based on that the data source will
+then be generated
+now in terms of blending this is what
+happens when you have multiple data
+sources in your viewer when you want to
+establish a link between them or you
+want to blend your data uh it does not
+create a row level joint so in case uh
+like the example that we did also which
+is coming in from the same sheets from
+the same Excel file but we did not want
+to create a row level join then that's
+when data blending would come in handy
+you can use it with a related data
+across multiple sources that you want to
+analyze in one particular view so that's
+how you can blend your data which
+creates a primary and a secondary data
+so we saw that in this example uh you
+can see that it is a customer segment
+department and some of sales wherein the
+bars are being created which are coming
+in from the from the primary connection
+but in terms of the sales plan all right
+these sales plan are coming in from a
+secondary data you can see the Amber
+connection your the Android that is
+allowing you to understand and segregate
+and differentiate that it is a secondary
+connection
+so in Tableau that's how you can
+identify as you saw that your primary
+source and you have your secondary
+source wherein you can identify and
+distinguish you can distinguish between
+the common fields that are present in
+your data and uh you can establish a
+connection in case if it has not
+established a link you saw that there
+was an automatic link then you can
+provide a link Autumn uh by explicitly
+defining a link as well let me take you
+back to uh the environment
+all right so this was the custom SQL
+foreign
+provided then you can provide a
+particular link onto your view you can
+have the option if it has not enabled
+then you can select your particular you
+can see that uh it has not uh implicitly
+defined but it's giving you an option
+that there is possibility of linking so
+you can explicitly Define you can click
+on this link and use person as a linking
+field and this is also linked in your
+data with the previous data that you
+have all right so that's how you can
+Define and explicitly mention uh the way
+that you can blend your data and you can
+identify another way can also be wherein
+you can edit uh the connection in the
+mapping and that's where you can perform
+so you can go back to your data sources
+and you can explicitly Define you can
+identify uh whether the first rows are
+the names whether the rows your are
+automatically generating a field or not
+all right so that's how you can have
+these two tables and you can Define the
+blending whether you want it or not you
+can disable the linking as well in case
+you don't want to perform a particular
+link
+so uh with uh coming to that now let us
+understand I've already discussed the
+difference between the joints and blends
+and where you can use it so let's uh
+have a recap again or in terms of
+joining uh joining is a SQL term wherein
+is combining two data sources coming in
+from a single data source while in terms
+of blending it's more about combining
+two different data sources into one
+single sheet all right uh joining is
+done once at the data source and this
+can be used for every worksheet while
+blending will be done individually for
+every worksheet okay and
+features that are joined must must exist
+in the SQL database while in blending it
+helps us combine the database which is
+coming in from different sources
+different locations and in case if it's
+a multi-dimensional source if it's a
+queue then you cannot perform a joint
+and in terms of blending you have a
+primary source and uh but in in terms of
+a primary source it cannot be accused
+but your second resource can definitely
+be a cube that you can use in terms of
+performing a blend all right
+uh so that's how you can optimize your
+connections you can select whether you
+want to have uh perform a blend on your
+connections you want to perform a join
+depending on the kind of connections
+that you have and that's how you can
+work with them with the different data
+socials that you have available you're
+going to proceed further in
+understanding how we can create data
+extracts all right so as I mentioned the
+extracts are where you create a subset
+of your data source you can extract a
+particular data you can save it as a
+subset which will help you in performing
+and improving your query so instead of
+the live you can simply click on the
+extract which will create a tableau
+extract for you all right
+so uh let me just show you let me take
+you to the uh repository and in that you
+will be able to identify in my Tableau
+repository data sources you can see that
+uh we have a tableau extractor for World
+indicator so what it's done is it has
+created a subset of the word indicator
+data source and it's created it's
+disconnected it's an offline mode which
+can allow us to improve the performance
+it can be accessed offline as well when
+you're away when you're probably
+traveling and we can then create an
+extract where we can keep refreshing it
+with the original data and we can then
+replace it with the content or we can
+provide a complete incremental refresh
+with these all right now extract can
+also be created from uh within our data
+sets as well once you've performed so
+let's say let me go back to
+let's have
+category in our columns let's have
+quantity on our roads now even here you
+have the option of going under the data
+menu where you can uh click on the
+extract data so whatever you've selected
+any kind of performances and any kind of
+the applications that you perform now
+this is your uh data that you perform
+now in instead of even though it's a
+live connection you can still go to the
+data menu here and you can click on
+Create and extract a data which will
+create a subset all right which will
+create a subset for you where you can
+create this data and you can provide the
+different fields wherein you can select
+what you want to filter whether you want
+to add a specific filter to your field
+whether you want to specify the
+aggregation data for the visible
+Dimensions this is where you can select
+the option for the measures to be
+aggregated uh the default instead of
+using the default uh what is the kind of
+aggregation that you want to use so this
+can allow you to minimize the size of
+your file as well and increase your
+performance you can click on aggregation
+and you want to roll up the dates to
+your to quarter to month you can select
+on the aggregation
+the number of rows that you want to
+allow in terms of the incremental fetch
+or you want to provide
+the incremental sets for all rows or
+just the top particular selected rows so
+you can select on that particular option
+once you've specified all these
+detailings you can then click on extract
+and that's going to uh save the
+subsequent uh file in the location that
+you have saved in terms of the extract
+and it will save up and extract for you
+all right so when you click on extract
+it will ask you for a substitute
+location of where you want to save it
+there is a customs query that we had
+used and let's say if you save it on the
+desktop itself you can see the save time
+which is a DOT pde which is a Tableau
+Data extract and the next time you can
+start working using these data extracts
+and you can start performing where you
+do not need to then have your custom SQL
+written in or any other detailing you
+can simply use the extract and start
+working on it all right you can actually
+uh restrict the size and improve the
+performance and you can perform data
+extract from these as well all right
+foreign
+menu option here you have the option to
+replace your particular data source so
+let's say you have your uh option where
+you want to uh perform of or incremental
+sets then you can replace the data you
+can upgrade it or for that matter you
+can go to this particular uh table you
+can refresh your data with the uh
+connection where you have the additional
+refresh data you can view your data you
+can duplicate it rename it we uh just
+discuss how we can create the extract
+data options as well so that's how you
+can perform and see and and have an
+extract
+of your data so that was uh using your
+data extracts
+now uh you can also write custom SQL so
+we've discussed that let me take you
+back to the presentation slide and have
+a recap so here this is the window that
+we saw in terms of the extract where you
+can add in the qualifications where you
+can narrow down your data even more
+further you can select an incremental
+search whether you want it for all the
+rows or limit the number of rows to be
+included in that particular extract uh
+then we also saw that how we could write
+a custom SQL we could open it in a
+Legacy Collection that uh helped us to
+open up a custom SQL window where we can
+write down the SQL with the exact data
+that we want to analyze this can again
+help us in improving the query
+performances where we can write down and
+provide uh an optimized query against
+our data that we want to use
+okay uh in terms of the supported data
+sources a lot of you all had questions
+what kind of data sources are supported
+now Tableau desktop is uh supporting the
+uh it determines uh the support
+depending on the kind of license that
+you have purchased all right so only
+when you have the required license it
+will support the different data source
+types and you have a personal Edition
+which provides you and allows you to uh
+use the support for a lot of databases
+uh but it is the professional Edition
+that provides you additional database
+options that you can connect to so data
+such as text files access files Excel
+sheets uh and so on these can be
+connected through the personal editions
+while in terms of a professional Edition
+the professional license this is where
+you can connect other than the other
+than the personal editions you can
+connect to the personal uh additional
+databases like your Oracle SQL and you
+can connect to certain more additional
+connections here which is supported 40
+plus data connections which is supported
+in the professional Edition all right so
+that's how you can connect to these
+different connections now
+also along with that once you have your
+server that comes into picture uh What A
+Servo does is it provides you a code
+Ross authentication which is a supported
+trusted authentication or that it uses
+in terms of your single sign-on all
+right so what it does is in this case is
+that uh as you can see it is a protocol
+that is provided to trust the
+authentication between your machine
+and that's how uh it uses a third-party
+network service called as the KDC the
+key distribution center which provides a
+secure connection between your desktop
+and the servo machine and this is
+supported based on the Kerberos
+authentication all right and that's
+where you can it handles in it uses only
+one user authentication the permissions
+and the access control uh in such cases
+like the workbooks uh is is going to be
+now these the workbooks and extracts
+will not be handled by Squadron but uh
+the permissions and access control those
+are the things those are the detailing
+that for Ross would be handling in terms
+of your data connection
+all right so basically if your taboo
+server has a code block enabled uh on
+your machine with a valid active
+directory credentials then what Tableau
+does is it connects to your server and
+it completely skips the steps of
+authenticating so in case let me take
+you to the environment
+you're in the environment you can see
+the server option and in this you have
+the published workbook now let's say
+when you want to you've created your
+workbook and you want to publish it onto
+your server now this is where it asks
+you to connect to the server here it
+asks you to provide the credentials and
+then based on that it then asks you once
+you've connected to let's say you
+connected to your server it is then
+going to ask you a sign on for that
+particular configuration now if you have
+a for growth environment which is
+activated then it's going to skip these
+basic steps here and it will directly
+allow you to connect and Skip these
+connection uh that comes in in between
+so that is what is called Ross
+Authentication
+right so it's a single sign-on method
+and once you have that enabled then you
+can make use of these you can you need
+to configure your Tableau server with
+these configurations all right so it's a
+three-way Authentication Protocol
+now how this works is a mechanism of
+mutual authentication between the client
+and the server is provided with the
+corbos authentication so when the Hugo
+user logs into the directory it directly
+asks for the credentials which are
+authenticated by full block and once
+this is authenticated a ticket is
+generated and sent to the user's
+computer and then when the user tries to
+connect to the Tableau server from the
+desktop or the web browser the server or
+the Tableau server authenticates the
+user and it directly allows us to
+perform now this mechanism is provided
+before the network connection is opened
+up between the client and the server
+right
+so how does it work in terms of a single
+sign-on how does it support it is it
+supports a single sign-on option wherein
+you have the server configuration and in
+this you have a core blocks tab that you
+can uh Define enabling the single
+sign-on options in terms of the
+environment where you can connect uh
+individually you can connect with a
+single sign-on to connect to the server
+from your desktop or the web browser all
+right in terms of trying to optimizing
+your query
+now how can you optimize your query W
+adopts various query optimization
+techniques to improve the query
+performance all right so what it does is
+it it provides parallel query where it
+improves the performance speed of the
+dashboard by performing and providing a
+capability of executing a parallel query
+so in this case what happens is it
+executes more queries at the same time
+it is independent uh queries that start
+at the same time and hence they are
+faster and improve the performance so
+this is what Tableau does it provides a
+parallel query next is it has the query
+Fusion in this what it does is Tableau
+has the ability to reduce any kind of
+complex or large number of queries into
+a pure simple one so that's how it again
+optimizes your performance all right and
+then it also has external query caching
+in this it quickens up the process of
+optimizing your data by processing it
+into a cache all right so that uh it
+does not need to go and hit in the
+warehouse every time that you require a
+particular data so this is possible with
+the external query crashing so Tableau
+adopts these various uh methods it also
+has a data engine vectorization wherein
+it has a in memory analytics column and
+it's a faster query which helps in
+reducing the extract size and creation
+time so based on these that's how it can
+improve the performance and that's how
+it optimizes these techniques and
+Tableau handles and takes care of each
+of these so it performs The Parallel
+query by phone it uses a particular
+query faction which is short it does not
+uh it shortens up all the queries the
+external query caching that it uses and
+also provides a data engine
+vectorization where it makes this even
+more quicker and faster
+now in order to Quicken the process of
+your loading of data what Tableau does
+is it creates a saves a shadow extract
+file on its own all right what it does
+is uh in the repository for you to load
+your data faster other than you creating
+an extract it takes up the content of a
+shadow extract in your repository file
+and it saves it up as a shadow while
+you're working on the workbook all right
+and that's where then when you're
+creating and working uh based on the
+Legacy non Legacy excels or text files
+or statistical file it creates a shadow
+extract file automatically wherever you
+have your repository also if you're an
+aspiring data analyst looking for online
+training and certifications from
+prestigious universities and in
+collaboration with leading experts then
+search no more simply learn Sports as
+your program in data analysis from
+Purdue University in collaboration with
+IBM should be your right choice for more
+details use the link in the description
+box below and with that in mind over to
+our training experts so in case when
+you're working on something what it does
+is in your repository folder all right
+where you have your repository which is
+in my documents in the data sources you
+can you will be able to see that it
+provides you a particular
+uh extract that is or Shadow extract
+that's been created and you can see that
+uh it it creates a shadow extract right
+there where you can make use of all
+right or in the background so this is
+done automatically by Tableau to Quicken
+up the process this is something that
+you do not need to handle uh by default
+this uh the folder there is a folder
+that gets created uh when you have a
+proper licensed version then you will
+see that in the repository folder you
+will have a shadow extract folder and uh
+based on that that is how uh you will
+see that at least the first five at
+least the top five Shadow extracts will
+be uh save with the dot DT TTD extension
+and that's how it uses and replaces it
+replaces the oldest one so when you have
+a license version in that case then
+that's when you will be able to see this
+extract folder and uh this is when it
+quickens up the entire process let me
+begin with the next topic which is
+calculation all right now in terms of
+calculations uh these are pretty much
+sure these help us in terms of
+understanding in terms of creating an
+extractful meaningful result of our data
+all right so sometimes it's pretty much
+necessary that we make use of calculated
+fees now you've already seen that I've
+been making use of we created the ship
+to date and I created various
+calculations and I've been mentioning
+that uh you know I'm going to discuss
+these in detail in the next topic when
+we have like we created the primary
+table the secondary table I showed you
+the quick table calculation so you're
+already pretty much aware of how I was
+using them but let us understand these
+in detail now all right so let me begin
+at the end of this session in terms of
+when we complete this topic you are
+going to understand how you can make use
+of strings dates logical as well as
+arithmetic calculations how you can work
+with different aggregation options how
+you can make use of the grand totals and
+subtotals the uh quick stable
+calculations which are inbuilt by
+Tableau how you can create automatic and
+custom splits
+discovering the ad hoc analytics which
+is offered by Tableau and how you can
+perform the LOD that is level of details
+calculation all right so let's begin
+with the very first topic how you can
+work with strings dates logical and
+arithmetic calculations wherein you can
+create a completely new field which is
+not present as part of your underlying
+data you can actually create that using
+a specific formula there are functions
+and operators provided so you can use a
+string all right you can use the date
+you can use logical operators or
+arithmetic calculations and based on
+that you can then apply certain
+functions and operators and finally
+create a calculation so you can create
+these four kinds of calculation the
+arithmetic take string and logical ones
+all right so let us understand and
+explore how we can use how Tableau
+provides us various built-in functions
+wherein we can use a calculated field
+and create an arithmetic calculation so
+we've seen an example where I created a
+profit margin or a profit ratio in our
+earlier sizes in our earlier
+demonstration wherein you can use let's
+say when you want to create the profit
+ratio we use the sum of profit divided
+by sum of sales so that's how we created
+an arithmetic calculation similarly we
+can create a new string calculations all
+right so I'm going to show you an
+example of each of these uh and then we
+can also we saw right now I created the
+days to ship in the earlier example for
+one of our views wherein I use the date
+calculation where we created the date
+and we will also make use of one of
+these logical calculations to see and
+understand how we can make use of the
+these are the logical calculation
+operators and functions and make use of
+these calculations so uh we have a
+scenario here so before that let me move
+on to our Tableau environment here right
+and um
+let me start showing you one of the
+examples of each that we can use in
+terms of creating them all right
+and in here let me quickly create one
+simple view so I'm going to add in so
+I'm going to add in my state screw rolls
+and I'm going to add sales to my columns
+and quickly create one bar chart here
+all right
+foreign
+States here all right but I also want to
+know the count of distinct items all
+right so in this case what I'm going to
+do is let me have my product name
+right because I want to know the count
+of distinct items I'm going to right
+click on the product name here and I'm
+going to then drag and drop this to the
+columns over here or right onto the
+column section now because I've selected
+the right click option and then Dragged
+In dragged and dropped in the product
+name or Dimension onto the column it
+opens up the drop field as to how I want
+to use it whether I want to use since I
+want to use a distinct field in
+analyzing all right it's opened up this
+particular window of whether I want to
+use the count product name or account
+distinct product name all right so I'm
+going to select the count distinct
+because we want to distinctly analyze
+the sounds of the items all right and
+click on OK
+all right uh what are aggregation
+functions aggregation functions that's
+the sum the average these are the
+different aggregation functions so right
+now the basic default is sum all right
+so it's summing up the measure whatever
+measure we've selected that's the
+aggregation function so whether you want
+to sum it up you want to average it out
+you want to use median count minimum
+maximum these are all the inbuilt
+aggregation functions provided by
+tableau or then you can also use the
+aggregation functions when you're using
+calculated C is beyond the ones provided
+so those are aggregation functions
+uh yes we have a bar chart I'm going to
+still analyze and show these details to
+you further in terms of aggregation so
+what I did was instead of just using the
+product name as it is I've used account
+distinct all right uh could you please
+drag and drop the product name or you
+want me to show that to you once again
+Shiva yes I'm gonna take this off my uh
+columns here now when I want to add my
+product name if I directly drag and drop
+it onto the columns it's just going to
+add up the details asking me how I want
+to use it as a dimension now that's not
+what I want to do because as per the
+analysis I want to I want the count of
+distinct items right so for that I'm
+going to Simply right click on product
+name and then I'm going to drag and drop
+the product name onto the column so in
+that it's going to then ask me what is
+the aggregation I want to use on my
+dimension and I want to use the count
+distance you can see count product name
+and count distinct product name so I'm
+selecting the second option and clicking
+on OK
+now I want to see the CH score item sold
+and this particular field is not
+available in my data set so what I'm
+going to do is I'm going to create uh
+one using my calculated field because I
+want to see these scales for item all
+right so let me uh right click on my
+sales job all right in the database one
+way of doing it is you can right click
+on the drop down you have the option of
+clicking on create a calculated field
+all right for that specific field or in
+the data pane in the drop down here it
+says create calculated field okay you
+can select either option when you select
+the drop down for you from here it's
+blank and you'll have to input the
+formula when you select a particular
+field and do it then in that case it
+opens up and adds in the field by
+default wherein then you can specify the
+functions and operators so let me
+specify the arithmetic calculation here
+so uh the first type that I'm showing
+you the very first option in terms of
+calculator see the arithmetic
+calculation all right okay
+so let's have our
+sum of sales
+and
+I'm going to divide this because I want
+to know CS or item sold now that is the
+reason I've created the count distinct
+product name here so Dexter when you
+mentioned using two bars the only reason
+I did that was right now I'm just trying
+to create account product name and once
+I add in the details I'm then going to
+replace the particular uh view from it
+all right so I'm going to divide this
+with the
+counts
+product name
+all right so that's how we are creating
+our sales for item calculation using the
+arithmetic calculation method sales for
+iTunes so I'm dividing the sales based
+on the count distance of the product
+name all right
+and let me click on OK
+and with that you know in the measure we
+have a new measure that's added up which
+is the sales score item this is this
+particular calculated field I'm going to
+place it is getting placed in the
+measures directly because it's returning
+a particular number right the numerical
+value and hence is placed in measures
+now let me add my sales score item into
+the columns so I'm going to replace my
+account product name here all right
+foreign
+on a distinct basis all right and I
+cannot change the aggregation functions
+here so notice earlier when I specified
+the default function is come we can
+change these aggregation functions for a
+particular measure from the inbuilt ones
+or we can specify it as a calculated
+field now in this case it does not give
+us any option to change the aggregation
+function it shows it's aggregated
+already because it's a calculated field
+it's taking in the aggregation as we
+specified in the in the arithmetic
+calculation
+all right so that was your example of
+having your calculated arithmetic
+calculated field
+so here we can see the sales for item
+for each state
+right this kind of an example is an
+arithmetic calculation
+great so let's move on now we've already
+seen these covered up before Skype which
+was arithmetic calculation now let me
+show you an example of how we can use
+calculated fields and create a string
+calculation all right so let's say we
+want to analyze the customers beginning
+with the name f or right the one that's
+Illustrated in the in the slide here
+which says that we will be analyzing the
+customers beginning with s okay so in
+this case let me add up my customer uh
+name into the rules
+right
+and let's have profits in the columns
+all right so we have customer names in
+rows and columns all right
+now what I'm going to do is let's
+consider that at this point of time we
+have a range we have a scrolling and we
+have a range of customer names here and
+I only let's say want to at this point
+of time let's say I want to develop and
+come up with a stream that all the
+customer names beginning with the word s
+all right they are entitled to getting
+uh or a discount all right we're coming
+up with a particular offer now it would
+be pretty difficult if I add up the
+customer name in the filter of your and
+then manually select the one with s
+right or I can also use the Wild Card
+wherein I'm using the option to select
+one with an S similarly I can also make
+use of the calculated field to achieve
+the same scenario
+so let's click on create calculated
+field let's name this as customer with s
+all right customer beginning with s and
+now we're going to provide now if I
+expand this Arrow here you can see there
+are a lot of functions provided by
+Tableau in terms of number of string
+dates type conversion logical aggregate
+user and table calculation and that's
+where uh based on that you can make use
+in selection and it also specifies the
+kind of requirement of any a small
+definition an example preview of it all
+right so in case it's difficult to
+remember all the aggregations it's
+difficult to understand how it's created
+you can simply click on the uh type and
+that's how you can come up with uh the
+definitions of these as well right so
+let's have the function starts with
+because we want all the customer names
+starting with
+and we wanted for customer name
+beginning with
+s
+now in terms of the calculation it's
+telling us there is a particular error
+so let's find out does that
+all right and now my calculation is
+valid I have my customers beginning with
+s all right I'm creating a calculator
+field and click on ok now this is going
+to bring in a string function so when I
+click on OK it adds up a Boolean logical
+to and false uh data type and it adds it
+up to the dimensions because it is
+related it is based on the string
+functions here for the customers all
+right so uh this is how we have a
+calculated key selected and let me this
+time add up the customers with s into
+the filter
+all right and now it gives me the option
+of true and false all right whether I
+want to include it whether it's true or
+false and let's say I'm going to say
+that I want to include that particular
+option with the customer name beginning
+with
+all right and we do not see data here
+let's just get what is the problem yeah
+this is excluding our data let's just
+give me a moment
+we have our customers let me quickly
+edit
+starts with customer name as
+and this is absolutely okay
+all right so we have the true and false
+option and we want it true as the
+customer's name beginning with s and
+click on OK and we now see a list of
+customers name that is beginning only
+with the letter N all right uh
+Jacqueline uh starts with customer name
+so this is how we can make use of the
+string as calculation all right
+next now let us see how we can make use
+of the date calculation now we've
+already performed this kind of a
+calculation so I'm going to explain uh
+in terms of the date calculation when we
+wrote in the days to ship what what each
+of it uh mental right when we wanted to
+analyze the difference
+uh yes it's going to be case sensitive
+in that case today you're absolutely
+right so uh in case if it's not a lower
+case it's not going to take in the
+function Tableau somehow has a case
+sensitivity and it only takes in a
+lowercase
+uh I saw that example to you so when
+you're saying that uh you know in in
+terms of the letter s it's not going to
+be case sensitive for the uh alphabet
+because you always think customer names
+beginning with the alphabet F in this
+case it's not but overall it's case
+sensitive I'll just show you that
+example in terms of the date
+calculations right away
+so going back on our Tableau sheet here
+we have the dates to ship that we've
+already created so I'm just going to
+click on edit now in this case uh if you
+notice the date difference uh what needs
+to be specified for a date difference is
+there are three parts to this all right
+so let's say now we wanted to analyze
+the number of days it took from for the
+order to get shipped all right so in our
+data set we already have the order date
+we have the ship date
+all right and we want to calculate how
+uh the number of days uh is required in
+terms of shipping the product so uh I've
+used in the date difference function and
+in this case then we need to use there
+are three input that comes into picture
+all right there are three cases here so
+the first one is wherein you want to
+specify what part what role is it going
+to play all right it's going to play the
+role of a day because I'm finding out on
+the basis of day you can add it as week
+month depending on the role that you
+want to play and then the difference
+between those two values that you want
+to subtract the difference that you want
+to have between these two so we have the
+auto date and ship date now if the same
+day you can see the calculation is valid
+now let me change this to day
+and you can see that it shows an error
+in the calculation so in this case it
+needs to be a lowercase that's when the
+case sensitivity is uh it takes an
+effect and it's going to throw in an
+error in case if you're going to write
+that right in terms of the first
+parameter all right uh it's not going to
+be case sensitive because you're always
+specifying the customer name here so
+you're picking up it from the customer
+name what is the letter alphabet that
+this letter should take up all right
+but in terms of the date shift to date
+calculation fees you need to it's case
+sensitive where it only works with lower
+cases because you're specifying what
+part is it going to play the day to ship
+uh what part when it's playing terms of
+the difference it's going to play the
+part of day
+all right so that's how you can create
+the days to ship and you can make use of
+the date functions and you can create a
+date calculations all right that's how
+we had the date to ship option and we
+can make use of it also it was not
+present in our data and we can analyze
+our entire data here in terms of
+creating the days to ship
+so that was your days to ship date
+calculation similarly then you have the
+logical calculation all right so I'm
+going to show you an example of uh how
+you can use the condition or a logical
+calculation and use them in terms
+different analysis so let me go back to
+our environment here let me create a new
+sheet
+now let's see let me give you a scenario
+here that we want to highlight all these
+subcategories that have sales of more
+than 100 000 all right so for that we're
+going to create a calculated field that
+will only specify the sales of
+subcategories of 100 000 and above so
+let's create the calculated field let's
+give it a name as sales kpi and now this
+is where we're going to provide logical
+functions and operators and let me enter
+the syntax so I'm saying if my sum of
+sales
+so with the bracket if my sum of sales
+is
+greater than
+a hundred thousand
+then
+hi
+as
+foreign
+yes it is and I'm going to now create a
+sales kpi so that I can highlight the
+subcategories having sales more than 100
+000 at high and low all right let me
+click on OK
+and now we have the sales kpi that's
+added up to the measures but we've used
+you can see uh although it's a measure
+it's showing the ABC icon here in terms
+of the data type because we have it as
+high and low measure zero all right so
+in terms of the expected let's say the
+expected output here and see how we can
+make use of it so I'm going to add in
+okay
+my
+subcategory
+into the columns and let me add my
+sales
+into
+my sales kpi into the room
+right and
+or rather I can add up or let me add
+sales to my roles all right and this is
+where now when I want to highlight uh
+that's how I can create the calculated
+field and add it up in the colors so
+that it can distinguish between high and
+low so I'm adding up the sales kpi into
+the colors and now we can distinguish
+that the kpi one which is about 100
+000 it's high or then low so these are
+the ones we can identify between high
+and low the alerts that we can make use
+of
+is it considering the order date minus
+ship date or ship date minus order date
+uh minus referring to minus uh one
+second let me just open up the ship date
+uh when you're saying
+uh it is ordered it minus the ship date
+right
+so that is what it's going to refer to
+because whatever is the order date minus
+the ship date that's how we're going to
+get the date difference right the dates
+took to ship
+excellent all right uh yes I am at sales
+kpi let me open that up in terms of
+editing if you want to edit that
+particular
+yes
+uh Delete uh you asked me to open up the
+Cs kpi there you are
+can we use a multiple condition uh in
+terms of multiple condition if you're
+saying that uh High average and moderate
+is that what you're saying like let's
+say you want to say that if uh sales is
+thousand then it should be high uh
+Airship sales is uh eight eighty
+thousand then it should be moderate or
+low then you can use the Airship
+operator that's how you can add up the
+Airship operator and make use of the the
+detailing that else if sales is uh
+greater than or less than 80 000 then
+create it as
+so you can use that multiple option now
+only thing is you need to use the lsip
+option then in this case
+yeah you can use multiple conditions
+like uh let's say let me quickly show
+that example to you
+so if you create a calculated field here
+uh you can use a case in which you can
+mention the East West or low right so
+you can use different kinds of examples
+and cases and scenarios where you can
+mention uh the different sales and
+budget that if my sales is so much then
+it should be you know that particular
+date or else you can use multiple
+functions that's not going to be a
+problem
+all right
+so this is going to be an example of
+your
+logical operator
+we have our next topic which is working
+with aggregation options all right now
+this again you've noticed a couple of
+times that by defaults we have our
+calculation wherein Tableau takes in the
+default calculation all right being the
+sum but uh you can change these
+aggregation functions you can see an
+entire list that Tableau provides to us
+right and that's how you can make use of
+these aggregated functions that is your
+uh whether you want to have a summation
+whether you want to have an average all
+right so there are different
+mathematical functions your that you can
+see and these each will produce a
+particular aggregated data all right so
+these are what are called your
+aggregation functions all right and
+these will help you perform the kind of
+aggregation the kind of calculation that
+you want to perform on that particular
+field so you can make use of these
+functions all right and
+so now understand one thing you can use
+uh Tableau to set up your aggregations
+only for measures in your relational
+data sources all right in terms of a
+multi-dimensional data source it
+contains the aggregated data already all
+right so it provides you these list of
+predefined aggregation floor as you can
+see so let's understand each of these
+functions now when it comes to an
+attribute all right in this case this is
+going to be returning the value of your
+expression which has a single value for
+that row all right so let's say let me
+move to the environment here to
+understand and explain what these
+particular functions are all right I'm
+going to pick up uh and discuss a few of
+them now let's say we have sales all
+right sales by default when we talk
+about
+the aggregation function so you need to
+right click and go to default properties
+and you have the aggregation option
+where you can see some it's set to
+default you can change these default
+properties to the aggregation that you
+wish to which are present here all right
+you can have an average you can have a
+median account a count distinct and then
+various other options present here right
+so when it comes to using an attribute
+all right or the absolute aggregation
+function as specified then in that case
+it's going to return the value all right
+of the expression as one particular
+value of the row okay so uh in this case
+it shows the field then changes to a
+text I can attribute where it ignores
+any kind of null value if it's present
+okay so you can basically make user page
+when you want to only pull in let's say
+values of all the rows uh which is
+otherwise displayed as a different uh
+different values in it okay so so that's
+when you can make use of it now that is
+not present here in this case as you can
+see as an app to do that comes in handy
+when you're using calculated Fields all
+right so let's say when you open up a
+calculator
+you will see you have the attribute
+which is termed as attr the attribute
+expression let's say we're saying the
+absolute of sales so you can notice it
+gives you the entire definition it
+Returns the value of the expression or
+if it only has a single value for all
+the rows in that group and in case if
+not then in that case it will display it
+as an asterisk sign so that's what it
+does it it's useful basically this
+aggregation is useful when you want to
+aggregate a particular Dimension all
+right let's say we have customer name we
+want to Aggregate and come on to the
+number the names are the total number of
+customers that you have so in that case
+it will only return single values of
+that row it's not a little otherwise
+just say as an asterisk so that's when
+this kind of a function comes in handy
+for us uh not that you cannot use it
+with the measures but just an example of
+the best use when you want to aggregate
+a particular Dimension and you want null
+values to be ignored you want to know
+the single values of all the rows then
+this particular uh aggregation a
+function is going to be helpful all
+right then in terms of your next one you
+have then you have Dimensions now these
+again will return all the unique values
+all right in your measures or Dimensions
+both so it's going to only bring in all
+the unique values here in this case and
+in terms of sum we are already aware in
+terms of average then you have median
+now this is again to do with it's going
+to return the median of the numbers in
+the measure then you have count and
+count distinct all right so count is
+going to ideally return the number of
+rows in your measure or Dimension and uh
+if that case null values are again going
+to be ignored but in terms of term
+distinct it's going to return the number
+of unique values so count will return
+all the values the number of values
+which are present but in terms of sound
+distinct it will return the unique
+values in a measure or Dimension all
+right so that's how you have various
+aggregation functions and to know
+details of each of these you can make
+use of the uh Tableau provides the
+details about each of these because your
+variousness you can see your various
+inbuilt functions there's an entire list
+of functions that you can make use of
+and uh anywhere you need to know
+additional details now these are the
+basic ones that you can see the inbuilt
+ones so if you want additional
+aggregation functions as well you can
+make use of these functions from the
+calculated field and each of these has
+its explanation provided but in terms of
+the basic usage one the ones that you
+can change it to default here's a basic
+list that tablet provides so it has uh
+additional functions as well but that's
+when you'll have to then open up the
+calculated field and make use of those
+functions
+so that was your aggregation function
+all right
+then comes in your brand totals and
+subtotals if again we're already aware
+we've seen this in our earlier examples
+that we are able to make use of our
+totaling option we are able to add in
+the grand totals as well as subtotals of
+the data wherein we can see the grid
+that is displaying the subtotals
+right you can see the grand total right
+here and you can see the subtotals for
+each category level as well and the
+grand total across every uh sub category
+for this particular category towards its
+particular Year all right now to enable
+your grand totals you can simply go to
+the analysis menu so you've seen that in
+our earlier examples as well and uh
+that's where you can go to the analysis
+totals and you can make use of and have
+your totals enabled so that's how you
+can have your total now coming on to a
+quick stable calculation let me now
+discuss on this because uh the other
+topics for recap that we've been
+performing now you've also seen that
+they were instances when I performed
+with table calculations all right so
+these are basically calculated Fields
+when we apply a particular cancellation
+at a data set level all right so Tableau
+provides certain functionalities it
+provides certain
+a functionalities here in terms of
+applying the calculation at your table
+level so as the name suggests table
+calculations it allows us to provide
+that kind of functionality whereas it
+computes the uh applied uh values all
+right in your entire table and this is
+basically dependent on the structure the
+table structure that you have in your
+view okay so that's how you can make use
+of table calculations and what tableau
+it provides some input functions which
+are usually uh in use it revises as an
+in-bit quick function where you do not
+have to input any kind of formulas in
+those functions you can simply click on
+those options and it's going to
+immediately compute the entire range
+specified that you're selecting all
+right so let's see one of the examples
+so I'm going to take you to the
+environment here
+and let's have our order date in columns
+let's have our sales and rules
+and let me just enable the labels as
+well all right so that's created a line
+view since it's a series over time uh so
+if you remember in the chart type the
+best uh example is to make use the best
+references to make use of a line graph
+and hence Tableau automatically creates
+a line chart here for us all right now
+we have the yearly sales as we can see
+all right now
+let me add sales again to the rows so
+what I'm going to do is we can see two
+uh sales calculations here so what I'm
+going to do is with the second
+calculation I'm going to in the drop
+down you have a quick table calculation
+consisting of all your detailed
+calculations here as you can see so you
+have these running totals so this is
+going to show you a cumulative total all
+right then you have the difference so
+this is in terms of showing you the
+entire difference about uh some absolute
+change between the measures that you
+have all right then you have the percent
+difference so this will give you
+difference in terms of a percent value
+all right it shows you the uh difference
+in terms of those options as a percent
+then you have percent of total so this
+is going to give you the values as a
+percent to the entire process so what is
+the contribution of each year in this
+case to the entire total uh that you
+have in terms of the contribution all
+right the sales then you have Brands so
+this is going to rank our values
+numerically we have percentile which is
+going to compute our values in a
+percentile manner we have moving average
+this is going to calculate the
+fluctuations in terms of identifying uh
+any long-term Trend all right then your
+today titles or then you have compound
+growth rates year over year all right so
+there are various such functions that
+you can see here which are provided by
+Tableau right now I'm going to change
+and uh use the percent of total all
+right so this is going to give us the
+values of the percent for every year
+that it is contributing towards the
+entire total what each year is
+contributing so let's click on percent
+to total
+and now we can see here the second sales
+Bill there is a calculation icon dose in
+terms of the triangle icon that you can
+see which says that is performed or
+table calculation on the second sales
+Bill all right
+uh so in that case we can now see the
+percent to sales for all the years what
+is the contribution all right so that
+was a quick table calculation where it
+allows us to apply based on our
+requirements the defined functions we
+can simply click and view those
+calculations instantly in our view all
+right and now in a lot of cases we might
+want to customize these calculations so
+that's when then you can have your
+additional table calculations that you
+can manually perform all right
+in terms of moving now uh when we're
+talking of moving average or any kind of
+moving function all right here let's say
+moving average but this is one of the
+calculations so it can be a moving
+average or any other calculation where
+is moving cancellations will ideally
+show us a fluctuation or fluctuations
+that we can identify in terms of Long
+Branch all right so that is what moving
+calculations are so we will see an
+example of this of what are moving
+calculations and that's how you'll be
+able to understand the difference of
+what these are right and again like I
+said to understand these in details we
+can also make use of the
+aggregation functions the calculator see
+where it can give us the entire
+detailing right so this was a quick
+example let me add this as a quick
+stable
+calculation
+now next as I mentioned these are in bit
+ones that we made use of but there are
+times where we might want to customize
+these tables all right so in this case
+let's have our order date back in
+columns let's have our sales in rows
+right we've again created a view let's
+have
+uh now in this case I'm not going to add
+in another pin I'm going to perform the
+calculation on the sales Bill itself
+that we have here right so you're on the
+sales pin now instead of quick table I'm
+going to select on ADD table calculation
+because we want to provide a customized
+one so if you've seen an example earlier
+when we wanted to build in a Pareto
+chart or other kind of charts where we
+made use the stable calculation right it
+calculated our data in terms of
+calculations across at the table level
+so let us understand how these
+calculations come into picture how they
+compute the values of the table level
+all right so these are the drop downs
+again provided in terms of the functions
+the computations that we want to make
+use of and apply to the rows in our
+database to calculate our values all
+right so let's say I'm going to select
+running total this time all right
+and instead of the uh how do I want to
+summarize so I want these running total
+and you're again whether I want it as a
+sum as an average a minimum or a maximum
+let's say I'm going to pick up average
+so what we're doing is we're going to be
+seeing our sales as an average running
+total Year all right and in terms of
+running along whether you want it across
+the table a particular cell all right or
+a particular field in this case so we
+can uh specify now since we have ordered
+it and our view is giving us the option
+to select from the available view so
+let's have it running uh across and
+let's have it across the order date all
+right so that's how we can select each
+of these different uh requirements and
+compute the value that we want to
+perform
+right so that's how we can have these
+computings that are taking place right
+so
+when you talk of table across then in
+this case it computes the entire table
+it will compute the entire table across
+here that we can see in terms of uh the
+tables here which are present in our
+view all right when we talk about uh
+calculating in terms of these cells all
+right then in that case it's going to
+pick up uh the individual cells present
+in our room all right so in this we are
+addressing to the individual cells which
+are present now uh had I changed this to
+a table view then that's when we would
+specifically talk about let's say we
+were at a year level and we had
+aggregated this at the quarter level or
+let me just change that option and
+social so that or you'll get a better
+idea let's have this at a quarter level
+all right and let's say let me add in
+region as well
+now in this case we would be talking
+about individual when we talk of table
+calculations happening at 10 levels
+we're talking of an individual level all
+right so we are talking of four 2011 for
+the central region for quarter one all
+right so I wanted to address individual
+sales and perform the calculations right
+so that is what would be the cell level
+our then I can select an individual
+field so that's when we were selecting
+the order date and in that case we could
+select a particular field and mention
+that it needs to compute at that
+particular field that I'm specifying all
+right so I'm just going to undo and go
+back to our previous View where we were
+performing our table calculation and we
+selected the running total
+we had our summation summarizing at
+average and we selected a particular
+field all right and let's click on OK
+let me enable the data label so your now
+we can see a calculation where it's
+performing or running average of sales
+year for us now all right now in the
+same case let's say we want to also have
+a secondary now that was our basic
+calculation now let's say I want to
+perform another calculation I want to
+apply it to this particular table so
+then we can also apply a secondary
+calculation in that case wherein we can
+combine two calculations and we can
+perform one on one of these calculations
+so let me on the drop down you have the
+option of edit table calculation of
+clearance so let's click on edit and
+this is where you can see the checkbox
+that says perform a secondary
+calculation on the result so what have
+you will do is it is first calculate
+this particular uh primary calculation
+that you have all right the basic
+calculation basic table calculation that
+you're providing once you compute this
+particular calculation it will then
+perform a secondary calculation a second
+calculation on this particular result
+all right so that's how it's going to
+then compute and combine two
+calculations in this case so in the
+second example let's say let me specify
+[Music]
+um
+let's have the difference from let's
+keep it to a basic so the first we want
+it as the running total once it's given
+us the average running total I then
+wanted to perform a secondary
+calculation on the running average of
+sales where I want to know the
+difference from in terms of what is the
+calculation that I want it to provide
+all right so let's again keep it at the
+level of
+um let's select order date again all
+right so again I wanted to perform at a
+particular field and what is the level
+that I want to specify so you're in this
+case since we are mentioning the order
+date do I want it at the deepest level
+all right the granular level or do I
+want to specify it at a particular
+yearly quarterly monthly or daily level
+or the entire aggregate of the order
+date so let's say I'm going to specify
+at a yearly level that I wanted to
+select all right and let's click on OK
+so it's now performed a secondary
+calculation based on the previous one
+and that's how we can make use this is
+useful when we want to perform our
+calculations to our data in the tables
+and instead of a single calculation
+there might be times there are instances
+where we might want to combine two
+calculations so that's how you can make
+use of the basic and the calculations in
+terms of having a secondary one as well
+so let's say uh you want to calculate
+the year-to-date growth all right and
+once you have the year-to-date growth
+then based on that you might want to
+then compute that once I have that
+calculation I should get the percent
+difference for each total in the
+previous year so then that's how you can
+apply and make use of your secondary
+calculations all right now you can also
+customize these calculations all right
+so we have the option as I mentioned you
+can go to the edit selection and that's
+where you can edit your tables and have
+the editing provided
+and we have a scenario here now
+company and they want to increase their
+market share
+all right and uh in this case they want
+to uh ensure that they're having higher
+profit margins all right so what uh what
+Jennifer needs to do is she needs to
+ensure her company's sustainability and
+then she needs to identify the
+opportunity for business and how she can
+make the most of it right
+right for this she needs to determine
+these sales variants for your over your
+based on a quarterly breakdown so let us
+achieve this particular scenario now to
+achieve these as Jennifer what is
+Jennifer going to require to do all
+right so let's pause quickly on our
+notepad add in our requirements so for
+us to achieve this particular scenario
+for Jennifer yo what we're going to be
+doing is firstly we will create now
+since we are going to talk about uh year
+over year we are talking about time
+based analysis we will create a line
+chart right so we will have a line chart
+in terms of our sales based on order
+level
+next tends to further proceed with the
+scenario now we need it at a quarterly
+breakdown so we are going to drill and
+we're going to drill out of quarterly
+levels
+foreign
+calculation because we want to know the
+sales variance for your over yours
+growth all right so hence we will create
+a table calculation
+and this is going to be in case of
+difference because we want to know the
+the difference the variance for your
+over your growth for our sales
+all right so let's achieve this
+particular scenario going to the
+environment and let's begin with our
+analysis here all right
+let me have my order date as mentioned
+at a yearly level let's have our sales
+all right and that is or we that creates
+our line chart we are done next we need
+to drill at a quarterly level all right
+so let's drill our data and have a
+quarter day levels
+right and finally then let us now have
+now we need to perform we can see the
+sales and now we need to know the
+variance the difference all right we
+want to know uh we want to create a
+table calculation with difference so I'm
+going to add in another instance of
+sales here to our rows on which we
+perform our calculations all right and
+and now I'm going to make use of the
+quick stable cancellation because we
+want to know the variance the difference
+for year over year right so in this case
+uh I've dragged my second pill and let's
+have it at our
+uh the difference level here all right
+so we can see the difference now that is
+one way but if you notice it's still a
+little difficult in case of judging the
+entire view here all right so what I'm
+going to do is uh to make of you better
+let's have our sales fill all right from
+the brochures let's add it up to the
+color shell so what it's going to do is
+on the existing sales view is going to
+identify and distinguish between the
+colors for the difference that we have
+and that's how we'll be able to identify
+the difference so let me just drag and
+drop it and we can now see our view
+where we can identify our sales and the
+difference which is based on its color
+the red the darker the size the
+difference of sales is our analysis
+yourself that it's in minus all right
+and in terms of a Greener so differences
+on a higher side with cream right so
+that's how when you hover as well at a
+quarterly level you can see that for
+2007 we we have a particular sales and
+its difference that we can see all right
+in terms of the previous table
+so that's how you can make use of your
+calculations and Achieve our scenario so
+let's name this as sales analysis right
+so that's how we are able to achieve and
+have these sales variants of year over
+year that we can notice the growth and
+based on that we saw the quarterly
+breakdown as well where she can now
+identify the growth opportunities for
+business right so that's how we can make
+use of table calculations
+would you move ahead with understanding
+what are box plots all right so in terms
+of Doc plots now these are used when we
+want to compare a set of data all right
+and when we want to ideally analyze a
+distribution of data which is
+highlighted up to five key values all
+right within our data so that's a box
+plot what it usually is also known as a
+box and whisker plot all right and it
+helps us in seeing the distribution of
+the values along the axis all right so
+the boxes here that you can see please
+indicate the middle fifty percent of our
+data all right and uh
+then we can also configure you can see
+these this curves or lines as you can
+see these these called these lines and
+uh these display all the points within
+uh 1.5 percent of the range so let me
+show that to you all each of these in uh
+the slides here so there are five key
+values that is represented in the box
+plot the first it shows us the minimum
+value all right second it shows us the
+25 percent quartile all right then it
+shows us the median
+the 75 quartile
+at the maximum value all right so that's
+how it highlights up to five key values
+within the data all right so we have the
+Shaded box all right in the example that
+uh
+denote these five values let me go back
+on the previous slide here so the boxes
+here is what is representing over here
+you can see these are representing the
+50 of our data all right so these shaded
+boxes the the light and dark gray these
+are called quartiles all right so namely
+we have the upper quartile and lower
+quartile so the lower quartile this
+starts at 25 of the data set and the
+upper quartile it starts at 75 percent
+of our data set all right so these two
+boxes these contain the middle fifty
+percent of our data all right and the
+lines here these are called your viscous
+this can be configured to stretch to
+your uh maximum extent of data or within
+a 1.5 times of the interquartile range
+that is all the points within a 1.5
+percent is what you can make use of all
+right so this is where uh we understood
+so we have the minimum values all right
+we have these 25 percent
+that is 25 of the data set the median
+the 75 quartile of our data set
+and then the maximum value so let's see
+how we can create a box plot I'm
+switching to the Tableau environment
+here adding in a new sheet
+and
+so let me have my
+segments added in to the columns
+then we have my profits added up to
+the rules
+and let me have my
+Auto dates
+into the details section
+right
+let me ensure that
+this is a discrete date value
+now let me if I click on the access
+viewer and say let me add a reference
+line
+and this is where when I right click on
+my Axis I have the options now we will
+be discussing all these uh lines in
+terms of the topic statistics when we
+try and understand reference lines bands
+and distribution but to create a box
+plot we can click right click on the
+axis and uh go on to the reference line
+and choose the box plot option now this
+is where you can specify the whisker
+extending to your within the data within
+the 1.5 percent or the maximum extent of
+the data right the minimum and at
+maximum that we were talking about the
+style of how you want it to look like
+The Spill color let's uh pick up a red
+color all right the borders and how you
+want your whiskers the thickness the
+lines that you want it to be and click
+on OK
+so with that it's created a desktop box
+plot here for us it's providing us with
+the viscose and the lines
+in terms of the segments here all right
+uh let's say you can also do this in
+terms of having your particular analysis
+uh creating these box plots by adding
+some more additional data and detailing
+as well all right let me show you uh one
+more example of a box plot all right
+this is a very simple one so it's pretty
+much where we're only trying to analyze
+based on the uh segments you are in the
+profits where it's created a box plot
+and giving us each of these segments and
+the profits for its particular year now
+let me show you one more example of a
+box plot to understand the five values
+that it picks up all right so let's have
+our segment added up to the columns and
+let's have let's use discounts this time
+so what we're going to do is I'm going
+to create a box plot view that's going
+to show us the discount based on our
+segments and regions all right so let's
+add in the discount onto the rules all
+right
+uh let me have my
+region as well so
+they have region and let me have this
+added up to the column right here next
+to the segment so it created a nested
+level again based on every segment for
+its own region what is the discount here
+all right so we have two levels of
+hierarchies of our Dimension right from
+our left to right within every region
+that you can see you're listed
+now let me go to the show me option and
+let's change this now another way of
+changing that was we can also go to the
+show me option and click on the box and
+disco plot view here all right so one
+way was I right click and I selected the
+reference lines and I selected the box
+plot option or another way of doing it
+is click on the show me option and click
+on the viscore and box plot or charts
+that you have here
+right so your now this has given us the
+entire view displaying a box plot where
+we can see uh all the marks here in each
+box that has been plotted up so it
+assigned the regions here uh as you can
+see in terms we can see the regions and
+uh in the columns from The Mark shelf
+right remember that there would be
+regions which is placed in the columns
+as soon as we selected on box plot it
+automatically assigned a region on the
+columns itself here in the marks card it
+reassigned it let me just undo this
+option so this is how we had a nisted
+bar graph created when I go to the show
+me option and click on box plots notice
+that region from The Columns will get
+added up to the mark section here okay
+there you go you can see that it's got
+added up here so basically when we
+change it from a bar or from any chart
+type to a box plot then Tableau is
+determining uh the individual marks in
+the plot that it should represent so
+it's determining that the Mark here that
+we have should be represented based on
+region all right so well uh you can
+change that as well so let's have our
+region dragged back onto our column all
+right so we want it at a regional level
+here and uh based on uh for every
+segments in every region now we can see
+a horizontal line that is created a
+flattened box plot here in this case all
+right which is uh the reason being that
+it's right now giving us a value based
+on a single Mark all right now box plot
+as the description as the definition
+says it is intended to show us the
+distribution of our data right now
+What's Happening Here is it is
+aggregating the entire data and the
+current View and you can see a flattened
+view of flattened
+so we want to disaggregate our measures
+in that matter we want we want to uh we
+want to have our aggregation uh level
+changed and disaggregate our data where
+it can give us an entire distribution of
+our data so here in the analysis menu
+click on the analysis menu you can see
+aggregated measures that's been enabled
+I'm going to uncheck this option and by
+this I'm going to turn off the
+aggregation all right so I'm going to
+disaggregate the measures here so that
+we can now see that the data which has
+is at a disaggregated level wherein we
+can Now understand each of these uh
+marks instead of a single Mark we are
+able to view each of the marks for every
+column in a range of the data source
+that we have all right now to uh see and
+View and understand some additional
+information here to make this more
+readable make this more appealing what
+I'm going to do is I'm going to swap our
+axis here and I'm going to make this
+into a horizontal view all right so that
+it's going to be easier see it's going
+to be easier for us to compare every
+segment the region for every segment uh
+what are the discounts that have been
+offered all right now let me let's add
+some additional analysis to this as well
+so at the bottom axis we have the
+discount here I'm going to Simply go on
+to the edit axis that we have we have
+the option to edit the reference lines
+you can see the reference lines and
+automatically there's a box plot that
+has been selected so we can edit these
+reference lines and change the entire
+banding and the colors as you remember
+so let's select something more
+interesting from a library let's select
+a red one or you can also select on the
+transparency level so let's add up the
+transparency level to let's say 80 all
+right uh let's stick to the borders as
+it is and the viscous as uh uh the
+default and click on OK right now with
+that we can see that the discount is
+pretty much the same all right the
+discount is pretty much the same with uh
+for all the segments so if you notice in
+terms of whenever we're seeing all the
+best all right the discount are pretty
+much the same for all the segments right
+also if you're an aspiring data analyst
+looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simply learn Sports Azure program in
+data analysis from for your University
+in collaboration with IBM should be your
+right choice for more details use the
+link in the description box below and
+with that in mind over to our training
+experts
+so that is one analysis that we can see
+also we can see that the interquartile
+range that is the 25 to the 75 percent
+of the discount we have the central
+region and that is showing us the
+highest range all right so uh this is
+how we're able to identify and uh see
+the highest ranges here so each of it is
+representing the entire detailing that
+you can see here so the box is here all
+right these boxes are representing the
+50 of our data then again these are
+divided as the 2.25 quartile and 75
+quartile and then we have the visco
+values which are configured based on the
+maximum and minimum the reference lines
+that we have the maximum uh are the
+maximum and the minimum values in terms
+of the interquartile greens all right so
+that is your box plot so the box here
+the one in the center these are
+indicating the 50 of the data and again
+you can see two quartiles two
+distributions of the data all right and
+then the whiskers which is showing us
+the quartiles in terms of the minimum
+maximum of 1.5
+so let me take you back to the
+presentation slides so we have the
+maximum value
+we have
+the 75 quartile that we saw
+the median the 25 and the minimum value
+so that was an example of box plot
+now formatting as we already know as we
+are aware is a very important part of
+both our analysis as well as our
+presentation all right everything that
+you see that you view in your sheet you
+want to ensure that there is a proper
+formatting applied that are shading
+fonts lines and borders all of this
+makes a lot of difference when it comes
+to how you want to present and view your
+data all right so it is pretty important
+and hence in this particular chapter
+we're going to be discussing on
+different formatting options that are
+available how we can format our
+visualizations how we can make use of
+the colors the uh worksheet themes in
+terms of resizing in terms of working
+with labels the mark sites all right and
+we're also going to discuss on
+annotations on how we can make use of
+annotations and annotate a particular
+value right so let us explore what I'm
+gonna do is in this particular topic as
+I have already mentioned we will
+describe and understand what is spatial
+analysis someone had also raised a
+concern on day one as to what spatial
+analysis was so I'm gonna discuss that
+topic right away and that's going to
+resolve and fall out on your question
+then we are also going to understand how
+we can make use of titles captions and
+Tool tips and how we can format access
+as well as how we can format our views
+and results as well as use Mark labels
+and annotations all right so let me
+directly move on uh before I proceed
+here
+uh let me now move to the Tableau
+environment here and click on the new
+sheet now talking about spatial analysis
+facial analysis is what is related to
+your Geographic data all right so
+Tableau works now how it works with
+fields in a special manner Tableau also
+also with the geographic fields in a
+special your Nano it gives spatial data
+some special importance it automatically
+assigns Geographic roles to any data
+that you have in your data source so if
+you notice I had discussed this
+yesterday write in your data source it
+can identify if there is any kind of
+data related to geography it
+automatically assigns it with a
+geographic role all right so that is the
+specialty of Tableau in case it is not
+able to identify in terms of the uh
+analysis whether it is a geographic role
+or not then you also still have the
+option wherein you can click on the data
+source and describe the kind of
+geographic role that you want to assign
+all right you can customize the role as
+well whether this particular country and
+option is or area code is a city is a
+county is a state Province right so you
+have the option so you can keep it to
+default and the data type as well so you
+can customize on the spatial data and
+something very interesting thing about
+Tableau for that matter with the related
+to spatial data Geographic data is let
+me take you on to the sheet and
+regarding mappings all right we're going
+to have a detailed discussion on
+maths and how we can create Maps but uh
+let me since we're talking about facial
+analysis and since I mentioned it
+automatically identifies Geographic data
+let me show you how it treats the
+geographic data so URL you can see we
+have the country all right and we can
+see it is already identified it as a
+geographic data provided a globe sign
+when I double click on country
+all right what Tableau does it it
+automatically as you saw adds in the
+longitude and the latitude for the
+country it automatically generates the
+latitude and longitude all right and
+that's how you can see the map now these
+are different layers and WMS maps that
+you can make use of so uh we are going
+to discuss this pretty much in detail
+when we come on to the maps chapter
+but as you saw the moment I double
+clicked on Country it automatically
+added in the land longitude and the
+latitude into the columns in rows so
+that's how Tableau treats uh spatial
+data that's how it works with Geographic
+data all right so coming on to
+discussing with the formatting I'm going
+to take a new sheet here now formatting
+as I mentioned there are various ways
+various types of formatting that you can
+perform all right so uh let's let's talk
+on the most uh common ones in terms of
+how you can open the formatting pane in
+the very first place uh the formatting
+option that you have all right so for
+that let me quickly create one view for
+you all let's have category and let's
+have sales
+all right and now you can see that you
+have the format menu pairing when you
+click on the format menu it gives you
+all the options whether you want to
+format the fonts you want to format the
+alignments the shadings the borders the
+lines if you want to format a reference
+line if it's in your view drop line
+annotations titles and captions scale
+labels so these are all the options in
+terms of how you want to format so this
+is the entire uh window these are the
+entire options that I'm going to be
+discussing about so in terms of how to
+enable the format say in the very first
+place is that the moment you click on a
+format here all right and you select a
+particular option let's say I'm going to
+say I'm going to format the font in the
+view all right because of that notice
+what happened did you see attention the
+data pane here got replaced with the
+format sale so that's how it opens up
+the format page and then you can see all
+these same options in the drop down here
+that you've seen Down your points
+alignments shading borders and lines you
+can format your fonts your alignments
+shading your borders and lines so in
+your view you can select whether you
+want to format the font whether you want
+to format the lines you want to provide
+a shading you want to provide a border
+or you want to provide any line
+formatting and again in that there are
+three tabs for every option that you
+will choose right so this means Tableau
+allows you
+to either format your particular font or
+shading or bordering or coloring for the
+entire sheet or you can also do it for a
+particular row or a column
+all right so it gives you that option or
+you can select a particular field as
+well whether you want the format a
+particular field
+now in terms of the font here you can
+see you can choose whether on the
+worksheet what is the font you want the
+pane the header the totals how you want
+your totals to resemble the grand totals
+now these are visible and worked when
+you have text tables
+kind of a view
+similarly you can format your rows so
+that Grays out the worksheet option and
+allows you options in terms of
+formatting your roles and the same
+option for columns
+for your phones all right so let's say
+I'm going to have my
+worksheet wherein I'm going to have my
+header
+increase to the size of 16.
+and let's have
+a greenish shade added to it we need a
+little more darker color to it there we
+go so we formatted the headers and the
+values in our view all right
+so that's how you can format the font
+then comes in the alignment in terms of
+how you want again based on sheet rows
+and columns all right whether you want
+to align the pane as horizontal all
+right whether you want to align it as
+left right or Central aligned all right
+in terms of the direction of your text
+so in case let's say you have a lot of
+data you can change the direction of
+your text
+uh whether you want it vertical or
+whether you want to wrap up your text
+all right so those are to do with the
+alignments that you have and that's how
+you can align the row The Columns or the
+entire sheet so in terms of horizontal
+you can control whether the text aligns
+to the left right or the center
+all right in terms of the vertical
+option you will control whether your
+text aligns on top all right in the
+middle or at the bottom
+so top middle or bottom in terms of the
+text alignment then coming on to
+Direction how you want the direction of
+your text whether you wanted to run
+automatic or so it will take in based on
+the kind of data is there in your view
+or you want to keep it to normal up or
+down all right that is top to bottom or
+bottom to down
+and uh then based on the wraps whether
+you want to use when you have long
+headers then whether you want to have a
+text wrap that needs to be taken place
+or take care of so whether it's offer on
+you can select on the options and each
+of these uh effects and options will
+take place on your sheet depending on
+the kind of view and visualization all
+right so that was to do with your uh
+alignments coming on to formatting the
+shading this is to do with you can
+format using the shading command you can
+control the background color of your
+Pane and header all right so again you
+can decide whether you want to apply it
+on the entire sheet the rows or the
+columns so you can let's say in the
+sheet select that in terms of the
+background I need it to be a little
+lightish in terms of a lightish pink so
+let's put in the shading so that's how
+based on the worksheet the total row
+banding all right so you can actually
+have a Band-Aid in terms of when you
+have a text kind of a table you can then
+perform a row banding so let's say let's
+choose a text table
+you can see that you can take off the
+shading keep it to none and then you can
+provide the kind of banding size that
+you want this is the size of two you can
+change it you will think the sliders are
+not banding based on every three values
+let's add sub categories so that it
+makes you view a little more easier to
+understand
+so let us just use the
+hierarchy drill down
+go back to formatting
+and now this is happening after every
+third value in terms of the band size
+the levels as well we can decide on the
+levels and in terms of the column
+banding as well how do we want it all
+right so we can change the levels of the
+banding
+okay
+then you have the Allah in terms of
+formatting in terms of border so you can
+format the borders in your view wherein
+you can decide on you know formatting
+these cells the paint the header the
+totals you want to divide the particular
+row or divide the particular column all
+right you can make use of these as well
+in terms of Divisions wanting to have a
+clear a better View
+all right
+if you can see we've divided it you want
+a thicker line
+all right in terms of column dividers as
+well
+how do you want it the view that you
+want to select
+all right so that's how you can format
+your borders as well and finally comes
+in the option in terms of
+your lines how do you want your line
+format setting all right you can control
+the nine set of your in a graph now in
+that case you will have to change the
+view to a different kind of graph and
+then that's where you can decide using
+every toolbar whether you want to see
+grid lines all right you want to see the
+dotted lines is there a particular color
+that we want to add in
+all right
+or thickness needed not needed
+trend lines now when you enable so when
+we come out to trend line topics is
+where we'll discuss but once you've
+added a trend line to your view as well
+you can format how you want your trend
+line the color that you want to choose
+if you've added in a reference line a
+draw price you can make these options
+available in terms of formatting in
+terms of the access
+how do you want it to be you want it as
+none
+or you want to provide a particular
+dotted line to it right
+so that's how the edu will keep changing
+depending on the kind of view that you
+have all right so that's how you can
+format the lines as well in your view
+you can also format a particular part or
+right now in
+uh we saw we sort of format the entire
+sheet or the row of column in terms of
+fonts in terms of alignments in terms of
+shadings in terms of borders and lines
+we can also format a particular field as
+I mentioned so you can format the fields
+in terms of how you want your fields to
+look like in terms of let's say you can
+click here and you have the option of
+format which will directly open up the
+field as what you want to do in terms of
+the header or the fail all right we have
+the size let's reduce it this time to
+14. and let us change the color of it
+let's have a bluish color so we are
+seeing the headers now are changing in
+terms of the header for our category
+all right so that's how we can choose
+the formatting option here whether we
+want to do it for the pain all right the
+font whether you want to change that and
+change the color
+so that's how you can perform it on a
+particular field as well
+all right now in terms of formatting
+numbers we had a question whether can we
+format and specify a particular option
+in terms of numbers as well uh yes you
+can if you can directly have uh this
+option where you can right click again
+and click on format which will give you
+the option in how you want the fonts
+again for this particular field which is
+sales it's giving you that you're
+formatting it for sales the scale the
+number format where you want to use it
+as automatic or standard number or
+custom number a currency so there was a
+question put up where uh we were asked
+uh can we format the currency so you
+have your answer or your question has
+been answered right here in terms of
+formatting all right so uh there we go
+we can also format in terms of the
+numbering options as to how we want to
+format it based on uh the options here
+for number format I will let you know
+each of these options so automatic is uh
+Tableau will automatically format the
+number based on the uh format specified
+in the data source or the data are
+contained in that particular field all
+right in terms of number standard it
+will take in the format which is based
+on your local that is selected the kind
+of Locale that you have selected are the
+geographic location that you have it is
+formatted based on that standard setting
+in terms of custom your you can
+customize it as per your liking so let's
+say instead of writing let me use a
+notepad you want to show you all so
+let's say instead of writing 20 000 we
+want to show it as 20K uh you can use
+the custom formatting and that's how
+important 20 000 you can use and write
+it as 20K so you can use the custom
+option in that uh for that manner in
+terms of numbers coming on to currency
+again it will take in the currency
+symbol based on the Locale that you have
+selected the geographic location and in
+terms of custom then you can provide a
+custom unit you can provide a custom uh
+currency option in case uh how do you
+want these separators whether you want
+to have uh commerce between every
+thousands or every hundreds so that's
+how you can again select it at a
+customized level
+scientific is the numbers will be
+displayed in a scientific notion that is
+the decimals uh where do you want to
+place your decimal values all right
+percentage as the name provider is going
+to show you the numbers in a percentage
+format and custom is where you want to
+provide and type in a format completely
+using a special
+all right so that's where you can
+completely format and you can specify
+based on the number coding or The
+Styling that you want
+so moving further
+so what is data so your filter helps you
+in narrowing down your data it can be
+applied to a dimension that is your
+contextual value to measures which is
+your numerical value over to a date
+field as well where you want to narrow
+it down to a specific value or a range
+of values all right in Tableau so what
+are the ways that you can uh possibly
+filter now what are the different
+conditions that you can possibly filter
+is one you can select the data to filter
+in the view so right you can add it up
+to the filter shell directly and choose
+whether you want to include or exclude
+the option the other way is you can have
+it added up to the filter shelf as well
+or you can turn on the quick filters
+which opens up a new card where you can
+quickly add in or alter your data in
+terms of
+you to the
+you can use resource and how we can
+manipulate our data in terms of
+narrowing it down all right so let us
+start beginning with the very first one
+and I'm moving on to the interface here
+all right
+now first I'm going to show you how we
+can filter on the dimensions okay so let
+me take in a new sheet all right and
+let's say I'm going to have the customer
+name filter so I'm going to use my
+customer name Dimension and add it up to
+the filter shares here this opens up the
+filter window all right and in this
+particular window uh you have four tabs
+as you can see one thing the general one
+being wildcard one being condition and
+top now let me first explain each of
+these steps and then we'll proceed
+further in understanding how we can
+filter on the dimension here all right
+so in the general option you can select
+the list that you want in terms of
+filtering and whether you want to
+include it or you want to exclude that
+particular selection all right so in
+clicking on exclude will exclude
+whatever selections you've made
+unchecking this option by default needs
+whatever we selected I need to only
+include those customer names onto my
+view all right the next is you can have
+a custom value list or you can also have
+a use all feature when I'm saying I want
+to use all the options and I want to
+include these so that is the first
+general option the second option is in
+terms of okay having a boy card so a
+wire card is where you can specify a
+particular match value whether you want
+to that value contains that particular
+alphabet or starts with that alphabet
+ends with that alphabet or exactly
+matches that alphabet so let's say let's
+use the Y card option and say I want the
+names starting with all right the
+alphabet let me choose the alphabet s
+all right so I'm saying that all my
+customer names should start with the
+alphabet s so when I click on this and
+then I use the customer name onto my
+view I will only be viewing customers
+with the name starting with s all right
+so uh conditions is where you can apply
+a condition based on a particular field
+or by a formula and top is where we can
+apply the field to be the top 10
+customers based on a particular uh
+Dimension or a measure or by a
+particular formula so we'll understand
+these tabs with different options of
+filtering let's use the wild card
+all right now in terms of the wildcard
+option so we've mentioned it starts with
+or the letter S and I click on OK
+foreign
+so you can see that we only will have
+the names beginning with s it's filtered
+down because we said that we need the
+name starting with s and we have all the
+customers our name starting with an s
+here let's add sales to our columns and
+we have all the names of the customers
+beginning with s that's how you can
+filter on a particular Dimension right
+in terms of the RC car has put up a
+question in terms of uh can we explain
+the custom value list in terms of the
+capital values we got what happens is
+let me just open up the filter here so
+that I can explain that to you quickly
+when you talk of Select list you can
+select from the particular option that
+you want all right and in terms of a
+custom value now let's say you want to
+randomly have uh different names one
+beginning with a now this is a huge long
+list all right so in terms of a custom
+value I can simply enter the names or
+keep adding in the names that I already
+know so let's see if I take in an Al is
+there an allen in our name or let's say
+we already know there's a Sally in our
+name so do we have a Sally I'm going to
+say add the name Sally up add the name
+sanjita so I can use a custom list
+because I already know the listen sort
+of uh avoiding the pain of scrolling
+through this huge list I know my values
+I'm going to Simply add and enter the
+text and keep adding it so that's a
+custom value list
+I'm going to cancel the option because I
+want to right now uh stick on to
+customer's name beginning with s all
+right so that was an example where we
+get finished off on a field all right
+where I can filter on a dimension field
+in terms of case sensitive yes we have
+to check on that because in most cases
+Tableau is usually very case sensitive
+when it comes to name so let's say we
+already know that uh we have a Sally in
+our list let us check if I have Sally
+added in as so then in that case you can
+see it's giving me a drop down option to
+select from in terms of the case
+sensitivity and then all the possible
+names that are available for Sally it's
+giving me the options to choose from
+so that was uh filtering on a dimension
+now let me show you how you can filter
+on the
+measure all right so before that let me
+show you one new Option and using the
+conditions tab okay so from the Wi-Fi
+let me take a new sheet this time and uh
+let's have a condition specified or in
+terms of the filter so this time again
+let's have our customer names added into
+the filter
+in the condition now this is where you
+can specify whether you want it by field
+or how do you want to select it whether
+you want to use a particular card
+whether you want to specify a particular
+condition now before I move in here to
+the conditions there is one important
+thing that I need to perform that's your
+your there is no y card that's been used
+all right but let's say if it was the
+same filter on the previous one then you
+will need to go back to the Y card
+option and clear and uncheck the option
+because it will not then be able to take
+in all these tabs and detailing so here
+are creating a new sheet hence no worry
+but if we do it in the previous sheet it
+says where we have the Wi-Fi then it's
+going to consider that it needs to be
+beginning with this as well as these
+conditions but only if you want the
+conditions to be applied then you need
+to clear the Wild Card all right
+so the wires are drawn and let's say I
+want to know the field and in terms of I
+want to know the customer name wherein
+my sales all right is uh let's keep the
+aggregation now these are the
+aggregations that you can choose from
+let's keep it default at some and my and
+my sales should be greater than
+10 000 all right
+let's click on okay now you can also
+provide a minimum and a maximum range
+value or you can then apply a particular
+formula so you can apply your condition
+click on OK and now when we add in the
+customer name now you can drag and drop
+it in the fields as well specified here
+and now we get to see only those
+customers which are having the sales as
+we specified which is about 10 000 let's
+add sales and we'll be able to see let's
+enable our data labels all the sale
+values are about 10 000 for these
+customers all right
+so you can add in a condition similarly
+we can also change these and apply so
+now I'm going to this time go to the
+conditions Tab and I'm going to click on
+the none option because we're now going
+to have the top customers by field where
+we now want to filter our data based on
+our top customers all right so let's
+keep it to default you have the option
+of you want to see the top customers or
+the bottom customers how many by numbers
+10 or a particular parameter those
+parameters is where we will be
+discussing when we proceed ahead and
+discuss the parameters topic
+foreign
+so yes you will be able to filter on the
+dimensions and measures as well so you
+can have the top 10 uh customer names
+based on my sales job all right or let's
+say you can have it on the on the basis
+of profit also you can change it to
+profit this time you're using a lot of
+sales and let me click on OK all right
+so now what happened is notice in our
+view we're able to see the customer name
+the sales by each of these customers
+that have been generated for the top 10
+customers giving us the top 10 profits
+so although profit is not in my view
+these are my top 10 customers based on
+profit all right and what is the sales
+generated by each of these top 10
+customers and who these top 10 customers
+are all right so that's another way that
+we could use is the top tab option in
+the filter when we are filtering on a
+particular Dimension all right now
+there's another way that you can fill it
+off you can click on a particular option
+and keep only or excluded so that is one
+way way of filtering right onto your
+data the other one as we saw was
+filtering adding it up to the filter
+shell all right dried in the drop down
+it also shows quick filter so when you
+click on the quick filter option here it
+gives you a special mascot that opens up
+where you can quickly keep analyzing
+instead of going and editing the option
+it gives you the general option where
+you can keep analyzing a particular
+customer name that you want to see and
+these are limited by the top 10 all
+right
+so that's your quick filter option you
+can remove it you can apply it to the
+sheet you can even customize you can uh
+display how you want it to be viewed in
+terms of the filter option that is
+displayed whether you want it at a
+multiple list or slider or drop down a
+multiple value drop down a custom list
+or a by card match all right and based
+on that then you can also mention
+whether you want to include these values
+or exclude these values and finally you
+can hide the cards as well all right
+so that was your uh quick filter now you
+can also as I mentioned Frito on
+Dimensions so let me add in a new sheet
+here and show you how you can filter on
+your measures now so uh this time let's
+have our customer names on two rows all
+right let's have sales onto uh the
+filter shares this time so we're going
+to be filtering now this time if you
+notice the filter shell because it's a
+measure it opens up as to how you want
+to filter what is the aggregation that
+you want to use whether you want to use
+all the values whether you want to use
+the particular aggregation or some
+additional uh analysis in terms of
+deviation of variance all right I'm
+going to stick to the sum the basic one
+and click on next this opens up the
+option now whether you want to filter
+based on the range of values all right
+whether you want to filter based on the
+uh least values all right so these are
+the different options let me explain
+each of these options as well to yours
+so in the range of values you can
+specify
+you know range as minimum and maximum
+that you want to explore so you can use
+the uh slider your as well and specify
+let's say we want a value of
+approximately 5000 and narrow down this
+particular data all right from 5000 now
+you can see at times when you just want
+to use an approximate value then it's
+fair enough to use these sliders or
+another way of doing it in a simpler
+manner would be you can simply type in
+the details right so you want it at ten
+thousand and five thousand so you can
+also use the slider or use the
+particular Titan box where you can type
+in the range of values next you have at
+least now this includes all the values
+which are greater than or equal to the
+specified minimum value so it needs to
+be greater than or equal to 5000 is what
+we are specifying so any value that we
+add in our state value should be above
+5000 that is at least and at most is
+obviously then the opposite that we are
+mentioning it should include all the
+values that are less than or equal to
+this maximum value that we're specifying
+so if you're saying it should not be
+above 5000 they are only wanting this to
+see the sales of 5000 and below so
+that's the minimum and maximum value of
+at least and at most and in terms of
+special this is to do with handling your
+filter your null values in in your view
+so this is a filter that helps you
+narrow down on the null values whether
+you want to include the null values
+whether you want to have the non-null
+values or you want all the values valid
+up in your view all right so based on
+that you can have your selections and
+finally click on OK all right so uh let
+me click on
+the Range you are in this case and you
+can select on a range as I mentioned you
+can click uh and have the option of
+let's say 5000 on to 15
+000 and click on OK so now you're going
+to be able to see your sales which is
+going to be in the range of 5000 until
+16 000 only
+all right
+similarly you can also filter on dates
+now when it comes to date as well the
+filter window opens up in a different
+fashion so we saw in Dimensions it opens
+up in terms of four tabs in terms of the
+measure it opens up the aggregation we
+want to use and then this values that we
+want to specify now when it comes to
+filtering on dates then in this case
+what happens is that Tableau opens up a
+different kind of window when you're
+wanting to filter on dates so let's uh
+have a look at that as well
+so let me open up the filter dates
+option for you all
+so let's have the order date added in
+onto my filter here so this opens up
+this filter window wherein it is
+specified uh the page here or date field
+and Tableau is created your special Nano
+or special dimensional it uh often
+handles it in a different way as you saw
+even when it comes to hierarchies it
+automatically creates a hierarchy for
+you in terms of dates so even with
+filters it handles it in a different
+manner here it specifies one whether you
+want to use these relative date filter
+or the range of dates now when you use
+the first option which is the relevant
+uh relative dates Builders then here
+you're going to be defining a range of
+dates that is going to get updated based
+on the date and time that you open the
+view all right so it's more like
+whatever view you select let's say you
+want to see the year to their sales uh
+for the records of the last 30 days all
+right so in that case you can actually
+specify selecting on the relative dates
+and uh that's where you can mention the
+detailing up I want to see today's date
+and the last 30 days of whatever is
+today's date so that's how to use in the
+relative dates the next option that you
+have in terms of the range of dates is
+where you can provide
+the range of a particular date where you
+can given uh the kind of date that you
+want to choose all right so in terms of
+range of dates you will be specifying a
+particular range and once you've decided
+and selected between these two options
+then you need to select on whether which
+kind of a filter that on the drilling
+that you have whether you want to do it
+on your on the quarter or on the month
+all right so that's how you can specify
+that particular date and get us uh let
+me click on the relative days option
+here and click on next so when we open
+the relative dates then in this case you
+can see again it's giving us special
+four tabs here so the relative date in
+this case is we can specify uh let's say
+the sales in the last couple of days so
+we can specify whether we want to see
+the sales yesterday and last how many
+number of days today with the next how
+many days or you want to see the days
+the sales for tomorrow similarly then
+you have range of date so you can
+specify a particular range all right
+whether let's say you have the data
+you're coming in from first of April
+2014 going up to 31st December you can
+make use of the calendar and choose your
+specific date range you can also use the
+slider you have to specify the starting
+date again it's more like the minimum
+and maximum so starting is all the days
+starting from this date and above and
+ending is that we want to have and see
+our data wherein the ending date should
+be 31st of December and sales achieved
+until this specific date nothing beyond
+that particular in case even if it's
+present any data present about 2014 31st
+December we're still limiting it that it
+should be until 31st of December and
+then the special tab which again gives
+us the flexibility in terms of filtering
+whether there are null dates non-nail
+dates or you want all the dates to be
+included all right the option we have in
+terms of filtering all are dates all
+right so as you saw we can filter right
+in the view where I mentioned you can
+have the exclude or include option you
+can drag a particular field right into
+the filter shell you can also turn on
+the quick filter and make use of it so
+that is the filter shelf we saw
+depending on the size we can filter on a
+dimension or we can filter on or measure
+or or date as well for complex
+analytical projects organizing and
+simplifying data is one of the crucial
+tasks it is important to be able to
+simplify data for proper analysis
+organizing and simplifying data is a
+critical part of Tableau mission to
+facilitate you to see and understand
+data
+Tableau can help you with all stages of
+an analytics project by using these
+Advanced capabilities
+in this lesson we will discuss Advanced
+capabilities to complete sophisticated
+analytics projects after completing this
+lesson you will be able to
+perform filtering and sorting on data
+create combined fields to merge data
+from different dimensions
+create groups and Define aliases
+create and work with sets and combined
+sets drill to other levels of data in
+your hierarchies
+add Grant totals and subtotals in a view
+change aggregation functions for a
+measure
+split a measure value into bins the
+first topic that you will study in this
+lesson is filtering data
+Jenny the sales manager of a chain of
+departmental stores is planning to
+launch a new branding policy for a line
+of furniture that sells well
+for this she needs to analyze the
+subcategories under furniture with sales
+over thirty thousand dollars in the year
+2013. to discuss the matter she calls
+one of the sales executive Alex
+hi Alex we are in the process of
+launching a new branding policy for a
+line of furniture with good sale but to
+decide on the categories I need to
+analyze which furniture sales crossed
+over thirty thousand dollars in 2013.
+can you recommend a way to complete this
+task
+sure Jenny I think what you need is a
+bar chart where you can filter the
+results as per your analysis
+that's right how can we do this in the
+most efficient manner
+we can use Tableau application that
+provides a number of features to create
+bar charts and filter large amounts of
+data as per your desired analysis
+great you can start working on this task
+and present the analysis to me when
+you're done
+so before we proceed further let's
+discuss what is a filter
+yes you guessed it filters let you
+filter data a filter is a condition
+which can be applied to Dimensions
+measures or date fields to narrow down
+the data displayed in a view
+in Tableau they can be either static or
+interactive being able to filter data is
+essential to any analysis with Tableau
+Data can be filtered in different ways
+you can apply filter using one of these
+methods
+select data to filter in the view drag
+fields to the filter shelf activate
+quick filters
+when you select data to filter in the
+view the filtered fields are added to
+the filters shelf and The Unwanted
+fields are removed
+when you drag fields to the filter's
+shelf a filter dialog box opens when you
+activate quick filters the filter dialog
+box opens as a new card where data can
+be quickly added and altered so how can
+the dimensions be filtered
+Dimensions can be filtered either on the
+filter shelf or in the quick filter when
+you drag the dimension to the filter
+shelf a filter window will appear
+these are the key tabs of the filter
+window so how do these tabs function let
+me explain each tab one by one the first
+tab is the general tab which helps you
+select the list of elements you want to
+include in the filter
+you can use one of the following options
+to define the element list
+select from list this option allows you
+to select the elements you want to
+include from the list
+next is the custom value list in this
+option you can use the search box to
+directly locate the elements and the
+last one is the use all option that
+allows you to include all the elements
+in the filter
+now you understand how General tab
+functions yes I do great let's move to
+the next tab the wild card in the
+wildcard tab you can match the names of
+elements by selecting one of the
+following options contains starts with
+ends with exactly matches
+next you have the condition tab with the
+help of this tab you can specify a
+filter condition in this only the
+elements that satisfy the condition will
+be included in the view
+to define a condition you can use the
+none by field and by formula options
+these tabs allow you to perform a lot of
+functions what about the last tab in the
+top tab you can specify a condition to
+include the top n or bottom n elements
+to define a condition you can use the
+none by field by formula options thanks
+Alex Tableau really has some amazing
+capabilities let me now explain how you
+can apply filter on measures before you
+begin with that Alex I have a quick
+question does Tableau allow me to filter
+on a measure where an I can select to
+either filter row level data or an
+aggregated value of data indeed it does
+Tableau allows you to filter at row
+level data in which measure value is
+calculated individually for every Row in
+the data set no aggregation functions
+are used for row level calculations
+while in summary level calculation
+measure value is calculated using an
+aggregation function on the row level
+data aggregation functions are used for
+summary level calculations
+in Tableau the data is automatically
+aggregated by performing summation when
+a measure is placed on a shelf when you
+apply filter on a measure it allows you
+to filter row level data select all
+values to filter summary level data
+select one of the available aggregation
+functions date filters are extremely
+common date fields are a special kind of
+Dimension that Tableau often handles
+differently than standard categorical
+data so far we have learned how to
+perform filtering and sorting on data
+Greg is planning to launch a new
+branding policy for a line of furniture
+that sells well this demonstration will
+help you understand how Greg analyzes
+the subcategories by creating bar charts
+and applying appropriate filter to it
+open Tableau 9.0
+from the home page connect to the saved
+sample Superstore data set
+create a horizontal bar chart with
+subcategory Dimension and sales measure
+drag the category Dimension to the
+filter Shelf
+filter only for the furniture category
+drag the order date Dimension to the
+filters Shelf
+select filter field as years to filter
+only for 2013.
+drag the sales measure to the filter's
+Shelf
+filter for subcategories with sum of
+sales greater than thirty thousand
+dollars
+observe the change in bar chart after
+applying filters
+rename the sheet as filtering data
+save the workbook as furniture
+subcategories with sales more than
+thirty thousand dollars in 2013.
+close the workbook
+this completes the demonstration on
+filtering data
+the quick filter can get started for
+existing filters as well as for
+non-filtered fields
+the filter dialog box includes these
+filter modes single values list single
+value drop down single values slider
+multiple values list multiple values
+drop down multiple values slider
+wildcard match the data can be selected
+from the given list as well as can be
+searched using the search icon present
+in the title area of the quick filter
+with the quick filter option you can
+quickly add and modify filters you just
+need to follow three simple steps
+firstly activate a quick filter on the
+region Dimension notice a smaller
+representation of the filter dialog box
+opens as a new card quickly select what
+to include in The View
+and you are done now let us move to the
+second topic sorting of data
+sorting data is an integral part of data
+analysis sorted data is easier to
+analyze sorting a data view refers to a
+range in dimension members in a
+specified order you might want to put a
+list of names in alphabetical order
+compile a list from highest to lowest or
+order rows by colors or icons
+sorting data helps you quickly visualize
+and understand your data better organize
+and find the data that you want and
+ultimately enables you to make more
+effective decisions in Tableau you can
+sort data in numerous ways sorting can
+be performed on axis specific fields and
+manually
+Tableau supports computed sorting and
+manual sorting
+computed sorting uses programmatic rules
+to sort the view such as sorting
+alphabetically or from lowest to highest
+manual sorting enables you to reorganize
+the order of dimension in the table and
+can only be implemented on distinct
+Fields with a distinct measure now that
+you know that the data can be sorted in
+different ways let's discuss each of
+these in detail sure I would like to
+know more about it to sort on axis you
+can single click the sort icon on the
+measure axis to sort the bars in
+descending order or double-click the
+sort icon on the measure axis to sort
+the bars in ascending order
+the data can be automatically sorted
+using the sort button on the axis to
+give a better view of data to sort on a
+specific field use the sort menu option
+to sort by one or more fields in a
+specified order then select the data
+source order option to sort data in the
+order of the data source
+the sort dialog box includes these
+criteria sort order displays the output
+in ascending or descending order
+sort by sort either by data source order
+alphabetic or by fields to perform a
+manual sort use the sort menu option to
+sort manually
+then rearrange the order of Dimension
+members in a custom order based on your
+business specifications
+manual sort can be done in two ways use
+sort toolbar button on the selected item
+locate and drag headers in the view let
+us now move to the next topic creating
+combined fields
+combined fields are used to create a
+cross product of members from different
+dimensions
+two or more Dimensions can be combined
+to create a Cartesian product of
+Dimension members
+The View includes all combinations of
+each member of the dimensions let's look
+at an example a combined field has been
+created using segment and region when
+added to the view it displays all
+combinations of segment and region
+elements creating groups and defining
+aliases are some more features that
+Tableau offers let's understand each of
+these Concepts let's say you want to
+view data at levels that are not already
+present in the data source in such
+situations groups are used to combine
+Dimension members to create a higher
+level member
+when a group is created a default name
+is automatically formed using the
+combined member's name the new grouped
+field takes over the dimension on rows
+or columns
+for example a group can be created by
+combining the sales for envelopes labels
+and paper for analysis now the question
+arises that can alternate names be
+provided in this case and the answer is
+yes you can aliases will provide the
+flexibility for renaming Dimension
+members to help make more sense in the
+current view the good part is Tableau
+does not change the original data on
+changing an alias in your view you can
+change aliases at any time using the
+edit aliases dialog box
+there are some things you need to keep
+in mind such as aliases can only be
+defined for discrete dimensions and
+dates these can be applied to Dimensions
+only and not to measures moreover the
+method for creating aliases depends on
+the type of data source you use
+following is an illustration of defining
+an alias for the East element of the
+reason dimension
+let us now move to the next topic
+working with sets and combined sets
+usually you have large sets of data that
+you want to visualize in such a
+condition you might find that limiting
+the amount of information displayed to
+an important subset of Records helps you
+work with and answer questions about the
+data more effectively
+sets are custom fields that Define a
+subset of Dimension members a set can be
+created for specific Dimension members
+in the view or it can be based on a
+condition
+computed sets are dynamic as the number
+of members in the set can vary at
+runtime based on the condition
+furthermore you can also drag a set to
+the filter shelf to quickly filter the
+view to display only the members of the
+sets likewise you can also create a set
+by combining existing sets all you need
+is to specify The Logical operator
+between the two sets new sets can be
+formed by combining the sets consisting
+of either all the members from the sets
+only shared members members existing in
+one of the sets the dimensions of the
+sets should be the same in order to
+combine two sets by now you have a brief
+idea on how to create groups Define
+eliases and create sets and combine sets
+Greg is planning to launch an
+advertising scheme for certain product
+subcategories that are related to each
+other this demonstration shows how Greg
+creates a visualization that displays
+the aggregated profit ratio and
+highlights the bottom five subcategories
+by sales
+this demo will give you an overview on
+how to create a group to combine
+Dimension members
+create a computed set to include
+Dimension members automatically
+open Tableau 9.0
+from the home page connect to the saved
+sample Superstore data set
+create a horizontal bar chart with
+subcategory Dimension and profit ratio
+measure
+select tables and chairs to create a
+group
+create a set on subcategory
+name the set as bottom five
+subcategories by sales
+click the top tab
+under by field select bottom five
+subcategories by sales from the drop
+down
+drag the bottom five subcategories by
+sales set to the color shelf to the
+marks card
+rename the sheet as groups and sets
+save the workbook as working with groups
+and sets
+close the workbook
+this completes the demonstration on
+working with groups and sets
+now let us study how can we drill to
+other levels in a hierarchy
+Jenny is required to present the
+company's sales performance across
+different regions states and cities in
+an upcoming meeting she calls Alex to
+help her make this report in a quick and
+efficient manner
+hi Alex I need you to create a report
+for me to present the company's sales
+performance across different regions
+states and cities
+sure Jenny are there any specific points
+that you want me to keep in mind yes I
+want to use the same data source for the
+detail and summary information in other
+words I want to create a report where
+all the data is contained within the
+same report
+can you suggest a way to do that
+sure Jenny for creating such reports
+Tableau offers the feature of hierarchy
+where you can drill down to several
+lower layers of detail
+great please start working on this
+report and share the final output with
+me
+I was just wondering can we drill to
+other levels in a hierarchy yes we can a
+hierarchy is a grouping of related
+Dimensions depicting direct parent-child
+relationships between them built-in
+hierarchies are not present in
+relational databases but it can be
+inherited from the relational databases
+that have similar dimensions
+it is useful in the following ways it
+facilitates analyzing a high level
+overview of your data and then drilling
+down to lower levels of detail what's
+amazing in that Tableau separates the
+data fields automatically into
+hierarchies so you can easily Break Down
+The View by year quarter month Etc
+moreover it also enables you to create
+your own custom hierarchies if you want
+to view your data at a lower or higher
+level in the hierarchy then drilling is
+what you're looking for for instance you
+can drill up from date through year or
+you can drill down from year to date
+that way drilling is one of the most
+suitable ways to navigate hierarchies
+various methods of drilling are
+available in Tableau it allows you to
+drill using fields on shelves or drill
+using headers let me show you how
+drilling using headers can be referred
+to as uneven drill as only desired
+members are displayed rather than all
+the members from the list you can click
+a header value in the view and select
+drill down or drill up from the menu
+let's say it is drilled down from year
+level to quarter level you can expand or
+collapse a dimension in the rows or
+columns shelf to drill down or up
+respectively the plus and minus signs on
+the fields that are placed on the
+shelves shows the drill status so that
+means the plus sign indicates that it
+can be drilled down further while the
+minus sign indicates that you can drill
+up but cannot drill down further Greg is
+required to present the company's sales
+performance across different regions
+states and cities he is required to
+create a report such that all the data
+is contained within the same report
+let's see how he does that
+open Tableau 9.0
+from the home page connect to the saved
+sample Superstore data set
+create a hierarchy by dragging State
+onto region
+name the hierarchy as geography
+in the geography hierarchy drag City
+below state
+create a report with region and sales
+right-click West select keep only
+drill down from region to state
+right-click California Select keep only
+drill down from state to City
+rename the sheet as sales analysis
+save the workbook as company sales
+performance
+close the workbook
+this completes the demonstration on
+drill down report
+now let us discuss another important
+feature of Tableau Grand totals and
+subtotals totals facilitate the
+aggregation of data in a view you can
+compute Grant totals and subtotals for
+the data in a view these totals can be
+applied only on grid type visualizations
+Tableau does not compute subtotals and
+Grant totals as just an aggregation
+instead subtotals and Grand totals are
+computed as a separate calculation of
+the measure at a coarser level of
+granularity totals facilitate the
+aggregation of data in a view you can
+compute Grand totals and subtotals for
+the data in a view
+these totals can be applied only on grid
+type visualizations
+Tableau does not compute subtotals and
+Grant totals as just an aggregation
+instead subtotals and Grand totals are
+computed as a separate calculation of
+the measure at a coarser level of
+granularity Tableau computes subtotals
+and Grand totals as the original measure
+at a higher level of aggregation let us
+proceed with understanding how to define
+aggregations other than the predefined
+choices Tableau allows you to Define
+aggregations other than the predefined
+choices such as summation and variance
+you can change the aggregation function
+by right-clicking a dimension in either
+the rows or columns shelf or by
+right-clicking a field in the data pane
+here we have changed the aggregation
+function to average next we are going to
+study about Tableau bins which are
+useful to create a range of data bins
+are custom bandings of the values of a
+measure based on a specific size you can
+bin data only for relational data
+sources it does not support this feature
+for multi-dimensional data sources
+bins can be referred to as buckets of
+values and can be created for numeric
+Dimensions there are two types that you
+can create fixed sized and variable
+sized you can create a fixed sized bin
+by specifying the size of each bin in
+the create bins window
+keep in mind that by default Tableau
+creates even-sized bins based on a size
+you specify
+as you can see I have created fixed
+sized bins on the discount measure of
+size 10 each to create a variable size
+bin create a calculated field with an
+appropriate script you will learn about
+calculated fields in detail in lesson 8
+calculations
+for now just remember that you need to
+create a calculated field to create bins
+of variable size
+look we have three pins on the discount
+measure of variable sizes now that
+you've gone through the need and
+importance of organizing and simplifying
+data let us have a quick look at the key
+takeaways filters enable you to narrow
+down the data displayed in a view
+sorting refers to the arrangement of
+Dimension members in a specified order
+combined fields are used to create a
+cross product of members from different
+dimensions a group is a combination of
+Dimension members that make up a higher
+level category
+aliases are alternate names for specific
+values within a dimension
+sets are custom fields that Define a
+subset of data based on some conditions
+drilling helps you analyze the data in a
+view at a lower or higher level in the
+hierarchy
+bins are custom bandings of measure
+values they can be created either as
+fixed sized or variable sized
+time for some Hands-On practice let's
+Now understand the below scenario and
+work on it together
+you are an owner of a store and want to
+analyze the existing discount strategy
+offered by your store
+you wish to view the number of customers
+who have been offered discounts between
+0 and 10 percent 10 and 20 percent and
+so on
+create a histogram with discount bins
+and count of discounts and answer the
+following questions
+how many customers were given discounts
+between 0 and 10 percent
+what is the total sale recorded when
+customers were offered a discount
+between 20 and 30 percent
+now wasn't that a great experience you
+will be happy to know that we have two
+more similar scenarios for you to
+strengthen your understanding of
+organizing and simplifying data
+read the scenarios carefully and perform
+the task on the Tabo 9 tool downloaded
+onto your device
+you can evaluate your steps by referring
+to the solution guide provided in the
+download Center so if this is the end of
+this session on top view Basics full
+course should you need any assistance
+PPT project code and other resources
+used in this session please let us know
+in the comment section below and a team
+of experts will be more than happy to
+help you as soon as possible until next
+time thank you keep learning and stay
+tuned for more from Simply learned
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+foreign
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

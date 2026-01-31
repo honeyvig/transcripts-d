@@ -1,0 +1,490 @@
+greetings data Enthusiast and welcome
+back to our Channel today we are
+embarking on a training exploration into
+the captivating realm of Big Data with
+big data into questions and answers and
+before I begin if you are someone who is
+interested in building a career in Big
+Data by graduating from the big
+universities and the best universities
+we're a professional who elicits to
+switch career with big data by learning
+from the experts and try giving a show
+to Simply learns postgraduate program in
+data Engineering in collaboration with
+Purdue University and IBM the course
+link is mentioned in the description box
+below that will navigate you to the
+course page where you can find a
+complete overview of the program being
+offered and if these are the types of
+videos you would like to watch then hit
+the Subscribe button like and press on
+the Bell icon to never miss on future
+content so stay tuned with us until the
+end of this video and don't forget to
+register your opinion in the comment
+section below and now starting with the
+interview questions so first question is
+Define big data and explain the ways of
+big data so big data can be described as
+a compilation of intricate unstructured
+or semi-structured data sets that
+processes the potential to yield
+actionable insights and the four
+fundamental Dimensions often referred as
+the v's of Big Data are as follows the
+first is volume this aspect pertains to
+the shear magnitude of data generated
+and collected it signifies the immense
+quantity of data that conventional data
+processing techniques might struggle to
+handle the next is variety this Factor
+emphasizes the diverse range of formats
+and types in which data is presented Big
+Data encompasses structured unstructured
+and semi-structured data from various
+sources and the next is velocity
+referring to the speed at which data is
+generated and must be processed the
+velocity Dimension underscores the need
+for real time or near real-time data
+analysis due to the rapid influx of data
+veracity veracity highlights the
+reliability and trustworthiness of the
+available table data inaccurate
+inconsistent or uncertain data can
+adversely impact the quality of insights
+derived from Big Data analysis so this
+was about big data and the views of big
+data now moving on to the next question
+that is what do you mean by commodity
+Hardware so the term commodity Hardware
+alludes to the minimal Hardware
+Essentials necessary for operating the
+Apache Hadoop framework any hardware
+configuration that satisfies the minimum
+prerequisites of Hadoop is categorized
+as commodity Hardware so this was all
+about commodity Hardware so moving on to
+the next question that is Define and
+describe the term FS CK so fsck and
+acronym for file system check denotes a
+command employee to initiate a summary
+assessment of hadoops hdfs condition it
+solely identifies errors and does not
+undertake corrective actions fsck can be
+executed on the complete system or
+subset of files and this was all about
+fsck now moving on to the next question
+that is what is the purpose of the JPS
+command in Hadoop the JPS Java process
+status command is utilized to ascertain
+the functionality of various Hadoop
+demons it primarily validates the
+operational status of daily modes such
+as name mode data node resource manager
+and node manager and now move on to the
+next question that is how is Hadoop
+related to Big Data so when delving into
+the realm of Big Data Hadoop emerges as
+a pivotal framework Hadoop an open
+source platform is tailored for the
+storage processing and Analysis of
+intricate unstructured data sets to
+glean valuable insights and intelligent
+this is how Hadoop is related to Big
+Data and moving on to the next question
+that is sixth question Define htfs and
+yarn and talk about their respective
+components so Hadoop distributive file
+system hdfs is the core storage
+mechanism within the Hadoop ecosystem it
+is responsible for housing diverse data
+types in a distributed environment hdfs
+comprises two integral components the
+first is name node and this Center node
+preserves metadata concerning all data
+blocks within hdfs and the second is
+data node these nodes serve as leaves
+tasked with storing the actual data
+blocks and now talking about yarn that
+is yet another resource negotiator yarn
+serves as the resource manager for
+managing resources and establishing an
+execution environment for processors and
+yarn also features two key components
+the first is resource manager it
+allocates resources to corresponding
+node managers according to requirements
+and the second is node manager this
+component oversees task execution on
+each data node and now moving on to the
+next question that is explain the
+different features of Hadoop so Hadoop
+possesses several distinctive features
+that make it a permanent choice for
+handling Big Data challenges one of its
+most significant features is being open
+source which means its code can be
+freely modified and adapted to fulfill
+varying user and analytical needs
+another vital feature is incorporate new
+hardware resources into its cluster by
+adding new nodes furthermore Hadoop
+employs data replication to ensure data
+recovery in the event of failures
+enhancing data reliability additionally
+the concept of data locality in Hadoop
+is crucial as it prioritizes moving
+computation processes to the data itself
+resulting in improved processing
+efficiency and now we will move to the
+next question that is Define the port
+numbers for name node task tracker and
+job tracker so the port numbers for the
+essential components in Hadoop cluster
+are as follows so the port number for
+name node is
+50070 and for the task tracker it's
+50060 and for the job tracker it's 50030
+and moving on to the next question that
+is what do you mean by indexing in hdfs
+in hdfs that is Hadoop distributed file
+system indexing refers to the
+organization of data blocks based on
+their sizes each data block contains a
+pointer to the location of the
+subsequent block which contributes to
+the sequential data storage the data
+nodes within the Hadoop cluster manage
+these data blocks while the name node
+keeps track of their Arrangement and
+distribution
+and now we will move to the next
+question that is what are H nodes in
+Hadoop so Edge nodes play a pivotal role
+in Hadoop environments acting as
+intermediaries connecting the Hadoop
+cluster with external networks these
+nodes serve as platforms for running
+client applications and cluster
+management tools they also serve as
+staging areas for data processing tasks
+typically a single edge node can support
+multiple Hadoop clusters due to their
+multifaceted role as nodes require
+Enterprise level storage capabilities
+and the next question is what are some
+of the data management tools used with
+Edge nodes in Hadoop so when it comes to
+Edge nodes in Hadoop several data
+management tools and Frameworks come
+into play notable among them are Uzi
+ambari Pig flow so these tools are
+commonly utilized in conjunction with
+Edge nodes to enhance data management
+capabilities within Hadoop clusters so
+these were the data management tools
+that we use with h nodes in Hadoop now
+move on to the next question that is
+explain the core methods of a reducer so
+reducer are funded mental components in
+hadoops map reduce programming Paradigm
+they perform data aggregation and
+consolidation task reduces Encompass
+Three core methods the first is setup
+and the third is cleanup after the
+reduction process is complete the
+cleanup method is invoked it is
+responsible for clearing temporary files
+and performing any necessary cleanup
+operations at the end of a reducer task
+certainly here is the information
+provided in your request and now we'll
+move to the next question that is talk
+about the different Tombstone markers
+used for deletion purposes in edgepace
+in the realm of hbase a prominent tear
+in the Big Data landscape Tombstone
+markers play a crucial role in
+facilating data deletion there are three
+distinct types of Tombstone markers each
+serving a specific purpose the first is
+family delete marker this marker is
+employed to signify the removal of an
+entire column family along with its
+Associated columns by utilizing the
+family delete marker all the columns
+within the concerned family are
+effectively marked for deletion and the
+next is version delete marker when a
+particular version of a single column
+needs to be expunged the version delete
+marker comes into play this marker
+allows for the selective removal of a
+specific version of a single column
+ensuring precise data management and
+next we have is column delete marker in
+scenarios where all versions of a single
+column are to be wiped out the column
+delete marker comes to the Forefront by
+employing this marker all versions of
+the designated column are appropriately
+marked for deletion so these were the
+tombstone markers that are used for
+deletion purposes and base and now
+moving on to the 14th question that is
+deploying a big data solution so how do
+you deploy a big data solution so
+embarking on the journey to deploy a
+comprehensive Big Data solution involves
+a strategic three-step process the first
+step is data ingestion commencing the
+deployment the initial step in involves
+the acquisition of data from diverse
+sources encompassing social media
+platforms log files and relevant
+business documents this data is
+collected either through real-time
+streaming mechanisms or batch processing
+the next step is data storage once the
+data is procured the subsequent task is
+storing it within a suitable database
+the choice often rest between the Hadoop
+distributed file system hdfs and hbase
+hdfs excels in sequential access
+scenarios while hbase is optimized for
+random read and write operations and the
+next step we have is data processing the
+final phase of the deployment centers
+around data processing Frameworks such
+as Hadoop spark mapreduce clink and pick
+step in to perform the intricate task of
+processing the Amaze data these
+Frameworks are instrumental in deriving
+valuable insights from the raw data so
+this is how you deploy a big data
+solution moving on to the next question
+that is distinguishing NFS nhdfs that is
+how is NFS different from hdfs so the
+first moment is for NFS it can both
+store and process more volumes of data
+whereas in hdfs it is explicitly
+designed to store and process big data
+and in NFS the data is stored in
+dedicated Hardware whereas an hdfs data
+is divided into Data blocks that are
+distributed on the local drives of the
+hardware and in NFS in the case of
+system failure you cannot access the
+data and in hdfs data can be accessed
+even in the case of a system failure and
+in NFS NFS students own a single machine
+there's no chance for data redundancy
+and in hdfs it runs on a cluster of
+machines and hence the replication
+protocol may lead to redundant data and
+the next question is list the different
+file permissions in hdfs for files or
+directory levels so in the Hadoop
+distributed file system that is hdfs
+distinct permissions are assigned to
+files and directories catering to
+different users level owner group and
+others each user level boast three
+distinct permissions for files the r
+permission enables reading of files
+content the W permission empowers
+writing data into a file the x that is
+execute permission while present does
+not Grant execution rights for hdfs
+files and if we talk about directories
+the r permission facilitates listing the
+contents of a specific directory and the
+W permission allows the creation or
+deletion of a directory and the x that
+is execute permission is associated with
+assessing child directories within the
+Parent Directory this array of
+permission forced us a granular and
+secure approach to managing files and
+directories within the hdfs ecosystem
+and now moving on to the next question
+that is enumerate the three modes
+available for running Hadoop in the
+realm of Big Data interviews a
+frequently encountered query revolves
+around the three operational modes of
+Ado that is first is Standalone mode
+second is pseudo distributed mode and
+the third is fully distributed mode so
+Standalone mode this serves as hadoop's
+default setting utilizing the local file
+system for both input and output
+operations primarily geared towards
+debugging Standalone mode lack support
+for hdfs that is Hadoop distributed file
+system and lacks the custom
+configuration associated with and lacks
+the custom configuration associated with
+mapred site dot XML core site dot XML
+and sdfs hyphen site.xml files and now
+talking about sudo distributed mode this
+is referred to as the single node
+cluster pseudo distributed mode involves
+housing both the name mode and data node
+on the same machine this configuration
+concentrates the old Hadoop demons onto
+a single node effectively merging the
+roles of Master and slave nodes and then
+we have this fully distributed node
+operating as a multi-node cluster this
+node that is operating as a multi-node
+cluster this mode leverages multiple
+nodes simultaneously to execute Hadoop
+task in the setup distinct nodes
+accommodate various Hadoop demons
+maintaining a clear democration between
+master and slave nodes so this was about
+the three modes available for running
+Hadoop now moving on to the next
+question that is the Define the concept
+of overfitting so overfitting
+characterizes a modeling error that
+arises when a function is excessively
+tailored to unlimited set of data points
+this results in an intricate model that
+struggles to account for Unique nuances
+or peculiarities within the data sets
+the repercussions of overfitting are
+detrimental to the model's ability to
+generalize rendering the predictive
+capabilities of overfitted models in
+dubious these models falter when applied
+to external or novel data sets within
+the realm of machine learning or fitting
+ranks among the most prevalent
+challenges a model falls into the
+overfitting category when it excels on
+the training data set but performs
+decimally on the test data set numerous
+strategies exist to avoid overfitting
+including crossover addition pruning
+early stopping regularization and
+Ensemble techniques so this was all
+about overfitting now moving on to the
+next question that is elaborate on the
+concept of outliers an outlier pertains
+to a data point or observation that
+deviates significantly from the norm
+within a random sample but definitely
+outliers are data values that diverge
+markedly from the general cluster or
+group in the data set these outliers
+have the potential to influence the
+behavior of models often misleading the
+training process of machine learning
+algorithms adverse effects of outliers
+Encompass prolonged training duration in
+precise models and subpar outcomes
+however outliers May Harbor valuable
+insights on occasion this underscores
+the importance of meticulous
+investigation and appropriate treatment
+of outliers and now moving on to the
+next question that is list several
+methods for detecting outliers once
+again a pivotal inquiry in Big Data
+interviews here are six techniques for
+identifying outliers first we'll discuss
+the first three that is Extreme value
+analysis probabilistic and statistical
+models and linear models so the first is
+Extreme value analysis so this method
+delves into the statistical tales of the
+data distribution utilizing statistical
+techniques like Z scores on univariate
+data exemplifies extreme value analysis
+the next is probably stick and
+statistical models this approach targets
+instances deemed improbable within a
+probabilistic model of the data a prime
+instance involves optimizing gaussian
+mixture models via the expectation
+maximization process then we have linear
+models this methodology involves mapping
+the data into lower dimensions then we
+have the fourth one that is
+approximately base models then
+information theoretic model and high
+dimensional outlier detection this
+technique discerns data instances
+isolated from the broader data set group
+through methods such as cluster density
+or nearest neighbor analysis then we
+have information theoretical models this
+strategy identifies outliers as
+instances that augment the complexity of
+the data set ultimately impairing it
+then we have high dimensional outlier
+detection this method pinpoints outliers
+subspaces by employing distance measures
+in higher dimensions
+so this was all for this tutorial and
+this was all for the Big Data interview
+questions hope you guys found it
+informative and helpful now let's take a
+minute to hear from our Learners who
+have experienced massive success in
+their careers by opting out for the
+simple learn course hi I am Assad Shah
+from Canada and I recently applicable
+myself with the professional
+certification program in data
+engineering offered by simply learned in
+collaboration with Purdue University
+after working for a long time in SQL
+domain moving to Big Data was a great
+challenge for me I needed to upgrade my
+skills to improve my performance in my
+current records curriculum is well
+formulated while industrial relevant
+Concepts and project
+which helped increase deeper knowledge
+about big data now I can easily carry
+out my big data projects as well as
+successfully lead a team of Engineers I
+even got a decent salary hike
+the wall is moving at a much faster Pace
+than we think make sure you don't make
+behind so obstacle yourself and move to
+a step forward and step closer to your
+dream and if you like this session then
+like share and subscribe if you have any
+questions then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+Simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

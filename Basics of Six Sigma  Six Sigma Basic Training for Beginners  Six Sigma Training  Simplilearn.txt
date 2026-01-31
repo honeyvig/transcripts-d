@@ -1,0 +1,1703 @@
+foreign
+welcome to this new video on basics of
+Six Sigma by simply learn before we
+begin consider subscribing to our
+Channel and hit the Bell icon to never
+miss any updates from Simply learn in
+this video we will start by knowing what
+Six Sigma is what are the benefits of
+Six Sigma moving ahead we will see what
+is lean Six Sigma and understand the
+means the difference between 6 Sigma and
+lean Six Sigma then we will dive deeper
+into Six Sigma Green Belt training and
+by the end of this video we will list
+some important Six Sigma tools to make
+your journey more successful in Six
+Sigma we introduce you postgraduate
+program in lean Six Sigma by simply
+learn some key features of this program
+are joint postgraduate program
+certificate from UMass Amherst and KPMG
+in India master classes by senior
+Consultants from KPMG 8X more live
+interactions with lean Six Sigma experts
+100 money back guarantee Capstone
+projects from 6 domains three Hardware
+case studies 17 Hands-On projects and 18
+simulation exams and much more the
+skills you will acquire through this
+course include agile management quality
+management lean management mini tab lean
+Six Sigma Green Belt and black belt and
+digital transformation with this skills
+you will also gain expertise in the
+tools like Zira so what are you waiting
+for grab the course now find the course
+Link in the description box listen to
+our happy Learners what they say about
+our course
+even after working for 18 years I
+believe you are never too old to learn
+new skills and acquire knowledge to
+excel further and keep up the growth
+that's why I decided to upskill myself
+to hone my skills to improve my
+performance in my current organization
+the course not only helped me to acquire
+skills and get certified but also gave
+me a decent salary hike hey I am Aditya
+Canaria I live in Pune with my family
+I am currently working as a quality
+manager at the source system Global
+Services I recently got certified in the
+postgraduate program in lean Six Sigma
+in collaboration with UMass armrest from
+Simply learn I am a curious learner and
+continuous Improvement is my motto this
+isn't the first time I choose simply
+learned to upskill myself
+I even took the project management
+course earlier which motivated me to go
+for another one I am working in the
+quality management domain for 18 years
+now when I was assigned position of
+quality manager I decided to take up the
+course in Lindsay Sigma
+I wanted to make sure that I am fully
+updated with all the recent case studies
+to master myself in the field of quality
+management the course boosted my
+knowledge is studies from Harvard
+Business publishing and Capstone project
+from kpms in India they provide real
+world lead and Six Sigma exposure one of
+the best attraction of Singaporean
+course is a well-structured course
+content that consists of all the
+industry 11 modules and projects
+the concepts were easier to learn thanks
+to the pedagogy of the faculty
+everything they taught was practical and
+experience driven even the support team
+made the learning smoother because of
+their instant response and great problem
+solving the certification has already
+made me stand out from the crowd and has
+brought me closer to my goal of
+excelling in the field of quality
+management in my leisure time I spent my
+time cooking delicious food and trying
+my hands at new recipes I also love
+photography and enjoy clicking pictures
+with my DSL learning keeps me thriving
+for Perfection it keeps me growing
+professionally because growth is the
+only constant that leads to success so
+without any further Ado let's begin over
+to our experts imagine you've been
+tasked with a really important project
+at work the company you're working for
+produces luxury cars the production
+numbers are going down and a lesser
+number of cars are getting manufactured
+each day there also seems to be an issue
+with the quality of the windshield
+wipers that go on these cars the
+question you are faced with is there a
+way for the company to stop the stall in
+production and increase the production
+per day day from one thousand to two
+thousand also is there a way to find out
+what's causing the drop in the wiper
+quality there is Six Sigma Six Sigma
+gives you the tools and techniques to
+determine what's making the
+manufacturing process slow down how you
+can eliminate the delays improve the
+process and fix further issues along the
+way the concept was introduced in 1980
+by Bill Smith while working for Motorola
+since then Six Sigma has seen worldwide
+adoption Six Sigma aims to reduce the
+time defects and variability experienced
+by processes in an organization thanks
+to Six Sigma you can produce a
+defect-free product
+99.996 of the time allowing only 3.4
+errors per 1 million opportunities 6
+Sigma also increases Customer Loyalty
+towards the brand improves employee
+morale leading to higher productivity
+Six Sigma has two major methodologies
+dmaic and dmadv let's look at the first
+methodology
+dmaic is an acronym for Define measure
+analyze improve and control let's have a
+look at each of these stages
+individually and how it relates to your
+earlier problem in the Define phase you
+determine what issues you're facing what
+your opportunities for improvement are
+and what the customer requires of you
+here you look at the process as a whole
+and determine the issues with the
+manufacturing process in this case
+finding out why the cars had varying
+windshield wiper quality and how to
+optimize the current process to
+manufacture more cars in the measure
+phase you determine how the process is
+performing currently in its unaltered
+state you determine the current number
+of cars that are manufactured in a day
+in the current scenario 1000 cars are
+manufactured in a day and each of these
+cars are outfitted with a pair of
+windshield wipers by one of 30 machines
+used some of the metrics measured or how
+many cars are produced in a day time
+taken to assemble a car how many
+windshield wipers were attached in a day
+time that takes them to do so defects
+detected from each machine on assembly
+completion and so on following this in
+the analyze phase you determine what
+caused the defect or variation on
+analyzing previous data you find out
+that one of the machines that installed
+the windshield wiper was not performing
+as well as it was supposed to production
+was taking longer since the car chassis
+was being moved across the different
+locations slower as cranes had to
+individually pick and drop the frame
+this was because the wheels were
+attached to the car only in the last
+stage next in the improved days you make
+changes to the manufacturing process and
+ensure the defects are addressed
+replace the faulty machines that
+installed the windshield wiper with
+another one you also find a way to save
+time by attaching Wheels on the frame in
+the initial stages of the manufacturing
+process unlike how it was done earlier
+now the car can be moved across the
+assembly area faster and finally in the
+control phase you make regular
+adjustments to control new processes and
+future Performance Based on the changes
+made the company was able to reduce
+production time and manufacture about 2
+000 cars a day with a higher quality of
+output dmaic is one of the most commonly
+used methodologies in the world it
+focuses on improving the existing
+products of the organization the second
+methodology is dmadv which is short for
+Define measure analyze design and verify
+it is used when the company has to
+create a new product or service from
+scratch it is also called dfss or design
+for Six Sigma
+let's take the scenario where the
+company decides to build a new model a
+sports car in the Define phase you
+define the requirements of the customer
+based on inputs from customers
+historical data industry research you
+determine what you need to ensure your
+car becomes a success the data collected
+indicates customers are drawn to cars
+which can achieve more than 150 miles
+per hour customers are also more
+inclined towards cars which have V6
+engines and an aerodynamic frame then in
+the measure phase you use the customer's
+requirements to create a specification
+this specification helps Define the
+product in a measurable method so that
+data can be collected and compared with
+specific requirements some of the major
+specifications that you focus on are the
+top speed engine type and type of frame
+in the analyze phase you analyze the
+product to determine whether there are
+better ways to achieve the desired
+results areas of improvement are
+determined and tested based on the
+analysis of the Prototype created in
+this phase do you find that the product
+satisfies just about all of the customer
+requirements except the top speed
+so research begins on an aluminum alloy
+that could possibly meet the speed
+requirements of the customer following
+this the design phase based on the
+learnings from the analysis phase the
+new process or product is designed
+revisions are made to the model and the
+car is manufactured with the new
+material the analysis phase is repeated
+based on the new design you also bring a
+focus group and see how they receive it
+based on their feedback further changes
+are made and finally in the verify phase
+you check whether the end result meets
+or exceeds customer requirements once
+you launch your brand new sports car you
+collect customer feedback and
+incorporate it into future designs and
+guess what your customers are loving the
+new design and that is DM ADV for you
+Six Sigma has also found success in a
+number of different Industries the
+petrochemical healthcare banking
+government and software are some of the
+industries that have utilized the
+concepts of Six Sigma to achieve their
+business goals another commonly used
+methodology adopted by companies around
+the world is lean lean is a methodology
+that aims to remove any part of the
+process but does not bring value to the
+customer it means doing more with less
+while doing it better the philosophy
+behind lean comes from the Japanese
+manufacturing industry by Bob Hartman
+who at the time was part of Toyota since
+then across the world services and
+Manufacturing organizations have
+Incorporated lean Within their
+businesses but what if you could have
+the best of both worlds a combination of
+both Six Sigma and length that's lean
+Six Sigma
+the organizational benefits of Six Sigma
+are as follows a Six Sigma process
+eliminates the root cause of problems
+and defects in a process
+sometimes the solution is creating
+robust products and services that
+mitigate the impact of a variable input
+or output on a customer's experience for
+example many Electrical Utility Systems
+have voltage variability up to and
+sometimes exceeding a 10 deviation from
+nominal value thus most electrical
+products are built to tolerate the
+variability drawing more amperage
+without damage to any components or the
+unit itself
+using Six Sigma reduces variation in a
+process and thereby reduces waste in a
+process
+it ensures customer satisfaction and
+provides process standardization
+rework is substantially reduced because
+one gets it right the very first time
+further Six Sigma addresses the key
+business requirement
+Six Sigma can also be used by
+organizations to gain advantage and
+become world leaders in their respective
+Fields ultimately the whole Six Sigma
+process is to satisfy customers and
+Achieve organizational goals
+let us understand how Six Sigma Works in
+this screen
+Six Sigma is successful because of the
+following reasons
+Six Sigma is a management strategy it
+creates an environment where the
+management supports Six Sigma as a
+business strategy and not as a
+standalone approach or a program to
+satisfy some public relations need
+Six Sigma mainly emphasizes the DMACC
+method of problem solving Focus teams
+are assigned well-defined projects that
+directly influence the organization's
+bottom line with customer satisfaction
+and increased quality being byproducts
+Six Sigma also requires extensive use of
+statistical methods imagine you're the
+manager of a supermarket chain you've
+noticed that two things need your
+immediate attention the first issue is
+how to handle the different kinds of
+ways that you encounter at your
+supermarket
+the next one requires you to address the
+supply chain issues at the supermarket
+which are causing delays to the morning
+delivery of milk
+leading to customer dissatisfaction and
+attrition these problems can be solved
+by incorporating two of the most popular
+quality management methodologies in the
+world lean and Six Sigma one famous for
+its ability to handle waste and another
+known for process Improvement but what
+if there was a methodology that combined
+the concepts of both Six Sigma and Link
+one that can solve all your issues well
+there is lean Six Sigma before we dive
+into lean Six Sigma let's take a closer
+look at its parent methodologies
+first off lean is a methodology that
+focuses on providing value to the
+customer
+eliminating waste continuous Improvement
+reducing cycle time lean in Six Sigma
+both aim to handle waste but what is
+this waste waste is any step or action
+in the process that a user does not gain
+any value from in short things that
+users wouldn't want to pay for why would
+a consumer want to pay extra for the
+additional truck that was required to
+deliver milk to the supermarket just
+because the other one broke down
+this waste can be divided into eight
+categories let's have a look at each of
+them One Transportation this waste
+refers to the excess movement of people
+tools inventory equipment and other
+components of a process then it is
+required
+two inventory this waste occurs due to
+having more products and materials than
+required this can cause damage and
+effects to products or materials greater
+time for completion inefficient
+allocation of capital and so on
+3. motion this refers to the time and
+effort wasted due to unnecessary
+movement of people equipment or
+Machinery this could be sitting through
+inventory double data entry and so on
+4. waiting this can be time wasted
+waiting on information instructions
+materials or equipment
+five overproduction
+this is the waste created due to
+producing more products than required 6.
+over processing it refers to more work
+more components or more steps in a
+product or service than required
+7. defects this is the waste originating
+from a product or service that fails to
+meet customer expectations 8. skills
+this waste refers to the waste of human
+potential under utilizing capabilities
+and delegating tasks to people with
+inadequate training
+for years now many systems have emerged
+that use the lean methodology to
+identify and handle the different kinds
+of waste some of the more popular and
+effective ones are jit or just in time
+5s and kanban
+the jit methodology focuses on reducing
+the amount of time the production system
+takes to provide an output and the
+response time from suppliers to
+customers 5S is another methodology that
+focuses on cleanliness in organization
+while improving profits and efficiency
+kanban is also another popular
+methodology to achieve Lane
+it is a visual method to manage tasks
+and workflows
+kanban enables users visualize the
+workflow to identify issues in the
+process and fix them
+these methodologies help in optimizing
+the waste production and are often used
+together to maximize results so that's
+the first problem solved now let's have
+a look at how you can improve the
+supermarket supply chain efficiency for
+that let's have a look at the other part
+of lean Six Sigma Six Sigma
+Six Sigma is a set of tools and
+techniques that are used for process
+Improvement and removing defects let's
+see how Six Sigma makes that possible
+Six Sigma has two major methodologies
+dmaic and dmadv
+you can learn more about these two
+methodologies by checking out our Six
+Sigma in nine minutes video by clicking
+on the top right corner let's have a
+closer look at dmaic since lean Six
+Sigma uses the dmaic methodology of Six
+Sigma dmaic is an acronym for Define
+measure analyze improve control it is
+used to improve existing products and
+processes so that it can meet the
+customers requirements
+in the Define phase you determine what
+the goals of the project are in this
+case you want to reduce the amount of
+time taken to deliver milk from the
+warehouse to the supermarket so that it
+is stocked on the supermarket shelves
+before 8 30 in the morning
+in the measure phase you measure the
+performance of the current unaltered
+process the milk truck leaves at 7 30 am
+in the morning and can take one of three
+routes a b and c Rel a is currently the
+preferred one as it takes only 60
+Minutes to reach the supermarket
+compared to the routes B and C which
+takes 70 and 80 minutes respectively
+in the analyze phase you find out why
+the defects exist
+since routes B and C were school bus
+routes by reducing the starting time by
+one hour at 6 30 instead of 7 30 meant
+avoiding the traffic routes B and C now
+take 40 to 45 minutes to reach the
+supermarket route a still takes the milk
+truck one hour to get to the supermarket
+even when the truck leaves at 6 30 am
+in the improve phase performance can be
+improved by addressing and eliminating
+the root causes
+now that you've realized that advancing
+the milk pickup by an hour and changing
+the route to Route B can save time you
+change the process accordingly providing
+your workers with ample time to stock
+the milk into the shelves before the
+morning rush and finally in the control
+phase you make regular adjustments to
+control new processes and future
+performance
+you continue to monitor the delivery
+times and try out alternate routes to
+continually improve the process and
+ensure even faster delivery
+this process change LED to reduced man
+hours and cost enhanced cells and
+customer retention the lean Six Sigma
+methodology offers many such benefits to
+businesses let's take a look at some of
+them one increase in profits two
+standardized and simplified process
+three reduced errors
+4. employee development five value to
+customers and that is lean Six Sigma for
+to make yojini more successful in Six
+Sigma we introduce your postgraduate
+program in lean Six Sigma by simply
+learn so what are you waiting for grab
+the course now find the course Link in
+the description box the term lean refers
+to creating more value to customers with
+fewer resources it means reducing
+unwanted activities or processes that do
+not add value to the product or service
+for the customer
+the lean philosophy is to provide
+perfect value to the customer through a
+perfect value creation process that has
+zero waste
+while the ultimate goal is to achieve
+zero waste you may not always get that
+in the first couple of tries however you
+will achieve minimum waste and continue
+to move towards zero waste eventually
+hence lean is the path towards
+perfection
+lean is about optimizing the process
+from beginning to end eliminating
+non-value-adding activities in va's and
+increasing flow to ensure that parts and
+services are provided to customers more
+quickly
+if quality is the word to describe Six
+Sigma then speed is the word to describe
+lean let's understand the importance of
+lean
+there are many benefits of lean and some
+of them are reduced cost reduced cycle
+time more throughput and increase
+productivity
+despite all of these benefits lean is
+not implemented by most of the
+organizations because of the
+misconception that it is only suited in
+manufacturing areas
+the reason for this misconception is the
+beginning of lean it began and grew in
+popularity in the manufacturing areas
+starting with Toyota
+in recent years one can notice more
+applications of lean in other areas such
+as health care and the transactional
+space
+however the truth is that lean Concepts
+can be applied in any business and in
+any process
+on the next screen let's discuss how
+lean and Six Sigma combine
+lean in Six Sigma are two different
+principles or methodologies that combine
+to form and create one powerful
+continuous Improvement methodology
+they have various overlapping goals
+toward the improvement with the aim of
+creating the most efficient system
+though the approaches are different the
+methods complement each other
+lean Six Sigma takes the power and rigor
+of Six Sigma methodology and combines it
+with lean Concepts leading to faster
+results better quality and improved
+customer satisfaction
+let's look at the differences between
+lean and Six Sigma lean focuses on
+efficiency by identifying value from the
+customer's point of view removing
+unnecessary steps in the process and
+improving process speed or velocity
+on the other hand Six Sigma focuses on
+Effectiveness with the help of
+breakthrough processes identifying root
+causes and reduction in variation
+therefore when six sigmas combine with
+lean it is possible to achieve business
+transformation
+so remember lean is about speed with a
+focus on efficiency Six Sigma is about
+quality with a focus on Effectiveness
+and lean Six Sigma brings the best of
+both together
+peeled a better result first Implement
+lean to streamline the process this
+helps to understand the chronic problems
+and the ways to handle them quickly
+once the problem is identified use six
+singular methodology to analyze the
+issues and provide business Improvement
+transformation
+in other words lean is used to reduce
+the waste and Six Sigma is used to
+reduce the variation let us start with
+an introduction to Six Sigma in the
+following screen
+sex Sigma is a highly disciplined
+process that focuses on delivering near
+perfect products and services
+consistently
+its strength is that it's a continuous
+improvement process with an unwavering
+focus on change empowerment seamless
+training of resources and continuous top
+management support
+these three are known as the pillars of
+Six Sigma if Six Sigma is implemented
+methodically it will give sustained
+results for any process
+now the question arises as to what is a
+process this will be explained in the
+next screen
+a process is a series of steps designed
+to produce a product and or service
+according to the requirement of the
+customer
+a process mainly consists of four parts
+input process steps output and feedback
+input is something put into a process or
+expended in its operation to achieve an
+output or a result
+for example man material machine and
+management
+output is the final product delivered to
+an internal or external customer for
+example product or services
+it is important to understand that if
+the output of a process is an input for
+another process the latter process is
+the internal customer
+each input can be classified as
+controllable represented as C
+non-controllable represented as NC noise
+represented as n and critical
+represented as X
+the most important aspect of the process
+is the feedback
+as can be inferred from the image any
+change in the inputs causes change in
+the output
+therefore y equals f of x
+feedback helps in process control
+because it suggests changes to the
+inputs
+let us learn about the process of Six
+Sigma in the next screen
+let us understand how Six Sigma Works in
+this screen
+sex Sigma is successful because of the
+following reasons Six Sigma is a
+management strategy it creates an
+environment where the management
+supports Six Sigma as a business
+strategy and not as a standalone
+approach or a program to satisfy some
+public relations need
+Six Sigma mainly emphasizes the DMACC
+method of problem solving
+Focus teams are assigned well-defined
+projects that directly influence the
+organization's bottom line with customer
+satisfaction and increased quality being
+byproducts Six Sigma also requires
+extensive use of statistical methods
+the next screen will focus on some key
+terms used in Six Sigma
+let us look at the segment level chart
+in this screen
+as discussed earlier the Six Sigma
+quality means 3.4 defects in 1 million
+opportunities or process with a
+99.9966 percent yield the sigma level
+chart given on the screen shows the
+values for other Sigma levels please
+take a look at the values carefully
+let us understand the benefits of Six
+Sigma in the next screen
+the organizational benefits of Six Sigma
+are as follows a Six Sigma process
+eliminates the root cause of problems
+and defects in a process
+sometimes the solution is creating
+robust products and services that
+mitigate the impact of a variable input
+or output on a customer's experience for
+example many Electrical Utility Systems
+have voltage variability up to and
+sometimes exceeding a 10 deviation from
+nominal value thus most electrical
+products are built to tolerate the
+variability drawing more amperage
+without damage to any components or the
+unit itself using Six Sigma reduces
+variation in a process and thereby
+reduces waste in a process
+it ensures customer satisfaction and
+provides process standardization
+rework is substantially reduced because
+one gets it right the very first time
+further Six Sigma addresses the key
+business requirement
+Six Sigma can also be used by
+organizations to gain advantage and
+become world leaders in their respective
+Fields ultimately the whole Six Sigma
+process is to satisfy customers and
+Achieve organizational goals in the next
+screen let us understand Six Sigma and
+quality
+taking a process to Six Sigma level
+ensures that the quality of the product
+is maintained the primary goal of
+improved quality is increased profits
+for the organization
+in very simple terms quality is defined
+as the degree of Excellence of a product
+or a service provided to the customer it
+is conformance to customer requirement
+if the customer is satisfied with the
+product or service then the product or
+service is of the required quality
+let us look at the history of quality in
+the next screen in the mid-1930s
+statistical process control SPC was
+developed by Walter schuhart and used
+extensively during World War II to
+quickly expand the US's industrial
+capabilities
+SPC is the application of statistical
+techniques to control any process
+Walter shoe Hearts work on the common
+cause of variation and special cause of
+variation assignable has been used
+proactively in all Six Sigma projects
+the approach to Quality has varied from
+time to time in the 1960s there were
+quality circles which originated in
+Japan it was started by Kaoru Ishikawa
+quantity circles were self-improvement
+groups composed a small number of
+employees belonging to a single
+Department
+quality circles brought in improvements
+with little or no help from the top
+management
+in 1987 ISO 9000 was introduced
+ISO stands for International
+Organization for standardization
+ISO 9000 is a set of international
+standards on quality management and
+quality assurance to help organizations
+Implement Quality Management Systems ISO
+9000 is still in effect
+baldrige award now known as the Malcolm
+Baldridge National Quality award was
+developed by the U.S Congress in 1987 to
+raise awareness of Quality Management
+Systems as well as recognize and award
+U.S companies that have successfully
+implemented Quality Management Systems
+in 1988 another quality approach was
+developed known as benchmarking in this
+approach an organization measures its
+performance against the best
+organizations in its field determines
+how such performance levels were
+achieved and the information is used by
+the organization to improve itself
+then in the 1990s there was the balance
+scorecard approach it is a management
+tool that helps managers of all levels
+to monitor their results in their key
+areas so that one metric is not
+optimized while another is ignored
+during the year 1996 through 1997 an
+approach known as re-engineering was
+developed this approach involved the
+restructuring of an entire organization
+and its processes
+integrating various functional tasks
+into cross-functional processes is one
+of the examples of re-engineering
+in the next screen let us find out about
+the quality gurus and their contribution
+to the field of quality
+let us focus on Six Sigma and the
+business system in this screen
+business systems are designed to
+implement a process or a set of
+processes a business system ensures that
+process inputs are at the right place
+and at the right time so that each step
+of the process has the resource it needs
+a business system designed should be
+responsible for collecting and analyzing
+data so that continual Improvement of
+its processes products and services is
+insured a business system has processes
+sub-processes and steps as it subsets
+Human Resources manufacturing and
+marketing are some examples of processes
+in a business system
+Six Sigma improves a business system by
+continuously removing the defects in its
+processes and also by sustaining the
+changes a defective item is any product
+or service that a customer would reject
+a customer can be the user of the
+ultimate product or service or can be
+the next process Downstream in the
+business system let us learn about Six
+Sigma projects and organizational goals
+in the following screen
+let us understand the structure of the
+Six Sigma team in this screen
+there are totally five levels in the Six
+Sigma screen the first level consists of
+the top Executives of the organization
+these people lead change and provide
+direction as they own the vision of the
+organization
+for any Improvement initiative to work
+it is important that top management of
+the organization be actively involved in
+its propagation the top Executives own
+the Six Sigma initiatives next in the
+level are Six Sigma Champions they
+identify and scope projects develop
+deployment and strategy and support
+cultural change
+they also identify and Coach master
+black belts three to four Master block
+belts work under every champion
+Six Sigma Master black belts train and
+Coach black belts green belts and
+various functional leaders of the
+organization
+they usually have at least three to four
+black belts under them the fourth level
+in Six Sigma structure is Six Sigma
+Black belts they apply strategies to
+specific projects and lead in direct
+teams to execute projects
+finally there are Six Sigma Green belts
+they support the black belt employees by
+participating in Project teams green
+belts play a dual role they work on the
+project and perform day-to-day jobs
+related to their work area
+in the next screen we will understand
+the drivers and metrics of
+organizational strategy
+while financial accounting is useful to
+track physical assets the balanced
+scorecard or BSE offers a more holistic
+approach to strategy implementation and
+performance measurement by taking into
+account perspectives other than the
+financial one for an organization
+traditional strategic activities that
+concentrate only on financial metrics
+are not sufficient to predict future
+performance they are not sufficient to
+implement and control the Strategic plan
+either BSE translates the organizational
+strategy into actionable objectives that
+can be met on an everyday basis and
+provides a framework for performance
+measurement the balance scorecard helps
+clarify the organizational vision and
+Mission to workable action items to be
+carried out and measured it also
+provides feedback on both internal
+business processes and external outcomes
+by doing so it enables continuous
+Improvement in strategic performance
+toward achieving organizational goals
+the balanced scorecard achieves all this
+by integrating the organizational
+strategy with a limited number of key
+metrics from four major areas of
+performance Finance customer relations
+internal processes and learning and
+growth
+many organizations in the world use
+balanced scorecard approaches and the
+number is increasing every day
+in the next screen we will describe the
+balanced scorecard framework we will
+learn about developing a balanced
+scorecard in this screen while applying
+the balance scorecard in an organization
+care must be taken to account for
+interactions between different
+perspectives or strategic business units
+and avoid optimizing the results of one
+at the expense of another
+to outline the strategy a top-down
+approach is followed by determining the
+Strategic objectives measures targets
+and initiatives for each perspective
+the Strategic objectives refer to the
+strategy to be achieved in that
+perspective three or four leading
+objectives are agreed upon the progress
+towards strategic objectives is assessed
+using specific measures these measures
+should be closely related to the actual
+performance drivers this enables
+effectively evaluating progress
+high-level metrics are linked to lower
+level operational measures the target
+values for each measure are set the
+initiatives required to achieve the
+target value are identified
+as already mentioned this exercise is
+carried out for all the perspectives
+finally the scorecard is integrated into
+the management system
+in the next screen let us understand the
+change in the approach to the balance
+scorecard from the four Box model of BSE
+to strategy Maps
+in earlier approaches to the balanced
+scorecard the perspectives were
+presented in a four Box model this kind
+of scorecard was more a comprehensive
+glance at the key performance indicators
+or metrics in different perspectives
+however the key performance indicators
+or metrics of different perspectives
+reviewed independent of each other which
+led to a silo based approach and lack of
+integration
+however modern scorecards place the
+focus on the interrelations between the
+objectives and metrics of different
+perspectives and how they support each
+other
+a well-designed balanced scorecard
+recognizes the influence of one
+perspective on another and the effect of
+these interactions on organizational
+strategy
+to achieve the objectives in one
+perspective it is necessary to achieve
+the objectives in another perspective in
+short the four perspectives form a chain
+of cause and effect relationships a map
+of interlinked objectives from each
+perspective is created these objectives
+represents the performance drivers which
+determine the effectiveness of strategy
+implementation this is called a strategy
+map
+the function of a strategy map is to
+outline what the organization wants to
+accomplish and how it plans to
+accomplish it the strategy map is one
+page view of how the organization can
+create value the for example financial
+success is dependent on giving customers
+what they want which in turn depends on
+the internal processes and learning and
+growth at an individual level in the
+next screen we will look at the impact
+of the balance scorecard on the
+organization
+the balance scorecard and strategy map
+Force managers to consider cause and
+effect relationships which leads to
+better identification of key drivers and
+a more rounded approach to strategic
+planning the BSC enables the
+organization to improve in the following
+ways
+being a one-page document a strategy map
+can easily be communicated and
+facilitates understanding at all levels
+of the organization
+an organization is successful in meeting
+its objectives only when everyone
+understands the strategy
+the balance scorecard also forces an
+organization to measure what really
+matters and manage information better so
+that quality of decision making is
+higher creating performance reports
+against a balanced scorecard allows for
+a structured approach to reporting
+progress it also enables organizations
+to create reports and dashboards to
+communicate performance transparently
+and meaningfully as expected a balanced
+scorecard helps an organization to
+better align itself and its processes to
+the Strategic goals outlined in the BSE
+the overall objectives of the BSE can be
+cascaded into each business unit to
+enable that unit to work toward the
+common organizational goal
+all the activities of the organization
+such as budgeting or risk management are
+automatically aligned to the Strategic
+objectives to conclude the balance
+scorecard is a simple and Powerful tool
+that when implemented correctly equips
+an organization to perform better
+let us proceed to the next topic of this
+lesson in the following screen
+in this topic we will look at what lean
+is and how lean is applied to a process
+let us start with the lean Concepts in
+the next screen let us look at the
+process issues in this screen
+lean focuses on three major issues in a
+process known by their Japanese names
+muda mura and Murray muda refers to
+non-value adding work mura represents
+unevenness and Marie represents
+overburden together they represent the
+key aspects in lean let us look at the
+types of waste in the next screen
+there are seven types of muda or waste
+as per lean principles let us understand
+these seven types of muda over
+production this refers to producing more
+than is required for example a customer
+needed 10 products and 12 were delivered
+inventory in simple words this refers to
+stock
+the term inventory includes finished
+goods semi-finished Goods raw materials
+supplies kept in waiting and some of the
+work in progress for example test
+scripts waiting to be executed by the
+testing team defects repairs rejects any
+product or service deemed unusable by
+the customer or any effort to make it
+usable to the original customer or a new
+customer for example errors found in the
+source code of a payroll module by
+quality control team motion a waste due
+to poor ergonomics of the workplace for
+example finance and account team sit on
+the first floor but invoices to
+customers are printed on the ground
+floor causing unnecessary Personnel
+movement
+over processing additional process on a
+product or service to remove unnecessary
+attribute or feature is over processing
+for example a customer needs a bottle
+and you deliver a bottle with extra
+plastic casing a customer needs abec3
+bearing and your process is tuned to
+produce more precise adec 7 bearings
+taking more time for something the
+customer doesn't need
+waiting when a part waits for processing
+or the operator waits for work the
+wastage of waiting occurs for example
+improper scheduling of Staff members
+transport when the product moves
+unnecessarily in the process without
+adding value
+for example a product is finished and
+yet it travels 10 kilometers to the
+warehouse before it gets shipped to the
+customer another example an electronic
+form is transferred to 12 people some of
+them seeing the form more than once that
+is the form is traveling over the same
+space multiple times
+next we will look at lean waste other
+than the seven types of waste discussed
+some lean experts talk about additional
+areas of waste under utilized skills
+skills are underutilized when the
+workforce has capabilities that are not
+being fully used toward productive
+efforts people are assigned to jobs in
+which they do not fit
+underperforming processes automation of
+poorly performing process improving a
+process that should be eliminated if
+possible for example the product returns
+department or product discounts process
+a symmetry in processes that should be
+eliminated for example two signatures to
+approve a cost reduction and six
+signatures to reverse a cost reduction
+that created higher costs in other areas
+in the next screen we will look at an
+exercise on identifying the waste type
+we will cover each step of the lean
+process in the next few screens in this
+screen we will learn about the first
+step identify value to implement lean to
+a process it is important to find out
+what the customer wants once this is
+done the process should be evaluated to
+identify what it needs to possess to
+meet customer requirements
+the next screen will focus on the next
+step of the lean process value stream
+mapping
+in this screen we will discuss the
+differences between push and pull
+processes an organization can adopt
+either of these processes depending on
+the requirement
+contrary to a pull process in a push
+process the first step is to forecast
+the demand for a product or service the
+production line then begins to fill this
+demand and produced parts are stocked in
+anticipation of customer demand for
+example a garments manufacturer produces
+200 shirts based on expected demand and
+then waits for customer orders for them
+note that the demand is expected and not
+actual discounts offered to customers by
+big retailers are examples of the push
+process
+if the Garment company adopts a pull
+process instead it would start making
+the shirts only after receiving a
+confirmed demand from customers note
+that although the full approach seems
+better it is not applicable to all
+situations for example a pharmacy uses a
+push process
+in the next screen we will learn about
+theory of constraints
+let us look at an example for the TOC
+methodology in this screen
+the three sub processes in the packing
+process are coding or printing filling
+and sealing the data for the three sub
+processes are observed and collected as
+number of units produced in an hour
+the data is as follows
+coding or printing is 900 units per hour
+filling is 720 units per hour and
+ceiling is 780 units per hour
+how can you implement the TOC
+methodology in this example
+let us build the TOC map for this
+example the first step in the TOC
+methodology is to identify the
+constraint looking at the data the
+output per hour from The Filling process
+is 720. this is the constraint in the
+system
+in the Second Step the constraint is
+exploited by analyzing the performance
+using data to break the constraint a
+repair and maintenance Personnel can be
+assigned to maintain the filling machine
+on a daily basis
+in the third step the other fixes in the
+repair and maintenance function are made
+as subordinate decisions to the one
+taken in step two in this example carry
+out the maintenance of the filling
+machine in the fourth step the
+constraint is elevated by implementing
+the decisions in this example remove the
+damages from the filling machine
+the next step is to go back to step one
+and identify the next system constraint
+as per the data collected after
+implementation of the first cycle of the
+TOC ceiling can be identified as the
+next system constraint
+let us now analyze the data before and
+after Toc implementation in this example
+the number of units produced per hour
+before implementing the TOC encoding or
+printing process was 900 units filling
+process was 720 units and sealing
+process was 780 units
+after implementing the TOC the number of
+units produced per hour for the filling
+process increased to 840 from 720 units
+let us proceed to the next topic of this
+lesson in this topic we will discuss the
+concepts in design for Six Sigma or dfss
+let us first understand dfss in the next
+screen
+dfss or design for Six Sigma is a
+business process methodology that
+ensures that any new product or service
+meets customer requirements and the
+process for that product or service is
+already at Six Sigma level
+dfss uses tools such as Quality Function
+deployment or qfd and failure mode and
+effects analysis or FMEA
+dfss can help a business system to
+introduce an entirely new product or
+service for the customer
+it can also be used to introduce a new
+category of product or service for the
+business system for example an fmcg
+company plans to make a new brand of
+hair oil a type of product already in
+the market
+dfss also improves the product or
+service and adds to the current product
+or service lines to implement dfss a
+business system has to know its customer
+requirements
+dfss can be used to design a new product
+or service a new process for a new
+product or service or redesign of an
+existing product or service to meet
+customer requirements
+let us learn about processes for dfss in
+the next screen
+the two major processes for dfss are
+idov and dmadv
+idov stands for identify design optimize
+and verify
+dma DB stands for Define measure analyze
+design and verify
+in the idov process the first step
+involves identifying specific customer
+needs based on which the new product and
+business process will be designed the
+next step involves design which involves
+identifying functional requirements
+developing alternate Concepts evaluating
+the Alternatives selecting a best fit
+concept and predicting Sigma capability
+tools such as FMEA are used here the
+third step optimize uses a statistical
+approach to calculate tolerance with
+respect to the desired output
+when idov is implemented to design a
+process expected to work at Six Sigma
+level this is checked in the optimize
+phase
+if the process does not meet
+expectations the optimize phase helps in
+developing detailed design elements
+predicting performances and optimizing
+design
+the last stage of idov is to verify that
+is to test and validate the design and
+finally to check conformance to Six
+Sigma standards
+the other process dmadv has five stages
+the first stage is to define the
+customer requirements and goals for the
+process product or service
+next measure and match performance to
+customer requirements the third stage
+involves analysis and assessment of the
+design for the process product or
+service the next step is to design and
+implement the array of latest processes
+required for the new process product or
+service
+the final stage is to verify results and
+maintain performance
+in the next screen we will look at the
+differences between idov and dmad
+the primary difference between idov and
+dma DB is that while idov is used only
+to design a new product or service dma
+DB can be used to design either a new
+product or service or redesign an
+existing product or service
+idov involves design of a new process
+while dmadv involves redesigning an
+existing process in idov no analysis or
+measurement of existing process is done
+and the whole development is new the
+design step immediately follows the
+identification of customer requirements
+in contrast dmadv the existing product
+service or process is examined
+thoroughly before moving to the design
+phase
+the design stage comes only after
+defining requirements and analyzing the
+existing product service or process
+in the following screen we will learn
+about tool Quality Function deployment
+or qfd which is one of the dfss tools
+qfd also called voice of customer or VOC
+or House of quality is a predefined
+method of identifying customer
+requirements it is a systematic process
+to understand the needs of the customer
+and convert them into a set of design
+and Manufacturing requirements
+qfd motivates business to focus on its
+customers and design products that are
+competitive in lesser time and at lesser
+cost
+the primary learning from qfd includes
+which customer requirements are most
+important well the organization's
+strengths and weaknesses are where an
+organization should focus their efforts
+and where most of the work needs to be
+done
+to learn from qfd the organization
+should ask relevant questions to
+customers and tabulate them to bring out
+a set of parameters critical to the
+design of the product
+apart from understanding customer
+requirements it is also important to
+know what would happen if a particular
+product or service fails when being used
+by a customer
+it is necessary to understand the
+effects of failure on the customer to
+ensure preventive actions are taken and
+to be able to answer the customers in
+the event of failure
+in the next screen we will look at
+another dfss tool failure modes and
+effects analysis or FMEA
+failure modes and effects analysis or
+FMEA is a preemptive tool that helps any
+system to identify potential pitfalls at
+all levels of a business system it helps
+the organization to identify and
+prioritize the different failure modes
+of its product or service and what
+effect the failure would have on the
+customer it helps in identifying the
+critical areas in a system on which the
+organization's efforts can be focused
+note that while FMEA enables
+identification of critical areas it does
+not offer solutions to the identified
+problems we will look at the varieties
+of FMEA such as dfmea and pfmea in the
+next screen
+pfmea stands for process failure mode
+and effects analysis and dfmea stands
+for design failure mode and effects
+analysis
+pfmea is used on a new or existing
+process to uncover potential failures it
+is done in the quality planning phase to
+act as an aid during production a
+process FMEA can involve fabrication
+assembly transactions or services
+dfmea is used in the design of a new
+product service or process to uncover
+potential failures the purpose is to
+find out how failure modes affect the
+system and to reduce the effect of
+failure on the system this is done
+before the product is sent to
+manufacturing all design deficiencies
+are sorted out at the end of this
+process in the following screen we will
+understand FMEA risk priority number
+FMEA risk priority number or RPM is a
+measure used to quantify or assess risk
+associated with the design or process
+assessing risk helps identify critical
+failure modes higher the rpn higher the
+priority the product or process receives
+rpn is a product of three numbers
+severity of a failure occurrence of a
+failure and the detectability of a
+failure
+all these numbers are given a value on a
+scale of one to ten the minimum value of
+rpn is one and the maximum value is one
+thousand a failure mode with a high
+occurrence rating means the failure mode
+occurs very frequently
+a mode with a high severity rating means
+that the mode is really critical to
+ensure safety of operations
+a mode with a high detection rating
+means that the current controls are not
+sufficient
+in the next screen we will look at the
+FMEA table
+the FMEA table helps plan Improvement
+initiatives by underlining why and how
+failure modes occur and helps
+organizations plan for their prevention
+typically FMEA is applied on the output
+of root cause analysis and is a better
+tool for Focus or prioritization as
+compared to multi-voting one important
+aspect of FMEA is that it does not need
+data
+experts in a particular area can form
+the FMEA table without having to look at
+data from any source in functions such
+as human resources the FMEA table is
+very useful as there might not be much
+data available to the problem-solving
+team
+the sample FMEA table is given on the
+screen please go through the contents
+for better understanding
+in the following screen we will discuss
+severity of risk priority number and
+scale criteria
+let us first discuss severity
+severity refers to the seriousness of
+the effect of the failure mode or how
+critical the failure mode is to the
+customer or the process
+the severity of a failure mode is rated
+on a scale of 1 to 10 using a severity
+table
+different Industries follow different
+structures for the severity table
+a high severity rating indicates a mode
+is critical to operational safety
+for example a team working on FMEA of a
+radioactive plant May insert fatal as
+the effect with rating 10. another
+example is the severity table for a
+sports team
+the team manager wants to rate the
+severity of failure of the team in an
+upcoming game
+she might rate it at nine given that the
+team would lose a big sponsorship should
+they face defeat which could in turn be
+hazardous to the team's future
+shown here is a generalized table of
+severity
+the severity rating can never be changed
+for example if a mode has a rating of 9
+before Improvement it will continue to
+have a rating of 9 after Improvement two
+let us look at occurrence of RPM and
+scale criteria
+occurrence is the probability that a
+specific cause will result in the
+particular failure mode
+as with severity occurrences rated on a
+scale of 1 to 10 based on a table
+like the severity table higher the
+occurrence of a failure higher is its
+rating again this table might vary
+depending on the industry and scenario
+sometimes the project team can use data
+here if available
+based on past data the probability of
+occurrence of a failure can easily be
+rated shown here is a generalized table
+let us next look at detection of rpn and
+scale criteria
+detection is the probability that a
+particular failure will be detected
+the table shown here is again a
+generalized one the rating here is a bit
+different from severity or occurrence
+higher the detectability of a failure
+lower is its rating this is because if
+the failure can easily be detected then
+everyone would know of it and therefore
+there would be less or no damage for
+example if detection is impossible the
+failure is given a rating of 10. please
+note that at the start of a Six Sigma
+project the failure mode is given a
+relatively High detection rating let us
+look at an example of FMEA and rpn in
+the next screen
+in this example A Bank wants to
+recognize and prioritize the risks
+involved in the process of withdrawing
+cash from an ATM it can be observed from
+the table that not having a control in
+place for network issues has the highest
+rpn this is due to the detectability for
+a network issue being very low the next
+set of information in the table shows
+the action taken by the bank's
+management to address the failure modes
+following the implementation the new rpn
+is calculated retaining the security
+level at nine this is because the
+actions were not directed at reducing
+the severity but at the causes of
+failure it can be seen that the new rpn
+is much lower and the risk for both
+causes has been mitigated
+to make your journey more successful in
+Six Sigma we introduce your postgraduate
+program in lean Six Sigma by simply love
+so what are you waiting for grab the
+course now find the course Link in the
+description box this lesson will cover
+the details of the Define phase
+let us start with the objectives of the
+lesson in the next screen
+after completing this lesson you will be
+able to explain various components of
+project identification
+describe customer data collection
+methods list various means of project
+documentation
+discuss risk analysis and management
+describe project management and planning
+tools
+explain the concepts used in evaluation
+of project performance
+discuss team stages and Dynamics
+let us start with the first Topic in the
+following screen
+in this topic we will discuss project
+identification
+let us see the prerequisites of a Six
+Sigma project in the following screen
+Six Sigma can be applied to everything
+around it can be applied across almost
+70 different sectors however it cannot
+be applied to all problems the first
+step is to check if the project
+qualifies to be a Six Sigma project
+the questions that need to be asked are
+as follows
+is there an existing process to
+implement the DMACC methodology of
+problem solving a process needs to exist
+the six signal process is known as
+Dometic
+demand comprises five phases Define
+measure analyze improve and control
+these phases are the roadmap to problem
+solving and improving our processes
+the effectiveness of Six Sigma method is
+derived from its structure
+each phase has an overarching objective
+and specific deliverables that need to
+be completed which helps us achieve the
+objectives the purpose of the Define
+phase is to document the problem the
+desired outcome goals and deliverables
+the purpose of the measure phase is to
+obtain Baseline process performance
+levels and quantify the problem the
+focus of the analyze phase is to
+identify the key root causes for process
+variation and defects the purpose of the
+improved phase is to develop test and
+implement the solutions
+the goal of the control phase is to
+monitor the key factors and maintain the
+gains you learn the aspects of the
+domainic process now we'll look at the
+tools used in each phase the list of
+tools corresponds to the Dometic phase
+in which they are used
+the use or application of these tools
+gives the expected deliverables in each
+Dometic phase for a green belt some of
+the tools listed are not required in
+every Six Sigma Greenbelt project
+these tools give us an insight into the
+problem and lead us toward the real
+issues in our processes that is with
+more experience you are likely to know
+the tools you need for your projects
+in the Define phase we use cypok voice
+of the customer or VOC critical to
+quality ctq the quality function
+deployment or qfd failure modes and
+effects analysis
+known as the FMEA or the familiar and
+the cause and effect CNE Matrix
+in the measure phase we use measurement
+system analysis or MSA control charts
+process capability and normality plots
+and the analyze phase we use Simple
+linear regression or SLR Pareto charts
+fishbone diagram Builder modes and
+effects analysis The Familiar
+multivariate charts and hypothesis
+testing
+in the improved phase we use
+brainstorming piloting and also the
+failure modes effects analysis and
+design of experiments Doe
+in the last phase control will use
+control charts a control plan and
+measurement system analysis
+Pareto chart is a histogram ordered by
+the frequency of occurrence of events it
+is also known as the 80 20 rule or vital
+view trivial many
+it helps project teams to focus on the
+issues which cause the highest number of
+defects or complaints
+to explain further the given chart plots
+all the causes for defects in a product
+or service the values are represented in
+descending order by bars and the
+cumulative total is represented by the
+line
+Pareto chart emphasizes that 80 percent
+of the effects come from 20 percent of
+the causes thus a Pareto chart Narrows
+the scope of the project or problem
+solving by identifying the major causes
+affecting quality
+burrito charts are useful only when
+required data is available
+if data is not available then other
+tools such as brainstorming and
+multi-voting should be used to find the
+root cause of any problem
+Network diagrams are one of the tools
+used by the project manager for project
+planning they are also sometimes
+referred to as Arrow diagrams because
+they use arrows to connect activities
+and represent precedence and
+interdependencies between activities of
+a project
+there are some assumptions that need to
+be made while forming the network
+diagram the first assumption is that
+before a new activity begins all pending
+activities have been completed
+the second assumption is that all arrows
+indicate logical precedence
+this means that the direction of the
+arrow represents the sequence that
+activities need to follow
+the last assumption is that a network
+diagram must start from a single event
+and end with a single event there cannot
+be multiple start and end points to the
+network diagram
+critical path method also known as CPM
+is an important tool used by project
+managers to monitor the progress of the
+project and to ensure that the project
+is on schedule
+the critical path for a project is the
+longest sequence of tasks on the network
+diagram the critical path in the given
+Network diagram is highlighted in Orange
+critical path is characterized by zero
+slack for all tasks on the sequence
+this means that the smallest delay in
+any of the tasks on the critical path
+will cause a delay in the overall
+timeline of the project
+this makes it very important for the
+project manager to closely monitor the
+tasks on the critical path and ensure
+that the tasks go smoothly if needed the
+project manager can divert resources
+from other tasks that are not on the
+critical path to task on the critical
+path to ensure that the project is not
+delayed
+when a project manager removes resources
+from such tasks he needs to ensure that
+the task does not become a critical path
+task because of the reduced number of
+resources
+during the execution of the project the
+critical path can easily shift because
+of multiple factors and hence needs to
+be constantly monitored by the project
+manager
+a complex project can also have multiple
+critical paths here we wrap up this
+topic if you have any queries feel free
+to post them and our experts will be
+happy to help thank you for watching
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

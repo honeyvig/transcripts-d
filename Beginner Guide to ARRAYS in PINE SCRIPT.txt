@@ -1,0 +1,540 @@
+hey traders let's jump into the world of
+arrays in behind script so first of all
+what is an array an array can be thought
+of as a collection of data types
+so arrays can be used to store multiple
+values in one data structure or
+collection of data
+think of them as a better way to handle
+cases where you would otherwise need a
+set of variables named for example price
+0 price 1 price 2 and so on except that
+our list of variables in an array can be
+dynamically increased or decreased in
+size so rather than having hard-coded
+variables for each value you can have a
+list of values assigned to one array
+variable and those values can change
+over time
+the number of values saved can change
+over time and they're just a more
+efficient way of handling cases where
+you need multiple forms of data saved
+under one collection now arrays are an
+advanced feature used for scripts
+requiring intricate data handling so if
+you are a beginner pine programmer you
+should become more familiar with other
+more accessible pine features before you
+tackle arrays that is why i've put this
+lesson towards the end of this course
+they are not for the faint-hearted in
+terms of inexperienced programmers
+now pine arrays are one-dimensional
+which means they look something like
+this we have our array and then our
+array has a list of values and these are
+our values here
+and it's one dimensional it that's it
+you can't have uh values within values
+and like stack values like this
+that's not possible in arrays we just
+have one list of data
+and those values belong to our overall
+array
+and we reference the values using what
+is called an index so an index starts at
+zero and extends to the number of
+elements in the array minus one so if we
+have one two three four five elements in
+our array here x in this case would be
+array index zero
+and the final
+array index would be 4 but because we
+start counting from 0 that means we have
+5 different
+values stored in our array now all
+elements of an array are of the same
+data type which can be integer whole
+numbers floating point decimal numbers
+boolean values color string line label
+box or tables and they are always of
+series form which means they can have
+different values across different bars
+on our chart arrays are referenced using
+an array id similar to line or label ids
+so for example we create an array here
+called a
+and this is set to
+some code that creates an array when we
+want to reference that array we need to
+use the array
+dot control space will give us a list of
+functions that we can use to reference
+our array and manipulate that array and
+we need to pass in our array id which is
+the name of the array variable we'll get
+to this in a moment in the pine editor
+and this will make more sense but if
+you're familiar with arrays in other
+languages for example java
+if you've ever used java
+an array in java looks something like
+this you have your array id or variable
+name and then you open square brackets
+and you reference your id within those
+square brackets and that gives you the
+array pretty much identically to how we
+reference close open high close and
+indicator values using the historical
+operator in pan script other languages
+typically use that
+syntax for dealing with arrays but in
+pinescript things are a little bit
+different we use this square bracket
+syntax for referencing series values so
+open high low close volume indicator
+values etc over historical data and the
+number we put in here corresponds to the
+bar index on our chart that is how
+arrays normally work in other languages
+except that in panscript you cannot
+change the value of a series so you
+can't
+change the value of the closing price
+from 10 bars ago
+by
+reassigning it to a different value
+this is impossible in pine so instead if
+you want to do something like this if
+you want to deal with a collection of
+data and you want to manipulate that
+data we need to use arrays to achieve
+that and they behave a little bit
+differently we use the get and set
+functions for example to read and write
+values
+of array elements and array values can
+be used in all pine expressions and
+functions where a value of series form
+is allowed so a series form can just be
+thought of as open high low close values
+volume everything i just said indicator
+values wherever you can use them in your
+script you can use array values as well
+now arrays in pine can be sized
+dynamically so that means the number of
+elements in the array can be modified
+on each bar on our script and it can
+vary across bars and multiple arrays can
+be used in the same script
+and the maximum size of arrays so the
+maximum amount of values you can store
+in an array is 100 000 values which is a
+lot of values i don't think there will
+be many times if ever that you would run
+into that
+limitation so let's explore how we
+declare arrays
+so this is the syntax for declaring an
+array we need to specify the type
+and then we use the square brackets to
+indicate that this variable is not a
+normal variable it's an array type
+then we have our identifier which is our
+variable name the name of the array or
+the array id
+and then we have our expression which
+creates the array so let's jump into the
+editor really quickly and i'll show you
+an example of this so for example let's
+say we want to create an array that
+holds price values or indicator values
+anything with a floating point number a
+decimal number in it the way we do that
+is there are several ways we can do this
+but let me show you one way the first
+way we can do this is we can write out
+the data type that we want to work with
+so in this case that would be float
+then we need to put two square brackets
+at the end to signify that we want to
+create a float array
+and then we need to specify a name for
+this array
+so for this we'll just call it price
+array
+and then we need to initialize this as
+something
+um so to create a new array there are a
+couple of ways we can do this the first
+way is to just type out array the array
+name space so array dot control space or
+command space
+and there are two different types of
+functions we can create here that we can
+use here to create an array we can use
+from
+so notice these data types down here we
+can create an integer float bool string
+label line etc using the from function
+and then these arguments you see here
+arg0 arg1 dot dot dot
+we can specify the array values that we
+want in our array using this from
+function this will create an array from
+the values we put in there there's also
+the new function so array dot new
+underscore and then the data type so we
+could create a new float array and we
+can specify the size of the array and
+the initial value of every
+element within that array but before we
+get to this which is a little bit more
+complicated let's just show you guys how
+to use the from so if i write out from
+here and we could say
+let's specify our values as 0.1
+2.5 and let's go 5.0 now when i save
+this code this should compile without
+any problems there we go and now let's
+create a label that displays how many
+values are in our array to do that i'm
+going to create an if statement here and
+i'm going to say if bar state dot is
+last so if this is the last bar in our
+chart
+then create a new label at the current
+bar index and place
+place it at value 0 and the text will
+say
+array size
+is
+str.2 string remember we need to convert
+numbers to strings before we can add
+them to a string so tostring
+array dot control space
+size and then we need to pass in the id
+of our array which is price array the
+name of the variable so here i can say
+price array
+close those two
+parentheses off and the third one
+and now when i save my script we should
+be getting
+three drawing onto the chart there we go
+because we have one two three elements
+in our array if we want to display um
+the first value in our array
+then we need to use the str.2 string
+function again and then we need to use
+the array.get
+function to get the value we want from
+our array so now for the array.get
+function we need to pass in the array we
+want to reference which is our price
+array again
+and then the element index that we want
+to retrieve or get from our array so
+remember everything in programming
+starts from 0. so if we put zero in here
+we will be getting
+0.1 drawing
+as our first value here so if i save my
+script bring this down a little first
+value
+0.1 if we want to get the last value
+then we would need to pass in 0
+1 2 so i'll put 2 in here that will
+reference the third value remember
+counting from 0 0 1 2
+save my code we'll get 5.0 or just five
+drawing on there and i accidentally took
+out my new line
+escape character there we go
+so last value in our array is five
+so this is the basic core fundamentals
+of arrays
+we create an array we can get the size
+of our array here which is useful for
+things like iterating through the array
+it's called iteration when we loop
+through the values of an array which
+i'll show you how to do in a future
+lesson i don't think we'll cover that in
+this lesson we'll keep it as simple as
+possible this is just an introduction to
+arrays so for now let's just keep it
+simple we've created a very basic array
+here we're getting the size of the array
+and we're referencing values from the
+array let's say we want to change a
+value in the array to do that let's do
+it on the very last bar here as well to
+change an array value we can say array
+dot control space and we can use the set
+function so i can say set price array
+and then we need to specify the index
+of the value so we're drawing the last
+value in our array here let's just
+reference that so if i put two in there
+we're now saying
+set the
+third
+value in our array to whatever we put in
+here next so if i put
+um 33 in here when i save my script i
+believe we'll get an error here because
+33 is not a floating point number
+there's no decimal here this is an
+integer so if i save my code i believe
+we'll get an error oh no pine script
+converted that into a float that's good
+so now if we tried to create this as an
+int array and we passed in floating
+points we'll definitely get an error
+here
+because uh declared type array is not
+compatible with the assigned type
+so these types are floats
+and we created an integer array so
+floats are not compatible with integers
+but apparently integers are compatible
+with floats which is good so if i change
+this back to float pinescript is
+converting this whole number into 33.0
+so now let's save the code our last
+value here is 33 because we are
+overriding our last value by setting the
+value index of 2
+on this price array to 33 and then when
+we draw that to the chart here and we
+get that same
+index value from our array
+it's changed to 33. so that's how you
+create an array with predefined values
+this is how you change a value in your
+array
+and this is how you draw
+uh the value to the chart using a label
+so let's look at some other examples
+here let me just quickly show you what
+happens when we use the new underscore
+float array function so this will now
+create a new array with the specified
+size and the specified initial value so
+let's create an array with the size of 1
+for example and the initial value of 0.0
+when i save my code we should be getting
+another error here because of the code
+down here is referencing
+the number 2 index which is
+the third value in our array and we just
+created an array with only one value in
+it so if i save my code yeah we're
+getting an error up here and it should
+say array index out of bounds there we
+go index two is out of bounds array size
+is one so now if i change my array size
+to two we'll still get an error because
+remember the size of our array
+counts from one so if we put one in here
+that means we have one value if we put
+two that means we have 2 but our index
+starts from 0. so if we put 2 in here
+we're actually referencing the
+third value in our array so if i save my
+code we should still get this error we
+do
+if we change our size to three
+now we have the same array size that we
+started with before when we created our
+array using the from function so we have
+three possible values in our array so
+now when i save the script we should be
+getting 33 drawing back onto our chart
+because of our set function is
+overriding the third value so let me
+save my script there we go we have 33
+drawing as our last value if i remove
+this
+array.set code and save my code now the
+last value is zero because
+of this
+when we use the array.new function for
+any of our data types
+the initial value is
+assigned to every element in our array
+so if i change this to 2.5 for example
+save my code this will now say 2.5 is
+the last value and every value in our
+array is 2.5 by default until we
+override that so now it's important to
+mention that arrays behave identically
+to other variables in terms of how the
+pine script engine handles them
+what i mean by that is when we create
+this variable this array variable
+it is recreated on every single bar on
+our chart the same way any other
+indicator value would be so what i mean
+by that is
+if i create a new variable here called
+my variable and i set it to 0 and we
+plot my variable and then when i save my
+code we should be getting 0 drawing on
+every single bar on our chart
+and if i were to increment my variable
+by one on every bar on my chart this
+will now plot one on every bar so when i
+save my code now every bar says one
+that's because this my variable is
+recreated on every new bar that gets
+loaded onto our chart if i turn this
+into a var variable however and i save
+my code now we'll be plotting how many
+bars were plotted onto our chart because
+myvariable gets incremented on every
+historical bar that our script runs on
+and because we use the var keyword
+this
+variable value does not get reset on
+every new bar
+and it persists
+across all of our price action
+we can use the same technique with our
+arrays so for example let's do the same
+thing with our array let's count how
+many bars are on our chart
+to do that we'll get rid of this code
+and get rid of this commented code and
+let's create a new array called var
+count array is set to array
+dot new underscore float and we'll give
+it an initial size of zero let me copy
+this into our
+array variables here and we'll come back
+to this in a moment
+but for now i'll set this to the first
+value in our array
+now the way we add a value to an
+existing array is using the push
+function so array dot push
+will append or add whatever value we put
+into this function to the given array so
+if i put in count array here
+and then let's just push the current
+closing price of every bar on our chart
+to this array so now when i save my code
+we should be getting an array size of
+yeah
+4149 which is how many bars on our chart
+and you can see the first value here
+0.04951
+i'm sure we'd all love to have uh bought
+bitcoin back when it was worth uh 5
+cents
+let's go back and check that out make
+sure that's an accurate number and
+indeed it is back in july of 2010
+bitcoin was worth five cents uh how
+things have changed since then eh and we
+have our array size of 4149.
+um let's get rid of our first value here
+and say
+bar count
+and then we'll add
+str.2 string the bar index value
+to our label save our code and now you
+can see that our bar count is
+4148 that's because our bar count begins
+counting from zero
+so this is technically 4149
+but our array size counts our zero index
+is one so this is where it gets a little
+bit confusing when you are referencing
+your array values it starts from zero
+but your array size includes the element
+at array zero as one so if you've got an
+array
+with three values in it
+the array size is three but to reference
+the third value you need to put in the
+index of two so i know it gets quite
+confusing don't worry with practice
+you'll get the hang of this so let me
+change this back to zero and let's say
+we want to reference the last
+bar
+value so if i change this to last
+value in our array and we use the
+array.get function we pass in our count
+array
+and then
+we now want to reference the final value
+in our array
+the way we can do that is using the
+array size counter
+function
+and then subtracting 1 from that
+so if i cut this out and we'll just
+create a new variable here called size
+paste that in so now we're creating a
+new variable called size which is
+assigned to array.size and then we pass
+in our array id
+this size value will now be four one
+four nine
+so if we want to reference the last
+value in our array using the array.get
+function we need to pass in size
+minus one and i'll show you why we need
+to subtract one from our size if i get
+rid of that and i save my script we'll
+get an error array index out of bounds
+because 4149 is exactly the same
+index as our array size but remember our
+array values start from zero so we need
+to subtract one from this to get the
+final
+value
+in our array so now when i save the code
+we should be getting the current closing
+price so save and there it is
+five zero three one nine and it's
+changing as price action changes so i
+think that will do it for the
+introduction to arrays in future lessons
+we'll build on this information and try
+different
+techniques for dealing with arrays to be
+perfectly honest with you i personally
+have never used arrays in my scripts
+i've never really encountered a
+situation where i needed to it's a
+feature in pine script that due to the
+nature of pine script isn't as commonly
+used as it would be in other programming
+languages but nonetheless we'll explore
+this further in the lessons to come so
+i'll see you there
+i hope you found this lesson interesting
+if you did and you want to learn more
+about arrays make sure to check out my
+pinescript mastery course at
+pinescriptmastery.com the course
+explores arrays in a lot more detail
+including some practical example scripts
+and the course obviously also covers
+many other things relating to advanced
+and complex features of pinescript so if
+you're interested in that make sure to
+come and check this out and if you're
+not interested in the mastery course but
+you still want to learn more pinescript
+at least make sure to hit the subscribe
+button because i will be back very soon
+with more lessons good luck with your
+trading good luck with your coding and
+i'll speak with you soon
+you

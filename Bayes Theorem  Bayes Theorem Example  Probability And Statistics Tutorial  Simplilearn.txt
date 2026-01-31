@@ -1,0 +1,166 @@
+hello everyone welcome to another
+session by simply learn
+today
+we are going to discuss the base theorem
+an important subtopic that comes under
+probability theory
+we'll start this video by talking about
+probability and conditional probability
+after that we'll move on to the bayes
+theorem and understand its formula and a
+real-life example where the base theorem
+can be used
+so
+let's get started
+what is probability
+probability is a branch of mathematics
+concerning numerical descriptions of how
+likely an event is to occur or how
+likely it is data proposition is true
+the probability of an event is a number
+between zero and one
+where roughly speaking zero indicates
+the impossibility of the event and one
+indicates certainty
+the higher the probability of an event
+the more likely is that the event will
+occur
+let's look at an example
+a simple example is the tossing of a
+fair unbiased coin
+since the coin is fair
+the outcome that is heads and the tails
+are both equally probable
+the probability of heads equals the
+probability of the tails and since no
+other outcomes are possible the
+probability of either heads or tails can
+be said to be 1 by 2 which is also 50
+percent
+the probability of an event can be
+calculated by number of ways it can
+happen divided by the total number of
+outcomes
+now that we know about the probability
+let's see if you can answer this
+question what is the probability of
+drawing a jack and a queen consecutively
+from a deck of 52 cards without
+replacement
+added options
+post your answers in the comment section
+and let us know
+now let's move on to conditional
+probability
+let a and b be the two events associated
+with a random experiment
+then the probability of a is occurrence
+under the condition that b has already
+occurred and probability of b is not
+equal to zero is called the conditional
+probability
+it is denoted by p a slash b
+thus we can say that b a slash b is
+equal to p a intersection b divided by p
+of b
+where
+p a slash b is the probability of
+occurrence of a given that b has already
+occurred and p b is the probability of
+occurrence of b
+to know more about conditional
+probability you can check our previous
+video which is specifically on
+conditional probability
+now let's move on to bayes theorem
+the base theorem is a mathematical
+formula for calculating conditional
+probability in probability and
+statistics
+in other words it is used to figure out
+how likely an event is associated
+on its proximity to another
+bayes law or bayes rule are the other
+names of this theorem
+the formula for the bayes theorem can be
+written in a variety of ways
+the most common version is
+p a slash b is equal to p of b a into p
+of a divided by p of b
+where b a slash b is the conditional
+probability of event a occurring given
+that b is true and p a and b of b are
+the probabilities of a and b occurring
+independently of one another
+let's solve a problem using the base
+theorem to understand it better
+there is a cricket match tomorrow and in
+recent years it has rained only 5 days
+each year
+unfortunately the meteorologist has
+predicted the rain for tomorrow
+now when it rains the meteorologist
+correctly forecasts rain 90 of the time
+and when it doesn't rain he incorrectly
+forecasts rain 10 of the time let's
+calculate what is the probability that
+it will rain on the match day
+so
+the two sample spaces here are the
+events that it rains and it does not
+rain
+additionally a third event is also there
+that meteorologist predicts the rain
+so the notation for these events appear
+below
+event a1 is equal to it rains on the
+match day event a2 that it does not rain
+on the match day and event b is the
+meteorologist predicting the rain now in
+terms of probability we know the
+following
+probability of a 1 is 5 by 365 that it
+rains 5 days in a year which will come
+out to be 0.0136
+pa2 is 360 by 365
+that is no days for 360 days in an year
+which will come out to be 0.986
+p b slash a1 is 0.9
+this signifies when it rains the
+meteorologist predicts that a 90 percent
+of the time
+in a similar manner pb by a2 is 0.1
+that it does not train the meteorologist
+predicts the rain 10 percent of the time
+combining all this we can calculate p a1
+slash b that is the probability it will
+rain on the given mesh day given a
+forecast of rain by meteorologist the
+answer can be determined using the base
+theorem as shown below
+so here's the formula of the base
+theorem and putting all the values that
+we have calculated in the previous slide
+the probability that it will rain on the
+match day given a forecast of the rain
+by meteorologist will come out to be
+0.111
+which will be equal to 11.11
+so there's an 11 percent chance that it
+will rain on the match day given that
+the meteorologist has predicted the rain
+i hope this example is clear to you
+with this we have come to an end of this
+video on the base theorem i hope this
+was helpful
+if you have any questions then please
+put them in the comment sections also if
+you like the video then please subscribe
+to the simplyland channel and hit the
+bell icon to never miss an update
+thank you for watching and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

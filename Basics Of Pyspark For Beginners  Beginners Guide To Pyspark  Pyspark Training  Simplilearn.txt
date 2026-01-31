@@ -1,0 +1,1179 @@
+hi everyone i am umbra suhil welcome to
+simply launch youtube channel
+in this session here we will learn the
+basic price pack for beginners
+if you want more amazing tech related
+videos do like and subscribe and hit the
+bell icon to stay tuned
+now let's get to the video to learn more
+about pi spark without any further delay
+we will begin the session by discussing
+apache spark overview
+and what is pi spark
+then we will have a look at key features
+of pi spark
+moving forward we will understand the
+difference between scala and pi spark
+and then the use case of pi spark in
+industries after that we will understand
+what is spicebox data frame
+and its various features
+and finally we will end the session by
+discussing how to create data frame now
+have a look at why is pi spark so
+popular pi spark is so popular because
+it's a first class spark api that is
+well supported and a fantastic option
+for most businesses
+spark is faster than the other big data
+solutions and can handle more than 100
+tasks at once which make it more suited
+to an in-memory model
+the procedure is sped up and take much
+less time because of sparks in memory
+processing
+spark is an open source cluster
+computing framework that is used to
+develop big data applications that can
+perform fast analytics over large data
+sets
+spark is written in scala but it can
+also be used from python using pi smart
+it is very popular and one of the most
+requested tools in the it industry
+because it has inbuilt tools for resql
+machine learning and streaming
+so now that we understand apache spark
+it will be easier for us to understand
+pispah so let's dive into it
+pi spark is a python api to support
+python with apache spark
+python can easily be connected with the
+purchase part using the pi spark
+provided by folder library
+when it comes to analyzing or working
+with large data sets pi spot is
+essential
+pi spark is a python api to support
+python with apache spa
+python can easily be connected with
+apache spark using the pi spark provided
+by 4j library
+when it comes to analyzing or working
+with large data sets pi spark is
+essential
+pi spark is a mostly search tool among
+data engineers because of its
+functionality
+so now that we understood about pi spark
+now we shall move on to its features
+real-time computing
+pi spark focuses on in-memory processing
+and offers real-time computing on
+massive amounts of data
+so the low latency is evident
+the next feature which comes in is
+support for several languages
+scala java python and are just a few
+programming languages with which the pi
+spark framework is compatible
+because of its interoperability it is
+the best framework for processing large
+datasets
+the next feature we have is consistency
+of disk and caching
+the pi spark frameworks offer powerful
+caching and reality this consistency
+as we know time is money and to work
+effectively we need powerful and fast
+processing so the next amazing feature
+of pi spark is rapid processing
+with buy spark we can process data
+quickly roughly hundred times quicker in
+memory and 10 times faster on the disk
+so now we have come to the most
+important feature of pi spark which is
+effectiveness with rdd
+working with rdd is made easier by the
+dynamic typing of python programming
+languages
+if you are wondering what rdd is let me
+give you a quick explanation of rdd
+let's learn more about rdd
+rdd stands for resilient distributed
+data set it is apache sparks primary
+data structure
+rdd in apache spark is an immutable
+group of objects that computes on
+several cluster nodes
+resilient with the use of rdd lineage
+graph the system is resilient of fault
+tolerant
+and is therefore able to recompute
+missing or damaged partitions as a
+result of node failure
+now we have a better understanding of pi
+spark and its features so let's
+understand the need of pi spark
+it's crucial to understand why and when
+to use spark with python if you are
+going to learn pi spark
+here we will go over the basic factors
+to consider while deciding between
+python and scala for apache spark
+programming
+data science libraries
+you don't have to bother about the
+visuals or data science frameworks with
+the python api
+the r language's fundamental component
+can readily convert it to python
+the next factor which comes in is
+readability of code
+although internal modifications are
+simple in the scala api
+the python epa offers superior
+readability maintenance and familiarity
+with the code
+complexity
+in contrast to scala which produces
+verbose output and is therefore viewed
+as a complicated language
+so the python api provides an accessible
+simple and comprehensive interface
+moving on to next factor
+machine learning libraries
+since python offers several libraries
+based on machine learning approaches it
+is popular for developing machine
+learning algorithm because it makes the
+process simpler
+so now let's discuss the last factor on
+our list ease of learning
+python is simpler to learn and is known
+for its simple syntax
+in comparison to scala which has a
+complex syntax and is difficult to learn
+it is also extremely productive despite
+having a basic syntax
+if you are new to big data you have
+probably heard of frameworks such as
+spark
+that technologies can be in python or
+scala
+how do you choose programming languages
+to answer this question we must consider
+various factors
+let us figure out the answer to this
+question by understanding the difference
+between the two
+firstly let's discuss the difference
+between compiled versus interpreted
+one of the major differences is that
+python is an interpreted language which
+makes it quite handy when coding whereas
+scala requires you to compile your code
+for it to be executed by the java
+virtual machine
+this process result in a file containing
+bytecode
+so the next difference is based on the
+performance
+spark offers two apis the high level one
+where data frames and data sets are
+found and the low level one which uses
+resilient distributed data sets
+scala offers superior performance with
+rdds because python has an additional
+communication overhead with the jvm
+however python should not cause you any
+performance issue
+moving on to another difference that is
+based on type safety
+python has a dynamic typing whereas the
+scala has static typing
+when using dynamic typing the type of
+the variable you are defining is not
+specified
+your code becomes simpler as a result in
+python the type of your variable can be
+derived by writing its name and
+assigning a value
+now what's the difference when it comes
+to a learning curve
+it's typically easier to learn python
+than scala if you are just a beginner in
+any of the languages
+python has a progressive learning curve
+but once you get the hang of it you can
+use the same simple syntax you started
+with to do the advanced task
+let's discuss the difference based on
+the community support
+python has a much larger user base than
+scala which can help it gain support
+as a result python benefits from more
+comprehensive libraries devoted to task
+complexity
+scala does have robust support it is
+still far beyond python
+finally let's discuss the last
+difference in our list based on the
+project scale
+python is a smart decision if you wish
+to work on a smaller project with less
+seasoned programmers
+however scala is the ideal option for a
+large project that requires numerous
+resources and parallel processing
+let's discuss the difference based on
+community support
+python has a much larger user base than
+scala which can help it gain support
+as a result python benefits from more
+comprehensive libraries devoted to
+various task complexity
+scala does have robust support it is
+still far beyond python
+finally
+let's discuss the last difference in our
+list based on the project scale
+python is a smart decision if you wish
+to work on a smaller project with less
+seasoned programmers
+however scala is the ideal option for a
+large project that requires numerous
+resource and parallel processing
+after learning different topics about pi
+spark in the session we have reached our
+final topic which is pi sparks use in
+industries let's take a look at it
+apache spark is gaining popularity and
+becoming more widely used by its users
+from startups to multinationals
+apache spark has been used to create
+develop and innovate big data systems
+here are various spark use examples for
+particular industries that show how to
+create and execute quick large data apps
+ecommerce industry let's understand this
+with an example
+like shopify wanted to analyze the kinds
+of goods its clients were selling in
+order to find suitable retailers with
+home it may collaborate in order to grow
+its business
+its data warehousing infrastructure was
+unable to resolve this issue since its
+frequently timed out when processing
+data mining queries on millions of
+documents
+shopify successfully developed a list of
+stores for collaboration after
+processing 67 million entries using
+apache spark in a matter of minutes
+the next use case of pi spark is in
+healthcare industries
+a healthcare spark is used in genomic
+sequencing
+prior to spark organizing all the
+chemicals compound with the genes took
+several weeks
+with spark it only took a few hours now
+myfitnesspal
+the biggest health and fitness community
+use cases of pi spark in industry
+apache spark is gaining popularity and
+becoming more widely used by its users
+from startups to multinationals apache
+spark has been used to create develop
+and innovate big data systems
+here are various spark use examples for
+particular industries that show how to
+create and execute quick large data apps
+firstly we have e-commerce industry
+let's understand with this an example
+like shopify wanted to analyze the kinds
+of goods its clients were selling in
+order to find suitable details before it
+may collaborate in order to grow its
+business
+its data warehousing infrastructure was
+unable to resolve this issue since it
+frequently time out when processing data
+mining queries on millions of documents
+shopify successfully developed a list of
+stores where collaboration after
+processing 67 million entries using
+apache spark in a matter of minutes
+the next use case of pi spark is in
+healthcare industries
+spark is used in genomic sequencing
+priority to spark organizing all the
+chemical compounds with genes took
+several weeks
+with spark it only tooks a few hours
+only
+myfitnesspal the biggest health and
+fitness community uses spark to clean
+user inter data with the ultimate
+purpose of identifying high quality food
+products the food calorie information of
+roughly 80 million individuals has been
+scanned by myfitnesspal using spark
+media and entertainment
+with the help of apache spark pinterest
+is able to identify patents and very
+valuable user engagement data so that it
+can quickly respond to emerging trends
+by gaining a through understanding of
+users online behavior
+to offer online suggestion to its users
+netflix leverages spark for real time
+stream analysis
+another best use of pi spark is in
+software and information service
+the spark developers have created data
+breaks it is a platform that has been
+tailored for the cloud to run spark and
+ml apps on aws and azure
+as well as a through training course
+in order to grow the project in advance
+they are working on spark
+financial services provider finra assist
+in gaining real-time data insight from
+billions of data occurrences
+it can test things on actual market data
+using apache spark
+last but not the least pi spark is used
+in travel industry as well
+let's learn more about it
+apache spark uses in the travel sector
+is growing quickly
+it facilitates consumer flawless
+traveling planning by expectating
+customized recommendation
+by comparing numerous websites they may
+also utilize it to advise to list on
+where to group hotels
+spark is being used by tripadvisor a
+popular travel website that assists
+consumer in creating the ideal tip to
+speed up its tailored client suggestions
+we have introduction to pi spark
+introduction to pi spark
+python pixbox provides an interface for
+apache spark
+it enables you to create spark
+application using the python apis and
+give you access to the pi spark shell
+enabling interactive data analysis in a
+distributed setting
+most of the pi spark functionality
+including spark sql data frame streaming
+mlib and spark core are supported by pi
+spark
+to build more scalable analysis and
+pipelines pi spark is a useful language
+to learn if you are already familiar
+with python tools like pandas
+next is what is spy spot data frame a
+distributed grouping of rows with name
+columns is known as a data frame
+in layman's terms it is equivalent to an
+excel sheet with columns header or a
+table in a relational database
+additionally
+it has several traits in common with rdt
+we can create a data frame or rdd only
+once we cannot modify it after applying
+transformations our data frame or rdd
+can be transformed
+in other words a task is not carried out
+until an action is taken
+both the rdd and the data frame have a
+distributed design
+i'm sure you might be wondering why
+exactly we need data frames now let's
+discuss that
+data frames features
+distributed data frames are distributed
+data collections that are arranged into
+rows and columns in pi spark
+our data frame has a name and the type
+for each column
+data frames are comparable to
+conventional database tables in that
+they are organized and brief
+the next feature is lazy evolution
+although scala may be executed lazily
+and spark is written in scala
+spark's default execution mode is lazy
+this means that up until the action is
+involved no operation over an rdd
+data frame or data set are ever computed
+next is immutable
+immutable storage includes data frames
+data sets and rdd
+the world immutability means inability
+to change
+when used in reference to an object it
+signifies that its state cannot be
+changed once it is formed compared to
+python these data frames are immutable
+and provide less flexibility than
+manipulating rows and columns
+now we are going to look at the demo how
+to create data frames
+let's go ahead and create some data
+frames so now i used google cloud
+instead of pi spark shell
+as i personally find it easier to work
+with
+it comes down to your choice so guys
+let's go ahead and start that demo
+so now i will show you how to create a
+data frame in pricebar firstly we need
+to have spark configured on our device
+to use the file function
+for this you need to open your command
+prompt and then type in this command to
+install python pid install
+so now here we are ready to get started
+we can create our data frame in price
+park shell
+but i prefer to use google collab for
+myself you can choose to do with you
+know pi spark shell or jupiter notebook
+also
+so
+here let us open a new notebook
+now firstly we will have to set up a
+price pack
+so we will type in the same command pip
+install by spark
+now as you can see that pi spark is set
+up we can move on to creating an example
+of data frame for departments and
+students
+[Music]
+so now as you can see my spark is
+setting up
+importing price
+importing five spa sql
+now as you can see that by spark is set
+up we can move on to create an example
+data frame for departments and student
+so now after the import is successful i
+am going to create a student database
+using the row function
+students equal to row
+it consists of columns named as first
+name last name a name page and row
+number
+so now we will create data for some
+students
+now in students we have columns named as
+first name last name
+email
+age and number
+so now we will create data for some
+students
+we will write student one equal to
+certain
+then inside this brackets we by john
+like the first name
+then the amarr which is the last name
+then we will write the email
+age and roll number
+again we will do the same for the rest
+of them like we will just copy this one
+and then paste after that we will change
+the specific first name and last name
+email id etc
+like also then two three four and five
+also we will change the specific name
+like student 2 is cassie
+and there is no surname so we have to
+write none
+[Music]
+then we will come to lois
+because lois has a last name so it will
+be lopez
+it's
+so sudan for his chap
+and his surname is doris
+because he don't have a email id so it
+will be none
+and the 8 is 23
+so for student five who is
+michael
+we will do the same procedure
+as the surname is reaction
+and the main name is i repeat and the
+email is michael at the rate of
+unique or same
+as you can see that all these students
+data are in the same format as given
+first name last name
+agent roll number
+so let us create some department data as
+well
+so now we will go on text
+and
+let's create
+the department
+again we will use the row function
+so department one equals row then inside
+the brackets
+id is equal to 0 0 1 we can take
+and name is equal to subject
+so name is equal to maths
+the subject
+or whatever you want to take
+now coming to department 2 it will be
+the same as department one
+just have to enter the row
+and inside the bracket
+the same id is equal to whatever the id
+you want to take
+because we are going in the serial
+number so it should be zero zero two
+zero zero one
+and
+name is equal to
+we should take english
+now coming to department 3
+it will also go same
+starting with the row
+id
+that is 003
+and again the name of the subject
+we can take for sex
+so
+it will also go safe for the department
+form
+we should just copy and paste
+zero zero four
+name of the subject of chemistry
+or whatever you want to
+think
+so now suppose you want to look at the
+values of student 2
+we will use the print command to print
+student 2
+so let's do
+come into code
+and now print
+in bracket
+student 2
+so you can see here the values of row
+student 2
+the first name is cassie last name is
+not specified so it has been printed as
+null value
+before moving further we should check if
+there is any error or correction we
+should make
+let's see okay
+so
+there are some double quotes
+and email is also missing
+as you can see only the single quotes
+will work
+and because we mentioned the email for
+other students so we have to mention the
+email in the elements also
+so
+yeah
+okay so it's all fine let's have a look
+let's just cross check and run that
+yeah it's working
+so
+moving forward
+so you can see here the values of row so
+student 2 the first name is cassie last
+name is not specified
+so it has been printed as null value
+then we have the email cassie at the
+rate of uni
+dot sem
+under ages 22
+and roll number which is 14526
+so now see how easy it is to use python
+and now we can also create some
+instances for our departments and
+students data okay and also we have to
+click on the text post
+then
+we have to write only create the
+department
+with
+student instances
+instances
+tab
+so
+now we have to click on the code
+so as for department student 1 is equal
+to
+department student 1 is equal to row
+and inside its department is equal to
+department one
+and student is equal to student one and
+student two
+now for the others we just have to copy
+this
+and paste like we have done earlier
+and you just have to change the
+serial number of student
+department
+here we are creating some instances
+which shows us the student each
+department consists of
+let me show you how it is done
+so you just need to execute the command
+so
+so we just have to go on the code
+and type
+print
+department
+with student 3 we will take student 3.
+now we should cross check first
+let's see if there is some mistake or
+something okay
+so we have to correct this
+now we should run and check
+if it was running or not
+okay huh so here's the output
+we get the roll number which is one
+three five three six now finally we can
+create our data frame
+let us create an array of sequence of
+instances for our data frame
+so
+let's start
+creating data frame
+now we will go again on the code
+and
+department
+with students
+is equal to
+department with student one
+and then
+department with student two and then
+department of student three would get
+along
+okay department is two and three
+here department one consists of student
+1
+and department 2 consists of students 3
+and 4 and department three consists of
+student four and five
+then we need to create spark context
+using from pi spark
+dot context so we are gonna write
+uh we should go on code first
+after selecting the code
+we need to create spark context using
+from pi stock
+okay
+five spark
+dot
+context
+import spark context
+and then
+from
+from pi spark dot
+sql dot session
+import spark session
+sc is equal to spam
+so basically after this we can create
+data frame
+using department with students
+so let's
+go on the text
+so now let's run this program let's see
+if it is working
+okay
+so now moving forward
+we'll go to the code then
+df is equal to spark dot create
+data frame
+df that is the department for student
+now we will go to the text
+and
+let's
+go for display data frame
+so now we can display our data frame
+using display function so let's go to
+the code again
+and write display function
+that is df
+so now
+as you see we have the structure of
+department which consists of two strings
+id and name and the student array which
+consists of three strings first name
+last name and email and two integer
+values which are age and row number
+now as you know how to create a data
+frame let us move on the covet pandemic
+use case
+so here we have the data of all the
+countries affected by kovic 19 pandemic
+and it is the csv format so i am going
+to show you how it is done
+firstly we will import spark session
+from pi spark sql using the command so
+let's do that
+so before going further we should run
+this first
+and let's see
+yeah
+so
+now we will go to the text and write a
+data frame from csv
+because i'm going to show how it is done
+so
+firstly we will import spark session
+from pi spark sql using the command
+that is from pi spark
+dot sql
+spark session
+let's run this also
+yeah
+so
+now let's initiate the spark session to
+create a data frame by executing the
+following command
+that is
+spark let's go to the code again and
+write
+spark is equal to
+spark session
+dot builder
+dot app
+dot app name
+and then in bracket
+create data frame
+from csv file
+because here we are learning how to
+create this data frame from csv file
+so create data frame from csv file
+get or create
+so now as the spark session is initiated
+we can use the spark dot read command to
+read the csv file and convert it into
+our data frame which we have named as
+poet 19 underscore df
+so let's again go to the code
+okay so before that we should run this
+code first
+so it's not
+okay
+i believe there must be some syntax
+error
+let's find out okay
+so
+this should be capital
+noise will work i guess yeah it's
+working
+so now as the spark session is initiated
+we can use the spark dot read command to
+read the csv file of course
+and convert it into our data frame which
+we have named as kovite underscore tf
+so let's
+go it
+go to the code we are already in the
+code
+so go with underscore df
+is equal to
+spark dot read
+csv
+then in the bracket
+path is equal to
+double quotes
+and then content countrywise latest csv
+underscore is underscore latest dot csv
+dot csv
+okay
+so here as you see i have provided a
+path
+to the csv file you can do this by
+uploading it on collab
+so let me show you how it is done
+so as it is uploaded now we can right
+click on the file and copy the path into
+our spark.read command
+otherwise if you are doing it in the spy
+spark shell you can directly copy the
+path of the file from the local
+directory
+we have used comma as a separator and as
+you see i have set header equal to true
+this is because otherwise the data frame
+would take the first row as the initial
+values of the data set
+so now after successful execution of the
+command our data
+which we are going to
+so yeah it's running
+so now i will tell you how to upload
+this file let's go into the files
+on the document
+then
+i have already uploaded this file that's
+country wisely
+so you just have to choose the file
+and it will be visible on your screen
+as you can see here
+so
+with the next step
+now after successful execution of the
+command our data is created
+and now let's try out some commands
+which we can use on our data plane
+so let's go to the
+code firstly let us use the dot show
+command to display our data frame that
+is go with underscore df show
+so now let's check first if it's correct
+or not
+yeah it's working and we have the data
+set here
+so now as you can see here we have the
+country or region number of confirmed
+cases active cases recovered cases
+number of death and so on
+now to look at the total number of
+records in our data frame we can use
+covet underscore df count so for that we
+have to go to the code again
+okay
+so let's type covent underscore
+df dot com
+sorry
+dot com okay
+so with this
+we should also check it first
+i hope it's working
+yeah
+we have the output
+so here we have total 187d cons or rows
+in our data frame
+now if you want to see the columns
+although we have seen it using the
+df.show function
+but if you want to see just the name of
+column separately you can use
+go with underscore df dot columns
+so
+df
+dot
+count
+first we have to
+run it
+okay okay so there is a correction
+actually there should
+be
+a column
+instead of
+[Music]
+so
+i run the code
+and
+that's the output
+so as you can see here we have all the
+columns listed out
+now here we can simply count the number
+of columns but for more complex data
+frame
+we can use
+len kovat df columns for that we have to
+go to code again
+and
+then in brick it
+go with
+underscore
+tf
+df
+dot
+columns
+and packet closed
+let's run this
+so now you can see there are 15 columns
+in our data frame
+now let's print the schema of our data
+frame
+let's go to code again
+we have to write
+go with sorry
+go with underscore
+df
+dot
+print
+camera
+and
+closed so let's run this also
+okay
+so as you can see the types of column we
+have been mentioned here and you can set
+no label as their either true or false
+because in some data frames maybe some
+of the values are supposed to be null
+so moving on further you can also
+describe a particular column
+using
+covet
+underscore
+df dot to
+describe
+and bracket
+we should use double quote yeah
+so
+world health organization reason
+no sorry we should use
+a
+single
+single point
+because it will not work with other ones
+okay so dot
+show
+and then yeah
+so
+as you can see the column
+w ato region have been described here
+count is equal to 187
+that means it has total 1870 codes
+so here mean and standard deviation are
+null
+as we have string values
+so the minimum value is africa and the
+maximum is western pacific
+alphabetically
+we can also describe one more column as
+per
+let's go to code first
+with
+covet
+underscore
+df dot to
+subscribe
+okay
+dot
+show
+let's run this
+here also count of total record is 187
+and name value is approx to 34 000
+and the standard deviation is near about
+21 2326
+and the minimum and maximum values are
+given as zero
+and 98
+752
+so now we can also select a particular
+column or more than one column to show
+their details
+by using
+so
+don't select
+[Music]
+okay
+single coil
+country
+slash
+vision
+[Music]
+space slash space
+handed kisses
+dot show let's see if it's working
+okay so it's working
+here you can see the data of two columns
+separately
+we also have a filter function to filter
+out the data of a particular column at
+given position
+and also we can do that by using
+govet
+underscore
+df
+filter
+intricate
+covet
+underscore
+df dot
+dates
+thousand
+dot
+show
+okay
+here we can see all the records in our
+data frame where the death count is
+greater than 1 000.
+we can also count the number of records
+shown in by the above command using
+count function instead of using show
+function
+so for that
+uh let's see what is the command
+function that is called underscore df
+dot to filter
+go with
+we have used the same command actually
+that we had used earlier but instead of
+show you just have to write count
+so
+because you are using count function
+here
+so
+df
+dot
+x
+is
+1
+000
+and
+instead of show just you have to write
+count
+that's it
+let's run
+that is 44 so the total number of record
+in the data frame with more than 1000
+deaths is 44.
+huh we can also filter out more than one
+condition like this and for that let's
+see
+go to code
+the command should be
+covet
+underscore tier
+dot filter
+double brackets
+that's
+greater than one
+000 of course because we have used this
+information earlier also
+and
+call it
+underscore
+sorry
+go with underscore
+active
+that is greater than
+10 000
+just closed okay
+door
+show don't forget to close it okay
+let's run this program
+let's cross check what's the error
+coming you also have to take care of the
+small mistakes
+go ahead and underscore df dot filter
+double click it yeah so here's the
+mistake
+underscore
+go with dot debt
+greater than 1000
+and
+here's also one mistake yeah
+so go back to and let's go dot active
+ten thousand dot show let's run it again
+so it work now here we all the requests
+where the date count is greater than
+1000 and also the number of active cases
+is greater than 10 000.
+we can also use order by function to
+arrange our data frame in ascending or
+descending order so for that
+we have to use the command
+that is
+covet
+underscore tf
+dot order
+dot order
+by
+in bracket
+active
+dot show
+let's run it
+so the error is
+here
+okay
+this is called camel casing
+b should be captain and y should be
+small
+okay so let's run it again
+yeah
+so as you can see data in our data frame
+is arranged in ascending order
+now we will try on running some sql
+queries on our data frame first
+we need to
+create a temporary table using
+the command
+i'm using the
+[Music]
+command coverage underscore tf
+dot
+register
+temp
+table
+in bracket
+covet
+sorry c should be capital
+go with
+underscore
+table now we can use the command
+that is
+spark
+dot to
+sql
+in bracket
+single
+quote
+select
+from code table
+dot show
+so
+to show all the content of the table we
+can also select a particular column
+using
+this last
+command
+that is
+spark dot
+sql
+in bracket
+select
+sorry
+recovered
+from
+it
+[Music]
+okay
+dot
+show
+so you can see the data from a
+particular column of the table is
+fetched out
+basically these were the top 10
+functions
+so with this we have come to the end of
+the session on pi spark i hope you found
+the session both interesting and
+exciting if you have any questions about
+any of the topic covered in this session
+or if you need the resources used in
+this session please let us know in
+comment section below and our team of
+experts will be pleased to respond as
+soon as possible
+thank you until next time this is umrah
+from the assembly line team signing off
+continue to learn and stay safe
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

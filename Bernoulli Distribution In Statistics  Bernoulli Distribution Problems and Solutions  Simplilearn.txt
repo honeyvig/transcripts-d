@@ -1,0 +1,158 @@
+hello everyone
+welcome to simply learns youtube channel
+today
+we'll discuss a type of probability
+distribution function that is bernoulli
+distribution
+so before we move ahead let's discuss in
+brief what is a probability distribution
+a probability distribution is a
+statistical function
+that describes all the possible values
+and probabilities for a random variable
+within a given range
+they are bounded by the minimum and
+maximum possible values
+but
+where the possible values we plotted on
+the probability distribution will be
+determined by a number of factors the
+mean standard deviation and some of the
+factors
+so let's discuss the agenda for today's
+session
+we'll start by discussing what is
+bernoulli distribution and the
+probability distribution function for
+the bernoulli distribution
+then we'll see an example and some real
+world example where we can use the
+bernoulli distribution
+finally we'll work on an example of a
+bernoulli distribution in python
+so let's begin
+what is bernoulli distribution
+bernoulli distribution is a discrete
+probability distribution representing
+the discrete probabilities of a random
+variable
+which can be taken only one of the two
+possible values such as one or zero
+success of failure yes or no in this
+manner
+for example the probability of getting a
+head while you flip a coin is 0.5
+and the probability of failure is 1
+minus p that is 0.5 as well
+the probability distribution function of
+a bernoulli distribution can be
+calculated by the following formula p to
+the power x 1 minus p to the power 1
+minus x
+where x is equal to 1 is for the success
+and x is equal to zero is for the
+failure
+suppose
+there are approximately one out of fifty
+bus
+are twins
+and one set of new parents is chosen
+what is the probability that the parents
+that are chosen where of a twin
+so here the bernoulli distribution will
+come into play
+we have the probability as 1 by 50 that
+is 1 out of 50 will be a twins
+so the probability of success that is x
+is equal to 1 will be 1 by 50 to the
+power 1 into 1 minus 50 that is the
+probability of failure to the power 0
+which will come out to be 1 by 50.
+so there's a 1 by 50 chance that the
+prior institution will be a parent of a
+twin
+let's see some more situation where we
+can use bernoulli distribution suppose
+in a voting a person voted for a
+particular political party or exchange
+from voting so the success
+is equal to one if the person has voted
+for the particular party
+the rolling of a die that will result
+into a six or not
+the success will come out of the die
+equal to six
+the third example we can look for is
+whether the outcome of an interview is a
+recommendation for the next round of
+interviews or not if it is a success
+then the result of the interview is
+recommendation for the next round of the
+interview
+now let's move on to python to see how
+you can use the bernoulli distribution
+and code in python
+let's start by importing some of the
+important libraries that we'll require
+here
+the first one will be matplotlib that is
+the matplot library
+from
+sci-fi will
+import the bernoulli distribution
+we'll declare an instance where
+probability will be equal to 0.0.7
+the outcome of the experiment will be
+either is equal to 0 or 1.
+we'll create a bar plot with a figure of
+size five into five or six introduces
+whatever you feel like
+will create the graph of the bernoulli
+distribution that we have declared above
+with the variable x
+let's keep the color of the graph as
+anything green
+so
+let's just run the code and see if you
+have any error or not
+no the code works perfectly fine with
+the 0.7 as a probability
+and this is one minus p and that is the
+probability of failure that we'll cover
+to be 0.3
+let's just add the labels on the axis
+so for that
+we'll just mention the
+plot dot x label
+axis will be values
+of random
+variable
+and similarly the plot dot y label will
+be
+just copy this
+will be the probability
+since we have the probability on the y
+axis
+let's keep its font size also
+[Music]
+15 will add the font size above as well
+so just copy this
+okay so let's just run it yeah
+we have the probability we have the
+values of random variable and we have
+the probability
+so this is how you can use the python to
+create the bernoulli distribution and
+run some experiments here
+so with this we have come to an end to
+this tutorial i hope you like this video
+and if yes please subscribe to our
+channel to never miss an update
+until then thank you again and happy
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

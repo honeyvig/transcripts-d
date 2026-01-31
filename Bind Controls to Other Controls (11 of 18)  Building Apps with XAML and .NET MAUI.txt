@@ -1,0 +1,443 @@
+[Music]
+hi welcome to visual studio toolbox I'm
+your host Robert Green and I'm your
+presenter Paul Sheriff hey Paul We are
+continuing our series on building apps
+with zaml andet Maui and today we're
+going to start talking about data
+binding but before we do that we have a
+short followup to the previous episode
+in between uh Paul was one wondering why
+he couldn't get the wrapping that he
+wanted to occur and then he figured it
+out so what happened well so if we go
+back here if you remember what I had is
+I had the entry within the horizontal
+stack layout problem is that the flex
+layout is whatever that child is that's
+the thing it's going to
+be laying out right so you needed to add
+another horizontal stack layout and when
+you do that
+now it
+pushes hey there we so all right you
+know it's one of those things you're
+doing a demo you're doing live and
+you're like wait a minute I know that
+works what am I doing wrong and then you
+figure it out as soon as we stop
+recording right of course of course but
+happily since we're recording these back
+to back to back we're able to address it
+right away absolutely absolutely cool
+okay all right we're gonna learn how to
+bind controls to other controls yeah why
+are we learning such a thing why why
+well I got a great sample to show you
+actually so let's go ahead and we're
+going to bring up our product detail
+view now and we've got this cost and
+then we've got an entry for the cost I'm
+going to
+replace that entry with a horizontal
+stack
+layout and the way that this works now
+is I've still got the
+entry but I'm adding a stepper in so
+let's run this so you can see what it
+looks like and then we'll come back and
+we'll talk about this code that I've
+written inside of the zaml
+[Music]
+here all right let's get this over here
+so we can see
+it side by side here we own the products
+here all right so you can see the cost
+right here and you notice it's been
+defaulted to a value of one and then
+right next to it I've got this little
+what's called a stepper control and I
+can click on the plus
+I can click on the
+minus and if I click on the minus here
+and I keep going down I'm clicking I'm
+clicking I'm clicking nothing is
+happening because if we look back over
+here at the code you'll see that I set a
+minimum on this stepper to be one and I
+have a maximum of
+99,999 and I've specified that I want it
+to increment by one each time I click on
+the Plus or the minus sign okay yeah
+now if you'll notice I have given this
+stepper a name one of the things we've
+always talked about if you wish to
+interact with a control that's on your
+page here right you need to give it a
+name and that interaction either happens
+in the code behind in CP but it can also
+happen here in this data bind we take a
+look at the entry control you can see
+I've set what's called The Binding
+context so what we're saying is hey and
+ENT I want you to bind yourself to
+another control and we're going to
+reference that control by the name
+called cost stepper so you see those two
+values match in fact if we you know use
+the intellisense it tells us which ones
+it is allowed to bind to so it looks for
+any
+names that's easy enough and then the
+text portion of the entry which is where
+you're typing in right this value here
+is the text property MH
+so we're saying you want to bind to the
+value property of this stepper so if I
+come in here and I set the value equal
+to 80 for instance look what happened on
+the screen over automatically changed
+didn't it and now since they're bound
+together when I hit the minus sign it's
+going to go to 79 78 or if I hit the
+plus sign it's going to go up and if you
+enter 80 as the or something different
+as the Val into the
+entry that updates the stepper so it's a
+two-way binding you got it so now when
+we go there excellent yeah so this is
+called Data binding and this this data
+binding happens between one control and
+another we're also going to be able to
+use our C classes to do this kind of
+binding as well all right so one thing
+you could do in the I assume there's an
+event behind the stepper on click so you
+could set the value of the entry and
+code correct but this is this is a
+little
+cleaner uh I would right code um so I
+guess it kind of depends on I mean if
+it's a obviously a simple binding like
+this You' put it in the zaml if there's
+more complicated stuff going on then
+you'd want to and have to write code but
+it's possible you could have to write
+some code absolutely you know we're
+trying to I I try to avoid as much code
+behind and as much C code as I can if I
+can express something in zaml I'd rather
+do that because then I see it all right
+here I don't have to okay what was the
+name on here in the zaml then go try to
+find that in code behind in the C to me
+that's it's a lot cleaner yeah
+definitely so let's go down and we've
+got the next one which is the price so
+let's do the same thing for the price
+here okay so what I've done here now is
+I replace that that entry okay I've got
+this binding context here all right MH
+and so you'll notice though that
+nothing's happening right we got that
+little squiggly again all right so that
+means that I've got to restart
+it so it's just one of those things that
+does
+happen sometimes that examl hot reload
+especially when you're working with
+bindings it does it does typically need
+to restart a fent so yeah and there we
+go now you can see that it's starting
+with one because that's the minimum so
+it's set value to minimum even though I
+didn't put it in there so this one is
+called price stepper so on the entry I
+did the same thing I set the binding to
+the value property of whatever is in
+this binding context which in this case
+is the price
+stepper cool now one thing I want you to
+notice here right is okay I've got a
+cost let's say I've got a cost of 10
+well right now I can still set a price
+lower than the cost yes that's probably
+not good is it much for long it isn't
+yeah that probably wouldn't be good our
+our bosses would not like that very much
+so what we can do now is we can actually
+bind the two steppers together so let's
+change this price stepper here or
+actually let's start out with the cost
+stepper okay so I'm going to go up to
+the cost stepper here and I'm going to
+change all of these guys right here I'm
+going to set the value to 10 the minimum
+is still going to be one but now the
+maximum I'm binding to the value and
+look at the binding context for this The
+Binding context is the price
+stepper okay and then on the price
+stepper I'll change these
+guys so that I have a value of 20 I'm
+going to start so that the price is
+always greater than the cost and then
+I'm going to set the minimum right to
+the in of the value now back to the cost
+stepper so by doing this right um I
+think it actually should probably work
+now so if I bring that cost up look at
+that I am
+hitting I'm trying to click on that plus
+it's not working I'm trying to click on
+the minus on price it is not
+working cool so once again instead of
+writing C code I'm I'm able to express
+all of this in zaml which is really cool
+now what if you wanted the price to
+always be 20% higher than the cost can
+you okay can you do something a little
+more complicated there we could there
+you you'd actually have two different
+options here all right so first off as
+you mentioned earlier you could write in
+the event right code that says hey
+always make sure it's you know 20%
+higher than the cost for instance okay
+so you could write that in csharp the
+other option would be what's called a
+value converter and we're going to talk
+about those in actually just a minute
+okay so you'd have two different ways
+that you could accomplish that got
+it all right so that's one thing you can
+bind values from one to another but
+that's not all you can buy okay let's
+actually go back to our users now our
+user details we'll bring this guy
+up let's bring our solution Explorer
+here and we'll go back to the user
+detail view so on this one I've got a
+check box down here
+uh where is it Flex time all right I'm
+going to give it a name I'm going to set
+the name to flex
+time and then what I'm going to do is
+I'm going to go down to where that time
+picker is so we added the time picker
+last time and I'm going to bind
+now the is enabled property of this time
+picker I'm going to bind it to context
+of the flex time if you look over here
+you'll notice it already disabled the
+start time because the flex time is not
+checked if I go up here and I check the
+flex time this very
+cool yeah so it's not just values it can
+be almost just about any property not
+all of them but just about any property
+can actually be data bound that includes
+visibility um you know the time could be
+bound and we're going to do that later
+all right and the date on the uh you
+know the date could be bound so all of
+these things this is a great example of
+you know taking advantage of this
+control to control bind so you could
+come in and have the the page in View
+mode where everything is disabled and
+then have an edit button or checkbox and
+then that enables all of the controls or
+absolutely that cool absolutely if
+that's something you wanted to do make
+everything read only and you have a
+button that click edit and then they all
+become enabled sure that's in fact a lot
+of people do that and they do that like
+bound to maybe some
+security right because if someone only
+has read only access to a screen the
+security would actually just hide that
+edit button right and then right they
+could never click on it so nothing could
+ever become enabled yep so great all
+right well now guess what we're going to
+write some code woohoo finally I know
+everybody's like man had a lot of
+zamling all right let's go ahead I'm
+going to add a new folder here called
+converters and I recommend you do this
+because you probably will create a few
+converters and I'm going to create a new
+class and this one's going to be called
+inverted boou converter oh that sounds a
+little strange doesn't
+it all right a converter is very simple
+it actually implements this interface
+called I value converter and it has two
+methods this this interface is really
+simple two methods it has a convert and
+a convert
+back 99% of the time you're only going
+to write code in the convert not to
+convert back convert back a lot of
+people actually just throw an exception
+or they return null or something like so
+sometimes very rarely I I think I can
+remember one time I had to use the
+convert back but the way this works is
+we're going to pass in a value one of
+those bound values from one of our
+controls and we're going to do something
+to that value in this case I'm going to
+bind this to like an is enabled or is
+visible property on one of the controls
+but I'm going to change it so if it
+comes in as true I'm going to change it
+to false if it comes in as false I'm
+going to change it to true that's why
+it's called inverted Bo converter now
+this is a very simple example of a value
+converter but nine times out of 10 the
+code is going to be very simple in here
+on what you're going to do um I have a
+complete WPF Library I wrote years ago
+and I probably only have 10 converters
+it's not like something that you write a
+ton of so all right so how do we use
+this thing right let's go back to our
+user detail
+View and here's the thing I want to
+actually show you if we look back here
+this is in this name space now
+adventureworks ma.
+converters so that means I need to add a
+new XML name space right I'll call it
+converters and I'm going to reference
+oops sorry equals the adventure works.
+m.on converters yep so then what I can
+do is inside of here I can create a
+Content page. resource
+es and I can reference converters and
+there's my class I just simply need to
+give it a uh a key here I'll call it
+inverted
+Boolean like so so this is now a
+resource that I can use and if you
+remember we had resources before right
+okay so resources were things like that
+string or those doubles that I created
+earlier right now I've got another
+resource that happens to be a class okay
+all right let's scroll down now to find
+a radio button and the radio button here
+is my fulltime radio button and I'm
+going to set a name on this and I'm
+going to call it full
+time okay so now I'm going to go to the
+time picker so now I want to instead of
+referencing and binding to that is check
+to the flex time what if I wanted to do
+fulltime and bind to that so I Chang The
+Binding context here fulltime time all
+right and now I'm going to set the is
+binding to the is checked of full time
+right so that's remember the fulltime is
+the fulltime and the
+part-time so if I do
+this so let's run this first so we can
+take a look at how this works just like
+this we haven't even used the converter
+yet and it's thinking about it and here
+it comes all right so if we come in here
+and you notice that the full time is
+currently checked and so I can actually
+choose a start time but that's not
+really what I want if you're full-time
+you know you're in on salary we don't
+really worry about start times but if
+you're part-time you really want to be
+able to choose a start time don't you
+okay so this is one of those examples
+where well I want to bind to the is
+checked okay but I want to change it so
+that it's the inverse of that so we add
+what's called a converter here and and
+we use one of our static resources and
+it's called inverted Boolean okay this
+is a little bit of a contrived example
+because obviously I would probably just
+go to the part-time and bind it to that
+but it's a good way to show the
+difference and how sometimes you don't
+have you know like maybe CH changing
+something visible or invisible you might
+need to use something where it's the
+opposite very common thing you'll do
+trust me you will use this all the time
+so let's go here take a look and now we
+can see that now it's working correct
+got it cool and then you can put
+anything you want into that converter
+you could have complex
+calculations check up information in a
+database anything you want right
+absolutely I mean there can be there be
+a lot of code in there typically it's
+not a lot of code it's generally
+changing something very slightly from
+one thing to another okay um for example
+remember how we change those handlers to
+change the onoff to like yes no yeah
+that could be something you would even
+do in a converter where when somebody
+chooses a particular check box maybe you
+want to have a label next to it that
+gives more of a full description that
+could be something you could do in a
+converter okay so typically they're
+going to be more simple things if you
+need to write a lot of code you're going
+to wind up putting that in the view
+model which we're going to talk about
+you got in just another three three more
+episodes yep okay cool but at least we
+have now got a good introduction to
+binding controls together and using
+these value converters and again the
+beauty is that you you're not writing a
+lot of code for this you're doing all
+this binding and interactivity in the
+zaml so it's all in one place it's nice
+clean yep yeah you might need to go look
+up you the little value converter see
+what it's doing but if you give things a
+good name then it usually it's pretty
+self-explanatory I mean inverted Boolean
+that's pretty clear what's happening now
+can you do a peak on that can you go to
+definition can you see the code from
+inside the is that yeah if I do a peak
+definition on
+this okay all it's going to do is get me
+to this guy here okay so it gives me to
+the zaml because that's what this
+definition is right okay so but if I
+come here then and then I go ahead and
+do the peak definition there's the code
+Okay cool so it depends on what you know
+where you're located at right so in this
+case I it was the key that I was down
+there but if I come up here to the
+resources it's very easy to do that
+PE cool y there we go
+excellent all right so that's binding
+controls to other controls in the next
+episode we're going to look at what
+we're actually going to take a look at
+now creating C objects and binding to
+those very cool all right so stick
+around and we will see you next time on
+Visual Studio
+[Music]
+toolbox

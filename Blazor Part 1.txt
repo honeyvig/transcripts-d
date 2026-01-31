@@ -1,0 +1,1346 @@
+>> Hi! Welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green
+and this episode is part one
+of what winds up being
+a two parter on Blazor,
+which is an experimental
+technology that could
+revolutionize the web
+development world.
+I had Sam Basu and Ed Charbeneau,
+here a few weeks back.
+They were here for the
+Visual Studio Live Conference
+which was on Microsoft campus.
+I taped a bunch of
+episodes with them
+and they wanted to do
+an episode on Blazor.
+Unfortunately, I had a conflict
+and Dmitry wasn't available,
+so I left them alone
+in the studio.
+They were so excited.
+They spoke for an hour, so we're
+going to cut that in half.
+This is the first half of them
+explaining to us what Blazor is.
+>> Hello. Welcome
+to VS Toolbox show.
+My name is Sam Basu.
+Robert Green is busy, so I'm
+filling in for
+the day and with me,
+I have Ed Charbeneau and
+we're going to talk about
+something very exciting,
+especially in the ASP.NET land
+with Blazor and
+WebAssembly, right?
+>> Yeah. So, I'm a huge fan
+of Blazor right now.
+It's an experiment that's
+being worked on by
+the ASP.NET Team,
+Daniel Roth and Steve Sanderson.
+They're working hard,
+experimenting with
+this new framework.
+So, I'm happy to have
+the opportunity come on
+Visual Studio Toolbox and kind of
+share that story with everyone.
+>> Awesome. Tell us more about.
+>> So, my name is Ed Charbeneau.
+I'm a Developer Advocate with
+Progress or you may
+know them as Telerik.
+Sam here is a pro-
+a Developer Advocate
+at Progress as well.
+Co-worker of mine and
+we've kind of invaded
+the Visual Studio
+Toolbox episode here,
+to talk about Blazor.
+So, I am an author,
+I do some writing.
+I have a podcast
+called Eat Sleep Code
+and if anybody ever wants to
+reach out and get in touch,
+just give me a shout on Twitter.
+>> Okay. All right.
+So, let's dive in. What's
+the hop loud sounds like?
+There are some very sharp
+minds behind this at
+Microsoft and other places.
+You should tell us more.
+>> So, as a web developer
+that specializes in C#,
+one thing that I've
+always wanted to
+have is the ability to
+write C# and create Client-side
+applications using it.
+>> Okay. So, to kind of backup.
+So, with ASP.NET, is it entirely
+Server-side or we can do
+somethings Client-side but
+it's all in JavaScript?
+>> Right now if you want to write
+an application that's
+running in the browser,
+you're going to have to leverage
+JavaScript but there's
+some new things
+that have come around with
+WebAssembly, which is a-
+>> Okay.
+>> A way of natively writing
+code for your browser,
+that it understands
+using Web Standards,
+it's a bytecode format.
+>> Okay.
+>> So, it's similar to
+an assembly language,
+but it runs natively inside
+the browser and the browser
+understands it.
+So, we're starting to step away
+from the days where JavaScript
+rules the browser only and
+we're allowing some new
+things into the ecosystem.
+>> Okay. So, from what
+I understand like
+every browser has
+a JavaScript engine right,
+V8, or Chakra, or WebKit and
+is these engines
+that run JavaScript
+natively in the browser,
+Client-side.
+So now we're saying there's
+something more that
+the browser can run and that's
+the Web Standard that
+you've talked about.
+>> Yeah. I want to point
+out, this is a Web Standard.
+>> Okay.
+>> Because we've tried
+some things like this
+before and well
+things have changed.
+>> Things have changed.
+So, maybe to backup.
+So, I'm actually a big fan
+of Silverlight back from
+the days Flash was a plug-in.
+Sure, it had
+some vulnerabilities.
+I think Steve Jobs kind of wrote
+a scathing letter onetime to say.
+So, essentially when you
+run Flash on Safari,
+it makes your tiny iPad heat
+up and that not
+something Steve liked.
+So, he essentially kind of
+kill the plugins model
+and along with it, like,
+we never said
+Silverlight is done but,
+we kind of stopped
+talking about it and
+maybe the plugins model just
+didn't scale for the web.
+So, now we're saying
+"We're not going to do
+plug-ins. This is different."
+>> No. No plug-ins and
+don't get me wrong.
+These were things
+that were necessary
+at the time and people
+were doing the best
+with the best tools
+that they could,
+to build amazing applications.
+I'm sure there's some just
+phenomenal Silverlight
+applications
+out there that people have built
+but now's the time to start
+moving onto something else.
+>> Yeah.
+>> We're going to drop
+all those plug-ins and just
+use things that the browser
+understands natively.
+>> Yeah. With Silverlight though,
+I mean it wasn't
+just the plug-ins model.
+Like people who did Silverlight,
+we just enjoyed
+the Dev experience.
+The rich ecosystem. The data
+binding with C# and Xamarin.
+I think as developers,
+all of those skills,
+I mean they move forward with,
+be it UWP, be it WPF,
+or Xamarin.Forms.
+So, you can build
+cross-platform apps
+with the same skill sets.
+>> Absolutely.
+>> We're just trying
+to see how we can
+bring that Dev module bag,
+the ease of using Visual Studio
+and C# but do it differently
+in the browser, right?
+>> Right.
+>> So, let's start off
+with no WebAssembly.
+>> Okay.
+>> How does the browser
+work without it?
+So, normally we feed
+the browser HTML and
+JavaScript pages.
+Those things go
+through a parsing and
+then they're kind of precompiled.
+They're turned into
+a JavaScript tree and
+the JavaScript engine inside
+the browser interprets
+that into a bytecode.
+>> Right.
+>> So, it gets JIT compiled,
+turns into bytecode and
+then things happen
+within the browser.
+>> Okay.
+>> So, that's kind of
+where WebAssembly happens.
+What they've done is, think
+of this kind of like,
+for lack of a better term
+dependency inversion
+of control, right?
+>> Okay.
+>> So, we have this part of
+our browser that
+understands this bytecode.
+What if we took that part
+of the browser and
+exposed that to where
+developers could target it?
+So, this is WebAssembly.
+So, we can target
+this bytecode now and give
+that to our browser
+and your browser
+understands how to
+execute that bytecode.
+>> Okay.
+>> So when we do that, we open
+up that input to things like C++,
+Rust, Go, and our favorite C#.
+>> Okay. So, now you're
+talking about like
+higher level
+programming languages,
+been able to write things
+that we're going to compile down.
+Maybe not compilers.
+Maybe not the right word but,
+bring it down to that
+low-level assembly ish code,
+which the browser can
+execute on its own.
+>> Yeah.
+>> Okay.
+>> There's one more
+clarification to make here.
+This isn't bytecode that
+would run on your machine.
+>> All right.
+>> So, this isn't something
+that's going to get
+loose and have security issues.
+>> All right. right.
+>> For example, library
+that you send down,
+isn't going to be able to
+access your system registry or
+run natively on
+your Windows desktop.
+>> Okay. So, it is
+still running in
+the browser shells, so to speak.
+>> It's very much sandboxed.
+>> Okay.
+>> The bytecode is only going to
+be understood by the browser.
+It's not something that's
+used outside of the web.
+>> So, why should I
+trust WebAssembly?
+Is this like a standard that
+the web community has accepted?
+>> Absolutely.
+>> Okay.
+>> So, this is a Web Standard.
+It's in all the evergreen
+browsers and then,
+also if you have
+another browser that's same,
+maybe on a mobile device.
+Some manufacturers that like to
+ship their own web browsers and
+those don't always have
+standards that are up
+to what we expect.
+There are polyfills.
+>> Okay.
+>> That can polyfill
+in WebAssembly.
+>> Okay.
+>> So, it will be compatible
+with those as well.
+>> All right. So, you
+mentioned like modern browser,
+so is that like Edge,
+Safari, Chrome?
+All of their latest bits
+will support WebAssembly?
+>> Yeah. So when we say something
+like an evergreen browser,
+that's one that doesn't
+have a hard version number.
+>> Right.
+>> That we're tracking.
+>> It auto updates
+from [inaudible]
+>> For example, like IE 7/8/9.
+>> Right.
+>> Or Edge. You're always
+on the latest version.
+>> Okay. So, Apple is
+on-board with this. Okay.
+>> Edge, Safari.
+>> Yeah.
+>> Chrome, Firefox.
+The big ones that many
+of the users use,
+those are the ones that
+you'd expect to have
+the native use of WebAssembly.
+Then the other ones like I
+said, the polyfill works.
+>> Right.
+>> There's a little bit
+of a performance gap
+obviously with
+that type of approach,
+but at least your app works.
+>> Okay. All right.
+>> So, this is where Blazor
+enters, the picture.
+Now, there's a couple of
+modes of how Blazor can run.
+One of those is very new.
+So, we'll talk about that
+in just a little bit.
+But, what I want to
+focus on right now is
+the experience where you're
+developing for the browser,
+the client and you're
+running the application
+on the client.
+>> Okay.
+>> There is an opportunity
+to run it on the server,
+and this diagram doesn't
+quite fit that model.
+So, right now we're
+talking client side.
+>> Why Blazor? What's
+with the name?
+>> So, the Blazor name
+came from Razor.
+So, we're going to use Razor to
+create our markup
+for application,
+and then the Blazor part
+of it comes from the-
+>> Is running it in the browser?
+>> Yeah, in the browser.
+>> Okay.
+>> So, browser, Razor, Blazor.
+>> I see. Okay. So, like
+Razor is the syntax that
+we use to build
+ASP.NET applications,
+be it MVC or ASP.NET Core.
+You're saying we're going
+to use the same syntax,
+but it's going to just run
+try inside in the browser?
+>> Yes. So, if we look at
+the diagram here what happens is,
+remember that model we had
+before we're going to feed
+the browser HTML and
+JavaScript only,
+now we're using
+the Blazor framework,
+and the Blazor framework,
+it renders those
+Razor CSS HTML files.
+Those get turned into HTML,
+which the browser understands.
+>> Okay.
+>> Then we take Mono.
+So, Mono the runtime that can
+target multiple platforms,
+there are now
+targeting the browser.
+>> Okay. So this is
+Mono under the covers,
+and I mean Mono has been known
+that is not a new thing.
+I mean Mono has been around
+since .NET has been around.
+So it's the port of .NET
+to other platforms,
+and that's how Xamarin apps run
+today on iOS, Android,
+and other platforms.
+So, you're saying,
+we will use Mono to
+bring your C# down
+to WebAssembly?
+>> Yes.
+>> Okay.
+>> So, Mono is compiled
+to run on WebAssembly,
+and then Blazor is a framework
+that sits on top of that.
+Now Blazor is able to take,
+and load your DLLs
+directly into Mono,
+and Mono is running those
+in an interpreter
+into the browser.
+>> Okay. So, it's being
+interpreted at runtime now but
+eventually we might have
+a little more static compilation
+to make things a
+little more faster?
+>> Yeah. So right now, this
+is the way it's happening.
+I have spoken with
+Daniel Roth and there
+are ideas around maybe collapsing
+this stack at
+a final compilation stage,
+where all of
+your application gets
+compiled into
+WebAssembly directly.
+So, when it loads into the
+browser it's at native speeds,
+and there's nothing inhibiting
+that direct pipeline
+into the browser.
+The way this works now,
+this is a great development
+experience because
+when we compile we're
+compiling it to DLLs,
+and then Mono is handling
+that WebAssembly
+interpretation for us.
+So, the compilation
+time is very short.
+If we were to take our entire
+left application and compile it,
+that compilation time would
+take quite a bit of time,
+and our development
+process would be slow.
+>> Sure.
+>> So, this is a very fast way
+to iterate on an
+application and build it,
+and then in the future
+we may have
+that longer compilation to get
+the final package
+tightened up and
+ready to send down to our users.
+>> Okay. I see a blazor.js,
+and mono.js, what are those?
+>> So, those are
+intermediate layers
+for the browser to help do
+things like JS interrupts,
+so we have a JavaScript
+interrupt layer.
+So there are things that
+WebAssembly doesn't support yet.
+So, there might be times where we
+need to fall back on JavaScript,
+so we can actually talk to
+JavaScript from
+within WebAssembly.
+>> So, from .NET code, you're
+going to call JavaScript,
+and back and forth?
+>> Correct.
+>> Okay.
+>> So we can actually do
+that bidirectionally.
+We can call JavaScript modules
+and functions from within Blazor,
+and then we can also from
+JavaScript invoke .NET functions.
+>> Okay.
+>> So that's one reason
+those two JavaScript
+files are there.
+The other part is just
+loading the application hub.
+So, the mono.js takes
+and loads bootstraps up
+the the Blazor assemblies,
+and then Blazor has
+those interrupt layers,
+and communicates down through
+mono.js into those
+interrupts directly.
+>> Okay.
+>> So we've got a nice
+stack workflow here that
+we can build some pretty
+interesting applications already.
+Now it's worth saying
+that Blazor is
+an experimental project still.
+>> Sure, for now.
+>> We are in release
+0.5.1 as of recording.
+The first 0.1 release
+was just in March.
+So it's only six months
+old, it's a baby.
+It's got a lot of growing to do.
+>> But I here it's come a long
+way. Its come in tooling.
+>> Quite a long way.
+They are making
+some good investments in
+producing this experiment,
+and it's nice to have
+this experimental phase because
+they're able to think
+outside the box,
+and do some creative
+experimentation with it,
+and not have to worry so
+much about breaking
+changes at the moment.
+>> Then the community
+gets to weigh in,
+we developers get to try
+it out and see what works,
+and where the pain points are.
+So, back on this diagram.
+I mean this is
+all client-side, right?
+>> This is absolutely
+all client-side,
+and Blazor it can
+run out of process.
+So we don't need to necessarily
+be tied to WebAssembly.
+We can do it on the server,
+and we'll get into a project.
+This is actually something
+that shipped in 0.5.1.
+>> It was very, very new.
+>> How we can run the framework
+on the server side.
+So we don't have to
+compile it down,
+and then send it into
+the Mono WebAssembly runtime.
+We can use the regular .NET
+runtime on the server,
+and then what we're going do
+is open up a signal or hub,
+and communicate across
+the hub to your browser,
+and do diffs between the browser
+and the updates that
+we need to send.
+We'll get into that more,
+we don't want to get
+too much going on.
+>> You'll mention
+going on. Let's lock
+in the client-side first.
+>> So client-side, we've
+got our Blazor framework,
+running on top of Mono,
+we're able to load DLLs
+directly into the browser.
+>> Okay.
+>> Which is something
+very new and unexpected.
+>> Well, it's curious
+if I might say.
+>> Yeah, we will pull up
+the network traffic here,
+and take a look and see.
+>> So what exactly
+are you shipping from
+the service side when
+you do Blazor apps?
+>> All of it. We are
+shipping DLLs down to
+the browser and
+the browser is able to
+understand how to run those DLLs,
+thanks to the Mono runtime.
+>> Okay. Hopefully, we're doing
+some work with linkers
+and some tree shaking.
+So we are shipping only what
+we need and the client-side.
+>> That is stuff that is in
+the works that's coming, yes.
+>> All right.
+>> So right now,
+we're shipping down
+full assemblies but
+soon we hope that
+Steve and his team will
+come up with a way to
+create smaller DLLs and
+ship those across the wire.
+>> All right. Let's hear this.
+>> So before we get started,
+we'll talk a little bit about
+the Blazor framework itself.
+It has a lot of those things
+you expect out of
+a single-page application
+framework or SPA framework.
+It has a virtual DOM.
+So DOM manipulation has
+very taxing effort.
+So things like jQuery that
+directly go in and modify,
+manipulate the document
+object model in the browser,
+those things are sometimes
+pretty inefficient.
+So, Blazor has its own shadow DOM
+similar to other SPA frameworks
+like Angular and React.
+>> This almost sounds like
+a very SPA client-side
+framework with some of
+the features like routing and
+layouts and dependency injection.
+>> So we interact with
+this virtual DOM and then
+Blazor does diffing
+between the actual DOM,
+and the virtual DOM.
+So it's only changing what it
+needs to change rather than
+repainting that entire DOM
+within the browser.
+>> Got you.
+>> So we have efficiency there,
+we have a component model.
+It's very Model-View-View-Model
+type thing.
+This is something that developers
+from other .NET frameworks
+would appreciate.
+Things like UWP, and
+WPF, and Silverlight.
+It's not identical, but it has
+some similar type
+of ceremony too.
+>> This is what we liked about
+Silverlight development.
+This is the ease of doing data
+binding and XAML
+tools, the ecosystem.
+If you're saying we can
+bring some of it back,
+then yes. Let's do it.
+>> We have some layout
+capabilities in there as well.
+Dependency Injection,
+none of the box.
+Something that we'd expect
+from a modern .NET framework.
+So, we have that as
+well. We have routing.
+This very easily follows
+that Razor Pages type
+of construct,
+where we can open up
+a page and have
+an at page attribute.
+We'll show some of
+that in a moment.
+Then, again,
+the JavaScript interrupt
+is part this as well.
+So, we'll show that too.
+>> Okay.
+>> So let's jump straight
+into Visual Studio.
+Now, I have some tooling
+that I have to install.
+If you want to
+install this tooling,
+you go to Blazor.net and
+just follow the step by
+step instructions there,
+and you'll have the same tooling
+that I'm showing now.
+>> Okay.
+>> So in Visual Studio,
+I have a file new project
+experience for this.
+I am going to click on the
+ASP.NET Core Web Application
+project template,
+and we'll just do "OK" here
+to spin up a new project.
+Notice I have three
+new projects in here.
+I have a Blazor,
+Razor ASP.NET Core hosted,
+and Blazor Server-side.
+So, let's dig into
+these really quick.
+>> So, before you do
+that, this has to be
+ASP.NET Core 2.1
+release and forward?
+>> Yes.
+>> Okay.
+>> As of now. So, as of
+recording that's what it is.
+Visual Studio 15.7 or 8.
+>> Okay.
+>> Those instructions, again,
+are on Blazor.net.
+You'll find those there.
+They may be updated
+after this video airs.
+So make sure you
+keep an eye there,
+but you do need to install these.
+You are not going to come out of
+the box in your normal
+.NET Installation.
+So, our first project.
+Think of this Blazor app as
+a client-side only template.
+So, if you were to
+do this in, say,
+just normal JavaScript terms,
+it would be HTML,
+CSS, JavaScript.
+Static files you've run
+on your client only.
+Okay? So, now talk about
+server interaction.
+You can still have
+server interactions,
+but you do that through
+web APIs and things like that.
+They're not included
+in this project.
+>> Sure.
+>> The next one over is the
+Blazor ASP.NET Core hosted.
+I like to call this
+the full stack template.
+So this has the previous
+project template,
+but it also includes ASP.NET Core
+and some web API end
+points that we can hit.
+>> So that's like your backend
+then for your app?
+>> Yes, and ASP.NET is actually
+hosting the application as well.
+With the first example,
+you don't even
+really need a host.
+You just need somewhere
+to stick your files,
+and it's just stuff
+the browser understands,
+so it can pick it up and run it.
+>> Sure.
+>> Just like in HTML, JavaScript,
+CSS project you could
+put it on GitHub,
+Pages and host it there.
+>> Any FTP server can just
+put up to put down and run?
+>> Exactly, Azure storage.
+You can host your application
+from using that format.
+The second one here though,
+this actually ASP.NET Core
+hosting the application for you.
+It also has a web API endpoint
+for you to be able to hit,
+and it also has a concept
+of code sharing.
+Remember, we're using
+the same language
+now on the browser,
+client and the server.
+>> Yes. So, that's interesting.
+So, folks doing Node.js,
+we are used to doing like
+JavaScript front and back,
+and now we can do C# front
+and back essentially, right?
+>> Absolutely.
+>> Okay.
+>> So, that's where
+that one sits.
+This is a brand new project.
+So, this is where,
+I talked about it
+a little bit earlier,
+this is a server-side model.
+No web assembly involved,
+where the Blazor framework
+sits on the server
+as an application,
+and the server connects through
+web sockets down to
+the browser using signalR.
+>> Okay.
+>> Those packets with signalR are
+sent through a binary transfer.
+So, it's actually taking
+the diff from your updates,
+your interactions, and sending
+that up to the server,
+the server then processes
+the changes in Blazor,
+and then Blazor knows
+the diffs to make,
+sends that down the wire
+in a binary packet,
+and then the signalR client picks
+it up and replaces what it
+needs to in the browser.
+>> Interesting.
+>> So, it's a very
+interesting approach
+to doing this type
+of development.
+>> Yes. If you talking
+about like server-side now,
+you're in Node.js territory,
+and you can think about
+what this might mean
+for electron js apps maybe
+that run on the desktop,
+but we'll get to that.
+But this is interesting,
+that we can actually host Blazor
+outside of the web
+browser's process,
+and just do it all on
+the server or desktop.
+>> Yes. It's extending
+that UI thread across the wire
+instead of doing it
+right there in the browser,
+on the client.
+>> Sure.
+>> So, let's actually jump into
+this first Blazor template.
+So, we can actually
+show some code
+and how this stuff is structured.
+So, I'm going to spin this
+up, File, New Project.
+Looking at our solution explorer
+to see what we get.
+Some of these things
+may seem very
+familiar out of the box
+because they follow
+conventions that we already
+use in ASP.NET development.
+>> In particular,
+this looks familiar
+if you do any Blazor Pages.
+So, you don't have to
+Model-View-Controller pipeline,
+you'd have pages,
+and that's where you
+render things from.
+>> So, we'll start top down.
+We have our WW root.
+>> Okay.
+>> So, this is just like
+you would find normally,
+this is static resources
+for our application.
+>> Okay.
+>> We go to pages.
+Like you said, Blazor Pages,
+same idea here.
+We have all of the features
+of our application.
+People like to talk about
+apps and features now
+like we want to
+have, in this case,
+our component feature and
+our fetched data feature,
+and we can dive into those files
+here in just a moment.
+Then, our shared libraries,
+our shared views,
+same concept is ASP.NET.
+We have things like templates in
+our main layout and we can
+even have a view imports
+file to do those global using
+statements and bring in
+component libraries,
+and things like that.
+>> Okay.
+>> Another familiar concept
+is the startup in
+program.cs files that you
+find in .NET Core projects.
+Those are the things that
+bootstrap your application
+and configure
+dependency injection,
+and all those great things.
+>> Okay.
+>> So, let's give this guy a run.
+We'll get this started and
+kick it off in the browser,
+and then we'll go look at
+the code behind it and
+see how this works.
+>> So you're running
+how this in IS express,
+but you just said it may
+not need any of that.
+>> Yes. We don't really
+need to do all that.
+We could host this on
+GitHub Pages if we wanted to.
+These are all static files
+that we're using here.
+So, we get our Hello World app.
+We have a couple
+of features here,
+we have our counter component.
+We can click and
+increment a counter.
+>> You're not coming
+back to the server.
+>> So, no. There is no server.
+>> Okay.
+>> We're not doing
+any data transfer
+across anything right now.
+We have a fetched data,
+but it's all being
+handled locally.
+So, we're just grabbing
+a JSON file and
+just pumping the data
+into the application.
+So, we're grabbing
+that static JSON file.
+It's not coming
+from a web service
+or anything at this point.
+So, right now it looks like
+an average application,
+but let's see how it's built.
+So, let's dive into some
+of the features here.
+Let's open the counter
+component or the counter page.
+You'll notice right
+away the Blazor syntax.
+It's a .cshtml file and it uses
+very familiar conventions.
+>> It does, yes.
+>> At the very top,
+we have a router.
+So page is at
+the counter endpoint.
+So if we go to counter
+in a browser that's
+where we end up.
+>> That routing is built-in.
+>> No, routing is built
+into the framework.
+So, now we have
+just simple HTML here.
+We have our header tag,
+and then we have
+our current count.
+Then we're using Blazor here
+to display a value
+of currect count.
+>> Sure.
+>> We have a button to click,
+and then we have a event
+binding to the on-click event.
+Then we have
+a function block here
+that has our functionality
+for this page.
+So, there's our current count
+that's being bound up here,
+and we have our event handler
+for the increment.
+>> Okay. When you
+say at functions
+like that's C#, right?
+>> Yes. This is Blazor,
+and everything inside of
+this block is C# code.
+>> Yes, yes.
+>> So there's no JavaScript
+at all on this page.
+When we click the button,
+it invokes this increment
+count function and its data
+bound to this
+current count value.
+So that's the view
+that we see here
+when we click this button.
+So we're able to do that
+with very little code.
+There is no post backs
+going to the server,
+it's all being handled locally on
+the client in a very easy
+to understand fashion.
+>> Okay. So, if you go back
+to the browser for a second,
+so you said it
+has a Shadow DOM but
+there is a DOM out there.
+So, if you right click,
+you'll actually see HTML.
+>> Yeah, absolutely.
+>> Okay.
+>> So, those CSS HTML files
+are being rendered
+out into the browser.
+So, we use bootstrap rows,
+your links and your buttons
+and all those good things.
+Let's actually jump
+over to our network tab
+while we're in here and just
+do something interesting.
+Want to do Empty Cache
+and Reload.
+When this comes down
+across the wire,
+notice that we're
+actually sending
+DLL files from the server.
+>> Little scary. But
+it's here. Lets see.
+>> These all get loaded
+in through web assembly
+and our applications spins
+up and it's all client side.
+>> Okay.
+>> So, we're actually
+running these DLLs
+locally on the client.
+>> That's very interesting.
+You literally shipping
+.NET DLLs to the browser.
+>> Absolutely.
+>> We would figured
+out at runtime.
+If you look at the sizes, this is
+where you're saying
+it'll get better.
+Like we'll ship smaller
+and smaller as we go on.
+>> Yeah. Right now you
+can see that we're
+shipping the .netstandard
+dll and mscorlib,
+all these things as
+a whole across the wire.
+I would imagine, I'm not
+on the dev team just
+for clarification.
+But I've had discussions
+with Daniel Roth,
+the PM on the team
+and he's ultimate
+about making these things smaller
+and more compact when
+they go across the wire.
+>> Sure.
+>> So let's jump back
+into code again.
+We'll take a quick look
+at the fetch data.
+This is the view that,
+if we click ''Fetch Data'' here,
+we have a little bit of
+a grid showing some data
+that's coming in.
+The first thing I want
+to point out again,
+we have routing and then
+underneath routing we have
+this @inject declaration up here.
+>> All right.
+>> So, this is
+actually calling out
+to the dependency
+injection system and it's
+asking for the HTTP client
+that's registered
+independency injection.
+So that's going to
+get resolved and
+then down in the
+code of this page,
+you'll see we use
+that HTTP client
+to go to a file on local storage.
+>> Okay. So, you're
+not going anywhere,
+it's just a JSON that
+you are loading.
+But you could go across
+the network if you wanted to.
+>> Absolutely, we
+can make requests to
+the backend services and
+all those type of things,
+and we're doing it in
+a familiar .NET way.
+We're using HTTP client and
+doing a GetJsonAsync to
+pull in a object type of
+an array of weather forecasts.
+So, there's JSON binding
+that's happening
+automatically in here.
+So, we don't need to even
+worry about those type of things.
+>> Sure.
+>> Then there's our weather
+forecast object right there.
+So, we're getting
+these values and
+just mapping those values from
+the JSON into
+this object and then we
+iterate over those in the view.
+>> So at this point,
+would you say these are views
+or would you say
+these are components?
+>> So these are both actually.
+So we have the concept
+of a page here.
+We're using this app page
+directive with the routing,
+but I could actually
+come into my home or
+my index and let's wipe
+this component out for a moment,
+and I can come in here
+and type in counter.
+Notice that nice IntelliSense
+come up and we'll close
+that tag and I'll come back
+to my browser and refresh.
+Let's go home and wait
+for it to refresh.
+We're getting a message.
+I'm actually in debug modes.
+Let's actually run
+this a different way.
+Let's do a Ctrl F5.
+So we'll run without debugging.
+So we can refresh
+this experience.
+Now, remember this is
+an experimental project.
+>> Oh, I see. Okay.
+>> So, the debugging experience
+right now is little lackluster.
+There's some work
+being done to make
+debugging available
+in the browser.
+We can actually at
+current state, set breakpoints.
+>> In C#?
+>> In the browser, we
+can set breakpoints.
+We'll look at that
+in a few moments,
+because I don't want
+to get too off track.
+So, at some point,
+we'll be able to debug
+C# code in Chrome or IE.
+>> Wow.
+>> At current states not
+quite there, but
+it's getting there.
+So back to talking
+about the components.
+>> See you have the counter.
+>> Take that entire page,
+use it as a component.
+>> I see. That's not something
+you are able to do
+at all in ASP.NET,
+MVC, or Core, or Blazor.
+>> That is right.This is
+a new component model.
+>> It's literally
+a component. So, this is
+like in some ways like
+Angular and React,
+you just literally plopping
+a component down into a page.
+>> Absolutely. It's very similar
+concept to those things.
+You could say it was inspired
+by or borrowed from those.
+Which those things inspired
+by and borrowed from
+things like WPF.
+>> Absolutely. We rediscovered
+the same problem
+so and over again.
+>> So let's have a little fun
+with the counter
+component that we have.
+We'll go back to this page
+here and let's set up a property.
+So we actually have
+a shortcut for this now in
+the tooling and we can say
+instead of prop tab tab,
+which we might be
+used to do this,
+we can say parameter tab tab
+and now we get
+the Parameter attributes,
+and then we can expose
+a property on our component.
+Let's call this CountBy.
+So this is an integer that
+will set to be CountBy.
+Instead of just incrementing
+this internally,
+we can just say,
+plus equals CountBy.
+We might want to set
+a default value here.
+>> What if someone does
+not pass in the parameter?
+>> So we'll do that.
+>> Okay.
+>> I saved it. We'll go back to
+our index and now
+we can say count.
+I may have to recompile here.
+Let's do a build, and now we
+can do CountBy. There we go.
+>> Very interesting.
+>> Now are IntelliSense comes up,
+we need to build
+that library out.
+I can set that to an integer of
+five and we'll save this
+and we'll refresh our page.
+>> So, if I'm getting this right,
+so these are
+individual components?
+So the actual counter should
+still increment by one,
+but this one should
+pick up the parameter?
+>> Right. So, the instance of
+the counter on my index page,
+counts by five and
+the instance of
+the counter on the counter
+page is only counting by one.
+>> Sure.
+>> But now we've extended
+that component out and
+actually made it a little
+more robust where we can have
+a developer experience
+where you can type in and
+get IntelliSense and
+set variables and
+properties on the object
+or the component.
+>> This is very cool.
+>> So, very simple component
+model to understand
+and it's absolutely simple
+to get up and running.
+So, let's take a look at
+the other project type.
+>> So, that's the first half of
+a four hour of Sam and
+Eddie, talking about Blazor.
+The next episode of
+Visual Studio Toolbox,
+will continue on with
+their conversation.

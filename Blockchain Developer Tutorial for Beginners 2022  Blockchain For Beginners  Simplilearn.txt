@@ -1,0 +1,1461 @@
+ever wonder if there's an easier way to
+complete transactions without having to
+deal with online wallets banks and
+third-party applications well it's
+possible thanks to blockchain here's
+everything you need to know about
+blockchain imagine four friends jack ted
+sam and phil meet up for dinner after
+they're done jack pays the bill and all
+of them decide to split the expense
+amongst each other now on the next day
+when phil sends his chair to jack via
+online money transfer the transaction
+goes through without a hitch then ted
+and sam send their respective shares to
+jack but their transactions don't go
+through the failed transaction cites
+some issues at the bank that's when jack
+comes to know about the many ways a bank
+transaction could fail it could be due
+to technical issues at the bank one of
+their accounts were hacked daily
+transfer limits being exceeded and
+sometimes additional charges like
+transfer charges associated with
+transferring money to solve these
+problems the concept of cryptocurrency
+came into existence cryptocurrencies are
+a form of digital or virtual currency
+that run on a technology known as
+blockchain thanks to blockchain
+cryptocurrencies are immune to
+counterfeiting don't require a central
+authority and are protected by strong
+and complex encryption algorithms and in
+a market of more than thousands of
+cryptocurrencies like litecoin ethereum
+c cash and so on one reign supreme
+bitcoin now let's go back to our
+previous example and have bill ted and
+sam send jack two bitcoins each as their
+contribution to the previous night's
+dinner let's assume phil ted and sam
+have three bitcoins in reserve while
+jack has five first phil sends two
+bitcoins to jack a record is created in
+the form of a block the transaction
+details between them is permanently
+inscribed in this block this record also
+holds the number of bitcoins each of the
+friends own so after phil's transaction
+jack has seven bitcoins while phil has
+one following this sam and ted send two
+bitcoins to jack a new block is created
+for each of these transactions these
+blocks hold the transaction details as
+well as how many bitcoins sam ted and
+jack have in reserve these blocks are
+linked to each other as each of them
+takes reference from the previous one
+for the number of bitcoins each brand
+owns this chain of records or blocks is
+called a ledger and this ledger is
+shared among all the friends which acts
+as a public distributed ledger this
+forms the basis of blockchain so what
+happens when phil has only one bitcoin
+left and he tries to send two more
+bitcoins to jack the transaction will
+not go through this is because all his
+friends have copies of the ledger and
+it's clear that phil has only one
+bitcoin left his friends will flag this
+transaction as invalid a hacker will not
+be able to alter the data in the
+blockchain because each user has a copy
+of the ledger the data within the blocks
+are encrypted by complex algorithms all
+of this is made possible with the help
+of blockchain technology blockchain can
+be described as a collection of records
+linked with each other strongly
+resistant to alteration and protected
+using cryptography now let's have a
+closer look at the bitcoin transaction
+between jack and phil and find out how
+it works every user in the bitcoin
+network has two keys a public key and a
+private key the public key is an address
+that everyone in the network knows of
+like an email address of a user the
+private key is a unique address that
+only the user has knowledge of something
+like a password first bill passes the
+number of bitcoins he wants to send to
+jack along with his and jack's unique
+wallet address through a hashing
+algorithm all of this is part of the
+transaction details these details are
+encrypted using encryption algorithms
+and using phil's unique private key this
+is done to digitally sign the
+transaction and to indicate that the
+transactions came from fill this output
+is now transmitted across the world
+using jack's public key with this the
+message or transaction can be decrypted
+only by jack's private key which only
+jack has knowledge of different
+cryptocurrencies use different hashing
+algorithms while bitcoin uses the
+sha-256
+algorithm ethereum which is also a
+famous cryptocurrency uses one known as
+ether
+this transaction and several other
+similar ones are taking place all around
+the world these transactions are
+validated and then added block by block
+the people who validate these blocks are
+called miners
+for a block to be validated and added to
+a blockchain miners need to solve a
+complex mathematical problem the minor
+who solves this first adds the block to
+the blockchain and is rewarded with 12.5
+bitcoins the process of solving the
+complex mathematical problem is called
+proof of work and the process of adding
+a block to the blockchain is called
+mining
+with this phil and jack's wallets are
+updated just like every person in the
+network who has completed a transaction
+now that you know about blockchain and
+its important concepts time for a small
+quiz what is the concept of blockchain
+that ensures data cannot be altered by
+any of the users within the network a
+public distributed ledger b
+proof of work
+c proof of stake d
+hash encryption let us know what you
+think is the right answer in the
+comments below three lucky winners will
+get amazon gift vouchers details are
+mentioned in the description below let's
+have a look at how walmart uses
+blockchain to provide its customers with
+better service walmart was facing
+problems in delivering quality products
+to its customers they were facing a high
+return rate and large amounts of refunds
+due to their products bad quality they
+were unable to determine the point of
+failure in the supply chain which
+started from farm to storage to
+transportation to processing all the way
+to the customer then walmart adopted
+blockchain technology with blockchain
+the quality of the goods at each step
+was permanently inscribed within a block
+for example when a customer flags a
+product as damaged it can be correctly
+identified where the product got damaged
+in the entire supply chain thus helping
+walmart to identify the problem areas
+and fixing them and this is just one of
+several ways blockchain is used in real
+life applications can you think of any
+others let us know in the comments down
+below that's all for now now what are
+the current set of issues in today's
+banking system in order to do any
+transaction on a banking channel today
+it costs a very high transaction fees so
+suppose you want to do a transfer of
+money from your account to someone's
+else account through a banking channel
+the bank might charge a fee for 200
+transaction up to five dollars and this
+receiver will end up receiving 195
+which in percentage terms is a very high
+percentage of transaction fee also as of
+today there's a lot of scenarios people
+end up doing double spending for example
+over here the user has 800 dollars in
+her account but she ends up sending
+thousand dollars five hundred dollar
+each to two users double spending is a
+unique problem where digital money is
+spent twice so what does it tend to do
+is the user is able to make two
+purchases with the amount which is less
+than the purchase value so in this
+scenario the lady was able to buy a
+commodity worth more than eight hundred
+dollars though she only had eight
+hundred dollars in her account also the
+banking systems are prone to hacking
+hackers attack financial institutions
+and gain unauthorized access to data
+they can do transactions on your behalf
+which you are not aware of or they can
+do the transfer of money to some
+illegitimate accounts in 2017 the number
+of frauds in india through atm cards and
+net banking total to
+1785 each amounting to more than one
+lakh rupee so if you see the current
+banking system is prone to so many hacks
+that it can amount to huge cost of money
+now how bitcoin can solve these problems
+now bitcoin is a decentralized system so
+which allows you to do a value transfer
+transaction at a lower transaction fee
+as low as one dollar as compared to the
+five dollar which the bank was charging
+and at the end the receiver receives the
+true value of the amount which was sent
+by the sender bitcoin follows a
+decentralized system where no third
+party like governments banks or any
+other financial intermediary is involved
+during the transaction between the
+sender and receiver thereby reducing the
+cost of transaction drastically and that
+is the primary objective of
+cryptocurrencies or technologies like
+blockchain which advocates the removal
+of intermediaries now bitcoin is a
+cryptocurrency that runs on blockchain
+now how bitcoin solved the problem of
+double spending double spending is
+avoided through the basic structure of
+blockchain which involves verification
+of transactions so in the previous
+example as we saw when the user
+transferred 500
+to the first person then she will not be
+able to transfer the another 500
+based on the basic validation of the
+blockchain and we will see how suppose
+you're trying to spend the same bitcoin
+in a second transaction after the first
+transaction has been confirmed the
+saturn transaction will not get verified
+and does become invalid and this will
+happen because after the first
+transaction has been confirmed your
+balance will be verified in the second
+transaction your address identity will
+be validated and if suppose you are
+trying to spend more than what the
+balance you have the miners the
+validators of the blockchain network
+will discard that particular transaction
+and will not add it to the main
+blockchain network thereby double
+spending becomes as good as impossible
+in a blockchain each block is linked to
+its previous block the transactions
+become invalid for a specific bitcoin
+which has already been spent so you
+can't spend the bitcoin which you have
+already spent public ledger a public
+ledger records all bitcoin transactions
+where it is accessible to everyone who
+is associated with the system it is 100
+transparent system any transaction
+happening is visible on the public
+ledger once a user joins the blockchain
+network he gets a copy of all the
+blockchain transaction since its
+initiation or inception and the first
+block in a blockchain is called the
+genesis block though the public ledger
+is accessible to everyone only the
+user's address and the transaction
+details are visible to the users on the
+bitcoin network by looking at the
+address you can't figure out to whom
+this address belongs the identity is
+secure of the address owner this keeps
+blockchain safe from data tempering each
+block on the blockchain is aware of who
+is its previous block and this with
+entire blockchain is created even if a
+hacker tries to hack one block it would
+have to change the entire subsequent
+chain ahead of this block which will
+require huge amount of computation power
+for the hacker in order to make the
+changes across all the blocks which is
+next to impossible now what is
+blockchain imagine two friends living
+far away and would like to transfer
+money using blockchain technology
+blockchain is a decentralized system of
+secure and trusted distributed databases
+it's a distributed ledger which records
+and shares the transaction details
+across many nodes which are part of the
+network so that the data is not modified
+so each and every transaction which
+happens on a blockchain network it
+distributed across all the nodes on the
+blockchain each and every participant
+has the same copy of the ledger and it's
+an immutable ledger once a record or a
+transaction is registered it cannot be
+modified blockchain was originally
+introduced to timestamp digital
+documents and prevent tampering of
+records in simple terms a chain of
+blocks that contain information
+is is called blockchain now when a
+transaction occurs its related
+information is recorded into a block so
+as you see a transaction initiated in
+one corner of the globe can get
+registered on the block and then that
+block is being verified validated by the
+miners of the public ledger and then
+added to the main blockchain a block
+contains aggregated transactions in a
+single block which a miner has to
+validate and in lieu of that the miner
+gets rewarded now let's take a closer
+look at what all are the components of a
+block so whenever we talk about a
+blockchain what is actually a block and
+what it consists of now there are four
+major components each block contains a
+previous hash data data is nothing but
+the aggregation of the transactions
+which are aggregated in the block a
+nuanced value and the hash of the block
+itself now what is previous hash
+previous hash is the attribute which is
+connecting a block to its previous block
+so the previous hash attribute consists
+of the hash value of its previous block
+data it consists the details of the
+sender's address the receiver's address
+and the transaction amount so basically
+there could be multiple transactions
+amongst multiple senders and receivers
+so each block will consist n number of
+transactions and each transaction will
+have a sender's address a receiver
+address and a transaction amount nonce
+so basically the bitcoin uses a proof of
+work algorithm and in order to execute
+the algorithm nonce is a random value
+used to vary the output of the hash
+value so proof of work is the process of
+transaction verification done in
+blockchain hash hash is like a digital
+fingerprint it is the fingerprint of the
+current block now where it takes an
+input value of the previous hash the
+data and the nonce and produces an
+output value of fixed length so bitcoin
+network uses sha 256 hashing algorithm
+to generate a 256 bit length hash and
+this is the output it looks something
+like a hexadecimal value now what are
+the features of blockchain a blockchain
+is a decentralized public distributed
+ledger that is used to record
+transaction across many computers so
+this is a sample transaction which you
+are seeing these are set of three
+transactions a transferring money to b b
+to c and c to b a distributed ledger is
+a database that is shared among all the
+users who are part of the blockchain
+network the transactions are accessed
+and verified by users associated to the
+bitcoin network thereby making it less
+prone to cyber attack it is actually
+enclosed within all the participants who
+are part of the network now let's take
+an example where these bitcoin users are
+transferring money so here we have
+example like bella is trying to transfer
+money to john john is trying to transfer
+money to elsa and elsa is trying to
+transfer money to jack so these are the
+three transactions which are to be
+initiated now suppose these transactions
+were being happening on a central ledger
+and it gets corrupted so there is a
+chance of the data getting tampered to
+solve this problem a public distributed
+ledger plays a vital role now it ensures
+that users part of the cycle have a copy
+of the transaction details each user
+will have a copy of each transaction
+bella john elsa jack they all have the
+same ledger and this is what is called
+as distributed ledger everyone is having
+the same copy now in case one of the
+users like elsa misplaces her
+transaction detail she can easily be
+corrected by the other participants
+because they have the golden copy the
+correct copy or if either of them
+attempts to alter the record the
+alternate transaction copies with the
+other users will negate the alteration
+because they will see that amongst all
+the participants only one participant is
+having a different copy they will negate
+the copy of the user and they will
+rectify it encryption blockchain
+eliminates unauthorized access by using
+cryptographic algorithm
+sha-256 to ensure that the blocks are
+kept secure so sha-256 is the
+cryptographic algorithm which is used
+each user in the blockchain has their
+own keys so any user which on boards a
+typical blockchain network is always
+provided with two set of keys one is
+private one is public private key is
+known only to the sender also it is used
+to confirm if the origin of the
+transaction is legitimate public key it
+is also used to uniquely identify the
+user but it is shared by the sender with
+every transaction it floats on the
+blockchain network and we will see how
+now let's take a look at a typical
+transaction verification process suppose
+a sender wants to send a message he will
+pass the message through the hash
+function and generate a hash value of
+the message now after the hash value is
+being created it is passed through a
+signature algorithm and with the private
+key a digitally signed document is
+created now the transaction message
+original message the digitally signed
+document and the public key are
+transmitted to the receiver now at the
+receiver end the transaction message is
+passed through a hash function to get a
+hash value and that hash value is
+compared with the hash value obtained by
+passing the digital signature and public
+key through a verification function and
+then both the values are compared now
+let's see how the hash function works
+the hash function creates a unique
+digital fingerprint of data you pass the
+message to the hashing function and
+generates a hash value this hash value
+is called a digital print it has a very
+unique property any hashing function is
+a one way function it cannot be reversed
+you cannot decode the original value
+from the hashed value it is a one way
+encryption so here are some examples
+whatever be the size of the input data
+the hash value is always of 256 bit
+length and we will take a look at the
+demo at the end of this session where
+i'll show you how to generate a hash
+value using sha-256 now let's consider
+an example of gmail using hashing
+algorithm whenever you are entering the
+username and password that password is
+never directly persisted in any of the
+gmail database it is persisted using
+hashing function so once you have
+created your password and again once you
+log in your password is again passed to
+the hashing function and compared with
+the hash value persisted in the database
+and once both these hash value matches
+then only you are allowed to log in so
+every time you log into gmail your
+password is hashed into a value and
+compared against the one stored in the
+database the hash values match with the
+one in database and then the inbox is
+displayed on your screen now let's take
+a look of what is the proof of work
+algorithm proof of work is a method to
+validate transactions in a blockchain
+network by solving a complex
+mathematical puzzle and this whole
+process is called mining finding the
+nonce value is the mathematical puzzle
+that users or miners need to solve in
+the bitcoin network so it takes huge
+amount of computational power and
+resources of the miner in order to find
+out that nuance value users trying to
+solve the puzzle are called miners the
+puzzle is solved by determining a nonce
+that generates a hash value and results
+an output lesser than a target so in any
+proof of work algorithm there is always
+a target which is predefined for a block
+the miner has to use the nonce in order
+to generate a hash which has to be less
+than the target miners verify
+transactions within a block and adds the
+block to the blockchain when they have
+confirmed and verified the transaction
+with proof of work miners compete
+against each other to solve the
+mathematical puzzle the first miner who
+solves the puzzle is rewarded and when a
+block is solved the transactions
+contained in a block are also considered
+valid and the bitcoins associated with
+the transactions then get deducted from
+the originator or the sender and moves
+to the receiver now let's see how proof
+of work works so let's take a look at
+the block and its components the
+previous block hash it stores the hash
+value of the previous block of the
+blockchain data it contains the list of
+all the transactions which have been
+aggregated in the block nonce is the
+random value which is used to generate a
+hash value less than the target and hash
+is the digital signature of the block
+itself the hash is generated using a
+hashing function called
+sha-256 now using the nonce when the
+hash is generated if its output is less
+than the target then the puzzle is
+deemed to be solved the block is
+considered to be validated if not then
+the miner increments the nonce by value
+1 and then again rehashes generate a
+hash and goes through the cyclic process
+till the time it is not able to generate
+a hash less than the target in
+blockchain the target is adjusted every
+two zero one six blocks which is
+approximately every 14 days the average
+time of block formation is 10 minutes
+and the difficulty target of the puzzle
+increases or decreases depending on the
+time it takes to mine the blocks so it
+is the inbuilt network which is
+generating the target for the puzzle to
+get solved and it fluctuates the
+difficulty based on the time it takes to
+mind block proof of work is hard to
+produce but very easy for binders to
+verify so point to be noted here is once
+the block is hashed the remaining miners
+are supposed to validate the work which
+one miner has done but they are not
+required to find the nonce again so
+basically the miner who's supposed to
+earn the bitcoin has done the hard work
+but the others miners on the network
+just have to verify his validation in
+blockchain when miners use their
+resources time money electricity etc to
+validate a new transaction and record
+them on the public ledger they are given
+a reward now that reward is in bitcoins
+itself which as of today stands at 12.5
+bitcoins and to add there is no other
+way that the bitcoins can be generated
+in a bitcoin network it is only through
+mining now the bitcoin network
+internally halves the reward after every
+21k blocks which is approximately every
+four years so now subsequently whenever
+the time period will end the mining
+reward will get reduced to 6.25 btc now
+let's take a look at a demo now as i
+said this is a demo to showcase how to
+generate a sha-256 hash using a input
+value so whatever input i have the hash
+which is generated it is of 256 bytes
+even if i add a new value it will again
+only generate a 256 bit length hash
+now let's take a look at a typical
+blockchain structure we have a block
+over here which has one transaction
+added to it now this is orange in color
+because it has not been mined and i can
+only add a subsequent block to it once
+it is mined now as this is the first
+block in this particular blockchain the
+previous hash value of this block is all
+zeros and it is called as a genesis
+block now as i have mined this block the
+hash which is the digital signature of
+this block itself has been generated and
+i can now add a block primary thing
+which to be noted over here is that the
+previous hash value of this new block is
+the hash value of the previous block it
+has two transactions aggregated in it
+and i can again mine it and now the hash
+of this block has been generated so this
+highlights the typical data structure of
+a blockchain and how blocks are linking
+themselves to each other now let's take
+a look of a typical transaction which
+happens over a blockchain now i want to
+send money from wallet one to wallet two
+and i want to send one dollar there is a
+transaction fee of point one dollar
+associated with this transaction now as
+i have initiated that transaction wallet
+one has been deducted as 1.1 dollar and
+it is a pending transaction this
+transaction is waiting to be mined so i
+can choose any of the miners to do this
+transaction the pending transaction is
+done and now block 2 if you see has been
+added the previous hash value of this
+block is 0 0 a 9 is the hash value of
+block 1. another thing to be noted the
+value of the amount in wallet 2 has also
+got incremented by one done again we can
+try another transaction transferring one
+dollar again from wallet one to wallet
+three and
+say from wallet two to wallet three i
+have done a transaction it is pending it
+can be mined and block three has got
+added now what are the key takeaways
+today we learned what are the current
+issues in the banking system and how
+bitcoin solved them what is blockchain
+features of blockchain and the demo of
+the features which we have seen
+hyperledger
+hyperledger is an open source
+collaborative effort created to advance
+cross-industry blockchain technologies
+it is a global collaboration hosted by
+the linux foundation including leaders
+in finance
+banking internet of things
+supply chains manufacturing and
+technology
+it is a framework to create deploy
+and maintain blockchains for businesses
+that ensure accountability transparency
+and trust among business partners
+as a result hyperledger makes business
+networks and transactions more efficient
+concept of hyperledger now before i tell
+what hyperledger is
+let me tell you what hyperledger isn't
+hyperledger isn't a blockchain a company
+or a cryptocurrency
+hyperledger is a software used to create
+one's own personalized blockchain
+service
+it is basically a project within the
+linux foundation just like several other
+projects under them which include nodejs
+all join
+drone code and akumos
+since it is open source people across
+the globe can come and help develop and
+grow the platform
+restrictions in public blockchain with a
+goal in mind to develop an
+enterprise-based blockchain platform
+developers started testing interactions
+between applications and secure
+blockchains and realized that public
+blockchains require each peer to
+validate transactions and run consensus
+this is a major challenge when it comes
+to scalability
+moreover the transaction confidentiality
+and privacy was also getting lost as
+every node in the network was receiving
+a copy of the ledger
+private and confidential contracts
+let's consider an example
+a certain bank is giving better
+privileges to its premium customers for
+instance in credit cards
+thus if i'm a premium customer of the
+bank and have been banking with them for
+quite some time then it will give me a
+better offer on credit cards or will
+give me a loan at discounted rates
+these things are common in the banking
+world
+however if these banks start using
+public blockchains which have complete
+transparency disparity like these will
+become evident
+moreover there is an issue with regards
+to competition
+all banks are competing with each other
+in order to create a better place for
+themselves in the market
+thus they want their confidential
+information about transactions and other
+operations to stay completely
+confidential
+this won't be possible in a public
+blockchain like ethereum which stores
+all smart contracts on public ledgers
+this is where platforms like hyper
+ledger come into the picture which
+permits permissioned and private
+transactions and it is highly scalable
+as a platform
+solution to the restrictions
+on hyperledger network only parties
+directly related to the transaction deal
+are updated on the ledger thus
+maintaining privacy and confidentiality
+hyperledger primarily leverages the
+concept of channels to ensure privacy
+and confidentiality
+a channel is basically a virtual
+blockchain network which sits atop a
+physical blockchain network and has its
+own access rules
+they employ their own mechanism for
+transaction ordering and thus ensures
+scalability thereby permitting effective
+ordering along with the separation of
+data in the above example when john and
+cat are conducting a transaction a
+private channel between them serves as a
+method of interaction
+the smart contract can thus be viewed by
+only these two parties and the network's
+endorsement policy verifies their
+membership with the network to ensure
+privacy thus the transaction is secured
+and private and confidential
+hyperledger transaction
+in the above example john is initiating
+a transaction to send a message to cat
+let's assume that we have a state in the
+ledger named as message denoting the
+last message that had been sent and its
+store as a key value pair in peer of
+organization
+now john has decided to send a new
+message to cat and submit a request to
+the node.js backend from the message
+dashboard the node.js
+sdk client takes this new proposed state
+and sends a proposal to all the
+endorsing peers of the organization as
+per the endorsing policy defined in the
+channel configuration
+as well as confining to the membership
+services
+this includes a proposal request to
+invoke the corresponding function
+described in the chain code
+the message thus gets verified by the
+orderer and finally gets committed to
+the couchdb thus confirming the
+transaction
+linux family
+hyperledger is a part of the umbrella
+project under linux foundation where a
+community of developers work on open
+source projects
+linux foundation provides infrastructure
+services events
+training and financial resources for
+creating sustainable open source
+ecosystems
+linux foundation is known for its open
+source projects
+hyperledger is a consortium of
+organizations it's not a blockchain
+platform with hyperledger there are
+different blockchain projects
+the original code for these projects was
+submitted by various companies like ibm
+intel etc
+linux then made these codes open source
+to invite the entire community to work
+together and contribute to the codes
+the vision was to create an enterprise
+level blockchain platform hyperledger
+projects
+hyperledger umbrella strategy
+hyperledger nurtures a lot of blockchain
+frameworks and technologies under the
+umbrella strategy some of the well-known
+projects under hyperledger are as
+follows
+sawtooth lake
+hyperledger sawtooth is a blockchain
+platform implementation which builds
+deploys and runs distributed ledgers it
+is a modular platform which provides a
+digital record without a central
+authority or implementation
+it is primarily used for supply chain
+networks
+fabric
+hyperledger fabrics framework was
+contributed by ibm
+fabric works as a foundation for
+developing applications with a modular
+architecture the framework utilizes
+container technology to host smart
+contracts chain code comprising the
+system's application logic one of the
+examples where it is used is fishing
+industry to track the supply chain of
+fishes
+burrow
+hyperledger burrow hosted by the linux
+foundation is a blockchain framework
+implementation
+the framework was contributed by monax
+and co-sponsored by intel
+burrow is a permission smart contract
+application engine partially developed
+in accordance to the specifications of
+ethereum virtual machine evm
+it is used to run ethereum smart
+contracts
+eroja
+hyper ledger eroja hosted by the linux
+foundation is another blockchain
+platform implementation
+the framework was contributed by sora
+mitsu
+hitachi ntt data in kulu
+written in c plus plus hyperledger eroja
+incorporates a unique algorithm on
+chain-based byzantine fault tolerant
+consensus
+it provides a small set of fast commands
+and queries covering most common
+operations for the digital asset and
+identity management
+it can be used in mobile application
+organization
+indie
+hyper ledger indie is a distributed
+ledger and utility library built for
+decentralized identity
+the distributed ledger provides tools
+libraries and reusable components to
+create and use independent digital
+identities based on blockchains they are
+inoperable across administrative
+applications domains and any other silo
+it is used as a decentralized identity
+database
+sawtooth
+hyperledger sawtooth is a blockchain
+platform built for enterprise use where
+the design focuses on maintaining the
+safety of smart contracts and the
+ledgers are kept distributed
+sawtooth offers a simplified platform
+for blockchain application development
+by separating the application domain at
+the core system level
+application developers could opt for a
+language of their choice to write smart
+contracts logic
+following are some of the key features
+of sawtooth
+application layer in core system
+separation
+parallel transaction execution pluggable
+consensus algorithm
+private networks with sawtooth
+permissioning features
+ethereum contract compatible with seth
+event system
+hyperledger architecture hyperledger
+blockchain network participants
+following are the different participants
+within hyperledger blockchain
+blockchain user
+a blockchain user performs transaction
+on the network
+the user can invoke a function from the
+chain code in order to send the
+instruction message to the underlying
+network which can then process the
+transaction
+certificate authority
+the certificate authority ensures that
+only certain restricted parties can be a
+part of the business network on
+hyperledger they access security
+certifications in order to determine the
+parties who have required privileges to
+be an actor on a network
+traditional database it is a standard
+database which is used to store data
+traditional processing platform
+it stores access to the logical code
+written which is used to run the network
+as per the design
+blockchain development network
+it operates the blockchain network which
+enables the execution of smart contracts
+chain code as well as various
+transactions that take place between the
+participants which are part of the
+network
+blockchain developer
+a developer develops applications on the
+blockchain using chain code currently
+hyperledger fabric supports node.js
+java and golang languages to write such
+chain codes
+regulator
+regulator runs oversight to ensure that
+the platform is operating without any
+bias
+hyperledger architecture
+following are three main components of
+hyperledger
+membership service
+it is a set of cryptographic materials
+certificates that defines organization
+by itself every peer and orderer needs
+this type of certificate
+this certificate has some common
+property by which we decide whether the
+peer and the orderer belongs to the same
+organization or not
+a peer which is a part of the same msp
+can communicate with each other a peer
+from other organizations cannot be
+allowed to communicate with each other
+blockchain and transaction layer
+this layer constitutes the core code of
+the blockchain it comprises of consensus
+algorithm which is required to make the
+final decision on the state of every
+transaction it also contains the
+distributed ledger and ledger storage
+which stores the entire history of the
+transactions and the last known states
+lastly we have the pdp protocol which is
+used for communication between different
+nodes on the network
+chain code it is the logical programming
+layer which consists of the business
+logic required to run an operation on
+the hyperledger permissioned blockchain
+and its consensus model permissioned
+blockchain maintains an access control
+layer and allows certain actions to be
+performed only by a few identifiable
+participants it is also called private
+blockchain
+following are the properties specific to
+permissioned blockchains
+it has legally accountable validators
+it is suitable for off-chain assets they
+can be used as an i.t tool for
+settlement and clearing examples include
+ripple which determines roles for a
+select number of participants who can
+act as transaction validators on their
+network
+such blockchains are also popular among
+industry level enterprises and
+businesses for which security identity
+and role definition are important
+permissioned versus permissionless
+blockchain
+let us see some differences between a
+permissioned and a permissionless
+blockchain
+one in regards to access a permissioned
+blockchain only allows pre-approved
+members to access the network and make
+transactions to it whereas a
+permissionless blockchain allows anyone
+to be a part of the network as it is
+completely open and transparent
+two
+permissioned blockchain are faster than
+permissionless blockchain when it comes
+to performance as they have less number
+of participants in the network three
+permissioned blockchain use different
+types of consensus algorithms like pbft
+proof of stake and more usually
+permissionless blockchains rely on proof
+of work
+four the transaction cost in a
+permissioned blockchain is lower than
+that of a permissionless blockchain
+five in regards to stability
+permissioned blockchain are considered
+more stable compared to permissionless
+blockchains as the former have a better
+governance due to known parties which
+are a part of the network
+six in a permissionless blockchain all
+participants have the same level of
+access whereas a permissioned blockchain
+provides full access only to the members
+which are registered to be a part of the
+business network
+7.
+permissionless blockchains work in a
+peer-to-peer fashion relying solely on
+consensus algorithms to create a trusted
+environment however permissioned
+blockchains have trusted members as part
+of the network which enhances the trust
+on the network consensus and its
+interaction with architectural layers
+consensus
+consensus is the process by which a
+network of nodes validates the block of
+transactions and provide a guaranteed
+ordering of transactions and validating
+those block of transactions that need to
+be committed to the ledger consensus
+must ensure the following in the network
+confirms the correctness of all
+transactions in a proposed block
+according to endorsement and consensus
+policies
+agrees on order and correctness and
+hints on the results of execution
+depends on smart contract layer to
+verify correctness of an ordered set of
+transactions in a block hyperledger
+makes use of the permissioned voting
+base consensus from the pool of the
+other consensus named the lottery-based
+consensus
+consensus properties
+consensus must satisfy two properties to
+guarantee agreement among nodes
+safety and liveness
+safety means that each node is
+guaranteed the same sequence of inputs
+and results in the same output on each
+node
+the algorithm must behave identical to a
+single node system that executes each
+transaction atomically one at a time
+liveness means that each non-faulty node
+will eventually receive every submitted
+transaction assuming that communication
+does not fail
+activities performed to reach consensus
+hyperledger frameworks reach consensus
+by performing two activities
+transaction ordering transaction
+validation
+by logically separating these activities
+we ensure that any hyperledger framework
+can work with any hyperledger consensus
+module
+the first step of the consensus process
+flow is receiving the transactions from
+the client application
+consensus depends on an ordering service
+to order transactions
+transaction order enables
+confidentiality of the transactions
+it also increases the efficiency of the
+transactions
+to validate transactions consensus
+depends on the smart contract layer
+because it contains the business logic
+behind what makes a transaction valid
+transaction validation contains business
+logic to make the transaction valid
+it also ensures the confirmation of
+policies and contracts specified for the
+transaction
+then it also checks for syntax and logic
+errors
+consensus model for permissioned
+blockchain
+consensus in hyperledger fabric as seen
+in the image above is broken out into
+three phases
+endorsement ordering and validation
+endorsement is driven by policy e.g m
+out of n signatures upon which
+participants endorse a transaction
+ordering phase accepts the endorsed
+transactions and agrees to the order to
+be committed on the ledger
+validation takes a block of ordered
+transactions and validates the
+correctness of the results including
+checking endorsement policy and double
+spending
+as soon as a new transaction is created
+it is sent to the endorsement peer to
+generate a read write pair the read
+write pair from every endorser is then
+sent to the order which orders the same
+and generates a block based on consensus
+the ordered block is then sent to the
+validator to update the couch db with
+the most recent state
+api and network topology in hyperledger
+api it enables clients and applications
+to interface to the blockchains
+hyperledger supports the following types
+of apis
+admin apis
+this class creates an administration
+connection to a hyperledger composer
+runtime the connection can then be used
+to
+deploy business network definitions
+business network definitions
+update business network definitions
+send a ping message to the runtime to
+ensure it is running and correctly
+configured
+story connection profile document in the
+connection profile store
+common apis
+they are used to obtain information
+about the connected networks
+this information can include business
+network
+metadata enum declaration and many more
+runtime apis
+these are used to perform all
+transaction operations like running a
+query managing assets and more
+network topology
+network topology is a technical
+infrastructure that provides smart
+contract services and ledger to
+applications
+listed below are the components of
+network topology
+ledger
+a ledger consists of two distinct parts
+a blockchain and the state database
+unlike other ledgers blockchains are
+immutable in contrast the world state is
+a database containing the current value
+of the set of key value pairs that have
+been added modified or deleted by the
+set of validated and committed
+transactions in the blockchain
+smart contract a smart contract is a
+code that is invoked by a client
+application external to the blockchain
+network it manages access and
+modifications to a set of key value
+pairs in the world state
+in hyperledger fabric smart contracts
+are referred to as a chain code peer
+nodes
+it is a network entity that maintains a
+ledger and runs chain code containers in
+order to perform read write operations
+to the ledger
+peers are owned and maintained by
+members
+ordering service it is a defined
+collective of nodes that orders
+transactions into a block
+the ordering service exists independent
+of the peer processes and orders
+transactions on a first come first
+served basis for all channels on the
+network
+channels
+a channel is a private blockchain
+overlay which allows for data isolation
+and confidentiality
+a channel specific ledger is shared
+across the peers in the channel and
+transacting parties must be properly
+authenticated to a channel in order to
+interact with it fabric certificate
+authorities hyperledger fabric ca is the
+default certificate authority component
+which issues pki-based certificates to
+network member organizations and their
+users
+the ca issues one root certificate to
+each member and one enrollment
+certificate to each authorized user
+steps to create a hyperledger network
+following steps should be followed to
+create a hyperledger network
+step one create a network
+the network is created from the
+definition of the consortium including
+its clients peers
+channels and ordering service
+the ordering service is the
+administration point for the network
+because it contains the configuration
+for the channel within the network
+step 2 define a consortium a consortium
+is comprised of two or more
+organizations on the network
+consortiums are defined by organizations
+that have a need for transacting
+business with one another and they must
+agree to the policies that govern the
+network
+step 3 create a channel for consortium a
+channel is a means of communication used
+to connect the components of the network
+and or the member client applications
+4
+join peers to channels
+peers are joined to channels by the
+organizations that own them and there
+can be multiple pure nodes on channels
+within the network
+step 5 install smart contracts
+smart contract chain code must be
+installed and instantiated on a peer in
+order for a client application to be
+able to invoke the smart contract
+step six optimize the network
+while there is no theoretical limit on
+how big a network can get
+as the network grows it is important to
+consider design choices that will help
+optimize network throughput stability
+and resilience
+step 7
+add another consortium definition
+as consortia are defined and is added to
+the existing channel we must update the
+channel configuration by sending a
+channel configuration update transaction
+to the ordering service
+step 8 add a new channel
+organizations are what form and join
+channels and channel configurations can
+be amended to add organizations as the
+network grows when adding a new channel
+to the network channel policies remain
+separate from other channels configured
+on the same network
+step nine add peer and join it to
+multiple channels
+you can continue adding new peers and
+connect them to several channels within
+the network
+network topology the diagram above shows
+a fabric network with the following
+configuration
+there is a fabric network in
+with network policy np1
+and ordering service o
+channel c1 is governed by channel policy
+cp1
+channel c1 has been established by
+consortium rarb
+channel c1 is managed by ordering
+service o and peers p1 and p2 and client
+applications a1 and a2 have been granted
+permission to transact on c1
+client application a1 is owned by
+organization ra
+certificate authority ca1 serves
+organization ra
+pure p2 maintains ledger l1 associated
+with channel c1 and l2 associated with
+c2
+prp2 makes use of chain code s4 and s5
+the order nodes of ordering service o
+are owned by organization rd who is a
+blockchain developer
+a blockchain developer is a person who
+is responsible for developing and hence
+enhancing blockchain related
+applications famously known as dapps
+smart contracts architecture and
+protocols
+for those who don't know what blockchain
+is
+blockchain is a system of recording
+details of transactions in a block
+taking place in the blockchain network
+that makes it difficult or impossible to
+change or hack
+which means they are immutable
+a blockchain is essentially a digital
+public ledger of transactions that is
+copied and distributed across the entire
+network of computer systems on the
+blockchain
+basically blockchain developers enable
+secure digital transactions by creating
+systems and applications to record and
+store blockchain data and prevent
+external changes or hacks
+that brings us to what are the types of
+blockchain developers
+there are two types of blockchain
+developers
+core blockchain developers and
+blockchain software developers
+each type has its specific type of role
+let's go through them in more detail
+the core blockchain developers designed
+the protocols required to run a
+blockchain solution successfully which
+means they are majorly responsible for
+the architecture development of
+blockchain
+are also responsible for designing
+consensus protocols and making
+high-level decisions
+blockchain software developers
+develop and implement the blockchain
+using the designs and solutions created
+by the core blockchain developers
+they are majorly responsible for
+designing and implementing smart
+contracts and developing decentralized
+applications or dapps
+now let's understand what are the
+technical skills required to become a
+blockchain developer to become a
+blockchain developer you need to have a
+specific set of technical skills let's
+take a look at them
+understanding blockchain architecture
+for starters you should have a complete
+understanding of blockchain technology
+its architecture how it works and its
+critical concepts like hash functions
+distributed ledger technology and
+consensus protocols
+next data structure and coding
+data structures and coding are
+considered the most basic and essential
+skills required to be a fine developer
+it is a must-have skill to become a
+blockchain developer as it enhances your
+ability to play and configure blockchain
+according to your requirements
+development of smart contracts
+smart contracts is the most vital part
+of blockchain technology the programming
+language solidity is used to create
+smart contracts
+ethereum is the best example for smart
+contracts it helps you set up the
+business and develop and deploy dabs
+using smart contracts
+and at last basic knowledge of
+cryptography
+blockchain secures its data by using
+highly effective cryptography algorithms
+cryptography helps you implement dabs
+and other blockchain services
+now we have covered the technical skills
+required to become a blockchain
+developer let's explore the roles and
+responsibilities of a blockchain
+developer
+both core blockchain developer and
+blockchain software developer have
+different roles and responsibilities
+first we will discuss the roles and
+responsibilities of code blockchain
+developer
+core blockchain developer understand and
+implement the features and
+functionalities of blockchain
+they design protocols and consensus
+protocols for blockchain networks
+they create solutions for providing
+security to the data stored in the
+blockchain network
+and then make sure that the blockchain
+network functions smoothly and securely
+now blockchain software developer design
+and implement smart contracts
+they develop and deploy decentralized
+application or dabs as per the
+requirements
+also they look after the integration
+with other applications and services
+now let's dive down and explore the
+companies hiring blockchain developers
+there is a massive demand for blockchain
+developers and if you know your skills
+well you will surely get a good start
+with your career as blockchain developer
+joining a programmers community and
+working on real projects will help you
+learn grow and upskill yourself
+according to 2021 scienceof a software
+development company ripple labs in
+corporation an american technology
+company that deals with the ripple
+payment
+leeway herds a software development
+company for startup at enterprises
+chroma way a blockchain technology
+company
+open ledger a decentralized financial
+platform used to convert bitcoins to
+smart coins
+and intellect soft a company specialized
+in providing software products and
+integrated solutions are a few top
+companies who hired blockchain
+developers to work on blockchain
+technology
+now that we know about the demand of
+blockchain developers worldwide let's
+figure out the average salary of a
+blockchain developer in both the usa and
+india
+in the usa the average salary of
+blockchain developer is over 157
+thousand dollars per year
+and in india it ranges from 5 lakh
+rupees 30 lakh rupees per year
+so this is all about who is a blockchain
+developer
+we have almost reached the end of this
+video if i missed anything important do
+let me know in the comment section i
+hope you enjoyed this video on who is a
+blockchain developer and learn something
+new from it if you like this video then
+please do hit the like button
+thanks for watching and stay tuned for
+more updates and videos from simply
+learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

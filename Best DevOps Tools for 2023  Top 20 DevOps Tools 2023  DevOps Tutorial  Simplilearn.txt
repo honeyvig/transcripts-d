@@ -1,0 +1,404 @@
+in today's fast-paced and ever evolving
+world of software development devops has
+emerged as a transformative approach
+Bridging the Gap between development and
+operations team devops tools are pivotal
+in streamlining the software delivery
+process four string collaboration and
+empowering organizations to achieve
+continuous integration deployment and
+delivery here we present a curated list
+of top devops tools that have
+revolutionized the industry the power of
+these devops tools lies in their ability
+to enhance productivity scalability and
+reliability enabling organization to
+deliver high quality software faster and
+with confidence from Version Control
+Systems like git and subversion to
+containerization platforms like Docker
+and kubernetes from configuration
+management tools like ansible and
+perfect to monitoring analoging tools
+like promoters every tool in every step
+Fosters seamless software development
+and deployment ensure system health and
+provides valuable insights for
+troubleshooting in this DeVos tools
+tutorial we will learn the top devops
+tools you must focus on to become a
+successful devops professional if these
+are the types of videos you would like
+to watch then hit the Subscribe button
+like and press on the Bell icon to never
+miss any further content if you are one
+of the aspiring devops engineer looking
+for online training graduating from the
+best universities or a professional who
+elicits to switch careers with devops by
+learning from the experts then try
+giving a shout to Simply learn skeltic
+postgraduate program in devops in
+collaboration with IBM the course link
+is mentioned in the description box and
+you should navigate to the course page
+where you can find a complete audio of
+the program being offered now over to
+our training experts hello everyone
+without further Ado let's get started
+before diving into the tools let's
+Briefly summarize the devops phases
+devops phases are a series of
+interconnected steps that streamline
+software development and deployment
+here's a crisp explanation of each stage
+first plan Define project goals
+requirements and Milestones plan takes
+prioritize work and establish a roadmap
+for development next is code developers
+write and review code collaboratively
+using Version Control Systems to manage
+changes and ensure code quality the
+third one is build convert the code into
+executable software components including
+compiling linking and packaging the code
+base four-step testing automated testing
+is performed to validate the software's
+functionality performance and security
+and this includes unit testing
+integration tests and system tests the
+first stage is the release stage prepare
+the software for deployment by
+finalizing features documentation and
+versioning ensure all necessary
+approvals and compliance requirements of
+meth sixth one and deploy move the
+software to Target environment whether
+it is on-premises or the cloud this
+involves setting up infrastructure
+configuring resources and installing the
+software now the seventh one operate
+minus D is software and infrastructure
+in a production environment monitor
+system Health address operational issues
+and ensure smooth functioning the eighth
+one is monitoring phase continuously
+monitor the software's performance
+availability and security collect
+metrics analyze logs and identify and
+resolve any anomalies or bottlenecks
+these stages form a continuous loop
+allowing for iterative development rapid
+feedback and continuous Improvement
+devops enhances collaboration Automation
+and efficiency throughout the software
+development life cycle by integrating
+development and operations team now
+let's discuss the tools the primarily
+used and prominent ones in each phase
+starting with planning jeera and Trello
+are the most popular tools jira is a
+popular project management tool that
+helps teams and planning face of devops
+it enables teams to create and manage
+tasks track progress and allocate
+resources Trello Trello is a visual
+collaboration tool that simplifies
+project planning and organization it
+provides a flexible and intuitive
+interface where teams can create both
+lists and cards to represent task
+workflows and Milestones these tools
+provide teams with the necessary
+functionalities to plan organize and
+track tasks ensuring Clarity
+transparency and alignment of planning
+phase of devops projects now proceeding
+ahead we will discuss about the next
+phase which is the coding phase the
+important tools here are get Visual
+Studio firstly get git is a widely used
+distributed version control system that
+plays a crucial role in coding phase of
+devops it allows developers to attract
+changes to their database collaborate on
+a code with teammates and easily manage
+different versions of their software now
+the visual studio code Visual Studio
+code is a lightweight versatile code
+editor that provides a rich set of
+features for developers it supports
+various programming languages syntax
+highlighting debugging and integrated
+terminal making it a popular choice for
+coding in the devops context these tools
+get vs code provide developers with the
+necessary infrastructure and
+capabilities to manage code efficiently
+collaborate effectively and ensure code
+quality during the coding phase of
+devops projects now let's proceed to the
+next phase which is the build phase we
+have a Jenkins Gradle and Maven in this
+particular segment firstly Jenkins
+Jenkins is a widely used open source
+automation server that plays a crucial
+role in the build phase of devops it
+enables teams to automate the build test
+and deployment process facilitating
+continuous integrating and delivery now
+the Gradle Gradle is a powerful build
+automation tool that provides a flexible
+and scalable framework for building and
+managing software projects it supports
+multiple programming languages and
+offers Advanced features like dependency
+management incremental bills and
+parallel execution and lastly Maven
+Maven is a popular build management tool
+that simplifies project setup dependency
+management and build processes it uses a
+declarative XML based configuration and
+follows conventions over configuration
+principles these tools and power teams
+in the phase of devops by automating the
+compilation packaging and distribution
+of software the Streamline the build
+process ensure code quality and
+facilitate efficient integration with
+other stages of devops pipeline now we
+will discuss the testing phase we have
+three most popular testing tools
+selenium junit and Postman first
+selenium selenium is a widely used open
+source framework for automating web
+browser testing it allows teams to write
+and execute automated tests across
+different browsers and platforms
+ensuring consistent functionality and
+user experience next we have junit junit
+is a popular testing framework for Java
+applications it provides a simple and
+standardized way to write and execute a
+unit test allowing develop first to
+verify and the correctness of individual
+code units and lastly Postman Postman is
+a powerful API testing and collaboration
+platform that allows teams to design
+build and automate tests for restful API
+Services ensure in their functionality
+performance and security are integrated
+Postman provides an intuitive interface
+for creating and organizing test cases
+making API requests and validating
+responses now these tools Aid in the
+test phase of developed by automating
+and simplifying the testing process they
+facilitate efficient testing of web
+applications unit testing of code units
+and a comprehensive testing of apis
+ensuring software quality and reducing
+the risk of bugs and issues in
+production environment proceeding ahead
+we have the release phase principle AWS
+code deploy are the most popular release
+tools and so there is a powerful open
+source automation tool that helps teams
+automate the release phase of devops it
+allows for easy configuration management
+deployment and orchestration of soft for
+releases next AWS code deploy AWS code
+deploy is a fully managed deployment
+service provided by Amazon web services
+it simplifies the release fees by
+automating application deployments to a
+variety of compute environments these
+tools assess teams and release phase of
+devops by automating deployment process
+ensuring consistent and reliable
+releases and simplifying configuration
+management now we are in the deployment
+phase Docker kubernetes and AWS elastic
+beanstack are the popular deployment
+tools firstly Docker is a popular
+containerization platform that
+simplifies the deployment phase and
+devops it allows teams to package
+applications and their dependencies into
+lightweight portable containers Docker
+provides a consistent and isolated
+environment for running applications
+enabling seamless deployment across
+different infrastructures next we have
+kubernetes kubernetes is an open source
+container orchestration platform that
+automates the deployment scaling and
+management of containerized applications
+it provides a robust framework for
+managing clusters of containers across
+multiple nodes followed by that we have
+the elastic bean stack AWS elastic bean
+stack is a fully managed platform as
+service provided by Amazon web services
+it simplifies the deployment phase by
+abstracting the underlying
+infrastructure and providing the easy to
+use platform for deploying and managing
+applications these tools play a vital
+role in deployment phase of devops by
+automating application deployment
+ensuring scalability and simplifying
+infrastructure management next we will
+be taking care of operate phase
+Prometheus elastic stack basic Duty are
+the popular operate tools firstly
+Prometheus Prometheus is an open source
+monitoring and alerting Tool widely use
+an operate phase it collects metrics
+from various systems services and
+applications allowing tools to monitor
+performance availability and resource
+utilization next we have elastic stack
+or elk stack elk stack is also known as
+elasticsearch long stash and hibana
+which is a powerful combination of Open
+Source tools used for log management and
+Analysis in the operate phase
+elasticsearch stores the index's log
+data logs Dash collects and processes
+logs and Cabana provides a user-friendly
+interface for searching analyzing and
+visualizing log data now the page of
+Duty pager duty is an incident
+management platform that helps teams in
+the operate phase of devops to respond
+and resolve incidents quickly it
+provides a real-time Alert in on-call
+schedules and escalation policies
+ensuring that the right team members are
+noticed and engaged during incidents now
+these tools are instrumental in the
+operate phase of devops by providing
+monitoring log management and incident
+response capabilities and finally we
+have the monitoring phase nargios and
+grafana are the most popular monitoring
+tools firstly we will have it discussed
+about the nodules nagios is a widely
+used open source monitoring tool that
+plays a crucial role in monitoring ways
+of devops it enables teams to monitor
+the health and performance of their
+systems applications and network
+infrastructure next we have grafana
+grafana is also one of the popular data
+visualization and Analytics tool
+commonly used in Wonder face of devops
+it integrates with various data sources
+including monitor systems and databases
+to create a visually appealing and
+interactive dashboard these tools are
+essential and monitored phase of devops
+as they provide the necessary
+capabilities and monitoring
+visualization and Analysis of system
+performance metrics and logs they enable
+themes to proactively Monitor and
+optimize their applications and
+infrastructure ensuring Optimal
+Performance availability and user
+experience and with that we have
+finished the top devops Tools in 2023.
+now before we conclude let us hear from
+our Learners about their success story
+after getting certified by simply learns
+postgraduate program from Caltech in
+collaboration with IBM
+foreign
+[Music]
+we're actually brothers and we live here
+in Alberta Canada we do a lot of things
+together
+and this time we decided to take a
+course in devops from Simply learn the
+course proved to be very beneficial for
+both our careers yeah I got a promotion
+after the course and I got a hire with a
+new company
+I'm actually a mechanical engineering
+graduate and I've been working at my
+company for the last four years in 2020
+I came to know that my company was
+starting the hiring process for devops
+infrastructure team at the time I was
+working as an implementation specialist
+and my colleagues recommend that I take
+a course in devops if I wanted to be
+part of a team so I started doing my
+research and then he came to me saying
+that he was also looking for a devops
+course yeah funny enough I actually
+found the course through Instagram but
+you know my situation was slightly
+different I had been working as a
+geomatic field technician for about four
+years but I wanted to change my career
+into something that involved more
+programming and automation so when I
+came across with this course I said you
+know what let's take it
+and caltex name was definitely a
+deciding factor in July 2021 we got our
+certifications and I immediately posted
+that on my LinkedIn profile you know
+coincidentally in November of that same
+year we got the good news
+and I got hired as a dis developer
+which has allowed me to do way more
+programming which is what I wanted to do
+around that time I got promoted to the
+devops infrastructure team and saw a 21
+salary hike the overall course was
+awesome but the part that I enjoyed the
+most was a Docker certification training
+you know what I also really enjoyed the
+docker certification training I think
+there were brothers after all
+yeah the experience was amazing and
+being able to study together was
+definitely very nice yeah it brought us
+back to those good old days when we were
+going to school together and with and we
+have come to an end of this session on
+top devops Tools in 2020 should you have
+any queries or concerns regarding any of
+the topics covered in this session then
+please do let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+your queries at the audience until next
+time thank you Stacy keep learning and
+get ahead
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

@@ -1,0 +1,332 @@
+foreign
+blockchain technology has been making
+waves in the world of Finance but did
+you know that it has the potential to
+revolutionize many other Industries as
+well hey everyone welcome back to our
+Channel simply learn today we are going
+to talk about the top 10 blockchain
+projects that are changing the game in
+the tech World these blockchain projects
+go beyond just sending and receiving
+cryptocurrencies and offer a range of
+innovative services that can benefit
+users so if you want more in-depth
+approach to blockchain and to understand
+how industry relevant projects are
+designed check out our certification
+program on blockchain in collaboration
+with IIT kanpur this blockchain course
+provides a high engagement learning
+experience with real world blockchain
+applications in fintech healthcare
+Supply Chain management and many more
+also do subscribe to our YouTube channel
+and hit the Bell icon to never miss an
+update or more such interesting topics
+from Simply learn now first let's
+understand the importance of blockchain
+projects and how to create a blockchain
+project blockchain developers are high
+in demanding the software industry as a
+result developing unique blockchain
+project will set you apart from other
+candidates other than that there is a
+lot of room for innovation in this field
+there are numerous unexplored
+opportunities in this area that you can
+explore also it has some prominent
+reason for its significance like
+decentralized structure now blockchain
+projects are decentralized which means
+that no single Central Authority or
+individual controls them this means that
+blockchain projects are open to anyone
+and everyone
+next is immutability blocking projects
+are immutable because they are
+decentralized which means that once
+something is entered into the blockchain
+it cannot be changed or removed without
+access permissions
+third is individual control of data
+blockchain projects that enable
+individuals to control that data will be
+critical in the future by empowering
+individuals control their data they can
+choose how it is used and who can access
+to it by changing the rules on their end
+and next is tokenization tokenization is
+critical in blockchain projects because
+it allows for ownership without the need
+for physical possession of an item or
+asset it also allows people to Own Parts
+of something but not the entire thing at
+once making things like crowdfunding
+much easier than they were before
+tokenization
+not talking about how to create a
+blockchain project well to set up a
+personal blockchain the first step is to
+install ganache which provides a simple
+and efficient way to run a blockchain
+system once you have installed ganache
+you can begin writing ethereum smart
+contracts using the Truffle framework if
+you prefer not to install truffle on
+your local system an online option like
+the remix IDE is available and to
+connect to the blockchain and interact
+with your smart contracts the next step
+is to install the metamask room which
+allows you to access your account and
+manage your transactions now let's move
+on to the list at number 10 is trusted
+crowdfunding platform using a smart
+contract this project is a blockchain
+based crowdfunding platform that allows
+you to raise funds for your project
+securely and transparently
+those who want to raise funds without
+the need for centralized crowdfunding
+platform with the trusted crowdfunding
+platform you can you can set up a smart
+contract that automatically releases
+funds to your project when certain
+conditions are met this ensures that
+your backers funds are safe and that
+your project is funded transparently and
+securely by implementing a blockchain
+based platform there is an opportunity
+to bring about positive change now at
+number nine is skill verification system
+this project is a blockchain based
+system that allows you to verify your
+skills and credentials securely and
+easily
+perfect for those who want to showcase
+their skills and expertise to potential
+employers of clients skill verification
+system uses decentralized consensus to
+validate skills objectively users
+anonymously judge examples or skills and
+get rewarded for their work claims with
+proof are verified by other members in
+the same domain and either endorsed or
+flagged based on consensus with the
+skill verification system you can create
+and manage your skill profile and share
+it with others securely
+number eight is peer-to-peer carpooling
+this project is a decentralized
+carpooling platform that allows you to
+share rides with others securely and
+easily it's perfect for those who want
+to save money on transportation and
+reduce their carbon footprint by
+creating a smart contract Riders and
+drivers can connect directly without the
+need for intermediaries like Uber or Ola
+these agencies having access to the data
+of drivers and Riders raises privacy
+concerns moving right sharing and Car
+Hire to the blockchain can create a
+secure and reliable carpooling system
+with peer-to-peer car polling you can
+find and share rides with people in a
+community all while reducing traffic and
+Emissions at number seven is digital
+asset Marketplace this project is a
+decentralized Marketplace that allows
+you to buy and sell digital assets
+securely and easily
+it's perfect for those who want to trade
+digital assets without the need for a
+centralized exchange Dam acts as a
+trusted intermediary between issuers and
+investors of digital assets they offer
+tools and services to facilitate
+transactions building this requires
+ethereum smart contracts written in
+solidity and a web application with the
+web3.js library to turn it into a
+blockchain website with the digital
+asset Marketplace you can buy and sell
+digital assets such as domain names
+websites and digital art all while
+maintaining full control of your assets
+6 we have fake product identification
+system this project is a blockchain
+based system that helps consumers
+identify counterfeit products it's
+perfect for those who want to ensure
+that they are buying authentic products
+with the fake product identification
+system you can scan a product's QR and
+verify its authenticity instantly by
+linking a product's QR to a blockchain
+you can store the product details and
+generate QR code AS blocks in the
+database scanning the QR code with a
+smartphone can determine if the product
+is genuine by comparing the code with
+the blockchain database if the code
+matches the customer receives a
+notification that the product is
+authentic otherwise they receive a
+notification that the product is fake
+this is a very interesting and useful
+project idea and if you successfully
+implement this then chances are the big
+brands are going to knock at your
+doorstep if if getting your learning
+started is half the battle what if you
+could do that for free visit scale up by
+simply learn click on the link in the
+description to know more
+number five is transactions application
+this project is a decentralized
+application that allows you to send and
+receive cryptocurrency transactions
+securely and quickly it's perfect for
+those who need to make cryptocurrency
+transactions in the go while the
+transaction application you can easily
+send and receive cryptocurrencies from
+your phone or computer without the need
+for a centralized exchange at 4 we have
+voting system now this project is a
+secure and transparent voting system
+that allows for fair and Democratic
+elections
+perfect organizations that needs to
+conduct secure and transparent voting
+while building the project ensure user
+privacy by hiding their details and
+using an ethereum address as the
+identifier Additionally the system must
+restrict individuals to a single board
+and only allow eligible users to
+participate the voting process should be
+transparent adhering to all voting rules
+and Counting of votes without any
+possibility of fraud the application
+will be developed using solidity with
+the voting system you can ensure that
+every vote is counted and the results
+are accurate and transparent at number
+three we have to do list app this
+project is a decentralized to-do list
+that allows you to create manage and
+share your tasks securely
+perfect for those who need to keep track
+of their daily tasks when building a
+to-do list application on a blockchain
+the traditional web server and database
+setup is replaced with the client's side
+application that communicates directly
+with the blockchain the applications
+code is written as ethereum smart
+contracts which contain the business
+Logic for the to-do list and store the
+to-do list item on the blockchain with
+the to-do list app you can create tasks
+set due dates and reminders and share
+your list with others at number 2 we
+have ether wallet this project is a
+secure and easy to use wallet for
+storing and managing your ether and
+other erc20 tokens and stop for any
+crypto investor with ether wallet you
+can easily send and receive ether view
+your transaction history and manage your
+tokens all in one place the objective of
+this project is to develop a smart
+contract that can receive and transfer
+ethos from one end to different
+addresses although such contracts may
+not have significant practical use they
+are highly beneficial for learning
+purposes by creating this ether wallet
+project you will gain knowledge on how
+to manage and modify either in a smart
+contract this knowledge is crucial since
+smart contracts have the capability to
+facilitate monetary transactions which
+is a fundamental aspect of their utility
+and finally number one multicell this
+project allows you to easily send
+multiple cryptocurrency transactions at
+once
+those who need to make multiple payments
+in one go if you need to send salaries
+to employees consider using this
+application which requires building an
+ethereum smart contract you can use the
+remix IDE and online development
+environment that enables you to create a
+smart contract using a solidity
+programming language to build the
+contract Define a function that takes an
+array of addresses as input and include
+a simple for Loop in the function to
+process the payments with multisin you
+can save time and reduce transaction
+fees by badging your payments now let's
+have a look at the essential factors
+required for blockchain projects while
+blockchain technology has gained a lot
+of attention the sheer volume of
+projects can make it challenging to
+identify which ones are truly valuable
+and worth investing time in so the first
+factor is business liability
+for a project to have a good chances of
+success it must have a viable business
+model this requires the company behind
+the project to have a clear plan for
+generating revenue and compensating
+their employees
+without a solid funding plan or a way to
+pay workers the project is unlikely to
+survive for long without external
+financial support
+second is ecosystem management we're
+assessing new blockchain projects it's
+important to consider how effectively
+they manage their ecosystem of users
+those who utilize their product or
+service and engage with others online
+the level of Engagement and activity
+among these users can significantly
+impact the Project's overall success
+third is technical feasibility now the
+technical feasibility of a blockchain
+project is determined by its ability to
+meet the requirements of its users and
+functions as intended
+involves ensuring that the Project's
+source code is developed by skilled
+programmers who can create a source and
+private blockchain Network capable of
+handling all necessary transactions and
+there you have it the top 10 blockchain
+projects that are changing the game
+whether you are looking for a more
+secure and transparent way to vote a
+decentralized to-do list or or a way to
+raise funds for your project blockchain
+technology has got you covered so if you
+like this video and found it informative
+then please do give it a thumbs up and
+share it with your friends also which
+one of these projects are you most
+excited about let us know in the comment
+section below thank you for watching and
+don't forget to subscribe for more
+videos like this
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

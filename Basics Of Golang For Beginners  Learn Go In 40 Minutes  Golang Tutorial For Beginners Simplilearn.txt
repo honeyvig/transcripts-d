@@ -1,0 +1,854 @@
+hi everyone welcome to the simplyland
+youtube channel this session will be
+about go programming language before we
+begin if you love watching tech videos
+subscribe to our channel and hit the
+bell icon to never miss an update
+in this session you will learn about
+what kolang is next you will come across
+the history of kolang and learn about
+the uses and features of golem further
+you will learn how to install golang on
+your system after that we'll learn about
+the variables data types operators
+and
+loops in golang and we'll be
+implementing some examples in the visual
+studio code at the final instance we
+will learn about the companies using
+golem let's start with what colang is
+golang is a strong and statically typed
+compiled language strong language
+depicts that the type of variable cannot
+change in a code it will remain the same
+throughout the code
+here statically type means that all the
+variables must be declared at the
+compile time and compile language states
+that you only have to compile the code
+and it will be converted to machine code
+directly it is same as c or c plus plus
+go doesn't have a virtual machine like
+java language which takes time to
+convert the script into machine language
+golang is an open source programming
+language and it supports concurrent
+programming
+that is it allows running multiple
+processes simultaneously this is
+achieved using channels go routines etc
+these features help go to improve its
+performance
+and
+and you can find documentation of golang
+and golang.org
+companies such as google twitch and uber
+use go for their microservices
+technologies like docker and kubernetes
+are developed in the go language
+now
+we will learn about the history of
+kolank
+was designed at google in 2007 and was
+announced to the public in 2009 and it
+was made open source in 2012
+with the release of version 1.0 the go
+programming language was born due to the
+complexity of managing the
+infrastructure and code bases within
+google
+the language creators all from google
+had a clear goal
+to design a programming language that
+would be easy to use but still be able
+to cover the main challenges while
+working with the company's intricate
+systems
+both designed by robert grismer rob pike
+and ken thomson
+the most remarkable release that is
+polank version 1.5 was represented in
+august 2015 and included considerable
+changes the compiler tool chain has been
+converted from c to go entirely and at
+this stage golem took the form to which
+it authors aspired let's learn about the
+features of colon
+the first feature is it is flexible
+because of the language design and its
+root from c language colang is easy to
+learn and understand with simple syntax
+that's why it's flexible the next is
+concurrency
+go allows multiple processes to run
+simultaneously its ability to take
+advantage of multi-core processor
+architectures and efficient memory is
+one of the reasons why co code is today
+running some of the most heavily used
+applications that can scale
+the next is strong security component
+code is safe and more secure than
+complicated code as co is a statically
+typed language go users don't have to
+debug a load to identify
+errors which is in the case with many
+dynamic languages and a large number of
+variable types plus the inclusion of a
+garbage collector also helps prevent
+memory leaks
+the next is impressive standard library
+go users have a standard library packed
+with the language which reduces the
+importing of complex secondary libraries
+gold standard library is vast but not
+confusing that is without the issue of
+conflicting function names one of the
+core's best contributions to programming
+is it offers a more straightforward way
+of integrating data structures into port
+probes
+the next feature we have is the fast
+output go comes with a very quick
+compilation type in the golang
+development environment there is no
+virtual machine the code is directly
+compiled to machine code making the
+compilation process faster and more
+effective
+besides the compiler produces only one
+executable file after compilation this
+file does not suffer from dependency and
+can be uploaded and run anywhere this
+makes the code execution process faster
+now
+now let's know about the uses of colang
+go was originally built for programs
+related to networking and infrastructure
+that was intended to replace popular
+high performance and server side
+languages like java and c plus plus
+golang's support for concurrency makes
+it an excellent choice for handling
+bottlenecks that prevent scalability
+today
+go is used for variety of applications
+the first one is it is used in the world
+of artificial intelligence and data
+science
+it is used in devops and site
+reliability automation that is popular
+way to use go some use go for
+microcontroller programming robotics and
+games
+go is popular for cloud-based or
+server-side applications
+concurrency and networking features
+lying with its high portability across
+various platforms that makes q an
+exceptional language for cloud computing
+as a matter of fact
+many standout cloud platforms like
+kubernetes they were built in go google
+cloud also uses core to enhance
+scalability and performance
+and many command line tools are written
+in go however ghost shines the most when
+it comes to infrastructure today some of
+the most popular infrastructure tools
+are written in go such as kubernetes
+docker and prometheus now we'll go to
+the official website of go
+for that we'll move to google chrome
+in the search bar
+the first link that is code dev
+will open this link
+you can see this is the official website
+of go
+you can see the mass code of bowling
+like this is the creature
+and scrolling down we can see the
+companies using golem google paypal
+american express netflix salesforce
+dropbox cloudflare
+and many more
+and as we scroll down we can see
+this is the playground idli that is
+available on the
+golang website
+here we can print hello world
+we'll just click on the run
+you can see that it has printed the
+hello world and the program has been
+existed
+ideally that is available on the cooling
+website it just run the script to the
+server for compilation and gives the
+output
+now we will move on to download the
+golang
+for that we will click on this button
+that is the download button
+you can see the various options that is
+for microsoft windows mac os linux
+and the source go link file so we have
+the windows system we will download it
+for windows
+online is a minimalistic language and
+it has a very little documentation so it
+is
+easy to learn as it has fewer features
+and less confusing parts than java
+let's see
+the documentation
+see the whole documentation here
+so golang file is downloaded just click
+on it
+and install it on your windows system
+as i have already installed so it's not
+showing me the setup without option to
+install it
+and after installing the go link you
+have to install
+an idle to run the go language i have
+installed the visual studio code
+you can install any ideally that you
+prefer
+i will show you how to enable go in
+visual studio code
+for that
+search
+studio pod
+go to the extension section
+and search for go here i have search for
+the go and press enter you'll see the
+first option
+that is go
+just enable it i have already enabled it
+and you are ready to use go in the
+visual studio code
+now
+we'll move
+to learn some other features of golang
+that is variables in golem
+a variable is a storage area defined to
+store temporary data and perform
+operations on them moreover variable
+values can further be changed according
+to program needs
+variables declared without any
+corresponding value are considered zero
+value
+there are two ways to declare variables
+in golem first is using where keyword
+that is its syntax is
+simply the where keyword and writing the
+variable name and then the type and then
+the data you want to store in that
+the next is the short variable
+declaration
+first you will write the variable name
+and then colon equal to sign and the
+data you want to store in that
+so now let's move to vs code and see the
+declaration of variables live
+open a new file and see
+the declaration so
+the new file and we name it as demo.com
+here we will be using the terminal
+to run all the codes of go language
+now the first thing we will do is import
+fmt
+and we put it in inverted commas
+this is the formatting package and it
+contains a print function
+everything in the go is inside packages
+whether it is a print function or any
+other function we have to use packages
+by using import writing the package name
+in inverted commas
+if someone wants to use your script or
+your code he can by importing your go
+file or your go package so it becomes
+mandatory and go to put the code in a
+package
+here we will put a code under the main
+package
+so we'll write
+package
+main
+now we will write our code in the main
+function for that we'll write function
+main
+now
+we will assign the variables that is
+variable i
+of type end
+and
+find another variable
+variable r
+of type string
+declare the values
+for it we will declare
+number seven
+and for r
+with simply learn
+print these values for that
+we'll use the fmt package
+we'll write fmt dot println
+and in the circle brackets we will write
+the name of the variable that is i
+and in the next line we will print
+another variable
+that is our
+println
+in the circle brackets we will write the
+variable name r
+and now we'll save the file
+by
+clicking on ctrl s and now in the
+terminal
+to run the file i will write the command
+go
+run and the name of the file that is
+demo
+dot go
+and press enter
+now you can see
+that
+we have printed seven and simply learn
+and both in the different lines
+it was not visible
+now it should be visible
+now moving on
+we will declare another variable
+would
+be j
+colon equal to 15
+and i'll
+also print this
+save the file
+and in the terminal run the same command
+that is score and demo.
+now you can see that it has 27 simply
+learn n15 so we have seen
+both the types how to declare a variable
+that is short variable method
+and the simple where keyword method
+now will move to the next type that is
+data types in golang
+two data types specify the type and
+space allotted to variables or functions
+mainly there are four categories of data
+types in golem that is boolean type
+numeric type string type and derived
+type
+boolean type represents a boolean value
+that is either true or false and is
+represented by one or zero
+the next is numeric type it represents
+integer types floating point values and
+complex types here we can see the
+integer type values that is two five
+seven eight
+the next is string type
+the string type represents a string
+value
+here we can see that's simply learned
+it's a string and it's represented by a
+string type the next is derived type
+these include array types structure
+types and many more we'll use them in
+further tutorials
+let's see an example
+uh we'll see the example for the boolean
+type
+so we will create another file
+that would be
+demo one dot go
+and
+here first we will start with package
+main
+and
+inside package
+will import the fmt package that would
+be inside the curly braces
+and now
+we'll start with function main
+and inside the curly braces
+first we'll declare a variable that
+would be a
+and using the short variable method
+we will assign the value simply learn
+and we will declare another variable
+that would be b
+and assign the value
+that is simply learn
+another variable that is c
+and assign the value
+that is
+now we will compare these strings
+and store it in result variable
+now we'll compare both the strings uh
+first we'll compare a with b
+and see whether a is equal to b or node
+that is we will see the boolean return
+type
+that both the strings are equal or not
+or are the same or not
+for that we will write a equal equal to
+b
+now we will
+print the result
+save the file
+and in the terminal write the command go
+run
+demo one dot go and press enter
+okay now let's see declared but not used
+so
+we will use c also
+for that we will declare another
+variable that is result one
+that a is equal to equal to c or not
+print
+the result one
+i will save the file
+and run the command
+go run demo1.com
+here you can see that
+it has given the output false and true
+the first one is false that is a equal
+to equal to b
+so simply learn is not equal to simplyn
+as it has the lowercase letter
+and in the second that is a result one
+it has given us true as both
+the strings are equal that is
+both are in the upper case the first
+letter is in the upper case
+now we'll see another concept in golang
+that is operators
+an operator is a specified operation
+that is performed on the operands
+the following list describes the
+different operators used in golem first
+is arithmetic operator it includes
+addition subtraction multiplication
+division and modulus operator the next
+is relational operators it includes
+equal to not equal to greater than less
+than greater than equal to and less than
+equal to
+the next is logical operators it
+includes
+logical and logical ore and logical node
+operator they are used to combine two or
+more conditions the next we have is
+bitwise operators in go language there
+are six bitwise operators which work at
+bit level or used to perform bit by bit
+operations
+that are bitwise and bitwise or bitwise
+or
+left shift or right shift the next we
+have is assignment operators the
+assignment operators are used to assign
+values to variables that is
+plus equal to minus equal to
+multiplication equal to
+so now we will see some examples
+to understand the operators
+i will create a new file
+that would be
+demo2
+dot go
+and first we'll start with arithmetic
+operators
+so that will
+write package main
+import
+fmt
+oh
+i didn't put the space here
+yeah import fmt now start with function
+main
+inside function first we'll declare the
+variables
+we'll declare p
+equal to
+65
+and a
+equal to 34.
+now first we will do the addition
+that will declare variable result
+and inside result we will perform the
+operation
+p plus a
+and now we'll
+print the result
+so that we will write the statement fmt
+dot
+println
+and the variable name that is
+result now we'll save the file
+and run the command in the terminal
+that is
+go run
+demo2 dot co
+and press enter
+you can see that it has given us the
+output 99 that is the addition of pna
+now we will see another operator that
+would be modulus operator
+for that
+we will declare another variable that
+would be
+result one
+would be p
+modulus a
+now we will
+print the result of
+print this result one
+variable
+could be fmt dot
+print ln
+and inside the circle brackets we'll
+write
+result one variable
+and save the file
+and run the same command in the terminal
+i will go 31 as the modulus
+as we have seen the example of
+arithmetic operator now we will see the
+example of relational operator
+for that
+uh we will perform the example on not
+equal to operator
+so that we will
+declare a variable result 2
+and
+whether p
+is not equal to a
+and now we will
+print this variable
+save the file
+and then the same command in the
+terminal
+as you can see it's true that
+p is not equal to a we have seen the
+example of relational operator now we'll
+move on to logical operator
+with that will create a new file
+demo three dot
+go and
+start with the package main
+and import fmt package
+and inside the function main
+first will declare the variables
+a
+b
+and assign values to them
+2
+4
+8.
+now
+we will
+print the statement from d note
+println
+and inside
+we perform the operation
+sorry that is
+a less than b
+operator
+logical end
+and a
+greater than c
+and will perform another operation
+that would be fmt dot
+println
+sorry
+println and inside you'll perform a less
+than b
+or operator
+and a
+greater than c
+save the file
+and
+run the command in the terminal
+go run demo 3.0
+to see the command
+now you will be able to see the command
+3.0
+it has printed
+the output false and true
+here b is greater than a that is 4 is
+greater than 2 and
+a is greater than c
+that is false 2 is not greater than 8 so
+it has printed false and in the second
+b is greater than a it's true and a is
+greater than c it's false
+so true or
+false it gives out true
+so moving on to the next operator that
+is bitwise operator
+clear all this
+just in the function main
+variable
+equal to
+79 and
+equal to 87
+and perform the bitwise operator on this
+so
+we'll declare a variable result one
+form the operation that would be a
+bit wise
+and
+save the file and run the command in the
+terminal
+you can see that bitwise and has given
+us
+71 output
+now moving on we'll use some assignment
+operators
+for that
+we have two variables declared
+and the assignment
+we'll use the first assignment operator
+that will be equal to one
+so we'll just do a equal to
+get it printed
+save the file and run the command in the
+terminal
+we can see
+that
+we can see the output as 87 so a has
+been assigned the value of b that is 87
+now i will perform another operation
+that would be plus equal to
+so now a also has the same value as b
+that is 87 so we perform the operation
+a plus equal to
+plus equal to
+b
+we will print a only
+save the file and now we will run on the
+terminal
+has given us the output as 174.
+so now we have seen the assignment
+operators also
+now we see
+another concept that is loops in calling
+loop is the repetition of a block of
+code that executes a control statement
+specific number of times
+co language works with a single loop
+that is for loop
+go language uses for loops on various
+forms such as infinite loops for loop as
+while loop and using for loops for
+strings and maps we'll see and
+understand this with the help of
+demonstration let's move to visual
+studio code
+a new file that would be loops dot go
+start with package main
+import
+fmt
+and inside the function main
+you will see the example to print
+numbers from 1 to 10.
+for that we'll start with the loop
+four
+that is the i
+with one
+semicolon
+i less than equal to
+n
+i plus plus
+and inside the loop we will print fmt
+dot
+println
+i
+just save the file
+and in the terminal run the command
+go run and the name of file was loo dot
+co
+do not
+find the file specified
+oh sorry the file name is do stored
+over run
+lose dot co
+here we can see that it has printed the
+numbers from one to ten
+now we'll use the for loop as well loop
+so for that
+we'll clear the for loop and we will
+print the same the numbers from 1 to 10
+and for that
+first we will initialize
+num
+equal to 1
+and now we will use the for loop
+and equal to 10
+and inside this 4 as a while loop we
+will print
+fmt dot
+println
+and this
+will
+make it as num plus plus
+now we will save the file
+and run the command in the terminal
+here you can see that we have put the
+output one two three four five six seven
+eight nine ten
+so this is how we use for loop as while
+loop in golem
+now
+we have seen loops now we will see some
+other examples such as printing
+fibonacci series
+so that will create a new file
+that would be
+5.4
+for that we'll start with package main
+we'll import
+fmt
+now we will declare a function
+and input an integer to it
+to which extent we should print the
+fibonacci series
+so
+we'll declare a function we'll write the
+keyword func and the name of the
+function that would be fib
+and inside we'll pass a variable num of
+the type int
+and inside the function
+we would declare
+a equal to 0
+e equal to 1
+and c
+equal to b
+and
+we will print
+a and b here
+for that
+we'll write the command
+fmt dot
+printf
+right right
+flip series
+is
+sending
+personally
+now
+use for loop as a while loop and
+while it's true
+c equal to b
+and b
+equal to a plus
+b
+if
+b is greater than equal to num
+enter line
+fmt dot
+println
+break the loop
+equal to c
+sorry break the if statement
+equal to c and print b
+that is from t dot
+printf
+present d
+b
+now we'll call the clip function in the
+function main
+16
+so it will print 16 digits of fibonacci
+series
+we will save the file
+and in the terminal will run the command
+web dot co
+just check yeah the name is fib
+and press enter
+here we go to fib series that is
+now we will see another demonstration
+that would be of printing table
+for that will create another file that
+would be table.go
+and for that we'll start with package
+main
+and
+import fmt package
+and inside the function main
+first we will declare a variable
+n of type end
+and we will get the input
+for which table we want to print the
+table
+from the user for that will write the
+command fmt
+dot scan
+ampersand
+now
+we'll initialize a variable from one
+and use the for loop as while loop
+that
+right for
+and inside for loop we'll write f
+is greater than 10
+the statement
+should break and come out of the
+if statement
+and print
+affirmative dot
+println
+multiplication symbol
+with
+i
+that would be equal to
+and into i
+outside we will do i plus plus
+now let's save the program
+and run it in the
+terminal
+that would be current table.com
+input seven
+and here we go to the table of seven
+now we have done with the demonstrations
+now we have done with the demonstrations
+now we will see some companies using
+golang in their product
+first one is twitch it is a live video
+streaming platform that uses go for many
+busiest systems
+the next is uber micro services it's a
+ride-hailing platform that uses go
+within its microservices
+the next is kubernetes
+it's an open source container or
+castration system used to automate
+software deployment scaling and
+management google designed kubernetes
+but the cloud native computing
+foundation currently maintains its
+next is dropbox it is a file hosting
+service that has migrated some major
+components from python to go
+the next is netflix it is the most
+popular rotated platform and has used
+core to develop its server architecture
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+also do subscribe to our channel and hit
+the bell icon to now miss an update
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

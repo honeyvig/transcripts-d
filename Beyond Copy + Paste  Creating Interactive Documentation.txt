@@ -1,0 +1,648 @@
+next up we have beyond copy and paste
+creating interactive documentation with
+Maria Nagaya
+thank you so much Mika thanks everyone
+for staying tuned with Netcom 2019 and
+thank you for listening to my talk so my
+name is Maria Nikita I am a senior
+program manager on the visual studio.net
+team and I want to talk to you today
+about interactive documentation and how
+we think about that and how it's
+important for first-time developers as
+well as developers who are continuing to
+grow and build on our platform so let's
+talk about documentation documentation
+is how we build trust with our
+developers it's how we educate people
+it's how we sell our products and good
+documentation means that we are as
+invested in our product as much as you
+are it's important as we build our
+documentation from first-time developers
+to people who are building code every
+single day that we make sure that their
+own ramp is as smooth and as effortless
+as possible so let's talk about
+documentation today for a few minutes
+with documentation today it's getting
+really good but there are still a few
+assumptions that we continue to make
+about our customers first is the
+assumption of knowledge sometimes when
+content creators are writing
+documentation they assume that the
+people coming to our documentation have
+prior knowledge of the framework and the
+languages being taught the assumption of
+tech as a content author myself
+I sometimes continually find myself
+thinking of my experience as the only
+experience I sometimes reference the
+operating system I'm using I sometimes
+reference a version of Windows I always
+assume that someone has as good internet
+bandwidth as I do so a good example of
+this is providing links to certain
+specific downloads as well as
+screenshots that only reflect a
+particular operating system and the last
+one is the assumption of time we are all
+really guilty of doing that we assume
+that the people coming to read our
+content or use our videos or a
+documentation have more time than they
+do usually when people are learning
+things trying new things or testing
+something
+they have a limited amount of time
+whether you're an educator a hobbyist or
+a seasoned developer you're probably
+doing this over your lunch time or just
+before you go to bed or just before you
+start work so we need to make sure we
+cater for that so we look at
+documentation today majority of the
+documentation looks like this it's
+static code right and if we think about
+this from the perspective of a net u
+developer a brand new first-timer
+they're often left wondering what does
+this do so we then go to stack overflow
+we copy and paste a bunch of code from
+here and there but then we still up for
+the challenge especially as first-time
+developers what template do I use in
+Visual Studio what libraries would do I
+need what do all these error messages
+mean we are telling people that for
+their first few lines of code there's a
+huge on-ramp or even just to run a
+sample for seasoned developers you're
+probably working really fast and you
+don't want to copy and paste in a copy
+and paste code in and out of your
+codebase you just want to see if this is
+the best thing for you so we've noticed
+one thing as we begin to improve our
+documentation our expectations have
+changed and we expect more from the
+people building our content to do more
+video has done great work in this space
+and we just launched right now with
+dotnet videos on how we are investing in
+videos and how we are making sure that
+our developers have an interactive
+experience where they're able to listen
+pause and rewind but still we're
+assuming a bit of time on your side but
+it's really good content so please go
+and look out look it up
+another thing is interactive snippets
+online this has actually become a
+requirement for languages and frameworks
+when you can see popular languages like
+JavaScript and Python allowing people to
+test api's and syntax right within the
+browser but we're also seeing it in
+popularly emerging languages as well
+such as scholar and go where people are
+able to interact and test API is right
+within the browser
+but puzzle this is just a few pieces of
+the puzzles right so we have video on
+one side we also have syntax iteration
+online however people want to have
+experiences that
+Feliz native to the experience they
+would have in the browser we're seeing
+this in places like Microsoft learn
+where people are able to try and test
+things out which would be similar to
+what their local experience would be so
+when they do transition into an offline
+experience it feels vaguely familiar but
+then we also have the concept of trying
+now this is something I constantly do if
+I want to try out a new NuGet package I
+will create a throwaway predicate see if
+it's working I will delete it I will do
+it again but you're seeing places like
+MPN with the help of companies like run
+kids creating these experiences online
+we should be able to try out on you get
+packages and see what they're like right
+within the comfort of our browser and
+what we're continuing to see here is a
+narrowing of the divide between
+documentation and code and the reason
+why we're seeing this is a landscape is
+continuously growing we have developers
+such as people who are watching this
+show writing blog posts every single day
+we have hobbyists and the hobbyist field
+just keeps on growing from makers to web
+developers mobile developers IOT from
+social media influencers where they're
+just constantly learning how to own
+their own online experience we have data
+researchers who are using and mining
+data making these analytical choices to
+make more informed decisions we have
+educators both CS educators as well as
+non-technical educators where we're
+seeing in primary and secondary schools
+all around the world where non-technical
+teachers are given the task to unwrap
+the next generation to be comfortable in
+this new world of coding and finally we
+have our students who want to explore
+and learn as much as possible and we
+need to provide those opportunities for
+them so when we're creating these new
+experiences around documentation
+especially at Microsoft there are things
+that we wanted to make sure that we
+landed very comfortably with the
+customers we wanted to make sure that
+they had up-to-date documentation nice
+and fresh referencing articles are when
+were from 2019 versus 2003 we wanted to
+make it engaging and engaging is not
+just about making it flashy and cool you
+want to make the navigation really easy
+you want someone to land on a
+documentation page I know where they
+need to go you also want the steps to be
+clear and quick and easy so if you got
+go-to dotnet right now and you go
+getting started you will see how to get
+R up and running in ten minutes giving
+people the moment to feel empowered in
+ten minutes or less
+and finally we wanted to create a
+friction free learning experience we
+wanted someone to be able to go onto a
+web page and learn about the language
+without having to install all the tools
+or know everything and in 2017 we
+launched an interactive online
+experience with a product that I build
+called Trident net which allows people
+to experiment and try dotnet the
+language within the browser so let's
+talk about more about the Trident net
+interactive experience and what we offer
+them we have our initial goals were in
+2017 was to have an interactive
+documentation online bring us up to
+speed with the other languages that had
+been providing this for their customers
+most importantly we wanted it to be
+login free we wanted to make sure that
+someone didn't have to install
+everything on their machine in order to
+just write console dot write line
+HelloWorld we wanted you to give that
+quick win and finally we wanted a fast
+on-ramp we wanted it so you could edit
+the code online click run and see the
+results we wanted you to feel that
+moment of success but we also noticed
+that Trident net is growing and those
+are some of the wonderful things I want
+to share with you today so when we first
+began in 2017 we wanted a friction free
+online experience and we did that with
+Trident net and you go to dock stopped
+Microsoft comm you're able to run
+c-sharp code right within the browser
+but as we began to notice that there
+were certain difficulties first of all
+what happened if someone didn't have
+good internet access
+what if somebody wanted to do this
+locally on their machine how are we
+creating that experience for you also we
+wanted to make a cheaper alternative
+that allowed people to run things easily
+within their website and luckily in 2018
+we also got laser and it allowed us to
+pivot from running things and containers
+on Azure container instances to running
+things on the client side with blazer
+and
+only that because we created these
+experiences will also allow us to create
+a local experience with a.net try global
+tall and if you look at my slide right
+now we have a student in South Africa
+who calls is one of the most influential
+things that he's used that allows him to
+go and share c-sharp experiences with
+his fellow students so we thank you and
+we hope that you continue to use us and
+then we have a special surprise that I
+think a lot of you didn't expect but we
+also have dotnet running in notebooks
+and I'll be sharing that demo with you
+later today so let's go and see some
+demos now
+okay so as I said see Trident Nets
+started in the browser so if you go to
+any single sample on the docks of
+Microsoft comm quickstarts
+you notice that we have an editor right
+now you can copy the code over run it
+and you have the direct results you can
+also edit it easily right within the
+browser so you're not restricted by own
+but what is in the code and you run it
+again this is all running on blazer it's
+all running on the client side that
+allows us to create opportunities where
+people could possibly add this to their
+websites as well which we're hoping to
+enable in the future but I also talked
+about the offline experience if any of
+you have ever done a workshop or done a
+tutorial out there you've probably had
+to get people to download the tools
+clone the repo make sure than the right
+operating system and before you know it
+it's two-three hours into the workshop
+and nobody has done anything we wanted
+to make sure that people could be just
+successful with a dotnet SDK and the
+dotnet tribal global tool and get things
+up and running so I want to give you a
+quick demo of that so we have this repo
+it's our samples repo you can go to go
+to dotnet try slash samples on github
+and you'll see four clear extra
+instructions where we'll tell you to
+install the.net tri global tool which is
+available and you get today clone this
+repo then once you have this repo clone
+I want you to go into the directory and
+type dotnet try so as someone who
+prepares for demos ahead of time I did
+the first three steps ahead of time so
+I'm gonna great go right into here type
+dotnet try hit run and what this is
+going to do using kestrels going to
+start up my browser and it's going to
+give me an interactive markdown
+experience if you look at the top this
+is an MD file so I'm going to continue
+into introduction to programming with
+c-sharp and you'll notice that you have
+a list of instructions it's like an
+interactive book let's go ahead and run
+this code sometimes the first run can
+take a few seconds but bear with me you
+have hallo world I can go in
+change it again and I will put in my
+name run it again and I see the results
+this gives people the flexibility to run
+an experiment within the browser giving
+you that nice interactive experience so
+I hope that you'll give it a try for the
+next workshop that you're a tenth you're
+doing or if you just want to try give it
+a just try it out but the big question
+here is how are we doing this how are we
+able to have this mix of interactive
+code c-sharp code with a markdown file
+so I'm just going to go over to Visual
+Studio code and show you some of the
+magic that we're running so I'm just
+gonna close up the server here so this
+looks like markdown that you've probably
+written in the past if you've done
+anything with a readme file and if you
+add any sort of language language
+features within your markdown you
+usually have to use a flag so you notice
+that we have something called si si si s
+which is a c-sharp we are pointing to a
+specific region right so this is general
+c-sharp regions called intro we're
+pointing to a source file and we're
+pointing to a program dot C as in my app
+so let's see what this is if I go over
+to my program dot CS you will notice
+that I have a couple of regions adored
+you have a bunch of switch case
+statement and I have a region called
+intro so if I edited this and I said
+hello dot Netcom and I saved this file
+and let's just go ahead and run this
+again dotnet tri I go back into my
+introduction to c-sharp and I've edited
+it right so there's a seamless
+difference but another thing that we
+have to be careful with is that if
+anyone's written documentation sometimes
+it gets out of sync like how do we
+support our backing project as well as
+what we're putting in the documentation
+we wanted to make sure that we supported
+that so let's make some quick edits like
+how do we verify code so I'm going to go
+over to this code again and I'm just
+going to make some clumsy mistakes over
+here I am going to remove the Senate
+semicolon save that I am going to change
+from intros from intro to intros I'm
+gonna say that again and I want to show
+you a new addition we added it called
+dotnet verifying right so what it's
+saying sorry it's not net try verify
+okay so this is going through and it's
+actually checking your markdown and
+checking your backing project to make
+sure that everything's going okay and
+you'll notice that it says hey you're
+missing some things here you're missing
+a semicolon and we also haven't found
+the intros region so we wanted to make
+sure that before you hit push into
+github you're able to actually see any
+issues that might pop up and we're
+allowed we enable you to do that if
+you're someone who would prefer to see
+this in a UI format it's also supported
+on the server on the UI side as well so
+I'm just going to click do this do
+dotnet try it's going to launch the
+localhost again and if I go over to the
+introductions it will tell me that the
+region hasn't been found so on both
+sides you have this experience where
+users are easily able to catch what
+their mistakes are so let's go on some
+to seeing that if you want to look at
+this more you can go ahead to our github
+repo and please give the give it a try
+so I want to show you a little bit more
+and other experiences that we've been
+creating so I showed you the dotnet try
+global tool and I showed you don't know
+try running in the browser but I also
+wanted to show you something that we
+just did this week and I'm really
+looking forward to hearing your feedback
+if you go to our github repo and you do
+dotnet slash try and you scroll to the
+bottom which is pretty long you can
+notice that we have a lot of files in
+there you'll notice that we have the
+dotnet try enable bad but we also have
+launch to binder
+now binder is a project an open source
+project where it's able to point to a
+github repo and take out all the
+notebook files and run them in the
+browser so they spin up a nice container
+and you're able to look at it right
+within the browser over here I already
+got this started
+this is c-sharp notebooks oh sorry let
+me start that again let's launch binder
+this is going to take a few minutes
+because it's configuring a container for
+us and the beauty of like live demos is
+that this will happen as the circle
+spins around but what we wanted to show
+you here is that we want you to be able
+to try the dotnet notebook right within
+the browser we wanted you to play around
+with it let me make this into c-sharp
+we're going to go into samples and I
+have a housing ml sample right here
+right so let's walk through this
+experience you can install and you get
+packages right so this allows you to
+customize it a Dane you get packages
+that you'd like I'm going to hit shift
+enter enter what this is doing is it
+going to Newgate it's installing those
+packages for me this will take a few
+minutes but as we want you to know that
+if you are using this on your site you
+can install as many packages as you
+would like you can use work you can
+notice that we're using the ml package
+we're using Auto ml and we're also
+pulling that the data data frames NuGet
+package as well but as that's installing
+let's look through the rest of the code
+so I can run through it we're able to
+use our packages in the next cell as it
+some of you might know notebooks have
+cell by cell execution we also wanted to
+make sure that people had graphs being
+able to plot there so we wanted to make
+sure that people are able to display
+graphs scatter plots right within the
+new get packages was right within the
+notebook wanted to make sure that we
+made this feel authentic to people who
+are coming from the Python notebook
+space but we also wanted to make sure
+that our customers who are regularly who
+a regular dotnet developers but this
+also felt authentic and natural to them
+so I'm going to run the next browser
+maybe it's our next cell shift and turn
+alright
+and as you can see we have a nice table
+that has been delayed we've actually
+been able to display table of the
+housing data we can also plot some grass
+which I think would be the cool thing so
+let's start looking at some cool stuff
+all right let's run that again all right
+so I'm going to go over to duck's
+samples and housing let's pull in some
+packages bear with me I am so sorry
+but this should take a faster time the
+next time around we've installed our
+packages we're waiting for just one more
+which was been successfully installed
+let's run this the housing data alright
+so what we wanted people to be able to
+do is see the graphs and customize these
+graphs authentic clean and know ok so
+let's give it a moment and what we
+should see in a bit is a histogram that
+shows us H end of all the housing data
+across California well while we're doing
+that
+okay let's do it one more time think the
+third yes there we go it just needed one
+more time if you hit it hard enough it
+will happen so what we can see is that
+we have a histogram that shows all the
+data if you're someone coming from the
+notebook space we also have support so
+you can zoom in and see these things in
+more detail we also wanted to make sure
+that you're able you're able to do more
+interesting graphs like scatter plots so
+let's run this give in a moment all
+right and as you can see we have a
+scatter plot and you guess which state
+this is California sorry I don't have a
+live audience it's California as we can
+see the pricing is pretty high but let's
+say I wanted to zoom in a little more I
+can do this I can zoom in on some of the
+hot spots what this will do is I will
+actually cancel out everything else so
+we want that rich interactive experience
+that people have come to expect and
+we're looking forward to your feedback
+so if you have any questions on how to
+get started with the dotnet kernel that
+would come at around ignite time we
+won't have anything for people to try at
+the moment however we do have the mind
+binder experiences available right now
+so if you go over to our github page and
+you'll be able to launch it right there
+from launching launch my browser so we
+have a couple of minutes for questions I
+believe when we have a chance and we can
+give it a go we are ready for questions
+sake well hopefully you can see us here
+I brought my brand-new phone that was
+really awkward well you know the first
+thing that's kind of cool yeah yes yeah
+this one right here mica I feel about
+what you just showed us I think it's
+awesome have you ever tried have you
+ever tried tried net you're gonna love
+this I'm reading upside down it looks
+like a fairly simple way to learn and
+write some c-sharp code inside your
+browser without having to first create a
+visual Co solution
+plot plus lots of sample code aims at
+new learners check it out you have a
+fan yeah you really do and there's a
+there's a there's a gif and I'm gonna
+say gif for all of you out there
+listening I'm not I will not sage if
+it's not be nut butter okay of the the
+guy the Australian guy going like this
+two thumbs up
+alright what else do we have over here
+let's see wish this had been around when
+I was working on bit frost by frost by
+frost
+a few years back looks really impressive
+for dotnet open-source projects like I'm
+wondering if this guy's Thor I think you
+might be okay I think you might be ample
+time worth hi yeah oh yeah but of course
+hi for me to you alright here's another
+one from John great to see the
+improvements Microsoft has made in
+language platform documentation I still
+remember the huge stack of books from C
+6.0 that's a long time ago should have
+included a back brace with the product
+this is pretty cool I love I love the
+idea of being able to learn and read as
+you go I'm personally a fan of notebooks
+I'm so glad c-sharp is coming to it and
+the try dotnet stuff is really cool so
+if you could give people one takeaway
+from your session what would it be
+it would be number one can you only be
+one or can I get two can you you could
+give as many as you want okay this is
+your session number one please go and
+try the dotnet try global tome give it a
+try make sure using it for your next
+workshop we're looking forward to
+hearing how you're doing with it
+we've had people try it with workshops
+that are pulling from Azure function so
+I would love to see more workshops with
+that also if you want to give it give
+the binder experience a try let me walk
+through that experience one more time so
+people can look at it because I had some
+technical issues because you know that's
+the world so let's do that so if you go
+to our github repo which is dotnet slash
+trying you scroll down all our code base
+you'll notice launch my binder right so
+when you launch my binder what this is
+doing is that it is spinning up a
+container for you and you're able to
+actually start running and writing that
+code right within the browser so it's
+pulling in the.net core SDK and all that
+kind of stuff now for it to even look
+nice
+um look at it in the lab format which I
+just think is always like a nicer way to
+look at this experience I'm a fan
+it's really cool I also want to point
+out we do have f-sharp support I don't
+know if people saw that exact is
+Phillips now they live in XNA we do have
+f-sharp support so if you weren't there
+you go to Doc's there's an output there
+is a bug which I can fix right now hit
+run but this has all the nice F sharp
+expectations that people will have and
+my team will continue to work on that
+fantastic um if you look at the C sharp
+as well let's go up when look at C sharp
+you will find two different samples you
+have one to the housing sample and just
+to give reference to this housing sample
+is literally pulled out of a data
+science book and Eric did a side-by-side
+and was able to replicate this entire
+experience right within the browser and
+we also have a repo one which I should
+have run to show you how we are actively
+keeping track on the issues that you're
+doing and we're actively trying to close
+them fantastic and then wait for ignite
+so you can start installing the bits on
+your machine all right nice we have
+another question is it possible to
+integrate try dotnet with doc FX
+documentation tried out net and doc
+effects not at the moment now okay okay
+and I think there's one more isn't this
+one yeah can I take a subset of the try
+dotnet code and use it to incorporate
+c-sharp scripts within existing
+applications Oh Jeremy good question yes
+you can just look at our repo and ask us
+questions and here's another one with
+another awesome yeah yep Yoda
+wise when it says so do what you can as
+there is no try try dotnet dotnet like I
+love the cool with Jupiter notebooks
+like that I'm trying to like parse it
+this is really good stuff okay it says
+so do what you can as there is no try
+try dot dotnet the cool with Jupiter
+notebooks tonic
+I will I will decipher that I think is a
+hideout net is cool and we're also
+excited about the Jupiter notebooks
+experience are we ready to go to the
+next yeah we have what's new in F sharp
+with Philip so Philip now is it Philip
+or fillers it's like doctor same with a
+British accent defib

@@ -1,0 +1,1094 @@
+>> Hi welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green
+and today's episode is part two
+of an hour longs
+worth of Sam Basu
+and Ed Charbeneau
+talking about Blazer.
+So, I explained previously,
+they were here taping
+a bunch of episodes with me.
+They wanted to do
+an episode on Blazor.
+I unfortunately had a conflict
+I couldn't get out of
+and Dmitri wasn't available.
+So, we left them
+alone in the studio
+and they talked for
+an hour on Blazor.
+Really good stuff, but we
+decided an hour is too much,
+so we cut the episode in half.
+Hopefully, the cutting job
+isn't a little too choppy,
+because we're just going to
+pick up where they left off now.
+>> Let's do file new project.
+We'll do ASP.NET Core
+web application again.
+This time we'll do
+the full stack version.
+Now, it's important it spins up,
+we'll outline when
+I say full-stack,
+we're not doing
+Server-side rendering.
+>> Okay.
+>> So, we're still
+using that Client-side,
+we're going to ship
+everything to the browser,
+let it run on Web Assembly.
+We're not doing ahead of time
+compilation of the views,
+and sending any
+HTML down the wire
+other than the
+bootstrapping index page.
+>> Sure.
+>> That's it. It's something
+that we just need to clarify,
+so people don't expect
+that those Razor views are
+being compiled on the server
+and HTMLs being
+sent down the wire.
+>> So, you are coming back
+to the server for data,
+like essentially UPI implants.
+>> So, if we look at this,
+it's exactly what you said.
+We have our client app,
+which is the same exact thing
+that we saw before.
+Now, we have a server project,
+and the server project
+has a Web API controller.
+This is going to supply that
+weather data that we saw
+coming from a static file before.
+>> Okay.
+>> So, it's web API endpoint
+with a Get action on it,
+and it's just going to randomize
+some weather data for us.
+>> Yes. You can hook this up
+to any data source you want.
+>> It could be Cloud service
+and Azure function,
+Node.js, all the above file.
+>> Or SQL server
+sitting under my desk.
+>> Cognitive Services, you could
+do some cool machine
+learning stuff there.
+>> So, this is
+just web API and I can do
+CRUD operations like create,
+read, update, delete?
+>> Absolutely.
+>> Okay.
+>> Then notice we have
+a shared library now.
+>> All right.
+>> So, if we're on the Client
+and we're going to iterate
+over a list of weather forecasts.
+So, this is the same view
+that we saw before,
+an array of weather forecasts is
+coming in from this GetJSONAsync,
+and the server sending
+a list of weather forecasts.
+Then the weather
+forecasts can live in
+a shared location where
+both projects can
+access that class type.
+>> I see. And is that like,
+how would you show,
+is that like a document
+standard library?
+>> Absolutely.
+>> Okay.
+> So, this is a .NET
+StandardLibrary.
+It's being referenced,
+if I go into
+my dependencies under projects,
+you can see shared.
+It is actually using the
+.NETStandard.Library as well.
+>> So, you can reuse this from
+Xamarin if you wanted to?
+>> Yes. You could share
+it not only across
+Blazor projects, but any
+.NETStandard project.
+That also opens up this to
+a whole ecosystem of
+things that already exist.
+So, think about
+that for a minute,
+we'll actually have a demo
+at the very end here,
+we'll I've gone in and
+tried some of these things.
+>> Like existing NuGet packages?
+>> Absolutely.
+>> Okay.
+>> Yes. NuGet, .NETStandard
+packages that are on
+NuGet within reason they
+work within Blazor.
+Now, if they have some
+direct access to the system,
+they're looking at
+your system temperature,
+registry or things that
+belong on maybe Windows,
+it's not going to happen.
+What you can do though
+is load in things that
+are business logic
+and stuff like that.
+I'll show you
+a use case for that,
+where it's been
+successful for me.
+>> Okay.
+>> So, this is the other project
+and we've got the same
+type of structure,
+but inside FetchData, we're
+actually going out to
+an endpoint now and pulling
+that data in through an API.
+We have shared logic folder.
+These are all very good things
+that help us be productive.
+>> Sure. So, in this solution,
+you could host the server in
+IIS or anything that you would
+host an ASP.NET application in,
+and then the client could just be
+served up from anything you want.
+It's a Client-side?
+>> Absolutely. In
+this scenario though,
+the client application is
+actually being
+served by .NET Core,
+but you could split those
+out if you wanted to.
+>> Okay. All right.
+>> So, let's look
+at another project.
+I'm going to open this one.
+I didn't want to do
+too much live coding here,
+so I know I will fat
+fingers something
+and we'll have some demo fails.
+So, I pre-created in here.
+Let's pull it off
+my start page here.
+I want to show the concept of
+having external
+component libraries.
+So, there's currently no file
+new project experience
+for creating
+a component library from
+within Visual Studio.
+There is tooling however.
+We can drop down to
+the command line,
+we can type in .NET
+new Blazor lib.
+So, that .NET new
+Blazor lib will spin up
+a project that is a boilerplate
+for creating component libraries.
+>> Okay. So, let me
+back up, you said CLI.
+So, all of this Blazor stuff I
+can do it through CLI as well?
+>> Yes. Technically,
+it's a NuGet package,
+so you can go into your command
+line .NETnew-I will install,
+and then you point
+to that package and
+it will install those
+command line tool for you.
+>> If this is on .NET
+Core I can do this on
+Mac or Linux. Right?
+>> Yes. Again, Blazor.net
+and look at getting started,
+you'll find those CLI commands.
+So, people don't have
+to try to memorize them
+as the same here on the show.
+That's the best place to
+find them on Blazor.net.
+So, we have
+our client application
+and we have another library
+called MyComponents.
+I have a component in
+here called MyComponent,
+really cleverly named
+component here.
+I've put that component
+on my index page.
+So, on my index page
+I have MyComponent.
+>> So, you're referencing
+your component project from
+inside the Blazor
+project obviously,
+and then you're able
+to just render that.
+Does the component have
+other NuGet dependencies
+that you're putting in?
+>> Right now, it's just dependent
+on the Blazor libraries.
+So, if we look in
+".NETStandard", you'll see
+we have our Blazor
+libraries here.
+>> Right.
+>> It's dependent on
+Browser and build.
+If we come into our dependencies
+on the client application,
+you can see I have
+a dependency on MyComponents.
+Then that dependency
+is registered
+in the Viewimports file.
+So, here it's being
+registered as a tag helper.
+So, this is another
+familiar concept
+from ASP.NET Core mindset.
+>> Okay.
+>> So, I'm registering
+any components that exist
+in the MyComponents library
+and referencing.
+That allows me to drop
+it on my index page.
+So, let's take a look at
+what this component does.
+>> So, the code looks
+almost identical
+to just rendering a component
+that's inside of
+your client project,
+but you're just pulling this in?
+>> Yes. So, I have this big box
+with a dashed line.
+Most of this is
+actually boilerplate.
+I've modified it slightly,
+so we have a cool demo
+for the show.
+I've wired up what already
+exists in that template,
+just so it may give
+a little more flair.
+So, I'm going to
+click on this box,
+and now I'm going to prompt.
+I can type anything in here.
+I'll say, "Hello VS
+TB," and hit "OK".
+Now, that data's represented
+in its bound inside of
+that dotted box there.
+So, let's see how that works.
+So, again MyComponent, will
+look at MyComponent.CSHTML.
+It's a simple div, I'm binding to
+the HandleClick function handler.
+>> All right.
+>> Or ClickHandler. It's got
+a regular CSS class on
+it with MyComponent,
+and then I have a value
+called message.
+So, I'm going to create
+a placeholder for it,
+string message equals,
+"Click here to change".
+That's the default value.
+Then whenever I click
+"HandleClick," I'm going to
+set the message and
+this is going to do
+it asynchronously,
+and it's going to make
+a call to JavaScript.
+It's going to display a
+JavaScript prompt in the browser.
+>> Got you.
+>> So, I'm making
+a call to JavaScript
+from my C# code, and then
+when that comes back,
+we're just going to
+notify Blazor that
+the state of the view
+has changed,
+and it needs to do an update
+to the shadow DOM.
+Now, if I dive in to MyComponent,
+you'll see this Content folder.
+This is put here by the template,
+and inside of that are
+resources that belong
+to the component,
+including this example
+JavaScript interrupt.
+>> All right.
+>> So, this is
+a JavaScript module,
+and it's being loaded
+into the global namespace
+of the window here.
+So, on window, we have our scope
+of example JS function,
+and a function called showPrompt.
+>> All right.
+>> Then that prompt takes
+an argument of a message.
+So, we can set that prompt
+to whatever we want and then
+it returns the values that
+was put into the prompt.
+>> So, how is the name
+showPrompt different from what
+you are calling from JavaScript?
+I thought you just said
+prompt in your component.
+>> So, there's
+a nice little wrapper piece
+of syntactic sugar around that.
+If I open up example JSInterop.
+So, there's little C#
+extension method in here,
+and it's called ExampleJSInterop.
+Sorry, it's not an extension.
+That is just a static method.
+It's asynchronous,
+so it uses a Task,
+returns a Task at string,
+and it takes in
+the Prompt message and
+returns a string value as a Task.
+So, here's where it's
+calling that scope,
+and then, that function
+in JavaScript.
+>> Okay. So at this point,
+you're mixing and matching
+JavaScript and .NET
+on the client-side.
+So, if you have existing
+JavaScript assets and functions,
+you can call them from .NET.
+>> Yes. So, if you have
+existing JavaScript
+libraries that you
+love and they're too big
+to maybe translate over,
+or you want to have a moment
+where you're migrating to.
+>> You're in-between.
+>> Yeah.
+>> Yeah. Okay.
+>> So, you can do
+some migration there,
+or WebAssembly may not
+target certain things yet.
+So, for example, we can't pull up
+a prompt natively in C Sharp
+through WebAssembly,
+so we need to reach out to
+JavaScript to say, hey,
+we need a prompt, and
+we're able to do that.
+So, we have that flexibility,
+and this is how it's done.
+>> Okay. That's very interesting.
+>> At the same time, we've got
+little experience with
+developing component libraries,
+and you can see there's
+no page directive on
+this one, it's just HTML,
+a little bit of C Sharp in Razor,
+and this is very easy to
+understand what's happening
+inside of the system.
+So, let's do the
+server-side example now.
+>> This is where you're
+going to make it
+confusing for me, aren't you?
+But let's see. This
+is interesting.
+>> So, we've been talking
+a lot about WebAssembly,
+we're going to get away
+from that for a moment.
+We're going to actually do
+all this in the server.
+We're going to create
+a Blazor application that
+is running on the server,
+and all of the data is going to
+be handled through a WebSocket.
+So, the application on the client
+is just going to be
+a very thin client.
+It's just an HTML page that
+spins up a SignalR listener.
+>> Connection back to
+the hub on the server. Okay.
+>> Yeah. So, there's
+a hub on the server
+that's all part of
+the application framework.
+So, we don't really have
+to concern ourselves
+with all of that.
+It looks exactly like
+the previous few examples.
+Let's run this guy.
+While that's spins
+up, I'm going to
+fire up yet another application.
+This is Fiddler by Progress
+under the Telerik brand,
+something that you
+and I know and love.
+>> Most web developers can
+not live without Fiddler.
+>> Fiddler is a free tool that
+you can download and use,
+and it's very helpful
+for working with
+HTTP connections and
+things like that,
+because I want to show you,
+when we're running this,
+WebSockets perform a little
+different than
+your normal requests.
+So, the server has sent down
+the application through
+the SignalR pipeline.
+We have this active connection
+back to the server,
+and we can do updates
+like this and
+pull in data from
+our application,
+and we can do all this
+using that SignalR hub.
+>> Okay. But this one,
+this is not running
+purely client-side.
+>> There's actually
+almost nothing running
+client-side in this scenario.
+So, let's actually
+open this guy up.
+Let's pull up the "Network" tab,
+and again, we'll do a reload.
+Notice all the DLL's aren't
+coming down this time.
+>> No, they're not.
+>> Because they're
+staying on the server,
+they're running on the server,
+and we have a small
+JavaScript file
+that's handling all of this for
+us and just sending back changes
+through that SignalR pipeline.
+>> So, how does the server
+know about the DOM,
+if you had to do anything?
+>> So, that's in the diffs
+that it's sending back,
+and it's a binary package
+it's sending to
+Blazor to make those changes.
+So, for example, if
+I navigate here,
+let's clear this window out,
+and let me come down.
+Let's go to "FetchData".
+Notice the data loaded.
+So, the data is in here,
+and we didn't make
+any kind of communication
+back and forth.
+Let's do the "Counter" component.
+I'm clicking, there's
+no communication back and forth.
+You might [inaudible]
+surface think
+that you're not communicating
+with the server.
+Let's pull up Fiddler,
+and hopefully, this works for me.
+Let's try to put
+this side-by-side,
+and we'll do a click,
+and I'm going to demo fail.
+So, let's try clearing our,
+is Fiddler responding?
+There we go.
+Some kind of lag here.
+So, let me try again,
+and for some reason,
+Fiddler doesn't want to
+behave with this demo.
+So, I have a little demo fail.
+Normally, what we'd have,
+we'd be able to open this up,
+and Fiddler would actually
+show the Socket traffic.
+>> So, DevTools does not
+capture REP Socket's traffic
+that Fiddler can.
+>> It may. I just don't
+know where to look,
+if it's there.
+>> Okay.
+>> So, it may be a little bit
+of my inexperience with
+the WebSocket traffic
+in the tooling here.
+It does normally show
+up in Fiddler though.
+>> Okay. All right.
+>> So, every time I click this,
+actually, we've frozen up there.
+When we click this, we're
+actually sending some traffic
+through the Socket
+up to the server.
+Again, this is what
+happens when you work with
+experimental bits. Things
+don't always happen.
+>> You can pray to
+the Devil. That's enough.
+>> The way you expected them to.
+>> We get the point. So,
+this is running server-side,
+almost nothing on
+the client-side,
+and you are piping content
+through a WebSocket's channel
+or a tunnel, essentially.
+>> Yeah, absolutely. So, one
+other very big difference
+that you'll notice,
+remember before when we did
+our dependency injection
+on that FetchData?
+Something's a little bit
+different here.
+So, since we're on the server,
+we don't need to send
+an HTTP request.
+So, we can just new up
+a service, ForecastService.
+This could be maybe a layer over
+the top of [inaudible] Framework
+or something like that,
+but we don't have to send
+a web request because we're on
+the server with the data
+in the application
+and all of that,
+and we can just say,
+get the forecast
+asynchronously and
+do it that way.
+So, our dependency injection
+actually looks different as well.
+So, we're not injecting
+an HTTP client,
+we're just injecting the service,
+which is a C Sharp class
+that we've written.
+>> Right. Yeah. So,
+this is interesting.
+You're hosting the data on
+the server and you're also
+running the app right next to it.
+So, you can get the data
+just as quickly
+without making HTTP.
+>> You could see we have
+our WeatherForecastService
+in here,
+and it's just creating a Task,
+an asynchronous Task,
+return that array.
+Like I said, that could
+be your database there.
+So, no HTTP call.
+So, that's an interesting
+mode of operation.
+Let's do one last demo,
+where we show a project
+that I've created and
+used some existing .NET
+assembly from NuGet.
+I've got to stop this guy
+from running first, and then,
+I'll see if I can grab
+it off my Start Page,
+and I've lost it here.
+So, let's do "Open", "Project",
+and the project is
+called BlazeDown.
+I figured I'd go with the theme.
+Browser plus Razor is Blazor,
+Markdown plus Blazor
+is BlazeDown.
+So, let's do little bit
+of BlazeDown.
+So, this is a Markdown Editor
+completely written in Blazor.
+So, I'm going to run this up,
+and it's a client-side
+application.
+It's running on the browser only.
+There's no server code in here,
+so we're going to
+get the application,
+the browser loads it up.
+We have Markdown
+here on the left,
+and we have the rendered
+Markdown here on the right.
+So, this is a very
+cheap Markdown Editor
+that we can just come
+in here and live edit,
+and those changes persist
+on the other side.
+We can use some of
+our Markdown syntax to change
+things like headings and
+do code highlighting,
+for example.
+All of those things are
+working here right in
+the browser and being rendered
+as HTML on the other side.
+Might expect a lot of
+code behind this, right?
+>> Yeah.
+>> I'm parsing Markdown
+into HTML real time.
+>> Are you doing this
+yourself? Or do you
+bring in some libraries to help?
+>> I'm not the smartest guy
+in the room ever, Sam.
+So, I'm actually using
+something someone else created.
+>> Okay.
+>> So, there's an existing
+library called Markdig.
+So, there's a dependency
+in this application,
+and if I look under
+"Dependencies" and under "NuGet".
+We've got something missing here,
+it's actually in a Component.
+Sorry. I've moved it
+out to a Component.
+So, our dependencies in
+that Component itself.
+So, I have a markdown component,
+NuGet and there's Markdig.
+So, this is off the shelf,
+I haven't modified it in
+any way shape or form,
+pulled it into my project
+and just started
+using it right away.
+I don't know anything about
+making a markdown parser.
+I didn't need to somebody already
+did the hard work for me,
+I can just pull that
+into my component,
+if I open up my component,
+the component takes and runs
+a function called
+BuildHTMLFromMarkdown,
+and I pass in this
+content value which
+is whatever you're typing
+into that text box.
+>> Okay.
+>> That runs this function called
+BuildHTMLFromMarkdown
+and returns at
+HTML using this method here
+called ToHtml and sends
+that back as a string.
+Then that string is
+loaded as raw HTML
+into the Component displaying
+it in the browser.
+>> Okay. All of this is now
+running Client-side entirely?
+>> This entire thing is
+running Client-side,
+so Markdig is running on
+the browser using the DLLs
+that come out on NuGet,
+those are actually running
+right here in the browser.
+I can do things like pull in,
+I can use the HTTP
+client to pull in
+Markdown files from
+another resource maybe GitHub.
+>> Right.
+>> Something like that. I don't
+know if people saw that
+I'd clear this out.
+I can do import and it'll
+go back and pull in
+that original file that
+I was using before.
+Then I can also do
+something cool here,
+I can say download as Markdown,
+and click that button and I'm
+prompted with a Markdown file.
+>> So, at this point,
+you were on the Client-side
+and you downloaded a file
+from the Client-side
+that was generated in
+the Client-side as well, right?
+The Markdown file is
+acting like an output
+of the Markdig extension?
+>> So, that's what we're
+going to get to now.
+>> Okay.
+>> I'm glad you
+brought that up Sam.
+I have a download Component here.
+>> So, there's another component?
+>> There's another component
+and this is called
+DownloadButton.
+>> Okay.
+>> So this Component has
+an OnClick event that's
+when you click
+the actual button itself.
+It has a property called
+Payload and a property
+called FileName.
+So if we look at
+our index page here,
+you'll see the actual
+Component being used,
+DownloadButton here and I'm
+setting the value to
+that same content value.
+I'm binding. All these
+things are just being
+bound to content value.
+The Markdown Editor itself,
+the Output and the button are all
+binding to the same set of data.
+Then I set the FileName to
+whatever I like that to be,
+and then when somebody
+clicks the button,
+let's look inside of our button.
+So, we go to DownloadButton
+OnClicked event fires,
+and I'm using
+a JavaScript Interop.
+>> I see.
+>> So, the JavaScript Interop
+is necessary in
+the scenario because of
+browser incompatibilities.
+So, I initially wrote this
+with no JavaScript whatsoever.
+You're able to do this in Chrome
+through a special type
+of URL that you can
+just set a prompt
+and click a button
+and that URL translates
+into a file download.
+That's not possible on Edge.
+Edge has a special API that
+is custom for Edge
+called msSaveBlob.
+So, I've wrote an Interop
+that wraps msSaveBlob.
+There's basically
+a simple browser check.
+So, if I go in here there's
+a function in here called,
+isHtmlDownloadAllowed,
+and there's also one to
+say, ismsSaveBlobAllowed.
+So, we check to see is
+msSaveBlob a function that
+exists in the browser?
+If it's not, that means we're
+probably not on IE or Edge.
+Then it fails over to
+the next mode which is
+this HTML download that
+is more universal.
+Then finally, if
+no browser support is there,
+we'll just throw
+a console message
+and you won't see that
+download come across.
+>> Okay.
+>> So, that gets invoked
+when we click that button,
+and but this project
+is a good example
+of how I can use existing
+.Net technologies,
+go into NuGet pulling
+some packages write
+very little code,
+almost everything that exists
+in Blaze down you just
+saw on the screen,
+just couple properties here
+and there and couple of function
+calls and I'm able to
+make something really
+cool like this.
+>> Indeed, indeed. So,
+that's very interesting.
+>> That's Blazor in
+a nutshell right now.
+0.5.1 is the current release.
+It just came out a
+couple of weeks ago.
+May be updated by when
+the recording comes out
+on Visual Studio Toolbox.
+But just check
+Blazor.net for updates.
+>> Sure.
+>> See how that turns out.
+>> You're wearing
+an interesting shirt
+that says, "Goodbye JavaScript,
+" but it sounds like
+we're not really saying
+goodbye to JavaScript.
+You can do JavaScript
+and .Net Interop,
+but just like JavaScript
+runs natively in
+the browser or on
+the Client-Side now you've got
+C# running native on
+the Client-Side as well.
+>> Yeah, my shirt does
+say, "Goodbye JavaScript,
+hello C# and Blazor," but
+I don't wish any bad will
+towards JavaScript.
+>> Of course. Yeah.
+>> It's still, there's still
+some great frameworks out there
+that a lot of people are using.
+This is just another option
+for .Net developers and
+people that may want to
+use .Net for doing
+Web technologies
+and creating browser-based
+applications to use.
+>> Yeah, yeah. So, it
+sounds like if you are
+a .Net and developer and
+you want to stay on top of
+modern web but you don't want
+to write a whole lot
+of JavaScript,
+this is a way for you to write C#
+straight up in the browser
+and run it natively.
+What about performance? We are
+running native performance
+in the browser.
+>> Not yet. So, again,
+this is only like six months old.
+>> Sure.
+>> The performance, if
+you look at Blaze down,
+it's pretty performing,
+it does a good job.
+You're not supposed to be using
+this framework for building
+production applications
+because of
+the state that it's in,
+it's an experiment.
+The performance isn't going to be
+as good as JavaScript
+at the moment.
+But it'll get there over time.
+At least I feel that's
+the direction it's headed in
+and I think Daniel Roth and
+his team have a pretty good
+outlook on what's happening.
+>> It sounds like this is not
+just a Microsoft or a
+Google or an Apple thing.
+As long as Web Assembly
+gets better at executing
+those bytecodes we'll get
+more and more
+performance out of it.
+>> Yeah. Nothing about
+Web Assembly is Microsoft.
+It's the W3C standard.
+It's a standard technology
+that browsers are implementing,
+all the other evergreen
+browsers have it.
+Other technologies are
+looking at targeting it.
+There's Go Compilers,
+Russ compilers, C++.
+So, this is
+just another flavor of
+WebAssembly and
+a really cool framework
+built on top of it.
+>> Sure thing. So, sounds
+very exciting. Well, what's next?
+So, they just keep
+an eye out on what the
+ASP.NET team is doing and
+Blazor is as open-source now?
+Part of the GitHub repo?
+>> Yes. So Blazor is open-source.
+Again Blazor.net or
+look for it on GitHub.
+Further down the pipeline,
+we'll see some more
+experimentation.
+There's actually a project
+out there of using
+electron with Blazor and
+using that same signal or
+a type Server-side
+experience but it's
+using the electron shell instead.
+It's yet another avenue
+for this cool technology
+to take off.
+The experiments
+just keep producing
+really interesting things.
+So, keep an eye on it.
+>> They are very exciting.
+Yeah. Surely, you
+are prompt and I think if you're
+a C# developer and you want to
+see where your code can go,
+definitely keep, it
+behooves you to kind of
+keep an eye out on Blazor
+and where this is heading.
+>> Very much, very much so.
+>> All right. Well, thank
+you so much for sharing
+all this knowledge and
+all the cool stuff that the
+ASP.NET team and
+Steve Sanderson and
+Dan Roth and those guys are
+building, this is very exciting.
+So we'll see what comes out
+of this and how this evolves.
+>> Yeah. Hats off to them.
+It's really cool stuff and I've
+just been watching and enjoying
+all the things they're
+making and trying
+to help with issues on GitHub.
+If you get a chance to try
+this out and get the bits,
+click on the "Survey" button that
+comes with the
+example application,
+fill out the survey,
+get in touch with them on GitHub,
+let them know what
+your needs are so they
+know where to steer
+the framework and how
+to make it better.
+>> Yeah. Just like anything
+else in the ASP.NET is
+open-source and sounds
+like the community,
+this is the perfect time
+for us to play
+around and make sure we're
+doing this together.
+Yeah. All right. Very
+exciting, very cool stuff.
+So, this was all about
+Blazor on VS Toolbox.
+Hopefully, you guys enjoyed it.
+Keep an eye out on
+how this evolves.
+Very exciting times ahead.
+Thank you so much for being
+with us on this VS toolbox show.
+Thank you and bye for now.
+>> So, I hope you enjoyed
+that look at Blazor
+it's a revolutionary technology.
+It's still experimental but it's
+got some potential to really
+change web development.
+Hope you enjoyed learning
+about it and we will see
+you next time on
+Visual Studio Toolbox.

@@ -1,0 +1,1046 @@
+hey guys sorry about that it was a
+little bit of Internet connectivity
+issues on our end apologize don't
+but we're here with Rachel are you doing
+I'm doing well
+alright Rachel sees from jetbrains and
+you're gonna actually save the best for
+last I think personally yeah so you're
+gonna talk about how to design and
+develop like excessively yes s ability
+wait yes yes okay oh that's good cool
+very cool um so why don't you just take
+it away all right sure
+so this talk title is be an ally and
+with Ally it is often abbreviated as a
+11y for accessibility and you'll see
+this in a few different areas so that's
+a popular nomenclature in accessibility
+design so what we're gonna do is talk
+about a few things since we only have 30
+minutes that you can do that are pretty
+easy to be able to make your site
+accessible for many many users out there
+and I'll let you know why and how as we
+go on so first off why should we care
+about accessibility because it is much
+more than a disabled parking spot right
+and a little sticker in the car window
+that's the first thing everyone thinks
+about accessibility well we have a
+parking spot out front aren't we good
+nobody thinks about it on the web and it
+is actually very very important think
+about it on the web and in apps as well
+a lot of this applies in both lands web
+and in so it is the right thing to do
+and you know it right don't pretend you
+don't you do right it's the right thing
+to do you are able to reach all the
+people you need to reach even the people
+that it might be difficult to reach if
+you're not convinced about that you or a
+loved one absolutely will in your life
+have an accessible need
+many people do now as staggering number
+of people but at some point it's gonna
+be you everybody dies and if you think
+you're not going to you're probably
+delusional enough that maybe software
+also isn't for you right that's that's
+we're going to die I hate to tell you
+about that and end-of-life is going to
+be a time when you really really really
+need accessibility along with illness
+accidents and lots of other things that
+happen in life including aging as well
+so if you live a nice long not life to
+90 that's awesome but you're gonna need
+a little help
+still not convinced how's this alright
+there's money in this so you're doing
+the right thing and you could end up
+with a pile of cash how's that because
+over a billion people with 1.2 trillion
+dollars of disposable income have
+accessible needs and when you
+incorporate in their loved ones that
+goes up to 8 trillion so is that good
+enough for you if you're all like hey
+you're being all PC with this right
+thing to do and blah blah blah well how
+about the money then right do it for the
+money at least alright so there's a good
+reason and this is from Forrester in the
+US there's 60 2.8 million Americans that
+require assistive technology so even if
+you're like well I don't do stuff
+worldwide you only need to do stuff for
+the USA well great but that's still a
+lot of people right if that's a dollar a
+person of revenue you have that's a lot
+of money there's very many different
+categories of things that people need
+for accessibility needs 25% have a
+vision difficulty order also have
+dexterity difficulties and we have
+hearing difficulties 35% of
+entrepreneurs are dyslexic and 20 in the
+UK so that's a few stats
+mostly from the American side of things
+that translates out to a lot of cash as
+well and of course those baby boomers
+right and then following them what is a
+Gen X after that or something they have
+over 65 they're rising medicines getting
+better so even though we are still going
+to die we're you know you're gonna get
+pretty old and what happens when you get
+old you're gonna have to face this you
+may lose short-term memory vision
+hearing fine motor function things that
+today's technology rehire all right so
+those things gets a little bit harder
+when you get older and I can vouch for
+this myself you know I'm up getting
+there an old person territory and I
+noticed it's harder to you know
+fine-tune stop laughing at me better so
+like I noticed it's harder to fine-tune
+click on you know an exact pixel with
+the mouse or even a trackpad and things
+you know I I need to do the thing with
+the glasses where you have to take them
+off to read something in front of your
+nose or you have to stretch your hand
+out really to see something on
+your phone so those guys you know I
+actually had the talk about progressive
+lenses with the ophthalmologist is like
+that milestone that you're gonna get
+there and it might not be vision but it
+will be so so okay you say well you know
+but that's that's the thing there's
+better glasses out there and whatnot but
+look at here's what customers want as
+far as accessibility goes right what
+they want is not better glasses per se
+and have you looked at prices of glasses
+in the US these things are expensive but
+what they want isn't necessarily
+newfangled
+accessibility technology but they want
+you to write better software imagine
+this as software developers you may have
+heard this before right people want
+better saw
+we're and accessibility is a big part of
+what they want so and in this case the
+last this might not be the most recent
+poll but it's just you know going in
+that direction still over 80 percent
+wanted more accessible websites because
+developers like flashy things are more
+interested in clean code and that is a
+great thing to do but then you do it at
+the expense of people actually being
+able to use your software and it's been
+said shipping as a feature shipping for
+everybody should also be a feature so
+the types of accessible needs there's
+four general categories visual auditory
+motor and cognitive the bulk of your
+work if you're a developer is going to
+be in the visual area because the web is
+very largely visual but there are a few
+things you can consider maybe not so
+much coding practices but consider for
+the other three there will be some
+coding practices
+the first thing we'll take a look at is
+that access assistive technology so
+there is a picture of me on the Left
+where somebody else took a picture of me
+highlighting the menu with the phone
+because the old person can't see it it
+was dark
+how many times did somebody do this out
+at dinner right you have to highlight
+the menu or even trackpads guess why
+there even a thing oh sure it wasn't
+just a cool thing it was for accessible
+needs and of course glasses a lot of
+people say but but I'm really young and
+I don't need them and they're wearing
+glasses and I'm like but you're actually
+wearing the assistive technology now
+right as I am glasses and all I still
+can't see the menu so sometimes you're
+already using the assistive technology
+and you don't even know it did you use
+an escalator today guess what that's
+technically an assistive technology it's
+not always high tech it's not always a
+spaceship the ones that we tend to think
+of and we think of like a disability or
+something about accessibility or things
+like the screen readers
+Braille readers those kind of things
+maybe a like a Braille reader sip and
+puff switch single access switches eye
+tracking eyeglasses or adaptive
+keyboards so there's a few examples of
+the technology that many people are
+using to access your software and you
+might not even know it all right we do
+have these people and they may be
+struggling to use your software and in
+many many cases they end up being so
+frustrated that they just abandoned
+popular sites and I remember looking
+into some data with mobile app
+development a while back when
+smartphones were becoming kind of a
+thing and they said like look if the
+page takes more than two seconds to load
+like 70 some percent of the users just
+dump it and they're like and they just
+go somewhere else they won't download
+the page they won't surf they're there
+they're dumb even on a regular computer
+how many times it takes more than two
+seconds to load right so people get
+frustrated quickly with technology
+especially people who may not have
+wanted to use it in the first place and
+they have you and if you don't perform
+well they're not going to use it right
+so these are things we have to consider
+these people are your users whether or
+not you planned for it they are or at
+least they're trying to be but you might
+be losing them and with that a lot of
+money
+Xbox knows this so that's one of the
+adaptive controllers for Xbox right for
+accessibility needs and one of the
+designers talking about it and there's
+the tweet DEP that goes - let's take a
+look specifically now at these
+categories will start with visual which
+there's four kind of areas inside of
+their low vision so that would be me a
+standard you know I'm getting all their
+Gansey stuff then blindness color
+blindness and color contrast sensitivity
+now you could consider yourself
+perfectly not disabled what so
+but color contrast is something that
+tends to hit everybody if you have bad
+contrast nobody can read your stuff or
+they can but it's it's literally painful
+for some people so one thing that we
+have is screen narrators so I have my
+Mac here so I have voiceover which works
+pretty well but also there's NVDA very
+popular web anywhere also a couple of
+browser specific ones voiceover not
+browser specific that little point just
+got tabbed in a bit so we do have these
+various screen readers these are
+generally free there's also some
+experimental ones and some that you can
+pay for as well but if you want to test
+and just get a feel for what it's like I
+highly suggest people do this download
+like NVDA or web anywhere or if you have
+a Mac use Apple voiceover go browse the
+web with your eyes closed and see how
+far you get see if you can understand
+even a simple page that you use every
+day and what's going on if you lost your
+site tomorrow would you be able to use
+their sites and you're gonna find out
+that the answer to this is no in many
+many instances so we will work with them
+at some point or you should have people
+that test with them at some point and if
+possible visually impaired people so the
+first thing that we can do to help
+screen narrators is this thing called a
+skip link now what could be more
+annoying if you cannot see a page and
+you know pages are full of things
+nowadays they're not a tiny little page
+with just four or five blinking elements
+like they were decades ago there's just
+all kind of content things popping up
+ads here and there you know even if you
+have an ad blocker sometimes things
+squeak through and there's a lot of
+links and what happens is when the user
+enters a page the narrator not all
+narrators they don't all work exactly
+the same but many of
+them will read off the top bar of links
+or the side bar of links and when they
+do that it'll read it off and then they
+click on a link and go to that page and
+then they have to read those links again
+before it gets to the content and then
+if they go somewhere else it rates the
+links again and this gets to be annoying
+pretty quickly so something you might
+consider is skip links now some of the
+assistive technologies getting a little
+bit better in that they are able to
+figure out with semantic hTML that there
+is a section of links and they just skip
+over it but just like with accessibility
+you do have to support older browsers as
+well so if you're still supporting IE 8
+and some of those older browsers you
+might need to have skip links for those
+newer stuff and newer designs you know
+using html5 semantic web that sort of
+thing is generally a little bit better
+in this category but we still got to
+support the old stuff and it's easy
+enough here's what you do the first
+thing that shows up in a page is going
+to be an anchor and it's gonna have its
+href set to a named area or named link
+then somewhere in the page where if
+somebody would be able to skip over the
+navigation bar and go to you have that
+named area or link in the page so here
+in the sample you know I just have a
+class that's a skip to main content and
+then the main content which is either a
+named link or a semantic main tag either
+one works so this when this happens then
+the screen narrow reader can sit on the
+skip link and then that person that is
+not cited well can then hit the tab key
+and then just skip down to the content
+just go right past all of the links now
+a few things you could do with this one
+is if you have the links present and
+visible fine that's great but sometimes
+people have links not necessarily as the
+first set of things in the page because
+it does have to be right up there in the
+beginning so what we might want to do is
+a little bit of a small hack and that is
+to put the links in the beginning but to
+make them hidden now when you make them
+hidden you just make them a one pixel
+wide one pixel high and set the left way
+out into left field so there it's like
+minus ten thousand then this way it'll
+just push the links out but still in the
+Dom because if you set visibility to
+hidden then it won't screen narrators
+won't pick it up if you said you know
+any kind of the visible properties it
+won't if you set the width and height to
+zero it won't pick it up so you want
+screen narrators to pick it up so if you
+set CSS for those links then you can
+just shove them out in left field
+they're out of sight but the screen
+narrarator can read it and then people
+could skip over it now if you're using
+something like bootstrap and if you're
+using if you're a dotnet person which
+you probably are if you're here at
+dotnet conf then with bootstrap they
+have an SR - only class and with that
+you could just set your nav portion like
+the whole div that contains your links
+to that and that will hide it if you
+need to there's also some landmarks that
+you can use if there's no semantic HTML
+and you have a very very old site with
+mostly old browsers to use so skip links
+are pretty easy you can just do an SR
+only in there so that's just a little
+bit of HTML if I go and I take a look at
+say a razor pages sample like a small
+braid your razor pages website and they
+go into the layout page here's where you
+can actually put something like that
+I might have my div with a couple of
+links inside of it and I could class
+that as s are only because this uses
+bootstrap right so then that would pick
+that up if I didn't want to do that
+that's fine here we're using nav anyway
+so nav is semantic HTML so that should
+work just fine so here I have my
+different links and bootstrap and pick
+that up and decide if it needs to
+display or skip or whatever so that'll
+be good for the screen readers also you
+notice things like main and other you
+know footer header those semantic
+elements having nose helps with the
+screen narrators there's also an
+accessibility plug-in for bootstrap so
+that will help you along with that past
+screen narrators there is much more you
+could do but we only have 30 minutes so
+we'll take a look at these other factors
+here like color blindness here's a
+really easy low-hanging fruit thing you
+could do download this thing called
+color Oracle and when you do that I
+could come over and take whatever sample
+webpage that I want and let me run this
+and then what you could do with color
+Oracle and I think I'm gonna have to go
+maybe launch my color Oracle
+and now I can't find it
+oh here it is there it is so it should
+show in windows in your tray and Mac
+it'll show up in in the Little Mac area
+here and what you could do is here I
+have several colors right your classic
+red blue green yellow right right out of
+the rainbow and once I have that page up
+I can just click on color Oracle and
+then I could pick one of the different
+color blindness ha's that are available
+and it'll show me what it looks like to
+those people so something we could see
+here just by kind of scanning through
+the different colorblindness --is that
+we have right lacking red black and blue
+lacking green etc is that a lot of
+people on a lot of websites we use a
+green button for okay and a red button
+for cancel but if you do that they don't
+look at all like this or maybe up to
+five percent of the population and if
+you take say the US has 330 million
+people so that's a lot of people that's
+several million people that don't see
+hunter green and it looks like these
+colors here so you might want to
+consider not using color as the primary
+indicator of what something does use you
+can have color in your buttons or
+whatever but also use text or something
+else to denote what it does so you can
+get this nice little tool and then you
+can run this through any web page to see
+what it's like as a matter of fact
+Facebook is blue the color about it is
+because Mark Zuckerberg has one of the
+colorblindness is there's also a cool
+accessibility color wheel tool so
+designers and developers can work
+together on this one and you just pick
+out your foreground and background and
+it'll tell you if it's good or not and
+you can pick out different contrasts and
+in it you know adheres to WCAG and all
+that good stuff so that's a nice easy
+tool to use and there's also a
+colorblindness simulator so you can
+go to the simulator and it does
+something similar to what the color
+Oracle does but here you can take a
+sample photo and you can just click
+around in it and see what it looks like
+you could upload your own photos so if
+you have a photo heavy site that will
+give you the view of somebody who has a
+color blindness so you can help design
+much better now color contrast is
+something that affects nearly everybody
+so we want to consider what's good
+contrast and bad usually nice and light
+on dark or nice and dark on light but
+also sometimes the colors themselves so
+here's bad contrast a lot of people
+won't even be able to see this that's
+just crap
+here's good contrast alright you can see
+that here's like yeah it's not great
+really that could be way better this is
+very good right black on a nice light
+blue now this is horrible actually
+looking at the monitor I could see it on
+my laptop but I literally cannot see any
+text on the screen in this studio so
+that's terrible contrast there were some
+good contrast right and then again this
+is just so bad your eyes are bleeding at
+this point like this and I see this
+everywhere if you do this you're a
+terrible person I'm sorry that is just
+awful
+here's good contrast hmm and then just
+another man that's it like light gray on
+white I know that's popular it's not the
+greatest though these red on white is
+good but if you look at some of them
+like that red on the green it actually
+hurts your eyes when you look at it look
+if your software is physically hurting
+people
+you're a jerk like stop it that is just
+not cool alright so look at these things
+and use say the color contrast contrast
+tool from webaim
+and that will help you sort out your
+colors and if your designer did that go
+give them a slap that's not right they
+shouldn't be doing that
+as far as screen readers go so you can
+take any screen reader and kind of
+practice with it
+so if we are using things like semantic
+HTML this helps
+now if we're using dotnet also not only
+do the templates for the asp net core
+and asp net projects have semantic HTML
+but when you use data annotations that
+produces the correct HTML and javascript
+so the screen that narrow readers can
+pick that up so if I were to run
+something like that and just launch my
+site somewhere where I can maybe enter
+some data and once I get to here if I go
+ahead and open say voiceover okay so we
+severed those cool things
+oh I forgot to actually there we go
+I keep forgetting now it doesn't it
+these these are pretty robotic touch to
+enter passion in this field
+type so this one goes fast because if it
+went slow people would be on the page
+all day but as you tabbed enrollment age
+dev RTD month enrollment to take stepper
+hmmm so you'll see it does the oldest
+ever inside added text to begin
+interacting with the sever press control
+option shift down arrow to exit this
+date field press control option shift up
+arrow okay so as you can see as I go
+through and I tab through it starts to
+tell you what you're doing and where
+you're at and again if you're using like
+scaffolding to scaffold your pages like
+I did with this one and data annotations
+this is gonna pick all of that up and
+it's going to be able to effectively
+read what's on the screen and as you can
+see even though it's for folks with
+sighted disabilities it does give you a
+little blurb at the bottom in text as
+well and so if I look at my data
+annotations tell that's much wider
+project system preferences except okay
+we don't need it to narrate inside of
+writer or anything
+we're good so here right in my model all
+right I can come in here and just set
+the datatypes correctly so I have dates
+and it knows it's just a date not the
+time as well and the display name so it
+the screen reader can pick that up and
+in annotations that just gives us all of
+the information when it produces the
+rendered output screen narrators are
+very happy about that so there I have
+those so that works out really good for
+accessible forms so you could see we'll
+take a look at the form here if you have
+things like the checkboxes and lists and
+grouped items you could use the field
+set and legend but in this case I didn't
+have any I just had a just plain form
+and a couple of divs that were grouped
+here so there's one grouping for the
+name one for the enrollment date one for
+the expected graduation date for these
+students and something that I did here
+on purpose so we could see how it works
+if you notice all of these except the
+last one have the label right so that's
+a semantic HTML element and the label
+tells a screen narrator what this is
+about
+so previous days we would just use a
+span or some other kind of little tag to
+be able to kind of label our input
+elements but now what we could do see
+input and then use our s before and then
+go ahead and say label ASP four and
+point that to our input right we're
+actually the same actual model item
+right so a little object right out of
+the model and then that's all gonna work
+seamlessly together for us and I really
+I didn't have to do anything this was
+all created when I ran scaffolding
+actually really you'd get free stuff
+here it's a boatload of free stuff now I
+came in here and I removed this label so
+what would happen if I remove this label
+and I get to that element so if I come
+back here and turn on boom - voiceover
+back on recipe voiced over us in Chrome
+and attacks blank that's it we're
+currently on a text field thank you and
+you're touched in this field type thanks
+yeah very a text field
+what textfield I don't know it's not
+labeled I took the label out so even if
+there's some text ahead of there the
+narrator might not pick that up or know
+it might see the text but it won't know
+that it belongs to this textbox so it
+just goes at a text field you're on a
+text field yeah thanks thanks for that
+that's not helpful whatsoever so you
+want to use the labels and appropriate
+scaffolding yeah and you can see how
+annoying this can get if you are
+somebody with sighted needs right so
+there we have the label again and also
+some things that we tend to do people
+tend to put a tiny little star and
+that's all - Dino required and they'll
+make it read which is to bad things
+right the read Because are color blind
+folks can't see it also it's tiny a tiny
+star that sometimes looks like a speck
+of dust on the screen so you know other
+sighted needs can't see it so what we
+might want to do if you're actually
+gonna use the word required or if you're
+gonna actually denote that something is
+required instead of waiting for them to
+get to the end and then popping up the
+messages then you could actually just
+put the word required or something
+that's a little bit more clear than the
+star so that tends to be much more
+helpful there's also a little tool tip
+that you can create and the O AAA
+accessibility project has that available
+so you could go there and they have some
+sample HTML to pop up a tooltip and then
+of course the folks in the accessibility
+circles argue our tooltips really
+accessible but these are built pretty
+well so they don't get in the way
+the other thing with accessible forms
+you will see something called Aria now
+area was more needed in the past you
+will need it today once in a while when
+semantic hTML is not really relevant for
+what you're doing or if you have to
+support some of the older browsers or
+browsers that don't support html5 right
+so if that happens you may need some of
+these Aria tags as technology is
+evolving these tend to be going away a
+little bit so you can set an aria
+required if you needed to do that and
+that would give the screen narrator a
+little assist and would say oh yeah yeah
+I see that's required I can tell the
+user that and there's a full set of Aria
+attributes that you can apply to any
+HTML tag and of course that also works
+for any raiser markup as well and they
+have roles States properties as well so
+you can say if things are disabled or if
+it's supposed to be navigation versus
+content required etc so it just helps
+the narrator's you will the narration so
+you'll see a few of these in the
+templates or asp net court projects with
+Razer pages now there's more things you
+can do for sighted people or people with
+sighted issues that's just a few of the
+big bangs for the buck it's not a lot of
+coding to do but it helps tremendously
+so we'll go into auditory and the next
+three categories are a lot less coding
+but just being aware of what's happening
+out there and who is accessing your
+software so auditory is mild hearing
+loss to total deafness so that's
+generally what that is now some things
+just to take note of don't rely only on
+sounds for feedback that does happen
+sometimes it happens in games or more an
+app development desktop kind of stuff
+use transcripts and closed captioning
+wherever possible because not everybody
+could hear actually I'm seeing many many
+more people who can hear perfectly well
+and they say I actually prefer to just
+not blast the TV and I like to have
+closed captioning on or folks who are
+learning languages just like to run
+captions as well and it helps out a
+little bit to hear it and to read it at
+the same time know about Deaf culture
+there it is such a thing right sign
+language is there in snot sign language
+it's sign languages there are dialects
+and sign languages and people do have
+accents in sign language so if you do
+get interpreters that do signing that's
+just something to consider right that it
+that's out there so you might have a
+signer for one of your videos or
+something like that but they may have an
+accent or something and if they're not
+from your area and you're localized some
+people might notice that so just so you
+know it's available out there the motor
+and dexterity issues all right so this
+is generally illness injury disease
+there's many if you think about it
+things like epilepsy and seizure
+disorders right a lot of websites have
+like a loud you know pulsating weird
+like psychedelic stuff going on and it
+just like kind of goes all over the
+place and people actually have seizures
+I know the Simpsons did an episode and
+they kind of like made a big joke about
+it but it seriously actually happens
+they're also motor dexterity as you get
+older if you look at many of us have you
+know very aging parents and they have
+tremors essential tremor or something
+anybody of any age can have plus actual
+diseases like Parkinson's and whatnot
+you can have dexterity issues and
+something I see this drives me up the
+wall and I'm not the only one you'll go
+to a popular website and they'll pop up
+an ad well first of all the fact that
+it's an ad raise it just
+right there it's so annoying but then
+they'll make the close button like to a
+two pixel by two pixel button and you
+basically have to be a surgeon to be
+able to click on that button and it is
+really annoying and then people just go
+forget this and they just don't come
+back to your site so where you think
+you're being clever and you're trapping
+them in there they're just going like f
+you and they're going to another site
+because you've just made them very very
+angry so so all these things can you all
+these kind of people are using your
+software arthritis how arthritis is
+super common lots of people have
+arthritis and it actually sometimes
+painful to try to click on that little
+square or to try to use just the mouse
+so make sure there's always alternative
+keyboard input right so that's something
+and that the tab order is not ridiculous
+that it goes in a logical fashion people
+forget to check the tab borders on forms
+also temporarily like I said in the
+beginning you will at some point or a
+loved one will have these needs you
+break a bone that's very common people
+that happens you break a bone that can
+cause an impact on your technology use
+also sprains and lots of other stuff
+right people even just get you know
+frozen shoulders or lots of joint
+problems and it's just part of Aging or
+injury and then from that just makes it
+a little harder to use devices alright
+so phones computers or anything so make
+sure also alt right so alternate
+keyboard and alt in images as well so
+lots of things avoid pop-ups and modal
+dialogs unless they're easy to get out
+of nice big closed buttons or where
+somebody can just click away or move
+away and it easily goes away cognitive
+impairments as well are very common
+everything from just you know memories
+not so good anymore it's you know also
+an aging issue
+remember the millions of people in the
+u.s. autism seizures just comprehension
+and learning disabilities dyslexia ad D
+that's very very common so these are all
+users all right so if you look at this
+this is a significant portion of the
+population between visual auditory
+dexterity and cognitive right you're
+talking like a quarter of the population
+at any given time all the way up to
+almost 40% in some areas so that was a
+huge chunk that has something going on
+or multiple things from these areas
+going on so that's something so there's
+no tools to help people with the
+cognitive disability for you to write
+code to make it easier for them what you
+need to do though is just keep things
+clear and simple right which as a
+programmer you are supposed to be doing
+right there is a kiss principle and
+you're supposed to be doing it in your
+code and it should be in your product as
+well but also programmers tend to you
+know poopoo the UX all right like it's
+not my job and stuff like that but it
+kind of is you're building the product
+and people are using it and if they
+can't you are partly responsible so you
+need to make sure that comprehensive UX
+testing gets done and not just with two
+people who you think are the average
+user you need to get a nice variety of
+users in there because of these massive
+percentages of people with various
+disabilities right so no tools per se to
+help just that you need to keep things
+in order keep it clear and simple keep
+it easy to use listen to your users when
+they say this is not easy to use
+something that's not usually categorized
+as a disability but it is an interesting
+thing that researchers have found as
+part of the human spectrum of being and
+living and that is the thing called
+synesthesia so there are these number of
+synesthetes out there with these various
+ways that they experience the world that
+is different from what you would use or
+call in quotes normal one of them is the
+grapheme-color synesthesia which is the
+picture that colored picture and when
+whenever somebody talks about numbers if
+they said picture 1 to 100 that is what
+would show up in their head the one also
+to the right is the spatial signal
+sequence synesthesia and I actually have
+that right so when I see numbers I see
+them in a certain knot with the cool
+colors though but I do see them in
+certain patterns or ladders and time
+dates and times I see in like circular
+patterns when that's how I experience
+time so people experience things
+differently other ones like when they
+hear sounds they experience a color or
+taste and often letters like I have the
+word synesthesia somebody might see
+every s is read every you know H is
+purple and it'll be consistent right so
+every time they will so you might be
+reading black on white text somebody
+else might see a pretty big rainbow
+going through a page of a book so
+there's all these different ways that
+people just simply experience the world
+not a disability is just a different way
+to experience which is also how I see
+autism just a different way to
+experience the world right so a lot of
+these things also when people sometimes
+when they touch things different
+textures they will feel a taste or feel
+a taste they will taste something when
+they feel a texture or you know when
+they hear certain sounds they might have
+a taste like so all kind of these weird
+and different kind of crossed
+perceptions so those are those four main
+categories and some things you can do as
+a programmer as far as some general
+tools to help us out
+web aim is where you want to go this is
+a good one-stop place to go so if you go
+to web aim they have this cool thing
+called a wave scanner so you could go
+plunk in a URL you can even download
+this as a toolkit and it will just go
+through and tell you all the things that
+are you know that you can
+change to make it more accessible looks
+for alt tags and all kind of interesting
+and cool stuff all right so you can just
+pop in a website and see what it says so
+I could even like pop in my own blog
+here and then give it a second and it'll
+parse it and then come up with some
+ideas so here it'll actually give you
+errors alerts tells you where you're
+using Aria and not and some things that
+you can do better
+all rights that you have in here so
+that's a very handy tool there's also
+the web content accessibility guidelines
+they have a checklist so when you go to
+publish you can go through the checklist
+see what's out there
+also depending on where you live and
+what sector you're in if you're in
+government most certainly you have to do
+this so it just depends
+there's section 508 for the US and
+Europe has some rules about this too and
+also the wk2 checklist so there's two of
+them is that you can use in there the
+bottom one is a little bit newer but
+these are checklists that just allow you
+to go through and make sure that you
+have everything that you shoe it and get
+all your ducks in a row you can actually
+say Oh make sure I have alternative text
+make sure everything is clear I have my
+alt attributes and here's inputs have
+labels deform buttons have a descriptive
+value so all these cool little things so
+you don't forget right so that's very
+very handy as well so I like that quite
+a bit
+so web aim in general is just a really
+good place to go there's also the ally
+project so if you just look for a 11y
+project the first thing that pops up and
+they have all kind of cool samples and
+things like that and places you could go
+to to do a little bit more coding and
+much more than we could possibly talk
+about here and a half an hour which I'm
+probably
+okay so some final thoughts on this also
+right and this is right from web content
+accessibility for the love of God and
+all that is holy get over yourself
+stop dragging your heels and make the
+hit you create accessible bleep and
+seriously actually freaking care about
+it as well
+yeah it's gonna get played okay so
+really this is what WK finally got fed
+up with all your BS developers because
+you don't do any of this for any people
+just let this you know to the last thing
+if they even get around to it but a lot
+of people simply can't even use your
+software at all so like I said if you
+don't care about the right thing to do
+or that it might even affect you if you
+think it won't how about the money go
+after the money alright and W CAG wants
+you to do it as well so it's right up
+there on their on their check or on
+their wish list and their actual traffic
+specs which i think is kind of hilarious
+but sad that it needed to be said right
+in here I gave you just a few simple
+things you can do that will really
+enhance accessibility in your projects
+and there's of course a lot more you can
+do if you go to webaim you'll find that
+out I think I'm pretty much done there
+wait
+we do have a couple questions yep let's
+go it's just a couple here one here
+actually is bringing the chat window
+they are question the Google live
+transcribe app is awesome are there any
+other available to be used in Windows or
+the browser extension the Google live
+transcript app transcribed
+o transcribe app I'm not sure if there's
+a comparable piece of software out there
+for that particular okay another one I
+got in a whisper was was a bear I'm
+gonna ask you to verify a link I guess
+for they were asking about an
+accessibility for Windows apps okay
+because you talked a lot about web apps
+off yeah all about web apps and I was
+wondering if you know was there a more
+up-to-date piece of software the I mean
+piece of dock
+patient than the one here that looks
+fairly old to me to helix a lot of these
+design concepts are sort of they sort of
+like live longer than the operators
+that's what I was gonna say yes it's a
+design concept yep so I was actually
+gonna when you started talking about
+windows point it to the actual windows
+[Laughter]
+just making sure I didn't mess this all
+up I guess II know number three so yeah
+so sounds like that was anyway yeah like
+give them everything that they need
+because a lot of that does have to do
+with design and look and whatnot sorry
+that should help
+awesome all right that's about it so I
+want before we wrap it up first of all I
+say thank you very much for me wrap this
+whole show up I gave what I say thank
+you so much to all of the people who
+have stuck through the whole show all
+the way the end even a half an hour late
+okay we actually have a couple awesome
+people like literally the average like
+duration of time watch I have a couple
+stats here of the whole entire show two
+hundred and sixty five minutes and
+TriNet a Trinidad and Tobago like they
+all like all three people watch the show
+like days oh and I wanted to thank you
+the second Cabo Verde and the third Isle
+of Man fourth Kenya at a hundred and
+twenty two minutes straight watch so
+those were long you know one full
+session to be fair though Isle of Man
+yes it's probably one mile yeah
+I don't know literally a just a man
+that's it yeah just next to England
+everybody else is on the main England
+I'm hoping I'm so anyways great show
+everybody and resue / appreciated ha BR
+get into the shot here you've been the
+man man run in this hole twitch thing to
+you and Jeff yes to twitchcon right yeah
+Jeff dumped up yeah you know he totally
+dumped us for twitchcon but that's cool
+because we need him to create some more
+mods for our awesome twitch stream for
+you right so huge thanks to everybody
+who tuned in on all three days thank you
+so much for making this fun this is year
+number six for does right so yeah so
+this is your number nine for the virtual
+ones so next year we got our big number
+ten come over here mister big party next
+year yes yes starting the year nine
+years so and thank you for actually
+building a product this year we had a
+launch event so thank you so much for
+coming you made it successful that's the
+best one yet
+Thanks thank so much so yeah I gotta
+push the camera
+[Laughter]
+[Music]

@@ -1,0 +1,668 @@
+foreign
+demo of how we can do Bitcoin
+predictions using machine learning
+before we start I hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues let us know in the chat section
+so that we can resolve them I'm
+repeating again before we start I hope
+your skin is clearly visible and the
+audio is fine
+let us know in the chat section so that
+we can resolve them let's wait for some
+more minutes to let other people join
+until then let me tell you guys that we
+have regular updates on multiple
+Technologies if you are a techie and a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+I think we can get started but we will
+write the command to open Jupiter
+notebook so here I will write Jupiter
+notebook
+press enter
+open
+take in time
+Jupiter notebook is open so here I will
+go to python3
+just here I will write Bitcoin
+so let's import some like needed
+libraries for this project
+but contradiction project
+so here I will write import
+numpy
+then I will write import
+pandas
+as
+I will set the style
+as white grid
+okay
+thirdly
+dot Pi plot
+as PLT
+and I will write pnt dot Style
+used
+basically one of the style in it
+before some major from Keras
+sequence
+go in detail so stay
+on
+early stopping
+and from get us
+yes
+support
+which is dense lstm
+or SK learn
+Dot
+okay
+press enter let's see
+is not found
+found in the library style libraries and
+input is not valid or URL password
+if
+it will work
+okay still loading
+let's create
+callbacks import or disturbing as
+should be capital
+so
+the library is used for working with
+arrays it also has a function for
+working in the domain or linear algebra
+and matrices it is an open source
+project and you can use it freely
+by stand for numerical python
+and the second one is pandas
+so pandas is a software Library written
+for the Python programming language for
+data manipulation and Analysis in
+particular it offers data structure and
+operation for manipulating numerical
+tables and The Time series
+seabon an open source python liability
+based on method is called C1
+it is utilized for data exploration and
+data visualization with data frames and
+the pandas Library c bond function with
+ease
+then this matplotlib
+Python and its numerical extension numpy
+but broadly Visa like cross platform
+data visualization and graphical
+charting package as a result it
+represents a strong open source
+substitute for Matlab the API is for
+Matlab allow programmers to incorporate
+graphs into like GI applications and all
+okay then this lstm
+uh lstm stands for long short term
+memory layer which created in 1997. this
+layer users
+available constant and runtime Hardware
+to gain the most optimized performance
+where we can choose the various
+implementation that is pure tensorflow
+or you can use solute DJI okay
+tense a dense is a layer that is deeply
+connected with the preceding layer which
+means the neurons of the layer are
+connected to every neuron of its spread
+setting here
+this layer is most commonly used
+and in the artificial Network neural
+networks okay
+you can see
+they are list of it
+okay
+only stopping is a form of
+regularization
+used to avoid overfitting when training
+a learning with the an iterative method
+such as gradient descent
+so search method update the Learners so
+as to make it better fit the training
+data with each iteration
+okay
+so
+this min max scalar min max scalar
+transforms feature by scaling each
+feature to a given range this estimator
+scales and translate each feature
+individually such that it is in the
+given range on the training data okay
+that is like between 0 to 1.
+let's move forward and update the
+reading data let's read the data so for
+that I will write
+like data
+LM VTC
+you can download this file from the
+description box below
+okay
+and you can also comment for the full
+code
+and that is on the comment section
+I will provide you the all the code
+DF
+first one
+here PD is for like pandas library and
+read is for reading the data CSV is the
+file type
+okay so let's see the
+data first so for that I will write TF
+dotted
+EF dot head is used to show the top five
+rows of the particular data set
+okay but you want to see the last five
+rows you can use
+tail
+and set up
+okay these are the five last five tools
+these are the last five rows okay got it
+foreign
+[Music]
+function
+for the data set so I will write here DF
+Dot
+all the information about the data set
+okay here you can see the we have column
+name and name currency date closing
+price
+24 hour open and then high price low
+price
+okay then here you can see the number of
+value 2787 in particular column
+and here you can see no null count here
+and data type you can see here a name is
+in integer and this currency and data
+object
+yeah object one and the
+these four are the float one okay so
+here
+gives all the information about
+desert
+so moving forward
+Dot describe
+so what described do describe show you
+all the statical like value from the
+data set for the particular column okay
+that count number is like 2787 the mean
+of unnamed
+column is 1393 and that's standard
+deviation then minimum value is 0 then
+what is the 25 percent of particular
+column so it is like the maximum value
+so this is for the all the columns
+one two three four five okay
+moving forward let's set date column as
+an index
+for that I have to write a date TF
+time
+foreign
+X
+8.
+so what I would like to
+control y because 2 because you have to
+like you want to change in the
+particular data okay
+let's enter
+but let's see the opening and closing
+prices of Bitcoin using a graph okay
+that I have to write PLT Dot
+yeah okay
+configure size
+equals to
+10 point sorry okay
+then DF
+report
+and same for this one also
+okay so I have to add one
+so here I will write
+itself let's set the Y level TLT dot y
+level
+dot title
+in
+foreign
+open price
+can be done type
+let's go in there
+working or not I don't know
+guys
+as you can see the opening and closing
+price
+okay
+or the particular bitcoin price of the
+Bitcoin
+let's move forward
+and let's see the high and the low price
+of the Bitcoin in the 24 hour
+okay
+so that I will write PLT dot because
+the size
+in comma 6.
+yeah
+so like
+David so let me copy from here
+because the thing will be almost same
+I have to change here
+guys and
+yeah
+I can write
+I and
+here I have to write High Press low
+price
+okay so let me see so as you can see the
+high price and the low price of the
+Bitcoin in 24 hour okay the blue one
+represents the high price and the
+Redmond represent the low price
+okay
+so moving forward let we will do the
+data program
+data preprocessing okay that's true data
+people pre-processing and let's choose
+the prediction column
+first so for that I will write an
+underscore calls equals to
+one
+then data set
+so DF
+please
+data set
+plus two
+Dot
+data frame
+data equation
+data set
+Dot
+data dot shape
+so
+after this we will do the normalizing of
+the data so for that import from
+SQL
+already discussed
+what is min max scalar okay so moving
+ahead we'll write his scalar
+to min
+Max
+underscore range
+0 comma
+okay underscore data
+dot fit transform
+P dot ND Dot add-in this is from the
+numpy
+then data
+okay let's press enter
+use
+so
+with the data so what we will do we will
+split the like 75 percent data to the
+training part and the 25 percent to the
+testing part okay
+are drained
+and
+okay
+so after that
+this is for the training data okay 75
+percent size for the testing
+again
+Ms training size
+length of the data is like 100 so 100
+minus 75 percent is 25 so test size is
+25 percent
+inside
+okay then again we'll get the size
+as you can see two zero nine zero is the
+trading data for the training size you
+can say and let us size is 697.
+going ahead let's see let's train
+data equals to scale
+and underscore size
+10 underscore
+as you can see there is like two and
+zero nine zeros rows and one column
+if
+so moving forward let's create training
+set
+okay for like training set with 60 time
+steps so for that X underscore train
+ing
+equal to 60.
+false
+equals to one
+okay then I will write for I in range
+meaning
+data
+and then X
+then
+underscore data
+a minus time
+and calls
+like seeing like quite drained
+no
+cleaning data
+I comma
+I comma
+if I
+is less than equals to
+times
+paint
+underscore train
+underscore trend
+okay
+and why
+okay
+then press enter
+okay training
+as you can see the extreme the array
+okay
+so now we will convert to numpy array
+testing to numpy array so X underscore
+train
+ing
+comma
+NP dot array
+so after converting into numpy array
+let's reshape the input to like n
+samples time steps and the end feature
+for that X underscore train
+equals to MP Dot
+V shape
+underscore train
+and size should be zero
+okay
+yeah
+so now let's see the size
+X
+n dot shape
+as you can see the X strain is two zero
+three zero sixty and column is one
+then in white rain there is no
+with column so okay there is no like
+extension
+okay got it so moving forward let's
+create the model lstm model
+okay
+for that uh first we will get the model
+structure so for that I will write model
+equals to
+potential
+okay
+that's DM
+and I will write 50
+comma return
+okay then input
+to X underscore train
+dot shape
+on
+we have lstm
+again 64.
+1
+thank you
+friends
+what they do
+yes
+and here I provide
+model
+if I
+either
+receive
+d
+okay
+so
+as you know LSM is lstm is the stand for
+long short term memory layer
+okay this layer uses like available
+constraint and runtime Hardware to gain
+the most optimized performance where we
+can choose a various implementation okay
+and this tense this dance is a layer
+that is deeply connected with the
+preceding layer important okay
+which means the neurons of the layers
+are connected to every neuron of its
+like preceding layer this layer is most
+commonly used layer in artificial neural
+networks okay so these are the number of
+layers as you can see 32 16 and 64 and
+50.
+okay
+so here I will write let's see the
+summary
+of the model
+okay these are the parameter then output
+shape
+yeah
+so
+moving
+okay like fitting the lstm to the
+training side
+okay we have created this model lstm now
+we are fitting into the training set
+okay
+so for that I will write history
+model
+dot bit
+it's underscore chain
+because
+and
+from box should be 100 so it will take
+time
+and batch size
+question 32. let's say is equal to 32.
+one train and then Epoch equals 200
+so we can do box 10 or 50
+no
+this is another model dot with God and
+expected key a box
+so it will run till uh 100 so it will
+take time I will get back to you then
+okay it is done as you can see here like
+the epoxy is done
+so moving forward
+what we will do
+will
+[Music]
+it
+okay
+we will do model evaluation okay so for
+this we will create this graph like how
+many losses how many books
+okay so what I will do I will just
+paste it here okay
+so yes so this is you can see the losses
+okay this is mean squared error
+so moving forward let's do the
+prediction now finally
+so for that
+first I will
+make it
+yeah
+first we will like creating a testing
+this set with these 16 time steps and
+one output like we did for the training
+one for that I will write a Time
+that's true
+okay
+and data
+foreign
+test
+why underscore test
+foreign
+range
+test data
+that's called test dot again we did for
+the training one
+before then test data
+oops
+I
+dance
+Poland
+and underscore
+okay then y underscore test dot append
+data
+Poland and underscore calls okay
+so now what we will do we will
+underscore test
+comma y underscore test equal
+test
+go
+test okay
+NP Dot
+X underscore test
+Code test
+uh shape
+and zero
+okay
+one
+comma and underscore false
+input
+okay there is another
+test data
+append quietest
+bigger plane size sorry my bad
+oh let's do X underscore test
+excellent
+okay comma y
+underscore test dot shape
+okay so these are the testing
+okay for the test is 25 percent
+so we'll now get predictions so
+predictions predictions
+dot predict
+now inverse the prediction scaling so
+for that I will write predictions
+to scalars
+Dot
+97 column one okay now we will do this
+root mean square error so inverse like y
+test scaling
+so for that I would like to buy
+underscore test
+was to
+killer
+Dot
+test
+okay
+would mean
+square error so it was so NP Dot
+into two
+don't
+um
+one two seven zero point four five
+okay
+dot sqrtmp dot me while test bias
+predictions
+okay
+here I will write
+DD Dot data frame
+you can hear that predictions
+come on
+I can write here like actuals
+dot y underscore test
+don't flatten
+72 I mean
+that's
+these are the like actuals values
+okay
+so now we will plot a graph of like
+predictions kind of prediction versus
+actuals you can say
+I will write here PLT Dot figure
+so 16 comma six
+PLT Dot Plot
+X okay
+Community Dot Plot
+dot dot 11
+Plus
+enough
+is another predictions okay what's the
+spelling here
+copy it from here itself
+you can see the blue one are the
+predictions and the actuals are the
+those one
+now let's see the
+and see the visualization of the
+predictions with the data
+so for that this is the final graph you
+can say crane
+first
+Dot I log
+GES
+okay
+0.1
+then test was
+a lock
+zero
+first
+then
+question
+is
+should be
+comma
+six
+PLT dot Titan
+Bitcoin
+applications
+font size was frequently
+so let's set the X level and the Y level
+dot X label
+create comma
+Bond side
+again
+um
+thanks plus two
+thirteen
+and PRP
+don't plot
+okay
+just
+hold on line width
+and copy
+copy
+I did for the test
+right here
+Dot
+test
+let me copy it from here
+oh comma line weight
+PLT dot Legend
+comma
+foreign
+let me debug the error as you can see
+the training test and prediction values
+and the yellow one is prediction this
+this is the final output of our this
+project
+this is the final output as you can see
+and if you want this full code you can
+comment for the same and if you want to
+if you want to download the data set so
+you can download from the description
+box below I hope you guys understand how
+we can predict Bitcoin using machine
+learning or deep learning you can say so
+you can ask in the comment section below
+if you have any queries our team will
+respond to you as soon as possible don't
+forget to subscribe to our YouTube
+channel
+and you can check the similar courses
+links in the description box below
+regarding the machine learning and all
+if you want this full code just comment
+for the same and thank you so much for
+being here if you enjoyed this video
+please subscribe to our YouTube channel
+and press that Bell icon okay till then
+thank you and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

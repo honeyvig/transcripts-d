@@ -1,0 +1,638 @@
+hey what's up traders in this video I
+want to revisit a system I made a few
+years ago during the last crypto bll
+Market uh which is a Bitcoin momentum
+system Bitcoin has been going ballistic
+this month and I think it's a good time
+to revisit this system and sort of tweak
+it and update it for the current
+[Music]
+conditions so this system um is a long
+early Bitcoin strategy I'm on the daily
+chart here we have 1180 in trades which
+isn't a very big sample size but we're
+dealing with a relatively new asset that
+does not have a lot of historical price
+action to work with so it's the best we
+can do now it does have a 15,000 return
+over these 118 trades um which isn't
+hard to achieve in crypto as I'm sure
+crypto veterans are aware however the
+important and interesting thing about
+the system is it's Max draw down of only
+34% now will that continue into the
+future probably not but this system is a
+lot more defensive than typical huddle
+Buy and Hold um approaches to crypto so
+I thought you guys might find the script
+interesting a good template to play
+around with and build build off of if uh
+this is something you're interested in
+just for context um if we come down to
+the worst draw Downs for Bitcoin uh this
+is what we're dealing with we're dealing
+with 93% but this is a long time ago
+more recently uh 76% and 83% in the past
+two bull runs um that's your draw down
+if you just bought and held until today
+whereas uh this system is a lot more
+palatable um at least according to my
+risk tolerance anyway with that said
+let's get into the source code of
+today's script all right so first of all
+what is the actual system concept well
+we're trying to capture as much Bitcoin
+upside volatility as possible while
+sidest stepping downside volatility
+isn't that every Trader's dream
+and uh I think the script does a pretty
+good job of that but obviously this is a
+uh pretty high goal and we're not going
+to achieve the same returns as if we
+bought and held the whole way up but
+we're also going to sidestep the issue
+of losing half your wealth when uh when
+the inevitable crash comes so what are
+our entry rules they're actually very
+simple um very simple so entry rule
+number one is that Bitcoin must be
+trading above its higher time frame
+exponential moving average or EMA in
+this case the default settings specify a
+20 we EMA so that's this stepped line
+you see here this the reason this is uh
+stepped is because it is the weekly EMA
+and what that means is it updates at the
+end of each week so the value is always
+operating on the previous week's EMA
+since the current week's EMA is moving
+and updating in real time we don't want
+to use that as our reference we want to
+use the previous uh week's EMA otherwise
+known as uh we don't want repainting we
+don't want this EMA to repaint so we're
+using a higher time frame EMA that does
+not repaint so that's the first
+condition Bitcoin must be above the 20
+we EMA the second condition is where the
+um secret source is in this uh system
+and that is that Bitcoin must not be in
+what I call caution mode and in the
+context of this system caution is
+defined as true or in other words
+Bitcoin is in caution mode according to
+the system if bitcoin's recent swing
+high so let's zoom in on a bar here
+let's zoom in on uh recent price action
+so Bitcoin is considered to be in
+caution mode according to the system if
+the most recent swing High which is this
+price here minus the most recent swing
+low is greater than
+1.5 ATR forgive my childish drawing I'm
+not good at drawing with a mouse so this
+means volatility is picking up so
+caution mode turns on our little
+indicator down here turns yellow or
+orange orange and what happens now is
+our trailing stop ratchets up to be much
+tighter because volatility is picking up
+we we uh want to protect our open
+profits and that's the purpose of this
+color coding down here when it's in
+green mode the um stop- loss stays where
+it is it's still pretty tight but once
+we go into caution mode we get very
+tight with our stop loss and if we get a
+close below this uh stop loss we exit so
+it's not a order you place in the market
+it's not an order I place in the market
+this isn't trading in fire
+let me get that out of the way full
+disclaimer do your own research uh make
+your own trading decisions this is just
+for educational purposes but this is the
+tool that I use in my own trading and it
+has served me very well so far this year
+as you can see this system um rode most
+of this recent up move um while Sid
+stepping a lot of the uh down moves um
+and I'm expecting it to activate at any
+day now again but anyway that's beyond
+the scope of today's lesson let's finish
+our definition for caution mode which is
+or the closes below the current days 20
+EMA so I'm not currently drawing current
+days EMA on here let's add that code
+down here there we go now we have two
+EMAs so the smooth EMA is the current
+trading time frames EMA so the daily
+chart and the Ste one is the weekly if
+price has closed below this smooth fast
+20 EMA on the trading time frame or we
+have volatility picking up so candles
+with very large w to the downside then
+we go into caution mode we ratchet up
+our stop loss very tight um and when
+we're in bullish mode we leave our stop
+loss a little bit looser so that is
+caution mode and as I mentioned the exit
+reason for this system is a trailing
+stop the trailing stop is trailed 1 ATR
+from the recent swing high so 100% of
+the current ATR value from the swing
+high or 20% of the current ATR value if
+we are in caution mode and if I zoom out
+my chart we can have a look at how this
+manifests on price action so you can see
+we Sid stepped this entire bearish phase
+here and most of this one here we are
+going to get fake outs we are going to
+get situations where um we enter the
+market we get a close Above This higher
+time frame EMA and all our conditions
+are met for a bullish Market but then we
+roll over and uh that's going to happen
+we can't really avoid that there's no
+way to see of the future and know
+whether a breakout is real or not in
+this particular particular case it was
+actually profitable we still we bought
+here and sold here and then we took a
+tiny loss here um so this fake out
+actually turned out to be profitable but
+that's rarely going to be the case um
+same with this one here and now let's
+look back to the recent the previous
+bull market you can see our trailing
+stop is locking in a lot of these phases
+we get a little bit of whipsaw again we
+can't avoid that what we're looking for
+is this here we're looking for these
+moves yes you're going to give back a
+bit of open profit that's the nature of
+a trailing stop system but we're also
+not in confusion of when to sell that's
+a hard thing with crypto when is the
+bull market over we just never know um
+so this system does a good job I think
+for me personally in my trading tastes
+and style it does a good job of um
+protecting open profits being quick to
+re-enter the market after selling and
+avoiding bare markets that's the main
+thing I don't want to be holding during
+these 70% Corrections if you can call
+them a correction they're more like a um
+crash in my opinion uh but that's crypto
+that's the wild ride we all sign up for
+when we uh get involved in this market
+so anyway that's the system concept very
+very simple it's actually based and
+inspired on a system by Nick Raj who is
+an Australian um system Trader
+systematic Trader he has a similar
+approach to trading stocks using
+momentum he trades a portfolio of stocks
+this is a single market system we'll
+have a look later how it performs on
+ethereum and other markets but this is
+designed for Bitcoin primarily um Nick R
+is system has a very similar ratchet
+stop-loss um technique where if the
+market turns bearish according to his
+regime filter so for example if you're
+trading the US market and spy is trading
+below its 200 day moving average his
+stop losses ratchet up on all his open
+positions to protect any open profit and
+when spy is trading above its 200 moving
+average he's a lot looser with his stop
+loss to let his open profitable
+positions ride very similar concept here
+so anyway with all that out of the way
+let's hope open up the source code and
+I'll break down each section of code
+line by line the entire source code to
+this script will be on my website the
+link will be in the pin comment below
+you're very welcome to take it adapt it
+play with it do whatever you want with
+it um you don't need to credit me just
+take the source code do what you want
+every script on this channel uh well
+most scripts on this channel are
+completely open source no strings
+attached do what you want all right
+let's have a look first of all our
+strategy parameters we have our initial
+Capital set to 10 $1,000 or us tether in
+this case we're trading 100% of our
+account balance on each trade so we're
+investing the full $10,000 from the
+first trade and every time we um enter a
+new trade we're compounding our profits
+and our commission is set to um 1% of
+our trade value so you'll need to adjust
+this based on the exchange you use um
+here in Australia the exch uh the
+commission value for most exchanges is a
+bit higher than that fortunately um
+there is also the issue of spread we
+can't do much about that in pinescript
+you'll just have to manually compensate
+and um expect and plan for that being a
+factor in the system here we have our
+user input so rather than break down the
+code let me open the UI here and we'll
+just break down each section all these
+settings are the default settings that I
+use but I included them all here so that
+you can play around with them see if any
+particular settings perform better or
+have better risk adjusted returns to
+your preference
+um and then finally we have some time
+based filters date filters so you can
+see how this performed within certain
+date ranges for example I started
+trading in
+2017 not not
+2,107 2017 let's see how the system
+performed then okay 5,000% return 34%
+Max draw down had I been trading this
+system from day one I wish I was uh I
+got lucky with crypto I did I did make
+quite a lot of money back in 2017 uh but
+that was pure luck that was not due to
+uh any systems like this I had no idea
+what I was doing back then and I'm very
+grateful that now I do so that I can
+protect my my net worth anyway let's
+reset this back to I'll just set it to
+um
+2,000 for now cuz Bitcoin did not exist
+back then so before we get started with
+the code we do have a couple of custom
+functions so the first custom function
+is a non- repainting security function
+so this gets whatever we pass in so we
+pass in a market we pass in a time frame
+and we pass in a code expression in this
+case it's only the higher time frame
+EMA from the weekly time frame without
+repainting um if you're not sure what
+repainting is um just search on my
+YouTube channel I've got videos all over
+the place about that it's a common issue
+in pinescript but it's pretty easy to
+fix you don't need to understand what
+this code does uh but if you add this
+code to your scripts your security
+function it will eliminate repainting
+from your systems if that is desired and
+this function just makes this whole
+expression a lot shorter so that when I
+call it later in the script I don't have
+code running off the side of my screen
+every time I call a security function
+call next we have the date filter so
+this is the start date and time and the
+end date and time we check this down on
+our entry criteria if we are not within
+this uh date range then we do not take
+any trades all right next we we need to
+get our indicator values so we need an
+ATR value an EMA value for the current
+time frame and the higher time frame EMA
+value so ta. gets us our ATR ta. EMA
+gets our EMA we pass in our user inputs
+and for the higher time frame EMA the
+request security function takes an
+expression and in this case our
+expression is this line of code here so
+even though this line of code is getting
+the EMA for the current time frame this
+line of code is
+retrieving this value from the higher
+time frame so we're getting our higher
+time frame EMA non repainting with this
+line so now that we have our indicator
+values the next thing to do is get our
+market price this is just going to be
+our closing price our current price um I
+was playing around with using different
+time frames with this setting that's why
+market price is its own variable instead
+of just calling the close here um in
+fact I can replace that close with
+market price so if you guys want to play
+around with different time frames you
+can replace this line of code with
+something like um 4our we'll get the uh
+4our time frame and if we pass in the
+close now we're getting the 4our close
+for our market price instead of the
+current close of whatever time frame we
+have loaded on our chart um this code
+here I can get rid of that was just some
+testing code so now that we have our
+indicator values and our market price
+the next thing to do is is detect
+whether or
+not um let me move this into its own
+section so now we need to check for
+bullish SL bullishness SL bearish
+volatility caution and get rid of this
+line here so is bullish is our Buy
+Signal slh hold signal so if is bullish
+is true and we are not involved in a
+trade then on the next bars open we will
+buy some Bitcoin coin and this is
+bullish Boolean value is true if the
+current market price is greater than our
+higher time frame EMA value so is price
+trading above this line here is caution
+is where we check if the market is
+picking up in bearish volatility and if
+so we either stand aside if we're not
+involved in a trade we do not buy and if
+is bullish is not true we do not buy but
+if we are involved in a trade and is
+caution is true then as I mentioned we
+ratchet up our stop loss to be very
+tight and if we get a close below this
+red stop loss Line If This Bar had been
+bearish and closed down here we would
+have exited our trade on the next bars
+open or exited our position so is
+caution is true only if we are bullish
+so we need to be bullish first of all we
+need to be trading Above This higher
+time frame EMA if we're not then we're
+simply just red we're simply standing
+aside this is our um Trend filter or
+momentum filter so so if we are bullish
+we're trading above that higher time
+frame EMA and the most recent swing High
+over the past seven bars so looking back
+seven bars if that swing High minus its
+current low is if this value the sum of
+Pips points whatever you want to call it
+if if this amount of uh distance is
+greater than the ATR time 1.5 or our
+current time frame is trading below its
+shortterm moving average this moving
+average here if either of these
+conditions are met then we go into
+caution mode we set our color down here
+this is our color for our little uh
+ribbon down here we set it to uh orange
+for caution so red for stand aside the
+market is bearish green for all systems
+go stay invested and keep the stop loss
+loose and orange for caution keep our
+stop loss tight or don't buy yet now I'm
+going to leave these values hard coded
+in the script for Simplicity I don't
+want to clog up the um settings menu
+with too many settings but if you wanted
+to you could replace these with user
+inputs adjust them see how they affect
+the uh system performance now this next
+block of code handles our entry criteria
+so first we need to Define our variable
+for a trailing stop which is this red
+line here that's our trailing stop that
+is this value here so if the market is
+bullish and we do not have an open
+position
+so we're not pyramiding here that's
+something you could try in your own time
+if you wanted to see how pyramiding
+affects this system um and we are within
+our date filter period and the market is
+not in caution mode so our ribbon needs
+to be green if our ribbon is green and
+we are not in a trade we buy on the next
+bars open to do that we use the
+strategy. entry function and we also
+reset our trailing stop to na now that
+we are involved in a trade the next
+block of code updates our Trail tring
+stop loss so first we need to calculate
+our temporary trailing stop now this
+line looks a bit complicated but I'll
+break it down first we're getting the
+swing high for our Trail stop look back
+so that is seven Bars by default if I
+open up the settings that's this setting
+here so we look back seven bars based on
+our trailing source which is the Low by
+default so we look for the highest low
+over the past seven bars and we subtract
+this value from that low to get our stop
+loss now this formula here this uh
+Turner operator is checking so if the
+previous bar is in caution mode so
+volatility has picked up on the previous
+bar then we multiply the ATR value by
+our trailing stop multiplier which is 20
+whoops uh which is 20% by default so
+very tight stop loss if we are in
+caution mode now if we are not in
+caution mode that's this remainder of
+the tary operator then we just use the
+current current ATR value as it is so
+this is a 5day ATR by default on this
+time frame we're using one ATR from the
+highest low when we are in bullish mode
+so the ribbon is green when we turn
+orange if we are involved in a trade we
+ratchet this stop loss up much tighter
+so you can see a couple of days ago on
+this big red bar here on current price
+action we um triggered our caution mode
+and the stop loss jumped up quite a bit
+and now our stop loss is around here and
+if we get a close below this green line
+um I'll be selling a big chunk of my
+Bitcoin with the intention to buy back
+in once this system turns back on so now
+that we have our temporary trailing stop
+value next we check if we are involved
+in a long trade so if position size is
+greater than zero that means we have a
+positive position size if it's negative
+that means we're short if we're long and
+our temporary trailing stop is greater
+than the current saved trailing stop
+stop so our temporary trailing stop is
+higher than our current one then that
+becomes our new trailing stop or if
+trailing stop is na so if this is the
+very first trade we are taking or this
+is a new trade that just opened Trail
+stop will be na if it's na then it will
+be Force updated to the first temporary
+trailing stop value we calculate once
+that is set then it will only update if
+this new trailing stop is greater than
+if we were trading to the short side you
+would flip all these operators but this
+is a long only system I haven't tested
+adding um short Bitcoin trading to this
+system because I don't I don't really
+short Bitcoin it's not something I I
+bother to do I go short in the Forex
+markets but I tend to avoid going short
+in the crypto markets just because um
+bare markets and crypto tend to be a bit
+choppy pretty volatile and tricky to
+trade I keep my trading simple and easy
+I trade so many markets stocks Forex
+crypto all my systems the simple the
+better if I was only trading crypto then
+yeah I would probably add short
+capabilities to the system but I don't
+care for that since I have so much going
+on in my trading I'm happy to just take
+the cream of these bull runs and then go
+back into my shell when this happens and
+I focus on my other markets anyway that
+is our update trailing stop code finally
+we check for our exit reason which is
+just a close below the trailing stop or
+a close below the higher time frame EMA
+usually this will be the same thing when
+we get a close below this higher time
+frame EMA we are typically going to be
+closing below our trailing stop
+hopefully we don't see a big candle like
+that uh we'll see what happens but it's
+unlikely I think um more than likely we
+tend to get decent Corrections in a
+single bar if we come and look over
+here this was a pretty nasty bar it
+would have been nice if this bar had
+closed just below the stop loss we would
+have been able to exit up here
+on the next bars open but that's the
+nature of trailing stops they're not
+perfect but they do the job they're
+better than nothing that's for sure
+speaking from experience from back in
+2017 where I held all the way down well
+mostly I did take some profit but not
+nearly enough hence why I went to the
+trouble to make systems like this anyway
+that's it for the script then we draw
+everything onto the chart using our plot
+functions and that gives us what you see
+here um you can see that this does a
+great job of Sid stepping these terrible
+crappy market conditions sure you don't
+buy the bottom you don't buy the bottom
+you don't get these massive returns from
+from buying the bottom um but when is
+the bottom I mean I've been trading
+crypto like I said since uh late 2017
+when Bitcoin was around 3K so that would
+have been somewhere around here and I
+thought this was the bottom but uh as
+you can
+see from there we went another 50 60%
+lower same story with the most recent
+crash in uh 2021 22 a lot of people
+thought this was the bottom a lot of
+people thought this was the bottom a lot
+of people thought this was the bottom
+but in fact this was the bottom which
+was still another 20% or so from this
+bottom 40% or so from this bottom and
+you get the idea trying to buy the
+bottom in crypto is a dangerous game it
+can work obviously I'm not saying not to
+do that I'm just saying um It's Tricky
+and for me I'm happy to wait I'm happy
+to wait until here byy here yeah sure I
+missed out on this buying opportunity
+down here um but I'm perfectly happy to
+buy Bitcoin at 20K and and ride these um
+bull bull runs and this most recent Bull
+Run has been very nice um so was this
+one here through here plenty of profit
+on the table the most important thing to
+me is protecting my Capital since I have
+um quite a significant amount of money
+invested in these markets now I I'm more
+interested in protecting that than
+trying to catch the absolute top and buy
+the absolute bottom it's not not my
+style I'm a trend follower by nature and
+Trend following by definition means um
+being late to the party and overstaying
+you're
+welcome it is what it is but it's very
+profitable and robust if you trade a lot
+of uh different markets now before we
+really wrap up this video let's have a
+quick look how this performed on
+ethereum it won't be quite as good so
+now we're looking at a 7,000 return with
+43% draw down that draw Down's still
+pretty nasty but again uh let's go to
+the ethereum draw down list um here it
+is 43% beats any of these any day if
+you're going to trade crypto you're
+taking on a lot of risk that's inherent
+in this market it's very speculative the
+way I handle that is I'm expecting a 40%
+draw down at some point in my open
+positions and so I size my positions
+accordingly if I'm not not comfortable
+losing 40% of a certain amount of money
+I don't put that amount of money in I
+buy less crypto um but yeah avoiding a
+93% draw down even 60% draw down 43% is
+a little bit better than that I'm H I'm
+more comfortable with 40% than 60% or
+80% like we had in 2021 so yeah this
+system is not perfect no system is but
+it's much better than Buy and Hold I
+will say that as you can see it's caught
+a nice chunk of this most recent move
+currently trading the system you would
+have bought on this by here most
+recently and you'd be up 60% in a matter
+of 29 days so 1 month to make 60% on
+your investment is not bad at all
+obviously that doesn't happen very often
+but if you're involved in crypto you
+need to capture these moves these are
+the moves you're in the market for if
+you miss any one of these moves then
+you're not going to make good risk
+adjusted returns um let's have a look at
+the some of these bare markets again no
+trades in here we did not hold anything
+in here small win here during this fake
+out small loss here during this fake out
+um small loss small loss and then when
+the market turned around we're starting
+to make bigger profits um so yeah the
+concept of this system I think is sound
+could probably use some work to make it
+a little more robust but for now I'm
+happy with it anyway with that said I
+hope you found this lesson interesting
+the source code is below do whatever you
+want with it good luck with your trading
+be careful out there uh these markets
+can be quite crazy none of this is
+trading advice do your own research um
+but this is the sort of thing I do in my
+own trading and it's worked for me I
+love you guys take care and I'll speak
+with you in the next video
+goodbye

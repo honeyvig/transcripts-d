@@ -1,0 +1,370 @@
+hey everyone welcome back to Simply
+learns YouTube channel today we are
+diving into an exciting topic that's
+been buzzing in the tech World
+alternatives to chat GPT while chat GPT
+has made waves as a conversational AI
+Powerhouse it does have its limitations
+for instance it sometimes struggles with
+highly specialized knowledge can be
+prone to generating inaccurate
+information and may lack the ability to
+seamlessly integrate with multimodal
+data but fear not there are some
+incredible AI tools out there that
+tackle these challenges headon and offer
+unique capabilities in this video we'll
+explore five standout alternatives to
+chat GPT that you should definitely know
+about these tools offer Advanced
+features and specialized functions that
+might just suit your needs better than
+Chad GB whether you are looking for
+enhanced research capabilities
+multimodel interaction or Cutting Edge
+music and video tools we have got you
+covered so stay tuned as we dive into
+each of these amazing Alternatives and
+explore how they stand out craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back before that if you're interested to
+make a career in machine learning and AI
+unlock your potential in Ai and machine
+learning with simply learns professional
+certificate CS in generative Ai and
+machine learning learning in
+collaboration with IIT can designed for
+aspiring air professionals this program
+offers hands-on experience with machine
+learning algorithms deep learning and
+NLP Guided by industry experts and I
+cfor faculty gain essential a skills
+through interactive live classes
+self-paced videos and practical projects
+network with the community of Learners
+and professionals and earn a prestigious
+certificate up in completion enroll now
+to take the first step towards a future
+in Ai and machine learning you can find
+the course Link in the description box
+and pin comments so let's get started so
+number one we have Gemini so first let's
+set up Gemini correctly so if you're
+using a personal Google account go to
+extensions and you can activate
+workspace and YouTube so go to settings
+go to
+extensions so right now we need only
+Google workspace and YouTube so I have
+already added those extensions and you
+can disable the other extensions which
+you don't need for time being so the
+thing is with extensions enabled you can
+use the edge shortcut for commands like
+Gmail Google Docs Google Drive and
+YouTube so initially it seems like a
+gimmick but it turns out to be a real
+time saer so let's see an
+example so in Gmail we can actually use
+Gemini to search for emails on specific
+topics like for instance let's just try
+out at
+gmail show the latest email from
+LinkedIn
+so as you can see Gemini filters out and
+finds exactly what you need and you can
+also open these emails in new tabs
+directly from Gemini itself which makes
+it super
+convenient so similarly you can fet your
+documents of files from Google Drive and
+Google Docs also in the same way so you
+can try it out so now Gemini also excels
+in more advanced tasks like for instance
+you can paste a chart into Gemini and
+ask for key insights or if you have a
+table in non-editable format like a PDF
+just screenshot it paste it into Gemini
+and request the data in a table format
+and also with YouTube Gemini can analyze
+videos so now let's see an example of
+that we can just analyze a
+video
+sorry
+at
+YouTube and uh
+we'll just analyze a video analyze this
+video and provide the video
+link so as you can see this will give
+you insights about what the video talks
+about and you can also summarize long
+videos to get the main points without
+watching the entire content so isn't
+that really cool actually so from here
+if you want you can access the original
+video also so Gemini user friendly
+features include default prompt
+suggestions and response modifications
+also so you can also interact via voice
+or listen to the responses by clicking
+on the microphone and speaker icons and
+also you can share your prompts and
+responses publicly or pin high quality
+outputs for easy reference so this is
+especially useful for keeping track of
+your best performing prompts now next we
+have notebook LM so notebook LM is an AI
+powered notebook designed to help you
+ask questions about your research and
+organize your ideas more effectively so
+it's powered by Google's latest AI model
+Gemini so to get started let's create a
+new notebook so you can title your
+Notebook based on your specific topic so
+for instance I'll create a notebook for
+all the machine learning research so
+I'll just title it as machine
+learning so notebook LM allows you to
+add sources from Google Drive upload PDF
+documents text files or even paste text
+directly so these sources are stored on
+the left side of the interface so here
+is your left side of the interface so
+you can add the sources and actually you
+know add the documents from these so you
+can actually add up to 20 different
+files each containing up to 200,000
+words so this means you have a total of
+4 million words in your sources so now
+let's add some documents from PDF and
+see how it works so we'll just add a
+PDF machine learning PDF
+so as you can see it actually provided
+you a summary of what contains in your
+document so now the real power of
+notebook LM comes from its AI
+capabilities so the search box that you
+can see in the center actually uses
+Gemini to pull information only from
+your sources which ensures accuracy so
+let's type a query like give me the key
+insights and let's see what happens give
+me the key
+insights and see how it extracts data
+from our sources Pro iding citations so
+you can track back the information so if
+you found useful information you can
+also pin the notes for easy access so
+notebook LM also suggest followup Proms
+and allows you to take notes so
+collaboration is seamless with notebook
+LM so you can share your notebooks with
+others similar to Google Drive sheets
+and dogs so simply add people notify
+them or copy the link for them to access
+your research so notebook Elms massive
+context window and precise data handling
+make it a fantastic tool for research
+and note taking now let's talk about
+project asra project asra is an
+Innovative prototype from Google Deep
+Mind pushing the boundaries of AI
+assistance building on the advanced
+Gemini models Astra AI agents that
+designed to seamlessly handle multimodel
+information understand context and
+engage in natural conversational
+exchanges the key features of project
+Astra are number one multimodel
+processing Astra is adept at processing
+and understanding diverse types of
+information including images diagrams
+and text allowing it to integrate and
+interpret data from multiple sources SES
+number two contextual reasoning these AI
+agents excel in contextual reasoning
+offering relevant and coherent responses
+based on the context of the conversation
+which enhances the overall interaction
+quality number three natural language
+interaction estri engages users in
+conversational style making interactions
+feel more intuitive and humanlike
+thereby improving user experience and
+number four rapid response the system is
+designed for quick information
+processing and response formul
+ensuring that interactions are smooth
+and efficient so Google Deep Mind has
+released several demonstrations to
+Showcase project as stress capabilities
+let's have a look at them number one is
+interpreting drawings from literature
+asra can identify famous books and
+complex Concepts based on simple
+sketches highlighting its ability to
+understand and reason about visual
+inputs um can you tell me what this
+famous thought experiment might be and
+explain it to me in one sentence
+that looks like the ship of Theus
+thought experiment it questions whether
+an object that has had all of its
+components replaced remains
+fundamentally the same
+object can you give me a creative poem
+about these
+objects a vibrant orb a mind laid bear
+time silent passage fills the air the
+fruit of thought the Sands that fall
+what Memories will it recall
+now comes memorizing sequences of
+objects asra and remember and recognize
+specific items from a list such as
+identifying a yellow loopy object
+demonstrating its Proficiency in
+recalling and processing visual
+information hey I'm going to show you
+some objects just do your best to
+remember
+them sounds fun I'm ready I'm pretty
+good at remembering things so go
+ahead okay then name every object I just
+showed you
+okay okay let's see there was a seashell
+a crab figurine a spiky gold ball a
+yellow glass spear a goldfish and
+finally a little potted
+plant good job so these examples
+underscore est's Advanced ability to
+understand and interpret both Visual and
+textual information providing accurate
+and insightful responses now next on the
+list is music AI sandbox so music AI
+sandbox is an Innovative Suite of tools
+developed by Google Deep Mind and
+YouTube designed to revolutionize how
+musicians create music this Cutting Edge
+platform empowers artists to harness the
+power of artificial intelligence to
+elevate their creative process and
+explore New Frontiers in music
+production so the key features of Music
+AI sandbox are number one infinite
+creative possibilities with music AI
+sandbox musicians have access to an
+expansive library of sounds and samples
+enabling them to to explode a v array of
+musical ideas and genres this infinite
+crate of resources opens up new avenues
+for creativity and experimentation then
+tailored assistance the AI tools within
+the sandbox act as a virtual
+collaborator helping artists achieve
+their desired sounds these tools
+understand each musician's Unique Style
+and preferences providing personalized
+assistance that enhances the creative
+proces then inspiration and Innovation
+music AI sandbox offers atmospheric and
+unconventional prompts that Inspire
+musicians to experiment with new
+approaches these creative prompts
+encourage artists to generate fresh
+innovative ideas pushing the boundaries
+of their music and efficient workflow by
+streamlining the process of turning
+musical ideas into reality the AI Tools
+in music AI sandbox allow artists to
+work more efficiently this enables them
+to focus on the artistic aspects of
+music production and move quickly from
+concept to Creation so to demonstrate
+the potential of Music AI sandbox Google
+Deep Mind and and YouTube have
+collaborated with Renown musicians such
+as white jean Justin Tran and Mark
+rebate these artists have released demos
+showcasing their unique Styles and
+approaches all created using the AI
+tools provided by music AI sandbox
+together with YouTube we've been
+building music AI sandbox a suite of
+professional music AI tools that can
+create new instrumental sections from
+scratch transfer Styles between tracks
+and more to help us design and test them
+we've been working closely with
+Incredible ible musicians songwriters
+and producers some of them made even
+entirely new songs in ways that would
+have not been possible without these
+tools and finally we have Google vi v is
+Google's most advanced generative video
+model capable of creating high quality
+108p clips that can exceed 60 seconds
+this is a big deal let's take a look at
+some demo Clips generated by wiu check
+this out the prompt given was many
+spotted jellyfish pulsating underwater
+the transparent bodies glowing in deep
+ocean isn't that mesmerizing and here we
+have a time lapse of a water lily
+opening against a dark background just
+look at the detail and realism VI is
+able to capture and lastly he has a lone
+cowboy riding his horse across an open
+plane at Sunset the soft light and warm
+colors are just stunning view really
+brings cinematic quality to life so view
+doesn't just create high resolution
+videos it understands natural language
+and visual semantics ensuring the
+footage aligns perfectly with your
+Creative Vision it's like having a
+virtual director by your side so one of
+the most impressive features of video is
+the unprecedented creative control it
+offers it comprehends cinematic terms
+and maintains coherence and realism in
+the generated footage this is a unique
+and Powerful tool for filmmakers and
+content creators so that's a wrap on our
+look at top chat GPT alternativ from The
+Cutting at Gemini and notebook LM to the
+Innovative Project testra Music AI
+sandbox and Google VI each tool offers
+unique features and push the boundaries
+of AI which one are you excited to try
+drop your thoughts in the comments hit
+that like button if you enjoyed the
+video and don't don't forget to
+subscribe for more Tech insights thanks
+for watching and I'll see you in the
+next video staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

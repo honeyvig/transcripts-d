@@ -1,0 +1,5889 @@
+in the heart of this fast-paced world
+where technology and Innovation shape
+our everyday lives there's one language
+that stands out as a true Game Changer a
+language that has revolutionized
+Industries empowered individuals and
+sparked the imaginations of millions
+that language is python
+welcome to python Basics a comprehensive
+guide to diving into the world of Python
+programming in this video we'll embark
+on an exciting journey together
+exploring the fundamentals of python and
+equipping you with the essential skills
+to begin your coding Adventure but
+before we dive into the Nifty Nifty of
+python let's take a moment to discover
+why this language has become a force to
+be reckoned with
+allow me to share some captivating facts
+and statistics that highlight the python
+significance and popularity
+python isn't just a programming language
+it's a phenomena that has swept across
+the globe with its rise in popularity
+python has became the driving force
+behind groundbreaking advancements in
+artificial intelligence
+data analysis
+web development and so much more
+according to various programming
+language indices python consistently
+ranks among the top programming
+languages worldwide it has secured its
+Port among the top three surpassing many
+traditional favorites the demand for
+python skills has skyrocated with
+numerous job postings requiring
+proficients in Python 4 roles ranging
+from software development to data
+science
+one of the key reasons behind Python's
+events locality is its versatility
+python offers a rich ecosystem of
+libraries and Frameworks that cata do
+tabverse needs from data manipulation
+with numpy and pandas to web development
+with Django and flask python provides an
+extensive toolkit to solve a wide range
+of challenges but Python's appeal goes
+beyond its technical merits it has
+captured the herds of developers
+worldwide due to its Simplicity and
+readability python was designed to be
+easy to understand and write making it
+an excellent choice for business its
+syntax emphasizes code readability
+allowing developers to express their
+ideas in a clear and concise manner
+Python's Community is another factor
+that sets us apart with the vibrant and
+supportive community of developers
+Educators and enthusiasts python Fosters
+collaboration knowledge sharing and
+growth you will find numerous online
+resources tutorials and forums your
+python Associates come together to to
+help one another and push the boundaries
+of what's possible now that we have
+uncovered the fascinating world of
+python it's time to embark on the next
+phase of our journey python basics in
+the following segment we'll explore the
+fundamental concepts syntax and
+practical examples that will form the
+Bedrock over python Knowledge from
+variables and data types to control flow
+and functions we will guide you through
+each step ensuring you grasp the core
+principles of Python Programming by the
+end of this video you will be equipped
+with essential skills to write a first
+Python program and confidently continue
+coding Journey so get ready to unlock
+the power of python the language that's
+shaping the future and opening those to
+Endless Possibilities our adventure
+begins with an introduction to python
+where we will dive into the history and
+features that make python such a
+powerful and popular language next we
+will guide you through the process of
+installing python on Windows ensuring
+you have a seamless setup to begin your
+coding Journey with python up and
+running on your system it's time to
+write your first Python program we'll
+walk you through the process unraveling
+the basic structure and syntax of a
+Python program as you tell River we will
+explore python data types understanding
+how python handles different types of
+data such as numbers strings lists and
+more variables play a crucial role in
+programming and in Python this service
+containers for storing and manipulating
+data in our next segment we will learn
+about variables in Python how to assign
+values and work with them effectively
+then we have python object types and
+type conversion that will be our next
+stop where we will discover the various
+built-in object types that is available
+in Python and how to convert between
+different types the next we have is
+strings that are an essential part of
+any programming language and python
+offers various tools to work with them
+in a segment on strings in Python we
+will explore string manipulation
+concatenation and more then we have
+operators that are the building blocks
+of any programming language and python
+provides a wide range of operators to
+perform various operations join us as we
+unravel the world of operators in Python
+next in a world of decision making if
+statements in Python come to the rescue
+we will guide you through the usage of
+conditional statements allowing your
+programs to make decisions based on
+certain conditions then we have looping
+that constructs an essential for
+reparative tasks and python offers the
+powerful photo will explore the entry
+cases of for Loops in Python
+understanding how to iterate over
+sequences and perform tasks efficiently
+finally we'll put a new file knowledge
+into practices with python projects for
+beginners and get ready to embark on
+exciting projects such as word count in
+a textbook the next would be tracing the
+movement for a robot and the next is
+checking the validity for a password by
+the end of this video you will have
+gained a solid foundation in Python
+Programming equipped with the necessary
+skills to tackle real world challenges
+and Unleash Your creativity get ready to
+unlock the power of python and embark on
+an incredible coding Journey with python
+Basics now if you are an inspiring
+machine learning engineer looking for
+online training and certification from
+prestigious universities and in
+collaboration with leading experts then
+search no more simplyness professional
+certification program in Ai and machine
+learning from Purdue University that is
+in collaboration with IBM should be a
+right choice for more details you can
+use the link provided in the description
+box below but before we begin let's
+check out what one of our Learners has
+to say about our courses hey I'm Sharia
+Jaleel
+Canon
+can an I.T sector for the past 20 years
+I recently took the professional
+certificate program in artificial
+intelligence and machine learning the
+course has changed the way I look at
+things and helped me back some amazing
+freelance projects I started my career
+in 1999 and over the years I have worked
+with many companies my last tenor was
+with IBM Canada my aim was to restart my
+career and learn something that would
+help accelerate my career
+I thought artificial intelligence can
+make me Future Ready the course in
+artificial intelligence and machine
+learning is provided by simply learn in
+association with Purdue University which
+is why I chose the course I did not have
+high expectations from online course but
+my experience was simply awesome the
+quality of interaction within the course
+was simply amazing course faculty was
+also very experienced and knowledgeable
+after the course my knowledge has grown
+manifold I have immensely benefited from
+Python and coding skills I am able to
+get some new freelance projects
+so I am planning to start
+an AI based startup with my friend where
+I feel that the learning from the course
+to be very helpful I am really delighted
+and happy in my free time I try to
+create meaningful content on YouTube and
+I talk about new technologies and what
+kind of courses professionals should be
+taking along with many other topic I
+definitely recommend this course to
+everyone after all when it comes to new
+skills to advance your career there
+should be no compromise you should
+always learn from the band
+in this introduction to python video we
+will learn what is python the features
+of python and where python is used
+we will also look at the popular python
+Frameworks and libraries and get an idea
+about the best python Ides
+then we will see the top companies using
+Python Programming and get some hands-on
+experience by learning the basics of
+python on a Jupiter notebook
+so let's get started with what is python
+python is a high level object oriented
+programming language developed by Guido
+van Rossum in 1989 and was first
+released in 1991.
+python is often called A batteries
+included language due to its
+comprehensive standard Library
+a fun fact about python is that the name
+python was actually taken from the
+popular BBC comedy show of that time
+Monty Python's Flying Circus now let's
+look at the top features of python
+first so python has a simple structure
+and a clearly defined syntax this allows
+the Learners to pick up the language
+quickly so it is easy to learn and use
+python can run on different operating
+systems such as Windows Linux and Mac
+making it a portable language it enables
+programmers to develop the software for
+several competing platforms by writing
+the program only once
+third python is freely available at the
+official website since it is open source
+this means that source code is also
+available to the public
+a python uses an object-oriented
+approach that encapsulates code within
+objects
+python provides a collection of
+libraries for various tasks such as
+machine learning web development and
+data analysis
+and finally
+in Python you don't need to assign the
+data type of the variable when you
+assign some value to the variable it
+automatically allocates the memory to
+the variable at runtime
+with that
+let's move on to the uses of Python
+programming
+so Python programming language is used
+to develop desktop applications and
+build web applications too
+it is properly used in the field of data
+science machine learning and artificial
+intelligence to analyze data build
+predictive models and make business
+decisions python is also widely used in
+game development now
+let's see some of the popular python
+Frameworks and libraries
+python can be used for web development
+using Frameworks like xango flask
+pyramid and cherry pie
+now you can build graphical user
+interfaces using libraries and
+Frameworks such as tkinter or just
+kinter
+you can also use Pi gtk by qt or pygs or
+python JavaScript
+now python is also used to perform
+machine learning tasks using libraries
+such as tensorflow by torch scikit-learn
+matplotlib and scipy
+you can also perform mathematical
+computations using numpy and pandas
+now let's look at the best IDs that you
+can use to write programs in Python and
+perform specific tasks
+so we have jupyter notebook which is
+part of the Anaconda distribution that
+is widely used these days even for our
+demo in this video we'll be using
+jupyter notebook I'll show you in a
+while then we have the visual code
+editor from Microsoft this is also one
+of the preferred
+Ides by Learners and companies
+then we also have the popular text
+editor called Sublime Text Editor
+then we also have pycharm followed by
+python ideally and spider as our top
+Ides now let's look at the top companies
+that are using python in our day-to-day
+work
+so we have Google quora Facebook even
+Netflix Spotify and Instagram now there
+are other top product based service
+based and startups that also use Python
+programming
+so let's start as you all know python is
+an interpreted language so you need to
+install a python interpreter so for that
+we'll go to the browser and search for
+python.org
+now we will move to the downloads page
+and choose the latest version of python
+to download and the latest version is
+python 3.9.5
+will click on the download
+once the installer has downloaded open
+it
+now you can see the installation window
+for python
+you have to double check both the boxes
+add python 3.9 to path
+and click on install now
+as the installation completes you can
+see a screen that says the setup was
+successful now click on close
+now to check whether the python has been
+installed successfully on the system or
+not we will run a command on the command
+prompt let's open the command prompt
+click on start and write CMD
+now to check whether the python is
+installed or not we will run the command
+python minus minus version
+python space minus minus version and
+press enter so here we can see that
+python 3.9.5 version is installed in the
+system so yeah python is working in the
+system now we'll run some commands for
+python so for that first we will type py
+and press enter
+and now we will write the basic command
+that is
+print
+kit
+hello world
+semicolon and press enter
+as you can see hello world is printed
+here so yeah python is started working
+in our system
+now we will install libraries of python
+we will be using pip to install numpy
+sci-fi matplotlib and pandas library and
+before installing the libraries make
+sure the latest version of pip is
+installed in your system so to check
+that we will run a command in command
+prompt
+we will open the command prompt
+and write a Command Web space minus
+minus version
+and press enter
+as you can see the PIP version is 21.1.1
+and it's being downloaded with the
+python 3.9 so it's the latest version we
+have downloaded
+so now
+we have to keep one thing in mind before
+installing scipy matte protlip and
+pandas Library first we need to install
+numpy Library
+so for that we will run a command
+pip space
+install
+numpy and press enter
+depending on your internet speed it will
+get installed
+as you can see the numpy library has
+been installed and there's a warning
+that our pip version is 21.1.1 and we
+should upgrade it to 21.1.2 that is the
+latest version available so we'll
+upgrade the PIP version for that we'll
+write a command python
+space minus m space pip space install
+space minus
+upgrade space whip enter
+okay so we made a mistake here in the
+command so the mistake is we have
+written only one minus sign before the
+upgrade we have to write 2 minus signs
+before the upgrade so we'll write the
+command again python
+space minus m space WIP space install
+space minus minus upgrade
+space pip and then press enter
+and now depending on your internet speed
+the PIP version the latest version will
+be installed on your system
+as you can see they have uninstalled the
+paper version 21.1 and they have
+installed
+the latest version that is 21.1.2
+we have installed the first library that
+is numpy and that's the basic
+requirement
+for the installation of scipy Library so
+now we will install the scipy library
+so for that we will write the command
+pip install scipy
+with space
+install
+space sci-fi and press enter
+and depending on your internet speed it
+will be downloaded
+now you can see that the Sci-Fi library
+has been installed successfully and here
+you can see that the requirement already
+satisfied numpy so we have firstly
+downloaded the numpy library so that we
+can easily run the scipy library now we
+will download and install pandas library
+for that we will write the command
+fifth space install
+pandas
+and press enter
+and this will also install depending on
+your internet speed
+we can see that the pandas library has
+been successfully installed now we are
+left with matplot lib Library so now we
+will install that for that we'll write
+the command
+pip space install
+met
+float live and press enter
+as we can see the matplotlib liability
+has been successfully installed
+now we have installed all the four
+libraries
+so if you want to check whether the
+library is installed on your system or
+not
+you can write a command to check that
+first you have to write Python and press
+enter
+first we will check for numpy library
+and for that we will create a array
+for that we'll write the command
+import
+numpy
+S and P and press enter
+if you don't get any error it means that
+the library has been installed
+successfully so now we'll create an
+array
+a equal to NP Dot
+array
+1 comma 2 comma four
+comma
+5 comma 7 comma 9.
+coma
+D type
+equal to we'll set it for float
+press enter and we want to print this
+array
+right print
+array
+created
+comma a
+and press enter
+you can see the output array created one
+to four and five seven nine
+so the numpy library is working fine so
+we will check for other libraries for
+that
+we will write
+import
+space
+mat.lib and press enter
+if you don't get any error it means that
+the library has been installed
+successfully
+so for the rest also we can
+write the same commands import
+pandas and press enter we do not get any
+error so the library has been installed
+successfully and we are left with sci-fi
+so we'll write import space sci-fi and
+press enter so here also we didn't get
+any error so the library has also been
+installed successfully
+now we'll see what Anaconda is
+Anaconda is a free and open source
+distribution of python and our language
+here we have conda which is a package
+manager system similar to Pepin python
+so now we will see how to download
+Anaconda and then we will explore its
+features
+to download Anaconda first we will open
+the browser
+and search for the keyword Anaconda
+we have to visit the official website
+that is www dot anaconda.com
+and now we will click on the product
+section and choose the individual
+Edition as it is open source Edition and
+it is free of post
+now we'll scroll down
+here is the toolkit for the individual
+Edition and will click on the download
+on clicking the download we are directed
+to the bottom of the web page and here
+we can see the different versions
+available for Windows that is 32 bit and
+64-bit
+we will download the 64-bit and it is of
+size 477 MB so it will take ample amount
+of time to download
+we will download it
+as the download completes click on the
+application file
+now click on next
+the license agreement will appear now
+click on I agree
+then you have to select the installation
+type if you want to install for a single
+user click on just me and select for all
+users and click on next I am installing
+for me so I will click next
+then it will ask for installation
+location
+after selecting location click on the
+next
+my from me the location is fine so I
+will click next
+then Advanced installation options will
+appear if you have already installed
+python on your system as we have
+installed already so we do not have to
+click on this section
+you will only click on this section and
+press install
+it will take time to install
+to the installation is complete click on
+next
+then click on next
+and uncheck both these options and click
+on finish
+as you can see the installation has been
+completed
+now
+we'll go to start and type Anaconda
+we can see that Anaconda prompt and
+Anaconda Navigator are visible
+first we will open Anaconda Navigator
+it's initializing and adding features
+here you can see some pre-installed
+applications and tools that are already
+installed in the Anaconda and if you
+want to install any other tool you can
+like you can install ask Studio python
+professional Orange 3 blue is in the
+Anaconda
+and you already have spider 2D console
+Powershell from Jupiter notebook
+Jupiter lab IBM motion Studio cloud data
+lore cmd.exe prompt
+so now we will open and open the prompt
+now we'll see which version of conda is
+installed in the system for that we'll
+write a command conda space info
+and press enter
+here we can see that the Honda version
+is 4.10.1
+now we will launch Jupiter notebook for
+that we will write the command
+jupyter notebook
+and press enter
+you can see that the jupyter notebook
+has initiated now create a folder where
+you want to store the projects and
+rename accordingly
+so to create folder we'll create the
+folder in OneDrive
+sorry
+I will create the folder on desktop
+new
+folder
+we will click the Untitled folder and
+rename it
+and rename it as python one
+now minimize the window
+and
+open the desktop
+you can see that the python One
+Directory is created and now we will
+click on the python 1 folder
+and
+create a Python 3 notebook
+as we have created a Python 3 file in
+the jupyter notebook now we can run the
+python commands on it
+so we will run some commands and first
+we'll run a basic command that would be
+print
+India
+and we'll run this command window is
+printed here now I'm going to run some
+operators
+like we will
+print
+7 into
+8.
+and then run so it's 56
+and we'll also run an exponential
+operator
+print
+to
+exponent four
+all right
+so you can see 16 the result comes out
+so now to save this file first we will
+rename it
+demo one
+rename
+and you will save it save and checkpoint
+now you can check in the directory you
+have created python one
+that it is being saved as demo one
+but before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to now miss an update
+as you all know python is an interpreted
+language so we require a python
+interpreter to work up on while
+installing python in our system we also
+get python ideally automatically
+installed but before writing a program
+in Python ideally we will write a
+program on command Pro
+so for that first we will open command
+prompt
+we'll click on start and write CMD and
+click enter
+now the command prompt appears
+first we will check the python version
+pip space minus minus version
+and press enter
+you will see the python version 3.9
+now
+we'll start writing the Python program
+for that first we have to write the
+command py and press enter now we can
+start writing a program we will write a
+basic program on Division
+for that we will assign a value 5
+to a variable a
+and
+value 10 to the variable B
+and we will divide B by a and we'll
+print the value
+of C
+press enter
+as you can see we have got an output 2.0
+now we have run a program on command
+prompt successfully now we will write a
+program in Python ideally
+so to write a program in Python idid we
+will see some steps
+first you have to open the python
+ideally then click on file menu and
+choose the new file and after writing
+the program we have to save the program
+with DOT py extension and then we can
+click on the Run menu and then we will
+see a run module and we have to click on
+that
+now we'll see it practically for that
+we'll click on start
+and search for idle
+and now we'll click on python IDE
+now we will follow the steps as we have
+seen now
+we'll click on file menu and choose new
+file a new window will appear here we
+will type the program to get two numbers
+inserted by user and add them but before
+writing this program let's understand
+this program
+so Python program on adding two numbers
+first we have to get an end value
+inserted in variably for that we will
+write the command a equal to int around
+brackets input around bracket started
+for the message we have to put it in
+inverted commas and first number colon
+around bracket close and another round
+bracket close
+now we will insert an INT value in
+variable B for that we will write the
+command b equal to int round bracket
+started input around bracket started for
+the message we'll put the message in
+inverted commas and the second number
+colon
+and then we will close this message by
+round bracket and another round bracket
+closing then we will assign a variable C
+and add the operation a plus b for that
+now we'll print
+a message that would be addition of two
+numbers equal to that would be an
+inverted commas comma C as C variable
+will store the result of a plus b
+all the statements in the program will
+get executed line by line now we will
+execute this program on python ideally
+for that we will write a program here
+that would be a equal to
+and
+round bracket start input
+round bracket
+inverted commas
+enter first number
+inverted commas close
+around bracket close
+b equal to
+end
+input
+round bracket started inverted commas go
+message
+enter second number
+inverted commas round bracket goes
+now we will assign the operation a plus
+b in variable C for that we will write c
+equal to a plus b
+and now we'll print C
+before executing this program we will
+save this program file
+save as
+we will save it as demo one
+and we will write the extension p y
+and press save
+as the program is saved now we will run
+this program by click on this run menu
+and then click on run module
+you can see the program has been
+executed now we will write the first
+number that would be 10 press enter and
+second number will write 6 and press
+enter we will get 16 as an output
+so we have executed the program on
+python ideally
+now we will see some best python IDs in
+the market
+for that
+the best python IDs in the market are
+Jupiter notebook Visual Studio code
+Sublime Text pycharm
+python ideally and spider notebook among
+all these IDs we have worked with python
+ideally now we will write a program in
+jupyter Notebook
+for that you have to install Jupiter
+notebook I have installed Anaconda
+distribution and it has python ID
+already installed if you want to know
+how to install Anaconda distribution go
+and check the video in Python playlist
+so let's open jupyter notebook for that
+first we'll click on start
+and write Jupiter notebook
+and click on the jupyter notebook
+Anaconda 3.
+and will wait to get it started in a
+browser
+now we'll select the location where we
+want to store the program
+we will select the location in OneDrive
+desktop
+and I've created a python 1 folder there
+so here we'll create a new Python 3
+notebook
+and name it as
+first python
+program
+and now here we can start writing a
+program
+here we will write a program to multiply
+three numbers
+so for that we will get all the three
+integers inserted by the users in three
+variables and then we will operate the
+operation multiplication
+so for that we will write the command a
+equal to end round bracket started
+input round bracket and here we will
+print the message
+enter first number
+colon
+and then nautical Mass close and the
+round bracket close now we will enter
+another integer in variable B
+for that we will write the command equal
+to end
+round bracket
+input
+down bracket started inverted commas
+enter second number
+colon
+and then we'll close the inverted commas
+and the round brackets
+and now we will get the third interior
+inputted by the user in variable C for
+that we'll write the command c equal to
+int round brackets input round brackets
+inverted commas
+enter
+third number
+colon inverted commas close and round
+Bucket close now we will assign the
+operation of multiplication in variable
+d that would be by the command D equal
+to
+a
+into B into C
+now we'll print the variability
+and for that we'll also print the
+message
+multiplication of three numbers
+and close the inverted commas and then
+we will insert a comma and then write
+the variable d as D contains the output
+of a into B into C now we'll click on
+the Run command
+and now we will
+enter a first number that would be 5
+and press enter then the second number
+four then the third number six and then
+press enter
+and then we will get the output of
+multiplication of three numbers as 120.
+now we have successfully run the program
+on jupyter Notebook
+so in Python every value
+has a certain data type
+the variables in Python hold an object
+of a particular data type since
+everything is an object in Python data
+types are actually classes and variables
+and instances of these classes
+now there are various data types in
+Python
+first we have the numeric types which
+are essentially numbers so under numeric
+types we have integers floating Point
+numbers and complex numbers
+then we have text type data which are in
+the form of strings
+the third type of data that is available
+in Python are called as sequence types
+which consists of less tuples and range
+we have already seen about lists and
+tuples in our previous video
+and in Python we also have dictionary
+objects as mapping data types in the
+previous video you saw how to map key
+value pairs using dictionaries
+next
+we have set data type now sets are
+unordered collection of unique items
+python also supports Boolean data types
+and finally we have binary types of data
+which include bytes byte array and
+memory View
+now let's head over to the jupyter
+notebook where we will learn about these
+data types in detail so here I am on my
+jupyter notebook and I have titled my
+notebook as data types in Python Recs
+for recording so let's first start with
+numeric data types
+I'll give a comment using
+a hashtag
+I'll write
+numeric data type
+okay
+let me Define a variable called num
+in which I'll store a value of 7.
+now
+let me go ahead and print
+the data type of
+my variable num so for that I'm using my
+function as type
+if I
+run this using shift plus enter you can
+see here it tells me that
+num variable is holding a value of type
+integer
+now you can also
+use a print statement
+I can write something like print
+num
+comma
+I can give a message as ease of
+type
+I'll give another comma and then I'll
+use my function type of
+num
+let's see the output
+you can see it here
+it
+first
+gets the value that is stored in the
+variable num so 7
+is of type and then it prints the
+classes of type class integer
+all right
+I've just increased my
+size of the notebook
+next
+let's declare
+the same variable num and this time
+we'll store the value as let's say 10.8
+now you can see here there's a point
+which means this is a decimal
+or a floating value if you can check the
+type of num it gives us
+num is holding a value of type float
+now let's say
+I'll take a negative number let's say
+minus 10.8 and we'll see the
+type of
+num
+again minus 10.8 is also of type float
+now let's say I'll declare
+a complex variable let's say 8 plus 6 J
+now this is the complex number
+which is again of type
+numeric data type
+if I want to check the
+data type of num it gives me complex
+because 8 plus 6 J is of
+complex data type
+okay
+now if you want to extract the real and
+the imaginary parts of a complex number
+you can do it something like this you
+need to pass in the variable name
+followed by a DOT and
+the attribute name is real to extract
+the
+real part of the complex number if I run
+this you can see here it has written the
+real part of the complex number which is
+8. now if you want to print the
+imaginary part you can use num Dot
+imeg which is for Imaginary if I run
+this there you go it gives us the
+imaginary part which is 6.
+okay
+now in Python you can also perform
+conversion of data types so you can
+convert between different data types by
+using type conversion functions such as
+end float Str
+Etc
+so let me Define a variable called num
+which has a value 7.8
+now
+what I'm going to do is
+I'm going to create a variable called B
+which is going to store the
+integer part of num which means
+initially I had defined number 7.8 which
+is a floating Point number I want to
+convert this num to integer type now
+and
+let me go ahead and
+print
+my B and I also print
+the type of num
+and
+I'll then print
+the type
+B
+let's run this and see the result okay
+so if you see here clearly
+when I see
+print P it has written me 7 which is of
+type integer so it has truncated the
+decimal part
+present in 7.8
+again if I print type of num so num is
+holding 7.8 it is of type float now
+after converting the float value into
+integer it has given me int
+okay
+similarly
+let's say we have another number
+minus 90.5
+and
+if I were to check the
+type
+I would write print type of num
+then
+let's convert
+this to integer
+so I'll write print in top num let's see
+the results okay so initially minus 90.5
+is of type float after we converted
+our num to integer it gives us minus 90
+so it has truncated the decimal point
+part
+all right
+now let's see I'll create another
+variable let's say c equal to
+let's say I'll write float
+of
+B
+now if you remember
+our B holds a value of 7 if I were to
+convert B to float again
+I can use the float type conversion
+function
+and let's go ahead and print C
+if I run this you can see here
+previously B was holding an integer of 7
+now it has converted that integer into a
+float value so it is 7.0 now
+okay
+now moving ahead
+let's see
+about
+Boolean data types
+so if I have a variable let's say
+r equal to
+let's say it has a value called true
+which is a type of Boolean value
+and let me go ahead and print
+the type of r
+it gives me Boolean
+now let's say I'll write num greater
+than C
+let's
+go to the Top If you see here
+num is holding a value of minus 90.5
+and my C is holding a value of 7.0 I am
+checking if num is greater than C if I
+run this it gives me false because
+minus 90.5 is less than 7.0 and not
+greater than 7.0
+suppose
+I create a variable Boolean or B Double
+L
+and I'll store that value num greater
+than C
+and let's
+print
+the type of Boolean
+I'll use type
+of my variable That is bull
+let's run it you can see it here it
+tells us that
+this particular operation is now holding
+a data type of Boolean
+if you are getting confused we can
+change the
+variable here let's see I'll write
+B underscore bull
+and similarly I'll write here B
+underscore Bool let's run it
+you get the same thing
+all right
+now moving ahead
+let's explore how
+string data types work in Python
+I'll give a comment as
+string data types
+scroll down okay
+so string data types or string values in
+Python are
+passed Within quotations suppose I have
+a string called str1 and it has a value
+let's say
+Python Programming so this is a text
+value
+I have another string let's say str2
+which has a value
+let's say simply learn
+now
+let's run this
+okay
+now if I were to check
+the type of str1
+it should give me string so Str here is
+a string
+now you can also perform extraction
+operations from the stream suppose you
+want to extract
+the value that is present in my first
+ring that is str1 at index number 5.
+let's run it
+okay there is some error here okay so
+this should be str1 and not strl
+let's run it again
+it returns us n
+now let's count what is present at the
+fifth index so from our previous
+introduction to python video you might
+be aware that in Python the index number
+starts with 0 so if you count
+p is at index 0
+y is at index 1 T is at index 2 H is at
+index 3
+o is at index 4 and then
+n is at index 5 so hence Str one of five
+returns and
+similarly if you can
+check for
+other string that is string two let's
+say I want to see the value that is
+present
+at minus 4.
+let's run it
+it gives us e
+now if you use a negative indexing
+operation it will start counting from
+the backward position so here n is at
+minus 1 R is at minus 2 then you have a
+at minus 3 and E is present at minus
+four so hence str2 of minus 4 returns e
+cool
+now you can also perform slicing
+operation suppose
+I write str1
+I want everything that is present
+between the zeroth index to
+the fifth index
+I'll run it
+it gives me
+pytho so if you check
+in string 1
+it will start counting from the zeroth
+index and go up to
+the fourth index and exclude the fifth
+index so in my string one if I start
+counting from the zeroth index so it is
+0 1 2 3 and 4 so it will
+print from P till o
+and that's the result
+okay
+now you can also use some inbuilt
+functions with string suppose I write
+str2
+Dot
+find
+so I want to find the index where my
+m is in simply learn
+so I'll
+write M within quotations and print it
+it returns me 2.
+if you check again
+so s is at zeroth index 1 is at the
+first index and M is present at the
+second index
+okay
+moving ahead
+let's explore a few sequence data types
+so we'll start with
+list data type
+okay
+now
+first of all let me go ahead and
+declare a variable called split one
+equal to
+and this will have some
+text let's say this
+is
+Orange
+then
+I'm going to create another variable
+called L1
+equal to
+I am going to
+split
+my variable or my string that is split
+one using the split function
+and I am going to split using the comma
+so you can see here my string has comma
+I'm going to separate each of these
+words with a comma
+and let's print L1
+if I run this you can see it here
+initially my split one was of type
+string
+and now we have converted split 1 to a
+list you can see this this is a list and
+it is present inside square brackets
+verify you can use the type function so
+I'll write type of
+split one
+it should return string you can see it
+here SDR and now if I write
+type of L1
+it gives me a list
+okay
+now let's see a few more examples I'll
+create another list called list one and
+let's see it has some values
+the alphabet a
+we have
+the number one which is in terms of
+string again because I have passed in in
+quotes
+let's say I have India
+let's make it consistent with single
+quotations
+and
+let me
+print what is inside list one
+if I run it I get my list
+now you can check the data type
+if I write type of list one it gives me
+it is a type list
+now you can also perform certain
+operations on list suppose you want to
+add a few elements to your original list
+for that I'm going to create another
+variable called list two
+and let's say list 2 has some values
+let's say B comma 2
+now
+if I write
+list 1
+Plus
+equal to
+list 2.
+and let me go ahead and
+print
+list one
+let's see the result
+there you go so our initial list had
+three elements A1 and India and now we
+have merged or concatenated two more
+elements B and 2 and hence this becomes
+our final list
+okay
+now moving ahead let's see one more
+sequence data type that is Tuple or
+Tuple
+Now list 10 tuples we have already
+covered in our previous video on
+introduction to python if you need to
+brush up what list and tuples are you
+can check the previous video
+so I'm going to create a tuple that is
+top one and I'm going to
+store some values
+Tuple you can create using braces
+I have some value let's say e b
+C
+d
+and let's say e
+or let's just restrict it to D
+now you can check the type of top one
+you can see here top one is of type
+Tuple
+now
+I'll create another Tuple let's say tup2
+and
+it has some values let's say e
+f
+and let's say G
+now
+if I write
+tup1
+Plus
+equal to dup2
+and if I print
+my tup1
+I get the result
+of a merged
+Tuple
+which has values of both qp1 and tup2
+you can see here our original Tuple had
+ABCD and then we merged the second Tuple
+and it has
+and it has given us EFG as well and
+hence this becomes the final Tuple
+you can also perform some basic
+operations on Tuple let's see I'll write
+dup1 multiplied by 2.
+you can see the result here
+it has printed
+my original Tuple twice
+okay
+now moving ahead
+let's see our mapping data type
+that is dictionary
+again dictionary is also covered
+in our previous
+introduction to python video
+you can also have a look at that video
+now the way to declare a dictionary
+is
+I'll create a variable dict one
+and dictionaries are
+written using curly braces and have key
+value peers
+so I'll write my first key as 1 and
+let's say
+this dictionary is about animals
+and I have let's say lion
+as my first animal in the dictionary
+then I'll create my second key
+let's see the second Animal I Have Is
+tiger
+and let's say
+my third element
+is
+a dog
+let me run it
+and print
+my dictionary you can see this
+we have the dictionary printed
+now if you want to check the type you
+can write type of
+dict1
+it returns us dict which means
+dictionary
+you can also print the length of
+dict1
+and it gives us 3 which means our
+dictionary has three elements
+okay
+now moving ahead
+we'll explore
+our set data type
+now as we understood that sets are
+unordered collections of
+values
+and these values are always unique
+so I'll write set one let me give a
+space
+equal to
+again sets are written within curly
+braces
+I'll create a set
+let's say it has some duplicate entries
+as well
+and I'll print my set one
+it returns only the unique values so it
+has dropped
+this 5 which was duplicated
+you can check the type of set one
+it gives us it is of type or the object
+is of type set
+now suppose
+I have
+another set called set 2
+which has values let's say
+a
+comma
+p
+and let's say we have some numbers 3 and
+4.
+I'll tell you the operation that I'm
+going to do
+I'm actually going to
+do an R operation
+so I am going to print
+set one
+or
+set
+2 so this is an R operator in Python
+let's print the results you can see here
+it has printed
+all the values that are present inside
+set 1 or set 2. so in set 1 we have one
+two three four and five and in set 2 We
+Have A and P
+so it has dropped 3 and 4 because these
+are not unique and
+3 and 4 are also presented set one
+suppose I were to perform an and
+operation
+I'll write set one
+Ampersand set 2.
+if I run this
+you can see here it has only printed
+the unique values that are present in
+both set 1 and set two so three and four
+are the unique values and hence it has
+printed three and four
+let's say
+I'll write set 1 minus set tool
+let's see the results
+it gives us only those values that are
+present
+in set 1
+and are not present in set 2 which is
+this
+let's see the result if I write set 2
+minus set 1.
+so this will return the unique values
+that are present in set 2 and are not
+present in set one
+so A and B are the unique values that
+are present in set to hence it has
+printed as a comma B
+okay
+now
+another data type we had discussed was
+range
+so range is basically a function if I
+write x equal to
+range
+4
+and I'll print X it gives us from 0 till
+4 because in Python the first index
+starts from 0 and goes till 4 so the
+range is from 0 to 4.
+now you can also print that type of x
+it returns us range
+now
+we'll see some binary data types
+binary data types are not very often
+used in Python but it is better if you
+know
+binary data types can be written as x
+equal to B let's say I have a string
+I'll write within double quotations
+hello world
+and let me go ahead and
+print
+my variable X
+you see here
+we have hello world
+and now
+let's print the type of X you see here
+this is a binary type which is bytes
+I'll show you another operation let's
+say you want to extract a specific
+value
+from a particular index
+from this binary data
+so again you can use the indexing
+operation
+suppose I write print
+I want to extract the value present at
+the fourth index
+it gives me one one one now this is very
+interesting let's
+deep dive into this
+let's check
+what is present at the fourth index of
+my string
+so H is present at the zeroth index E is
+at the first index L is at the second
+index the second L is at the third index
+and we have o
+at the fourth index
+so
+when we are trying to print the index
+position it is actually returning us the
+ASCII value of small o now here I have a
+dock open which is from IBM
+documentation if you see
+the
+ASCII value of small o or lowercase o
+you will find that the ASCII value is
+one one one and hence it has written
+does one one
+let's try for
+another
+index number let's say I want to find
+the value which is present at index
+number
+minus
+2 and if I run it it gives me 108
+so minus 2 means it will start from the
+last index
+so minus 1 is D and minus 2 is L let's
+see what is the ASCII value of L
+if you see it here the ASCII value of L
+is 108.
+and hence it has written as 108
+so this is how the binary data types
+work in Python
+now let's convert some
+sequence objects to other type of
+objects let's say I have a string
+called s which has
+something like
+messy is from
+Argentina
+now you can check
+the type of s fair enough it tells us
+that Messi is from Argentina is of type
+string
+now
+what I'm going to do is I'll use my list
+function and pass in my variable that is
+s so that it converts s to a list and
+let me go ahead and print my l
+you can see here my string s has now
+been converted into a list and this is
+the result
+see here these are all
+list elements present inside square
+brackets
+now if you want you can check the type
+of file
+it should return us
+list
+and you can see it here
+now suppose
+I have
+another list let's say L1 which has
+some
+numbers let's say
+1 15 3 6 0 8 4 and 3.
+Let's see we also have one
+okay so this is a list you can check
+type of L1
+fair enough it tells us that this is a
+list
+now I want to convert this list L1 to a
+set
+now as we know that set only contains
+unordered unique elements
+so if I write s equal to
+I'll use the set function and then I'll
+pass in my list variable that is L1
+and let's print as
+it only returns me the unique values
+present in the list so it has dropped
+the duplicate elements such as 3 and 1.
+I can check the type
+of s it gives us set
+okay so that brings us to the end of
+this demo session on
+data types in Python let me go to the
+top and
+I'll brief you what we did in this demo
+so first we looked at the different
+numeric data types so we saw integer
+data type then we saw floating data type
+we also had complex data types we saw
+how to extract a real part in imaginary
+part from a complex number
+then we used
+some type conversion functions to
+convert the numeric data types from one
+data type to another so here we
+converted a floating type data to an
+integer type data
+similarly
+we saw how to use Boolean data types
+then we saw about string data types we
+also performed some basic operations of
+using indexing method to extract
+different values
+we also saw how you can use slicing to
+extract a range of values from your
+string use the find function to find the
+index of a particular
+character in the string
+then we learned the important sequence
+data types like list
+then we had tuples
+and then we learned about mapping data
+types such as dictionary
+we also looked at set data type
+now
+later on we explored about range data
+type and we looked at binary data types
+we saw how binary data type returns
+ASCII value of a certain character
+finally we converted strings to list and
+then we saw how to convert
+list of sets if you're an aspiring
+machine learning engineer looking for
+online training and certifications from
+prestigious universities and in
+collaboration with leading experts then
+search no more simplyness professional
+certification program in Ai and machine
+learning from Purdue University that is
+in collaboration with IBM should be a
+right choice for more details you can
+use the link provided in the description
+box below in this video we will learn
+about variables in Python but before I
+begin make sure to subscribe to the
+simply learn channel for interesting
+Tech videos now let's get started
+so in this video
+we will learn what is a variable in
+Python then
+will understand what are object
+references
+we'll also see the different rules for
+python variables and finally
+will understand variables in detail with
+Hands-On demonstration on The jupyter
+Notebook
+so variables in Python hold an object of
+a particular data type
+python variables are continuous for
+storing data values we do not need to
+declare variables before using them or
+declare that data type like we do in
+other programming languages such as Java
+or C plus
+python is not statically typed a
+variable is created the moment we assign
+a value to it
+a variable is a name given to a memory
+location
+so here we can see
+we have a variable called car and it has
+a value called BMW now this value is of
+type string since it is written within
+double quotes
+variables can have values of multiple
+data types
+now python also allows you to assign
+values to multiple variables in one line
+so here you can see I have assigned x y
+z to Audi BMW and Mercedes in one single
+line
+all right
+now let's look at object references in
+Python
+a python variable is a symbolic name
+that is a reference or pointer to an
+object
+once an object is assigned to a variable
+you can refer to the object by that name
+so here we are assigning an integer
+value of 50 to the variable a so
+assignment creates an integer object
+with a value of 50 and assigns the
+variable A to point to that object as
+you can see here so a is the variable
+and it is pointing to the object that
+has 50 value
+now let's see another example so in this
+case we have assigned
+a variable a which has a value of 50 and
+then we have created another variable
+called B that has the value stored in a
+python does not create another object in
+this case it creates a new symbolic name
+or reference called P which points to
+the same object that a points to so here
+you can see
+both A and B are pointing to the same
+object that is 50.
+okay now
+in this example
+python creates a new integer object with
+a value of 100 and B becomes a reference
+to it we will explore all of these in
+our demo
+now
+there are some rules for python
+variables let me just read all the and
+we will explore all these rules in our
+demo session
+so first a variable name must start with
+a letter or the underscore character
+a variable name cannot start with a
+number
+a variable name can contain only
+alphanumeric characters or underscores
+so you can see from A to Z 0 to 9 or
+just underscore
+the variable names are case sensitive so
+here you can see I have written date
+in three different types and these
+are read as different variables and not
+the same variable
+and then there are several techniques to
+write multi-word variables you have the
+camel case you have the Pascal case and
+we have the snake case don't worry about
+it we'll explore these in the demo now
+let me take you to my jupyter notebook
+where we will understand variables in
+detail
+okay so I am on my jupyter notebook and
+I have my title as variables in Python
+so let's start
+with my first variable let's say I have
+a variable called a
+and I'm assigning
+50 to it
+now you must be aware fifties of type
+integer
+so this a variable is now
+holding an integer value
+now if you want you can just print a
+if I hit shift enter it will give me the
+value of 50
+now to check the data type of a you can
+use the type function now if you have
+covered data types and Detail in our
+previous video if you want you can have
+a look at it
+so I will write type of a if I hit shift
+enter it gives me the integer type
+okay
+now
+let me show you another function called
+ID if I write ID of a
+let's run it it gives me a number this
+is a long number now the ID function in
+Python returns a unique ID for the
+specified object so here object is a
+so all objects in Python have its own
+unique ID the ID is assigned to the
+object when it is created
+now what if
+I assign
+100 to e this time and let's see
+the ID of a
+if I run it you can see here the values
+are different than the previous one
+so every time the ID function will
+return a unique ID for the specified
+object
+all right
+now we learned in our Theory section
+that you can assign multiple variables
+in a single line now let me show you how
+to do it
+suppose
+I'll write X comma y commas C so these
+are the three variables and I want to
+assign
+three values to them so let's say x will
+have 50
+in y I want to store let's say 100 and
+68.6
+and
+my Z
+will have
+a string or a text value let's say
+simply learn
+all right
+let's run it okay now you can print them
+one by one you can see here x has 50
+y has 168.6 and Z has simply learn of
+type
+text you can check the
+data types if you want let's say I want
+to check the data type of Y
+it gives me a float because
+68.6 is a float
+you can check the data type of
+Z it is of type string
+okay now you can also perform the same
+operation of assigning multiple
+variables in a single line in another
+way let me show you how to do it
+suppose I want to assign
+the same
+value to three different variables let's
+say I want to assign the value of 10 to
+X Y and Z so I'll write
+x equal to y equal to Z equal to
+I'll write 10.
+if I run it
+and let me print them one by one you can
+see here x is 10 Y is 10 and Z is also
+10.
+now there is another way to do it that
+is
+I'll pass in my variables X comma y
+comma Z
+and then
+I can write 10 comma 10 comma 10.
+this will return the same result
+okay
+now let's look at the
+rules for writing variable names
+so these rules we had discussed in the
+PPT section
+now we'll explore them one by one
+so the first rule is a variable name
+must start with a letter or the
+underscore character
+so
+let me just give a comment first rules
+for
+variable
+naming
+so the first rule says a variable name
+must start with a letter or the
+underscore character so if I write let's
+say
+some random variable in ABC equal to 100
+this is valid you can print it
+ABC it gives me hundred
+now
+you can also write the variable Limas e
+followed by any number
+it should be integer number if I write 1
+0 2 equal to let's say this time I'll
+give a string let's say India
+and let me print it
+it works perfectly fine
+now we also said the name must start
+with an underscore
+I can start with an underscore and then
+write let's say one two three
+is equal to 70.5
+now let me print it
+now this works as well so you can start
+your variable name with an underscore
+followed by a letter or numbers
+let me show you another example this
+time I follow the underscore with
+letters let's say
+dog
+I'll just give
+any random dog name let's say I have a
+dog called puppy
+and let's say I'll print it
+this also works okay
+now you can have multiple underscores in
+your name as well suppose I'll write
+underscore
+name underscore each
+this is my variable name I'll write
+let's say
+Stuart
+36
+and let me print it
+I wrote underscore name underscore each
+this is also a valid variable name so
+you can have multiple underscores in
+your variable name
+now
+the next rule is a variable name cannot
+start with a number
+so if I write
+let's say 4
+name equal to
+okay
+and if I try to print it
+it will throw an error so you cannot
+have a variable name starting with a
+number
+all right
+now
+let me scroll down
+the next rule is a variable name can
+only contain alphanumeric characters and
+underscores so if I write at the rate
+then let's say
+each
+equal to
+40. if I run this it throws me an error
+because at the rate is not recognized
+and it is not a valid variable name
+similarly let's say I'll write name
+dollar
+each
+equal to let's say 40.
+again this is not recognized dollar you
+cannot use it in a variable name
+the next rule is
+variable names are case sensitive
+so suppose I have a variable called car
+which is all in lower case and
+my car has a value let's say BMW
+now if I were to print car it gives me
+BMW
+suppose I have another variable which
+starts with a capital letter C followed
+by lowercase ER
+if I were to assign
+CR 2 let's say Tata
+and I printed
+it returns me Tata and not BMW so you
+should keep in mind that variable names
+are case sensitive
+similarly I can also have a variable in
+all Upper Keys let's say
+my
+car is of Toyota brand
+I made a spelling mistake
+okay now if I print car
+it gives me Toyota
+so
+these are the different
+types of using case sensitive variables
+now another important thing to note is
+in Python Reserve words cannot be used
+as a variable name
+so let me open a new tab and here you
+will search for
+Reserve
+keywords
+in Python
+let me open this link
+or any other link for your reference
+you see here
+these are all
+your keywords in Python and these cannot
+be used as variable names let's try
+using a few of them let's say I use
+break
+let's assign
+a value to variable break equal to let's
+say
+60 if I run it it gives me an error
+invalid syntax break you can't use
+similarly let's use
+another keyword let's say I'll use for
+this time we have a keyword
+called for you can see it here
+suppose I write
+for
+equal to
+I have let's say Virat
+if I run this it throws me an error
+again
+let's try one more keyword
+do we have try as a keyword yes we have
+you can see here try is a keyword
+if I write try equal to
+any random value I'll pick this time I
+am giving a floating number let's say
+140.5 if I run it again it throws me a
+error but you can use
+an underscore and then
+you can give that keyword let's say try
+I'll assign the same value
+and let's say we'll print it this will
+work fine since
+the variable name is no more a keyword
+because we have an underscore
+in the beginning
+okay
+now let me show you some
+basic operations that you can perform
+on python variables let's say we have a
+equal to 100 and let's say b equal to
+200
+you can assign
+an operation to another variable called
+result let's say I want
+the operation to be an addition
+operation
+and let's go ahead and print result
+you can see it has given us 300 because
+in result we are storing the addition of
+A and B so 100 plus 200 is 300.
+now similarly
+you can perform
+many operations like let's say this time
+will perform a subtraction operation
+so this time I am storing
+a minus p in result and let's go ahead
+and print result you can see here 100
+minus 200 is minus 100.
+then you can also have
+let's say result equal to a by B
+and let's print it
+fair enough we have 0.5 because 100
+divided by 200 is 0.5 similarly you can
+also have integer division suppose I
+write 100
+divided by
+say 40
+and I'll print the result you see here
+it has given us 2.5 but what if I want
+to perform an integer division so I'll
+add one more forward slash here and
+let's run it it gives me only two so it
+has truncated the 0.5
+okay
+now moving ahead
+let's say I have a variable called
+country
+and
+I have
+India in it
+so country is my
+variable name and it is pointing to the
+object that has
+India has the value
+I can print the
+variable
+you see here I have India and now if you
+want you can perform some
+extraction operation
+suppose if I write country
+within square brackets if I write
+3
+it gives me the character that is
+present at the third index so I is
+present at the zeroth index n is at the
+first index D is at the second index and
+I is at the third index let's say I want
+everything that is present
+until the third index it gives me IND
+so this 3 is exclusive it will only
+return us
+the values present at the zeroth index
+the first index and the second index
+okay
+now let me show you another interesting
+example suppose I have a list that is
+called cars and I have a list of
+car names
+let's say I have
+BMW
+then I have
+Ferrari
+and let's say
+I have Toyota
+I'll run it and I'll print my list that
+is cars you can see here there are three
+car names
+and now what if I want to
+put each of these car names in different
+variables so I can write X comma y comma
+Z and
+I'll write equal to cars if I run this
+now what it will do is it will assign
+each of these values to
+X Y and Z respectively now if you want
+to print X you can see here x has BMW
+then y has Ferrari and Z has Toyota
+so this is another way to assign
+values to variables
+from a list
+okay
+no
+you can also
+use variables in the print
+function or the print statement suppose
+I write X
+equal to let's say it has simply loan
+now
+I can print a message let's say
+welcome
+to
+give a space
+close the quotations
+do a plus sign and I'll give the
+variable name
+if I
+run it you can see here the message is
+printed welcome to and the X which has
+the value of Simply loan so welcome to
+Simply loan
+okay
+now another thing to note in Python is
+that you cannot add an integer and a
+string suppose I have X as the variable
+and it has a value let's say 20. and
+then I have Y which has
+the string simply learn
+now string can be put in double quotes
+or in single quotes you can use
+whichever way you want
+suppose I print
+X Plus y
+let's see the result it gives us an
+error so you cannot
+print
+or add an integer and a string so you
+need to convert one of these values
+now there are several techniques to
+write multi-words variables you can use
+the camel keys to write multiple
+variables
+so here each word except the first
+starts with a capital letter
+so I'll just give a comment here and
+write
+camel case
+and
+the way to write is
+apart from the
+first word
+all the words
+start with the capital letter
+suppose I write my department equal to
+marketing
+so here
+the first word my
+the M starts with a small letter while
+the second word Department the D starts
+in a capital letter so this is an
+example of a camel keys
+Phi
+want to print it I can write my
+department
+run it it gives me marketing let's see
+another example I have let's say car
+brand
+so you see here
+car brand are two words
+but
+the first word starts with a
+small letter while the second word has
+an uppercase B
+let's say my car brand is Hyundai
+you can print it
+there you go all right
+moving ahead
+we also have Pascal case where each word
+starts with a capital letter
+suppose I have a variable called my name
+is
+let's say Nathan here you can see my and
+Nema two different words and both the
+words start with a capital letter so
+this is an example of Pascal case
+if I run it
+let me just print it first okay you see
+here I have my name similarly let's say
+we have another Pascal case multi-word
+variable which is each now where age has
+a caps and now has n caps so this is
+also an example of a pascal case
+variable let's say my age now equal to
+30 I'll print each now
+it returns me
+30. now one thing to note here is if I
+write let's say each now
+if I do this it gives me an error
+because your variables names are case
+sensitive so we haven't created any
+variable which has small a and small n
+in each now
+okay
+now the third way to write a multi-word
+variable is called as snake case
+so if you want I can
+give a comment saying sneak case
+so here each word is separated by an
+underscore character
+so let's say I have a multi-word
+variable which is City underscore
+address
+and let's say the city is
+New York
+now if I print it
+you have New York so this is an example
+of a snake case where
+each word has a underscore in between
+you can have multiple underscore between
+each word suppose I write my
+current
+each
+equal to 35 let's say
+so I have
+my current each
+I run it
+okay there is some mistake here I have
+missed an R you see here it says 35 so
+this is also an example of a snake case
+where each word is separated by an
+underscore so here we have two
+underscores
+all right now let me go to the top and
+let me brief you what we did so first we
+so and
+integer value variable
+we saw how you can check the
+data type of the variable using the type
+function then we explore about the ID
+function
+we saw how you can
+pass in
+variables or multiple variables in a
+single line
+then
+we saw how you can assign the same value
+to three variables in one line
+now this is another method to do the
+same operation
+now then we looked at the
+different rules for naming variables
+your variables can start only with a
+letter or an underscore
+and that letter can be followed up with
+numbers as well and you can have
+similarly numbers after
+underscore you can also have characters
+after underscore
+you can have multiple underscores
+but your variable name cannot start with
+a number
+and it cannot have special characters
+like at the rate or
+dollar symbol
+these will throw an error
+you can see your variable names are case
+sensitive so here we defined car in
+three different ways
+and all the three
+give us different results
+another important thing we saw was
+you cannot use
+keywords python keywords as variable
+names we saw brick for and try
+now we perform some
+basic mathematical operations we also
+saw how you can perform some extraction
+operation using string values in Python
+then we saw another way to assign the
+values of a list to different variables
+we saw how you can use the variable name
+in a print statement
+then we saw how
+you cannot add an integer
+with a string
+we explored the camel case then we saw
+how you can
+write multi-word variable using Pascal
+case and finally we looked at
+snake case
+in this video we will look at python
+object types and type conversion
+objects are the most fundamental Concept
+in Python Programming so we are going to
+learn the built-in objects that python
+provides
+so now let's see the agenda for today so
+we are going to talk about object types
+in Python then we'll see the different
+type conversion functions that are
+available in Python
+then we see the different types of type
+conversion
+all right
+now let's look at the different types of
+objects in Python
+so we have list you have tuples numbers
+strings dictionaries sets you even have
+file objects then you can see we also
+have other code types such as Boolean
+and none
+then we have program unit types like
+functions modules and classes
+now we will touch upon most of them in
+the demo section of this tutorial then
+we also have implemented related types
+all right
+now let's see how you can convert one
+data type to another using type
+conversion
+so python provides two types of data
+conversion techniques one is called the
+implicit type conversion and the other
+is called the explicit type conversion
+now in implicit data type conversion
+python can automatically convert one
+data type to another data type this
+process does not need any user
+involvement
+while in external conversions
+users convert the data type of an object
+to require data type by using predefined
+functions that are listed here so you
+can see here we have the different
+functions so if you want to convert a
+specific value to an integer you can use
+the int function we have the float
+function
+now we have something called this ORD so
+the ORD function accepts a string of
+unit length as an argument and Returns
+the Unicode equivalence of the past
+argument now we also have hex and OCT so
+the hex function
+is used to convert an integer number to
+its corresponding hexadecimal value
+similarly the oct function will convert
+the corresponding
+or let's say We'll convert an integer
+number to its corresponding OCTA decimal
+value
+we have double list set dictionary Str
+is for string you can convert a number
+into a complex number by providing its
+real and imaginary part now we also have
+this CHR or the character function
+now this is how the basic General syntax
+looks like you have the required data
+type followed by the expression
+okay
+so let's head over to our jupyter
+notebook and learn the different types
+of objects as well as look at the type
+conversions in Python
+okay so here I am on my jupyter notebook
+let's first look at
+number objects so I'm giving a
+comment
+as number objects all right let's see I
+have a variable called num
+which is equal to let's say 2.
+now
+is very simple that 2 is an integer
+so if you want to check the type
+you can just use the type function and
+it gives us int which means integer so
+here 2 is of
+a type called number object
+let's say you want to pass a floating
+value
+let's say 2.2
+see the results
+2.0 is of type float and again
+2.0 or 2.0 is a number object
+you can perform various operations on
+number objects suppose you want to add a
+few numbers
+so let's say 321 Plus 365.
+and I'll say add
+it gives us the addition of these two
+numbers which is 686.
+now let's see
+you want to
+perform a multiplication operation
+let's say 62 multiplied by 2.5
+if I hit shift enter it gives me the
+multiplication of the product of these
+two numbers that is 55.0
+now python by default will
+convert the result to a floating Point
+number if there is one integer and this
+one float
+if you want to return the exponent of a
+number let's say I want to know 2 raised
+to the power 4
+so I'm using double asterisks to
+represent the exponent operator
+if I hit shift enter it gives us 16 so
+it's basically
+2 multiplied 4 times
+now you can also
+import specific libraries so let's say I
+want to import the math library and I
+want to print
+the value of pi so here I have written
+import math and then using the module
+math I am
+trying to find the value of pi let's run
+it you see here it says 3.141 so on and
+so forth
+so you can also
+import the random module let's say I'll
+write input
+random and then let's say I want to
+print a random number
+you can use the random Dot
+random function let's run it you see
+here this is a random value that python
+has generated if I run it again this
+value changes let's run it again again
+this value changes
+okay
+now we'll shift our Focus to
+understanding string objects in Python
+so I'll give a comment string objects
+let's say I have a string
+a is equal to and let's say the string
+has India
+okay
+now if you want you can print a it says
+India
+now suppose I want to
+extract
+the value that is present at the zeroth
+index of the string so the way to do is
+I'll pass in my variable name that is a
+and within square brackets I'll give the
+index value that is 0. now one thing to
+remember in Python the index value
+starts with 0 and not one so if I do
+a of 0 it gives me I because I is
+present at the 0th index now let's say I
+want
+the last value
+in this string India so I need to return
+a for that I can use negative indexing
+by using minus 1. if I do minus 1 it
+gives me a which is the element present
+at the last index
+now let's say
+I'll write a 1 and colon
+let's run it you see the result here it
+says n d i a which means python has
+returned everything starting from the
+first index
+till the last index so here colon means
+you need to return everything that comes
+after the first index
+now let's say
+I'll write
+print
+a
+and I'll add
+let's say x y z
+let's run it
+you see here this XYZ has been
+concatenated with the value that was
+present inside a that is India so the
+result is India followed by XYZ
+okay
+now
+if I write e multiplied by 7
+it will print India seven times without
+a space you can see it here
+cool
+now let's say you want to replace
+certain values in the string you can use
+the replace function so if I write a DOT
+replace let's say I want to replace ie
+that is present in India
+with let's say
+x y z
+let's run it you see here
+IND is fine after that we have I a and
+that I a has been replaced by XYZ
+now let's move on and understand
+list objects in Python so I'll write
+list objects
+okay
+let's go ahead and declare a list L1
+within square brackets
+let's say we have
+values like 1 0 1
+let's say America
+and then let's say we have another
+floating value let's say 2.05
+okay
+this is my list if you want to print the
+list you can use
+L1 to print it you see here this is my
+list L1 now if you want to find the
+length of L1 you can use the Len
+function
+if I run it
+you get 3 which means there are three
+elements in the list 101 America and
+2.05
+now if you want to extract certain
+values from the list for that you can
+use the indexing method let's say I'll
+write
+L1 of
+1.
+that gives me America because
+at index position 1 we have America so
+101 is at the zeroth index America is at
+the first index and 2.05 is at the
+second index
+next
+let's say I write L1
+and then
+I give colon -1 let's print it so that
+gives me
+101 in America so what it does is this
+colon -1 will exclude the last index and
+print the other two
+elements in the list
+okay
+now if you want to append
+some elements to the list you can use
+the append method so I write L1 dot
+append within brackets I'll give my
+value let's say
+USA
+now let's go ahead and print L1
+if I run it you can see the difference
+earlier my list had three elements 101
+America and 2.05 now we have added the
+fourth element that is USA
+cool
+now you can also use the pop function in
+python let's see what it does
+so I write L1 dot pop and I'll give
+let's say three
+if I run it it returns me
+USA because USA is present at the third
+index of my list
+if I write pop one
+it gives me America because
+America is present at the first index
+all right now you can also reverse the
+elements in a list if I write L1 Dot
+reverse function
+if I run this and then I'll
+print L1
+you see the result here we have 2.05 and
+101 which is printed in reverse order
+the reason being
+we have already popped America and USA
+out and we are only left with 101 and
+205 and if we reverse the current list
+it will be printed as follows so 2.05
+comes at the beginning and then we have
+one zero one
+let me just
+read on my list again to show you the
+difference
+I have run my L1
+let's run this append query
+and now let's use the reverse function
+there you go so now our original list
+has been reversed so you have USA at the
+beginning and 101 towards the end
+okay
+now moving ahead let's see
+the next type of object in Python that
+is dictionaries
+okay
+let's say I'll create a dictionary
+called dict1
+and you might be aware that dictionaries
+are created using the curly braces
+so I'll have my key value pairs let's
+say my key is 1 and the value it whole
+says let's say
+the names of animals
+tiger
+comma
+will have the second key and that second
+key will have the value let's say lion
+and let's say we have another element
+with the third key
+and let's see we have
+Mouse
+okay
+now
+let's print our dictionary
+so this is how
+my dictionary looks like
+now
+you can display the keys
+by using the keys function
+so this will return all the keys present
+in the dictionary you see here one two
+and three are my keys similarly
+you can display the values in the
+dictionary
+you need to change this keys to values
+if I run it you see here tiger lion and
+mouse are the three values
+now suppose you want to add another
+element to your dictionary for that you
+can write dict1
+and give the fourth key
+equal to the value let's say that
+now let's run
+dict1 and see the difference
+there you go so here we have added
+another element to the dictionary which
+is cat
+now moving ahead let's explore
+double objects
+okay so we'll create a tuple called T1
+equal to
+we'll have the values 1 comma 2 comma 3
+comma four
+and let's say you want to print the
+length of Tuple T1 it gives you 4
+because we have four elements in the
+Tuple T1
+now let's say I'll declare
+one more Tuple called T2 and this time
+we'll have two more elements in the
+Tuple so I'll write T1 Plus
+followed by the two elements that I want
+let's say seven comma 9 and I'll print
+T2
+if I run it you can see here we have
+added 7 and 9 to our original Tuple that
+had one comma 2 comma 3 comma four
+now you can also use the indexing method
+or the slicing technique to extract
+values from the Tuple let's say I write
+T2 of 3 it will return the third element
+that is present in Tuple
+T2 so if you see here
+my
+third index has the element 4 hence it
+has returned 4.
+cool
+now moving ahead
+let's see
+how file objects work in Python
+all right
+Now using python you can create files
+let's say I want to create a text file
+in Python using the jupyter notebook for
+that I can write F1 equal to
+I'll use a function called open
+and inside this open function I want to
+create a text file and first
+I'll write something into that file
+let me show you so this is a folder that
+I have
+the folder name is called object types
+and it is present in my desktop so I'll
+use this location
+and here you can see now this folder
+contains no files as of now but we are
+going to create text file using python
+let's see how to do it
+so here I'll paste my
+location that I've just copied
+now one thing to note is you need to
+convert everything to
+forward slash or you can use
+double backslash also
+I'll give another forward slash and
+let's say I want to
+create a file in the name of data.txt so
+it is going to be a text file make sure
+everything is
+inside single quotation
+and I want to open the file in
+right mode so I'll write w here let's
+run it and see the difference now if we
+check our folder you see here earlier
+there was no data file now we have
+created a text file in the name of data
+you see here there are no
+information or data inside this text
+file next we are going to add some data
+to this text file
+let's
+go back to our jupyter notebook okay
+so we'll write some data to that file so
+I'll write F1 Dot
+after that I'll use the write function
+and within single quotations I'll write
+let's say hello
+simply learn
+and then
+I'll give backslash n to go to the next
+line
+I'll write again F1 dot right
+and I'll pass in another message let's
+say welcome to
+python
+programming
+and we'll give another backslash
+followed by n
+and then finally we'll close the file so
+I'll write F1 Dot
+close function
+let's run this
+and we'll see the difference now
+if I open this there you go we have some
+data in this text file that is hello
+simply loan welcome to Python
+programming
+so this is how file objects work in
+python
+all right
+now moving ahead we'll see how
+sets work in Python
+suppose I create a set called s
+and I'll use the set function
+and I will pass in
+India
+so this is a string
+and I want to convert the string to a
+set
+let's say I have another
+set called S1
+and here I have
+a list of values let's say U
+s
+and let's say a
+now if I write s comma
+S1
+so what set does is it will return only
+the unique values that are present
+inside each set so here if you see India
+all the elements are unique except I
+because I is repeated twice so it will
+return I only once in the result but USA
+has all the elements present only once
+so
+set will return all the elements
+now what if I'll
+write let's say s
+am percent
+S1
+so
+this will give me only the
+common element that is present in both
+the sets so if you see here in India and
+in U S and E
+only a is repeating in both the sets so
+it gives me a
+suppose I write
+s
+is the or operator and I'll write S1
+if I run it it gives me
+all the elements that are present inside
+set s and S1
+excluding the repeating elements so here
+I is repeating so it has printed only
+once
+similarly you can write
+s minus S1
+so you get
+only those elements that are present
+inside
+s and are not present in set S1
+now in set s e is present as well as is
+present in set S1 so it has excluded E
+from the result
+okay
+now we'll see some operations let's say
+I'll write equal to 7 and be equal to
+let's say 2.2
+I'll
+add e and B and store the result in
+my variable R which stands for result
+let's see
+the output if I write print
+are
+it gives me 9.0 and if I check
+type of R it gives me
+there's a spelling mistake I'll write
+type of R it gives me float so here
+python is performing implicit
+type conversion so if you add an integer
+with a floating Point number the result
+will be a floating Point number and not
+an integer
+now if you
+see equal to 7 and let's say b equal to
+C 2.0
+and this time I am explicitly defining
+my result to be an integer so I am using
+an integer function so if I write a
+Plus
+B
+and if I print r you see the result it
+has given me an integer which is 9. now
+to verify you can also use
+type of r
+it gives me integer but earlier
+it returned us float
+so this is how
+implicit and explicit conversion work in
+Python
+now this example was for numbers
+similarly you can
+also
+perform for Strings
+and for less tuples and sets
+now moving ahead
+one thing I wanted to tell you was you
+cannot add a string and an integer
+suppose
+I'll give a comment string and integer
+Edition
+suppose I have a variable called e which
+has a value of a 7 so 7 is an integer
+here then I have a variable called P
+which has a value 2 but this time I'll
+assign this 2 Within
+quotes So this becomes of type string
+now if you want you can check that as
+well if I write type of 2
+rather type of P it will give us Str
+which means string
+now let's see
+I'll write R which stands for result
+equal to
+a plus b
+now if I print r
+it will give us an error because you
+cannot add a string with an integer so
+it says unsupported operand
+the way to fix this is you need to
+convert this string into an integer
+explicitly
+so this time we'll say equal to 7
+B
+equal to
+2 so it is a string
+now I'll write r equal to
+a plus I'm going to use the integer
+function or the int function to convert
+my B to an integer
+and then I'll print R again let's do
+this there you go so here we have
+converted my string value to
+a numeric value
+of 2 and this time it works fine so 7
+plus 2 is 9.
+okay
+now let's see how you can convert a
+float value or a floating number into an
+integer number let's say I have a
+variable called a which has a value
+let's say 77.9
+and I'm going to create another variable
+called int underscore e and I'll pass
+this to my integer function
+so it has int of a now let's print
+int underscore e
+so you have 77 so my integer function
+has truncated the decimal point value
+that had 0.9
+if you want to check the type you can
+use
+type function I'll write type of
+int underscore e
+so it gives us integer
+now you can also convert an integer to a
+floating point value
+so if I have a variable called a that
+has a value of let's say
+50
+and if I write
+float underscore a equal to I'll use the
+float function to convert the variable e
+to a floating point value
+and let's print float underscore a so it
+gives us
+50.0 instead of 50. you can also check
+the type
+of float a
+it gives you float
+okay
+now you can also convert an integer to a
+complex number
+let's say I'll take the same value equal
+to 50 I'll write com P underscore e
+which stands for complex e I'll use the
+complex function
+and pass in my
+variable that is e
+now let's print
+comp underscore a
+so it gives us
+50.0 J so 50 is the real part and 0 J is
+the imaginary part
+you can also convert an
+integer to a string
+I'll take the same value let's say 50
+I'll write Str underscore a equal to
+Str of a so I'm using the string
+function to convert my integer to a
+string
+let's print Str underscore e
+it should be an underscore and not in
+hyphen
+let's run it there you go you have 50
+within single quotes
+you can also check the type of a
+HTR underscore a it gives you string
+cool
+now
+we learn how to convert a string to a
+tuple
+so let's say I have a string that has
+India as its value
+if I write TS equal to
+I'll use the Tuple function and pass in
+my variable that is s
+and then we'll print TS
+you can see here
+python has converted my string s which
+had India into a tuple of individual
+elements and my Tuple is present inside
+brackets
+cool
+now similarly you can convert a string
+to a list
+I'll use the same string as equal to
+India
+and then let's say I want to convert it
+to a list I'll use L1 equal to
+followed by the list function and inside
+the list function I'll pass in my
+variable that is s
+and let's print L1 and see the
+difference
+you see here my string has now be
+converted into a list you can also check
+the data type of L1 or the object type
+of L1 it returns you list
+similarly you can also check the type of
+TS
+it gives you Tuple because we converted
+that string to a tuple
+now let's explore how you can convert a
+tuple to a list let's say you have a
+tuple called T and it has a list of
+names let's say John
+we have Mary
+then we have let's say mark
+now to convert into a list we'll use the
+list function again let's say L2
+equal to list of
+t
+and let's print L2
+so this is a list because it is present
+inside
+square brackets
+you can check the type of
+t
+so T is a tuple you see here if I change
+this to L2
+it gives you list
+cool
+now
+moving to the next section where we'll
+see how to convert
+integer to binary
+suppose I have a variable called a equal
+to 10. and then
+I have P equal to bin off a
+let's say we have another variable which
+is C
+and here I want to convert my integer
+into a
+hexadecimal value or a octa decimal
+value for that you can write D equal to
+use the oct function for
+OCTA decimal value
+okay now we are going to print them one
+by one so I'll write print of B
+print of C
+and then we'll print what is there
+inside d
+will run it and you can see the results
+here
+so binary of 10 you see here
+hexadecimal of 10 you see the value here
+this is an extra decimal value
+then you have the OCTA decimal value of
+a
+okay
+now moving to the final section of this
+demo
+you can convert a number to its
+corresponding ASCII character
+let me show you how to do it suppose I
+have
+N1 equal to
+76.
+now if I write
+CHR of
+N1 and run it it gives me l
+now let's see our ASCII table so this is
+my ASCII table and
+for 76 you can see here the character is
+l
+so this CHR of N1 will return
+the corresponding ASCII character for
+that particular number so here 76
+belongs to l let's say we have another
+number N2 equal to let's say 100. now if
+I write CHR of N2
+and run it it gives me
+lowercase D we'll see the table again
+and if you see for 100 we have lowercase
+D now here you have a list of characters
+these are special characters you have
+uppercase characters you have at the
+rate you have numbers each of them have
+their own ASCII values
+cool
+now
+you can convert string character into
+Unicode values now let me tell you what
+Unicode value is so computers on a basic
+level deal with numbers so letters that
+appear on computers are stored by
+computers as a list of numbers so the
+Unicode standard provides a unique
+number for every character and supports
+multiple languages and all special
+characters
+so let's see I have a string s which has
+the value of capital A or uppercase E if
+I write R which stands for result equal
+to ord so this is the function which
+converts a string to a Unicode value
+I'll write ORD of s and we'll print our
+if I run it it gives me 65 so
+65 is the Unicode value of a
+you can also have digits let's say I
+have seven
+I'll run it so 55 is the unique code
+value of the string 7.
+let's try for any other letter let's see
+V and run it you have 86 okay
+so that brings us to the end of this
+demo session if you are an inspiring
+machine learning engineer looking for
+online training and certification so
+prestigious universities and in
+collaboration with leading experts then
+search no more simplyness professional
+certification program in Ai and machine
+learning from Purdue University that is
+in collaboration with IBM should be your
+right choice for more details you can
+use the link provided in the description
+box below let's have a look at the
+agenda for today
+so we'll understand what is the string
+in Python and how to create strings in
+Python then we look at the different
+string Methods and how to perform string
+indexing and all these we'll see with
+the help of Hands-On demonstrations on
+The jupyter Notebook
+so let's understand what is a string
+so a string in Python is an object that
+represents a sequence of characters
+in Python we have Str as the data type
+of string
+now you can create strings
+using single quotes or double quotes so
+here is an example
+where we have used a single code to
+write a string so our string is hello
+India which is inside a single code
+below if you see we have the same string
+written within double quotes so these
+are the two methods in which you can
+create strings in Python now you can
+also use triple quotes which are
+generally for multi-line Strings or dog
+strings so here is an example we have a
+string called str3 and the content it
+has is human psychology is an
+interesting subject now if you print the
+string it will be printed in two lines
+and not in a single line
+now we'll be exploring much more in
+detail in our demo session so please
+wait for a while next we have string
+indexing so if you want to extract a few
+characters from your string you can use
+the indexing method so in Python
+a string starts with the index number 0
+so here we have a string which is
+healthy
+and
+the first element is present at the
+zeroth index so at the bottom you see
+the forward index on the top you have
+the reverse index or the negative
+indexes
+so in python as I said the first index
+is at the zeroth position so H is at 0 E
+is at the first index a is at the second
+index so on and so forth
+now similarly if you look at negative
+indexing it starts with minus 1 in
+reverse order so we have minus 1
+for y minus 2 for H minus 3 for T and so
+on and so forth now let's head over to
+our jupyter notebook where we'll learn
+about strings in Python in detail
+okay so I am on my jupyter notebook
+first I'll create a
+new notebook I'll click on new and then
+select python 3.
+okay
+so here let me
+rename my notebook as
+strings in Python demo
+I'll click on rename
+okay
+now let's start with our first example
+I'll create a variable called str1 that
+will have a string
+you can see here I am using single
+quotes now I'll write hi
+Sam
+so here
+str1 is holding a string called high Sam
+and let's go ahead and print the string
+str1
+I'll hit shift enter to run it you see
+here I have my string print at high Sam
+now if you want to check the
+data type
+that str1 holds you can use the type
+function
+and inside the type function I'll pass
+in my variable str1 if I run it you see
+here it gives us Str which means
+it is of type string
+now let's create another string str2
+using double quotes this time so I'll
+write let's say
+hello
+Angela
+I can give exclamation mark
+okay now let's just print the second
+string you see here this is my second
+string which is hello Angela if you want
+you can also use the print function here
+and run it you get hello Angela
+now let's
+write a multi-line string using triple
+quotes so I'll write str3 equal to
+I'll use triple quotes
+and then
+I'll say
+hi everyone
+go to the next line I'll write today
+we will
+learn about
+I'll go to the next line and I'll write
+strings in Python
+then I'll again give triple quotes to
+close my string
+and let's just print this str3
+if I run it you can see it here I have
+now written a multi-line string hi
+everyone today we will learn about
+strings in Python let me just add a s
+the Hugo okay
+now coming to the next topic we'll learn
+about indexing
+all right
+let me declare a string str1
+which has
+value as simply loan
+now
+to use indexing and extract certain
+items in a string or values in a string
+you can use square brackets and inside
+the square brackets you can give the
+index position
+for example if I write str1
+and in the square bracket I'll give
+let's say I want to
+find the element or the value present at
+the zeroth index let's run it it gives
+me S because as we learned in the slides
+the first index in a string starts with
+the zeroth number so I have S in my
+zeroth index so hence it has printed s
+let's explore a few more if I write str1
+of let's say I want to know what is
+present at the third index if I run it
+it gives me P you can check now so s is
+at the zeroth index I is at the first
+index m is at the second index and P is
+at the third index
+let's see I'll write str1 of
+let's say 12.
+we can see the difference now it gives
+us an error it says string index out of
+range the reason being simply learn
+does not have any value at the 12th
+index so it's printing an error saying
+string index out of range
+now let's change this to
+6 and see what we have at the sixth
+index we have L if you count here
+s is at the zeroth index I is at the
+first index m is at the second Index P
+is at the third index
+the first L is at the fourth index again
+I is at the fifth index and then we have
+the second L at the sixth index so we
+have L printed here
+now let's see how to use
+a slicing operator using colon I'll
+write
+slicing operator
+okay
+I'll use the same string str1 let me
+print it once again we have simply learn
+suppose I write str1
+within brackets I'll use the slicing
+technique now I want everything starting
+from the zeroth index
+I get simply learn so here I am printing
+everything that starts with the zeroth
+index
+next let's see what we have if I print
+my string str1
+and write 1 is to 6. I'll run it it
+gives me impli so if you notice here
+I want to extract whatever is present
+from the first index till the sixth
+index but excluding the sixth index so
+in Python
+the indexing method or the slicing
+method will exclude the last index so
+here if you see I is at the first index
+m is at the second Index P is at the
+third index
+L is at the fourth index and then we
+have i at the fifth index and we have
+excluded the sixth index that is the
+second l so hence it has written us i m
+p l i
+now similarly let's say
+we'll see another example I'll write
+str1 this time I'll use colon 6.
+if I run it you get
+simply so it has printed everything
+starting from the zeroth index till
+the sixth index but excluding the cyst
+index so you have all these values
+from zeroth index till the fifth index
+okay
+now you can also reverse a string for
+that you can use negative slicing using
+two colons
+if I write print
+str1
+and within square brackets I'll give
+colon colon
+-1
+let's run and see the result
+there you go if you see this it has
+printed my original string which is
+simply learning reverse order now
+so this is a very simple method if
+someone asks you to reverse a string or
+print something in reverse order you can
+use the negative slicing method
+now let's explore a few more example if
+I write str1
+and within brackets I'll give
+-1 and run it it returns me n because in
+my original string if I go on the top I
+have n at the last index which is here
+minus 1.
+similarly let's see what we have at
+minus
+3
+we have a here if I go to the top
+you see here
+n is at minus 1 R is at minus 2 and a is
+at minus 3 and hence it has given us a
+thank you
+now let's see I'll write str1
+I want to print
+-2
+colon and let's see the result it has
+given us R and n so here we are printing
+only the
+last two elements in the Stream hence we
+have used minus 2.
+okay
+now
+python does not allow you to reassign
+values in a declared string let me show
+you what I mean
+I'll give a comment here
+reassign
+strings
+suppose
+I have the same string str1 which is
+simply learn
+say I write Str
+and I want to replace
+the value
+present at the third index with let's
+say
+o
+and
+if I were to print
+str1 now
+python will throw an error saying Str
+object does not support item assignment
+so it is immutable like tuples where you
+cannot reassign any values
+you can also delete a string
+say I have another string called str2
+which has a value of
+let's say Python programming
+you can use the DL keyword
+and write str2
+and now let's print str2
+you will see that it says name str2 is
+not defined because we have already
+deleted str2
+the above step
+okay
+now let's go ahead and see some of the
+important string operations
+okay
+say I have str1
+which has python the one thing to note I
+am using either single code or double
+quote you can use whatever you want
+let's say I have another string which
+has programming
+so these are my two strings
+let's
+perform a few operations on these
+strings
+see I write
+str1
+multiplied by 3.
+and I'll run it
+you can see here it has printed python
+Thrice because I have said str1
+multiplied by 3 so in str1 we have
+Python and multiplying three returns
+python three times
+now let's see I'll write str1 Plus str1
+it has merged python twice so I have
+Python and python repeated
+let's say I write str1 Plus str2
+we'll see the result it gives us Python
+Programming so basically
+if you use
+plus operator with two strings python
+will perform a concatenation operation
+which means it will merge both the
+strings
+now if you want to find if a specific
+character is present in a string or not
+you can use the in operator for this
+let's say I'll print
+whether
+W is
+present in
+Str
+1
+to run it it gives us false because in
+str1 we have Python and if you see here
+we do not have the letter W in Python
+and hence it has given us false let's
+now let me copy this
+I'll paste it here
+let's try whether o is there in string 1
+or not it gives us true because we have
+an O here
+you can see here we have an o
+similarly
+let's say I want to find whether
+l e
+is there in string 2 or not
+but run it it gives us false because in
+string 2 we have programming and we
+don't have any l a
+present in programming
+let's say we'll see whether Ro is
+present in string 2 or not
+this time it returns us true because if
+you see here we have Ro in programming
+and hence it has given us
+true
+now you can also
+print a raw string using the
+R alphabet
+so the way to write this I'll write r
+give a
+single quote
+let's say I'll give a location C drive
+to forward slash and let's say I'll
+write
+python 3.7
+and run it it gives me a raw string
+now
+let's see some formatting methods I'll
+write
+a comment saying
+format methods
+okay
+I'll write a print statement
+I'll give double quotes and here
+let's see the first example where I'm
+using curly braces I'll write
+and I'll give another curly braces
+you'll get to know what I'm doing once I
+finish this
+let's say I have a message both are
+best
+friends
+then I'm going to use my format
+method
+and inside this I'll pass in my two
+values for these braces
+so these curly braces will be replaced
+by
+the words that I pass in or the values
+that I pass in within the format method
+so here I'll write let's say
+James
+and my second person would be
+Brad
+now let me run it you see here
+what python does is it replaces
+the curly braces with
+the names that I have passed within the
+format method so it takes the first
+argument for the first curly brace
+and the second argument for the second
+curly base
+so my statement becomes
+James and Brad
+both are best friends
+now let me just copy this I'll show you
+another example
+this time I'll
+give one and zero inside the curly
+braces
+now if I run this
+there you go
+so here
+James is at the zeroth index so this is
+basically a list where James is at the
+zeroth index and Brad is at the first
+index so if I write 1 and 0 it will take
+Brad here and then
+for 0 it will take James so now my
+message becomes Brad and James both are
+best friends
+now let's try out another example I'll
+paste it here
+I'll use
+two variables let's say A and B
+and inside my format method
+I'll write a equal to James
+and I'll assign b as Brad
+let's run it there you go we have our
+message printed James and Brad Buddha
+best friends so here e refers to James
+and P refers to bread
+cool
+let's explore another example
+I have a variable called name and that
+has a value
+Angela
+and then I have another variable
+let's say salary
+of
+hundred thousand dollars
+I'll use a print statement
+I'll print a message her
+name
+is
+I'll use
+percentage s for string
+give
+a backslash n for next line and I'll
+write
+her
+salary is
+then I'll write
+percentage T this is for numbers
+and then I'll give another percentage
+and let's see I'll write
+my two variables Neiman salary
+let's
+see what we have in the result
+I need to close my double quotes here
+I'll exclude it from here let's run it
+there you go
+so I have my message here her name is
+Angela her salary is
+hundred thousand dollars
+I'll just delete this piece here we'll
+run it again okay
+now this percentage s refers to the name
+and we have declared her name is Angela
+so my first statement or the message
+Becomes Her name is Angela and the next
+message is her salary is percentage T So
+percentage T here refers to the salary
+where we have hundred thousand
+so the next message is her salary is
+hundred thousand
+so these are the very basic and
+important print methods or formats that
+you can use
+while working with strings
+now we'll explore a few
+functions that are readily available in
+Python to operate with strings
+I'll take my same string str1 as simply
+loan
+and then
+I'll create another variable called str2
+I'll write str1 Dot I'm going to use the
+capitalize method
+okay
+let me make one correction I'm going to
+write everything in lower case so that
+we can see the difference how we can
+capitalize the string
+so I'll write my print statement print
+old value
+this is going to my message
+I'll give a colon
+followed by my double quotes and I'll
+pass in my variable str1
+okay
+now I'll copy this
+in the next line we have
+a new value as str2
+let's run it and see the difference
+there you go so here my old value has
+simply learned in all lower case but
+when I used the capitalize method
+so python has converted my first letter
+in simply learn to Upper Keys or Capital
+keys
+cool
+now let me copy this
+I'm going to use the same example for
+the next three methods
+let me show you how the case fold method
+works this time I'm going to pass my
+input string in all upper case I'll
+write simply learn in upper case
+and instead of capitalize I'll write
+case fold
+let's run it and see the difference
+there you go
+initially we had simply learn in
+Upper Keys and now we have converted
+into case fold so all the letters are in
+lowercase
+now moving ahead
+you can also use the
+upper method to convert a string into
+Upper Keys let's say I have a string
+where
+few of the letters are in Upper Keys and
+few of the letters are in lowercase
+this time I am going to convert
+everything into uppercase so I'll use
+the upper function instead of case fold
+let's run and see the result there you
+go so this time
+python has converted my original string
+into upper case
+and likewise you can also use the lower
+case
+instead of upper if I write lower you
+see here everything has been converted
+to lower case
+cool
+okay
+now I'll show you how the title method
+works so in title method all the words
+basically the first letter of all the
+words will be in uppercase so suppose I
+have
+a string which is simply learn
+company so I'll write
+let's say
+this is my string and I'll
+I'll convert my str1 to title keys
+let me run it so this is the difference
+you can see
+the first letter of the first word is
+uppercase
+again
+the first letter of the second word is
+also in upper case so this is how the
+title case works
+you can also count the occurrences of a
+particular element in a string suppose I
+have string 1
+that has Python programming
+in str2
+I'll write str1 Dot
+and use the count function to count how
+many times let's say n the letter N is
+present
+then I'll print
+saying
+occurrences
+give a colon here
+and then I'll pass in my variable that
+is str2 so this will count the number of
+times n is present in my original string
+so if you see here in Python Programming
+we have n present twice
+similarly let's check for
+G
+the letter G is also present twice
+let's see for y
+now Y is present only once which you can
+see here
+okay
+next
+let's see how the replace function Works
+in
+python
+and giving a comment as replace
+so let's say I have a string str1
+which has
+Hamburg
+is
+located in France
+so Hamburg is a city which is actually
+located in Germany and not in France so
+using the replace method we are going to
+replace France with Germany so what I'll
+do is I'll create another string str2
+equal to I'll write str1 Dot and then
+I'll
+use the replace function
+and I'll say replace
+my string friends with
+country Germany
+and then we'll print str2 and see the
+result
+there you go
+so we have changed
+Hamburg is located in France too Hamburg
+is located in Germany
+now coming to the final method that we
+are going to explore in this
+python strings demo which is using the
+split function
+okay
+so you can split the values or each word
+in a string as separate words and store
+it in the form of a list
+so I
+write str1
+I'll just copy this
+I'll paste it here and I'll change
+France to Germany because Hamburg is
+actually present in Germany and not in
+France
+and then I'll create another variable
+called str2
+I'll write sdr1 Dot and then use the
+split function
+now let me print both the strings first
+I'll print str1
+and then I'll print
+str2
+if I run it you see my original string
+was Hamburg is located in Germany and
+then using the split function we have
+segregated or divided
+each of the words present in the
+original string into separate words and
+this time it is present in the form of a
+list
+like any other programming language
+python also supports various types of
+operators so we'll understand each of
+them with the help of examples
+let's see what operators are in Python
+The Operators are generally used to
+perform operations on values and
+variables in Python
+these are standard symbols used for
+logical and arithmetic operations
+the value that the operator operates on
+is called the operand
+so here on your screens you can see the
+different types of operators available
+in Python
+first we have arithmetic operators so
+arithmetic operators are used to perform
+mathematical operations because it
+returns either true or false according
+to the condition
+so these are the comparison operators
+you have less than greater than less
+than equal to greater than equal to we
+have not equal to and we have equal to
+equal to third we have assignment
+operators so assignment operators are
+used in Python to assign values to
+variables so these are the assignment
+operators you have equal to you have
+plus equal to so for example you have a
+variable called X and if you say X Plus
+equal to 7 this means
+it is x equal to X plus 7
+. similarly if you say x minus equal to
+7 this means x equal to x minus 7 and
+similarly you can see the other
+assignment operators here
+next up we have the logical operators so
+logical operators are used in
+the expression evaluation to make a
+decision
+if both the expressions are true then
+the condition will be true for an and
+operator
+for an or operator if one of the
+Expressions is true then the or
+condition will be true
+now for not
+if an expression a is true then not e
+will be false
+we also have bitwise operators so
+bitwise operators act on operants as if
+they were strings of binary digits it
+acts on bits and performs bit by bit
+operation so hence it is called bitwise
+operator
+so here each value is evaluated as zeros
+and ones
+then we have identity operators so
+identity operators are used to check if
+two values are located on the same part
+of the memory
+two variables that are equal does not
+imply that they are identical will
+understand each of these operators in
+the demonstration on the jupyter
+notebook and finally we have membership
+operators so membership operators are
+used to test whether a value or variable
+is in a sequence so you have is
+and is not as identity operators in
+membership operators we have in and not
+in
+now let's head over to our jupyter
+notebook and we'll see
+and explore all these operators one by
+one
+so I am on my Jupiter notebook operators
+in Python
+so let's first start with arithmetic
+operators
+I'll just
+give a comment here saying arithmetic
+operators
+okay
+first up we'll see the addition operator
+for that let me assign
+two variables so I have assigned a
+variable X to a value 10 and let's say
+we have the second variable y equal to
+4.
+now
+if I say print
+X Plus y
+it will perform an arithmetic operation
+that is addition and will sum the result
+of X and Y N gives me 14 because 10 plus
+4 is 14.
+now let's say
+I'll write print x minus y
+that gives me 6 because 10 minus 4 is 6.
+similarly you can have
+multiplication as well so I'll write X
+Asterix y that gives me 40 because 10
+multiplied by 4 is 40. similarly let's
+say x divided by y
+it gives me 2.5 which is basically the
+quotient
+of these two operands
+all right
+now
+if you were to find the remainder you
+can use the modulus operator so I'll
+write x modulo y
+it gives me 2. so you divide 10 by 4 the
+remainder is 2.
+now you can use the
+double asterisk operator which is
+basically known as power
+so the left operand is raised to the
+power of right
+I'll write print X
+give two asterisks and then say y
+it gives me 10 000 so what basically
+python does is it will raise 10 to the
+power of 4 so 10 is Multiplied 4 times
+and the result is 10 000.
+you can also try out another example
+let's say 2 raised to the power of 4
+this gives me 16.
+if I say 2 raised to the power of 3
+that is 2 Cube and the result is 8.
+you can also perform flow division
+so flow division results into whole
+number adjusted to the left in the
+number line so if I write print
+X and flow division is
+given by 2
+forward slash
+then I'll write y
+that gives me 2 so it returns a whole
+number
+a generic division gives me 2.5
+that has the floating point value but a
+flow division will give me a whole
+number
+adjusted to the left on the number line
+all right so these are some of the basic
+arithmetic operators that are very
+popular in Python
+next we'll move on to assignment
+operators
+I'll give a comment as
+ignment operators
+okay
+let's assign a value x equal to 7. so
+here we are assigning the value of
+7 to X
+and you're equal to is an example of
+assignment operator
+now if I print X it will give me 7.
+let's see I'll again write x equal to 7.
+and in the next line I'll write X
+plus equal to 3.
+and will print X
+so what python does is
+it adds 3 to my original value that X
+holds that is 7 so here X Plus equal to
+3 means x equal to X Plus 3.
+so
+x equal to X plus 3 can be written as X
+Plus equal to 3.
+similarly
+you can also
+write x minus equal to something say x
+equal to 7 and then I write x minus
+equal to
+3.
+then we'll print X
+this gives me 4
+because
+we are subtracting the original value of
+x by 3.
+so here x minus equal to 3 means x equal
+to x minus 3. okay
+similarly let's say I'll write X
+asterisks equal to 3. if I run it
+and print the value of x it gives me 12
+because our previous x value was 4 and
+now we have multiplied X by 3 so X
+value now becomes 12.
+let's say I will write X
+divided by 3.
+and I'll print X it gives me 4.0 this is
+a floating Point number
+so we are dividing 12 by 3 and the
+result is 4.0
+cool
+if you want you can also perform
+an exponent operation or a power
+operation so let's say I have x equal to
+7
+and then I write X
+double asterisks equal to
+C2
+and then we'll print X
+okay there is an error here let's debug
+the error
+I have put a space here let's delete
+that space you have to keep this in mind
+now let's run it there you go so 7
+raised to the power of 2 which is
+basically 7 square is 49. you can change
+the values and
+run other examples let's say 10 raised
+to the power of
+3 we have 1000 as the result
+okay
+now moving ahead
+now we'll understand about
+comparison operators so I'll give a
+comment
+as comparison operators
+okay
+let's say I have x equal to 7 and then I
+have y equal to 3.
+if I print
+x equal to equal to y
+it will give me false the reason being
+the value that X holds is not equal to
+the value present in y these are two
+different values that X and Y hold so X
+is not equal to y
+and if we print x equal to equal to Y it
+will give us false
+now
+I'll just copy this code
+I print it here
+and instead of equal to I'll give not
+equal to so not equal to is represented
+by an exclamation mark followed by n
+equal to if I write X not equal to y
+this gives us true because X and Y are
+two different values and they are not
+equal
+I'll print
+my code again and this time let's say
+I'll write
+X
+greater than
+y
+it gives us true because 7 is greater
+than 3
+if I write X less than y and hit shift
+enter that gives me false because 7 is
+not less than 3.
+I'll print the code again this time
+we'll see
+if x is greater than equal to 3
+if I run it it is true because 7 is
+greater than equal to 3.
+and
+now let's check for less than equal to
+this is false because
+7 is not less than equal to 3.
+okay so these are some of the basic
+comparison operators that are available
+in Python
+now moving ahead we'll see
+how logical operators work in Python
+okay
+first we look at the and operator
+in Python
+suppose I have a value
+of 7 store in x
+and then I have a value of 12 student by
+if I write print
+X
+greater than
+2
+and Y
+less than 10
+let's run it and see the result it gives
+us false now
+and logical operators
+will return true
+if both the conditions are true
+and it will return false even if one of
+the condition is false
+so here
+X is greater than 2 which means 7 is
+greater than 2 is true
+but
+y less than 10 which is 12 less than 10
+is false and hence our entire expression
+becomes false
+next let's say I have x equal to 5
+and then
+I'll print
+X greater than 3 or X
+less than 10 if I run this
+it returns us true the reason being
+X greater than 3 is true which means 5
+is greater than 3 that is true
+but 5 is not less than 10 but since one
+of the conditions is true so the or
+operation in Python returns us true
+now
+let's see another example
+I'll write x equal to 5 and
+y equal to
+10.
+I'll print
+X greater than 10 or
+by
+less than 20.
+if I run this it returns true
+so let's see our expression
+X greater than 10 that is
+5 greater than 10 is false but y less
+than 20 so 10 is less than 20 is true so
+our or operation will give us true since
+one of the condition is true
+now moving to the next logical operator
+we have not
+I'll given
+comment here as R and now we'll see not
+let's say I have x equal to 5 and then
+I'll
+print
+X
+greater than 3 and X less than 10 this
+would ideally give us true the reason
+being X is greater than 3 and X is less
+than 10 let's run and verify okay so
+this is true now let me copy this and
+I'll paste it in the next cell
+now I'll replace
+my above print statement with a not
+operator
+and we'll close our print function with
+another bracket now let's run it
+so this will give us false because
+my expression evaluates to true but not
+true is false
+okay
+now moving ahead
+let's discuss
+identity operators in Python
+all right
+so we'll start by assigning a value of
+let's say
+505 to X
+and then in y I will have
+500 plus 5
+so which is also 505
+so X and Y hold the same value of 505
+I'll print
+comma y
+so you can see here both the values are
+same 505
+for X and Y
+now I'll use the
+logical operator that is
+double equal to or equal to equal to
+I'll write x equal to equal to Y this
+will give us true because X and Y hold
+the
+same value of 505 but
+let's check with the identity operator
+so I'll write X is y
+if I run this it gives me false the
+reason being
+X and Y both refer to objects whose
+value is
+505
+they are equal but they are not
+referencing to this same object
+now this you can verify using the ID
+function in Python if I write ID of x
+this will give me the memory location
+that X has you can see this is the
+memory location of x if I write ID of Y
+there you go so this is a separate
+memory location in which
+Y is holding the value of 505 and hence
+X is y is different and hence it is
+false
+now suppose I write x equal to 100 and I
+have y equal to 200
+if I write X is not y
+this gives us true the reason being
+X and Y both are holding different
+values so X is not Y is true
+let's see another example this time
+we'll Define
+2 less
+so I have a list called a that has value
+let's say
+5 comma
+6 comma
+3 comma 7
+comma 1 comma let's say 9.
+and then
+I'll have
+another list
+that will also have the same elements
+I'll copy this and I'll paste it here
+okay
+if I write
+c equal to a
+and then we'll print
+a is C
+if I run this it gives us true because
+we are assigning
+the variable a to c and hence
+the memory locations are the same for
+both and hence
+AC gives us true
+what if I write e is B
+now this gives us false
+so here e and B are both less they are
+equal but not identical it is because
+The Interpreter in Python allocates them
+separately in memory although they are
+equal
+okay now let's talk about
+membership operators in Python I'll give
+a comment as
+membership
+operators
+okay
+let's say I have a list
+e that has
+the above values five six three seven
+one and nine I'll copy this and I'll
+paste it here
+okay I have
+another list B that has different types
+of elements we have four
+next element is python
+then we have
+two
+comma 7 comma let's see
+simply load
+and then I have 9
+I'll run this first so I have my to list
+e and B I have printed them
+let's explore how the membership
+operator works so we saw in the slides
+in and not in our two membership
+operators
+if I write 5 in a and run it it returns
+me true because you see here
+5 is present in a and hence 5 enable it
+on true
+what if I write 55 in a
+this gives us false because you see here
+in the list a we don't have an item 55
+in e
+so it gives us false
+modify right 4
+in
+p
+the skips me true
+you see here in B we have the element 4
+so 4 and B is true
+one thing I wanted to show you is what
+if I write python
+in b
+you see here
+it gives us false
+though we have python
+in our list B
+but
+the python I'm trying to check is not
+present in B the reason being here
+python is written in lower case
+but
+I am checking
+python p is in uppercase
+so it is case sensitive and hence this
+gives me false
+let's see
+I'll declare a dictionary by equal to
+and within curly braces I'll
+give my key a
+and I'll assign the value of India
+let's say I have another
+key B
+and that has a value let's say USA
+now if I check e in y
+it gives me true because your key a is
+present in y
+now what if I check
+India
+in
+y
+now this gives me false so here
+the membership operator won't work on
+the values it only works on keys in a
+dictionary
+now let me go ahead and change the keys
+to numbers I'll give one
+that has India and the second key I'll
+have 2.
+now
+if I change a to 1
+it will work fine it gives me India
+but if I write
+USC in y it gives me false as I said
+the membership operator won't work on
+the
+values it only works on the keys in a
+dictionary
+cool
+now coming to the final section of our
+demo
+we'll explore about bitwise operator
+okay
+so Python bitwise and operator returns 1
+if both the bits are 1 otherwise it will
+return 0. so first let's see 7
+ampersand 2.
+if I run it it gives me the value of 2.
+so what python does is it will first
+convert the numbers 7 and
+2 to their binary equivalence that is in
+the form of zeros and ones and then it
+will perform the bitwise and operation
+so 7 Ampersand 2 the value is 2
+if I write 3 ampersand
+5
+the value is 1 again it will first
+convert 3 and 5 to Binary equivalence in
+the form of zeros and ones and then it
+will perform the and operation the
+bitwise and operation
+now the python bitwise or operator
+returns one if any of the bits is one
+if both the bits are 0 it will return 0.
+so if I write
+10
+or
+5
+it gives me 15 so first it will convert
+10 and 5 to Binary equivalence and then
+it will perform the bitwise or operation
+let's see another example I'll write 4
+or 8.
+I'll run it
+so the bitwise or operation gives us 12
+as the result
+here we'll focus on if statement and
+look at a small project in the end
+so let's get started
+in programming languages conditions play
+a very crucial role they help us develop
+programs that can satisfy all the
+business conditions and perform well
+so conditional statements are useful
+when we have to decide that a certain
+condition or certain part of a code
+should run only if the condition is true
+so the if statement is an example of
+conditional statements the program will
+first evaluate the test condition
+and will only execute the code block if
+the test conditional expression is true
+so here you can see the syntax of if
+statement first we have the if keyword
+and inside
+parenthesis we are going to pass the
+condition and if this condition
+evaluates to true then we go inside the
+body of the if statement which is this
+part of the syntax
+now while developing a code for a
+business problem you might have to use
+multiple conditions so the alif
+statement is used when we have to check
+multiple conditions so here you can see
+if the first test expression evaluates
+to false then you have the alif
+condition
+and if the L if condition evaluates to
+true then we go inside the body of the
+alif statement which is this part of the
+statement or the syntax that I am
+highlighting
+next
+so sometimes you want to evaluate a
+condition and take one path if it is
+true but specify an alternative path if
+it is not so this is done with an else
+clause
+so the else code block will run if the
+expression is false so here you can see
+if the
+condition for the alif statement returns
+false then we have the body of the else
+statement
+and finally
+after
+all the if elephant L statements have
+been executed we'll execute if there are
+any other statements which are present
+outside the if condition now moving
+ahead
+we will use if else and alif statements
+to write a program that will solve a
+business problem
+So based on the location and total
+amount of the items we are going to find
+the shipping cost
+the locations are a few states in the
+United States
+in the if statement project we will ask
+the user to enter the amount of the
+package or the item and we'll also ask
+the user to input the state name
+so for the different states we'll Define
+the conditions using the total amount of
+the items and print the shipping cost
+so let me take you to my jupyter
+notebook where we'll do this project
+okay so I am on my Jupiter notebook let
+me just rename this notebook I'll say if
+statement
+and
+project
+all right
+so
+let me go ahead and
+give a comment I'll say
+package
+delivery
+cost
+based on
+the location and
+total amount
+all right
+first and foremost I'll go ahead and
+create a variable called total now this
+will be
+a user input so I'm using the input
+function
+and here I'll pass the message as enter
+the
+amount
+for the item
+all right
+next
+I'll assign
+another variable
+called State this is also going to be a
+user input so I'm using the input
+function
+and I'll see
+enter the state name in USA
+so these are the two
+inputs we are asking from the user that
+is to pass the
+amount for the item and the state in the
+USA
+all right now we'll start with our first
+if statement I'll write if state
+equal to equal to let's say my first
+state name is Texas
+make sure the syntax you are writing is
+correct
+now I am going to use
+another if statement so this becomes a
+nestative statement now I'll write if
+total Which is my
+item amount so I'm checking if total
+amount
+is less than or equal to
+150
+then I am going to print
+shipping cost
+in
+Texas
+is
+let's see
+30 dollars
+all right
+now I'll pass my next condition using
+alif statement
+since I am using multiple conditions so
+hence I'm going to use
+the alif statement this time I'll write
+a total
+is greater than 150 and
+if my total amount is less than or equal
+to 250 dollars
+then I'll say
+print
+I made a spelling mistake this should be
+shipping
+I'll say print
+shipping cost
+in
+Texas
+is let's say
+twenty dollars
+so usually if your
+amount of the item as high then the
+shipping cost is low
+so here you can see the total amount for
+the package or the item is less than 150
+dollars then your shipping cost is
+thirty dollars but if it is between 150
+and 250 dollars your shipping cost is
+less which is 20 dollars
+then I'll say else
+print
+shipping cost
+in
+excess
+is
+five dollars
+so what basically this means is
+if your total is less than or equal to
+150 dollars then the shipping cost would
+be
+30 dollars
+if your total amount lies between 150 to
+250 dollars your shipping cost is twenty
+dollars
+and if the cost of the item or the
+package is more than
+250 dollars
+the cost is five dollars
+so this is for Texas state
+now moving ahead
+I'll write alif
+this time
+will check the condition for State let's
+say Florida
+I'll use a colon here and say if
+my total is less than equal to 150
+dollars
+then we'll print
+shipping
+cost in
+Florida
+is
+let's say 45 dollars
+I'll use the ellipse statement again
+I'll say LF
+total
+if it is more than 150 dollars and
+if it is
+less than or equal to 250 dollars
+I'll write
+print
+shipping
+cost
+in
+Florida is
+let's say 35 dollars
+next
+I'll
+write my L statement I'll say
+print
+shipping
+cost
+in
+Florida is
+let's say ten dollars
+if the cost of the item is more than 250
+dollars now one thing to note here is
+the shipping cost is different for the
+different states in the U.S
+all right
+now we'll move on to our
+next date let me
+give a space here
+I'll say LF
+State equal to equal to let's say we'll
+take Virginia now
+I'll see if total
+is
+less than or equal to 150 dollars
+will print
+shipping
+cost
+in
+Virginia
+is
+let's say 23 dollars
+all right
+let's scroll down
+next I'll write my yellow
+statement I'll say LF
+total
+is
+greater than 150 dollars and
+total is
+less than equal to 250 dollars
+then
+will
+print
+I just copy this message
+paste it here
+and we'll see recipient cost in Virginia
+is
+15 dollars
+next
+we'll write our
+L statement else
+print
+the message again I'll say shipping cost
+in Virginia is
+five dollars
+in case the cost for the items is more
+than 250 dollars
+now moving to our final state
+I'll write another alif statement I'll
+say alif State equal to
+equal to let's say New Jersey
+if
+total
+is less than equal to 150 dollars
+then we'll print
+just paste the message here I'll say
+shipping cost in
+New Jersey
+is
+let's say forty dollars
+now I'll say LF
+total
+if it is greater than 150 dollars and if
+total is less than equal to 250 dollars
+will print
+just put this within double quotes
+and
+I'll say shipping cost in
+New Jersey is
+let's say
+ten dollars
+I'll say else
+print
+my shipping cost
+is
+free
+in case the
+total amount for the items is
+more than 250 dollars
+all right
+finally we'll have our
+else statement where I'm going to print
+invalid
+state name in case the user enters any
+other state apart from New Jersey
+Virginia Florida and Texas
+all right
+so
+we have our small project ready let me
+just run through it
+so first we are declaring two variables
+total and state and we are taking this
+as user input so the user is going to
+input the
+amount for the item or the amount for
+the package and then
+the user will input the state
+so we have the four states defined here
+and we are checking the shipping cost
+for these four states based on
+the amount for the items
+all right now let me go ahead and run it
+so here you can see we have our first
+user input enter the amount for the item
+let's see I have my amount as
+125 dollars
+and
+the next input is enter the state name
+in USA I'll say
+let's say Florida
+if I run this it gives me the shipping
+cost in Florida is 45 dollars let's go
+to the top and see what we have
+now our total was
+125 dollars Which is less than 150
+dollars and hence it has printed
+shipping cost and Florida is 45 dollars
+let's run this again
+this time I'll see
+let's see my
+item costs 255 dollars
+in the state let's say New Jersey
+let's run it
+you see here it gives us the message
+shipping cost is free now the reason
+being if you see this part of the code
+for state New Jersey
+if the
+total
+amount for the items is
+more than 250 dollars
+the shipping cost is free
+now let's try for another state
+this time we'll see for Virginia
+let's say my
+amount is
+190 dollars
+and my state is Virginia
+if I run it it gives me the shipping
+cost in Virginia is 15 let's check our
+code
+so here I have entered my
+item amount to be 190 dollars so it lies
+between hundred and fifty dollars and
+250 dollars and hence it has printed the
+message that shipping cost in Virginia
+is fifteen dollars
+now let me enter another
+state name that we have not defined
+in our code let's say I have
+my item amount as
+290 dollars and the state name
+I'll give us let's say Colorado
+if I run it it gives us the message as
+invalid state which is present in the
+last part of our code so since we
+haven't defined any shipping cost for
+Colorado it has given us the message
+that the state I am trying to search for
+is invalid
+you can check for
+another state or any other country name
+anything that is not part of our
+project
+let's see I'll enter my amount as
+hundred dollars
+and this time I'll enter my state name
+as
+let's say Ohio
+and we'll run it it again gives us
+invalid state
+let's try out one last time I have my
+package amount as 350 dollars and let's
+see my state is
+Alaska
+again it says invalid state name because
+we haven't defined any
+condition for Alaska state so this was a
+very simple project that we did using
+Arif statement we saw how to write
+nestative and we saw how to use the alif
+and the
+else statement if you are an aspiring
+machine learning engineer looking for
+online training and certification so
+prestigious universities and in
+collaboration with leading experts then
+search no more simplyness professional
+certification program in Ai and machine
+learning from Purdue University that is
+in collaboration with IBM should be a
+right choice for more details you can
+use the link provided in the description
+box below but today we will focus on for
+Loop in Python and look at different
+code examples
+so what is a for Loop in Python
+a for Loop in Python is used to iterate
+over the items or elements present in a
+sequence
+the items present in a sequence can be
+in the form of a list Tuple dictionary
+or even a string
+a for Loop in Python uses the range
+function to iterate over a specific
+number of times
+now let's have a look at the syntax of
+for Loop so here on the left you can see
+the syntax of the for Loop so we have
+the for
+keyword followed by the iterator
+variable then we have the in keyword
+followed by the sequence it can be a
+list you can use the range function it
+can be a dictionary a tuple anything
+and after that you have your colon
+followed by the statements that you want
+to execute in the for Loop
+and Below you have the rest of the code
+and here on the right you can see this
+is the flowchart of a for Loop so you
+have for each item in sequence then we
+check the condition if you have reached
+the last item if that is true you exit
+out of the loop but if it is false you
+keep on running or executing the
+statements that are present inside the
+for Loop this will continue until and
+unless you have reached the last item in
+your sequence
+okay
+now let's head over to our Jupiter
+notebook where we'll
+see for Loop in detail
+and we'll explore a lot of code examples
+okay so here I am on my jupyter notebook
+let's start by writing a simple for Loop
+suppose I have a variable
+say s and it has a value which is a
+string let's say simply learn
+okay
+now
+the way to write a for Loop is I'll say
+for
+I which is my iterator variable it can
+be any valid variable name in Python
+in
+my variable that is s
+so here s becomes my sequence
+I'll say print
+I
+so what this for Loop is going to do is
+it will iterate over all the characters
+that are present in my string and print
+them one by one
+let me run it by hitting shift enter
+you see here using this for Loop we have
+iterated over
+all the letters that were present in my
+string that is simply learn and we have
+printed them one by one
+okay
+now the print function in Python
+provides a parameter called end so by
+default
+the value of the parameter is
+backslash n that is the new line
+character you can end a print statement
+with any character or string using this
+parameter which is end let me show you
+what I
+meant so I'll again
+have my same string simply learn
+I'll say for i n
+my variable or my sequence s
+I'll say print
+I comma then I'll use my end parameter
+equal to and
+my end parameter will have a value of
+Asterix
+now let me run this you can see here
+this is sort of a pattern that we have
+printed so between each letter in my
+string simply learn we have an asterisk
+okay
+moving ahead
+let's see how to
+use for Loop
+in a list
+all right
+I'll declare a list called programming
+and this list will contain
+a few programming languages let's say we
+have Java and then
+the next item you have in the list is
+python
+next we have Ruby and then
+we'll have HTML
+okay
+so I'm going to print
+all the individual items that are
+present in my list using the for Loop so
+I'll use the same syntax I'll write for
+this time I'll use my it to variable
+name as iter which means iterator
+for iterator or iter in
+my sequence which is programming
+I'll say print
+iter
+let's run it you see here we have
+printed all the items in my list one by
+one Java python Ruby and HTML
+all right
+now let's see an example how you can
+find the average of a list of numbers
+using for Loop so I'll give a
+comment saying find the average of a
+list of numbers
+okay
+so here
+first of all we'll declare a
+list of numbers with variable list
+underscore num equal to
+it will have a few numbers let's say 20
+25 10. 50 and 40.
+let's make it 45
+now to find the average of a list of
+numbers
+first I'll declare a variable called sum
+that will have
+a value of 0 so we have initialized the
+sum variable to 0
+then I'll start my for Loop for I in
+my sequence that is list underscore num
+which is
+this variable
+give a colon I'll write sum equal to
+sum plus I
+so here
+just give a space to make it more
+readable
+so I'm adding all the numbers in my list
+and we are storing the result in the
+variable sum
+then we'll say
+print
+sum
+equal to
+I'll pass in my variable that is sum
+then I'll say
+print
+average
+equal to
+now our average will be
+by variable sum divided by
+the length
+of my
+list that has all the numbers
+let's run this you see here
+so our total sum of all the numbers
+present inside the list is 150 and the
+average of all these numbers is 30 so
+150 divided by 5 is 30.
+all right
+now let's see how you can use a for Loop
+using a tuple
+so let's declare a variable called num
+this is going to be a tuple of numbers
+and we have 30 45 60 50 and let's say 70
+as the numbers inside the Tuple
+I'll say sum equal to 0
+then we'll have our for Loop for I in
+my sequence that is num
+I'll say
+sum equal to sum plus I so here we are
+just adding the values that are present
+inside the Tuple
+I'll say print sum
+so here you can see we have
+printed
+all the values present inside the Tuple
+one below the other now if I shift my
+print statement to here
+you can see here this is my
+sum of all the numbers that are present
+inside the Tuple so make sure you have
+the current
+indentation
+now let's see how you can use the range
+function in Python
+okay
+so you can use the range function to
+iterate over a range of values or
+numbers
+using a for Loop
+the way to do is I'll say for I in
+my function range
+I'll give my first index at 1 and my
+second index at
+or my end index at 10 so this will go
+from 1 till 9 and exclude the 10th index
+I'll say print I
+you see here
+for I equal to range 1 to 10 we have
+printed all the numbers starting from 1
+till 9 so the last index that is 10 is
+exclusive in the range function
+now in the range function you can also
+give a third parameter that stands for
+step so that you can skip a few steps
+and print the next value let me show you
+what I mean
+say I write for I in range
+0 which is my starting index
+10 which is my end index and I'll have a
+step size of 2
+give a colon I'll say
+print
+display
+values
+with uh
+step
+size of
+2.
+give a comma here and my variable that
+is I let's print it
+there you go
+so we have printed
+the values with a
+gap of 2 so it starts from 0 then we are
+jumping two steps and then we are
+printing two then again two steps we
+have four six and eight so we are
+skipping one value
+and printing the next value
+in my sequence
+ranging from 0 to 10.
+all right
+now
+let's write a program to print a table
+of a given number
+so I will give a comment as
+program
+to
+print
+table of a given number
+all right
+so I'll pass my
+variable n
+which is going to be a user input so I'm
+using the int function and inside the in
+function I'll use the input function to
+take the user input
+I'll give my message as enter the number
+and I'll say for I in
+range
+from 1 till
+11.
+I'll say
+multiply which is mul here
+n Asterix I so basically what I am doing
+here is
+I'll take a user input of the number
+let's say we want to print the table of
+five
+so from
+1 till 10 will have the product of the
+numbers
+let me print it I'll say print
+and
+comma
+within double quotes I'll give my
+asterisks
+comma I
+comma
+within double quotes I'll say equal to
+and then we'll have our
+variable mul
+let's run this
+enter the number I'll give 5 and hit
+enter there you go
+so here we have the multiplication table
+of
+my number five so you see
+5 into 1 which is 5 5 into 2 is 10.
+then we have 5 into 7 35 5 into 9 is 45
+then our last index which ends at 10 so
+we have 5 into 10 that is 50.
+all right
+so this is how you can create a simple
+multiplication table using for Loop in
+Python
+now we can also use the range function
+with a sequence of items
+the Len function can be combined with
+the range function to iterate through a
+sequence using indexing I'll show you an
+example here let's say we have a list
+called list two and here we have
+a list of programming languages let's
+say C plus plus you can either use a
+single quote or a double quote to
+represent the
+text values in a list
+the next programming language I have is
+Java
+then let's say I have Python and we have
+r
+okay
+so I can write for I in
+range here I can use the length function
+and I'll say
+list two
+give a colon
+then we'll print
+hello
+and I'll say list two of I
+so what it does is my iterator will
+iterate over the list of programming
+languages I have here
+and it will keep on iterating
+till
+the length of the list and then I am
+printing my messages hello
+and it will take each item from the list
+using the index number
+if I run it you can see here it says
+hello C plus plus hello Java hello
+Python and hello r
+cool
+now let's see how you can use
+nested for Loops in Python
+I'll send a straight for Loop
+as my comment let's say I have a list
+of company names
+my first company I have in my list is
+Google
+let's say apple
+PWC
+and then we have
+Uber
+so here I'll write for I in
+companies
+I'll say print
+we will
+display
+each
+letter of
+I'll say plus I
+now I'll use my second for loopsync for
+letter in I
+will print the letter
+let's run it and see our result
+there you go
+so here we have used
+two for Loops so that becomes a nested
+for Loop you have my outer for Loop and
+then we have our inner for Loop so in
+the outer for Loop we are just printing
+the name of the company so here we see
+we will display each letter of
+plus I which stands for
+my company name Google so you can see
+below we have
+displayed each letter of Google using
+the inner for Loop similarly we have for
+Apple you can see a p p l e we have PWC
+and then we have Uber
+so this is how you can use
+multiple for Loops in Python
+now let's see how you can use a for loop
+with else clause
+so I'll give a comment for loop with
+else clause
+cell rate for I in range
+0 comma 10 comma I'll give a step size
+of 3
+I'll say print I
+and after this
+python gives you the flexibility to use
+an else clause
+after the for Loop so I'll write else
+print
+the loop has
+completed
+execution
+so this is my message that we are going
+to print after we have printed all the
+elements
+that are present inside this range
+function
+let's run it you can see here we have
+printed
+the value starting from 0 with a step
+size of 3 so we have 0 3 6 until 9 and
+then
+after that we have our else block
+printed which has the message the loop
+has completed execution
+good
+now let me show you
+two more
+important feature that you can use while
+writing a for Loop one is called the
+break statement the other one is called
+the continue statement
+so in Python you can break the for Loop
+and end it before it has actually run
+all the elements in the I treble using
+the break statement
+so let me show you a simple example if I
+write for
+just give a space here
+I in
+range
+let's say from 1 to 10
+I'll use an if condition saying if I
+equal to equal to 6.
+then break and come out of the loop
+next we'll print I
+so here what we are doing essentially is
+we are iterating over
+all the values from 1 to 10 and whenever
+the I value becomes 6 we come out of the
+loop and print
+all the values we have iterated so far
+let me run it and we'll see the result
+there you go so here our I value started
+from 1
+we printed one two three four five and
+then
+our I value reached 6 then we use the
+break statement to come out of the loop
+all right
+now
+you can also skip the execution of
+further statements in the for Loop
+during the titration using the continue
+statement in Python
+so when a continuous statement is
+executed the for Loop continues with the
+execution of the next element in the
+iterable it does not complete all the
+statements in the for Loop body
+so again we'll
+give a comment
+say continue
+okay so I'll write for I in range
+again from 1 to 10
+give a colon I'll say if
+my I value
+is equal to equal to 6 then I'll say
+continue
+then we'll print I
+let me run it and we'll see the result
+okay so if you notice this
+output so we have printed values from 1
+to 5 and when my I value became 6. we
+skipped printing 6 and we moved on to
+the next element in the eye table which
+was 7 then we printed 8 and 9.
+so this is how you can use the break and
+continue statements in Python
+all right
+now we'll see a program to display the
+total goals a player has scored
+so here we are going to iterate over a
+dictionary
+so I'll give a comment program to
+display
+the total goals uh
+player has scored
+all right
+first of all
+I'll declare a variable saying clear
+name
+and let's see we have the player name as
+Carmelo
+all right
+I'll declare a
+dictionary called goals
+and within curly braces I'll have
+my first
+player name Edition
+let's say addition has code
+14 goals then we have let's say
+Burnet
+so Burnet is my key here and then we'll
+have
+value in terms of goals let's say three
+and then we have our third player let's
+say Carmelo
+and Carmelo has scored let's say seven
+goals
+now I am going to write my for Loop so
+I'll write for
+my I triple name here is player in my
+sequence name is cools so I'll say
+goals
+I'm going to check if
+my player
+is equal to equal to player name
+I'll say print
+the goals scored by the player
+so I'll
+pass my dictionary name and within
+square brackets
+I'll say clear
+let's use the break statement
+and then I'll say
+else
+will print
+my message would be no player with
+that name
+found
+let's run and see the result
+all right so here what we did was
+initially I declared a variable called
+player name that had the value Carmelo
+and since Carmelo was present inside my
+dictionary
+named goals you can see here we have
+Carmelo who had scored seven goals
+so I I treated Uber
+my sequence cools and I checked if my
+I treat her
+that is player is equal to equal to the
+player name which is Carmelo since this
+Carmelo is present inside my dictionary
+name so we printed the goals that were
+scored by Carmelo that is 7. now let's
+say I change this player name to
+we have let's say Messi
+now since Messi is not present inside my
+dictionary goals if I run this it will
+print no player with that name found the
+reason being message is not present
+inside
+my dictionary called Ghouls
+cool
+now
+we'll see two more
+examples
+this time we are going to print the cube
+of
+numbers using for Loop
+all right
+so first of all I'll declare a list
+which will have a list of numbers let's
+say 2 5
+7 4 8 and let's say 6.
+then
+I'll pass in a empty list so I'll
+declare Within
+empty square brackets
+I'll say for I in
+my sequence name that is num
+I'm going to use my empty list Cube and
+Then followed by the append function
+and inside the append function we'll
+have our
+cubes of the number so I'll write I
+I'll use the double asterisk operator
+and then I'll say 3.
+after that we are going to print
+my list name that is Cube
+let's run it there you go
+so you can see here
+first we have
+the list of the numbers here and then
+we have printed the
+cubes of these numbers in a pattern
+let's say
+bring this print statement here and I'll
+run it again now this is much more
+readable you have 2 cube is eight five
+cube is 125 7 cube is 3 43
+then 4 cube is 64 8 cube is 512 6 cube
+is 216.
+all right
+now coming to
+the last example in our demo section of
+this
+for Loops in Python video
+will write
+a program to print a pattern I'll say
+pattern printing
+all right
+so we are going to print
+a right angle triangle
+for that I am going to take
+my first variable called n which is
+going to be
+a user input to enter the number of rows
+so using the input function I am passing
+the message enter the
+number of
+rows
+I'll say for I in
+range 0 till my user input n
+give a colon
+I'll use my inner for Loop
+this is
+going to be the number of columns so
+I'll say for J in
+range
+0
+comma
+I plus 1
+give a colon
+and
+I'll print
+my star pattern so I'm using Asterix
+and I'll use my end parameter
+I'll have my double quotations
+and then
+we'll say
+print
+the pattern
+so here what I am doing is I'm taking
+the number of rows from the user
+and I'm iterating
+from 0 until n which is my user input
+and then
+we are
+assigning another for Loop for the
+number of rows so that ranges from 0
+till I plus 1
+then I am printing my star
+let's run it and see the output
+let's say I'll enter the number of rows
+as 6.
+if I hit enter you can see here we have
+our right angle triangle printed here so
+initially
+my
+I value is 0
+so here my J value becomes from 0 till 1
+so we have just one star printed
+in the next iteration my I value becomes
+1.
+so from
+0 to 1 plus 1 that is 2 we have 2 Stars
+printed the next iteration my I value
+becomes 2 so 2 plus 1 is 3 again so we
+have three columns here so three stars
+printed so on and so forth
+we will learn three Hands-On projects
+that will help you improve your python
+coding skills we have with us Anish
+Karan who will take us through these
+projects
+so the first project we are going to see
+is given a block of text you will count
+the frequency of each word occurring in
+the text or paragraph
+in the second project you will trace the
+movement of a robot the robot can move
+up down left or right
+you will write a program to find the
+distance between the starting point
+after a sequence of movements
+in the final project we will write a
+program to check the validity of
+passwords given by the user often while
+logging into a website or an application
+you are asked to input the username and
+password to register
+our project will check the criterias for
+setting a password and approve it only
+when the criterias are met so a password
+should have at least one letter between
+a to z
+at least one number between 0 to 9
+uppercase letter one special character
+and so on
+so let's get started with our first
+project
+hello everyone and welcome to another
+video on Python Programming in this
+video we will be covering a sort of a
+project side type of scenario which is
+basically going to be a problem case for
+you and it's going to be slightly
+slightly difficult slightly tricky
+um but what we're going to do is we're
+going to tackle a particular problem and
+we're going to what I'm going to do is
+also show you a solution to that problem
+so let's start with this so this
+question that we have is
+um we have this program that we have to
+write where we compute the frequency of
+words that exist in some input okay uh
+the program should output after sorting
+the key alphanumerically now this input
+can be and it's basically a block of
+text right so in our example we have for
+example if this was our input right what
+we want to see is
+um
+an output which is basically saying that
+uh the word python has appeared say well
+in this example this appeared five times
+and then the word read has appeared one
+time and so on and so forth like for
+each of these words we want to see um
+how many times have they appeared in
+this particular block of text so let's
+look at a particular example now where
+we have done this so let's um let's see
+here
+so first of all I'm going to create a
+dictionary so why am I creating a
+dictionary is because I'm going to use
+each unique word as a key and the number
+of times they have appeared in a block
+of text as the value to that key so um
+I'm going to use a sample string which
+is basically this long string that you
+can see here which is stored in line so
+this large chunk of text is what we're
+going to be analyzing
+um so how are we going to do this it's
+pretty simple so we have this now what
+we want to do is
+um when we find what we one way of
+tackling this problem that we're going
+to do here is we want to
+um check word by word
+um first of all we want to see if it's a
+unique word and if this word is
+um we've encountered it for the first
+time then we need to store a new key
+here in our dictionary called frequent
+table or frequency table
+um and if it has already if there is a
+key already with that particular name
+then we just want to increment the count
+or the value by one so let's see how we
+do this over here
+so if you can see in my this the
+solution is as simple as this but if you
+see what's happening it's basically what
+uh what it's doing is we're splitting up
+this string using the split function
+what this will do is it will split up
+the string at every white space so it
+will take this as one part I'll take
+this part as another part it will create
+an iterable with each word as the um
+each iterable object in that container
+so it's going to be a list of words like
+python is one so on and so forth and
+we're going to go one by one so we're
+going to say forward in line dot split
+now if this word is if it exists in
+frequency table as a key then
+what we're going to do is we're just
+going to increase the count of the value
+of that key by 1 but if it does not
+exist then we're going to actually
+create a key with the word as that
+unique word and we're going to create
+its value
+um initialize its value to 1. so when we
+execute this
+now if we want to once we've done this
+we can sort it by the count of the words
+so what we're going to do is we're going
+to create a another Tuple called sorted
+tuples where we're going to use the
+Lambda function out here to sort the
+um the dictionary in terms of its values
+so what we're going to do is we're going
+to take the key
+the key being the Lambda item item with
+index one index one is basically the
+value so a particular key has a value so
+the word python appears so many times
+the per the word say scientist appears
+so many times so we're going to check
+which words have the highest number of
+occurrences and we're going to sort it
+in a descending order so that that is
+basically what the reverse is equal to
+True does so when we're going to sort
+this when we're going to use the sorted
+function when we say reverse true it
+tells the Sorting function to sort this
+dictionary
+um this dictionary frequency table uh in
+terms of value
+by the the descending order so whichever
+um word appears highest that would be
+the first word in our sorted Tuple so
+that's what we do in this line and once
+we execute this we're also going to
+print so if you see the result of this
+activity that we've done you can see
+that the word machine
+um appears six times learning appears
+six times then python appears 510 and so
+on and so forth so we've created a
+sorted Tuple where the first object of
+the Tuple
+we've created a list of sorted tuples
+where the first object of the two each
+Tuple is the unique word and the num the
+second one is the number of times it has
+appeared in this
+um particular example or this particular
+string
+so yeah this was what the first basic
+project that we have tackled if getting
+your learning started is half the battle
+what if you could do that for free visit
+scale up by simply learn click on the
+link in the description to know more
+hello everyone and welcome to another
+video on Python Programming in this
+video we will continue with what we
+started in terms of our project number
+one what we're going to do is
+um we're going to tackle another
+slightly complicated a question or a
+situation
+um we're gonna try to arrive at a
+solution so in this what we have is some
+sort of a robot a moving robot which
+moves on a Cartesian plane a two
+coordinate plane
+um is going to move uh in terms of up
+down left and right okay and each each
+time it moves up or down or left or
+right it takes a certain number of steps
+in that direction
+um integral steps of course so what we
+need to do is from a starting position
+whatever starting position is which we
+are going to take as 0 comma 0 in this
+example we're going to make it move to a
+particular location with the commands up
+down left and right followed by certain
+steps and we're going to uh ask what
+we're going to do is we're going to
+calculate the distance between these two
+points
+um and we're going to calculate
+different types of distances so you
+might be introduced to New Concepts
+um you know distance Concepts in this
+video as well so what we're going to be
+using for distance calculation is the
+minkowski distance and that is
+um we're going to take uh so the
+minkalki distance between two variables
+is basically the absolute difference
+between these two variables of these two
+points
+um and we take it to the power of
+something so if we want to say uh
+calculate the minkowski distance with
+um in terms the quadratic main Cloud
+citizens with basically P2 so we are
+going to do x i minus y i absolute
+difference to the power 2 and then we're
+going to take the second root of it
+after summing each and every Point
+um so when we take p is equal to 2 we we
+say the minkowski distance behaves like
+the euclidean distance and this is
+probably one of the most common
+distances uh in case you've done
+um basic Cartesian geometry when you are
+asked to find the distance between two
+points on a plane we can also take the
+absolute distance where we take p is
+equal to one so in this case we're just
+basically summing the absolute distances
+between each point
+um no roots no powers nothing basically
+p is equal to one and we call that the
+Manhattan distance so we're going to
+take p is equal to 1 2 and 3 in each
+case and we're going to find the
+distance between two points uh based on
+these
+measures so
+this is just a visual representation
+this is basically the Euclid resistance
+basically the estimate of the value
+between these two points if um since
+this is a two coordinate system whereas
+the Manhattan distance would be the
+absolute distance in terms of if we go
+up and then we go right between these
+two like say this was and this was
+another Point
+um so yeah
+let's move on to the problem so what
+were in this in this particular example
+we are going to start from the static
+position 0 and 0 on a on a graph and we
+are going to give the commands of up
+five down three left three and right two
+so first of all what we want to do is
+um we initialize the starting position
+as 0 and 0 and we also just for the sake
+of this example we initialize the end
+position as 0 and 0. so what we're going
+to do first of all is let's execute this
+much now we have this list list of
+tuples
+um it's we're going to call this actions
+and this is the actions that we're
+performing so the this the each Tuple
+contains an action and the number of
+steps in that direction so it contains
+four actions up by five steps down by
+three steps left by three steps right by
+two steps so now we're going to iterate
+over this each Tuple and we're going to
+get the direction first of all in this
+line for each step uh and we're going to
+calculate the number of steps it takes
+so for each action it's going to first
+tell
+um it's going to check what is the
+direction which is done by this line and
+we're going to find out the number of
+steps in the direction which is stored
+in this line so
+once you've gotten this for each action
+we have to update the end position right
+so what happens is if you go up by a
+particular direction so you are
+basically changing the y y axis right
+the the y-axis so we're going to change
+end position and the first index which
+is basically this part of the end
+position coordinate point so we're going
+to say if it's moving by up then we're
+going to uh update by adding uh the
+y-axis by the number of steps so
+um and and if the direction is down
+we're going to do the same thing for the
+y-axis but we're going to decrement it
+similarly if we move left or right we're
+moving the x axis right so we take n
+position in the first index so we take
+the x axis and if we're moving left it's
+a negative uh it's a decrement and if
+you're moving right it's an increment so
+if there's any other like action like
+any other action for example that was
+given here we say pass so basically the
+only valid actions that we can pass is
+um up down left and right otherwise we
+we just skip that particular action so
+this is what the this particular Loop
+will do it will update our final
+position
+so once we've done this
+um if we if I execute this what will get
+stored in the end position is basically
+my end position so now that I have my
+starting position and my end position
+um just to show you what the end
+Position will look like right now let's
+just do this so if you see here after
+I've moved up by five steps down by
+three steps left by three steps and then
+right by two steps my final end position
+is minus one and two
+um my start position on the other hand
+was
+as you remember it should be 0 and 0. it
+is 0 and 0. so now we're going to find
+the distance between 0 and 0 and -1 and
+2. so we're going to first of all create
+a function called minkowski distance
+which which does the basic function of
+just calculate the uh the difference
+between the what do you say the N
+position x coordinate and the N position
+y coordinate times or to the power of a
+root and we're basically going to do
+this operation that you saw here we're
+going to do this and um we're going to
+uh we're going to
+use this root variable to specify to
+like P is equal to one two or three like
+what P value we want to take for this
+minkowski distance so once we've done
+this what this function will do is
+basically store uh this much and it will
+wait for us to uh it will basically wait
+for us to give us a root so when we give
+root 1 it will create these it will
+check the distance between the end and
+starting points
+um with the p-value of one if you gave
+it two it will calculate euclidean
+distance with p-value 2 similarly for 3
+and we can calculate for any Roots so
+we're going to calculate for one two and
+three roads and we're going to see what
+values we get in each case
+so when root is equal to 1 I print a
+statement saying minkowski distance with
+root one is something and then root 2
+it's something root 3 something let's
+see what results we get
+so if you see here the minkowski
+distance with root 1 is actually 1.0 but
+the euclidean distance between these two
+points is 2.23 whereas the uh the cubic
+menkowski distance with basically the
+with root 3 is 1.91 so you see these
+three different distance measures for
+the same distance between two points so
+in this video you basically so in this
+basically by doing this activity you
+might must have you will learn how to um
+basically how to iterate through loops
+and perform these distance calculations
+which you will find pretty handy in many
+activities related to data science and
+machine learning
+so yeah this was on the project two
+hello everyone and welcome to another
+video on Python Programming in this
+video we will be continuing tackling
+different uh problems and problem cases
+in terms of a project called project
+three where we're going to be using
+regular Expressions to validate whether
+certain passwords that have been entered
+do they match certain criterias or not
+so let's look into our particular
+question we have a website that requires
+users to input username and password to
+register now we have to write a program
+to check the validity of passwords input
+by the users now the criteria is that
+the passwords have to follow are that
+there's at least one number between a
+and z and this is at least one number
+between is at least one letter between a
+and z and one number between 0 and 9.
+the third criteria is that uh there's at
+least one letter between capital A and
+capital c so this first and third Point
+basically is saying that there should be
+one lowercase letter and there should be
+one uppercase letter
+um now there should be at least one
+character from dollar sign hash or the
+at simple
+um it should have a minimum length of 6
+and the maximum length of 12. so when we
+whatever passwords that we enter into
+our example they must be comma separated
+so we're going to have an input they're
+going to ask us for an input where we're
+going to have to input the different
+passwords in a comma separated way so
+let's look let's look at how do we
+tackle this so for my example I'm going
+to use these uh examples in terms of
+these are my password examples if you're
+going to check if these are valid
+passwords or not so let's copy this
+first of all
+and now let's import the re which import
+re is basically the regular expression
+module now in this step is going to ask
+us to input the passwords as you can see
+here so I will just Ctrl V so since this
+is comma separated what it will do is it
+will split up each of these uh by the
+comma and it will store them in a list
+so it will take this as one password
+this has another password this has
+another password and this has another
+password once I press enter
+now if I want to check what's in list I
+mean what's in items what I can do is
+just check over here what's in items
+it's a list of whatever passwords I had
+entered each object is separately
+treated now in this list now I'm going
+to create a an empty list called value
+first of all once I've done that I'm
+going to move on to the next step
+so once I created my list called value
+what I'm going to do is now I'm going to
+search and I'm going to check for each
+condition using regular expressions for
+whatever criteria that we have initially
+so if you see here what I'm going to do
+is first iterate by each item in this to
+check for each password now my first
+check will be a basic check for the
+length of the password if it's lesser
+than 6 or greater than 12 then our uh
+our basically our password is illegal so
+we can't be using this and we will just
+continue and we won't check for anything
+else but if it is within 6 and 12 the
+length uh 6 and 12 then we can continue
+with our check so we can do we'll do an
+else statement for pass which basically
+moves on to this next block
+now once you've done this what we will
+do is this this first statement what
+this is going to do is it's going to do
+an re.search and re.search as you know
+is going to look for at least one
+instance of um
+a letter occurring between a and z so
+this ire dot search followed by this now
+this is the regular expression that we
+have passed and what this does us is
+basically the square in the square
+brackets we're looking for anything
+between uh A and Z in terms of small
+letters so if
+um this is if this condition is not met
+then again we continue and we leave this
+particular search because one of our
+criterias is not met all right but if it
+is met then this if not statement will
+not uh like we won't enter this block
+and we can move on to the next check so
+now now we move to LF naught now again
+we're using if not statement so this is
+basically checking for uh a negative
+case so anytime one of these cases have
+been met it basically means that our
+password has been invalid because these
+conditions are not being met so we're
+trying to eliminate all uh conditions
+all of these conditions so that we get a
+valid password so again we move on to
+the next statement which is basically
+going to do the search for numbers once
+again if we find a case a password
+without any numbers we continue and we
+don't
+um check this password no more because
+we already know it's a it's an illegal
+password now next check will be for
+capital letters a to z and the next
+check again will be for these particular
+symbols the dollar the hash and the ad
+one of these three symbols finally we
+have a a search for
+we're going to search for a white space
+character so if we actually do find a
+white space character in our password
+um that's an illegal password and we're
+not going to continue checking for those
+cases
+so
+um so this is basically all our cases uh
+lowercase letters numbers capital
+letters these one of these three symbols
+and the existence of a white space so
+once we've done all these checks if if
+none of these have been passed we move
+on to this else statement where we just
+pass and what we can do is we append the
+value we append the value to uh we we
+append P to the uh the the list call
+Value so basically what happens is
+um just to go through it again if this
+condition is not met and this condition
+is not met this is not met this is not
+met this is not met and this is also not
+met
+um then we're fine so basically as long
+as we have small letters as long as we
+have a number as long as we have a
+capital letter as long as we have one of
+these three symbols and as long as we
+don't have any uh White space characters
+we can append e to this otherwise guys
+it will continue and it will break out
+of this for Loop completely that's what
+the continued thing the continue
+statement at the end of each of these
+blocks checks
+um anytime this condition is met uh this
+if not condition is met then we break
+through we break through this uh whole
+for Loop and we don't append P to the
+value but uh if you actually get to this
+stage then what we can do is simply
+append uh P to value now finally what we
+are going to do is we are going to print
+out all the valid
+um all the valid passwords so just by a
+quick look you can see here
+um
+this is a valid password right so let's
+execute this and let's see uh what we
+get if you see here we only get one
+valid password and let's look at why
+some of these do not turn out to be
+valid so if you look here all of the
+conditions are met it has a capital
+letter it has a small letter it has at
+least one number and it has one of the
+symbols either dollar sign or the hash
+sign or the AD Sign In this case we have
+two white spaces one over here and one
+over here so this is an illegal password
+similarly in this case also we have an
+illegal password because it begins with
+a space in this case it's the same thing
+we begin with the space and also it does
+not have any of those symbols that we
+were looking for the dollar or the hash
+or the ad so again so these three are
+illegal passwords and they do not get
+appended to Value however this does get
+appended to Value and that's why we get
+the result for only one password which
+is the only legal password and this was
+all for this python Basics hope you guys
+found it informative and helpful if you
+like this session then like share and
+subscribe if you have any questions then
+you can drop them in the comment section
+below thanks for watching and stay tuned
+for more from Simply love
+hi there if you like this video
+subscribe to the simple learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

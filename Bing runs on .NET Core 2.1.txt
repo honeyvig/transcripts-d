@@ -1,0 +1,190 @@
+hi this is John Galloway and today I'm
+talking to McCall from the Bing team and
+McCullough you wrote a really cool blog
+post recently where you talked about how
+the performance impact and all kinds of
+other great impacts from running on
+dotnet core to one um can you give me
+just an idea of the the sigh you know
+the how how busy Bing is I mean how what
+kind of traffic you're you're processing
+here yeah I mean Bing comm gets
+thousands of queries of search queries
+per second we power Bing calm and other
+API partners using cognitive services so
+you get thousands of queries per second
+and we have millions of lines of c-sharp
+code that's powering Bing calm Wow okay
+so I always think it's great when I'm
+talking to people to get it you know
+when I'm talking to customers to tell
+them that large implementations of
+dotnet or you know people are using
+dotnet core on large production
+instances and this is a really cool one
+um so one thing you call out right at
+the top of this post is the idea of
+ready to run images and I don't think
+that's that well-known can you explain
+what that is yeah so ready to run images
+are this version file format that's
+available on dotnet core basically
+allows you to pre compile your
+assemblies into both native and manage
+code in the same file which allows you
+to basically have this ready run
+experience you have managed code that
+gets jittered usually but when your
+images are ready to run that are
+essentially ready to run when your
+program starts which is very useful for
+if you have a large application with
+many assemblies and a lot of managed
+code it really helps startup performance
+and also impacts your working set so
+usually this code that is generated is
+more compact in its representation
+because there's not a lot of jitter
+jitan going on that's putting code in
+different places so it's all in one
+image very cool so as opposed to paying
+the price of like jetting on each of
+your servers on a farm you can you can
+kind of do this at Build time and blow
+the
+out to everybody is that correct exactly
+the the key part of ready-to-run images
+and dotnet core is that we did have
+previous technologies like engine on
+dotnet framework but they always a
+required admin privileges on the actual
+machine that you need to Engen on and
+also the fact that it had to be done on
+the exact machine so if you have five
+thousand machines that mossis happens
+five thousand times
+yep okay so next this is awesome seeing
+this chart here this you you showed a
+thirty four percent improvement from
+from deployment from upgrading to dotnet
+core to one so previously you had both
+dotnet framework for seven to and dotnet
+core to oh so just that that bump two to
+one was a thirty four percent
+improvement overall yeah so we basically
+when we migrated our code we were still
+running on net four seven two and then
+you know we would switch back between
+four seven two in two Oh
+and so we had both we saw both sides of
+four seven two and two oh and when we
+upgrade to two point one that was
+phenomenal 34 percent improvement that's
+right so I love how you went through and
+called out detailed issue or like
+features and also specific pull requests
+on some of these and you showed why your
+performance got better
+so like any favorites here I mean I I
+always loved things like vectorization
+and and looking at how that kind of
+bubbles all the way up the stack yes I I
+you know they're all they have the best
+part in one sentence is the fact that
+the community and microphone please
+contributing open-source has really
+helped us one my favorite I have to say
+is the vectorization because it actually
+you know had a major impact but this my
+my other favorite one is the combination
+of work done by Microsoft employee and
+Andy Ayers and an open-source
+contributor well-known Ben Adams where
+they had D virtualization and how that
+impacted when you did it for certain
+default equality comparison areas that
+was you know it was a great sort of
+synergy between Microsoft II's and
+open-source desolate I would say you
+know that's one of my favorites and it's
+it's really neat in as part of this my
+understanding is that you had specific
+requests and you work through the public
+github
+thing to say hey we'd love this sort of
+performance improvement or change and
+then as part of that collaboration this
+shipped as part of dotnet core to one
+and helps everyone out right that's
+right one of the ones that I that I
+contributed and you know sort of open to
+pull requests an issue was this one with
+calling direct and it's it's because we
+generate that kind of code so you can
+imagine as an open source if you have a
+particular kind of code that you'd like
+optimized it's it's really great you can
+just go in and contribute and that's
+what we did
+with the help of the.net team as well so
+it really overall was a great experience
+operating an open-source is probably one
+of the main reasons why I think this
+performance improvement across so many
+different things has been seen anything
+cool ok so then one final thing is the
+actual rolling out to production and
+this is just amazing here that within
+two days of the release you were able to
+deploy what what is it about dotnet core
+that allows you to do that so Donna core
+has basically these two deployment types
+one is the shared deployment the shared
+one time where you will have the dotnet
+tool available in your Linux
+distribution or your Windows OS and the
+other one is this idea of self-contained
+apps so for us we use this idea of
+self-contained apps and we're able to
+basically have the dotnet core runtime
+be a part of our application deployment
+so which if you think about it is is
+extremely cool you just have your app
+sitting right besides it is all the core
+CLR the GC the JIT everything there so
+if you think from a person a perspective
+of you know how can you isolate things
+it's really cool you on day one you have
+this application running on a framework
+on day two you upgrade it with dotnet
+core sitting right beside your app and
+so when dotnet core 2.1 comes out for us
+it's a change in the CS project
+literally a change in the NuGet package
+we made one character change and we were
+able to deploy dotnet core 2.1 two days
+after and that two days is just because
+of some additional validation we had to
+do so that was really awesome that's so
+cool I love here I mean the focus of
+this post is on performance but were
+there other features you were able to
+turn on as a result of moving to dotnet
+core to one yeah so this is another one
+of these things where the ecosystem
+really helped we with done at core 2.1
+you also get broadly support in the core
+FX libraries so we actually use that and
+were able to get big comm broadly
+support which was phenomenal so not only
+did we get all these performance
+improvements our response eyes also
+shrunk a little bit because of using
+broadly so that was also pretty
+phenomenal
+wow that's great well that's all the
+time we have for this quick look I'd
+encourage people to go out and read more
+on this post the post is titled bing.com
+runs on dotnet core 2-1 and thank you so
+much for your time a call thank you

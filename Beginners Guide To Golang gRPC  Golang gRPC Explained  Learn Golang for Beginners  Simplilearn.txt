@@ -1,0 +1,289 @@
+hi everyone welcome to the simply learn
+youtube channel
+this session will be about calling grpc
+before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update
+in this session you will learn about
+what grpc is
+next you will learn about the grpc basic
+concepts you will get to know when the
+grpc is used and further you will learn
+about the strengths and weaknesses of
+grpc
+and moreover we will learn about the
+companies using grpc
+let's start with what grpc is
+grpc is an open source framework that
+handles rpc that is remote procedure
+calls and helps build scalable and fast
+apis it allows the client and server
+applications to communicate
+transparently and help developers
+develop connected systems
+this framework works on http slash 2
+protocol buffers and other modern
+technology stacks to ensure maximum api
+security performance and scalability
+next
+we will learn about the grpc basic
+concepts
+that is
+protocol buffers
+streaming
+http slash 2
+and channels
+let's understand these concepts in
+elaboration
+first one we'll start with protocol
+buffers
+protocol buffers or protobuf is google's
+serialization or deserialization
+protocol
+it is used as
+interface definition language idl and
+serialization toolset by grpc both the
+client and server should have the latest
+and same protofi
+grpc stores your data and function
+contracts in the form of protofides
+protoc that is the protobuf compiler
+generates client and server code using
+the dot protocol
+it loads the
+code using the dot protofile
+into the memory at runtime and uses the
+in-memory schema to serialize or
+deserialize the binary message you can
+exchange the data faster with protobuf
+as it requires fewer cpu resources since
+data is converted into binary format and
+encoded messages are smaller in size
+the next concept we have is streaming
+streaming is another key concept of grpc
+where many processes can take place in a
+single request
+the multiplexing capability that is
+sending multiple responses or receiving
+multiple requests together or a single
+tcp connection
+of http slash 2 makes it possible
+now we'll see through the types of
+streaming the first one is server
+streaming rpgs the client sends a single
+request to the server and receives back
+a stream of data sequences that is
+server streaming rpcs the next is client
+streaming rpgs the client sends a stream
+of data or sequences to the server
+which then processes and returns a
+single response to the client that is
+client streaming offices the next we
+have is bi-directional streaming rpgs it
+is two-way streaming where both client
+and server send a sequence of messages
+to each other without failing for a
+response
+now we will move to another concept that
+is http slash 2.
+it is another key concept of grpc in a
+traditional http protocol sending
+multiple requests or getting multiple
+responses together in a single
+connection was impossible a new
+connection will need to be created for
+each of them
+this kind of request for response
+multiplexing is made possible in http
+slash 2 by introducing a new layer
+called binary framing
+and bi-directional streaming was
+possible full-fledged with the
+introduction of http slash 2. the next
+concept we'll move on is channels
+channels are another key concept the
+http slash two streams allow many
+simultaneous streams on one connection
+channels extend this concept by
+supporting multiple streams or multiple
+concurrent connections they provide a
+way to connect to the grpc server on a
+specified address and port and are used
+in creating a client stuff
+now we will understand the grpc
+architecture
+in the following grpc architecture
+diagram we have the grpc client and
+server sides in grpc every client server
+has a grpc stub the grpc client makes
+the local procedure called to the stub
+with parameters
+that to be sent to the server the client
+stub then serializes the parameters with
+the marshalling process using protobuf
+and forwards the request to the local
+client time library in the local machine
+the os makes a call to the remote server
+machine via http slash 2 protocol the
+servers os receives the packets and
+calls the server step procedure which
+decodes the received parameters and
+executes the respective procedure
+invocation using protobuf the server
+stub then sends back the encoded
+response to the client transport layer
+the client stub gets back the result
+message and unpacks the return
+parameters and the execution returns to
+the follow
+moving on we'll learn when to use grpc
+grpc is used in real-time communication
+services where you deal with streaming
+calls
+and it's used when efficient
+communication is a goal
+and it's used in multi-language
+environments and moreover it is used in
+internal apis where you don't have to
+force technology choices on clients
+and it's also used in new builds as part
+of transforming the existing rpc api
+let's see grpc strengths which has
+increased the adoption on the old rpc
+design methods
+the first one is performance
+by different evaluations grpc differs up
+to 10 times faster performance and ape
+security than rest plus json
+communication
+as it uses protobuf and http slash 2.
+additionally protobuf serializes the
+message on the server and client sides
+resulting in small and compact message
+payloads satp slash 2 scales up the
+performance ranking via server push
+multiplexing and header compression
+server push enables http slash 2 to push
+content from server to client before
+requesting while multiplexing eliminates
+head of the line blocking http slash 2
+uses a more advanced compression method
+to make the messages smaller resulting
+in faster loading
+the next one we have is built-in
+community features
+grpc provides built-in support for
+commodity features such as metadata
+exchange encryption authentication
+deadline or timeouts and cancellations
+it also provides load balancing service
+discovery and many more
+now we'll see another strength that is
+streaming
+grpc makes it much simpler to build
+streaming services or clients a grpc
+service supports
+different streaming combinations through
+http slash 2 which we have seen earlier
+that is client to server streaming
+server to client streaming or
+bi-directional streaming
+the next is security the use of http
+slash 2 or the tls that is end-to-end
+encryption connection
+in grpc and shows api security grpc
+encourages the use of ssl or tls to
+authenticate and encrypts data exchanged
+between the client and server
+now we have known the strengths of grpc
+now you need to be aware of some points
+before choosing grpc for developing
+applications these points may affect
+your decision of using grpc
+the first one we'll see
+is limited browser support as grpc
+heavily uses http slash 2 it is
+impossible to call a grpc service from a
+web browser directly
+no modern browser provides the control
+needed all web requests to support a
+grpc client therefore a proxy layer and
+grpc web are required to perform
+conversions between http 1.1 and http
+slash 2.
+the next is steeper learning curve
+many teams find grpc challenging to
+learn
+they get familiar with protobuf and look
+for tools to deal with http slash to
+friction it is a common reason why users
+prefer to rely on rest for as long as
+possible
+the next is non-human readable format
+protobuf compresses grpc messages into a
+non-human readable format this compiler
+needs the messages interface description
+in the file to deserialize correctly so
+developers need additional tools like
+the grpc command line tool to analyze
+protobuf payloads on the wire
+and they also write manual requests and
+perform debugging the next is no edge
+caching while http supports mediators
+for edge caching grpc polls use the post
+method which is a threat to api security
+the responses can't be cached through
+intermediaries moreover the grpc
+specification doesn't make any
+provisions and even indicates the wish
+for cache semantics between server and
+client
+the next is limited community support
+the community support for specific
+technology can be a big consideration
+for its adoption
+with minimal developer support outside
+of google and not many tools created for
+http slash 2 and protocol buffers the
+community lacks information about best
+practices
+this is changing the developers coming
+in and adopting grpc the next we'll see
+is the companies using grpc the first
+it is an american multinational
+technology company that focuses on
+artificial intelligence search engine
+technology online advertising cloud
+computing computer software quantum
+computing e-commerce and consumer
+electronics the next company that uses
+grpc is ibm that is international
+business machines corporation it's an
+american multinational technology
+corporation headquartered in new york
+with operations in over 171 countries
+the next one that uses grpc is netflix
+it's an american subscription streaming
+service and production company it was
+launched in 1997. it offers a film and
+television series library through
+distribution deals as well as its own
+production that is known as netflix
+originals
+the next company that uses grpc is cisco
+it's also an american multinational
+technology
+and it's located in california the next
+one we have is dropbox it's a file
+hosting service operated by the american
+company dropbox incorporation it's also
+headquartered in u.s that is san
+francisco california it offers cloud
+storage file synchronization personal
+cloud and client software
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,150 @@
+hey everyone welcome to Simply loone
+YouTube channel we'll talk about breath
+first search algorithm in today's
+session before we begin make sure that
+you have subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply learn so without further Ado
+let's get started with our agenda for
+today's
+session our agenda begins with the
+explanation of what exactly is breath
+first search algorithm followed by that
+we will look into an example of breath
+first search algorithm for greater
+comprehension first we'll build a breath
+first search algorithm which Begins by
+traversing the root node and then moves
+on to all the other nearby notes the
+breath first search approach repeats the
+procedure for all the notes until the
+desired note is
+found the Q data structure is the data
+structure that is used for breath first
+search algorithm for a better
+understanding we look at an example of
+breath first search algorithm the blue
+color indicates that the note has been
+already explored while the pink color
+indicates that the node has not been
+explored yet or visited yet next we'll
+have our output we will use a q data
+structure to keep track of all the notes
+visited and all the notes that are
+unvisited so to begin let's look at the
+algorithm as a result we'll have node a
+which is added to the output and marked
+as has visited we must verify all the
+unvisited adjacent nodes of a that is
+node B and node C and add B and C notes
+to the output and NQ to the Q according
+to the breath first search
+algorithm then we'll look at any node
+between B and C we'll start with node B
+node D is unvisited adjacent to node B
+so we'll add node D to the output and Q
+and since node B is now being visited
+we'll DQ it when it go to node D the
+next unvisited node is node e add node e
+to the output and NQ to the DQ once node
+D has completed its traversal DQ from
+the Q now in the case of node e the
+adjacent node is node C which is already
+visited thus we will DQ node C from the
+queue now that the pointer is pointing
+to node C and node f is the next
+unvisited node after the node C we will
+set node F to output and Q here the
+pointer leads to node F which has no
+unvisited adjacent nodes so we will DQ F
+from the Q and Q is empty so we'll come
+to the hold here here's what we got that
+is a b c d e and f after understanding
+all the theoretical aspects of BFS
+algorithm let's look at the code of BFS
+algorithm in C programming
+language now we are on the Practical
+mode on my my screen you can see an
+example for BFS algorithm we have
+declared a two- dimensional array with
+maximum row and column size of 10 and
+two arrays the first one is a square of
+a maximum size of 10 and the second one
+which is a visited that stores the
+maximum size of 10 as well some
+variables n i j and finally we declared
+front which is initialized with zero and
+rare variables which is initialized with
+minus1 we perform a loop from index one
+to the size of an array visited in this
+function
+with the condition that if two
+dimensional array of column 1 and
+visited array of index is not one we
+initialize variable I to the front of
+the Q then one is set as the front of
+the Q index of the visited array and we
+use the breadth for search function with
+the vertex as the front of the que until
+front is less than or equal to rare then
+we enter the main function where we
+Define the variable X that stores the
+graph's vertex and then we use the
+function to enter the number of vertex
+that will be stored in variable n then
+we perform loop from index one to Q size
+and visited array in which we initialize
+zero to the Q and index one to the
+visited array then after that we'll
+enter the graph value in the form of
+Matrix of two dimensional array by
+performing a loop with two variables I
+for the graph row and J for the graph
+column then we print the source node
+which is saved in the variable X then we
+print the source node which is saved in
+the variable X and we call the breath
+first search function or method which
+takes a verx x as parameter and we print
+which notes are reachable by looping
+from index one to the size of the
+visited array if index one of the array
+is visited otherwise breath first search
+is not possible so this was the
+explanation of the program now let's try
+to execute and see the
+output there you go the program got
+successfully compiled and now it's
+asking for the input now it is asking
+for the number of vertices let's enter
+the number of vertices as
+three now it is asking for us to enter
+the input in the form of Matrix so the
+first row will be one 2 and three so
+these are the first rows the next rows
+will be 2 3 and four so the last row
+elements are 3 4 and five so we have
+successfully given all the three rows of
+elements now let us select the source
+node so the source node would be two now
+all the nodes that are reachable from
+the source node two are 1 2 and three so
+there you go that's how you implement
+the breath first search algorithm now
+with that we have come to an end of this
+tutorial on breath first search
+algorithm if you have any queries
+regarding the topics covered in this
+session or if you need the code that we
+executed in this particular tutorial
+then please feel free to let us know in
+the comment section below and our team
+of experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

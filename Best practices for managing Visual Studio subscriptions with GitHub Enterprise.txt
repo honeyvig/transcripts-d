@@ -1,0 +1,87 @@
+(music)
+>> Did your organization
+recently make a new purchase
+or renew into Visual Studio subscriptions
+with GitHub Enterprise?
+If so, there are several ways
+to make sure your organization,
+and your subscribers,
+are set up for success.
+From using emailable domains,
+to using Azure Active Directory groups,
+to moving your subscribers,
+there's a lot to know to
+ensure successful assignment
+of Visual Studio subscriptions
+with GitHub Enterprise.
+First, make sure the email address
+you are assigning for subscribers
+uses a domain that can
+accept incoming email.
+This allows your subscribers
+to be able to receive
+and accept the invitation to GitHub.
+Not only that, if they aren't
+able to receive emails,
+then we can't communicate
+important subscription updates,
+such as features and new
+benefits to your subscribers.
+If your subscribers’ sign in email
+is one that can't receive emails,
+you can add a separate
+notification email in the portal
+when you assign the subscriptions.
+Next, save yourself time
+by creating groups in
+Azure Active Directory
+that can be used to manage subscriptions.
+Once you've created the groups,
+return to the admin portal,
+add the Azure AD group
+and choose a subscription level.
+(music)
+Make sure subscribers
+are added to this group
+as part of their onboarding
+because once they're added,
+they're automatically
+given a subscription.
+This helps you increase governance
+and keeps you compliant.
+(music)
+Once they're removed
+from that Azure AD group,
+they no longer have
+access to subscriptions.
+To find out more about using
+Azure AD in the admin portal,
+visit aka.ms/VSSAADgroups.
+Lastly, for those that renewed
+from regular subscriptions
+to Visual Studio subscriptions
+with GitHub Enterprise,
+you need to make sure
+to move your subscribers
+to the new level so they
+can begin using GitHub.
+To make this easy, we've
+created a couple options
+for moving your subscribers.
+You'll simply select “move now”
+and then you can choose to
+move all of your subscribers
+for a specific level
+at once, or just a few.
+(music)
+Once you're done,
+your subscribers will not
+only have access to GitHub
+but their other existing
+benefits won't be reset
+or interrupted in any way.
+If you have further questions
+about Visual Studio subscriptions
+with GitHub Enterprise,
+checkout, aka.ms/VSSandGHE.
+(music)

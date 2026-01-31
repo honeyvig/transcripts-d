@@ -1,0 +1,259 @@
+hey everyone welcome to simply learn's
+youtube channel in this session we will
+learn about binary trees in data
+structures but before we begin let me
+tell you guys that we have daily updates
+on multiple technologies if you are a
+tech gig in a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+now without further ado let's get
+started with the agenda for today's
+discussion
+so we shall begin our session by
+learning a binary tree and some basic
+terms related to binary tree then we
+will try to implement it in the code
+editor after that we will discuss its
+properties then we will discuss
+different types of binary trees then we
+will try various operations on them like
+traversal insertion and deletion
+and finally we will take a glance on
+what are our final key takeaways from
+this session but before we begin make
+sure that you have subscribed to our
+youtube channel and click on that bell
+icon to never miss an update from simply
+learn
+so without further ado let's get started
+with our first topic that is what
+exactly is a binary tree
+so it is a treated structure in which
+each node can have at most two child
+nodes these nodes are referred to as
+left child node and right child node
+next let's discuss about some terms
+related to binary tree
+first up a node a node consists of data
+and a link to its both child nodes
+next the root node root node is the
+first node of the tree next leaf nodes
+these are the nodes which has no child
+next parent node apart from the root
+node any node which has at least one
+child is called as parent to that child
+node next up a child node any node with
+a parent is called as a child node
+next up is the internal node any node
+with a child and a parent is called as
+an internal node next up is the height
+of the binary tree the longest path from
+the root to any leaf node is called as
+the height of the binary tree
+next up is the depth of the binary tree
+the depth of the node is the total
+number of edges from the root node to
+the target node or the
+last child node
+now let's try to implement the binary
+tree in the code editor
+as you can see now we are on the code
+editor and the code on my screen is an
+example for binary tree now here you can
+see that we have created a structure for
+node followed by that we have a function
+where we will print the tree
+and this is our main function
+now don't worry about the code this
+particular code segment will be
+available in our description box below
+and you can always have access to it and
+try to edit and run this code on your
+own local system to have a better
+learning experience now without further
+ado let's try to run this program
+quickly and see the output
+so there you go the code got
+successfully executed and here you can
+see the output of this particular binary
+tree
+now let's get back to the theory part so
+as discussed before followed by the
+implementation part we will learn about
+the properties of a binary tree
+now let's discuss the properties of the
+binary trees
+first up maximum number of nodes at a
+level l is 2 to the power l
+next up maximum number of nodes in a
+binary tree of height h is equals to 2
+to the power of h minus 1.
+next up minimum possible height in a
+binary tree with two nodes is equals to
+log of l plus one base two
+next up the minimum possible level in a
+binary tree with n nodes is equals to
+log of l plus 1 base 2.
+finally a binary tree with l leaves has
+at least
+log l base 2 plus 1 levels
+now
+let's discuss about the different types
+of binary trees
+first up we have the full binary tree
+followed by that we have the complete
+binary tree
+then we have the perfect binary tree
+followed by that we have the balanced
+binary tree and lastly the degenerate
+binary tree let's discuss about these in
+detail first up full binary tree a full
+binary tree is a unique tree data
+structure in which a node can have
+either two children or no child
+next a complete binary tree
+so a complete binary tree is another
+specific binary tree where each node on
+all levels except the last level must
+have two children and at the lowest
+level all leaves should reside possibly
+on the left side
+the next one is the perfect binary tree
+a binary tree is perfect if every node
+must have two children and every leaf is
+on the same level
+the next one is called as the balanced
+binary tree
+a binary tree is balanced if for each
+node the height of the left subtree and
+the height of the right subtree varies
+at most by just one
+at last we have the degenerate binary
+tree
+a binary tree is said to be degenerate
+if every internal node has only one
+child
+we have now discussed the binary tree
+some terms and properties related to
+binary trees and types of binary trees
+now we will look into the operations
+that needs to be performed on the binary
+tree so there are basically three types
+of operations that can be performed on
+binary tree which are traversal
+insertion and deletion
+so first we'll look into the traversal
+operations
+there are three different types of
+traversal operations possible on binary
+tree which are pre-order traversal
+in order traversal and finally the post
+order traversal
+now let's get back into the text editor
+mode and try to execute our example
+so right now we are on the text editor
+and this particular code is for the
+traversal operations on our
+binary tree and here you can see we have
+the structure for node and we have also
+the in order function pre-order function
+and post order function don't worry
+about the code this particular code will
+be available in the description box
+below and after you have written the
+code we have some standard input over
+here you can see that we are giving the
+number of edges as four and the left
+subtree elements are two and one and the
+right subtree elements are two and three
+and another left subtree elements are
+three and five and lastly we have five
+and six for another left subtree
+now let's try to execute this code
+now we have already executed the code
+and we also have the output over here
+and here you can see we have entered the
+number of edges as four and the
+traversal is in order traversal which is
+one two six five and three and the
+pre-order traversal output is two
+one three five six and the post order
+traversal is one six five three and two
+now let's get back to the ppt now we
+have the insertion operation
+and now let's get back to our text
+editor and try to see an example for
+insertion operation as well
+so on my screen you can see an example
+for insertion operation
+so here we have the insert function as i
+said this particular code will be
+available
+in the description box below now let's
+provide the standard input
+so the standard input will be four edges
+and we have two and one as the left
+subtree and two and three as right
+subtree three and five as left subtree
+again and
+five and six as the left subtree now
+let's quickly run this code
+and there you go the program got
+successfully executed and here we have
+the
+output
+the nodes got inserted and it has
+provided an in order traversal that is
+one two six five and three
+now let's get back to the presentation
+and the last type of operation is the
+deletion operation let's quickly execute
+an example based on deletion operation
+as well
+now as you can see we are on the text
+editor again now here the example is for
+deletion operation we have the delete
+function over here
+now for this particular program we don't
+need any standard inputs so just let's
+run the program
+so there you go the program got
+successfully executed and we have the
+output over here and in order traversal
+before deletion and in order traversal
+after the deletion of an element
+so the deleted element is element 11.
+now with that let's get back to the
+presentation mode again so that's how
+the element got deleted now we have
+reached to the last part of this session
+that happens to be the final key
+takeaways
+so what are the final takeaways
+so binary tree is faster at search
+operations than other type of tree and
+it is easier to find maximum and minimum
+elements in the binary tree binary tree
+does not allow duplicate values and
+graph traversal is done using binary
+tree it is used to convert the post
+post-fixed expressions into the prefix
+expressions so these were the final
+takeaways
+now with that we have come to an end of
+this session on binary trees if you have
+any queries regarding the session then
+please feel free to ask them away in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

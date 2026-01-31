@@ -1,0 +1,342 @@
+foreign
+communication on the internet has always
+been a complex topic to cover partly
+because of the various pieces of the
+person from basing appliances like
+routers to multi-server data accounts
+networking usually follows a particular
+structure that is then scaled based on
+the requirement
+welcome to this video on the basics of
+networking where we cover the multiple
+Hardware elements and topologies of how
+these Network setups work
+let's take a look at the things we will
+be covering today in our video
+you start by learning about the
+different network types and the
+importance of an IP address in a network
+environment
+nice because the significance of
+switches and the working of routers in a
+network
+moving on we cover the explanation of
+subnets in a network and the importance
+of network address translation or nand
+finally we understand how firewalls work
+the distance use cases of dmzs and port
+forwarding
+before moving forward ensure you are
+subscribed to our Channel and have hit
+the Bell icon never miss an update from
+Simply learn
+so let's get started with the two major
+types of network that should be
+considered basic knowledge for someone
+starting out with networking lands and
+rents the first variety of networks is a
+local area network also known as Lang it
+comprises of cables gateways switches
+routers and additional parts that allow
+these devices to connect to private
+servers cloud services and other lands
+via larger Networks the group of
+virtualization has also sped up the
+creation of virtual lands which select
+Network managers divide and logically
+organized Network nodes without having
+to make significant modifications to the
+infrastructure
+the computers in each department could
+be conceptually linked to the same
+switch in an office with many
+departments beat accountancy I.T support
+and administration
+still they might be segregated to
+operate separately
+the benefits of a land are similar to
+those of any collection of connected
+devices they may access and even control
+one another exchange files print to
+Shared printers and utilize a single
+internet connection
+to better understand this logic let us
+take a sample structure
+you can see the various components of a
+local network connection in this picture
+and now we can see three different
+devices a system a laptop and a printer
+so you have these few devices that need
+to be connected to a single local AEG
+Network
+now to identify these devices inside the
+network we need to assign an identifier
+to each device so this is the an IP
+address can help
+an IP address is a lengthy string of
+digits allocated to any device connected
+to a network that utilizes Internet
+Protocol as the communication medium is
+the visual equivalent of your house or
+workplace's mailing address
+the addresses are divided into four
+sections separated by Doms each
+traditional Place strain numeral portion
+represents an 8-bit binary integer which
+can range from 0 to 255.
+these four integers are expressed in
+normal decimal notation and then
+separated by top
+however computers work with binary
+numbers meaning zeros and ones and each
+number in an ipv4 address represents an
+8-bit binary integer which is why none
+of them can be more than 255.
+the distribution of this IP addresses is
+not just limited to LAN every device
+which is a part of the network will have
+its own IP address as assigned by the
+network administrator as seen in the
+picture we can now identify each device
+individually by the designated IP
+addresses
+now the primary purpose of a network
+being the ability of multiple devices to
+communicate and exchange information
+with each other these IP addresses serve
+only half the purpose since allotment
+and identification of these addresses
+need to be managed automatically and On
+Demand if the laptop shown on the left
+of the screen wants to use the printer
+in the network it needs to know which
+particular device or more precisely
+which particular IP address to
+communicate
+this is where a switch comes into play
+it takes a role of the delegation and
+commands in a particular Network
+let's learn more about switches in
+detail
+a network switch joints devices in a
+network such as computers printers
+wireless access funds and allows them to
+communicate with each other by
+exchanging data packets we can do both
+physical Hardware devices that handle
+real networks or software-based virtual
+devices
+the vast majority of network equipment
+in modern data networks are switches the
+link extra PCS access points automated
+equipment and some iot devices via wired
+connections such as card entry systems
+The Limited computers and data centers
+that run virtual machines or VMS as well
+as the actual server and most of the
+storage equipment
+based on the type of switches employed
+they can either differentiate between
+network devices using either the IP
+addresses or Mac addresses which are
+separate types of addresses allotted to
+each Hardware device irrespective of the
+network it is connected to
+now that you understand the major parts
+of a local area network a major query
+that may come to your mind is how can
+these local networks then communicate
+with other networks a rocker is employed
+at the Forefront of every network setup
+to facilitate communication between
+foreign Networks
+this router can then be used to connect
+to the Internet so we can communicate
+with the loved ones from the comfort of
+our own homes
+so let's learn a little more about
+routers
+the router is a physical or virtualized
+Internet working equipment that receives
+analyzes and transfers data packets
+across computer networks the router
+checks and data packets destination IP
+address and utilizes headers and
+forwarding tables to determine the best
+path to transport the packet
+consider the router to be an air traffic
+controller and data factors to be
+airplanes flying to various airports or
+networks in this case
+each package like each check has a
+unique destination and must be steered
+to its destination as effectively as
+possible
+a router helps direct these data packets
+to the intended IP addresses in the same
+manner that the air traffic controller
+ensures that flights arrive at their
+destination without getting lost or
+experiencing severe destructions
+a router employs an internal routing
+table which is a collection of Pathways
+to multiple Network destinations to
+properly direct packets
+it scans the header of a packet to
+establish its destination then consults
+a routing table to find the most
+efficient way to their destination
+the packet is subsequently sent to the
+next Network along the Route
+also has an IP address which is often
+called as the network Gateway
+a crucial part of the networking setup
+is determining whether a particular
+piece of Hardware is a part of local
+network or a foreign device
+as you already know specific IP
+addresses exist for each device in a
+network be it a local or wide area
+network all these IP addresses must
+belong to a particular range of
+addresses which are often known as the
+subnet or sub Network and which help
+determine the overall range of a local
+area network
+for example the IP addresses that can be
+seen on the screen right now belong to a
+software that is 255.255.0.0
+the first two flags did not fix values
+that must be present in every single IP
+address of every single device in this
+particular Network
+in our case the 192.168 is the
+consistent factor in every single IP
+address shown on the screen
+this implies that if the devices can
+connect to a piece of equipment with an
+IP address and it starts from 192.168
+that device will most likely be in the
+same local area network
+the last two places are the free ranges
+in this example which means they can be
+any number less than 255 further helping
+the router and switch differentiate
+between multiple IP addresses in a
+network
+with that being said we can now take a
+look at how wide area networks work
+a wide area network or a van is in its
+most basic form a collection of local
+area networks for any other networks
+that interact with one another
+why Data Network is essentially a
+network of networks with internet
+serving as the world's biggest one
+however when a router communicates with
+devices outside a local network it tends
+to mask the internally allocated IP
+addresses and uses a single public IP
+address for all the devices
+this process is called Network address
+translation or Nat IP allocation
+a network address translation is a
+method of translating one IP address to
+another while these packets are in
+transit through a router this improves
+security and reduces the number of IT
+addresses required by a company
+answer Auto receive some particular
+information that must be transmitted to
+a local device in the network it checks
+the internal routing tables to determine
+the correct internal IP address and the
+correct destination to send the external
+leadership data to
+but let's see a device on external
+network or a wide area network wants to
+communicate it directly with a device
+from the local network
+this cannot be allowed since this can be
+a very big security risk for devices in
+a secure environment
+all of this m3m exit rule creation and
+handling can be taken care of by a
+firewall
+a firewall is a type of network security
+device that analyzes the incoming and
+outgoing networking traffic and allows
+organized data packets depending on a
+set of security rules its objective is
+to provide a barrier between your local
+network and external jackets such as the
+internet
+the most common sort of firewall which
+are packed at filtering firewalls check
+packets and prevent them from getting
+through if they do not meet an
+established security rule set
+this sort of firewall examines the
+packet's destination and Source IP
+addresses if the packet fits an allowed
+rule on the firewall they are permitted
+to access the network
+but let's say we as users want to allow
+external requests to reach individual
+computers or devices on our local
+network
+there are two ways to facilitate this
+Behavior the first way to go through
+this step is by using a DMZ which stands
+for a demilitarized zone
+instead of communicating directly with
+the local network device the external
+data is sent to the router instead
+the router will have created a DMZ sub
+network with only those devices added to
+it that require other external
+information to reach them on altered
+once the data is received by the router
+it passes it on to the dng subnet and
+subsequently to all the devices which
+are a part of that summary
+however since the external data can
+reach devices in a network without any
+firewall checks if they are part of the
+DMZ subnet the security risk associated
+with this method are very large compared
+to the second variant which is port
+forward
+ing is a method of granting external
+devices access to computers on private
+networks it accomplishes this by
+translating an external IP address and
+port to an internal IP address and port
+all the devices talk to each other and
+the network Gateway using the IP
+addresses and specific ports for example
+the TCP IP protocol basic internet usage
+uses Port 80 on every Network
+similarly we can create additional file
+or rules to open up certain ports for
+external devices to communicate with if
+the designated ports are open during
+communication the firewall will allow
+the external network device or server to
+communicate directly with the local
+network device without any hindrance
+that's all we really need to know for
+now about the basics of networking
+hope you learned something new today if
+you have any questions about today's
+topics please let us know in the comment
+section below and we will get back to
+you as soon as possible with some
+solution subscribe to our channel for
+more informative videos like this thank
+you for watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

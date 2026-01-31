@@ -1,0 +1,578 @@
+[MUSIC].
+>> Hi, welcome to Visual Studio
+Toolbox. I'm Robert Green.
+>> I'm Leslie.
+>> We're with Phil Japikse for
+another episode in our mini series
+on automated software testing.
+So far, just to recap,
+we talked about why it's important.
+We talked about.
+>> X-unit.
+>> X-unit in depth.
+>> In depth in three episodes.
+Today we're going to talk about
+behavior-driven design using M-spec.
+>> Also machine specifications
+but M-spec for short.
+>> That leads to two questions.
+What is behavior driven design
+what's it got to do a testing,
+why are we talking about this.
+>> First thing, I want
+to show is this slide,
+so bunch of Legos here.
+We can all agree that
+this is really TDD.
+I am testing my
+individual unit of work,
+which in Legos, Lego blocks.
+You into Legos? I know
+my kids are into Legos.
+>> I love Legos I'm obsessed.
+My wallet, hates me for it.
+>> We have bins of Legos
+and no instructions,
+although you can find them online.
+I don't know if you've
+ever tried to build
+the Millennium Falcon
+without the instructions,
+it's pertinent near impossible.
+>> Yeah hard pass.
+>> This is test-driven development.
+We're making sure all of
+the blocks work correctly.
+But we're not checking to make
+sure they work correctly together.
+Let's look at this Lego,
+and this is from Legoland
+outside of Orlando.
+I know Lozi already
+knows the answer so I'm
+going to ask you Robert.
+What's wrong with this picture?
+Can you spot it? It's a submarine
+I'll give you that much.
+>> It's a submarine.
+>> You cant unsee it now can you?
+>> No.
+>> I don't know.
+>> I'm going to guess
+that the unit test
+for the periscope all pass.
+The unit test for
+the hatch all past.
+But you can't use
+this particular periscope
+unless the hatch is open.
+Why do some marines have telescopes?
+So they would be underwater
+and see what's above water.
+They didn't check the behavior
+of the periscope in
+relation to the submarine.
+What we want do when
+we're talking about BDD,
+Behavior Driven Design,
+behavior-driven development,
+there's some discussion,
+but we're going to use
+a framework called
+machine specification
+or M-spec for short,
+that uses BDD style testing.
+What we're going to do
+is rest up a context.
+Within that context, we're
+going to have several certs.
+We still have an arrange section.
+We only have one action
+and then we're going to
+confirm the behavior
+of those actions.
+>> We're not using X-unit at all.
+>> We're not using
+X-unit we are using
+a different framework called M-spec.
+>> Would there ever be a case where
+you'd want to use the two together?
+>> Yes. All the time.
+But you don't use them
+together in the same tests.
+You use them to gather
+in your solution.
+>> As you're writing
+your individual units,
+you're still using X-unit,
+test those and you never stop.
+You are still testing the periscope.
+You are still testing the hatch.
+This is now on top
+of that to make sure
+that as a system,
+things work together.
+>> Yeah. If you
+look at the tidal and I put
+demo in front of it because
+it messed up my other tests.
+When authenticating your admin
+user, actually you know what?
+Let's follow up with
+that same example,
+and we're going to say,
+let me get rid of all this,
+when using a periscope wqe're
+going to establishes our arrange
+and I could actually fill it out
+because I don't want to
+waste time doing it.
+Then this is not how
+you spell periscope.
+There's my tear down if I need it.
+Here's my action.
+This would be the captain
+is using the periscope.
+It should allow boat
+to stay submerged.
+>> The wording that you're using,
+can you basically write
+whatever you want and
+then apply that to a class?
+>> Should see above
+the water and we're not going
+to go any further than that.
+Now, you might be
+wondering why establish
+clean up because in it are
+all showing up as keywords.
+Because they are delegates
+that come from the
+machine spec framework.
+You know what? We
+did this for n unit.
+We should do this for M-spec.
+>> I was going to ask
+like is this a package?
+>> This is a several
+packages that we pull in.
+I started with an X-unit template.
+The X-unit template.
+Lot of times you'll use
+both together and you can,
+but also it sets up the
+test SDK to things that we
+need to run unit tests and
+automated fashion in Visual Studio.
+There's also a command line
+that you can use with
+M-spec just as with X-unit.
+Now, if you were a fan of
+M-spec prior to.NET core,
+because it was really
+awesome back then.
+It took a long time for M-spec
+to catch up. It's open source.
+It's not as actively being worked
+as X-unit and it's only within
+probably 6-9 months that actually
+started working with Visual
+Studio in.NET post framework.
+Can we say that of
+course have done that?
+Then, you know, again,
+just as my muscle memory,
+I always add in MOQ into it.
+But let's go back we just created
+this class named when using
+a periscope and we did two asserts
+that are worded like this.
+Let's build and actually this
+is how periphery, this is.
+I use ReSharper as well as
+the built-in test runner right
+now M-spec isn't
+working with ReSharper.
+It was like six months ago.
+M-spec isn't nearly
+as popular as X-unit.
+It has some limitations,
+but it has some stuff that's
+really cool that I want to show.
+If I go to my Test
+Explorer and then go to
+my Machine Specification folder
+and then go into the roots
+and I see a test here that
+says when using a periscope
+and we expand this should allow
+both to stay submerged and
+should see above water.
+What happens here is
+the parent of the testing group
+is the name of the class.
+Every one of the it's is a test.
+The nice thing about
+this is I can write out,
+here's my contexts when
+using a periscope.
+Here are my assertions.
+It should allow you
+to be underwater.
+It should allow you
+to see above water.
+It should not leak water,
+whatever they are.
+I want to build a calculator
+or when using a calculator,
+it should add these numbers.
+It should subtract these numbers.
+It should divide these numbers.
+It should do whatever
+a TI35 can do because that's
+the best calculator ever.
+That's some geeky statement.
+>> I'm for the TI89.
+>> Yeah you're a little
+younger than me,
+it's old school is hard
+to get out of my system.
+I have all these its that are
+verifying the context that I'm in.
+Your question is, would
+you use them together?
+I'm not going to write
+a data-driven test and
+M-spec to make sure that
+my Add function works with
+all these different inputs.
+I'm going to do an X-unit.
+But I want my entire
+behavior to be tracked.
+The nice thing about M-spec is
+and I must say it doesn't work,
+but I have got working
+yet in a.NET Core world.
+But in a prior DotNet Core,
+you could actually
+run a command line
+that would then take
+all of your contacts,
+your specifications dumping out in
+either HTML or MSD and
+style documentation
+and there's your entire system,
+so you've documented
+everything in there.
+>> Is this a way to test something
+like if a new order is entered,
+it should write the order,
+the order date, order table.
+Write the details the details table
+update the total sales
+in the customer table,
+email the customer and
+email the sales rep.
+That's an example because
+each of those are methods
+that are individually tested.
+>> Correct.
+>> But how do we know they're
+actually occurring in the
+order they're supposed to
+occur and that they actually
+occur when the user clicks Save.
+Is that a good use for it?
+>> I agree with everything you
+said except for the word order.
+Because you can't
+guarantee the order of
+when the delegates execute but yes.
+Again, these are very trivial,
+but when authenticating
+an admin user.
+Here's my service that I have to
+create an instance of,
+that's my arrange.
+Here's my action.
+Authenticate with a very
+secure password right there.
+I didn't use a P at site SSW0RD,
+so it's a little more secure
+if I just spell password out.
+But it should indicate
+the user's name and the
+session ID should not be null.
+These are things but
+yes, absolutely.
+When an order is placed,
+inventory needs to be reduced the
+credit card needs to be charged.
+The packing list needs
+to be generated.
+All of these things and so it's
+the behavior of your system.
+This is the, I want to do a
+Kessel Run in seven parsecs,
+which you're still going to
+write tests around the engines.
+You're still going to write tests
+around the hidden cargo bay,
+all of those individual thing.
+The nice thing about it
+again is when you run
+at these all come up
+as individual tests.
+It really enforces
+that single action.
+Because where as you can
+wrap this in curly braces,
+I believe you get a compile warning.
+They built an analyzer and to
+say, you shouldn't do that.
+>> But we can also just like
+everything we've talked about so far.
+I'm going to talk more in
+our next episode where we
+talk about mocking and
+how we do exceptions.
+We're going to say, we're
+going to catch this exception.
+The new sample service,
+when an exception is thrown
+with authentication,
+we're actually going to catch it
+and then we're going to
+examine the exception.
+Maybe they've logged in with
+a bad username or password.
+To be clear, you should not use
+exception handling for that.
+Exceptions should be exceptionally,
+it should not be business logic.
+But this gives you that
+capability of saying,
+I'm going to catch this exception
+and then let me examine it,
+so each of the,
+it's or the assertions
+are then going to say,
+here's the reason, here's the
+argument, here's the details.
+>> Is this also if you
+write this ahead of
+time with stubbed out
+code, basically the spec.
+>> Exactly.
+>> It's you're standing,
+that you've specked it correctly.
+>> Correct.
+>> Then you can sit down
+with the end user and say
+here's what I'm testing
+for and then wait,
+it's supposed to do this as well.
+Oh, okay.
+>> Back in full framework days.
+Again, I'm not saying that
+M spec can't handle it.
+I haven't figured
+out how to do it yet
+in the Dotnet core
+world and that's on me.
+I haven't done the research,
+because like I said,
+it only recently started
+working in DotNet Core.
+But back in full-frame workdays
+is part of our Build Pipeline.
+We'd actually run the
+command line to build
+the HTML of all the
+specification of the system.
+We actually published it to a Wiki.
+The product owner and
+the stakeholders could look
+and see what we're testing
+and because the ones that aren't
+complete come up like
+this as not implemented,
+let me run one of the ones that is
+implemented so you can
+see the difference.
+Any one of these I think will work.
+Now I'm implemented.
+This one's not implemented,
+sees a different icon.
+Again, when you build that report,
+they can also track where
+you are in progress.
+This test is passing, this
+test is passing this one
+hasn't been implemented yet it
+haven't gotten that far go.
+There's a couple of more
+features I like behaviors,
+it's really been documented as
+an anti-pattern by the people
+who took over support.
+But really what I'm doing is I'm
+encapsulating certain
+business rules.
+Here I have when using
+behaviors is by contexts,
+and it's going to behave like
+these other behaviors that I
+have and so this is
+cross-cutting concerns.
+It should log the call.
+It should report the error,
+it should these things
+that are repetitive,
+or you can put in here and so
+it should equal be not null,
+this is the same tested before,
+but all I did was,
+if you see there's a class name is
+authentication behaviors marked
+with the behavior label.
+Behaviors. Vocabulary matters.
+Then I just say, hey,
+include all of my tests from
+this other class into here so
+it's a way of encapsulating.
+The reason it's an anti-pattern
+is there's no way to
+authenticate that this delegate
+in the types you're
+dealing with actually,
+there's no compile time enforcement,
+so you can't shoot
+yourself in the foot.
+But I still like that. Real quick
+is also after contexts so after
+your entire context runs.
+This is the fixture
+tear-down equivalent,
+after everything is done,
+we're going to clean
+up after ourselves.
+Then here's a tear down and set
+up for each individual context.
+Now, it will not do it.
+Because if you think about it,
+there's only one action
+and one arrangement in
+the multiple asserts.
+It does it after,
+you have to think of
+the context in M spec almost the
+same as a unit test in x unit
+because it's one
+encapsulated unit it
+just happens to be a
+class and not a method.
+We talk about setup tear down.
+This is when the entire
+assembly has completed.
+This is before any context
+in the assembly starts.
+This is, I said it backwards before.
+This is the, I'm going to fire
+this off before any
+other Tests Runs,
+or I'm going to fire this off
+after every test has run.
+The other one I showed you
+and I apologize I misspoke.
+It's easy to do when you're live.
+This is after each context.
+Each specification.
+I mean, that's really
+it. That is m spec.
+I really like it using it
+in conjunction with x unit.
+Because what I have and we're slowly
+switching over to this at work
+because it was about six months ago.
+I tried a long time ago,
+six months ago, I realized
+that it was working again.
+I know I could probably fork it
+and do a commit and everything else.
+I just don't have the
+bandwidth for that.
+Now we're going to start
+to incorporate this into
+our regular workflow so that
+we can get that
+documentation of, you know,
+when a lead comes in from
+the field here and the
+things we have to do,
+and when all these are
+done, then you're good.
+But let's look at this.
+How did we validate
+that this is a repeat
+client or not?.
+Now we have an x unit test
+that dives deeper into that
+using the Inline data,
+checking phone numbers,
+checking e-mails,
+against all of the
+different situations.
+>> Sweet. I like
+this focus on the bigger picture
+when it comes to testing.
+I feel like when we
+talk about testing,
+not just in this series but beyond,
+we're always talking about,
+yeah, just the individual
+Lego pieces and it's like how
+does it all fit together?
+What do we do to make sure
+that all of these are
+working in the way that
+we expect them to.
+>> Well and as developers,
+we have to think about
+the Lego blocks.
+>> Yeah.
+>> Because that's what you code,
+and so if we all start
+thinking about the submarine,
+and then go down and
+get an okay Periscope,
+I'm going to write Periscope now,
+right and then we'd go back
+to the submarine and go,
+oh, I'm going to do the hatch now.
+Yeah and then we're
+not always putting
+those pieces in place
+and making them work
+together until we get into
+that final application and QA
+comes back to us and says,
+we're drowning because I have
+to open the hatches periscope.
+>> Exactly.
+>> All right that's
+what I got on this one.
+>> Sweet. Well, good stuff.
+>> We're now at this point
+about halfway through.
+In our next episode we are going
+to start looking at mocking.
+>> Finally.
+>> Yeah, I know I've been
+waiting for this shoot,
+I'm going to happen
+it up for so long.
+>> We'll see you next time
+on Visual Studio Toolbox.
+>> All right be thicker.
+[MUSIC]

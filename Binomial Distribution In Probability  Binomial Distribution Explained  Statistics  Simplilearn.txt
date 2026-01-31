@@ -1,0 +1,160 @@
+hey everyone welcome to simply learns
+youtube channel
+in this session we'll discuss binomial
+distribution
+which is an important topic of
+probability distribution
+let's discuss what's in it for you
+we'll start this tutorial by discussing
+the important terms that you should know
+then we'll move on to discuss binomial
+distribution and the formula for
+calculating the binomial coefficient
+then we'll work on an example to get the
+clear understanding of the topic so
+let's get started
+basics and terminology
+the first one is outcome
+whenever we do an experiment like
+flipping a coin or rolling a dice we get
+an outcome for example if we flip a coin
+we get an outcome of heads or tails and
+if we roll a die we get an outcome of 1
+2 3 4 5 or 6.
+random experiment
+a random experiment is any well-defined
+procedure that produces an observable
+outcome that could not be perfectly
+predicted in advance
+a random experiment
+must be well defined to eliminate any
+vagueness or surprise
+it must produce a definite observable
+outcome so that you know what happened
+after the random experiment is run
+random events
+consider a simple example
+let us say that we toss a coin up in the
+air
+what can happen when it gets back it
+either gives a head or a tail
+these two are known as outcome and the
+occurrence of an outcome is an event
+thus the event is the outcome of some
+phenomenon
+the last one is sample space
+a sample space is a collection or a set
+of possible outcomes of a random
+experiment
+the sample space is represented using
+the symbol s
+the subset of all possible outcomes of
+an experiment is called events and a
+sample space may contain a number of
+outcomes that depends on the experiment
+if it contains a finite number of
+outcomes then it is known as a discrete
+or finite sample spaces
+now let's discuss what is random
+variable
+a random variable is a numerical
+description of the outcome of a
+statistical experiment
+a random variable that may assume only a
+finite number of values is said to be
+discrete
+one that may assume any value in some
+interval on the real number line is said
+to be continuous
+let's see an example
+let x be a random variable defined as
+the sum of numbers when two dices are
+rolled
+x can assume the values 2 3 4 5 6 7 8 9
+10 11 and 12.
+notice there is no one here because the
+sum of the two dice can never be one
+now that we know the basics let's move
+on to binomial distribution
+the binomial distribution is used when
+there are exactly two mutually exclusive
+outcomes of a trial
+these outcomes are appropriately labeled
+success and failure
+the binomial distribution is used to
+obtain the probability of observing x
+successes in n number of trials
+with the probability of success on a
+single trial denoted by p
+the binomial distribution assumes that p
+is fixed for all the trials
+here is a real life example of a
+binomial distribution
+suppose you purchase a lottery ticket
+then either you are going to win the
+lottery or not in other words the
+outcome will be either success or
+failure that can be proved through
+binomial distribution
+there are four important conditions that
+needs to be fulfilled for an experiment
+to be a binomial experiment
+the first one is there should be a fixed
+number of entries carried out
+the outcome of a given trial
+is only two that is either a success or
+a failure
+the probability of success remains
+constant from trial to trial it does not
+changes from one trial to another
+and the trials are independent the
+outcome of a trial is not affected by
+the outcome of any other trial
+to calculate the binomial coefficient we
+use the formula which is ncr into p to
+the power r into 1 minus p
+to the power n minus r where r is the
+number of success in n number of trials
+and p is the probability of success 1
+minus p denotes the probability of a
+failure
+now let's use this formula to solve an
+example
+suppose a die is tossed 3 times what is
+the probability of no 5 turning up 1 5
+and 3 5 is turning out
+to calculate the no 5 turning up here r
+is equal to 0 and n is equal to 3
+substituting the value in the formula we
+have 3 c 0 into 1 by 6 to the power 0
+into 5 by 6 to the power 3 where 1 by 6
+is the probability of success and 5 by 6
+is the probability of failure
+calculating this equation will get the
+value to be 0.5787
+in a similar manner to calculate the
+probability of 1 5 turning up we'll
+replace r with 1 and n will be 3 so p x
+1 will be equal to 3 c 1 into 1 by 6 to
+the power 1 into 5 by 6 to the power 2
+which will come out to be 0.347
+and for 3 5 turning up we substitute r
+equal to 3 and the formula will remain
+the same and we will get the value to be
+0.0046
+now that we are done with the concepts
+of animal probability distribution here
+is a problem for you to solve
+post your answers in the comment section
+and let us know
+so with this we have come to an end of
+this tutorial thank you all for watching
+this session we hope you enjoyed it
+if you have any questions feel free to
+put them in the comment section of this
+video thank you again and happy learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

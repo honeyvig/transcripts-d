@@ -1,0 +1,487 @@
+hello and welcome to this session of
+blockchain myself saurav and i'm part of
+the simply lenti what's in it for you
+today let's discuss what are the issues
+with today's current banking system how
+bitcoin has solved these issues and how
+bitcoin is evolving what is blockchain
+technology and what are its features
+like public distributed ledger how
+encryption works proof of work algorithm
+and mining and we will also discuss
+certain use cases of blockchain mining
+now what are the current set of issues
+in today's banking system in order to do
+any transaction on a banking channel
+today it costs a very high transaction
+fees so suppose you want to do a
+transfer of money from your account to
+someone's else account through a banking
+channel the bank might charge a fee for
+200 transaction up to five dollars and
+this receiver will end up receiving 195
+dollar which in percentage terms is a
+very high percentage of transaction fee
+also as of today there's a lot of
+scenarios people end up doing double
+spending for example over here the user
+has eight hundred dollars in her account
+but she ends up sending thousand dollars
+500 each to two users double spending is
+a unique problem where digital money is
+spent twice so what does it tend to do
+is the user is able to make two
+purchases with the amount which is less
+than the purchase value so in this
+scenario the lady was able to buy a
+commodity worth more than 800 dollars
+though she only had 800 in her account
+also the banking systems are prone to
+hacking hackers attack financial
+institutions and gain unauthorized
+access to data they can do transactions
+on your behalf which you are not aware
+of or they can do the transfer of money
+to some illegitimate accounts in 2017
+the number of frauds in india through
+atm cards and net banking total to 1785
+each amounting to more than one lakh
+rupee so if you see the current banking
+system is prone to so many hacks that it
+can amount to huge cost of money now how
+bitcoin can solve these problems now
+bitcoin is a decentralized system so
+which allows you to do a value transfer
+transaction at a lower transaction fee
+as low as one dollar as compared to the
+five dollar which the bank was charging
+and at the end the receiver receives the
+true value of the amount which was sent
+by the sender bitcoin follow a
+decentralized system where no third
+party like governments banks or any
+other financial intermediary is involved
+during the transaction between the
+sender and receiver thereby reducing the
+cost of transaction drastically and that
+is the primary objective of
+cryptocurrencies or technologies like
+blockchain which advocates the removal
+of intermediaries now bitcoin is a
+cryptocurrency that runs on blockchain
+now how bitcoin solved the problem of
+double spending double spending is
+avoided through the basic structure of
+blockchain which involves verification
+of transactions so in the previous
+example as we saw when the user
+transferred 500
+to the first person then she will not be
+able to transfer the another 500
+based on the basic validation of the
+blockchain and we will see how suppose
+you're trying to spend the same bitcoin
+in a second transaction after the first
+transaction has been confirmed the
+saturn transaction will not get verified
+and does become invalid and this will
+happen because after the first
+transaction has been confirmed your
+balance will be verified in the second
+transaction your address identity will
+be validated and if suppose you are
+trying to spend more than what the
+balance you have the miners the
+validators of the blockchain network
+will discard that particular transaction
+and will not add it to the main
+blockchain network thereby double
+spending becomes as good as impossible
+in a blockchain each block is linked to
+its previous block the transactions
+become invalid for a specific bitcoin
+which has already been spent so you
+can't spend the bitcoin which you have
+already spent public ledger a public
+ledger records all bitcoin transactions
+where it is accessible to everyone who
+is associated with the system it is 100
+transparent system any transaction
+happening is visible on the public
+ledger once a user joins the blockchain
+network he gets a copy of all the
+blockchain
+since its initiation or inception and
+the first block in a blockchain is
+called the genesis block though the
+public ledger is accessible to everyone
+only the user's address and the
+transaction details are visible to the
+users on the bitcoin network by looking
+at the address you can't figure out to
+whom this address belongs the identity
+is secure of the address owner this
+keeps blockchain safe from data
+tempering each block on the blockchain
+is aware of who is its previous block
+and this with entire blockchain is
+created even if a hacker tries to hack
+one block it would have to change the
+entire subsequent chain ahead of this
+block which will require huge amount of
+computation power for the hacker in
+order to make the changes across all the
+blocks which is next to impossible now
+what is blockchain imagine two friends
+living far away and would like to
+transfer money using blockchain
+technology blockchain is a decentralized
+system of secure and trusted distributed
+databases it's a distributed ledger
+which records and shares the transaction
+details across many nodes which are part
+of the network so that the data is not
+modified so each and every transaction
+which happens on a blockchain network it
+distributed across all the nodes on the
+blockchain each and every participant
+has the same copy of the ledger and it's
+an immutable ledger once a record or a
+transaction is registered it cannot be
+modified blockchain was originally
+introduced to timestamp digital
+documents and prevent tampering of
+records in simple terms a chain of
+blocks that contain information is is
+called blockchain now when a transaction
+occurs its related information is
+recorded into a block so as you see a
+transaction initiated in one corner of
+the globe can get registered on the
+block and then that block is being
+verified validated by the miners of the
+public ledger and then added to the main
+blockchain a block contains aggregated
+transactions in a single block which a
+miner has to validate and in lieu of
+that the miner gets rewarded now let's
+take a closer look at what all are the
+components of a block so whenever we
+talk about a blockchain what is actually
+a block and what it consists of now
+there are four major components each
+block contains a previous hash data data
+is nothing but the aggregation of the
+transactions which are aggregated in the
+block a nuanced value and a hash of the
+block itself now what is previous hash
+previous hash is the attribute which is
+connecting a block to its previous block
+so the previous hash attribute consists
+of the hash value of its previous block
+data it consists the details of the
+sender's address the receiver's address
+and the transaction amount so basically
+there could be multiple transactions
+amongst multiple senders and receivers
+so each block will consist n number of
+transactions and each transaction will
+have a sender's address a receiver
+address and a transaction amount nonce
+so basically the bitcoin uses a proof of
+work algorithm and in order to execute
+the algorithm nonce is a random value
+used to vary the output of the hash
+value so proof of work is the process of
+transaction verification done in
+blockchain hash hash is like a digital
+fingerprint it is the fingerprint of the
+current block now where it takes an
+input value of the previous hash the
+data and the norms and produces an
+output value of fixed length so bitcoin
+network uses
+sha-256 hashing algorithm to generate a
+256-bit length hash and this is the
+output it looks something like a
+hexadecimal value now what are the
+features of blockchain a blockchain is a
+decentralized public distributed ledger
+that is used to record transaction
+across many computers so this is a
+sample transaction which you are seeing
+these are set of three transactions a
+transferring money to b b to c and c to
+b a distributed ledger is a database
+that is shared among all the users who
+are part of the blockchain network the
+transactions are accessed and verified
+by users associated to the bitcoin
+network thereby making it less prone to
+cyber attack it is actually enclosed
+within all the participants who are part
+of the network now let's take an example
+where these bitcoin users are
+transferring money so here we have
+example like bella is trying to transfer
+money to john john is trying to transfer
+money to elsa and elsa is trying to
+transform money to jack so these are the
+three transactions which are to be
+initiated now suppose these transactions
+were being happening on a central ledger
+and it gets corrupted so there is a
+chance of the data getting tampered to
+solve this problem a public distributed
+ledger plays a vital role now it ensures
+that users part of this cycle have a
+copy of the transaction details each
+user will have a copy of each
+transaction bella john elsa jack they
+all have the same ledger and this is
+what is called as distributed ledger
+everyone is having the same copy now in
+case one of the users like elsa
+misplaces her transaction detail she can
+easily be corrected by the other
+participants because they have the
+golden copy the correct copy or if
+either of them attempts to alter the
+record the alternate transaction copies
+with the other users will negate the
+alteration because they will see that
+amongst all the participants only one
+participant is having a different copy
+they will negate the copy of the user
+and they will rectify it encryption
+blockchain eliminates unauthorized
+access by using cryptographic algorithm
+sha-256 to ensure that the blocks are
+kept secure so sha-256 is the
+cryptographic algorithm which is used
+each user in the blockchain has their
+own keys so any user which on boards a
+typical blockchain network is always
+provided with two set of keys one is
+private one is public private key is
+known only to the sender also it is used
+to confirm if the origin of the
+transaction is legitimate public key it
+is also used to uniquely identify the
+user but it is shared by the sender with
+every transaction it floats on the
+blockchain network and we will see how
+now let's take a look at a typical
+transaction verification process suppose
+a sender wants to send a message he will
+pass the message through the hash
+function and generate a hash value of
+the message now after the hash value is
+being created it is passed through a
+signature algorithm and with the private
+key a digitally signed document is
+created now the transaction message
+original message the digitally signed
+document and the public key are
+transmitted to the receiver now at the
+receiver end the transaction message is
+passed through a hash function to get a
+hash value and that hash value is
+compared with the hash value obtained by
+passing the digital signature and public
+key through a verification function and
+then both the values are compared now
+let's see how the hash function works
+the hash function creates a unique
+digital fingerprint of data you pass the
+message through the hashing function and
+it generates a hash value this hash
+value is called a digital print it has a
+very unique property any hashing
+function is a one way function it cannot
+be reversed you cannot decode the
+original value from the hashed value it
+is a one way encryption so here are some
+examples whatever be the size of the
+input data the hash value is always of
+256 bit length and we will take a look
+at the demo at the end of this session
+where i'll show you how to generate a
+hash value using sha-256 now let's
+consider an example of gmail using
+hashing algorithm whenever you are
+entering the username and password that
+password is never directly persisted in
+any of the gmail database it is
+persisted using hashing function so once
+you have created your password and again
+once you log in your password is again
+passed to the hashing function and
+compared with the hash value persisted
+in the database and once both these hash
+value matches then only you are allowed
+to log in so every time you log into
+gmail your password is hashed into a
+value and compared against the one
+stored in the database the hash values
+match with the one in database and then
+the inbox is displayed on your screen
+now let's take a look of what is the
+proof of work algorithm proof of work is
+a method to validate transactions in a
+blockchain network by solving a complex
+mathematical puzzle and this whole
+process is called mining finding the
+nonce value is the mathematical puzzle
+that users or miners need to solve in
+the bitcoin network so it takes huge
+amount of computational power and
+resources of the miner in order to find
+out that nuance value users trying to
+solve the puzzle are called miners the
+puzzle is solved by determining a nonce
+that generates a hash value and results
+an output lesser than a target so in any
+proof of work algorithm there is always
+a target which is predefined for a block
+the miner has to use the nonce in order
+to generate a hash which has to be less
+than the target miners verify
+transactions within a block and adds the
+block to the blockchain when they have
+confirmed and verified the transaction
+with proof of work miners compete
+against each other to solve the
+mathematical puzzle the first miner who
+solves the puzzle is rewarded and when a
+block is solved the transactions
+contained in a block are also considered
+valid and the bitcoins associated with
+the transactions then get deducted from
+the originator or the sender and moves
+to the receiver now let's see how proof
+of work works so let's take a look at
+the block and its components the
+previous block hash it stores the hash
+value of the previous block of the
+blockchain data it contains the list of
+all the transactions which have been
+aggregated in the block nonce is the
+random value which is used to generate a
+hash value less than the target and hash
+is the digital signature of the block
+itself the hash is generated using a
+hashing function called
+sha-256 now using the nonce when the
+hash is generated if its output is less
+than the target then the puzzle is
+deemed to be solved the block is
+considered to be validated if not then
+the miner increments the nonce by value
+1 and then again rehashes generate a
+hash and goes through the cyclic process
+till the time it is not able to generate
+a hash less than the target in
+blockchain the target is adjusted every
+two zero one six blocks which is
+approximately every 14 days the average
+time of block formation is 10 minutes
+and the difficulty target of the puzzle
+increases or decreases depending on the
+time it takes to mine the blocks so it
+is the inbuilt network which is
+generating the target for the puzzle to
+get solved and it fluctuates the
+difficulty based on the time it takes to
+mind block proof of work is hard to
+produce but very easy for binders to
+verify so point to be noted here is once
+the block is hashed the remaining miners
+are supposed to validate the work which
+one miner has done but they are not
+required to find the nonce again so
+basically the miner who is supposed to
+earn the bitcoin has done the hard work
+but the others miners on the network
+just have to verify his validation in
+blockchain when miners use their
+resources time money electricity etc to
+validate a new transaction and record
+them on the public ledger they are given
+a reward now that reward is in bitcoins
+itself which as of today stands at 12.5
+bitcoins and to add there is no other
+way that the bitcoins can be generated
+in a bitcoin network it is only through
+mining now the bitcoin network
+internally halves the reward after every
+21k blocks which is approximately every
+four years so now subsequently whenever
+the time period will end the mining
+reward will get reduced to 6.25 btc now
+let's take a look at a demo now as i
+said this is a demo to showcase how to
+generate a sha-256 hash using an input
+value so whatever input i have the hash
+which is generated it is of 256 bytes
+even if i add a new value it will again
+only generate a 256 bit length hash
+now let's take a look at a typical
+blockchain structure we have a block
+over here which has one transaction
+added to it now this is orange in color
+because it has not been mined and i can
+only add a subsequent block to it once
+it is mined now as this is the first
+block in this particular blockchain the
+previous hash value of this block is all
+zeros and it is a called as a genesis
+block now as i have mined this block the
+hash which is the digital signature of
+this block itself has been generated and
+i can now add a block primary thing
+which to be noted over here is that the
+previous hash value of this new block is
+the hash value of the previous block it
+has two transactions aggregated in it
+and i can again mine it and now the hash
+of this block has been generated so this
+highlights the typical data structure of
+a blockchain and how blocks are linking
+themselves to each other now let's take
+a look of a typical transaction which
+happens over a blockchain now i want to
+send money from wallet 1 to wallet 2 and
+i want to send one dollar there is a
+transaction fee of point one dollar
+associated with this transaction now as
+i have initiated that transaction wallet
+one has been deducted as one point one
+dollar and it is a pending transaction
+this transaction is waiting to be mined
+so i can choose any of the miners to do
+this transaction the pending transaction
+is done and now block 2 if you see has
+been added the previous hash value of
+this block is 0 0 a 9 is the hash value
+of block one another thing to be noted
+the value of the amount in wallet two
+has also got incremented by one done
+again we can try another transaction
+transferring one dollar again from
+wallet one to wallet three and
+say from wallet 2 to wallet 3 i have
+done a transaction it is pending it can
+be mined and block 3 has got added now
+what are the key takeaways today we
+learned what are the current issues in
+the banking system and how bitcoin
+solved them what is blockchain features
+of blockchain and the demo of the
+features which we have seen i hope you
+had a great learning session and i'll
+meet you in the next session thank you
+there if you like this video subscribe
+to the simply learn youtube channel and
+click here to watch similar videos turn
+it up and get certified click here

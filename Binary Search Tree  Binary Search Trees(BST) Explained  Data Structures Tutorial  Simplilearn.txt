@@ -1,0 +1,413 @@
+hey everyone I'm bab kandal and I
+welcome you all to Simply learns YouTube
+channel in this session we will talk
+about binary search trees we shall begin
+our session by introducing binary search
+trees then we will discuss some of the
+properties of binary search trees after
+that we will try various operations on
+them like insertion and deletion finally
+we will sum up what we have learned from
+this session but before we begin make
+sure you have subscribed to our YouTube
+channel and clicked on the Bell icon
+below so you never miss an update from
+Simply learn so without any further Ado
+let's get started with introduction to
+binary search
+tree binary search tree is a set of
+notes organized in such a manner that
+they all have the same binary search
+tree character ICS a key and a value is
+assigned to each node the requested key
+is compared to the Keys in binary search
+tree so during search if the key is
+found then the corresponding value will
+be
+retrieved next up properties of binary
+search
+tray first up the left sub tree of a
+node contains only nodes with keys
+lesser than the parent node next up the
+right sub tree of a node contains only
+nodes that are greater than the parent
+node the left and the right sub tree
+each must also be a binary search
+tree next let's discuss what are the
+operations we can perform on a binary
+search tree first up
+insertion last deletion
+let's discuss them in
+detail first up
+insertion we can insert a node in a such
+a way so that we obey binary sarch Tre
+rules that is the new node should be
+either less than the parent node if it's
+a it's on the left sub tree or if it's
+on the right sub tree it should be
+greater than the parent node let's
+execute this in the code editor
+we will start by creating a class for
+the binary search tree so
+class
+PST int
+data and bsp
+pointers
+left
+comma right
+next we will Define some functions
+publicly
+public first default
+Constructor and a parameterized
+Constructor
+the function to insert the
+value and a function to Traverse the
+node
+now let's write default Constructors
+definition so
+BST DST
+now let's start the parameterized
+constructors definition
+BST
+in
+value
+data is equals to
+value and left is equals to null
+and
+right equals to
+null now let's write the definition for
+the insert
+function so BST
+BST
+star
+root comma int
+value now we will check if the tree is
+empty or not so
+if root
+then we will insert the first
+node we will
+return
+new
+PST
+value otherwise we will insert the data
+so
+if the
+value is greater than root
+data
+then then we have to insert it in the
+right sub
+tree so root
+right is equals
+to
+insert
+Ro
+right comma value
+else else the value should be inserted
+in the left side so
+root
+left is equals to
+insert
+root
+left comma value
+and then we will
+return now let's write the Traverse
+function so
+void
+DST PST
+star
+root
+F
+root and we will
+return otherwise we will first travel
+left
+side then we will print the root data
+then we will
+Traverse the right
+side
+route right
+now let's write the main
+block so we will start with an empty
+tree so
+BST
+B comma star
+root is equals to
+null the
+root is equals to B do insert
+root
+comma
+50 e do
+insert equals
+to root comma
+10 B do insert
+going to be root
+comma
+30 B do
+insert on to be
+root comma
+50 sorry we already use 50 so we will
+use
+60 a do
+insert
+root comma let's use
+20 let's try to Traverse this so B
+dot
+Traverse
+rout let's execute
+this as you can see we have successfully
+created and traversed our first binary
+search tree let's get back to slides
+at last
+deletion we will delete a node following
+the binary search tree rules that is the
+value of the left sub tree should be
+less than the parent node and the value
+of the right sub tree should be greater
+than the parent node let's try these in
+a code
+editor let's start by creating a node
+this time we will use structure so
+struct
+node in
+key
+node star left
+comma Star right
+now we will create a utility function to
+create a new binary search tree node sub
+struct node
+Star new
+node
+and item
+modde
+star
+temp equals
+to
+Star Meo
+size
+of
+node next
+temp will be assigned the key is equals
+to item
+temp
+left equals to
+null and
+temp
+right is equals to
+null now let's write a function to
+Traverse the tree
+Traverse
+TR
+node star
+root so
+if root is equals to
+null Traverse
+root
+left see
+out
+root
+e
+Trav
+Ro right
+now let's write a utility function to
+insert the new node with the given key
+in the binary search tree subst
+struct node
+star insert
+node
+star
+node comma int
+key so
+if node is equals to null
+then we will
+return new
+node
+key
+otherwise we will recur down the tree so
+if
+e is less than the node key
+then we will insert in the left sub tree
+so
+node
+left is equals to
+insert
+node
+left comma
+key else
+node
+right could be
+inserting now let's return the not
+now we have given a nonempty binary
+search tree so we have to return the
+node with the minium key value found in
+that
+tree so
+we will
+start node
+star
+men value
+node no star mode
+node star
+current is equals to
+node so we will Loop down to find the
+leftmost
+leav
+so
+while current
+[Music]
+and parents
+left is not equals to
+null so current
+should be equals
+to
+current
+return current
+Noe
+star
+delete
+node
+R note
+star root comma and key
+F
+root equals to
+null
+return root
+now if the key to be deleted is smaller
+than the roots key then it lies in the
+left sub tree so we will check if
+e less than root
+key then
+root
+left will will be equals
+to delete node
+root left
+key comma
+key now if the key is deleted is greater
+than the roots key then it lies in the
+right sub Tre so
+else
+if e is greater than root
+root
+right is equals
+to
+delete
+node
+root right
+key
+as
+if Roots do
+left equals to null
+and do
+right is equals to
+null and return
+else
+if
+root
+left equals to
+null then
+struct
+node
+star
+temp is equals to
+root
+right and
+free rot
+return
+temp else
+if
+Roots right
+is equals to
+null then
+struct out
+star
+temp is equals to
+root
+three
+root
+return
+temp now node with the two children get
+the in order success
+smallest in the right sub tree so
+struct note
+star
+temp is equals
+to Min value
+node
+root right
+now we will copy the in order successors
+content to this node so
+root is equals to
+Temp now we will delete the in order
+successor so
+root
+right equals to
+delete
+CDE
+root
+right comma
+temp now we will return root
+now let's write the main block
+start with an empty
+tree no
+star root is equals to
+null now root is equals to
+insert root
+comma two
+root is equals to
+insert root comma
+5 root is equals to
+insert root
+comma three
+root is equals to
+insert
+root comma
+4
+root is equals
+to
+insert root
+comma
+7 and
+root = to
+insert root
+comma
+6 let's try to Traverse this so see
+out
+traversal of the given
+root now first we will delete a value
+for see
+out
+Delete
+to our root is equals to
+delete node
+root
+comma
+2 of see
+out
+traval
+after deleting
+Traverse
+route let's execute
+this as you can see we have successfully
+deleted to enter Trav the tree again
+let's get back to our
+slides at last let's sum up what we have
+learned from this
+session first off left side nodes are
+always lesser than the parent node and
+the right side node are always more than
+the parent
+node next it is easier to search and
+sort elements in a binary search tree
+finally a binary search tree of offers
+faster insertion and deletion
+operations and this was all for today's
+session hope you guys found it
+informative and helpful if you like this
+session then like share and subscribe if
+you have any question then you can drop
+them in the comment section below thanks
+for watching and stay tuned for more
+from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

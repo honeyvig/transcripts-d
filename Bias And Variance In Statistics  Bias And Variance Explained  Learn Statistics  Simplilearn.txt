@@ -1,0 +1,446 @@
+hello everyone
+i welcome you all to simply learn
+bias and variance are important part of
+statistical analysis
+and is used in several places such as
+research machine learning data science
+data analytics and many more
+it has a wide range of applications
+so in this video we will discuss what is
+bias and variance and will try to
+understand it with the help of an
+examples
+so without further delay let's move
+ahead
+what is biases statistics
+biases statistics is a term that is used
+to refer any type of error that we may
+find when you use the statistical
+analysis
+we can say that it is an estimator of a
+parameter that may not be confusing with
+its degree of precision
+the reasons for this bias may be that
+the method by which the data is
+collected may be faulty
+or the way the question is phrased maybe
+not accurate
+let's see what are the types of biases
+the first one is the measurement bias
+batch refers to any systematic or
+non-random error type that occurs in the
+collection of data in a study
+another term that is used for this type
+of bias is the detection bias
+this difference in observation might be
+because of unseen reasons some of them
+can be the error that happens while
+recording the data or the leading
+questions that follows after the data
+the error can also occur because the
+respondents gave the false answers
+suppose you conduct a survey to
+determine whether or not someone voted
+for president obama
+some may have voted for him but the way
+the question was put confused the
+respondents and they answered wrong
+in this case the measurement bias can
+occur
+the next type of bash is the selection
+bias
+when you choose your sample or data
+incorrectly selection bias occurs there
+can be many reasons for this but the
+most common reason is when the people
+try to work with the data that are
+easily available
+and because of that the respondents gave
+the first response
+let's try to understand this concept
+with the help of an example
+suppose you are conducting a poll to
+determine how people feel about the
+current ruling government
+you have gathered all the information
+that you need unfortunately many of them
+say that twitter is the primary source
+for the information
+now social media is not considered
+trustworthy because it is in public
+opinion but their friend's opinion as a
+result
+this type of data can be classified as a
+traditional selection bias easily
+accessible but not for unrepresentative
+and specific subsets of the overall
+population
+the next type of bias is the
+self-selection bias
+self-selection bias occurs
+when the respondents are allowed to
+decide entirely for themselves whether
+they want to participate in the survey
+or not
+the reasons for this error may be same
+that the data may be collected
+which are easily available
+let's try to understand this type of
+bias with the help of an example
+suppose you want to assess a program for
+improving the eating habits of the shift
+workers
+you put a posters where many workers
+night shifts and invite them to
+participate
+however
+those who sign up may be different from
+those who don't they may be more health
+conscious to be with which is why they
+are interested in a program to improving
+eating habits
+if this was the case it wouldn't be fair
+to conclude that the program was
+effective or not
+in this case a selection bias occurs
+recall bias
+recall bias occurs when respondents
+recollection of events is inaccurate or
+incomplete
+it's specially problematic when it comes
+to retrospective service question for
+example suppose you're asked for a
+football match that happened three years
+back
+now
+you may remember the goals and the
+good moments of the football match and
+but might not be able to recall the bad
+moments or the follows all the mistakes
+that happen in that match
+so if you try to guess work here in this
+case i recall bias can occur
+another one is the observer bias
+when a researcher subconsciously project
+their expectation onto the research this
+is known as the observer bias
+in this case the beliefs or expectation
+of an observer can influence the data
+that is collected for the study
+let's try to understand this observer
+bias with the help of an example
+suppose there's a certain news channel
+now in the race of trp certain news
+might not be accurate or maybe even
+false but to prove his point he may try
+to prove that this news is correct and
+the data that are given are accurate in
+this case the observer which is the news
+channel is trying to force its opinion
+on the data and in this case the
+observed bias can occur
+so with this we have discussed all the
+types of biases with the help of an
+example
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+so what is statistics
+statistics is the science concerned with
+developing and studying methods for
+collecting analyzing and interpreting
+the empirical data
+statistics the highly interdisciplinary
+field research and statistics find
+applicability in virtually all
+scientific fields and research questions
+in the various scientific fields
+in developing methods and studying the
+theory that analyze the methods
+statisticians draw on variety of
+mathematical and computational tools
+now let's discuss about some of the
+important terms related to statistics
+the first one is mean
+the mean or the average is the most
+popular and well-known measure of
+central tendency
+it can be used with both discrete and
+continuous data although use is most
+often with the continuous data
+it is the average of all the set of
+values that are considered
+to understand better let's take an
+example
+suppose we have a class
+whose student have obtained the
+following marks out of 15 mathematics
+here are the following marks
+so to find the mean of this marks
+we'll add all the marks and divide by
+the number of marks there are so we have
+the total of 12 marks so the mean of
+this number are 22.8
+the next term we are going to discuss is
+median
+the median is the middle score for all
+the set of data that had been arranged
+in order of magnitude
+the median is less affected by the
+outliers and skewed data
+in order to calculate the median suppose
+we have the following data below
+so these are the marks that we took in
+the previous example
+we'll first arrange these marks in the
+ascending order
+so
+to find the median we'll find the middle
+point of the two middle terms in the
+given data
+so here the two main terms are the sixth
+and the seventh term which is 32 and 35
+so adding the 32 and 35 and dividing it
+by 2 will get 3.5
+so what can the median tell you
+the median provides a helpful measure on
+the center of the data set
+by comparing the median of the mean you
+can get an idea of the distribution of
+the data set
+when the mean and the media are the same
+the data set is more or less evenly
+distributed from the lowest to highest
+values
+the next term is mode
+the mode is the most frequent score in
+our data set
+so suppose we have this following
+example
+here you can see the mark 70 is
+occurring three times so this is our
+mode
+now that we have discussed
+all the terms related to statistics
+let's move on to standard deviation
+so what is the standard deviation
+in statistics a standard division is a
+statistics that measures the dispersion
+of a data set relative to its mean
+the standard deviation is calculated as
+the square root of variance by
+determining each data points deviation
+relative to the mean
+if the data is close together standard
+division will be small
+and if the data is spread and the
+standard deviation will be large
+let's understand this points with the
+help of a bell curve
+a bulker's width is defined by standard
+deviation which is calculated as the
+level of variation of the data in a
+sample around the mean
+one standard deviation away from the
+mean in either direction on the
+horizontal axis accounts for some around
+68.8 percent of the people in this group
+suppose
+34.1 on the left side and a 34.1 on the
+right side
+moving to standard deviation away from
+the mean should include 95 percent of
+the total data
+moving three standard deviations away
+from the mean should represents 99.7
+percent of the total data while
+interpreting a bell curve the points
+nearest to the center of the bell curve
+are those which are most likely to occur
+whereas the point closest to the left
+and right edges are the outliers
+bulkers are used across the wide variety
+of disciplines including finance and
+economics social science and natural
+science
+standard deviation is often denoted by
+the greek letter word sigma so now that
+we know what is the standard deviation
+let's see how we can calculate the
+standard deviation
+so to calculate the standard deviation
+we have this formula
+it is the under root of x minus x bar
+whole square divided by n minus 1 where
+x is the value in the data set x bar is
+the mean of the data set and n is the
+number of data points in the data
+now let's understand the significance of
+standard deviation
+to get the insights on a large data set
+you need the standard deviation
+suppose you are owner of a car company
+where you manufacture the car parts
+and you want to keep check on the
+accuracy of the diameter of the car
+parts that are being manufactured in
+your company
+standard division can be very helpful in
+this
+you can calculate the deviation from the
+mean of the car parts that are being
+manufactured
+the second example you can think of is
+the spread of the data such as in case
+of house price or the average income
+levels in the u.s mortgage through the
+standard deviation
+now this is all about the theoretical
+aspect of the standard division
+now let's learn how you can calculate
+the standard deviation
+to calculate the standard deviation we
+have taken this example
+this is the marks of
+six students out of hundred 73 11 49 35
+15 and 27
+now the first step is to find the mean
+of the given data
+so to find the mean as we have learned
+in the previous slide you just have to
+add all the marks and divide by the
+total number of data so here the mean is
+35
+now the second step will be to calculate
+the square of the difference between
+each score and the mean
+so
+we got the mean as our 35 and we'll
+subtract the marks with the mean
+when we divide 35 from 173 we'll get the
+answer of 38 and squaring the 38 we'll
+get the answer as one triple four in the
+similar manner we have calculated the
+mass minus mean whole square for all the
+cases you get 576 195 0 464.
+now that we have all the data we just
+need to put the data in our formula so
+the formula was under root max minus
+mean whole square divided by total
+observations minus 1
+here
+the marks minus mean whole square will
+add all the
+data and divided by the total
+observations that are 6 minus 1
+so this is the standard deviation we get
+as a 23.15
+now you might be wondering
+why we have calculated the standard
+deviation what is the use of the
+standard deviation
+so the standard deviation of 23.5 if we
+find that the performance of the
+students are not on the same level they
+are deviating all over the place now
+that we have learned about the standard
+deviation and have seen how to calculate
+the standard deviation by taking an
+example
+let's move further
+and learn about variance
+so what is the variance
+you can say various square of the
+standard deviation
+it is a statistical concept whose
+purpose is to measure the dispersion of
+observation around the mean or the
+average value
+variance tells the degree of spread in
+your data set thus more spread the data
+the larger the variance is in the
+relation to the means and you can see
+with the graph
+our central line is mu is the mean and
+on the either side of the
+v you can see the spread of the data
+the major difference between the
+standard deviation and the variance is
+that strange integration is expressed in
+the same units as the original values
+suppose exact meters
+variance is expressed in much larger
+units example meter squared
+since the unit of variance are much
+larger than those of a typical value of
+a data set it's harder to interpret the
+variance number
+accurately that's why standard deviation
+is often preferred as the main measure
+of variability
+so to calculate the formula we just have
+to square the formula that we have seen
+in the standard deviation
+so the formula of the variance is sigma
+x minus x bar whole square divided by n
+minus 1
+where x is the value in the data set x
+bar is the mean of the data set and n is
+the number of data points in the data
+let's see some example where variance is
+used in the real life
+in a real life situation managers can
+take suitable actions to achieve the
+desired objectives if there is a
+variation analysis of the actual
+performance you can compare the
+variation of the performance in the
+different quarter
+against the mean of the performance of
+all the employees
+the second example you can think of is
+the analysis of the performance of the
+different organization
+so how to calculate the variance so this
+is the same previous example we have the
+marks of student out of hundred
+so the first step would be to find the
+mean of the given data
+so as calculated before the mean of the
+given data was 35
+step two will be to calculate the square
+of the difference between each score and
+the mean
+so this is the same as the previous step
+where we have calculated the
+mass minus mean whole square
+the change come here the variance
+formula is
+the square of the max minus mean whole
+square divided by observation minus n
+so when we add all the mass minus mean
+whole square and divided by 5 we will
+get the variances 536
+majorly variance is used to calculate
+the standard deviation since it is a
+square root when we calculate the square
+root of 536 we'll get the answer that's
+23.5 it is same as the standard
+deviation so you must be thinking why
+does variance matter
+so variance matters for two main reasons
+first the parametric statistical tests
+are sensitive to variance comparing the
+variance of sample helps you to assess
+the group differences
+i hope this video was useful for you if
+yes please subscribe to our channel to
+never miss an update until then happy
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

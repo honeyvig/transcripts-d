@@ -1,0 +1,283 @@
+in an era where Digital Data flows like
+the world's V oceans encryption stands
+as the lighthouse guiding and protecting
+every bite from the stormy seas of cyber
+threats at the core of this
+cryptographic Safeguard lies the block
+Cipher a fortress of algorithms turning
+readable data into impenetrable Cotes
+yet the true Mastery of data protection
+Comes Alive through the Strategic
+manuvers known as the mod of operation
+with global internet traffic now a
+torrent of over 150,000 GB every minute
+the art of securing this data is more
+critical than ever these modes from the
+straightforward electronic Cod book ECB
+to the intricate cyber block chaining
+CBC and the agile counter CTR mode are
+the unsung heroes in the shadows each
+playing a pivotal role in the encryption
+Saga this video is your gateway into the
+captivating Universe of block Cipher
+modes of oper operation here we explore
+the ingenious designs that Safeguard our
+digital conversations transactions and
+secrets against the backdrop of a cyers
+space filled with lurking adversaries di
+to a story not just of algorithms and
+Cotes but of the silent Guardians that
+ensure the security of a digital world
+block by block welcome to the thrilling
+invisible Battle of encryption where
+every bit and bite has its Shield but
+before commencing just a quick info for
+you if you are an aspiring cyber
+security professional looking for online
+training and certifications from
+prestigious universities and in
+collaboration with leading experts to
+enhance your credibility then search no
+more simply learns postgraduate program
+in cyber security from MIT University in
+collaboration with easy Council should
+be a right choice this course is
+designed to accommodate a diverse range
+of Learners and this course requires
+just a bachelor's degree with a 50% of
+average and no prior programming
+experience is needed and one plus year
+of work experience is preferred for more
+details you can use the link mentioned
+in the description box and make comment
+and if these are the types of videos you
+would like to watch then hit the
+Subscribe button like and press on the
+Bell icon to never miss on future
+content so stay tuned with us until the
+end of this video and don't forget to
+register your opinion in the comment
+section below so let's start with
+understanding encryption so encryption
+is the process of converting
+understandable data that is print text
+into a coded form that is cipher text
+that hides the original information's
+meaning so the purpose of the encryption
+is to protect data previous
+ensuring that only authorized parties
+can access the original information
+using a specific key for decryption and
+now we'll see the application for
+encryption so it is widely used to
+secure data across various platforms
+including online transactions
+confidential Communications and personal
+data storage now moving to the role of
+blog ciphers in digital security so blog
+ciphers are algorithms that encrypt data
+in fix size chunks or blocks each block
+of PL text is encrypted separately
+turning it into an encrypted block of
+cyper text and now we'll see two more
+forms of it that is fixed block size so
+the size of each blocks is predetermined
+commonly 64 or 128 bits which means the
+algorithm works by taking precisely the
+amount of data at a time for encryption
+and then comes the key usage so single
+secret key is utilized across the
+encryption process transforming plain
+text blocks into Cipher text blocks
+the same key when correctly applied is
+also used to decrypt the cipher text
+back into readable plane text so now
+we'll see the import of understanding
+blog ciphers so the number one point is
+foundation of digital security so
+learning about blog ciphers is crucial
+as they form the backbone of many
+encryption systems protecting digital
+information today and then we have
+versatility through modes of operation
+so different operational modes enhance
+block ciphers flexibility allowing them
+to be tailored to specifically security
+requirements and scenarios and then we
+have the widespread use from securing
+online transactions to encrypting
+personal and sensitive information block
+ciphers are integral to Modern cyber
+security efforts and now we'll compare
+blog and Stream ciphers So block ciphers
+so the number one point for the block
+ciphers would be the fixed size
+encryption that encrypts data in blocks
+making it ideal for situations where the
+total amount of data is known in advance
+or can be evenly divided and then we
+have the security features so it is
+capable of enhancing security through
+modes of operation that can for example
+help in detecting alterations in the
+encrypted data and we talk about the use
+case it is predominantly used for
+encrypting data at rest such as files on
+a disk or data stored in a database and
+then we have the Stream ciphers So
+stream ciphers have continuous
+encryption it encrypts data 1 bit or
+bite at a time fitting scenario with the
+data flows continuously and the total
+volume may not be known beforehand and
+if we talk about its efficiency so it's
+efficient in real time often faster and
+more suitable for encrypting large
+volumes of data or streaming content in
+real time and now coming to its use case
+so it is commonly used for live data
+transmission such as streaming audio or
+video or realtime communication
+applications and now we have importance
+of modes of operation in blog ciphers so
+now we'll understand modes of operation
+so modes of operations are methods that
+Define how blocks of plain text are
+processed by a Blog Cipher algorithm so
+they determine how encryption and
+decryption are carried out adding layers
+of complexity and security beyond the
+basic encryption process and now we'll
+see the necessity of different modes the
+number one is variety of data types
+different types of data example
+streaming data static files require
+different typ encryption approaches for
+optimal security and efficiency and then
+we have security enhancements some modes
+offer increased security by introducing
+Randomness and mitigating patterns in
+encrypted data which can prevent
+attackers from guessing the content and
+then we have functional requirements so
+different applications may require
+specific features from the encryption
+process such as error propagation data
+inquiry checks or simultaneous
+encryption and authentication so now
+let's understand the common modes of
+operation so blog ciphers are crucial
+for anyone starting in cryptography each
+mode has unique characteristics
+advantages and disadvantages so we'll
+start with the number one that is ECB
+electronic code book so let's start with
+its procedure so it encrypts each block
+of plain text independently using the
+same key and it is the simplest form of
+encryption and now if we talk about its
+advantages it is easy to implement and
+the encryption of blocks can be done in
+parallel speeding up processing and
+about the disadvantages it is identical
+plain text blocks resting identical
+Cipher text blocks making it vulnerable
+to pattern analysis and not secure for
+data with patterns now moving to the
+next that is CBC Cipher block chaining
+so before encryption each block of plain
+text is exor with the previous Cipher
+text block the first block is exort with
+an initialization Vector that is called
+IV and it requires IV for the first
+block and now if we come to its
+advantages so the patterns in the plain
+text are well marked and they are more
+secure against pattern attacks compared
+to ECB and now coming to disadvantages
+so encryption cannot be paralyzed due to
+the dependency on the previous block
+cyer text and the error propagation so
+error propagation here refers to an
+error in one block that affects the
+decryption of the current and subsequent
+blocks now moving to the next that is
+CFB Cipher feedback so it turns block
+Cipher into a stream Cipher by
+encrypting segments of a block at a time
+and the previous Cipher text segment is
+encrypted and then exor with the plain
+text segment to proceed the next Cipher
+text segment and now talking about its
+advantages it is suitable for encrypting
+data streams or varing sizes and errors
+do not propagate beyond the next blow
+now coming to disadvantages it is
+slightly more complex to imp ment and
+may have lower efficiency due to the
+sequential nature of processing now
+coming to the next that is ofb output
+feedback so similar to CFB but the
+output of the encryption is fed back
+into the block Cipher for the next cycle
+not the cipher text and it is
+essentially turns a block Cipher into a
+stream Cipher this is for the output
+feedback now talking about its
+advantages so error in Cipher text does
+not propagate to plain text text in O
+and it can regenerate key stream and
+talking about its disadvantages it must
+maintain synchronization between sender
+and receiver and it is less commonly
+used due to complexities in
+synchronization so the last we have is C
+counter so it encrypts a counter value
+that opens starting with an IV and
+incrementing by one for each block and
+exort with this file is the plain text
+to produce Cipher text and each block is
+independent of Furs allowing parallel
+processing and now talking about its
+advantages it allows parallel encryption
+and decryption offering high efficiency
+and no error propagation and errors in a
+cipher text blocks affects only that
+block only and then we have
+disadvantages and the disadvantages of
+CTR is it must ensure the counter is
+never used with the same key and then
+the next is requires careful management
+of the counter to maintain security and
+with that guys we have come to the end
+of this session I hope you found it
+useful and informative if you like this
+session then please like share and
+subscribe and you have any questions you
+can comment down in the comment section
+below and our experts will be happy to
+help you as soon as possible until next
+time thank you and stay safe and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

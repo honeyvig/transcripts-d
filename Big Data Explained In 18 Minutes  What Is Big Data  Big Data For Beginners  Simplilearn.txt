@@ -1,0 +1,487 @@
+pick data
+the name itself says that it contains a
+massive amount of data
+according to a wire article google ceo
+mentioned that between the dawn of time
+and 2003
+humans had created five hexa bytes of
+data
+and by 2010 this much data was being
+generated every two days and by 2021
+it was happening every 40 minutes
+in fact there is a saying that every
+grain of sand on the planet has around
+400 000 bytes of data
+carrying these interesting facts let's
+move forward to know more about big data
+hi everyone i am welcome to simply lunch
+youtube channel
+in this session we will explore big data
+if you want more amazing tech related
+videos do like subscribe and hit the
+bell icon to stay tuned
+let's get to the video to learn more
+about big data without any further delay
+we will begin this session by discussing
+the evolution of big data
+what data is and its workflow
+then we will have a look at its
+applications
+moving forward we will understand the
+different types of big data and then the
+five is concept
+after that we will understand the
+benefits and challenges of big data
+and then we will explore its various
+career opportunities
+and then next
+we will understand what major tools are
+required in big data and finally we will
+end this session by discussing its
+future
+let's look at the evolution of big data
+in human history since the dawn of time
+as we know humans have created large
+amounts of data since evolution
+one interesting fact is that according
+to folks 90 percent of the world's data
+has been generated in the past couple of
+years
+furthermore the technological
+advancement made in the last century are
+more than those and made about 2000
+years
+now we know how big data has evolved
+let's understand what big data is in a
+simpler manner
+big data is a collection of huge amounts
+of data that is continuously growing
+with ever increasing speed
+this data has a diverse quantity of
+information
+the world generates approx 40 exabytes
+of data in the form of text music phone
+calls emails etc and could be collected
+from anywhere like social media networks
+and websites
+this data is also so massive that
+traditional database management system
+can't manage it so now we have a better
+understanding of big data let's look at
+how it works
+in a way we can say we did understand us
+more than we understand ourselves
+the motive behind big data is that the
+further you learn the more you can
+acquire and make a decision or discover
+an answer
+but to understand this concept we need
+to know how big data works
+so the main steps are
+collecting data
+collecting data is a process of
+gathering information from raw data that
+can be used to evaluate outcomes and
+find answers to relevant questions
+processing data
+it includes converting the information
+collected from raw data into valuable
+and usable information
+cleaning data
+it includes detecting and removing
+corrupt and inaccurate data from
+processed information
+analyzing data
+it consists of various methods to
+evaluate the data according to the
+requirements
+now that we know how big data works
+let's look at some of its applications
+by examining vast amount of data big
+data helps firms make better decisions
+dev server logs internet click stream
+data social media content and activity
+report text from customers emails phone
+call details and machine data gathered
+by numerous sensors
+big data find its application in various
+sectors like manufacturing healthcare
+education media and entertainment
+banking and securities
+so let's understand all these big data
+applications in detail
+in manufacturing there are some main
+advantages of adopting big data
+applications such as
+monitoring product quality and floss
+planning the supply
+forecasting of output
+raising energy effectiveness
+and support for manufacturing mass
+customization
+healthcare
+big data analytics have enhanced
+healthcare so researchers are analyzing
+the data to find out which therapies are
+more efficient for specific elements
+what trends and drug side effects and
+gather other crucial knowledge that can
+benefit patient and lower cost
+coming to education
+big data is used by organization that
+conduct online educational courses to
+find candidates who are interested in
+those courses
+if someone searches for a youtube
+tutorial video on a certain topic an
+organization offering online or offline
+course on that topic will subsequently
+send that individual an online
+advertisement for their course
+coming to media and entertainment
+companies that offer media and
+entertainment services such as netflix
+amazon prime and spotify analyze the
+user data they acquire
+to determine the business strategy
+information is gathered and evaluated
+about the types of videos and music
+consumers are watching and listening to
+how long they spend on a website etc
+coming to banking and securities
+big data is used by the security
+exchange commission to track the
+activity in the financial markets
+huge data is used by retail traders
+speak banks hedge funds and other big
+boys in the financial markets this
+sector also heavily relies on big data
+for risk analytics including enterprise
+risk management and anti-money
+laundering
+so these were some applications of big
+data in various sectors
+knowing about application we have come
+through a lot now let's discuss its
+types
+there are three types of big data
+structure data
+it's an organized set of data that has
+defined parameters
+it is arranged in a table like format
+with rows and columns so it can be
+worked on with these
+for example it includes the date
+address credit card numbers and your
+locations
+and a structured data
+an unorganized set of data that
+compromises nearly 80 to 90 percent of
+the total data
+this data is created daily through
+social networks and many other things
+and is not transcribed or tagged in
+organized manner
+for example
+ml ai iot and analytics
+coming to semi-structured data a
+combination of structured and
+unstructured data
+it also includes organized text and data
+not formatted in conventional ways
+some examples of semi-structured data
+sources are emails
+xml and other markup languages
+talking about big data its 5v's concept
+always plays a major role in
+understanding the data
+let's have a look at each of its five
+concepts understanding the five these
+enables data scientists to get more
+value out of their data and helps the
+organization where they work to become
+more customer centric coming to volume
+the first of the five years of big data
+is volume it refers to the quantity of
+data available or the initial size of
+the data is collected which can be
+thought as the foundation of big data
+as an example netflix has over 86
+million subscriber worldwide and streams
+more than 125 million hours material
+daily which is over 60 petabyte in size
+next is velocity
+velocity is the second of the five v's
+of big theta
+it describes the rate at which data is
+created and transferred
+in order for business to make informed
+business decision data has to flow
+quickly so that it is accessible when
+needed
+as an example google receives about 63
+000 queries per second
+the writing variety is the next being
+the 5 v's of big data the diversity of
+the data is referred to as variety data
+may be gathered by an organization from
+a variety of sources with different
+degree of value
+for example data could be in any format
+like structured axle sheets or
+semi-structured xml files
+next is velocity
+the fourth of the five we big data
+raises velocity
+it speaks of the reliability and
+excellence of the data
+the gathered information can be
+incomplete or unable to offer any useful
+information
+so in general it refers to the degree of
+confidence in the data that has been
+gathered
+for example data collected in the
+medical experiments like dna analysis
+highly volatile value
+value is the fifth and final v in the
+big data this refers to the benefit that
+big data can offer it is necessary to be
+able to extract value from big data
+because the value of bit data greatly
+depends on the insights that can be
+obtained from them
+for example
+the analytics used in the health care
+providers the information which is very
+helpful for the society
+nevertheless the advantages that big
+data come to white are well worth the
+time and affords so let's talk about its
+benefit
+customer experience
+it can be improved by using the
+information gathered from big data by
+suggesting products that are more
+individualized to the customers and
+according to their choices
+so the next benefit is decision making
+by identifying patterns in big data it
+can be tracked whether the solution is
+solving the problem or not
+cost saving
+organization can gain by analyzing big
+data and have an increase in their
+revenue and a cost reduction
+so the next benefit is fraud detection
+this benefits in saving cost and
+maximizing revenue
+offering a better customer experience
+also speed up the fraud analysis
+eliminating manual work identifying
+fraud before it occurs and ensuring a
+high fraud detection rate by removing
+false positive
+so now let's discuss the last benefit on
+our list which is data security
+big data security can be readily
+addressed with the information resources
+qualified labor a clear coping plan and
+commitment to data integrity and privacy
+businesses can achieve their ultimate
+objective of utilizing data for better
+customer experience and retention if
+there are no risk to big data
+as we know big data has some benefits
+but it also has some challenges so let's
+discuss that challenges in big data
+big data has some problem in
+implementations as they require quick
+attention and must be dealt quickly as
+they can have a negative outcome
+so let's examine some big data
+challenges
+lack of knowledge professionals
+any company that deals with big data
+challenges know how difficult it is to
+find big data experts
+so data handling tools have advanced
+strategy but most professionals have not
+to close this gap effective measures are
+needed
+the next challenge that we have is
+integrating data
+in a business information is gathered
+from a variety of sources including
+social networking pages erp software
+customer logs
+financial reports emails powerpoint
+presentation and employee written
+reports
+it could be difficult to organize
+reports after combining all of this data
+the next challenge on our list is big
+data tool selection when choosing the
+simplest tool for massive data analysis
+and storage companies are often confused
+which data storage technology is simpler
+edge base or cacindra
+now let's discuss our last challenge
+securing data
+one of the biggest issue of big data is
+securing these enormous databases
+companies generally put data security to
+later phases because they are so busy
+understanding story and analyzing their
+data sets
+a stolen document on knowledge breach
+could cost companies millions
+so i hope i am able to make you
+understand the benefits and challenges
+of big data
+now it's time to get an understanding of
+its various career opportunities
+those with the talent for understanding
+and applying data for decision making
+would be wise to pursue a profession in
+big data
+this section provides a high level
+overview of job opportunities and
+fundamental skill needs in the big data
+domain
+the following are some titles and
+responsibilities
+big data engineer
+big data engineers use massive amount of
+data to produce insights for corporate
+diseases
+additionally their response for
+developing and managing the hardware and
+software architecture of the company you
+typically need two or three years of
+expertise in the field to be hired for
+the role of a data engineer
+next we have a data architect
+an i.t expert who implements data
+storage and management solution and plan
+future databases using computer and
+design talents
+recruiters prefer applicants who are
+fluent and have excellent sql and
+example skills
+data scientist
+a person with a keen knowledge of
+scientific methods and algorithms to
+extract necessary insights from noisy
+and unstructured data the position of
+data scientist often requires a master
+degree next on the list we have a data
+analyst
+it can be defined as someone with the
+skill to drag out useful information
+required by the organization
+our technical graduate degree and
+knowledge of microsoft ex sharepoint and
+sql database are minimal qualification
+let's talk about the last position on
+our list that you can get in the world
+of big data
+security engineer an engineer with a job
+of managing and controlling network
+security protocols and protecting
+sensitive data
+security breached protocols and computer
+forensic knowledge are needed
+data tools assess the management of
+large data sets and the identification
+of patents
+so if you want to work in big data
+industry you will need to learn how to
+use these technologies
+with this we have come to our second
+last topic of this big data session
+which is big data tools
+big data tools
+apache hadoop is an open source platform
+for storing and analyzing big data on
+commodity hardware
+it is written in java and allows for
+quantum data processing due to its
+clustered architecture which allows it
+to run on numerous machines
+simultaneously
+the next tool that we have is apache
+spark
+apache spark is comparable to hadoop but
+unlike hadoop it enables real time and
+batch processing
+it can also perform calculation in
+memory making it hundred times faster
+than hadoop
+for efficient quality execution it
+contains 80 high level operators
+coming to apache flink apache splink is
+an open source tool for processing
+bounded and unbounded data streams
+it is written in java and scala and
+provide high accuracy result even for
+late arriving data providing high
+performance and low latency
+it also supports even time and state
+management
+the next tool that we have is apache
+storm apache storm is an open source
+framework for dealing with unbounded
+data streams it has the advantage of
+being compatible with any programming
+language and support json based
+protocols
+so the last tool in our bucket is
+mongodb
+mongodb is a cross platform big data
+tool with an open source nosql database
+it is simple to setup requires little
+maintenance is dependable and cost
+effective and offers data-driven
+solutions
+as of now we know much about big data
+lastly let's discuss the future of big
+data
+big data has a promising future ahead of
+it thanks to technological advancement
+including easier access to enormous
+volumes of data high demand for
+professionals
+as businesses look for ways to utilize
+the potential of big data technology
+professionals are great in demand on
+detailed dies there are now a lot more
+job listing for positions and related to
+analytics than they have previously
+next is the salary aspect
+as data analytics knowledge become more
+crucial traits for qualified specialists
+are rising and big data is eager to pay
+top cash for the best candidates
+data analyst in australia makes an
+average of 130 000
+a year
+so with this we have come to the end of
+the session on big data i hope you found
+the session both interesting and
+exciting
+if you have any questions about any of
+the topic covered in the session or if
+you need the sources used in the session
+please let us know in the comment
+section below and our team of ex world
+will be pleased to respond as soon as
+possible
+thank you until the next time this is um
+from the simply learn team signing off
+continue to learn and stay safe
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
