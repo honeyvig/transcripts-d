@@ -1,0 +1,203 @@
+(car zooms)
+- It's lunch time and this is
+Brad Anderson's Lunch Break.
+(happy music)
+(cars driving)
+Here at Redmond, we're visited
+by some of the smartest
+people on the planet,
+pretty much every day.
+Every chance I get,
+I meet up with them for lunch.
+(happy upbeat music)
+In this episode I wrap up
+my in depth conversation
+with Terry Myerson,
+Executive Vice President
+of the Windows and Devices Group.
+We were talking yesterday
+and you were describing how
+you see the role of the
+CIO really change into one
+who focuses on the culture
+of creativity and teamwork
+in an organization.
+- Well, certainly the modern workplace
+CIO's for sure.
+- Yeah
+Yeah those who are kinda ahead of the game
+and thinking about it, I
+think it's gonna be all about
+that culture, it's gonna be all about,
+You got millennials
+entering the work force
+with different expectations than you know,
+I guess we're not millennials, huh?
+(laughs)
+- We try to be.
+- Yeah so they have
+different expectations than
+people that've been in the
+workforce for 20 years,
+different tools but you want
+everyone to work together.
+To me that's a culture of
+question of how you want
+your company to work.
+- You were one of the pioneers
+on taking us to the cloud.
+I mean, go back to when
+we were working together
+when you were running exchange
+and I mean I was running systems center,
+you know saw this opportunity,
+this vision to take change to the cloud,
+and that's really kinda the foundation
+of what became Office three 65,
+what were you seeing
+then that led you to say,
+hey we need to go deliver
+this as a cloud service,
+that was very early.
+- Oh what happened there
+was some amazing customers
+began to scale of what they
+wanted to do with exchange.
+Number of devices they wanted to support,
+number of remotes sites
+they want to support,
+the amount of storage
+they wanted to manage
+on behalf of those users,
+and then compliance came in,
+it was complex.
+And it got to this place where
+there were just repeatable
+patterns across customers,
+and just got to this place where some,
+especially with medium sized businesses,
+there was this sort of you know,
+customers in this 500 to
+a couple thousand seats
+that weren't able to hire
+big teams with the expertise,
+it was like let us do it for you.
+We did get started with you know
+these few customers and
+then it was about learning,
+about listening and learning
+and then understanding what it would take
+so we could offer the same capabilities
+to customers all over the world.
+- And now you look at that
+and that really has been the foundation
+that Office three 65 was built on,
+which is the most commonly
+used cloud service
+enterprise period.
+- Yeah.
+I mean it's amazing. It's,
+- And then you did something similar
+when you took over Windows,
+I can remember hearing
+you for the first time
+describing delivering
+Windows as a service,
+you know so what patterns
+were you seeing there?
+- I think it's the same pattern of,
+you're listening to the customer,
+and you're looking for where
+the challenges were happening,
+in terms of serving these customers best,
+in the case of Windows we
+were on a three yearly cycle,
+and we had this disconnect
+where customers were asking for,
+they wanted to have
+more influence over the,
+more transparency more
+open development model,
+but they also just wanted be
+able to get bite size value.
+And you know that's quite a challenge,
+'cause Windows is an enormous codebase.
+- Oh my word.
+- It's it might be the single
+biggest software project
+in the world of course
+we don't know the size
+of every other software project,
+but it's certainly the
+biggest software project
+we have at Microsoft and
+that we know of and the,
+so thinking about how do we now develop it
+more incrementally such that we can still
+go after these bold and ambitious goals,
+but also deliver it you know,
+what's now twice a year,
+allows us to have this ability
+to listen learn react
+to what customers want.
+- I think it was you look at it kinda like
+the history of the software industry,
+I think what you guys pulled
+off in a single release,
+really is one of the most amazing
+things that I've ever seen
+done in software.
+- I mean that's nice to say
+but we built on top of the work
+done before us in all cases.
+You know if you look
+back in Windows history,
+Windows seven was a fantastic release
+that built on some great
+work in Windows Vista
+that didn't land very well,
+and I think we'll look back on Windows 10
+and say it really did build on
+some great work in Windows eight.
+Which you know we didn't land as well
+as we would've liked.
+You know these big platform releases
+with hundreds and hundreds
+of millions of lines of code,
+you got backward compatibility,
+you've got security you got
+everyone from militaries
+around the world to consumers
+depending on it to work and,
+- The thing's that you set that vision up
+that gave you the most
+trepidation as the leader
+in finally changing how Windows
+(laughing)
+I mean what were the things
+that gave you the most concern?
+- The biggest challenge
+is always the ecosystem.
+You know with Windows you're
+not building a product,
+you're building an ingredient that really
+encompasses the work of so many companies.
+(lighthearted music)
+- Well you know we should make this
+like a regular occurrence
+(laughter)
+- Alright man see you around
+- Thanks Terry
+- There are a lot of cameras in here
+- Alright thanks Terry
+- Next time on Brad
+Anderson's lunch break,
+How much seniority do you need at ABI
+in order to ride one of the Clydesdales?
+(laughter)
+- Let's not talk about technology
+- Yeah
+- Let's talk about capabilities
+and that really helps you
+get that seat at the table
+and then you can use that to innovate.

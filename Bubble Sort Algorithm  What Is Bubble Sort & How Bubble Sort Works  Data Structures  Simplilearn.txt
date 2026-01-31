@@ -1,0 +1,331 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+learn about bubble sort its complete
+logic and how to program and implement
+it in real time let us take a look at
+the agenda for today's discussion
+and meanwhile be kind enough to get
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+first we will begin with understanding
+what is bubble sort algorithm
+next we will understand the working
+procedure of bubble sort algorithm after
+that we will understand the pseudo code
+of bubble sort algorithm later we will
+learn the optimized bubble sort
+algorithm and next we will see some
+varieties of bubble sort algorithms
+after that we will understand the
+complexities of the bubble sort
+algorithm and finally we can wind up the
+session with application of bubble sort
+algorithm i hope the agenda was clear
+hoping we are good to go let's get
+started with our first topic
+let's try to understand what is a
+bubblesoft algorithm
+the bubble sort algorithm is one of the
+fundamental and simplest forms of
+algorithm used to sort a collection of
+elements the collection of elements can
+be either a set of numbers or characters
+the control iterates through a sequence
+of numeric or character type elements in
+the bubble sort algorithm and rearranges
+them into ascending or descending order
+the bubble sort algorithm rearranges one
+element at a time
+the bubble sort algorithm is also known
+as the sinking algorithm
+here we have some random distributed
+elements which are 30
+10
+20
+50 and 40 and after performing the
+bubble sort algorithm all the elements
+are sorted as 10
+20 40 and 50.
+so how is it done
+we will see in the next segment where we
+will understand the working
+terminologies of bubble sort algorithm
+the bubble sort algorithm will not get
+implemented on the entire array in one
+go instead it compares two adjacent
+pairs of elements in an array if the
+elements are not in the correct order
+then they are swapped so the largest of
+the two moves towards the right and this
+process continues until the most
+significant element or bubble is moved
+towards the highest position
+after the first process is finished the
+search for the next most significant
+object starts
+and the swapping continues until the
+whole array is in correct order this
+process is employed when you want to
+arrange the elements in ascending order
+to understand the logic in a better way
+let's go through an example
+the example on my screen consists of
+five elements according to the bubble
+sort algorithm logic we need four
+iterations to sort all the elements in
+the ascending order or in descending
+order
+the elements in the array are as follows
+they are 3
+8 4 2 and 12. so in this array the index
+begins with 0 and ends with 4
+and each time the bubble sort algorithm
+goes through the data element list and
+it is known as a pass
+let us analyze the total number of
+comparisons required to sort the array
+in the correct order according to the
+formula
+if n is the total number of elements in
+an array then the total number of
+comparisons needed to sort the entire
+array can be calculated by a simple
+formula shown on my screen
+that is
+n
+is equals to n minus 1
+so in this scenario we need 5 minus 1
+that is 4 comparisons or passes to sort
+the entire array in the first pass there
+are four steps
+let us select the first two elements
+that is three and eight according to the
+requirement we need to sort this array
+in the ascending order hence when we
+compare three and eight clearly we get
+three as the least number so we do not
+need to swap them
+next is the step two comparing the
+second and third elements which are
+eight and 4. here we need to swap these
+two elements because
+8 is always greater than 4 and it
+requires placing the elements in the
+ascending order now moving ahead we have
+step 3 moving on to the third and fourth
+elements which are eight and two and
+here again we need to swap eight with
+two because eight is greater than two
+and in the step four we have we have the
+last elements which are eight and twelve
+there is no need to swap because 8 is
+already less than 12 so you can see it
+clearly so now we enter into pass 2 and
+in pass 2 we need 3 steps
+so the first step in the second pass let
+us select the first two elements which
+are three and four
+no swapping is necessary as they are
+already in order
+next we have step two
+in step two we need to select the
+elements two and four as you can see two
+is always less than four so there is no
+swapping required
+next we have step three in step three we
+need to compare the elements four and
+eight and here we may not need any
+switching because 4 is already less than
+8. now here you can see that we are not
+comparing 8 and 12 because the last
+element is already sorted now we have
+come to the last pass
+and here there is only one step the step
+is to compare the first two elements 2
+and 3 and then swap them as 3 is greater
+than 2. now the array is finally sorted
+and we do not need to do any more
+comparisons
+after understanding the working process
+of the bubble sort algorithm we will see
+its pseudo code in this pseudo code
+there is a function named as bubble sort
+the bubble sort function includes an
+array of collections of sortable
+elements let us consider n as the length
+of the array after that we have to
+repeat comparisons for the first element
+to the last element of the array if the
+first element is greater than its next
+consecutive element then we must swap
+both the elements and place them
+correctly we do not need to switch after
+closing this repeated statement and
+getting out of the loop this bubble sort
+function will end after understanding
+the pseudo code of the bubble sort
+algorithm let's learn about the
+optimized bubble sort algorithm so we
+can optimize the algorithms in a loop by
+programming it to avoid the comparison
+at n minus 1 position after every
+iteration since the nth element is
+already sorted in the previous iteration
+more generally
+more than one element may be placed in
+their final position on a single pass
+all the elements after the last swap are
+sorted in every pass and do not need to
+be rechecked optimized bubble sort
+algorithm allows skipping over many
+elements this results in a worst case
+that is 50 percent improvement in
+comparison count and adds little
+complexity because of the new code sub
+sums the swapped variable
+next we will learn variations of the
+bubble sort algorithm so there are two
+variations of the bubble sort algorithm
+they are
+odd even sort and cocktail shaker so odd
+even sort is a parallel version of
+bubble sword for the message passing
+system
+whereas cocktail shaker is a sort of
+bi-directional bubble sort that first
+goes from beginning to the end and ends
+to the beginning after knowing the
+variation of the bubble sort algorithm
+now we will see the complexity of bubble
+sort algorithm
+so the best case of the bubble sort
+algorithm is big o of n where n is the
+number of elements being sorted and
+worst and average cases of the bubble
+set algorithm are big o of n into n and
+lastly the space complexity of the
+bubble sort algorithm is big of 1.
+here n is the number of data elements
+being sorted let us understand when this
+complexity occurs the best case of
+bubble sort algorithm is o of n which
+occurs at all the data elements in an
+array are already sorted here we have an
+example with some data elements in an
+array which are already sorted that is
+10 20 30 40 and 50.
+next talking about the average and worst
+case the worst case and average case of
+the bubble set algorithm is o of n to
+the power 2 that is n squared or n into
+n it occurs when all the data elements
+in an array are reversely sorted again
+we have an example that consists of data
+elements that are reversely sorted that
+are 50 40 30 20 and 10 in an array
+lastly we have space complexity the
+space complexity of bubble sort
+algorithm is o of 1 because only one
+additional variable is required to
+implement bubble sort algorithm that is
+temporary variable we came to the last
+topic where we will understand four main
+applications of bubble sort algorithm
+first application of bubble sort
+algorithm states that this sorting
+technique is used to sort the elements
+in a specific order the bubble sort
+algorithm uses less storage and is the
+second application of bubble sort
+algorithm third the real life
+application states that the bubble sort
+algorithm is used to start the students
+based on their height in a line
+lastly bubble sort is used to create a
+stack pile up the elements based on
+their height
+after covering all the bubble sort
+algorithm topics we will now see a
+practical demonstration of bubble sort
+algorithm
+now on my screen we have an example for
+bubble sort algorithm so let us get
+started with the code in this code at
+the first position we have some header
+files that is standard input output
+standard library etc
+after that we will define the main
+function in the main function we will
+declare an array with maximum size of
+50. so here you can see that we have the
+first array variable that size is 50.
+size will be defined with declaration
+only because we cannot change the array
+size in the runtime after that we will
+declare four variables that is a
+b
+num and temp
+none variable will store the number of
+elements of an array after that we will
+ask the user how many elements are
+required for the array using printf
+function
+so here is the printf function where we
+will be asking the
+user to enter the number of elements in
+an array and the user will enter the
+elements and this will be done using
+scanf function then finally we will
+print all the elements that the user
+wants to store in an array using another
+printf function
+we will have three loops firstly there
+will be a loop from the first element to
+the last element of the array so this is
+the first for loop we need then second
+the for loop will use the variable a for
+the rotation purpose as we know rotation
+equal to number of elements minus 1 so
+it will make a loop from index 0 to
+number minus 1
+the last loop is used for how many
+passes will be required for the
+implementation and we already pass
+equally to the number of elements minus
+number of rotations minus 1. so there is
+the loop from index 0 to number minus a
+minus 1 then there will be the if
+condition stating that if the first
+element of an array at index b is
+greater than the element at the index b
+plus 1 then we will make swap then we
+will come out of the loop and we will
+print all the array elements after
+performing the bubble sort algorithm now
+let's quickly execute this program and
+see the output
+so you can see the program got
+successfully executed now let us enter
+the number of elements let me choose 5.
+now let us enter the elements in a
+random order
+so this was the array input 3 2
+4 1 and 5 and here after executing the
+bubble sort algorithm we have the sorted
+array that is one two three four and
+five
+and with that we have come to an end of
+this tutorial hope the video was helpful
+and informative if you have any queries
+regarding this video please feel free to
+let us know in the comment sections
+below and our team of experts will be
+happy to resolve all your questions
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

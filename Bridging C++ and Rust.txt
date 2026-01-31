@@ -1,0 +1,376 @@
+hey everyone welcome to my lightning
+talk bridging C plus plus and rust my
+name is Yash
+um I work as a rest developer Advocate
+at Microsoft
+um and today I'll be walking you through
+three different ways of Bridging the
+rust and C plus plus languages
+um just as a heads up I am very much a
+Sleepless novice I have been programming
+C plus plus for about a week now
+um so forgive me if anything's
+unergonomic unclear not the best uh I
+haven't been doing this for very long my
+expertise is more uh rust which I have
+been doing for half a decade now longer
+um I'm also involved in the development
+of rust so that that's where my
+strengths lie
+um C plus plus not so much but still
+it's important to make the two work
+together
+so let's dive in all right so in this
+talk we'll briefly cover what rust is
+why it is then cover some of the syntax
+and semantics and then talk about
+bridging C plus plus and rust I will be
+assuming you're familiar here with C
+plus plus but maybe less so with rust so
+Russ is at this point nearly 20 years
+old
+um but it's only been stable for since
+2018 which makes it about eight years
+now so it's it's a pretty recent
+language about 10 years or 20 years
+younger than C plus plus and 30 or so
+years younger than c
+um it was incubated at Mozilla research
+in order to help make the Firefox
+browser parallel because they were
+trying to do that and it turned out to
+be very difficult
+um and they decided a programming
+language might be a good solution for
+that so
+rust in a nutshell is a programming
+language with a very high level type
+system similar to Haskell or ocamel it's
+a henley Milner type system which means
+that pipe safety is is a big thing but
+unlike ocam on Haskell it uses a c like
+interface so C like syntax which you
+know if you've written Java JavaScript C
+C plus plus Etc it should be a lot more
+familiar to you it's sort of Hallmark
+feature is it provides memory safety
+without runtime overhead
+so it checks uh memory like moves and
+borrows and landings and all these
+things
+completely at compile time
+and it compiles it away and it leaves
+you with code that is as fast SC or C
+plus plus
+um it also has native C interop so you
+can piecemeal replace components that
+have been written in C today that may be
+difficult for numerous reasons say
+memory sensitive or a safety safety
+critical
+sensitive to bugs perhaps very old you
+know all these things uh rust can help
+you with and you can replace it you can
+interop it that's one of its strengths
+so it doesn't try and reinvent the
+entire world instead it fits into the
+existing
+ecosystems and and systems that people
+build
+it also has a very modern like async IO
+facilities it has async await notation
+um this is the the thing that I help
+work with so it makes parallelism easy
+it makes concurrent systems easy to
+write
+and it prevents data races uh which
+which is great when you're dealing with
+multi-threading
+um so who's using rust many places
+including us here at Microsoft but also
+it's being used all throughout AWS
+cloudflare uh evening kernels uh since
+this week it is in the windows 11
+Insider build uh inside of the kernel
+but it's also being introduced inside of
+Linux I believe Android has components
+such as their Bluetooth stack which they
+have uh Rewritten and rest
+um for its its performance and safety
+safety aspects
+so that's it for what rust is now let's
+take a look at rust itself
+um here's a little cheat sheet for
+syntax we use the FN keyword for
+functions we use a little little arrow
+to return types A Name colon type
+notation for for names and types uh kind
+of like um I believe typescript does it
+this way and then you can declare
+um methods on struct using impul blocks
+um that's that's the syntax
+um the semantics are maybe a bit more
+interesting here where by default all
+rust values are by move which is move
+semantics and C plus although we don't
+support move Constructors but that's a
+whole thing
+um and we we have uh two types of
+references as well which is uh unique
+and shared references
+um unique reference can be mutated a
+shared reference can only be read and
+you can only either have a single unique
+reference or multiple shared references
+but but never both at the same time and
+this is compile time and force and this
+is what allows rust to be Memory safe
+um with without runtime overhead so here
+here's the way you define a struct and
+rust which is a struct with a name and
+then members inside of it so key like
+name type pairs
+um here's how you define functions in
+rusts in this case uh it returns a zero
+size unit type rust is also entirely
+expression based so you know it
+evaluates the unit expression here
+um
+and this this just prints me out to
+standard out and then here's how you
+implement methods first we have a getter
+for the the type name which takes self
+by reference it's a shared reference and
+returns a string slice and then we have
+a Setter which takes a new string and
+that mute itself so you can see that the
+cell parameter we're just like C plus
+plus is this but inside of the argument
+list
+it says hey we need a mutable reference
+to self because we're going to update
+value here
+okay
+so to dive into binding C plus plus and
+rust entirely by hand the the first one
+is we're gonna uh take rust and C plus
+plus make them both talk uh c a b i to
+each other and then link them together
+and that just works that is maximally
+flexible but it is kind of inconvenient
+because both rust and C plus plus we
+like are smart pointers we like our
+abstractions and if you're going to see
+ABI
+um you don't get access to all of that
+so you you need to oftentimes wrap it in
+code which is a bit difficult but you
+know it works and that is pretty great
+so let's take a look at that here we
+have our cats HPP file which is a struct
+cat
+it has a name and it has a bowl whether
+it's hungry or not then we can construct
+our cat we can get the cat name we can
+feed our cat and we can make our cat
+meow now here's the implementation uh if
+our cat has not been fed it will meow
+I'm hungry and if it has been fed it
+will meow I'm sleepy
+so yep
+then on the Rough Side of this that was
+our C plus plus code on Rough Side of
+this we'll be reusing this example
+everywhere so you know we just go
+through it like once
+um on on the Rough Side of this we have
+a bill arrest file which is like a make
+file but native to the rust tool chain
+um where we invoke the the cmake file uh
+or this sorry the cmake library to to
+use cmake to build the the C plus code
+then we say hey please build the C plus
+code and it builds it
+and then I haven't printed the
+invocations here but there's ways of
+saying like Okay and then please also
+link it as part of the build
+um the full example which I'll link at
+the end includes all of this so you can
+like go through and browse it yourself
+then the rust code itself it redeclares
+the same struct it says hey this struct
+is not rep or rust it is wrapper C so
+please use C ABI and then we create ffi
+bindings for all of the methods inside
+of an extern C block
+um and that gives us access and then we
+can invoke this using all of this which
+is just C methods and raw pointers
+these are not compiler checked by the
+way so unsafe blocks mean uh you're on
+the hook for validating that the
+semantics hold but you still need to
+uphold the exact same rust semantics you
+don't get to not uphold them it's just
+sometimes you you like with ffi the
+compiler cannot check it for you so you
+have to check it yourself this is pretty
+rare it's only at the ffi boundaries and
+for some Primitives that this needs to
+be done
+um but yeah here we're doing ffi stuff
+so uh we take our cat we create our cat
+and then we call meow then we call feed
+and we go meow again and that just works
+um okay intermediate level rather than
+needing to like we saw here uh redeclare
+destruct and also here you know earlier
+have the multiple definitions
+um what we can do instead is use a tool
+called bindgen which will read the
+header files from C plus plus and auto
+generate rust bindings we can then use
+that to call things and it will just be
+less work so
+here is again our cats.hp file in this
+case we no longer need to use struct
+because we're not using extern C anymore
+we are just using negative C plus plus
+classes so here's our class with all the
+methods like earlier but in class form
+and then we create the implementation
+there still same logic but then in the
+rust build file we do something
+different namely we call it bindgen tool
+to generate our bindings and then we
+build a c plus code and then it gets
+Linked In the bindings get generated and
+then in our main file we can take those
+bindings and just use those so rather
+than doing the free functions like we
+saw earlier we can now see that our cat
+has methods on it so we can call meow
+and cat.feed
+which is a lot more convenient so buying
+chain is great when you can use it I
+highly recommend using it there's also
+the inverse tool called C by engine if
+you want to create rust take rust and
+like create C binding C headers for it
+um yes okay
+so for the final example what if we
+wanted to go like all the way through so
+far we've been seeing uh things like
+Carstar Char star strings but rust and C
+plus plus both have access to Native
+strings like high level string
+representations which are nicer to use
+other types such as smart pointers and
+the cxx library allows you to to create
+a bridge between the two
+using these high level types so it is
+aware of rest and C plus plus libraries
+and it makes sure that those like like
+ergonomic you can create ergonomic like
+bridging between the two
+so uh in this example what we'll be
+doing is we'll be round tripping so we
+created definition and rest call that
+from C plus plus
+and then export a function again from uh
+to rust
+which we then invoke
+so our header now is just the void
+function test we just gave it a
+something name doesn't matter
+because this is what we'll be using from
+Russ
+then in our implementation tests calls
+or rust types
+here we say hey please uh create a cat
+and then call meow and feed again
+unfortunately cxx is not yet aware of
+how Constructors work so this is a free
+function to create our our struct or a
+class
+um but then from there it's it's you
+know the methods do work
+in order to build it what we can do is
+we can use the cxx build
+um Library we can give it some flags and
+that just works
+now on the right side rather than
+defining the the types on the C side or
+sorry on the C plus plus side
+um we're now doing it on the rough side
+and we say hey extern rust within this
+like cxx Bridge construction we say hey
+here's an extern rust block with all the
+methods and a shared struct named cat
+with
+um a name and is hungry and then
+importing from C plus plus we say hey
+there's a function called test that we
+would like to have access to
+and then the actual implementation so
+those were the headers the actual
+implementation here is like we have
+neocat which implements all logic and
+it's it's pretty much the same logic
+rest in C plus plus look look pretty
+similar in in many cases
+um so yeah the the only thing that
+probably stands out here is that fee
+takes a mutable reference to self
+because it mutates it updates that is
+hunger field everything else takes a
+shared reference
+and then here we call ffi test which
+invokes the C plus plus code
+and that works
+um okay just the the final bits here
+um there are more options that you can
+investigate if you're interested uh cxx
+can be combined with buying gen to make
+things more convenient unfortunately uh
+ran out of time to try it as well as I
+said they've only been doing this for a
+week
+um the Google auto cxx project which is
+an unofficial project
+um takes both libraries and is intended
+to make that more convenient I have also
+not tried it but I I really like the
+premise of that because I've found
+myself needing when using cxx which is
+what you would want to be using if you
+could
+um there's some repetition involved but
+Auto cxx removes that repetition which
+seems very promising there's also cxx
+async which adds support for async types
+and finally C by engine as mentioned
+earlier if you want to create
+um like wrap rust code into like uh C
+headers
+and make that like automate that project
+um yes so in conclusion rust is a memory
+safe programming language it has native
+interrupt with c and with with some use
+of tooling you can also make it
+interrupt with C plus those tools are
+being actively developed and they're
+improving
+um all the time so hopefully this will
+become easier over time and I'm very
+excited for where this is going I hope
+this was useful
+um if you're interested in seeing these
+examples trying them out building them
+yourself you can go to this URL on
+GitHub where you can find all three
+examples checked in and my slides as
+well so you can read those over if you
+want to
+thank you so much

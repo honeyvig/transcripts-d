@@ -1,0 +1,310 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+be discussing the bucket sort algorithm
+in data structures but before we begin
+make sure that you have subscribed to
+our youtube channel and don't forget to
+hit that bell icon to never miss an
+update from simply learn
+now without further ado let's get
+started with the agenda for today's
+discussion
+at first we will understand what exactly
+is a bucket sort algorithm next we will
+understand the working principles of
+bucket shot algorithm followed by that
+we will look at the pseudo code of
+bucket sort algorithm next we will
+understand the bucket sort algorithms
+complexities
+then we will compare the bucket sort
+algorithm with other existing sorting
+algorithms finally we will wind up the
+session by learning the various
+applications of packets or algorithms so
+i hope i made myself clear with the
+agenda now let's get started with our
+first concept that is what exactly is a
+bucket sort algorithm
+so the bucket sorted algorithm divides
+the unsorted array into several groups
+known as buckets so each bucket is
+sorted using any suitable sorting
+algorithm or recursively applying the
+same packet sort algorithm
+i know it it's a little complicated to
+understand so let's go through an
+example
+so on my screen we have an example of an
+array consisting of numerical elements
+that is 12 6 37 29 11 35 21 and 22
+now we will create some buckets with
+different ranges
+so here we have different buckets
+ranging from 0 to 7
+8 to 15 16 to 23 24 to 31 and finally
+the last bucket with range 32 to 39
+so 6 will be stored in the first packet
+followed by that 11 and 12 will be
+stored in the second bucket followed by
+that we have 21 and 22 stored in the
+third bucket followed by that we have 29
+in the fourth bucket and finally the
+last two elements which are 37 and 35
+stored in the last bucket
+in the next stage all the elements are
+sorted according to an order that might
+be ascending or descending in our case
+we have the ascending order so the final
+result will be 6 11 12 21 22 29 35 and
+37
+so this is how the bucket sort algorithm
+works in real time now the next topic
+that is working off a bucket sort
+algorithm in a detailed way
+so now we know the briefing of a bucket
+sort algorithm now let's learn the
+working of bucket shot algorithm in
+depth
+suppose we have an array consisting of
+decimal values or floating values as the
+input so the first element is 0.47
+next we have 0.39 0.23
+0.55 0.29 0.41
+0.59 and finally 0.31
+then we will create an array of size 10
+and store 0 in each block
+and each block of an array is used as a
+bucket for sorting the elements
+next we have step two
+insert the elements into buckets from
+the array and all elements are inserted
+as per the range of the bucket
+buckets ranging from 0 to 1
+1 to 2
+2 to 3 up to n minus 1 to n here n is
+the number of elements in an array so
+for our example 0.23 will be multiplied
+by 10
+which is the size of an array and that
+gives us 2.3 approximately equal to 2 so
+finally we will insert 0.23 into the
+bucket number 2.
+in exact we will insert other elements
+into other respective buckets
+followed by that we have step 3
+elements of each bucket are sorted using
+the stable sorting algorithms
+and finally the step 4 in step 4 all the
+sorted elements of each bucket will be
+gathered and represented in the form of
+an array as sudo code is an informal
+programming description that does not
+require any strict programming language
+syntax similarly we will understand it
+effortlessly so in the pseudo code first
+we will create n empty packets
+next we will insert all the array
+elements into buckets by multiplying the
+size of an array we have to keep doing
+this for every array element as we
+understood this in working of the bucket
+sort algorithm
+after that we have to sort individual
+buckets using insertion sort and finally
+we will concatenate all the sorted
+buckets next we will learn about the
+complexities of bucket sort algorithm
+first we will see about time complexity
+so talking about the time complexity we
+usually have three cases to summarize
+the time complexity so first we have the
+best case
+so that the best case is o of n plus k
+next we have the average case that is o
+of n into n and finally we have the
+worst case that is o of n
+here n is the total number of elements
+to be sorted and k is the number of
+packets
+so let us understand all the three cases
+one by one so first we have the best
+case
+so the best case occurs when all the
+elements are uniformly distributed in
+the bucket with an equal number of
+elements in each bucket if insertion
+sort is used to sort the bucket sort
+algorithm then overall time complexity
+is o of n plus k
+o of n complexity is for making the
+buckets and o of k complexity is for
+sorting all the elements after
+understanding the best case now we will
+see how the worst case occurs in the
+bucket sort algorithm the worst case
+occurs when there are elements of close
+range in the array they are likely to be
+placed in the same bucket
+it makes the complexity depend on the
+sorting algorithm used to sort the
+elements of the buckets complexity
+becomes worse when all the elements are
+in reverse order and if insertion sort
+is used for sorting then time complexity
+becomes o of n into n and lastly
+we will learn how the average case
+occurs in a bucket sort algorithm the
+average case occurs when the elements
+are randomly distributed in the array it
+occurs even when the elements are
+distributed in uniform way bucket sorts
+run at the linear time
+the average case holds true until the
+sum of bucket sort sizes is linear and
+in the total number of elements
+next we will see about the space
+complexity
+so the space complexity of all the
+buckets or algorithms is o of n plus k
+lastly we have stability so talking
+about stability so yes the bucket sort
+algorithm is stable
+after understanding the complexity of
+packet sort algorithm now we will
+compare the bucket sort algorithm with
+other algorithms
+so first we will compare the counting
+sort algorithm
+bucket sort can be worked as a
+generalization of counting sort
+algorithm and if each bucket has size 1
+then the bucket sort degenerates to
+counting 0.
+the variable size of bucket sort
+algorithm allows it to use o of n memory
+instead of o of m memory where m stands
+for the distinct value that gives
+counting sort o of n plus one worst case
+behavior
+next we will compare the buckets or
+algorithm with quick sort
+bucket sort with two buckets is a
+practical version of the quick sort
+where the pivot value always selects the
+median value of the value range another
+meaning of choosing the pivot in quick
+sort such as a randomly selected pivot
+makes it more resistant to clustering it
+in the input distribution
+after that we have the merge sort
+the n-way merge sort algorithm starts by
+distributing the list into n-sub-list
+and sorting each one then the sub-list
+created by merge sort have overlapping
+ranges and cannot be recombined by a
+simple concatenation bucket sort
+lastly we have one more sorting
+algorithm that is radix sort for
+comparison
+top down radix sort can be a particular
+case of packet sort where both range of
+values and the number of buckets has
+contained the power of two
+this approach can accelerate the scatter
+phase since we only need to examine each
+element's prefix of bit representation
+to determine a bucket
+at last we have one more topic to learn
+that is the applications of packets or
+algorithm
+the bucket sort algorithm consists of
+two main applications
+first by using bucket set algorithm
+input is uniformly distributed on the
+range and second by using bucket sort
+algorithm there are floating point
+values
+now let us go through a practical
+demonstration of bucket sort algorithm
+now on my screen we have an example for
+bucket sort algorithm so we will begin
+with the header files followed by that
+we will define a function namely bucket
+sort algo
+this particular function is to implement
+a bucket sort algorithm in the functions
+argument there will be an array namely
+arr and a variable num which will store
+the number of elements in an array after
+that we will define two counter
+variables which are i and j and declare
+one more array namely array1 with the
+same size of an arr array
+so this particular second array will be
+used for displaying all the elements in
+the array 1 we will have a for loop
+which will run from index 0 to the
+entire size of an array and for this
+array we will use the variable i as the
+counter variable
+we will have another for loop to print
+all the repeated numbers with frequency
+in an array
+we will run another follow from index 0
+to the last element of both the arrays
+and elements of array and array 1 will
+assign to arr array
+now we will exec from both the loops and
+now we will enter into the main function
+where we will declare an array namely
+array with the size of 100 and two
+variables which are num and i next we
+will ask the user to enter several
+elements of an array using printf
+function
+and now the user will enter
+number of elements and we will scan that
+using the scanf function
+now we will ask the user to enter the
+elements of an array using printf
+function and the entered elements will
+be scanned using the scanf function
+and next we will print a before sorting
+and an array after sorting using for
+loops by calling the packet sort algo
+function and in this function we will
+pass the name of an array that is an
+array and the size of an array that is
+num
+now
+let us try to execute this program and
+see the output
+so there you go the program got
+successfully executed now let us try to
+enter the number of elements that is
+five now let us enter all the five
+elements
+two three
+one four and five
+so the array before sorting was two
+three one and four five then the array
+got sorted using packet sort algorithm
+and the resultant array is one two three
+four and five in ascending order
+now with that we have come to an end of
+this session on bucket sort algorithm if
+you have any queries regarding the
+topics covered in this session or if you
+need the code that is executed in this
+particular session then please feel free
+to let us know in the comment section
+below and that team of experts will be
+happy to resolve all your queries until
+next time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

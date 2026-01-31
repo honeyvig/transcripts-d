@@ -1,0 +1,54 @@
+British Airways it's one of the
+best-known brands in aviation we have
+about 40,000 employees there can be
+quite a difficult bunch of people to
+reach we had our new CEO come in Alex
+Cruz and he wanted to make sure he could
+get his message across to everyone
+wherever they were all the information
+was spread across multiple different
+sources they had to use a number of
+logins we had a number of senior
+employees do have British Airways issued
+equipment but the vast majority of them
+don't have those we wanted to make a
+level playing field in that sort of
+sense and creating the app is the
+platform to do that many of our apps in
+the recent past are being built on the
+iOS platform it's a default platform but
+we've had trouble moving it to other
+platforms we used Microsoft Visual
+Studio 2017 to developers Ameren forms
+app that gives us 95% code reuse across
+all of the platforms that we were
+targeting which was iOS Android and
+Windows Phone visual studio team
+services and summer in test cloud
+particularly allowed us to iterate
+quickly through several releases of the
+application because we were able to
+check as we went along that our tests
+were still passing and the product was
+still robust enough to deploy and we
+were able to add extra features quickly
+without worrying about lengthy
+regression tests for our back-end
+services we use as your application
+services and also as your sequel
+database to provide the data resources
+to the application and to provide
+integration with our other back-end
+systems to achieve single sign-in for
+the application we have federated across
+from Azure Active Directory to our
+Oracle access management and that was
+fantastic
+that was the equivalent of putting a
+very old car on the moon it feels like a
+great achievement to know that they're
+finding a better experience it's working
+really well for us and we hope that this
+is the beginning of a very fruitful
+relationship
+you

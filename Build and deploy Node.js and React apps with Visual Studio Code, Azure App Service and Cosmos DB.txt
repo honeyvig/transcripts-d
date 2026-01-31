@@ -1,0 +1,284 @@
+>> Hi I'm Matt. I'm
+a program manager on the Azure tools
+for Visual Studio Code
+Team and I'd like
+to welcome you to Microsoft Connect.
+I'd like to show you some stuff
+today that my team has been
+working on to help you
+be more productive,
+building your apps locally,
+and then extend that productivity
+to the cloud as you deploy
+your apps and adopt Azure
+App Service in Cosmos DB.
+We'll start with this app
+here which is an Express app
+built with React and uses
+a Mongo database on the backend.
+I'll start this app in
+debugging mode just to give you
+an idea of what it looks like.
+You can see it's a sticker app
+with no stickers.
+This will let customers come and
+browse and order stickers
+and customize them,
+but again, there's no data.
+So let's populate our
+database with some data.
+So the first thing that
+I want to show you is
+the Cosmos DB extension that I'll
+actually let you work
+with your database is
+locally as well as on Azure.
+In this case I'm connected to
+a Mongo database that's
+running locally on my machine
+and this app is configured to
+use a stickers database on localhost.
+So let's go ahead and
+create the database that we
+need and the collection which
+is just called stickers.
+There we go now we have a database
+and a collection with no data.
+So, I have some initial
+data that we can use.
+I'll copy this entire array
+of sticker objects,
+and I'll open up what's
+called a scrapbook.
+So this is a fairly unique concept
+to the Cosmos extension.
+What a scrap book because is,
+is a way to write
+your Mongo queries and get
+IntelliSense for the database that
+you're actively connected to.
+I'm already connected to
+the stickers database,
+but to do that what you would do
+is click on the "Connect" button.
+Choose my attached accounts,
+my local database, and
+the database we just connected
+to or we just created.
+Again, you will get some intelliSense
+on here so when I type Db,
+you'll see the stickers collection
+is automatically recognized as
+available and we're going
+to do an insert mini.
+I'll paste the array
+of sticker objects I
+just took from my initial data
+and we'll execute this command.
+As you can see,
+15 stickers were added,
+we can expand the
+collection and actually
+see those collections or those
+documents within the collection,
+and I can actually click on
+these documents and make changes
+to them directly in the editor.
+Saving will upload
+the changes to database.
+But for now let's just go back to
+our app and make sure
+that the data works.
+Okay. Cool. So this is what
+it's supposed to look like
+and it's working on
+our local machine and let's go
+ahead and deploy that to Azure.
+To do that I'm going to use
+the Azure App Service extension
+which is our platform as
+a service offering
+that lets you deploy
+your applications and scale
+them as the demand arises.
+This all starts with the blue up
+arrow which is the deploy button.
+I'll create a new app,
+let's give it a name and
+I'll pick my node version.
+So what this is going to
+do it's going to call out
+to the Azure APIs to
+create an App Service plan which
+is basically a VM where
+the app instance will run.
+You can have multiple app instances
+running on an App Service plan.
+It will also create a resource group
+which is a logical grouping of
+Azure resources that you can
+use to manage various pieces,
+and it will create
+the app instance itself where
+the app will be deployed.
+Now that the app is created,
+I'm prompted to choose
+the directory that I
+want to deploy it to
+the app instance.
+We'll skip this part for now
+but if you wanted to you can
+actually let the App Service
+extension remember
+which app was deployed to this
+particular app instance so that in
+the future you aren't prompted
+for which app you want to deploy to.
+So at this point it's going
+to package up the app.
+Since we're in the default
+configuration it's just going to
+use a zip archive It's gonna
+take all of your code.
+Put it in the zip archive
+push it over to
+the Azure API where Azure is
+going to take over
+extract all of the code,
+run NPM install in
+the root of the project,
+and then start the application.
+So now that our app has been deployed
+we get notification letting us
+know that we can connect to
+the log stream or we can just go
+ahead and browse to the site.
+So let's do that and get
+an idea of how it's working.
+Again, we have the same
+problem with no data,
+but in this case I've
+actually created
+a database out on Cosmos
+that we can connect to.
+To do that, let's go into
+the App Service extension
+here expand the node for
+the app and choose connections.
+This will let us connect to
+a MongoDB instance that's
+running on Cosmos or in Azure.
+Choose connect or pick
+from my subscription.
+Again, I've already created
+a database for this,
+and it's going to automatically
+create the environment
+variable that we need on Azure
+to connect to the database.
+I'll use the default value of
+Mongo URL because that's what
+this app is looking for.
+Now that it's connected we can
+actually reveal this database in
+the Explorer which will take us
+directly to the Cosmos extension.
+We can expand this and the same
+functionality that we had on
+the local environment
+we have again here in
+the production environment on Azure.
+So, I can do something
+like make a change here.
+When I click "Save" prompt
+it to upload and refresh
+the page and take a second
+for our environment to be
+reset to use the correct
+environment variable.
+Now our stickers are loading.
+You saw that I made a quick edit
+to the markdown sticker and that
+did show up right here in the
+production version running on Azure.
+Okay. So now we have our app
+running it's connected to
+the database but deploying from
+the editor's a little strange.
+So what we're going to do
+is we're going to set this
+up to automatically deploy from
+our GitHub repository and we'll do
+that from the deployments node.
+I'm prompted automatically to
+connect to a GitHub repository.
+I'll click that, choose my username,
+pick my sticker app project and
+we'll choose the master branch.
+So what this will do is set
+up all the hooks out on
+GitHub to automatically pick up
+pushes to the master branch.
+This also includes things like
+pull requests that are
+merged into master,
+and then anytime that happens
+the code will automatically
+be synchronized over
+to Azure and it'll be running
+just automatically as
+we develop our app.
+This step takes a little bit
+of time because it is actually
+setting up the hooks and that it's
+going to do a sync or deploy,
+and get all of your all of
+your assets out on
+the worker and running.
+Okay now the application is
+connected to the GitHub repo.
+You can see the commits
+that have been
+deployed to this app before.
+At any point in time I can
+actually right-click these and
+redeploy to revert changes
+if I find that they aren't
+quite working as expected.
+So we have our app now configured
+to deploy automatically but
+the App Service Extension will
+let you do other things as
+well such as manage
+the state of the app.
+You can browse directly to
+the website, stop-start restart.
+You can actually set up your
+continuous delivery here as well.
+Your next step would be to set
+up continuous integration on
+your GitHub repository using
+something like Azure pipelines,
+and this will run
+your lint and unit tests
+tasks as you validate PR's
+and you do your code reviews.
+Once you merge those items
+into Master they'll
+automatically be
+deployed to App Service.
+For more information or to run
+through these things on your own,
+you're welcome to visit us
+at any of these resources,
+visit our docs page,
+there are specific
+tutorials that walks
+through the steps that
+I just showed you.
+Also please reach out
+to us if you have
+feedback about any of these features.
+I'd like to thank you for your time.
+Enjoy the rest of Connect
+and happy coding.

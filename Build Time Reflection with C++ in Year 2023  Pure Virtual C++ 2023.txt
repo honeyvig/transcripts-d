@@ -1,0 +1,868 @@
+so next up Gabriel dostri is going to
+tell us about build time reflection with
+C plus plus in the year 2023 hey Gabby
+welcome thank you for coming once again
+have you have you been a talk every year
+so far I think you have yeah I'm I'm
+happy to uh to do it you know I'm
+passionate about it and uh and modules
+then you know
+anytime okay well I'll take it away
+okay so
+um you've you know as you know I've been
+talking about modules since uh 2015.
+and back then I've been busy telling
+everybody oh modules are great modules
+are truly an opportunity and uh and and
+that kind of stuff
+so today
+um I wanted to briefly uh tell you some
+of the awesome things that you can do
+with modules not just because your code
+looks better but what you can do with
+let's say left over of modules not real
+level but build artifact when you when
+you build your modules the compiler
+generates a bunch of satellite files
+information that it uses to process the
+rest of um of the program and and that
+build artifact is not just good for the
+compiler it can actually be good for you
+and one of the things you can do with it
+is to have your own reflection
+um I know that in the C plus plus
+Community we have been wanting to have a
+study reflection for for a while now and
+uh you know in my private take another
+couple of years or more before we get it
+but in between now and then what can you
+do
+so here I wanted to tell you you can do
+a lot of stuff
+um that don't actually need an upgraded
+compiler
+so so a reflection you know when a
+notion of reflection is just the ability
+of the program to uh examine query uh
+introspects and and not just that but
+also manipulates uh its own States and
+and structures and and behavior based on
+the questions that it asks itself and
+that's quite fairly General and some
+degree uh abstract but when you look at
+that definition you have the notion of
+you know introspection which is just
+really good query not modifying anything
+at all and and and indeed introspection
+is is just that part of uh reflection
+and some people say oh no you know
+introspection is not reflection but you
+know
+um
+it's usually
+is easier to implement uh you know we
+already have that in C plus plus and
+yeah of course you have it in other
+languages but in C plus for example you
+have um uh runtime tab information when
+you use tap ID on an expression or a
+type the compiler uh created data
+structure uh that it embeds in your
+program and then at the wrong time you
+can query the type and a bunch of other
+stuff
+um
+it's it it's something that's quite nice
+and you know allows
+um
+expression or something ideas that's
+quite easy to do as long as it is well
+supported when it's not well supported
+that's where you get a bunch of stuff so
+the general idea of of reflection
+introspection
+there are Notions that can be practiced
+at any stage of the uh development of of
+a program whether it is uh during
+pre-processing stage you know that you
+can use uh the string signification
+operator from the macro preprocessor to
+get the string of of a name right and
+and you can do concatenation so you can
+actually it builds more and more stuff
+and
+um you know in program you can use
+straight we've been using trades since
+uh C plus plus 11 you can query states
+of the of of a type or an expression an
+object decal type is one of those uh
+introspection uh operator same is no
+except wood and expression Ray is an
+exception for example so those are
+properties of a fixation and then of
+course you have runtime Behavior if you
+perform a dynamic cast for example
+that's during program execution and and
+the the compiler is required to generate
+data that embed your program in
+executable and and runtime it carries
+some operations try to find the right uh
+type that you cast into and and people
+will tell you well you know
+reflection is great but it doesn't it's
+not free it costs it costs stuff like
+compiler really has to embed something
+in your program and that can be a
+gigabytes so sometimes you will say Yeah
+in fraction is great but I'm not ready
+to pay the price for the additional uh
+you know object size increase that okay
+at runtime
+um I'm gonna Hannah cassette uh we have
+been waiting for uh some notion of
+static reflection for a very long time
+and some people are tired we have
+systems deployed that have their own
+meta protocol if you know the cute uh
+GUI system framework for example you
+know that it has
+the mooc compiler that nanometer objects
+compiler that
+look at your program and then generate
+supporting infrastructure to make sure
+that your slot and signals are connected
+and everything is is working uh properly
+that's just one one example
+um so if it has been taking that long to
+do how hard is it really I
+it's a type you know just associative
+value how how can that be
+the um the truth of the matter is that
+um if we just look at introspection for
+example runtime introspection
+um you know we have runtime RTI for
+example or any exceptions you can think
+of them as some kind of continuation uh
+the where you have program points State
+program point I want to jump back to uh
+later and then turn that to data that
+that you manipulate well what I'm doing
+here that is is it hinders optimizations
+right the compiler can't reason saying
+oh this thing exists there I know the
+structure and I can come back to it
+otherwise when I come back to it I can
+right away uh inline it or or move codes
+around and so forth so a cost and and
+furthermore uh you know one of the
+debates in the C plus plus Community is
+whether you should ever
+um enable exceptions or uh rcgi at all
+you know like type IG because well it
+you know it makes your program bigger
+yeah so we know we have uh evidence that
+a poor implementation of these
+facilities can actually be detrimental
+to actual adoption and it takes time and
+efforts to implement these things
+properly so it's it's non-trivial uh uh
+you know investment to make
+um now when we're talking about
+reflection so remember in introspection
+is just ability to query observing
+without changing the the state but
+reflection you not only doing query but
+you also want to modify the behavior of
+the program or generate new stuff based
+on what what's the well it's enough
+magnitude at least much more difficult
+uh you know in terms of
+deployment
+implementations and and so forth and
+once you have a you know reasonably good
+um reflection system in place it becomes
+much harder to evolve
+the um the language because well
+some of the construct that you knew when
+the program was compiled they were
+turn into Data embedded and if later you
+embedded in your executable if later
+somehow you you bring in component that
+was compile in the future or in the past
+and they do not agree on on on the
+protocol while you get into real trouble
+so once you have reflection in there and
+features or functionalities that are
+reflected become much harder to to
+evolve properly
+uh so that lead to people to say well we
+don't really want runtime reflection
+because you know we know it makes the
+executor much bigger and and it has much
+of her stuff well we just want static
+reflection which just means that during
+compilation
+um you know the we noticed that compiler
+already has those information as it's
+under this structure we just want to be
+able to
+um poke a little bit and then ask the
+compiler to generate a little bit more
+code but based on what is known at the
+time of compilation so the revolution
+problem is probably more reduced but you
+still have you know substantial work to
+do on a compiler so we know compiler
+writers C plus compiler writers we can
+fit them in a room and then we have
+millions of C plus programmers so if you
+can just get a couple of people suffer
+for they create a good of everybody else
+so be it so that that's good and having
+studying reflection you know mitigate
+you know many of the drawbacks that I
+mentioned earlier including performance
+and and space which is part of why
+uh the the standards committee and and
+the community as a whole have been
+pushing for for this for this notion
+um
+here
+to talk about real-time reflection and
+and and not static reflection and and
+some people are rightfully say why the
+hell is this thing that I'm talking
+about well it is not a new
+language feature it is not
+what it is is just
+um
+not making no just being you know very
+responsible with the resources that we
+have
+so the idea is that
+um as we're building the program you
+know during build time we we generate
+build artifacts and we would like to be
+able to augment the program the final
+program with uh information that we know
+during build time so we can generate new
+codes
+uh that gets compiled and linked with
+you know the the rest of the the object
+file that already exists to create the
+final program so
+um
+it's it's really involves real-time code
+generation and it moves the the burden
+from a compiler to the programmer so you
+know if you're interested in reflection
+one of questions that you should ask
+yourself is
+how much of the work that I'm asking
+compiler writers to do can I take on
+myself and how much of that can I get
+the community like you know help develop
+and and that is what you know this is
+about now what can you do based on what
+is known during build time
+and so the the way if you want to do
+build time reflection you you have to
+structure your your build program built
+uh in certain way you start with
+already known uh source code uh it could
+be you know human altered or
+you know machine generated
+and then you compile those things and
+then you let's say for example you have
+a module interface source file when you
+compile it you get what we call builds
+module interface or BMI
+uh or if you're using msgc we'll say you
+have an IFC file
+well that built uh build artifact
+contains a lot of the semantics
+information that compiler knows and it
+is possible for you as a programmer to
+go and crack open it and then generate
+new C plus plus source code that you can
+now get fit into the pipeline of build
+pipeline to augmented program and you do
+this iterate this process as long as you
+need till you don't need to generate
+more stuff and then when you when you
+link everything together uh you get a
+system that is fairly powerful it
+doesn't give you everything that static
+reflection will give you but my
+hypothesis and conjecture is that it
+gives you nearly about 90 percent of
+what we have been waiting for so it's a
+good thing to invest in
+um the for this to be successful you
+have to be mindful that because you're
+generating codes your build system how
+to support you know
+automatically generated code you know
+most of your systems about that and if
+somehow uh you're still running your own
+build definition by hand maybe this is
+the time to reconsider your your choices
+and see if something else can help you
+there
+okay and and another way of looking at
+build you know time reflection is let's
+say some form of grain Computing like
+you
+when you imagine you're using all these
+things and and then something was
+generated authenticity and you're not
+leaving it good to waste you you're
+reusing that information the same
+information at the compiler had before
+you two can can have that and with
+modules it it is there anyway like it's
+not additional work that we are asking
+the compiler they compile already did
+that works so we'll just being very
+responsible with the resources that that
+we have
+um so uh now I want to just illustrate
+the the idea of
+um
+uh build time
+um you know Reflection by
+using a very very simple simplified
+example
+the idea is not so much that I want to
+trivialize the problem it is to convey
+the basic of the idea once you get it I
+trust you that you'll take taking a run
+away with it and make it as complicated
+as you are that I trust you with so I'm
+just going to use a very very simple
+example so don't discount the example
+just think it is just a way of doing
+something it's a template and you can
+use it and magnify it to instantiating
+in other situations
+so
+the the example that I want to look at
+is
+um
+imagine that you you have a program uh
+rewriting program that has bunch of
+types and
+somehow you need to do a lot of
+formatting IO for formatting because
+you're sending data you're doing
+distributed computation you're sending
+data or network or you're saving uh you
+know data on file and and then bringing
+it back later imagine you're doing game
+developments and you want to save some
+save some characteristics of uh
+characters in a game or skinning and and
+so forth well how do you do that kind of
+IU thing automatically so that you don't
+spend your time
+you spend your time so you spend your
+time actually programming a game as
+opposed to doing work that is best left
+to machine
+so
+um the example I'm going to give you is
+using of course modules and what is what
+I use so
+um
+for this to to work properly and and and
+to scale we can't just go uh through the
+entire program and then generate IU
+formatting function for every single
+type that we find in the source file
+that just doesn't make any sense even I
+don't even compile and if it does it
+would just be waste
+so we need an ability
+to annotate in this this Source program
+hey I need something to be done
+automatically for this type okay so we
+need the hints whatever it is if you
+were designing a new programming
+language you probably need a keyword or
+something but remember I'm not here to
+talk about a new language feature I'm
+here to tell you what you can do with
+the existing language when I say
+existing language I'm mostly thinking
+about C plus plus 20 C plus plus 23
+which should be out very soon and and
+you already have compilers out there
+supporting Gustav uh 23.
+so
+the ability to selectively tell the the
+tool the system to generate
+certain code for something will help
+reduce code blocks
+um and do we by doing so we also improve
+efficiency overall efficiency you know
+that space is time if your binary is Big
+it's probably going to hit up a lot of
+uh
+um space cache lines and and and so
+forth
+so uh take this very simple example
+imagine
+um I'm dealing with um uh points on the
+plane a planner geometry and I have a
+struct points then the usual thing have
+a coordinates you know X and Y
+of course I will go and write my own
+formatting function but it's boring it's
+boilerplate we want to increase your
+productivity we we want you to delegate
+that boring aspect to a tool just Define
+your abstractions and we'll take care of
+the rest that's what reflection is is
+really good at so in the example that
+I'm showing here like you said earlier
+we need the way to annotate so here I'm
+just using an attribute on on the type
+definition here the struct point to D
+have this attribute say uh gdr generates
+outputs so this is just some kind of you
+know DSL for me to to to to tell the
+tool to generate uh IU functions for for
+this type
+I don't want to write that function I
+want the tool to write it for me and
+what will happen when I do that is
+something like the following
+the the tool this you know so that helps
+me use uh real-time reflection will
+generate a new module source file
+it will take the uh the inputs module
+here the plane the geometry
+and he loses that name and then as basis
+and then we'll add reflected that output
+usually when you have
+[Music]
+um
+uh tools it's good if they they can
+predictively name things right and then
+the next thing it does all this is
+generated source code and say Imports to
+remember with C plus plus 23 now you
+just see import student then and then
+you move and do whatever uh you need to
+do
+um and you you can use this thing today
+like impositude works today uh if you
+download the uh
+um the msgc compiler and using your Ms
+build or using cmake it will take care
+of all of that and then the next thing
+it does uh they've told us is generate
+this function operator less than less
+than it takes an IR stream and point to
+D and then you know formats the the
+coordinates of the points in
+crystallized way and if you look at the
+code carefully those places are like
+green text you'll know that the entirely
+determined by the structure of the uh
+the class the destruct that that's here
+the name member and Absol so it is
+purely mechanical and this is something
+that a tool should do for you you do not
+need to do it the fact that the language
+the based language does not have this
+facility built in is yeah it's a shame
+but
+it's okay we can get the tools take care
+of those things that you can have here
+so like you say this is uh this is just
+a simple example but imagine you do not
+want a Authority like this you want
+let's say in uh Json format so you you
+know you'll have your tool generate the
+codes you know using Json library or if
+you want to have a banner representation
+on disk or you want to sign over to
+network now all those things the
+boilerplate that have structures like
+yeah templates that can be done
+automatically for you and the only thing
+that I so this is source code that's
+generally the tool and I have to make
+sure that my build system knows that
+this source file is going to be
+generated by the tool so that it
+schedules it's built properly the other
+thing that I as a programmer need to do
+is just to write my main you know
+program that's using this thing so plain
+geometry that module is something that I
+ordered that was input into
+the tool
+then the tool will generate
+automatically for me this or a module
+playing geometry reflected output
+that now I can just import an Imports to
+it again and I can just use
+um
+the uh the insertion uh if defaulting
+operator that was automatically
+generated based on the structure of of
+the class that that was defined so this
+is a a concrete example it is simple I
+agree but what I'm trying to convey here
+is not how sophisticated it is but how
+simple things can be
+okay and and most of you complicated
+um
+situations where you want to have static
+reflection you can structure the code in
+a way that you can actually use your
+system by carefully uh putting you know
+designing interface that so that you can
+have this cycle that I mentioned earlier
+how you orchestrate the build
+so the summary
+of course the io stream example is
+simple but it is a temp again it's a
+template you can use you can generate
+Json yaml if you're doing gaming game
+stuff is where you have a lot of Need
+for reflection stuff because you have
+types that you define in your source
+code but they represent stuff that you
+want to you know
+associate property is wave and and
+anyway that is mechanical so you can
+actually have a tool do these things for
+you these functions that are doing yeah
+the the the the output uh function they
+are automatically generated so they are
+always up to date with respect to the uh
+the type definition that is in your
+program right so you don't have to worry
+about it
+and and also if you happen to change the
+field or something you do not go you
+don't need to go and enhance 25 places
+to try to do you change those things the
+tool can just automatically generate
+everything for you
+and you can deploy this today we do not
+need to wait for another
+two three or five years you know decades
+to to get reflection and occur because
+this is simple enough that it can be
+taken care of and we can have your own
+like if if this doesn't work for you you
+can have your own generator based on the
+logic and the needs that you have that's
+the beauty of it you do not need to go
+and extend to the compiler you just need
+the compiler to tell you hey while I was
+building that module this is what I
+found is that useful to you and say oh
+yeah great give that to me I know how to
+use it okay
+so
+um all of that is kind of very
+high level uh description of how the
+code is is generated
+when you're using the msvc compiler and
+you build a module it generates an IFC
+file what we call builds module
+interface in you know standard
+terminology
+the
+msgc
+format that is the FC format is publicly
+documented
+as a matter of fact we want the
+community to really you know use it
+extend it and however it is specific a
+couple of years ago I gave a
+presentation about how you can actually
+decompose an IFC file and in another
+talk that's interesting that for you to
+see is one given by my colleague uh a
+camera on the camera and the way he he
+showed you know a a viewer of an FC fire
+written entirely in JavaScript so it's
+not even C plus plus right so when it
+when we say modules are truly an
+opportunity your tool doesn't need to be
+written in C plus right it can begin in
+language yeah you want as long as you
+can read a binary file okay
+um the one thing that I the last thing I
+wanted you to know before I go out is
+please start using modules today
+especially with C plus plus 23 where you
+don't need to remember which header file
+you need to include this and that no
+just say inputs to do boom
+and furthermore it is much faster the
+build time is improved because the the
+the the
+listed module which built once it's
+reused many many times so the combat
+doesn't need to re-pass it all the time
+it is simpler to use SPCA if you're on
+PCA today I really invite you to start
+considering using modules and and if
+named modules are a bit to still be step
+for you probably start with header unit
+but really what a game is is not named
+modules
+um there there is to be a a GitHub repo
+that contains all resource code that can
+use as inspiration that demonstrate what
+I just talked about and please call it
+extend it use it any way you you want
+and uh and give me feedback well what
+else would you like to see do you want
+an SDK how what are you going to do with
+it let me know
+um and and finally the IFC spec is is
+there on GitHub as well it you know it's
+for the community to develop contributes
+and and and and give feedback
+um with that said I'm I'm ready to to
+take questions
+thank you so much
+um so we've got a few questions in chat
+uh we have one from Antonio who says
+reflection is a fish hard to sell uh why
+not show some code you showed some code
+this was from from about halfway through
+um what arguments do you have on what
+there is to gain by using reflection
+what are the use cases for reflection C
+plus plus
+oh okay yeah so
+um not everybody needs reflection but
+the first thing I have to admit now
+clear hey not everybody needs reflection
+um I in the talk I gave the example of
+uh formatting that's just you know every
+time you're doing IU many of these types
+they have a photo certain pattern and
+they're very repetitive and you can get
+that automated
+um if you're doing gaming
+uh you have types the characters in your
+game they they tend to have properties
+values associated with them and you can
+have that saved on disk and read back
+automatically again the way you do that
+is very very structural and best done by
+tools if you're doing
+um this really competition these days we
+talk a lot about AI well AI is very
+computer intensive and they work when
+you're doing it work you're going to the
+best way to do it is you distribute it
+work so you have to send data over
+Network how do you get that done
+properly and and making sure that yours
+the data you're sending it starts
+everything is in sync best use you know
+a reflection to take care of that for
+you so it's not so much reflection in
+itself it's a tool to take care of
+boilerplate so that I can focus on the
+most creative aspects you know the
+joyful part of programming
+thanks and then we've got uh a few
+questions from milosh she says
+um do we believe static reflection would
+allow us to finally get rid of macros or
+are we cursed with uh hash if defined
+I'm just going to Source clang for the
+rest of time
+well okay so uh modules take care of you
+know a good chunk of the Democracy sorry
+if they have that kind of stuff taken
+care of by module now when we're talking
+about
+um compiler specific characteristics
+like you know certain features are
+available only on client or gccms you
+see
+uh those who will still be there
+um but when we're talking about code
+generation one of the things I I don't
+like macros but I also have to confess I
+use macros as a way to generate codes
+like generate sequence of tokens that
+are compiled by uh by the compiler well
+my sincere hope is that we will get a
+good reflection static reflection system
+that will take care of that huge sword
+of Need for
+um uh code generation then what is left
+is probably unstructured uh code
+sometimes you just want to include some
+text it has no structure to it well you
+still have to use you know macros for
+that but
+having something that plays by the
+language rules that your ID understand
+your group system understand is much
+better than having this you know
+character string manipulator
+yeah for sure and um of the the
+reflection repo uh you're going to pitch
+that live after the talk right yeah so
+yes yeah cool
+um another question is uh more
+theoretical but do we think it would be
+smart to have a pre-build step that is
+going to do this generation so that the
+IDE knows that these things exist yes I
+I agree yes yeah yeah it you know
+that's actually a good point
+um we talk a lot about what
+Reflections they great but they also add
+complications to the uh IB
+um experience where certain functions
+that you know now available at compile
+time or invoke that compile time need to
+be understood by the ID in order to
+provide
+um you know better experience yeah
+absolutely
+and then another more General one for
+everyone and a good introduction to
+compiler development on that one I'd
+recommend the book
+um crafting interpreters it's yes
+absolutely it's about interpreters but
+like it's mostly like all applicable to
+compilers as well you can like read that
+book and then pick up something
+a little bit more delving deeper into
+compilation techniques like uh
+engineering a compiler or modern
+compiler development in ml or C or Java
+whichever one you like for for some of
+the more compilery things but crafting
+interpreters is just such a a
+well-written and structured book that I
+recommend yeah 100 agree and and if
+anybody you know you know you should
+take size advice on it like this is
+great
+um and if you do it you'll find out that
+if you're writing an interpreter
+um and you want to do let's say IU for
+example because YouTube reads your
+you'll find out that you need a way to
+reflect the facilities in the sea
+headers on the C plus headers in your
+interpreter and this is another place
+where actually reflection
+help you write simply your interpreter
+that's fantastic
+second cat of the day here actually her
+name is lexical analysis cat so Mexico
+analysis and uh
+yeah
+uh anchor asks what compilers does is
+the question about GCC oh okay my my
+apologies they
+the only reason I didn't mention so I
+think on the last slide I said that uh
+use modules today you have cmic build
+system supports
+um and and they have built system
+support for msvc and client it comes in
+box uh for GCC it's not because you know
+it's more like the necessary support is
+not there so I didn't want to leave
+people on on something but you know you
+should also be mentioned that GCC also
+has
+um in support for modules
+okay and then there's one more on what
+compilers does gdr generally work with
+oh so uh the all the examples are built
+with msvc so the IFC format right now is
+very specific to admsvc compiler
+um you know I use my private you know
+Network private
+um build to do that so
+whatever preview is there as of today
+will will work
+um
+I would like to see the community
+um coalesce around a common format for a
+module bureau's module interface whether
+it is IFC or something else doesn't
+really matter but being able to have
+these tools work you know cross-platform
+cross compilers is is fundamental for
+for us the C plus probability to realize
+the uh the promise of you know
+modules being uh during opportunity
+yeah and I think that answers the next
+question as well which is could this
+work be implemented for other compilers
+like GCC and clang yeah um so the IFC
+spec is is is public and if someone
+feels energetic enough to to get a fork
+and and and generate uh IFC out of it it
+will work
+um you if you do that you do not need to
+change gcc's own internal representation
+you do not need to do that that's good
+it's one of work now what you will need
+to do is just ability to translate the
+IFC data structures into
+gccs or tax internal representation I
+think if I were to do that that's the
+way I would do it I will not uh sign up
+for every student right this is your
+client you're using obviously no no just
+ability to read all right that's it
+and then
+um
+still got time so another question is
+could the IFC spec be put in the C plus
+standard
+uh probably not C plus 26 or C plus 29.
+of course I would love that uh but the
+reality of thing is that from something
+like the LC you needed to evolve as
+quickly as possible the way compilers
+evolve whereas the the standards tend to
+be on three or six years raw so
+um if it could just be some kind of de
+facto stunner I think that will take
+care of all the Practical needs that we
+have and then let it evolve as quickly
+as it can and I would really love to to
+to see something like that happen
+great well we are out of questions and
+almost exactly on time
+um we stayed on time for the entire
+thing kind of thing suspicious you're
+running this thing quite well yeah it's
+our fourth year we're getting the hang
+of it
+so thank you very much Gabby thank you
+for everyone who has stuck around and
+watched all the talks uh these will be
+put online
+um on the the visual studio YouTube
+channel so
+um please keep your eye out for those
+going live and uh feel free to share
+them around if you have enjoyed
+um so thanks very much and hope to see
+you all next year

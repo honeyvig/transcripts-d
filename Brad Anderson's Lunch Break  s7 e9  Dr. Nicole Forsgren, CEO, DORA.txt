@@ -1,0 +1,167 @@
+- [Brad] It's lunch time,
+and this is Brad Anderson's Lunch Break.
+Two of my favorite things about Microsoft
+are the smart people that
+constantly visit campus
+and the great fleet of shuttles.
+Whenever I can I try to take advantage
+of both of these things, and grab lunch
+with some of the tech
+industry's best and brightest.
+Today I'm driving around
+with Dr. Nicole Forsgren,
+a researcher, DevOps expert,
+and CEO and Chief Scientist at DORA.
+(jaunty music)
+- Hey
+- [Brad] How's it goin', Nicole?
+- I'm good. Sweet minivan.
+- You know, I wanted to
+harken back to the early days
+when we needed to have a minivan
+in order to put our kids in it.
+It's like a walk down
+memory lane here for me.
+In software, we're all about data
+and we all use data to make decisions,
+and you've brought this
+uncanny academic rigor
+to how you use data.
+In fact, you have so much passion
+you formed your own company.
+So tell us a little bit about the company,
+your background and this passion on data.
+- Sure.
+So DORA is DevOps Research and Assessment.
+We've been doing research looking at how
+organizations can use so
+many fantastic capabilities
+to drive improvement in their ability
+to make software with
+both speed and stability.
+That's really the key central component
+in helping organizations
+perform amazingly well.
+And I say perform, so that's
+profitability, productivity, market share.
+- Yeah so it's both internal and external
+because a big part of performing is
+employee satisfaction, employee passion.
+- Also, decreasing employee
+pain, decreasing burnout.
+- Because we talk about this
+in-depth DevOps approach
+to IT and to Dev.
+How does that impact morale?
+- When we study DevOps or
+technology transformation
+we take kind of a holistic approach
+and it includes culture,
+it includes technology,
+it includes Agile in measurements,
+and the piece in Agile includes
+how you develop software
+and team experimentation.
+And so the way it affects
+morale and team culture
+is we see greater communication,
+greater information
+flow, risks are shared,
+novelty is encouraged and implemented,
+morale is improved, and
+that ends up feeding through
+and having a positive impact on
+the entire organization's performance.
+For so long, have you heard before,
+'IT's a cost center, IT's a cost center,'
+- That's definitely transitioned
+but that's the way it's
+been talked about for years.
+I'm tired of it.
+- Right? Seriously.
+But what we find is that
+it's really an investment.
+If you see it and if you
+view it as an investment
+it pays back dividends tenfold,
+because it makes your technology better.
+It makes your employees better.
+It makes your employees happier.
+It delivers value to your business.
+Again, profitability,
+productivity, market share.
+- [Brad] What's the most common pitfall
+organizations fall into in this area?
+- So there, I think there are a couple.
+So one is not measuring
+the things that matter.
+Right, so we have, sometimes
+it's just local optimizations.
+Right, sometimes people are like
+'I'm gonna do CI, Continuous Integration,
+or I'm gonna do Continuous Delivery,
+because Continuous Delivery,'
+and then they just get
+spun up on something.
+Right?
+Or they'll measure something
+because it's convenient,
+or easy, and then it shows up on a report
+and that's all they pay attention to.
+And I'm sure you've seen that.
+- Oh, a hundred times, and
+then there are even things
+that I've asked to be measured
+and then realized it was the wrong things.
+- Which is fine, because
+it's continuous improvement,
+continuous learning, so then
+you could still keep it if you want,
+but at least pull it off the report.
+- Yeah, but start measuring, and then
+you're gonna realize that
+you're gonna get better.
+Just the numbers, when you first start
+doing the measurement the
+numbers are gonna be dirty,
+they're not gonna be clean.
+- Realize the power of an honest baseline.
+If it's bad, that's even better because
+you have nowhere to go but up.
+- At least you got a place to start from.
+That has been this journey, I think,
+that many of us have gone through.
+That it is all about getting started
+and then constantly learning,
+constantly getting better,
+constantly refining, but you gotta start.
+- And it gives you something to talk about
+and communicate about.
+Suddenly, if you're on a different team,
+I can talk to you about it.
+And, if I think your
+performance or your metrics
+or something sucks, that's okay
+because I have something to talk about
+instead of yelling at you,
+we can yell about the thing.
+- That makes it tangible and real.
+You can have a conversation and then say
+'Okay, now how are we gonna
+go get better on this?'
+- Exactly
+- Next time on Brad
+Anderson's Lunch Break:
+- If you wanna be super
+capitalistic about it,
+we find so much research everywhere
+showing that diversity of background,
+diversity of thought, diversity of gender,
+diversity of race,
+diversity of all the things
+leads to better outcomes.
+You make better products,
+you build better software,
+you get better outcomes.
+It's worth the investment.
+(jaunty music)

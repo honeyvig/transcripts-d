@@ -1,0 +1,152 @@
+hi everyone
+today we're going to be talking about
+how you can convert a vs code theme to
+work in visual studio
+we've been on a journey to make visual
+studio as flexible as possible so that
+you can code the way you want
+and now if you're a theme author
+you can convert your theme to work in
+visual studio so that a wider audience
+can get access to your theme
+let's get started here are the things
+you'll need in order to convert your
+theme
+i'll note that you'll want visual studio
+2022 preview 4 or later
+because it has fallback colors which
+you'll want just in case the json
+doesn't cover that area of the ui
+let's navigate to visual studio to
+configure our install
+i have the.net desktop development
+workload
+i also have
+the visual studio extension development
+workload
+in components i have net 5 runtime
+now i'm ready to go
+i'm going to be converting the winter is
+coming theme today
+i've gone ahead and applied it to my
+visual studio code instance
+on my keyboard i'm going to press ctrl
+shift p to bring up the command palette
+i'm going to select generate color
+scheme from current settings
+this is going to give me all the tokens
+inside this theme
+that describe the colors
+i'm going to save this in a folder that
+i previously created
+it's going to be a json file not a json
+c file
+next i'm going to navigate to our
+converter tool
+this is a free open source converter
+tool
+and if there's anything you'd like to
+see improved you're welcome to create a
+pr or
+create an issue
+i'm going to go ahead and clone this
+tool
+i'll navigate over to my command line
+opened in admin mode
+i'm going to clone using the git clone
+command
+after i clone this tool i'm going to
+navigate over to the folder that i've
+just created
+then i'm going to build the tool
+using.net build
+next i'm going to navigate into this
+folder
+i can run the tool using this command
+with the flag dash h
+this is going to give me instructions on
+how to use the tool
+i'm going to go ahead and convert my
+theme
+the flag dash i
+is the folder that i've created which
+contains my json file
+i can convert several themes at once
+by including several json files inside
+this folder
+the flag dash t
+is the target visual studio which will
+open and patch my theme so that i can
+take a look at it
+i also have the option of just creating
+the package def file without opening
+visual studio
+after it's loaded
+i'm going to navigate to tools
+theme
+and select my theme
+it's going to get applied
+there you are winter is coming
+next i can package my theme up inside a
+v6 in order to upload to the marketplace
+or share with friends
+i can navigate to file new project or
+ctrl shift n
+next i'm going to search for v6 and
+create an empty v6 project
+i'm going to name my project and then
+select create
+then i'll navigate to properties right
+click add
+existing item
+i'm going to select the package def file
+that i've just created this is going to
+be in the same output folder as my json
+file
+i'm going to select all files in order
+to see my package def file
+once i've selected that it's going to
+show up in the tree
+i'm going to select the package chef
+file and expand the project properties
+window
+for copy to output directory
+i will select copy always
+and for include in v6
+i will select true
+then i'm going to navigate to the v6
+manifest
+i'll navigate to assets and new
+then for type
+i'm going to select microsoft visual
+dot
+for source i'll select file on file
+system
+and then for path again i'm going to
+select the package stuff file that i've
+created
+and i'll select ok
+finally i can adjust the metadata inside
+my theme
+like my theme name
+author and version
+now the last step is to build it i'm
+going to go ahead and build the
+extension
+you can see it's working
+after i've built the theme
+i'll see a v6 file inside my output
+folder
+i can now upload this theme
+to the marketplace
+where there are a lot of other great
+themes already available
+and there you are winter is coming on
+the marketplace
+if you try the converted tool or if you
+try any converted themes we'd love to
+know what you think
+this process is always iterative always
+changing and we're always looking to
+improve
+thanks everyone

@@ -1,0 +1,475 @@
+ever wanted to write your own game and
+did you know that you could write it in
+visual studio with ease find out more on
+this episode of Visual Studio toolbox
+[Music]
+hello everyone and welcome to another
+episode of Visual Studio toolbox I'm
+your host Leslie Richardson and today
+I'm excited because we're gonna be
+talking about video games today so
+joining me is David Lee from the C plus
+team who's going to be sharing how we
+can all be more productive developing
+games in digital studio with C plus plus
+hey David
+hey Leslie how's it going I'm good how
+are you doing great I'm super excited to
+show everyone some of these Unreal
+Engine Integrations that we have been
+building in Visual Studio
+sweet so before we dive in would you
+care to tell us a little bit more about
+yourself and what you typically work on
+of course so um as you said before I am
+in the C plus plus team uh I am the game
+developer product manager in visual
+studio so everything from building games
+in Visual Studio to msvc compiler for
+all of you watching
+um just send me a tweet my my Twitter
+handle is there at the CBP PPM for any
+feedback
+so yeah
+awesome
+right so video games very popular Topic
+in the development world I know a lot of
+people initially started coding just
+because they wanted to write their own
+games and stuff so
+can you tell us a little bit more about
+um you know how
+developing video games can have its
+challenges and maybe what using visual
+studio and C plus can do to alleviate
+some of that
+yeah Leslie
+um
+I've chatted with quite a lot of game
+developers out there and really
+understand their needs so from in the
+developers to students to all of our
+first party game developers and you know
+as more I learned in our lessons a lot
+of pains have circuits from game
+development I think one of the biggest
+things that I've heard is
+the mental task switching a lot of
+developers out there when they work on a
+game whether it's using their
+proprietary engine or um or Unreal
+Engine
+sometimes they have to switch back and
+forth between visual studio and you know
+each time you
+open up the unreal editor switch back to
+visual studio and then close it that
+takes time and instead of having a
+smooth flowing
+um work then you're you give a lot of
+unnecessary mental energy by getting
+distracted and not be as productive
+so this is one of the few things that
+the team at C plus plus in Visual Studio
+has set out to tackle
+awesome yeah I I can relate I did write
+like one video game in college and
+specifically I was using a combo of
+unity and I think IntelliJ at the time
+and it's just having to jump between
+those back and forth neither were like
+seamlessly incorporated into the other
+was definitely time consuming especially
+when your game is a buggy mess and
+you're trying to deal with that you know
+yeah would you care to show us how
+Visual Studio can save the day in that
+sense and you talk about unreal which is
+going to be the focus for today right
+yes so today we're going to be focused
+on Unreal Engine specific features that
+we have built in visual studio
+um just to give everyone a brief
+overview we'll be going over how to see
+if blueprint references in visual studio
+um there we have added code analysis we
+have added Unreal Engine lock streaming
+so all those things you don't have to
+keep going to the Unreal Engine editor
+for
+um including adding a class there's a
+few templates out there
+um so quite a lot of features that we're
+introducing in Visual Studio 2022 17.5
+with some of the features currently in
+preview in 17.6 preview 1.
+um yeah to get started
+um I definitely want to show everyone
+how to enable these
+features so one of the things that is
+absolutely needed for uh for you to see
+on blueprint references is the visual
+studio integration tool
+um it is an Unreal Engine plugin so here
+I'm going to show you two steps to get
+your sources
+so one is
+from GitHub
+we have open sources
+plug-in on GitHub so
+we welcome Community to contribute to
+this extension
+and you can
+if your project has a custom Unreal
+Engine or
+um if the marketplace installer doesn't
+work
+um this is the way to get
+um get your features working
+so the simplest way is there's a whole
+bunch of instructions so you're going to
+read me but basically you just clone
+this extension make sure the plugin is
+enabled in numero engine and you should
+be all set to go
+now for most of you out there
+um you might find installing it
+through the Unreal Engine Marketplace a
+little bit easier
+so in the Unreal Engine Marketplace the
+tool is called Visual Studio integration
+tool is published on Microsoft and all
+you gotta do is download and we support
+um a real 4.27 and the newest revenge of
+5 versions so once you've downloaded
+this
+um you go to your unreal editor and make
+sure you enable this
+integration tool
+um for if you have any issues whatsoever
+we do have a troubleshooting page
+so
+it's on the GitHub
+there's this troubleshooting section and
+there are some common steps you can take
+to basically diagnose any potential
+issues you might run into
+so without further Ado let me switch
+over to visual studio
+so Leslie have you played with Unreal
+Engine before I have not I'm more of a
+Unity
+person or I've been more of a Unity
+person in the past
+yeah I
+I am by no means a game developer I know
+a little bit on my own time
+um but I think one of the things that we
+heard from our developers is
+um blueprints is a virtual scripting
+language you can use to build your game
+um with bigger production games
+eventually you want to
+migrate those blueprints to actual C
+plus plus code
+um for
+example you can prototype something
+really quick in Blueprints and when you
+find out the thing works
+um you ask your devs or yourself to
+refactor and remove the blueprint and
+previously
+the only way to see your blueprints was
+to open up the Unreal Engine editor
+um and go and search for your blueprints
+here we have added some koblin's hits
+so you can see
+right here class lyricame API by the way
+this is one of the unreal sample
+projects
+once you click on blueprint references
+you'll get a list of blueprints and
+their Associated asset packs
+that's awesome so before you just had to
+go back into the Unreal Engine and just
+double check
+um what group what blueprints in there
+correct area paths that you needed
+exactly yeah
+if you
+um you had to wait
+which you know it's not good to wait
+so
+if you see These Blueprints and they
+have Associated asset paths you can
+actually double click on them
+and see your asset information
+so here we have some properties uh with
+different categories
+um you know you can
+collapse them you can sort
+you can even filter out what you want to
+see so here's a list of all the things
+if this list gets too long
+um so this is a great way to reference
+um your blueprint usages without going
+to the armo editor that's awesome I love
+I'm loving the integration
+definitely not having to swap between
+two different pieces of software in this
+case yeah
+so
+before we
+um talk about another feature I
+want to show that if you might need to
+refresh your blueprints to do so is
+under the project menu
+and here
+rescan blue UD blueprint for your
+starting name
+all right so which is your your data and
+stuff
+I'm sorry does that just refresh your
+data like have you updated and um unreal
+while you have this blueprint yeah I'll
+refresh
+to if we do that
+um so another thing I wanted to show you
+is we added some code analysis into
+um
+into Visual Studio
+um
+this first round of code analysis
+leverages the unreal header tool which
+here it's basically a tool that is
+used one billion Unreal Engine game
+um let's say you make some mistakes and
+you don't even call this super important
+on real macro
+um once you hit save
+the color analysis are run the unreal
+header tool and give you some hints of
+why things are not working so here you
+can see purple Squid goes
+it says unreal header tool unknown
+specifier so there before you even
+compile you can see to save you some
+time that this is not the right thing
+right this super important macro
+for example
+it says expected and a generated body
+functioning at the start of the class
+that's because I commented out but you
+know typically you might make some
+mistakes that not catch until compile
+time
+analysis is designed to save your time
+so the next feature that I want to show
+you is also in this whole realm of oh
+let's not rely on the unreal editor I
+just want to
+stay in Visual Studio
+in this next
+um feature that I want to show you is
+the UE lock streaming so now you don't
+even have to go look inside your unaro
+editor for any logs
+um in this line 543 I've added a UE lock
+to capture every time we shoot the
+weapon
+um you have some log taxes
+so let's run this
+and boot up
+the game
+yeah so
+while that's building I mean it is
+really nice to just to see little things
+like just being able to check your logs
+in visual studio and all these other
+things you're just not constantly
+swapping back and forth right
+right
+going back to the um the assets page
+like when you double clicked on a
+blueprint it displayed all the data
+related to the blueprint can you
+or are there plans to if not already are
+there plans to be able to update your
+data via that window
+um they're not current plans
+um I think typically the you don't need
+to refresh that many times
+um
+but um if the community wants it we will
+build it awesome
+cool here's the unreal editor building
+up
+all right now we're in the game Let's
+Play and
+try to win this game
+oh no
+that was quick
+actually
+so let's go back to video studio
+um as you can see here um different now
+there's a new window called UE log
+preview here
+we can have two options for you
+um with all the logs that's generated
+throughout your entire game you can now
+filter it
+um remember we the log we added is log
+Lara ability system
+unselect everything select this
+and then look
+every time I shot
+it says PPP
+and of course
+if you want to see more of the logs you
+can also check this
+verbosity option to really display what
+whatever you need
+yeah
+that is
+really
+um
+this really Nifty definitely just to
+have
+your typical console logs and stuff all
+in one spot like you know you're already
+using a lot of vlogging to debug chances
+are so
+making sure it's all in one spot instead
+of having to add the extra time it takes
+to again go back to unreal
+and if you um if you for some reason
+close the window and you can find it um
+it's in view
+other windows
+and UE lock so if you click this then
+you can see the login
+excellent
+um so let's
+let's talk about another thing that I
+have learned with um when talking to
+um all the unreal developers is a real
+engine has a lot of complicated macros
+um I'm real engine there's unique macros
+everywhere
+but previously you can have a macro for
+example something like this a u-function
+you have to remember every
+um all the parameters you need to put in
+but now if you
+hover over this we have
+we have added macro expansion
+and when you say macros can you explain
+what you mean by that
+yeah these macros are
+um instead of typical functions
+um Unreal Engine uses
+um a bunch of
+heavy macros one by line
+um
+in order to achieve a lot of a lot of
+things more quickly than you know
+writing lines and lines of code
+awesome
+so this is an example of a pretty
+complicated macro that previously
+um you weren't able to see the entirety
+of it
+so now you can either expand online or
+copy so you can paste it to another
+um their editor window
+and
+so you don't have to remember all the
+things that it needs for example
+see your function we have some of the
+other
+maybe you property macro
+so these are the macro expansions that
+we have added
+um
+the last thing I want to show you is
+um how's it out of class and now we've
+been on
+Unreal Engine 5 for quite a while
+um let's switch over to a Unreal Engine
+4 project
+so the classic action RPG you can see
+all of the
+um all the features here work you can
+see your blueprints
+you can see um your app get information
+but you can also add class
+once again we heard from developers
+it used to be that you have to open up
+the unreal editor add a specific
+C plus plus class and then open up
+visual studio again but now you can
+right click on your solution Explorer
+add
+UE class
+and we have provided four templates for
+you to choose from so for example if I
+add I want to want to add a new part
+let's just say my Pawn click add
+um you can see the path information
+once you click OK because studio will
+generate that template file for you
+um in both the C plus and the header
+files
+so file modification detected we click
+reload all
+and now if you see in the solution
+Explorer my pawn and cpp.mypawn.h
+awesome
+yeah so so dang you even had to create
+your classes via unreal first before uh
+playing around with them in BS
+yeah
+um a lot of the things I showed everyone
+today was only achievable in the unreal
+order but yeah unreal like once and that
+was just to play the the game so that's
+really exciting just to be able to stick
+to one spot
+right
+yeah so I think this is all the features
+that we have today
+um the team is working hard to build uh
+more and more of unreal integration into
+visual studio so if you have a great
+idea please let us know on developer
+Community or you can even trade at me
+well great so if people want to go learn
+more about how you can get started
+writing your own C plus games or using
+the Unreal Engine within Visual Studio
+you can get started with all the links
+that we're posting Below in the
+description so take a look at that and
+start making your own games yeah there
+is
+um a block that I've wrote I'm
+describing in more detail about holidays
+Integrations
+um that is now available in digital
+Studio
+good stuff
+well David thank you so much for being
+on the show I can't wait to see what
+comes next for game development and C
+plus plus and how it just integrates
+itself into Visual Studio that's really
+exciting
+and yeah
+thanks think again David
+thanks Leslie I'm happy to be here
+sweet and thanks for joining us audience
+and with that happy gaming and happy
+coding
+[Music]
+thank you
+foreign

@@ -1,0 +1,119 @@
+hello everyone I'm Isadora I'm an
+engineer in the visual studio debugger
+team at Microsoft and for this demo I'm
+going to show you what breakpoint groups
+are and how they can be very useful when
+you're context switching between
+different bugs in the same project so
+for this particular demo what I have
+here on the right you can see it's a
+very chaotic city which is authenticity
+so this is a fort from transport icon
+which is a very cute and sweet game that
+I wanted to use for this demo this
+project as you can see has a lot of
+files so if I just want to keep track
+and have a debugging workflow here I'm
+quickly going insane but before we can
+go on and say let's just try to
+understand what this actually does just
+we can have some context because context
+is pretty important when you are
+debugging something
+so here you have a poses it's picking up
+people and going back this is like one
+of my favorites they have this pretty
+training that's going here and pick you
+up around and getting back to the city
+and you also have this Mayo buses that
+are just delivering mayo and coming back
+to it so they are all different doing
+different stuff and one thing that you
+may have noticed is that through all
+these different kind of things there are
+different things that I want to make one
+of the book so if you look here I
+already have a set of breakpoints that I
+picked just for this demo so here I have
+stuff like order trace and check and you
+can already have seen here that these
+are actually a group of breakpoints that
+point your other ones so it's much
+quicker if I'm debugging a particular
+context but let's say that I just want
+to debug order comments so every time
+someone has an order I'm going to stop
+here and then I can just step through
+and see what's doing oh for example here
+it's asking this guy this phone call
+here to go to this particular station
+and I can see
+oh this is and then I can just be super
+confused about it or maybe I can just
+pick this group idea and say that's his
+name now and if I hit continue I'm just
+going to stay here and let's say that I
+don't want to debug orders anymore and
+what I actually want to do is I want to
+debug traits
+so I can just click this right and it's
+automatically enable all these other
+breakpoints and then I can just hit
+continue and then
+you can see that I already checked if
+the train stay in Depot or not but I say
+I don't actually want to be here I want
+to be somewhere else so I can just drag
+this breakpoint around
+maybe around here before it even has a
+chance to return
+and then you can see that I even reverse
+my train and it's a different thing and
+it's all part of this breakpoints here
+and then I can just quickly keep
+stepping and going through different
+things and I have all the things that I
+want evolving trains and I can even do
+other stuff like let's say they only
+want to debug trainings when order has
+been emitted so what I can do here is
+actually set that I only want this to be
+hit when this breakpoint for order has
+also been chosen
+so you can see that they are all
+disabled and then I actually have to
+enable my parent breakpoint
+and as soon as an order has been updated
+here
+right here you can see that all these
+other breakpoints were just activated so
+this can also be very useful to have a
+function that SD cost several hundred
+thousands of times and just want to
+enable them in a particular context and
+similarly I have this other I can do
+like check orders so like every time
+someone's updating the order I'm doing
+something or just when someone is
+unloading the cargo I can go ahead and
+see whatever they are doing and yes just
+so useful when you're sharing like
+projects with like a huge team or like a
+huge code base and you just want to keep
+your debugging workflow saved somewhere
+and actually persisted and actually
+being able to jump through different
+context switches around one of my
+favorite things that even has support
+for emojis so you can put Emojis
+anywhere you want I highly recommend it
+if you ever want to try something else
+in your debugging workflow and that's
+pretty much it so for follow-ups I
+highly recommend checking out the
+Twitter handle for vs debugger or the
+blog post for breakpoint groups you can
+find much more information about how to
+create them how to use them or just how
+to improve your debugging experience in
+general

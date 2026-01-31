@@ -1,0 +1,748 @@
+hey Jack John good to see you how are
+you right we're doing one yep let me
+bring it properly caffeinated yes haha
+one second my speak is seem to be hold
+on they're coming out in the wrong place
+why is it always the audio settings on
+these things never remain the default
+there we go now it's working
+hey guys sounds you sound good can you
+share your screen
+I sure can one sec for just a little bit
+the guy and we have screen sharing can
+you will see that yes there we go
+- fantastic and I let me just move that
+out of the way the screen is Jimmy there
+we go alright well welcome everybody
+who's watching who's watching Donna come
+wherever you are and well good morning
+from the UK my name is Benjamin haloth
+I'm an ASP insider and an independent
+asp.net consultant and today I'm going
+to be discussing browser Mechanics for
+asp.net developers now normally this is
+a longer talk that I give at various
+meetups and conferences regarding non
+dotnet tools for measuring website and
+web app performance and in fact Jeff's
+being kind enough to host me on his
+twitch stream before to discuss various
+of these tools so we're gonna dive
+straight in to some specifics and we're
+going to discuss firstly what web
+performance really is which I think can
+be grouped into about three different
+distinct buckets which are the HTTP
+request itself how frequently they are
+and what sort of size they are things
+like network latency and then we also
+have how long it takes the server to
+render something whether that's a JSON
+API endpoint or whether it's HTML or CSS
+and the browser load and pain how long
+it takes for your web browser be there
+on a tablet or a mobile to be able to
+draw what's on what's you know what's
+being delivered and be able to present a
+working app or site to your user so
+there are a number of different tools
+that exist within this space and we'll
+get straight into how we going measure
+performance on the front end we have
+we're going to briefly touch on a
+project called lighthouse in google
+crime and a great host
+service initially started by Google but
+now an open-source project it's called
+webpagetest and on the server side we're
+going to discuss jmeter and mini
+profiler in the asp.net sphere so
+without further ado let's get right to
+it I am gonna jump straight into an old
+project that I've got now this is a
+website I used to look after called
+Verbier comm it got taken offline last
+year
+it runs on Umbraco it runs using old web
+forms technology and it really hasn't
+been optimized for mobile at all and I'd
+like to use this as a great example of
+what lighthouse can do now if we use f12
+dev tools we'll find all the usual bits
+of elements console let me just maximize
+us elements console sources Network and
+over the last few months and years
+there's this new tab that showed up
+which is called audits and this is
+Google Chrome's project lighthouse this
+will run a number of different tests on
+your site or your app you can choose
+whether you want performance progressive
+web app best practices accessibility and
+SEO you can also apply throttling so if
+your users if you're expecting your
+users to be working on three or four G
+networks you can actually simulate a
+network slow down to then see what your
+users are experiencing out in the wild
+you can also choose between desktop or
+mobile emulation and what we're gonna do
+here is we're gonna run this test now
+and I'm just going to move this over to
+the side so you can see what it looks
+like and as you can see it's now
+actually using a mobile render to then
+try and load the page and then gather
+some metrics about it so and
+interestingly all the tools that I'm
+going to demonstrate well the majority
+of them with the exception of mini
+profiler can also be run in an automated
+environment because performance testing
+is nice but at the same time automated
+performance testing alongside your core
+unit testing and integration testing
+should be something that you should be
+considering as part of your application
+build so we'll notice that this scores a
+40 out of a hundred which isn't
+particularly good but it does give us
+some places to actually improve on
+things so for example we have let's see
+stove serves static assets with an
+efficient cache policy so these are
+items that are being served up be they
+pictures
+ESS or JavaScript and basically they're
+not being served with an expiry header
+or a cache control header what this
+means is that your browser doesn't
+understand it does not understand that
+it should be trying to hold on to these
+resources between page navigations and
+as a result it's gonna try and load them
+every single time and that's going to
+just increase more and more bandwidth
+being used for example this 340 kilobyte
+CSS file is going to be loaded on every
+single separate page load as you
+navigate around the site so that's a
+pretty big overhead that we're looking
+at there we've also got some other bits
+like removing uh new CSS turns out we
+can actually save 328 kilobytes there's
+a large amount that can actually be
+removed from that CSS file and let's see
+eliminate render blocking resources so
+this will be a lot of CSS that needs to
+be modified to avoid interfering with
+the paint of the page what else do we
+have
+let's see reduce the JavaScript
+execution time now because we're using
+things like jQuery and in fact I think
+this website's a really great example of
+something done badly it's got both
+jQuery and a legacy UI library called
+mootools in there and both of those are
+creating UI overheads too which
+shouldn't necessarily be there so and
+then it will also give you a list of
+things that have passed as well so
+properly sized images minute minify CSS
+and JavaScript and so on and so forth
+now this is built into Chrome but can
+also be run as I mentioned as part of a
+CIN CD pipeline and it's something I
+highly recommend so that's lighthouse
+the next thing we're going to look at is
+we're looking at web page test and if we
+quickly just nip back here this is web
+page test it's a free online hosted
+service as I mentioned it was originally
+started by Google and what it allows you
+to do is put in a URL and then it allows
+you to choose a location from where you
+want to test including lots of different
+profile so you can choose Android
+desktop and iOS you can choose Chrome
+Firefox age and ie 11 you can choose
+different locations in fact if you want
+to target users in a specific location
+you can notice that there are end points
+all around the world so Africa Middle
+East Asia Oceania let's just go with
+London UK and let's
+with that one and this is a website I
+used to work on for the formula e
+motorsport championship so we're now
+gonna run start test oh and now you want
+to do the capture verify there we go and
+let's run this so what this will be
+doing is this will be running three
+separate instances of a test and then it
+will be measuring all sorts of
+performance issues such as large images
+using a CDN minification all the things
+that lighthouse individually tests for
+but there's a great feature that's part
+of webpagetest which is something that a
+lot of sites and projects don't
+necessarily think about and that is the
+actual bandwidth cost to the user and
+this is a very very important metric
+which we'll come to in just a second
+because the average webpage are over the
+last few years has just grown and grown
+and ballooned in size we're now looking
+at the average site now constitutes I
+think it's 3 megabytes of code and
+that's JavaScript and CSS and assets and
+that is larger than the original doom
+game on floppy disk in fact Jeff and I
+coined the expression
+how many dooms is a webpage how heavy is
+it in a number of Doom's in terms of
+bandwidth size so as this goes now we
+get the waterfall breakdown here which
+is the same as you get in dev tools when
+you're looking at the network operations
+it tells you what's blocking what's not
+how long this is taking
+and yeah first view in 6.9 seconds
+that's particularly slow and we just
+wait for this to finish running through
+and let's see what that second view
+looks like oh that does not look like
+it's improved much either 6.91 and
+hopefully we should get our third result
+coming through just now now I picked
+this site as a particular example
+because the foreman area championship
+it's a motorsport championship it's
+designed to be serving up big images you
+know very high resolution fast pace
+action
+images for media press and fans so here
+we go yes if you look at the actual cut
+sort of breakdown in terms of bytes 70%
+of the entire home page is just image
+and that's 2 Meg now the feature
+I want to talk about is I mentioned the
+cost here we go and this opens a little
+project called what does my site cost
+and this is a great feature because this
+actually demonstrates how your site
+costs to an average consumer on a data
+plan in various different countries
+around the world so for example on a
+postpaid plan in Canada that page would
+potentially cost 40 cents to a user and
+that's pretty expensive if you haven't
+got a good caching policy within three
+or four pages you've already racked up a
+Starbucks coffee so this is a fantastic
+feature and webpagetest again also has a
+node wrapper around it so you can again
+integrate it with your CI CD testing and
+we'll come to that a little later on but
+this is an important metric that a lot
+of people do not consider when they're
+building their sites is the actual cost
+of the consumer especially if you look
+at places like sub-saharan Africa and
+the Indian subcontinent you'll find that
+75% of mobile users are still only on 2
+or 3 G data plans and as a result they
+may not necessarily have the sort of
+data plan that you or I do in the
+Western world so if you are looking to
+target those sorts of audiences tools
+like this really put a fresh perspective
+on what that performance and what what
+those sort of that byte overhead is
+actually costing your consumers for
+using your website and it's an important
+one to bear in mind it just offers a
+fresh perspective as to how much it's
+really costing you in terms of
+development in terms of potential user
+traction if you're losing out to users
+because your site is quite literally too
+expensive for them to access I believe
+youtube I hope did an experiment with an
+app called YouTube Lite and they noticed
+that once it had been deployed they
+noticed that the average load times had
+gone up now the reason was is not that
+the service had gotten slower but that
+people who previously couldn't access
+the service were now prepared to wait a
+few extra seconds waiting for their
+videos to load with it with lower
+quality advertising and that's a very
+important thing the response the average
+response time may have gone up but the
+number of users they got increased
+exponentially so this is an important
+thing to take away from this all right
+so we've covered sort of some front-end
+tools here and
+you know discussed things like minifying
+or CSS and some basics like header
+management cache control and the actual
+overall cost to your users what about on
+the server side well first thing we're
+going to talk about is another little
+tool that I have where I wait called
+Jamie - now jmeter is a project from the
+Apache Software Foundation it's mainly
+used as a load testing tool but it has
+so many versatile uses it's quite
+remarkable at what it can achieve so
+we're going to quickly pop this open
+alright so what we do is we set up a
+test plan and this is basically stored
+as an XML file and what we can do is set
+up here there's a number of threads or
+users so we can simulate anything from
+10 to 100 even potentially speaking we
+could simulate a hundred thousand users
+what's great is that this - these plot
+this test plan does not just have to run
+on a single machine or a single server
+you can effectively set up slave agents
+to run tests so you can run a test let's
+say you want to run a hundred users on
+each machine you could set up ten
+virtual machines in the cloud and
+suddenly you've got a thousand users
+each looping over a single request a
+hundred times that gives you a million
+requests to your website with some very
+very low overheads and what you can do
+is simply set up an HTTP request and
+we've got the name of our website in
+here in the path we want to test
+interestingly the number of tests that
+we can actually conduct is quite
+substantial and if you look there is a
+samplers here we go
+so the common ones HTTP requests you
+also have FTP requests JDBC requests
+LDAP requests SMTP and TCP samplers if
+you really want to go down to low-level
+traffic and test your infrastructure the
+amount of information that jmeter will
+allow you to connect collect from all
+across your infrastructure whether it's
+API endpoints whether it's testing that
+your load balancers are correctly
+spinning up extra instances in the cloud
+whether your services are correctly
+serving even the right byte code you can
+test just about everything you want
+using jmeter i've yet to meet an example
+where jmeter could not do a successful
+it could not successfully monitor some
+sort of web traffic it's
+very very low level very powerful and
+completely open-source and extensible so
+it also allows you things like
+conditional controllers so you can go if
+or loop or while or a 4-inch there's
+lots and lots of different ways you can
+run very very customizing very extensive
+testing so we'll just quickly have a
+quick look at the graph result and we'll
+just quickly run this here
+and let's have a look to start with no
+pauses and over here in the top right we
+can see that the number of running
+thread is a hundred and we start to get
+some graph results in and we can now
+start to see how quickly the responses
+are coming back from that Forman area
+websites so we've got the average and
+median and the deviation and that seems
+to be doing pretty good in terms of
+performance that seems to be doing very
+well the average response time is about
+two seconds given the amount of traffic
+that we're generating that's quite
+impressive we'll just go ahead and
+terminate that and then we will kill
+this because that normally ends up with
+a thread lock
+now Jamie tis fantastically powerful and
+you can save this file as an XML file as
+you can seen by the file extension up
+here it's a JMX it's a custom XML file
+that you can include within most of your
+CI TD setups and in fact most common
+cloud providers have some sort of jmeter
+agent set up so you can have a master
+server that runs the report and
+coordinates with these slaves and it
+sends the test runner over to the slave
+and then the slave will run your test
+accordingly so as I say if you want to
+be able to successfully test that your
+app can handle a million two million
+five million people when they're set
+period you can do that and more
+importantly it's not just limited to web
+pages you've got every single option for
+every single HTTP verb within the
+request so you can test API endpoints
+you can test maybe you want to test that
+your API can handle you know a hundred
+thousand inserts let's say you're
+expecting a rush of signups if your new
+startup you can go ahead and extensively
+test that so that gives you je Mena and
+lastly we're going to quickly go over to
+mini profiler now many profiles are
+fantastic - all built by the guys over
+at Stack Overflow and you can see it in
+action over here on the Left what it
+does is
+yet some CSS and JavaScript if you're
+running in debug mode and it will then
+tell you view by view in MVC view which
+how long those views are taking to
+actually request and it will do that for
+every single request that's been run
+over time so these are all individual
+requests and it's telling me how long
+each one
+Terk and then it will also tell me how
+long the entire overall page took as
+well so if I reload this now this will
+probably take a while cuz I suspect the
+app pool has just fallen asleep ah there
+we go and suddenly that's a lot slower
+here we go and we can start to see even
+things like duplicate queries we can
+start looking at query execution time
+there's a lot here that we can look at
+now this is a site based on Umbraco
+which is why a lot of this I kind of
+don't look at in too much detail because
+a lot of the duplicate queries have good
+indexing on them but if you're building
+your own custom site with your own
+custom things like entity framework
+there's also support for things like
+raven DB and various other providers but
+yeah this is one of my favorite tools
+for diagnosing if there's any problems
+within a site this tells you where it's
+taking certain milliseconds to render
+certain partials or certain views and
+then you can go in into Visual Studio
+and take a look in some extensive detail
+as to what might be causing those
+slowdowns there is another tool like
+what a given honorable mention to here
+which is called glimpse no glimpse
+provide to you a bit like Elmer does for
+asp.net logging it provides me the
+dashboard unfortunately doesn't appear
+to be updated in the last couple of
+years it does have a node.js plugin it
+does have an asp.net plug-in I'm not
+sure if that means it's just stale from
+lack of lack of contributions from the
+community but I'm not sure if it's still
+out there so if if anyone doesn't
+anything about plans please leave
+something in the comments that would be
+great now I mentioned about you know how
+do we measure all these things and so
+we've got loads of different metrics
+from lighthouse from webpagetest
+and from jmeter and from mini profiler
+so I will cursorily go over a few bits
+and pieces which are some easy things
+which should just be straightforward to
+do to improve your overall website in
+that performance so firstly make your
+requests as small and as infrequent as
+possible used
+like cookie free demands move your stuff
+over to blob and CDN storage it's
+cheaper than a coffee per month gzip and
+deflate static resources if you can it
+will save you probably between 20 and 40
+percent on your resources if you can
+gzip or deflate things and in fact as
+you'll see own CDN supports this out of
+the box if you want to gzip or deflate
+dynamic resources there's a couple of
+security risks involved in that so it's
+Germany not recommended I also wanna
+briefly touched upon HTTP 2 which is a
+brand new extent it's a effectively the
+upgrade to http 1 and 1.1 it supports
+single connection but multi casting
+multiple resources over a single
+connection now whilst I think that's
+great as a concept it's only available
+on later versions of Windows Server 2016
+and Windows 10 so on older platforms
+it's not available and won't be
+available so it does not necessarily
+solve everything because you're also
+having to rely not only does your server
+have to support delivering content over
+HTTP 2 but then so does your client and
+if you're looking at devices that have
+got older browsers older versions of
+Android maybe aren't being updated again
+I refer back to 75% of people still and
+only being on 2 or 3 G and the chances
+are they probably got feature phones
+rather than smart rather than what we
+expect to be modern smartphones so
+whilst HTTP 2 is a great step in the
+right direction you can't necessarily
+rely on it to solve everything that you
+need caching on static resources is
+straightforward you can use e tanks
+which are generally a hash
+representation of your file so that if
+the hash changes your server can then go
+oh I need to re-request that resource
+cache control requires a little bit of
+configuration if you want to use that
+header private versus public can catch
+you out especially if you're in an
+enterprise environment and you're using
+a proxy in the middle which could
+accidentally cache things without you
+knowing about it and the expiry expires
+headers is one which then falls back on
+cache control right and reducing asset
+size this should be a given these days
+let's have a look so we want to minify
+your CSS and JavaScript if you're
+building single page apps my suggestion
+would be don't lower as you load unless
+you
+it will work reliably a good example is
+using an app let's say on the London
+metro or the New York metro if you've
+got Wi-Fi in the station that's great
+but you've only got it for two minutes
+if you lazy load your views in then you
+go through a tunnel there's no Wi-Fi the
+app ends up being a broken experience
+using an in-memory cache to boost speed
+if you need to use a cache to store data
+in temporary places whether that's Raven
+T being reduce or memcached use it and
+send 304 ever possible which is simply a
+304 not modified so but again I refer
+back to the method of etags and I think
+the latest version of Windows iOS 10
+supports this out of the box in terms of
+server render we've discussed J meter
+and we've discussed many profiler in
+terms of isolating potential issues
+within your load balancing
+infrastructure your server response
+times and mini profiler for isolating
+those instances down within your razor
+view one of the word of caution based on
+experience is that using the dynamic
+keyword whilst it might be popular for
+handling JSON objects it can cause a
+massive memory overhead I've worked on
+projects where a home page has used
+dynamic to cast content out of a
+database into what was basically a five
+page carousel and because it was using
+coarse to dynamic it was taking roughly
+three and a half thousand milliseconds
+just to produce the HTML once we'd
+remove that replace the dynamic calls
+with calls to static types the total
+size for the entire page was reduced to
+about a hundred and forty two
+milliseconds which was about in 97 96
+percent improvement dynamics can have
+its uses if you don't know what the
+contract is for example social media API
+is but generally speaking they should
+really be avoided from a performance
+perspective all right and lastly ongoing
+monitoring as much as it's great to be
+able to measure your performance on an
+ongoing basis and make sure that you
+have targets that you want to hit as
+part of your CI NCT you also want to
+want to have some ongoing monitoring so
+there are application monitoring tools
+such as New Relic
+which I've used on a number of projects
+and personally quite like you brought us
+off loop is a fantastic project which
+builds off post Sharps AOP framework
+and it's mainly designed more for
+desktop environments or environments
+that don't have a o P so non MVC
+environments but it allows you to log up
+to the cloud I believe they also have a
+free tier and of course this wouldn't be
+done at comp without mentioning as yours
+own application insights which I believe
+also has various free tiers as well in
+terms of automating your performance
+testing I have discussed lighthouse and
+webpagetest and J meter and I'll briefly
+just go over to nudge it to the NPM
+package repository to show you that
+lighthouse can actually be run as a node
+module so if you take a look at the node
+CLI down here you can install it as a
+global tool and then run it against one
+or multiple URLs there's lots of
+different options for what you want to
+do in terms of whether you want to save
+those logs whether you want any
+particular chrome flags to be run let's
+see
+audit audit mode which will process save
+artifacts you can then put an output
+path so you can then specify JSON HTML
+or CSV ampere and I believe most modern
+CI CD environments support reading the
+JSON output for this and of course
+webpage tests as well has an NPM package
+that wraps it so you can then create a
+web pair or tomato web page tests from
+options all around the world whether you
+want to test in multiple locations
+depending on what sort of what sort of
+excuse me what sort of information how
+frequently you want to run tests for
+this you do need to request an API
+linking and generally speaking they will
+let you use the sort of global service
+with an API key however if you're
+performing an extensive number of tests
+it's recommended that you download web
+page tests from github yourself and
+running around private instance to be
+able to do your own automated testing so
+a plenty of options you can specify an
+individual server you can specify an out
+file as well and different locations
+sort of connectivity profiles as you see
+3G slow 3G 3G fast 4G LTE edge and so on
+and so on and so forth number of runs
+you want to run number of late if you
+wish to label your test lots and
+different extensive options heads for
+you to really put your web app on your
+website through its paces so
+unfortunately in the words of Jamie
+Carroll apologies to Matt Damon we ran
+out of time I do have this in a docker
+image that's not quite ready yet
+but if you want to basically follow me
+on my where do we go if you want to
+follow me on my github at some point I
+will make sure that that's released
+later on today alright that was a quick
+blast around the various tools of a at
+the open source arena in terms of what
+you can do in terms of performance
+measuring I really hope that was
+informative for everybody and if you
+want to find out more as I say follow me
+on github and follow me on Twitter oh my
+gosh Benjamin that was great you know we
+we got a number of comments in the chat
+room as you're showing the tools hey how
+does this work with blazer and folks
+we're following along with you in trying
+ah with the web assembly stuff so
+certainly see how things you're saying
+about JavaScript and CSS yes they
+definitely apply going forward as we
+look at web assembly oh absolutely in
+fact one of the things I've chatted and
+so Steve Sanderson's working on web
+assembly and one of the things I haven't
+had a chance to get into the performance
+side of webassembly yet but one of the
+things I have noticed is that there is
+some issues with things around lazy
+loading and about selective assembly
+loading and there's a lack of bundling
+and stuff in there at the moment and I
+do I do actually want to try and
+contribute to that at some point so I'm
+not a hundred percent how this is I mean
+as much as those these tools will be
+relevant for Blaser what I want to do is
+I want to get into some of the detail to
+find out when you do actually do a full
+deployment what sort of build mechanisms
+can be tied up with this stuff to make
+sure that your bundles are as small as
+possible cuz obviously we are going to
+want to start delivering Blaser
+applications in the same sort of way and
+we're going to want to measure that sort
+of performance as well using tools like
+lighthouse so so yeah there is something
+to be said there the answer is I don't
+know yet how blazar handles that but the
+answer is I want to find out and if you
+want to follow me as I say if you want
+to follow me on Twitter or github I'm
+fairly certain I'll be digging into what
+what are those at some point once right
+under in fantastic samples I love the
+real-world application I mean that's
+that's great thank you no hey no worries
+I mean you know one of my specialties is
+basically I've been working for the last
+I'd say five years or so on high traffic
+right you know high performance asp.net
+sites going from let's say 10,000 users
+up to five six seven ten million and
+it's something that really is missing
+you know we we have all these fantastic
+tools to build all these amazing things
+and then we go wait hang on how do we
+actually you know get the scaling right
+and still manage to keep our hardware
+cost low I mean as much as the cloud is
+great in terms of our scalability you
+still need to be able to actually think
+about what you're you you know the
+balance between what your budget allows
+for what you're running along with the
+budget of your consumers but you know if
+your consumer is accessing your site on
+a slow phone and it's fast it'll be fast
+on a fast phone
+basically that's that's sort of the rule
+and that's why I keep I keep somebody
+knocking around here I keep a really old
+feature phone that's got like Android 3
+on it and I only supports 3G and I keep
+that around and just go right guys if it
+works fast on here it'll work fast
+anywhere else
+sorry bug well thanks so much Benjamin
+and I we're so glad you could join us
+for dotnet con for 2019 it's time for a
+code party it's time for a code party
+we'll catch you later Ben
+fantastic thanks guys real pleasure all
+right

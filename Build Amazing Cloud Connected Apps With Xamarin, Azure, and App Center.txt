@@ -1,0 +1,515 @@
+my name is Matt soaked up and I'm a
+senior cloud advocate here at Microsoft
+and for the next 30 minutes I'm going to
+show you how to build a mobile app using
+xamarin connect it to the cloud with
+Azure and make it amazing with App
+Center so let's jump right into it and
+show you what we're building today so
+what I have here is you may have seen
+this app used a couple times yesterday
+and during the keynote and today it's
+the pretty weather app and it looks
+pretty good alright we have the weather
+condition so we're in Seattle we have
+the temperature we have the current date
+but the world doesn't revolve around
+Seattle right don't tell anybody the bad
+here but there's more cities involved
+and so what we're going to do is we're
+going to make this app fully functional
+and by that we're going to hit the three
+little icons in the bottom and then
+we're going to be able to sign in to
+Chrome say no thanks and actually be
+able to sign in to our app so I'm going
+to enter my email address and my
+favorite password of all time ABCD one
+two three four with an exclamation point
+sign in and what this is going to allow
+me to do then is save cities that I want
+to be able to view the weather with hit
+a plus button and I can now add other
+cities other than Seattle around enter
+Honolulu probably has a little bit
+better weather than Seattle and now I
+can be able to see the current weather
+conditions then in Honolulu so what I
+did is in addition to the current
+weather conditions added a little magic
+to be able to sign in and have data
+follow me around the different locations
+or different devices so let's see how we
+did all of that we're going to be using
+to build all this
+three things xamarin for the mobile app
+functions to be our compute in the cloud
+and then App Center mobile backend as a
+service that do auth and data which
+wraps around as repeated C and Azure
+cosmos DB so first up xamarin so a quick
+overview of what xamarin is xamarin is
+microsoft's framework for building
+performant ios and android apps but it's
+so much more than that you can build mac
+OS apps you can be able to watch OS f so
+you build TV OS apps you could even
+build apps for Samsung's Tizen operating
+system so it's much more than just I Oh
+s and Android apps and how this is done
+is that you've used the great power of
+dotnet and c-sharp so we have let's say
+an iOS UI and Android UI and as G sharp
+UI for Windows so we're going to build a
+UI for each one of those out separately
+we're using c-sharp we're using dotnet
+we have full access to the platform but
+we're building those UI separately but
+we're building an app that one app is
+still going to perform the same thing
+although we have to build it for each
+platform so when we call to that web
+service when we go get our our weather
+information it's going to be done the
+same way so we may as well use a shared
+C sharp logic way Eclair and that's
+where the power hammer comes in that we
+can write our shared logic just once and
+have it use across multiple platforms
+that well at the same time but we can do
+better and that's where xamarin forms
+pops in
+so what salmon forms does it gives us an
+abstraction of the user interface layer
+so let's say iOS has a button Android
+has a button and uwp has a button so
+what we're going to do then is salmon
+forms gives us an API that lets us
+program against a button and then forms
+takes care of emitting a natural native
+button for us so now we're sharing
+c-sharp logic for our application
+logic we have shared logic for a UI
+logic and we have more and more shared
+code this is great so that in a nutshell
+is what Zarin is the next thing I wanted
+to talk about is the compute layer or
+Azure functions and so this is a quick
+diagram of what we're gonna call the
+cloud native compute or how we're gonna
+architect our apps so way back in the
+day we had the claw on-premise
+architecture and so what that was was
+essentially that was the old data the
+computer underneath your desk right
+where you had every year to take care of
+everything yourself the machine make
+sure the operating system was good you
+had to install all the software yourself
+but as we moved along we started moving
+to the cloud so you had infrastructure
+as a service so you no longer had to
+take care of the hardware you then you
+moved a platform as a service so you
+didn't have to really worry about the
+operating system and now we're at
+functions as a service or serverless or
+are only worried about writing our code
+and so our answer to that is as your
+functions where it's events being tied
+to code and then we have functions and
+so what are some of the events that we
+can write that we functions run off of
+think of having a blob being written to
+blob storage or something being written
+to the azure queue so that in itself
+will actually kick off an azure function
+and have our code start running the
+secret sauce though comes in with the
+bindings and so what a binding means is
+that we can have something let's say
+from cosmos dd be bound to an azure
+function and then like a document can be
+sent into our function as a variable so
+the same thing can happen with a Azure
+storage table or a file it automatically
+gets sent in or we can write it out as
+well so this gives us a really powerful
+mechanisms to write some really cool
+code with a little bit of lines so
+scenarios to demonstrate this so let's
+say we had a timer going off every 15
+minutes that's our event the function
+then kicks off it will then find and
+maybe clean some invalid data from a
+table and then we are resulting with a
+clean table afterwards another event
+could be a file a CSV file let's say
+gets added to blob storage
+we have a function then that takes that
+in transforms that CSV file into data
+rows and then from there we can display
+a power bi chart graphic or our scenario
+that we're dealing with today is our
+mobile app it needs a forecast it sends
+off an HTTP GET request to a function
+that function then is going to call up
+to a third-party weather service get the
+data back and then it's going to massage
+that data into a version version that
+the app can deal with send it back down
+to the app and in the app displays the
+data so let's see how we can use compute
+with Azure functions and add that in to
+our mobile xamarin application
+so this is what the function looks like
+it's some call get current conditions
+and it's running as an HTTP trigger so
+that means that as soon as a HTTP GET
+request comes in it's going to trigger
+off this function and is going to start
+running and then it has various requests
+queries that I can get a latitude and
+the longitude and then it runs through
+so actually let's kick this off and run
+it so it's going to compile and I'm
+going to run this all locally
+and then as that fires up I'm going to
+actually call it out through postman
+through this localhost 7:07 1 and here I
+have postman sup and I'm going to be
+passing in a latitude and a longitude of
+Seattle so I send it off
+hiren hits so now what I can do here is
+step through so I get my latitude and
+longitude out of the query string and
+then these next ones I'm just pulling
+out of essentially a config file to get
+my key and my URL for my third party
+weather service and so that's another
+great thing about putting this up in
+functions instead of having it in my
+mobile app I can have the key to my
+weather service not onboard my mobile
+app where it could be possibly
+compromised I have it up on functions
+within the azure cloud and it's safer
+eventually I could even put that in an
+azure key ball and really lock it down
+if I wanted to great so back to the
+function then all I'm doing here is
+using this client which happens to be an
+HTTP client calling getstring async
+invoking that third-party weather
+service getting my data back
+deserializing it and then finally all
+I'm doing here is putting it into a
+version that my mobile app would use so
+I continue that off and down here I just
+get this a little JSON back and this is
+all my map app needs to display its data
+so I've already actually deployed that
+to assure that particular function and
+I'm gonna run my mobile app now to
+actually see it in effect
+so I'll compile it and run it on the
+emulator
+and as it's going all I'm going to do
+here again is using the HTTP client is
+called getstring sync and it's just
+calling out to pretty weather that as
+your website's net to get its data back
+so as soon as it fires up still
+compiling and then we should have it
+done in just a second here
+hopefully and then um we'll continue on
+talking here we go
+so loads up going to deploy it to these
+emulator then once that's done it'll go
+through and the very first thing that's
+going to do is going to hit this weather
+service here get the weather info and
+then it's going to deploy call out to
+the function
+loading itself up
+and then it should come in here and
+that's what I did call the getstring
+async and I can see my weather info that
+came back it's the same thing as before
+and now it's just been updated with
+weather from Honolulu so there we go so
+that's all that's involved with loading
+up and calling an Azeri function from a
+mobile app it's just an HTTP GET request
+involved so that's pretty
+straightforward as far as it's creating
+just a back-end a Web API but doing with
+Azure functions a cloud native way of
+creating a Web API so now adding the
+real amazing stuff to functions or to
+our mobile app and that's with App
+Center and so what App Center is gonna
+do is gonna allow us to wrap together
+Azure ad b2c Active Directory b2c visit
+the client and also as a cosmos DB and
+our really nice easy-to-use developer
+friendly SDK and so the way this works
+is that a lot of y'all may be already
+familiar with App Center in the dev ops
+portion where we had build and tests and
+distribution so what happened is that
+with build what you would do is that you
+would connect to your favorite repo and
+then as soon as you would push to that
+repo it would build it would kick off
+some unit tests and maybe even some UI
+tests that would run on real devices and
+as soon as that was done everything
+would pass it would kick off to the
+distribution whether it's distributing
+to the stores or whether it's to some
+external beta testers and then you would
+have some Diagnostics I could run so
+what happened at the app crash maybe you
+can get full stack traces it could hook
+into app insights and then you have
+analytics where you can track how people
+are using your app that was App Center
+however there is this now this new
+features called the mobile backend as a
+service where there's authentication
+data and push now what's great about
+these features is that they interact
+really well amongst each other and they
+are super easy to use
+so first we'll take a peek at what the
+authentication does and as I mentioned
+before visual studio apps centers
+authentication works hand-in-hand with
+Azure Active Directory b2c so ad b2c
+itself is I'm gonna say it's a little
+bit involved in getting set up and also
+what App Center auth is going to help
+you do is going to help you ease that
+process of getting set up and making
+calls to it so it's focus is on making
+everything easy for you and so the other
+way so there's two parts involved in
+calling and authenticating and signing
+in your users
+there's the b2c portion and then there's
+the actual signing in portion which is
+done through Microsoft authentication
+library or M cell now the M cell is all
+done on device and that's taken care of
+displaying the webview and actually
+communicating the b2c and performing the
+authentication where b2c handles like
+calling out to Twitter or Facebook or
+your email to make sure you are who you
+say you are so you have these two pieces
+that need to interplay with each other
+nicely in order to get your sign-in
+experience App Center makes this whole
+layout
+this whole journey way easier this is
+what it looks like
+it's just sign in a sink now if you're
+familiar with what the M style framework
+was before it's super powerful but it
+was a lot of ceremony that goes along at
+Sutton setting it up this is what it
+looks like now it's super it's nice it's
+developer friendly and that goes right
+along with the App Center ethos going
+along with this
+I mentioned that right now it's just
+working with Azure Active Directory b2c
+but in the future they're implementing
+something called bring your own identity
+and so what this means is is that if
+you're using auth0 or if you're using
+firebase or if you're using Azure Active
+Directory already you can just bring
+those in to App Center
+and it's gonna work for you so you don't
+have to be just using b2c you could be
+using any of those other identity
+providers bring it in and you'll still
+be able to work with them behind that
+beautiful su K that we had then next up
+is the data portion so what the data
+gives us here is a nice wrapper around
+as your cosmos TV so the way is I
+mentioned before is that auth and data
+and push work together hand in hand so
+this is one of the ways that they do so
+we're logged in with auth and then user
+a user B and user see whenever they do
+some data information they get their own
+private partition within cosmos dB so
+what I want to store some data I get my
+user a partition the same with be the
+same with C but yet we still have some
+public data and so there's no I don't
+have to set up as a developer set up a
+new partition for anybody app centers
+SDK takes care of that for me now the
+other thing that we get with the data
+SDK is the ability to do offline writing
+if I'm connected it writes to the cloud
+right away also writes to an a sequel
+cache on device however if we're not
+connected just writes to the cache on
+device and we keep on going it'll write
+up to the cloud next time we're
+connected same thing when we're reading
+always read it's from the online cat or
+the cache on device if we're connected
+reads to the cloud and syncs up
+automatically works you don't have to
+worry about whether you're online or off
+the SDK is gonna take care of it for you
+so some methods here that you have you
+create your data model new it up and
+then there's a create method a delete
+method passing in the IDS of what you
+want and then the partitions here are
+the user documents as opposed to public
+and then there's a list a sink to get
+them all back a read for a single and
+then a replace which is like an absurd
+or an updating well
+cool things that we have with AB Center
+is that you can see data metrics from
+what your cosmos database looks like all
+within the App Center portal and you can
+actually go through and view different
+documents and the best thing at all is
+that there is a free tier coming along
+it's not there today but it is coming
+along soon so it is cosmos DB free tier
+with App Center and that's pretty really
+slick so let's jump in to the last demo
+that we have going walking on sunshine
+off and data with App Center so first
+thing I want to do is show you how we
+would set up the portal the epicenter
+portal to work with ODS and data so what
+I would have here is I have open up a
+App Center application and I have often
+data here so just by hitting auth it
+says welcome to auth connect my address
+subscription and I can go through I'm
+gonna have my pretty whether it's
+reading what's already in my Azure
+subscription user impersonation and then
+for the policy I have to manually add my
+user flow which has happens to be this
+user flow is the how you sign in so it's
+like which identity providers like if
+you want to connect to Facebook or if
+you want to connect to Twitter and then
+I can just say connect and that's all
+there is to it now my app is set up to
+use authentication the same with data
+all I'm gonna say is I want to use an
+existing database use my subscription
+hit next here which database within it
+user preferences which collection and
+that's it I would hit done so to show
+you one that's already set up and ready
+to go is one of my Android authors
+already there it's telling them my
+tenant name my application ID and the
+data and you can see here I have
+overview and then my Explorer and you
+can see I have both Seattle and Honolulu
+so the next thing what I want to do here
+is finally go through and show you the
+methods that I have set up to be able to
+log in and a save data so I hit the
+little things below and the sign in
+right here is just off sign and a sink
+I have tokens that come back an account
+ID which is my b2c account ID all within
+that I can get listing my cities out is
+just a data list a sink sending in a
+city info which just happens to be a
+regular class continue on
+and then if I when I want to add a new
+one
+we'll come through here pick a new city
+and crash the app so what it would look
+like if I would pick the new city then
+is say vsync instrument just says create
+a sync city info passing in everything I
+need and then what I would have there is
+some really really funky stuff but if I
+go over to my real device
+I can see if I load up the app it should
+be able to see Madison Seattle and
+Honolulu come up now because Madison did
+not save but that's okay so hopefully it
+saves here without crashing anything and
+it comes over so great that's the quick
+version of adding everything and using
+App Center with as amra mobile app so in
+summary we use xamarin for creating a
+cross-platform mobile application as
+your functions for our server list back
+in for a compute and then App Center for
+a mobile backend as a service data and
+authentication so please go out and
+learn more follow these documentation
+links for xamarin App Center often data
+and finally the bottom one there is all
+the code that you can want from this
+session alright my friend man how you
+doing today my friend I'm doing well
+Seth fantastic so here's a question that
+I always get that I thought I would ask
+you performance with xamarin versus
+native is like tell us about that you
+get 100% native performance with Sam
+earn as you would if he were writing
+something in Java or if you're running
+something with Swift you're gonna get
+the same native level performance as you
+would so there is no difference as if
+anything Sethi write bad code he can get
+back home yeah he's saying that from
+experience yeah we work together and so
+he's seen some of that all right so
+here's another question
+those Azure App Center auth work with uh
+securing with securing a web api being
+called from a desktop app that's a good
+question so the center app works with
+securing a web api calling from a mobile
+app I haven't tried it from a desktop
+app but they do support WinForms in the
+other portion of app centers so I'm not
+gonna speculate and get that project
+team or the development team product
+team into trouble but it's just a JWT
+token fantastic well there's a lot of
+good links that he put up there so make
+sure that you follow those and
+get some of the code so you can try it
+out yourself it's pretty amazing now as
+we go along make sure to remember to
+participate in the technical treasure
+hunt it's still going on
+you're gonna want to watch olive dot
+Netcom 2019 because the UH net partners
+are sponsoring a technical treasure hunt
+there will be fun challenges to solve me
+to be eligible to win a lot of prizes
+which is critical so what we're gonna do
+is we're going to throw to a commercial
+break and right after that we're gonna
+have a tour of what's new for zamel
+tools and saml islands in Visual Studio
+2019 with my good friend Demetri Lyle in
+but this first

@@ -1,0 +1,421 @@
+hey everyone welcome back to another
+video by simply learn in this session we
+will learn about the break and continue
+statements in c plus so before we jump
+in
+make sure to subscribe to our channel
+and hit the bell icon to never miss an
+update from simply learn
+so break and continue both are known as
+jump statements
+these are called jump statements because
+they are used to skip jump or terminate
+the statements inside the loop
+whether it is a while loop do while loop
+or a for loop
+so let's start with the break statement
+first
+in c plus break statements are used to
+terminate the execution of the loop
+and by terminating the execution of loop
+we means finishing or stopping the
+execution
+like if we want to block or terminate a
+loop at some point all we need to do is
+to use the break statement with a
+condition
+on which we want the loop to stop and it
+will terminate the loops flow or
+iterations so break statements are
+mainly used for two cases
+one is it can be used inside the loop
+and second is
+it is mostly used in switch statements
+and this is the loop's flow diagram in
+which first there is a loop body then if
+the condition is true then there is a
+break statement which will terminate the
+loop and if the condition is not true
+then the loop will continue to iterate
+as you can see in this example the loop
+is iterating from 0 to 10. inside the
+loop there is a condition and then the
+break statement
+which will make sure that the loop will
+terminate when i becomes equal to 4
+after the break statement the control
+will jump out of the loop body and
+that's how the break statement works its
+output would be
+0 1 2 3 it will not exceed 4 because of
+the break statement
+now coming to continue statement the
+continue statement is a bit similar to
+the break statement as it is also used
+for termination
+but the difference is that it is used to
+terminate the current iteration and not
+the complete loop for example if a loop
+is hydrating from 0 to 6 and inside the
+loop there is a continue statement on 4
+then all the elements will be printed
+except for
+because continue statement skips that
+particular iteration and continues with
+the next one
+and in break statement the complete loop
+flow terminates
+so when the continue statement is used
+then within the loop the control skips
+or terminates that particular iteration
+and continues with the next iteration
+as you can see in this example
+first loop body
+then there is a condition
+if that is true then the continue
+statement will terminate
+and continues it with the next iteration
+and if that is false then control will
+go to the remaining part of the as
+always
+now in this example we are using
+continue statement here the loop is
+iterating from 0 to 10
+inside the loop there is a condition and
+then the continue statement
+which will make sure that if the value
+of i becomes 4 then terminate that
+iteration and moves to the next
+situation
+after that elements are getting printed
+with the help of c out function
+now its output would be
+1 2 3
+5
+6 7 8 9
+it will not display 4 because of
+continue statements as we know that the
+continue statement skip that particular
+iteration so when we use i equals 2
+equals to 4
+then it skips that particular iteration
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+alright so as we have covered the
+theoretical part so now let's do some
+examples on breaking continuous
+statements in our code editor that is vs
+code
+all right so let's create a new file
+and let's name it
+continue
+dot cpp
+all right
+now let's save it
+so now first of all we will include the
+header files
+iostream
+then the namespace standard
+so here we will do an example in which
+we will iterate a loop from 0 to 30 and
+we will display
+all the elements which are not divisible
+by 2 from 0 to 30
+and in here we will use a while loop so
+let's start
+so first of all we will include the main
+function and inside the main function we
+will declare a variable i
+now after that we'll use a while loop
+and we'll write i less than
+30.
+now inside
+this while loop will increment i plus
+plus
+because we want the loop to move forward
+so that is why we are incrementing here
+and now we will
+write the if statement and inside the if
+statement will write a condition
+which will exclude all those elements
+which are divisible by 2.
+so we'll write
+i
+mod
+2
+0
+equals to 0
+then
+continue
+now here what we are doing is we are
+skipping or excluding all these elements
+which are divisible by 2.
+here we are displaying the elements
+and
+we'll write slash d
+to add some horizontal space in between
+them
+then here right and l
+and after that return
+0
+all right now let's save it and check
+the brackets first um
+yes
+the
+if condition
+inside if condition there is only
+continue statement and this bracket is
+off while loop
+and this is an extra bracket
+all right now let's save it again
+and let's try to run this
+as you can see
+1 3 5 7 9 11 13 15 17 19 21 23 25 27 29
+all of these are not divisible by 2 so
+we have skipped all those
+digits or numbers which are divisible by
+2
+with the help of this continue statement
+now let's do another example
+let's name it break dot cpp
+and
+let's save it
+now here we will do an example in which
+we will use both the continue and break
+statements and in the example
+we will display the cars
+which are taking part in the race
+so first of all let's include the header
+files
+we'll start with hash include iostream
+now using the namespace standard
+now inside the main function
+first of all we will declare a car
+variable
+let's say the variable name is car
+number
+alright so here would be two types of
+races one is drag race and another one
+is lab race and the cars are denoted as
+car numbers
+and there's a condition if in the drag
+race one player even if one player is
+not present then the race will be
+cancelled and there is no such condition
+in lab race
+so now we'll start with
+drag race
+so first of all
+we will display
+drag race
+now
+using the for loop
+we will iterate the car numbers from 0
+to 10 as there are total 10 cars
+so int
+car
+number 0
+car number
+less than
+10
+car number plus plus
+all right now inside this for loop we
+are using if condition
+like let's say if car number four is not
+attending the race
+then we'll write
+car
+car number four and inside the if
+condition will write break
+if car number four is not attending the
+race then there would be no race as
+if one
+if only one car would back out then
+there would be no race as per the
+condition
+all right
+so
+as we can see break will terminate the
+entire loop
+so it will display
+0 1 2 3
+so it's the condition for the drag race
+now let's do
+for the libraries
+maintain some space
+slash and we'll use
+now we'll write
+lapras
+now inside this slab race we'll again
+use a for loop
+as we have done above and car number
+from 0 to
+less than 10
+car number plus plus
+we forgot to write n over here now
+car number plus plus
+all right now inside this for loop
+we'll use if statement
+and write the same condition that is if
+car number
+is
+4
+the car number is 4
+then inside this will write
+continue because we know in the lab race
+it is okay if one or two players skips
+the race
+the race won't stop unlike the drag race
+so
+simply will write
+the variable name car number
+and after that return 0
+all right we are done
+now we can save it and let's try to run
+this
+hope it works
+all right so there are some errors so
+let's check
+okay so
+here we have used this extra bracket
+because our for loop
+bracket is here
+now
+let's save it again
+and run it
+as you can see
+drag race 0 1 2 3 so car number 0 1 2 3
+and it is not exceeding 4 because we
+have used this break statement
+and in the
+lab race as you can see 0 1 2 3
+5 6 7 8 9
+as we have used continue at car number 4
+so car number 4 is getting
+skipped
+so the rest of the cars will raise till
+the end
+so in this example we have used both
+continue and break statements now in the
+next example we will use break
+statements in switch case so let's do
+that
+let's create a new file
+and let's name it
+break 2 dot cpp
+all right so here we will do an example
+of break statement and we'll use it in
+switch case statements
+and the example is there are five
+contenders and one of them won the
+lottery and the others came second third
+and fourth so we'll do that with the
+help of break statement
+so let's start first of all we'll
+include the header files
+hash include iostream
+now the name space standard
+now inside the main function
+we'll write
+inside main int main and inside this
+will declare a variable
+num equals 7
+we are assigning 7 to it as of now i'll
+tell you later
+now using the switch statement inside
+the switch statement we will write the
+variable name num
+now after that
+inside this switch statement
+we'll make the cases as we know in
+switch how the switch statements work
+we'll make the cases like let's say the
+first case is case 4
+so it means if the value of num is 4
+then
+whatsoever we write
+inside this under this that will be
+displayed if the value of num is 4
+all right
+so
+we'll write lose
+and after that end l
+all right then
+we will
+here we will write the break statement
+here the break statement will stop the
+execution of the process
+all right
+now after that
+similarly we will make case another
+cases
+like let's say after this we'll make
+another case
+case
+six
+now in the case six
+the person came forth
+so there are prizes
+to others as well
+but the first prize
+is won by num7 as of now
+now
+another case would be
+case
+seven now let's write seven
+and we'll write here you won
+now after that
+another case would be let's say one
+game second yeah
+let's write game
+second
+now case eight
+came third
+so after each case as you can see as we
+have
+wrote the message you won came second
+came third we are using break statement
+because we want to terminate the process
+because once the player has selected a
+number then we don't want the player to
+select another number we want the
+process to stop there so that is why we
+have used the break statement over here
+now after that let's
+write return 0
+all right
+now
+return 0
+and
+save it and now let's try to run this
+as we have selected seven
+num equals seven so you won if let's say
+we have selected four
+as we have assigned four
+now save it again
+so it will display you lose
+and if we write six
+save it
+then
+it will display game fourth
+as you can see
+so this was another example of break
+statement in switch cases
+so we have covered some examples of both
+the jump statements that is continuing
+break statements in c plus you can try
+them in order to understand it better
+all right with that we have come to the
+end of this video if you like this video
+please give it a thumbs up i hope it
+really helped you all thanks for
+watching stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

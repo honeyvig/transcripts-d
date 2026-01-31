@@ -1,0 +1,744 @@
+hello everyone welcome to bringing big
+data analytics through pachi spark to
+dotnet I'm Bridgette Murtagh and I'm a
+program manager here at Microsoft on the
+dotnet team so let's start off with what
+is apache spark so big data means that
+there's an increase in volume velocity
+and variety of data so let's take for
+instance a factory there can be
+thousands of internet-of-things sensors
+in a factory each producing petabytes of
+data now while it's great to have that
+much data so you can understand how our
+factory is performing and ways to
+improve the equipment how can we
+actually process it all when we have
+that much and more than just that how
+can we process it all quickly and
+efficiently well welcome to the world of
+Apache spark so what is Apache spark
+Apache spark is a general-purpose
+distributed processing engine for
+analytics over large data sets typically
+terabytes or petabytes of data put a
+little bit more simply Apache spark is
+your great tool we can use to analyze a
+large amount of data and a quick and
+easy to understand way so we don't have
+to be data science experts to understand
+or use it there's quite a few different
+things that we can do with the Apache
+spark that are all super interesting and
+exciting but just to touch on a few of
+them one of them is spark sequel which
+means analyzing data that's structured
+in some way so maybe data from a CSV or
+from a database
+there's also spark streaming which means
+analyzing data in real time as it's
+being produced so in our factory example
+it means analyzing data live as it's
+coming from those IOT sensors so we can
+go and detect maybe if there's a
+malfunction on our data and we can go
+and address it right away
+there's also machine learning
+capabilities with Apache spark so you
+can combine the powers of big data and
+ml to scale and have faster more
+efficient training and prediction of
+machine learning algorithms so to
+understand how Apache spark works
+there's only three main components that
+we really need to take a look at the
+first one is the driver the driver
+consists of the user's program so for
+instance if you wrote a c-sharp console
+up that would be part of the driver the
+driver also consists of a spark
+now what the spark session does is it
+takes that users program so for instance
+it takes that c-sharp console up and it
+divides it into smaller pieces known as
+tasks now those tasks are divided
+amongst our second component which are
+the executors or the worker nodes and
+the executors are the workers are on
+something known as a cluster so each of
+those executors takes one small task so
+one small piece of our users program and
+finishes executing it and the third
+component of our architecture is the
+cluster manager which helps with
+dividing up the tasks and allocating
+resources amongst our driver and our
+executors so how can I use the pachi
+spark it sounds super great super useful
+so how can I get started with it so it's
+quite a different there's different
+api's that we can use that are popular
+with spark and they're written in
+languages like Scala Python Java and AR
+but up until this point there weren't
+any dotnet api's for spark sort of I
+wanted to use Apache spark combined with
+my pre-existing dotnet knowledge or
+extensive code base and business logic
+well we now have an awesome tool that we
+can all use and it's known as dotnet for
+Apache spark so dotnet for Apache spark
+is a free open source and cross-platform
+big data analytics framework it allows
+us to reuse the knowledge skills and
+code we already have as dotnet
+developers so anywhere that you maybe
+have an extensive C sharp F sharp
+codebase now you can go ahead and
+introduce big data analytics within it
+dotnet for Apache spark is also designed
+for high-performance the overall goal
+for dotnet fair patchy spark is to
+provide dotnet developers a first-class
+experience when working with Apache
+spark so we have had several customers
+expressed a lot of interest and actually
+see success those net faire Apache spark
+and one of them is the Microsoft search
+assistance and intelligence team who's
+working towards modernizing workspaces
+in office 365 their job is to work with
+different ml models on top of substrate
+data to infuse intelligence into office
+365 products their data resides in a
+deal
+and interns gets fed into their models
+why they were looking towards dotnet
+spark was because a lot of their
+business logics such as the different
+features or tokenizer z' were all
+written in c-sharp meaning it would be
+ideal to be able to use big data
+analytics still within the dotnet
+ecosystem and so far their experience
+has been extremely promising stable and
+they've really loved the vibrant open
+source big data analytics ecosystem
+within the dotnet community the scale of
+their jobs has been about 50 terabytes
+so quite a bit of data and they really
+started seeing success with it so now
+that we've seen a little bit about what
+dotnet for Apache spark is and why it's
+such an exciting new solution for us
+let's take a look at a few different
+scenarios that we can complete in some
+really exciting applications we can
+build using dotnet for Apache spark so
+one of the most fundamental Big Data
+apps is batch processing so what is
+batch processing or what is batch data
+batch data means that we're working with
+data that's already been stored so for
+instance we could be doing something
+called log processing which means
+looking at and gaining insights from
+logs from maybe a website or a server or
+a network of some sort so we can
+understand what actions our users are
+taking or what pages of our website are
+the most popular we can also do data
+warehousing which means taking in data
+maybe from a variety of different
+sources and then performing a
+large-scale analysis on it maybe that
+data is all stored in Azure storage and
+then gaining different meaningful
+insights from it so in the example that
+we're going to be looking at today
+we're going to take a look at some
+github projects data so you can see here
+in the snippet of that data that our
+projects data includes the URL of our
+projects the author a description what
+language it is things like that and we
+want to know on average how many Forks
+does each language have and the number
+of times each project has been fork is
+represented by that column each there so
+let's go ahead and take a look at our
+first coding example with dotnet fair
+Apache spark so I'm going to open up
+visual studio 2018 here and we can see
+here that I'm just
+dealing with a c-sharp console
+application that I've already created
+and I've already installed the Microsoft
+spark nougat package oh there it is cool
+and we can see that it's also installed
+because I have these great jar files
+over here in the solution Explorer and
+at the top I'm using Microsoft spark
+sequel and Microsoft's piped sequel
+functions because as I had mentioned
+spark sequel helps us work with
+structure data so if I'm reading in
+github products data that data does have
+some sort of pattern or structure to it
+so I want to use spec sequel so to start
+off with in my main method here the way
+that we start off any dotnet fair pachi
+spark app is by creating a spark session
+that's what's dividing our program into
+the smaller tasks to be distributed
+amongst the executors so we can see I've
+created a spark session called spark I
+went ahead and built the session and I
+just called my app github and spark
+batch pretty appropriate name now after
+doing that the next step we typically
+want to do in our apps is to actually
+read in our data so I have our data is
+stored in a CSV and we want to read that
+CSV into an object called a data frame
+so a data frame is going to be the basic
+object that we store our data in when
+we're working with structured data in
+spark so if I open up this region here
+we can see that I'm working with a data
+frame here and I just called it projects
+DF to stand for my projects data frame I
+go ahead and called the read method and
+then I also called schema which means
+that I'm working with whatever pattern
+my data has so for instance I know that
+my data has an ID column a URL an owner
+ID I also know the type of data that's
+stored in there whether it's an inter
+string or something like that and it's a
+rather long schema because I do have
+quite a few columns and then I can call
+dot CSV since I know that my data is
+stored in a Commons comma separated
+values file and then another popular
+method that's good to use is dot Show
+which allows us to actually print that
+data frame to the screen so I continue
+on another popular step that we'll want
+to do when working with batch data is to
+do some data prep or data preparation
+and that means that we're
+kind of cleaning up our data so maybe if
+there's some Knoll or missing values or
+if there's some extra values maybe like
+a few extra columns we don't need we can
+go ahead and remove those so that our
+data is easier to read and easier to
+work with so one of my first steps of
+data prep was working with the data
+frame na functions and with that I chose
+to drop any values that are null so any
+role any rows that have missing or null
+values I chose to removes that when I go
+and perform calculations later
+I'm not accidentally trying to perform
+calculations on a missing value also
+with my data prep I chose to drop a
+couple of columns that I don't think
+will be important for my final
+calculations so I dropped the idea the
+URL and the owner ID columns so after
+doing some data prep we can actually go
+ahead and perform the functionality that
+we wanted to which was finding on
+average which languages have been forked
+from the most often so the first thing I
+wanted to do was group my projects by
+language so what I've done here is I've
+created a new data frame that'll
+represent now my group two data and I
+called the group by method which allows
+me to choose which column of my data I
+want to organize by or to group by so I
+chose the language column and then
+whenever I do a group by I also need to
+call aggregate or this dot AGG method
+and with aggregate it allows me to
+perform some sort of functionality
+across every row or every entry of my
+data so in my case I performed the
+average of the forked from column on
+each row of data so essentially I'm
+grouping by language and then finding on
+average how many times each language has
+been forked and then finally I don't
+want to just display my data as is I
+want to do one final step to make it a
+little easier to understand and read so
+I've chosen here to order my data frame
+in descending order so that way I have
+the top forked languages at the top of
+my data frames so I can see those first
+and then a final good step to do is to
+go ahead and stop our SPARC contexts so
+I went and went ahead and called sparked
+off stop just to clean up resources and
+make sure everything finishes executing
+correctly
+okay so now I have a few steps here that
+I'll need to be able to build and run my
+program so one of the steps and working
+with the.net for patchy spark app is to
+make sure that we have one of our
+environment variables set correctly so
+there is a dotnet assembly search paths
+variable and we'd want to make sure to
+set it to specifically my apt so in this
+case batch and then the bin debug folder
+and then whatever version of net core
+app that you're using and then also one
+other thing you can check is the level
+of logging that you have in your output
+so I go ahead and open this up so
+there's a file called log4j dot
+properties and here I've set the logging
+level or whatever is going to be output
+to my console to be the error level so
+rather than displaying maybe some
+extraneous warnings or info or debug
+messages I'm only going to display
+messages that are actually an error
+which will help make sure that my output
+isn't too confusing or crowded in my
+console okay so now it can actually be
+time to go ahead and build and run our
+program so fortunately I've already done
+that with for us here to save some time
+so I'm going to open up the terminal not
+that one that one will be later okay so
+here I moved into my batch directory
+using CD batch and then I just went
+ahead and built my project using dotnet
+build we can see that build succeeded so
+now let's go ahead and see how we
+actually run a dotnet for patchy spark
+app we use something called spark submit
+or the spark submit command and it every
+time we use spark submit there's a few
+different components to it so we you say
+spark - submit and then we're also going
+to reference the dotnet runner we're
+going to specifically reference one of
+those jar files in our case for using
+apache spark version 2.4 and dotnet for
+apache spark version zero point 4.0 and
+then also we want to have a path to our
+apps dll so it can actually build and
+run correctly so after running sparks
+submit let's see how our program did so
+first we're expecting just to see the
+data frame with our csv data in it so
+just the raw github prod
+so let's take a look alright so we can
+see it here we see that it has all the
+columns we expected but we can also see
+that the data is kind of overlapping
+with itself there's a few too many
+columns like updated at is all the way
+over here instead of continuing to the
+right and then there's also a lot of
+null and missing values so it seems like
+it was definitely a good idea to go
+ahead and do that data prep we did if I
+scroll down now we can go ahead and look
+at our data prep result and so now this
+data frame is a lot easier to read and
+understand we can see the data doesn't
+overlap with itself and all the data
+actually exists there's no longer all of
+those null values so it's a lot easier
+to work with so next we can go ahead and
+see the output
+of when we were trying to calculate the
+average number of times each language
+has been forked so let's take a look and
+so we can see we have a column here for
+language and a column here for the
+average number of times it's been forked
+and it all looks correct and we can see
+that it did sort in descending order
+because language is at the top havin
+forked on average more often than the
+languages down here and then it's also
+worth noting that for all of those data
+frames it's only showing the top 20 rows
+and so this is really useful because in
+case we're working with terabytes and
+petabytes of data we want we don't want
+to be stuck trying to show those data
+frames and then having it take forever
+or getting confused and too crowded on
+the console okay so we have successful
+yet run our first dotnet for a patchy
+SPARC app so let's go ahead and go back
+to our presentation already so we have
+already done that demo so let's move on
+to our next scenario which is combining
+machine learning with Big Data so when
+we combine machine learning with Big
+Data it means that we want to scale the
+training and prediction of machine
+learning algorithms one great framework
+we can use for the machine learning when
+we're combining ml with Big Data is ml
+net which is a free cross-platform
+open-source machine learning framework
+in our example that we'll be looking at
+we're going to be performing sentiment
+and Alice
+which means that if we're given a piece
+of text we want to determine if it
+represents something positive or
+something negative so in our case we're
+going to analyze a set of online reviews
+and we want to know which are positive
+and which are negative if we were given
+reviews such as I love dotnet for Apache
+spark that would be considered positive
+and we could maybe see either a true or
+a one depending if we're using a boolean
+to represent positive or negative
+sentiment if we saw a statement like I
+hate running inefficient big data
+queries that would be considered a
+negative sentiment so let's go ahead and
+take a look at our sentiment analysis
+demo where we combine Mission ml donut
+and dotnet for Apache spark okay
+so I've opened up Visual Studio 2019
+once again and in this case when I look
+at the nougat packages I've installed
+I haven't only installed Microsoft spark
+I've also installed Microsoft ml which
+is the nougat package we need to use ml
+dotnet and then we can see at the top
+here I'm using statements both related
+to ml net and net fare pachi spark so
+you can see Microsoft ml ml data we can
+also see Microsoft spark sequel if I
+scroll down here we can see that just
+like we had done in the batch example we
+start off by creating a spark session
+for our program and I've just gone ahead
+and given my app a different name
+compared to the batch app next it's also
+going to be similar to our batch example
+since we are still technically working
+with batch data we're just taking it a
+step further by also performing machine
+learning so in our case we want to read
+a review data into a data frame so I
+have some Yelp reviews so I have it in a
+Yelp csv file
+and i've also set a few options for my
+data frame here so for instance I know
+my data has a header and so the two
+different columns in my data which
+include the text and if it's a positive
+or negative review those columns are
+labeled that's a header and I don't want
+spark to treat that header is part of
+the data because I could throw off my
+results
+and then I just went ahead called show
+so I could see my raw review data as is
+before we go ahead and actually predict
+using ML dotnet so now it's time for the
+fun part where we can actually start
+combining machine learning with big data
+so how would we actually start calling
+the ML dotnet code so how we can do that
+is using something called a UDF or a
+user-defined function and so UDF's are a
+popular solution so that we can perform
+some sort of function on let's say each
+row in our data frame so if I open this
+up here we can see that we create a new
+UDF by calling the UDF method and then
+register and within the angled brackets
+I have string to represent the input
+that I'm working with which is text or
+reviews and then boolean to represent
+what my output is going to be which is a
+true or false for negative or positive
+sentiment I've decided to call my UDF ml
+UDF and what I'm doing within this
+function is passing the text into a
+method called sentiment so we may be
+asking so what is the sentiment method
+where do we where do we create it what
+do we do within it so within sentiment
+if I scroll down here we can see that
+sentiment actually contains our machine
+learning codes the code that was
+generated from ml dotnet and I got this
+code and I actually also trained my
+sentiment analysis ml net model by using
+something called model builder the model
+builder is a really useful UI tool that
+we can use within Visual Studio that
+helps us train and work with machine
+learning and a much easier and
+understand way so just to see what model
+builder looks like if I right click on
+my project and say add machine learning
+I can see that within here I can choose
+a scenario so I can choose things like
+issue classification sentiment analysis
+price prediction so my case I would have
+chosen sentiment analysis and then I can
+just go ahead and choose my input file
+so I could choose my input review
+dataset to do some training on and then
+m/l net does all of the training for me
+and generate some really awesome code
+for me so if I go back here this was
+actually code generated from that melt
+from model builder using ml
+and what it's doing is essentially
+creating a way to start predicting so it
+calls the ml model that was trained and
+created and then it creates a prediction
+based on whatever strings I pass to it
+and then down here I've created classes
+to represent my review data since I do
+need to pass that or work with that when
+I'm using ml dotnet okay so now that
+I've gone ahead and created a function
+where I can call that ml dotnet code I
+want to actually call that function so
+what I've done here is there's this
+really neat functionality in dotnet fair
+Apache spark where we can actually
+execute sequel queries so if you're
+familiar with sequel syntax at all we
+can have those sequel queries within our
+code so in my case I've gone ahead and
+selected column 1 which represents my
+input review text and then past column 1
+so past each review to my ml net method
+and what I can do here is then just go
+ahead and print that out essentially and
+then I called Show so that I can see the
+output of my operations and then
+similarly just like we had done using
+the batch app you'll want to make sure
+you set your environment variable
+correctly so that bin-debug net core app
+folder and then we can go ahead and go
+into our apps directory and build and
+run it so let's take a look at how that
+came out ok so you can see here I had
+built my project and built succeeded and
+then I ran sparks submit using pretty
+much the same types of parameters just
+in this case it had to be to my current
+apps to yellow if I scroll down what we
+see here for the first data frame is
+that was just the raw review data so
+this is these are all the reviews that
+were in my Yelp dataset and this is the
+true answer if it's a negative or a
+positive sentiment so we can see when
+someone loved something that represented
+with a 1 that means it was a positive
+sentiment and if someone said something
+was not good that was a zero so negative
+sentiment so now the next data frame
+that we're going to see is going to
+represent the prediction from our ml net
+code so let's scroll down and see you
+and we can see here we're dealing with
+the same reviews but now this is the
+predicted sentiment so you can see here
+that it looks like it was pretty
+accurate we can see when someone loved
+something if his predicted true so
+positive and then again when something
+was not good it was false
+so negative sentiment so you can see
+here that we were successfully able to
+combine dotnet fair pachi spark and ml
+dotnet let's go back here it's now that
+we've done that demo we have one final
+quick scenario to go through and this is
+with structured streaming or real time
+data analysis so in structured streaming
+or real time analysis we're working with
+live data so data that's maybe coming in
+from a sensor so like an IOT factory
+sensor or a phone or a network and
+structured streaming uses the principle
+of micro batch processing so essentially
+it takes our continuous stream of data
+and divides it into smaller little
+chunks so maybe every five seconds
+represents a new batch and then it can
+perform functionality on each of those
+smaller batches and then appended the
+result essentially to a table that
+already exists so then if let's say
+another five seconds passes well have
+another batch perform functionality on
+it and append it another batch should
+perform some functionality on it append
+it and so on and so forth as our stream
+still exists so in the quick demo that
+I'll show you here we can actually do
+live or real-time sentiment analysis so
+still using don''t for pachi spoke with
+ml dotnet now we can see that if I type
+a string into a console let's say we can
+determine in real time if it represents
+a positive or a negative sentiment so
+let's go ahead and take a quick look at
+that demo okay so I still have the
+Microsoft ml at Microsoft spark new get
+packages installed I start off creating
+a spark session but instead of reading
+into a data frame from a CSV or stored
+data now I'm doing something where I'm
+reading a stream and I have to set up
+the host and port information my stream
+is coming from and then I still use ml
+net with a UDF and I can still call the
+ml dotnet code in a very similar way and
+then finally as on
+like working with the data and
+displaying it I used something called a
+streaming query and I can go ahead and
+call write stream and determine that I
+want to write my stream to the console
+and instead of saying spark stop we can
+do query dot await termination so I go
+over here I can see here that I've set
+up a quick netcat terminal so just an
+easy way to read to or write from a
+network connection and for instance I
+could write something like I love spark
+and then in my other tab over here I've
+already built and run my dotnet for
+Apache spark app if I scroll down you
+can see that I've been working with my
+different batches here so every time I
+hit enter is considered a new batch and
+it determines in real time if my line
+was a positive or negative sentiment so
+you can see when I said I love spark it
+was considered true a positive sentiment
+so that's awesome we have real-time
+streaming working ok so a couple quick
+steps for how you can get started with
+dotnet for a Pachi spark we have if you
+go to the dotnet website so do T net
+slash spark you can go ahead and read
+even more about dotnet fair patchy spark
+you can go through a really neat getting
+started tutorial we have for you can get
+up and running with dotnet spark on your
+local machine in 10 minutes or less and
+you can also visit our Docs and see some
+other learning resources we have you can
+also visit our github so github.com
+slash dotnet slash spark so you can go
+ahead and view some of the documentation
+you can see how things are implemented
+you can participate in the open source
+community it with spark so thank you so
+much and now I guess we'll turn to
+questions
+fantastic so that was an amazing
+presentation Brigid now help me out
+because I am a little dense spark isn't
+like a database is it is it where the
+data is stored or is it a medium for
+transferring data over help me outs to
+set the context from these questions
+sure yeah so spark isn't a database so
+it's not where the data is stored so
+you'll already have your data stored in
+something like somewhere in Azure so
+maybe and Azure data leak storage or in
+a blob or something like that
+so spark is actually kind of like the
+framework or the tools that we can use
+to start analyzing that data so it
+allows us to read it in and to process
+it more quickly and to make different
+calls to it so that we can gain
+meaningful insights rather amazing so
+it's like that it's like the pipe then
+that takes data from any scenario and
+then moves it over is that right yeah
+that's a good way to think of it that's
+good so you mentioned a lot of stuff
+with with.net we didn't have dotnet isms
+for spark when did this start and if you
+were to point because you pointed out a
+tons of cool things but if you were to
+tell people one thing look at this first
+and see why it's powerful what would you
+suggest to them okay so we started this
+project we first started a towards the
+beginning of this year so I would say
+about in April even though we did have a
+predecessor to this project a few years
+ago but yeah I would say as of this
+year's when we actually started having
+like these awesome dotnet bindings to
+Apache spark and for something really
+awesome I would say if you check out
+that landing page though d-o-t net slash
+spark you can see really that you can
+really start processing terabytes and
+petabytes of data at a manageable scale
+so you don't have to spend like days and
+weeks and months and years processing
+all this data you can actually start
+gaining insights from it in like a
+matter of hours that's pretty cool
+does dotnet for Apache spark support
+support using f-sharp instead of c-sharp
+yes I believe it does so dotnet
+ecosystem in general fantastic well this
+is amazing and thank you so much
+Bridgette now here's a couple of things
+though before we go I want to remind
+everybody about I'm not finding it but
+the the actual tech challenges that are
+available let me get my might handing
+notes out here because they're they're
+pretty good and if you have more
+questions for Bridgette make sure you
+get them in make sure you participate in
+the technical treasure hunt it's
+happening all day
+tons of technical problems that you can
+solve maybe even do a little bit of code
+if you solve all of them you will get a
+ton of wonderful prizes it's pretty cool
+to go to dotnet comp front slash party
+that's what we're gonna if you go to
+Dinah comp front slash party sorry
+they're talking in my ear you'll be able
+to see all the cool things and there's a
+ton of things happening today make sure
+you go to the Apache spark coolness for
+net which i think is pretty cool we're
+gonna
+go to a commercial break here in a
+second but and after that we're gonna
+have more servers less with a Jeff
+Holland is going to talk about durable
+functions 2.0 server less actors
+orchestrations and a stateful functions

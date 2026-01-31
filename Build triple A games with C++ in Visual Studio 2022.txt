@@ -1,0 +1,289 @@
+[MUSIC]
+>> Hi, folks. My name is David Li.
+I am the C++ Game Dev
+PM at Visual Studio.
+I'm here to talk to you about
+some new and exciting changes
+in Visual Studio 2022.
+Recently, our CEO, Satya Nadella,
+has said, as a company,
+Microsoft's all-in on gaming.
+At Visual Studio, we're
+all-in on gaming too.
+We have been creating new
+and exciting experiences
+for Visual Studio based
+on your feedback.
+Whether your Unreal developer,
+an indie game developer,
+whether you make your game on
+our proprietary engine or
+work on AAA game studio,
+let me show you why VS
+2022 is the IDE for you.
+First, let me get started
+with the demo on Hot Reload.
+Now for game developers,
+this might sound familiar to you.
+Have you ever spend
+30 minutes playing
+your game just to get
+to a specific state?
+Spend all those minutes and hours
+getting to that state just to find
+out your bug fix didn't work?
+Or if you're a technical artist.
+If you repeatedly have to restart
+a game just to see your
+[inaudible] iterations,
+Hot Reload is a feature for you.
+Let me show you how
+Hot Reload works.
+Imagine you're building an open
+source, cross-platform
+[inaudible] project
+like Bitfighter here.
+In Bitfighter, you have a ship
+that has a red round shield.
+You can activate the shield
+with a press of a button.
+Now what if you want to
+make the shield a little
+bit more exciting?
+Let's do that in Visual Studio.
+Here, instead of the color red,
+I'm going to make it cyan,
+and instead of a circle,
+I'm going to draw a star.
+Normally, without Hot Reload,
+you will have to
+close down the game,
+rebuild it, and click through
+the menus just to get
+to the same state.
+With Hot Reload, all you have to
+do is to press the
+"Hot Reload" button.
+It takes a few seconds
+for Hot Reload to run.
+Let's see here, a giant
+10-point blue star.
+Isn't that crazy? Oh, okay.
+Maybe that's a little
+bit too exciting.
+Let's change it back to something
+a little bit more reasonable.
+Instead of the star,
+I'm going to go back to the circle.
+But this time, instead of red,
+I'm going to change
+the color to gold.
+Instead of pressing the
+"Hot Reload" button,
+you can also activate
+Hot Reload on File Save.
+To enable that,
+go to the dropdown next
+to the Hot Reload button.
+Click "Hot Reload on File Save".
+Once that is enabled,
+every time you save the game
+through Ctrl +S or the Save button,
+the change are
+automatically applied.
+Here, a gold round shield.
+Hot Reload supports any changes that
+are currently supported
+by Edit and Continue,
+and is not limited to
+only game developers.
+With Hot Reload,
+you no longer have to
+close your application,
+recompile it, get the application
+back to the same state,
+only to find out your
+fix doesn't work.
+Instead of spending minutes and
+hours getting to the same
+state when debugging,
+take those precious minutes
+back with Hot Reload for C++.
+Next, let me show you a demo with
+Intellicode for Unreal Engine.
+We build Intellicode for
+Unreal Engine by parsing
+many Unreal Engine databases
+and making an AI model.
+When enabled, Intellicode
+for Unreal Engine
+shows up in Unreal projects.
+For established developers,
+Intellicode saves time by suggesting
+the most common suggestions and
+sorting them to the top
+of the member list.
+For new developers,
+Intellicode suggests the right
+APIs in the right place.
+For Teams, you can train custom
+team models over your codebase,
+which makes the effects of
+Intellicode even more powerful,
+but providing suggestions on
+internal types as well as
+more specified suggestions based
+on your Team's coding patterns.
+This also makes it easier
+to onboard new developers
+as it help suggest things
+the Team is using elsewhere.
+Here, let me demonstrate how
+Intellicode works with member access.
+When you press a "Dot",
+Intellicode suggestions
+will show up with a star.
+The star denotes that this
+suggestion is from Intellicode.
+Similar down here, when you
+press the "Dot" operator,
+you'll get another
+Intellicode base suggestion.
+Down below, the Arrow operator
+also brings up a list of
+Intellicode suggested suggestions
+denoted by the stars.
+In this case, the top
+suggestion is GetController.
+With Intellicode for Unreal Engine,
+power up your experience of
+developing Unreal Engine
+games in Visual Studio.
+We have been working closely
+with Epic Games to make
+a great experience of developing
+Unreal Engine games
+in Visual Studio.
+Haven't tried the Unreal Engine?
+You can check it out under
+the game development with
+C++ workload in the
+Visual Studio Installer.
+One of the things that we have
+been working with Epic Games
+is increasing the
+responsiveness of IntelliSense.
+IntelliSense for UE projects
+is now significantly more
+responsive due to utilizing PCH
+when generating VS project files.
+Look for this new updates
+in a new version of
+Unreal Engine 4.27 coming soon.
+Similarly, Intellicode
+for Unreal Engine
+5 is coming in an upcoming release.
+What do you want as an Unreal
+Engine developer in Visual Studio?
+We want to know. Connect
+with us on Twitter,
+and leave us your feedback.
+Aside from making Unreal Engine
+IntelliSense improvements,
+we have also been making
+core performance in
+C++ IntelliSense improvements
+in Visual Studio 2022.
+We have made a test
+based on Unreal Engine
+4.27, a large project, and
+benchmarked it with VS2019
+against the VS2022.
+The timings we're taking
+when VS opens a project for
+the first time and subsequent
+times average over three runs.
+Visual Studio 2022 feels
+faster when getting to code.
+You can get to code
+quicker in Visual Studio
+2022 and open the
+file twice as fast.
+You can also wait less time
+for IntelliSense ready.
+Get the syntactic
+highlighting and code changes
+to appear in member
+list twice as fast.
+With the new improved
+IntelliSense performance
+in Visual Studio 2022,
+you can save seconds each
+time you open a file.
+We hear pain about IntelliSense
+performance with game developers.
+Now these are only few
+seconds each action.
+But imagine, how many times are
+you opening a file every day?
+How many times are you
+waiting for IntelliSense to
+open every time you open a new file?
+These are only a few seconds
+but add up over time.
+Especially for bigger
+projects, this will scale.
+These are small numbers,
+but they add up.
+We want more feedback because we
+aren't done making improvements.
+Install Visual Studio 2022
+side-by-side with VS2019.
+We want to make it easy.
+VS2022 is binary compatible with
+previous C++ two sets
+in 2019 or older.
+If you are coming from VS2019,
+you may be familiar with our
+built throughput improvements.
+Let me briefly tell you what you'll
+gain from upgrading
+to the latest tools.
+Using the latest tools,
+the Gears 5 team at The
+Coalition saw a 2.6.
+seven times faster
+end-to-end build time and
+2.8 faster link time
+compared to VS2017.
+Similarly, at Turn 10 Studios,
+they saw a five times improvement
+and link times for
+Forza Motorsports.
+For Forza Horizon 4,
+the link times are now 18 times
+faster than in Visual Studio 2017.
+The decrease in build time
+enabled Playground Games to
+switch from /DEBUG:FASTLINK
+to /DEBUG:FULL.
+You can enjoy all the benefits of
+the latest toolsets
+by upgrading VS2022.
+When you load your projects,
+you'll be prompted to upgrade,
+but you don't have to.
+You can still use the
+old compilers and
+the older toolsets and
+they will still work.
+You can enjoy the IDE experience
+of Visual Studio 2022 that way.
+Third-party libraries
+that will also work.
+Don't have a package manager?
+Try vcpkg. Download
+Visual Studio 2022 today,
+and try out all the new
+and exciting features
+we have in store for you.

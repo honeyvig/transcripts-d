@@ -1,0 +1,776 @@
+foreign
+and welcome back to another video by
+simply learn this is anubhub and in this
+video we will create a real-time chat
+application using websocket and socket
+IO Library which is the powerful library
+of nodes we will also use HTML CSS and
+JavaScript so let's begin but before
+that if you haven't subscribed to our
+Channel already make sure to hit the
+Subscribe button and press the Bell icon
+so you will get all the updates from
+Simply learn so the expert at anything
+was once a beginner so to become an
+expert it is very important to have a
+solid foundation to achieve this
+learning new things and implementing
+them is the only way so now I have got
+you an amazing program by simply learn
+if you want to become a software
+developer consider this Kel Tech
+postgraduate program in full stack web
+development by simply learned and master
+those necessary skills check out the
+link in the description for more details
+you can also call on the numbers that
+are given below to know more about the
+program and they will guide you so do
+check it out now let's jump right into
+our video first we'll create a program
+so for that I'll open my visual studio
+code
+and from here I'll go to the terminal so
+I'll press Ctrl back text for the
+terminal
+and inside this I'll create
+a directory or my folder name
+so for that I'll write mktir and let's
+name it as well it's chat box
+okay so this folder has been created so
+I'll go to that folder
+chat box okay
+now what I'll do is I'll just write
+npm
+in it
+okay in it slash y
+so from here until it gets installed so
+okay so let's open our folder and open
+the folder it must be inside the
+C drive users and here I'll find my chat
+box
+so this one is the chat box select
+folder and then open the folder for you
+so as you can see one Json file has been
+created with the help of this terminal
+that we wrote in per minute okay
+so let's move ahead
+let's create a folder inside this chat
+box and name it as public okay
+inside this public I'll create one
+Javascript file let's name it as
+client.js
+and then one CSS file let's name it as
+style dot CSS okay now in my root
+directory
+I'll create one file and name it as
+index dot HTML okay
+so this is how the structure is looking
+right now okay
+so here I'll write
+the basic HTML code
+okay which is also known as Boiler code
+here I'll write
+chat box
+okay let's save it and we'll also add
+the
+CSS for that I'll write
+link
+print rail
+Style
+sheet
+and then
+inside this I'll show him the directory
+so inside the public folder my file is
+this one okay
+yeah so let's close this one and inside
+the body tag
+I'll give
+the JavaScript script
+source
+inside the source will give the
+directory for the JavaScript
+so
+yeah
+it's looking all good
+now we'll install npm for that I will
+write npm
+install
+we can also write I
+and then Express
+enter and let's wait a couple of seconds
+until it gets installed okay it's
+installed but I'll tell you what node.js
+is so naughtiest is an open source cross
+platform server side JavaScript runtime
+environment that allows developer to
+build scalable Network applications
+it uses an event-driven non-blocking
+input output model which makes it highly
+efficient and perfect for real-time data
+intensive applications
+okay so I'll tell you more about socket
+IO now socket IO is a library for
+node.js that enables real-time
+bi-directional communication between
+client and server over a single
+websocket connection
+it allows developer to create real-time
+chat applications such as chat systems
+online games and collaborative editing
+tools that can handle a large number of
+simultaneous connections
+socket i o abstracts away the
+underlining websocket implementation and
+provides a simple API that allows
+developer to work with events when a
+client connects to a server using socket
+i o it can listen to and emit events
+which are essentially messages that can
+contain any type of data the server can
+also listen and emit events enabling
+bi-directional communication between the
+client and server okay
+so let's now
+install node mode in our system
+for that I'll write npm
+so until it gets installed I'll tell you
+about the node mode is a package which
+helps us to not again and again go to
+terminal and then run our application
+when you install node mode in our system
+it will automatically regenerate the
+output for us on the server okay we
+don't have to whenever we save the file
+we'll just reload the page
+let's move ahead now
+now
+what we'll do is we'll create a file in
+our root directory and let's name it as
+server dot Js
+okay inside the server.js you will
+connect
+all the packages okay so I'll write
+const
+Express
+require
+I'll write Express
+so it can fetch the express
+app
+press function
+and then
+create
+give it a port
+so what this line will do is
+so it will when we will deploy our
+project
+it will take us directly to the portal
+okay
+three thousand now we'll take another
+module which is HTTP for that will again
+write const
+http
+require
+let's check the spelling also because I
+make so many mistakes in spelling
+okay
+so let's write here create server on app
+okay we also have to call it so for that
+we will write a function here
+http
+Dot listen
+we'll give it a port that we just
+created okay
+again I will give the function with a
+fat row
+and then I'll tell him to console
+log
+and listen
+it's a battery guys okay
+listening
+together
+but we can also report
+and then dollar sign remember guys
+dollar sign and inside this we'll write
+Port so so that it can fetch the data
+inside this port
+okay
+now let's save it
+and
+let's create a route also now only
+app dot get request will take and then
+request
+and response okay and response
+and we'll also write a texture so we can
+check
+whether it's working or not so we'll
+send a response
+and set this I'll write
+hello
+save it
+let's save the html2
+that's fine let's now
+little thing the test and let's write a
+script here
+development server
+and inside this still inside
+[Music]
+right server
+yeah everything looks good now
+okay
+also after the license
+will give it some
+dependencies
+it's installed but I don't know why it's
+not showing here
+so let's write here Express
+it was installed
+yeah
+the spelling is correct
+yeah
+okay now we'll install another one
+there's
+dependencies
+and inside that I will write
+node on
+okay
+and after that I'm like
+which one I want to use that's where I
+want to use
+let's save it
+and inside this I'll write let's
+currently this terminal and create new
+one
+let's hear it
+npm run indep
+as it is showing
+listening on port number 3000 okay
+that we have created on the
+server.js right
+now let's go to our
+enter or let's see up
+here I'll write
+local numbers three thousand
+let's refresh it it's not
+you can also
+okay
+or three thousand
+and it's not working on the localhost so
+what we do is we check for the issue
+I've removed this response send line and
+pasted this one in which I am sending a
+file this HTML file in the directory
+name plus
+index.html so I'll go to HTML and here
+in the body I'll write
+H1 tag
+inside
+I'll let hello from
+here
+let's save it and let's check
+okay yeah it is clearly showing us hello
+from Simply learn
+s five
+probably
+so let's go
+and here everything looks good but now
+we don't need this line
+we have to create a full-fledged UI
+first for this for that I'll write
+section
+and then give it a glass of chat
+section
+here
+inside this
+I'm gonna write another div class
+that's right
+code
+inside this code I'm gonna write
+add a image source
+in the source of the image I'll write in
+a while
+altered text we can
+labeled as black also okay
+so in this one I'll write an H1
+chat
+okay so chat box here
+so let me add one picture in this public
+folder I'll be back
+okay so I have added one chat dot PNG
+file so let me add it in the image
+source for that it's inside the public
+and
+the file name is
+chat.png let's save it
+so this is how it's looking right now
+but we'll change it and make it a cool
+UI and then we'll integrate the chat
+application okay
+so let's create a
+Dev class after this
+we will create a div
+like the chart section now we'll create
+a message section
+for that I'll create message
+section
+then
+we can also write
+message area
+the section should be
+one section
+for the cover I'm more part of the skin
+so
+now we'll create another div inside this
+let's give it a meme as
+last name as
+will come in
+messages
+as you can see on the WhatsApp Facebook
+or any uh chatting application they have
+two sites in one side in the right side
+you will see your messages are going and
+on the left side other person or people
+messages are coming so this is how
+will create uh two sides in which one is
+incoming messages which will come from
+your friends family members or anyone or
+in one side you will send them a message
+it will create in a while for outgoing
+messages okay
+so inside this for now we'll write H4
+okay
+write a junk data for now
+okay
+I'll copy this incoming there and paste
+it here
+and let's change the name of incoming to
+out
+so here I'm meeting the name to
+okay let's save this one
+yeah
+so
+let's open our page and see whether it's
+working yeah
+completely okay fine
+okay now what we'll do is after this
+outgoing we'll create another there
+okay
+further thank you stevia
+so I'll write text India
+inside this let's take a name as
+or ID
+and class are very different ID is what
+which will use only once we cannot use
+it again again the class we create one
+class and we want to use it anywhere
+else we can use it right and ID can't be
+changed but class we can change
+so I'll write I'll read text area
+or calls let's give it a 30
+row also
+columns rows
+same thing
+okay let's give it a 10
+them let's close this section
+so create one section with
+this is the section closing tag
+it's not closing anywhere yeah
+let's close this section yes
+okay and let's give it a placeholder
+also for this text so placeholder is
+worthy that you will see inside a text
+box okay
+I'll write
+write something
+let's save it
+check yeah
+everything is then yeah and solving
+completely fine
+now
+let's move ahead
+two styles
+so to save time I'll copy paste this CSS
+file from my
+file and let's wait a couple of seconds
+so now I have copied my CSS file and
+pasted it so this is the font size that
+I'm copying from Google so this star is
+indicated that this pending and all are
+for the whole bit and then I'm giving
+some legs walk justify content and all
+to Center in the body section after that
+the chart section comes up I'm giving it
+a 100 100 800 pixels of it match width
+for 90 this is for what uh to make this
+app as a responsive so whenever I'll
+click on the
+the what uh phone it will open the
+screen as a phone
+let's move ahead see this is what uh
+that upper one with logo and chat box
+and then message area and all this is
+very simple okay
+so now let's go back to our index and
+save it
+and let's check it
+so this is how our application is
+looking right now okay
+the image is very big we can easily
+decrease the size of this image by just
+writing
+hide
+I will write 14.
+Let's see we didn't check yeah
+so this is how our application is
+looking right now isn't it looking
+awesome yeah yeah we'll add the
+functionalities with the help of node.js
+don't worry about that but this is how
+it's looking right now
+you can also add some more text messages
+now what we'll do is
+we will add some more messages here
+so for that let's add
+copy
+this
+okay
+this collage component
+paste it sometimes
+okay
+and as you can see there is one scroller
+coming up
+right
+yeah
+they have application is looking right
+now
+great
+okay so the scroller is here now
+now what we'll do is
+we'll move ahead
+now everything is looking perfect now
+what will we do is we'll install socket
+IO
+terminal and I'll press Ctrl C
+it will tell me whether you want to
+close it or not so here
+I'll add a command nbm install
+kit
+dot IO and let's press enter and wait
+couple of seconds until it install the
+powerful socket IO for us so it's done
+now let's write here npm
+run Dev
+okay
+now
+let's go to the server file
+and here
+I will comment first and write socket
+don't worry about the code I'll give you
+the code in the description box
+okay
+so
+let's import this first const IO
+require
+socket IO
+but I would should come under
+and this is okay
+now
+in this we have to pass a server that
+which server that we need okay
+so let's
+ride
+http
+no
+no let's give a connection between them
+connection
+and after that
+socket
+and connect the connection with the
+socket
+Arrow function
+then let's here we'll write console
+DOT log
+and here we'll write
+connected
+yeah
+so
+let's
+save it
+now the socket i o setup with server.js
+is done
+so next step would be to
+get the
+mixing here so here we'll write script
+Dot
+okay inside this script I'll give it a
+source of socket
+dot IO
+slash
+socket
+dot IO dot Js
+okay
+so this client Library will load here
+so let's write here in the client load
+const
+socket
+this i o is coming from the
+client Library
+and let's save it
+and let's here
+refresh
+okay
+yeah it's working completely fine
+let's move ahead
+okay
+yes
+now we're going to start creating this
+amazing feature now to prompt okay so
+whenever I any user will come to this
+website it will the first thing that
+will pop up here is a prompt message
+which will tell the user you will tell
+me about your name then he or she will
+tell the name and then that name will be
+fixed for that one user
+so let's see how to create that okay so
+inside the client
+will do the
+knee
+so let's give it a name
+and then let's use two while loop
+here I'll write while
+right
+and here I'll write
+prompt
+and let's first save this prompt in a
+name
+okay
+so this is how
+please enter
+your name
+Okay so until in the while
+we will write
+name
+so it's
+checking the line here okay
+fine
+yeah let's save it
+so until the user gives its name
+then only it will work
+okay
+here we'll write
+[Music]
+and then we'll take the text area
+whenever we write something we want to
+send the message
+okay for that we are writing this part
+when we selected inside that
+will write
+that's big Stadium
+okay
+now after this do value
+I'll just write the text area
+add event listener
+we will pass a key here we will name it
+as key up
+and then one element
+okay
+and then we'll check
+whether we have entered the press the
+entered key or not okay
+this is what enter dot key
+then only
+enter
+okay
+so we will send us send
+message
+things like that e dot Target dot value
+right
+now
+will create a function inside this we'll
+see how to send the message the logic
+will be inside this this function okay
+let's create a new variable
+or message and then
+comma message
+okay inside this message I'm gonna write
+message this medium is I'm confused
+about let me just check
+now
+we will add I will see you what's the
+problem in it but let's check it after
+some time
+so we'll write message
+a pen message inside that I'll write a
+message
+and then the outgoing string
+okay
+now we'll create a function for this
+append
+okay first we'll leave to
+check the append message
+okay so what we're doing here is
+we'll create a function
+to append message
+and type that I'm gonna write the
+message and then the type of the message
+like outgoing one incoming
+right
+and inside that I'm gonna write
+now before writing the function we'll
+import the message area file for that we
+will go to this here
+and here I'm gonna add one another
+okay
+it's right here lead
+message
+document
+dot query selector
+and inside that query query the selector
+will write
+the message
+area
+okay
+so coming back to the mean function that
+you were writing so here we'll write
+lead
+ER okay
+I'll write
+document
+document
+it's not document type let's write a
+document only document
+create event
+create element inside that element we
+are going to call third depth
+string
+okay
+the last name
+here we are writing the type only
+because here we can know it's an
+incoming or outgoing message so we are
+just writing the type it will again
+editor the mean there's
+but
+so let's
+add the class limit
+test will add and inside that will add
+class name
+we will add
+message
+read
+now we will tell him to mark
+and then
+Markham
+okay
+so what we'll do is
+we will try it
+it's for
+inside that we will write
+because let's take this one down and
+then here right
+H4
+inside there is we'll call the message
+user right
+so for that we'll write
+message Dot
+user
+right
+and after that
+I'll create one paragraph
+inside that when whatever message the
+user will write
+that will come inside this message
+Dot
+okay
+let's close this one also
+and let's save it
+okay
+now what we'll be doing here is let's
+write mainly
+dot enter HTML equals to
+drop
+right
+now we have to appendages right
+message area dot a print child
+that we just created with the help of
+JavaScript
+right
+now
+let's save it
+now it will do where is
+and now let's go back to the HTML file
+and now
+we want this
+now let's delete the messages because
+from now this message is Will
+directly
+import inside this div right
+so let's save it
+and check
+okay
+so I think it's not working well
+let's open the inspect
+issue with any okay
+it's giving me an error let's find out
+what's the error if I need to resolve
+this over with the status or one of them
+okay
+something to preview in the scripts this
+socket.io.js file is not there
+let's find out
+this solid red script
+and find out there
+okay we can change that one but don't
+worry
+so this is how our UI is looking
+isn't it awesome now I'll type a message
+let's see
+how are you
+okay now I'm saying I'm gonna send it
+now as you can see it's typing correctly
+this is how our chat GPT works now I'll
+add one text from this number from that
+side from my code okay so what I'll do
+here is I'll copy this incoming message
+and inside this I'm gonna write
+paste here I'll write
+hello
+let's check yeah it's coming in the that
+side so we'll change the
+paste it here
+right so here I'll write
+I'm good
+good
+how are you
+okay let's save it and stick yeah it's
+completely working fine tell me I'm
+gonna write now okay I'm good how are
+you
+please
+do
+simply learn
+to
+okay
+now I'll send it
+it's saying please subscribe to Simply
+learn YouTube channel
+right isn't it looking amazing so this
+is how we created our chat box using
+socket IO okay
+so
+with this we have D the end of this
+video
+so we hope you had a lot to learn and if
+you have any suggestions or doubt please
+write them down in the comment section
+below thank you so much for tuning in
+today and happy learning and the source
+code will be in the description box
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

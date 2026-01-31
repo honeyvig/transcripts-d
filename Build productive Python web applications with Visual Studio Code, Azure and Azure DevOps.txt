@@ -1,0 +1,246 @@
+hey everyone welcome to Microsoft
+Connect my name is Nina Zakharchenko I'm
+a senior cloud developer advocate at
+Microsoft focusing on Python and today
+I'm going to show you how to build
+productive Python web applications with
+Visual Studio code Azure and as your
+DevOps let's get started
+I've set up a repository that has all
+the code and the steps that you need to
+follow along just grab it from the URL
+get do slash connect appear I'm I've
+already set up my local development
+environment I've cloned this repository
+I've also set up a virtual environment
+by running Python 3 - M the end and then
+activating that virtual environment by
+running source and have been activate if
+I do a pip freeze we'll see that I've
+already installed all the packages from
+requirements txt in this environment
+let's take a look at this project in
+Visual Studio code code has an amazing
+and easy shortcut that lets us open up a
+whole workspace at once all we need to
+do is type code dot in the directory
+we'll see I have all my files here if I
+look here at the bottom I'll notice
+something interesting
+yes code has automatically picked up my
+Python virtual environment I didn't have
+to do anything
+to get this app running locally you're
+gonna have to set up a few secrets the
+guidelines for that live in the em-dash
+sample file here you'll see everything
+that you need to setup in order to get
+this pop working in production I've
+already set up a Postgres database I've
+run my migrations on it
+I've loaded in a little bit of fixture
+data let's make sure that our app runs
+locally to do that
+hit ctrl and backtick to open up the
+python terminal we'll see that V s code
+automatically activates the virtual
+environment for us we don't have to do
+anything to check out our app locally
+we'll need to run Python manage py run
+server to bring up the django web server
+and that's kicking off now let's take a
+look
+Oh we'll see we have a local Twitter
+application
+have our tweets we can even say a new
+tweet if we'd like
+hello connect
+everything is working as expected now if
+we run into issues how do we debug our
+jingo app going back to vs code
+let's kill our development server for
+now let's take a look and see what our
+request looks like by setting a
+breakpoint
+tap to the left of the line number two
+create a red breakpoint dot in the
+gutter next open the debug panel we'll
+see that we have no configurations here
+all we need to do is click add
+configuration and yes code knows that we
+have a Python project open it creates a
+new Python configuration for us super
+easy if we want to debug our Django what
+we need to do now is select the Python
+Django debug configuration and then hit
+this green button right here
+as our debugger starts we'll see that
+the bottom bar has turned orange instead
+of blue now if we hit our URL again
+we'll see that the debugger has stopped
+at the breakpoint we have a few options
+here we can continue we can step over we
+can step into or step out but I want to
+show you one of my favorite features and
+that's the debug console if we click
+here to the left of the terminal
+we'll see this little window pop open
+and I have a fully featured debug
+environment here I have autocomplete if
+I wanted to take a look at the request I
+can just type that in there I can also
+interactively work with this object I
+can click on the arrow here I can take a
+look at the body any of the content
+parameters examine anything that I want
+to about the request I can also take a
+look at our user Bob and check out any
+attributes about him I'm going to
+continue here that's great but what
+about debugging Django templates our
+templates can get really complex and
+hard to navigate
+thankfully the s code provides that too
+let's open up our index.html
+we'll see some template code here all I
+have to do is click to the left of that
+and
+that our debugger breakpoint triggered
+here I can look at the user in the debug
+console like I did before I can also
+setup watched variables here so every
+time a breakpoint stops these watched
+variables will populate I don't have to
+do anything I always want to see what
+user is coming up on my index view I can
+set up the user ID or the user in the
+watch here
+super-easy it makes debugging Python web
+applications a complete breeze now we've
+got everything working locally what if
+we want to deploy our application to the
+cloud well thankfully yes code has an
+answer for that too check out the
+extensions tab here on the left hand
+side in order to kick this off you'll
+need to install a handful of them the
+Python extension of course along with as
+your account to sign into your azor
+account and as your app service to do
+the deployment once you have these
+extensions installed you'll see on the
+left-hand side here a new icon that as
+your icon if you click into that you'll
+see your app service subscription all I
+need to do to set up a new deploy is hit
+this plus button right here I need to
+enter a globally unique name
+and I'm going to select an operating
+system Linux along with the Python 3 7
+runtime
+see in the corner here that the web app
+is being created if an resource group
+isn't found it'll create one along with
+an app service plan let's just give this
+a few minutes to run here I have a
+pre-existing deployment
+what did I need to do to get this going
+I needed to configure our application
+settings so our production environment
+needs to know how to connect to this
+database
+you
+you can set these application settings
+straight from vs code here I click here
+you'll see all the ones that I've set
+you can even right click on an
+individual setting and hit edit rename
+delete it or you can do it from the
+portal to easily access the portal
+component of this application all we
+need to do is right click and hit open
+in portal and that will pop open the
+portal for us and open up the specific
+app service
+if I'm once my deployment is completed
+to set up that deployment I would want
+to right-click and configure the
+deployment source I would want the
+deployment source to be local get all I
+would need to do is right click again
+and hit deploy to web app that's it just
+a few clicks and you have an application
+running let's take a look at my existing
+app
+okay right click and hit browse website
+and it will go straight to that URL for
+me here we'll see our tweet our
+application running in the cloud on as
+your website's net this is great for
+smaller applications smaller uses maybe
+you're doing a little bit of work in
+development or QA what if we wanted to
+set up a CI NCD pipeline for our
+application we can do that with Azure
+DevOps pipelines to set those up go to
+dev azure calm here I have an existing
+as your DevOps project with a few
+pipelines set up
+I have two individual pipelines one for
+my continuous integration one for my
+continuous deployment let's take a look
+at the continuous integration one if I
+edit it here we'll see that there's a
+yamo file path as your - CI - pipeline
+Dhamma that exists in or git repository
+we can take a quick look at that here
+so the siamo file describes everything
+that we need to do we're going to be
+using in a bun - image we're going to be
+using Python 37 we're going to install
+all of our requirements and then we're
+going to run our tests and make sure
+that those paths before continuing
+onwards with a deploy
+going back to our pipelines
+let's take a look at the continuous
+deployment pipeline
+this is also configured with another
+llamo file
+this one is also in the repository right
+here the deploy pipeline we're using
+Ubuntu again Python setting up our
+Python version and then setting up a few
+environment variables our deployment URL
+our deployment username and a deployment
+password we set those up in the portal
+going back to our project here opening
+it in the portal
+going to our deployment center
+and grabbing those environment variables
+from here we're going to grab does get
+clone URL and then we're also going to
+make a set of user deployment
+credentials setting a username and
+password that were then going to
+configure in our pipeline
+another important thing about this
+pipeline is the triggers here we'll see
+that we're disabling continuous
+integration for our deployment pipeline
+but we're depending on the build
+completion step of our CI task having
+set this up once I deploy to master my
+CI build kicks off if it goes
+successfully I get a deployment super
+quick easy and really understandable
+that's all I have to show you today if
+you want to learn more about Python as
+your check out this URL you can also
+take a look at the Django on visual
+studio code tutorial or take a look at
+the demo repo all the steps that you
+need are right there all laid out and I
+hope you all have an excellent connect
+it was great talking TTA
+bye

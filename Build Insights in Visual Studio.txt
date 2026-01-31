@@ -1,0 +1,113 @@
+for many people building insights has
+been instrumental in improving the
+performance of the wheels
+we have received a lot of feedback from
+the community expressing their desire to
+have this functionality integrated into
+Visual Studio
+hi I'm Nelson troncoso and today I am
+excited to announce that for 17.7
+preview to build insights will be
+available inside Visual Studio
+also we have worked closely with game
+studios whose large and complex code
+bases can greatly benefit from buildings
+to bring you this tool
+so without further Ado let me show you a
+preview
+build insights is included by default in
+the desktop development with C plus plus
+and game development with C plus plus
+workloads
+to get started we will need to collect
+performance data
+to do this under the build menu you will
+find an option to run build science on
+solution
+selected project or projects
+you can choose between performing a
+build or a rebuild I'm going to select
+build
+as soon as the bill starts visual studio
+will be in collecting performance data
+and it will automatically Stop and Save
+the data into an ETL Trace
+all right
+once the build is complete Visual Studio
+opens the trace and displays the
+collected data inside an editor window
+a very common issue that can increase
+the time it takes to compile C plus plus
+projects is the repetitive parsing of
+header files and it gets worse as the
+size of the code base increases for this
+reason we prioritize included in the
+first release to views to help you
+troubleshoot similar issues included
+files and include three the first view
+shows how many times a particular pile
+file was parsed by the compiler and the
+time it took the second the included
+displays which headers were included in
+every file
+it basically gives you the include
+hierarchy
+from here things that you can do is like
+for example go to the source code
+let me show you another file oh yes
+another thing that you can do from here
+is navigate to the other View
+as you can see I went from the header
+included by that file
+to this View
+also you can filter files by name
+all right let's start to investigate
+we can see that the repetitive parsing
+of some headers takes a significant
+portion of the build time
+uh windows.h takes 15 era locators
+there's 11 the other 10 10 and it goes
+from there
+with the most problematic headers
+a possible solution is to do a
+pre-compile header or PCH version here I
+have another project
+which is a duplicate of that one and I
+made some changes Windows Edge and you
+relocated the edge
+are included in a PCH
+something you might notice is that I
+have a C file and I have a CPP file file
+the reason is because uh Windows 8 is
+for C and C plus plus but era locator is
+just for C plus plus let's let's check
+as expected a real performance has
+improved significantly
+now it takes 37 seconds you can see the
+the percentage of parts in duration two
+uh let's go back
+uh yeah so 62 seconds almost half
+and then uh if we run
+we can also search for one of the files
+windows.h and we can see that it's no
+longer an issue just have uh half a
+second now it takes and we can see that
+it was included by the C and the C plus
+file which is expected because that's
+what we did
+um let's go to the included
+you see the PCH related files are the
+top
+one last thing we have also added a
+button you can use if you would like to
+dive deeper into your investigation
+using double UPA
+thank you to everyone who provided
+feedback we hope that this tool will
+enhance your workflow by helping you
+improve the performance of your C plus
+plus builds what you see today is only a
+glimpse of what is possible
+we're not done yet please continue to
+give us feedback as we refine this tool
+and add more capabilities thank you

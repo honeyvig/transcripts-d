@@ -1,0 +1,355 @@
+hello everyone welcome back to our
+Channel where we dive into the exciting
+world of AI and programming today we
+have a special treat for you we are
+going to learn how to create a
+customized version of Chad GPD using
+Chad GPT itself so let's get started and
+just a quick info for you if you want to
+upskill yourself master artificial
+intelligence and machine learning skills
+skills and learn your dream job or grow
+in your career then you must explore
+simply learns cohort of various Ai and
+ml programs simply learn offers various
+certification and postgraduate programs
+in collaboration with some of the
+world's leading universities like Von
+Purdue keltech I kpur and many more and
+through our courses you will gain
+knowledge and work ready expertise in
+skills like generative AI prompt
+engineering explainable AI machine
+learning algorithms and over a dozen
+others and and that's not all you also
+get the opportunity to work on multiple
+projects and learn from industry experts
+working in Top Tire product companies
+and academicians from top universities
+after completing these courses thousands
+of Learners have transitioned into an AI
+or ml role as a fresher or moved on to a
+higher paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comment and
+description box to find an AI nml
+program that fits your experience and
+areas of Interest
+and now let's get started so first let's
+understand what chat gbt is so chat gbt
+is developed by open a and it's an AI
+model that's designed to understand and
+generate humanik text it's used for a
+variety of applications from customer
+service to creative writing but did you
+know you can customize it for your
+specific needs and now let's see how so
+to start we first have to head over to
+the chat gyy website and this is the
+chat gbt website and now get to the
+explore section so here you will find
+resources and guidelines on how to
+interact with and modify chat jbt make
+sure you have an account and the
+necessary access if required that is you
+need gp4 for this that is the
+subscription model and now onto the fun
+part we can tailor chat GB to understand
+specific Jon respond in a certain tone
+or even train it on unique data sets and
+you can see the other gpts and you have
+or you must have been heard of that is
+D data analysis chat jib Classic Game
+Time The Negotiator creative writing
+coach Cosmic dream so what does these
+gpts do so Dal you just have to turn
+your imagination into imag dream you
+just have to write the text and it will
+generate that text into the images so
+this is about D and then we have data
+analysis and these are the jbts that are
+configured by the chat jbt only that
+pass configured by open so data analysis
+you just have to upload the files you
+can upload any file the data file and it
+will help you analyze and visualize your
+data so this was about the data analysis
+and similarly we have other gbts that is
+CH jbt Classic this is the latest
+version of jbt 4 with no additional
+capabilities so this will only give you
+the text answers and then we have game
+time I can quickly explain board games
+or card games to players of any age so
+in this you can just ask him like how to
+play chess and he will direct you or you
+could upload any image of the game and
+if you want to know which game is this
+you could just upload the image and it
+will tell you what image and what game
+is this and it will direct you to all
+the rules of that game and now we'll go
+back to explore and here we'll create a
+gbd so you can see that the GPD Builder
+ask us hi I will help you build a new
+GPD you can say something make a
+creative who helps generate visuals for
+new products or make a software engineer
+who helps format my code what would you
+like to make so this chat GPD Builder it
+involves tweaking the models parameters
+and training it with s simple dialogues
+or text that align with your desired
+output so let's try a simple example
+here we will customize chgb to act as a
+personal fitness assistant we'll feed it
+information about different workouts
+nutrition advice and motivational codes
+watch as I input the data and adjust the
+settings so first I want you to act as a
+personal fitness
+assistant
+so you could see that the GPT Builder
+it's updating the GPT according to a
+command that we have provided it so you
+could see that the GPT behavior is
+adjusted and you could see the preview
+here so great choice how about we name
+this GPT Fitness Bud does that sound
+good to you
+yeah it's
+great yeah it's
+good so you could see that the GPT
+Builder has named it and now he will
+also uh what I remember like yeah it's
+generating the profile picture so now it
+will generate the profile picture for
+our particular custom
+GPD so you could see that here's the
+profile picture for bit buddy what do
+you think would you like any changes to
+it so if you want to change this picture
+you can just tell him that I want these
+like settings or customizations in the
+particular picture and the chat J will
+do for you and if you want to upload
+your own picture you can do that also
+and you could see the preview here and I
+am okay with this picture so I will just
+write that it's good to go so the
+picture is okay so JB Builder has said
+great let's refine the context a bit
+more when Fitness bu provides Fitness
+advice should it focus more on beginner
+level information or should be able to C
+all levels from beginner to advance
+like we will ask him it should C A all
+that is from beginner to Advanced oh I
+forgot the spelling of bner but yeah
+bner to
+Advanced so here you can see that the
+GPT Builder is updating the custom GPT
+for us that is Fitness bud and the GPT
+Behavior has been updated now let's
+think about the style of interaction
+should Fitness bud have a friendly or
+casual tone or a more formal and
+professional demor how do we want it to
+communicate with users so we
+want a friendly and formal D we want it
+both friendly and formal
+D and here you can see that the GPT
+Builder is updating the GPD for the tone
+and you could see that the regarding the
+kind of information fitness body
+provides should it Focus solely on
+excise and workout routines or should it
+also include nutritional advice and
+General Wellness tips yeah it
+should cover all the
+tips
+and I
+will
+upload
+some
+transcript or
+PDF to update the fitness
+body
+and you can
+use that for advice okay here you could
+see that the GPT Builder is updating the
+GPT and we will upload some PDF or I
+just have one PDF and it has many
+articles or the content for the fitness
+so we will upload that and gvt Builder
+will upload that content and customize
+our fitness body according to that and
+according to that script only he will
+answer us great fitness body shaving up
+nicely next let's consider any specific
+features or capabilities you would like
+Fitness birday to have for example
+should it have like should it be able to
+create personalized worker plans or
+track progress over time what additional
+functionalities would you like to
+include yeah it should be able to that
+is like create personalized workout
+plans to create
+Bookout plans and now T
+shape the
+fitness
+ready
+and configure
+it
+finally okay so like this would be the
+most probably the last question that JP
+Builder will ask as we have concluded it
+that configure it finally so gbt Builder
+is updating the GPT so GPT Behavior
+updated and fitness body is now fully
+configured as your personal fitness
+assistant ready to create workout plan
+give nutrition advice and support your
+Wellness Journey with a friendly yet
+formal approach so here in the configure
+section you could see that the name is
+fitness body and this is the profile
+pick of the fitness body that has been
+created by the chat je only and this is
+the description and the instructions
+that is fit Fitness bu is an all
+encompassing Personal Fitness assistant
+capable of creating personalized workout
+plans tailor to each user specific
+Fitness levels and goals and this is how
+it carry
+on and these are the conversation
+starters that how can I improve my
+cardio and in the preview you can see
+these if you want to update or don't
+want these you could just cross them and
+if you want to upload some files you
+could upload and I have some data that
+is
+bodybuilding so I will upload this to
+customize my gbt more and to have a
+formal and professional tone that have
+been contented in the building do
+bodybuilding dopdf this will have the
+same tone as mine so the capabilities we
+have tick mark web browsing D image
+generation if you want to like upload
+any image and ask ask like which workout
+is this so he the fitness body will be
+able to like read the image and like
+tell you all about that workout and if
+you want to like take Mark code
+interpretor you can do that so this was
+the configuration and here we will ask
+the chat jpd that I
+have
+uploaded a
+file named bodybuilding dopdf if we just
+yeah that's bodyb building.pdf
+okay our
+message
+okay we write again that I have uploaded
+a body
+building PDF
+file uh use that
+file for Fitness bu
+and
+configure that for
+me and use the
+same
+file
+to
+answer
+the
+questions so you could see that the GP
+Builder is updating the GPT here and
+here the GPT behavior is updated and
+fitness body is now configured to use
+the information from your bodybuilding
+PDF file it can provide specialized
+advice on bodybuilding and fitness
+training based on this resource go ahead
+and try Fitness part in the playground
+to the right let me know if there are
+any other adjustments or refinements you
+would like to make so like this is the
+playground where you could just and
+while saving you could just publish it
+to only me or only people with the link
+where you could just send the link or
+the public you want all of you to just
+use your Fitness bu and you could just
+confirm it
+afterwards and here you could just ask
+uh here I will ask I want to start my
+fitness journey
+so design a workout
+plan
+for me as a
+bner okay let's
+see so you could see that our fitness
+bud has started to give us the whole
+work plan that is Week 1 to 4 that is
+the first month that is the foundation
+phase and the workout structures are
+warm up strength training cool down so
+this is all about the workout plan and
+once we have set up our model uh we are
+testing it and we can ask various
+Fitness related questions and see how it
+responds and based on the responses only
+we can further tweak the model to make
+it more accurate and helpful so this is
+how we can move more customize it and
+make it perfect or accurate and now the
+possibilities are endless for these
+customizations so we can create a chat
+GPT model for educational purposes as a
+hobbist board for business analytics and
+much more so this is how we make the
+custom GPT using chat GPT only and you
+could save it and confirm it so this is
+our fitness buddy and you could create
+your own
+on what topic or on what configuration
+you like so what's your idea for a
+custom chat JP model share it in the
+comment section below and that's how we
+can create a customized version of chat
+jpt using the tools provided by open AI
+only and if you found this video helpful
+please hit the like button and subscribe
+for more content on AI and programming
+and don't forget to hit the Bell icon to
+stay updated until next time keep coding
+and exploring the Limitless
+possibilities of AI till then stay safe
+and keep learning staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI I machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch s videos
+to nerd up and get certified click
+here

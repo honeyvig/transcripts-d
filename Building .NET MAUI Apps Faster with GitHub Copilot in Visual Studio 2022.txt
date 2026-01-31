@@ -1,0 +1,206 @@
+as a.net Maui developer building mobile
+and desktop applications I'm often
+adding a lot of new features and at the
+same time I'm also diving into a lot of
+new code bases so I want to be able to
+iterate quickly on my applications but I
+also want to be able to jump into
+existing code bases and really
+understand what the code is doing and
+that's where GitHub co-pilot and GitHub
+copilot chat can be really exciting and
+awesome to use you can only add new
+features but also learn more about how
+the code works and then spice it up with
+some new functionality so let's take a
+look
+here I am inside of my application and I
+have a typical method here that says get
+monkeys async this is going to go off to
+the internet pull down the data and then
+deserialize it and return it into my
+list I can see here that it's not doing
+any checking at all to connect and look
+at the internet so let's maybe see if
+there's a way that GitHub co-pilot could
+help me create a method to check the
+internet uh before we make this call so
+I'm just going to write a little comment
+here that says method to check for
+internet connection and when I hit enter
+here it's going to give me a full
+completion recommendation that says
+connectivity.network access if it equals
+internet now this is really cool because
+GitHub copilot has the context of my
+code we can see that this is an eye
+connectivity instance a private uh
+property somewhere in my code let's take
+a look oh sure enough here it is this is
+being directly injected into my
+Constructor right here of icon activity
+so this is nice because like I said
+GitHub co-pilot knows about my code so
+it's using that automatically here well
+let's go ahead and actually use it so I
+can now come in and say Let's uh check
+for internet connection and display a
+pop-up alert uh if no internet exists
+in there now again GitHub uh copilot
+will check that brand new method that it
+calls that is connected property there
+and then it will go ahead and display an
+alert using shell because I'm using
+shell in my application insurance office
+says error no internet connection and
+returns automatically for me so that's
+really nice GitHub copilot not only
+knows the contacts but it's adding new
+methods it's helping me write better
+code and is using everything it knows
+about my application to make sure that
+code is really great now of course I can
+edit this add more contacts maybe add in
+some different translations as well if I
+have those in my application let's see
+what else GitHub copilot and GitHub
+copilot chat can do inside my
+application
+I'm going to take a look at the main
+page here and this is a fairly complex
+page it has a refreshed view it has a
+collection view it has different item
+templates and we can see here that
+there's a tap gesture recognizer inside
+of this Frame that will navigate to a
+new page now this is a pretty complex
+data binding there's a relative source
+with an ancestor type and has a path and
+if I'm brand new to xaml and mbvm this
+might look pretty complex to me
+especially if I'm coming into a project
+for the first time this is where GitHub
+co-pilot chat can really help me out
+here I'm just going to go ahead and say
+ask copilot I'm going to say uh what
+does this relative Source
+binding do and how does it work
+so again GitHub co-pilot chat is now
+going to kick in and this is really
+great it's giving me information
+not only on what a relative Source
+binding is but what the ancestor type is
+how it's going to go find the monkey's
+view model class and then in this case
+use the go to details command which is
+found in that view model so that's
+really nice and it asked me uh if I have
+any other follow-up questions here but
+I'm interested in this command parameter
+so let's continue the conversation
+so I'm going to say how does the command
+parameter
+work
+work here
+so again GitHub co-pilot chat is going
+to go off and analyze my code and this
+is really great it's going to say that
+this command parameter is bound to the
+dot which means it's going to pass in
+the current item context in this case a
+monkey inside of this tab gesture
+recognizer so that's really really great
+so if we take a look at the running
+application over here
+we can note that I have some monkeys in
+here we can see that that's how that
+data binding is working so that monkey
+in that class but we can see that um in
+this case the the labels are not
+necessarily aligned correctly so let's
+go ahead and tap on that and take a look
+here
+while we have this vertical stack layout
+and some labels in here and I might be
+wondering how could I maybe align that
+vertically in here again let me just go
+ahead and ask GitHub co-pilot how could
+I align the content of the vertical
+stack layout so they are centered
+all right
+again GitHub copilot chat over here is
+going to analyze this code and recommend
+some brand new code for me so it has the
+exact same code but it's it's adding
+this vertical Center and a line option
+so let's go ahead and just copy that so
+I could copy the whole thing I'm just
+going to add this in here there we go
+and now let's go ahead and see a look up
+and sure enough now our labels are
+vertically aligned so that's really
+great so it's giving me that context
+that understands it more so GitHub
+co-pilot not only giving me some great
+recommendations of learning about the
+code but also how to enhance the code
+well you know if I am coming in I'm
+adding new features to this app I might
+want to go ahead and create a new page
+to navigate to the details of those
+monkeys and again this is where GitHub
+co-pilot chat and GitHub copile can
+really help me out by creating and
+giving me some some sort of templates
+here for this type of page and even the
+code behind so let's go ahead and ask
+GitHub co-pilot chat I'll say how would
+I create a net Maui xaml page for the
+details of the monkey win selected
+all right so let's see what a GitHub
+co-pilot chat has to say here so again
+it's going to analyze uh the application
+and wow just like this it gives me a
+full reference here
+that is going to go ahead and give me
+context of my large labels my medium
+labels it's going to go ahead and bind
+here to the name image location
+automatically and even give me a go back
+command which is nice now I could take
+this I could copy this into a new page
+but I could also ask it what type of
+view model code could be generated for
+the code behind here so let's go ahead
+and ask it what would a view model code
+behind look like for this new page
+all right so now GitHub copilot is kind
+of using that reference there and here
+we go it is generated the monkey detail
+view model for me and it's passing in a
+monkey it has some information about
+getting that different detail
+information back for me and it's even
+generated a command a go back command to
+navigate backwards what I do like about
+this is that it's also implemented my
+base view model up here which is really
+really cool because it knows about the
+context of my code so if I look at this
+monkey's view model again the main one
+that I was working in we can also see
+that it has the base view model there
+too so that's really really nice now
+this is great because this is giving me
+some of that inside knowledge of what my
+code looks like and giving me a good
+starting place so I can take it put it
+into my code and then start from there
+to not only have a page but also the
+code behind for it as well well that's
+how easy it is to get started using
+GitHub copilot and GitHub copilot chat
+in your.net Maui applications today I
+hope that you really enjoyed this leave
+comments below if you have any questions
+at all thanks for watching

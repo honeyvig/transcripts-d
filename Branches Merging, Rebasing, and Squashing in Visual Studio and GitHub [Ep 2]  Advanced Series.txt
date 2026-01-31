@@ -1,0 +1,55 @@
+hi everyone thanks for joining this
+session on integrating branches merging
+rebasing and squashing in visual studio
+and GitHub where we'll cover the
+different ways you can integrate changes
+from other branches using git and how
+each Works in vs and on the web in
+GitHub whether you merge or rebase a
+secondary Branch you'll end up with the
+same changes being added to your primary
+Branch the different lies in how the
+commits are connected in your git
+history
+when merging your primary Branch will
+get a new merge commit and you'll have
+the entire history of the second Branch
+preserved as a detour in your graph as
+shown in the graph here when rebasing
+every commit in your secondary Branch
+gets replayed on top of your primary
+Branch as if you made those commits on
+your primary Branch to begin with as
+shown in the graph here you can see they
+have the same commits but are connected
+differently compared with merging you
+get a cleaner history and a linear
+commit graph which is helpful for
+rolling back
+changes sometimes these actions result
+in merge conflicts which we covered in
+more detail in another
+video Once you pick your method it's
+easy to either merge into current Branch
+or rebase current Branch onto from the
+context
+menu when you complete a poll request on
+GitHub you can choose from the following
+options and your organization can
+configure which merge type it allows on
+a given
+Branch when either of these strategies
+are combined with squashing you lose the
+individual commits from the secondary
+branch and the result is a single commit
+with a new commit message this is useful
+if you want to throw away the source
+Branch completely going from a branch
+with multiple commits into a single
+commit to squash simply hold control and
+select a set of commits you'd like to
+combine into a single commit and
+rightclick and select squash
+commits
+thanks for watching
+everyone

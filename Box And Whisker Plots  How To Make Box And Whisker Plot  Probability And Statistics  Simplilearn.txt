@@ -1,0 +1,155 @@
+hello everyone
+welcome to another interesting video by
+simply learn
+as you know the graphical variation of
+data constitutes a discipline within the
+data science universe
+this practice has become an important
+milestone throughout the history in data
+analytics
+so keeping that in mind in this video we
+are going to discuss an important graph
+that is a boss in the risk of plot but
+before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update
+so let's discuss the agenda for this
+tutorial
+we'll begin this video by discussing
+what is box and whisker plot
+and some important terms involved with
+the box and whisker plot
+after this
+we'll look into the way in which you can
+construct a box and a visco plot by
+taking an example
+after this we will move on to the python
+and see how you can create a box and a
+visual plot so without further ado let's
+get started
+so what are box and whisker plot
+a box in a viscous plot is a graphical
+representation of variation in a set of
+data a histogram analysis is usually
+sufficient but a box in a list of plot
+can add more detail while also allowing
+multiple sets of data to be displayed in
+the same graph let us understand the
+terms involved here
+so the first one is the minimum value is
+the smallest value in the data set
+the q1 which is the lower quartile is
+the value below which the lower 25
+percent of the data are contained the
+median value is a middle number in a
+range of numbers the q3 which is also
+the third quartile is the value over
+which the about 25 percent of the data
+are contained
+and at last the maximum value which is
+largest value in the data set
+now that we know about what is box and
+whisker plots
+and the key terms that are required to
+construct a plot
+let's move on to an example to see how
+you can construct a plot in the
+systematic manner
+here we have a sample age of 10 students
+at a training center so the first step
+would be to arrange the data in the
+ascending order the second step is to
+find the median of the data set since
+there are even number of terms we'll
+find the average of the middle two terms
+to find the average of the data set
+so adding 20 plus 24 and dividing it by
+2 we get the average as 22 which is also
+the median of our data side
+now that we have find our median of the
+data set
+let's move on to the next step so the
+next step is to find the median of the
+lower half and the upper half
+the lower half median is 19 which is
+also the q1 of the data set and the
+upper half median is 25 which is the q3
+of the data set so our five number
+summary will look like this
+the minimum value is 15 the q1 is 19
+the median which is also the q2 is 22
+and the upper half meter is 25 and
+finally the maximum value which is 28
+now we have all the required values to
+make a box plot so let's go ahead and
+create one so to create the box plot the
+first step would be to make a number
+line to the proper scaling
+after this you just have to draw the
+whisker from q1 to the minimum and q3 to
+the maximum age value now that we have
+created the box plot let's understand
+what these value actually means
+so
+the lowest age among the students at the
+training center is 15 excluding the
+outliers
+about 25 students are under 19 years of
+age and close to 50 percent of the
+students are between 19 and 25 years of
+age nearly 75 percent of the students
+have an age less than 25 and the maximum
+age among the students is 28 extremely
+outlaws
+now that we know how to create a box
+plot let's move on to python compiler to
+see how you can create a box plot using
+a matplot and a numpy library so here i
+am on an online compiler so let's start
+by importing matplotlib and numpy
+library
+i plot as plot
+import
+numpy as
+np
+now that we have imported both the
+libraries
+let's generate some random numbers
+for that we use the function
+random
+so np dot random and will limit random
+integers
+so the first value we are going to enter
+is the lowest value our data set can
+have
+so 0 the 100 will be the maximum value
+the data set can have
+and there should be 100 terms in our
+data set
+now
+to make a box plot just use the plot
+dot box plot function
+and pass it to sequence
+make sure you spell it right
+now
+to get the graph use plot dot show now
+just run it
+you can see we have our box plot ready
+so in this way you can create the box
+plot in a python so with this we come to
+an end of this tutorial
+in conclusion you can summarize the data
+from multiple sources and display a
+result in a single graph
+which other graph and visualization
+method do you feel is useful let us know
+in the comment section below
+thank you for being here and watching
+for more videos from us until then keep
+learning and stay tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

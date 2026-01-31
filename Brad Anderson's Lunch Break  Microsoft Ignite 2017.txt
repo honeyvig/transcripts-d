@@ -1,0 +1,458 @@
+- It's lunchtime at Ignite, and this
+is Brad Anderson's lunch break.
+Ignite is one of the best tech conferences
+in the world, and while I was in town,
+I set aside a couple of hours to
+meet up with a few thousand
+of my favorite people.
+Today, my guest is pretty
+much everyone at Ignite.
+(light orchestral music)
+- Jump in, John!
+Good, how're you doing?
+What's up, what's on your mind?
+- Uh, nothing, really, I
+don't even know who you are.
+- So I'm Satya's personal assistant,
+I go get him cokes and
+coffees when he needs it.
+- Does that pay well?
+- So far so good.
+- Where are you going?
+- How many shirts have you sweat
+through already in Orlando?
+- Four.
+- Four, okay, how much can you bench?
+- Almost as much as my wife.
+- Okay, that's...
+She sounds strong.
+- She is.
+- So, we've all had those
+horror stories in SMS
+and config manager,
+what's your horror story?
+- What's my horror story...
+Okay, so we were building
+SMS 2003, we made a mistake
+in how we were using active directory,
+we took the entire company down.
+- Wow!
+- Nobody authenticate because we
+did a denial of service attack
+on EZRAC on active directory.
+- What are some of your
+top recommended books?
+What do you like?
+- Ooh, yeah, yeah.
+So first of all, I just
+finished reading Satya's book,
+I really read it.
+- I just submitted a request for
+that in my local library today.
+- It's unbelievably direct
+and it's unbelievably genuine.
+- What does your work week look like?
+How many hours are you
+actually putting in?
+- Yeah okay, I gotta tell you right now,
+my work life balance is the best
+it's ever been in my career.
+- Really?
+- Yeah!
+So first of all, I'm a early riser,
+I get up at 4.30 in the morning,
+I'm at the gym by 5.30,
+into the office at eight.
+- Right.
+- And for me, I work eight to six,
+I usually don't take lunch, I leave at six
+because I think it's important
+to have dinner with my family.
+- Moving in heavily into EMS and I've seen
+the new 365 spaces and one
+of the things we've noticed
+is that obviously, you've
+got so many moving parts now
+with intune and mam and the
+other security elements
+and you've got so many
+different product stats,
+just trying to understand Microsoft,
+where that trying to pull that together.
+- Yeah, next to what are we doing.
+- Yeah.
+- So, with Microsoft 365 now,
+we literally have a monthly steering
+committee where there is
+about six or seven of the VPs
+who are in charge of driving in 365 across
+all the engineering teams,
+so all of those pieces
+we look at monthly and
+then we go and drive
+that across Windows, EMS and Office 365
+but we're treating it like a product.
+- Oh, that's a encouraging and fantastic
+from our point of view, because I think
+the great solution is you just
+need to see them across the.
+- I think we've made great progress,
+but there's more work to do.
+- The Microsoft tips of day
+is night and day compared to
+- Oh, I'm so glad you said that.
+- Yesterday, so it looks wrong.
+I mean, I'm sure it'll be night and day
+for tomorrow but I mean it's a nice piece
+to work with whereas previously,
+it was always a necessary evil
+without that sounding too harsh.
+- No, no, no!
+But now, the company's different.
+- The support we're getting from you guys
+and have had this year has been fantastic
+and we really do appreciate.
+- Lightning round?
+- Lightning, first
+question, tea or coffee?
+- Diet coke.
+- Diet coke.
+What was the last movie you watched?
+- Hot Rod for the 37th time.
+So I think with onedrive, I think
+one of the things you can
+talk with the customers,
+the decision makers is,
+the new capabilities
+that we have where you can actually like,
+go back to a last known good, it actually
+protects you from ransomware.
+So go talk about the fact that
+if your files are in
+one drive for business,
+you're actually protected
+from the ransomware.
+- Yup.
+- That's your drive,
+onedrive for business.
+- It's amazing how often
+people still seem to be,
+uninformed at how secure it is
+and they still want to use
+their own premises tools.
+- Who has a better car?
+You or your wife?
+- My wife, yeah, she drives the Tesla.
+When I'm good, she lets me
+drive it on the weekends.
+- Can you give us a ride
+to the Hilton for 10 bucks.
+- Seriously, no jokes, would you mind?
+- No, we're filming right here.
+Yeah.
+- Is the Hilton over there?
+- I don't know, that's the Hyatt.
+I don't know where the Hilton is.
+Did you hear that, Ben?
+- How do you do the
+work life balance thing,
+as a dad, as a grand dad, as
+a senior VP for Microsoft,
+how do you do that?
+- What advice do you
+have for somebody like me
+who has twins and a two year old at home?
+- Biggest thing is, you
+gotta learn to say no.
+- Say no.
+- You have to know what to say yes to,
+what to say no to and then, like for me,
+eating dinner with my children,
+is one of the most
+important things that I do,
+so get home and have
+dinner with your family.
+- What do you believe
+would be the most important
+soft skill for an IT pro to
+have, to drive cloud options.
+- So there are a couple of things, one,
+I tell people, like when
+I go talk to universities,
+you're always selling and so, I think
+the ability to be able to communicate
+and to be able to articulate a story
+on how an idea that you have is gonna
+enhance the company, is gonna
+enhance the user experience,
+you have to be able to
+articulate the clear story
+to your managers, to your peers,
+to the people you're
+delivering the service as
+so I think the number
+on thing that you can do
+from a soft skill, is
+be a great storyteller.
+So what was your favorite
+session so far, other than mine?
+- Other than yours.
+You are strongly confident
+that I watched yours.
+- Who is Ben Hawkin?
+- I don't know, this
+weird guy who comes up
+with the ideas of me
+driving around in cars.
+- Has he ever infiltrated your
+Twitter account to your knowledge?
+- Yeah, he has the password
+to my Twitter account.
+He's the only person that has
+the password to my Twitter account.
+- So did you steal Anderson Cooper's
+Twitter account or did he steal yours?
+- It took us multiple years
+to negotiate that on Twitter.
+- Fair.
+- Look, a guy like me who's late 40's,
+what advice do you have for you know,
+how to kinda find your nitch
+these days in the new world.
+- Okay, what I've always believed is,
+see if you can identify what
+that trend was gonna happen
+in the market, that is just unstoppable
+and then go get good and
+try to get in on that early.
+So, right now, everything's gonna
+move to the cloud, everything.
+So how fast can you become that individual
+that understands how to help organizations
+move to the cloud, how to lead your
+organization to move to the cloud.
+- Our IT group is about 80 people
+and only a couple of women and
+we're seriously trying to...
+- Increase your diversity?
+- Absolutely, do you
+have any advice for us?
+- That's a good question, I believe
+the culture is the most
+important thing so,
+do you have a culture where everybody
+feels their voice can
+be heard, is inclusive
+and I think if you focus
+on the culture first,
+so that, you know, the women who
+are already in your organization can say,
+this is a great culture, I can thrive here
+and second I would say is,
+are you actually finding,
+are you looking, are you
+finding the individuals
+that come in and interview for the roles
+or take a look at your interview
+slates, are they all dudes?
+The other thing I tell you as my advice
+is go look at your job descriptions
+and like have the women
+on your team look at them.
+- Oh.
+- Because the wording that sometimes
+there's words in a job description
+that completely turn off a woman
+because they're seeing that
+are masculine to their tone,
+that are not inclusive,
+so, check that out too.
+- That's awesome, thank you very much.
+- Heard you talking about
+configuration manager
+and the in tune and road maps and things
+like that yesterday morning
+and I was curious if
+SA scheme is gonna live to B30.
+- Oh yeah, for sure.
+- And the last one, in the last 24 hours,
+I've been told that SCCM is
+dead, what do you have to say?
+- You know SCCM is more
+alive than it's ever been.
+It's more interesting
+than it has even been.
+- Exactly!
+- Hey, where you from?
+- Florida, here in Naples, 10 South.
+- Ah, Naples is beautiful, gorgeous.
+So were you guys impacted
+by the hurricane?
+- Yeah, we got a direct hit
+but if it wasn't for all
+the Microsoft products and some of the
+automation we've put in, we
+wouldn't know what we would do.
+- Quote that!
+- For real, seriously!
+As a leader, I'm president of the company,
+small organization, but
+I want it to be big.
+What are some of the best advice to
+be a better manager, leading people,
+especially in today's day and age.
+- A couple of things, one, I think
+you just have to be genuine.
+You know, people wanna trust you
+and if you're genuine and they know
+that you're being genuine, I think
+people are willing to follow just because
+they trust you, number one.
+I believe information in powers
+and so, as much information as
+you can give to your people,
+empowers them to make the decisions
+based upon what's best of the company
+because they know what's going on.
+Too many leaders wanna hold the data in
+and I think you should
+let all the data flow.
+- Great.
+- And then I think, third, you
+have to focus on the culture.
+You know, you more than any
+leader in your organization
+are gonna define what the culture is.
+If you take a look at what Microsoft
+has done over the last
+three to four years,
+Satya's number one focus
+has been the culture
+and look at what the impact
+it's had on Microsoft.
+- Unbelievable, yeah and I
+did get his book actually
+this morning and downloaded the audible
+so I can't wait to start reading it.
+- Page 58 is my favorite.
+- Is that where you're in.
+- Yeah.
+(laughter)
+Where you from?
+- I'm from Seattle, I work at Microsoft.
+- Alright, what team?
+- Onedrive.
+- Okay, so you wanna come
+work in the EMS team?
+- Oh, oh!
+You have to ask Jeff for that.
+- Yeah, Jeff and I are
+like buds, he won't care.
+He would say, Brad seems better.
+- Oh!
+Hi!
+I was wondering what's your top
+productivity tips and tricks.
+- One, if I can block
+out about two hours a day
+for just for me to do that work
+that I have to do as a
+individual contributor.
+I can keep my work life balance,
+because I spend the bulk
+of my day in meetings so,
+one of the things I'm
+pretty religious about
+is kinda keeping eight to nine open
+and then, five to six, and so I'm able
+to do in those two hours, get
+the work done that I have to do.
+- What was the single
+feature in SCCM that seemed
+like it was gonna be so easy, but
+then was just like a nightmare?
+- Go back a decade ago,
+we took over the help desk
+and the desktop manager for
+three different companies.
+Lost a fortune on it, but we learned a ton
+and so we learned so
+much in that experience
+from 2007 to 2011, that is what actually
+got us onto the right path with Intune.
+- So, listened to the keynote,
+going to the session is a common theme
+for transformation right?
+And so, I've been on a
+transformation project myself
+and eating right, going to the gym,
+what I'm wondering and I think
+the entire community, really,
+is how does Brad Anderson
+keep a 24 inch pythons,
+what kind of workout routine do
+you use to stay in this shape?
+- So, if you go back a few years ago,
+back to 2010, I dropped 50 pounds.
+- Wow.
+- Okay, yeah, I was a fat dude.
+- Yeah, I'm at 60 so far and I'm still...
+- You've dropped 60 pounds?
+- Yes.
+- Dude, like here man.
+Holy cow!
+That's a transformation!
+- Exactly, yeah.
+- You planning on taking a Lunch Break
+to the next height, next
+level like Carpool Karaoke?
+- Only if I can get a piano in the car.
+- What's your takeaway from
+the events of this week?
+- So, I think the interesting
+thing for me here is that,
+like we've seen IT folks,
+we've seen business folks
+coming to hear that and how do you kind of
+create a message, after message
+that speaks to both those people?
+- Yeah.
+I guess this is actually one of the things
+you're really good at,
+but there is an art to it
+and on it, you have to tell those stories
+but you have to help to
+make sure those stories
+blend so they understand
+how they work together.
+- What's your favorite part
+of the Primas abilities
+and what should I be focusing on?
+- Oo, my favorite,
+that's kinda saying like
+who's my favorite kid.
+- Yeah.
+- Many of us, I built my career
+building onpram products,
+we talked about disruption,
+my whole life got disrupted because
+I had to figure out what
+it means to build services.
+Once you taste that telemetry,
+man, it is addicting because you know,
+for the first time in your life,
+from a professional standpoint,
+you have data that tells
+you what's going on
+and can then be the
+basis of your decisions.
+Dude's gotta be hot man,
+look at him out there
+sitting in the backyard in all black.
+- Yeah.
+- He's leaning back and catching
+some rays, look at that.
+- This honestly isn't bad, I've been
+at a wedding in Louisiana in August.
+- Oh geez, that sounds like hell.
+(light orchestral music)

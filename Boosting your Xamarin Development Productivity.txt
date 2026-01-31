@@ -1,0 +1,683 @@
+all right we have Maddy Maddy Lachey is
+here and you're gonna show us xamarin so
+productivity in xamarin I am yes awesome
+so whenever you are ready great yeah so
+I'm Maddy Legere I am a program manager
+on xamarin I work on tooling and most
+specifically xamarin forms tooling but
+what I am going to show you today are
+across your whole development lifecycle
+a bunch of different ways that you can
+boost your productivity when making your
+xamarin forms and xamarin apps so i'm
+gonna share my screen we're gonna do
+some slides real quick I only have a few
+only have like 30 minutes so I have a
+bunch of things to get through and then
+we'll do a demo some stuff towards the
+end give you some links close out my
+face on top Oh
+minimize that by okay and then hey
+present okay this is good channel 9 oh
+good
+yeah I'll take that as a yes I haven't
+heard anything otherwise oh great so
+well boosting your xamarin development
+productivity like I said I'm Maddie
+we're gonna jump right into it if you
+have not heard of xamarin before xamarin
+is Microsoft's open source app platform
+for building apps for any kind of mobile
+or watch or TV that you can imagine
+using dotnet so you see sharp you use
+all the familiar tools and things that
+you are used to but you also get a
+hundred percent native access native API
+access to those platforms so if you're
+building an iOS app using xamarin iOS
+and you want to use the latest and
+greatest features like dark mode and all
+that you have all the ability and
+capabilities to do that using c-sharp
+so you don't have to go into Swift or
+Objective C ever so the architecture of
+the xamarin app if you haven't seen this
+slide before it's basically you have all
+the projects for your dotnet project
+where you can share your c-sharp code
+your android and your iOS and your watch
+and whatever projects and then you have
+a whole bunch of shared c-sharp your
+shared business logic your shared api is
+using xamarin essentials to do things
+like turn on your flash
+and turn on or use the accelerometer and
+then if you're using xamarin forms you
+can share all yours Amla UI and then you
+still have these three iOS Android and
+and your uwp or a watch or whatever
+other projects you have in there to
+drill down to that native code so
+they're super high performance like I
+said you get all the native API access
+that you need so you never have to go
+into a different language if you don't
+want to you can do everything that you
+could do with native mobile using
+c-sharp so let's jump into what we're
+gonna talk about today which is ways to
+boost your productivity when you're
+using xamarin or xamarin forms so you
+know Visual Studio for Mac Visual Studio
+for Windows that was the the big splash
+earlier this week is we shipped 16.3 on
+Windows and 8.3 on Mac which both
+include some great updates for exam and
+developers and you're productivities as
+well as like the whole 16.0 and 8.0 so
+the the 2019 series has been super super
+focused from the tooling teams and
+xamarin on making these four steps of
+your life easier so when you're coding
+when you're building your app and then
+deploying that app onto your simulator
+or your emulator or your device and then
+you know increasing the speed with which
+you iterate so whether that's your UI or
+your actual code or your business logic
+we want to make all of these steps
+faster so first and foremost the thing
+that you do every day as a developer is
+you're gonna be writing code and things
+like we wanted to do on both Windows and
+Mac were increased the speed with which
+you could write code and the accuracy
+and the confidence and get rid of as
+many typos as possible so the one of the
+things that we brought over was Intelli
+code support from the entelechy manned
+visual studio for Windows they were able
+to make and Teleco work with xamarin
+forms zamel which was fantastic
+so if you aren't familiar with Intel
+akkad it basically you can see these
+little stars here it predicts what
+you're gonna type using a huge data set
+of similar projects so if you're doing
+uwp or WPF and your c-sharp or in your
+sam'l it's gonna tell you what it thinks
+you should type next it'll tell you the
+properties that most people type with
+when they open a button tag and likewise
+with
+like new tags or new layouts so it works
+out of the box with xamarin forms amal
+and we're also working on bringing it
+over for android xml for xamarin android
+projects which will hopefully really
+increase your UI coding speed and it
+does already work with c-sharp for all
+your different projects which is
+fantastic on the Mac side we've done a
+bunch of different pieces of work to
+bring together the experience between
+Visual Studio for Windows so what you
+expect from your intellisense there and
+your refactorings and your quick actions
+and bring those over to Mac and the
+first thing we did came out and I
+believe 8.1 and it was a brand new
+optimized code editor so the brains of
+it are shared with Windows so what that
+means is these things like multi caret
+editing and your quick actions and being
+able to do things with like right-click
+for each to link all of that great stuff
+that the visual studio for Windows team
+at an editor team did those all came
+over using the same brains and logic but
+we also rebuilt the editor surface
+itself so that it's super fast super
+native very fluid you get right-to-left
+tech support you get different language
+support and you get emoji support all
+important things and so once we brought
+over the code and the c-sharp editor we
+then set our sights on the zamel editor
+and using the same method so sharing the
+brains but having this native super fast
+editor we were able to bring over the
+sam'l intellisense in engine from
+windows so now right out of the box with
+Visual Studio for mac you're gonna get
+really really rich intellisense with
+your zamel so auto completion and things
+like fuzzy matching and substring
+matching and things that you'd expect
+from your intellisense on windows all
+the autocomplete lightbulbs refactorings
+resource completion namespace completion
+the list goes on and on so as always you
+can check those amber and blogs for
+details on all of these things but these
+are all in Visual Studio for Mac the
+code and sam'l editors in the stable
+today and been there since 8.2 so
+hopefully you've been using them for a
+while
+so another thing that we've been working
+on separate from the sam'l and c-sharp
+site is the Android XML experience so
+there's a lot of stuff going on in this
+world I highly recommend you go and
+watch John Douglass's talk from last
+night he went into depth on a bunch of
+the improvements that are going on from
+the Android SDK and tooling worlds so go
+back and watch that I'm not gonna get
+too much into it today cuz he did a
+really good job covering it last night
+but this is just a sneak peek of some of
+the great things going on like layout
+linting and new intellisense and light
+bulbs and great stuff with the xml world
+great so you're coding faster than ever
+you're super accurate your Intel ACOTA
+is writing all your code for you you
+don't even have to think anymore makes
+it super easy the next thing you have to
+do is build your app and we always
+always always are looking at ways to
+make building faster because it's
+something you have to do every time you
+want to validate a change you make so if
+we can save you a couple seconds every
+day you might be making less cups of
+coffee while you're waiting for your
+builds to finish but we're gonna make
+you a much more productive developer so
+using one of our reference apps that you
+can grab on github it's called smarten
+hotel 360 it's a huge app it has a bunch
+of dependencies it uses custom controls
+it's got a really intense UI and lots of
+pages we use this as a benchmark to test
+a whole bunch of different improvements
+we did to our build system specifically
+for Android because we wanted to target
+that first and we are excited to share
+these results from Visual Studio 2019
+and these are a couple months back the
+16.0 figures but it's continued to get
+better and better since we shipped
+visual studio 20 1960 now and 8.0 and
+April April so you can see here like the
+times for first builds incremental
+builds and deploys have gone way down
+and that hopefully saves you a lot of
+time every single day so we did a
+performance challenge with all the
+different improvements you can make to
+your Android app and make your builds
+faster and your deployments faster and
+all that great stuff so definitely check
+that out that is also on our blog it's
+also on the github the I think it's on
+John Douglas is github
+and I'm sure he's also talked about it
+in his talk last night so check that
+back out so that's building faster which
+is a huge part of what you do every day
+and then you build it you hit play in
+Visual Studio and you have to deploy
+your code to your device or your
+emulator your simulator so deploy is
+actually kind of a two-fold problem
+because hey you want to deploy things
+faster and you want to make sure that
+you can debug as quickly as possible
+but you also don't want to be giving
+your end users and your customers a huge
+app so it's a tricky problem we've been
+working on solving in a couple different
+ways one of the first things that we did
+was called startup tracing and the idea
+with this is that there are some things
+we don't need to redo every single time
+you deploy and we can actually ahead of
+time compile some of the code in your
+app not all of it because that makes
+your app size huge but some of it to
+give you a much faster startup time so
+you can see what these stats here with
+when you do regular äôt so you compile
+everything ahead of time you save over a
+second in your startup speed but you
+also double your app size which is
+really bad with profiled äôt which we
+call startup tracing so we looked at the
+things that we can pay ot for you that
+aren't gonna make your app huge so it's
+only a four megabyte increase in this
+sample app but you still save over a
+second there with your startup speed so
+it's much faster and the best part about
+startup tracing all you have to do is
+take a checkbox to turn it on so go into
+your Android build settings enable
+startup tracing boom done faster and not
+that much of an increase in your apk so
+another thing we're doing with
+deployments and this is more on that
+size side of things is something called
+Android app bundles an Android built
+this functionality in recently it came
+out a couple months ago and there's a
+bunch of but a bunch of talk about it
+but basically the way Android
+traditionally worked is they downloaded
+everything you could ever need when it
+came to languages and screen sizes and
+all of that and that's why your Android
+apps were huge but what you can do now
+is very easily use something called an
+Android app bundle which will download
+only what your device needs so if I have
+specific languages that I use and I have
+one Rose
+Ellucian on my device and one type of
+processor that is the apk that might my
+phone will download for me and we have
+support for this now in Visual Studio
+16.3 and 8.3 so go ahead try it out and
+this is also part of that Android size
+and performance challenge so you can see
+people's results with that right away as
+well on this Ameren block alright so
+let's see how we're doing on time Oh
+plenty of time good so now you are
+coding faster than ever you're building
+faster than ever you're deploying faster
+and you have smaller apps which is great
+then you want to iterate on things and
+something that we know folks tweak the
+most is you eyes so you're pushing
+pixels you want to make sure that button
+is just a little bit bigger something's
+off center and you have to fix it but
+waiting for those builds and deploys for
+just a small like one-line zamel change
+can be really painful and that is where
+zamel hot reload for xamarin forms came
+from and so we announced this back in
+July as a private preview at xamarin
+developer summit you can watch that
+whole announcement on the xamarin
+Developers YouTube but we are excited
+that in Visual Studio 16.3 this is built
+right in there's no setup there's no
+private preview there's no you know like
+anything you have to do or sign-in or
+anything you can go in and I'll show you
+how to do it and take a check box and
+you can start using sam'l heart real it
+for exam room forms so the feature
+itself is still in preview which means
+that there are still things that are
+going to change and there are still
+things we know we need to work on but we
+wanted to build it into Visual Studio so
+you can start using it right away and
+not have to do anything weird and give
+us your feedback so we can make it
+better and push it to be a stable
+feature as soon as possible so like I
+said you can get it with 16.3 or 8.3
+today I'll show you how to turn it on in
+just a minute but some of the key points
+for sam'l hot reload for xamarin forms
+are that it's just running your app so
+if you haven't heard of a hot reload
+before the idea of it is that you deploy
+your app you change your sam'l or change
+your UI and in whatever language that is
+and if you're using something else you
+hit save and then your app quickly
+refreshes
+just the page you're working on and it
+saves your navigation it saves your view
+model and you can just see what that
+change is gonna look like super quick
+feedback and what we did with our heart
+reload is we made sure it was really
+smart it was really resilient it
+leveraged the amazing tools you have
+inside a visual studio like your
+intellisense it works with your custom
+controls and your third-party libraries
+and frameworks it works with all the
+great new xamarin forms features and it
+works on your Android or iOS emulators
+simulators and devices so anywhere that
+you're gonna be deploying or your
+xamarin apps you're gonna be using sam'l
+hot reload you can be using sample hot
+reload so let take a look at how it
+works
+so I'm gonna close out of my powerpoint
+hopefully this work is fine
+no Skype notifications which means I
+hope everyone heard me okay I'm gonna
+open my visual studio and here I am I am
+in James Monte mag nose monkeys app so
+there's a couple reasons I like using
+this app as a demo one is it has a
+custom controls and a lot of other
+things but I haven't changed anything
+except for an updated heads Ameren forms
+so xamarin Zabel heart reload does
+requires Ameren forms 4.1 if you want to
+learn more about why we have a good blog
+post about like the somewhat of the
+architecture of it you can go see that
+on the xamarin blog but if you're not on
+xamarin forms 4.1 yet it's 4.2 is the
+stable now you have no excuses go
+upgrade it's great lots of new features
+in xamarin forms so i upgraded that and
+then all I had to do to start using
+zamel Heart reload is go to visual
+studio preferences and if you are on
+Windows I know I'm on Mac you can go to
+tools options and then xamarin hot
+reload and Mac it is visual studio
+preferences projects xamarin hot reload
+and then click this checkbox enable zoom
+or not reload so then I'm gonna hit play
+start debugging I already have my
+emulator up you can see I'm on iOS 13 so
+fingers crossed because as I'm sure you
+all know the update craziness no you
+never know what breaks but it was
+working earlier so it's gonna build my
+project it's gonna start spinning up all
+my hot reload assemblies and
+boop-boop take its time nothing in the
+output okay
+it's thinking that's successful okay
+so hot reload is nice enough to tell me
+that James had his linker on so I can go
+ahead and it's still gonna launch my app
+hi reload isn't gonna throw up
+everywhere but it's not gonna work yet
+so let's close out of this stop
+debugging and I'm gonna open my build
+settings with this little button and
+James has it on linked frameworks SDKs
+only so you're gonna set it to don't
+link right there
+so definitely I've had some questions
+about this from the private preview why
+do I have to try up a linker well first
+of all you shouldn't have your linker on
+and your debug builds because it's going
+to make your build slower and linking is
+just to make your apk smaller or your
+app if you're using the iPhone itself
+like a physical iPhone you want to put
+in the additional em touch arguments - -
+interpreter and that tells your iPhone
+your physical device it's okay for
+visual studio to spit code back at your
+device and make it refresh it otherwise
+Apple doesn't like when you do that but
+that's how hot reload works it just
+sends more code to your device so you
+don't need that for the simulator but
+make sure that you do set your blinker -
+don't link and then you update your
+xamarin forms okay let's try this again
+hit play boo build successful great so
+it spins right up and OH
+encountered a problem what don't do okay
+let's try this quit that quit that and
+we'll restart Visual Studio a classic
+yes yeah so hot reload it like I said
+it's a preview feature but it has been
+tested with all the latest bits that we
+shipped out so your your iOS 13 and
+Xcode 11 and your Catalina it does work
+with which is awesome and then we'll
+just go back into visual studio
+sometimes you need to do like a good old
+bit obsolete but this should spin right
+up for us I don't double check that my
+linker settings I set those right and I
+deleted interpreter yep
+iPhone simulator got my supported
+architectures taking its time and eyes
+that make sure my same reformed version
+is good yep let's do it all over again I
+mean every bill did you do that all
+right there we go connecting watching
+oh no what's going on oh oh all right
+let's try updating my Zam reforms one
+more time if you haven't seen the new
+solution level Mac nougat package
+manager it's fantastic by the way
+so I can go to manage NuGet packages for
+my whole solution now check my xamarin
+forums late a stable good at package
+select all my packages make sure we're
+doing good on time close that out and
+we'll do a full rebuild after this one
+and hope that works
+if not we'll switch to another project
+and see if that one's working okay
+rebuild all let it clean let it build do
+double-check my build settings one last
+time while we wait this let this happen
+yo yep yep this is when I would go make
+a cup of coffee if I was a xamarin
+developer but I'm sure that I'm getting
+a bunch of messages right now like clear
+bit on so let me check that too while
+we're here
+reveal and find her oh well let that
+build and see I play Connect let's go
+and yay okay great a classic rebuild it
+does the trick every time and hopefully
+I don't run too short on time but we
+still have a few minutes which is good
+so we are in like I said James's Monkees
+app which is awesome it shows you a list
+of monkeys this like I said it was a
+mohawk reload it's just running your app
+so literally I can click in and go to my
+different pages I can pull it down and
+scroll around just like I would if I was
+on device I could be using my device and
+screaming it or not I know it were great
+so the first thing I can do is I can go
+ahead and like start switching up my
+bindings so change location and change
+name so now this should say Africa and
+Asia up top and baboon on the bottom
+which is great but exactly what I wanted
+and you can see how instantly that
+refreshes so I can switch it back hit
+save good to go
+James has this amazing circle image
+custom control and it's pulled in
+through nougat it's right here Oh didn't
+mean double click that Oh what you don't
+have focus is something blurry okay I
+don't know I just heard something but I
+can change the color of this to blue hit
+save
+I can hear you Channel nine hi Jamie so
+okay yeah so I've gone and I've changed
+in the border color I'm changing the
+border thickness my custom controls
+update right away I can go into like
+this page so I'll I can click on let's
+go to this Golden Lion and like I said
+it does hold your your navigation and
+your view model so what James did here
+was he found his view model in the code
+behind so right here which means that
+when I hit save and it refreshes my
+zamel page it's not gonna try and reload
+my view model every time so if I go into
+the details page here which is this page
+I'm on right now I can do things like
+change the location and the name and
+change my border color change my border
+thickness 23 and hit save and all of
+those things are going to get updated
+right away on my emulator my simulator
+right to the side here so that's kind of
+the basics let's go into a shell app as
+well so I'm gonna stop debugging that
+open another visual studio and hopefully
+this one's in a good mood to do do I
+have to pin abdu this one as well but
+we'll see hit play and so if you didn't
+see David or it now stalk on Monday
+afternoon or morning Pacific time maybe
+that is all on demand right now you can
+go see it on the YouTube and the twitch
+but he went into depth about all the
+great things you can do with shell so if
+you haven't heard of shell before it's
+basically a way to describe the visual
+hierarchy of your app in one file so
+you'll see the the exact same app we
+were just looking at sort of with the
+with a browse and a list view but this
+one also has the about page they're all
+described as these tabs right here and I
+want to show in this app some of the
+other great features you can do with hot
+reload so one of them is being able to
+change all your resources so if I wanted
+to change the color on this about page
+of this button I'll hit save it's
+immediately gonna refresh and change
+that static resource up here which is
+down all the way down at the bottom of
+the page and this button
+now if I wanted to move these resources
+Wow I'm running my app to my app dogs
+Amal resource dictionary or merge
+resource dictionary somewhere I can cut
+it and hit save now hurry low doesn't
+know where those resources are anymore
+so you can see it doesn't crash the app
+instead it just uses intellisense and
+that great new zamel editor on mac to
+tell me that it doesn't know where that
+static resources anymore and then it
+just takes out the things it doesn't
+know what to do with so the sack layout
+is still there it just took out the
+background color cuz it doesn't know
+where to find it
+so I would go drop these in my app
+resources hit save because I just edited
+an app level file it's gonna take me
+back to the beginning of my navigation
+state but if I go back into my about
+page all my resources are back there and
+I can go ahead and change this to
+something like fuchsia which I can never
+spell alright and hit save it's gonna
+bounce me back to the top navigate right
+back right there and then I can go ahead
+and change where this is referencing it
+from so if I wanted to change my
+background color to primary - and hit
+save there we go perfect you can see the
+intellisense pops away when it realizes
+that resource is there additionally I
+can go into my shell and start editing
+things there as well
+so if I wanted to change like the actual
+primary navigation color of my app so
+let's make this lime this is gonna start
+being a really ugly app in just a second
+it pops back to the top because it's an
+app level file app shell but it's gonna
+change my color right there so let's
+change it to black so you can see those
+tabs a little bit better and then I can
+go ahead and do something like copy
+paste this tab a couple times hit save
+and see them immediately pop up and
+because shell is handling my navigation
+for me and because this is using content
+templates in the data template for about
+page the navigation already works and
+this is all just editing my zamel so
+super easy
+again it's resilient so let's say that I
+misspelled the color black because I'm
+really tired it's just gonna get rid of
+that color for me it's gonna highlight
+it and it's gonna tell me it doesn't
+know what that color is so that's kind
+of the the nitty gritty
+getting up and running with hot reload
+and seeing all the different features it
+has like I said it's a preview feature
+so definitely report problems on help
+report a problem right here or help send
+feedback or porta power of them on
+Windows and let us know what other
+features you want for sure so let's pop
+back into the sides real quick I only
+have two more slides one is a bunch of
+links so I should have linked to all of
+the amazing already existing exam Rand
+talks but you can find them all from the
+page that you're on to watch this right
+now
+so do that additionally you can learn
+more about hot reload in the public
+preview an aka MSI's amo hot reload you
+can learn about the docs at Samuel hot
+reload Docs and that's where you will
+find all the things I showed you about
+how to set it up and some of the
+features you can do with it and then if
+you want to go check out James's app
+there's the github right here as well
+there's one more session on xamarin and
+dotnet conf it's tonight it's mixed
+reality with xamarin a geospatial
+anchors which is an amazing talk it's by
+sui key so definitely go watch it if you
+are around at that time and that's it so
+hopefully we have time for a question or
+two I know there was some demo issues
+but love to get your questions and as
+always feel free to tweet me or email me
+at value one or one and I can get back
+to you so let me stop sharing my screen
+and then we can do some questions
+hopefully there were a bunch of
+questions but James answered them all
+yeah oh wow now if you have any directly
+from Eddie James and Pearson in the
+channel answering them as well yeah
+sorry for the interruption there do you
+mind closing your screen so we stopped
+getting the screen section oh is that
+what's going on yeah I stopped sharing
+it but it's still showing my face that's
+all they're weird all right well cool
+thank you everyone
+well thank you so much all right Jenna
+later he's at for Easter night
+okay yes all right yeah we're going to
+switch over to Elton and thanks Maddie I

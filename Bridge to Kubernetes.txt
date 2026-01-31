@@ -1,0 +1,775 @@
+>> Don't you wish you could
+just focus on one micro-service
+instead of having to drag in the
+whole set of micro-services,
+and all of those related
+dependencies in Kubernetes?
+Well, it turns out you can.
+So join me and
+Nick Greenfield on this episode
+of Visual Studio Toolbox.
+[MUSIC]
+Hey everyone. Welcome to
+Visual Studio Toolbox.
+I'm your host, Leslie Richardson.
+Today, I'm joined by Nick Greenfield,
+who is a Program Manager on
+the Bridge to Kubernetes
+team. Welcome Nick.
+>> Hey, how's [inaudible]
+going? Thanks for having me.
+>> Yeah. Thanks to be here.
+It's a very smoky day out,
+but enough about that.
+The cool thing is that I hear there's
+this new feature available as
+part of Kubernetes called
+Bridge to Kubernetes.
+Can you tell us a little
+bit about what that is?
+>> Sure. Bridge to Kubernetes is
+an iterative development tool
+for developers that are authoring
+micro-service applications
+that target Kubernetes.
+It's offered as a client experience
+in both Visual Studio and
+Visual Studio Code through
+extensions that you can
+pick up in the marketplace.
+>> So what are some of
+the existing approaches
+that are kind of similar to
+Bridge to Kubernetes that
+can help address that issue?
+>> That's a good segue to this
+next slide that I have here.
+There's a lot of different tools and
+methods for solving these kind
+of challenges where you're
+working on a single micro-service in
+the context of a larger application.
+We've kind of categorized
+all those different methods and
+tools into three main buckets.
+There's the local approach,
+the remote approach, and
+then the hybrid approach.
+So like these columns
+that I'm showing here.
+The rows are key characteristics
+that we've learned are
+really important to
+developers when trying
+to be successful
+in their day-to-day task of
+developing their micro-service code.
+To go through these quickly,
+and I'll talk about where
+Bridge to Kubernetes falls
+into one of these categories.
+But starting with the local approach,
+the local approach
+really revolves around.
+I'm reading my code
+locally and I'm satisfying
+all those external dependencies
+on my local development machine.
+Whether I'm using stubs or
+mocks to fulfill those
+external dependencies,
+or if I'm actually running
+all those external dependencies on
+my development machine
+and configuring,
+and connected to them manually.
+Or if I'm even using
+a system like Docker
+Compose to run those
+dependencies and containers.
+Ultimately, what this approach does,
+is it allows me to work on
+my dev machine where everything
+was running on that workstation.
+This has a lot of great benefits
+as in everything's local
+so I get a really speedy
+developer inner loop experience.
+But it does lack in that,
+my dev machine is most likely going
+to be drastically different to
+the deployment environment where
+this code is ultimately going to be
+running in Kubernetes within Azure.
+The extreme of the local approach
+is moving into this remote approach.
+There's tools that basically allow
+you to write your code
+on your local machine.
+But then when it comes time
+to debug and test end-to-end,
+you take those changes
+and deploy them,
+and sync them into that
+deployment environment.
+So into Kubernetes that
+might be running in Azure.
+This plays off the weakness of
+local approaches that I get
+that fidelity to a
+deployed environment.
+Because I'm testing and debugging
+where this thing is ultimately
+going to be running.
+But now, I have these extra
+steps in my developer
+inner loop cycle of having
+to build and deploy my code.
+I think, working in the
+space for a little bit,
+the biggest learning that
+we've heard from customers,
+specific to this approach,
+is that it does add
+some extra friction
+onto a developer's workflow.
+Because now they have to have
+these operational concepts of
+how having to bundle their code,
+and build an image of their code and
+deploy that image into Kubernetes.
+What we've learned is that
+not all developers are accustomed to
+those sort of concepts
+and complexities.
+>> Yeah.
+>> The last approach,
+and this is where
+Bridge to Kubernetes falls in,
+is the hybrid approach where it's
+kind of the best of both worlds.
+Ultimately with this approach,
+allows you to do is write your code
+on your development workstation,
+but connect to external dependencies
+that are running in some
+remote environment.
+So I'm actually fulfilling
+all those external dependencies
+by connecting to my
+Kubernetes cluster,
+let's say running in Azure so that I
+can leverage the whole
+end-to-end workflow.
+But the only thing I'm running on
+my developer workstation is
+the code that I'm working on.
+Diving into that approach,
+this is really where we feel is
+like the best of both worlds,
+and we're seeing this resonate
+with customers quite well.
+If you're interested, I'll
+show you an example of how
+this works given
+that simple application that
+we were just talking about.
+>> Yeah, I do like demos.
+>> Cool. At a high level,
+when you are using the Bridge
+to Kubernetes, like I said,
+you are only responsible for running
+the one micro-service on your
+development workstation.
+So taking that example
+that I had earlier,
+where I have that bikes
+micro-service open here,
+which is one of these back-end APIs.
+The first thing you would do
+with Bridge to Kubernetes is
+create a connection to your clusters.
+In this case, I've created
+this bridge to my
+deployment environment.
+Once this connection has been made,
+I can actually pick from
+all the available services
+running in the cluster,
+which of these I want
+to work on locally.
+In this case, inside the bikes open,
+I would actually select
+the bikes micro-service.
+>> So can I pick multiple
+micro-services if I wanted to?
+>> Yeah.
+>> Or one at a time?
+>> No, you can pick multiple.
+So you'd have to have different
+instances of VS or VS Code open,
+but this can allow you to
+redirect multiple outlets.
+>> Got you.
+>> When I select, in this case,
+the bikes micro-service, we're
+actually putting this
+re-director in place.
+So that when I make a
+request that goes into
+the front-end of my
+application running in AKS,
+it will continue to hit all
+the services running in
+my cluster until that
+bikes service is called.
+At that point, that
+request will be routed to
+my development workstation
+where the Bridge that
+I'm running locally
+from here [inaudible].
+>> That's really cool.
+It's kind of like
+you finish the jigsaw puzzle,
+and you're just kind of sticking in
+the missing piece when she go to run,
+test, deploy, all that jazz.
+>> Exactly.
+>> Nice.
+>> This is at a high level how
+Bridge to Kubernetes works.
+I love to show you an example of
+our Visual Studio experience,
+working on this exact application,
+and how you could go from zero to
+using Kubernetes on a project
+that you have of your own.
+>> Yeah, let's check it out.
+>> The first thing that
+I want to show you,
+is that application running in AKS.
+Is that bike renting application,
+where as I mentioned before,
+you can log in as a customer,
+and you can have a list of
+available bikes that you could
+reserve for a period of time.
+In this case, I would
+see the men's cruiser.
+Looks good. I can rent this bike.
+Then when I'm done using this bike,
+I can return this bike.
+It's returned back to the list
+of available bikes to rent.
+Just really simple application,
+just for demo purposes, right?
+>> Yeah.
+>> What I want to do is I actually
+want to work on one
+of these services.
+Since I'm going to show
+you the VS experience,
+it's probably appropriate that I
+show you the reservation engine,
+which is a micro-service
+that is written in.NET Core.
+>> Sounds good.
+>> Since you're over to VS, I
+have Visual Studio 2019 open.
+You'll notice that I have a
+solution that has one project open,
+and this is that reservation
+engine; that micro-service,
+that's responsible for
+actually reserving the bike.
+You'll notice that, over here,
+this is just the source code
+for that micro-service.
+There's no Docker file,
+there's no Kubernetes configuration,
+it's just that source code.
+>> So you don't have to sit through
+opening up the giant project,
+contain all the solutions
+you don't need,
+except for the one, right?
+>> Right. So it's just that one
+micro-service, nothing else.
+>> Cool.
+>> Now, since I have this open,
+and if I go to the VS marketplace and
+I installed the Bridge
+to Kubernetes extension,
+what will happen is I'll have
+this new launch profile
+that's available
+for me to use up in this list of
+launch profiles that
+I can select from.
+When you select the Bridge to
+Kubernetes launch profile,
+the very first time
+you'll be presented
+with this dialogue
+that I have open here.
+What this dialog allows you to do,
+is define the connection from
+your development machine to
+your target AKS cluster,
+or you can select
+that service that you
+want to redirect to your
+local running version.
+So just to quickly walk-through
+what's required here, [inaudible].
+A subscription is required,
+and within that subscription, I have
+available clusters that
+I could select from.
+In this case, it's your
+Azure Kubernetes clusters.
+Then I have filter because
+I have different namespaces
+within that cluster,
+so I'm going to select the namespace
+that's running this application
+that I want to start debugging.
+My bicycle application is running
+in the bike app namespace.
+Within this namespace,
+I have a list of
+all those services that I saw
+from that diagram earlier.
+I want to select one of
+these that I want to
+redirect my locally running version.
+As I mentioned, I have the
+reservation engine open,
+so I'm going to select the
+reservation engine here.
+This next dialog here
+are the drop-down,
+basically it's asking me to select
+a launch profile that
+we want to clone.
+This app is a launch profile that I
+am familiar using with
+this micro-service.
+What we'll do is we'll clone
+this launch profile with
+some extra configuration that's
+taken from the Kubernetes cluster.
+>> Okay. Is that just
+to make sure that
+your local content is in
+sync with the rest of?
+>> Yeah, so the reason
+why we clone is we want
+to tap into how you're
+familiar with developing.
+If I'm used to developing
+this application locally,
+however that may be or
+whoever profile that I have
+set up and configured,
+we want to allow you to
+continue using that,
+except we'll add some
+additional configuration
+into that launch profile.
+That is from the
+Kubernetes environment
+that allows you to talk
+to those other services.
+It basically continues doing
+what you were doing before,
+but we'll throw in some
+extra configuration for
+you to use the Bridge to
+Kubernetes' functionality.
+>> Neat.
+>> Yeah. This is actually
+a really neat feature that
+we just released, I'm a
+little excited about.
+I don't know if you
+picked up on how we're
+redirecting traffic to
+your development machine,
+but that also become
+problematic when you're working
+in a shared environment.
+If I have other developers
+that are working in
+that same namespace on
+other microservices or the
+same one that I'm working on.
+Potentially we'll step on
+each others toes because
+their traffic will get sent
+to my machine environment.
+We have this isolation mode
+which allows you to work in
+isolation where only
+your requests that
+are being set will get
+redirected to your machine.
+We do that by giving
+you the special URL,
+in this case we'll prefix
+your URL that you're
+normally using through
+your application with your username
+on your machine and then
+this unique hash here.
+So that only traffic that's using
+this URL don't get sent to
+your local running version
+or the normal URL that
+everyone else would be
+using will continue to run
+in and hit the service that's
+running in the cluster.
+>> That's really cool.
+Ultimately, there
+might reach a point
+of course when you do
+need to push changes and things
+so you're still going to have
+to fix merge conflicts
+in that context.
+But as far as running and testing
+with the Kubernetes Cluster,
+it's not going to be an
+issue and you're not
+going to bump into somebody else
+who's also trying to access the
+same cluster at the same time.
+>> If I was working in a shared
+namespace you can imagine that if
+my friend John who was
+using the same namespace and
+working on different microservice,
+he would have his own
+special URL and I don't have
+my own special URL so that
+our traffic isn't
+conflicting with each other.
+That only my traffic is
+getting redirected to
+my machine and his traffic is
+getting redirected to his machine.
+>> Great. If only all
+traffic was like that.
+>> At this point I
+have this configured.
+Again like I mentioned before
+this is a onetime configuration
+that you would set up when getting
+started to boost your Kubernetes.
+We persist this you can always
+go back and change it later.
+But for this case I'm happy with it,
+so I will hit "Okay".
+We'll check to make sure
+that we can actually isolate
+that service and we can redirect
+it to your local running version.
+So this usually takes
+us a couple seconds.
+Cool and that's done
+that check passed.
+Now if I want to start working on
+the service and hit some
+breakpoints let's do that.
+I'm going to open up a
+file here this is the
+bikehelper.cs and since I'm
+debugging in the reservation
+engine microservice,
+so when you reserve a bike this
+is the service that
+will get executed.
+I can actually put a
+breakpoint and let's put it in
+this reserve bike method that seems
+appropriate for this service here.
+Then since I'm targeting
+that Bridge to Kubernetes
+launch profile I can
+F5 and what it's
+doing is going back to that
+diagram that I showed you before.
+At this point, it's creating
+that bridge between
+my developer workstation in
+that Kubernetes Cluster.
+Would you require admin privileges on
+the client machine to
+allow that traffic to
+be sent back and forth.
+So that is one dependency that
+developers will have to have
+when working with
+Bridge to Kubernetes.
+At this point what
+it's doing is it's
+establishing that connection,
+it's finding that
+service in the cluster
+that I want to redirect
+to my machine.
+What it's doing it finds
+that service is putting
+that redirector in place
+and then it's going
+to make it so that
+any requests that hit
+that service will actually
+get sent to my machine.
+I just got my UAC prompts
+so I authorized that.
+It looks like that
+connection has been
+made it's starting my
+debug session here.
+As you can see that
+special URL that I had in
+that dialogue where
+my debug session was
+started it actually
+launched that URL.
+So here I am with my application
+and you can see I have
+that special URL that was
+provided to me when I clicked,
+I want to work in isolation.
+At this point I can chart
+a debug at my service and
+an end-to-end scenario.
+I'm actually hitting the services
+that are running in
+AKS at this point.
+So this is the front
+end that we'll call
+the user microservice here we go.
+Now that I have a list
+of bikes to choose from,
+I can select a bike.
+Again all of this
+traffic still happening
+within the cluster nothing is being
+redirected to my machine yet.
+But now when I'm actually going to
+reserve a bike and
+it's going to actually
+send a request to that
+reservation engine microserver.
+You'll notice that that request
+will get sent to my VS instance,
+you see VS has popped
+open and I'm stuck
+at my breakpoint where I can debug,
+step through the code and
+however my debugging practices,
+I'm open to using wherever debugging
+practices that I'm familiar with.
+>> Cool. It's essentially
+skipping over
+the existing microservice
+that's up in the cluster
+and just redirecting
+to your local machine?
+>> Exactly. This is right so
+I can iterate on my code,
+I can make changes, I can
+debug maybe potential issues.
+Then again the only thing
+here that I want to call
+out that for me is the
+most exciting thing about
+this feature is that I'm
+only running that one
+microservice I don't have
+all these other services I'm
+leveraging them from running in
+that Kubernetes environment.
+Again, no Docker files,
+no [inaudible] Kubernetes Artifacts.
+I'm running this
+natively on my machine.
+>> Yeah, that's so cool.
+Even locally sometimes
+when trying to look
+at a huge project but you
+only need a chunk of it.
+It's just like I'm spending
+all this time debugging
+this other issue that's not
+even my responsibility.
+All these other dependencies.
+Yeah so that's cool that you
+don't have to worry about that.
+>> Yeah. In this point
+as was a developer I'd
+step through this code and
+when I'm have you there I
+can hit "Resume" and that
+requests will get sent back into
+the cluster to be completed.
+The really nice thing about this is
+that if let's say I
+actually make a change
+as a configuration change that I
+would need to restart
+my debug session.
+So if I was to exit my
+debug session here,
+you'll notice that I'm no
+longer in that debugging mode,
+but I have this yellow banner up
+here this info bar that says,
+"Hey, your service reservation engine
+is still being redirected
+to your machine."
+Yeah, I can make a
+configuration change
+and you know I'm ready to F5 again.
+What's going to happen is
+it's actually going to skip
+that connection that we went to
+initially because we're
+already connected.
+Here I am, my application
+launches and I
+can know iterate on
+my code as I look.
+>> That's great. It's
+almost like it got cached
+someplace and so you
+need to use again while you
+are in the same VS session.
+>> Yeah, that is the
+Visual Studio experience
+for Bridge to Kubernetes.
+>> That's really exciting
+and I think that
+could save people a
+lot of frustration.
+Based off of that,
+are there any existing limitations
+that you want to tell viewers about?
+>> These limitations, we'll we're
+working with hard to
+unblock any limitations.
+We're working with developers,
+we're understanding
+the applications that
+they're developing
+and where Bridge to
+Kubernetes fits and really
+just understanding
+the different scenarios
+that we need to support.
+I would say the one thing that we
+get asked constantly and
+I'm really excited to
+announce is that people want
+to use Bridge to Kubernetes
+on Kubernetes Clusters
+that are not AKS clusters.
+So a Minikube Cluster where
+it's basically running
+your Kubernetes cluster
+on your development machine.
+We are in the process
+of actually enabling a
+public preview that would
+allow you to use Bridge to Kubernetes
+on any Kubernetes platform.
+So it's a really
+exciting announcement
+that will happen in
+a very near future.
+>> That is really cool.
+Speaking of previews,
+how can people access this
+tool. Is it available yet?
+>> Yeah, so we recently just went
+GA so that's really exciting.
+>> Congratulations.
+>> Thank you. There's
+some quick starts
+under the VS code documentation
+under that developed with
+Kubernetes and we also
+have some getting started
+material under the Visual Studio
+container tools documentation.
+I will absolutely provide us
+some information on how
+did we started with those.
+>> That is fantastic.
+You already mentioned that you're
+working to you expand Bridge to
+Kubernetes functionality out
+to all Kubernetes platform.
+So what else is next for Kubernetes?
+>> Again, it's really
+understanding what
+the scenarios that different
+development teams had to use.
+Actually one limitation
+that potentially
+when people are watching
+this video will no
+longer be a limitation,
+is only targeting the Linux
+containers in Kubernetes.
+We've heard that there are a lot
+of development teams that are in
+this hybrid scenario
+where they're running
+Windows containers as
+well as Linux container.
+We want to make sure that we cater
+our tools to all
+different situations.
+We're really working through
+having this ability where we
+target any of these containers.
+>> That is very exciting.
+Well, thanks for sharing that,
+that is a really cool tool
+that I think can help
+a lot of people out.
+I really like that
+you can just segment
+the microservice that you need
+and don't have to worry about
+anything else seriously.
+>> Focus on the business logic that
+Microsoft [inaudible] in front of you
+>> How much time gets wasted
+just trying to figure out how
+another chunk that's not really
+your problem connects to the
+piece you're working on.
+So super exciting.
+>> Yeah. Well thank you.
+>> Thank you. Yeah, thanks
+for being here Nick.
+So go try it out,
+it's GA now officially.
+>> Yeah, we want to
+know what you think
+so we'll provide some
+information on how you
+can get in touch with our team and
+we want to hear about your experiences
+with Bridge to Kubernetes.
+So absolutely reach out.
+>> Awesome. Until next
+time happy coding.
+[MUSIC]

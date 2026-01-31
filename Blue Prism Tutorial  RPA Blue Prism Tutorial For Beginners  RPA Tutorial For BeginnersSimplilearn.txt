@@ -1,0 +1,452 @@
+blue prism is a global leader in
+intelligent enterprise automation
+transforming the way employees work by
+making it simple for individuals to
+automate operations blueprism helps
+enterprises improve operational
+efficiency and agility
+hey everyone i welcome you all to this
+session in this session we will see a
+tutorial on blue prism let's look at
+today's agenda firstly we shall begin
+with the introduction to blue prism and
+then see the user interface of blue
+prism
+followed by which we will understand the
+core components of blue prism like
+process studio object studio application
+modeler and others
+finally we will have a hands-on session
+watch the video till the end to not miss
+the hands-on session
+if you haven't watched our previous
+video on what is blue prism i would
+suggest you to go through it for better
+understanding
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+so without wasting any further time
+let's get started with tutorial on
+blueprism
+introduction to blueprism
+blueprism is software that develops
+enterprise robotic process automation
+allowing businesses to automate complex
+end-to-end operations
+blueprism developed the virtual
+workforce platform concept and works on
+an enterprise robotic process automation
+platform that is strong highly scalable
+secure and reliable
+blueprism software complements standard
+it solutions by utilizing an agile
+virtual workforce that follows
+rule-based business processes and
+interacts with the system in the same
+way that users do
+blueprism's rpa software solution
+automates tasks that would otherwise be
+carried out manually by humans or
+through major customization of current
+i.t systems resulting in higher level of
+automation with significantly lesser
+investment and faster deployment
+blue prism user interface
+there are six types of taps in blue
+prism that is home studio control
+analytics releases and system
+the home page includes many charts that
+provide information on the blueprism
+database
+the workforce availability metric
+displays the runtime resources that we
+are utilizing
+the amount of queues and automation in
+the database is shown by total
+automation
+queue volumes now displays queue volumes
+based on the statuses
+and largest database table displays the
+blueprism database largest tables
+studio blueprism studio is a critical
+component through which we build actual
+automation actions with studio we can
+automate a process build a process using
+flow add logic calculations and
+intelligence without writing any code
+drag in actions calculations loops and
+more in studio we can connect the blocks
+in preferred order use smart skills from
+digital exchange
+digital exchange is where we can find
+ready-made skills to enhance the
+automation with machine learning ai
+language translation and many more
+the studios are divided into two
+categories object studio and process
+studio control room
+control room assigns the process to
+digital workers user can quickly start a
+process by dragging it on to a resource
+the control room is the key
+administrative point in blue prism where
+we can handle the control monitoring
+execution and scheduling of process
+executions on dispersed robots
+analytics
+blueprism analytics is a module that
+allows you to see data graphically in
+the form of charts such as pi column
+gauge and line
+releases
+the release manager is used to manage
+configuration package import and export
+between multiple blue prism settings
+system
+administrators use the system tab to
+manage users
+let's look at some of the blue prism
+components
+some of the blue prism components are
+process studio object studio
+application modular exception handling
+and work use
+a blue prism process is created as a
+diagram that looks much like a common
+business flow diagram we can call from
+the process studio if the page is
+published for development and testing we
+use process studio
+process studio has only main page
+object studio
+object studio is mostly used to create
+objects we have several type of
+activities within the object which are
+as follows that is the modular
+application to spy the elements
+initialize page and cleanup page
+the next component is application
+modular
+the application modeler is used to spy
+on apps spying is a process of
+identifying the elements in the
+applications
+we have four different types of spying
+modes
+that is win32 mode
+html mode accessibility mode and region
+mode
+the next component is exception handling
+the managing of exceptions in unattended
+automation is defined as exception
+handling it ensures that faults can be
+automatically fixed if possible or that
+they are easily identified and
+repairable by system administrators
+or they can be forwarded for human
+completion if necessary exception
+handling success is determined by how
+well it is implemented throughout the
+development
+exception handling is a critical part of
+any blue prism solution an exception is
+a problem that arises during the
+execution of a process
+when errors are encountered in blue
+prism it generates exceptions
+exception handling stages
+exception handling can be achieved using
+resume recover and exception stage
+in the resume stage it ends a block for
+handling exceptions in recovery it
+begins a block for handling exceptions
+in exception stage explicit rises an
+exception in the execution of process or
+an object
+the different types of exception are
+internal exception system exception and
+business exceptions
+internal exceptions come based on our
+missing mandatory data in stages
+system exceptions will occur based on
+internet is down or our robot need
+internet or any system failures
+business exceptions
+these exceptions are not actually
+exceptions however based on the business
+rules we are creating the exceptions we
+need to fire manually through bot
+work queues
+our queue is a list that may be
+configured internally to help a process
+manage its workload
+a process may use numerous work use and
+a work you may be shared by multiple
+processes if necessary
+the control room queue management tab
+serves as the operational user interface
+for work use
+the tab is divided into two sections
+the upper half displays a list of queues
+while the lower half displays a list of
+queue items
+in the configuration of work u work use
+are formed in the blue prism's
+administrative area system manager
+now let us look at a demo on email
+automation
+if you haven't installed a blue prism
+software yet then check out our video on
+blue prism installation and get it
+installed
+so let's jump into blue prism software
+and get started with the email
+automation
+let's first sign in blue prism
+click on next this is the overview about
+the home page studio and control room
+and digital exchange
+close it
+let's go to studio
+the very first step is to import email
+pop3 smtp business object to import that
+go to file
+go to import
+process object
+and go to browse
+you have to go to the folder where blue
+prism software is installed in my device
+it's installed in c go to local disk c
+go to program files
+and go to blue prism limited
+blue prism automate
+here scroll down
+and go to vbo business objects
+and here you can see
+email pop3 smtp
+select click on open select this
+and click on open
+and click on next
+click on next
+click on next
+so when you're done with this the email
+pop3 smtp will be imported
+the next thing is
+create a new process so
+select process
+go to create new process and let's name
+the process
+we'll name the process as
+email automation
+click on next
+enter a description of this process if
+you want so that if some other user
+opens the file he should know that what
+is the process about
+so enter the description it's optional
+so we'll click on finish
+and let's open this process now
+the very first step is
+to drag and drop and action so select
+action and drop it here
+open this action
+so in first step we will set up the
+email of pop3 smtp
+business object so we'll name it as name
+this action as setup
+select the business object as email pop3
+smtp
+and the action
+is configure we are configuring it
+and here we have to enter the username
+password
+of the server details
+so from where do we get the server
+details
+to get the server details we have to go
+to the browser
+go to the browser and
+search as
+gmail
+server configuration
+here you see
+you will get the
+all the details here the port number
+the email
+so in the smtp server we'll enter the
+smtp.gmail.com and the port number as
+587 and in the pop3 we will enter pop
+gmail.com and port number as 995.
+and both the servers will turn it on
+to turn it on we'll write it as true
+so we'll go back to the
+blue prism
+so enter the server
+pop.gmail.com enter it in the double
+quotes
+an smtp server
+enter as smtp
+not gmail.com
+and the pop report number is
+995
+and the smtp port number is
+587
+and pop use ssl should turn it on to
+turn it on we need to enter the value as
+true
+okay now we should enter the username
+and password
+if i enter the password here
+for example if i enter the password here
+the password is visible
+we don't want the password to be visible
+the password should be encrypted so for
+the password to be encrypted in data
+item there is an option called
+passwording data types
+so go to data item
+drag and drop a data item
+and select the data type as password
+and enter the password here here the
+password will be encrypted
+and click on ok
+we'll name the data item as password
+similarly we will use another data item
+for username
+name the data item as name
+select the data type as
+text
+and give the initial value
+so
+enter your email id
+and click on ok
+so now we have username and password
+now go to the setup
+and select the username and password
+drag and drop this username
+and in the passwords
+drag and drop the password
+so so the setup is done
+the next step is
+the next step is we want to enter the
+subject and the data in the mail
+right for that we need to
+use another action item
+drag and drop another action
+name it as
+sending message
+select the business object as email pop
+sm
+tp
+and go to action and in the action
+select the action as send message
+here you need to enter the
+email id to whom you want to send so
+i'll enter the email id which we had
+entered in the username
+enter both the from and to email ids so
+i'll use the same email id
+since this is just for demo i'm using
+the same email id so enter the subject
+subject i'll enter it as
+demo
+and enter the body
+hello
+so now that we have entered the subject
+and body
+let's close this
+and now let us
+now use the link
+and connect it
+now let us click on run and check
+whether we have received the email
+oops there is an error
+we have missed something
+oh we have missed a double quoted
+let us save again
+reset and run
+so the process is completed
+let us go to the email inbox and check
+whether we have received the email
+so let me refresh
+and here you go
+we have received the email
+as hello and the
+subject is done so we have received the
+email now let us send it with an
+attachment so for that we go to the blue
+prism
+we go to sending message here
+here you can see attachment
+attachment is of the data type
+collection
+right
+so for that we need to use a collection
+item so drag and drop a collection
+go to collections
+and
+click on import
+select the business object as email
+and select the action as
+send message
+and the parameter with attachments
+select the attachment and click on ok
+next go to initial value in initial
+value click on add
+you can add multiple path here
+and attach how many other attachments
+you want
+for now we'll attach only one attachment
+so you need to provide the file path
+here
+so we'll go to the desktop
+so i have this article on desktop so
+i'll attach this article in the email
+so
+select this article
+shift and right click
+and
+copy as path copy this path go back to
+blue prism
+and provide the path here
+remove the double quotes
+and click on ok
+so once the collection item is completed
+go back to sending message
+go to collections
+here in the collection
+select this
+and click on ok
+click on reset
+and let us run
+and here you go you can see the process
+is completed
+so let us go to the email inbox and
+check if we have received an email with
+an attachment
+so here we go
+we have received the email with the
+attachment
+let us open it
+the same email with the subject demo
+and the body as hello and with the
+article which i had attached rpa
+projects
+so i have received the
+attachment
+so with that we have reached the end of
+this video that was all about the demo
+on email automation if you have any
+doubts regarding this video you can
+comment in the comment section and our
+team will try to answer and like and
+share it if you found it interesting
+thank you for being here keep learning
+and stay tuned to simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

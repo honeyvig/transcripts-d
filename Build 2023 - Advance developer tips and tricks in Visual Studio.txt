@@ -1,0 +1,1127 @@
+[Music]
+hello everybody and uh welcome to this
+last session of the day the last session
+before the big celebration is happening
+somewhere
+behind us here
+in a big room and
+um I'm very very happy that you have
+chosen to share this time here with us
+today
+because we're going to talk about some
+cool tips and tricks for visual studio
+right productive developers are happy
+developers and this is very important
+stuff so we want to make sure you have a
+good time
+I know you kind of want to get to that
+celebration get some food get a drink
+maybe
+so let's have a good time let's have
+some fun
+and if you have any questions
+please post them to the usual place
+online
+we got the Jim and Vera sitting over
+here and Matt and Andy sitting remotely
+helping to answer the questions as we go
+along and if we have time at the end we
+can take some of the uh the bigger
+questions at the end of the session here
+so
+um
+let's just get to it
+all right so
+here I have a project oh
+look at this
+hang on oh you know what it is look at
+all my tool Windows it all looks like a
+mess here what happened was that before
+I plugged in up here I had my laptop
+plugged into like a large monitor
+that's really wide so I had all this
+room for Tool windows but now it looks
+kind of
+all crammed in so let me just uh fix
+that real quick
+there we go
+or
+as I like this here fresh car smell this
+is my favorite uh way to start Visual
+Studio in the day
+Windows minimized oh very very nice and
+I can just go between all these layouts
+here
+all right here's my wider screen layout
+here's my web layout
+and here's my fresh car smell
+so
+this is not a new feature I'm showing
+you here I'm doing this with a single
+keyboard shortcut to move between all
+these it's called saved Windows layouts
+the reason I want to show you this is
+because I know we got data on this that
+you don't use it
+so
+what you do is that you create all your
+tool Windows you drag them around you
+put them in the location you want maybe
+multiple monitors you have solution
+Explorer on one side and test Explorer
+on the other whatever it might be
+and then
+you go to window
+and just hit save window layout
+when you do that that gives you a bunch
+of all your saved layouts you can give
+them any name you want and very easily
+you can change between them so that's
+what I did with all the keyboard
+shortcuts here Ctrl alt and then you
+know one two three four five however
+many you've got
+so a little tip to get started
+all right so
+this project I Got Loaded here
+it's a web API project asp.net
+and it has swagger so it renders this UI
+when I run it in the browser that's what
+it looks like
+so I can see all my endpoints
+but Visual Studio has never really had
+that ability for me to really quickly
+get a glance of what are the different
+endpoints that I have in my app
+so if I do my saved window layout for my
+web workload see I don't just have a
+window layout for each monitor
+configuration I have one for the
+different types of apps I'm building
+so when I'm in web mode here
+I want to show the new
+um
+endpoint
+explore
+shows up here so this looks pretty much
+what we saw on the Swagger UI I get to
+see all my endpoints here
+can take this let me just drag it up
+here
+there we go
+so that's kind of nice and I can even
+open all these different
+um
+these are basically routes right my
+endpoints I can see what file they
+belong to the methods I can navigate
+through them by clicking on them and so
+on
+but what if I want to make an HTTP
+request to any of these
+so let's go down
+and look at
+the contact endpoint here I'm going to
+right click
+and I can also generate requests
+click that and it's going to create
+an HTTP file dot http
+This Is A New Concept in Visual Studio
+it's not the new a new concepts of the
+world an extension for vs code and a few
+other
+editors support this format
+but what it does it allows me in plain
+text
+to send requests
+let me just zoom in here a little bit
+so check this out
+it creates a variable at the top
+to point to my local host
+and I can just hit the play button
+and it will now send an HTTP request and
+return it right here
+so
+because this is an HTTP file it's just a
+text file on disk I can check this into
+my source control
+so my team members can see how to use my
+API or our API
+but also I can use it as documentation
+let's say I have an open source project
+or something like that this file can now
+act as documentation on how to use the
+API
+and um
+oh
+let me get my
+explore I think back here let's do
+another get request here I'll just right
+click another one of the end points here
+this is one that returns for certain ID
+let's do ID number two
+and hit the
+execute here and now we can see we get
+just that one request or sorry that one
+record back
+um but I can also make a post I can make
+anything here and you see these green
+pound signs or hashes
+those are the delimiters between the
+different requests I'm sending
+but I can go in here and see now I want
+to do a post request
+so I'm going to say well oh
+content type
+application
+Json all right
+and then I just need to give it some
+Jason I got something right here
+copy that in
+oh I just want to make sure you can see
+it here we go so I'm going to make a
+post request to this particular endpoint
+and I'm going to pass it in a HTTP
+header and a request body
+and executing that super simply gives me
+this just a confirmation pack and if I
+now get all my records again
+we can see that I now have oh did I not
+send it correctly maybe not
+ah
+is that right
+all right it's here
+there we go thank you everybody
+so now as I'm building up my HTTP file
+here I'm documenting my API and I'm
+making something that
+my whole team can use to test new things
+you know to test the API that we're
+building
+so really really handy and what's really
+cool is if some of you are using vs code
+some of you are using visual studio and
+whatnot this file works on all the
+different editors
+they all understand this format
+all right but
+speaking of testing
+what if I want to test something that or
+I have a mobile app talking to my API
+and it might be a colleague of mine that
+builds that mobile app and that
+colleague wants to test something that
+I'm doing on my laptop here on the API
+how do we take a mobile app from one
+person's
+desktop and connect it over to my API on
+my localhost
+well typically that's not really been
+that easy there are some products out
+there that can help with that
+you have to pay for them
+but now you probably have heard this we
+have Dev tunnels
+and so
+I can go up here on my play button and
+go to Dev tunnels
+and I can create a new tunnel
+let's give it a name how about build
+we can then say should this be temporary
+or persistent like how long should we
+keep this Dev tunnel alive let's just do
+a temporary
+and what about the security of this
+should be
+just private organizational or public
+let's do public
+so now I've created a tunnel and I'm
+gonna here's a confirmation you've
+created a tunnel yes thank you
+so now if I run the app again Ctrl F5
+it's going to spin up that same
+swaggering as before
+but this time
+it's going to show me a confirmation you
+are about to connect to a developer
+tunnel and then some sort of URL
+and we can see I get the exact same
+UI here but
+it's no longer a local host
+it's this other thing
+and just to prove that I'm not cheating
+here
+if you want to
+you can point your camera that you're at
+that QR code right there and see if you
+can hit this because remember we did a
+public endpoint
+uh
+so you should see the exact same thing
+on your mobile device okay
+I'm gonna just grab this
+URL
+and I can go back to my HTTP file
+and
+paste it in right here
+okay so now I changed my URL
+and if I hit the button here
+I'm now creating a request toward the
+public
+API and it works just fine right because
+I have a death tunnel that basically
+connects the public internet with my
+Local Host right here so if I build web
+hooks or viable apis for mobile apps
+or if I have any other scenario where I
+need someone else or some other system
+to connect to my machine
+do I want to test maybe I want to test
+whatever website I'm working on on my
+phone to see if it renders correctly on
+a mobile device
+I can now do that super easily
+and not only is it easy
+it's free
+so that's very very nice
+[Applause]
+all right
+so
+so that was the
+endpoints the the web server endpoints
+but what about the code that generated
+them
+so here they are this is what it looks
+like
+um
+web API this is what web API looks like
+nowadays and you know I don't
+necessarily know how this works I
+remember back in you know.net framework
+with MVC
+and so this looks a little bit different
+to me than I'm used to
+and you probably know this when you're
+working with apis that you're not you
+don't know if you're using a new nougat
+package
+that you haven't used before you don't
+know how to use that API that it
+provides or if you're new to a team you
+don't know how that team writes their
+code right
+so if we look at this code here there's
+something called group dot map post
+right here I don't
+I'm not sure what that means
+so check this out
+if I just hover over
+this API
+okay I got to be faster look at the
+bottom I'm sorry I can't scroll this but
+at the bottom it says GitHub examples
+and documentation I'm holding the mouse
+over
+the method called map post okay this is
+an API method
+so I'm not going to click this and it
+opens up
+a new window right here
+assuming just check the scroll bar this
+is a long list
+of examples of other apps using this API
+in all sorts of different kinds of ways
+there's really a lot here I can learn a
+lot by doing this
+like what did I have to do before I had
+to go read documentation right well if
+there was documentation
+but now I get to see how people are
+actually using it right here and it's so
+clever
+that it even knows about the different
+overloads for this particular
+method and it can give me all these
+examples
+what's really helpful to me here what I
+really think is really cool about this
+direction is first of all in order to
+provide relevant
+examples
+the AI engine in Visual Studio
+understands the context that my code is
+in so when I hover over something it
+understands
+what that code is there for and can
+therefore give me relevant
+examples
+but last year a survey came out I think
+this is even more interesting a survey
+came out that found that the average
+developer
+codes
+for 52 minutes per day
+the rest of the time goes with
+reading code
+reading documentation
+code reviews
+you know email meetings and so on
+so all the time we spent reading
+documentation wouldn't that be nice if
+we can kind of get that back
+and we can code some more so instead of
+52 minutes we can get 50.
+eight or even more
+and that's what this helps me with this
+has saved me several times already I've
+used this for a couple of months now in
+our internal bills and it's now all
+available here
+to everybody so
+I'm very excited for that one
+all right let's um
+let's add a new folder to this project
+so you know how you add a folder you
+right click oh
+go down to add new folder right that's
+how we do it
+so recently we added a new thing that
+instead of doing that I can do add new
+item
+but you know add new item let's do the
+keyboard shortcut what's the shortcut
+for add new item
+shift F2 okay there's someone here that
+knows what I'm about to show it's Ctrl
+shift a add new item
+and we get this little thing up now
+this doesn't look like that add new item
+thing
+the add new item thing looks like this
+that's what I'm looking for normally
+right
+but it now has this compact View
+and so if I want to do a folder
+let's call it folder I'm just going to
+end it with a slash
+and hit enter and immediately that was
+created there
+okay
+so some oh all right I'll take it thank
+you
+so
+what's this Ctrl shift a does it always
+gets you back to the view used before
+did you use the compact view or the full
+View
+but if you're like me I always want the
+compact view first regardless of whether
+or not I use the full view earlier and
+so what someone was saying shift F2
+always gets you to the compact view
+regardless
+and from here
+oh I can
+do some other cool things
+I can create a
+what if I create two files foo.cs
+followed by I bar.cs
+now
+I got two phones
+super easy
+well what if I want to create a
+subfolder or a file inside a subfolder
+that doesn't exist I can do SUB folder
+slash
+.cs
+and now I have that file
+so I can comma separate I can create
+subfolders I can create folders
+super easily here
+I'm very excited for this feature
+um
+this was one of the highest voted for
+extensions that existed that you voted
+for us to put in the box
+so it's finally here and um
+I love it
+but
+how smart is this thing
+so this was the bass class here's the
+foo class it's a class how does it know
+it's a class I just gave it a file name
+well because it maps to the templates
+that was in that big view the old add
+new item dialogue you know we have all
+those templates it is clever enough
+to map file extensions to what is
+probably the most likely template that
+you want in this case a class
+but what about that I bar file that we
+did
+it's an interface
+yes exactly
+because naming convention right all
+right bar makes sense
+so this thing is pretty clever and um
+and that's cool
+I want to show you something else that's
+really clever this is another thing that
+um
+I think it was until we added this no
+more than I think two weeks ago
+the second highest voted feature
+that we add and it goes like this
+what is the difference between
+enthusiasts and I bars yes
+or in another way how do I find out what
+the difference is
+well now I can right click one
+and I can compare with any file on disk
+or I can select this for compare
+so now I take I bar right click that and
+can say compare with food.cs because
+that was the one I just selected
+and doing that gives me the diff View
+[Applause]
+yeah finally
+sorry for the wait it's now here and
+this is just the first
+um the first feature we have of this uh
+we're going to look at much more
+comparison between files and clipboards
+and all sorts of things that have to do
+with file comparison and different going
+forward this is the first one that
+landed uh and it's in the the latest
+preview release
+all right
+I'm going to shift over here to a
+different
+project different instance of Visual
+Studio
+here I have
+a bigger project loader I think it's two
+projects actually in this solution
+and I got a bunch of stuff open here you
+know I'm gonna
+I don't even know how many files I got
+open so I'm just going to start by
+clicking up here
+next to the tabs and say show tabs in
+multiple rows
+oh yeah thank you so now I can actually
+see all the tabs that are open
+[Applause]
+um but I just opened this project or
+this solution rather
+and
+you know if I'm working on something if
+I'm working on a solution I'm working on
+a task
+and I'm not finished with the task but I
+have to go home
+you know in the afternoon
+I'm not closing Visual Studio I'm going
+to I leave it in the
+that stated it's in so that when I come
+in the next morning I can continue where
+I left off
+but for all the times when I don't need
+to continue where I left off let's say
+I'm done with the task of the day I
+probably closed Visual Studio
+and then when I start Visual Studio
+again in the morning and I open my
+solution
+I don't want this I don't want it to
+open to the state I was in yesterday
+so this might not be true for you this
+is me okay
+I don't want this because
+I want the fresh car smell
+this is not fresh car smell it has
+everything open and
+notice solution Explorer everything is
+expanded okay
+so what happens is when I open this
+solution in Visual Studio then says oh
+let me hydrate the state
+that this solution was in the last time
+it was worked on from disk
+into memory
+and then on the UI thread expand all the
+notes in solution explorer that means
+nothing else can happen we can't paint
+anything else on the screen at that
+point while that runs
+and then we're going to open some C
+sharp files which means we have to load
+all of Roslyn we have to load the
+language Services the colorizers all
+those things
+who says I'm even going to open a C
+sharp file
+that might not be what I'm going to do
+right now
+so
+I'm going to go to tools options
+and under project and solutions there
+are two check boxes that are there
+unless we remove them
+one of them is called reopened documents
+on solution load and the next one is
+restore solution Explorer project
+hierarchy State on solution load that's
+a mouthful
+going to remove that too
+and click ok
+so let me close the solution
+and I'm going to open it again
+okay one two three click
+and there it is
+so
+very very fast solution load here
+because no state was hydrated by reading
+a file on disk into memory onto the UI
+thread okay and
+fresh car
+this is wonderful
+foreign
+I got two quick ones to go notice
+the top it has like this orange Banner
+if I go back to the other solution it
+had a green Banner what's this about
+well
+I'm using an extension here and I want
+to mention this not because this
+extension is particularly awesome which
+it happens to be particularly awesome
+but
+because
+there's so many cool extensions out
+there and I want to make sure that you
+know about that we have extensions I
+think you needed to be reminded
+sometimes
+that there's thousands literally
+thousands of extensions that can help us
+be more productive and this one is
+called solution colors and it allows me
+to give any color
+to any solution
+including if I'm working on the same
+solution in two different instances of
+Visual Studio but different branches
+they can have different colors because I
+can sometimes have a hard time
+differentiating between the different
+open instances of Visual Studio again
+and check this out
+it even puts that color down here in the
+windows
+jump list or taskbar
+so I can very easily navigate between
+the two
+all right so the last thing I want to
+show you
+I gotta have to be fast here is
+um code cleanup
+and code cleanup profiles so
+again
+it is not the newest of features but I
+know that you're not using it okay so I
+want to draw your attention to this this
+is cool
+this little thing down here that looks
+like a Duster or broom or something
+it's called code cleanup and I can
+configure code cleanup into two profiles
+by default it just has a few fixes
+included
+but I can take all the available ones
+and we got a lot now I'm going to hold
+down shift so that I can select multiple
+here
+move that up click ok
+so now what I'm doing is that I'm
+applying all my coding standards that I
+have configured either in my settings
+under Tools options or if I'm a team I
+probably have an editor config file
+so whatever wherever I get my coding
+standards and Coach styles from
+I can have Visual Studio apply this
+super easily so let's take this file as
+an example
+I can now hit Ctrl ke
+and
+my entire team's coding standards are
+now applied
+really really quickly
+so about 20 of code reviews go to
+talking about code standards and coding
+Styles and so now we can get that time
+back because I can do that very easily
+here I can even set it up so it happens
+automatically on Save okay I don't even
+have to invoke this manually
+and speaking of of getting ready for
+code review
+we have some brand new features in
+Visual Studio 2022 for working with
+git and to demo some of that I want to
+invite my friend Jesse on stage to show
+some of the really really cool and new
+things that we have available Jesse
+all right
+awesome hi everyone my name is Jesse and
+I'm the product manager for the Version
+Control team in Visual Studio
+we know that you care a lot about
+productivity and we want to boost that
+productivity while you're using git so
+my goal is to show you how we've made
+Version Control easy and efficient by
+allowing you to do more in the IDE and
+minimize distractions that take you out
+so to set the stage for the demo
+we've made some changes and I've already
+opened the get changes window here
+so let me make that a little bit bigger
+I've got some changes in my resize file
+and my enumclass
+and I'm going to start preparing my
+commit
+so there are two GitHub issues that I
+care about in this scenario
+the first one is actually tracking the
+work that I'm doing on this project and
+the second one I was tagged in by a
+colleague because they thought it was
+relevant to my work
+so as I start typing my commit I'm going
+to use the closest keyword
+when I complete this pull request it's
+going to go ahead and close that issue
+for me so I don't have to worry about it
+that's nothing new
+but then I want to reference my GitHub
+issue
+and what you would need to do is go out
+into the browser copy paste that issue
+ID or look up and find exactly what
+you're looking for but if you had a good
+idea
+of the title or the name of that one you
+can use our issue search so if I type
+the hash button I get that list of all
+of my recent issues that I've been
+tagged on I can use keyword search to
+narrow down my results and I can find
+exactly what I'm looking for without
+leaving Visual Studio
+yeah it's pretty awesome
+the other issue that I wanted to
+reference
+let me do that quickly and I'll use the
+button here which does the same exact
+thing let me narrow that down grab that
+and you can see that both of these items
+were added to my related item section
+and if I wanted more context I can right
+click and open these directly in the
+browser
+so
+I'm realizing this is my last commit
+that I want to make before completing my
+pull request so just to avoid any
+surprises happening in the pipeline I'm
+going I'm going to go ahead and rebuild
+my solution
+now we've all been there where a build
+starts and it might take a while to run
+we might be tempted to leave Visual
+Studio go check teams or catch up on
+email
+and we heard that it's a blocker to not
+be able to do your git operations
+so we've enabled staging
+and then committing all while the build
+is running so I can continue doing my
+git flow while the build is still going
+on and you can see that happening below
+all right
+let's look at my git repository window
+I've got some updates in there that I
+want to share
+so I've clicked on the view all commits
+button that's my preferred way easiest
+way to get there
+and I want to draw your attention the
+graph here is nothing new but we did add
+some UI enhancements to Aid and
+readability
+and what I want to show is the
+multi-branch graph that we've created
+so I mentioned that I'm creating a pull
+request and I'm going to do that against
+the develop branch
+so let me just click on this eye icon
+and visualize that and now I can see
+exactly how my commits stack up between
+my branches whereas before I'd have to
+wait till I made my pull request and get
+that view in the web so now I'm all
+prepared to create my PR right away
+awesome another great thing about the
+multi-branch graph is that it makes me
+really confident when I'm performing
+complex git operations
+now if I was asked to cherry pick a bug
+fix for a branch that I worked on a
+while ago I'd be fumbling between stack
+Overflow trying to find the right
+command and then the right commit ID so
+that I didn't make a mistake and mess up
+my reap up
+so with the multi-branch graph I can
+just visualize that bug fix Branch let
+me scroll to it really quick
+and then I can right click here
+and then if I want to make doubly sure
+that this is the right change I can
+double check that in my commit details
+and now that I'm confident I'll go ahead
+and just click cherry pick
+I've got the banner to let me know that
+was successful then I can scroll back to
+the top of my feature branch and just
+ensure that that's exactly the right bug
+fix I wanted to apply
+that was so much easier than having to
+go track down the right command to do
+that
+cool so you
+figured out all of the commits that you
+wanted to add to this PR the build ran
+successfully and now you're ready for
+that last step which is creating your
+pull request
+so I'm pushing my changes
+and I'm greeted with that Banner that
+lets me know that it was successful
+and then you might be familiar with this
+link
+today if you tried it out and clicked on
+that link it would take you out into
+github.com or Azure devops or wherever
+you were creating that floor quest in
+the web
+but we heard from you all that it's
+pretty silly to be able to complete 90
+of your workflow in visual studio and
+then have to leave to do the last 10
+percent
+so I'm excited to share the new pull
+request view in Visual Studio which
+allows me to finish creating that right
+in the IDE
+so it's got everything that you might
+want I'll go ahead and quickly create
+my pull request it's not going to be
+terribly descriptive or interesting but
+you guys are going to do much better
+than I am
+and then
+I've got that same issue search
+available here
+and I can go ahead and create that pull
+request
+and see it
+by refresh available on GitHub right
+there
+so these are all the features that I
+wanted to share in the time I had today
+but they're only a fraction of the
+updates that we've made make sure that
+you're downloading the latest preview of
+visual studio and engage with us on
+developer Community these were all
+different requests that came from you
+all and it's what allows us to make such
+awesome features so I'll give it back to
+meds but enjoy the rest of your build
+thanks
+yeah that's some good stuff
+um
+and uh everything you saw here so far
+has is currently available except for
+the last PR the pull request thing it's
+coming very soon so during the summer
+here or winter if you're on the southern
+hemisphere I guess but soon let's say
+um other things we talked so we talked a
+lot about like things that you're
+requesting us to put into Visual Studio
+new features all this stuff and the
+thing that comes up all you know all the
+time of course is performance
+and um it's hard to demonstrate
+performance in a setting like this so I
+just want to make sure I had a slide to
+let you know that it's something we
+actively work on we have a lot of
+Engineers that work on this it's their
+full-time job and we have made some
+great strides 17.5 came in um it's the
+version of Visual Studio 2022 that we
+shipped in February it had a bunch of
+improvements if your.net developer
+um check out the new build acceleration
+if you haven't already you're going to
+cut your build times uh by 80 it's like
+a huge win
+there's a whole lot of other things
+solution load is eight times faster if
+you have those some of those big
+solutions that really need that extra
+boost
+um solution closed which is
+interestingly enough is actually a thing
+who thought that that would matter but
+it does and it's now faster and so is
+the profiler I want to I want to call
+out the profiler uh for two reasons one
+is
+you're not using it
+and it's fantastic
+it lets you
+find performance
+issues hot paths reliability issues very
+very easily in directly in Visual Studio
+it instruments your running app and it
+can give you all those answers and we've
+been making so many updates to it that
+it's better than ever and it's really
+can answer those hard questions about
+performance and reliability and
+it now generates the results three and a
+half times faster for me that has
+actually meant I can make it part of my
+inner loop so when I write Visual Studio
+extensions for instance
+I can run the profiler just that I would
+like run my debugger because it's now so
+fast it's not something I have to think
+of doing later on it's just something
+that's part of my inner loop and it
+makes my code stronger
+um
+all right so
+all this stuff is um of course we
+continue work on performance so uh 17 6
+we've released a week ago 17 7 preview
+one has even more stuff
+um so go check out the latest and
+greatest uh 17.6 if you're on the
+release Channel if you're on the preview
+Channel
+get 17.7
+and the extension I showed you was
+called solution colors if that has any
+interest
+all right
+so
+three weeks ago I think Dante something
+like that we had a blog post coming out
+about a topic that turned out to be
+really interesting to all of you
+and so we thought we can't do build
+without
+showing you and talking about this
+particular subject and
+for that I want to invite my friend
+Dante on stage
+to do exactly that Dante
+thanks France so my name is Dante gagne
+I'm one of the product managers of
+visual studio and I'm in charge of the
+UI refresh so as mads mentioned we
+published a blog post about the UI
+refresh that we've been working on and
+yeah I want to come up here and show a
+little bit about what we're doing so
+I'll go ahead and show you what we're
+looking at and basically if you've been
+looking at visual studio and saying to
+yourself you know this looks like a UI
+that was designed uh like a decade ago
+and the reason is is because for the
+most part it has been it's been a while
+since we've had a new refresh and we
+decided it's time to do a new one and
+this isn't something that we take on
+light light mostly because the UI in
+Visual Studio this is something that
+affects every single one of us it's
+something that we're going to be looking
+at every second of every hour that we
+work on visual studio and that's more
+than the 52 minutes we spend coding it's
+really all your time is going to be
+spent time so we want to make sure we
+get it right we want to spend the time
+and make sure it's going to be the UI
+that it's going to be more comfortable
+and it's going to be something that
+we're going to enjoy working in and our
+guidance is we want to make it the most
+accessible and approachable UI that
+we've ever had now I'm not gonna go
+through all the design principles I'm
+going to encourage you go up to AKA dot
+Ms slash vs fluent that's the blog post
+that we put up there and it's got all of
+the principles and everything
+but what we're doing this time we really
+want to work with our community we want
+to work with you to make sure that this
+is the UI that we're ready to work with
+some folks who have been working with
+visual studio for a while might remember
+some of the UI that
+wasn't necessarily accepted quite so
+well and we want to make sure that this
+time it is what we want and let me show
+you what I'm talking about here
+what I'm showing on the screen now the
+top toolbar is the toolbar that you've
+got right now in visual studio if you've
+got 17 6 or any of the more recent ones
+that's what you've gotten below that is
+one of the toolbars that we showed in
+that blog post this conforms with some
+of the web content accessibility
+guidelines of larger controls that make
+it easier say for people with a motor
+disability to be able to click on those
+controls and make sure that they're not
+misclicking larger controls reduce
+cognitive load make it a little bit
+easier for people to use it a lot of
+things like that that adhere to the
+fluent UI design guidelines a whole
+bunch of other things like that
+but the feedback we immediately got from
+our developer Community is
+it's a little bit too big
+so we went back and said you know based
+on the guidelines that we're working
+with and based on the community
+guidelines or the community feedback
+that we're getting can we take all of
+that into account and below that I'm
+showing the next Generation mock-ups
+that we're working with so we're
+iterating on that feedback and we're
+iterating on our design principles and
+we're moving towards a UI design that we
+feel is going to be more in line with
+what we're trying to reach that
+accessible and approachability and at
+the same time taking into account what
+our our community what our developers
+folks like yourself what's more
+important to you and that's how we're
+approaching this UI refresh we want to
+make something that is going to be what
+we are going to be spending a lot of our
+time doing in the days and years to come
+here's another example the document tabs
+these ones again the top one is the
+document tabs that you're used to and
+the one below that is the one that we
+showed in the blog post and immediately
+we heard people say don't take any room
+from the coding window please don't take
+any room from the coding window okay how
+what can we do with that one how can we
+change the things and the bottom one was
+showing one that took quite a bit less
+room from the coding window and in fact
+one of my designers is showing me a new
+mock-up that she was just working on
+that actually gave one or two more
+pixels to the coding window but still
+adhere to those design principles that
+we're working with and all of these
+things that we're doing are coming from
+feedback from the community
+now I've already had a couple people
+asking me when are we going to get a
+chance to look at this and the answer is
+I don't know right now because we don't
+we're not ready to make this available
+in the previews until we're making sure
+that we're listening to the feedback
+from the community and we're taking that
+all into account we've got time we're
+not in a rush to put this out because we
+want to be very deliberate for this
+refresh before we're rolling it out so
+we don't have a timeline on it we want
+to take our time and we want to get this
+right and the way we get that right is
+with engagement with y'all and getting
+you all into the conversation so I do
+want to encourage folks once again AKA
+dot Ms slash vsfluent that's the blog
+post and we're going to continue to
+engage at vs fluent we're going to
+continue to be working with developer
+Community I know mads and uh Jesse both
+mentioned that as well that we're
+working with the community and we're
+really serious about that with UI
+refresh here please join in the
+conversation and we're going to continue
+to iterate on that with everybody there
+so
+um
+with that I look forward to talking with
+folks more about it and I'll hand it
+back to men's
+thank you thanks Dante
+all right so we are at the end of uh
+this session and I want to just take a
+moment and say thank you so much
+for coming here I know it's just before
+the celebration and you're probably
+thinking when does he shut up so I can
+go stand in line
+I understand but before I let you go uh
+I just want to say
+it's been a privilege to be here on
+stage
+with these two fine people representing
+the visual studio team and show you
+some.net things some some Visual Studio
+things and as you know there's a bunch
+of different sessions here at build
+about Azure and all sorts of different
+uh topics and if you want more visual
+studio and net it is super important
+that you tell us and the way you tell us
+is to fill in one of these session
+surveys like give us a good rating here
+in the comments let us know you want
+more visual studio and Dot net for
+future conferences whether it's build
+ignite or whatever it might be the
+powers that be listen to that stuff so
+please help us out and uh cast your vote
+so to say
+thank you so much and see you in
+Celebration
+foreign

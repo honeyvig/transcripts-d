@@ -1,0 +1,1476 @@
+good morning everybody and welcome to
+this week's episode off the visual
+studio remote office hours my name is
+max Kristensen and I am delighted that
+you are joining us here today because we
+have an exciting show for you we're
+going to talk about machine learning and
+artificial intelligence intelligence
+rather inside visual studio because we
+actually have some inside visual studio
+and what does it do how does it help us
+and what will it do for us in the future
+these are all great questions that we're
+going to look into now I will give you a
+little update on my home office because
+I kind of do that every time here's my
+latest little gadget that I bought this
+is a USB speaker you can see there's our
+cable here that is just up on my
+pegboard here on the my work bench so if
+you go there's a picture of what it
+looks like today this morning so if you
+go check out my Twitter you can see what
+that looks like but this is basically
+like a ten dollar USB speaker and it's a
+hell of a lot better sound let me tell
+you then then sort of a laptop slowly
+getting into a more professional estate
+here in my very unprofessional home
+office so with that out of the way let's
+say hello to our two guests and so Katie
+why don't you start by introducing
+yourselves hi my name is katie and i am
+one of the program managers for visual
+studio in tellah code i'm looking
+forward to this conversation today
+awesome and mark hey yeah i met you and
+i have worked together for a long time
+I'm a program manager I've been a
+program manager on Visual Studio for
+like 12 years something like that now I
+don't know I'm getting too old and now
+I'm working with Katie as a program
+manager on the Intel akkad team been at
+this for like two and a bit years now
+and thoroughly enjoying it so looking
+forward to chatting with all the folks
+about what we can do with AI
+fantastic yeah I think mark I think the
+first time I met you you were the
+program manager for the visual studio
+editor just the editor itself that built
+with you know syntax highlighting and
+intellisense and all that sort of stuff
+so this is this is quite some years ago
+I guess so for the people that are
+online please remember that you have on
+your right side of the screen you have a
+Q&A panel so that means that you can ask
+us any question you like anything for
+mark and Katie about machine learning
+and AI inside Visual Studio but you can
+ask any question about Visual Studio and
+you know with three people here that
+works on the visual studio team there's
+a good chance that we were able to
+answer that so just keep the questions
+coming and we will answer them as we go
+along okay let's get into it so mark I
+know that you're on the year while
+you're both on the intel eco team and
+i've heard a lot about Intelli code I
+think I know what it is but every time
+we talk I learned that it is more than I
+think it is it happens every single time
+like it's expanded the role of the
+machine learning is is doing something I
+didn't even know that it used to do and
+stuff like that so things are moving
+quick it seems like but what is in
+Teleco can you kind of give an overview
+of what it is and how we use the machine
+learning and AI yeah for Angelica glad
+to do it
+I mean you know I've been at this I say
+I was looking back a bit yesterday and
+realizing that I've been playing this
+game now for two two and a bit years
+working on Intelli code and we first
+previewed some stuff way back in 2018 a
+build but we've we've really kept the
+same focus all the way along right so
+from the start we were looking at ways
+that we could use the power of the
+machine to delve into your code as data
+and the things wrapped around your
+coders data and present back to you
+based on the kind of wisdom that it
+harvested and distilled down some useful
+insights right some useful insights that
+can actually help you to do your job in
+in a more effective fashion and so when
+we talk to customers when we talk to
+developers we found that you know there
+were various areas where there were
+struggles in their you know their
+development life
+and they for instance you know they
+might say well I'm coming at an
+unfamiliar API I really don't quite
+understand how to how to use that API
+but I could really use some assistance
+or actually and and this is a
+conversation we've been having more
+recently i'm reefa miller izing myself
+with an api i don't quite know what to
+do you know i'm really trying to get
+myself back up to speed again whilst
+using this thing and i want to be
+effective and so that got us into
+thinking about how can we do better
+in terms of not just the completionist
+but other places too in terms of
+presenting the right stuff to you so
+helping you code with confidence right
+so that you can actually get right into
+something and the machine can help you
+out by presenting the things that you're
+most likely pattern choices right so the
+power of pattern is really a big theme
+across the whole of intel acade right
+that machines can do stuff now can delve
+into patterns that they were simply not
+able to do a few years ago okay and all
+of our code and all of our things around
+code what I kind of call code metadata
+all of that stuff is like a substrate
+there's a big scientific word for you
+but you know just a place where things
+can grow or where we can grow that
+insight and and bring it back to you
+right so that's that's really the the
+founding insight was that we believe
+that that machines can grab grab those
+insights and bring them to you at your
+point of need and then we talk about you
+know how that can help you out when
+you're trying to find issues so think
+about anti-patterns think about things
+where you your your team has done a
+great deal of work perhaps to to go
+ahead and fix some problem that's
+actually a common auntie patent that
+keeps coming up in every single flippin
+code review and it drives you nuts and
+what about if the machine could spot
+those patterns and put those fixes out
+there for you so that you didn't have to
+keep reminding everyone in every single
+code review that'll be neat wouldn't it
+and so we talk about that as being kind
+of how we can help you find issues
+faster and then we talk about focusing
+your review so you heard a little bit
+yes there about how is code reviews can
+become messed up with a whole bunch of
+repetitive tedium we were looking at
+ways that we can relieve that pain as
+well but all of this it comes down to
+the capacity of machines to learn huge
+things across giant substrates that
+would be really hard for a human to
+learn and bring those useful insights
+back to you right
+you need them that kind of makes sense
+yeah I think that's that's really
+helpful so you know it reminds me like
+10 years ago when I first started on
+working on Visual Studio at Microsoft I
+had this white board in my office and at
+the very top I had written in big
+letters the thinking IDE and the idea
+was that an IDE should be sort of
+anticipating your next move and make
+that as seamless as possible and it was
+sort of a pipe dream and it was more
+like a vision or more like a Northstar
+to shoot for but what you're talking
+about is seems like that it seems like a
+way that we don't have to deal with this
+sort of trivialities or the mundane
+things of programming we can go straight
+to solving the problem that we were
+hired to do and there's worry about like
+I guess like formatting and other such
+things in a code review that seems
+trivial right exactly so and and it
+doesn't have to be restricted to the
+trivial either that's the thing so you
+know these can be reasonably complicated
+things I mean we got some stuff to show
+you later that's that I think you'll
+find fun that will help you find
+actually cut complicated things and
+repeated patterns that you know you
+maybe wouldn't even have had time to
+spot and might have bitten you on the
+posterior later on and you know that's
+that's something we we want to make sure
+that you know we let the Machine loose
+on that kind of stuff as well so it's
+not so much just the the mundane and the
+repetitive but it's also the stuff that
+is too big for you to wrap your head
+around because you just don't have time
+right and we'll talk a little bit about
+that yeah maybe a bit later when we talk
+about suggestions all right so that
+makes good sense so it's both the
+mundane and the complex so mmm when when
+Intelli code first was introduced he was
+it was doing something in my
+intelligence it was augmenting the
+analysis and in the beginning I didn't
+really know what to make of it like I I
+it was you know my cheese got moved
+something changed the intellisense had
+looked a certain way for like maybe two
+decades or something it was different so
+what happened there and how how did how
+did that solve problem how do how do
+I guess I my big question is how and why
+did you do two intelligence of what you
+did and can you explain what it was that
+you did okay sure I don't know if you're
+still hearing me okay cool so yeah so
+what what we did was we actually learned
+and trained on open source repos and we
+learned just like the common usage of
+various classes and what you're seeing
+sort of as you see those autocomplete
+pop-ups is you're seeing sort of what it
+what are those like top views or most
+used or commonly used types or or
+functions or methods for that class so
+it really allows and enables developers
+who may not be quite familiar or might
+just forget or not recall what is the
+right function or the right method to
+use in a certain circumstance it allows
+you to sort of provide it provide you
+with sort of contextual method recall as
+you're typing so this is very very
+helpful for a number of scenarios so
+imagine if you're a developer who's just
+onboarding to a particular class or
+namespace this really just sort of gets
+you sort of helps you sort of assist you
+as you're as you're typing is also super
+valuable for even those more seasoned
+developer who might have not used a
+particular class in a long time or might
+just be you know not super familiar with
+like an internal library for instance
+with one of our other features team
+completions and sort of gets you sort of
+set without having to navigate to the
+web or have to navigate to stack
+overflow
+you just have everything at your
+fingertips okay so that's really cool
+yeah the it seems like being able to
+figure out how to use something based on
+how other people use it
+is pretty much what we do when we go and
+Google something right and or we go to
+stack overflow to find out like how do I
+use you know this method and this class
+from this library that I just installed
+but now that's just that's just right
+there in my intellisense list and that's
+and that's all coming is that all from
+github or is there any other sources to
+that and how do how do and how do you
+determine what sources to choose from
+okay so we determine which sources to
+use so there right now are our base
+completions model which you're seeing
+you know as you start typing in digital
+cedar versus video code that is based
+off of open top open source repos and so
+those are the repos that hope have over
+a hundred stars so we we've done a
+couple things so we've trained our
+completions model based off of this
+learning of these open source repos so
+like seeing these top repos and just
+learning from those but we've also sort
+of curated that learning so we've we've
+actually it's a supervised learning
+model where we're we're actually like
+saying which ones are the top even
+within those top repos what are the top
+most use types or classes within those
+repos to ensure that you're getting the
+contextual usage not just sort of like
+the methods or properties that are used
+just broadly they're getting sort of
+like a more intelligent or more catered
+sort of experience or tailored
+experience so I guess to answer your
+question Mads this is what we're
+providing for the user is not just sort
+of a comprehensive dictionary of methods
+but sort of providing them with the
+right methods the right properties to
+use at the right moment and when they
+need it so we don't want to provide you
+everything we sort of want to just
+provide you what we believe you'll
+actually what will be useful in order to
+enable you
+to be productive at the moment when
+you're trying to use it okay that makes
+sense so I don't know maybe it was like
+a year ago I came to I came to you mark
+and I said hey you know visual studio
+extensibility is a kind of a complex set
+of api's so if you've ever tried to
+rewrite a business to do extension you
+know that all the you guys there maybe
+not so well documented and it can be
+hard to find out exactly how to use them
+so I went to mark and I said hey can we
+can we in takes a bunch of sample
+repositories and github and other apps
+that use these so that we can give
+better intelligence using those machine
+learning models for all these API and
+and Mark was so kind to say of course
+and you know what did it take two weeks
+or whatever and boom it was there in the
+product and everyone benefited and we
+actually made it so that Intelli code
+was now I optional but recommended
+component when you installed the
+workload for Mitchell three
+extensibility so I think that was an
+example where we took we saw there was
+an itch problem granted it's an itch
+it's not the biggest space in the world
+right Visual Studio extensions but we
+were able to like tailor and optimize
+the machine learning for that so mark is
+that possible if people run their own
+nougat packages they have some users of
+those newbie packages can they also ask
+that you indexed to improve their users
+experience for there is that a thing
+well there's a couple of answers to that
+question
+Matz and you know I want to start from
+the top one of the first things we kind
+of heard from people when when they
+started to use these that these new
+starred in Telus and suggestions was
+exactly what you've said it's like hey
+you know I use this library or that
+library right but it's not super common
+right just exactly like what you were
+talking about with these extensibility
+not you know it might not reach the bar
+of being in enough of the open source
+github repos for us to pick it up and
+the
+in what Katy was referring to as our
+base models right so how can we solve
+that problem and for some libraries
+absolutely where there's there's usage
+out there we're happy to hear from
+people and ask your asking us to put
+certain library sets into our base
+models and that can be a very effective
+thing for us to do if we know where
+there's great samples to be had right so
+we can train on it pretty much any
+github repo if it's open and so if we
+know it's important you can point us at
+it and we can go at it and do exactly
+what we did for the various
+extensibility space but I think I'd want
+to ask Katy to talk to us a little bit
+about some of the things that are going
+on for cases where it might not be
+something that's for everybody but when
+it's more about your own internal code
+bases and you've got internal classes
+and stuff like that right so that's the
+other problem that comes up right once
+people get hooked on this stuff right
+and what we what we've heard from people
+is that they kind of like getting these
+stars but they were upset that they
+weren't getting them for other classes
+they were commonly using sometimes those
+other common classes are actually in
+your own code and and Katy I don't know
+do you want to have a bit of chat about
+what we're doing for that sure mark yeah
+so so what mark is referring to is a
+feature that we call team completions
+and so as Mark was mentioning you can
+currently get Intelli code start
+completion suggestions for like from the
+base model just as you're typing so it's
+sort of predicting what you're gonna say
+what what's next but that's based off of
+common usage and that common usage as
+Matt and I were talking about earlier is
+based off of training on open source
+repos or the top open source repos but
+what if you're working in an internal
+library or you're working on code or
+tight or four types that aren't commonly
+found in open source repos so what do
+you do and so for us we have now enabled
+team completions and team completions
+not only like augments that sort of base
+completions model that Mark was
+referring to
+with your custom types that it
+automatically also shares that with
+everyone who has access to your codebase
+so so that is the super cool part of
+like let's say that you're working on in
+a git repo and I want to train a team
+completions model so I get dice so I can
+get those start completions for my own
+types well once you do that training
+you've also shared that with with the
+rest of your team automatically anyone
+who has access to that git repository
+automatically gets all of those the
+start completions for those unique types
+which i think is is super super cool so
+yeah I think that combined with the
+context of your code you can just
+imagine as as you're typing and as
+you're developing you're starting to not
+just code faster but you're also just
+sort of being assisted along the way so
+you can sort of stay in that developer
+flow with having these start completions
+okay so if I have an open source library
+for instance or a nudey package that
+people are using can I then do this team
+completions for my own for my own set of
+API so whatever that I've developed and
+then whoever has access to my github
+repository will also get the benefit of
+those completions is that is that what I
+hear Katey repository let's be very like
+it will be specific so for right now
+we've enabled this for just get
+repositories and so it fits on github or
+if it's an azure dev ops and it's a it's
+a get based repository then yes you can
+have a manual training and then that
+once that that manual training that team
+completions model will be attached to
+that repository and shared with the rest
+of your team
+however there was a part that you talked
+about a nougat package and that's
+something that we have on our backlog
+and we've been thinking actually very
+recently about but we have not enabled
+attaching team completions models to
+NuGet packages yet or those are those
+libraries so we do have that in our mind
+that we as a top scenario the nailing
+library owners to be able to train a
+team completions model and then
+distribute that with to the rest of
+their you know library users it also
+vice versa we also have the idea that we
+love for a library user to be able to
+train for a nougat package and then you
+know with the consent of the nougat
+package owner of course be able to
+distribute so we are actually planning
+on lining that up but right now team
+completions is just scope to get
+repositories and I don't know I think
+that mark might actually have something
+to add here yeah so I mean Katie's
+really put it pretty well there the the
+game is a little bit different so
+because at the moment Mads you could
+come to my office or someone could send
+me an email right or send Katie an email
+and say hey I really really want my
+package to be included or my set of
+packages to be included those can get
+included today in the in our base model
+so we have a way to do that for for
+things that we think are important but
+obviously that's kind of not gonna scale
+to the sheer number and variety of
+packages that are out there and so as a
+package author as you were saying you
+know you can't really like we can't have
+every package author be banging on our
+door and saying hey can you include me
+in the base model also that kind of
+doesn't scale out well in in terms of
+having the the base model getting bigger
+and bigger so what we really want to do
+is to make sure that you know if you're
+consuming a base model sorry of a no
+NuGet package rather you get the right
+map of the right model for that package
+but that requires all the things that
+Katie was talking about to be solved in
+order to solve for that we need your
+consent as a package owner to go train
+we actually need something that you may
+or may not have which is usage right we
+need sample usage of your code and
+that's that the model really only learns
+I spidering across usage not so much
+looking at the API itself but looking at
+how people use that API and in all the
+different contexts that it's used and
+it's most useful when all of the
+contexts are expressed in that learning
+data so it's it's not as easy as it
+sounds and it's a problem we really
+desperately want to crack as Katie says
+it's on our backlog but we haven't got
+there yet and I'm super interested to
+hear back you know if there's anybody
+who's got packages right now what what
+I'm Katie and I would be loved to be in
+touch with you about about what that
+feels like in terms of what would you
+your ideal workflow be how would that
+fit in with you would it be just like
+that you when you publish your new get
+package the work of doing a training
+gets done automatically for you and
+somehow gets pushed up and how do you
+see that playing out for you would that
+work well would there be something else
+that you would want please you know all
+of this stuff's only gonna work if we
+can get all of the ecosystem people who
+are actually playing the game in on how
+we're doing it yeah so I guess the whole
+scaling thing makes good sense of course
+it wouldn't scale if everybody's
+packages were was in the base model that
+makes total sense so and scaling is a
+hard problem to solve I don't envy come
+up with a good design for that one yeah
+fortunately Mads the sorry
+fortunately match the there's an
+existing piece of scaling called new get
+write which basically lets us scale
+packages right so we're keen to follow
+the patterns that package managers give
+but we just want to layer ourselves up
+and on top of that as much as we can
+that's how our minds are on this at the
+moment and but if people want to kind of
+tweak our minds on it we're more than
+happy to have discussions about that so
+if you watch this live please give us a
+comment in the Q&A panel on your right
+side or if you're watching this on
+demand on YouTube comments are below
+please please help us get some insights
+here for mark and Katie
+so just to change gears a little bit you
+are
+doing Intelli code which is the
+originally was the augmentation of
+intellisense and you know but it's
+become more like and as I said in the
+beginning every time I asked what are
+you working on there's always something
+new and different than what I thought it
+was going to be so beyond completions or
+that's what we internally call Intel
+sense completion what else do you have
+going on in your team right now what
+else are you tinkering with mark Wow so
+I mean there's there's so much so so
+much and we're you know that when I look
+at the horizon of what we're looking to
+do with right we're really trying to
+help developers to you know I say beyond
+completion some of these things are
+actually just extending completions like
+so for instance you know we're doing
+some work to make completions even
+better in places where they're not to
+extend their scope but we're also doing
+stuff and Katie was kind of alluding to
+how did developers learn how do they
+understand there are lots of steps so
+there's a time for instance when you
+don't even know what API or even what
+library it is that you want to use and
+typically right now you're going to be
+out on github it's not get up on the
+Stack Overflow or being or name your
+search engine of choice here you're
+going to be out there searching for the
+solutions to different problems however
+but if your goal is a code snippet why
+wouldn't that be inside vs another one
+that we're looking at is looking at
+repeated patterns and you know how we
+can help you with with that so when
+you're editing I don't know if you've
+ever come across this scenario you know
+Mads where you'll you introduce
+something new into your into your code
+you're doing some refactoring somewhere
+and you know you then have that really
+tedious task maybe you've introduced to
+help a function of going ahead and in
+introducing that in all the places that
+it applies in your project or maybe even
+in other projects and particularly if
+that helper function contains you know
+functionality that fixes a bug you might
+even if you forget to introduce that
+helper function somewhere you might be
+having hidden bugs parked in your codes
+that you haven't fixed or maybe your
+team's developed a new pattern for doing
+something that helps avoid some trouble
+you know maybe you've got a particular
+way of dealing with certain threading
+constructs or you know you've got a way
+of catching if blocks and the convention
+for the way you throw exceptions and
+blah blah blah blah blah you know teams
+have these things and they have them for
+a reason they'd learn these things by
+grazing their knees and by by actually
+doing stuff and having trouble hit them
+and then the team gets together and they
+figure out some solutions but the real
+trouble comes when they want when you
+want when you want to make it basically
+codify that and make sure that you don't
+miss it missed opportunities for it in
+other places and that's where the power
+of the Machine comes in to help you out
+to help you figure out where those
+locations might be so if I can I'd like
+to share a teeny tiny demo how that
+might work so cueing your screen and
+I'll get it up just bear with me for a
+moment and I will share my visual studio
+let me know when you're seeing my screen
+yep there you oh I'm just in the middle
+of Visual Studio right now this is just
+a preview release and this is a feature
+that we call in Telugu suggestions and
+so what's actually going to happen here
+is I've got this crufty code here which
+does a Fahrenheit to Celsius conversion
+and I'm just going to go ahead and
+replace it because I've got myself a
+helper function that actually does that
+for me and now I've got to go through my
+whole program and find all the places
+where that might apply and that's you
+know not necessarily an easy task
+because you know the variable names I
+use might be different there's some
+slight changes of formatting so a
+straight-up Find and Replace might not
+do this but what I find is you might
+have noticed as soon as I finished that
+second instance there something has
+happened okay and over here I've got a
+new thing okay it says showing Teleco
+suggestions based on repeated edits it's
+been watching me as I go okay and we'll
+talk a little bit more about how that
+works in a moment but then watching me
+as I go and when I click on that thing
+there I see that it's saying okay
+there's another one of those
+at line 124 I double-click on it and
+here's another light bulb and it
+suggests the exact fix that I need based
+on the pattern that I was typing ok so
+if I take that sure enough it's fixed it
+for me ok so you can see what's going on
+here I'll just stop sharing my screen
+now and we can talk a little bit about
+how that works say the magic there
+underneath the hood was a thing called
+pros now pros is a little bit different
+from your standard
+machine learning and AI based things so
+what Katie was talking about with the
+base completions and the team
+completions that we've gotten into those
+things are all based on a machine
+learning algorithm or an algorithm that
+works across the relatively large corpus
+of code and learns the bunch of patterns
+based on it sort of after the fact in
+frozen code if you like that code is
+actually you know learns across at one
+moment in time what you saw there was it
+was dynamically learning ok and what
+prose was doing was it was tracking my
+ast my abstract syntax tree deltas ok so
+it looks at my code and it says ok when
+Mark was typing that thing this kind of
+change occurred and it was like it was a
+tree that looked like this and then it
+turned into a tree that looked like that
+ok so it was able to deal with the fact
+that the variable for instance the
+variable names were different and some
+of the constructs might be different
+because of that ok it looks at those
+deltas and once it finds some common
+ones it tries to synthesize up a
+transform program that lets the user get
+that fix that I was showing to you so
+the thing that takes you from before to
+after that's like a transformation
+program or a synthesized suggestion that
+is made by example by clustering ok
+those deltas in the ast S as I go and
+having learnt that rule ok then it can
+apply it anywhere in my code that I open
+up so that's pretty natty
+I like it I like it a lot because it
+actually is learning we've talked about
+how it learns from the you know kind of
+wisdom of the broad community in terms
+the work that we have incompletions and
+then about how we can learn from the
+wisdom of the narrower community on your
+team when we're talking about team
+completions but now we're talking about
+learning from what you type what
+individuals type and then you know
+eventually we're thinking maybe we get
+that that knowledge out to the team as
+well wouldn't that be cool if those
+rules that we found was something that
+we're actually a transferable asset
+wouldn't that be any idea anywho this
+this is something that's just it's a
+different kind of learning so we're
+we're not hung up on the idea that
+everything we do has to be a I in the
+conventional sense of that word that it
+has to be learning across a large corpus
+is that it has to be using big fat
+models and or even slimline models we
+will do anything to have the Machine
+find a pattern for you and help you
+apply it at the right point of need
+that's the that's the real key and so
+that second piece that you saw there is
+an example of how we're doing that with
+pros with with Intel occurred
+suggestions and folks can if they want
+to try this out they can try this out in
+any of our recent previews so go
+download the 16-6
+preview bits right now and you can you
+can try this out just go to the IntelliJ
+preview box and turn it on it's it's
+really easy to to try out and we'd love
+to hear the feedback on that but that's
+one of the things that we're playing
+with as a team is to to try and expand
+the kinds of learning that we are
+willing to take on alright so you bring
+up a good point
+the latest Visual Studio preview which
+is 16 6 preview something and but
+Intelli code also works for Visual
+Studio code right so how do so okay how
+does people go get the business to do
+code 1 and is there a benefit one over
+the other are they or are they the same
+it sure so the benefits of Visual Studio
+versus Visual Studio code honestly I
+think it's a matter of preference so I
+think that there are a number of
+developers who are accustomed to using
+Visual Studio and in Visual Studio right
+now the feature that I mentioned
+previously team completions
+right now we've only actually enabled
+that for a c-sharp in C++ within Visual
+Studio so if you're trying to if you're
+deciding whether or not you want to try
+to completions right now if you are on
+vision of the studio code we haven't
+actually expanded there yet it is on our
+roadmap
+and in our backlog but right now if
+you're a c-sharp or C++ developer and
+you'd like to have custom completions
+tailored to your code base you would
+have to be on Visual Studio however we
+do have base completions so getting
+those starred completion suggestions for
+JavaScript typescript like right now we
+have C++ and we also have I'm probably
+blinking on Python and probably blinking
+on a couple equals equals amel yeah so I
+think that's about it Samos equal Python
+JavaScript typescript C++ we have that
+available in Visual Studio code and the
+way to get that is you would actually
+have to go to the visual studio
+marketplace so like the visual studio
+code marketplace and you'd have to
+install that Intel extension and you can
+also do that directly in Visual Studio
+code so the other thing I would say is
+that we also our preview feature that
+you can actually try out in Visual
+Studio preview as like Marc suggested
+previously and as Matt sort of alluded
+to you can try out all of our latest
+features which we tend to not always
+focus on visual studio but a lot of a
+lot of our PDS have sort of started in
+the digital studio but you can go to
+visual studio and you can access a
+number of our our preview features there
+so yeah so I don't know know if there's
+a which one is better
+I think it is a matter of developer
+friends and what you are accustomed to
+working in I do think that visual studio
+does offer like a very more
+comprehensive experience and if you are
+familiar with setting up your developer
+toolkit their toolset there we just sort
+of augment that experience all right
+very cool so when I see mark what you
+just showed and other things that I've
+seen until the code do it's like you
+know it's close to magic and you know
+and I realized I also don't understand
+sort of a mental and AI concepts very
+deeply and so there's a saying by
+someone that if you don't understand it
+it's indistinguishable from magic but
+what is what kind of reactions do you
+get out there for for people using it or
+seeing it for the first time what what
+what do you hear mark well I mean it's
+it's interesting you know it varies from
+shock and the magic response to how on
+earth is it doing that to suspicion
+sometimes like I'm not sure how it could
+do that or why it would do that but you
+know one of the things I think we're
+always trying to be in the interrogate
+team is kind of humble about the the
+technology that we are using and you
+know it's not always perfect because
+these things are you know based on
+algorithms that you do not always
+produce perfect results with a hundred
+percent certainty we always want to say
+that the things that we're producing are
+either a suggestion or something of that
+sort and the reason why is because we
+don't want to want people to think that
+this is like it's not like static
+analysis so if you think about the and
+even that can get it wrong of course as
+we've as if you've been around static
+analysis long enough you can know there
+are false positives there but if you
+think about the suggestions code that I
+just showed you there the amazing sort
+of ability to spot patterns does it get
+that right a hundred percent all of the
+time no it does not but what it does is
+when it does get it right when those
+suggestions are good they essentially
+end up being something that can be
+almost like the analyzer you didn't
+- right okay it's it's basically because
+no not many people have taken the time
+to go and write a linter or an analyzer
+or something of that sort but when we
+can actually do this right for you
+we can really add value and so we're on
+a delicate balance between trying to
+make sure that you know we surface the
+suggestions that are useful to you so
+for instance in that suggestions code
+one of the things under the hood that's
+going on there that we learnt quite
+early on is we really want to make sure
+that even AST suggestion Delta
+suggestions that we get that might be
+true in terms of the transforms you know
+they may actually be a correct
+observation but that which which
+increase the number of errors in your
+code those things we don't currently
+suggest it may be that they're valid and
+it may be that in future we actually
+have so a bit more control over that and
+say actually I'm perfectly happy to have
+my code to be in a broken state in an
+intermediate and you know that when
+you're editing sometimes that happens
+right that you're you have to go through
+broken to get to good um but initially
+in terms of making this useful to people
+we've beefed up the sweet spot was that
+we need to make sure we don't cause
+suggestions that would make the code
+break now you know that's gonna change
+over time but you know in terms of
+reactions from people people generally
+don't react well to suggestions that
+make their code break unless they know
+it's going to do that unless they know
+what the nature of the thing they're
+applying is so you know that's one of
+the things we've heard but and that's
+part of what's gone into you know the
+suggestions set up as it stands right
+now may be the year but also that that
+notion of humility in terms of the
+suggestions that we make I think you'll
+always find that so for instance if you
+think back to the intellisense example
+intellisense will show you everything
+that's type valid for the location that
+you're you're typing okay when you do a
+method or a property or an argument
+those things if they're valid code then
+intellisense will show them to you this
+is it the pre Intelli code into other
+sense right it will show them to you all
+we're doing is kind of sprinkling some
+some recommendation sugar some
+suggestion sugar on top of that right
+and making it say Oh
+but we think given your context you
+might want to do that and notice I'm
+using think and might they're we're not
+saying you'll definitely want to do that
+we're saying you might want to do that
+so it's very important with these a I
+assisted tool so that we we make sure we
+understand that and that we express that
+in the kind of experiences that we
+surface so I would say that's that's
+been true across everything that we've
+done so far and I anticipate it probably
+stays that way yeah
+so it's not like a moment in time like
+the AI technology has just not evolved
+enough to be more that we can be more
+prescriptive saying this is what you
+want to do so right now we're just
+saying oh maybe this is what you want to
+do and we suggest something but it's
+that just because technology hasn't
+caught up or I don't know I don't know
+that that's actually ever gonna
+completely go away it's because there's
+such a broad spectrum of things that are
+possible to express you know we get more
+precise and more confident and we spend
+a lot of time obsessing about precision
+and coverage which are two key metrics
+that we we measure all the time and
+really precision is about how often we
+get it right and coverage is about how
+many places we can get it right and so
+the those things are things we bothered
+we are deeply bothered about we want to
+drive that number higher so that we get
+we cover more stuff and we cover it a
+higher precision that's always goodness
+but getting to a hundred percent is not
+necessarily our goal being useful is our
+goal right being useful to the developer
+and helping them to you know move
+forward faster that those those are the
+goals that we care most about right that
+reminds me of like it's sort of a mantra
+that we have here in my family is like
+never let perfect get in the way of good
+yeah so much good to be had and it
+doesn't have to be perfect to add a
+tremendous amount of value yeah
+so I've heard like some people be a
+little bit concerned about AI right like
+is he gonna take my job like where are
+we in you know with the AI and machine
+learning inside Visual Studio like are
+we getting closer to being able to
+automate the
+as a whole as a discipline maybe what
+are the sort of concerns that you hear
+from people and and what are your
+answers to them Katie so I'd love to
+talk with Mark about this too because I
+know mark and I talk about this a lot
+but from my perspective you're so far
+away from that as a discipline and I
+think that as Mark was highlighting in
+his biggest comment I think that like
+we're really the goal of what we're
+trying to do and embedding or
+integrating AI and machine learning
+techniques into visual studio vision
+studio code our main goal is to promote
+common usage and sort of promote those
+those common practices best practices
+and we're at the point I think in the in
+the juncture and the grand scheme of
+things I think we're very very nascent
+and we're at the point where what we're
+doing is providing just helpful
+contextual examples so that's what the
+completions Dunne's
+that's what suggestions as you saw mark
+demo previously that is what that is
+doing is providing suggestions that
+really just sort of like help you remain
+in the dev environment and and help you
+sort of like keep in that flow that
+developer flow and not get distracted by
+going to you know the web and like
+searching this and then seeing those
+shoes that you've been wanting to
+purchase or seeing that you know $10 USB
+speaker that you're like I want to get
+that it helps you keep focused on the
+task at hand
+and I think we're just we're we're
+really far away from automating people's
+like deb jobs away and i don't even
+think that that is a goal that we ever
+actually intended to to reach our goal
+it has been mainly just like how do we
+enable developers who already are sort
+of like a very valuable resource how do
+we keep them
+to just keep them focused on on whatever
+their task is how do we enable them to
+be as productive as they possibly can
+and not productive or you know you know
+the the man or like the business but
+being productive for their own selves
+like how do we actually provide them
+with the tools that as they're learning
+development and onboarding to coding
+that they're actually able to see this
+as like this is actually a fun task
+there's some sort of like ludic
+engagement aspect to like just actually
+just development so I think from our
+perspective that's sort of our spin but
+I'd love to like have this conversation
+with mark as well so I know mark has you
+know is you know very much like on the
+edge of the sea to answer all right
+bargain let's hear it yeah I would this
+is this is the heart of where my head's
+been for the last couple years you know
+that this is not at all about taking
+away people's jobs and and and as Casey
+says I mean even technologically we are
+far from that but it's just not what
+we're about we are about enhancing the
+experience of development about making
+development yeah I mean I dare to say
+fun right to actually make it less
+painful and less difficult to stay in
+the zone to stay in there I love the
+word ludica one of my great heroes was
+Bill Hill by the way who sadly passed
+away and that that notion of ludecke
+engagement encoding that notion of being
+you know I'm locked into this space I'm
+thinking about so if I don't have to be
+distracted away to some other place in
+order to go and figure out what I'm
+doing I can stay in the zone and the
+tool just helpfully augments me right
+helpfully augments me in there at the
+right moment with the knowledge that I
+couldn't otherwise get it's giving me
+superpowers
+basically it's giving giving me
+superpowers by saying I can now as a
+developer know for instance all the
+patterns that I have out there that my
+team has has developed so I don't have
+to worry about tripping over that banana
+skin whilst I'm in the process of
+figuring out how to it how to implement
+this great piece of technology that I'm
+actually implementing my head's about
+the technology it's not worrying about
+those other things that I might be
+missing
+or you know let's imagine and and I know
+you know maybe I'm just getting old a
+little bit but here's the thing we know
+a lot of api's but we sure as heck
+forget all of api's as well so I don't
+want to have to be going back to the
+documentation to reboot myself into the
+zone when I hit that piece of code that
+I haven't touched in three years right I
+want to be able to know what the common
+usage is right now so that I'm not you
+know losing my context losing my vibe
+really we want to make development more
+pleasurable we want to give developers
+superpowers we want to give them that
+capacity to get more done not just
+because it's kind of good for business
+but because it's good for the soul
+anyway
+Katie Katie I'm sure you want to come
+back on that egg sure Mike yeah mark
+yeah I really wanted to actually like
+sort of segue this into something that
+aunt Ella code provides so an example of
+how we're actually trying to make
+development more more helpful and also
+more pleasurable as Mark was mentioning
+is that they're trying to like reduce
+the arguments that are had over very
+like you know sometimes you'd think like
+trivial things like for example your
+code Styles that happens all the time or
+formatting so do we have the tab or do
+we have like two spaces or like three
+spaces are four spaces and and things
+like that are often just like fights or
+venomously place but conversations that
+go on for way too long
+that actually distract from your ability
+or door detract from your ability to
+actually just code so how do we actually
+solve that so I'm actually going to
+share my screen and show you an example
+of how we're actually trying to pay
+developers and development teams from
+having these sort of back-and-forth
+arguments about code styles and and code
+formatting
+you
+okay so as you can see my screen I've
+loaded a solution and and the feature
+that I'm actually going to demo is a
+feature called and bird editor config so
+if you're familiar with editor config
+files an editor config file is a
+cross-platform file and there is a
+common syntax defined syntax that sort
+of defines sort of the code styles and
+code formatting conventions that exist
+within a solution our project so
+typically what developers would do is
+they would write an editor config file
+what happens if you're in a team and you
+don't actually know like you you just
+sort of you have this project you don't
+actually know what the styles are
+actually already exist there but you
+have sort of like some people have
+opinions how about you start from
+instead of having opinions why not start
+from and analyzed like an analytic and
+analysis of your current code base and
+the current code conventions and the
+current code styles that exist there and
+then from there like determine what it
+should be and have those very meaningful
+like bring the data to the to the
+conversation or the debate so so what
+you can do is you can actually add a new
+editor config file that Intel code but
+it's all code will do in the background
+is it's actually analyzing that solution
+and it has now generated an editor
+config file so instead of having to go
+and define all of these rules and
+intelecom is actually just defining this
+for you so if you if you see this is
+what aunt Ella code has produced in the
+editor config file so I've already
+opened up a file
+it's called paint object constructor and
+something that you'll notice is that
+you'll notice here that it's suggesting
+me I've already sort of like loaded up
+the line I'm sorry but it's suggesting
+that I actually take an action and
+actually make a fix and that is based
+off of
+the define coding conventions and that
+have been defined in the editor config
+file that Intel code has already
+generated for me on my B on my behalf
+and so because this lives in the
+solution so you'll see the editor config
+file here once I commit this this will
+automatically be shared with the rest of
+my team and so as you can tell I could
+actually introduce this but I can
+actually take action on this suggestion
+but I also wanted to show you that what
+is the actual rule that is providing me
+with this suggestion and if you'll
+notice if you can if I can go down there
+there is a rule that says that you
+prefer methods that we practice with
+this and and so I guess what I'm trying
+to say is that the scenario that is this
+would be very very impactful for and
+useful for is a scenario when I'm in a
+team and we just have had a lot of
+conversations back and forth about what
+should be the common style or the common
+coding practices for my team and often
+they just people are bringing their
+opinions to the conversation and based
+off of their own history but why don't
+we take the code as the main artifact
+and we say here's how
+here is how after I've analyzed our code
+base these are the styles that are
+already exist within my codebase or
+within the solution within this project
+and from there then bring this to the
+conversation and say Intel code has
+generated this editor config file that
+is based off of what exists the styles
+that exist in my my code base in our
+code base let's actually see if like do
+we actually want our code base to our
+code to look this way or do we want to
+have do we want to change it in a
+different way so this it actually not
+only promotes just sort of common or the
+best or the comment or the historical
+Colston Co styles but also gives you
+sort of like that starter for that
+conversation and it also reduces that
+time that you're going back and forth
+about debates you did just say this is
+what the codes this is what sort of
+exists commonly in our in our code
+do we want to exist differently do we
+want it to be different and the cool
+part about it is once you've actually
+have this as a find editor config it
+fits is c-sharp in this case the
+Rosalind analyzer will start providing
+you with warnings and pushing
+suggestions for you to change that is
+pretty cool okay so in Teleco does
+editor config formatting as well so it's
+really a broad set of features that your
+team is doing so is it fair to say that
+Intel ecoute is is not a feature it is
+more like a team that work on certain
+type of problems market yeah that's
+absolutely right Matt we we work on the
+the set of problems where we believe we
+can bring this kind of pattern
+understanding to bear to give you good
+useful productivity features that
+augment your developer workflow right so
+we're all about that so we're in a sense
+where a set of a I assisted development
+tools that we're trying to apply across
+a broad spectrum whether that's envious
+or envious code whether it's to do with
+things that are happening at edit time
+whether it's to do with things that are
+happening even as Katie was just showing
+you know that editor config artifact can
+play out at CI build time as well so you
+know we don't really mind where we add
+the value as long as it's helpful to
+developers and helping them to
+accelerate but our cool thing is to
+distill down the pattern wisdom and
+bring it to you to you at the point of
+need right so that's that's our motto if
+you like to to try and get things done
+that way yeah so we're not just one
+thing we're not just about intellisense
+we're about anytime we can provide you
+with helpful insights based based on
+patterns that's that's the deal okay so
+so you're mentioning this but you said
+that the like you're basically doing a
+lot of work up front and then you
+present it to the visual studio user as
+they need it does that mean that the
+overhead of running the machine learning
+and AI engine doesn't happen in real
+time
+on the developer machine CPU and
+takeaway performance that is an awesome
+question and in fact the answer is
+complicated so in some cases the answer
+to your question is yes we offload for
+instance in creating those machine
+learning models and one really exciting
+development that we should talk about
+actually is that we've been doing some
+enhancement of the completions model
+with with with deep learning those
+things are high horsepower activities
+right that we want to we want to make
+sure that we keep those things on the on
+our service so it doesn't gum up your
+machine right we were we don't want you
+to be having to run learning locally if
+you don't know if you have to but
+sometimes we we do a little bit of work
+on your local machine it really were
+trying to optimize that as much as
+possible and the training where it's
+necessary to do training happens on on
+remote machines where the big horse
+their lives or we keep the training
+process or the the algorithm to a point
+where it can learn very very efficiently
+so you saw when I was doing the
+suggestions work that yeah when I was
+typing away there there was analysis
+going on you know as I was typing as it
+turns out that that algorithm is running
+locally on the user's box and and we've
+done a lot of work to make sure that
+that actually remains highly efficient
+in terms of memory usage and CPU usage
+so that we don't swamp you and don't
+take away from your your editing
+smoothness right we don't want to be
+doing that we don't want to be
+flattening your battery we don't want to
+be doing any of that kind of thing
+particularly in these days when we're
+working remotely more you know you've
+got to be laptop friendly right and that
+the reality is that you know it's horses
+for courses as we say in England right
+we you basically you pick the right the
+right tool for the right job and so when
+we are doing things that are extremely
+complex and when we need to do things
+like do deep learning models and so
+forth chances are you're gonna find us
+doing that on a server somewhere on your
+behalf so we don't eat your machine CPU
+and battery where it's appropriate we
+will sometimes do local work as well but
+we will always work hard to make sure
+that the
+it's not something that's gonna impact
+you too badly so kind of not a simple
+answer but you know hopefully it makes
+sense yes thank you so much
+it totally does and it's wonderful that
+we can get great AI capabilities without
+users using our battery on our laptops
+so okay we are almost at the end and I
+want to just end this with a quick
+question to both of you so let's start
+with Katie Katie what is it that excites
+you the most for the future of Intel the
+code that you're going to work on in the
+foreseeable future
+with luster she's muted
+there's such a great question that's
+yeah that's such a large question um
+what most excites me so I have mainly
+been focused on the completion space and
+so for me there's a number of goodies
+that are uh parsley use that I will wait
+to present on those or talk about them
+too in depth but I will say that I'm
+very excited about working really
+closely with some some early customers
+who are just interested in dog booting
+and figures and just like learning from
+them about these upcoming experiences
+that were working on so I'm being very
+coy and not being very forthright about
+what we're working on but I will tell
+you that it's really really exciting and
+in the completion space and I'm looking
+forward to just learning and hearing
+from our customers about these new
+experiences because I think that they
+will really sort of take what we're yeah
+so I think that it will be great yeah
+awesome and Mark same question for you
+yeah absolutely I mean customer customer
+input is supervisor to us and and I'm
+really interested to hear other places
+where people have tedious tasks that
+they would like us to take out of their
+way but I'm personally you know very
+excited about the ways we're going to be
+able to spread out the knowledge that
+that's in your team and get that out to
+everyone in your team so they can take
+advantage of it I think that's that's
+going to make a huge difference to
+people as they go forward and we've
+definitely got some good things you know
+coming in that domain and and also new
+ways for developers to express their
+intent in a more compact way so you know
+whether that's by you know typing
+something once and getting us to do
+something again or or whether there are
+just other ways to say what they want
+the machine to do for them I think
+there's lots to be done in that space
+and watch this space we have lots to say
+it build so come
+watch out talk better as well awesome
+well thank you so much both Katie and
+Mark for for joining me year's a day I
+hope the viewers out there had a good
+time and learned something new
+I assured it so so thank you so much
+we're at the other line it is it's been
+an hour and I hope I'll see you again
+next week Thursday morning at 9:00 a.m.
+Pacific time where we will talk about
+the UX lab that we have here in
+Microsoft that we use in Visual Studio
+to interview customers and see how they
+do eye tracking and and learn a bunch of
+cool things and how we apply that and
+what are some of the learnings we have
+from that when does it work and when
+doesn't work really well and I think
+there's something in that that you can
+apply as well at home so make sure to
+tune in next week thank you so much

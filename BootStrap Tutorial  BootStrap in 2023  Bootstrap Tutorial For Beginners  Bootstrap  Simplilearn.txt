@@ -1,0 +1,2288 @@
+foreign
+and welcome back to another video by
+simply learn this is another verb and in
+this video we are going to see bootstrap
+from start to how to create a website
+using bootstrap we will create a
+completely working website using
+bootstrap we will also discuss all the
+components of bootstrap and use all of
+them to design our website and also how
+to use the API to fetch images for our
+website but before we begin if you
+haven't subscribed to our Channel
+already make sure to hit the Subscribe
+button and press the Bell icon so you
+will get all the updates from Simply
+learn but before that if you want to
+become a software developer consider the
+course on full stack developer mean
+stack by simply learn and master those
+necessary skills check out the link in
+the description for more details but
+before we start let me show you guys
+what are we going to cover in this
+tutorial so let me just give you one
+brief about this website that we are
+going to create
+so this is a navbar that I'm gonna show
+you how to create
+and this is a responsive website guys
+so this is the image part that I am
+going to add
+the best coding bootcamp the next is
+award winning bootcamp data science full
+stack and many more
+and simply learn technology web
+development data science
+in this page I am also adding let me
+just show you these cards okay and this
+one button to go to the top
+this login buttons search button and
+search bar and inside this contact us
+page I have added some information for
+you guys so any user can add the
+information and just submit the
+page
+I've also added one drop down menu for
+you guys so I have added these four
+things and one partition over it so
+whenever I overlook anything it will
+click
+but let me go to the home page again and
+let me show you whenever I click on the
+homepage topics it will show me data
+science and full stack whenever I click
+on the full stack it will come to the
+simply learn full stack web development
+course so this is a postgraduate program
+in full stack web development by Caltech
+this has ranked number one best coding
+boot camper career Karma
+you can check out this program the link
+will be in the description box
+now let's open the visual studio code
+and let's make it full screen yeah so
+but before we jump to the coding part
+let me just tell you what bootstrap is
+so bootstrap is a popular front-end
+development framework that helps
+developer quickly build responsive and
+mobile first drive applications
+it provides a set of HTML CSS and
+JavaScript components as well as a grid
+system and various utility classes to
+make web development faster and easier
+you can go to the bootstrap page
+just type bootstrap
+and it will open the
+get bootstrap
+so in this page you can learn all about
+bootstrap
+everything you need to know about
+bootstrap is in here only
+so just open the bootstrap docs inside
+the docs you'll find everything how to
+download bootstrap
+contents JavaScript
+customization SAS color how the color
+model Works components everything
+just let's let's go to the components
+part inside the components box uh we are
+going to discuss uh how the alert bads
+breadcrumb buttons cards everything
+works so don't worry about anything so
+this bootstrap tutorial will help you
+how to create a website from scratch to
+a full-fledged website and we'll discuss
+all the components that any fresher
+needs to know okay so let's open our
+Visual Studio code
+let's go back first and create a project
+here inside my
+desktop I'm gonna give it as bootstrap
+website
+okay
+and open this bootstrap and left click
+okay
+now let's open this folder on our Visual
+Studio code by just pressing this open
+folder and inside the desktop
+we have bootstrap obtaining okay
+now
+the first thing we are going to do is we
+are going to create one file let's name
+is index dot HTML
+we'll write all the code inside this
+file only
+but for the website main website will
+create two other pages okay let's begin
+now let's open the bootstrap website and
+inside there you'll see a starter
+template
+copy this and paste it inside your
+windows Studio code
+let's do some editing this title will
+show you
+What's the title of the page I'm gonna
+show you in a while just wait here I'm
+gonna write
+thank you
+and here I'm gonna write
+let's save this and here
+not ER that's right e n for English
+it's not okay
+okay all right
+so directory we don't need right now
+let's remove this one and
+returning viewport it's fine and
+everything looks fine here
+we can also
+copper and bootstrap libraries
+let's save it and one more thing open
+the extension and add
+live server
+this live server can open our website
+and whenever I just make any change on
+the website we don't have to again
+reload the web page and check if it's
+working or not it will just do
+everything on its own
+so I have installed this
+okay let me go back to my HTML file
+and right click and there you will see
+there's one uh open with like so
+and this will open our page
+see
+so it is showing hello from Simply so
+you must all be thinking that how is it
+possible with just
+these few lines I am writing the code
+hello
+from Simply learn on our web page
+so these are the things let me just show
+you what really bootstrap is
+when I'll click on The View page source
+so this is the page okay so this is
+bootstrap CSS you will see this link and
+this is the original bootstrap that the
+developer has invented for us users so
+with this small link
+we can use the bootstrap on our web
+pages
+so this is really very helpful for the
+developers and you can create an amazing
+website using just bootstrap
+okay let's just move forward and let me
+just close these and let's go to the
+navbar
+okay this is the Never
+so
+never is something which comes on the
+top like this one this simply learn all
+courses the search box and login page
+this is what a nav bar is so we are
+going to copy one
+navbar template from here
+whichever looks good for you guys
+I'm just searching for that
+okay let's go up
+and see and see if there is any simple
+over this one also
+good so you can find this copy to
+clipboard option
+everywhere you can also manually copy
+this thing whenever you just want so if
+sometimes I want just this navbar home
+link and drop down menu so what I'll do
+I'll just copy this from here
+to here
+rather copying the all
+code
+so let's copy it and
+paste it
+after
+this hello
+let's delete this hello and paste it
+let's save it
+and see our navbar
+so this is our nearby home link
+drop down menu we have to add the
+features here in the drop down we will
+do that no worries
+start report
+okay
+now let's get to know
+about this neighbor
+so
+as you can see the home button is a
+little darker than this link drop down
+and disabled one right
+so this is because of this active
+so what this active dial this actor
+makes the button highlighted that this
+page is it is showing that this is this
+home page is this page okay so if I'll
+remove the active from here
+and I'll put the active in the link part
+so what we'll do
+is
+okay
+let me just restart my server
+open the live server again
+and let's
+see
+the link is now highlighted okay
+let's go back to code and do some
+changes inside this code right
+and as you see
+this one is a drop down
+but this is not working let's fix this
+one
+and as you can see this starts from head
+to here
+okay
+now let's see the properties of this
+drop down and
+make this a function but before that let
+me just show you how to format the
+document if I click format the document
+it will format as in a clean way so any
+other user will see a code it'll get to
+know that this is how he has written so
+it will show where the bar is started
+and where it got ended and if you'll see
+this div from where to where it'll show
+okay from this form it starts from here
+to it so it just helps us to read the
+code efficiently by just clicking right
+click and format document you have to do
+this again and again
+whenever you add or write something in
+your code you just have to do it again
+and again okay
+okay fine let's fix this nav bar now
+not never this
+drop down
+okay let's see
+okay
+this has a linked class or drop down and
+it has the link of toggle
+then it doesn't have the location where
+to add this things are giving it a role
+but
+I think we should give it a ID also
+so so what is an ID ID is something
+which is specific to someone
+okay let me give you an example for that
+uh okay uh your suppose your name is
+something your name is uh David so your
+name is David everybody know your name
+is David so you are in office or in
+college or in school in your class there
+must be a chance that there are some
+other David also inside your class
+so what roll number registration number
+or any specific number you needs is that
+it gives you an identity that this is
+your specific number that number can't
+be given to altern David
+are you understanding so that number is
+specifically given to you
+so this is how ID works it is given to a
+specific thing like here if I'm using
+the ID as something like you can just
+say
+ideas
+okay let's just save this
+so this ID is given to this class only
+okay so the class what is what about
+class class is given to so many other
+people also class is a group so you can
+give this class to someone else also but
+you can't give this ID to someone else
+because it's specific to this function
+only so this is how this works okay well
+let's just see if there is something
+else that we can add or remove
+now this drop down menu is not working
+but whenever I hover on there is this
+something is happening so what I will do
+is I'll inspect this page and I'll
+click on this and I'll click on this
+drop down and see what is the issue
+I know but
+to continue that
+button
+there can set this there
+so this is how the this nav bar is
+operating
+this is taking some chunks of the screen
+and creating components so the nav bar
+is
+looking like this right
+okay
+just let me go to my
+drop down
+this one is the drop down
+in the whether I'll see
+okay when you right click after
+it's not operating right
+on menu
+okay let's see
+here
+right there
+okay this drop down is working fine now
+because I comment out the separate
+proper and bootstrap.js
+so when I was
+giving it access to my file
+this drop down was not working so like
+I'm clicking on this but it's not
+working
+so because of this pooper
+and I'm whenever I'm
+now it'll be fucking fine right okay
+let's move on to the
+editing of this
+let's name this as
+first I'll use bold
+and I'm gonna name my dad
+sent it on
+okay let's save it and then we'll gonna
+name this as home only
+let's name it as about
+about
+and then drop down is
+courses
+okay and inside this courses I'm gonna
+write
+will
+stack
+means tag
+that shouldn't be Capital guys
+okay
+and
+still like this also
+Android
+help
+okay
+so what this divider is doing
+so this is a class that I'm that
+bootstrap created for you guys for the
+drop down divider so this divider is
+creating one line here
+and
+keeping it separate from the upper upper
+one so whenever you are writing
+something here which is not relatable to
+these things whenever you are creating
+your website and you want something else
+to be written not in that category so
+this divider is you can use
+is okay now disabled one is this is a
+class that bootstrap have which is neb
+link disabled so imagine you are
+creating a website of your own and this
+is your home page okay and this button
+is not disabled this is just a reference
+imagine there is one bottle called login
+so here someone came to your website and
+he is a new user so you want him to log
+in
+so this disable button will show him you
+have to login first then then you can
+access this page right without even
+login in the this website you can't even
+get into the page so this is just to add
+one feature
+okay we'll use this button also but
+let's just name this as
+okay let's name it as disabled only you
+get to know right
+so I'll
+move forward and this is search only and
+let's save this and see how is it did
+okay so yeah and this is course page
+full stack
+and means that okay now what I'm going
+to show you guys is okay first let's
+just copy this link okay I'll just
+copied this link simple right and I'm
+going to go to this
+Bank attack in this anchor tag I'm going
+to remove this
+Edge and I have pasted the link that I
+copied and let's go back and here I'm
+gonna write
+mean stack
+these are two amazing full courses
+offered by simplylearn that you can opt
+and master those full stack development
+skills okay
+these are very good just go through
+these courses
+okay let's just copy this thing
+and paste it here now let's save it and
+go back to our code
+okay
+now we don't have to refresh it because
+we are using the live server
+whenever I am going to the course
+okay let's just delete this for now and
+whenever I'm clicking on the full stack
+it will redirect us to the
+Caltech postgraduate program by full
+stack I'm sorry postgraduate program in
+full stack web development right and
+whenever I am click on this means tag it
+will again open the means type course
+for us right so this is what a nebar is
+wait I'm gonna tell you about more about
+this ink attack so what this anchor tag
+works as a religious
+Li is a line
+okay
+these are some easy HTML tags that you
+can refer from
+these websites let me just
+show you a website
+okay just type this is bootstrap but if
+you want to learn HTML you can write
+here as
+HTML
+and this HTML will show you guys okay
+and you can learn anything from here
+HTML CSS okay these are all the
+documentaries just get an idea from here
+and just move on to the projects part
+that can help you
+okay
+okay fine let's move ahead now
+next we'll see how to use
+okay let's just delete this one
+and open our
+next we'll see the component alert so in
+this alert part you will see there are
+so many colors like this one blue white
+blue pink red this one is danger so in
+bootstrap these all colors are having a
+specific name like this one is a primary
+this is says kendri success is a green
+color danger red color warning is yellow
+color info and these are some of the
+other
+according to me you will only use this
+secondary one success danger warning
+and
+these are the four that I think you
+should know
+remember okay otherwise everything is
+accessible
+and these are some other codes also
+and if you want anything from this you
+can just copy this and use it inside
+your website right okay
+let's move on to the batch
+inside this batch you will see these are
+some examples of that and if you'll see
+this looks like an H1 tag this is
+actually an H1 tag these are the badges
+okay whenever you add something after
+that is a batch like this one
+so the code for this is this one this is
+very easy right
+and for notification you can copy this
+link
+and if you want to use these kind of
+like primary blue color secondary or
+white green red yellow blue white black
+so
+if you don't want to use as a
+rectangular rectangle box you can always
+use a capsule class Like a Pill batch
+okay
+similar only
+right okay so let me just show you how
+to add this one okay
+let's just copy the Inbox
+and we'll go to our code
+and inside this
+before the search box or disable box let
+me just see again
+okay
+after the disabled one we'll use this
+and let's save it and let's see you will
+see there is one inbox which is showing
+us there are 99 messages and you can
+also edit this
+you will see here
+please hold the search box let's you can
+only one it will be one okay and if you
+don't want to use any number you can
+also use it and you can also use the API
+to fetch the data from the behind and
+that will increase the size of this you
+just have to add the API here I'm not
+doing it right now but if you want I can
+do it in my other videos
+okay guys let's move ahead and let's
+remove it
+because I don't want this button okay
+let's move ahead and see there are
+breadcrumbs so bread crumb indicates the
+current page location within a
+navigation hierarchy that automatically
+adds inspectors via CSS so what this
+will show us that this is the home
+inside the home there is a library and
+inside the Library this directory is
+known as data so this will show us that
+you can use Home Library like this a
+greater than same
+okay you can use these anything into
+that you can use if you like something
+you just copy this
+and go to the your code after the
+navigation bar paste it save it and go
+to your code and see the magic
+so this is home Home Library Home
+Library data
+but I don't think so I'm gonna use this
+one
+and this one so
+I'm gonna delete this okay
+let's delete this too
+and inside this breadcrumb
+I'm gonna write all the means
+okay
+so we'll just save it
+back to the code
+let's now add a
+color component there okay
+bad or
+alert also we can add let's see how to
+add one
+let's add warning one
+or danger
+copy this one
+added
+navigation bar and C
+so this is how this works
+you can change this
+as warning
+save it and it will come as yellow light
+okay
+great
+moving the head
+you will see
+so according to me I don't think so you
+have to learn these things like warning
+I just told you that uh just mean ones
+are danger alert uh not alert alert is
+not as
+useful but dangerous success secondary
+primary and warning are the ones that
+are mostly used in the websites okay
+so let's move ahead and I will see
+anything else badge done
+buttons now
+so use bootstraps custom button styles
+for Action in forms
+dialogues and mode with support for
+multiple style stage and more so what is
+this buttons doing is if you want to use
+any of these buttons whenever you hover
+on this it'll going a little light you
+can use these kind of buttons also and
+you can use these kind of buttons also
+I'm gonna use
+one kind of everything to just get you
+an idea how these works so I'm gonna use
+as success
+let's copy the success from here after
+the background
+I'm going to use this one
+after this I'm gonna use a link
+so link I have told you but I'll use now
+a button okay
+oh
+the next line I'm gonna use button
+after that and from this outline button
+this the outline of this box will show
+you as this is blue but whenever you
+hover on the button it'll become
+the color that it was
+originated from
+so from here I'm gonna use the warning
+one
+okay let's copy the button
+okay
+now let's save it and see how all of
+these are looking
+so these are all looking good right
+now
+let's move ahead and see
+what's next
+button group yeah right this is also
+very important you can add not add this
+in the top you can also add this in the
+bottom you have seen so many uh
+websites in the bottom there are
+something called as one two three yeah
+this one toolbar one two three four and
+after that there is one button attached
+to it is four which is next
+it will again show you pages from that
+last page that you have left from like
+if I was on the second page and I
+clicked on the after the arrow button
+that fifth one and it will again show us
+the third and if I'm in the fourth page
+it will again redirect us to the fifth
+page right so this is also a very good
+feature of that
+and you can use different sizes of
+buttons these group buttons from left
+middle right you can also use this one
+this nesting button is also very useful
+nowadays whenever you are doing first
+button will click you from somewhere to
+somewhere second will also do the same
+and in the drop down you'll open the
+link of the other pages
+okay
+so these are not very important buttons
+but this must be useful whenever you are
+creating a website and you will get to
+use one of these These are also very
+good
+you can also use these ones
+right also looking good
+so I'm gonna show you how to use these
+three
+sizing ones okay or
+not radio these are all are
+just active link Link and Link this
+active link is showing us that see if
+I'm clicking on this link
+it is not showing anything but if I'll
+cut this
+okay we're not can't edit it on this
+bootstrap page only
+so it's fine
+okay whenever I'm clicking on this let's
+let's add
+okay and just copy the wrong one
+okay let's just go to the group button
+sizing yeah let's copy the code from
+here and paste it
+here let's save it and see how it's
+yeah but we have to go to the next line
+because it's I'm thinking that this is
+the same div
+it's fine so we can change this one also
+now you will see
+it's again coming
+together
+for the living
+let's move ahead
+now let's talk about cars so according
+to me cards are the thing that you will
+use so much in your code so the layout
+for the card is like this it's just in
+one container inside that container
+there is one image part and then the
+text part and then one link okay one
+button where you will click and you can
+go to another page so let's copy this
+and go to my virtual Studio code and
+let's remove these buttons okay
+let's close this one
+okay and let's paste it now save it and
+see
+right there's no image right now but
+we'll add it
+so you can add the image by just
+downloading it
+okay
+or you can just
+add like
+industry call the name of the
+let me just see
+okay I just added one image here
+in my folder so I'll use this one
+so let's write it
+one and
+this is what
+a alter does okay so what alter does is
+if I'll write something like hello
+but like
+coding related pictures while riding
+code okay now let's save it and let's
+see so this card is looking like this
+you can decrease the size of the image
+like
+okay
+let's save this one it's looking much
+nicer now okay so what this altered is
+if I'll remove this link
+and write dots okay
+so this is what the car does sometimes
+when you are running your code the image
+doesn't load very fast so this alter
+text we use to just write the something
+instead of the image so whenever the
+image takes a time to load this thing
+will comes up and then the image okay
+so this is what alter does so we sh if
+you'll create a big
+website this older tag should be there
+and
+now let's save it and let's check
+anchor tag I have told you
+okay
+e tag is paragraph tag
+div is a container that takes a
+particular space
+and then the image image tag in which
+we'll use the source and all
+okay everything is cleared as of now now
+I'll tell you about one thing
+which is an API to use the images
+okay
+so there is one website called
+unsplash.com
+where you can get
+good images as well as as
+the API to excess when you can get the
+API from here and you can use the image
+okay let's just
+download this picture
+okay
+and now
+let's add the image inside our project
+right and now I'll copy
+this container
+and paste it again
+and instead of this I'm gonna add the
+let's save it but before that what I
+have told you to format the document so
+it should
+look Gene right let's save it and go
+back to your output
+so this is how this is looking right now
+I'll tell you how to access the API of
+this
+website okay
+now let's copy this again
+okay let's copy this card
+this one
+and paste it
+here
+okay now I'll show you how to access the
+APA of this unsplash
+okay so we'll write HTTP yes all this
+GTP whether let me check who can
+ctps
+okay
+and we'll write source
+Source Dot unsplash
+Edge
+okay so we have the written this three
+let's just save this file and check
+whether it is working or not okay
+so this is what we are getting we can
+increase the size I've just declared the
+size or
+this we can write
+5000 and this
+will be very
+it will take time to load the image of
+this one
+so this is the height that we have given
+5000 and this one
+so let's give it a similar height of
+2000 and
+2000 okay let's save it
+and you must be thinking that every time
+I refresh this site this images changing
+this is because of this API
+unsplash what this does is whenever I
+refresh this page it'll give me a new
+picture right
+every time I just refresh it it'll give
+me new picture
+we can also add the
+link here
+you can copy that mean stack link
+by Caltech or no not kill type one we'll
+copy this mean stack full course
+this is also a very good course
+and here we'll write
+means stack
+you can also style these and
+let's refresh this and you'll see I'll
+zoom in
+okay you whenever you click on this mute
+stand
+this means tag full course will be shown
+to you it's a master program very good
+you will learn so many things here
+just check it out once the link will be
+in the description
+okay let's move forward
+okay
+now coming back to our code
+let's see if there is any other card
+that you can use this also you can use
+with one image and a text
+okay sometimes we use this one also
+this is not very much used
+and
+so this is all about the
+cards oh wait uh using grid maker
+so what this does is this has assigned
+one div okay this this div is taking
+your
+20 off the screen with the row height
+okay this
+these height if length will be 20. okay
+so inside that it is split into two
+parts you can split it into three parts
+also by just giving it let me just show
+you inside the code
+okay let's delete
+let's add it here
+showing
+so this is taking a less space because I
+must have added this one in the old
+okay
+let's not add this inside this
+C
+whether it is coming inside this or not
+with the
+let's just remove the cards I guess
+because of the cards it's taking similar
+size okay so this is divided into two
+parts right
+so what we can do is
+we can change the size of this so This
+Is defined
+in the starting only that this column is
+small this is medium and this is small
+so it is taking 6 7 8 9 and
+and we can give it here
+3.
+so it should be 12. the sum of this
+screen should be 12 like 4 5 6 7 8 9 10
+11 12. you can divide it that
+rank also
+okay now I'll just
+copy one more or like
+this one
+is six okay
+let's just copy this
+write it three
+okay let's save it and check whether it
+is working so it came in the next line
+so let's see what happened here okay
+so let's give everything
+similar Heights
+this one has six this one has six so
+these are two similar it tastes 12 so
+this will obviously come to the next
+line so now I'll show you how to
+make it
+so this is how
+V so this is responsive also guys
+let's inspect this and check
+right
+whenever it's less than the screen size
+that it should come with it's going to
+the next line
+so this is how
+this works okay
+now
+let's close this one and
+come back to our code
+and
+yeah
+so this is all I guess all about
+and this is something that I should give
+you a text alignment so text alignment
+is this comes in the left side this is
+Center and this is left this is pretty
+simple
+and navigation this is what I wanted to
+tell you about
+so let's copy this and
+paste it inside your code
+right
+save it and show you how this looks
+so this is how this is looking when I'll
+go to the link page
+if I have added anything in my link page
+it'll go to that page else it will go to
+the active page only so this button that
+is shown here which is disabled is
+similar to this one only okay
+this is similar and this is something
+that I have already told you some text
+the graph lines and all and if you want
+to go to somewhere you can just click
+and give the anchor tag a location right
+okay let's delete this one
+and
+go back to
+this one okay the slider
+this cell Idol will help you with the
+images right
+I'll copy this text code from here okay
+and paste it
+the top
+let me just see okay after the
+danger alert button we can add this song
+right
+now let's save it and inside the image
+tag
+we can just add the
+or we can also add the
+HTTP yes
+okay
+let's complete this one
+okay so you are
+source
+splash
+write the maximum space so it should be
+16.
+900 will be fine
+yep
+and question mark
+Gooding and
+she
+let's save it
+or let's copy this one so we can add it
+everywhere
+just
+add it here also
+okay
+now if you will see this is how our
+slider is looking
+so you can just click here and
+the next image will look but all the
+image will be similar only that's why
+okay let's change the name here and
+let's name it as
+water
+and let's name it as fire
+so it's a very bad combination right but
+let's see how this
+API works
+so it's giving me a random images
+it's a technology and water and all so
+the next image
+like this and this is how this images
+are looking and whenever I refresh it
+will again change all the images right
+yeah let's move ahead now and let's see
+what's inside this one this has one
+indicators down that it is in the first
+slide second slide third slide this is
+also very good when you use it on your
+site
+and if you want to use like this you can
+also use this one whenever you want to
+label something so I'll use this one
+this one looks very good to me
+so let's remove this one all it's added
+here only
+okay
+let's copy this
+and paste it
+and set this one
+okay
+where is the
+link I have to put
+let's add it here
+and here
+so we'll write here as code
+machine is fine
+Square y
+let's save it and see how this one looks
+so this is the old slider
+and this one is the new slider so you
+can see the text that it is showing me
+and the paragraph
+tag you can also write something here
+that
+let me just show you here also
+and here also this one is looking much
+beautiful than this one it's just about
+the requirement sometimes we require
+these kind of images and sometimes you
+want these kind of images whenever you
+want to showcase your text or something
+informative you can use the slider right
+let's move ahead now
+let's see the close button
+okay yeah
+so this one is
+used so many times
+that let me just show you
+whenever you want to close something
+this tag is used
+okay so it can be like this
+it's pretty simple
+now everything looks easy now okay I
+want to now show you the important thing
+okay
+let me show you that
+so open this one and inside this
+let's open the layouts and inside that
+there is one thing called grid so grid
+is very important when you are using
+anything not just bootstrap it's
+important in CSS also so the current
+system is what use our powerful mobile
+first flexbox grid to build layouts for
+all shapes and sizes thanks to 12 column
+system that I have already told you that
+the screen is divided into 12 part you
+can divide it as your wish like four
+four or six six or like anything but it
+should total should be of 12 okay so SAS
+variable and maximum
+let's see something is important yeah so
+the options of the grid system are it's
+one of them are extra small which is
+denoted by Excel excess that we have
+already used here I have told you about
+it
+uh okay you must have deleted that one
+but I have told you okay you can just go
+back and see I have explained that also
+and there is small which is denoted as
+SM medium MD large l g extra large XL
+and extra extra large which is XXL
+okay so it's saying as noted above each
+of these breakpoints have their own con
+containers unique class prefix and
+modifiers okay so they are now telling
+us about how much size excess takes how
+much pixel as SM takes MD and it's all
+about this so the XXL should be less
+than less than equal to 1400 pixels okay
+okay now Auto layout columns are like
+this one
+which is divided into two parts this one
+is divided into three parts
+and now this one is wider
+than this too okay
+and this is how this one works right
+okay
+let's move ahead
+okay
+this theme that I have told you earlier
+also so responsive container responsive
+container allows you to specific a class
+that is 100 wide until the specified
+breakdown is reached so I'll tell you
+about the containers I'll explain you
+rather okay so just now we have created
+this
+this uh slider cursor or slider let's
+modify this one
+so the end point and the starting point
+is this one okay
+if we'll create
+one div okay let's write
+this one
+if
+if I'll write Dev Dot
+here
+inner and let's enter and
+delete this from here
+and write it here
+save it and you'll see something
+different now this images are inside one
+container right this is not taking full
+screen like this one it's inside the
+container okay so it's not taking full
+screen it's taking just the inner part
+so it's just giving this image a border
+so it's working completely fine okay
+okay let's move ahead and now I'll show
+you one thing
+with just give me a second I'll
+ex wanted to explain one more thing look
+at this one Auto layout okay
+let's copy this one
+and
+instead after this
+David
+and let's just format the document
+and now
+you as you can see it's taking one of
+two
+two of two one of three this line This
+div line is container is divided into
+two parts
+one and two and this bottom one is
+divided into one two and three now let
+me give it okay let's just close this
+one
+okay so these are my two rows and inside
+that row there are two columns okay
+now in this row I will give
+okay and inside this one I'm going to
+give BG
+Danger
+so before that I just I've told you
+earlier also the success is denoted as
+green color and the danger is United as
+red one
+okay let's just save it and see
+how it is looking so this one is divided
+into two parts again and this one is
+divided into three parts okay we can
+change the color of any one also
+like
+if I want to change the color of this
+column
+to BG light so I'm not light warning for
+yellow
+let's save it and you will see
+this one is looking yellow right so this
+is about the this one Auto layout
+columns okay
+and everything looks the same
+now let's talk about modal so what this
+model will do if you use it inside your
+website so whenever you click on any of
+the link it will pop up a
+cursor like this
+okay so you can use this one also this
+is also very good feature like not like
+that launch demo model not like that if
+someone's click on the username and
+password imagine and if the user will
+click and you want to show him that this
+is the wrong email ID that he is putting
+or she is putting so you can this also
+in that
+or if you want to send a message
+whenever someone click on any button and
+this pop-up will come and it will say do
+you want to save the changes that you
+have done and will it say yeah changes
+are
+saved okay
+like this one also
+and there are so many like this only
+okay
+so let's copy one and
+and write it inside of a code
+don't worry I'll give you all the code
+in the description box with the website
+code we are going to create a website
+I'm just clearing your basics in
+bootstrap now we'll start working on our
+website okay
+so this one is a modal
+now let's go back to the code
+so whenever I click
+it will come the text so we can add the
+text here
+and say
+welcome to Simply learn
+right
+and
+whenever anyone clicks on this
+and it will show
+welcome to Simply you can change these
+button text everything you can change
+and if you want to cross just click on
+the cross button
+right okay let's see if there is
+anything important before we start our
+website
+view buttons are similar
+right
+yeah
+and I will talk about something else
+okay
+Bob overs are done
+these are like similar to that one only
+whenever you click it will just show you
+a text
+there only not just the pop out like
+this one like the models it's not like
+models
+but it will let's just
+format the document now so it should
+look clean so
+really and whenever any user will click
+on this hello
+it should show a text but let's copy
+that one also
+so this is just a button
+okay the power title
+the content okay
+so we will write
+let's save it
+you can also use the next one also if
+it's not working so whenever anything
+doesn't work in your website when while
+you are creating a website just click on
+the inspect and the code so in last we
+use this one
+let's go back to this button so we'll
+check whether it is working or not
+this button
+okay
+see
+let me right click understood
+okay
+let's change the button
+let's go back let's delete this one
+you can customize our buttons also here
+and there are four directions in the
+bottom if you are creating a page where
+you want to go pop over on top
+[Music]
+left so if you are using a website this
+is used when I want to declare my
+message in the left side of the uh that
+page
+okay let me copy one
+which is bottom
+okay and let's paste it
+here
+going back to my code
+it's not working let's check
+so whenever I click on this pop over on
+bottom it's not showing me message but
+you can check it and then we can well
+the message is not declared in this
+right okay fine let's move on
+to the main website that we are going to
+create now okay
+now this is everything you need to know
+about bootstrap I'm sure there are so
+many other small small things okay like
+uh
+that we have discussed okay you can just
+go and on in starting only we just took
+this neighbor okay
+so now what I'll do is I'll open my
+Virtual Studio code
+and I'll change the name of this
+index.html to something else okay so we
+can use it as
+I told you
+yeah so you'll think what I why I'm
+doing this so I want to create my
+website that I'm gonna show you right
+now so I'm gonna name that mean file as
+index
+okay
+so the main file is created now
+okay so it's showing an error can't get
+index.html this is why because it is it
+can't fetch the index.html file at that
+moment because we have it run this one
+file on live server whenever I'll run
+this file online server it will open
+okay like this one it is a blank file
+because we haven't added anything inside
+this one
+so now
+we will just
+open the bootstrap
+[Music]
+file and here we'll write
+starter
+starter template okay we'll just copy
+this one and paste it inside our
+index file okay
+we will change the
+simply done and here also we'll write
+something else
+and just delete this one because we
+don't need this
+and in Array bag we will write English
+let's just check whether it is working
+or not
+hello
+let's check whether it is working
+yeah hello from Simply done
+so we'll
+let's just
+do this
+comment
+okay
+should work
+okay let's just
+so will
+let's check whether it's saying
+option JavaScript choose one of the two
+okay
+we can only choose one of the two
+so what we can do is
+we can just come in this one
+let's just
+delete these options and save it and go
+back to the bootstrap
+brand
+copy this one
+so
+I told you because
+this is all
+the same
+and when I will come back here I just
+paste this
+and we'll just go format document it
+will make it look
+feel
+now we'll go
+and check whether it is working
+and let's see why it's coming on the
+right side of our screen
+okay I forgot to delete the direction of
+the text it is saying direction right
+so we don't want this thing but maybe
+you will need whenever you are creating
+your website so now it's working
+completely fine right okay let's move
+ahead
+and now we will copy the nav bar we'll
+go back to this and copy the component
+in that part
+and
+this one is looking good that we have
+already used so we'll go back here and
+delete this hello and
+paste it here and the Nail Bar will read
+simply learn
+think
+course and action
+right
+new stack
+right
+stack
+you'll just watch you'll see something
+good so this divider is doing his work
+that I have already told you
+in the starting when we were creating
+the never so here we'll write
+help okay
+and this one is disabled
+wait let's make it as disabled one only
+just for the
+your knowledge let's save it and see
+whether it is looking
+yeah
+drop down is working fine
+right
+yeah
+the code working
+we can change the and lips
+give it a
+via
+if I never
+drop down
+save it with it to see
+heads we can change the line because
+it's coming on the right side because of
+this one only
+right you can just delete these
+we can just Place alter
+and again press alter and we'll just
+click
+and it will work as a two cursor but we
+are using only one then only we can
+click this at anywhere else and it will
+be
+same okay
+so now this class is inside the UL which
+is ordered list
+we can unordered list actually
+we can change this one as div
+okay
+let's just save this one again
+now
+this one right
+this will copy the whole component again
+and paste it
+after the courses okay
+here we'll write
+about
+and here all right
+courses only
+but will
+copy this component
+and look cut it and paste it here so the
+it should show home about courses and
+then the drop down in the drop down will
+say
+okay we can just cut this off okay let's
+just see the output first
+so this is how it was looking before so
+we'll take the name as
+this drop down to
+courses
+this will delete
+what we can do is
+home about topics
+[Music]
+home about topics inside the drop down
+works
+then we will not use this
+disabled one
+Surah I will copy this component
+and paste it under this and
+write it here as
+practice
+okay
+let's just see
+how our home is looking
+so everything's looking great
+here I have written two things but it's
+fine
+okay
+here you can just
+next we'll do is
+we can
+add to our code
+and we can add the
+links
+to this one only and write full stack
+inside this whole stack we'll copy this
+graduate program in first type of
+development by Caltech
+and paste it
+on the
+this will start
+and in means time I'll again go back to
+my
+file
+because I'm on the page and see
+whether it is working
+then the web development there is no
+okay
+see inside of everything is
+okay data science
+[Music]
+and here you'll find the moon start
+copy the link
+paste it under
+this
+game will format the document
+okay
+yeah
+let's save it
+let's check
+now what I'll do is
+I'll copy this one
+and let's just make the symbol on book
+bold so I'm going to use this
+V tag which is also known as
+bold
+save it and see the simply learn logo
+written is looking
+bold
+you can change the side of this home
+about topics contact us from the right
+to left okay
+so for that what I'm going to do is
+so I just copied this code from my
+previous folder and paste it inside this
+one so what I am doing here is I have
+added the Old Link let's change the
+team
+stuck okay
+let's just change the link from here
+and I will tell you about the code that
+I have written okay
+let's just go here and only and check
+for Moon's time
+so this is very easy right
+I'm just typing and everything is
+let's just
+paste it here
+okay now what we have done here is we
+have given this home page this home one
+a class current so whenever I'll open
+this side my index page it will
+highlight me the color of this home so
+I'll create if I'll create the two pages
+like I have created here
+I have created two three pages for about
+and like if I click on about the current
+page in this file is this about and
+whenever I will click on the contact us
+the current that I have given the class
+is this okay so here I added one class
+as Sr only okay
+let's remove the
+location from here and add here Edge
+here also
+will remove and add
+the location blank so whenever I
+create one file for this one we can just
+declare the right
+so what here I have done is I have added
+two buttons for login and sign up
+will not cover the login and sign up in
+this video but if you want me to add
+these features and you want to me to
+show you
+and create these two we can always do
+that just pin down the comment in the
+comment section below that you want to
+see more videos on bootstrap and more
+projects on videos
+okay
+let's move ahead so this is all about
+what are the changes that I have done
+here
+okay now let's save it
+now let's see okay now what will I use
+here is browser
+let's open the browser and select which
+one I'll need in my website so this is
+the basic one I have showed you this one
+also I have showed you
+okay but I'll use this one this one I
+have also showed you previously so let's
+copy this one and paste it after the nav
+bar
+okay
+let's paste this and let's change them
+content from here
+as
+first it will show us hello from
+simply learn
+okay
+here let's make it as dummy only
+here I'll write
+the best
+coding
+bootcamp
+okay
+and here
+I'll change it
+award meaning
+okay
+okay
+let's save it
+add the images here let's see so this is
+looking like this
+okay because we haven't added any
+picture here right now
+okay
+so what I'll do is
+I'll go back to my
+code
+and add the source of the images so I'll
+add two three pictures here
+now I have added two three pictures here
+like
+this one this one this one and this one
+okay now let's add these pictures the
+first image that I'll take up is this
+one 33 PNG so I'll write 33 dot PNG
+okay
+the next picture that I'll use is
+this one
+55
+Dot jbg and the third one is
+second Dot
+G let's save it and see if it's working
+so yeah
+it's working fine let's see in the image
+of this closed one
+this one is taking a little time to load
+okay
+let's
+just delete this one
+let's see whether I have added one
+and this line is cursed down
+slider
+this one looks good
+33 1 and use the other picture which is
+other one
+okay we have added the images here now
+now let's see which is so yeah it's
+working fine now welcome to Simply learn
+the best coding bootcamp you can change
+the text of this one and I have written
+a small line a data science School stack
+and many more okay and here also award
+winning bootcamp all right
+now we cannot go to any page rise up now
+but
+let's go back and check
+now in our main file we have created
+three buttons here
+technology web development and data
+science okay so we'll add these three
+now
+so for that
+I'll go after this one and write a
+command
+button
+okay
+okay let's and let's name it as click
+Lottery and let's give it a class for
+EDM that I have showed you median and
+first one I'll give
+frankly
+save it and check whether it is working
+yeah technology is in Google we can
+change the color and now we have to add
+red one which is
+the red one is danger and green one is
+successful so let's add that also
+okay I'll copy this button and paste it
+here and again paste it
+and let's change from primary
+to
+success and from here
+we will write Danger
+here I'll write
+back
+if you are looking for a full start
+course you can always
+click on the button and you can go to
+the main page
+here I'll add data science
+okay
+let's now we have added three buttons
+here
+now I'll
+three buttons to every
+out of the screen let's save it and
+check
+house side looking so this is our
+website
+so this one is looking
+great
+and now let's check if it's responsive
+or not
+okay
+so we'll go to
+iPhone x SC
+so this is how in XC it will look like
+when I will click on this these three
+four buttons will come now if I'll be on
+iPad Air it'll look like this
+right
+yep
+so this is how we add the images now
+without wasting our time
+let's move ahead and add these four
+cards
+okay and also write this line
+move ahead
+after this one
+and
+I'll go back to the bootstrap Queen and
+open the cards
+and here
+will use this card
+okay
+so for that I love let's cut this into
+bed
+and this is little
+go ahead
+now I'll add the cards so we'll go back
+to the
+templates here in the examples holder
+if you'll see there are so many already
+built features in bootstrap that you can
+directly use
+so let's see these cards
+okay we can also use this one
+but let me check out others also
+I have used
+previously that I have showed you in
+this one
+not in this one yeah in this one
+I have used blockcast okay
+let's use that also
+we use that also in our code so let's
+open the blog
+so inside this block if I want to add
+only I need only these two cards right I
+don't want the other content so what
+I'll do is I'll right click inspect
+and then I'll go to the main
+container of this one
+so this is the main as you can see in
+the inspect so right click copy
+copy
+full path
+inside after this
+container one okay this one note
+yeah
+here I'll create one div
+of container
+div
+Dot
+dinner inside that I will
+talk or either
+okay let's copy again
+response Style
+copy element
+paste it here
+right click form a document right
+now I'll save this file and check
+whether it is working
+yeah it is completely working fine now I
+want to give margin on the top because
+it's looking very clumsy here so what
+I'll do is I'll go back to my container
+class
+right
+so this is my main container so what
+I'll write here is M by
+4 so what is this is it'll give a margin
+of 4 okay let's check
+yeah it is giving a margin of 4 right
+so
+here I have taken 4 only right
+okay we'll add the images here in a
+while don't worry about that
+so what I'll do is
+and move ahead now we'll add the images
+here
+so inside this container that we have
+just now created so they are using SVG
+okay so will not use the SVG we'll use
+the image
+okay
+for image you know use
+class
+and inside the class I'm gonna give it a
+class of
+right now but let's add it easy
+please
+please the image
+after that I'll give it a width
+of
+200
+and height
+of 250 okay and then I will give the
+source of the image and the source of
+the image would be this one
+let's save it and see if it's working
+will be fine yeah it's working
+completely fine we can change the name
+of slow and let's change the new world
+as
+tickle
+article on
+web development okay and this is fine
+okay now let's change this also from
+Article 2
+blog
+and have Android
+strap
+let's save it and let's delete the SVD
+from here also
+and copy the image tag that we just now
+created
+inside this okay
+yeah
+this one we have just now created and
+we'll paste it inside this
+and let's save it and see if both are
+looking good yeah article blog your
+development bootstrap okay
+yeah
+so
+now we need two more
+okay so what I'll do is I'll copy and
+paste
+two more right
+I'll see whether is this step ending so
+I'll copy from that
+and paste it after this one
+right let's save it and check
+yeah
+so this is how it is looking right
+this is looking amazing right yeah
+so what I'll do is I'll change the
+images now
+for that I have to add different images
+to
+run right 12
+here and right
+33 but 12 is
+ENT
+let's save it and see
+this one is not looking this one is
+looking so clumsy I don't want to use
+this one
+so let's change this one also from 12 to
+5
+then G
+right
+after that here 33
+. Eng
+after that
+here I will use
+Note 1
+are you can use this one
+right
+and choose
+D5 let's save it and check
+these two are not looking very good
+you can download it okay
+let's go back to my code and here and
+the bootstrap
+add
+David
+is looking good
+before let's save it and check
+okay
+add this one third one no
+okay one two third this one
+so we'll add
+or
+this one we can add
+okay we have this one also
+so we will add this here
+save it
+check how it is looking now so this is
+how this one is looking right this is
+looking amazing right now let's move
+ahead
+now what we'll do is we'll create
+another file
+about
+okay
+now here we'll
+create new file about
+HTML right
+we can also use the API that I told you
+about unsplash one and you can also use
+that in the source and the images will
+change I want to use these images so
+that's why I am using that but if you
+want you can also use the splash
+unsplash so we'll open the tutorial HTML
+P that we have created earlier and copy
+the URL
+from there of the images
+right so let's copy the image
+this is the URL
+and paste it inside your wherever where
+you want to add the image so this one is
+repeating as well
+at the
+so now you will see every time I will
+refresh this image will
+refresh right
+okay I will change the name from Cars to
+something else
+technology right
+now let's see how the images are coming
+yeah
+[Music]
+okay
+now
+let's move forward
+to the
+about page
+in the about page it's very simple for
+us right
+the about page is very simple because I
+have done nothing in the about page just
+added the template as it is
+so what I'll do is
+the about dot HTML and firstly I'll copy
+the
+whenever from here so what I'll do is
+I'll copy
+from F Bar
+check whether the new button please
+okay
+because we don't need yeah yeah
+so let's
+not copy this one
+let's copy from
+now let's add the footer first I forgot
+to add the footer
+so
+the footer will come after the container
+of that right so I have added the footer
+inside this footer I have given it a
+class of container inside the footer
+it's a float right so it will come in
+the right position here I have given the
+back to top button so whenever I'll
+click on that back to button it will
+take me on the upside of the page on the
+let's check if it's working fine so this
+is how the folder will look so whenever
+I'll click on the back to top it will
+take us on the top right
+yeah
+so let's move ahead to create this one
+so let's copy first
+the nav bar that we have created
+from here
+till Tom let's copy and paste
+and then from down
+will copy from the footer
+paste it
+okay let's save it and check
+also it will not work as if as right now
+but whenever I'll click on
+about dot HTML
+it will work right so right now in this
+about page there is nothing so what I'll
+do is
+I'll do some changes in this
+I'll change this
+from
+this
+okay
+this thing is done now what I'll do is
+I'll change the source of this one
+whenever I click on this
+home button
+should open
+on the
+let's go back
+so this is
+about is still not working let's fix
+this
+for that this link is wrong because it's
+a URL not the
+so what I'll do is I'll open the this
+one
+and click on this image
+on this file actually
+and I'll check for the URL on this
+so what I'll do is
+now here in this about dot HTML file I
+have done few changes let me just uh
+share with you all the details okay so
+here I have created one nearby that I
+have already showed you that I have
+copied that from the index file and a
+footer from index only okay
+now here we have created
+three images
+these three parts like the main file
+I'll just click and show you
+so this is the main file that I have
+showed you in the starting that I have
+created okay in the about page as you
+can see there are three images right now
+we'll see how to add these three images
+into our project
+now what I'll do is I'll change the
+source of the images
+to
+yeah this one is good so I'll choose one
+dot
+G now let's see and see whether it is
+coming or not
+let's refresh this yeah so the image is
+coming okay we'll add two more images
+here so we'll select two images
+okay I don't have that image so we'll
+add the images here we can add this one
+but it's so very big image so we will
+add two images more
+now I have added these three images that
+I have used in that folder
+okay so I'll write about Slash one so
+here also I have added this scene gpg
+these three images that I have used okay
+now here we have creating a
+class component with the image that I
+told you right now and here I am writing
+something and this is the chunk leader
+now what I want to tell you that I have
+used one class row featured and then we
+have used D Flex justify content Center
+in with this the help of justify content
+Center the content that we are using
+that this container is coming in the
+center of the
+page okay and then I have used align
+items center right in all the three
+now let's see how's the output
+let's refresh and see
+this is however about Pages looking
+right this is looking great and now
+let's see whether
+how was the is exactly the same because
+we have used the same images that we
+have used in the this file right now
+I'm gonna create a contact page that we
+have created here so this contact page
+will create right now okay
+coming back to our Visual Studio code
+here I am going to right click and add
+contact
+dot HTML okay
+here we'll again copy the
+content from here
+let's copy from here to
+where the dev ends
+no buttons here so we'll copy from here
+and from
+go
+from footer to the components so we'll
+copy
+and paste right now what I want to do is
+we have to give the extensions
+so the source of the image and all okay
+now we have created these three
+inside this 3 will give
+the
+source of the image right so in the
+contact page then anybody clicks on the
+index will copy the path
+and add the
+index is already covered so contact
+index is already covered so I'll copy
+the path of the above HTML page
+and pasted inside the
+this was not the right file so I'm gonna
+go back to my
+contact node HTML file and here
+inside the contact I will remove this
+one and paste this okay let's save it
+and then
+not here
+will add it
+you know
+okay this was home
+here we have to put
+in the contact we will delete this part
+and copy the path of this and add it
+here
+let's save it and see how is it looking
+let's refresh and let's click on the
+this was the document file okay
+both of them are open
+that one so we'll go back to our code
+and click on index and open the index
+file
+okay so we'll click on contact us so
+it's not opening right now so what will
+we do
+about this opening
+the home is also working fine
+yeah so what I'll do is
+for the contact page
+it's accessing the wrong path right so
+what I'll do is I'll change the path
+from that
+because maybe it's excess in the
+butter
+that document page right
+so what I'll do is I'll change the path
+of this
+on that
+so what I'll do is
+so what I did is I remove this pan for
+current page from home and about to
+conductors let's save it and see whether
+it is working fine or not
+okay
+so it's still showing about
+so what I will do is
+we'll check again
+document
+this let's click here
+it's still accessing the document file
+so let's check why it is accessing the
+contact HTML file
+okay
+to be here we have given the wrong path
+of the contact yeah as you can see here
+we have given the wrong path
+okay so what we'll do is we'll copy the
+path of this file
+and paste it
+inside this component
+let's paste it inside here
+and we'll go back to
+index.html and from hash to
+path of the original file
+now we'll refresh it
+and go back to home about contact us
+still it is accessing let's check now
+what is the issue now
+inside the about we have given the right
+path or not
+okay
+the path has changed now
+let's check whether it is
+showing this wrong path
+now let's again check the path of
+everything
+okay this has the right path
+contact us
+okay users and then everything is fine
+with about
+they have given the right path to this
+one
+and this one
+about we haven't given any paths so we
+can give or not it's fine
+it's one I'm also giving the right path
+now let's check
+and let's delete this one
+and let's
+remove go back to learn index let's open
+this one
+let's click yeah it is completely
+working fine now
+so for the contact details what we are
+going to do is we're gonna open our
+contact.html file
+and here we'll add the components
+now what I'll do here is
+I'll create
+one
+class
+okay
+container class
+at this container I'm gonna give it a
+margin of
+4 again like about page
+let's close this one
+and inside this I'm gonna write in H2
+contact
+us okay
+after that I'm gonna use the form
+we can also copy the template from here
+okay
+go back to
+forms so we'll search it here
+forms
+here we if we need email and password we
+can use this one
+like that there are so many other
+templates also okay
+so what I need is I need this one which
+is the basic one
+so I'll copy this from here
+and I'll paste it
+so I don't need this form tag here
+and from here
+let's see if we can check
+how will this look good
+this is how this one is looking we'll
+write password Here
+and then press submit okay
+so this is our main file we have added
+three four different check boxes if you
+want I can also add the check boxes
+so let's see how the check boxes are
+created
+okay
+after this password
+I'll write
+it's right here
+div of class
+form
+row inside this what I'm going to do is
+I'm going to create another class
+okay
+and let's name it as
+called
+small
+you know
+what we call it for small and then we'll
+write
+our
+uh
+subscriber
+okay so what I'm gonna do here is I'm
+gonna give another
+class
+of column
+small
+of 10 I have already told you it should
+be a total of them should be 12. the sum
+should always be
+12.
+so
+let's give it another class of
+form check
+so what form check will do it will
+create a check box for us
+so that you can just get an idea okay
+so here I'll write input
+class
+um
+check
+input
+and let's write it
+type should be a check box
+okay and then I've already told you what
+is an ID
+ID is
+specific to someone
+okay
+so I'll write grid check
+one
+foot
+paste it here and make some changes as
+label so it will give us a
+box we don't need the check box now we
+need a container so what I'll do is I'll
+change from ID into
+for
+okay
+let's now check whether it is fine or
+not
+yeah it's fine let's write yes
+and let's check how it is looking so
+this is how it is looking
+are you a subscriber yes here I'll write
+yes
+check me out
+and then here we'll write email password
+and then submit
+so with this we have read the end of
+this amazing video
+this is how our main website is looking
+right
+this is what we have created we have
+created the main slider in which we are
+adding the images we have
+added three boxes after that the cards
+that we have learned there is one footer
+that we have added after that in the
+about page we get to know how to add the
+image in text
+okay
+and in the topic page we get to know how
+to add the link of the image how when
+will anyone will click on the email on
+the
+this one it will take us to the
+main page okay
+so for contact us we have created this
+one thank you for watching this amazing
+video
+do subscribe to our Channel and if you
+have any doubts please pin them down in
+the comment section below thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,571 @@
+>> In today's Visual
+Studio Toolbox,
+we're going to continue our
+look at machine learning.
+Veronika's going to show
+us how easy it is to
+create and use a model
+inside Visual Studio.
+[MUSIC]
+>> Hi welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green and today
+we are continuing our
+discussion of ML.net
+this is part 2 of
+a three-part series featuring
+Veronika Kolesnikova.
+There she is. Hey Veronika.
+>> Hey Robert. Good to see you.
+>> Good to see you again.
+In the previous episode,
+we did a high-level overview.
+We didn't really get into Visual
+Studio yet but I think it was
+very good to set the stage
+what is machine learning?
+Where does it fit into
+artificial intelligence?
+Today we're ready to dive in,
+fire up Visual Studio and start
+building a model and then
+seeing how we can use it.
+>> Yeah that's right. Let me
+share my screen and
+show my Visual Studio.
+>> Which Visual Studio is this?
+Is this the old Visual Studio
+2019 or the brand new just
+released Visual Studio 2022?
+>> That's the brand new
+Visual Studio 2022.
+>> Good answer.
+>> I've been using the old one and
+new one in parallel for some time,
+but now I fully switch to 2022.
+>> Excellent.
+>> Here I want to create just a
+simple empty console application.
+Creating new project window and
+choosing just a console app.
+I have a bunch of them
+so it's number two.
+I'm using C-sharp here and
+then creating a new solution.
+You can always name it
+something more meaningful.
+I think I'll just keep
+it as ConsoleApp2.
+>> Next one.
+Then here you can choose framework.
+I'm sure .Net developers have
+seen that window and
+they can choose the
+right .Net version that they prefer.
+>> It's in all about .Net 6,
+they can go back and watch .Net
+conferences a couple of weeks
+ago where it was talked
+about in great detail.
+>> Exactly. I will choose
+.Net 6 and create a new app.
+It is empty.
+Doesn't have anything,
+just Hello world.
+>> We actually recorded this before
+the launch so that's why
+it says Preview and it
+says watch the .Net
+launched on November eighth
+which I said we published this
+will have already happened.
+Not that anybody is
+surprised that when we
+recorded an episode at a time we
+actually did it ahead of time.
+>> So maybe we can cut out
+that yellow notification but then
+it still assess preview here.
+>> Leave it in.
+>> You can see in the Solution
+Explorer at the ConsoleApp,
+doesn't have anything other
+than ProgramCS file and
+now I'll be adding machine
+learning magic here.
+Click on "Add" and then add
+machine learning model.
+>> Now did you have to install?
+Did you have to select a
+particular workload or add
+a specific component to get that
+or does it come by default?
+>> ML.Net ModelBuilder is
+available inside Visual
+Studio you just need
+to make sure that when you are
+installing it this
+component is checked.
+>> It's not a workload,
+it's one of the components?
+>> Yes. Or you can
+install it later if for
+some reason it's not
+there you can always go
+back and add it to
+your installation.
+Here when we are adding
+that ML.Net ModelBuilder
+we are able to change the name.
+I'm not going to change name
+just leave it by default
+since it's not the main goal of
+this demo but when you're
+working with production code
+working on your glam project,
+definitely don't forget
+to update the names.
+It just takes a couple of
+seconds and then you can see
+that beautiful UI that
+is ML.Net ModelBuilder.
+Now you can see the scenarios
+available data classification,
+value prediction and
+limited scenarios that I
+mentioned in our previous
+episode like anomaly detection,
+forecasting, and clustering.
+I want you to pay attention
+to those little labels here.
+It says locals for some of
+them and then Azure and local.
+For example, for image
+classification, you might
+not have enough compute power on
+your local machine in order
+to perform that model
+training and model
+creation so if that's the
+case then you can always
+connect to Azure and
+use that Azure magic.
+But today I want to start
+with the most basic,
+in my opinion, scenario.
+It is widely used in
+all applications,
+so I'll start with the
+data classification.
+>> This would be a good
+place for people new to this
+to start out and learn
+how this stuff works?
+>> Yes. You can use
+your local processor and
+the memory you have,
+you even need to connect
+to Azure you'll be using
+just text data so nothing
+too complex there or no heavy
+data is involved usually.
+Before moving forward you can
+see on that screen that it shows
+my local CPU environment
+just to make
+sure that that is working correctly,
+that I have enough computer power to
+actually move forward
+with that scenario.
+Then for next step, I have
+two options here connect to
+a file uploaded here or
+connect to SQL server.
+I have all the data
+inside ATSV file,
+so let me actually find it.
+I have a couple of options
+available I just want to
+use an option with
+less data so it is
+not taking too long.
+>> Did you create that data?
+Is it from a sample?
+>> It's a sample data.
+You can find it on GitHub
+there are also lots
+of third party tools and
+datasets that are available.
+I chose that Wikipedia detox
+file with only 250 lines.
+That is not enough for
+a production model but for demo
+purposes that's good enough,
+it will run through it faster.
+I will save a little bit of time
+and I got that data from
+GitHub but they are
+also online for those with
+datasets so you have lots of
+options for demo purposes.
+Here you can see data preview or
+what's happening in the dataset.
+It's not going to show you
+the whole dataset obviously
+because it might be too long.
+But just 10 rows out of 250.
+Then here we need to choose column
+to predict and we'll be predicting
+sentiment based on the text
+we are trying to figure out
+if it's a rude comment or non-rude
+comment, non-toxic comment.
+Also, you have that
+advanced data options.
+I have only two columns herein
+the dataset but if you have
+more then you can pick
+and choose what columns you're
+going to use and other data options
+that might be needed before
+that actual training.
+Now we need to move to next
+step and next step is training.
+Here is that higher tricky
+part where you need
+to choose how many seconds
+you want to train it.
+Out of the box and by default it
+tries to estimate the amount
+of time you might need
+but also they have that link to
+documentation so you can read
+more about training time and figure
+out what is better
+for your data set.
+Here I can start the training.
+In the output window I see
+what's happening there.
+It actually checks
+different model types
+and tries to figure out the
+best and the best model that was
+selected is that model here.
+I'm not going to try to
+pronounce it but again you can
+read a lot about types of models
+for all data that documentation.
+You can see that actually
+went only through
+two types because we had
+only 10 seconds but usually if
+you have more time to train it,
+then it will go
+through more types of
+models and pick the
+best one for your data.
+Also a good thing
+that you can see here on
+the screen is the accuracy.
+You can see that the
+accuracy's pretty low.
+I won't to recommend
+using the model with
+that accuracy unless you're
+building something
+not important at all.
+>> But then what would happen
+if you trained it for longer?
+>> That's a good question.
+>> Does it depend on the data?
+>> It depends on a data,
+we can definitely try
+to train it longer
+and just check if that
+accuracy increases.
+It might increase a little bit.
+I'm just saying that based on
+my experience but it's not
+going to increase a lot
+because of a pretty small dataset
+and you can see the same
+output but now because
+we have more time it
+went to three types.
+>> Interesting.
+>> It increased a little bit but
+still not production
+grade accuracy but that's
+okay we are using it just for
+demo purposes so I'm
+going to go to next step.
+Next step is evaluation.
+Here by default it's
+just picking out
+the first row and it gets that
+sentiment text from there.
+Ideally in the real world case,
+I wouldn't recommend just
+using the first row.
+Usually what data scientists do,
+they split the dataset
+into two parts,
+one they're using for building
+the model and the second
+one they using for
+evaluation or you need to
+have at least a couple of
+options for evaluations that
+were not part of that
+training dataset.
+But here I'm going to use
+just the default option
+click on "Predict".
+It is toxic.
+Its pretty sure 99 percent
+so that's pretty good.
+We can move to next step.
+Next step is consume.
+There are really good options
+here if you already
+have your application
+built up and you are just waiting
+for that machine learning
+parts then you can
+just copy that snippet
+that they are providing
+and start using the model.
+But if you want to play a
+little more with the model,
+see how it works,
+see a good example of
+usage and you don't
+mind creating a separate app that
+you will delete later most likely,
+then you can just add a
+ConsoleApp or a web API.
+I'm going to use the
+ConsoleApp here,
+and again you can rename it here.
+I'm not going to do that.
+Here you are getting
+basically the whole console
+app which is connected to ML.
+Net model.
+It is already using
+it so we can just run
+that console application and
+see how it actually worked.
+Let's go. Here,
+I'm going to close
+that and this part 2.
+You can see in the program file
+it is automatically passing
+that first line so
+whatever we did during
+that evaluation step it is trying
+to do the same thing here.
+It is using the text to predict
+and passing it to the model than
+some writelines in the console
+so they are helping to understand
+what's happening there.
+It provides them sentiment.
+Also repeats the sentiment texts
+and then provides their prediction.
+It's a good way to understand
+how you can use the model
+but you definitely
+don't have to include
+a console application
+in your solution.
+If you know what you're doing you
+just grabbed in that
+snippet that was
+there and then connect
+the ML.Net model.
+The model itself is here.
+It's that MLmodel1.zip.
+Can see it in both applications.
+I think I can just run it
+and make sure it is working.
+>> We basically created
+a model and then we're using that
+model in a couple lines of code
+and we're just passing in some text
+which could be read from
+a file or picked off
+a entry in a form or
+on the screen and
+then we're applying it
+against the model and coming
+back and saying that's rude.
+That's it? It's that easy?
+>> Yeah. That's it.
+>> That's amazing. Then of
+course all the difficulty comes
+in obviously the dataset
+and then somebody
+ahead of time needed to decide
+for all of this whether,
+what is a rude statement,
+what's not a root statement?
+What the values are,
+so the initial dataset initially
+this might be a manual process.
+Somebody just has a quick screen,
+brings all the comments and they
+say negative, positive, neutral?
+Then just go through that and
+eventually you'd have
+enough of that data
+in there to create
+an accurate model.
+You can create a model
+from any amount of data
+but the more data you have,
+the more good data you have,
+the better your model
+so then you replace
+that manual process
+with your ML model,
+review it to keep training
+the data and training
+the model and eventually
+whether it's a week, a month,
+a year who knows,
+hopefully sooner rather than later,
+you'd have a model that's
+good enough that you don't
+need to do that manual
+process anymore.
+You probably just on a
+regular basis check it
+to keep training of the model but
+eventually, you've
+automated this process.
+>> You need to keep logs as
+for any software for
+machine learning,
+you need to have logs
+to make sure that
+the predictions are
+accurate or maybe
+user feedback if you're
+especially building
+bots then usually people need to
+have that opportunity to complain or
+maybe say that something didn't work
+correctly and then you
+are keeping those logs.
+They can be automatic.
+They don't have to manually type
+anything but based on those logs,
+you can actually provide
+more data and retrain
+your model with that new
+data and make it more
+accurate and just overall better.
+>> That's basically all it
+takes to get started doing
+this with a very simple
+model very simple scenario
+but the key takeaway is about
+ModelBuilder which is part of
+Visual Studio you just have to
+make sure it gets installed.
+There is an amazing
+amount of power in there
+and of course, it gets
+better and better
+and better as the team behind it
+who knows an awful lot about this
+subject continues to improve it.
+>> I started using the ModelBuilder
+may be just as they
+released it a couple of
+years ago and I can see
+big changes definitely
+gets more convenient.
+Better faster, more convenient
+to use and I'm really
+impressed with the work amount
+that that team is putting on.
+>> What are some of the
+other basic scenarios
+that people could look into
+or that or that you've seen?
+Here we just did sentiment analysis.
+I know we've seen
+image classification.
+Is this a dog? Is this a cat?
+What type of cars is?
+But what are some of the other
+things that you've seen people
+be pretty successful with?
+>> I think all scenarios
+are definitely a
+popular that's why they decided
+to include them all here.
+Value prediction is popular.
+You can predict the value of
+your house if you're
+trying to sell your house
+or maybe buy a house.
+Data classification is simple
+and powerful and it
+is easy to set up,
+maintained with image
+classification and there are
+lots of tools that are available so
+you can mix and match maybe
+you are creating some parts
+using the model builder and then you
+can add cognitive
+services on top of it,
+doing speech recognition
+or something like that.
+>> If you wanted to
+do something with
+image classification you
+just need to know what
+the categories are ahead
+of time and then have
+enough images and identify
+that this type of images,
+this category and
+the more images you
+have ahead of time to
+go into each category,
+the better job the model would be
+able to do to figure things out?
+Then it's just a
+question of constantly
+monitoring how good your data is
+and how good your model
+is and your model is
+only going to be as good as
+the data you put into it,
+so it becomes this feedback loop of
+my models no good that's
+because my data is no good
+so you got to get better data
+which leads to a better
+model which leads to
+better data leads to better model
+and you get this virtuous
+cycle I would imagine.
+>> Yeah, data is
+constantly changing so we
+need to make sure that
+you're staying up to date.
+>> This would be a good place
+to wrap up this episode and what
+are we going to see next week?
+>> Next week we'll see a
+more advanced scenario.
+I want to show image classification.
+>> Hope you join us for that.
+We will see you next time
+on Visual Studio Toolbox.
+[MUSIC]

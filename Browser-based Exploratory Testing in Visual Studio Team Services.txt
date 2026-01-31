@@ -1,0 +1,238 @@
+my name is Charles sterling I'm a senior
+program manager in the visual studio
+team and I'm excited that at connect
+we're releasing a browser-based
+exploratory testing tool here at
+Microsoft we've always had great test
+case management tools inside a visual
+studio team system today we're actually
+extending that with an exploratory
+testing tool so you can integrate that
+in your development environment this
+tool makes it easy for you to annotate
+and validate the should the value that
+you're shipping in your product backlog
+items makes it very very easy for you to
+file bugs it's simple to get started
+it's simple to acquire it works in your
+environments whether they are Mac Linux
+or Windows and also works across your
+devices again working with Android iPad
+iPhone and Windows Phone it's resilient
+so if you happen to crash your browser
+in one of these instances while you're
+doing the exploratory testing when you
+bring it back up we're gonna remember
+where you were and be able to let you
+continue on from there
+so what is in this brand new tool this
+tool is going to let you capture notes
+making sure that you're actually
+delivering the value as you think it is
+or actually just notes about what you
+want to do going forward we make it easy
+for you to capture screenshots and
+annotate those screenshots now whether
+or not you do the annotation in our tool
+or your own tool is up to you as I
+mentioned earlier it's very simple the
+file bugs and these are fairly rich bugs
+we actually collect information about
+the environment in which the bug was
+filed all of this had occurred in a
+timeline so if you actually span
+different pbis
+well actually put that in a single time
+list so you can actually see where that
+occurred and as I mentioned it enables
+you to actually test it across your
+mobile device so I'd love to show this
+to you as a demo we have got great test
+tools for formal testing and test case
+management if you haven't looked at them
+please do but this is about exploratory
+testing and making it integral to the
+dress the development cycle I wanted to
+show you how you access it to make it
+very easy to acquire you can download
+the exploratory testing tool from the
+new marketplace so if you haven't taken
+a look at it please do if for no other
+reason just to get the new exploratory
+testing
+I said make it integral to your
+development environment or a development
+process what am I talking about you can
+see I'm actually looking at my backlog
+right here and I've actually working
+with Cory Fowler we said that we're
+going to add categories to that sample
+and we've done that and I'll actually
+want to go ahead and create a
+exploratory test for it so I'm gonna go
+ahead open up the parts of limited
+sample and click on that exploratory
+test tool and right off the bat it's
+asking me which visual studio team
+service should I be using so I type in
+parts Unlimited I think I fumbled
+finger.this so let's see if we can fix
+this and right off the bat it knows
+about my projects that I'm actually
+working on and I've been doing this with
+Cory Fowler so I'm gonna go ahead and
+reference the quarry team now in looking
+at it looks awesome the team's done an
+amazing job but I can see that we've
+actually got an issue with the price of
+the red wheel so I'm gonna go ahead and
+start that session and I'm going to
+capture a picture of this red wheel and
+I'm gonna go ahead and draw a pointer to
+it and say something like real price
+revealed price is you know if this was
+actually you know private information I
+could go ahead and block the you know
+and and blur that information as well
+and this is included in a time line so I
+could capture multiple multiple images
+and it's all part of that time line you
+can see the time line is taking me
+forward in time now I mentioned that I
+can not only test my Windows environment
+but I can test my devices so I'm going
+to go ahead and file a bug for that
+wheel and I'm gonna go ahead and take a
+look at it in my device so I'm gonna do
+both things
+first thing is I see that my wheel is
+here and I could probably go ahead and
+add real text here please update wheel
+price
+and price needs updated and if I go back
+and take a look at that backlog where I
+was showing you that work
+I would actually find this bug as part
+of part of my current sprint go ahead
+and save that and it's just that easy
+now let's take a look at this exact same
+experience but on a physical device
+working with our friends at perfecto
+mobile working with our friends at
+perfecto we make it very very easy for
+you the developer to take a look at your
+application running on physical devices
+so I've entered in the credentials
+letting me look at the perfecto mobile
+cloud and you can see that I actually
+have a bunch of different devices in the
+cloud that is available to me I'm gonna
+go ahead and enter in my iPad and the
+iPad air 2 is what Corey is playing with
+so let's go ahead and take a look at
+make sure that we render okay on that
+device now right off the bat you can see
+that while we started our exploratory
+instance and tab 1 or the the tab to our
+immediate left of this one we are
+actually going to maintain that state
+and run it and know what was happening
+before in that same time line in the
+second tab that's pretty cool so I can
+actually span instances and span tabs
+inside of my browser let's go ahead and
+start my Safari on this air pad - with
+oh and it actually remembered from the
+last time I was looking at this that it
+remember this page so it looks pretty
+good I could see right off the bat I do
+have an issue with the logo it occurs in
+both places but I do need to file this
+as a bug as well so let's go ahead and
+bring up the exploratory testing session
+and take an image of the logo and I want
+to make sure and include the device
+crumbs that way the people who are
+looking at it know that I was actually
+in a device while I was capturing this
+particular bug ooh yes the metadata will
+be in the bug itself but that will
+ability have a visual cue of that in the
+picture itself and as I mentioned I did
+the annotation earlier in our tool I
+don't have to do that so I could go
+ahead and not do the annotation here
+file that bug copy this out
+let's see if we can actually highlight
+that good and like I said I'm kind of
+old school so I'm gonna go ahead and
+paste it into my paintbrush so we're
+going to go ahead and copy image go into
+paintbrush and I want the new logo we we
+have a new logo
+I actually I think I'm in charge of
+updating it so we're going to go ahead
+and update logo okay putting all of that
+back on the clipboard we're going to go
+back into my exploratory test extension
+and you can see that I have annotation
+from other tools so it's not just our
+tool it's the tool that actually fits
+your your purposes in your workflow best
+and this is a logo issue okay
+now I mentioned the fact that this was
+resilient so at this point weapons if I
+crash this application still running and
+it may not be the the best citizen at
+this point so let's go ahead and open up
+task manager and we find our browser is
+running and I'm going to go ahead and
+just bring it down so at this point did
+I lose everything
+let's find out I'm gonna go ahead and
+restart my browser and I'm gonna go
+ahead and reopen the test extension and
+you'll see right off the bat that not
+only did I not lose my timeline and
+actually remembered the bug exactly
+where I was at so let's go ahead and
+finish the typing of the title so logo
+bug and what was that that was a iPad
+air 2 I believe was actually what well
+we had problem even though it occurs in
+all places so at this point the only
+thing left is to bring up full circle so
+if I go ahead and let's look at parts
+unlimited I want to show it back in the
+development environment all those bugs
+are actually we're brought back in and
+we should be able to find those
+so I'm going to open up my quarry parts
+I'm gonna go to work and we should be
+able to see right off the bat of the
+right off the bat in our my backlog a
+logo bug as my last one
+so right there logo logo bug in air pad
+to bringing exploratory testing all the
+way into your development cycle making
+it fit for your devices your operating
+systems and your workflows as you saw we
+had a great demo I know I actually had a
+lot of fun showing it to you I just want
+to recap what you saw we were able to
+capture screenshots we were able to
+annotate those screenshots both in the
+tool that we're delivering and actually
+in my case paintbrush we're able to
+capture those notes as we walk through
+it we filed a couple bugs too I think
+and also we put all of this in a
+timeline and it actually spanned a
+couple of my different PBIS and we were
+able to do the exact same work across
+different devices showing you how the
+resiliency even though we had a crash in
+that case I was able to remember exactly
+where we were and continue on going
+forward my name is Charles sterling I
+hope you have a great time to connect
