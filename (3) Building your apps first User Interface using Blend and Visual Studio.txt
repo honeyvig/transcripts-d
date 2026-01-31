@@ -1,0 +1,218 @@
+welcome back my name is Dante Gagne and
+I'm here to continue the connect learn
+series on universal Windows platform
+application if you've been following
+along at this point you've got Visual
+Studio installed on your machine and
+you've got your first project created in
+this video we're going to start creating
+our actual application I'm going to be
+working with the design surface in blend
+to go ahead and create our first
+controls I'm going to show you how we
+can modify those controls by editing the
+template and we're even going to go so
+far as to use the adaptive triggers to
+modify how your UI is going to look
+whether you're working on a device or on
+a phone for starters let's go ahead and
+jump into blend now many of the things I
+show you here you could do either in
+blend or in Visual Studio but I'm a
+blend guide that's where most of my
+experience comes from and you know I'm a
+little bit more comfortable here but you
+can choose whichever application you
+like now I'm looking at blend and the
+first thing you're going to notice is
+that my design surface looks somewhat
+like a phone well I can change that just
+by modifying the value up here at the
+top left so I can choose you know I want
+to actually think I'm working with say a
+decent sized desktop I'll go ahead and
+select a different design surface and
+down here at the bottom change that to
+fit all so just by changing that drop
+down I can change my design surface to
+whatever size that I want to use
+conceptually now later on when we get to
+adapt the triggers I'll show you how to
+actually deal with different device
+sizes this is just working with my
+artboard now control creation is pretty
+simple for this demo I'm just going to
+create a simple text block that is going
+to say you know hello world that's what
+everybody likes to start with in blend
+you've got your controls just to the
+left of the artboard in Visual Studio
+they're located in the toolbox and I'll
+show you where that is in a moment but
+all I'm going to do is select my text
+block and drop one out on the design
+surface the default font is looks a
+little bit small here but realistically
+I'm kind of zoomed out because I have
+such a large design surface but I'm
+going to start by changing my font size
+to be a little bit bigger so we can see
+it
+and type HelloWorld click anywhere
+outside the text block to finish your
+edit so now I've got my traditional
+hello world application I'm going to go
+ahead and deploy this to my local
+machine all I need to do to do that is
+click the button up here congratulations
+we've created our first hello world
+application now let's take a look at
+what I can do to make my application a
+little bit more you know customized so
+I'm going to close this and I'm going to
+create an OK button for myself so let's
+create a button so I'm going to drag one
+out
+I'm going to change the font size and
+I'm looking in the properties I don't
+remember exactly where that was so I'm
+just going to do a search for it there
+we go change the font and buttons
+instead of using a text command use a
+content command the difference is a
+button can actually have graphics it can
+have a whole wide range of controls
+inside it where a text box can only use
+text so I'm going to set the content of
+my button to just say okay this is what
+I would call kind of your default button
+now what happens if I want to change
+that let me show you how easy this is
+when you're working with the universal
+Windows application now I'm going to go
+ahead and fit selection on my design
+surface so I can see what I'm doing a
+little bit more easily I'm going to
+right click the button and just scroll
+down until I find edit template and edit
+a copy I could choose create empty if I
+wanted to that would create a completely
+blank button for me to work with but in
+this case I would like to have something
+to start with now I'm going to click OK
+and now the object and timeline on the
+left is showing me my template this is a
+template that can be used for any button
+anywhere in any application that I have
+I've edited my template and what I'm
+doing now is I can modify the look I'm
+going to select my route grid and I'm
+going to drop a rectangle down in that
+grid I'm going to drag it behind the
+content presenter the content presenter
+is the control that whatever I said is
+the content for the button it shows that
+inside my template and then on my
+rectangle I'm just going to change the
+rounding I'll just drag this a Dorner
+here and round it out a little bit and
+for my route grid you know all of these
+are things that you can choose to do
+whatever you want to do to make it look
+your way I'm going to take the
+background and reset it so now my button
+looks like this fairly simple changes
+but all I've done here is I've modified
+the way my OK button looks now I'm going
+to scope back to my main document
+I'm going to do a fit all and what makes
+this kind of cool is when I drag out
+another button I can right-click it
+choose edit template apply resource and
+pick the button style that I just
+created
+now it'll go ahead and customize that
+control in exactly the same way this
+allows me to give all of my controls a
+consistent look now the last thing I
+want to do here is I want to show you
+how you use adaptive triggers to modify
+the layout of my application whether I'm
+working on a desktop or on a phone so
+the first thing I need to do is I'm
+going to go to the state's pane I'm
+going to create a state group
+it doesn't really matter what I name the
+group I'm just going to be working here
+and adding a couple adaptive triggers so
+the first one is going to be wide the
+second one is going to be narrow for
+each one of these I'm going to edit an
+adaptive trigger I'm going to add one
+and I'm going to change the minimum
+window width to 1024 for the second one
+I'm going to set its minimum width to
+320 so what I've done here is I've told
+the system take a look at the width of
+my application if it's more than 1024 I
+want all of my controls to be in the
+places they are when the wide adaptive
+trigger is selected if it's not greater
+than 1024 it will drop down to the next
+adaptive trigger in this case narrow and
+move everything to that location let me
+show you what I mean I'm going to go
+ahead and drag both of these buttons
+over to the left and just for fun I'm
+going to rotate my hello world label if
+I hold down shift it'll do it by even
+increments so what I've done now is I've
+informed the system that if I'm working
+with a wide application something the
+full width of my screen or actually
+1,024 pixels or wider this is where I
+want all the controls as soon as I go to
+a narrow form-factor this is where I
+want my controls and let me show you how
+that behaves I'm going to press play up
+here deploy this to my local machine
+again and by default the size I'm going
+to get is going to be nice and large so
+everything will give me the wide layout
+the default width of this control is
+actually less than 1024 so it's using
+that narrow adaptive trigger but as I
+make it wider you'll notice as soon as I
+cross that 1024 threshold everything
+moves to the wide position now this is a
+very simple example here and you'll see
+that as you're working with a phone or
+something like that the controls will
+move around exactly where you want them
+to move but this gives you an idea of
+how you can use your adaptive triggers
+to change your overall you
+whether you're working on a phone
+whether you're working on a laptop or
+whatever device you happen to be working
+with and that's all there is to it
+now you see how to use design surface to
+start creating your UI and even
+modifying some of those templates now
+the state's panel the place where I was
+working with those adaptive triggers
+that's only available inside a blend if
+you want to work with adaptive triggers
+in visual studio you can still do that
+but you need to work at the code level
+which means you're authoring the zaman
+by hand the intellisense will help you
+with all of that out but you know it's
+just one of the differences between
+blend and Visual Studio in the next
+video we're going to be diving a little
+bit further into debugging so we can
+deploy our application and we can take a
+look at getting the business logic
+behind the scenes right I'll see you
+then

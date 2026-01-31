@@ -1,0 +1,63 @@
+I can't recommend this highly enough I
+love this thing I use the extension and
+for years and I'm very happy that this
+is now in the Box I'm gonna show you one
+of my favorite new features that we are
+putting into Visual Studio this one
+started its life as a an extension it's
+now coming into Visual Studio let me
+demonstrate that so let's say I want to
+add a file to my project you know I can
+right click
+go down to add
+a new item and that gives me this
+dialogue but what if I go into tools
+options here and click preview feature
+flag here and what I want to search for
+is enable quick add so now when I right
+click and say add new item or kick Ctrl
+shift a it's the same thing I get this
+little dialogue up instead so I can
+still click on this link that's shown as
+well that says show all templates which
+gives me that experience that I'm used
+to
+but I want to get the simplified view we
+call it the quick add dialog and so in
+here I can just type a file name so a
+name dot Cs and that's what it does it
+just gives me the internal class and and
+this actually respects if I have uh how
+how my namespace rules are in my editor
+config or in my settings and it will do
+the right thing it uses the the
+templates behind the scenes but it's
+it's a little bit more clever than that
+so control shift a again for add new
+item to bring it back up let's type
+something a little bit more interesting
+let's what if we create two files what
+if I create create a client Cs and
+iclient.cs I just comma separated them
+and I now have those two files but check
+this out iclient is an interface whereas
+client is a class so the quick ad method
+or dialog is able to understand that I
+client that naming pattern should match
+an interface template and then give me
+that but I can also click create folders
+so I'm going to create a folder here
+called folder and you can name it
+whatever you want and just end it with a
+forward slash hit enter
+and now you have an empty folder I could
+also have gone in and said okay what if
+I do some sub directories here and then
+end with file.css
+so I can create subfolders I can create
+files in those folders and again I can
+comma separate these to create multiples
+this is in the preview behind a feature
+flag so you saw how I went into tools
+Options under preview features and
+enabled this feature

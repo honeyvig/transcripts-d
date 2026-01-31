@@ -1,0 +1,489 @@
+solo there and welcome to another
+tutorial my name is Senator vaccine this
+time we're gonna be going over parsed
+push notifications in iOS 9 using Swift
+too now I haven't really found many
+resources on this online and I've mostly
+only found a resources for partial push
+notifications for Swift 1 and iOS 7 and
+8 which is not very convenient
+considering the fact that all these
+videos are also really really long and
+they're very hard to understand in fact
+this took me quite a while to make and
+so since this took me quite a while to
+make I'm creating a video on it now I
+wasn't orig
+I didn't come up with the idea for this
+app it was actually sent to me by one of
+my subscribers so his name is Ali echoey
+and I want to show a picture of him now
+this is ali Ocoee he's asked me to make
+a video of how you can actually use
+parse to display push notifications on
+iOS and other platforms I'm only
+covering iOS in this video but I may
+cover other operating systems as well in
+the future anyway let's get to the
+actual video so we can explain the
+question so now that you've seen Ali's
+question let's actually get to the video
+now essentially what I'm going to do in
+this app we're going to have two
+separate I devices these AI devices will
+be able to send push notifications to
+each other but wait a minute they don't
+send them to each other they're going to
+send them to all iOS devices connected
+to this app however in the next part I'm
+going to be showing you how you can send
+to specific people so now let me just
+really quickly explain how the push
+notifications will work then we'll get
+to the coding part okay so let me just
+open up here so let's say we have a few
+clients like iPhone number one
+okay so this is iPhone number one then
+we also have number two who has a bit
+bigger iPhone I guess and this is number
+two okay now let's say over here we have
+the parse database which I guess I'll
+just draw like this and this is the
+parse database now my instance of this
+let's just say it's this this is my
+instance of parse okay
+now this has a little section for push
+notifications
+so essentially what we're doing is these
+two AI devices in their app delegate
+we're setting them to keep on looking
+for push notifications over here but
+wait just a minute this can't be too
+simple
+there's also Apple coming in the way
+here what we're just going to do apples
+just going to act as like a little
+bridge in between us well it's going to
+happen is let's say I create a new push
+notification over here with text like
+let's say you push notification hello
+use my app okay so now it's going to
+happen this push notification will make
+its way over to Apple Apple will make
+its way over to these two devices and
+that on here will either see a little
+notification here or if you're on the
+lockscreen
+it'll open up say the time and stuff and
+then show the notification on the
+lockscreen so that is really simple
+actually even though it seems very
+complicated and so what we're going to
+be doing first in this video we're going
+to be handling the Apple part which is
+the most complicated part out of all of
+this
+then we'll handle the actual coding of
+the app this is the second part this is
+the first part and then we'll actually
+handle the parse database which will be
+our third part
+so let's get to the Mack part now and so
+we can code this up so let's get to it
+so welcome back to the Mac part and now
+I'm going to be showing you the actual
+implementation of this in Swift so to
+get started we're going to do a bit of
+preparation so first of all what we're
+going to do is I'm just going to make my
+face smaller can't have a youtube video
+without one of those drills then I'm
+going to come over here into Xcode and
+I've I have a little template actually
+for this app which you're going to have
+to just open up in your own version of
+Xcode and a link to it will be in the
+description along with source code and
+so what you're going to do inside of
+this little template is you're going to
+see first of all this is very very
+crucial you have to change bundle ID
+enter from comm dot fill got me up to
+comm dot so whatever your usual bundle
+identifier would be for this sort of
+thing for me it would be TBS s dot parse
+tester something like that make sure you
+choose your correct team and then yeah
+you have to go into capabilities make
+sure push notifications is on and if you
+see this little error here click on the
+fix issue button and then in a second it
+should give you a check mark perfect
+you have successfully set up the
+template next what you're going to do is
+you're going to go into your Apple
+developers member Center and they're
+going to sign in to your developer page
+and go into your certificates
+identifiers and profiles page open up
+identifiers and then just our actually
+I'm going to search for parse and as you
+can see I see parse tester I'm going to
+click on it and click on the edit button
+we're going to scroll down until we see
+push notifications
+and where it says development SSL
+certificate click on create certificate
+now all you need to do is open up
+keychain access then we're going to
+click on this keychain access button
+over here certificate assistant and then
+request a certificate from a certificate
+authority then it already feels
+everything in form but I believe you're
+going to have to fill in stuff for
+yourself so your user email just can be
+anything really your name then the CA
+email address make sure that is blank
+and then click on the you're saved to
+disk option and do not check this box
+continue and then it'll ask you where to
+store it so I'm just going to call it
+I'd say just a second push certificate
+request okay
+then I'm going to just save this to my
+desktop because we're going to delete
+this anyway and click on the Save button
+you don't need to show in finder so you
+can just click on the done button come
+over here and click on the continue
+button then click on choose file and
+choose the file that you've just created
+ok perfect click on the generate button
+and then you don't need to download this
+certificate just yet or actually
+nevermind yes you do ok once you've
+downloaded the certificate just click on
+the done button and now you're done on
+your Apple Developer page now click on
+the certificate you just downloaded and
+it should open it up into peach ain't
+access make sure you click on the button
+my certificates if you do not do this it
+usually will not work unless you select
+the correct entry so click on my
+certificates then search for the one
+where it says your app ID which is this
+one parse tester for iOS push services
+and make sure it hasn't expired or
+anything I just created mine so it of
+course won't expire just yet but just in
+case you're using an older one make sure
+it isn't expired or else it's no use
+okay then right-click on it and click
+export then make sure you're using the
+person personal information exchange
+file format and if you aren't if you
+don't have this option if it's grayed
+out like these two then you're probably
+using it from all items you're using a
+different version of the certificate so
+just make sure you use the one in my
+certificates so then I'm going to just
+name this something like parse push
+tester
+yeah that's it click on the Save button
+now do not give this a password so just
+click OK then type in your computer's
+admin password and click on always allow
+or just allow okay now you're done
+keychain access now you have to do stuff
+in parse go over to parse and click on
+go to your apps after signing in create
+a new app and I'm just going to call
+this parse tester click on the create
+button and then click on push and then
+go to settings then click on push again
+but this time from over here then what
+you want to do now listen to this very
+carefully you're going to have to enable
+client push this will allow your I
+devices to push to parse then over here
+where it says Apple Post certificates
+wherever it says certificate file dot
+p12 click on select your certificate and
+open up your certificate file ok perfect
+now it has uploaded this certificate on
+to parts now that you're done this step
+you just want to go into Doc's and click
+on launch the QuickStart then yeah
+there's a little thing I found in the
+parse website it resets the app over
+here so make sure you click on the app
+scroll down until you find the app that
+you were just working on yet the poster
+example
+okay then click on push or actually just
+give me a second
+you won't need to do this I'm just
+checking yeah for myself so I know yeah
+so if I just go over to my apps yeah I
+selected the wrong one I'm supposed to
+click on parse tester okay so if I click
+on parse tester which is my real app
+then currently working on and then I go
+over to iOS because I'm using iOS you
+can really just skip through these just
+randomly select something and then all I
+really need are these application keys
+so double-click your application ID go
+over to your app delegate and paste it
+in for a by D select your client key and
+paste that in for your client ID perfect
+now what we're going to do is actually
+you know what
+currently our push message is this push
+notification was sent that's AB or I
+will spice it up a bit because you know
+what we're learning is programming so
+let's just do this hello iOS programming
+ok so now I'm going to run this app on
+both on both of my iPhone so first of
+all this one then this one so put it on
+to both okay now right as they start up
+I'm just going to show you over here as
+you can see now they are both asking me
+if they'd like to send me notifications
+and so I'm just going to click OK so
+that they can send me notifications and
+as you can see they work perfectly now
+how do I send push notifications to
+these well it's quite simple really
+let's just take our Google Chrome window
+make it really small actually a little
+small that's in small bring it over to
+our view with the iPhones a bit smaller
+so it fits in between them then what I'm
+going to do is if I come over to so not
+right now we're in the parse page now
+I'm going to click on push see this
+little here push then we're going to
+scroll over here and click on send a
+push now actually I'm just going to make
+this big again so you can see what we're
+doing and since there are no oh yeah so
+forgot the main rule that I've been
+teaching you this app gets reset select
+parse tester again and now what we can
+do click on send a push I'm just going
+to choose every one so that it sends to
+all my devices I'm going to go down down
+down and over here where it says what
+message let's just say this is from
+parse hello iOS programming so that we
+can distinguish between the message sent
+by our iOS device and the one sent from
+the parse dashboard okay let's continue
+so let's send this now immediately if I
+come over here both my iPhone just
+vibrated on my table and it shows us big
+notification over here parse push this
+is from parse hollow iOS programming ok
+sure that works but there's nothing
+really too big in that I could show a
+message from a database whenever I
+wanted to I just need to use the code
+that I use in Swift databases well let's
+see what happens if I click ok and let's
+see what happens when I exit the app
+once I actually exit the app and then I
+send a push notification guess what I
+think you've already guessed
+but if I go down here choose something
+like hello
+iOS programming from the NC I you can
+guess what NC means and so if I send
+this now that standard stood for
+Notification Center because as you can
+see it has actually put these on to
+Notification Center and it has showed me
+the actual notification using push so
+now if I go into the Notification Center
+it shows me the notification over here
+and here so if I click on it it actually
+brings me into the app and that works ok
+so now what happens if I click on the
+send text button on one of my iPhones
+well then it does exactly what you would
+expect it actually sends the text that
+we put in to our code now let's see what
+happens when I do that on my other
+iPhone as you can see it pushes on to
+both now let's close the app on one and
+send it as you can see it pushes now
+let's close the app on this one and open
+it up on this and as you can G see just
+to prove to you one last time
+it pushes okay so that was actually
+quite simple for the demo of this app
+now let's get into the actual code and
+how that works okay so now let's get
+over to the actual code part of this so
+I'm just going to move myself over here
+over these and stop the apps okay
+so now let's start from the app delegate
+which is the simplest part again I just
+took these parsed our project and I made
+it much better so that you can use this
+with ease because the power starter
+project still wasn't good enough it had
+lots of extra code I just clean that all
+out for you added some more stuff in
+okay so interact delegates did finish
+launching with options function we are
+just setting the application ID and the
+client key to well the application
+client ID you get from parse we are
+setting the UI user notification type to
+alert badge and sound that means that in
+the notification settings if you are to
+your Settings app and click on
+notifications these are the three things
+that we are going to use for the you
+know notification types then settings is
+just going to be really simply what
+types can we use and what categories
+categories can be nil meaning default
+but the types will be the types that we
+just created then what we do is
+application which is a Cy application
+that we're getting in this function
+we're just going to register user
+notification settings and then those
+settings that we gave it so it were
+registering those notification settings
+so we can actually give notifications
+and then it shows up that little pop up
+this so-and-so app would like to show
+you notifications and so these are
+clicks okay or no and then we have
+permission to show notifications then
+next we're doing application dot
+register for remote notifications this
+means that we can receive notifications
+from a remote source like the parse
+database then we're just returning true
+then this function is not required at
+the moment so I can just remove it
+however day to register for remote
+notifications with device token again
+that's just a default function that
+parse requires I'm not going to go into
+it and so is dead fail to register for
+remote notifications with error again
+that comes inside of the templates and I
+wouldn't really recommend touching them
+you don't need to then in application
+did receive remote notification again
+this is just par stuff where we're
+handling the push and if the application
+is inactive we are calling the track app
+open through the remote notification
+payload which is just something to do
+with personal attacks you don't need to
+get into that
+anyway now let's get back to our
+viewcontroller in our viewcontroller
+right as we open up the view like just
+as we're loading our view we are
+immediately connecting to a channel
+which I like to call
+well test channel let's just say test
+name but basically what this is is you
+know there are multiple different
+channels of post notifications that you
+can have on parts like for example let's
+say we have different Facebook users
+different Facebook users would have
+their own channels the channels would be
+named their own name and let's say
+someone else post something to their
+timeline that will be sent to that
+person's channel and then it'll show a
+push notification on their channel only
+or on their devices only or else just
+imagine this you would be getting
+notifications on Facebook for pretty
+much everybody else that's using
+Facebook which wouldn't make sense so
+that's why we use channels so basically
+these three lines of code are just
+connecting us to test Channel and also
+one last thing I'd recommend just in
+case their Wi-Fi is a bit slow freeze
+the app until it saves the channel or
+else there will be glitches then once
+the view does appear however we are
+checking is the height of our frame
+greater than or equal to 736 if no
+perform a segue to 6 that's the actual
+identifier so what this will do is if
+we're running an iPhone 6s plus or an
+iPhone 6 plus or something of that size
+then great good job stay or else what's
+going to happen is we're going to make a
+segue towards a different view that'll
+work on 6 and 6s and also we're checking
+if the views tag is 0 this is so that
+once we open the second view for the
+iPhone 6 that's going to call this
+function as well and then we
+want to go into an endless loop a loop
+of just calling just going to its own
+view over and over again so we don't do
+that next what we have is the IP action
+function for sending messages here we
+are forcibly trying because I know this
+won't give an exception in my case you
+can put in the full do catch statement
+but I don't need to at this point and so
+what we're trying to do or at least
+forcing Swift to do is we're going to
+take a PF push I don't know what the
+stands for a parse push basically dot
+send person push message to channel then
+the channel name and then the message
+that we want to send so the channel in
+this case is test channel and the
+message as well as you know hello
+iOS programming and that is all the code
+I'm just going to show you the UI really
+quickly really simple nothing you
+haven't seen before this is the this is
+the six view this is the two six segue
+this is the view and then these are the
+two buttons these are the same class so
+these are the exact same view just
+different sizes so this is also a few
+controller this is also view controller
+and that was it for this video if you
+have any questions concerns or comments
+really leave them in the comments you
+can also email me at Taji mani at
+gmail.com if you'd like to with any more
+questions concerns you can also email me
+a video question if you'd like to that
+has that where you talk just a second
+yeah oh yes quickly before I go I would
+say in part 2 I'm going to tell you how
+you can target specific devices anyway
+continuing you can also send me a video
+question of you saying a question and I
+might just feature it in one of my next
+videos you can also subscribe to my
+channel if you'd like to contact me on
+Twitter at tad you many all the links
+will be in the description source code
+will be in the description on my github
+page and that's going to be for this
+video good

@@ -1,0 +1,350 @@
+hey Traders guess what you can put chat
+GPT directly into your pinescript editor
+now with this Chrome browser plugin and
+in today's video I'm going to show you
+how it works and uh give you an
+introduction to this tool it's very very
+cool and check this out you can even run
+optimizations directly in your browser
+uh but more on that later in the
+[Music]
+video none of the material in this video
+is financial advice you should always do
+your own research search and due
+diligence before engaging in trading or
+investing and please seek professional
+guidance if you need it so what's this
+tool called it is trade sage and it's a
+Chrome browser plugin that you can
+install for free you can get a free
+trial there's a link in the video
+description and the pin comment below
+it's an affiliate link so if you use my
+link it's just a way to support the
+channel at no extra cost to you and in
+today's video I'm going to show you how
+to get started and how to get it set up
+so the first thing you'll need to do is
+sign up create an account sign in with
+Google or create an account here once
+you've done that go to the main page and
+click add to Chrome now I have already
+added this to my Chrome browser uh there
+should be a button here to add the
+extension to your Chrome browser once
+you do that simply jump over to trading
+View and the app will be ready to go and
+this is what it looks like just down
+here this little inconspicuous tab added
+to your sidebar you click on that you'll
+need to log in I've already signed into
+my account but once you've signed in
+your account through this uh little
+plugin here it's seamlessly integrates
+chat GPT directly into your browser and
+your trading view Pion script editor
+it's pretty cool stuff so what's the
+difference between this version of uh
+chat GPT and the regular version well
+this one is trained on pinescript so
+it's actually been taught uh the latest
+pinescript documentation and it's custom
+built custom tweaked to work
+specifically on pin scripts so if you
+haven't watched my previous videos on
+how I've used chat GPT and pinescript in
+the past go and check them out because
+um I think it' be really helpful for
+those of you who are new to this
+technology this tool the vanilla chat
+gbt the official um open AI chat gbt
+tool isn't very good with pin scripts
+it's okay it does a decent job but it's
+not fantastic because it's not trained
+on pinescript and pinescript is still
+somewhat of a niche language I mean only
+Traders use it so it's not really you
+know even though there's millions of
+people using trading view that's still a
+niche programming language compared to
+things like C C++ python JavaScript all
+those sorts of languages so it's not
+really good at doing pinescript even
+though it can do it okay this on the
+other hand is built by a team of Traders
+and software developers who have taken
+the chat GPT language model and trained
+it on pinescript specifically so it's
+much much better suited to pinescript
+the catch is it's a little bit slower
+than the vanilla chat GPT uh but the
+trade-off is worth it and I'm sure it'll
+get faster over time so in today's video
+I just want to introduce you to it I
+just want to show you what it's capable
+of just some various examples creating
+script templates debugging scripts and
+playing around with pine script. ideas
+um you can see there's some prompts here
+just to get started like um explain the
+security function if I click on that uh
+it will do a better job of explaining
+these things probably than the
+documentation does or it will at least
+give you a second um description that
+might help better explain some Concepts
+as I've said in the past with tools like
+chat GPT and other language models AI
+models uh you still need to know what
+you're doing if you don't know how
+pinescript works these sorts of tools
+aren't going to magically solve all your
+problems and they are prone to errors
+sometimes they will give you incorrect
+code or incorrect Solutions sometimes
+it'll be complete nonsense and other
+times it'll be fantastic 100% accurate
+exactly what you need and so if you
+don't know the language um at least on
+an intermediate level you will probably
+still struggle to use these
+tools so I still think educating
+yourself about pinescript and watching
+the other videos on my channel how to
+code how to learn um this language is
+still important this isn't a crutch that
+you can just depend on uh to fix your
+lack of knowledge or laziness to not
+want to learn U coding and and proper
+trading techniques you still need to do
+all of that but this tool significantly
+speeds up your process I've started
+using tools like this almost daily in my
+coding process it's become a really uh
+really powerful it's like having an
+assistant really that's that's the best
+way to describe it it's like having an
+assistant you don't have to pay and you
+you don't have to explain things to you
+don't have to uh treat like a human
+being that's the world we're heading
+into uh but anyway let's break down what
+this is capable of let's have a look at
+a few examples and again if you want to
+play along with this uh play alongside
+me doing all of this um go and get this
+tool the link is in the video
+description and pinned comment below so
+here we have clicked The Prompt explain
+the use of the security function in
+pinescript and here we go let's copy
+this code over see if it works paste it
+in there I'll jump over to the Daily
+chart since this is referencing The
+Daily Apple price I'll just go over to
+Apple and there you go a hover over uh
+last night's close 1733
+1733 this AI model has just generated
+some code that we can just copy paste
+into our script and it's ready to go so
+this sidebar tool is really helpful for
+exploring ideas asking questions
+chatting back and forth with the tool if
+you want to iterate on an idea um or
+you're trying to understand a concept
+better this is a good place to go to do
+that if you want help with your actual
+script this is where the inline
+generator comes in handy so this is
+added directly to your Pine editor as
+well so you've got two buttons here this
+one down here and this one in your Pine
+editor if I click on this I can say
+something like generate a template
+script that
+detects uh moving average crossovers
+enter now it does take a minute it takes
+a little while to generate this code but
+there we go click accept it paste that
+script into my editor save and we have a
+functioning moving average crossover
+script let's add some um labels to this
+see it's drawing um signals onto the
+chart whenever the crossover happens so
+now let's ask it to draw labels whenever
+there's a buy or sell opportunity on
+this um example template um let's
+highlight where the signals are detected
+and say add text labels to this code on
+my chart there we go have a look at that
+how quick was that click accept it edits
+my script save my code and I should be
+now getting labels drawing onto the
+chart look at that amazing see what I
+mean by how much time this can save
+obviously I could have written this out
+myself but when it comes to things like
+labels I'll often forget what the the
+order of the parameters are and I often
+have to click the um refer manual and
+have a quick look and read through here
+and find the find um what I need the
+function template add all this code in
+with this new tool I can just highlight
+some code and say improve it and then
+tell it how I want it to go about doing
+that let's try something else let's try
+asking you to generate a Ballinger band
+mean reversion indicator script all
+right here we go so we quick look
+detecting crossovers of price over the
+lower and upper bands okay interesting
+let's accept the script save it and add
+it to our chart and have a quick look at
+what's happening all right not bad
+probably using this on bitcoin is not a
+good idea you'd probably want to use it
+on um on the stock market more than
+Bitcoin because Bitcoin doesn't tend to
+mean
+revert very often this is much better
+this is on the S&P 500 you can see these
+signals are a lot better than on crypto
+um and not not bad not bad here let's
+try highlighting this code and say
+convert this script into a strategy
+script see what
+happens let's have a quick look
+strategy um entry exit okay not bad it
+hasn't added exit signals it's only
+going to exit um when an opposite signal
+is detected but that's okay for now
+let's accept that save the code see how
+it looks there we
+go interesting let's change our position
+size to percentage of equity and drop
+this down to a more reasonable
+number and click
+okay there we go this system uh it's got
+a nasty draw down but it's um
+technically profitable so that's
+interesting now it it needs Improvement
+but it's a great template to work with I
+can't deny that now it does have some um
+deprecated code in here let's get rid of
+these and uh save that code let's see if
+we can tell it to exit long trades when
+when price crosses the middle line and
+exit short trades when price crosses
+below the middle line see if we can do
+that now if you use the tool you'll
+learn over time that the quality of the
+scripts will depend on the quality of
+the prompts and over time you'll learn
+um how it responds better and be able to
+adapt your prompts based on your
+experience with the tool that's been my
+experience with the vanilla chat GPT
+anyway um all right that looks all right
+save our code make sure it's exiting at
+the middle
+band looks good all right um let's tell
+it to remove these
+WS um the
+when
+parameter is
+deprecated can you remove it please now
+we could obviously remove this ourselves
+but I just want to see if we can um ask
+questions like this and have it fix the
+script so let's have a quick look yep it
+removed it awesome accept save the code
+and there we have it we have a uh
+Ballinger band mean reversion template
+system and we wrote barely any code in
+this particular script I didn't write
+any code I just asked uh prompts
+questions so a look at the results a
+little bit better but anyway the purpose
+of this isn't to create a script it's to
+create templates that we can play around
+with and we can even run optimizations
+directly in the trading view platform
+now with this tool so for example if I
+wanted to test um this Ballinger band
+length from 20 to uh let's say 50 in
+steps of five so incrementing this by
+five each run I can click Start the tool
+is now running several different tests
+in the background and when it's done it
+will display how those various indicator
+options behaved and here we go here's my
+list of various profits it even splits
+them by long and short and we can even
+come down to the bottom here click
+export and now I have an Excel
+spreadsheet that outputs all of the
+various indicator runs or optimization
+runs and I can perform additional
+analysis on this information but there
+you go just some ideas to play around
+with it's a pretty cool uh tool there's
+a good chance this could become a
+regular part of my coding process in the
+future uh for example if I'm
+experiencing a bug with some code I
+could just copy it here um open up the
+side panel here paste it in and say uh
+explain this code to me and here comes a
+detailed description of the code I've um
+pasted in here is the most complicated
+part of this code um here the standard
+deviation of the data series over the
+specified length is calculated using the
+result Dev represents the deviation
+distance that will be added to and
+subtracted from the bases to find the
+upper and lower bands so yeah you get
+the idea this is just a quick
+introduction crash course into what this
+tool is what it's capable of and in
+future videos who knows it might might
+uh make another appearance I'll be
+leaving this installed and when I'm
+working on scripts um if I run into
+issues or just want to speed things up I
+can use this inline generator to help
+with that now again you can get a free
+trial for this uh links below so you
+don't need to pay anything to play
+around with it and see if it's something
+that you want to implement into your
+coding process now it does need some
+work this technology is pretty new
+fairly new these language models um but
+that's the beauty of uh the way these
+things work is that over time they learn
+and they get better so this is is just
+the beginning of this tool and I'm sure
+it's going to improve dramatically in
+the years to come if you'd like to learn
+more about pinescript check out our
+website I have a completely free 6-hour
+pinescript Basics course there which
+explains the core fundamentals of Pine
+and if you want to take your coding
+skills to the next level check out my
+Mastery course we have over 50 hours of
+content and 50 plus fstar reviews and
+growing the pin script Mastery course
+also comes with support where I can help
+answer any questions you have about
+pinescript coding and of course there's
+tons of free content on my YouTube
+channel so you're new to pin script go
+and check that out too with all of that
+said I hope you found this video
+interesting and this tool interesting if
+you did make sure to check it out best
+of luck with your trading and I'll speak
+with you in the next video take care

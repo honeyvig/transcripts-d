@@ -1,0 +1,490 @@
+>> On today's Visual Studio Toolbox,
+Leslie shows us five cool ways
+to personalize Visual Studio.
+[MUSIC]
+>> Hi, welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green.
+Joining me today is the
+regular host of the show,
+Leslie Richardson. Hi, Leslie.
+>> Hi. I'm so excited
+to be on the show. Wow.
+>> I'm just so excited to have
+you on the show as a guest.
+>> Wow, I don't think I've
+ever been on the show before.
+This is exciting.
+>> Rather than just
+have you do the hosting
+and the guesting and
+asking yourself questions,
+we're going to be on
+the show together.
+That's awesome. You're
+going to show us
+five ways to personalize
+Visual Studio.
+>> Yeah, I've got some hot tips
+just based off of things
+that I use regularly in
+Visual Studio and also things that I
+recently discovered that
+I thought were really
+cool and were worth showing off.
+>> I think it's really
+easy to just accept
+the Visual Studio defaults and
+never really noticed them,
+but there's so many things
+you can do to personalize it.
+I'm excited to see these.
+>> Yeah and these are super random.
+My only thing is we're
+actually not talking about
+themes today because I thought
+that would be too obvious.
+But if you haven't used
+Visual Studio themes,
+definitely check it
+out because there's
+a lot of options on the marketplace.
+But, yeah, so shall we dive on in?
+>> Let's do it.
+>> Awesome. I'm going
+to share my screen.
+Tip number 1, solution colors.
+This is an extension actually that
+good old Matts Kristensen
+made pretty recently.
+It's actually part of a larger
+experiment to see if this may
+someday get incorporated into
+Visual Studio as an
+integrated feature.
+But I think it's really
+nice especially if you
+have multiple monitors or
+multiple instances of Visual
+Studio specifically that you're
+hopping between that each
+contain different solutions.
+If you're like me, there have
+been times where it's 2:00 AM.
+Like I remember I was creating
+a demo for Ignite last year
+and I was going through between
+two similarly name solutions.
+I edited one having not realized
+that I edited the wrong one.
+I'm trying to debug my code
+wondering why I haven't
+my changes appeared in
+the right solution.
+It turns out, oh,
+I just wasn't paying attention
+to the correct instance.
+As a way to help you out with that,
+solution colors can come into play.
+This is very similar to
+colored tabs if you use those.
+You can right-click on
+a solution and then set
+solution color and choose
+a color of your choice.
+I'm going to go with gold.
+I also have another instance
+open to show it off.
+For this other solution
+that I've got,
+right-click and set solution
+color. Pick a color.
+>> Let's go mint.
+>> All right, mint. What I
+like is a bonuses when you hover
+over and Window code bar you get.
+I'd say you get little quick
+indicators that don't involve having
+to read at 2:00 AM telling
+you what goes with what
+and swapping between them.
+It's just another
+easy identifier when
+you're hopping between multiple
+instances of Visual Studio toolbox.
+>> It primarily shows in
+that line at the bottom.
+Well, that's awesome.
+>> It's pretty sleek. I had just
+discovered this. Thank you, Matts.
+>> What I do a lot is I
+rewrite a lot of my demo app.
+I have a XAML forms app and I'm
+going to rewrite it in Maui.
+All of the names are the same
+because the code just
+copies and pastes
+over and then I'm constantly
+confused which one it is.
+They're both open in Visual Studio.
+They're both named the same.
+>> Yeah.
+>> That'll be cool.
+>> Life saver. We are
+going to try that out.
+It is an extension.
+It's called Solution
+Colors, I believe.
+I think I have it up here somewhere.
+>> Solution Colors.
+>> Oh, yes. Yeah. That only wants.
+>> Cool.
+>> Thank you, Matts.
+Cool. Tip number 2,
+I'm cheating a bit because
+it's multiple tips in one,
+but there's so many ways
+to customize tabs now.
+It's ridiculous. I already
+mentioned colored tabs.
+If you want to do that or actually
+let's use this example, Cod Apps.
+You can go into Tools Options,
+and you have a whole section
+for tabs in Windows and
+a lot of different ways
+to customize from here.
+If you check the
+colorized document tabs
+by option and then you can
+choose how you want
+your tabs to be colored either
+by Project or File extension.
+I'm going to stick with Project.
+In this example, I have like
+20-some projects
+within the solutions.
+As you can see, I've
+got multiple colors.
+Just a really nice indicator again,
+especially if you're
+like me and you've named
+all of your files the same thing,
+it can be a nice way
+to be able to quickly
+identify what goes with.
+>> I use that a lot.
+I have the XAML,
+the.XAML file one color and the.
+XAML.CS file at different color.
+Because I have them all in the tab.
+The XAML files are all on top,
+the.CSes are on the bottom because,
+they all have the same first name,
+so I use that a lot
+to separate those.
+>> Awesome. That's
+exactly what it's for.
+Shout out to Grace and her
+team. Grace is on the show.
+Pretty recently, they put in
+colored tabs a couple updates
+ago, maybe over a year ago.
+Time flies. Really cool.
+Also what's really cool
+are the different ways
+that you can lay out your tabs.
+We've got horizontal tabs by default
+but you can also organize
+them by vertical.
+If I wanted to place the tabs on
+the left, and I could do that.
+Also if you have
+colored tabs enabled,
+it's great because it splits
+them all up for you too.
+>> That's cool.
+>> But I prefer to keep things
+horizontal so I'm going to
+set mine back to horizontal.
+What's even better than the
+horizontal layout now is
+that in the most recent
+Visual Studio update,
+I think so 173, I want to say,
+you can have your tabs
+in multiple rows.
+How sweet is that? You don't have
+to have your hidden
+tabs hidden away.
+If you want to see
+everything all at once,
+then you can do that.
+>> Cool.
+>> The possibilities are endless.
+I'm going to swap back
+to what I had before.
+Tip number 3,
+also related to the tabs.
+But if you've ever had the
+issue of having multiple
+tabs open and you're choosing
+the default tab layout,
+it can sometimes be
+difficult to tell which of
+these open tabs is currently being
+displayed on screen right now.
+Now there is a new feature that was
+also introduced in a recent update
+>> What does it call? Showing
+names not visible in italics.
+You'll notice that are
+in italicize and these
+are the tabs that are
+currently off screens
+if I wanted to open
+that and it can do
+that. I love this.
+If you want to enable it because
+it's not set by default,
+you can go and see Tools
+Options back in the tabs in
+Windows section and
+it is here somewhere.
+We show on visible tabs in
+italic and tab drop-down
+menu. When you want to.
+>> Cool.
+>> Sweet. Tip number 4,
+we have got rainbow braces.
+Sometimes when you're
+going through your code,
+it can be a little frustrating
+trying to quickly identify
+which bracket lines up with which
+bracket or which brace
+lines up with which brace.
+Sometimes especially if you have
+maybe a nested situation going on.
+>> Isn't that what the
+dashed lines are for though?
+>> That is what the dashed lines
+are forward to some degree.
+But let's say you have the braces,
+like the parentheses
+that don't do that.
+Sometimes you might have like
+a nested function call
+or something like that,
+something that makes
+it a little harder
+to tell what brace goes with
+which unless you move your
+cursor directly in that section.
+If you just want to quickly skim
+through and make sure
+you're on the right track,
+there is another
+extension that you can
+check out called rainbow braces,
+which was also created by Matts.
+Thank you Matts. There's an
+equivalent extension that's been in
+the marketplace for a while that
+does a similar thing
+called Diaspora,
+if that's how you pronounce it.
+But I can just use my keyboard
+shortcut "Shift Control 9."
+You'll notice that all my braces and
+parentheses have
+been colored for me.
+It's like a quick identifier
+to know what's going on
+with white without having
+to constantly move my cursor
+to the place in order to get
+it highlighted by default.
+>> Cool.
+>> I like this one a lot
+in those times where you
+might forget a brace and yes,
+you get the error message.
+But sometimes it's just nice
+to be able to cleanly tell.
+>> Yet actually gives you
+a nice set of glance,
+gives you more information than
+the dashed lines. I like that.
+>> Totally. Last but not least,
+the fifth tip that I've got for
+you is custom window layouts.
+I just found out about this
+like a couple days ago,
+didn't even know it existed,
+but I think it's been
+around for awhile.
+That's usually how a
+lot of Visual Studio
+features go when it comes
+to discoveries sometimes.
+But this lets you save
+your layout of your IDE
+and then load it back up
+when you feel like it.
+To use it we are going to go into
+window and save window layout.
+I'm going to keep what I have here
+and let's call this one The Norm.
+While this doesn't
+work for everything,
+it works great for when
+you want to customize
+which windows are currently docked
+or where they're positioned.
+If you don't want certain
+windows displayed, that thing.
+Let's say I don't want
+the Package Manager console
+I'm going to close this out.
+I'm going to move the Solution
+Explorer to the left-hand side,
+which I feel like I
+should have anyway.
+I'm left-handed and I find
+it a lot more intuitive to
+keep the Solution Explorer to the
+left-hand side of the screen.
+Then we're going to go into
+window and I'm going to say
+this window layout and I'm
+going to call it The New Norm.
+We're very inspired of names
+here on individual video team.
+Then from there you can go
+load up your saved windows.
+We go into apply window layout
+which you also have
+keyboard shortcuts.
+I'm currently on The New Norm and go
+back to The Norm and there it is.
+>> Does that save your
+open documents as well?
+>> From what I understand,
+it does not apply to
+your Windows documents that
+are currently opened
+and stuff like that.
+>> That could be
+enlighten her enhancement
+because then if you were
+done for the day and you
+are shutting down into
+little studio which you
+wanted to open up next time,
+literally where you were
+with all the files open,
+actually even scroll
+down to the same place.
+>> Yeah.
+>> That might be interesting.
+>> It's pretty nice. And
+you can also choose to
+have one view where
+the window is split,
+looking at multiple paths at
+the same time, you do that.
+>> I think a lot of people have
+their home multi
+monitor view and then
+their laptop on the road view or
+different views for
+different project types.
+>> Yeah, I think really
+cool because honestly
+this is something that I
+wanted to see NBS for a while.
+Like I think this version could
+stone use them work and
+I'll probably be going over
+to the deaf community and putting in
+my own feature suggestions
+as to how and this idea.
+But, just having the ability
+to provide custom experiences
+that you can toggle between.
+It's very similar to I
+use Photoshop a lot,
+so they have like by
+default, custom workspaces.
+Like here's the
+photography workspace
+or the graphic design workspace,
+and then depending on
+which one you click,
+it gives you a related tools
+and stuff Brenton Center,
+and hides away the
+ones that you may not
+necessarily need for
+that particular topics.
+Would love to see this feature
+utilized a lot more in the future.
+>> Yeah so let's review.
+We did five ways, what were they?
+>> Yes, so we had solution colors.
+Great. Government
+wants to instances of
+VS and you need to
+differentiate between them,
+especially if there are
+multiple solutions.
+We talked a lot about tabs,
+so we've got Vertical Tabs,
+colored tabs, being able to
+Show Tabs and multiple rows.
+Number 3, we had been able to
+show your hidden tabs or italics.
+We also have number 4,
+which is Rainbow braces,
+the ability to quickly
+identify what Brazor,
+which parentheses going with what,
+and you can use.
+This one requires an extension,
+much like solution colors,
+it's called rainbow braces on
+the Visual Studio Marketplace.
+Definitely check it
+out, and number 5,
+we talked about custom
+window layouts.
+>> Awesome, very cool.
+>> Yeah, I think it's pretty cool.
+You discover something
+every day even
+though you work on
+the product everyday.
+>> Yeah. Obviously,
+we'll have been in the product for
+a longer summer brand new extension,
+so there's so much going on.
+>> Yeah.
+>> That is cool.
+Well, thanks for
+coming on the show and
+thanks for letting me host
+the show to have you come on.
+>> Thanks for having me maybe
+I can come back sometime.
+>> Maybe.
+>> I will
+>> We will work on
+a five more ways to personalize
+Visual Studio episode.
+>> Awesome.
+>> Awesome. I hope you
+guys enjoyed that,
+we will see you next time
+on Visual Studio Toolbox.
+[MUSIC]

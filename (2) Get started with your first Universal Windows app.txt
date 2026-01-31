@@ -1,0 +1,115 @@
+[Music]
+hi my name is Dante G and welcome back
+to the connect learn series on universal
+windows platform application development
+now if you were with us for the first
+video you have Visual Studio installed
+on your machine and you've got the
+Universal Windows application tools
+installed on your box in this video
+we're going to go ahead and create our
+first new project and want to go over
+some of the details on how to set that
+up and then I'm going to give you a tour
+of both visual studio and blend to give
+you an idea of the environment we're
+going to be working with I'm going to go
+ahead and click on new project here and
+right off the bat I can choose which
+type of project I want to work with the
+blank app is the one you're going to
+want to work with if you're working with
+universal windows applications now you
+can see on the left I have visual C
+selected is that's the language I'm most
+comfortable with but if you want to work
+with other languages you can drop down
+the other languages box
+say you're a Visual Basic person I can
+click on that one select windows and
+blank app is available there now as I
+said I'm a little more comfortable with
+C so I'm going to go ahead and click on
+Windows the blank
+app name my
+application and press
+okay at this point Visual Studio is
+creating all the files necessary for
+creating a universal windows application
+it just takes a moment and everything
+will get it set
+up all right Visual Studio has created
+my first app for me it took a moment or
+two but now it's open and I've got my
+design surface let's take a look at
+visual studio and look at the various
+pieces so you understand the environment
+we're going to be working with now right
+in the center you have your design
+surface this is the piece that gives you
+an idea of what your application is
+going to look like down below you've got
+your zaml and you know it's easy enough
+to go ahead and switch whichever one I
+want to work with so I'll give myself a
+little bit more
+room over on the top right is your
+solution Explorer this is where you can
+go to see all the files that are
+involved in your project now as you
+probably have already guessed the
+universal windows platform has more than
+just the zaml document in order to
+create your project so you have your
+zaml document which I can expand here
+and find the code behind all of the
+pieces that you need are already
+available Visual Studio will also create
+an assets folder for you so this will
+have some placeholders for things like
+what your lock screen is going to look
+like what your splash screen and so on
+to begin with all of these files are
+just simple rectangles kind of
+placeholders so you want to replace
+these before you're ready to deploy to
+the store and get your application out
+there for people to start using but the
+files are there and this is where you're
+going to want to put them I'm going to
+switch over here and move from Visual
+Studio over to blend now I could launch
+blend normally and I could go ahead and
+open my project but it's actually just a
+little bit easier to rightclick my xaml
+document and choose design and blend as
+soon as I do this Visual Studio will
+launch blend for me it'll go ahead and
+open my document and the whole process
+is taken care of seamlessly and and here
+we are in blend some of the same windows
+are available you'll notice the solution
+Explorer is still here but it's over on
+the left but this one also has the
+objects and timeline up by default where
+I can see all of the elements that are
+in my
+document now the zaml view is still
+available here I just need to click the
+tab over and everything is
+here so right now you may be asking
+yourself what's the difference between
+the two tools I'll be showing you in the
+next video some of the areas where the
+design surface is a little bit more
+comfortable over in blend but again it's
+all up to you which side you think is
+more comfortable now we've got visual
+studio and blend running and we've got
+our first project created in the next
+video we're going to start actually
+creating our zaml and we're going to
+start doing just a little bit of
+application development we'll see you
+then
+[Music]

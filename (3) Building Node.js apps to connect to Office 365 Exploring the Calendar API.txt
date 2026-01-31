@@ -1,0 +1,200 @@
+hello I'm Jason Johnston a senior
+content developer with the outlook
+ecosystems team today I'm going to show
+you how to connect your no GS app to
+office 365 and get update and delete
+calendar data on your calendar so let's
+get started to start with I've got this
+basic node J s app that we've developed
+over the previous two sessions right now
+we can log in and we can do basic
+calendar or sync now we'll take that
+those calendar items that we're syncing
+and be able to take some actions on
+those in case you missed the previous
+two set sessions the code that I'm
+starting with right now is available in
+the session to branch and the github
+repo which is included in the comments
+below ok so this app uses the node
+outlook library to do all of the API
+calls back to the Outlook api's we've
+already got it installed from our
+previous session so let's start by
+taking a look at the app as it stands
+right now if I log in and sync my
+calendar I get these items in a table
+with a view item link or right now the
+view item link doesn't work so let's fix
+that we switch over to our code and in
+the app j/s we'll add a view item route
+this view item route gets the item ID
+from the query parameters and then we
+set up a call to the get event method in
+the calendar namespace and no dot out
+node the node outlook library unlike
+with our sync calls we don't have to use
+the raw make API call here no doubt look
+already implements this functionality
+for us so all we need to do is set this
+get event parameters object with our
+access token and the item ID at the
+event that we want to retrieve and then
+call get event we pass the event that
+gets returned to us in our callback to
+the item detail page template so let's
+see that in action
+now if we click view item we actually
+get some details about the item and
+below we see the raw JSON dump of all
+the details that come back now this is
+nice but if you look at our form we're
+only displaying a few of the fields here
+the subject location
+how many minutes beforehand the reminder
+will fire and the start and end time but
+if we look at the JSON we're getting
+back a lot more data and then we're
+actually using this may not be that big
+of a deal but it is a little wasteful so
+we can trim that down and only get back
+the fields that we care about to do that
+we'll modify our view item we're out
+here to add a select this is a standard
+OData query parameter which allows you
+to specify the fields that you want back
+on a particular entity we just separate
+them with commas and I've included all
+the ones that we care about and display
+in the form and now we just need to add
+those parameters to our get event
+parameters so that they're passed to the
+API call
+and that should do it so if we restart
+the app now we should see a smaller
+results that returned
+again we see all the fields that we care
+about being displayed in our form but
+this time the JSON that comes back is
+much smaller and only includes the
+fields that we asked for since we're
+looking at the JSON here take a second
+to point out some of the new features
+from the v2 endpoint one is the time
+zone by setting our preferred time zone
+in the node outlook library we pass a
+prefer header which specifies that time
+zone so as you can see our start and end
+times are returned to us in Eastern
+Standard Time which is the time zone
+that I specified if we don't set that
+time zone these times would come back in
+UTC time or zoo the time the other new
+feature that I point out quickly is the
+reminders we have two new properties now
+in the v2 endpoint on events is reminder
+on and reminder minutes before start the
+is reminder on is a boolean that just
+tells us if there is a reminder set on
+the event and if it is set reminder
+minutes before start tells us how many
+minutes before the start of the
+appointment the reminders should fire
+pretty straightforward okay so let's get
+back to the code as you can see we have
+a couple of new buttons here on the form
+update item into lead item so let's
+start by implementing the update item
+okay so this should look fairly similar
+to some of the other routes that we've
+already added we get the item ID from
+the query parameters and the access
+token from our session we also get the
+new subject and new location from our
+query parameters which are passed in the
+form when we submit it then we construct
+an update payload now notice here that
+we're only setting subject and location
+we're not creating an entire new event
+entity whenever you do an update you
+only have to include the fields that you
+want to change we packages all up again
+into a parameters object with the token
+the item ID and our update payload and
+we pass that to the update event and the
+calendar namespace if it succeeds we
+redirect back to the view item view so
+that we can see our new changes so let's
+give it a try
+we'll change the subject and the
+location field and go ahead and update
+the item okay so as we see here we're
+getting an error access denied message
+well that's because the permissions that
+we requested in our app only gave us the
+ability to read the user's calendar we
+never requested the ability to write to
+the user's calendar so we can change
+that now we don't need to modify our
+application registration
+we just need to modify our code to
+request that scope as part of the login
+process
+so if we go to off helper j/s we'll swap
+out the calendars not read scope for the
+calendars dot read/write scope and
+that's all that we need to do now if we
+restart the app
+and sign in
+we're presented with a consent screen
+again that's because we've changed the
+permissions from the last time that the
+user granted consent as you can see we
+now have the read and write your
+calendars permission instead of just
+read your calendar now we should have
+the proper permissions to update the
+item
+and now we have the new values in our
+results if we look here we have the new
+subject in the new location and quickly
+we can verify that it has been updated
+ok great so now let's look at updating
+delete item
+again no doubt look has a built-in
+function for us here so we don't have to
+implement it ourselves
+and we get the item ID from the query
+parameters on the incoming request and
+we set up an event parameters delete
+event parameters object here with the
+token and the item ID and we call the
+lead event now here on success we
+redirect back to the sync page and
+that's because since we deleted the item
+we can't do it anymore if we try to view
+an item with that item ID we would get
+nothing back okay
+so let's give that a shot and see how
+that works
+okay so now that we have delete in place
+we'll go ahead and give that a try let's
+see what happens
+let's delete our doctor's appointment
+because we just don't feel like going to
+the doctor today that processes and then
+come kicks us back to the sink calendar
+page and that's it we've added get
+update and delete functionality for the
+calendar to our app be sure to check out
+dev dot lucam and dev office comm for
+more information and getting started
+materials for node and other platforms
+with office 365 if you'd like to get the
+completed source of the app that we
+developed over these sessions you can
+get that a github the link will be below
+in the description the master branch
+should reflect the finished app thanks
+for watching
+you

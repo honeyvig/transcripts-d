@@ -1,0 +1,129 @@
+hi my name is Dante Gagne and I'm here
+to kick off the Kinect learn series for
+universal Windows platform application
+development over the course of this
+series I'm going to help you get Visual
+Studio onto your machine and get you
+started on creating your first Universal
+Windows applications in this first video
+we're going to focus on just installing
+Visual Studio and taking a brief look at
+both Visual Studio and blend the two
+tools that will be invaluable for your
+universal windows application
+development now on this machine I'm
+going to be installing the Enterprise
+Edition now if you want to the Community
+Edition also works and most of the
+things that we show over this series
+will work in either addition but for now
+I'm using the Enterprise Edition so
+let's go ahead and start with that so
+I'm already up here at Visual Studio
+comm and you can see already over here
+on the left is the button to install
+community 2015 this is the free edition
+that's available for everybody and most
+of the things that I show you over this
+series are available in either community
+or the enterprise but I'm going to
+scroll down just a little bit further
+and download the Enterprise Edition once
+it comes up the universal Windows
+platform tools are not installed by
+default so always make sure when you're
+installing to switch over to a custom
+install come over to the next page and
+check the universal Windows app
+development tools once these are on the
+machine you'll be able to start working
+with the universal Windows platform once
+you're here just click install and get
+ready to go now I'm not going to install
+here cuz it does take a few minutes but
+we're going to switch over to my other
+machine where I already have everything
+installed I've already brought up Visual
+Studio and again this is the Enterprise
+Edition the first thing I want to help
+you do is make sure that you've got
+everything installed correctly now very
+easily all I need to do is go to new
+project and once a new project dialog
+comes up the first thing I want to make
+sure I have is the blank app Universal
+Windows this is a universal Windows
+platform application if this is not
+there you're going to want to go into
+your control panel and
+modify the Visual Studio installation
+and make sure you add the Universal
+Windows platform tools whenever you
+update Visual Studio it will update any
+of the modules that you have for it at
+the same time so if you had the
+Universal windows tools installed when
+you install Visual Studio if you add the
+update on top of it it will also bring
+the universal Windows platform tools to
+the latest version as long as you've got
+Universal windows here in your new
+project dialog you've got all the tools
+installed and you're ready to go now
+when you install Visual Studio you're
+going to actually get two tools you're
+going to get Visual Studio 2015 and
+you're going to get blend for Visual
+Studio 2015 and a common question gets
+asked which one do I use well in a lot
+of ways it's a matter of preference
+blend really shines when you're working
+with the design surface so if you want
+to drag out your controls try to get all
+your controls aligned nicely and things
+like that
+that's where blend strengths really
+shines through if you're the kind of
+developer who prefers to work directly
+in the zamel typing each character using
+intellisense and taking advantage of the
+coding abilities of Visual Studio
+that's where visual studios a little bit
+stronger but honestly either one works
+the desire is available in Visual Studio
+and the coding tools are available in
+blend over time you'll play with the two
+tools I'm sure you'll get more
+comfortable in whichever one you like
+another question that frequently gets
+asked is what happens if my development
+house is one that can't move up to
+Windows 10 now naturally development on
+Windows 10 is going to be the best
+option but you can still do Universal
+Windows application development on
+Windows 8 or 81 you can actually even go
+as far back as Windows 7 if you're on
+Windows 8 or 81 you're only going to be
+able to deploy your application to
+emulators or local devices which means
+you're not going to be able to use the
+design surface and you're not going to
+be able to sideload the application onto
+your development box you can still
+develop that way but it's not the
+optimal situation on Windows 7 the
+emulators are not available either so on
+that device you're going to need a
+separate device say some other Universal
+Windows application device to deploy to
+as you're going along so now we've got
+Visual Studio on your machine and you
+know you've got the universal Windows
+tools in the next video we're going to
+be going into actually creating a video
+and taking a look at Visual Studio and
+blend
+so you understand the environment that
+we're going to be working with we'll see
+you next time

@@ -1,0 +1,53 @@
+so this is my default this is what I
+always do it's a little performance
+trick if you like the fresh car smell I
+want to switch over to a different
+project notice how how when I open it up
+here all the files that were opened
+before are now open again and in my
+solution Explorer I can see that all my
+folders and projects have all been
+expanded to the same levels that they
+were last time I used this project and
+that's all good that means that I can
+get right back into where I left off but
+very often this is not what I want very
+often I come in I open the project in
+the morning to start working on on
+something and I don't want sort of
+yesterday's state to be expanded into
+Visual Studio I want something clean I
+want something fresh I want that fresh
+car smell none of this open but I want
+to be able to open my my app and work
+with it so I'm going to show you a
+couple of settings that are really
+really helpful so if you go to tools
+options and then go to projects and
+solutions so reopen documents on
+solution load I'm going to uncheck that
+and restore solution Explorer project
+Key State on solution load I'm going to
+uncheck that as well so now let's open
+this project again that we had before
+I'm going to switch again and first of
+all I don't know if you notice this but
+it's instant the loading of these
+projects are now instant because no
+other files have to be opened no state
+had to be read from disk and hydrated
+into memory on the UI thread in Visual
+Studio to expand all the tree notes in
+solution Explorer none of that was
+necessary when you open a file let's say
+you open a c-sharp file if it's the
+first time you open a c-sharp file in
+that instance of Visual Studio that
+you've got open then it has to boot up
+all of Rosslyn and everything to get
+intellisense and colorization and all
+that working and that's called a
+language service and a language service
+can sometimes take a little while to
+load it's not necessarily a long time
+but it's not instant

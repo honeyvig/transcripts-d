@@ -1,0 +1,222 @@
+>> Everyone. Thank you
+so much for joining
+us as I share all of
+the latest updates for
+the Git tooling in 17.10GA as well
+as the 17.11 preview releases.
+Let's just jump into it.
+I've got some changes that I've made
+in this file and you can see that
+by the green indicator here.
+I'm ready to commit these changes.
+Now, you might have seen in
+previous releases we created this
+AI generated commit message.
+If I go ahead and give that a clip,
+what that's going
+to do is Copilot is
+going to take a look at
+all of the diffs that I've
+generated in the set of changes
+between my previous commit
+and my current one.
+It's going to describe
+those changes.
+Now we got a lot of feedback in
+the previous release that
+this description was
+a little tube verbose and maybe
+added some extra bullet
+points that we didn't need.
+We definitely took that feedback
+cleaned up the front and gave you
+better responses so that now you
+have a clear title
+and a description.
+Now with those changes,
+we actually increase the
+amount of people that were
+answering those suggestions
+and finding them helpful,
+so we're really proud
+of that change.
+I'll go ahead and commit that.
+Then if I go ahead and push it,
+what you'll see is
+an info bar showing
+up at the top coming in right
+here and that's going to
+let us know that we've
+got this option to create
+a pull request either in Visual
+Studio or in the browser.
+Now the create pull request
+page is not brand new,
+but we did make tons of
+updates based off of
+all of the feedback that
+we got from the Team.
+Now that we have the
+new pull request page,
+we're going to go
+ahead and add a title.
+You might have noticed a new update
+here is that I was able to get
+the template from my repo auto
+populated in here and
+these are going to be
+the default templates from
+either GitHub or Azure DevOps.
+This allows me to be
+consistent with my Team,
+be compliant with my
+Team's practices.
+If for example, my team doesn't
+have a template and I wanted
+to get a first draft of my
+pull request description,
+make sure I did miss any changes
+that are covered in
+this pull request.
+I could go ahead and use this AI
+generated PR description which works
+exactly the same as the
+comment description
+so it gives me a super
+easy starting point when
+I want to add that.
+Finally, I can also create
+these pull requests as
+a draft and these were
+another set of the
+highest level feedback
+that we got from the customers
+when we created this feature.
+Additionally, if you're
+using Azure DevOps,
+you'll see an additional area in
+the related item section that
+allows you to link those items
+so that you don't have
+to do that in the web.
+I won't show that here because
+this is a GitHub example but
+keep that in mind that was another
+highly requested feedback item.
+Now I'm done creating
+my pull request,
+and I'll go ahead and I'll switch
+branches to show you
+another new example.
+This feature is something
+I'm really excited about.
+If you're anything like me when
+you create a pull request item,
+it can be really annoying to
+actually address those comments.
+You have to open up Azure DevOps or
+GitHub in the browser
+and then you have
+to map all of the locations of
+those comments and
+changes back to the code.
+That is just a lot of time
+taken switching context
+between the two.
+But now, you can see
+this easy info bar
+that says show comments in files.
+If I click that, I
+actually get to see
+all of my pull request comments
+directly in the editor.
+This not only gives me the ability
+to cut out that context switching,
+but I get all of the benefits
+of being in my favorite IDE.
+For example, I'll share some
+really quick editor tips
+that are brand new.
+I'll show you I can use
+the new auto surround feature
+that allows me to just
+highlight a bit of
+text and then click on the
+quotation mark and that
+surrounds that text with
+the quotation and adds it on
+the beginning and the end.
+Previously, if I were to do that,
+it would have erased the
+text that I had highlighted.
+This is a super quality
+of life improvement.
+Then if I finish those off,
+I'll have addressed this comment by
+my colleague that
+mentioned that I didn't
+use the correct quotations
+and so it wasn't going
+to render correctly.
+Now I have that edit and I'm
+ready to resolve that comment.
+Now that I have
+resolved that comment,
+I can move on to my next one and it
+looks like I had the
+wrong png file here.
+I'll go ahead and I'll update
+that to be the correct file.
+Now, I have quickly resolved and
+acted on these two comments.
+I didn't have to map
+back and forth between
+the comments in the
+browser and in my editor.
+The last thing I wanted to share is
+an improvement to your
+Git history flow.
+For example, if folks didn't use
+our handy commit sage feature,
+they might not have included
+enough context in their commit to
+actually help you understand
+what happened in a
+given block of code.
+If I go ahead and
+open an example here,
+now I'm in the commit details
+view and code refactoring is
+helpful to know what happened.
+But if I don't want to go through
+all of the different files,
+I can actually click on this
+explained button and
+that's going to take
+the same algorithm that we use to
+grab all of the diffs
+and describe those,
+and give me a better
+description including
+references to the files that
+change the lines that change so
+that I can get a better overall view
+and I don't have to go through
+and understand exactly what happened
+by looking through the
+diffs by themselves.
+This just gives me a
+better overview and I get
+more information than
+I would have just
+from the code commit
+message by itself.
+Those were all of the features
+that I wanted to share.
+Thank you so much for
+joining us today.
+I hope you found
+some cool new Git tooling
+features that you're
+going to leverage in
+your everyday workflows.

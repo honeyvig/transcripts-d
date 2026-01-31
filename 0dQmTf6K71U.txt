@@ -1,0 +1,223 @@
+all right welcome back traders this is
+matt from zen and the art of trading
+today's video i'm gonna be covering how
+to detect basic candlestick patterns in
+pine scripts so this lesson is going to
+build off the previous lesson lesson 5
+and in lesson 4 and 5 I showed you how
+to detect RSI conditions indicator
+conditions using the inbuilt
+pine script function and we're just
+going to adjust the script here so that
+alerts are only triggered when the RSI
+is overbought and oversold and we get a
+engulfing candle like this here and this
+up here we've got a bullish engulfing
+candle here and a bearish engulfing
+candle here after the RSI is gone
+overbought and oversold so I'm going to
+show you guys how to detect that
+condition using pine scripts and let's
+get into it I'm gonna break this up into
+three lines of code to make this easier
+to understand so the first thing we're
+doing here is we're gonna identify
+engulfing candles so the first one we're
+going to detect is a bullish engulfing
+candle and in order to detect a valid
+engulfing candle we need to find a
+candle that closes higher than the
+previous candle opened it's it can be
+different for stocks and things like
+that where there's gaps in price action
+but for this lesson we're gonna keep it
+simple we're just gonna focus on this
+catalyst Forex pair this gold versus US
+dollar where there are no gaps in price
+action and so what we need to detect is
+whether this current closing price of
+the current candle is greater than or
+equal to the previous opening price so
+using this as an example we want to
+check if this closing price is greater
+than or equal to this opening price and
+the way you would reference this
+previous bar is by using what's called
+an array so this array will reference
+depending what number you put in here
+say 1 2 3 4 100 whatever you put in here
+will reference the number in previous
+bars from the current candle so let's
+just assume that this right here is our
+current candle we want to
+detect whether the closing price is
+greater than the candle before it so
+we're looking one candle back so we put
+in a 1 in here but this is also going to
+detect if we just leave this as it is
+it's also going to detect hi-hi-hi
+closets because this candle here closed
+higher than the previous open as well so
+we need to filter this signal and make
+sure that the previous candle closed
+bearish and all that means is that the
+closing price is lower than the opening
+price so in order to do that we combine
+these two boolean values so we want to
+find out did the candle close higher
+than or equal to the previous open and
+did the previous candle close lower than
+its opening price that's it that's all
+we need in order to detect this pattern
+here very simple so the next one is a
+bearish engulfing candle and it's
+basically just the opposite of all of
+this so we're looking for a candle that
+closed less than or equal to the
+previous open and the previous candle
+must have closed bullish so in this case
+the previous closing price must be
+greater than the previous open price and
+now that's all we need in order to
+detect bullish and bearish engulfing
+candles and then to create a trading
+signal out of this we're going to create
+a new boolean value called trade signal
+and trade signal is going to be assigned
+to we're going to combine these two
+variables these two boolean values with
+these two boolean values so the way
+we're going to do that is we're going to
+use as we're going to open two
+parentheses so we're gonna have one open
+bracket and then another open bracket so
+if you remember algebra from school
+whatever is in this bracket here this X
+is going to be executed before
+whatever's in the outer brackets so this
+will be execute X will be executed
+before Y the reason we need this is that
+we're going to check whether the RSI was
+overbought on the current candle or the
+previous candle so see in this example
+here there is no RSI signal below the
+candle that's because when this candle
+closed
+the RSI indicator went from oversold to
+not oversold but the previous candle was
+oversold so we want to detect this
+candlestick pattern if the RSI was
+oversold on this candle or the previous
+candle so the way we would do that in
+Pine script is we would say is RSI
+oversold or is the RSI oversold on the
+previous candle so the same way we can
+reference previous open/close high-low
+prices using this array functionality we
+can do the same with our own custom
+boolean x' so this in a bracket here
+will be true only if the current candle
+is oversold or the candle before it is
+oversold and then we want to combine
+that with our bullish engulfing candle
+detection so we'll just type in here
+bullish you see so now this will turn
+true this trade signal boolean will turn
+true if the current RSI is oversold or
+it was oversold on the previous candle
+and we got a bullish engulfing candle
+signal we want to do the same for
+bearish so this trade signal is going to
+detect both bullish and bearish signals
+and so after this outer bracket that
+encompasses all of this boolean
+calculation we want to add the or
+operator and do the same thing for the
+bearish detection so to open brackets
+and then is the RSI overbought or was it
+over bought on the previous candle and
+do we have a bearish engulfing candle
+detected closed bracket so now this line
+of code will turn true if we detect a
+bullish or bearish engulfing candle
+while that while the RSI is overbought
+or oversold now if we save this script
+nothing's going to change here because
+we haven't changed our plot shape and
+our alert functionality so what we'll do
+here is we'll say plot the overbought
+signal the cell signal only if we get a
+trade signal and that trade signal is a
+bearish engulfing candle we'll do the
+same for the next plot shape we're going
+to say here plot a buy signal only
+if we got a trade signal and it was a
+bullish engulfing candle we'll do the
+same down here he cept here because we
+want these alerts to be triggered for
+both bullish and bearish engulfing
+candle signals we only need to put in
+trade signal here we don't need to
+specify what type of trade see you
+that's only for plotting the signal to
+the chart so now if I hit save we're
+going to eliminate all of these signals
+here and we'll only detect this one and
+this one up here so let's hit save and
+watch the magic happen there we go we
+get only two signals on this chart now
+and we have our bullish buy signal when
+the RSI goes oversold and we get a
+bullish engulfing candle and then the
+same is true of a sell signal
+it only plots when the RSI goes
+overbought and we get a bearish
+engulfing candle and the same is true of
+our alerts we'll only get an alert to
+our phone and charting platform if these
+market conditions are met and so that's
+the beginnings of using plan script to
+create your own strategy scripts or to
+detect your own setups in the markets so
+once you get proficient at using pine
+script you can use these these
+functionality and what I've been
+teaching you to detect your own trading
+setups in the markets and send alerts to
+your phone or email account whenever
+your trading setup appears in the
+markets this helps you to stay on top of
+the markets without having to check the
+charts especially if you trade the
+15-minute chart or the five-minute chart
+this can help you stay on top of
+multiple markets depending on your
+trading view subscription type you can
+set as many alerts as you want I'm on
+the Pro I'm on the Pro Plus subscription
+so I can set as many alerts as I want
+and I could set an alert for every
+currency pair that I'm trading and then
+I don't have to scroll through my charts
+all the time to detect these setups this
+script will detect it for me and send me
+an alert so that's it for this lesson I
+hope you found it helpful and in the
+next lesson I'm not sure what I will be
+covering but it'll be something more
+advanced than this so these lessons are
+going to build on top of each other and
+become more and more advanced so
+if you haven't seen the other lessons go
+back and watch them if you need a pine
+script otherwise hang in there more
+content is coming I appreciate your
+support please hit the like button and
+the subscribe button if you want to be
+alerted whenever I come out with a new
+pine script lesson and I'll see you in
+the next one have a great week guys good
+luck with your trading good luck with
+your coding I'll speak to you soon take
+it easy
+[Music]

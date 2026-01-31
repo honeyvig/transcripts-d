@@ -1,0 +1,364 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about the most common Excel errors and
+how to fix them that said if these are
+the type of videos you'd like to watch
+then hit that like And subscribe buttons
+and the bell icon to get notified just
+for a quick info if you want to upscale
+yourself master business analytics
+skills land your dream job or grow in
+your career then you must explore simply
+loar scit of various business analytics
+programs simply Lear offers postgraduate
+programs from P University in
+collaboration with Amazon Google and
+Microsoft through this program you will
+gain the knowledge and work ready
+expertise in skills like prescriptive
+and Predictive Analytics regression
+classification and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts in Top
+Tire product companies and academic from
+top universities after completing these
+courses thousands of Learners have
+transitioned into a business analytics
+role as a fresher or moved on to a
+higher paying job profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comment and a
+description box below to find out the
+business analytics program that fits
+your experience and areas of interests
+now without further delay let's get
+started so some of the common Excel
+errors and how to fix them so let's get
+back to the Excel spreadsheet with some
+data on it so there you go we have
+switch to Excel spreadsheet and here you
+can already see there is one common
+error so this hashing right you can see
+some hash symbols over here so basically
+they are not any practical errors this
+is just the visual error which you can
+commonly see whenever you have opened a
+new data set so in those situations all
+you can do is is adjust the column width
+and row height right in those scenarios
+if you do that you can fix these errors
+simple now let's get to the second type
+of error now uh let's say we have salary
+and Hike percentage over here right now
+let's try to calculate the new salary so
+the formula is equals to Old salary plus
+height percentage which is in the cell
+E2 into the old existing salary close
+the bracket press enter so there you go
+you have the updated salaries here now
+let's say I remove this now you have the
+actual salary so far it looks okay right
+even if I remove this particular cell
+it's showing the actual value but what
+if your data set wanted or the architect
+or the owner of the spreadsheet wanted
+to have a clean looking data and he
+added some information here what's the
+reason for this missing value let's say
+he will say no hike given to this
+particular particular employee based on
+performance right and if I get out of
+this cell you can see we already have a
+value error right so we don't want this
+error basically what's happening is here
+we have a different data type Al
+together we were dealing with numbers so
+far but when the formula finds a text
+formula or text data type then it will
+show a value error so basically this is
+based on uh data type right so here you
+can see when you highlight the cell a
+value is used in the formula of the
+wrong data type so most common errors
+can be fixed with this method help on
+this error and you can find all the help
+that you can get from Excel and it will
+also suggest you what to do in these
+particular situations now a common
+solution which you can do to eliminate
+this error
+is encapsulate this
+particular hike cell with a function
+sum right and enter now this will bypass
+that particular value error and it will
+eliminate it now if we drag the same
+formula across all the cells okay let's
+try to remove a few and uh yeah this one
+as well let's say they did not perform
+in this particular quarter so no hike no
+hike and as soon as we get out of this
+cell and drag this formula across all
+the cells I think it's already been
+approved and then you will not find the
+value error and moving on to the next
+type of error so uh before that let's
+try to enter some value here let's
+say
+I'm doing this deliberately so to
+understand this error we need this so
+now we have a new versions of Microsoft
+Excel right so the error that we are
+going to discuss is the spill error okay
+now here we have employee IDs so employe
+ID will anyways be unique but still we
+will try to eliminate some D duplicate
+entries by using the unique formula here
+and if I give this particular a to a
+column and and press enter you will find
+the error that says spill the answer is
+I mean what does exactly this mean is
+you can see the particular cells got
+highlighted so these particular cells
+got highlighted because it wants to fill
+these spaces with the unique entries but
+unfortunately it could not because it
+has already some data in its path so in
+this path it has simply learn so where
+an existing
+value is present in a uh you know set of
+cells where it wants to print it will
+not print the data and let's see what
+happens if I remove this you got the
+data right so that's how it works now
+this is the second type of error which
+was spill error now let's move on to the
+third type of error in Excel now let's
+remove this column now let's go all the
+way to the bottom and let's say uh your
+manager wanted to find out um what's the
+increase in the um you know dedicated
+amount for salaries old salary and new
+salary so now let's try to calculate the
+sum of all these columns so let's say I
+don't know the function and I presume
+there is some function which is called
+as ADD and all the cells I think it will
+give me the required uh submission
+detail right like keep this and I think
+it should work but it's not this happens
+it is identifying that you want to do
+sumission but it is unable to you know
+get a Clarity uh and automatically when
+it doesn't have a Clarity it will throw
+up an error instead of taking a decision
+on its own okay so it will tell you I
+think it you want to uh do a submission
+but you're using the wrong function so
+when you click on this error
+same uh when you click on this error it
+will show you highlighted error symbol
+will be popping up somewhere so when you
+click on that error it will tell that
+the name error will come when you're
+trying to name the function in a wrong
+way let's say I delete this and again
+let's say I give s u in place of sum and
+I give the entire column salary enter it
+again shows me the name error right so
+basically it's unable to identify by the
+function or you are giving a wrong name
+to the function so in such situations
+all you can do is use the right name
+press T to select the function and
+select the entire column press enter
+there you go and here sync let's say
+equals to
+sum press tab to enter the function
+select the column enter and you can find
+out the difference between the both you
+can simply
+this one minus this
+one okay the data type again equals this
+minus this enter so this is the amount
+that invested that got invested extra
+for clearing the
+hikes now that was the other type of
+error now let's move on to the next type
+so before that let's try to delete this
+one we don't want any complications now
+the next type of error is reference
+error hash ref now if I happen to delete
+this particular column let's say I
+delete this and you can already see a
+lot of ref ref ref has been popped up so
+what is this so this happens basically
+when you let's say you have created a
+formula using the multiple cells and one
+of the cells get deleted so now every
+formula that you created using in
+multiple cells the Excel was referring
+to that particular cell for getting the
+you know final result but out of that if
+any of the sales get deleted then it is
+unable to refer to that particular
+address and it's not g able to give you
+the result now if I delete this
+particular column the same happens so
+what's happening here is if you check
+the formula equals to you can see some
+cells got highlighted the C column and E
+column so it is refering to these two
+cells and it is performing some
+mathematical operations in the
+background and giving you the final
+result but when you're removing these
+reference cells it will automatically
+throw an error which is Hash rep now
+moving next so for the next type of
+error uh let's do
+something so what we're doing is we
+have
+so we have salary per month now we have
+this particular salary right the updated
+salary per month now let's see we wanted
+to calculate the uh pay per day now that
+can be done divided by
+30 enter so this is the average amount
+which an employee gets per day on per
+day basis now let's say I give it is
+zero right if you divide that by zero or
+let's say now I've deliberately given
+the number a zero but in few situations
+when the result you know sometimes the
+calculations are dependent on
+intermediate results right intermediate
+calculations so in case if any of the
+cell is yielding in a value zero during
+the intermediate calculations then in
+those scenarios you find the divide by
+zero error so this happens in that
+situation and also when you highlight
+this it is also seeing when the cell is
+empty in a few situations during the
+data cleaning process if you end up
+having a blank cell in those scenarios
+as well you can find this divide by Z
+error now let's move on to the next type
+of error in our tutorial for today let's
+clear this column as well I don't want
+to complications during the
+demonstration now uh let's look at some
+of the advanced uh functions let's say I
+want to run a v lookup function over
+here let's say I
+want name and high here so I'll add them
+here to we look up now the lookup value
+will be my employee
+ID it's taking an entire column let's
+say I'll not do that I'll add
+another um cell okay I'll refer to this
+particular cell and I'll add the emplo
+is there and the table array is this you
+can just highlight somewhere over here
+because this is a table it will take up
+the entire
+table okay it took
+it okay let let me personally do it
+manually do because it's taking also
+taking the V look up one so I'll like
+the entire
+array now the next one
+is
+go we look up I'll refer to this
+particular
+cell this is my
+array uh the high percentage so 1 2 3 4
+5 comma exact
+match and press on Tab to select it and
+enter okay now let
+me put back the ID column here and you
+can see we are getting na because uh we
+haven't added any of the details over
+here so you can either uh do a data
+validation here or you can just add up
+the value here
+enter now I have you know uh stretched
+the formula across all the values here
+right so you know I'm just I just want
+one value here I'm just getting uh let's
+say your manager wants some random value
+over here wants to get the detail of the
+detail only of one person let's say this
+particular person did not get hike right
+so this is fine it is showing me uh the
+you know hike
+value it is showing me the hike uh
+percentage or you know some
+value of that person but again why am I
+getting all these errors I don't want
+this errors here how can I remove them
+so in such scenarios you can uh directly
+tell
+formula in case if you find an error
+then you can say or you can you don't
+have to add add anything just keep it as
+blank all right in such scenarios you
+don't uh have any errors there now you
+can copy and paste the employee ID over
+here and done or you can do a quick data
+validation here right just go to data
+and data
+validation
+and instead of any value select the list
+and Source will be the list of your
+employee IDs and press okay now let's
+say your manager wants to check
+individually now this particular person
+how much hike did he get and uh one n
+this particular person did he get any
+hike or no no right so this is how you
+can uh use uh if error to remove the N
+errors not uh applicable or not want
+something such type of errors and these
+are the most most common type of errors
+that you will be finding in day-to-day
+life using your Excel and with that we
+have come to an end of this session on
+the most common Excel errors and how to
+fix them if you have any doubts
+regarding any of the topics covered in
+this session or if require any of the
+resources like dat set and formula list
+which has more fixes to most errors
+found we have a separate document on
+that if you want any of those please do
+let us know in the comment section below
+and our team of experts we'll be more
+than happy to help you at the earliest
+until next time thank you for watching
+and stay tuned for more from Simply Lear
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber secur
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

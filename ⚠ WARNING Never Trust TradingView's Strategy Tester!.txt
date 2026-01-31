@@ -1,0 +1,412 @@
+hey traders check this out here's a
+script i wrote today it is a strategy
+script very simple strategy all it does
+is buy and sell daily breakouts so when
+a new day begins
+run the one hour time frame here the
+script places a buy stop order three
+pips above the previous day's high
+with a five pip stop loss and a 10 pip
+profit target and then the opposite for
+shorts so we place a three pip sell
+limit below the previous day's low with
+a 5 pip stop and a 10 pip take profit
+and using a fixed position size over the
+past
+773 trades we've had a 46
+win rate with a 2 1 risk reward a only
+three percent max drawdown
+and a return
+of 157
+it's pretty awesome right
+what if i told you
+this script might not be profitable at
+all
+[Music]
+i think it's time we talked about
+the trading view strategy tester system
+and its dangerous limitations this
+lesson is going to be very important
+especially if you're new to pinescript
+so what's going on here and what do i
+mean by this script might not be
+profitable at all when it clearly is
+looking at the data here and this is
+just using a fixed position size we're
+not even adjusting our risk per trade
+based on a percentage of our account
+balance we're just trading a mini lot
+over 773 trades
+what could be wrong about this system
+look at all these winning trades we have
+here
+uh here's a winning trade here's a
+winning trade here's a losing trade
+here's a winning trade and another
+winning trade
+in fact there are hundreds of winning
+trades here
+but are they all really winning trades
+let's have a quick look if i turn on my
+drawing tool here you can see my
+vertical line here
+on this bar
+right before this trade here
+we're on the one hour time frame
+and as i mentioned at the start of this
+video this strategy is placing a buy
+stop order three pips above the previous
+day's high
+in the strategy tester system
+and you can see right here that the
+strategy tester has counted this long
+trade as a winning trade but you might
+be alarmed to know
+that this was not a winning trade at all
+this was in fact a losing trade and i'll
+show you what i mean so let's turn off
+this script and drop down to a 15 minute
+time frame and have a look at what
+actually happened here so here is the
+trading question let's zoom in a bit
+here
+make this a bit bigger
+so
+let's look at what happened here this
+purple line is three pips above the
+previous day's high
+and then on this day you can see price
+rallied
+higher and higher
+and then it filled us on our buy stop on
+this wick here
+but then either on this bar here the bar
+that we entered on price retraced and
+hit our stop loss we'd have to go down
+to a five minute time frame to verify
+whether or not this entry bar triggered
+our stop loss but certainly the next bar
+has a giant wick that went well below
+our stop loss which means price actually
+rallied filled us stopped us out and
+then hit our one hour time frame profit
+target
+but we go back out to the one hour time
+frame
+unhide our script
+and go back to this trade
+you can see that the strategy tester
+system has counted this
+as a winning trade the problem here is
+pretty obvious we have no idea how many
+times or how frequently
+this situation occurs
+and over 773 trades
+i'd say there's a good chance it
+occurred quite a few times and i'm sure
+that the actual results of this strategy
+if we were to manually go back and back
+test every setup accounting for that
+lower time frame price action
+the results of this strategy would be
+far
+far
+worse than what the trading view tester
+system is telling us
+so what does this mean does it mean that
+we cannot trust tradingview strategy
+scripts
+in a word yes it does mean that
+but it's a little more complicated
+not every script is going to behave this
+way depending on how your script detects
+entries and actually executes trades
+that will affect uh how susceptible it
+is to this intraday price action dilemma
+now the back tester system
+when dealing with historical bars does
+not account for how price action
+unfolded within that bar which is
+extremely unfortunate and i wish that
+the tester system did account for that
+it would be great and it would make a
+lot more sense if every historical bar
+on our price chart was calculated using
+tick data
+so it would play out it would simulate
+how that bar played out during that hour
+that trading session and then it would
+correctly stop us out on our entry
+candle but unfortunately at least in its
+current iteration or current state the
+tester system does not account for intra
+bar price action
+that is a huge limitation of the
+backtester system and something you need
+to be aware of when you are testing
+scripts through it basically you should
+be extremely skeptical of the backtester
+systems results on any script that you
+run through it but especially scripts
+like this one which use a
+buy stop
+and sell stop
+price to enter
+its positions
+the reason that buy stops and sell stops
+are particularly troublesome is for the
+reason i just showed you here in that we
+don't know how this bar this entry bar
+played out
+inside the bar so on a lower time frame
+the tester system doesn't account for
+that pullback after our order was filled
+one way to mitigate this issue or make
+it a little bit less of a problem in
+your scripts is to make your strategy
+scripts
+only operate or make its trading
+decisions based on candle closes
+that is one way to
+[Music]
+prevent this from being as big of a
+problem it can still be a problem if the
+bar that hits your take profit also
+tagged your stop loss it's impossible to
+know which order that happened in it's
+impossible to know if the intraday intra
+bar price action came down and hit your
+stop loss before it came up and hit your
+profit target and the tester system
+might record that as a winning trade
+when in fact it was a losing trade but
+at least if you're operating based on
+candle closes that accounts for the
+intra bar price action when you're using
+buy stops and sell stops to enter your
+trades it doesn't account for intra bar
+price action which can be a big problem
+over a large sample size of trades in
+all of my videos in dealing with the
+trading view strategy tester i always
+encourage traders to manually back test
+their systems anyway of their strategies
+always manually back test your
+strategies there is no way to shortcut
+this process the only thing this trading
+view strategy tester is useful for
+is identifying
+markets and
+trading strategies that exhibit
+potential to be profitable so just
+because this trade here was actually
+losing trade and was recorded as a
+winning trade doesn't mean that that
+happens frequently enough that this
+entire
+strategy is unprofitable it might be
+profitable but i can guarantee you
+that its drawdown and its win rate
+are going to be significantly different
+to what this tester system is telling us
+it is so the purpose of today's video is
+not to scare you off using the strategy
+tester but to inform you on how it
+actually works what its limitations are
+and to warn you against trading strategy
+scripts based on the tester results if
+you were to go out and try to trade this
+strategy
+without manually back testing it first
+to confirm
+that it is in fact profitable
+you're going to be in for a rude shock
+when you realize that its drawdown is
+much higher than three percent and its
+win rate could be much lower than 46
+percent anyway that's all i really
+wanted to say today uh this video is
+just like a public service announcement
+of sorts
+just to let you know
+to be dubious of the tester system don't
+depend on it don't go out and trade
+scripts just because this thing says
+it's profitable the strength of pine
+script isn't its back testing
+capabilities it's its tool creation
+capabilities and the indicator this
+indicator that we've created here could
+make for a great back testing tool
+but as a strategy
+i just wouldn't i wouldn't use it i
+wouldn't pay any attention to this
+information whatsoever until i manually
+back tested this
+using an old-fashioned spreadsheet and
+hours of hard work unless you're going
+to commit to learning a language like
+mql or python or something more advanced
+than panscript
+uh
+don't depend on pinescript to replace
+the role of manual hard work in your
+trading process it's just not going to
+happen it can dramatically speed up that
+process
+for example let me throw on a script
+that i am working on currently
+here is a script that i created that is
+actually profitable i have gone back and
+manually back tested this and it is
+profitable but these numbers here are
+not accurate uh the win rate was a
+little bit lower the drawdown was a fair
+bit higher nearly double and the net
+profit was around the same i think if i
+remember correctly
+but this system this script operates on
+candle closes
+and the whole purpose of it isn't to
+replace my back testing process but to
+help me in that process help me speed it
+up be more efficient you can see that
+this script actually draws my stop loss
+size and my take profit size directly
+onto the chart
+which helps me
+back test markets significantly quicker
+than if i had to manually
+add on the atr indicator and measure
+from the
+closing price to the low and add the atr
+onto that number to get my stop loss
+forget about it i'm never going back to
+doing that manually ever again even
+though i wouldn't depend on the strategy
+tester system
+um it's not a waste of time
+this script does help me identify
+markets that are more profitable than
+other markets for example eurocad here
+is not very profitable at all and i
+haven't manually back tested this yet
+but i assume that if i did my results
+would not be profitable either but on
+some of these markets
+this strategy does show potential
+and so to summarize
+i'm not making this video to scare you
+off the back tester system just to
+inform you not to trust it completely
+make sure to do your own research do
+your own homework and just use the
+tester system to help you identify
+markets that might be profitable so that
+you can prioritize them in your manual
+back testing process and save yourself
+time
+from testing all of these markets one by
+one you might give up testing a strategy
+that is profitable because it wasn't
+profitable on the first five markets you
+spent weeks back testing using this
+backtester system this strategy tester
+you can identify markets that might show
+potential
+on certain strategies and then you can
+confirm that potential by going through
+the process
+of manually back testing entering that
+data into a spreadsheet to get a more
+accurate sense of its total gain and max
+drawdown and its
+win rate wherever that is here let me
+change that to percent so a 43 win rate
+with a two to one risk reward is still
+profitable but this isn't what my script
+was telling me my script said that it
+had a 50 win rate with a much higher
+return but this strategy was still
+profitable on this market at least in
+theory even your manual back testing
+doesn't account for things like slippage
+spread commission costs missed trades
+that you couldn't take for whatever
+reason you've all seen the disclaimers
+historical performance is not indicative
+of future performance that's true for
+automated back testing results as much
+as it is for manual back testing results
+but in saying that
+historical performance is the only
+indication we have of whether an
+approach to trading has worked in the
+past
+and the only way to truly confirm that
+the strategy you want to trade is
+profitable is to forward test it with a
+small account balance a small amount of
+risk a lot of traders recommend demo
+trading a strategy
+if you're an experienced trader i
+wouldn't bother with demo trading
+because it doesn't account for
+commission costs it doesn't account for
+real market conditions if you're a
+beginner trader of course demo trading
+is important so that you can learn your
+platform learn how to trade
+and learn the process of trading but if
+you're an experienced trader who is
+profitable or at least isn't blowing
+accounts and you know what trading
+really is about uh then
+forward testing on a real money account
+with a few hundred dollars is the only
+way to truly confirm if a strategy it
+can be traded profitably
+just because it's profitable in theory
+doesn't mean it will be in practice so
+that's it for today's lesson if you want
+to learn more about strategy scripts or
+how to build trading tools to assist in
+your back testing process and your live
+trading process so that you never miss
+trades
+you can automatically generate alerts
+for trading setups that you trade so if
+you already have a profitable strategy
+coding it in pinescript is one of the
+best things you can do because even
+though it might not be able to back test
+for you
+it can help you trade more efficiently
+it can help you test more efficiently
+and it can help you to never miss a
+trade ever again so if you'd like to
+learn more about pine or you want to
+steal the source code every script i've
+ever written including a few profitable
+strategy scripts that i've manually back
+tested to confirm that they are indeed
+profitable head over to
+pinescriptmastery.com
+where you can find all of my courses on
+pinescript including a free basics
+course if you're new to this and you
+just want to dip your feed in and just
+sort of test the waters a bit and see if
+this is something you'd be interested in
+anyway that's it for today thanks for
+watching good luck with your trading
+take care and beware of the trading view
+strategy tester don't trust it don't
+trust anyone or anything in trading
+always manually back test do your own
+research do your own forward testing
+uh do your own work no one can do your
+homework for you it pays off in the long
+run it is hard work but it's worth it
+see in the next video
+goodbye yes

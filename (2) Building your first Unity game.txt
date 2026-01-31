@@ -1,0 +1,94 @@
+hello my name is Ron Lou and I am a
+program manager on the video studio team
+in the previous video we talked about
+how to install the tools for unity
+development on your machine now it's
+time to start building unity games today
+we're going to demo two things first
+we're going to create a new unity game
+and then we're going to connect the game
+with video studio let's get right added
+now we're going to start creating our
+first unity project let's launch the
+unity editor here we have an option to
+create a new project here you can pick
+whether you want to create a 3d or 2d
+game and whether you want to include
+some asset packages one creation we can
+pick one that says vehicles this is this
+one comes with unity 5 so we have some
+assets to play with when the project is
+created
+here we are inside the unity editor with
+our first unity game credit here in the
+middle we have our scene designer and
+down here in the assets we can use some
+standard assets that comes with the
+package to start playing with the scene
+so I'm going to go to aircraft and find
+a prefab think of prefab like reusable
+components so here I'm just going to
+drag and drop this aircraft into my
+scene
+now we have an airplane to play with we
+can click on each part and move things
+around and I'm going to stop showing off
+my art skills right here so here's this
+is how we can create new projects what I
+want to do is I will open a slightly
+more finished project we have here for
+the demo so I'm going to open a scene
+right here from level one so this is
+kind of fun zombie game what I want to
+show you here is how then we can connect
+this game to video studio to start
+adding our game logic there are two ways
+to do that first is you can go to the
+assets menu down here this menu that
+says open c-sharp project just click on
+that this will automatically open video
+studio for us now it's preparing the
+video studios solution and in a second
+your studio comes up and now we have our
+unity game opened in video studio
+here's a intro page that talks about how
+to script for unity game and here we
+actually have our C sharp scripts open
+in Visual Studio let me close this real
+quick because I want to introduce to you
+the second way of opening the
+the studio is if you already have a
+script file in unity see I have all
+these c-sharp files I can just double
+click on any of the C shape files which
+will then open video studio as well see
+we're back in used to do with the stitch
+are ready to open and everything is now
+setup for us to start building our game
+so this should all work automatically
+for you if you have unity 5.2 installed
+the instant installer not only puts all
+the bits down our machine but also can
+fix video studios such that it is the
+default editor for unity well that
+should happen automatically without you
+configuring anything in case you want to
+check if something is not working
+correctly you can go to the Edit menu
+preferences go to external tool look at
+this external script editor option just
+make sure Visual Studio 2015 is selected
+as the default option and then
+everything should just work with video
+studio connected now we have our first
+project created and connected in the
+next video I'm going to walk you through
+how to make edits to the unity scripts
+in veal studio to start building our
+game logics
+hey if you haven't already make sure to
+check out the other videos in our series
+just click on the videos and if you
+haven't got the tools installed click
+here to get the tools installed to start
+feeding your games videos and toes

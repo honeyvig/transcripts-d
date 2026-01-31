@@ -1,0 +1,233 @@
+[Music]
+welcome back my name is Dante G and I'm
+here to continue the connect learn
+series on the universal windows platform
+application development if you've been
+following along you've got Visual Studio
+on your machine you've created your
+hello world application and you've even
+played a little bit with the debugger to
+try to learn how to work with your
+application and make sure the IC
+underneath is working correctly in this
+video we're going to take a look at two
+of the more advanced tools that help you
+find the trickier problems to solve and
+those are the UI debugging tools and the
+diagnostic tools let's go ahead and jump
+in and take a look at how the live
+visual tree and live property editor can
+help you find the UI issues in your
+application now I'm going to go ahead
+and press play and launch my
+application
+now that my application is up on the
+left you can see the live visual tree if
+you don't see the live visual tree that
+maybe because it's unpinned right now
+all you need to do is click on the live
+visual Tree tab on the left and pin it
+in
+place now what the live visual tree is
+showing me is the entire set of UI
+elements anywhere in my application it
+starts with the root scroll viewer the
+scroll content presenter these are
+controls that Windows puts in place to
+host your Universal app
+as you get further down you're going to
+see the controls that you created my
+categories my root grid and so on many
+of these have a document icon at the
+right which when I Mouse over will tell
+me which document that particular
+control is defined in and if I click on
+it it will open that document and take
+me right to where that particular zaml
+element is defined now if you're still
+working with your hello world and you've
+only got three or four controls it may
+not be obvious how valuable this is but
+as you start working with more and more
+sophisticated apps and you start working
+with item templates and data templates
+this control is
+invaluable over on the right you'll
+notice that it's showing me The
+Descendant count of this element and all
+of its children again if you're just
+working with your Hello World app you
+may not see how valuable that is but if
+you're working with a virtualizing
+control that adds and removes elements
+as the user Scrolls it this will help
+you find out if the virtualizing
+component is doing what it's actually
+doing as well as many other issues that
+can lead to Performance issues in your
+application now I have a fairly
+sophisticated tree here but if I want to
+find a specific control I can click on
+the enable selection button
+here and now as I Mouse over my
+application the live visual tree is
+giving me a highlight telling me hey is
+this the control you're interested in so
+I can do this to pick any particular
+control it will locate that control for
+me in the live visual Tree on the left
+and if I expand the live property
+Explorer on the right it will show me
+all of the properties that are being set
+on on that control this will even go so
+far this particular example doesn't
+illustrate it but if your properties are
+being set from Styles or from themed
+resources and things like that all of
+those values will be shown here to make
+it easier for you to figure out where a
+particular Setter is coming from the
+live visual tree and live property
+Explorer work together to help you find
+the tricky UI issues that you might run
+into when you're working with universal
+windows apps now there's one more
+problem that we have and you may not be
+able to see it because of all the
+editing that we've been doing but I seem
+to have a bit of a performance issue in
+this app specifically at startup it's
+not starting up as quickly as I'd like
+and I'd like to profile it to figure out
+exactly what's
+happening I'm going to go to the debug
+window and I'm going to choose start
+diagnostic tools without debugging
+naturally whenever you're doing
+performance evaluation you don't want
+the debugger coming in because if you
+break on a break point it's going to
+think that that's time spent it's just
+going to make a mess out of things so in
+this case I want to make sure I'm
+running without debugging which is
+really the only option when you're doing
+profiling I'm going to work with the
+application timeline and CPU usage which
+I already have checked here but as
+you're doing your application
+development you'll know when to use the
+memory usage GPU usage Andor networking
+tools a quick note about memory usage it
+must be run by itself it's kind of hard
+to evaluate how much memory your
+application is using IF while I'm
+measuring that I also have performance
+going off and I have the timeline
+keeping track of everything that's going
+on so if you want to do memory you need
+to uncheck everything else and then you
+can't recheck anything but for now I'm
+only working with the application
+timeline in the CPU so everything should
+be fine I'm going to go ahead and hit
+start and at this point Visual Studio is
+building my application it's putting all
+the performance markers in that I need
+you can see already that the diagnostic
+window is showing me just how much time
+has passed so over the first 5 seconds I
+can see my CPU usage my problem is it
+startup so that should be enough I'm
+going to go ahead and stop colle ction
+at this point and now Visual Studio is
+taking everything that happened over
+that particular time span and building a
+report for me so I can figure out
+exactly what's going wrong so there we
+go we can see very quickly over the
+first 5 Seconds I've got a lot of code
+going on I can use my mouse to drag over
+that area and say hey this is where I
+think my problem
+is show me what the CPU was doing during
+that time all right well my first
+command here is taking 71% % of my CPU
+well if I've got a performance issue
+during that first chunk the one that's
+taking up almost 3/4 of the CPU that's
+probably my issue so it looks to be get
+recipes from Json so let me figure out
+where that meth method
+is okay here it is let's double click
+that and I'm going to go ahead and set a
+breakpoint and now I want to run my
+application with full debugging because
+well I know the problem is here
+somewhere let's go ahead and track down
+the issue so all right my application is
+running scroll down just a little bit
+and I'm going to step over the command
+that I'm currently on now if you notice
+as soon as I do that over here on the
+right it's showing less than or equal to
+1 millisecond elapsed that's what we
+call a perf tip this is telling me how
+long that one command took to run and in
+this case less than 1 millisecond that's
+the lowest granularity the perf tips
+will ever give you now why is it less
+than or equal to 1 millisecond well
+there's a little tiny bit of overhead
+that comes from the performance tips
+overall so it's telling you you know it
+might be slightly less than one but it's
+somewhere in this area when I step over
+the next command you'll see that it's
+telling me that it's less than or equal
+to 6 milliseconds does that mean maybe
+it was 5 milliseconds somewhere in that
+area don't get hung up on the specific
+numbers look more at the relative time
+that it takes so let me step over again
+that one took 6 milliseconds now if
+you're paying attention this next method
+is long running
+calculation yeah let's see do you think
+that might be the perform yeah that's
+where the performance hit is and if you
+notice not only can I visually see how
+long that one took but the perf tip is
+telling me that that was you know 2 and
+1 half seconds long so that's clearly
+where my performance issue happens to be
+the perf tips can make it very easy for
+you to figure out narrow it down to
+exactly which method is causing you the
+problems and then delve further into it
+to try to track down exactly which piece
+is your problem perhaps you've got a
+bunch of files that you're requesting
+from the internet on the on the UI
+thread that'll slow down your startup
+time you'll switch that to an
+asynchronous task and so on there are
+plenty of other documents out there to
+help you learn how to debug performance
+issues but this is the tools that are
+inside Visual Studio to at least help
+you figure out what neighborhood to be
+in to start fixing what's wrong these
+tools should give you an introduction on
+how to start working with your
+applications and start going from your
+concept to something you can get out
+there in front of your
+customers I hope you've enjoyed this
+very introductory look at the various
+tools inside visual studio and it's been
+my pleasure to walk along with you my
+name is Dante G and from here it's all
+up to you thank
+[Music]
+you

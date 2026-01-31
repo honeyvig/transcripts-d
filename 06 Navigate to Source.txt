@@ -1,0 +1,28 @@
+here on line 18 I'm making a method call
+into a nougat package called
+newtonsoft.json and I don't really know
+what's going on inside the method called
+serialize object I might be able to find
+the source code somewhere on GitHub and
+then go figure it out but it would be
+really nice if there's a way for me to
+just go straight to the definition hit
+F12 and go to definition so let's try
+that and it takes me straight to the
+source so this is not disassembly or
+anything like that this is the actual
+source code using something called
+Source link all nougat packages can opt
+in to Source link and that will allow
+Visual Studio to understand how to get
+to the actual source code that made up
+this particular version of this nougat
+package and even when you're inside
+these files you can keep hitting F12
+until we come down here and it's a
+serialized object internal and this is a
+private string so I'm F 12ing I'm going
+to definition through a file that made
+up the nuget package that I'm working on
+and I can see everything that's
+happening so super helpful

@@ -1,0 +1,147 @@
+hi and welcome back my name is Dante
+Gagne and I'm going to be continuing the
+connect learn series on the universal
+Windows platform application development
+in this video I'm working with an
+application it's a little bit more
+sophisticated because I want to show you
+how the debugger works inside Visual
+Studio to just give you a brief look and
+how you can diagnose problems that are
+happening in your application we're also
+going to learn how to deploy our
+application different targets so we can
+use the emulators that are built in the
+visual studio as well as your external
+devices so you can see exactly how your
+application is going to work let's go
+ahead and jump into Visual Studio at
+this point up till now we've been
+deploying only on the local machine this
+combo box up here at the top allows me
+to choose what device I want to deploy
+to now the default is local machine
+assuming you're working on a Windows 10
+machine and you're deploying to an x86
+architecture now if you're working on an
+x64 or an ARM architecture it's probably
+switched over here to device meaning
+that you can't actually deploy those to
+your local machine the defaults are ones
+that you're going to be able to work
+with so it's not an issue I can go down
+here and choose device if I have a
+secondary device that I can connect to
+and deploy my application to it so if I
+want to see exactly how it's gonna work
+on a particular phone that I want to
+hold in my hand the way a customer would
+I can use a device entry in the
+drop-down alternatively I can go down to
+the mobile emulators which when I select
+one of those it'll launch the emulator
+that comes with the Visual Studio
+Universal windows tools and it will go
+ahead and side load my application onto
+that I'm going to go ahead and select
+one of the emulators and press play it
+takes a moment or two once I press play
+because it's going to compile my
+application it's going to launch a
+mobile phone load the operating system
+onto it and then deploy my device over
+to it so it's actually a couple steps
+but if you're just patient with me here
+for a moment there's the running
+application now I'm just gonna close the
+mobile emulator because I want to show
+you that it worked but the kind of
+debugging that we're gonna do here we
+can do just as easily on the local
+target so let me switch that comma box
+back up here to the local device and I'm
+gonna go ahead and press play now I
+happen to already have a breakpoint set
+and let me explain exactly what those
+are now if you've worked with two
+buggers before you're probably already
+familiar with breakpoints but just in
+case you're not let me go over the
+basics
+while my application is running if I set
+a breakpoint somewhere in the code as
+soon as the line that the breakpoint is
+on is evaluated just before evaluation
+it will pause my application and switch
+control over to visual studio now I've
+already got one created here so as soon
+as I click this you'll see the visual
+studio is hit this break point for me in
+this case it's telling me hey I'm about
+to evaluate this command adding or
+removing a breakpoint is as simple as
+clicking over here over in the left
+margin and if you notice as soon as I go
+over a breakpoint there's even a cog up
+here that allows me to modify how the
+breakpoint is going to behave so for
+instance maybe I want the breakpoint to
+only trigger if I've hit it a hundred
+times or maybe I don't want to stop
+execution
+I just want to output to the debug
+window hey we just did this you can do
+all that through the breakpoints
+settings for these purposes I just need
+a basic breakpoint so I'm gonna close
+this window and now I've got complete
+control over my application I can put
+the mouse over any variable and you can
+see over in the window it's telling me
+hey my category name at this point is
+appetizers you can use these to figure
+things out like are you getting
+unexpected input are you eating values
+that you shouldn't beginning these
+commands up here allow me to control
+where execution is going to go next step
+into is the most common this one allows
+me to follow the execution chain into a
+given method once I'm inside I can press
+step over because well let's say I know
+what that method does I'm not interested
+I can just step over and not have to go
+through execution of each individual
+command I can also set another
+breakpoint later and just hit the
+continue button and it will evaluate all
+of the commands up to that point these
+are very basic debugging commands but
+you'll find very quickly that when
+you've got an error if there's nothing
+better to help you figure out what's
+going wrong the last button step out of
+will simply finish execution of the
+method that you
+in and return to wherever you were when
+you stepped into so basically once you
+step into a method oh wait I already
+know what this does you press step out
+it'll return execution wherever you
+previously were once you've finished
+getting the information you need you can
+just hit continue and as long as no
+other breakpoints are hit execution
+returns back to your running application
+the breakpoints in the debugger are a
+great tool to help you find out when an
+application is doing something you don't
+expect get in there and diagnose what
+the issue actually is the debugger is
+absolutely invaluable for figuring out
+what's going wrong in your application
+but in the next video I'm gonna take the
+next step and show you how to debug the
+more difficult issues like performance
+I'll see you then
+you

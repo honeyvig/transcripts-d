@@ -1,0 +1,745 @@
+hi traders in today's video i'm going to
+address a few reasons why i think you
+would be
+nuts not to learn pine script if you're
+on the fence about diving into this new
+world
+or you've never heard of panscript
+before then today's presentation will
+shed some light on the value
+of acquiring this new skill and
+enhancing your edge
+and setting yourself apart from those
+traders who do not have this rare
+and specialized weapon in their trading
+arsenal
+here are five reasons why i think
+learning panscript is a good idea
+number one it helps you to systematize
+parts of your trading process learning
+how to script
+parts of your trading process helps you
+to be able to define your trading
+process
+with clear concise and objective rules
+when you tell a script to do something
+you need to be extremely clear
+in what you're telling it to do many
+traders cannot objectively define what
+it is they're looking for in the markets
+this often leads to inconsistent
+outcomes in their trading
+as a result of inconsistent actions
+by systematizing parts of your trading
+process we can remove some subjectivity
+and uncertainty that we might experience
+when analyzing
+a chaotic and oftentimes random market
+reason number two learning to script
+allows you to automate parts of your
+trading process entirely
+this includes automation of parts of
+your analysis
+it includes detecting setups that you'd
+like to trade
+and generating alerts so that you can
+stay on top of the markets
+and once you get good enough at
+scripting it can even allow you to
+automate your trade execution on some of
+your simpler strategies
+learning to code can also save you a lot
+of time
+in the back testing process and during
+your live analysis throughout the day
+for example when i'm day trading i
+usually don't need to sit and stare at
+the charts all day
+i can set up alerts and scripts that can
+detect the market conditions i'm looking
+to trade
+and the setups that meet my rules for my
+strategies
+and i can be sure that i will always be
+notified
+when a setup is detected this allows me
+to also avoid
+any missed opportunities i can't
+remember the last time
+i missed a trade because i didn't see it
+coding your own trading scripts is like
+having a second pair of eyes on the
+markets
+that never miss a beat
+reason number three learning how to code
+can significantly
+enhance your edge over the markets
+if you don't already have an edge over
+the markets that is profitable
+scripting can help you to build one most
+traders who can't find a profitable
+approach to trading
+usually don't have a consistent strategy
+or an objective
+method of approaching the markets as i
+mentioned in reason number one
+learning to script and automate and
+systematize parts of your trading
+process
+allows you to define your trading
+process with clear
+rules you can then back test those rules
+or forward test those rules
+and collect the relevant statistics to
+determine whether or not what you are
+doing
+is profitable over time and if you've
+already gone through that process and
+you have a profitable strategy or
+approach
+to trading be that rules based like i'm
+talking about here
+or completely discretionary where you
+trade mostly on experience
+feel and pattern recognition you can
+still
+use scripting to help enhance your
+trading process
+in my personal trading my scripts do a
+lot of the heavy lifting when it comes
+to
+setup detection and just generally
+staying on top of the markets at all
+times
+and never missing anything important
+learning to code
+in general when it comes to trading is a
+win-win
+whether you're not profitable yet or you
+are profitable there is always something
+to be gained
+out of learning how to code your own
+trading scripts and as you'll see later
+in this presentation
+i'll make a great case for why learning
+panscript in particular
+is a better option than any of the other
+languages that you could choose from
+as a beginner programmer i myself have
+been programming for over 15 years in
+all kinds of languages from java to
+python
+to c plus plus php html all of them
+and i have still fallen back on
+panscript being my main
+trading language purely for its
+simplicity
+and the power that it allows me to have
+with such
+a small cost in time and development but
+we'll come back to that later
+reason number four for why you should
+learn pinescript
+is so that you can remain competitive
+and on the cutting edge
+of trading automation in general
+in our world is only going to increase
+over time
+completely automated self-driving cars
+are only years away
+driving a car might seem simple on the
+surface but when you think about how
+much
+interpretation and subjectivity is
+involved in analyzing
+what decision to make when you're on the
+road it's remarkable
+how far technology has come and the fact
+that we can now automate something
+that typically requires so much human
+discretion
+automation in trading is also only going
+to increase
+over time which is not good for those of
+you who do not learn how to code
+trading is an extremely competitive
+industry
+one way to stay ahead of your
+competition and beat them is by
+leveraging
+your rare and specialized skills and
+coding
+is one of the most powerful of all when
+it comes to trading
+all the best traders in the world use
+some form of automation and scripting
+in their trading process i'm talking the
+big dogs the multi-millionaire traders
+the hedge funds the prop firms all of
+them
+without exception use some form of
+automation
+and scripting and coding to fully
+exploit
+every advantage their edge gives them in
+the markets and those who don't use
+automation
+in their process are trading at a
+significant
+and unnecessary disadvantage and the
+final reason
+why i think learning panscript is a
+great idea for all traders
+retail and professional is because it is
+by far
+the easiest coding language for traders
+to learn
+especially if it's your first language
+now i'm not saying that panscript is the
+best
+language to learn when it comes to trade
+automation
+and analysis the best language would
+probably be something like python
+however python is exceptionally
+difficult for a beginner trader to learn
+and time consuming i've been learning
+how to automate some parts of my process
+through python over the past year or two
+and when i compare it to panscript it's
+unbelievably
+convoluted now the payoff for that is
+that you can leverage some extremely
+powerful tools in python
+however it can take you years to learn
+how to properly
+utilize a language like python then of
+course there's the metatrader language
+mql but this language let me tell you
+is definitely not beginner friendly i
+personally have been finding it easier
+to learn python than mql
+now again mql is more powerful than
+panscript and allows you to do some
+complex things that pi script cannot do
+but the cost of time to learn this
+language is not insignificant
+and then finally there are other
+languages out there like java which was
+the very first language i ever
+specialized in and i got quite
+proficient with that language but it
+took me years and years
+to master that language and even though
+i'm still really proficient with that
+language i still prefer to use
+pinescript when it comes to automating
+parts of my trading process
+purely due to the incredible simplicity
+of the panscript language
+the fact that it's cloud-based and runs
+on tradingview servers i don't need to
+have
+virtual private servers running or
+computers in my house
+i don't need to worry about development
+environments and
+apis and libraries and all of that
+complex stuff that just adds layers and
+layers of complexity
+to your coding projects when it comes to
+pine script everything's in your browser
+everything is run on the trading view
+platform and you can turn off your
+computer
+and still have your scripts running 24 7
+on their servers
+so that you never miss a beat in the
+markets you can have your second pair of
+eyes watching
+price action 24 7 on crypto stocks
+forex commodities futures it doesn't
+matter
+pinescript can handle it now as i
+mentioned in point number four on
+remaining competitive
+and on the cutting edge all of the best
+traders in the world
+make computers an ally here you can see
+mike bella fiore
+from smb capital one of the most
+successful and well-known
+proprietary trading firms in new york he
+has personally mentored dozens of
+traders and taken them from struggling
+to top dog seven-figure and beyond
+traders who turn millions to tens of
+millions of profits
+in the markets each and every year and
+as mike said during an interview a few
+years ago
+he strongly advises any aspiring trader
+to learn to code
+he says custom filters built with code
+help you
+make more as a trader automated models
+built in code can supplement your
+discretionary trading
+our junior traders all build their own
+filters and models through python
+and if it's important to a prop trader
+then it should be important to you
+whether you're a retail trader a
+hobbyist trader or a professional trader
+these guys are your competition you
+don't need to be on their level of skill
+in order to be a profitable trader but
+you better try and utilize the same
+tools as them
+if you want to remain competitive but as
+i said earlier
+python may not be the best choice for
+you to learn as your first language
+if you're a beginner programmer and it
+may not even be
+the best choice if you're an experienced
+programmer but you're new to trading i
+don't see any reason why learning pine
+script
+first is not a good idea no matter what
+your level of skill in programming
+or in trading plus it's completely free
+so you have nothing to lose
+whatever you learn in panscript can only
+help you to become a better coder
+in any other language you choose to
+pursue even if that is python
+down the line but first let's look at an
+example of what we would have to do in
+python
+to achieve something that is actually
+extremely simple in pinescript
+here i have an example of the steps
+involved in getting an
+rsi overboard or oversold signal in
+python
+so imagine we want to get an overbought
+or oversold signal in python and then
+generate
+an alert the first step is we need
+to connect our script to a broker's data
+feed
+api straight away the advantage of using
+pinescript is that all of that is
+inbuilt into the platform
+you don't need to connect to your
+broker's data feed to get price sources
+it's all right there at your fingertips
+in the training view browser
+and you can access the open high low and
+close data
+with a single line of code to do the
+same thing in python would require
+hundreds of lines of code if not
+thousands
+step number two we need to observe the
+last 14 closing prices of a market
+step number three we need to determine
+whether the current day's closing price
+is higher or lower
+than the previous day this is the
+algorithm for the rsi indicator
+step number four we need to calculate
+the average gain and loss
+over the last 14 days step number five
+we need to compute
+the relative strength which is the
+average gain
+over those 14 days divided by the
+average loss the next step
+is we need to compute or calculate the
+relative strength
+index which is done by subtracting 100
+from 100 divided by 1 plus the relative
+strength value and then 7 the final step
+we need to detect when the rsi value
+exceeds 30
+or 70. in python you would need to do
+all of this manually
+in pinescript this is all done for you
+in a single line of code using an
+inbuilt function
+which we'll get to in a moment but next
+let's look at what we would need to do
+in order to generate an alert to your
+phone
+whenever these conditions are met this
+is just getting the signal
+now we need to send that signal to our
+phone so to keep things
+simple quote-unquote i'm going to focus
+on sending an email notification to our
+phone
+rather than a push notification which
+adds a whole new layer of complexity
+to this process the first thing we need
+to do is set up
+a smtp server or an email server
+then we need to connect our script our
+python script to that mail server
+and authenticate ourselves then we need
+to create a mime
+multi-part message object and load it
+with appropriate headers for the from
+two and subject fields then we need to
+add our message
+text body to that object and then we
+need to send the message
+using the smtp server object
+if you understood everything i just said
+then you're going to find pinescript
+incredibly easy to learn but if none of
+that made sense to you
+then you're definitely in the right
+place before we continue let me just
+quickly show you what some of my simple
+python scripts look like before we go
+and look at some code here's a script
+that does something extremely simple and
+might not look like it
+but all this script does is test a bunch
+of
+different moving average crossover
+strategies now i don't trade ma
+crossovers in my own trading
+this was purely a learning experience
+for me just to attempt a
+simple strategy test in python and even
+though this is a simple test
+look at how much code is involved
+in just getting some price data this is
+just
+retrieving price data from the oanda api
+my broker's
+api and then i have a bunch of files
+here
+that handle my instrument data symbol
+data
+and as you can see i have several files
+here and several dozens of lines of code
+which although is very powerful and i
+can achieve some awesome things
+with python that pinescript cannot do
+such as
+complex analysis of patterns in the data
+if i just want to detect a very simple
+rsi
+overbought or oversold signal my script
+would look just as long
+and complex as this if not worse now
+let's compare doing the exact same thing
+in pine scripts so the first step
+is i want to declare the rsi value and
+get it from the inbuilt panscript rsi
+function this alone eliminates the first
+six steps of doing the same thing in
+python the second step
+is we need to check if that value is
+above 70 or below
+30 and then the third step we need to
+simply send an alert through trading
+view
+to our phone to our email we can pop
+up a message on our charts we can play a
+sound
+and we can achieve any of these or all
+of these
+with just a single line of code this is
+what our script would look like
+in pinescript so if you ignore the first
+line of code which is just telling
+the pine script editor or compiler which
+version
+of the language we want to use and four
+is the latest version
+the next four lines of code achieve
+everything we need in order to
+send an alert to our phone or to our
+computer
+as soon as the rsi exceeds 30 or 70.
+as far as programming goes you cannot
+get
+any more simple than this
+now don't worry if there's anything you
+see there that doesn't make sense to you
+by the end of the basics course or
+especially the mastery
+course all of this will make perfect
+sense to you
+but in today's presentation i just want
+to demonstrate the simplicity and the
+elegance
+of pinescript compared to other more
+advanced programming languages
+this is the benefit or advantage of
+having a domain
+specific language in this case panscript
+is custom built
+to do one thing and one thing only and
+that is analyze
+price data there is a multitude of
+inbuilt
+functions and tools that panscript give
+us that allow us to dramatically speed
+up the analysis process
+quite frankly i think you'd have to be
+crazy not to learn this language
+if you've got the time and the interest
+it can help you enhance your edge it's
+easy to code
+it could not be any easier to code and
+it's cloud-based
+meaning everything is handled remotely
+there's no complex server setup required
+you don't need to run your scripts on
+your home computer like you might with
+metatrader
+or any other automated platform all of
+your code and scripts are saved on the
+trading view servers so if you
+uh say you write a scripted home and
+then you go to work
+at your office and you want to play
+around with it there
+you don't have to use usbs or upload
+files or anything like that
+you simply open up your training view
+charts click on the pine editor
+and all of your code and scripts and
+projects are saved on the tradingview
+platform
+ready to be accessed in your browser
+just for reference sake
+here is every script i've ever written
+in pinescript
+to help me do all manner of things
+when it comes to analyzing price action
+in various markets
+including fully automating certain
+strategies like i've done with my
+pullback strategy
+and other simple strategies that i've
+developed and if i want to edit
+my script or apply it to my chart from
+anywhere in the world from any computer
+any device
+all i need to do is come up to the
+indicators list click on my scripts
+find the relevant script i want to work
+with click on that
+and then just open up the source code by
+clicking on this button here
+and here is the source code to my script
+i can edit this on any computer
+anywhere anytime i can leave it running
+24 7 on the trading view servers
+and it will generate alerts detect
+trading setups
+in this particular scripts case it can
+even fully automate
+my trade execution through a third party
+api
+that's a more advanced application of
+pine script but as you can see here this
+script is detecting a certain setup that
+occurs during a certain time of day on a
+certain market
+and over the past several years has had
+a greater than
+60 win rate all of that detected
+in code no subjectivity no discretion
+required
+it's black and white either i have a
+signal or i don't
+i know that this has an edge i know that
+this is profitable
+i know that my code doesn't lie i've
+double confirmed all of this through
+manual back testing and
+trading this on a live account for
+several months and thanks to panscript
+all i need to do is either click a few
+buttons and set up my automated alerts
+or if i want to manually trade this i
+just wait until i get my notification
+that a trade is set up
+i come into my office i draw out my
+trade opportunity or my setup my stop
+loss and take profit
+i right click click create limit order
+put in my risk
+click the sell button and my work is
+done for the day
+it's my personal belief that any trader
+who does not know how to write their own
+scripts whether that be in pinescript or
+python or any other language
+is trading with one hand tied behind
+their back
+it's completely unnecessary learning to
+code is easier than you might think
+especially if you've never written a
+line of code before it's certainly no
+more complex than dealing with a
+spreadsheet in excel
+and any trader of any level of
+experience should at least know how to
+handle a simple spreadsheet
+if you can handle a simple spreadsheet
+then you can learn how to write
+pinescript i can guarantee that if
+you're interested in learning more
+go to panscriptmastery.com and sign up
+to my free
+basics course stop trading with one hand
+tied behind your back
+and take your trading to the next level
+it would be my honor
+and pleasure to be the one to help guide
+you through the learning process when it
+comes to pine scripts i have over four
+years of experience with this language
+i have over two years of experience in
+consistently profitable trading
+and with those two facts combined i
+think i'm uniquely positioned to be the
+perfect person
+to teach you how to write your own
+scripts in panscript
+i've already had thousands of traders go
+through my basics course which is
+completely free
+and i've had hundreds of traders go
+through my mastery course and really
+take their coding and trading to the
+next level
+if you're interested in that you can
+come to this page here and read through
+the reviews
+every trader who has finished the course
+has gone on to do great things with
+their trading
+and their coding i rarely receive any
+negative feedback for the course and
+when i do
+normally i just record a lesson on
+whatever it is that that student is
+struggling with
+especially if it's a concept that i
+overlooked or missed in the course
+content
+but the response has been overwhelmingly
+positive everyone who's gone through it
+from beginners total beginners at
+trading and coding
+to professional traders including one
+trader who i won't mention his name
+who runs a world famous stock trading
+course
+where they teach traders how to navigate
+the stock market using rules based
+strategies and approaches he went
+through the course so that he could
+create his own proprietary indicators to
+give out to his students
+but all i can say is that i haven't had
+a single student who completed the
+course
+regret taking the course and some of
+them have gone on to achieve
+amazing progress both in their trading
+and in their scripting
+and i'm constantly impressed with what
+some of my students are able to achieve
+trading can be a lonely game especially
+when you're a solo retail trader like i
+am
+i spend the majority of my day doing
+nothing sitting on my hands waiting for
+the next trading opportunity
+that meets my rules to appear that's why
+i started this course
+i get a kick out of teaching people i'm
+told i'm good at it
+but i'll let you be the judge of that
+and so in my spare time
+this is what i do i teach people how to
+write their own scripts and do the same
+thing i do when it comes to automating
+and
+systematizing parts of my trading
+process through the elegance
+and the convenience of code anyway
+that's all i have to say for today's
+presentation
+i hope i've convinced you to at least
+take coding
+seriously and to go and pursue it i
+don't care if you take my course i don't
+care if you buy anything from me i don't
+care if you sign up to my free course
+i would appreciate it if you're watching
+this on youtube if you hit the subscribe
+button
+because that does help boost my channel
+and it's good inspiration for me to
+continue
+learning and exploring new concepts to
+come and teach you guys
+but really all of this is just a work of
+passion for me
+it's something i do for fun and i really
+hope to inspire other traders
+to see what i see in coding when it
+comes to
+utilizing it in your trading as a tool
+that's all i have for you today make
+sure to check out my blog at
+theartoftrading.com
+if you're interested in general trading
+advice and wisdom and insights
+from someone who's been there who
+struggled from the beginning
+horribly i was a horrible trader when i
+first began and i still have a lot left
+to learn
+but at least i've made it over the hump
+of blowing accounts
+and i'm finally moving up and to the
+right if you want to learn some of the
+things that i learned along the way
+check out my blog for that you can also
+check out my new podcast where i
+basically
+read my articles that i've written
+over at thetradingpodcast.com obviously
+i'm on youtube
+i have a twitter account which i created
+a bot in java which tweets out my
+favorite trading quotes
+every day twice a day it sends out a
+trading quote for inspiration and
+motivation to any of you traders out
+there
+who need that you can find that account
+at
+trade wisdom over on twitter i'm on
+facebook i'm on instagram
+and now i'm out thanks for watching
+thank you for your time
+stay passionate and i'll see you in the
+next video good luck with your trading
+good luck with your coding take care and
+goodbye
+[Music]
+you

@@ -1,0 +1,692 @@
+g'day Traders welcome back to another
+pine script lesson today's lesson is
+going to be a pretty interesting one I
+think today I'm going to be answering a
+question from a student in my pinescript
+Mastery course and here is the question
+this Trader has written a script where
+they are trying to print the ATR of the
+past 10 days the closing price of the
+past 10 days and what percentage the ATR
+is of those respective closing prices in
+the form of a table so far pretty simple
+however as they say here everything
+works perfectly as long as I'm on the
+daily trading time frame or lower but
+the moment I go to a weekly or any time
+frame higher than the daily time frame
+my table shows incorrect data or data as
+it's known in Australia and it's showing
+incorrect data because it's picking up
+the wrong resolution so what we have
+here is a problem relating to the
+security function so as you probably
+know by now when we want to reference
+price data or indicator values from a
+time frame other than our trading time
+frame we typically use the security
+function the rep Quest dot security
+function however that function only
+works when retrieving higher time frame
+data so if we're on a one hour chart and
+we want to get yesterday's Daily high
+and daily low for example we can
+reference yesterday's Daily bar on that
+lower time frame and we can get that
+high and low value really easily just
+using ignore all this code here for a
+moment normally we would for example to
+get the daily High we would say request
+dot security and then we need to pass in
+the symbols so we could just pass in our
+current symbol
+wow can't type today
+um our time frame so the daily time
+frame and the expression would be the
+bars high now this is just a rough
+example that there's some more code we
+need to add in order to help with
+repainting and so on but you get the
+idea pretty simple we just get the high
+from the daily time frame the problem
+when referencing lower time frame data
+in this student's case they are on the
+weekly chart and they want to reference
+daily bars the problem with referencing
+a lower time frame data is that instead
+of just getting one value
+there are between five to seven days in
+a trading week on the stock market it's
+typically five days and the markets
+close for the weekend same with Forex
+for crypto it's typically seven days
+unless there's an exchange outage or
+maintenance or whatever so when we're
+referencing that lower time frame data
+we actually have up to seven values on
+this weekly time frame and on a monthly
+chart we've got 30 on average days in a
+month so that obviously complicates
+things but in today's lesson I'm going
+to show you a solution I came up with
+for getting the past 10 days ATR values
+so that we can
+perform whatever analysis we want to on
+that data and this technique applies to
+ATR values price values open high low
+close other indicator values Etc it
+should work for any of those
+requirements so I've already written the
+script obviously to save time I'm not
+going to write out the code again I'm
+just going to break down what I've done
+here so the source code for this script
+will be below this video if you're
+watching on YouTube it'll be in the
+video description if you're watching in
+the course as you know there is always
+the source code below the video so the
+first thing we are doing as always is
+getting our user input
+so for this script I'm just getting two
+inputs I'm getting a look back period
+and a time frame period so by default
+our look back is going to be 10 days I'm
+going to just to keep things simple for
+for this lesson we're going to focus on
+getting daily bars on the weekly and
+monthly time frames but this technique
+should apply to any time frame which is
+why I've included a time frame setting
+so for example if I wanted to get one
+hour bars
+I could just set that to one hour and so
+long as we are on a time frame that's
+above the one on the one hour time frame
+or above the script will work if we go
+below that
+the security function for requesting
+lower time frame data does not work on
+Lower time frames than the reference
+time frame for that you would need to
+use the regular security function so
+those are our two user inputs the second
+thing I do here is this is completely
+optional you don't need to do this but I
+did this because it keeps things simple
+more simple later on so here I'm
+defining a custom function for safely
+retrieving array values without an array
+index out of bound error so if you're
+not familiar with arrays in the course I
+have a whole section on arrays I don't
+think I've covered it much on YouTube
+yet it's not something I personally use
+a lot in my scripts but today we're
+going to use some basic array
+functionality the issue with arrays is
+that they have boundaries or bounds so
+this for example is our array I've
+written it out the very first element in
+our array is today's ATR value so if I
+hover over the current bar I go down to
+the Daily time frame and hover over this
+current bar bitcoin's not having a great
+day the ATR is actually picking up when
+I first wrote this out about an hour ago
+it was actually 657 now it's
+662. this purple number here is the
+current ETR on whichever bar I'm hovered
+over so I need to change this
+662 that's our very first array element
+if we try to reference an array element
+below zero so if we passed into our
+array function a negative one index we
+would get an array index out of bounds
+error because there is no negative one
+value you cannot assign a negative value
+to an array index can only have positive
+numbers and the array Begins Counting at
+zero the first element in an array its
+index is zero and so here we have 10
+array elements nine is the tenth element
+because we start counting from zero one
+two three four and so on gets a little
+bit confusing but you get used to it
+with practice and basically we have a 10
+element array here if we were to try to
+reference the array index 10 which would
+be the 11th element we would get an
+array index out of bounds error because
+that element does not exist our array
+only has 10 elements this function
+allows us to pass in our array and an
+array index and regardless of whether
+that index exists or not it will not
+crash our script our script will not
+give out an error because we have two
+checks here so we Define our custom
+function get array value it has two
+parameters our array ID and our array
+index and then we use the equals right
+arrow operator to define the code for
+this function and then we check if our
+array size is greater than our index
+then we have a valid array index and we
+can just use the array.get function to
+retrieve this array indexes value from
+this given array so in this particular
+case let's call this array here our ATR
+values when I call this function if I
+were to pass in my ATR array and an
+index of zero then we would get this
+value here retrieved if I were to pass
+in an array index of 20 on this
+particular set of data or data sorry I
+keep saying data I know some of you
+don't don't like me saying data it's an
+Aussie thing I'm working on it if we
+were to pass in an array index of 20
+then this function would return n a
+instead of crashing our script so that's
+the purpose of this function the next
+thing we do here is we get our
+expression that we're passing into the
+security function so in this particular
+case this Trader who sent in this
+question wants to retrieve the ATR value
+so I just declare a new expression here
+a variable called ATR value equals and
+then we use the inbuilt ATR function for
+this is optional but for debugging
+purposes so it's
+that scares me every time I need to
+figure out how to turn the volume down
+on that thing nearly blew my eardrums
+out I'm just plotting the ATR value here
+onto the chart for debugging purposes so
+that I can keep track of what my script
+is doing the next thing I do is I get my
+lower time frame data from the security
+lower time frame function so before we
+continue I'm going to pull up the
+documentation for this function so that
+we can understand exactly how it works
+so here is the documentation
+for requesting data from a lower time
+frame so the security function the
+original request.security function was
+designed to request data of a time frame
+higher than the current chart time frame
+so on a 60 Minutes chart this would mean
+requesting 240 daily weekly or any
+higher time frame however if you are on
+a 60 Minute chart and you want to use
+the data from one minute bars then you
+need to use this new that was
+technically new but it's been around for
+several months now it's new to Pine
+script version 5 and it's called the
+request.security underscore lower
+underscore TF for time frame function if
+you were to use the request.security
+function in our example the example
+below you would actually only get the
+final minute bar for the last hour here
+it says this is why we added the request
+or security lower time frame function so
+you will now receive an array containing
+all of the minute bars in the last hour
+The Returned array will contain all of
+the available intra bars sorted by the
+timestamp in ascending order and then
+they have an example here of requesting
+one minute bars from the current symbol
+using this new request.security lower
+time frame function so let's jump back
+over to our charts and see what I've
+done here so for our purposes we want to
+get the ATR value of our lower time
+frames so we Define an array a float
+array called ldf for lower time frame
+ATR array is set to
+request.security lower time frame and
+then we pass in the current symbol ID
+for whatever Market we have loaded on on
+our chart we pass in the period so the
+time frame that we want to reference
+this is our lower time frame so in this
+case that is the daily chart and then we
+pass in our expression that we want to
+retrieve from this lower time frame in
+this market which in this case is our
+ATR value this line of code here will
+get executed on this time frame on this
+market and this array will be filled
+with this data the next thing we do is
+Define our merged ATR values array this
+is where things get a bit confusing a
+bit hard to
+for me to explain because there's a lot
+of moving parts for the rest of the
+script here so the problem we have when
+we're on a weekly time frame is that in
+this particular case it's Tuesday here
+at the moment where I live
+and so we only have a couple of days
+that are contained within this weekly
+bar but we need the past 10 days so I'm
+only getting Tuesdays ATR value Monday's
+ATR value I believe the weekly bars on
+trading views start from Monday I'm not
+sure it could be Sunday but anyway the
+point is we only have a couple of days
+worth of data on this current weekly bar
+which means if we want the past 10 lower
+time frame daily bars on this weekly
+chart we need to reference the previous
+week's lower time frame data as well
+so that's what this block of code here
+does the first thing I do is check if we
+are currently on our trading time frame
+so if the current time frame is equal to
+our lower time frame here
+so in this case if we're on the daily
+chart this code here gets executed and
+basically all this does is it Loops from
+zero so from the current bar
+it Loops from this current bar back to
+our look back so in this case back 10
+bars so we would loop back to Bar number
+nine right here so the first Loop would
+start on zero so this current bars ATR
+value gets set to our ATR array this guy
+here gets set
+2i our Loop Index this arrays index here
+I get set to our lower time frame data
+so sorry this isn't an array this is our
+ATR value for the current time frame and
+we're just using the regular historical
+operator to set our array values let me
+comment out all of these plots for a
+moment because I have a table here
+drawing out array values to make it easy
+to see what's going on so I'm going to
+comment all of these out and I'll show
+you a new feature for the pinescript
+editor while I'm here if you hit F1 or
+the command palette and type in comment
+and then click add line comment that
+will comment all of those lines of code
+in one go without having to do them
+individually saves a lot of time when
+you're debugging a script or developing
+a script anyway here are our array
+values drawing as a string and I wonder
+if I can let me change the text color
+really quickly for our cell
+text color equals color dot let's make
+it green that's better so these values
+you see on my chart right now are the
+contents of our ATR array and because
+we're on the daily time frame which is
+our reference time frame our lower time
+frame we don't need to actually
+reference any lower time frame data we
+just need to reference the current bars
+on our chart so that's what this little
+for Loop does it Loops from zero to our
+array size minus one so remember an
+array starts counting from zero so if we
+have an array with 10 elements in it
+the 10th index would be 9 not 10 and so
+we need to subtract 1 from the size
+otherwise we will Loop one too many and
+we will get some sort of index out of
+bounds error so we loop from zero the
+current bar back to our look back period
+essentially because the size of this
+array is set to our look back period so
+this is the same as saying
+um from zero to look back minus one
+either would work and then we're setting
+the index of our ATR array value on this
+Loop to the ATR value for that bar using
+the historical operator so when this
+Loop gets to 9 the final array element
+um here 637 that's our blue line here if
+I count back nine bars six three seven
+point seven six
+you can see that purple number there is
+our ATR that is the first value in our
+array and this value here is the current
+bars ATR which has increased even more
+so I need to edit that again and so this
+for Loop here just sets our array up on
+the current time frame and then we
+reverse the array order that's why 637
+this Bar's ATR here is the first element
+of our array and not the current bar the
+reason I did this is because the next
+for Loop here which is used on higher
+time frames so when the time frame is
+not equal to our trading time frame or
+reference time frame the array order
+that we get is like this so today's ETR
+value is the final element in the array
+and so to keep things consistent I've
+reversed the array using the
+array.reverse function you pass in the
+array ID to reverse and this just flips
+the order of our array so I know it gets
+a little bit confusing this is probably
+not a necessary step but for whatever
+reason calling array.reverse on this
+version of our array pop population
+breaks our rain we get some weird
+happenings occurring when I do that and
+I haven't had time to figure out why so
+it's a little bit confusing that today's
+bar is the final element in the array
+and not the first element but anyway it
+shouldn't really matter for the purposes
+of this student's requirements so that's
+how we handle the time frame if it's
+equal to our reference time frame if
+it's not equal then that means we should
+be on a higher time frame
+if we are on a higher time frame this
+code gets executed and what this code is
+doing is saying if the array size of our
+lower time frame array if I drop out to
+a weekly time frame if whatever bar our
+script is running on has lower time
+frame data or in other words if the
+lower time frame array has a size that's
+greater than zero then our little for
+Loop here is executed and we populate
+our array with the lower time frame data
+so this is a for Loop identical to this
+one except that instead of referencing
+our ATR array we're referencing our
+lower time frame array that gets
+retrieved by the security function so we
+loop from 0 to our array size on that
+lower time frame array and this is where
+things are very different to how we just
+set our values when we're on the actual
+lower time frame when on the higher time
+frame we do things a little bit
+differently we use what's called a first
+in first out application of our array so
+the array.shift function removes an
+arrays first element and also returns
+its value now we don't care what its
+value is so if I wanted to I could say
+first value equals and then if we needed
+to reference that value we could in this
+case we don't need to so I don't need to
+set that to anything we just want to
+delete the very first element in our
+array and then we want to push or insert
+a new array element so this will Loop
+through our lower time frame array data
+and shift all of our values in the array
+by deleting the first element and
+pushing in a new element and to do that
+we use the array.push function we pass
+in our ATR array which is this here and
+the value we want to push into this
+array is our lower time frame array data
+for the current index the loop index and
+so this just constantly shuffles our
+array to populate it so that we have all
+10 elements so if we weren't to do this
+and we would just simply reference our
+lower time frame array we'd only get two
+values in our array because there's only
+two days in the current week so by doing
+this with a persistent array by the way
+I I didn't mention this our merged ATR
+values array is a persistent array does
+not get reset on every new bar in our
+chart unlike all these other values this
+saves our lower time frame data across
+every bar in our chart and this for Loop
+just constantly updates that array with
+the elements we require in order to
+perform whatever analysis it is we need
+to do on those lower time frame bars so
+in this Trader's case the person who
+sent in this question wants to calculate
+the current bars closing price as a
+percentage of the ATR across the past 10
+days on these higher time frames and
+then draw them into a table which we're
+not going to cover in today's video I've
+already covered how to use tables in
+previous lessons I'll leave a link below
+this video to any relevant lessons I've
+done if you're in the Mastery course
+there's a bunch of lessons on on how to
+use tables especially in the strategy
+section but in any case this is pretty
+much our script completed so if I drop
+down to the Daily time frame here
+and I bring in my text wherever it went
+I don't know why this happens every time
+it's very annoying stay there on my
+screen please if I look at each bar here
+keep an eye on this purple number here
+which is the current ATR for the bar I'm
+hovering over so today's daily bar is
+its ATR value is 69.7 which is what we
+have here yesterday's ATR value is 618
+which we have here so we have six one
+eight then six one four six two four all
+the way to the 10th bar or the ninth bar
+index from the current bar which starts
+at zero we have six three seven so our
+array is working properly if I dropped
+out to the weekly time frame all these
+values should stay the same so drop out
+to a weekly get rid of that line all the
+values are the same we are still
+referencing those daily bars on the
+weekly time frame we're getting those
+values we we need if I drop out to the
+monthly time frame they all stay the
+same as well so the script is working we
+are getting the past 10 days worth of
+ATR values on the weekly and monthly
+time frame or any time frame for that
+matter if I set this to two week
+should stay the same so problem solved
+at least for crypto markets and most
+other markets for some reason this code
+doesn't work properly when I load up a
+stock market on the weekly time frame it
+works so these are the past 10 daily ATR
+values for apple on The Daily time frame
+you can see these values are all equal
+so yesterday was a Monday in the US so
+Monday's ATR value was 5.44 and the 10th
+day back was 4.57 our array elements
+match that so it works fine on the
+weekly time frame but for some reason
+when I drop out to a monthly time frame
+these numbers don't work properly I
+haven't figured out why yet that's a
+problem for another day so I apologize
+for stock Traders if you're trying to
+use this approach on stocks you're going
+to need to use some creativity and
+figure out what's going on until I can
+figure out myself and I'll do an update
+video if I do manage to figure out why
+this approach doesn't work on Apple the
+reason isn't obvious to me so if you're
+more experienced at this than I am and
+you know why my code's not working
+please leave a comment below or send me
+an email explaining why I would be very
+grateful for that we all have weaknesses
+I don't know everything about pinescript
+or mathematics especially and so this is
+just a limitation of my brain I'm at my
+maximum capacity with this script and so
+I'm I apologize I couldn't figure out
+how to get this to work on the monthly
+time frame but it does work on the
+weekly time frame at least and obviously
+the daily time frame I didn't try the
+two week see if that works it seems to
+work fine on the two week as well three
+week four week huh so it works fine on
+the full week but not on the monthly
+which should technically be four weeks
+or so I'm not sure what's going on there
+could have something to do with time
+zone differences I have no idea anyway
+let's go back to bitcoin for now to wrap
+up this video
+um one thing I'll show you before we do
+wrap this up is if I can find my well my
+text has gone for some reason that is
+great uh whatever it's not important
+what I wanted to show you is that these
+inputs also work so if I set our look
+back to 20 days click OK we get a lot
+more values here we now count all the
+way to 20 bars back now I do have in my
+notepad next to me I've lost the first
+10 bars values for some reason but I do
+have the 10th to 20th bar values if I
+click ok so we have our first 10 values
+here all the way to
+637.76 and then the next 10 values here
+are these ones here and I went through
+and counted them individually I had I
+checked the ATR value for each of these
+bars to make sure the script is working
+and as you can see here it is so we have
+the 10th which is technically the 11th
+bar but it's the 10th array index is six
+five four six five four all the way to
+the 20th or 19th the rain index 20th bar
+19th array index hopefully you're
+following along but this value should be
+637 and that's what we have here so we
+have successfully written a script that
+has a variable look back period works on
+any time frame any lower time frame so
+it has to be a lower time frame than the
+one you have on your chart or the script
+won't work if I drop down to a four hour
+time frame we get an error here time
+frame pass to the security lower time
+frame function must be lower than the
+time frame of the main chart as long as
+we're on the same time frame or higher
+as our reference time frame this script
+should work fine if you wanted to
+display the past 10 daily bar values
+into a table you would need to copy all
+10 of these into this if statement and
+you'd probably want to set up 10 rows
+columns or however you want to set up
+your table so that you can fill each
+cell individually with each day's value
+and in this Trader's case he just wanted
+to calculate what the percentage ATR is
+of the respective closing price
+so to do that we would need to create a
+second array here this one here we would
+need to call this
+something like closing price array we
+need to copy this line of code and call
+this lower time frame closing price
+array and then this expression would
+need to be the closing price and then we
+would need to copy all of this array
+code so because these arrays are the
+same size all we really need to do is
+copy our setting and shifting lines of
+code paste in uh
+this code here
+we need to reverse this array as well
+and then we need to copy this or get rid
+of the duplicate comments
+and pass in this
+and this
+and now we should have exactly the same
+thing but for closing prices as well as
+the ATR value so let's save the code and
+make sure that compiles there we go and
+now just to confirm this works let's
+copy
+the closing price of rate into our plots
+actually let's do it down here this will
+be a lot quicker I'll just paste closing
+price into our
+table say the code here are our 10
+values I'll lower the look back just
+temporarily so that we don't have so
+many values on our chart and so this
+value here is our current closing price
+which it's hard to read or this is
+easier to look at
+19706 and then the previous day should
+be 20
+593 that's correct correct
+correct and correct drop out to the
+weekly time frame these numbers should
+stay the same and they do a monthly time
+frame so there we go we have the past
+five lower time frame daily closing
+prices as well as their ATR values and
+now you can do the math you need to by
+dividing
+um you know in this case it would be
+dividing uh what do we want to do again
+what percentage the ATR is of the
+respective closing price in the form of
+a table so we would divide ATR percent
+equals ATR array value
+divided by closing price of rain if I
+set this to string save that and let me
+set this to today's value which we can
+do by using the array dot size
+pass in our closing price array and
+subtract one of that that will get the
+final array element in that array we can
+do the same thing here for this array
+save my code I have no idea what I'm
+doing when it comes to math which is a
+great thing to admit as a Trader just
+goes to show you don't need to be a math
+genius to be a successful Trader because
+I certainly am not a math genius and I
+do pretty well with my trading so unless
+I've completely messed this up the
+current ATR values 3.4 percent of the
+current price so 669 is 3 of 19600 but
+anyway that is the end of today's video
+I hope you found it interesting and most
+importantly helpful in your own trading
+especially those of you who need to
+reference lower time frame data in your
+analysis if you like the video please
+hit the like button subscribe if you
+haven't already I'll be back soon with a
+new pan script lesson if you have any
+suggestions please leave them in the
+comments section if you're watching this
+in the Mastery course please shoot any
+emails suggestions to support the art of
+trading.com and my lovely girlfriend
+will pass that on to me so thank you
+very much for watching best of luck with
+your trading and your coding and I'll
+speak with you in the next lesson have a
+great week

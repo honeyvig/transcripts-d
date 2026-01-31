@@ -1,0 +1,400 @@
+[Music]
+so hello there and welcome to another
+tutorial my name is Tam Baki and this
+time I'm going to be going over how you
+can create a system that I like to call
+T pronounce using a sequen to sequence
+lstm model built in tensorflow let's
+begin now what will this application do
+well put it put simply this application
+will allow you to enter a word any word
+even a non-dictionary English word uh
+into a an lstm and the lstm will tell
+you how to pronounce this word uh based
+off of pronunciations of other words and
+so what I do is there's actually a
+database online called the CMU
+pronouncing Set uh and so essentially
+this is created by the Carnegie melon
+University uh and it is a data set which
+contains uh the actual uh American
+English words uh and then their
+pronunciation in American English accent
+uh and so this pronunciation uh of
+course uses uh uses uh specific uses the
+specific sort of syntax which I'll be
+talking about in just a moment uh and
+let me explain exactly how the system
+works of course we begin with a data set
+and this data set contains hundreds of
+thousands of individual English words
+and their pronunciations attached to
+them uh and so this is called
+CMU
+pronouncing data
+set okay so we've got the data
+set now after you've got the data set it
+has to go through some processing and
+I'll tell you about this processing in
+just a moment in the Mac
+part after your data goes through some
+processing you're ready for it to
+actually go into something called
+translate but what is translate well put
+simply translate is an example that
+tensorflow already has for you uh how to
+build sequence to sequence lstm models
+this is the way it works by default what
+this model will do is it will I mean if
+I actually just uh create a little
+boundary here which will
+contain uh the translate system so this
+is the regular vanilla tensorflow
+translate system that they already have
+for you what this does is it takes a
+bunch of text in
+English and it takes that exact same
+text but in
+French and it'll feed it into a
+sequence to
+sequence
+model now the sequence to sequence model
+will then train on that data and then
+you can actually pass it some input like
+hello and it'll output something like
+bonjour
+sure like that
+in fact okay but the thing is there are
+a few limitations with this system
+because the thing is this was built for
+language translation but what we want to
+do is have the system learn how to
+pronounce English words and not actually
+translate from English to French and so
+I've actually gone ahead and made a few
+modifications to the system I basically
+used almost the same code and what it'll
+do is the new translate
+system will actually
+take so the translate that was made for
+T
+pronounce now this will actually go
+ahead uh and take some
+words and it'll actually take the
+pronunciations for those
+words it'll feed them into that same
+type of sequence to sequence
+model and then you can actually input
+something like uh tme which again is
+actually not an actual English word it's
+a non-dictionary English
+word and then it'll output the
+pronunciation for t which in this case
+it outputs T a e n n m e
+y I'll talk about exactly how this type
+of uh this type of uh pronunciation is
+structured in just a moment inside of
+the Mac part but this is a simplified
+explanation of the system we're going to
+be building uh if you'd like to find out
+more about sequence to sequence models
+I'll have an entirely separate video
+about that coming out soon uh but
+essentially there're basically two lstms
+stacked on top of each other with an
+encoder and a decoder uh in order to
+actually take in a sequence and instead
+of classifying that sequence it'll
+actually output another sequence based
+off of the sequence that you gave as
+input but now let's get over to the Mac
+part where I'll show you how you can use
+tensorflow in order to build the system
+behind me and has quite a few different
+use cases like for example if you're
+unsure how to pronounce someone's name
+you can actually feed it into the system
+or a specific word or a specific word
+that's not in the dictionary U so now
+though let's get to the Mac part where
+I'll show you how to build this system
+all right so welcome back to the Mac
+part and now I'm going to show you how
+you can actually build this lstm system
+all right so now if I actually go over
+to this uh Ubuntu machine I've got
+running over here uh as you can see I
+actually seated into a directory uh
+inside of my home directory called
+models tutorials RNN translate uh so if
+you actually go ahead and get over to
+github.com uh Slash uh
+tensorflow Slash models you can see
+they've got an GitHub repository
+dedicated to tensorflow models that
+they've pre-built for you uh and so if
+you go inside of here you can see that
+there is a folder uh call or a file
+called translate. py inside of tutorials
+RNN translate and so this is the file
+you're going to be using in order to
+create your sequence to sequence lstm
+model of course you could build your own
+sequence to sequence model either in
+tensorflow or another language like or
+another SDK like uh carass uh but for
+now I will be going with this and maybe
+I'll show you how to actually build one
+from scratch in another
+video but as you can see getting back to
+the point over here as I mentioned
+before this script was actually
+originally created to actually convert
+English to French and so it's an English
+to French translation system however I
+have modified this code to actually work
+so it it can tell me how to pronounce
+things in fact here is a demo if I were
+to actually go up over here take this
+command and run a decode with the script
+I'll tell you exactly what that means in
+just a moment but as you can see it
+actually starts
+initializing uh the the
+script uh and then once it initializes
+and once it loads the pre-trained uh
+pronunciation model uh we should be good
+to go and ask it how to pronounce some
+stuff all right so give that just one
+moment uh okay there you go it's
+starting to read the model parameters
+and in just a moment as you can see it
+gives us a prompt now from here I should
+be good to go and ask it to ask it how
+to pronounce something like for example
+tme is not an English dictionary word
+however it is written in English so
+technically I should be able to uh say
+tme inside of this prompt click enter
+and as you can see it returns exactly
+what I told you tan May uh now if I were
+to actually go over to the CMU
+pronouncing dictionary
+website uh you can see uh if I were to
+or not the Wikipedia page the official
+CMU pronounce ing dictionary page uh you
+can see there are a few different types
+of the CMU pronouncing dictionary some
+with the lexical stress some without Etc
+however it uses this specific phon name
+set in order to uh in order to uh
+convert uh from from words to
+pronunciations you can actually see all
+the 39 phones uh and how they're used
+and a translation uh and so for example
+AA uh is used in odd uh and the
+translation is AA a d for odd to the
+phon and so a is a a sound and then of
+course you've got those examples for all
+of the other phones in the
+set now if we were to go back over here
+to this data set I'll show you one more
+demo in just a moment but let's exit out
+of the demo by doing control D now that
+we're out of the demo let me show you a
+bit about the data that goes behind this
+if I were to go into the data folder as
+you can see I able to actually Nano the
+actual word data set now I've actually
+made few modifications to the CMU
+pronouncing dictionary uh which allows a
+sequen to sequence lstm model to
+actually understand the data so if I
+were to actually go ahead and open up
+the words file over here as you can see
+we've got a lot of individual words and
+these words are of course from the CMU
+pronouncing dictionary I can actually
+search up tan here in fact and
+theoretically I shouldn't get
+anything as you can see tan was not
+found which means that is truly not in
+the CMU pronouncing dictionary but
+moving on as you can see let's just say
+we were to take a random word here say
+uh we had uh if I were to just go down
+here maybe
+hello okay you can see that there is a
+word hello here now by default the CMU
+pronouncing dictionary gives me this
+word hello however I've tried training a
+sequence to sequence lstm like this and
+sequence to sequence lstm never learns
+how to pronounce uh these words if you
+do not put spaces in between the letters
+but why is that well it's actually
+because of the way that the sequence to
+sequence lstm model is coded what
+happens is when you have spaces in
+between the characters the entire
+sequence is equal to H then an e then an
+L then an L then an O but if you do not
+have spaces in between then the then the
+entire sequence is just one element of
+ago and that means that it's not able to
+learn meaning that of course it's not
+able to give us the correct output uh in
+the sequence to sequence model however
+when you put spaces again these are all
+different elements of a sequence which
+allow it to train
+properly but after that of course I'm
+not going to save the changes there but
+I'm going to go into the pronunciations
+file and that was not the correct file
+this is the correct file as you can see
+this just contains a bunch of
+pronunciations and of course the reason
+you don't need to put spaces in between
+every single letter here is because
+you're actually just putting spaces in
+between each individual phon name for it
+to actually learn what types of
+characters get translated into what
+types of phon names and so as you can
+see this is actually I mean one one more
+plus point about having a system like
+this is it's so much more versatile uh
+meaning that if you've got
+non-dictionary word you're not just
+putting a bunch of IFL statements for
+every single little rule that a
+pronunciation could have what you're
+doing is you're taking a bunch of
+examples of how words are pronounced and
+you're training a neural network to
+understand how these words are
+pronounced all right so now that you've
+taken a look at that data and also by
+the way just so you know uh the way that
+this data is structured makes the
+translate files think that it's actually
+still converting English to French but
+the English is actually just a bunch of
+words in the French is actually just a
+bunch of phon names or pronunciations uh
+and so that conversion uh is done uh
+just as if it's being converted from
+English to French because it's almost
+the exact same algorithm uh to go for
+each all right but once you've got your
+data ready and of course all this data
+and code will be available in the
+description then you're ready to
+actually train the model in fact this is
+actually quite a long command so I
+already have this ready here and so this
+is the command what it'll do is it'll
+call the translate. py file it'll pass
+it the data directory the training
+directory it'll give it the English
+vocabulary size which is 40,000 in this
+case and the French vocabulary size
+which is 40,000 once more and again
+these are just default values you can of
+course play around with these and see
+what gives you the best result uh but
+then of course once you click enter it
+should actually start loading up tensor
+flow uh creating these layers and
+actually starting to train now I'm going
+to immediately stop this though because
+I've already got it trained and I don't
+want it to overwrite my trained model
+however once you are ready to go ahead
+uh and actually test out your model then
+just remove those vocabulary size
+arguments and change this to decode so
+Das Das decode at the endend click enter
+and it should actually go into something
+called decode mode now decode mode will
+actually tell the script that instead of
+encoding input and actually training the
+lstm or sequence to sequence model you
+want to actually decode output from it
+uh and so just give that one moment and
+we should be ready to go and test out
+and do one more demo of the system as
+you can see I trained this for 8,800
+iterations it uh it uh and so what
+happens is over time you're there's a
+there's a variable called the perplexity
+variable
+or I guess if if you're already familiar
+with something like loss uh it's it's
+similar to that it's basically how good
+your model is uh at uh at doing these
+sorts of pronunciation conversions uh
+and so uh I was able to reach a
+perplexity of
+1.19 which is actually quite low but you
+can get much much lower if you were to
+train it for many more iterations uh in
+fact I have gotten lower before it's
+just that I wanted to train this uh
+fresh for you uh and so now
+as you can see I should be able to pass
+it in something else like for example my
+last name uh so back sheet and then hope
+it it is able to give us the correct
+pronunciation as you can see it does
+back she and it gives us the correct uh
+pronunciation if you're not sure if this
+is correct and you want to know if your
+model is doing nicely or if it's not
+doing nicely you can actually go over to
+the CMU pronouncing dictionary and take
+each phon for example AE over here and
+what does AE sound like well AE is used
+in the word at uh and so as you can see
+this is the translation from at to phon
+which is AE and then a t and so AE we
+can you know successfully derive that AE
+would mean an A sound so
+B and so as you can see that is correct
+uh and it was able to give us the
+correct pronunciation for the words that
+we gave it even though again these are
+not dictionary words uh these are
+completely these are words that it's
+never heard before and yet it was able
+to correctly classify them and correctly
+tell us exactly what the pronunciation
+should be using a sequence to sequence
+model built on top of
+lstms all right so that's all I had to
+share with you in this video today thank
+you very much for joining I really do
+hope you're able to learn from this
+video and of course enjoy the video as
+well if you believe that this could help
+anybody else youd know please do
+consider sharing the video and liking it
+as well if it did help you out
+of course so if you've got any more
+questions suggestions or feedback leave
+them down in the comment section below
+and I'd be glad to get back to you uh
+and of course you can also email them to
+me at tagim man gmail.com or tweet it to
+me at tagim Manny of course though if
+you really like my content and you want
+to see more of it please do continue
+please do subscribe to the channel as it
+really does help out a lot uh and of
+course if you'd like to be notified
+whenever I release new content please do
+turn on notifications by clicking the
+little bell icon beside subscribe Button
+as well thank you very much for joining
+in today that's going to be it goodbye

@@ -1,0 +1,192 @@
+hello I'm Jason Johnston a senior
+content developer with the outlook
+ecosystems
+team in this video I'm going to show you
+how to connect your node J s app to
+office 365 and do a basic calendar sync
+so to start with I've got this basic
+nodejs
+app that we developed in the first video
+in this session to do the authentication
+piece we're gonna build on that work and
+add calendar sync so let's go ahead and
+get started in order to do all of our
+API calls back to the outlook calendar
+API we'll use the node outlook library
+which is a lightweight wrapper around
+the REST API so the first thing that we
+want to do there is install that library
+using NPM
+and once that's installed we need to
+require it in a pious
+okay so if we go back to the app that we
+implemented earlier what hey right
+we were left with this sync button that
+we haven't implemented yet it's pointing
+to a slash sync route in our app so
+let's start by implementing that
+okay so there's a lot here so let's go
+through it bit by bit so we use the
+outlook base namespace for this
+functionality and the reason that we do
+that is that no doubt look is as I said
+earlier very lightweight it implements a
+few basic functions but it also
+implements the ability to use any API
+call even if we haven't implemented a
+wrapper around it that's what the base
+namespace is really for so the first
+thing that I do here is use the set API
+endpoint function to point all of our
+API calls at the version 2.0 outlook
+endpoint we're going to make some use of
+some of the new features in version 2.0
+during this so I'll use that endpoint
+the next thing I do is set the anchor
+mailbox to the user's email this is why
+we went through the trouble of
+extracting the user's email from the ID
+token in the first session and then I
+set a preferred time zone this is a new
+feature in the version 2.0 endpoint the
+ability to specify a preferred time zone
+and have all calendar times returned in
+that time zone so that you don't have to
+do all the calculations yourself okay so
+to start with we're going to manually
+configure our API request since we don't
+have a wrapper around it the first thing
+we do is set up the request URL when
+you're doing calendar sync that all
+works off of the calendar view endpoint
+in the API which is a view on a window
+of time we're going to do this for a
+week starting from today in seven days
+out so we set this to the me calendar
+view next we're gonna set up that time
+window as I said the start date will be
+today at midnight and the end date will
+be seven days from that time
+then we're going to set some prefer
+headers which will enable the sink
+functionality that we're after there's a
+couple of prefer header entries that we
+need to add one we need to set Oh dat ax
+dot track changes that tells office365
+that we want to be able to synchronize
+data as changes come in the next thing
+that we set is our max page size here
+we're saying 5 which will limit the
+return results for each call to 5
+results now we package up all of those
+things that we built before and to this
+API options object which gets passed to
+the make API call function
+so now that we have that there let's go
+ahead and run the app and see what
+happens
+okay so as you can see we have basically
+a raw dump of the json response for our
+synchronization requests we get back an
+event entity for each item on the
+calendar up to the maximum of five that
+we specified so great we see that that
+works but what happens if we have more
+than five items or changes come in after
+we do that initial sync how do we how do
+we continue to get changes well if we
+take a look in the response here at the
+end we have this item called OData delta
+link this is how we continue on with our
+sync so the way that calendar sync works
+is that the requests that we just made
+is considered the initial sync request
+from that we always get a delta link
+included in the response so the next
+thing that we should do is issue a
+second call to that delta link if
+there's more changes we'll receive them
+if there are no more will receive an
+empty response the response will include
+a delta link if there are no more
+changes and at that point we can save
+that delta link and periodically make
+calls to it to get any changes that come
+in if there are more changes more than
+the maximum that we have set in the
+prefer header we'll get a next link
+instead so after the initial sync we can
+look if there is a next link there are
+more changes if it's a delta link there
+are no more changes and we can wait
+however long we want to wait until we do
+the next sync so with that in mind let's
+modify our code a little bit to save the
+delta link and use that on the next call
+to sync
+so here I'm checking our sessions see if
+we have saved a sink URL and we'll use
+that instead of the basic me calendar
+view if it's not there then we'll just
+use the base URL but in order for it to
+be in the session we need to save it so
+let's go come back down here to where we
+process our response and save our Delta
+now we're taking a simplistic approach
+here for this demo if there's a next
+link we save that as our next sink URL
+otherwise if there's a delta link we
+save that we'll use whichever one we get
+back
+so now that we have that let's rerun the
+app and see what happens
+okay so we'll do our first initial sync
+and we get back five items now if we
+click sync again we get one more item
+that used the Delton link to get further
+information now if we click sync again
+with our new Delta link we get back no
+changes so we received all the changes
+that are there let's take a look at the
+code in pages yes that actually renders
+those changes that come in
+so we basically take the changes they
+come in and loop through each one of
+them we check if there is a reason
+property on each change that's set to
+deleted if we have that then that we
+know that it's a deleted item rather
+than an added or updated item deleted
+items are a little different in that you
+don't get all of the properties on the
+item since it no longer exists you do
+get back the item identifier so if
+you're saving this into a back end
+somehow keeping them in sync it's a good
+idea to be able to find the item in your
+back end based on the item identifier so
+that you can remove it if it's not a
+deleted item then we just set the entry
+in the table to use the subject of the
+appointment and add it into our table
+now let's take a quick look have what
+happens if we add an item after we've
+completed our sink
+so we'll go to the users calendar and
+we'll just add an item here
+now if we switch back to the app and do
+another sync we should see the new item
+that we just created and we'll see the
+flipside of that will delete the item
+and do another sink and this time we get
+back a delete change with the ID of the
+item and that's it we've done basic
+synchronization functionality join us in
+the next session where we'll take a look
+at doing it a little bit more with the
+calendar viewing items updating items
+and the leading items all from our app
+be sure to check out develop calm and
+dev office.com for more information and
+getting started materials for node and
+other platforms thanks for watching

@@ -1,0 +1,5900 @@
+hello and welcome to our Channel if you
+are fascinated by the world of coding
+and eager to dive into python you have
+come to the right place today we are
+going to explore some exciting and
+beginner friendly python projects that
+will not only boost your coding skills
+but also spark your creativity whether
+you are a complete newb or have doubled
+a bit in programming these projects are
+perfect for getting your feed wet in the
+Python Programming World our goal is to
+make python approachable and fun for
+everyone by the end of this video you
+will have a bunch of cool projects to
+show off and a solid understanding of
+basic python Concepts so grab your
+computer open up the python editor and
+let's get started and if you haven't
+already don't forget to hit the like
+button and subscribe for more awesome
+programming content and just a quick
+info for you if you want to upscale
+yourself master artificial intelligence
+and machine learning skills and Python
+programming language skills and land
+your dream job or grow in your career
+then you must explore simply learns
+cohort of various Ai and ml programs
+with Python language simply learn offers
+various certification and postgraduate
+programs in collaboration with some of
+the world's leading universities like
+waron Purdue Caltech it kpur and many
+more through our courses you will gain
+knowledge and work ready expertise in
+skills like generative AI prompt
+engineer ing explainable AI machine
+learning algorithms and over a dozen
+others and that's not all you also get
+the opportunity to work on multiple
+projects and learn from industry experts
+working in Top Tire product companies
+and academicians from top universities
+after completing these courses thousands
+of Learners have transitioned into an AI
+or ml role as a fresher or moved onto a
+higher paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin command and
+description box below to find an AI nml
+program that fits your experience and
+areas of Interest a project on Python
+and how python can be used to invoke and
+send messages in WhatsApp so what we're
+going to today do is we're going to
+demonstrate you how to use pyat kit it's
+a python utility which is available in
+order for you to interact directly with
+the
+P Python and WhatsApp so we will show
+you certain examples using which you can
+directly interface with your WhatsApp
+now in order to perform this activity
+first you need to go to your python
+installation folder now in my case I
+have my python installed in my app data
+local programs python python 310 so your
+first task is to go and open open a
+command prompt from this
+folder and then you need to install pip
+install PW kit so under python 310 there
+is a folder scripts and you paste this
+command and you should get this
+particular message if you have already
+installed pyot kit if not then python
+will install the relevant library in
+your computer
+after you have done this then go back to
+your python root folder go to the python
+terminal and then run the command import
+pyot
+kit okay so after you have installed the
+pyot kit library then you need to import
+the pyot kit and this message should be
+successfully imported now I want to send
+a WhatsApp message to a phone
+number and I want to send it at a
+particular time so right now I'll just
+set the time as
+2038 and please make sure that you are
+already logged in to your
+web.whatsapp.com
+and so that you know uh the when python
+tries to send a message you are already
+pre- logged in okay
+okay so now if you see with this message
+with this API I'm going to send the
+message at 839 so this will go and open
+the WhatsApp window in next 46 seconds
+and after 20 seconds the message will be
+delivered so 8:39 so when the timer in
+my system clock will reach to this
+particular
+time python will open a whatspp WhatsApp
+window log that reach to this phone
+number which is there in my WhatsApp
+contacts and then after 20 seconds this
+message will be delivered so let's just
+wait for a few seconds and wait for
+python to perform that
+activity yes now python has opened the
+web.whatsapp.com in which I'm already
+logged in it has reached out to that
+number and type the message welcome to
+Simply learn world and I can send this
+message now let's move on to the another
+example if I want to send a message to a
+WhatsApp group then you need a WhatsApp
+group chat ID and the message you want
+to send so now in order to send a
+message to the WhatsApp group you can
+pick any
+WhatsApp group in which you are
+administrator go to the group
+info
+and click invite to group via a link and
+in this link
+copy copy this part copy link go to
+notepad just copy this part this is the
+group
+ID okay and paste it over
+here
+okay so now you
+can send message to a group copy paste
+this in your command prompt set the
+timing in 16 seconds WhatsApp will open
+a window and after 30 seconds the
+message will be
+delivered okay so WhatsApp window is
+open it will reach out to that
+particular
+group
+it will type the
+message and submit it and even it will
+close the window automatically now okay
+so this
+particular command has typed the message
+submitted it and Clos the
+window
+now if you want to send the WhatsApp
+message instantly you
+just use the API send whats message
+instantly and it will send it instantly
+to the
+user now another utility is that if you
+want
+to find a
+keyword on
+YouTube
+so we'll just play on YouTube Simply
+learn on YouTube
+so it will automatically play the
+YouTube channel which you have put in
+that particular keyword on the YouTube
+so python can also directly open a
+YouTube url or if you want to do a
+Google
+Search Here It Go
+so as soon as you put that command on
+the python console it will open
+google.com and search it in this video
+we are going to perform a really
+interesting data analysis using python
+on the Spotify music streaming service
+platform data set I'll also be asking
+you a few questions related to Spotify
+during our discussion please make sure
+to answer them in the comment section of
+the video so now let's get started
+Spotify is a stest audio streaming and
+media services provider founded in April
+2006 it is the world's largest music
+streaming service provider and has over
+381 million monthly active users which
+also includes 172 million paid
+subscribers the total number of
+downloads on the Spotify app in the
+Android store exceeded 1 billion in May
+2021 so millions of people listen to
+music all day even I hooked to music as
+an analyst what's better than exploring
+and quantifying data about music and
+drawing valuable insights before I move
+ahead I have a quiz question for you
+people the name Spotify comes from a
+combination of two words so which are
+those two words please let us know your
+thoughts in the comment section below I
+would like to repeat the question again
+the name Spotify comes from a
+combination of two words so what are
+those two words we would love to hear
+from you so please put your answers in
+the comment section
+below now let's use Python libraries and
+functions to analyze and visual ual our
+data set first I'll show you the two
+data sets that we'll be
+using so here is the first data set that
+we'll be using for our demo and then I
+have my second data set called Spotify
+features which is essentially about the
+geners of the different
+soundtracks now these data sets have
+been downloaded from kel.com now the
+Links to the data sets have been
+provided in the description box box
+please go ahead and download them now
+let me just go ahead and brief you about
+the columns that are present in our
+first data set which is about tracks we
+have our column A which is ID this is
+the unique ID for each of the songs then
+we have the name column which is
+essentially the name of the song then we
+have a column for popularity so the
+popularity ranges from 0 to 100 then we
+have duration in millisecond this is the
+duration of the track in milliseconds
+next we have a column called explicit
+now we are not bothered about this
+column because we are not going to use
+it in our
+analysis then we have artist so the name
+of the artist who has composed or sung
+the song then we have ID of the artist
+then we have a column for release date
+which is basically the date on which the
+song was released then we have a column
+for danceability so this describes how
+suitable a track is for dancing based on
+a combination of musical elements such
+as Tempo Rhythm stability beat strength
+and overall regularity the value ranges
+between 0 and
+1 next we have a column for energy so
+the energy is a measure between 0.0 to
+1.0 and represents a perceptual measure
+of intensity and activity typically the
+energetic tracks feel fast loud and
+noisy higher the value the more
+energetic is the song then we have a
+column for key so key is the pitch notes
+or scale of song that forms the basis of
+a song there are 12 Keys ranging from 0
+to
+11 moving ahead we have loudness so the
+overall loudness of the track in decb it
+ranges from- 60 to 0
+DB then we have mode so songs can be
+classified as major and minor 1.0
+represents major or one represents major
+and zero represents
+minor a column for the
+costic so a confidence measure of 0 to 1
+of whether the track is acostic or not
+so 1.0 represents high confidence the
+track is acostic then we have other
+information
+about
+instrumental then we also have a column
+for livess so liveness detects the
+presence of an audience in the recording
+then we have a column for Valance so
+Valance is a 22 onwards so all the songs
+from 1922 till
+2021 cool okay so I'm on my jupyter
+notebook
+so you can see I have a few cells that
+have already been filled up so we'll
+start with our analysis first of all
+let's go ahead and import the necessary
+Library so I'm importing in numpy pandas
+matplot lib and cbon for my analysis and
+visualization I'll hit shift enter to
+import the libraries all right and in
+the next cell I'm going to load my data
+set using the pandas read CSV function I
+have my location already put here let me
+show you the location where the data
+files or the data sets are located so
+this is my location under Chrome
+downloads I have a folder called Spotify
+data sets Okay so let's import
+and check the first five rows in the
+data set so for that I have used the
+head function there you go so here you
+can see I have my first five rows of
+information from the data set and on the
+top you can see the different columns
+you have ID name
+popularity artist then we have the
+release date danceability energy key
+loudness liveliness or
+liveness balance Tempo and other
+information
+cool now let's check for null values in
+the data set I'll just give a comment as
+null
+values every time when you download a
+data set from an open repository there
+are chances that the data set would
+contain null values so it's better to
+check them beforehand
+so I'm going to use the isol function
+present in the pandas Library PD I'm
+using because I had imported pandas as
+PD so PD do is null then I'm going to
+use the variable name dfdore tracks
+because I imported my data set and
+stored it in the variable dfdore TRS so
+I have my data frame under dfdore TRS
+variable and then I'll use the the sum
+function to check the total number of
+null values present in the data set for
+each of the columns if I run it there
+you
+go so here you can see my name column
+has
+71 missing values or null values and we
+don't have any null values for the rest
+of the
+columns
+okay now let's use the info method that
+will give us the total number of rows
+and columns in the data set and we'll
+also check the data types and the memory
+usage so I'll say my data frame name
+that is DF
+tracks.
+info if I run it you can see here now if
+you mark there are total
+58661 names or the names of the songs
+present in the data set while the rest
+all have 5 l
+866727 song names or soundtracks missing
+from our data
+set and Below you can see the data types
+we have float integer and object and
+then you can see the memory
+usage
+cool now before I move ahead with our
+next analysis I have another question
+for you which artist or musician has the
+most number of followers on Spotify I
+repeat which artist or musician has the
+most number of followers on Spotify
+please put your answer in the comment
+section below we would be happy to hear
+from
+you now let's move ahead and do our
+first major analysis in this demo we are
+going to find the 10 least popular songs
+present in the Spotify data set so I'll
+create a variable called sorted _ DF
+that will be equal to my data frame name
+that is dfdore tracks dot I'm going to
+use the
+sortore values function and
+say my column name is
+popularity so I'm going to sort the
+values based on the popularity and then
+say ascending equal to
+True since I want only the least popular
+songs and then I'm going to say head of
+10 which means I want the top 10 least
+popular songs now let's go ahead and
+print sorted DL if I run it you can see
+we have the list
+of 10 least popular songs on Spotify you
+can see that popularity is
+zero and you can see the names of the
+songs some of them
+are songs which are not not an English
+language and you can see the artist
+names as well
+cool now moving
+ahead let's see some descriptive
+statistics for the numerical variables
+that are present in our column so I'll
+say DF TRS do
+describe which is the function to get
+some descriptive statistics and I'm
+going to use the transpose function
+after that
+if I run it there you go so we have the
+statistics about count mean standard
+deviation minimum value 25th percentile
+50th percentile 75th percentile and the
+maximum value for these columns like
+popularity duration in milliseconds then
+we have energy key loudness
+mode cool now if you see this popularity
+column the minimum value is zero and the
+max maximum value is 100 and you can see
+the 50th percentile is 27 which is
+essentially the median you have the
+standard deviation as
+18.37%
+90 so we are going to check for the top
+10 songs with popularity greater than 90
+let me show you how to do it so in this
+cell I'm going to create a new variable
+called most
+popular and I'll say
+dfdore tracks dot this time I'm going to
+use the query function that is part of
+pandas Library again I'll use the column
+that is popularity and we'll set the
+condition popularity should be greater
+than 90 I'll give a comma and
+say in place equal to false because I
+don't want to change my original data
+frame and then I'll say sort
+underscore
+values and I'm going to sort it based
+on
+popularity
+in descending order so I'll
+say ascending equal to
+false and then
+let's take only
+the top 10 popular songs so I'll say
+most popular use square brackets use
+square brackets and we'll then pass the
+slicing operator and say colon 10 now if
+I run this there you go
+so here you can see the 10 most popular
+songs that is present in our Spotify
+data set the first we have fees by
+Dustin
+Bieber Daniel Cesar and gon then we also
+have a song name called driver's license
+astronaut in the ocean save your tears
+you also have the business streets and
+heartbreak anniversary so these are the
+most popular songs that are present in
+our data set based on their popularity
+you can see paches has the highest
+popularity
+with 100 all right now moving to the
+next cell so here we are going to set
+the index to be release date column in
+the main data frame so I'm setting my
+index using the setor index function I
+have passed in my column name as release
+date and I'm saying in place equal to
+true which means I want to change it in
+my original data frame and then I'm
+changing the value to date time format
+and let's print the head of the data set
+so you can see here we have successfully
+changed our index now here you can see
+instead of 0 1 2 3 we have the release
+date column and the rest of the columns
+are
+intact
+cool now let's move ahead so suppose you
+want to check the artist at the 18th Row
+in our data set you can use the index
+location method for that let me show you
+how
+to filter only specific rows of
+information from the data set I'll use
+my data frame dfdore tracks and using
+double square brackets I'll
+say my column name which is
+artist and I'll use the index location
+method and say let's say I want to check
+the artist to is
+present in the 18th Row in my data set
+so I'll use iock 18 if I run it the
+artist name is Victor
+voucher
+cool now let's move ahead we are going
+to convert the duration in milliseconds
+to just seconds
+so if you see our data set we have a
+column called duration in milliseconds
+so all our songs are present in
+milliseconds let's convert them into
+just seconds so for that I'm using the
+Lambda function and dividing the values
+in milliseconds by thousand so that they
+get converted into just seconds I have
+used in place equal to true so I want to
+change it in my original data frame
+let's run it and do the necessary
+changes all right now we'll print the
+head of the data set just to check the
+duration column so I'll say
+dfdore
+tracks do
+duration. head if I run it there you go
+so you can see the values have now been
+changed to just
+seconds
+cool I have the final quiz question for
+you who has the most monthly listeners
+on Spotify please put your answers in
+the comment section below we' be glad to
+hear from you
+now coming to the next
+cell so here we are going to create a
+first visualization that is going to be
+a correlation map we are going to drop
+three unwanted columns and those are key
+mode and explicit and then we are going
+to apply pieron correlation method now I
+have set my figure size to 14 comma 6
+and then we are using the C Bor heat map
+function to create our correlation map I
+have put
+the variable that is correlation DF you
+can see above we had created this and
+then I'm setting annotation equal to
+true so this will write the data value
+in each cell I have set fmt equal to do
+1 G so this is a string formatting code
+to use when adding an anotations then I
+have set my vmin and Vmax so these are
+the values to Anchor the color map
+otherwise they are inferred from the
+data and other keyword arguments cmap
+here stands for color map you can just
+search for SNS cmap you will get the
+documentation so you can choose
+whichever color pette or the color map
+you want here I have used info no and I
+have set my line BDS and line color
+finally I'm giving a title to my
+correlation map and I have set the x
+labels let's go ahead and run this to
+get our first
+visualization if I scroll down there you
+go we have got
+a nice corelation map so here on the
+right side you can see the scale it
+ranges from minus1 to + 1 minus1 means
+the variables have least or negative
+correlation while the values which are
+above
+0.0 means that the variables have a
+positive
+correlation
+now here you can see there
+are values like minus. 7 for energy and
+acostic which means if the energy is
+high the acostic is really low again for
+loud Ness and say speech if the song is
+loud the speech is low so there is
+negative correlation but if you see for
+energy and loudness there is really high
+correlation between these two variables
+you can see the value is8 so if the song
+is loud this implies the song has really
+high energy and vice
+versa now if you see for a few other
+variables there is negative correlation
+between acostic and
+danceability there is negative
+correlation again between bance and
+acostic similarly there is positive
+correlation between energy and bance
+which
+is4 and even for danceability and
+Valance that is positive correlation
+which is5 cool so from the correlation
+heat map you can note that acostic
+appears to have a strong negative
+correlation with with energy so if you
+see for acostic and energy there is a
+strong negative correlation and there is
+a
+moderately strong positive relation
+between loudness and popularity so if
+you see for popularity and loudness the
+color is orange which means it lies in
+this positive
+region and there is also a moderately
+strong positive relation between
+danceability and bance so if you check
+for danceability and bance here there is
+uh moderately strong positive
+correlation all
+right now let's move ahead we are going
+to sample our data and take just 4% of
+the total data and we'll create two
+regression plots using this data so let
+me first sample my data so I'll create a
+sample data
+frame using my original data frame which
+is dfdore tracks and say
+sample I'm I'm going to use the int
+function and see
+0.004 multiplied by the length of my
+original data frame which is
+dfdore
+tracks all
+right now let's run
+this and we
+print the length of my sample data
+frame if I run it you can
+see 4%
+of my total data set
+is
+2346
+rows
+cool now we are going to create a
+regression plot between loudness and
+energy now in our correlation map we saw
+there was a positive correlation between
+loudness and energy which was point8
+let's plot it in the form of a
+regression line so I'll use PLT dot
+figure I'll set my figure
+size equal to let's say 10A
+6 I'll say SNS
+dot regression plot so I'm using the
+function called reg plot and I'll use my
+data as sample
+uncore
+DF give a comma and
+say in my Y axis I'll have my
+column
+loudness and in the xaxis we'll have
+energy
+I'll give a color
+to my data variable let's say the color
+is
+C then I'll set my title
+to
+loudness versus
+energy let's say correlation
+all
+right let's make sure everything is
+fine now we'll run and see our result
+there you go so you can see here clearly
+there is a very high positive
+correlation between loudness and energy
+on the y axis we have loudness and on
+the x- axis we have energy
+and you can see all the data points or
+the songs
+are in One Direction so if the energy
+increases the loudness of the song also
+increases and similarly if the loudness
+of the song decreases your energy of the
+song or the track also decreases so
+there is a very high positive
+correlation and you can see the
+regression line here it has
+gone and is increasing gradually
+cool now similarly I'll just copy this
+code and we are going to see another
+regression plot this time for two
+different features let's say we
+have popularity in the y axis so I'll
+say
+popularity and then in the x-axis we
+have let's say AC costic
+I'll change the color to let's say B
+which stands for
+blue and we'll set the title
+to
+popularity
+versus I'll have acos
+thickness
+correlation just scroll down and we'll
+run it to see the result
+there you go so I have
+the different points for the songs and
+here you can see the regression line is
+downwards which means if the acostic of
+the song increases the popularity
+decreases and similarly if the
+popularity increases acostic decreases
+you can see the downward trend of the
+regression
+line all right
+now in the next cell we are going to
+create a new column called Year from our
+release date column and I have changed
+this to date time format let me just run
+it
+cool now after
+that we are going to create a
+distribution plot to visualize the total
+number of songs in each year since 1922
+that is available on the Spotify
+streaming app so I have used my cbon
+library and disc plot function now one
+thing to remember you need to update
+your cbon library
+to this
+version if you haven't done it so use
+this command pip install D- user cbon
+and the
+version so here in the distribution plot
+we're going to plot a histogram so Ive
+used kind equal to hist which stands for
+histogram let's run and see the result
+okay so here you can see I have
+my distribution plot so the plot tells
+us that the number of songs for each
+year in the data set according to their
+release date have increased in the
+recent years since music became more
+accessible to people globally with
+technological advancements so earlier
+you can see there were very few songs
+available in the
+1920s later on the number of songs
+increased rapidly and now you can see we
+have a lot more songs available for
+people to listen
+cool
+now we are going to see the duration of
+songs over the years for that again we
+are going to create a bar plot so I'll
+first create a variable called total
+duration equal to
+dfdore tracks
+dot I'll use the duration column that we
+created with
+seconds and
+then I'm going
+to
+set
+my figure Dimensions so I'll use figure
+undor DMS for dimensionsal to 18 comma
+7 after that I'll have
+my figure AIS defined so I'll use the M
+plot Leb subplots
+function
+and I'll set
+the figure
+size equal to my figure
+dimensions and
+then I'll say figure equal to SNS dot
+I'll use the bar plot
+function and say my x-axis to be
+yours my Y axis will be total duration
+or total undor Dr that we created here
+I'll set my Axis equal to
+ax and then then I'll set error
+width equal to
+false let's set the title for my plot
+as title equal
+to year versus
+duration and finally I'll say PLT do X
+sck I'll rotate it
+by let's say
+90° all
+right let me just recheck once if
+everything is fine and then we'll go
+ahead and run
+it my access error width
+title okay let me just run
+it we'll see the result in a
+moment if I scroll down you can see we
+have the bar plot for the different
+years and the duration of the songs in
+seconds in the y axis so earlier in the
+1920s you can see the duration of the
+songs were less and later it increased
+around late
+1930s and this remained consistent until
+2010 where the duration was high but
+after 2010 you can see the duration of
+the songs have started
+decreasing now in the next cell I'm
+going to create a line plot to analyze
+the average duration of the songs over
+the years it is going to be similar to
+our bar plot just that now we are going
+to visualize it in terms of a
+line so I have my code ready you can see
+here I've used my cbone library and the
+line plot function in the the x-axis I
+have years and in the y axis I have
+total duration I've set my title to year
+versus duration and I'm rotating
+my X labels by 60° let's run it and
+we'll see the
+output there you go now if I scroll down
+you can see we have a
+nice line plot and on the x-axis you
+have the ears and on the y axis we have
+the duration you can see that the songs
+from
+1920s to
+1960s have comparatively shorter
+duration since most of the songs tended
+to be more singing based rather than
+instrument
+based after 1960s you can see the
+duration of the songs started increasing
+until I would say
+2010 and in the present day the duration
+of the songs have started declining
+since the attention span of the average
+listener is also declining all right now
+let's move to our second data analysis
+project which is based on geners of the
+songs so I'm importing my data set using
+the pandas read CSV function I have
+given my location and here I have my
+data set name followed by the extension
+of the type so this is a CSP data set
+let's go ah go ahead and run
+it okay now let's print the first five
+rows of the data set I have stored my
+data set in a data frame called dfdore
+Jer I'll use the head function to get
+the first five rows of
+information I'll hit shift enter to run
+it there you
+go you can see here I have my Jor column
+artist name track name track ID
+popularity
+acostic duration in milliseconds again
+and we have the rest of the other
+columns that we saw in our first data
+set just one thing to note here key is
+present in terms of c d e c minor F
+minor and not in terms of numbers
+between 0 to
+11 now we'll see
+the duration of the songs for different
+genes for that I'm going to create a bar
+plot so I'll start with setting the
+title for my plot as
+duration
+of the
+songs
+in
+different
+geners I'll use the
+cbon
+library and I'll set
+my color palet to let's say
+rocket give a comma and say as cmap
+equal to
+true this should be color
+palette
+now I'll say SNS dot bar plot in the y
+axis I'll
+have
+joner and in the x-axis I'll
+have my duration column which is in
+milliseconds so duration underscore Ms
+and then I pass my data frame using the
+data argument so I'll say data equal to
+DF do
+Jer
+next we'll set the x labels so I'll say
+PLT do X
+label let's say my X label is duration
+in
+milliseconds and then I'll say PLT Dot
+by label as
+Jers now let's go ahead and run
+this there you go so here you can see we
+have the different Jers on the y axis
+and on the xaxis you have the duration
+in
+milliseconds and if you see the graph
+for classical genre and for songs that
+belong to World genre the duration of
+the songs are more compared to other
+genr now if you check for children's
+music genre the duration is less or the
+least
+cool and
+finally we'll move to our last demo
+where we'll see see the top five geners
+by
+popularity so I'll say SNS do set
+uncore
+style I'll set
+my style
+to
+dark
+grid which will be my
+background and then I'll see PLT
+dot figure I'll set my
+figure size
+to 10 comma
+5 then I'll create a variable called
+famous since I want to take only the
+most popular songs based on the Jer so I
+have created a variable called femas and
+I'll pass my data frame name that is
+dfdore Jer and I'll sort the values
+based on my popularity
+column so I'll
+say
+popularity and I want to sort it in
+descending order so I'll say ascending
+equal to
+false and I'll take
+the
+first 10 values I'll tell you the reason
+why I'm taking the first 10 values and
+not five
+then I'll say SNS do
+barplot and in the y axis I'll have
+Jer in the x-axis we'll
+have
+popularity and I'll give a comma and
+using the data argument I'll say my data
+to be famous which is this variable that
+we
+created and then I'll set
+my
+title
+as top five
+genners by
+popularity all right now the reason why
+I took head of 10 is because there are a
+few gen which are repetitive so if you
+see this we have children's music
+appearing twice so hence we have taken
+10 instead of five let me just go ahead
+and run it there you go so here if I
+scroll down you can see I have my top
+five genres based on the popularity so
+we have dance pop rap hip hop and
+rigaton so these are the five genn which
+are most popular based on the data that
+we have collected from
+Spotify all right welcome to the simply
+L YouTube channel channel in this
+session we will learn how to create a QR
+code and then learn how to decode it but
+before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to never miss an update and before
+starting let us have a simple question
+to brush up on our knowledge and please
+answer in the comment section below we
+will update the correct answer in the
+pin comment and your question is what
+does QR in QR code stand for and your
+options are quick record quick response
+quick review or quick restore you can
+pause the video give it a thought and
+answer in the comment section now moving
+on let's learn a few facts about QR
+codes QR codes are quick response codes
+used to store information that can used
+to make a call send a message or email
+open a website or even redirect to a
+location and a QR code can store up to
+4296 characters or 7089 digits in a
+single code making it viable to hold
+large amounts of
+content let's see how a QR code is
+generated on web we will open the
+browser and search for any free website
+that is used to generate QR code we will
+search QR code
+generator and we can enter any any URL
+or any text to just create a QR
+code so we'll write simply
+learn and you can see your QR code has
+been generated you can download it copy
+it and send to anyone and he can just
+scan it and see the TT simply learn to
+check it we can
+also open a QR Scanner in a mobile
+phone for that we'll just just write QR
+Scanner in our Google Chrome or any
+browser and open any free one and
+just scan
+it you can see that it has scanned and
+decoded it as simply learn what we have
+encoded in it so let's move and create
+our own QR code scanner using python for
+that first we'll create a
+folder
+and name it as creating QR
+Scanner and inside it we'll open the
+command prompt
+and open Visual Studio
+code I have chosen the visual studio
+code as my data you can choose any like
+jupyter notebook or P Cham any dat and
+inside I will create the
+file and name it as QR Scanner
+dopy and now the first thing we have to
+do is import the python
+modules so for that the first module we
+would be importing is python QR
+code I will write the command pip
+install QR
+code as you can see that it states that
+the requirement is already satisfied I
+have already installed the python
+package you can use this command to
+install that and if you face any issues
+just comment down in the comment section
+and we'll get back to you
+now moving to our Visual Studio
+code we will import the
+package
+import QR
+code and now we'll use the function make
+to make a QR code for that we'll write
+QR
+code do
+make and inside we'll just copy any URL
+link or any command any contact
+information or anything so we will go to
+a
+browser and open the
+YouTube and search for creating a
+virtual
+assistant and
+python
+and
+will copy this
+URL and paste
+it in the make function so that will get
+the QR
+code of our own video that is creating
+virtual assistant using
+python now we'll save
+this into a variable and name it as my
+QR and get this variable saved as a PNG
+image so that we can get it in our
+folder as our folder only contains the
+python file
+now when we save
+this that's PNG file
+now you have to save your code and just
+run
+it you can see that my qr. PNG has been
+generated so just open it you can see
+that you have got your QR code
+generated and you can
+also make some options that is scale I
+will set the
+scale equal to
+you'll save the file and run
+it and you can see the QR code
+scanner
+now we
+will use a mobile phone you can use any
+mobile phone Android or iPhone and just
+check
+it using any QR code scanner that is
+available on your browser or you have
+any other app you can use that
+I'm using a free version on my web and
+that is QR code scanner.
+in and on scanning I got the link and
+when I open
+it I am redirected to the video that is
+how to create a virtual assistant using
+python so we have successfully made the
+QR code scanner
+now we have made the QR code scanner and
+we can also decode it using the python
+libraries so for
+that we have to install two more
+modules that is piar and
+pillow for that we'll write the command
+pip
+install
+byar
+you can see that the requirement is
+already satisfied as I have already
+installed these modules and we also
+installed pip
+install
+pillow this is also installed and if you
+face any issue in installing these
+packages just comment down in the
+section we'll get back to
+you now moving on to our Visual Studio
+code
+now
+we'll use the class decode first we'll
+import the packages
+on
+from
+P
+doar import the decode
+class and
+From
+Below
+import the image
+class
+now moving to decode the QR code we will
+use the decode class from P
+bar and use the image
+class
+and open our PNG file that is what you
+named as my qr.
+PNG
+and
+now we'll store it in our variable that
+equal
+to and now we'll print what is decoded
+what would be decoded and we'll just get
+the value for that we
+will get the information at the zero
+index that is
+data we will decode it
+in s
+key so yeah now
+we save our
+code and run it here you can see that
+you have got this link that is recorded
+what you have encoded in the QR code
+scanner and now I have a question for
+you to just check whether a QR code is
+working or not now you have to
+make a task to just scan the QR code and
+see whether it's working or not for that
+we will create my QA
+1 equal to QA
+code do
+make and
+inside we will get a link for our
+website
+now we'll save the file and run
+it and get
+also as a image for that we'll write my
+qr1 do
+save and the name of the file and add a
+scale of seven we'll save the file run
+the file here you can see that the QR
+code has been
+generated
+and we have get
+it pasted for you guys so just scan the
+QR code and check whether it's working
+or
+not so just scan it and answer as yes or
+no in the comment section
+below if it's working just answer it yes
+else
+no hi everyone welcome to the simply L
+YouTube channel in this session we will
+create a QR code scanner using python
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to never miss an
+update and before starting a project let
+us have a simple question to brush up on
+our knowledge and please answer in the
+comment section below and we'll update
+the correct answer in the pain comment
+and your question is what is the minimum
+decodable size for a QR code
+scanner that is QR code only and your
+options
+are
+1.5 by 1.5 CM or 1X 1 cm or 1.75 by 1.75
+CM or 2 by 2
+cm you can pause the video give it a
+thought and answer in the comment
+section and moving on now we'll start a
+project that is create a QR code
+scanner for that first we'll create a
+folder
+and name it
+as creating QR code
+scanner and inside we
+will open the command
+prompt and write a command code space
+period and press enter to open our idle
+that is I using the visual studio code
+you can use any idle
+as you comfortable
+with and we'll create a file and name it
+as QR
+scanner.
+py and now the first thing we will do is
+install the modules that we will require
+for the project for that we will open
+the command
+prompt uh the first module we will
+install is open CV
+and you can search for the command in
+the web or if you know you can just
+write it down and press enter for that I
+will show you how to get for the command
+you can just type open
+CV Python and press
+enter you will see the first link that
+is open CV
+python that is the original
+documentation and you can see the
+command here just copy
+it direct to the command
+prompt and paste the command here and
+just press
+enter as you can see that it states that
+the requirement is already satisfied I
+have already installed the open CV
+module you can just type in the command
+and press enter it will just install it
+for
+you and the second one module we will
+install is is p
+bar just open the official
+link and you can see the command here P
+install pbar just copy it and redirect
+back to the command prom and paste your
+command here and just press enter it
+will do the work for you as it is stay
+that it's the requirement is already
+satisfied I already installed the asbar
+module you can do that just writing the
+command and press
+enter now moving to our Visual Studio
+code now we'll start with our code and
+we first we will import the packages the
+first package we will import is that is
+the CV2 that is the open CV
+the next we will import the decode class
+from the P bar module so for that we
+will write the
+command
+decode now
+the first thing we will do is uh we will
+create a variable and ask the open sa
+module to make the video capture
+function work for us for that we will
+create the variable and name it
+as
+cm and the command would be CV to
+dot video
+capture
+now we will set the window this is the
+window that would be reflected when we
+just make our camera equal to true that
+is camera is always defaulted as false
+you have to make it true to get it pop
+it on your windows
+screen and for that we will set the
+size cam do
+set and first we'll set the width and
+we'll set the width as
+five and set the pixels as
+640 and now we'll set the
+height cam do
+set and height as six and pixel as same
+um hold
+480 as you wish you can set it as and
+now we will make the camera equal to
+true as it is a button for a camera and
+it's been defaulted set as false we have
+to make it
+true now while
+camera is equal to equal to
+true we will read the QR code scanner we
+will read the QR code that we will show
+in our front
+camera so for that we will write the
+command when camera equal to equal to
+true that is when the camera is
+open we would get two things that is
+success and the
+frame and that would be equal
+to cam dot
+read it will read the frame that would
+be shown into our camera and the success
+is it will return the Boolean value that
+is one or Z and the frame is it would
+read the frame as captured by a front
+camera and decode
+it now to decode it we will run a
+r
+for
+I we will make it as
+decode and inside we will pass the
+frame that is the frame captured by our
+camera
+and print the
+type that is uh which type it is that is
+it's QR code or its bar code or it's uh
+any other code so it will just capture
+the frame and it will return or print it
+as which type it
+is
+now we will
+print what we will decode from the QR
+code for that we'll write the command
+code do data what data is stored in
+it and we'll use the function
+decode and the memory we would be using
+is UTF
+8 oh sorry uh we have taken it as
+I
+and now after we have read the frame and
+recorded it we want it to sleep for some
+time for that we will just import the
+time module and you can install the time
+module from the date time module you can
+just write the command pip install date
+time or you can just search on the
+Chrome or any browser about the datetime
+module and python you can just write
+date time space python space module you
+will be just directed to the main
+documentation and you will get the
+command there and you can just copy it
+and paste it in the command prompt and
+the rest would be done for you as I've
+already installed it I will import the
+time
+module and now make this Frame
+sleep for about 6
+seconds
+and
+now we
+want to make or show the
+camera uh on a window it should be
+popped up and we should be able to see
+it for that we will use the open C
+module and write the
+command I'm sure and we will name the
+camera window with our QR code scanner
+you can name it anything as you
+want so I will name it as
+R
+qore code uncore
+scanner and the next thing we will do is
+pass the frame in
+it
+and we will just write another command
+that would
+be weight key
+function that would be we will using the
+open save module and the weit key
+function and this would be used to
+capture the frame after the 3
+seconds so this is our code we'll save
+it and make it run
+okay we C an
+error okay this eror is due to as I was
+using the front camera for recording and
+it was not able to capture the
+frames so I have
+switch off the front camera the
+webcam and now we will again save the
+file and run
+it now you can see that the webcam has
+open up and now we will show it a QR
+code and you can see that it has
+concluded its data as
+https ww. simply.com I have created the
+QR code in my mobile
+phone and made it available to the
+webcam and it has showed us the output
+as HTTP ww. simply.com we can
+just press on click
+and click on the right button of the
+mouse you can we will be directed to the
+link hi everyone I'm amarja and welcome
+to the simply L YouTube channel in this
+session we will create a MP3 player
+using python but before we begin if you
+love watching Tech videos subscribe to
+our Channel like the tutorial and hit
+the Bell icon to never miss an update
+before we start I hope the screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section and before starting first we we
+should have a look on what we would
+create so for that we will move to our
+code simply run
+this you can see that the take interment
+has appeared and this is our media
+player we have named it simply music
+player we have the GIF that would be
+running
+continuously and we have the browse
+music button which will direct you to
+the any folder you want to open that
+have the MP3 player
+files I've selected this folder it has
+four files and we'll play here there
+just click on that and click on the play
+button it will play the
+music now we'll just click on the post
+button so this is our MP3
+player so before starting the
+coding I have a simple question for you
+guys
+so moving to
+that so the question is who wrote the
+poem Zen of
+python and your options are Tim bernly
+Tim Peters Gan rusam or Kevin
+Goldsmith you could see the poem here
+also you can easily get this poem you
+just have to write import this in your
+interpreter and just press henter you
+will get the
+poem so please answer in the comment
+section below and we'll update the
+correct answer in the pin
+comment you can pause the video give it
+a thought and answer in the comment
+section so moving to a
+code first we will create a
+folder and name it as create create MP3
+player using
+Python and
+inside we'll open the command
+prompt and write the command code
+space sorry period and press
+enter this will open up the editor that
+is Visual Studio
+code if you want you can use any edor
+you have hands on any edor you can use
+anyone and here we will create a file
+and we will name it as player. py
+only and we would require music also for
+that and some GFS and some images for
+our buttons you can easily get those
+images from any free images website or
+you can just get them draw in the paint
+or photoshop them you can arrange them
+from
+anywhere so we have a piic in this
+folder so we'll copy all these and we
+have the music
+folder it has four files and this is the
+copyright free music so we can play on
+YouTube we will past this in a folder
+only that is create MP3 player using
+python
+yeah moving back to our Visual Studio
+code so first thing is we should install
+the python packages before starting our
+coding so we would require the take
+enter package it is already installed as
+you install the python if you want to
+install it again
+just go to your
+terminal and write the command pip
+install
+TK as you can see that the requirement
+is already satisfied so I don't have to
+install it again you can install it just
+writing the command and press
+ento and the next we have to install is
+the py game to import the mixer
+class uh sorry the command would
+be pip install py
+game and press
+enter you can see that the requirement
+is already satisfied I already install
+the pame module you just have to write
+the command and press enter you will get
+them installed very easily and the next
+module we need is
+time so you can install the date time
+module or the time
+module it's your
+wish so we have to write the command
+we install date
+time so it was not installed on my
+system it has been installed
+and it doesn't have
+some classes in the module it has
+installed them and it says the
+requirement is already satisfied for
+other modules
+okay so
+now and the last
+OS
+module install
+the this window is not going so we will
+just go to the
+terminal
+okay just c a
+terminal and write the command here
+pip
+install
+OS s s and press
+enter so it will install the O module
+for you
+it is doing for me right
+now and we would be using the tein
+module to create the GUI and teiner is a
+python module that is used to develop
+graphical user interface and as I told
+you there's no need to install it it is
+the part of the standard python Library
+so it would be installed as you install
+python on your
+system so it's downloading till then
+we'll just import our
+packages first we'll
+import time and that we will use in to
+get the GIF set up in a
+GUI so we'll import the time and from
+tier we will import all the
+classes
+and we will import the field
+dialogue and from py game we'll import
+the mixer class to get a buttons
+functioning to make an mp3 music video
+music like MP3 file to start playing to
+pause it and to resume it again so for
+that we write the
+command from P
+game import
+mixer it's still
+downloading till then we'll import the
+OS
+also it will get
+it downloaded and installed for
+us so first we'll create the ti to video
+uh window for that we'll write the
+simple command root equal
+to
+PK and circular brackets and get the
+command root to main
+Loop and if we save it and run
+it oh sorry it was
+[Music]
+downloading just post
+theing okay we'll see it again so you
+can see that the take enter window has
+appeared on the screen it's the
+output it's a simple take of video now
+we will add for functions to it we will
+add size to it we will add background
+color and we'll do other functionings to
+that so take inter provides many methods
+and one of them is geometry method and
+it is used to set the dimensions of the
+take inter window as you have
+seen so we will just position the main
+window on the users desktop we will use
+the command root. geometry for
+that
+set the size as
+485
+cross that is X
+only and for y axis it would be
+700 and
+now would get it 290 Point shifted from
+xaxis
+and 10 points shifted from y-
+axis and we have to put them in inverted
+kasas we will save the file and run it
+again you can see that the T enter
+window has changed its geometry and it
+has set the x-axis as 485 5 and Y AIS at
+700 and when it appeared it was
+290 as see what dimension it uses it was
+290 points apart from the x-axis and 70
+sorry 10 points apart from Y axis yeah
+290 and
+10 so now we'll give the title to this
+window for that we'll write the command
+rot.
+title and just write the
+title you want to give it you can give
+it
+anyway so we'll name it as simply music
+player and now we'll use the configure
+function so take into configure function
+it is used on any widget to change
+settings that you may have applied
+earlier or haven't applied yet so for
+that we'll write the
+command root do
+configure and we will set the background
+color
+so
+write
+background equal to and inverted commas
+we'll write the hexa code for this
+color
+we setting the gray color for a
+background we'll save it and run the
+file so you can see the output so we
+have set the simply music player as the
+root title of our T window and we have
+configured background color at
+Gren so moving
+on now we will use the resizable method
+it is used to allow tick enter route
+window to change its size according to
+the user's need as well as it will
+prohib like it will not allow you to
+change the size of the window the window
+you just saw on the screen that was a
+take inter window so we'll use the
+resizable function and we will prohibit
+will not allow anyone to change its
+Dimensions so for that we'll write the
+command
+do do
+resizable false
+comma false so in resizable method user
+can pass either positive integer or true
+to make the window resizable to make
+window non resizable user can just pass
+zero or false we have passed false so
+our window won't be resizable we save
+this file and run it again you can see
+now we can't resize it so first I will
+command this command and save it and run
+it for you
+guys
+you can see that you can resize it now
+but after we write this
+command no one is allowed to resize the
+ti window we'll save
+this and run it you can
+see now no one is allowed to resize this
+window you won't get any
+option so now
+moving on as you have seen the previous
+dimensions and the demonstration of the
+simply music player we'll create as same
+as that
+only so we will place the GIF here a
+label here and place the buttons on that
+and beneath that we will just create a
+label and browse all the files
+there
+so we'll start with the
+frame for that we'll write the
+command first we'll create
+a variable and name it as lower frame
+and a frame is a rectangular region on
+the
+screen it can be used as a foundation
+class to implement complex widgets it is
+used to organize a group of widgets so
+we'll be creating a frame and we'll
+Place different buttons on that that
+would be the play button post button and
+the stop button and the volume that is
+just the
+image we'll place the volume image there
+so lower frame equal to we'll write
+frame to get a frame and inside we'll
+pass
+Loot and get a background color as
+white that will write the hexag
+code Ash and the hexa code for white
+color
+is FFF and that is six times you can go
+and search on the web about the hexa
+codes like which color is associated
+with which hexa code or you can just
+write the simple name of the colors you
+can get your background set as well that
+also
+and here we'll set the width for our
+frame so width will set as 485 only it
+should cover the whole window in X
+dimensions and for height we'll set it
+as
+180 we'll create the same simply music
+player as I have shown in you as I have
+shown the demonstration earlier
+so we have set the height as
+180
+so now we will use the place method that
+allows you to explicitly set the
+position and size of a window or
+anything like we are just creating a
+frame so it would use to position and
+size of the frame it would be either in
+absolute terms or relative to an the
+window so for that we will write the
+command
+first we will get the
+frame that is stored in the lower
+underscore frame variable and use the
+place function to place it in our take
+window and write the dimensions for that
+we would start from X = to
+0 and place it at y = to 400
+now we'll save the
+file and run
+it okay we have one window already
+opened so I closed it you could see that
+this is the frame we have set it at xal
+to 0 and Y = to 400 so it would
+measure as y = to 0 here and y = to 400
+here so we have placed the frame now we
+will place the buttons on
+that and first we will
+set a logo for simply music
+player that we
+have in our
+folder so this is the logo for our
+simply music play where we will set it
+so that we'll write the
+command first we will create a variable
+and name it as image
+icon and here we will use photo
+image
+so like after writing the photo image it
+would like it would create a photo image
+object and you can use it in other
+widgets that accept an image argument
+that is some buttons they accept image
+argument photo image argument you can
+use the images there also and the image
+object is returned by the photo image
+function it's the easy to display a
+picture in Python however the photo
+image class only supports the GIF and
+PGM PPM formats which is a concern jpeg
+jpg and PNG are the formats that are
+most often
+used so
+now in the photo image object we'll just
+write the location of the
+file as we have it in the same folder so
+we'll write the name only that is logo
+space
+PNG and the extension that is PNG
+only now to get it set as icon photo
+we'll write the command root do icon
+photo
+and pass the argument as false
+comma image and _
+icon now we'll save the file first we'll
+close the previous
+one and run it you could see
+that the logo has been placed
+there so now moving
+on we will create the menu
+will again run the file so here we will
+create the menu to browser
+music so for that first you'll create a
+variable
+menu and create a photo image
+object and write the file name only
+as here we don't have to set the part as
+all the images are in the same folder
+only so for this we will use the menu.
+PNG that is the white image I will show
+you what we will get as
+output
+so we have to place this in inverted
+commas
+and now for this we will create a
+label so inle in some widgets can
+display an image such as label and
+button so Ting in enter label repeat in
+take enter label is a widget that is
+used to implement display boxes where
+you can place text or
+images so we will create a label here
+and place the menu. PNG image on that so
+to create it we'll write the command we
+have started with label and inside we
+will pass
+root and the
+image
+we'll write the variable name here that
+is
+menu and now we will place it we'll
+position it in our take enter window so
+for that write the command
+place and
+inside write xal to
+0
+and dimensions
+are
+okay so y would be
+580 and we would also set the width and
+height for that and the width would be
+485 so it could cover the
+whole sorry I didn't write the
+width that would be 485 and now we'll
+set the
+height I will set as 100 only guys it
+would
+be in the bottom
+section
+so it won't get much height so we'll
+save this and run the
+file you can see that we have created a
+label here also and a label here also
+and we have pasted the white image place
+the white image on that
+label so this is the label that is of
+the white color and now we have placed
+another image on of another
+label so I will show you what for what
+purpose we have done
+that so first we will create a
+button that
+would be for the browse
+music that will write first pass rot and
+then what text we want to show on that
+button that would
+be B
+music and then we will set the width of
+that
+button that would be
+59 and
+then would set its
+height
+and set the height as one
+only and now you you can
+set font also like which font you want
+to get displayed on that button for that
+you just have to write
+F equal to and start the circular
+brackets and inside you can
+write which font you want I will go with
+Cali and font size would be
+12 and I wanted
+bold so in inverted commas I will write
+B and outside this circular
+bracket I will set the foreground
+color that is the text text color only
+foreground color as
+black you can write the hexa code or
+just write the name of the
+color and we'll set the background color
+as white for this
+button use hexa code
+here that is 6
+MFS and now what function does this
+button
+do so it will show us the music that
+would be stored in our folder we will
+browse the folder and it will show us
+the mp3 mp3 files that would be
+contained in that
+fold so in command we would write the
+name of the function that we will create
+to get all the MP3
+files so we
+will
+is add music
+only now outside this bracket we'll
+place
+it it's showing error as we have
+not defined the add music function so
+we'll place
+it at xal
+to0 y = to
+550
+now add scroll
+bar so that when we get all our MP3
+files we can just browse just by
+scrolling so we can get all the MP3
+files on that small window we will
+create now so we'll set the scroll bar
+for that for that write the
+command scroll
+bar and
+inside get
+a frame
+music so
+first
+we set another
+frame or and we will get it
+as gray color only with that we will
+write the command frame underscore
+music we'll create a
+frame and inside we will pass
+root and set the Border equal to
+two
+and
+[Music]
+relief
+equal to
+ra so we have set the relief equal to
+Rich so relief is a style and it's a
+style of a widget that refers to certain
+simulated 3D effects and we are giving
+the 3d effect to a button and that
+effect is Ridge so so we will see that
+but before that we have
+to get our add music
+defined
+so on you won't get the take enter
+window as we have to define
+the and
+music so we have created the frame and
+now we will place this and after that we
+will create that
+music
+function for this we will write frore
+music that was the variable name and
+period place and now we will position it
+in a take window so we want it at xal
+to0 I equal
+to so would place it
+at 5
+85 and we so Define its width and
+height so width would be
+485 and
+height
+100 so we were creating the scroll bar
+so first we'll create create the scroll
+bar and then Define the add music
+function so now we will set the scroll
+bar in the frame
+music variable as we want the scroll bar
+in that frame I will show you in the
+demo only after I create the ad music
+function so first we'll create the add
+music function only
+so we will create it
+here add
+music
+and first we want that it should have
+path and here we would
+use file
+dialogue so it would pop out the dialog
+box
+box to the directory with which we would
+assign or take it
+to
+next right
+if our
+path
+change directory
+pass the path
+here Source equal
+to
+do list of
+directory
+what
+okay we have problems here but now we
+disolve them so first if the path we
+have
+chosen and here we will change the path
+and in this songs variable we'll get the
+list of all the
+[Music]
+songs in that
+directory and
+now we
+will create or run a for Loop for song
+in
+songs but all the songs we
+got f
+s ends
+with
+MP3 that is to
+MP3 get playlist
+do
+insert will
+pass and the
+process and pass the
+song so we
+will get this playlist variable working
+and another function that would be the
+play music
+function so it should play the music for
+that
+we'll create the
+function
+play
+music create a variable
+name that would be music uncore name and
+inside get playlist do get and make it
+active
+and
+now we
+will print music
+name and this would be printed in the
+terminal
+first pass active that is which music is
+playing
+and now you use the mixer
+class and music do
+load function and pass the
+playlist the function notk and get it
+as
+active
+and now here we
+will
+plate now we're getting errors for
+playlist so
+first cre the playlist variable that
+would be having all the songs in
+that so with that we will
+write a variable playlist and that would
+be equal
+to it would have the list
+box equal to
+list
+box and inside we will pass
+the frame that we have created for
+music and set its
+width that would be equal to
+100 and now we will set the font for
+that
+so can see all the names of the MP3
+files in the same font only and for that
+would
+write Times New
+Roman and set the font size as
+10 and and outside this bracket we'll
+set the background color for the
+playlist that write
+PG and we'll set it as gray
+only
+so exxod for GR
+is
+3333 3 and that is six
+times we'll close the inverted commas
+and set the foreground
+color as gray
+only select
+background that would be of the light
+blue
+color
+set the
+cursor hand to I will explain you what
+this
+means first we'll set the
+Border equal to zero
+only T scroll
+command that would be equal
+to light
+blue now we will set the Y scroll
+command
+that would be equal to scroll do
+set so it should be used to
+scroll so we have set the cursor equal
+to hand to that means that it would
+convert to hand when we scroll on the
+list boooks that is when we would try to
+select any of the MP3 player files it
+would show us the hand
+cursor
+and the background color is light blue
+we have set and scroll command equal to
+scroll do
+set okay now we will configure
+it
+okay maybe we have some errors we'll
+resolve them and we will see the output
+also just after this
+so first we will configure the scroll
+bar so that we'll use variable only
+scroll.
+config and
+inside we will have the command equal to
+playlist
+do y view so it should have in the Y AIS
+only and
+now back the scroll
+bar P it at
+right
+and fill the y
+axis for that we'll write
+fill equal to
+Y and now we will P the
+playlist playlist do
+p place it
+side equal to
+right and it
+should
+fill both the
+sides it should be
+filled so that will write the
+command which cannot appear after
+keyword
+[Music]
+argument okay we'll get it sorted
+save the
+file run
+it so you can see
+that we have the browse music button
+here and if we click it we have the
+functioning it
+will we will select the
+folder create MP3 player and this is the
+folder that is music and we'll select it
+it has four
+files I will show you in that also so
+this is the folder it has four
+files it is displaying us all the four
+files and you can see that we have the
+cursor as hand here that is we have set
+it as hand
+to so now we will do other functionings
+that is place the JF run it and place
+the buttons so first we will place the
+buttons and run
+it so for
+that after this Frame music we'll start
+with the
+buttons so first we'll create the play
+button for that we will create a
+variable and name it as button
+play and we will use a
+photo a picture for that button that
+will create a photo image object and
+pass the file for it and we have that
+file name play
+1.png so we'll just write the name of
+that file and invert it
+commas and
+now we
+will set the
+functioning set the button we'll pass
+root and the
+image is equal to the variable we have
+set it for that that
+is button
+play capital for
+play
+and we'll set the background color for
+the
+button that would be white only because
+we have the white label
+here so it would be perfect for that and
+now we'll set the
+border that would be equal to
+zero and
+okay we have to place it in inverted
+commas else it would
+be functioning as a comment Only We have
+set the border that is equal to zero now
+height
+okay H H
+HT oh so just forgot the spelling of
+height okay so I have to declare the
+height first so we
+will get these buttons in 60 for 60
+Dimensions only we'll set the height as
+60 and
+width also as
+60 and now we would set the command for
+this button so what functioning should
+it do for
+that we will write the function name
+that is play music
+[Music]
+and now we will place
+this at X =
+to
+215 and Y =
+to
+487 and we have created the play music
+function above and see that it has the
+function
+to play the
+music we have used the mixer. music. Lo
+from the P game and it would get the
+playlist and the active contents there
+and it would play
+it so we are done with a play
+button we'll save it and run the
+file so take window is opened first we
+close
+that started so first we'll browse so
+this was the folder music we'll select
+this folder you can see we have these
+four files we'll click on the one and
+just click on the play
+button
+okay uh we forgot to add one
+functioning so
+first we
+will create all these buttons and then
+add all of
+functionings now we will create the
+second
+button that would be the stop
+button for that
+we'll create a variable and name it as
+button
+stop and here also we'll create a photo
+image
+object pass file and inverted
+Comas and we have stop 1.png for
+this so we'll just write the file
+name and in the next line we will Define
+the functioning of this
+button so inside button we will pass
+root and
+image that is the
+variable button
+stop and set the background color equal
+to White
+only and then that would be in the
+inverted
+commas and now we'll set its
+border that would be
+zero and height and width would be 60
+only and after that we will set it
+command that would
+be mixer
+do
+music dot stop so we are using the mixer
+CL the music class inside that and the
+stop
+function and now we'll place
+this I take into window with that we'll
+write the dimensions for that X = to
+130 and Y = to
+487 so we have created the stop
+button we will save this and run the
+file you can see that the stop button
+is also displaying on a TI
+window and now
+we will make a third
+button that would be the pose
+button for that we'll use the pose one
+PNG this is the
+image so for
+that just Cy these
+things
+place it
+here so
+button po equal to photo image and we
+will use the
+image POS
+one.png
+and get
+it only as set all other as
+big so button pause background color
+white order zero height 60 withd 60
+command would B mixer do music.
+POS and we will place it
+at 300a
+487 we'll save this file
+file and run it you can see that we have
+the post button displayed
+here now we will get the volume button
+not the volume button just the
+image so this is the image volume. PNG
+we will get it there so for that we will
+create a variable
+volume
+one and create a photo image
+object and set the file
+location and the location is it's
+already placed in the same folder so
+we'll just write the name of the file
+that is volume.
+PNG and that would be in the inverted
+commas
+and
+now we will place
+this
+at X = to 20
+and Y = to
+487 now we save this and the
+file so we are having some
+errors okay uh we can't directly use the
+place
+here so
+first we'll create another variable and
+create a label for this
+image so for
+that we will use panel
+and equal
+to side will pass root
+comma that is equal
+to volume
+one and
+now we will use the place
+and place it
+at X =
+[Music]
+to that was
+at 300
+and Y would be
+700 that would be
+487 so now we'll save this file and run
+it
+you can
+see
+okay we have made a mistake
+here
+so it should be here so X would be less
+it would be around 20 and why would be
+same for that
+only so we'll change
+that save
+this and run the file again
+yeah you can see that we have the volume
+image we have the play button the post
+button and the stop button we will get
+the J working for
+us and now we
+will get our GIF working but before that
+we will make the mixer initialize so
+that uh buttons they should function
+that is play pause and
+stop so we have imported the mixer class
+so we will initialize
+it we'll save this and run the
+file now you can browse the
+music click on the any MP3 file and
+click on the play
+button you can hear that the music is
+playing so I will pause
+it and now we will start with the
+functioning of our
+GF uh so we have to cut the previous
+part and
+now start with frame
+count so the frame count of RG GF is 30
+and we will store it in a
+variable and now we'll create another
+variable as frames and
+inside we start with square brackets and
+create a photo image
+object and inside we will pass the
+file the GI file
+file the name of the file is a1.
+GF and here we have to specify the
+format of the
+file for that we'll write
+format equal
+to
+andas
+GF one
+index
+and we'll set the
+index and
+I so we would be using the list
+comprehension
+here now we will run the loop
+so for that we'll write for
+I in and use the
+range of the frame
+count so what we will do is the GF has
+so many Mes in that so we have to run a
+loop so it would again repeat itself
+as the frame count would be equal to the
+count as the images would be repeated in
+a loop we will set the count equal to
+zero and repeat it again so for
+that now we'll create a
+function and name it as
+update and inside we will pass a
+variable
+and create a variable with name frame
+and
+inside we will
+pass I
+variable
+mames
+and as this image would be displayed we
+will
+increment the
+variable and
+if I is equal to equal to frame count
+that is if it has displayed all the
+images in the
+GF we will set it at zero
+and run it
+again and we would set the gfn label so
+we will configure
+it and we have to define the label
+also so for that we write
+label equal
+to label and said we pass the
+root and now we'll configure
+it and pass
+image equal to
+what frame we
+have currently
+like and
+now
+we will use the after
+function and pass 40 milliseconds so
+that the animation would start
+again and pass the update
+function the current
+IND and now we will place the
+label and x = 0 and Y =
+0 and again we will run the after
+function and pass 0 milliseconds and the
+update function
+function the zero
+frames
+okay
+expl
+this live statement
+only
+okay first we have
+to place the label statement above
+now
+yeah now we are done with that
+GF
+save
+this and run the
+file so we are getting an error
+here
+okay
+so
+subd okay we'll save this file and run
+it again
+okay in code
+displayed so we have this label
+above just browse the files select the
+folder and click on any file and just
+click on the play button you can see
+that our MP3 play is
+working we just set the Joi
+again you pause
+it you could stop it
+so we
+will get
+this
+[Music]
+downwards
+starting with the buttons now we'll save
+the
+file and click on run
+button you can see that the GF has taken
+the whole
+frame and now we'll browse the
+files you selected the folder and and RF
+statement will find the MP3 files and
+click on the file just
+the you can see that our simply music
+player is working
+fine so I will share the code link with
+you in the
+description hello everyone I am M and
+welcome to Simply learn today we will
+take you through the hand on lab demo of
+how you can create a speech to text or
+speech recognition system using python
+before we start I hope this screen is
+clearly visible and the audio is fine if
+yes please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them I'm
+repeating again before we start I hope
+the screen is clearly visible and the
+audio is fine if yes please type in yes
+if there are any issues do let us know
+in the chat section so that we can
+resolve them let's wait for some more
+minutes to let other people
+join yeah until then let me tell you
+guys that we have regular updates on
+multiple Technologies if you are a tech
+geek in a continuous hun for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any updates from Simply
+learn it I think we can get started so
+in today's session we will go through
+what is a speech recognition system
+moving forward we will see how speech
+recognition system works after that we
+will create a speech recognition system
+using python we will perform different
+function and create speech recognition
+system using different python libraries
+before we move on to the programming
+part let's discuss what is the speech
+recognition system first and proceed
+further for the
+same what is a speech recognition
+system a program capacity to convert a
+spoken language into written language is
+known as a speech recognition system
+also known as automatic speech
+recognition computer voice recognition
+or speech to text despite being
+sometimes confused with voice
+recognition speech recognition focus on
+converting speech form a verbal to a
+text format whereas voice recognition
+only aims to distinguish the voice of a
+certain
+person voice and speech recognition are
+two distinct Technologies and they
+shouldn't be confused to recognize word
+in spoken language speech recognition is
+used voice recognition uses biometrical
+Technologies to recognize a specific
+person by their
+voice so after knowing what what is the
+speech recognition system let's move
+forward and see how does the speech
+recognition system
+work peace recognition in Python works
+with algorithm that perform linguistic
+and acostic modeling acostic modeling is
+used to recognize phonetics in our
+speech to get the more significant part
+of speech as words and sentences speech
+recognition start by taking the sound
+energy produced by the person speaking
+and converting it into the electrical
+energy with the help of microphone it
+then convert the electrical energy from
+analog to digital and finally to the
+text it breaks the audio data down into
+sounds and it analyze the sound using
+algorithm to find the most probable word
+that fits that audio all of this is done
+using natural language processing NLP
+and neural networks hidden markup models
+can be used to find temporal patterns in
+speech and improve accuracy so so here
+is one question for you guys I will give
+you one minute for this you can comment
+or you can give your answer in the chat
+section so I can see if the answers
+given by you are right or wrong I'm
+repeating again so here is one question
+for you guys I will give you exactly 1
+minute for this you can comment or you
+can give answer in the chat section so I
+can see if the ansers given by you are
+right or wrong so the question is which
+of the following is the correct
+extension for the python
+file I'm repeating again which of the
+following is the correct extension of
+the Python file option a python option
+BPL option C py and option D
+P so let us know your answer in the
+comment section below so I'm starting a
+timer of 1 minute just type your answer
+in the comment section or in the chat
+section do let me know your answers
+please I Curly ask that everyone take
+part in this to make this live session
+exciting so I'm starting the
+timer you can comment or you can give
+your answer in the chat section so I can
+see if the answers given by you are
+right or wrong so the question is which
+of the following is the correct
+extension of the Python file
+37 seconds remaining option a python
+option BPL option cpy option
+D.P let us know your answer in the
+comment section
+below I cly ask that everyone take part
+in this to make the live session
+exciting you have 15 seconds
+remaining 10 seconds more
+which of the following is the correct
+extension of the Python file 3 2 1 after
+that a lotted time has passed Those Who
+provided the correct response will
+receive a response and those Who
+provided the incorrect response will
+receive one okay so now let's move to
+our programming part to create a speech
+recognition system using python so first
+we will open a command prom to write a
+command to open Jupiter notebook so here
+we will write Jupiter
+notebook press
+enter so this is the landing page of
+jupyter notebook and here you can select
+new python
+file so this is how the jupyter notebook
+UI looks like so at first we will import
+some major libraries of python which
+will help us in creating a speech
+recognition system so here we will write
+right first let me remain rename
+this speech
+Rec so first I will import
+import
+speech
+underscore
+recognition and second
+import pyttsx3
+enter so the incredibly exension I
+repeat the incredibly extensible speech
+recognition Library serves as a rapper
+for a number of well-known speech apis
+the speech recognition Library includes
+default API key for one of these the
+Google web speech API hardcoded that
+implies that you can start moving
+without needing to register for a
+service and python project would benefit
+greatly from using the speech
+recognition package due to its Verity
+and
+usability and then pyttsx3 a python text
+to speech conversion library is called
+pyttsx3
+it is compatible with python 2 and
+Python 3 and work offline unlike
+competing libraries to obtain a
+reference to a pyttsx3 engine instance
+an application calls the pyttsx3 in it
+it is very user friendly program that
+turns type text to into
+speech so moving for let's write code
+for actual speech recognition system so
+here I will
+write Sr equals to
+speech
+underscore
+recognition dot
+recognizer R must be Capital
+here
+yeah there I will write with
+speech
+underscore
+recognition dot
+microphone
+Source
+two then
+colon
+yeah
+here I will write
+print
+we write here okay
+silence
+please okay then I will write here Sr
+dot
+adjust underscore for
+underscore
+ambient underscore
+noise then source to comma
+duration equals to
+2 okay then
+enter then I will print something
+like
+peek now
+please something like that then I will
+write here
+audio audio
+2 equals to
+Sr Dot
+listen Source
+2 and here I will write for text equals
+to
+Sr
+dot
+recognize
+okay
+underscore
+Google audio 2
+then here I have to print the small
+letters in lower case so I will write
+here text equals to
+text
+lower
+this then here I will write
+print it you
+say
+plus
+text uh everything look
+great so a recognizer is a machine
+ability to listen to spoken words and
+identify them you can then use a speech
+recognition in Python to convert the
+spoken words into text make a query or a
+give a reply you can even program some
+devices to respond to these spoken words
+like every time the recognized speech
+from mic function is invoked the
+recognizer is calibrated for changing
+noise condition using the adjust for
+ambient noise this one for ambient noise
+the backlog parameter of the listen
+function allow a quiz size to be
+specified it will listen to what we are
+speaking or
+saying this recognized Google a function
+on the recognizer class which you have
+now developed will be used to query the
+Google web speech API and convert spoken
+words into text recognize Google needs
+the argument audio data in order to
+function properly otherwise it will
+fail python built-in function lower is
+mostly used to handle strings the lower
+method converts each Capital character
+in The provided string to lower case
+before returning the lower cast string
+it accept no arguments it return to the
+original text if the supplied string has
+no capital letters
+now let's check whether it's working or
+not so I will run it yeah run
+all hello how are you
+doing yeah you can see hello how are you
+doing
+printed so let me try another
+one
+subscribe to Simply learn YouTube
+channel and press that Bell icon to
+never miss any update from Simply
+learn so here you can see subscribe to
+Simply learn YouTube channel and press
+that Bell icon to never miss any update
+from Simply learn is
+printed so speech to text is working
+fine so I hope you guys understand till
+here if you have any questions or any
+queries regarding any code or you have
+any questions just put as in comments
+our team will shortly provide you with
+the correct solution now moving forward
+what if you want that system will write
+what we are saying and speak that to
+this will be printed and now moving
+forward what if you want that system
+will write what we are saying and speak
+that to so for that we will write a
+small line of code so first we will
+do we will create one here like we will
+insert cell below we will write a
+function here so
+DF Speak
+Now
+command colon then voice equals
+to pytt
+sx3 do
+init okay then voice do
+say
+command
+and
+voice do run
+and
+wait
+yeah so what we will do
+here we will write like
+speak
+now
+then
+so this voice is nothing just a variable
+to text to speech and in it pytt X3
+engine has started obtains a pointer to
+an instance of an engine that will
+utilize the specified driver if another
+engine instance is already using the
+given driver the other engine instance
+is return if not a new engine is built
+is speak now is a function in which
+using get function I'm getting the
+values of the text this one I will get
+now let's run this sort of code and
+let's see if it is working or not so I
+will
+run hello how are you
+all PE now is not defined
+okay speak now okay and is
+small okay my B runs is again
+hello how are you
+all hello how are you all I hope you can
+hear properly so let
+me run this again for another demo
+example subscribe to to Simply learn
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn subscribe to simple and YouTube
+channel and press the Bell icon to never
+miss any updates from simple learn yeah
+so I hope you guys understand toer if
+you have any question or any queries
+regarding any code or you have any
+question related to python just put as
+in comments our team will shortly
+provide you with the correct solution
+okay okay moving forward so at last
+let's create a speech recognition system
+from which we can open our websites and
+all like YouTube like Facebook like
+simply learn anything so we will open
+open new file for this I will create the
+separate
+one where I will write speech to web
+websites
+okay
+speech to
+web so here I will import import speech
+underscore
+recognition then import pyttsx3
+then one major Library
+import web
+browser okay then I will run it yeah I
+hope you already know these two first
+two libraries so this is third librar is
+used for web browser is the file source
+code the web browser modules offers a
+high level user interface that enables
+user to view web-based content in most
+cases executing the open function from
+the this module will result in the
+desired
+outcome so mov moving forward let me
+write code for it so I will write code
+first then I will explain you line wise
+so I will write
+if underscore
+uncore name then again 2 underscore
+equals to equals
+to underscore main then again
+underscore then
+colon yeah then you have to give a path
+like for your browser you can use Edge
+you can use Google Chrome anything
+Firefox anything so here I will give
+path path equals
+to
+then C drive I have my path
+already
+program
+files and x
+86
+Microsoft and
+Edge
+then okay
+then
+application then
+msh
+exe you have to write at the end this
+percentage
+s don't forget to write this okay so
+path is set so let me create Sr equals
+to
+speech
+recognition do
+recognizer same as previous
+one and I will write with speech
+underscore
+recognition dot
+microphone
+as
+Source then sr.
+adjust
+or
+ambient
+noise then
+Source now everything seems
+good let me write print
+but we have wrote there like speak now
+please so here I will
+write
+please say
+something to
+open
+okay I will write audio
+equals to sr.
+listen
+listen that
+source and I will
+print like what you
+said so it will hear
+[Music]
+hearing and I will here I try and accept
+then try so here I will write
+destination equals to
+Sr dot
+recognize underscore
+Google then
+audio
+print where you
+asked to
+open write here plus
+destination okay so then
+web
+browser web browser dot get that
+path then
+open that
+destination
+destination okay
+so here I will write that
+accept
+exception exception
+as you can write
+e then
+print if there will be
+error
+error
+st
+e
+okay so a recognizer is a machine
+ability to listen to spoken words and
+identify them you can use speech
+recognition in Python to convert the
+spoken word into text you can even
+program some devices to respond to these
+spoken words every time the recognized
+speech from mic function is invoked the
+recognizer is calibrated for changing
+noise condition using the adjust ENT
+noise method a socket is already to
+receive connection after calling the
+listen function prior to performing the
+accept method on the server socket the
+listen method should be called the
+backlog parameter of the listen function
+allow a q size to be specified it will
+listen to what we are speaking or
+saying the recognize Google function on
+the recognizer class which you have now
+developed will be used to query the
+Google web speech API and will convert
+spoken words into text recognize Google
+needs the argument audio data in order
+to function properly otherwise it will
+fail okay so okay so let's try this it's
+working or not let me run
+this okay invalid syntax perhaps you
+forgot a
+comma let me
+see that print
+error think it should be
+here okay let me check
+this
+let me run this
+again Val it syntax perhaps forward a
+comma
+okay
+try to run this
+again
+two okay let me remove this I guess it
+will work fine
+still
+did input okay okay no
+issues so here I will write
+again
+accept
+exception
+e
+and
+erors okay I forgot to write plus okay
+okay
+e yeah now it will work
+fine
+www.youtube.com
+here you can see YouTube is
+open yeah so we will try this one more
+time
+www.fb.com
+so here you can see Facebook is open
+ww.facebook.com
+one more last
+time
+www.s simplylearn
+do.com you can check our amazing courses
+on different different Technologies here
+on simplylearn website simply
+learn.com so I hope you guys understand
+till here if you have any query any
+question of regarding any code so just
+put as in comments our team will shortly
+provide you with the correct
+solution okay I'm repeating again I hope
+you guys understand till here if you
+have any questions or any queries
+regarding any code or related to any
+python question so just put as in
+comments our team will shortly provide
+you with the correct solution I hope you
+guys must understand how to create your
+own speech recognition system using
+python if you have any queries you can
+ask in the comment section below our
+team will shortly respond you as soon as
+possible and if you want this full code
+if you want this full code so just
+comment for the same thank you so much
+for being here if you enjoyed this video
+please do subscribe to our YouTube
+channel and give a like to this video
+today we will take you through the
+Hands-On lab demo of how you can do the
+sentimental analysis of Amazon customer
+reviews before we start I hope the
+screen is clearly visible and the audio
+is fine if yes please type in yes if
+there are any issues do let us know in
+the chat section so that we can resolve
+them let wait for some more minutes to
+let other people
+join let's wait for some more minutes to
+let other people
+join let me tell you guys that we have
+regular updates on multiple Technologies
+if you are a teag gig on a continuous
+hunt for the latest technological Trends
+then consider subscribing to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+great I think we can get started so in
+today's session we we will go through
+the what is sentimental analysis after
+that we will see types of sentimental
+analysis we will see some application of
+sentiment analysis and at the end we
+will see Hands-On lab demo like how to
+implement sentiment analysis using
+python in detail we already have Amazon
+Customer data set with us we will
+perform different function and analyze
+data for sentiment analysis using python
+you can download data set from the
+description box below so before we move
+on on the programming part let's discuss
+what a sentiment analysis actually is
+and proceed further for the
+same sentiment analysis sometime known
+as opinion mining is a technique used in
+natural language processing NLP to
+determine the emotional undertone of a
+document this is a common method used by
+organization to identify and group ideas
+regarding a certain good service or
+concept text is mind for sentiment and
+subjective information using data mining
+machine learning and artificial
+intelligence tools for sentiment
+analysis assist businesses in extracting
+information from unstructured
+unorganized language found in online
+sources like emails blog post support
+tickets web chats forums and comments
+algorithm use rule-based automatic or
+hybrid technology to replace manual data
+processing while automatic system use
+machine learning to learn from their
+data rule-based system execute sentiment
+analysis using
+predetermined lexicon based rules
+combining the two method result in
+hybrid sentiment
+analysis sentiment analysis or opinion
+mining can extract the subject opinion
+holder and polarity or the degree of
+positivity and negativity from the text
+and identify sentiment additionally
+other Scopes including document par
+paragraph sentence and Subs sentence
+level can be used for sentiment analysis
+after seeing what is sentiment analysis
+let's discuss some types of sentiment
+analysis so the first one is find grain
+sentiment analysis by segmenting
+sentiment each phrase or clause in a
+sentence is broken down and examined in
+relationship to the others simply said
+you can tell who review a product and
+what topics a person specifically
+discuss in their feedback and the second
+one is emotion detection instead of
+identifying positivity and negativity
+emotion detection recognize particular
+emotions example could include shock
+rage grief frustration and happiness and
+the third one is intent based analysis
+in addition to identify opinions in a
+text the intent based analysis also
+identifies behaviors for instance a
+frustrated online comment about changing
+a battery can motivate at customer care
+to get in touch to address that
+particular problem and the last one is
+expect based analysis collect the
+precise component that is being
+mentioned either favorably or
+unfavorably for instance a client May
+write in a product review that the
+battery life is too short the system
+will then respond that the battery life
+is the main complaint and not the
+product as a whole so after seeing types
+of sentiment analysis let's see some
+application of sentiment
+analysis organization can employ
+sentiment analysis Technologies for a
+number of purpose such as determining
+brand popularity reputation and
+awareness at a particular period or
+overtime customer service requests into
+categories and the next one is
+monitoring consumer response to new
+improvements or products and the fourth
+one is identifying the demographics or
+Target Market and the fifth one is
+determining the effectiveness of a
+marketing
+effort so here is one question for you
+guys I will give you one minute for this
+you can comment or you can give answers
+in chat section so I can see if the
+answers given by you are right or wrong
+so the question is is text analytics
+also refers to as text mining I'm
+repeating again is text analytics also
+refers to as text mining the options are
+true
+or
+false so let us know your answer in
+comment section below or in chat section
+so I'm starting timer of 1 minute just
+type your answer in comment section or
+in chat section do let me know your
+answers so I'm starting timer of 1
+minute I kindly ask that everyone take
+part in this to make this live session
+exciting so the question is is tax
+analytics also refers to as text
+mining 35 seconds are
+left do let me know your answers I
+kindly ask that everyone take part in
+this to make the live session
+exciting
+you
+want 20 seconds
+left you can comment or you can give
+your answer in chat section so I can see
+if the answers given by you are right or
+wrong so time up guys so after the
+allotted time has passed those who
+provide Ed the correct response will
+receive a response and those Who
+provided the incorrect response will
+receive one okay now let's move to our
+programming part to perform sentiment
+analysis using Amazon Customer data set
+so first we will open command prom to
+write command to open jupyter notebook
+so here we will write
+Jupiter
+notebook press
+enter okay it's Jupiter
+notebook
+so this is the landing page of jupyter
+notebook and here you can
+select new python
+file it's loading
+so this is how the jupyter UI looks like
+so at first we will import some bunch of
+major libraries of python which will
+help us in mathematical functioning so
+the first one is numai so first I will
+write numpy import
+numpy
+NP N is a python Library used for
+working with arrays it also has
+functions for working in the domain of
+linear algebra and matrices it is an
+open source project and you can use it
+freely numai stand for numerical
+python so the next one is
+pandas I will write here
+import
+pandas s
+PD so so pandas is a software Library
+written for a Python programming
+language for data manipulation and
+Analysis in particular it offers data
+structures and operation for
+manipulating numerical tables and time
+series after that we will
+import
+import
+nltk so the natural language toolkit
+nltk is a Python Programming environment
+for creating application for statical
+natural language processing NLP for
+parsing classification stemming tagging
+and semantic reasoning it includes text
+processing
+libraries so after that we will import
+from
+nltk dot
+sentiment
+Vader
+import
+sentiment
+density
+analyzer okay there is no colon yeah so
+the Lexicon and Rule based sentiment
+analysis tool Vader Vader means Valance
+aware dictionary and essential reasoning
+is a customized precisely to Sentiments
+expressed on social media Vader makes
+use of variety of a sentiment lexicon is
+a collection of lexical elements such as
+words that are often classified as
+either positive or negative depending on
+their semantic
+orientation Vader not only informs us of
+the positivity and negativity scores but
+also of the sentimentally of each
+score so the next one is
+import
+re python re module fully supports
+regular expression similar to those in
+Pearl if a regular expression
+compilation or use error occurs the re
+modules raises the exection
+re two key functions that are used to
+manage regular expression will be
+covered so R means regular expressions
+so the next one is
+from X
+blob
+import
+blob
+okay so a python 2 or three package
+called text blob is used to process
+textual data it offers a straightforward
+API to explore typical natural language
+processing NLP
+tasks like part of speech tagging noun
+phrase extraction sentiment analysis
+classification translation and
+more so the next one is
+import
+words
+from word
+cloud a word cloud commonly refers to as
+a tag cloud is an image of words popular
+words and phrases are highlighted using
+Cloud creators depending on their
+frequency and importance they give you
+immediate straightforward visual
+insights that can Inspire more through
+analysis and the next one is
+import
+cbor
+as
+SNS yeah
+so like an open- Source python Library
+based on mat plot Li is called cbon it
+is utilized for data exploration and
+data visualization where data frames and
+the panda Library C Bon function with
+ease so the next one is import met plot
+lip dot P plot
+as
+PLT okay yeah seems good for Python and
+its numerical expression numai met plot
+lip is a crossplatform data
+visualization and graphical charting
+package as a result it presents a strong
+open source substitute for mat lab the
+apis for matplot lib allow programmers
+to incorporate graphs into GUI
+applications and the next one is
+import pu links cff l n KS as
+CF perfect another python module called
+cuff link links plotly with panda so
+that charts can be easily created on
+data frames in essence it function like
+a
+plug-in so next in
+line at BL lip
+at plot
+clip so you can enable inline plotting
+by using the magic function percentage M
+plot Li in line which causes the plots
+and graphs to appear below the cell
+where you plotting commands are entered
+similar to a jupyter notebook it offers
+backend interactivity in front ends the
+next we will
+import what you can like we can import
+okay
+from shortly dot
+offline
+import init underscore
+notebook underscore
+mode comma I
+plot okay in it underscore
+notebook
+notebook
+mode gets through
+yeah
+cf.
+goore
+offline
+so yeah in order to display the plot
+inside the notebook you need to initiate
+plotly notebook mode as follows like
+this keep rest of the script as it is
+like it and run the notebook cell by
+pressing you can shift plus enter graph
+will be displayed offline inside the
+notebook so basically it is used for the
+offline graphing you can see okay so
+next we will
+import from
+plotly do subplots subplots are
+important
+import make underscore subplot
+okay yeah the non-leaf nodes in this
+figure schema are represented by a
+hierarchy of python classes that was
+automatically constructed and is found
+in the plotly do graph objects which is
+normally imported as go these class
+instance are refers to as graph object
+the plotly defined fundamental
+classes
+okay so here we will for some like uh
+warnings you can
+[Music]
+say like to get not
+error so we will import let me give a
+line space
+import
+warning warnings yeah
+warnings dot
+filter
+warning
+ignore warnings do
+one
+and this uh like will not
+show and let me add something
+PD do
+set option
+display do
+maxcore
+Lums okay import import words from
+wordcloud okay there's an error let me
+check what's the
+error
+okay
+import
+this
+wordcloud from
+wordcloud it's
+capital and W is also
+Capital here will be
+Capital let it put is small
+only
+from
+wordcloud okay my bad here from
+wordcloud from
+wordcloud import
+wordcloud
+okay yeah seems good
+so where were
+we yeah in warnings despite the
+notification the software continues to
+execute to display warning messages
+utilize the warn found in the warning
+module the python built-in class
+expection is a subass of the warning
+module which is used to display warning
+messages import warnings okay for seeing
+full data every single columns like okay
+there is error
+cbor no module l c
+so s will be
+small got it okay in
+line is only
+like something like that in
+line okay any errors no I guess no error
+okay yeah for seeing full data like
+every single Columns of PD so here we
+are using this pd. set option so we can
+use for it so moving forward let's
+import data set so for importing data
+set we will write
+here
+uh like DF equals to PD dot read
+CSV
+Okay add data set
+name
+so so you can download data set from the
+description box below so no worries of
+for
+that let me run this
+okay so like here is PD is for Panda's
+Library read is used for reading the
+data set from the machine and CSV is
+used for the type of file which you want
+to read so let's see our
+data so here I will write DF dot
+head
+yeah so if you want to like if you want
+to see top five rows of your data set
+you can use head and if you want to uh
+like see five rows of your data set you
+can use tail inser instead of head this
+one okay so this is our data set with
+only five rows if you want to see full
+data set you
+can like from starting from zero and
+ending it 4914 rows okay 49115 rows and
+12 columns
+right so let me give something like this
+for the better
+visual
+yeah okay so moving ahead let's sort
+this Wilson bound column to ascending
+order for better analysis so I'm talking
+about this Wilson lowerbound column this
+one for it's not 0 0 0 like in all the
+rows so let me show you
+so here you have to write like DF equals
+to DF do
+sort Val
+use
+Wilson spelling should be
+correct
+lower
+bound I make it to ascending
+order
+ascending sorry descending order
+so BF do
+drop
+named
+okay
+uname colum
+zero okay in
+place in place equals to true
+comma XIs = to
+1 okay so let's see your
+data so here you can see the data is
+sorted in
+as in as ascending order
+okay so the provided row or column is
+eliminated via the drop function the
+drop method eliminate the specified
+column when the column AIS is specified
+the drop method eliminates the
+designated row when the row xes is
+supplied okay so I hope you guys
+understand till here if you have any
+queries or like any queries regarding
+any code or there is something question
+till here just put as in comments our
+team will shortly provide you the
+correct
+solution
+okay so moving forward let's make a
+function for missing
+values so
+okay so I will write here like
+DF
+missing
+values
+analysis
+analysis okay it's DF for function we
+use
+DF
+yeah
+F A
+columns Wass
+to co for
+columns
+for or Co n d F dot
+columns if
+DF
+column is
+null do
+sum is greater than
+zero underscore
+missals to
+DF na underscore
+columns
+underscore is
+null dot
+sum dot sort values sort underscore
+values like in ascending
+ascending ascending equals to
+True like
+some be like this and
+this that's fine I
+guess
+yeah so here I will write
+ratio underscore equals
+to
+DF
+nacore columns
+underscore do is
+null same thing that
+sum divided
+by
+F do
+shape
+Lev
+100
+sort
+values
+standing to true
+fine okay
+okay is okay and the TF
+part that sort value is equals to
+sending to True fine
+so here we will write missing
+underscore DF = to
+PD dot
+concat dot
+round
+ratio underscore comma
+2
+perfect their XIs will be one
+okay
+is equals
+to I will give
+like total where I will write missing
+values
+missing
+values okay comma
+ratio
+thing underscore DF equals to PD dot
+data
+frame go
+DF okay so let me
+return d
+f let me create one more function for
+like check data frame so
+DF Che underscore data
+frame
+okay equals to
+5 comma
+tail equals to
+5
+so here I will write
+print
+okay
+okay do
+center2
+comma and for Rose
+Sprint
+r
+craes dot
+format what
+format
+do
+shape
+Z so for columns
+print
+do
+shape
+and and types like of types of
+data
+Dot
+Center same as like that
+[Music]
+82
+ENT DF do D
+types
+Center just printing this this like you
+will see don't
+worry just stay with me you will see the
+beautiful
+result okay
+print
+values print missing values uh
+analysis this is like
+DF
+okay
+then
+again
+values like there's many how many
+duplicated values are there so dot same
+for the center
+again this
+one
+print have dot
+duplicated don't worry I will explain
+you like like by line just stay with me
+let me write the whole code first
+print
+tiles like I'm printing multiple of
+things so just be with
+me
+ENT
+82
+comma
+EF
+dot
+onti
+25
+comma
+okay
+check data
+frame I'm hoping like there will be no
+error
+yeah so you can see now like
+multiple information regarding data set
+is
+printed so this shape is for like how
+many rows and columns present in the
+data set like in types you can say like
+every column type like object n 64 float
+64 and many more are like present so
+like you can see review text is like
+object and dat difference is N64 and
+we'll lower bound is float
+64 okay so total missing
+values so total missing values are like
+uh one from here and one from here like
+one in from reviewer name and other is
+from revie
+text and like there is no duplicated
+values in our data
+set and here you can see so like after
+that quantiles a quantile defines a
+particular part of the data set that
+that is a quantile determines how many
+values in the distribution are above or
+below a certain limit special quantiles
+are the like quartile quarter and you
+can say quintile that the fifth one and
+the percentile which is from 100 okay so
+quantile is for like
+quarter or the you can say the fifth one
+so why I wrote this 83 82 and this for
+this purpose for making this something
+look cool that is
+why okay
+and
+yeah so moving
+forward let's see unique values and in
+each column okay so I will write
+def
+check
+plus
+frame
+unique fals to PD dot
+data
+frame
+variable
+variable
+the
+frame columns
+comma
+classes
+colon
+data
+frame
+I I will write like n
+unique
+unique
+U
+or I
+in data
+frame
+columns like n
+unique
+[Music]
+Q DF equals
+to
+sort values
+cles Comm
+ascending equals
+to
+false
+okay n
+unique underscore DF equals to n
+unique EF do
+reset index
+drop equals to
+true
+return an
+unique qu and
+un
+DF Jack underscore class which one
+DF
+so let me run this
+first yeah it's running you can see
+here okay there is an error
+classes
+okay check class
+DF is
+saying this
+is
+Okay C is capital c is
+small let we run now
+yeah so here you can see the every
+column having unique values are sorted
+in descending order like review Tex have
+like more unique values so it come first
+and then reviewer name reviewer time
+date difference Wilson lower bound score
+average then goes to
+overall okay moving forward let's do
+some categorical variable analysis for
+overall okay so this will be like
+amazing something amazing is going to be
+happen
+so on strands equals to so I'm giving
+here like some color values
+so B3
+4 d
+22 e b 00 C okay so you can change you
+can like write whatever you want
+color hashtag oh I didn't write hashtag
+here
+hash three
+Comm 0
+C 92
+E
+EB
+z
+c and then D you like five
+right okay so DF let's make function
+Okay small
+DF
+categorical
+variable okay DF
+comma
+column okay categorical variable summary
+yeah perfect so let make some figures so
+make
+subplots
+plots rows equals to 1
+comma
+calls to
+two let me write from here like
+subplot
+metals
+to count plot
+like one for
+percentage
+percentage
+okay so specs
+spe equals
+to okay like
+type
+colon
+colon
+why
+okay same
+type col here
+domain
+figure.
+add and then
+[Music]
+Trace go
+dot
+bar like one bar and one that pie chart
+okay y = to
+DF
+columns
+name
+values do to
+list for X you can L
+string yeah s
+Str
+I or
+I
+in
+column
+name
+value
+counts
+xtals to
+DF colum
+name do
+value counts and then
+bracket dot
+values dot to
+list
+okay so for
+text
+font the size should
+be 14 is enough I
+guess so
+column M go
+name X
+position so I'm doing for like making
+chart
+so stay with me to see that amazing
+chart okay so show
+Legend
+to
+T
+color to
+constants so these are the like colors
+so I'm giving here value like V variable
+name
+con
+strs
+line equals
+to it's
+hasht DB
+e 6
+EA one okay
+small
+okay let me just like go over
+through everything is correct or not for
+the column
+name very count index yeah it's fine
+text equals to DF column name
+do value counts do values to to list
+okay text font equals to T size then
+okay 14 size is enough name equals to
+column name and text position equals to
+Auto and show Legend Falls and
+Mark dict like color equals to constant
+okay F line equals to color and this
+yeah this okay
+cool row = to 1 comma column =
+1 it seems
+good like for pie chart we will make
+figure dot add so this is done for the
+like line chart not line chart that bar
+chart and this I'm doing for the pie
+chart okay
+Trace go
+dot
+Pi F
+columns column
+name
+value
+isuse to
+DF again that column
+name
+value
+count
+counts and Dot
+values nextext
+font
+take size
+I will prefer 18 is
+enough
+Exposition like Auto is
+fine so
+Legend to no need of Legend false
+name equals to column
+name column
+name let's to like d then colors
+go to
+constants = to
+one columnal to two like in second okay
+you will see and you will get to know
+don't worry so figure dot
+update layout
+equals
+to
+Colum
+n.
+five
+comma
+X
+should be on
+Center and Y
+anchor be on
+top let
+shortly
+okay I
+plot
+figure let me run this okay like call
+equals to
+two now let's see the chart of like
+column overall one so we will write here
+categorical okay
+variable
+variable
+summary and then data frame name DF
+comma overall
+okay let's run
+this okay it's loading here it's
+loading yeah you can see this is this is
+our bar plot and this is our pie
+chart
+so like this is
+overall uh from overall you can say that
+column
+so like
+percentage bar and that bar plot so this
+is how our like pie chart and bar chart
+looks like I hope you guys understand
+till here if you have any questions or
+any query regarding any code okay like
+any code any sort of code so just put as
+in comments our team will shortly
+provide you the correct
+solution so moving forward our goal is
+to rank the com comments by the
+sentiment analysis so we don't get hung
+up on the other details I have sorted
+this data set according to certain rules
+before so moving forward we want to
+clean our data so let's see the sample
+data for
+cleaning so DF
+dot
+review
+text okay dot
+head let me run this so so this is our
+sample simple data looks likees so let's
+see like data full data for this okay
+let me see
+for what this I guess
+okay or like any particular row you can
+say I can take okay so I will write
+review _
+example
+example equals to DF
+dot VI
+you text uh I will take a random 2031 my
+guys okay so
+review underscore
+example so this is like at
+20131 there is one review text okay so
+in that the whole data is here like uh
+like so my lovely wife bought me a
+Samsung Galaxy Tab for father this this
+this this like to find the exact model
+number this is a long you know command I
+got the this this this it works like a
+charm okay
+so after seeing this data what we're
+going to do is like we will clean it
+from punctuation and numbers using Rex
+Rex what regular expression okay so here
+I will write review uncore
+example example
+okay equals to R do
+sub and what I will do
+is okay I will explain don't worry small
+l
+to capital
+A A to Z
+okay comma then
+space comma review underscore
+example
+example add
+sorry
+yeah
+view so here we used re for regular
+expression okay and so all the
+punctuation and numbers are removed from
+particular
+data so let me check
+first okay this A to Z then A to Z okay
+fine so like all the punctuation and
+numbers are removed from particular data
+I will now convert the text to all lower
+case our machine learning algorithm
+recognize words that start with the
+capital letters as a different word and
+we will convert them to lower case so
+thus our machine learning algorithm will
+not perceive words that start with a
+capital letter as a different word so
+what I will do is here I will write
+review
+example
+example equals to G
+[Music]
+view again
+example
+lower I will
+split
+split
+okay yeah
+example so here you can see we have
+converted all the words in the lowercase
+letter by using lower function and why
+they are coming in new lines because we
+are splitting them using split function
+okay if you see only did lower case for
+single row like we did for the like 20 I
+guess 20 31 okay yeah so let's make all
+row same in lower case so I will write
+here r D equals to
+Lambda
+X
+St
+Str
+X for
+DF
+view
+text is capital
+text
+DF
+view
+text
+XT okay equals to
+DF
+view yeah do
+lower have dot
+head see all the data is in like lower
+case so I printed just top 10 rows and
+in like in reviews text column all the
+are in the lower case now so I hope you
+guys understand till here if you have
+any question or any query regarding any
+code or question till here like any code
+just put as in comments our team will
+shortly provide you the correct solution
+and if you need this full code you can
+comment down below
+okay so now the time is come to do
+sentiment analysis because all the data
+is
+sorted so what will I write
+here let me do it little bit up
+yeah so I will write
+from yeah from
+Vader
+sentiment do
+Vader
+B
+sentiment
+intensity analyze
+okay
+have
+polarity
+subjectivity
+subjectivity to
+DF
+VI you
+text
+apply PD do
+series okay here you like text
+blob then again
+text
+do like
+sentiment let me run for Loop for
+index comma
+Row in
+DF G VI
+text what it
+items
+for
+sentiment
+density
+analyzer
+polarity
+scores
+row netive I
+score or neutral I will write
+score if for
+positive
+if this is something crazy if negative
+is greater than
+positive then DF do
+location
+index
+comma
+sentiment equals
+to
+negative
+negative okay
+then El
+if positive is greater than
+negative then in this case DF Dot
+log
+index
+comma
+sentimentals
+to
+positive B
+capital
+else EF do LS
+see
+index
+ENT
+to
+neutral
+Okay so like this is for sentimental
+analysis and text blob this thing like
+text blob this blob okay
+blob text blob will return polarity and
+subjectivity polarity indicates your
+mood that is whether it is positive or
+negative or neutral it returns a value
+between 0 and one the closer to one the
+more positive and the closer to zero is
+more negative okay let me run this it
+will take a little bit time because this
+sentiment okay it is getting ER RoR like
+module Panda has no attribute series
+okay which
+one text
+box XT just
+sentiment okay here what is this the
+thing s is
+capital let me run
+now it is
+executing like fit for a while
+wait so it will take time to run because
+like because of this sentiment intensity
+analyzer it take
+times G sentiment
+intensity analyzer okay spelling mistake
+again
+why index index is not
+defined sorry
+again
+index
+it will run I guess because everything
+seems
+good negative positive and this
+else loading so I have to wait like for
+like 2 minutes more I
+guess
+still loading
+guys it take
+time sentiment intensity
+analyzer so let me tell you again
+sentiment analysis like this text
+blob text blob we return polarity and
+subjectivity so polarity it indicates
+your mood that is whether it is positive
+it is negative or it is it will be
+neutral it returns a value between 0 and
+one the closer to one the more positive
+the closer to zero more negative okay I
+guess is
+still
+running so it will take time so let me
+write code for that uh 20 interpretation
+I repeat moving forward let's identify
+the 20 interpretation now we can include
+the positive negative and neutral status
+of the command okay then
+DF
+DF
+timent what equals to
+positive
+start use
+son
+lower
+sending equals to
+false
+okay dot
+head
+five if I will run it
+may give error to me because it's still
+running still running here it's still
+loading
+so let let let me write code for that
+unbalanced data problem so like we will
+category that data into positive
+negative and
+neutral Okay
+so
+categorical
+variable
+summary
+DF
+ment yeah it came like this because of
+this wait I will tell
+you
+yeah so here you can see the pie chart
+distributed in negative positive and
+neutral emotions okay or you can say
+ratings and here you can see the bar
+chart also
+so and you can see the percentage
+distributed in each like in positive
+negative and neutral one so I hope you
+guys must understood the concept of
+sentiment analysis how we can implement
+it using python hello everyone and
+welcome to this really interesting video
+on football data analysis project using
+python this is going to be a live
+tutorial now in this video we'll be
+performing a handson demonstration on
+analyzing and visualizing the English
+Premier League data set for the 2020
+2021 season which is the last season of
+eepl let me show you the data set first
+that we'll be using for our demo
+session all right so here is the eepl
+2020 2021 season data set that we'll be
+using for our demo so the First Column
+you can see the names of the different
+players that play in the English Premier
+League so we have around 532 players
+participating in the eepl last season
+then the second column is about the club
+that belong to you can see we have the
+different clubs first is Chelsea we have
+Manchester City Man United Liverpool ler
+West Ham United Tottenham Arsenal and if
+I scroll down you can see the other
+clubs such as
+the clubs like Aston Villa we have
+Everton wolver Phantom vandros we have
+Crystal Palace and
+others now coming to the third column
+which is about the nationality of the
+players that is the Players belonging to
+the different nations we have England I
+think this is Sagal Germany we have
+France Spain Italy Brazil Croatia and
+others
+now the fourth column is about position
+that is the position at which these
+players play at now you can see some of
+the players play at different position
+they can play for two different
+positions like for example Mission Mount
+from Chelsea plays as a midfielder as
+well as a forward now Edward meny is a
+goalkeeper DF is for Defender son and so
+forth now next we have the age of the
+players we have the total number of
+matches played by each player in the
+last season of eepl then we have the
+total number of starts the player got
+that is whether the player was part of
+the playing 11 or not then we have the
+total number of minutes the player had
+played in the last season of EPL this is
+the total number of minutes the player
+had played next we have the total number
+of goals scored by each player we have
+the total number of assists given by
+each
+player then we have passes
+attempted the percentage of passes
+completed up next we
+have total number of goals scored from
+penalties and then we have total number
+of penalties that were taken now we have
+two different columns XG and XA so XG is
+the expected number of goals from the
+player in a match and x a is the
+expected number of assists from the
+player in a match and finally we have
+the last two columns total number of
+yellow cards received by the player in
+the last season of EPL and then we have
+the total number of red
+cards received by the player in the last
+season of EPL that is 2020 2021 so we
+are going to use this data set and we'll
+be analyzing and answering specific
+questions such as the total number of
+goals scored the total goals scored on
+penalties and the total goals that were
+missed uh while taking penalties then we
+have players from different nations
+playing in EPL then we'll also look at
+which clubs have the maximum number of
+players in the squad we'll be also
+analyzing the players based on their age
+group then we'll see the
+total goals scored by the top 10 players
+in the last season of e and we'll be
+visualizing these results with the help
+of different charts like the bar chart
+the pie chart and we'll also
+create plots using libraries like cbon
+and matplot lab so let's head over to
+our jupyter notebook let me show you the
+jupyter notebook that we'll be
+using cool so this is my Jer notebook
+that I'll be using for this live session
+today you can see I have renamed the
+notebook as eppl 2020 2021 data analysis
+demo and and I have some of the cells
+filled already this is to make sure we
+save some time cool so first and
+foremost let's go ahead and UT the
+necessary libraries that we'll be
+requiring for our demo so first I'll
+import the data manipulation Library
+which is spanned as PD and then we'll
+import
+nump as
+NP then I'll have m plot
+lib
+dot
+pyplot as
+PLT after that we'll be importing the
+second data visualization Library which
+is cbon as
+SNS finally I'll say
+percentage Mac plot lib in line so we'll
+get our results just right below the
+code once we create the charts and
+graphs so let me hit shift enter to run
+this first
+cell all right you can see we have
+successfully imported the different
+libraries now the next step is to load
+our EPL data set so I'll create a
+variable called _ DF which essentially
+stands for data frame I'll say PD dot
+since it's a CSV file that we just saw
+I'll say read uncore CSV now within the
+quotations we are going to pass in
+the location of the file followed by the
+file name and the extension of the
+file okay so I have copied the file
+location let me just paste it
+here within the codes now we are going
+to
+give one
+more back slash so that that it reads
+the location
+correctly I guess you don't have to do
+this if you are
+on a Linux or Mac system now after this
+we are going to give two
+more backs slash and we are going to
+give the file name which is eplore 20
+uncore 21 dot
+CSV
+cool now
+next line I'm going to print the head of
+the data frame that is the first five
+rows of the data frame that is _ DF so
+I'll say _ DF do head let's run it now
+you can see the output we have the first
+five rows printed from the data set and
+you can see the different columns that
+we have all right now in The Next Step
+let's
+check
+the info function that will give the
+total number of columns that are
+there as well as display the total
+non-null values in each of the columns
+so I'll say
+EPL
+uncore DF
+doino let's run it you can see we have
+the different column names and on the
+top you can see there are total 532
+entries we have total 18 columns you can
+see total of 18 columns these are the
+total columns their column names and on
+the right you can see the total number
+of non-null objects which means we do
+not have any null value in any of the
+cells or any of the columns and at the
+bottom you can see the memory usage and
+the data types all right now let's go
+ahead and use the describe function to
+get some summary statistics about our
+data set so I'll say _ DF do describe
+let's run
+it and now you can see we have the count
+mean standard deviation the minimum
+value the maximum value 25th percentile
+the 50th percentile and the 75th
+percentile now this describe function
+only works on numeric
+columns
+cool
+now let me show you a way in which you
+can check the total number of null
+values that are there in each of the
+columns for that we are going to use the
+is any function and over that I'm going
+to use the sum function to get the total
+number of null
+values here I'll
+see
+eplore
+DF dot I'll say is any a DOT
+sum now let's let me run
+it here you can see we do not have any
+null values for any of the columns
+cool now let me show you the process in
+which you can create two more columns
+such as the minutes per match and we'll
+create another column that is the goals
+per match so for that I'm going to first
+call my data frame which is _ DF and
+within square brackets I'm going to give
+my new column name that is minutes per
+match this should be a valid python
+name I'll say equal to now the minutes
+per match should be equal to the total
+number of minutes divided by the matches
+that is the number of matches played so
+I'll say _
+DF I'll divide
+minutes by let me give a bracket here
+I'll say
+eplore DF and then I'll divided by
+the matches
+column and we are going to set the type
+as
+integer all right then the second column
+I'll create is goals per match so I'll
+say _
+DF and my new column name is goals per
+match equal to let's start with the
+bracket we'll say eplore
+DF we consider the goals
+column and
+then we'll divide it by
+_
+DF give a square bracket and
+say
+matches
+and we are going to convert the type
+as
+float cool let's run it now if I
+say
+print
+PL let code DF you can
+see or let's say _ DF do head
+to print the first five
+rows here you can see we have
+created two more columns let me just
+remove this print statement and we'll
+run it again now you can see we have
+created two more columns that is the
+minutes per match for each of the
+different players and then we have the
+goals per match for each of the
+different
+players all
+right now
+in the next cell we are going to
+calculate the overall total goals that
+were scored in the
+2021 or 2020 2021 EPL season so let's
+see total goals I'll create a variable
+called total underscore goals equal to
+I'll say
+eplore
+DF we're going to take
+the goals
+column and then I'm going to use the sum
+function now let's
+print
+the
+total
+goals if you hit tab it will autoc
+complete let me run
+it
+okay to remove goals now you can see
+there were total 986 goals that were
+scored in the last season of English
+Premier League now let's find out out of
+this 9986 goals how many goals were
+scored in penalties so for that we are
+going to use the penalty uncore goals
+column I'll create a variable called
+total
+underscore
+penalty equal
+to we'll say
+eplore
+DF and then we are going to consider the
+penalty uncore goals
+column then I'll say dot sum to find the
+total number of goals that were scored
+in
+penalties if you hit tab it will give
+you a prompt let me select the second
+one run it there you go here you can
+see out of 986 total goals that were
+scored in the EPL last season 102 goals
+were code out of
+penalties now in the next analysis we
+are going to see the total number of
+penalty attempts that were taken and how
+many
+converted so for that let's create
+another variable called total
+underscore
+penalty
+attempts equal
+to now this should be the penalty
+attempted column so I'll say EPL under _
+DF and we are going to consider the
+penalty
+underscore attempted
+column say dot sum to find the total
+number of penalties that we taken and
+we're going to use the print
+statement let me hit Tab and I'll select
+penalty attemps let's run it so overall
+25 penalties were taken out of which 102
+got converted the rest all were
+missed we are going to create our
+first plot in our live analysis about
+the EPL 2020 2021 season so we are going
+to create a pie chart for penalties
+scored and
+missed okay so first of all we are going
+to set our plot
+figure to a
+certain
+size let's
+say I'll say figure
+size equal
+to and this will be at
+tle let's say I'll say 13 comma
+6
+now I'll
+see penalty not
+scod equal to a data frame that is
+_
+DF I'm going to pass in
+my
+ntore attempted
+column and then
+Summit and I'm going to subtract the
+total penalty goal
+so that is total underscore penalty
+goals say data equal to this will be a
+list so I'll
+say penalty not code let me just copy
+and paste it comma we're going to pass
+in
+total penalty
+goals also give labels to our pie chart
+so the
+labels will
+be
+penalties
+missed is
+scored make sure you put it within
+quotations we are going to
+give color to the
+P chart so for that I'm going to use my
+cbon library I'll say SNS do
+colore
+pallet say I'll set my color pallet to
+set two you can check for different
+color paletes just Google
+caborn color palet and click on the
+first
+link if you scroll here you can see the
+different
+color
+Petes you can see Tab
+10 then you also have
+hls H USL which is for hustle you have
+set to paired let scroll down you have
+rocketor R rocket you also have Cube
+Helix then magma and others all right
+let me come back so I'm using the set
+two pallet and we'll see PL dot create
+the pie chart we are going to use the pi
+function and we'll pass in our data
+followed by the labels parameter which
+is equal to the labels that we have
+declared above which is this
+one
+okay
+now I'll say the colors parameter should
+be equal to the color pallet that we
+have defined in the above
+line next we are going to use
+Auto PCT so this autop PCT enables you
+to display the percentage value using
+python string formatting so you can use
+the autop PCT to display your percentage
+values let me give a certain
+formatting percent dot
+oof which is for string I'll give two
+percentage
+values finally I'm going to say PLT do
+show to display
+my
+chart cool now let's run this okay there
+is an error here which is
+plot.
+figure this should be plot. figure and
+not
+underscore there you go you can see we
+have our first visualization for the
+2021
+EPL data analysis
+demo you can see 82% of penalties were
+scored while 18% were
+missed now
+next we're going to find the total
+number of unique positions for
+which each of the players play for that
+is this will also tell us the total
+number of positions that are there in
+football so I'll say eplore
+DF let's consider the
+position
+column and I'm going to use the unique
+function to find the total number of
+unique positions that are there such as
+the center forward
+midfielder Defenders goalkeepers Etc if
+I run it you see here we have
+goalkeeper midfielder and forward
+forward Defender
+midfielder Defender and midfielder
+Etc you can see some of the positions
+are a combination of two positions which
+means a few of the players play for two
+different positions on the pitch all
+right moving
+forward we are going to see
+the total number of forward players that
+played in the last season of eepl so for
+that I'm going to see
+eplore
+DF again within square brackets I'll say
+eplore DF and we are going to consider
+the position
+column basically subsetting the data
+frame to derive valuable
+information now this should be equal to
+equal to my value which is FW that is
+forward let's run it there you
+go so here if I scroll down you can see
+see the different players that played
+for there are total 81 rows which
+means 81 players in the eepl played
+as forwards you can see Teo Warner from
+Chelsea Tammy Abraham Who currently
+plays
+for Roma in Italy we have olivo zerud
+then we have Rahim
+Sterling also have Billy Shard from
+United and Daniel
+also next question that we are going to
+answer
+is we'll see the players from different
+nations so we'll see in
+eepl what are the Nations or the total
+number of nations from which players
+come from so I'm going to use this
+function called numpy do size and within
+brackets I'll see eplore DF we're going
+to to consider the nationality column to
+find the
+count so I'll say
+nationality and we are going to use the
+unique function to get the total number
+of unique nations from which the players
+play in the eepl if I run it you can see
+here there are total 59 nations from
+which the different players play
+from now let's see the most players come
+from which
+Nations for
+that going to create a variable called
+nationality equal to I'm going to use my
+data frame _ DF followed by the group by
+function first we are going to group by
+nationality column and then I'll say dot
+size and we are going to
+sort values in ascending
+order so for that I'm going to use the
+ascending parameter and I'll set it to
+false which means we are going to print
+in descending order and not
+ascending
+next I'll
+say nationality. head since I want to
+know the top 10 nations from which most
+of the
+players come
+from we also so going to plot
+it this should be a bar chart so I'll
+say
+kind equal to
+Bar let's give
+a
+figure
+size equal
+to let's say 12 comma
+6 and
+now I'm going to say color equal to we
+again going to use the C Bon color
+palette pet so I'll say SNS do
+colore
+pallet and this time we are going to
+choose let's say
+magma all
+right think everything is fine let's
+just run
+it great now if I scroll
+down you can see the
+different nationalities the top 10
+nations from which the most players come
+from of course since eepl is in England
+or is it hosted in England so most of
+the players are from England then we
+have the most number of players playing
+from France Brazil
+Spain this is Ireland I guess then we
+have Portugal Scotland Netherland Wales
+and
+Belgium
+cool
+now moving moving forward let's come to
+the next cell we are going to see the
+clubs with maximum players in their
+squad this will tell us the clubs let's
+say the top five clubs which have the
+maximum players in their squad or had
+the maximum number of players in the
+2020 2021
+season we're going to consider the club
+column and we're going to count
+total number of
+players so I'll say
+values rather value underscore
+counts let's use the N largest function
+to get the top five clubs and we are
+going to plot it
+again this will be a bar chart again so
+I'll say kind equal to
+Bar comma and we'll see
+color equal to SNS do
+colorcore
+pallet let's choose a new
+pallet
+namely where it is so I'll write it
+correctly b i r i d i s fine let's run
+it and here you can see we
+have West Brom which Alban which had
+nearly 30 players in the squad
+then Manchester United I think they had
+29 players in their squad last season
+then Arsenal with the third highest
+number of players followed by
+Southampton and Everton so last three
+had the same number of players close to
+29 or 28 all
+right now similarly if you want to check
+the clubs with the least players in
+their squad we just need to use the N
+smallest function here I can copy this
+cell of code we'll just edit it instead
+of n largest I'll say n
+smallest
+cool rest everythings the
+same it you can see here
+leads United had the least number of
+players in their squad followed by
+Manchester City Crystal Palace Tottenham
+Hotspur and West Ham
+United
+cool now in the next analysis we are
+going to see the players based on age
+groups so we are going to Define four
+age groups let's say
+players less than 20 years of age then
+players between 20 to 25 years of age
+then we have have players from
+25 and 30 that is 25 between 25 and 30
+and finally we have the different
+players who are above 30 years of eache
+for that I'll create my first variable
+which is under
+20 this should be equal
+to
+underscore
+DF I'll say eplore
+DF we'll consider the age
+column again we are subsetting the data
+frame so I'll say less than equal to
+20 then we'll have age between 20 uncore
+25 equal
+to
+EPL
+underscore
+TF subset as e _
+DF consider the age
+column it should be greater than
+20 I'll
+say
+ambus and eplore
+DF use the H column should be less than
+equal to
+25 let's copy this
+next we are going to see for age between
+25 and 30 so I'll edit my variable name
+2530 here this should be greater than 25
+and less than equal to
+30 cool finally we'll have
+players above
+30 equal to I'll say
+eplore DF
+within square brackets I'll say
+eplore DF we'll consider the H column
+should be greater than
+30 cool let me run it and now in the
+next cell which is already filled this
+is to create the pie chart for the above
+age groups that we created to see the
+players based on different AG groups so
+this is very similar to creating a pie
+chart again so first of all I'm creating
+an ump array for all these four
+variables and we are going to consider
+only the name then I'm setting my labels
+as less than equal to 20 greater than
+equal to 20 and less than equal to 25
+greater than equal to 25 and less than
+equal to 30 and then above 30 I have the
+title as total players with each groups
+let's
+see the font size as 20
+cool let's run it and you can see we
+have our pie chart so from the pie chart
+you can see the last season of English
+Premier League at least 37% of the
+players were aged between 25 and 30 and
+then we
+have 35% of players who were between 20
+and
+25 13. 3% of players were above 30 years
+of age and we had
+14.7% players less than equal to 20
+years of
+age now if you were to check the total
+under 20 players in each Club so for
+that I'll see
+players
+under
+20 equal
+to again we are going to subset our
+original data frame _ DF I'll say
+eplore
+DF age should be less than
+20 next we'll
+see
+p underscore under
+20
+consider the club
+column then
+values underscore
+count let's
+plot I'll
+say kind equal to
+bar and we are going to choose the
+color will to SNS dot
+color
+pallet let's
+say we'll go with Cube
+Helix
+cool okay let's debug the error there
+are some errors it says series object no
+attribute values underscore count this
+should be value underscore
+counts now let me run it cool you can
+see there are
+seven players or there were total seven
+players in the Manchester United Club
+who were less than 20 years of age
+followed by five players in wolver
+Hampton wanders then shff
+United and the rest of the other clubs
+you can see now let's find out all the
+players who were aged less than
+20 in Manchester
+United well let me just scroll down cool
+so here I'll
+see
+players
+under
+20 again we're going to see
+players under
+20 to subset based on Club equal to
+equal to I'll give the value as
+Manchester
+United run
+it and you can see the seven players
+that we saw above here you could see we
+had seven players in Manchester United
+that were aged below
+20 and the names are mission Greenwood
+we have Brandon
+Williams Ahmad Deo Anthony
+Alena we also have William Thomas fish
+cool and you can see that each is here
+189 19 all of them are less than 20
+years of age and similarly you can also
+check for other club let's see you want
+to see the under 20 players in
+Chelsea we just need to replace or
+subset our club for
+Chelsea there are only two players who
+were eached less than 20 Callum hatson
+ooi and Billy
+Gilmore
+cool we're going to create a plot to see
+the average age of players in each Club
+so for that I'll say PLT
+dot
+figure take the figure
+size as let's say 12 comma
+6 then we're going to use the cbone
+library and the box plot this
+time the box plot is a good way of
+finding the variability in your data it
+will give us the mean the median the
+25th percentile the 50th percentile the
+75th percentile the maximum value and
+the minimum value and the box plot will
+also show if there are any outliers in
+the data so my X will be Club my y value
+would be age and my data will be my
+original data frame that is
+eplore DF I'll see PLT
+dox
+text and we are going to say rotation
+equal to
+90° let's run
+it if I scroll down here you can see we
+have the box plot so for chelse C you
+can see
+the minimum age value the maximum age
+value and then you also have an outlier
+here I'm assuming this is someone who's
+aged above 36 or
+37 and then here you can see
+the
+median and similarly you can see for the
+rest of the other clubs now if you
+notice I can see
+here that
+Crystal Palace has the highest average
+each if you see this
+line now this line is the maximum
+Crystal
+Palace not
+verify the clubs with the average age of
+players I'll
+say let's say num underscore
+player equal to EPL let me just scroll
+down
+score DF dot we'll use the group by
+function
+on
+club and I'll
+see
+size to that I'll say data equal to _
+DF or
+then I'll group it by
+Club
+see
+age
+dot
+sum and we are going to divide it
+by the variable that we created above
+that is num
+player finally I'll say data do
+sort
+underscore
+values
+ascending equal to
+false let's run it okay it has thrown an
+error it says sort underscore values got
+an unexpected keyword argument ascending
+okay there's a spelling mistake this
+should be
+ascending there you go so as we saw
+above in the box plot now here you can
+see Crystal Palace has the highest
+average age in that team which is 28.3
+years then we have West Ham United
+followed by bonley now if I scroll
+down Manchester
+United had
+the least average age of players that
+means they had a very young team that
+played in the 2020 2021 season after
+that there were West Ham Aston V and
+other
+clubs
+great now in this cell we are going to
+find the total SS from each club for
+that I'm going to group by club and we
+are going to find the sum over the SS
+column after that I'm going to create a
+bar plot in the x- axis we have the club
+names on the y axis we have the total
+number of ss then I'm setting the pallet
+the color pallet to set two we have an X
+label we have a y label
+we have the font size for the labels I'm
+going to rotate the x-axis labels by
+75° we have the figure size set and the
+title as plot of clubs versus the total
+this should be
+assist let me run
+it and you can see here we have
+the total number of asss for each of the
+clubs as you can see Manchester City had
+the highest number of assets which were
+above 50 or around
+55
+cool let's
+see the players who gave the most SS in
+the last season of EPL so for that I'll
+create a variable called top
+10
+ssal to I'll use my frame name _
+DF followed
+by name then
+Club
+then this
+column and I also want the matches
+column and I'm going to use the N
+largest function to find the top 10
+plos so I'll say n equal to
+10
+columns equal
+to
+SS let's print the top 10
+SS let's run it okay again there is an
+error let's debug
+it see it's invalid
+syntax let me
+check
+Club Assist matches then we have
+enlarges equal to n equal to
+10 columns equal to
+assist
+and this should be a
+comma cool and here you can see we have
+Harry Kane from the last season of EPL
+who gave the maximum Sage that is 14
+followed by Kevin
+de Brun from Manchester City who gave 12
+assists followed by Bruno Fernandez from
+Manchester United is a Portugal player
+and he gave 12 assist song hung men from
+Tottenham hoser he played for South
+Korea and he also gave 10 assist Jack
+GIS gave 10 assist then we have Marcus
+rashford Jimmy VY Timo wner and other
+players all
+right
+now in the current cell which is already
+filled we are going to find the total
+goals from each
+Club earlier we saw the total assists
+from each club now this will show us the
+total goals from each Club if I run
+it now you can
+check we have Manchester City which
+scored above 80 goals last season
+followed by United that is close to 70
+or exactly 70 goals they had scored
+followed by Tottenham Hotspur we have
+Liverpool ler by shaffield United and
+full ham as well as bonley had close to
+30 or less than 30 goals in fact safield
+United scored less than 20
+goals
+cool next we are going to check
+the most goals by
+players so I'll say topor
+10or
+Goals to I'll say _ DF again we are
+going to take the name column followed
+by the
+club by this time we going to consider
+the goals
+column also take the matches
+column say
+n
+largest make sure there are no spelling
+mistakes say n equal to
+10
+columns to
+goals and let's
+print players with the most number of
+goals you can see
+here Harry Kane played 35 matches in the
+last season of EPL and scored the
+maximum number of goals so he should
+have won the Golden Boot as well so he
+had scored 23 goals and if you see the
+above table that we created he also gave
+the most number of SS so he's a
+brilliant player from England plays as a
+striker and currently the captain of
+England as well after that we had
+Mohammad Salah who scored 22 goals
+followed by Bruno Fernandez who scored
+18 goals from 37 matches then we have
+song hung men Patrick Bamford from leits
+United who scored 17 goals
+Etc
+Co and the next cell we are going to
+find out the top 10 goals per
+match that is
+the goals
+scored in each of the M we are going to
+find the
+percentage I'll create a variable called
+top 10 goals per
+match Al to eplore
+DF calculate the name
+then also take the goals per match
+column if you remember we had created
+this goals per match column above let me
+just show you in case you forgot here
+you can see we had created this extra
+column called goals per match this is
+the last column that we have in our data
+frame is basically the total number of
+goals divided by the total number of
+matches the player had
+played if I scroll down
+we are going to take the name column the
+goals per
+match
+next we'll consider
+the CH
+column and then we'll also take the
+goals
+column dot I'll use the
+N largest function and see Nal to
+10
+comma
+columns equal
+to per
+match finally let's print the top
+10
+gos per
+match here you can
+see we
+have Kane
+scored 6 goals in a match then we have
+Mohammad Salah with. 59 Joe Willock with
+0 five H lingard scored nine goals in 16
+matches so his goals per match stands at
+.5 basically it is the total number of
+of goals divided by the total number of
+matches
+cool in the next
+cell we're going to create a pie chart
+that will show us the goals with SS and
+without
+SS so I'll start with my pie chart as
+PLT do figure we set the figure
+size to foot comma
+7 create a variable called SS equal to
+we are going to find the total number of
+ss so I'll subset my SS column and I'm
+going to use the sum function over it
+then I'll say data equal
+to we're going to
+take the total
+goals
+minus
+SS comma and then we'll have
+SS let's set the labels as well I say
+labels equal
+to
+goals
+without
+SS and next
+label will be gools with
+SS we'll say color equal to SNS
+do color
+pallet see I'll take set
+one and finally we are going to use the
+PLT
+do Pyon
+function give my
+data and labels equal
+to
+labels colors equal to the color that we
+just set
+above we again use the autop PCT
+parameter to give the percentage
+values I'll say within quotations
+percentage dot 0 F percentage
+percentage display I'll say PLT do
+show everything is fine let me just
+recheck it and we'll run
+it it says Pi got an unexpected error
+color this should be colors equal to
+color is not defined again let's Okay
+this should be PLT do show there you go
+so you see we have have our pie chart
+and in the pie chart you can see at
+least 69% of the goals were scored with
+asses and the rest of the 31% goals in
+the last season of English Premier
+League were scored without
+assist coming to the
+final plot in our live demo session on
+English Premier League data analysis we
+are going to see the top 10 players with
+the most yellow cards so basically the
+players who commit the most number of
+fouls in a game are given a yellow card
+or a red card so for here I'm using the
+yellow cards column and I am going to
+find out the first 10 players with the
+most number of yellow cards received in
+the last season of
+EPL let's run
+it and if you see we have John megin who
+plays for I guess Aston Villa received
+the most number of yellow cards that is
+12 followed by the captain of Manchester
+United this is very surprising Harry
+MaGuire
+got 11 yellow cards last season followed
+by Connor
+Gallagher and we have Douglas louiz
+Kevin Phillips Mason Holgate as well in
+this as well as Ruben
+NIS okay so that brings us to our live
+demo session on football data analysis
+using the English Premier League 2020
+2021 data set you understood how to load
+the data set then we explored different
+functions that are available in n and
+pandas after that you saw how to create
+P charts bar
+graphs and then you also created a box
+plot we saw
+the total number of goals scored by each
+Club the total number of assess the
+players with the highest number of goals
+the players with the highest number of
+assess then the goals that were scored
+in penalties and without
+penalties all right live video session
+on eppl 2020 2021 data analysis project
+by simply loan I hope it was useful and
+informative if you have any queries
+please feel free to put them in the
+comment section of the video in this
+tutorial we will learn to create a
+Discord board and add it to our Discord
+Channel and here we will learn how to
+get the following responses from the
+board the responses would be text image
+video document or audio and before
+starting let us have a simple question
+to brush up on our knowledge and it's
+related to Discord and your question is
+what is the minimum age to use Discord
+and your options
+are the first option is 18 the second
+option is 13 and the third option is 15
+and the fourth option you get is none of
+these so please answer in the comment
+section below pause the video give it a
+thought and answer in the comment
+section and I have an insightful for you
+guys if you are focused on building
+strong Foundation skills for career
+growth in that case you can check out a
+free course to Learn Python Basics with
+a completion certificate from skillup by
+simply learn you can check this course
+with the link in the description box
+below and now first we'll see the demo
+of our Discord board and then we'll
+start to create our project and for that
+we will move to our Visual Studio Cod so
+this is our Visual Studio code and this
+is the code for our the simple Discord
+board we'll also create the music
+Discord board but first we'll create the
+simple Discord board to just get the
+responses from the board as text image
+files or
+video so we'll save this and run
+this so it shows that we have logged in
+as simply learn Bo
+so we will move to Discord and I have
+created the simply lar server and in
+that I have the simply learn
+board we will go step by step and I will
+show you how to create a
+server and you can see the simply
+unboard it's active it's showing the
+green sign or the Green
+Dot and
+here we'll see what were the
+commands we just write
+hi so we are in the general Channel and
+if we write
+hi we get the response from the simply
+and B as hello
+and if we write image we'll get the
+image that is rewind. PNG and this image
+is stored in the same folder as of the
+project and if we write video we'll get
+the python. MP4 this file is also stored
+in the same folder and the audio will
+get this song and this file is also
+stored in the same folder and if we
+write file we'll get the same file that
+is python. PDF and that is stored in the
+same
+folder so I'll show you some
+commands uh I will write
+image and the board responds me with the
+rewind. PNG that is stored in the
+folder I will show you guys
+so this is the rewind. PNG what I got
+when I wrote image so moving on now
+we'll start with a board and I will show
+you the demo of music port before
+creating
+that
+now the first thing we'll do is create a
+new folder for our project and we'll
+create a folder
+and name it
+as this code
+board using
+Python and in this folder we'll open the
+command
+prompt and we will open our idle that is
+Visual Studio code you can use any IDE
+that you have hands on we will be using
+the visual studio
+code and here we will create a file and
+name it as
+main.py and before starting the first
+thing we should do is install and import
+the libraries and before starting let us
+have a simple discussion about what is a
+Discord so Discord is a voice and text
+communication platform for gamers
+players streamers and developers use
+Discord to discuss games answer
+questions chat while they play and much
+more it even has a game store complete
+with critical reviews and a subscription
+service it is nearly a One-Stop shop for
+gaming communities I'll show you I have
+downloaded the desktop version of
+Discord so this is a Discord and while
+there are many things you can build
+using Discord apis this tutorial will
+focus on a particular learning outcome
+how to make a Discord board in Python
+and if I tell you what is a boat so
+automated programs that look and act
+like users and automatically respond to
+events and commands on Discord are
+called board
+users so this was the brief about the
+discorde and what is a board now we'll
+start with how to create a discorde
+board so first you should have an
+account on Discord for that you could
+simply go to the Discord website and
+register for that and you can if you
+want desktop you can download the
+desktop app or you can access the
+Discord within the
+browser now you should have an account
+on
+Discord and you should create a server
+in that to create a server you can see
+this plus sign just click on that that
+is add a server and now you can see for
+whom you want to create the server I
+want to create a server for my
+friends and that would be for me and my
+friends and he's asking for the server's
+name so we will write project
+server and we'll click on the create
+button so we have created a server and
+it has channels that is General Games
+music and voice channels that is lounge
+and stream
+room now we have created a server now we
+will move to
+Discord development website for that
+we'll write Discord developer portal and
+this is the website that is HTTP col
+discord.com developers St
+inro so in this
+website
+we will create a new application so
+first we have to go to the applications
+and I've created three applications and
+here we will create a new application
+and name it
+as
+project we will take all the permissions
+and click on the
+create and now you could see the general
+information about the Discord
+board so if you want to upload any icon
+you can do that for your board and we
+have named it as
+project and we can tag it as
+boort
+and chat
+boort and moving
+on
+now we'll go to the
+boat okay so first we will save the
+changes and now we'll go to the board
+and click on ADD board and now we have
+to confirm by clicking yes do
+it now after the boat is
+added now we'll copy the board token and
+before
+that we'll just give the board
+permissions and before giving the board
+permissions we'll go to the
+authorization
+to and
+here we'll select inap
+authorization and we'll select the scope
+as B and give the permissions add ad
+administrator
+permissions
+and here we'll save the
+change and in the URL
+generator we
+will select the scope as board and the
+board permissions we'll set it as
+administrator and we'll copy this
+URL and paste it
+here just to store that and we'll open
+that in the
+browser we have to open this in the
+browser and here we'll see the server we
+have created the project server we'll
+select that and we'll click on continue
+and it has the administrator we'll
+authorize it and it's asking if we are a
+human or not so we'll just fill its
+capture and you can see that are both is
+authorized so we will see in the
+Discord that project just showed up that
+is the project board so it has showed up
+but it's
+offline so now we have to make it online
+we'll do it by writing a code and before
+that we have to generate the
+token of a
+board
+so in the authorization to we have done
+the things and here we have
+generated the link and authorized our
+board now
+here we'll give the
+permissions that is requires
+authorization to code
+Grant intent so member intent okay we
+will give all the permissions as we
+would be creating the music board also
+so
+for that we would be requiring the
+administrator
+permissions that is all these
+permissions send messages create private
+threads attach files so all
+that so here we'll save the
+changes and to get the token of our
+Discord Bo we'll click on the reset
+token and click on the the yes do it so
+we'll copy this
+token and paste it here so it's a token
+and this was the URL to authorize a
+Discord
+board so we would be using this token in
+a code to activate a boat and to get it
+online and if you get your token
+mishandled or you have given to someone
+you can just reset it so so after this
+project I will reset this token so you
+guys can't use my
+token so moving on
+now we will install some libraries that
+would be Discord
+library and to install
+that I will show you the simple
+commands that is present in the the
+browser you just have to write
+install
+Discord
+python Library okay and this is the
+official
+website you just have to copy the
+command move to your command prompt or
+The Terminal of your ID and just paste
+this
+command and press
+enter you can see that the requir is
+already satisfied as I have already
+installed the Discord Library so here I
+don't have to install it
+again and you can do it just by writing
+the command in the command prompt or in
+the terminal and here we are using pip
+to install the
+command now moving
+on after installing the
+libraries and authorizing our
+Discord board now we'll write code to
+get a board online and get some
+responses from him so first we'll import
+the Discord library and for that we'll
+write the command import
+Discord so here we have imported the
+Discord and
+now first we'll get our P online and for
+that first we'll set the
+intents that
+is
+Discord
+dot
+intents not
+all and after
+that we will create a variable client
+and in
+that we will call
+discord.
+client and inside we'll write command
+prefix so if you want to give any
+command so if it has the prefix that
+will enter so a board would understand
+that that would be exclamation mark and
+we'll set the
+intents that is
+intents equal to
+intents we have created a variable and
+set the
+intents now we will create a event that
+would be client. event you could visit
+the
+Discord official website and see the
+documentation of how to install it that
+is if you want to use the PIP command
+you can use that in
+Linux and you could see the voice Voice
+boort by NCL we will install it for our
+Music board and you can see this is the
+quick example to see how we can use the
+Discord
+Library so we have set the
+intents
+and now we going to make a Bo active so
+you could just visit the documentation
+read it once and you would understand
+how this library is functioning and what
+classes and functions it
+possess so we'll move back to our
+ideally and here we'll create the event
+for that we'll write at
+theate client that the variable we have
+created do
+event
+and inside it we'll use
+async and create a function function
+that is
+onore
+ready and here we will
+print that we have logged in
+as if a board has logged in it should
+get
+printed we have logged in as the name of
+the
+user
+or our
+Port
+okay and write dot
+format and inside we'll pass
+client now we'll create another event
+that is at
+theate client
+do
+event and
+inside we will create another
+function that is onore message so if we
+give any message to our board he will
+reply to
+us so message
+and
+if message. author so who is writing the
+message is equal
+to client do
+user then we'll just return and
+if message.
+content Dot starts with that is if the
+message starts with hi or we can write
+hello so a board should respond with
+something so if a message starts with
+high so we will
+await
+and message
+dot
+channel do send
+we will send
+hello and now
+to make a board active the last thing we
+have to do is we have to run a token run
+a board with the help of token so you
+know we have copied the token and that
+we have copied here so I'll copy this
+and paste it in client.
+run so we will save
+this and run
+it so you could see
+that it has shared logging in using
+static
+token and it has shared the session ID
+that the board has been logged in and
+what we have printed is that we have
+logged in as project #
+7634 so here we will move to a
+Discord and here you can see that a boat
+has been online after we have run the
+code that is we can see the green symbol
+for that and we have written the
+commands if we
+write hi to aort or the message which
+starts with high it would respond to us
+so you
+could directly chat with the board here
+that is just click on its symbol and you
+can message at theate project at theate
+project that is your board so we'll just
+write hi
+here and you could see that our board
+responds with hello and if we go back to
+a project server so this is a project
+server and if we write high in any
+channel that is we are writing in
+general
+Channel and press enter so here also our
+board will respond that is
+hello so now we'll add other
+functionalities so that a port could
+respond to us in different ways so now
+we will ask our board to send an image
+so the image could be sent through the
+port in the form of file we need to give
+the name to it and the file should be in
+the same directory where our code is
+could be done by running the code that I
+will just show
+you so
+here now we'll start with
+if
+message do content
+to starts
+with image that is if we have
+image oh
+sorry that would be here that is own
+message we are writing in the function
+that is own message and if the message
+do content starts with image If the
+message has image in
+it so what we will do
+is we will write a command that is
+await message dot channel in which
+channel we have got the command as image
+from the author we will write the or
+send the file that is the board will
+send the file in the same channel that
+is message. channel do
+send and here
+we'll write the file
+name and for that first we'll see which
+files so I have some files that I have
+used
+formerly
+so that I've stored it yeah new folder
+so
+yeah so these are the files that will
+ask board to return us back that is the
+image rewind. PNG python PDF and the
+python mp4 file and the MP3 file
+beautiful
+mistakes so we
+will copy all
+these and paste in
+our
+directly in the same directory that we
+are
+coding that we are writing a
+code
+now we'll move back to our Visual Studio
+code and here we'll
+write the file name that
+is file equal to
+discod
+dot
+file yeah discorde dot file and now the
+name of the
+file that was
+rewind.
+PNG so we'll save
+this and first run it to check if this
+command is working or not so first we'll
+kill our
+terminal save it and run
+it and we can see that it has given the
+session ID and we have logged in as
+project board we will move to our
+Discord and here we'll write image in
+the
+channel and you can see that a Bo
+responded with the rewind. PNG
+image so our Command is working fine now
+after running this code that is the Type
+image in the channel now the board will
+respond with the the image that we have
+given in the file and we have seen that
+now we'll get the video audio and a PDF
+file through the board now to get this
+first we must share the file name in the
+file section for the file that we need
+to share through the board in order to
+acquire the video audio or the file now
+we need to keep that file in the same
+directory where our code is there as you
+have seen that we have kept that in the
+same
+folder now
+now we'll write the commands for video
+audio and the PDF
+file now first we'll write the command
+for
+video and that is
+if message do
+content dot start
+with that is
+video
+wait
+message.
+channel do
+send here we'll write the file name that
+is file equal to
+discode do file and inside we will pass
+python. MP4
+and that would be in the inverted
+Comas sorry for cuffing
+oh I have a
+little now we have set for the video now
+we'll set for the audio file and for
+that we'll write the
+command that is the same command and we
+won't waste any time we'll just copy
+it we should code as fast as we can and
+if the message contains the
+audio so what will pass we'll just see
+what we
+have the name of the AIO file that is
+beautiful underscore
+mistakes and that is
+MP3
+beautiful
+underscore uh M Capal I think just check
+it and that is yeah M is capit so now we
+have written for the audio file now
+we'll write for the simple
+file that is our
+PDF so if a command that is the command
+we will give to our board if it contains
+the name file then it will give us
+python
+PDF
+okay and we'll check the
+name okay the p is capital
+for python
+and after that we have client. run
+that's it so we'll save this and first
+we'll kill our terminal and click on the
+Run
+button so you can see that we have
+logged in as project and now we'll move
+back to our board so our board is active
+and we'll start with the high
+command so so it says hello and if we
+write
+highb then also it says hello that is if
+our message contains high then the board
+would respond with hello and if we ask
+him the image he'll respond us with the
+image and if we ask him with the
+video it takes time like as the video is
+a bit larger in
+size
+okay so it doesn't have any attribute
+video that is python do MP4 we quote an
+error
+here start with video file python
+MP4 just
+check
+yeah this is the same
+file error should not have been upur
+okay we have asked for the
+video
+yeah okay the is you have written start
+with it starts with that's why I
+responded for image but not for
+video audio and the file
+now we'll save this and first we'll kill
+the terminal and run the code
+again we can see the session ID and it
+has logged in now we'll move back to our
+project and now we'll ask the board for
+video and we'll see what it
+responds yeah you can see that it has
+responded with the video you can also
+play
+and if we ask for
+image it gives us the remind
+image and if we ask for the
+audio it has shared the audio that is
+beautiful uncore mistakes and we ask for
+the
+file file
+please
+so I think we got any
+error that is going start with
+file and we have python PDF and the
+error is p too large okay the request
+entity is too
+large so we have not subscribed with the
+Nitro version so we can just send the
+the 8 MB files we'll just check what is
+the
+size okay it's of 9 MB so it won't
+share so you can place any file that is
+less than 8 MB your board would respond
+for
+that
+and with that we are done with a boat
+and we are ready we with a
+boat and with that we have come to the
+end of this session that's a app on our
+python projects for beginners I hope you
+found these projects not only
+informative but also enjoyable to work
+on a big thank you for watching and
+following along your support means the
+world to us and it's what keeps this
+Channel Growing if you enjoyed this
+video and learned something new please
+give it a thumbs up and share it with
+your friends it really helps the channel
+and if you have good questions or did
+you create something cool from these
+projects drop a comment below we love
+seeing your creations and hearing your
+thoughts until next time keep coding
+keep creating and never stop learning
+see you in the next video staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

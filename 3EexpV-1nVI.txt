@@ -1,0 +1,641 @@
+so hello there and welcome to another
+tutorial my name is Henry bshi and this
+time we're going to be going over yet
+again another revision for my well now
+series of xcode to IPA uh this time
+we're going to be going over uh not
+really part three but more like part 2.1
+since it's just a little extension uh to
+what we've had before uh now if you
+remember this is this is just literally
+history uh but back in the days of xode
+2 IPA version one uh it was working fine
+it wasn't very practical uh it worked
+though uh and then the problem was that
+Wade sellers uh commented on my video uh
+and he had a code signing issue uh so
+then that encouraged me to just make a
+second version which fixed 90% of code
+signing issues and it also was much
+faster and much more practical to use uh
+in a real development
+environment uh and so now I'm going to
+be expanding on that and and giving you
+a little extra feature uh that is still
+under development uh Apple doesn't
+completely allow it so it won't be the
+most functional feature uh but it it
+it's a workaround and that is
+semi-automatic updates now what is a
+semi-auto a semi-automatic update uh
+basically a semi-automatic update uh is
+something it's a feature in which let's
+say you just start up your app it if if
+uh the feature finds a new version on
+your server of that app it will notify
+you and say okay here's another uh
+version of this app uh I'd like you to
+install it and then you can either click
+on no or yes uh if you click on no it'll
+just remind you the next time you open
+the app and if you click on yes uh it
+will actually uh it will show a little
+menu uh where you can again click yes or
+no if you click no it'll again skip if
+you click yes it'll exit the app by
+itself uh and then it'll it'll ask you
+to install manually and that's what the
+disadvantage is but before I explain
+this let's just I'm just going to bring
+your attention over here uh and as you
+can see we have one advantage and one
+disadvantage to this using this method
+which is basically the only method for
+this that we have currently U maybe with
+iOS 10 or something they'll give us some
+new ways to do this but for now the only
+thing that we can do uh is the advantage
+is that it will notify you when a new
+version is released for the software but
+the disadvantage is that you have to
+manually install this onto your device
+uh the reason we have this disadvantage
+is due to the fact uh that
+um in order to install the app we need
+to delete the old app and we can't
+delete our own app and we can't delete
+any other apps on the iOS system so then
+the problem is that if we can't delete
+we can't install if we can't install
+then we can't do it fully automatically
+and that just basically tells us why we
+can't do it uh so as you can see I just
+WR down Wroten down uh that this is xco
+to IPA 2.1 not three uh and that we have
+semi-automatic updates finally if you
+still didn't get it uh so the bottom
+line is that I've introduced sort of
+semi-auto updates uh another
+disadvantage uh to this method uh could
+be the fact uh
+that you are required uh to uh use um
+more code in your apps uh and sorry
+about that but you are required to use
+some code in your
+app use
+temporary
+code
+and
+view
+in
+storyboard so you unless uh it's just a
+little disadvantage that you have to use
+some temporary code in your view
+controller class or whatever main class
+you're using and also an extra view in
+your storyboard uh but I mean uh you can
+always remove this before you actually
+distribute this and this is more for
+those like little groups of developers
+that are just developing a software and
+don't want to keep manually checking if
+there's an update but they can just get
+ma uh just get notified of it uh and so
+essentially what I've done is I took
+just a little Remnant or a little block
+of Swift databases mixed it with excot
+IPA and we got a result uh now I just
+took a little Remnant I didn't really
+use databases I just used PHP it seemed
+easier uh so let me just explain how it
+works basically we have a swift
+end over here
+sorry we have a swift end
+over
+here and we also have a phpn on our
+server this is where the latest version
+will be
+kept and this is where the local version
+will be
+kept okay now let's just say the local
+version for Swift is
+[Music]
+0.0.1 and let's just say the PHP version
+is
+0.0.1 and I put one for a reason I'm
+going to tell you why in just a second
+now it's going to match the local and
+the latest version numbers and now these
+are the same so it's going to say hm
+there's no update so I should not notify
+the user so it'll just do nothing it'll
+run the app like normal however let's
+just say uh one of the lead developers
+releases a new version of the software
+and says this is version
+0.0.2 uh or 0.1.2 or something like that
+uh then Swift will say that hm okay so
+these are different now so what I should
+do is tell the user that there's an
+upgrade and when there's an upgrade it
+just uh pops up a little menu and says
+would you like to install uh stuff like
+that if that's a little drawing of the
+view you can imagine it'll ask you then
+if you were to click on yes it would
+actually update from PHP if you were to
+click on no then it just ignores it so
+yeah that was really it uh and now I
+will see you at the Mac part uh where we
+will actually go into the code and just
+before we actually go to the Mac part uh
+I'm just going to tell you that that I
+will be repeating a little section of XO
+tyia part two so you feel really the
+continuity of this and how you actually
+uh embed this in your apps uh but if you
+do want to skip that then there might
+just be a little um uh annotation on
+screen allowing you to do so uh when I
+actually start the Mac part uh or you
+can just look in the description for the
+timing when I start the Mac when I start
+the real um update checking part so yeah
+I'll see you at the Mac
+part so welcome to the Mac part of the
+video and now we're going to be
+explaining exactly how to do this stuff
+uh so let's get started as you can see
+uh I have already installed Dropbox and
+shenen uh and you can find out how to do
+that from my earlier tutorial Swift dat
+races part 2 which there will be a link
+to in the description down below again I
+will will be repeating some parts of X
+typa part two in this uh so if you wish
+you can just skip it by clicking on The
+annotation that's on screen and it
+should disappear just around
+now okay so now let's actually get
+started and I'm just going to go to my
+Dropbox I'm going to go to my apps and
+as you can see I've also installed my.
+drop pages so you also need to do that
+and again that will be taught in xco IPA
+part two uh which there will be a link
+to down in the description uh then you
+go to your website you go to public uh
+and I'm just going to create a new
+folder for this app and I'm going to
+call this Au for auto update uh and
+let's just go into it uh as you can see
+uh it's blank but I have uh first of all
+the app that can automatically update
+itself over here I'm just going to take
+this app and copy it into my
+Dropbox okay it's done uh then I'm going
+to take all these files that will help
+us install to our device and also copy
+them onto my
+Dropbox and so that'll do that and so
+now that once we're done that all we
+need to do is let's just go into our
+xcode
+project and let's just wait for it to
+load up what I'm just going to do is I'm
+going to go to main.
+storyboard and I'm going to go to my
+view uh which I'm just going to go full
+screen in uh hide all this extra stuff
+and then I'm going to add a label to
+this
+app which will just basically tell us
+the current
+version
+is okay then I'm just going to move it
+like this and like
+this and like that uh then I'm going to
+go back into my uh uh view controller
+and I'm going to create an IB outlet for
+it right as it loads sorry sometimes it
+does this but I mean you can't really do
+much about
+it sorry okay there so now I'm going to
+create an IB outlet for
+this uh IB Outlet VAR and let's just
+call it uh label
+ver and let's just give this the type of
+UI label and down here in our viewed
+load uh or actually viewed appear I
+guess why not I am going to say label
+ver. text is equal to current version
+is and then the current version once
+that's done uh I'm just going to save
+this build it do not run
+build uh and then we should be
+safe to be able
+to uh okay so now we should be safe to
+be able to quit xcode uh and as you can
+see this will just sync back onto
+Dropbox and now I'm going to go back and
+then I'm also going to open up terminal
+once I have terminal open I'm going to
+drag in just a sec going to type in CD
+space then drag in the Au folder that we
+have on our
+Dropbox uh over here sorry that's why I
+like this view
+better I'm just going to drag back in
+here and then I'm going to move the
+extra space and then I'm going to click
+on enter uh and now that we are in this
+directory all we need to do is type in
+IPA build okay once that's done uh we
+are going to be able to create an IPA so
+I'm just going to click
+enter and as you can see it will
+successfully or at least it should
+successfully uh create an IPA file for
+us uh so now we can just wait uh wait it
+out uh sometimes it does take a little
+bit time if your app is this big uh uh
+so that'll just do
+that and it'll give us some errors but
+we can ignore them completely because
+those are just temporary ghost
+errors as you can see it is generating
+our IPA and it has successfully built it
+uh now once that's done we just want to
+really wait for uh X I mean Dropbox to
+upload this onto our server or actually
+just uploaded onto Dropbox and sometimes
+that'll
+happen finder
+crashes yeah apparently finder does
+crash na cppy 10 so that's one glitch
+that I just found anyway so once that's
+done we have it all synced up and ready
+to go now we can go what we can do is go
+to the actual um uh uh online version of
+Dropbox uh so I'm just going to go to
+dropbox.com and I'm going to go into my
+apps folder once I'm in my apps folder
+to my drop pages then my tajim Manu
+website then public and then my Au
+folder now I'm going to click on share
+beside the IPA file and I'm going to
+copy this link then I'm going to open up
+the uh pist file over here uh with
+xcode and then once it opens up I'm just
+going to change the link uh to a direct
+link uh you know how in XO tyia part 2 I
+tell you to remove DL uh and replace
+www.d www with dl. dropbox.com I think
+this means direct link probably uh so
+then we also replace Dropbox with
+Dropbox user content uh direct link.
+Dropbox user content.com SL whatever
+whatever ever slaut update autoa update.
+IA perfect uh now I can just save and
+quit and once this uh syncs back onto
+our server we can go on and we can
+refresh now what I'm going to do is I'm
+going to click the share button for this
+pist
+file now I'm going to copy this link I'm
+going to go to install a HTML and I'm
+going to open this up with Sublime Text
+to so it's just going to fetch sometimes
+it takes some time maybe if we redo it
+okay perfect now I'm going to go into
+Sublime Text 2
+and as you can see uh we have the link
+here and we don't want this link we
+actually want this link okay now I'm
+going to remove the DL part and I'm also
+going to replace www with
+DL and Dropbox with Dropbox user
+content perfect I'm going to save and
+quit once this thing backs onto our back
+onto our servers we are ready to give it
+a test run now just going to get my iOS
+device and plug it into my Mac here uh
+so theoretically uh this should be able
+to mirror my iPhone onto my computer uh
+and yeah I'm just going to plug it in
+just give me a second really quickly uh
+uh so just one
+second
+um sorry this is taking a little bit of
+time but I mean
+yeah I'm just going to freeze that and
+now I'm just just going to get my iPhone
+and my lightning connector uh which
+apparently uh yeah I'm just going to be
+back in 1 second with my lightning
+connector and I'll see you
+then so yeah I am back with another uh
+part of this and sorry I had to cut
+there it's just that I didn't have my
+lightning connector at the time anyway
+now I am successfully streaming uh to my
+projector and you should be able to see
+it right as I click this button perfect
+okay okay so now I can uh basically go
+to the drop Pages where this is located
+and we should be able to use it so if I
+go to tajim
+manny. drop
+pages.com
+and if I go slash no not emojis I don't
+want emojis right now I want
+slash uh
+Au slash
+install.
+HTML perfect now if we go enter it
+should give us this install link and I'm
+just going to zoom in so you can see it
+so I'm just going to click on
+install and it should ask us if we would
+like to install auto app update I'm
+going to click on
+install uh and this will or at least it
+should install uh our automatic updating
+software to our device ice so now we can
+just wait for a while and just in case
+you can't see that I'm going to point it
+out to you right now uh using this
+pointer apparently uh so as you can see
+uh if I bring it down a
+bit right there that's where the app is
+in case you couldn't see it sorry it's a
+bit down I just have a lot of apps
+anyway so it's now
+installing pretty useful and now it has
+successfully installed wirelessly you
+already knew this part uh but when we
+turn this on apparently it doesn't uh
+really like this uh I think I know why
+because if we go into our
+xcode uh we forgot to hook up the IB
+Outlet to the actual label itself so
+it's saying that okay there's a nil
+value and there's nothing to set the
+text of so then it just complains and we
+don't get a chance to test out our app
+anyway I'm just going to fix that really
+quickly in front of you so I'm just
+going to connect from view controller to
+the current thing label version
+uh and then just build not onto the
+device as you can see I'm not building
+onto my device I'm just building in
+general by doing control B I mean
+command B and now that that's done I'm
+going to quit uh and now it will sync
+this back on and then I can recreate the
+IPA uh as you can see it's not really
+doing anything on the iPhone but then I
+can also delete this so it isn't taking
+up space and then there so right as it's
+done we can open up Safari and we can
+install again right as it's
+done this will just take a while I guess
+and there it has successfully built now
+I'm just going to wait for it to sink uh
+which might just take a little a few
+seconds actually uh so 12 seconds we'll
+just wait for that to go um in case you
+can't see where I'm reading the time off
+of actually I'm just reading the time
+off of
+here as you can see it's just almost
+done and there it's done now that it is
+done I am just going to go back onto my
+iPhone and I'm going to go into Safari
+and I'm going to click on install once
+again click on
+install if I go back to my homepage it
+should theoretically install back onto
+my device and we should have uh a nice
+working version yeah so see that's
+sometimes what happens sometimes you
+forget to hook up an IB Outlet sometimes
+you forget to give it a certain string
+value sometimes you make a r random
+optional uh thing in Swift it so is a
+bit annoying when that happens but I
+mean it does happen
+sometimes yeah so this is just going to
+take a little while to install and once
+it is successfully done we can open it
+up and of course it doesn't crash so it
+says that the current version is
+0.0.1 now there's a problem uh well not
+really a problem let's just say I were
+to release version
+0.0.2 now what I'm going to do is I'm
+just going to keep this on here and I'm
+not going to close it just so you can
+see that I'm not doing anything so I'm
+going to open up the
+project
+okay now I'm going to go back in and I'm
+I'm going to change the version to
+0.0.2 well of course has to load first
+anyway sometimes it's really annoying
+anyway so I'm going to change this to
+0.0.2 I'm going to save and I'm going to
+quit okay now this is just going to
+refresh onto thing then I'm going to
+redo IPA
+build okay just wait for a second or
+so
+just going to wait wait wait wait and
+keep on
+waiting fake Errors By The X Cod to IPA
+script uh and yeah in just a second it
+will be done uh it's also going to have
+to sync onto the server and while it
+syncs uh I can show you how I okay there
+now it's going to start syncing while it
+syns I'm going to update the PHP uh to
+reflect 0.0 2 instead so as you can see
+this is literally the simplest PHP
+script you could possibly have it's just
+starting PHP we're echoing 0.0.2 to the
+screen and we're ending PHP that's it so
+if we were to go to this
+website uh then as you can see we would
+see um
+update
+check uh 0.0.2 because we just changed
+it okay so now it has uh synced and it
+has successfully built and we have
+changed it here uh now if I were to
+close open back up as you can see in
+just a second or so or maybe actually
+what I should do is clear this out of
+memory then okay now if we just wait a
+little
+while uh we should be able to see uh
+sometimes that'll also take a little
+while to load it's normal it's because
+yeah see so it just tells us that a new
+sorry yeah see so what I'm just going to
+do
+uh is in our xcode project there's
+another little thing uh is that if uh
+you load on to another view this will
+still be called uh and then it'll say
+that okay now we're on a different View
+and this is not no longer there so I
+have to do if let underscores is equal
+to
+label then only do I want to change the
+text okay so that should work and sorry
+I just built onto the device there I'm
+just going to stop that if it were ever
+to load that
+is one of the most annoying things to do
+in the world of programming wait
+anyway okay I'm going to stop the build
+from happening and I'm just going to
+build I'm not going to run onto the
+device I'm just going to
+build and in just a
+second you should see that it
+successfully builds I'm going to keep
+the version
+0.0.2 just just for the sake of
+Simplicity uh but as you can see that's
+done now I can quit out uh I can IPA
+build it is going to create an IPA file
+for us um and we should be able to see
+uh the fact that we have a new IPA and
+yeah yeah that'll take a little
+time sorry about the
+wait it's generating a new IPA
+now as you can
+see and we can just wait and wait and
+wait and wait and
+wait
+anyway now it's sinking it is done
+building it is now
+sinking
+um yeah it'll take some
+time quite some time okay now that
+that's done
+we can actually get on uh with building
+so now I'm just going to manually update
+really quickly uh due to the fact that
+we have just changed a really critical
+piece of code and then I'm just going to
+show you the automatic updates with the
+version
+0.0.3 so as you can see it'll do
+that so till then what I can do is I can
+start repairing version 0.0.3 so I'm
+just going to open this
+up
+so I'm just going to change this to
+0.0.3 but I'm not going to change the
+PHP yet okay because I just want you to
+see uh that even if we change the xcode
+projects uh thing it's not going to
+affect our app in anyway okay we can
+open it up and it shows us that the
+current version is
+0.0.2 uh now of course it will not ask
+us to update because that's also the
+version in the pH HP however we had just
+released a new version called 0.0.3 in
+this mix uh so what do we do now let's
+just do this I'm going to go back to our
+PHP and make this 0.0.3 I'm going to
+save and then I'm going to clear the
+app okay now I'm going to close it
+down uh just one
+second yeah I didn't want that there
+okay I'm just going to open it back up
+and it immediately tells me that a new
+update is available and what I like to
+proceed with the update now I'm just
+going to click no and as you can see it
+tells us the current version is
+0.0.2 now I'm going to
+again open it up this time I'm going to
+click on yes now I have two options I
+can either let's do this or I can just
+change my mind now I'm just going to
+click on let's do this and it will
+automatically close the app for me I can
+delete this
+app I can re uh rebuild the IPA first of
+all
+just wait for that to happen sorry
+sometimes it does take a little bit of
+time just make sure that's the right
+link
+yeah okay um right as it builds an IPA
+we will be set
+to do more stuff that's one of the most
+uh annoying Parts building the IPA over
+and over again it is a bit tedious and
+it does get
+annoying but again I mean it is useful
+okay so now it has successfully build
+and now I can click on the install after
+refreshing as you can see I can click on
+install and then I can click on install
+again and then it should install version
+0.0.3 and if I were to open up
+0.0.3 it would well uh just a sec
+retry it would successfully uh it would
+actually not uh show me that there is an
+update available because it would be the
+latest version and and that this is
+assuming that you have changed the
+version number in xcode uh so that it
+actually has a new version number to
+look at uh so that it isn't just
+pointlessly looking in the PHP file and
+itself for no reason so now it is just
+going to
+install sorry about that
+um yeah the reason it said it couldn't
+install before is because I didn't wait
+for the IPA to sync back into Dropbox
+when you click on retry it's usually
+synced already so I just clicked on
+retry and then it
+works the reason I know it works is
+because it's taking much longer than
+usual and when it takes pretty long then
+that means it is successfully doing it
+see so now we just wait for second and
+it installs and we can open it up and we
+can even wait a few seconds we can wait
+like 10 seconds just to make sure it's
+actually connecting and this will not
+show anything I'm just going to wake
+another 10 seconds right as it becomes
+1219 50
+a.m. okay okay so as you can see it's
+not loading anything at all because it's
+seeing that the current version number
+and the version number in the PHP file
+are the exact same so it's not taking
+any action and yeah that was the Mac
+part of the video uh pretty interesting
+uh again all source code will be down in
+the description uh if you have any
+questions just comment down below you
+can also email me my email would be down
+in the description below um you can
+subscribe to my channel if you like the
+if you like my content and you want to
+see more of it uh and you can also like
+this video if you liked it uh and
+that'll be it
+goodbye

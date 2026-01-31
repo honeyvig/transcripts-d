@@ -1,0 +1,2555 @@
+hey everyone welcome back to another
+video by simply learn
+this video on react.js helps you build
+two fun applications using the library
+as you all know react is a widely used
+javascript library to build user
+interfaces for applications
+this video will make you realize why it
+is adopted so widely so first we'll
+build a calculator app and then we'll
+move on to building a spotify clone
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+now i'm sure you're excited to build
+these apps so let's begin
+this time we're going to introduce you
+another very interesting project using
+this javascript html css
+so called calculator application so
+let's get started let me try to delete
+first those files which we really do not
+need it now
+we delete this all
+yeah now i will be creating a new folder
+now and give the name called
+calculator app
+and in this calculator app once again we
+need some new files which is called
+index
+dot html
+and we also need one more that is called
+app.css
+and another one that is app dot js
+so these three files required now first
+of all i would start with
+index.html file where we'll be creating
+a template of my code
+now
+let me go and create this template and
+here
+i have a god body with me
+let's start with the
+first
+tag here that is called h1
+and this h1 we are giving the name
+called calculator
+calculator app so that will be my h1
+heading
+after that we'll start working with the
+div tag
+now within this div
+i would have to create lot many classes
+i may not have lot many css classes but
+we can give some classes here so we can
+say class equal to
+container
+okay so within this div tag we're going
+to create a table now because i want to
+organize it
+so i'm starting with the table within
+this table
+tr tag
+and within this tr tag i need a td
+now in this td i need few things call
+call
+span
+equal to 3
+another value
+and here
+i want to offer the text box
+input type equal to
+text
+okay input up to text id equal to give
+the name called result
+that will be the final outcome while
+pressing all the different buttons id
+equal to result and
+class equal to
+screen remember i haven't created those
+css classes but but we're giving some
+names but later on we can utilize it
+while creating those css classes
+table data is getting closed let's get
+started with another td
+now insert this td we need another text
+box
+input type equal to
+text
+and
+here in this input text sorry i would
+like to better say button because i'll
+be having
+buttons
+okay
+input i'm equal to
+button
+value
+equal to
+c
+and
+on click
+equal to i may not have any function
+right now but yes i can create
+a function but let me give some domain
+name here
+i'm saying clear
+screen
+okay so that will be the function will
+get called
+and after that class
+equal to clear
+yeah so this is my
+button tag
+after this the td tag is getting closed
+after the td tag the table row is also
+getting closed after the table row
+which is getting close we're going to
+start working with another table row
+okay and in this table row i'm going to
+create one more td
+so let's go ahead and create
+another td here
+and inside this td i'll be having
+another projector we get created
+so i'll just say
+this is my another button now input
+button value equal to
+one or click equal to i'll be calling
+another function called display
+okay
+and inside this we're giving the value
+call one
+okay and class equal to member
+plus equal to
+number
+and here after the tettering tag is
+getting closed
+okay now you have to start another td
+tag here
+okay like that we have to keep on
+creating the multiple buttons so let me
+copy
+and paste another table data
+now here
+again value equal to 2 on click product
+display
+give the value call 2
+and class equal to what
+number
+like that i'll keep on creating multiple
+buttons but first check how it actually
+looks like
+now i can see the buttons like in c one
+two three but yes i'm gonna create few
+more buttons one after another
+okay so i'll go here
+and create few more buttons so this is
+where the table data is getting closed
+okay i'll copy this
+and paste it again
+how to create
+the button
+like in 3 4 something like that
+so after this two we're giving the value
+called three
+here
+i'll give the value call three
+so val equal to two well equal to three
+display three
+and then afterwards
+just giving the value call
+forward slash
+and here also we're gonna keep the value
+from
+forward slash
+and here class equal to
+operator
+operator
+after that
+you have to do the value call 4
+and then followed by 567
+so here we give 4.
+four
+five
+five
+six
+six
+after six we're giving call minus
+[Music]
+okay once again it will be what type of
+operator
+operator okay after this
+minus we'll be talking about call 7
+then we have to have 8.
+okay nine
+okay after that we're giving for plus
+and
+display
+plus plus equal to operator
+operator okay so here
+you can see the table data is getting
+closed and here the table is also
+getting closed
+and after this table row we can start
+working with
+another table here
+and
+after this table row we can start
+working with again
+td let me have this
+again
+inside this i'll be giving the option
+called decimal which is value equal to
+dot and here we get the value called
+decimal
+okay
+now display zero
+so after giving this dot basically take
+what the value
+zero which we haven't put now
+we'll be talking about value called zero
+so here
+the decimal value we have given it td is
+getting close let me have another one
+zero
+zero
+so like that we have to keep this now
+after that
+we'll be once again
+taking this and this time rather than
+giving this zero
+we'll be using this call as a button
+and value equal to equal
+or click equal to
+solve
+okay and then this soft will not be
+passing anything
+it like a normal function
+and plus equal to
+equal
+okay
+so
+table data is getting closed
+so we will be using another table data
+now
+so here it will be the button only
+okay we will be using
+well equal to
+multiplication
+display
+plastic and here we'll be using operator
+okay
+so table data is getting close table
+room is getting close table is also
+getting closed here
+okay so your dev tag is also getting
+closed here
+okay that's it
+okay so that's the only thing which we
+wanted to make let me try to refresh and
+check
+awesome
+so we have got
+all those
+necessary calculator behavior
+which uh
+we wanted to
+reveal
+okay
+now our next statement will be once
+we're giving this c then we have a call
+of one two three
+and then forward slash
+followed by
+four five six will come down
+okay so let me check whether we have
+used six or not
+okay so we haven't used six so let me
+check here
+four five six
+so let me go back here
+four five six let me copy this
+and paste it later on
+before
+minus
+six
+equal to
+number
+okay so we're almost set now
+so we are having this uh
+look and feel
+in this way giving one two three four
+five six and after this we have a call
+minus and then plus related behavior so
+we are all set now and after that we'll
+be basically applying the css as well as
+the javascript look towards my code okay
+thank you
+well everybody we are all good to go now
+but i just want to first check whether
+my
+uh this outlook is looking properly or
+not see what my expectation is after one
+two three forward slash i really want to
+bring 456 to the next and then seven
+eight nine and again forward still but i
+can think this is absolutely unorganized
+so after this when we say
+this uh forward slash which we have used
+after hyphen
+okay your tt is getting closed here
+okay so here the tr i also want to close
+here
+okay and after this tr i also want to
+start
+another tr here
+okay so that i can put them into the
+another level now
+so under this tr i can use this td now
+so after this minus
+after four five six
+minus
+once again i would like to start
+another table over here
+okay so that it let's go to the next row
+so here
+after td
+we're closing this dr and starting
+another tier
+okay we're starting another tier after
+that we talk about 789
+okay plus
+see here talking about 789 plus here the
+table is getting close and it is
+starting right now like this
+see that looks better now
+okay but still few more things which i
+would like to make it even more
+organized but that's not a problem we
+will do it later on
+okay because you can see eight is
+missing right now
+so here
+seven we copy this
+equal to eight
+eight
+yeah that looks better now so now they
+are basically completely organized so
+the moment i expect my application
+so we have a call
+dot here then zero then equal to and
+then multiplication
+okay so it looks
+better now
+now i just would like to perform the
+overall look and feel
+so i need to go ahead and use what css
+because without css i really can't
+utilize this in a proper way so i have
+to start working with a css friend now
+in css front how to start first we will
+go back to my code and here in my css we
+will start working with
+font family but before font fabric i
+would like to start with the body part
+now
+body
+background color i'm using
+that looks nice
+okay so
+i will be using this app.css
+in my html to see the look how it is
+been appeared right now so in my
+index.html file
+on the top under my head section
+link
+start sheet
+okay now see it looks better now
+going forward
+in my css
+we want to use
+some h1 correct tool so here
+we would like to use the h1
+text align
+center
+color
+white
+margin top
+margin top we'd like to use 50 pixels
+this is for h1 let's check
+perfect so it is now coming in between
+next statement will be called screen so
+we say dot
+screen
+so in this screen we use the background
+color
+sorry
+border solid
+black and two pixels
+after that color
+white
+font size
+medium
+next width
+we're using this
+100
+then we talk about cursor
+what are the default cursor is
+okay then padding
+we would like to say 10 pixels
+and then
+margin
+save auto
+then margin bottom
+that i'll be using 10 pixels
+so in the proper alignment
+okay
+look
+that's how exactly we want that's for
+the screen where the exact outcome will
+be visible to me
+and rest of the details we'll be showing
+you one by one and now we'll be talking
+about call input
+okay
+input
+type
+equal to button
+for input type equal to
+button
+okay
+input
+of type
+over the
+overrun button i say
+background color
+change to what
+right or else i can say
+let's walk
+okay
+and
+when the button is active
+what i want
+let me copy
+like this
+you can see now how it is basically
+looking like it
+okay active the color will be like this
+okay i'll be talking about color
+operators
+operator should behave different so i'm
+saying dot
+operator
+in this operator we are saying
+background color
+background color orange
+okay that paddy
+want five pixels
+okay then i want color
+that should be black
+after this i'm using call border
+sorry
+that border
+i'm using this called solid
+and then black
+and
+then height
+height is 40 pixels
+then cursor
+it has to be pointed
+okay that's it let's check
+perfect so they shall turn back to what
+to your
+orange color
+and
+you can see the moment you take macros
+on the returns to
+white perfect and now those were type
+number i also want to change them
+so for number
+for number i want to save the same
+option
+padding i want 5 pixels
+then i need height
+of type 40 pixels
+then i say color
+it looks i want to say called black
+then border
+border i want solid
+black into excess solid
+black
+two pixels
+then width
+i would say point width 700
+let's check
+awesome so they looks nice
+now we're left few
+other type of options like in dot and
+equal to
+okay that i'm talking about called
+decimal
+decimal i need to have a different
+options with me
+okay so
+let me try to copy this
+paste it and i say for
+does it
+so for decimal background color will be
+light blue
+padding five pixels color black border
+solid
+okay black two pixels with hundred
+percent height forty pixels five cursor
+pointer
+perfect
+okay looks nice but i have changed the
+color to light blue
+now
+i talk about
+clear
+okay
+now come back
+and
+say clear
+okay in this color
+background color is i'm changed to light
+salmon
+light salmon
+padding 5 pixels color black
+border
+height 40 pixels
+fine so cursor
+pointer
+file margin
+auto and margin bottom
+merging bottom differences
+let's check
+perfect not looks beautiful
+okay
+now here after giving these details
+we're talking about call equal part dot
+equal
+so for dot equal also i'm just copying
+the same
+so we recall
+background color adding color
+just change to
+light green
+light green
+and
+after this
+since it is a equal so we say padding
+five pixels is okay color black fine
+border fine with hundred percent high 40
+pixels
+color and cursor pointers just i don't
+need to
+it's for dot equal and i want
+for container
+container
+in this container width i want 40
+percent
+red 40 percent background color white
+okay
+now here
+writing is 15 pixels
+so display block
+so first of all you call width
+you see
+display block
+which we're taking margin
+okay in margin basic pixels
+auto
+okay now align cells
+go to
+center
+okay border radius
+border radius let's just say 10 pixels
+okay now using box shadow
+box shadow 5 pixels
+and padding
+so these are details
+okay
+we have it background color we are
+taking it now
+align cell
+display block border radius padding
+and then
+writing 15 pixels we've given audi i
+don't need to give it
+again okay fine
+box shadow let's try
+awesome so it's looking beautiful now
+okay so this is where exactly my
+application
+works like that
+and table when we talk about
+everything with
+100
+okay
+that's it
+super
+so it's now giving me the proper look of
+how
+my application should be here i can just
+see about the container what we have
+done
+with 40 we are taking background color
+let's bring it below
+then align cell
+display block
+okay margin
+okay
+and border radius
+and uh
+fine so i think we're all good now
+so
+that's it so we'll try and implement the
+javascript part well everyone so our css
+file is ready our html is ready it's
+time to just
+go ahead and talk about my
+final question that is called gs part
+where i want to basically perform some
+calculators
+now here i just say function
+display
+function display which takes
+val as in parameter and say
+document dot
+get element by id
+here i'm saying
+result
+okay dot
+value
+okay
+plus
+equal to
+whatever we are adding it just basically
+try to apply
+calculation on the top of that
+okay there is a function
+after that we have another functions
+available here called function solved
+here in the solve
+we just use the value called let x equal
+to
+document dot get element by id
+result
+okay
+dot
+value sorry
+dot
+value
+okay and say
+let
+y
+equal to perform the calculations for
+the will be using one function called
+eval
+and type
+axis and parameter
+now the next statement will be again
+document.
+get it runway id
+result
+dot
+value equal to
+y
+okay
+now
+later on
+i'll write to use another function here
+function
+clear screen
+and here we say
+document.
+get it in my id
+here we say
+result
+dot
+value
+equal to
+like that
+so clear screen
+solve
+and
+display three functions are associated
+with me and these three functions
+are the part of this javascript file
+which i'll be calling it
+at the end before
+the water tag get closed so here
+that's it okay let's try to execute now
+here
+two you can see the values
+i will say plus
+six
+equal to eight absolutely i say c is
+clear the screen
+six
+divided
+by 2
+equal to 3 awesome so friends your
+calculator application is ready
+congratulations to all so it is a very
+simplest form which we have developed
+this is your html which is a template
+for you this is the css which is your
+complete
+the area of like how the look and feel
+will look like in of this template
+beautification and here last year for js
+which is smaller logic but really
+meaningful
+okay if getting your learning started is
+half the battle what if you could do
+that for free
+visit scale up by simply learn click on
+the link in the description to know more
+let's start with creating a simple demo
+on react.js and we are going to create a
+simple application
+that will connect to an online music
+streaming service called spotify and we
+will call our application music app so
+let's get started
+the first step is to first get the
+node.js platform and server installed to
+do that let me go to google and let's
+just type node.js
+and here is the website nodejs.org
+there are two versions available the lts
+which is the stable version and the
+current we'll prefer the stable so we'll
+click on that and you can see we have an
+option which is called save file the
+moment this file is saved to the disk we
+just need to double click on it and keep
+clicking on the next button to get it
+installed on our system and we also have
+a documentation available here so which
+explains most of the features of the
+node platform and there are binaries
+available for different os's mac windows
+etc so you can select the right witness
+32-bit 64-bit and the right os
+and then go ahead and download the
+specific
+version that suits
+your platform and you can see here that
+there are different there are also help
+files available that will allow you to
+go through the installation documents
+for node.js installation on linux etc so
+to start with uh i'm opening up the
+command prompt and here is where we're
+going to call the node package manager
+using the node package manager which is
+pre-installed with your standard
+installation we will initialize our
+react application so we would say react
+dash app and
+we want to now go and create an
+application called music app in this
+folder so as a prerequisite for the demo
+all we need to do is install node.js
+from node.js.org the official website
+just download it and install it and
+that's when you open the command prompt
+you fire npm which stands for node
+package manager init for initialize
+react dash app is a standard keyword to
+initialize and create a skeletal
+structure of a react.js application and
+the name of the app is music app so
+we'll hit enter we'll give this some
+time and you can see it's
+started downloading the core
+react.js libraries and it is attempting
+to create
+our application so it's installing all
+the prerequisite packages and scripts
+that are required initialize and create
+a new react.js application called music
+app now once this application is created
+all we would require is an online editor
+so you could use an offline or an
+on-premise editor as well so any editor
+of your choice it could be atom or
+sublime text or webstorm and
+for this demo we're going to use visual
+studio code which is
+a free editor available by microsoft and
+you can just google for visual studio
+code again uh this is not visual studio
+professional edition etc that we use for
+building our c-sharp or mbc-based
+applications this is a lightweight
+editor for building javascript based
+footstep full applications so so while
+this installs let's go and take a look
+at uh visual studio code so this is the
+visual studio code editor and this is
+the editor that we've
+installed directly downloaded from
+visualstudiocode.com and installed it
+and all we need to do is open up this
+folder that would be created with all
+the prerequisite files in it we just say
+file open folder and we would open that
+folder within our visual studio code
+editor so we'll give it a while until
+that application gets generated and once
+it's created we will again implement the
+component based design and architecture
+and the data flow between the components
+and we'll also look at connecting to a
+live data source which is a json set of
+characters that we would consume which
+is a restful service
+the set of music tracks
+exposed as a restful api endpoint by
+spotify which is a premium streaming
+service we will connect to that and we
+will look at
+accessing some of the music tracks on
+that website okay so we've got uh the
+application created here so let's
+minimize this and
+we'll open up our editor all we've got
+to say is file and open folder and
+let me go to the react.js demo folder so
+this is the music app that got created
+and that's exactly what we're going to
+open up here so we'll navigate to that
+folder it's called music app we'll
+select it
+and have it opened in our application so
+you can see here we've got a note
+modules folder this has all of the
+pre-installed packages that make up the
+react.js library we've got a folder
+called public which will have the
+index.html file that's the root file
+that will launch so this is the single
+page application that we typically
+create
+in a react you have a single page which
+on which we're going to load multiple
+components so that's the index.html and
+then we could go and create
+a folder structure
+currently if i open the source folder we
+can see a single app.js file and that
+basically is
+the file that has uh the source code in
+javascript for a single component which
+we are interested in adding on to our
+page as of now so we just have one
+component which is the default root
+component that's the app component and
+it has its corresponding css file
+and then we've got
+the a public folder with the index.html
+file which is going to be
+the root html file that launches when we
+run our application so let's uh go right
+up here and let's add
+a link to an additional file so i'm
+going to link to another style sheet
+okay so we'd say relationship is equal
+to stylesheet and the type is going to
+be text
+and css
+and
+we will reference a file called
+reset dot css and this is a file that we
+look at
+adding up later on it doesn't exist at
+this point in time so we will connect
+this and that's purely for styling
+purposes
+so that we can have
+all of our css styles defined there next
+thing i'll right click on the public
+folder we'll create a new file we'll
+name this file as reset
+dot css so that's going to be the css
+file that will have all of the css uh
+styling that we're going to apply and
+i'm going to use a ready code snippet uh
+for the css code so let me just uh okay
+so i'll all i'll do is i'll just go and
+pick up
+a ready css file that i can just go and
+use
+if you look here i have a set of
+css files that are created that we're
+just going to use
+within our application and
+and that will avoid us spending a lot of
+time on the styling so that we can focus
+on our core concepts uh which is
+actually learning how component based
+architecture works and how do we set up
+components and have data communication
+between them in react so uh here is a
+file called uh reset.css
+let me just fire up
+notepad and i'll just open up this file
+copy up the text here and i'm going to
+just paste it within
+my reset.css and if you look at the code
+uh very simple it's all about
+styling so we've got uh article aside
+etc all html5 tags set up as display
+block so they take up the entire width
+of the page we've got some padding
+margin and font size etc defined we've
+removed list styling for the unordered
+and ordered list specifying the line
+height for the body tag so basically uh
+just styling up tables and so nothing
+nothing to do with react here it's just
+about simple uh css that we've added up
+uh and now we need to actually go in and
+dive into create creation of the
+components that we need so let's right
+click on the source folder so i'll
+select the source folder we'll right
+click there and that's where we're going
+to create a new folder which is called
+components okay so this is the
+components folder now that's going to
+hold
+all of the components within it
+within the components folder let me
+create
+another new folder and i'm going to call
+it app and this is exactly how we are
+expected to structure all of the code
+that we have now i already have a css
+and app.js which are the root components
+that were added by default and all i'm
+going to do is i'm going to move them
+within this folder called app okay so
+there's a proper segregation of
+responsibility and
+all of the code that
+deals with a particular component is all
+added into respective folders and this
+really improves the maintainability of
+the application uh going forward now we
+need some images and i'm just going to
+make use of some
+set of images that i've downloaded from
+the web and
+here are the set of images that i have
+so i'm just going to copy all of them
+and we'll come to our music app and
+we'll go into the components and app
+folder and that's where we're going to
+add all of the files and you've seen all
+of those image files getting added so
+these are just icons and images we're
+going to use for our music tracks inside
+our application now
+let's move to the app.css file and
+this is where we've actually got uh
+so the app.css file is the file that's
+going to style up
+the
+all of the style rules that we've added
+into the root app component and
+this is what we'll have to revamp so
+i'll just get rid of this code and
+we'll probably add something for the
+body tag the html tag and the root
+element let me say hash root and let's
+set the height to a hundred percent
+coming to all of the html across the
+page we'll give it a font size of 10
+pixels
+and
+the h1 elements
+let me give it a padding of
+0.77 and 0 let's set
+a background color give it a background
+color and just select
+some random color here that can be
+applied then we'll set up the text
+alignment which is going to be the
+center of the page we'll set up the font
+family the font family is
+and this is part of
+sans serif what else do we add let's add
+up the font size
+1.88 and also the color so again uh
+these are standard uh html and css
+elements so uh nothing really that
+has to be done that is specific to react
+here so again we are bringing in the
+highlight class so there is a class
+called highlight that we will create
+later in the uh html view of this
+component and we will set this to a red
+rgb component so combination of 46 113
+and 238 okay so that's uh pretty much
+done let's move on and also add up for
+the anchor tag let's add up some text
+decoration and set it to none so that
+the anchor tags don't come up with those
+underlines and of course we'll provide a
+color of hash okay so a white color
+there now coming to the h2 element for
+the h2 element let's have font family
+and again i'm going to use
+so i'm going to use
+the font family that we defined here
+bracket and we change this to probably
+1.55
+okay now coming to the app tag uh let me
+just save this and create a copy of it
+uh there was some content that
+i did delete and
+i can simply go and make use of it so
+i've just undone all of the deletion so
+this is uh something that i can't uh if
+i can use something i can just probably
+use it from the tag below so let me
+start with the height here and let's say
+the height of the header is hundred
+percent of the app sorry not header
+padding 0 17
+10
+17
+the background and i'm going to change
+that to background url so the background
+url or let's say the background image
+will have a url property okay and that
+url is going to be dot slash pg1 dot
+jpeg so that's the image that we've
+added some in the previous step let's
+also add
+background size so we'll add background
+size and set it to cover i also need a
+background position set it to center
+let's have background repeat which is
+set to
+no repeat so that we don't have the
+image
+in a grid format uh and then i would
+need this a bit of it let's take up the
+font family we'll maintain the same font
+family let's use font weight the font
+weight is going to be 500 and the color
+is going to be hash
+so that's a white color then we come to
+dot app dot playlist so that's going to
+be
+another class that we are going to use
+dot but app dash playlist is what we
+we're going to name it and
+let me say that the display should be
+flex
+flexible display and we will justify the
+content to leave spaces
+in between all right so that
+finishes that bit and now uh let's write
+up a media query for the responsiveness
+of this page so this is
+media for only screen and max width is
+going to be one zero two zero pixels
+okay and the class name that we'll
+provide later is obviously app playlist
+so for this screen size we would align
+all the items
+to the center and we change the flex
+direction okay so we seem to be good
+with
+the css for the app as of now and that's
+the app.css
+that we created let me save everything
+okay let's check uh
+for any kind of uh
+additional so all three of errors no
+errors now things are good in the app
+css and it's time to move to the next
+step of building this application uh now
+we have to go and add up
+the code for
+the app.js file so let's dive into the
+app.js file and this is where
+we will actually need to go and add
+all of the code that is required for the
+app component so all the code that's
+relevant to
+the app component we are going to add up
+inside this specific component itself
+which is going to be obviously the
+app.js file so we have skeletal code
+which is import importing the react
+library and
+let me get rid of the basic sample logo
+we'll have app.css that's getting
+imported here
+besides that lot of other files that
+we'll have to get in so
+let me import playlist and this is these
+are the components that we'll create
+as we go forward and
+we're going to get this from the
+playlist folder
+and the component the file is going to
+be called playlist so we'll add that
+then we'll have to go and also import
+search bar so what we're basically doing
+is we're going to split this app into
+different components there's going to be
+one component that manages uh the
+playlist of all the tracks
+one component will
+act as the search bar so that's the
+search bar component that we're going to
+add so searching for tracks will be
+managed by this we'll have another
+component that we'll create that will
+get imported into the root app component
+which is a search results so this is
+going to display the record set with the
+set of results as an outcome of the
+search criteria so search results slash
+search
+results and finally we'll go and import
+spotify that's the spotify service from
+so we'll create a utility folder which
+will hold
+the code that connects us to spotify so
+that's what we are adding up next so all
+of the imports are done one component
+that manages the search bar so that
+search bar search results let me correct
+the spellings there that search results
+that spotify and playlist so that's done
+now let's move on to the class that
+we're going to create here so let's
+create a class app that goes and extends
+dot component so that's going to be a
+react.js component so that's a
+constructor we discussed about props or
+properties and state management and
+that's what we are implementing we are
+using the super keyword as a best
+practice so that all the properties are
+initialized in the constructor and also
+we pass the values up the chain to the
+superclass which is the root component
+class now we're going to initialize
+a variable called state that's going to
+manage the state and we are interested
+in tracking our search results so we'll
+have multiple results so we'll store
+that as an array the playlist would have
+different names so we'll just call ours
+new playlist that's the default name and
+we will also store a list of tracks
+which is going to be playlist
+tracks so playlist tracks is going to be
+a list of tracks and let's close
+this block okay and this two is going to
+be initialized within the constructor so
+we'll add it here and now we need to do
+the binding we discussed uh data binding
+so let's look at
+creating a search variable which will
+hold this dot
+search dot bind and bind to the context
+of this very class so we are passing
+this pointer then we'll create
+another variable called add track which
+to this dot add track dot bind and all
+this functionality is what we're going
+to add going forward so right now we're
+just setting up the bindings then we'll
+have capability to remove a track so
+we'll say remove track so remove track
+equal to this dot remove track dot pint
+and
+let's fix that so and all of this too is
+going to be initialized as part of the
+constructor so that's where we're going
+to add it then we'll need to update
+update the playlist name so we need
+functionality that will help us to
+update the name of the playlist so
+functionality that helps us to update
+the playlist name so this dot update
+playlist
+name is equal to this dot
+update playlist name dot bind and this
+is the pointer that we'll pass i need to
+save the playlist so this dot
+save playlist
+equal to this dot save playlist dot find
+and pass this and then i would also need
+to remove the track that has been
+searched for from the playlist so remove
+track search go to this dot
+okay remove track search and
+dot find and finally one last function
+that
+executes
+all of these which probably will bind to
+bind to this context so all the
+declarations are done in the constructor
+now we need to provide the definitions
+for all the methods that we actually
+have added here so let me select this
+tab inside and let's start with the
+search function so we define the search
+first it takes
+some variable value that it searches on
+and then i'm going to say spotify dot
+search i'm going to search for term dot
+then and that's an observable so the
+moment it the search returns a value
+it's going to call this uh callback
+function and that's when we want to set
+the state and we're going to set the
+state for search results to whatever is
+passed by the system so the search
+results are going to be returned as a
+callback and that's what we store as an
+updated state now coming to the add
+track method so let's scroll up and
+we'll say add track and this will take
+the track to be added let's declare a
+temporary variable called tracks equal
+to this dot the current state of all the
+tracks that are there in the playlist
+now if tracks dot find i'm going to call
+the find method
+so if we are able to find which means
+that the track is already there in the
+playlist then we would not want to add
+it if it's not there in the playlist
+that's when we would want to go and it
+the triple equal to is an equality
+operator that will check for both a
+watch value match and a match on the
+data type as well okay so if the track
+is uh already saved to nothing if the
+track is not safe just track the track
+id because that is the track that will
+uh have to be added if it's not if it's
+already there then just return if it's
+not there then we've got to go to this
+variable called tracks we'll use the
+javascript method called push and we
+will push the current track into this
+tracks array and then update the state
+so we want to set the state of the
+playlist tracks and this is how uh your
+state management that we discussed in
+detail is actually being practically
+implemented here okay so the track has
+been added now let's talk about the
+remove track so that's the remove track
+function and that's the track that we
+want to remove so let's let tracks equal
+to this dot state dot playlist tracks
+those the set of current tracks that we
+have and
+let track search another temporary
+variable equal to this dot the current
+state of the search results then let's
+take the tracks array equal to track
+start filter so filter is of javascript
+function that will again allow you to
+remove a certain value create a
+temporary variable called current track
+use the lambda operator and if the
+current track dot id is
+not equal to the track dot id which
+means this particular track is not there
+in the list
+okay so you need to remove that and
+again i have a method called as unshift
+which will actually get rid of the track
+in the array and then we've got to so
+we'll search whether that
+track is existing in the tracks array if
+it is then we simply want to remove it
+if not we do nothing so we set the state
+we need to update the state of the
+playlist because the track has been
+removed so the playlist tracks will have
+to be updated with this tracks array
+okay then we go for remove track search
+that's the next method that also will
+take a track as a parameter okay here we
+are going to say let tracks which is
+another temporary variable we'll give it
+this current state of
+search results and then we're going to
+say tracks equal to tracks dot filter
+current track current track dot id not
+be equal to the track dot id and then
+this is where we would want to say this
+dot set
+state
+and we'll pick up search results
+and let's go and assign that to track so
+that's the updated uh set of tracks
+after making that change let's remove
+this and correct it okay so that's fine
+so the remove track
+is now the remove track in the remove
+track search is now in place let's add
+the do these functions which actually
+again takes track as a parameter and
+here we'll say this dot add track okay
+so it adds the track and then it removes
+the track from the search criteria so
+the search component which is managing
+searching of the tracks it will go and
+remove it from there after adding the
+new track so that's a combined
+operation we want to execute then i've
+got update
+playlist name which will take the name
+of the track to update and this dot set
+state the playlist
+name is what we need to update with the
+name that is passed to this function
+then we've got to save
+playlists so
+here we let me create a constant
+variable constants are variables whose
+values will not frequently change we'll
+take all the track uris dot state dot
+playlist tracks
+will be dot map create a temporary
+variable called track track dot url so
+we actually want to go and uh now save
+this on a
+spotify so that's the reason we'll
+access
+spotify's safe playlist method this dot
+state dot playlist name comma track uris
+and if that is successful we then go
+into a callback so that's the callback
+anonymous function where we're going to
+say this dot
+set date and the playlist
+name that we want to create on spotify
+will be called new playlist so that's
+the custom name that i want to provide
+and the playlist tracks
+define that this closes here
+okay so that's for the update on
+spotify
+now here is where
+the render method is going to return the
+html now this html is the view
+and react simplifies this by having the
+javascript and the html in the same
+file so you can actually go and access
+the variables you've declared in the
+script directly in your html view
+and synchronize and bind the data
+together so it helps
+from a maintainability perspective so
+even though everything is in the same
+file it's well classified and
+differentiated into different code
+blocks so we'll add the anchor tag and
+we'd say href is http localhost so
+that's the default server port on which
+this application will run okay and we
+want to give it a custom url name of
+musical file so the h1 terminates will
+then say div class name equal to app
+within that this is how we're going to
+inject a search bar that's going to be
+the search bar component injected here
+and on search so that's the custom event
+we will call a method called search so
+on search we just call we bind to a
+method called this dot search then we'll
+open up another div here we'll have
+class name equal to app dash playlist
+and if you remember that's exactly the
+css
+class name that we refer to in the css
+file
+we have another component called search
+results
+that we're going to inject here
+and
+that's going to be search results here
+search results will be equal to this dot
+state dot search results so that's how
+we can actually go and bind so that's
+simple data binding the component is
+going to be displayed with the data
+bound and if somebody says add if if i
+click on the add button for search
+results
+do these so it will add that new track
+to the playlist by calling binding to
+the duties function and it will remove
+it from the search results text box then
+we have another component called
+playlist and here the playlist tracks
+will be bound to this dot state dot
+playlist tracks okay so on the top if
+you look here we started with defining
+all the function declarations in the
+constructor then we provided the
+function definitions okay that's how and
+this that we passed refers to the
+context of the current
+component itself so whatever you put
+into the app component or into the
+respective component those values will
+be then passed out here to these
+individual functions okay so that's with
+the playlist couple of things we'll have
+to do is if somebody changes the name of
+the track so on name change is going to
+be another custom event where we have to
+call this dot update playlist name and
+we also have remove functionality so to
+remove a track we would say equal to
+this dot remove track on save equal to
+this dot save playlist okay so that's
+done and we close this so we seem to be
+pretty much
+on track the export
+app will make this all of these
+functions accessible across other
+components it's very similar to the
+public access specifiers etc that you
+provide uh in other programming
+languages so that's done we've created
+our app component now let's create
+another folder under components and
+we've got to define all our various
+components here this folder is going to
+be
+for the search bar so we'll name it
+search bar we'll add two files within it
+the search bar dot css okay and another
+file that we'll need here is
+search bar dot js
+so that's in terms of the search bar
+let's start with the css file so we'll
+start with first styling search bar we
+will say that the display should be flex
+flex
+direction should be column we want all
+the items to be aligned at the center so
+that's align item center then we'll add
+up padding so padding top
+is going to be 6.94
+rpm and
+margin
+bottom is going to be 6.33
+rem all right now let's add up for the
+search bar so that's search bar we'll
+add
+for the input element we want the width
+to be 287 pixels the padding to be zero
+point eight eight
+zero the border should be one pixel
+solid white the border radius
+will give a slight rounded edge uh to
+give a web 3.0 look and feel so we'll
+set up the border radius then we've got
+margin bottom so we've got a bottom
+margin that we want to add up then we
+have color so let's add up the color c3f
+so that's the color black then let's add
+text alignment of
+center and let's add up a font size of
+one rem okay so that's how we've set
+this up let's add
+the search bar input is going to be
+so if someone focuses so focus is the
+got focus so if someone clicks inside so
+the end user goes and clicks inside the
+text box so we change the outline to
+none okay and
+so for the search bar we are interested
+uh on input and if the input is
+focused so that's the event that we are
+looking for and then we would have a
+button called search button so on the
+search button the cursor will set it to
+pointer so that's the cursor pointer the
+width we set it to 8.11
+rem the padding we are going to set up
+to
+0.77 rem and 0 the border radius
+we'll set it to 54 pixels so we get a
+slightly uh well-defined search button
+with a nice little border let's also add
+background color hash one db nine five
+four that gives me a color then i've got
+my text alignment let's set that to
+center then we've got uh a font family
+let's set up the font family to the same
+standard font a t
+and it's a part of the sans serif family
+then we'll set up the font size
+to 0.833
+rem correct this
+and finally
+we will need
+transition so all of these are basic
+css properties so that will add a slight
+transitional effect with a delay of
+that many milliseconds
+so transition background color we've
+provided what else let me scroll up
+let's also provide a border here so
+we'll remove in fact let's remove the
+border we we would not want a border on
+the button that would look odd so i'll
+get rid of the border and color we'll
+specify
+as per our standard color that we've
+been using okay so that's the color
+we've specified and then i've got font
+weight of 500. finally we'll take
+the search button and on the search
+button we will register for the over
+event so if someone takes their mouse
+over the button that's the hover
+event in that case uh if we hover around
+the button we would want the background
+color to change so it will appear to
+have a slight little glow there a mouse
+pointer moves over the button okay so
+that's the opacity and
+the rgb combination so that completes
+the css file for the search bar and we
+obviously now need to go and get the
+code in for
+our search bar component and that's
+exactly what we are going to do next so
+let's start with setting up the code for
+the search bar first thing let's go and
+import react from
+react
+next thing we would want to do is import
+the search bar dot
+css file then we define a class called
+search bar which extends
+react dot component we define our
+constructor and we go and
+pass these parameters to the base class
+we also define
+the state we'll just need one variable
+here which is
+the term to search for in the search bar
+and then let's say this dot
+will define a function called handle
+term change which is going to be equal
+to this dot handle handle term change
+dot
+find so that's going to be the first
+function then a function that will do
+the searching for us
+which is this dot search so that's the
+search function and we'll have it bind
+to this
+then we've got this dot
+handle enter so the moment we enter into
+that search text box
+handle enter dot find this
+so the functions are ready now let's go
+for the first one which is handle term
+change
+we'll pass it a system defined keyword
+of event this dot
+set state and for the term
+we will use the event keyword we will
+get the value that is there inside that
+text box the moment the search term the
+user is entered changes so the search
+criteria changes we trap the updated
+value then in the search function we
+will update the local property props dot
+on
+search
+okay so we'll access the on search and
+pass it the updated term and then we got
+the handle enter on which uh we're also
+going to pass the system define event
+keyword so if there's any data flowing
+along with the event we are interested
+in it in this case the data is the key
+code that the user is pressing and if it
+is 13 that indicates that's the ascii
+key code for the enter button so if the
+enter is hit then the user is completed
+entering the search criteria and we need
+to start searching and that's where we
+write our render method that's going to
+render the html view and we return the
+complete view here so that's the view
+now that we want to return let's say
+tiff class name equal to search bar then
+on the input text box we will use
+placeholder equal to enter song album or
+artist that you want to search for on
+change on the on change event the moment
+the term changes we connect that to
+handle term change we already have an
+function that manages that and the
+moment
+keys are pressed and released so on key
+up is where we would want to connect to
+this dot handle enter okay and this is
+place bracket that i have to put up here
+so in the render function uh we're going
+to return a value i shouldn't forget to
+export the search bar okay so that's uh
+what i want to export so we've exported
+that okay so at the end of this uh what
+we've done is we've written a render
+method we've written our div tag here is
+where we'll go and close
+the div tag we've added an input and
+here is where i'm going to add a button
+provide a class name called search
+button and the moment the end user
+clicks on the button we're going to
+connect it to this dot
+search and we close
+the button tag within the button tag
+search so that
+completes the
+render function so in the render
+function again let's run through all of
+what we've written we started with
+extending react.component we then added
+a constructor passing props to the super
+class constructor we created
+state we set it to a value of
+term and null so the state currently we
+defined as term then we said handle term
+changes search and handle enter should
+be functions
+that we want to add then handle term
+changes
+we defined search we defined and handle
+enter we've also defined then we used
+render render we said is going to return
+to us
+the html that we've specified okay we
+dumped all the html that we want this
+component to return to us
+so on change and on key up are
+two functions that
+or two events that we connected to where
+we called handle term change and handle
+enter then we added a button where we
+registered for the click event and
+connected it to this dot search so all
+the three functions uh that we
+are actually written
+uh so two things we've completed now uh
+in the app class okay if you look at the
+app class we've actually defined a set
+of functions here that deal with the
+playlist and adding applications etc
+adding tracks removing tracks
+then we've created
+the search bar okay so we saw that the
+search bar also we have specified a set
+of functions
+and all the functions that we defined we
+have taken care to structure every
+component separately so the search
+component is doing something completely
+different which is managing the search
+bar we have the core the root app
+component in which we have imported all
+of the other set of javascript classes
+that we are creating and that's how the
+entire application is now structured so
+and that's the core
+concept when you're working with react
+where you would actually have every
+separate
+block of
+code or every separate functionality
+handled in a different component
+altogether so we've completed the search
+bar component as well so two components
+done and two components uh good to go so
+we've got to start up on the next set of
+components that we will need to build
+and the next component is the track
+component that will manage individual
+tracks so a new folder a new file called
+track.css
+and
+track.js
+so that's going to manage
+the tracks for us
+so let's start with dot track we would
+say display is flex
+align items
+center border bottom 1 pixel solid rgba
+256
+256
+256 0.8 that's the opacity then let's
+come to track action so we'll use all of
+these classes uh when we write up the
+html view we'll add a padding here of
+0.5 we'll set up a font size
+of 1.05
+set up a transition color of 0.25
+s
+order of 0 pixel and
+a background color of rgb a
+0 0 0 0 color hash
+so that's the color that we continue to
+use then we bring in track another class
+track action and if we hover over this
+class we want
+the gb values change to 265 265 2 6 5 5
+is the last paragraph so that's the
+hover
+then we have track information so track
+information is the next class that we're
+dealing with we'll add the flex
+parameter first display flex
+and
+then flex
+direction
+is going to be column let's have justify
+content set up as
+center and let's have height as
+180 pixel so that's a track information
+let's have another track information and
+the h3 tags nested inside that for all
+the h3 tags nested inside that we'll
+need a margin bottom of 0.22
+rem finally let's have track information
+and paragraph tag we'll have the font
+size
+of 0.83
+rem and a font weight of 300 and a color
+as well that we'll add so let's add up a
+color here rgba 2 6 256
+256
+256 and 0.8 okay so that's uh that's in
+terms of the css and let's move to the
+track and we'll move into the javascript
+file so let's move into so let me take
+what we added in the search bar i'll go
+to the track.js
+this will change to track.css
+okay the constructor this will change to
+add track so add track change this to
+add track this is
+remove track change this to remove track
+get rid of this and that's going to be
+the add track function and here we are
+going to say uh this dot props
+so we'll modify this this dot
+props
+dot on add this dot props dot track and
+then we have the remove track so that's
+going to be the remove track function
+this function is not required so this
+dot prop start on remove
+and this is the track that we would want
+to go and remove we'll add up another
+function called uh render action so this
+is going to be a function uh that we are
+defining called render action and in
+this we'll just check if this dot props
+dot is
+remove if this dot props dot is
+removal so in that case
+we would want to return so this is a
+view action method that we are adding
+which is going to go and add this button
+with a class called as track action that
+we've already written the css for and
+this button will actually get added
+via this render action function and this
+dot
+remove track is
+what it's going to map to let's close
+this
+this is going to point to this specific
+function so that's uh the closing button
+tag okay so the closing button tag is
+what
+we've added there and the binding is
+what we have done to this dot remove
+track and
+we will terminate this here so now the
+render action uh let's also have the
+return here
+and we just add up the button and this
+is going to add track so you can look at
+how the component is completely dynamic
+in nature so we have two buttons that
+are going to be added this button with
+the hyphen is going to remove the track
+this button uh with the plus sign is
+going to add the track and you can
+actually see how simply it was done in a
+render action function so the render
+action function actually helped
+with
+checking that if on the value of the
+props
+and if the user uh depending on
+the action performed you will actually
+be able to remove a track or add a track
+from the existing playlist okay and then
+uh the class name here is now going to
+be track the class name for
+uh the enclosing div inside it so let me
+get rid of this the class name for the
+enclosing div here
+is going to be
+track dash
+information within it we'll add h3 we'll
+bind to this dot props dot track dot
+name so the name of the track is going
+to get bound here then in the paragraph
+we will find to this dot props
+dot track dot artist
+and
+with some gap this dot props dot track
+dot algo so that's what
+we've data bound to
+and then let me add an iframe an iframe
+allows us to
+very easily inject some content into the
+page within a small embedded window the
+source parameter of the frame is going
+to be https
+open dot so here i'm connecting to the
+spotify stream
+spotify.com slash embed slash track and
+close this so that's the spotify stream
+that we are going to connect to and this
+dot props dot track dot id so that's the
+track id the width is going to be 300
+the height parameter this the height
+parameter is going to be 80 of the
+iframe and
+the frame border is going to be zero
+and the allow
+transparency so that's the opacity we'll
+say true let's add allow
+encrypted media so if spotify has
+encrypted media that also would be
+embedded here and we can also have the
+title set to preview so that's uh with
+the iframe okay at the bottom is where
+we would want to so this could be an
+empty element and we can close it
+right around here so we wouldn't need
+this part and then here i'm just going
+to say this dot
+render action so we call the render
+action method uh which will actually
+give us plus minus button to add and
+remove uh
+new element okay and that's uh what we
+can actually go and add up there so
+let's check now whether all that we've
+done is good to go fine so everything
+looks good uh in terms of the track
+component now and
+we have all of the functions in place
+it's now time to jump into the
+next component that we would require
+after the track component and
+that's going to be the track list so
+this is going to be a list component
+that will comprise of a list of tracks
+inside it so we'll create a new folder
+call this track list
+and that's going to have
+track list css
+and it's going to have track list dot js
+so that's the track
+component now which
+we're going to go ahead and use
+and the css we don't need much so let's
+just say track list
+and we just provide a width of 100
+okay that's all we'll need uh in the css
+so let me add this in the css file save
+this
+and come to the js file now which is
+going to have
+the track list code that we will need to
+add up so here again i'm going to say
+import react
+from react we'd also want to import
+track list dot css
+and
+we also want to go and get track because
+this component is going to be made up of
+a collection of tracks
+individual tracks so we want to get this
+from track slash track and we'll define
+class track list which is going to go
+and extend
+react dot
+component
+we just need the render method here
+because this just needs to go it does
+not really have any state of itself it
+simply goes and returns a list of
+individual tracks
+so this class name is going to be track
+list
+and we'll find to this dot props dot
+tracks dot map create a temporary
+variable
+and this will go and return
+the track component
+which is going to bind to individual
+track data the key is going to be track
+dot id so the key is going to be track
+dot id
+and on add on adding a new track we want
+to bind to this dot properties dot and
+we already have on add defined so that's
+what we connect to we add up my
+base bracket here okay and
+then we would also need
+is
+removal equal to
+this dot props dot is
+removal and the on remove will do this
+dot prop start on remove so that's for
+the track removal and
+so we've got our track list
+uh oh yes we'll have to go and
+also close the tip tag correctly and
+also we need to go and export
+so we'll have to go and export
+the track
+list
+so we've got one more component done
+which is track list and let's move on to
+the next component now so we've got app
+which is root we've got the search bar
+that takes care of uh entering the
+search criteria we've got individual
+tracks that are searched and returned
+and we've got a track list that manages
+a set of track records so the track is
+more relevant to the playlist and then
+we've got the search results also to
+manage once we search for some
+set of tracks so we'll add a new folder
+which manages search results
+and this is going to have
+search results dot css
+and it's going to have
+search results dot js
+okay so we need a search results dot css
+and js and here in the css file we'll
+keep it simple for the search
+results so we say search results we'll
+set up the width of 50 percent we
+set up the height of 950
+pixels
+we'll say
+overflow y is
+scroll we'll say padding is 0.88
+rem background color will be rgba
+95
+23 23 0.7 and we will use the box model
+so we'll provide a shadow dropping
+shadow of zero for pixels to pixels to
+pixels ash
+and then uh
+let's add
+a scroll bar so
+webkit
+and mozart are the constants specific to
+mozilla and
+chrome browsers
+so they target certain animated features
+etc or properties
+that are specific to those individual
+browsers that's the reason we use those
+constants
+and then we'll also add a media query
+that if it goes with a max
+with one zero two zero pixels
+in that case dot search results
+width is 90 percent
+with a margin bottom of 2
+okay so
+we're going to add hyphen so it's hyphen
+webkit scroll bar zero pixel width
+and we've set
+transparent background so that's that's
+about it with
+the css i need to get to the uh js file
+now let's move to the search results
+js file and
+that's where we will now have to go and
+add up
+the component code for search results
+and let me take
+pick this up from track list
+add it up here this would be
+search results and
+we need the results will return to us a
+list of tracks so we'll have to get uh
+track list this will be track list
+and
+i'm just going to return class name will
+also be
+search results so that's the component
+and this is going to export out search
+results so it's accessible across
+other components then we've got h2 with
+results
+let's go and create
+tracked list with a set of tracks and we
+will bind it to this dot props dot
+search results and on the on add we're
+going to bind to this dot props dot on
+add so we already have that so that
+basically
+completes search results and
+that leaves us with the last component
+which is going to manage the playlist
+for us so we'll add up a new books we'll
+add up a new folder in components
+and that's going to be playlist
+and within that we will have a playlist
+dot css
+and
+a playlist dot js
+so that's our
+playlist component now that
+we're going to work with and the
+playlist component is
+uh we'll first set up
+the css that we will need
+to add up to the playlist and i'm just
+going to
+pick that up from
+my code snippet so that's my playlist
+and let me get all of that css here so
+that's uh just this css for the playlist
+nothing to do with react again pure css
+let me get
+into the js file and that's where we
+will need to go and add all of our
+component code so again let me go to the
+track.js
+the track list rather let me get this
+and add it out here we'll make some
+small changes this is going to be
+playlist
+i need to import the track list
+because the playlist is going to contain
+a list of tracks
+this is going to be
+playlist and
+let me
+here this will be playlist and we'll
+leave this
+for later okay let me also get
+the constructor in so we'll add up the
+constructor here and just one
+function that we will need here which is
+handle name change you know if i need to
+change the name of the playlist so
+handle name change and that's exactly
+the function that we will need to write
+code for so that's the event
+and this dot props
+dot on name change that's when we'll say
+event dot
+target dot value so we get the updated
+playlist name coming to the render we
+now need the input input
+is going to be on change equal to this
+dot
+handle name change
+the default
+value we have already provided with a
+hard coded value which is new playlist
+so that's the default value if
+not provided then we'll just pick up the
+default value then we've got
+track list so track list is
+what i will add the tracks i'm going to
+bind to this dot props dot playlist
+tracks
+so we're going to bind this to playlist
+tracks
+and here we will say
+is
+removal
+equal to
+true and on remove
+equal to we'll bind that to this dot
+props
+dot on remove
+finally we'll need a button we will use
+class name equal to playlist
+dash
+save that's what we've added in the css
+click equal to this dot props
+dot on save and here we're going to say
+save to
+spotify so that's with the
+playlist and yes we need to go and
+export playlist and not track list
+now we'll need to
+do a quick look up
+in spotify so let's go to this website
+called developer.spotify.com
+and once once we sign in
+and create an id it takes us to our
+dashboard
+that's where we can create a sample
+application the name of the application
+will be musical file okay and
+we'll say that we are building uh
+some kind of desktop app for example for
+which we want to connect this to and
+we'll also need to provide uh so we'll
+say next
+refresh the dashboard so it's uh
+asking me for a login so let me login
+once more so moment i login that's going
+to be description and i'll say maybe
+this is why i need it i'll say no not
+commercial integration agree with the
+terms and conditions and we will say
+submit
+and that's the application that has got
+created and now i can say edit settings
+and
+the redirect url here is what is
+important
+so it should accept connections from
+http localhost 3000 that's the port on
+which we will host our application okay
+and we'll say save okay so that's uh now
+there's a client id that is generated
+here for my app which is unique so i'll
+just copy that up let me come up to my
+application under the source folder i'm
+going to add a new folder called util
+and under that a new file called
+spotify.js
+so we will start with
+adding our code to the spotify.js file
+that we've just created as a new file
+within the newly created util folder the
+first line of code is going to define a
+client id variable that equates to the
+client id that we will generate on
+spotify so this is going to be the
+spotify generated client id which is a
+unique id associated for the developer
+to connect to the spotify api and we
+will look at
+the source of that as we go through the
+demo the next variable that we'll create
+is the redirect url or let's call it
+redirect uri and that will equate to
+localhost colon 3000 which is the port
+and we'll create
+another variable called the access token
+let's also create another constant
+variable called spotify and this will
+work like a function expression so we'll
+equate it to a function called get
+access token and we will say if access
+token is true then return the access
+token now let's declare a constant
+variable called access token match which
+will be equal to window dot location dot
+href dot match and we will say this is
+equal to access token which will be
+equal to and we will give a rejects
+expression to do a pattern match
+ampersand so that we can actually get
+into the url and extract
+the token information from that and
+hence
+the pattern match is crucial here
+another constant
+variable called
+expires in match
+equal to window dot location dot href
+dot match here we will read the expiry
+information using another edgex
+expression from the url ampersand
+asterisk so that's the second constant
+variable we've created now we will say
+if access token match and
+expires in match in that case
+the access token should be equal to
+access token match of one then we create
+a variable called
+expires in equal to we'll do a typecast
+to number and we will take the first
+parameter from the expires in match
+that's done then we will say
+window.settimeout
+and we are going to say access token
+equal to comma
+expires in multiplied by thousand then
+we will say window dot history dot push
+state and we will say access token we
+pass the second parameter as null the
+last parameter as slash and close this
+and we will return access token else
+we will say const access
+url equal to https
+accounts.spotify.com
+slash
+authorize
+client underscore id equal to dollar
+client id ampersand response type equal
+to token ampersand scope equal to
+playlist dash
+modify so we are actually building the
+url that will now get generated so we
+will say modify dash public and redirect
+url equal to dollar redirect uri so we
+have constructed the url now that will
+go out and get generated in the browser
+and here we are going to say window dot
+location equal to access url then we'll
+add the search criteria function which
+accepts a term as a parameter to search
+on here we will say constant access
+token equal to spotify dot get access
+token so we get a reference to the same
+access token return we call the fetch
+function and we're going to pass
+https
+api dot
+spotify.com slash
+v1 slash
+search question mark that's the query
+string that we will add type equal to
+track and ampersand g equal to dollar
+and we will pass term comma as the
+header information we will need to pass
+the authorization where we will say that
+the pairer is dollar access token dot
+then response
+return response dot json dot then so the
+return of this function once it
+completes we will then call the next
+function so json response
+and then we will say
+return response dot json after that
+another then block so we'll now say json
+response
+and if
+not
+jsonresponse.tracks
+in that case we will return
+an empty array else
+we will return json response dot tracks
+dot items dot and we will pass
+we'll create track as
+a variable with a lambda expression and
+we'll create a temporary json object
+with id and that's where we want to
+associate track dot id that was returned
+as the search result the name is going
+to be associated with track dot name the
+artist is going to be associated with
+track dot artists of zero dot name the
+album is going to be track dot album dot
+name and the uri we will equate track
+dot url so that completes uh this block
+will open the next and we this will be
+the save playlist which will take the
+name and the track uris and here we will
+check if not
+name or not track uris dot len in that
+case we simply return out of the code
+and then we declare a constant variable
+called access token which will be equal
+to spotify dot get access token so we
+get a reference to the access token we
+then declare headers authorization
+bearer is going to be dollar access
+token and we'll create a user id and now
+we will return the fetch result where we
+will pass https
+api dot spotify dot com slash v1 slash
+me so that's the url comma headers
+will be the header information then we
+call the then function declare response
+as a variable use the lambda expression
+and access response dot json we use the
+then block to declare json response
+here we say user id equal to json
+response dot id and then we return fetch
+https
+api dot spotify.com
+slash v1 slash users slash dollar of
+user id slash playlist so this is how
+we've constructed the urls manually here
+we will say assign headers to the
+headers variable we'll assign method as
+host so the data is sent as part of the
+body and not as part of the url and
+as the body we will say json.stringify
+to convert this parameter name and then
+we will generate a response variable to
+response.js
+and then we'll create jsonresponse with
+the lambda operation we'll create a
+constant playlist id which is equal to
+jsonresponse.id we will return fetch
+https
+api.spotify.com
+v1 users
+dollar user id slash playlist slash
+dollar again we are constructing the url
+so playlist id will be replaced here
+then we will say tracks
+and close this comma and here again we
+will say headers would equate to the
+headers
+variable be constant headers and this
+goes here okay everything fixed now so
+here we are going to say headers should
+equate to headers and
+the method is going to be post and
+the body is going to be json dot
+stringify uris track uris and we close
+this we close this block we close this
+block and we close this block so that
+completes our code of course one more
+thing we have to do which is export this
+class out so export default spotify and
+that completes the code for
+the spotify.js
+which is part of our utils class so
+let's move on now to the next step so
+uh here is uh the client id that we'll
+have to exactly match so i'll copy this
+client id and provide it here so that's
+the client id uh that we actually need
+and we could also store it
+out here
+so that's the
+client id and that's the redirect url
+that we've also defined there and we
+just create an access token if here the
+access token is true we return access
+token
+so the access token is something that we
+are going to do a match from uh
+the moment we try and connect with this
+particular url and you can look here
+that this is the access url that we are
+trying to connect with okay with the
+client id and post fixed with the
+redirect url right and then i've got a
+simple search function which returns an
+observable so we try to fetch data using
+the search term that we provided okay we
+try to fetch data using the search term
+provided if we are successful we get a
+response of the data and accordingly
+we'll iterate over the json response and
+get a list of tracks out of it and do a
+mapping of this json object to the track
+id name artist information album name
+etc and here
+just like a data access layer very
+similar to a data access layer we've got
+a save function which will save this
+data to spotify as well so i've got a
+save playlist and i've got search so
+these are the two functions which will
+go and connect to the spotify service uh
+by using this client id and it will
+allow me to
+access that information in terms of
+returning a stream of json data and will
+then allow me to
+go ahead and push that json data into
+our application so now we
+actually need to start up the
+application so i'll go to the terminal
+and rather let me go to view and
+bring out the terminal so this is the
+integrated terminal that's there in the
+tool and it just opens powershell from
+which you can actually fire your
+commands so i'm going to say node
+package manager npm start to actually
+start up this application so that's
+going to do a full compile and
+so we will fire this up give access so i
+need to grant access to that port 3000
+let's give it time to run and that's the
+app now that
+you can actually see here so this is uh
+the search bar that we actually had okay
+then we had the results we had the
+playlist now the results is going to
+consist of
+a set of tracks which are maintained by
+the track list and then you can take
+individual tracks with the plus and
+minus button and add them into the
+playlist okay so that's how
+it's typically going to work okay so as
+you can view here i'm just going to
+search for an artist
+and we'll click on the search button it
+goes to spotify tries to connect there
+and says
+that i need to agree to the terms and
+conditions and i've just agreed to that
+so the very fact that it actually uh
+gave us uh a confirmation link the
+moment we tried to connect and execute
+our application uh that's proof enough
+that it actually went and connected to
+the
+service there and tried to return a
+value to us so this is what we did we
+just added an artist we said search
+and you can see now it's successfully
+connected i've got a list of tracks
+available from this artist and you can
+see the plus buttons getting added on
+the fly so that was the render action
+these are
+buttons that got added onto this list of
+tracks dynamically the moment the search
+results returned a value so i can click
+on this plus sign and you can see that
+the track gets added to the playlist
+okay as in when i click here so i've
+added a couple of tracks
+if i go back to my dashboard of my music
+file application and that i've created
+here in the developers portal of spotify
+on
+developers.spotify.com it's blank so now
+i'm going to click on save to spotify
+okay and that clears the playlist
+so let me come here
+and
+now when i come out here we saw that it
+actually got
+successfully connected out here now i'll
+have to log in to so this was the
+development app that we actually created
+on the developers portal of spotify now
+we will go to spotify.com
+so i'll just go to the spotify website
+and it says do you want to launch the
+web player and all that so let me click
+on that so it just launches
+and can you see here this is the new
+playlist
+that just got added right and there were
+four songs that i'd actually added to
+the playlist and you can see here those
+four songs have got added out here okay
+so i can go here and
+i can delete this playlist and say i
+want to delete it okay so there's no
+playlist now i'll go back here
+i'll add two tracks and i'll say save to
+spotify so that's how you actually saw
+that the new playlist you can see the
+new playlist has come back here okay and
+that's the playlist uh the playlist has
+got generated again and that's the new
+playlist that
+got created and we deleted it but it
+still got created again and that
+indicates the connectivity uh that we
+successfully created with this react app
+and the core concept of the react app
+was breaking it down into components
+which is the search component then we
+created the track component we created
+the track list to maintain a list of
+tracks
+then we created the search results which
+will generate a list of results which
+further contains a track list and this
+is the embedded iframe which gave us the
+response which is scrollable here and
+you can see that the iframes we created
+allowed us to scroll this
+with this embedded web page inside the
+iframe container so with that
+i hope we've been successful with
+explaining the concept of component
+based design and architecture with react
+and how important it is to create
+individual components and the benefit of
+that being that you can isolate change
+requests to a certain component you can
+promote reusability wherever you want
+the same feature to be implemented on
+the page you can just inject that same
+component and the same implementation
+and the same features can be reused so
+it promotes reusability it promotes
+flexibility to change it isolates your
+change request to single components
+preventing the massive effort of
+recompiling and retesting the entire
+application as a whole and so with that
+we come to the end of this session i
+hope you enjoyed building these
+applications thank you so much for being
+here and watch out for more videos from
+us until then keep learning and stay
+tuned to simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

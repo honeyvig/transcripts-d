@@ -1,0 +1,200 @@
+so Lumiere and welcome to another
+tutorial my name is Tammy Bakshi and
+today I'm joined by Scott D'Angelo thank
+you very much Scott for joining in today
+really glad to have you on the show
+would you like to quickly introduce
+yourself
+yeah I'm Scott D'Angelo I work for IBM
+as a developer and I produce code
+patterns that's great so just in case
+you were actually watching around last
+week I published a video with retire T
+he's also a part of your team code
+patterns of course being little building
+blocks of code that you as developers
+can take from people like Scott for
+developing them and actually implement
+them in your apps and modify them
+probably want to or even combine them
+and make your own applications brother
+quickly Scott specifically what kinds of
+technologies are you passionate about or
+interested in well AI I'm fortunate
+enough to work with IBM's Watson tools
+and so I get to work with artificial
+intelligence and machine learning and I
+think today we're going to demonstrate
+something that uses virtual reality
+which is another fascinating topic
+absolutely thank you very much Scott
+that's right Oh Scott here is very
+interested in virtual reality VR and of
+course I actually have a youtube
+tutorial on virtual reality and it was
+done with Michael wooden who used toward
+for IBM as well they will link to that
+down in the description below
+in fact that wart that Michael did has
+now been adapted and applied as a code
+pattern that you can go ahead and
+download from the IBM website and Scott
+over here is gonna be showing that to us
+it only show us how exactly this VR
+application works in fact if you at home
+don't have an actual VR headset no need
+to worry you can use one of these Google
+cardboard or practically any kind of
+cardboard headset that you get and you
+can actually
+and on your own phone I'm actually take
+a look at virtual reality without having
+to have any fancy hardware or headsets
+and the best part is this isn't just any
+virtual reality application this is
+combined with IBM Watson speech to text
+and text-to-speech to create a kind of
+speech sandbox would you like to
+elaborate a bit more on how exactly that
+works yeah so basically we use speech to
+text and the lesson assistant tool to
+implement voice commands so the idea of
+being in virtual reality you know you
+can have a handset you can use various
+artifacts to manipulate the virtual
+reality but what in the real world we
+naturally affect the world with our
+voices we ask for things we interact
+with our with our voices so this is a
+way for you to use the Unity game
+development engine along with IBM's
+Watson a speech to text and the Watson
+assistive tools and implement voice
+commands to have the virtual reality
+respond in any way you want that's great
+no no what's Howard's the cutting part
+where we're gonna take a look at a demo
+the application in action and then also
+take a look at a demo we'll go a little
+bit into the code and show you how you
+can actually modify it to work with your
+own objects to work with your own
+commands and then from there if you'd
+like to deploy on their own virtual
+reality headset or even on the Unity you
+can go ahead and download the code
+pattern in the description below let's
+head over to code create a large black
+box
+create a large red box
+destroy move up
+create a large red ball
+I'd like to do something up here on the
+mountains for fun create a large green
+ball
+so your unity project has lots of assets
+all the icons graphics tools we're
+really interested in the script that
+does all the work so if we look in the
+scripts directory we have speech sandbox
+streaming and this is where we
+instantiate our speech to text and our
+Watson assistant using credentials which
+we can set in the in the unity editor
+and the instructions for that are in the
+github repo and of the readme you set
+these credentials you instantiate your
+speech to text and your Watson assistant
+and then the the script will do all the
+work to translate your voice commands to
+text and then send that text off to the
+Watson assistant service so here in
+unrecognised we see where the speech to
+text services is getting some some data
+and once it gets some it sends it off to
+the conversations message method and
+that's where the intents and entities
+are extracted using the Watson assistant
+service so you can change these intents
+and entities to be whatever it is you'd
+like you can have any intent any verb
+like create destroy up whatever you can
+have any entity of the size of the ball
+the color etc so if we go into the on
+message method will see that you can use
+the parsing of these intents and
+entities and once we're inside there
+let's see here so here the on message
+method is where we we look at these
+intents and entities for example if the
+intent is move we can go ahead and call
+our game managers create object first if
+the intent is move we call game in
+manager move object and that's where you
+implement the logic to move the object
+so if you're implementing your own
+commands you'll you'll put that method
+into your game manager or whatever and
+that's where it will happen if the
+intent is create first we're looking at
+materials working at scale we're trying
+to figure out some of the entities
+around it and then we call game manager
+create object so this is another method
+that
+implemented that you can look up but the
+main point is that here is where you'll
+add your own voice commands move create
+destroy you can replace them you can you
+can add wherever you like and then in
+the game manager that's where you call
+the method associated with with that
+voice command so pretty straightforward
+it's all open source code you can you
+can modify it in any way you want use it
+in your own application and you'll be
+able to implement whatever voice command
+you want you'll just have to also go to
+the Watson assistant add your own
+entities your own intents you can play
+around with that as well alright so
+thank you very much stop for joining in
+today and helping me out demonstrating
+virtual reality and how you can actually
+take even things like the cardboard or
+even the actual proper virtual virtual
+reality headsets like the HTC vive I
+know ahead and create your own
+applications that use Watson to pretty
+even better virtual reality experiences
+again thank you very much Scott and
+that's what we have for this tutorial
+today thank you very much everyone for
+joining in today that's what we had for
+this tutorial do hope you enjoyed if you
+do have any questions lessons or
+feedback you can email that to either me
+or Scott so Scott how can people contact
+you you can go to my youtube channel
+Scott dan jello and just put a comment
+in on any of the videos that describe
+this you can contact me at Scott Angelo
+and ibm.com or Scott D'Angelo at
+gmail.com that's perfect all your
+contact will be down in the description
+below so you can go ahead and email or
+message Scott if you'd like to and of
+course my contact my email Twitter and
+of course you can lead down any
+suggestions or feedback that you have
+down in the comments as well and Scott
+and I would love to get back to you
+apart from that if you did like this
+video please make sure to leave a like
+and if you really do like a bunch of the
+content on this channel please do make
+sure to subscribe
+internal notifications if you'd like to
+be notified whenever I release a new
+video thank you very much everyone for
+20 and today thank you Scott bye-bye

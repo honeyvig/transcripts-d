@@ -1,0 +1,297 @@
+[Music]
+[Music]
+hi I'm Jason Johnston a senior content
+developer with the Outlook ecosystems
+team today I'm going to show you how to
+authenticate your node.js web app to
+call the calendar API to access your
+calendar in Office
+365 so let's get
+started to start start with I've got
+this very basic node.js website that
+uses the Express
+framework it doesn't really do a whole
+lot yet but we're going to change that
+in this session the code that I'm
+starting with is available on GitHub the
+link will be available in the comments
+below um we have a clean slate branch on
+this repo that will uh correspond to
+what I'm starting with here today so
+let's switch over to the code and get
+started
+um in order to implement ooth we're
+going to use a an open source Library
+called Simple ooth 2 so the first thing
+that we need to do is install that using
+mpm okay now that we have that installed
+we can go ahead head and make use of it
+so we're going to add a file to our
+project here to hold all of our author
+authentication methods called athh
+helper. Js
+okay so what I've done here is
+implemented all the functions that we
+need for authentication through the
+magic of code Snippets um we'll go over
+each one as we get to them uh the first
+thing that you might me you might notice
+is that we have these values here at the
+top that are currently empty we need to
+get values for those um and the way that
+we do that is we register our
+application in the Microsoft app
+portal this is the application
+registration portal I've already signed
+in using my Office 365 uh user account
+and I can go ahead and create an app
+registration here so I click the add app
+and I'll give it a
+name once this is done we will have an
+application
+ID which we'll use for the client ID
+value in our
+[Music]
+code so I'll just copy the application
+ID
+here and put it in for my client
+ID the next thing that we need to do is
+get a client secret uh we can do this
+here by generating a new password
+now pay close attention to this dialogue
+this is the only time that you'll be
+able to see this password so you do need
+to copy it
+now if you come back you can only see
+the first three characters so be sure to
+copy it when you generate it the last
+thing is our redirect URI this is where
+the Azure authentication process will
+redirect back into our web app after the
+authentication is completed um so we're
+going to go ahead and set this
+to the authorized route in our
+app now we do need to also specify that
+in our application
+registration the authentication process
+will only redirect to URLs that we have
+preconfigured in our
+registration so to do that we will come
+to the platform section in the
+registration and click add platform
+we're a web app so we're going to click
+web and here we can enter our redirect
+URI we'll go ahead and click save to
+finalize that
+registration we'll SW switch back to the
+code while that's
+saving the next thing you might uh
+notice is the Scopes array this this is
+where we specify what permissions our
+application needs in order to function
+um I've only included three here uh open
+ID will allow the authentication process
+to tell us a little bit of information
+about the user such as their display
+name and their email address we will use
+that later so we include that here
+offine access is important if you want
+to be able to have continuous access to
+the user's data after that initial log
+on process
+that's that's accomplished by getting a
+refresh token as part of the
+authentication process which you can
+then silently acquire new
+access access tokens as they uh
+expire then finally we have this
+calendars. read scope which will allow
+us to read the user's
+calendar and we'll see that in
+action now the first export that we have
+in this off helper module is the get off
+URL all this does is use the simple oo2
+library to generate the sign on URL back
+to our Azure authentication endpoint
+this is the first function that we're
+going to make use of so we'll switch
+back over to our uh
+app.js and find our
+homepage currently we are just setting a
+hash URL for the
+log on button so we'll replace that by
+using that get off URL
+function first we do need to require our
+new module
+okay so now our button should have a
+valid link when we rerun the app but
+before we do that let's go ahead and and
+Implement some of the rest of it um we
+set our redirect URI to go to an
+authorized route in our app which we
+currently don't have implemented so
+let's go ahead and add that
+okay so if we take a a quick look at
+this um we check the query parameters of
+the incoming request for a code
+parameter this is how the um Azure off
+process gives us back the authorization
+code that we need to exchange for a
+token so we take that code and we are
+passing it to the get token from code
+function also in our othh helper
+we'll take a quick look at that
+one all this is doing here is using the
+simple o off to library again to get the
+token it passes in the authorization
+code and again our redirect URI which
+matches what we uh used in the o o
+request and we include all of our
+Scopes this is going to call back into a
+call back function which we specified
+in
+app.js token received again we haven't
+implemented that yet so let's go ahead
+and do that so we can get this up and
+running in the token call back we are
+going to just get the access token and
+refresh token from the um result that is
+returned to us and save it in our
+session
+and finally we will redirect to a login
+complete
+page let's go ahead and add that and
+then we should be able to actually see
+this in
+action so on the login complete we read
+the access token and refresh token back
+out of the
+session and
+we simply dump it to the
+screen that should be enough for us to
+see this working and and verify that
+everything's working so let's go ahead
+and run the app and see it in
+action okay now if
+we uh rerun the app we will see that uh
+clicking the signin button actually
+takes us to the login page I'm going to
+log in with my Office 365 user
+and once the authentication process is
+complete and we're redirected back into
+the app I can see that I have my access
+token so great everything's
+working so now that we're logged in we
+can do some things some interesting
+things with the data the first thing
+that we want to do is actually get some
+information about the user themselves um
+and the way that we're going to do that
+is by using the ID token
+we already have a function in othh
+helper. JS that can extract the user's
+email address from the ID
+token the ID token is returned to us
+along with the access token and refresh
+token as part of the authentication
+process so let's add a function
+in our token received to call this get
+email function and save it in our
+session
+and then in login
+complete we'll get get that email
+address back out of the
+session and instead of just dumping into
+the
+screen we'll pass that email address to
+our login completed page template
+now if we restart the
+app sign in
+again this time we actually get
+something a little nicer so you can see
+we have the user's email address that we
+got from the ID token and we have a few
+buttons here sync Calendar refresh
+tokens and log out so the sync calendar
+will cover in the next session but uh
+refreshing tokens and logging out is
+still part of the authentication process
+so let's go ahead and take a look at
+those so refreshing tokens is something
+that your app will need to do every once
+in a while when you get an access token
+it's good for an hour after that hour is
+up you've got to get a new one um using
+a refresh token is the way to do that
+without any user interaction so let's
+implement the refresh tokens
+I'm going to start by adding a refresh
+token route to our
+app so as you can see we get the refresh
+token out of the
+session and then we pass that to get
+token from refresh token in our off
+helper we also reuse our token received
+call back here um because it does
+exactly what we need it to do
+let's take an off take a look at the get
+token from refresh token function in
+athh helper very
+quickly again simple oo 2 makes this
+super easy for us we just need to create
+a token object from the refresh token
+and then call Refresh on
+it it's important to note that when you
+use the refresh token to get a new
+access token you also get a new refresh
+token so it's a best practice to always
+always update your refresh token with
+the new one refresh tokens are pretty
+long lived but they can expire so it's
+always best to get the freshest one
+possible okay so before we rerun the app
+and see refresh token at work let's go
+ahead and Implement log
+out log out for us will be very
+easy since we're storing the tokens in
+our session all we'll do is destroy the
+session and go back back to the
+homepage easy
+enough so now let's restart the app one
+last
+time and see it all at
+work okay and if we sign in now we can
+refresh the
+token now didn't really do anything that
+we could see but if we take a look at
+our console
+output we can
+verify that we got a new
+token and then finally if we log
+out we're right back to where we started
+and that's it that's all we need to do
+to implement the authentication piece
+which is really the hard part of
+connecting your node app to Office
+365 in the next session we'll go ahead
+and take a look at implementing calendar
+sync um if
+you want to compare your source with
+what we did in this session if you go
+back to the GitHub repo and look at the
+session one
+branch that should match what we've done
+in this session and that's it we've
+implemented authentication and connected
+our app to Office 365 we've gotten past
+the hard part so in the next session
+we'll go ahead and take a look at
+implementing basic calendar sync that's
+pretty much all that I wanted to show
+you in this session if you'd like to
+learn more be sure to check out dev.
+outlook.com or dev.off do.com for more
+getting started materials and
+information on node and other platforms
+thanks for watching
+[Music]

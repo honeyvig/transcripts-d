@@ -1,0 +1,711 @@
+so hello there and welcome to another
+tutorial my name is tanya bakshi and
+today
+we're going to be going over the fourth
+episode in the learn
+deep learning from scratch series now
+today is a continuation
+of the previous episode right showing
+you the number in the gator today
+we're going to be talking about what i
+like to call dimensionality reduction or
+really this is a generic term really in
+the industry
+um but what we're going to be doing is
+we're actually going to be exploring
+dimensionality reduction
+through what's known as gradient descent
+now you've already seen an example of
+gradient descent in action with a number
+the gator
+and today we're going to be taking a
+look at how you can actually repurpose
+that
+in order to reduce the number of
+dimensions in your data again
+don't worry about what that means just
+yet i'll be showing that to you in just
+a moment so let's go ahead and dive
+right into the example
+all right now what you're seeing on
+screen is a two-dimensional graph it's
+kind of similar to the one that i had
+shown you last time
+except i just sort of expanded the graph
+a little bit
+now let's just say i would give you a
+pretty challenging task
+we've got the following three
+dimensional coordinates
+a b c and d right these are four
+different points
+in three dimensional space and i want
+you to plot them
+on this two dimensional graph how would
+you do it
+well you can't they're three dimensional
+points
+you fundamentally cannot just represent
+three dimensions in two-dimensional
+space it doesn't really make sense
+now there are some ways you could do it
+right like you could you know cast a
+shadow of a three-dimensional object on
+the two-dimensional space
+there are different things you could do
+um however being able to sort of
+represent the same
+structure of points from
+three-dimensional space in the
+two-dimensional space
+is what's known as dimensionality
+reduction
+removing an entire dimension from a
+certain sequence of points or some sort
+of data that you have
+now this might not seem extremely useful
+immediately but think about it like this
+let's just say you're dealing with
+images of you know cats and dogs
+and you use a neural network to bring
+down uh the number of
+aim it or the number of numbers that you
+need to work with which you know
+for a 4k image could be you know
+thousands of different um numbers
+let's just say you use a neural network
+to bring that down to just 512 which is
+totally reasonable
+now the thing is we live in a universe
+with just three spatial dimensions
+and we physically cannot perceive what
+512 spatial dimensions would be like
+and therefore those values aren't very
+important to you you can't really make
+sense of them
+so you've got to do what's known as
+dimensionality reduction to bring them
+down to
+you know what we as mere mortals can
+actually comprehend
+which is just three or fewer spatial
+dimensions
+in this case though i've given you
+something a little bit simpler which is
+we go from three dimensions to two
+dimensions so we can plot it more easily
+on this graph
+now there's a couple of ways we could go
+about doing this and here's the way that
+i've decided we'll do it
+what i'm going to do is i'm going to
+take each pair of points so
+for example a b a c a d then
+b c and c d and so on and i'm going to
+take all these different um
+coordinate pairs and we're going to find
+the distance of
+every point to every other point then
+we're going to try and map those
+distances to a bunch of
+2d coordinates where the distances are
+preserved as much
+as possible but how do we find
+2d coordinates where the distances
+between all of them
+match the distances between a b c and d
+well let's figure it out now of course
+just with like
+a lot of things in life we're gonna
+start off with a pretty random
+initialization so let's just say we've
+got these four points
+and we want these to now represent a b
+c and d now these are starting off at
+completely random locations right it
+doesn't matter
+where they are right now but what i'm
+going to do is i'm going to somehow
+move these dots to where i know they
+represent a similar structure to what a
+b
+c and d do in three-dimensional space
+the way i'm going to do this
+is by drawing a line between all of them
+right so
+there's lines going between all the
+different dots now and what i'm going to
+do is i'm also going to plot out on the
+bottom right corner for you
+a little bit of a legend all right now
+each line is color coded
+and for every line you can see two
+values in the bottom ray
+one is y and one is y hat
+now the y which is the one on the right
+is the actual
+distance between those two points in
+three dimensional space
+so this is the actual like label for
+how far away we know these points are
+supposed to be
+so for example you know red 7.3
+we know that whatever two points red is
+connecting
+their actual distance in
+three-dimensional space is seven point
+three units
+and this is euclidean straight line
+distance
+however y hat is what we
+believe their distance is is what we
+have sort of set their distance to be
+in two-dimensional space so if you were
+to take the actual dots
+on the graph right now if you were if
+you were to calculate their
+uh their distance you would get 5.7 now
+here's what we want to do
+we want to move all these dots across
+this space
+such that y hat matches y as much as
+possible
+meaning where those dots are their
+distances to each other
+match the distances uh between all of
+the three dimensional dots as well
+and we're going to do this with the
+power of gradient descent
+we're going to use an extremely similar
+algorithm to what i've already
+shown you uh with the with a number
+indicator
+and what i'm going to do is i'm going to
+calculate all the different distance
+values which
+in this case there are six of them right
+so i'm going to take all six distance
+values
+and i'm going to find the mean
+squared error of the predicted
+distance values against what we know the
+distance value should be
+all right now what is mean squared error
+i just pulled that uh pull that
+explanation out of nowhere
+and what does that mean well if we go
+back to our code for just a moment
+you can actually see that over here what
+i'm doing
+is i'm technically getting an error all
+right which is
+the distance between the output that we
+expected and the actual prediction from
+the perceptron
+so i'm getting the error and then i'm
+squaring it so we can
+call this sort of function here the
+squared error function
+however remember though that when we're
+dealing with this more complex
+graph environment we don't just have one
+error
+right it's not just we're dealing with
+five point seven versus seven point
+three
+we're dealing with five point seven
+seven point three and three point two
+four point nine
+and two point eight five point two and
+so on and so forth we have six
+different error values to deal with six
+different squared errors
+so what i'm going to do is to find the
+final squared error i'm going to take
+all the individual squared errors which
+is just you know y hat
+minus y squared we can take all of them
+and get the average value so the mean
+value
+uh which is basically just gonna be
+summing up all the square errors and
+dividing by six because that's how many
+errors there are
+then when i do that that sort of adds up
+to be a single function
+that i can then sort of find a
+derivative through with respect to
+the coordinate values that are on screen
+right now and i can
+optimize those coordinate values to make
+it so the squared and mean squared error
+is lower meaning y hat matches y
+better so let's actually take a look at
+that in action i'm going to do this
+iteration by iteration
+when i go ahead and calculate the
+gradient for the first time the movement
+looks a little bit like
+this so in this case what i did was i
+went ahead and found that mean
+squared error i found the gradient and i
+found it with respect to all of the
+different dots on screen
+and i moved those dots uh to reduce
+the value of the mean squared error
+function again to make it so y hat
+matches y
+as best as possible as you can see there
+are a couple of things that have started
+to match up
+uh the yellow line for example uh 5 is
+pretty close to 5.2
+the blue line is pretty much exactly
+there it's 4.1 to 4.1
+um the green line at the very end is 1.9
+to 1.7
+so it's starting to get close but
+there's still a lot of error so for
+example red
+is 9.5 to 7.3 um and so
+there is still a lot of error that means
+we need to run more iterations of
+gradient descent to move the value of
+the function lower and lower
+so let's just say we run another
+iteration so we kind of went back
+more closely to what the initial
+starting point was
+but as you can see we're starting to get
+y hat to be closer to what y
+is we move out again and we do more and
+more
+iterations until finally gradient the
+sense says
+that well it's a low enough value now
+technically
+gradient descent is never the one saying
+you know we should stop now
+as long as you keep you know querying
+the gradient function it'll keep giving
+you a value
+you just want to stop optimizing when
+you believe you know what we're good
+enough now
+uh to have a satisfactory answer
+in this case we ended up getting the
+following distances
+um so we got seven point six to seven
+point three four point seven four point
+nine so as you can see they're all
+pretty close
+um there's some that are pretty much
+exact so for example a white line 5.1
+you know it's pretty much there green
+1.8 1.7
+pretty much there and then there are
+some that are a little bit more off
+things like the yellow line at 4.9 to
+5.2
+and you're probably wondering well why
+are they still so off if we just did
+that whole optimization procedure
+and well the answer is pretty simple
+it's because we're trying to
+fundamentally represent
+more information in a space where we can
+only represent
+a lot less information now we can never
+really
+or not never i'm going to catch myself
+there it's not never
+but there are a lot of cases where
+three-dimensional space or the
+structures that we create in
+three-dimensional space
+cannot be perfectly represented in
+two-dimensional space
+and the reason for that is because
+fundamentally we are chopping off a
+whole dimension we are
+losing a lot of space in which to in
+which to store information
+and therefore we can always get close
+when we reduce the number of dimensions
+in something
+but we can almost never really get
+exactly there now if you were to run
+that optimized
+optimization procedure for you know
+hundreds more iterations
+or if you were to use a slightly better
+procedure which we'll talk about later
+then you might be able to get this even
+closer but generally the dots that
+you're seeing on screen right now
+are a good representation of
+that 3d structure in 2d space
+so while it might not be perfect it's
+really close
+and so if you're trying to you know for
+example
+take these three-dimensional dots and
+you don't have a plotting library that
+can deal with three-dimensional
+graphs and you want to reduce them two
+dimensions but still keep the general
+theme of the dots
+then you know this is this is a good
+solution to to go about doing that
+now of course this is um invariant to
+where the dots actually are on the grid
+um
+you know it really just matters about
+the distances between the individual
+dots themselves
+and so you don't need to worry about you
+know that specific detail
+but really what this means is that this
+technique that i'm showing you over here
+is going to help you reduce the number
+of dimensions in your data and we do
+that by using the power of rating
+descent
+once again let me make this completely
+clear if we take a look at the graph for
+a moment once more
+the general idea of what we're doing is
+we're taking
+all of the coordinates we're finding
+their distances
+to each other then we're finding the
+distances between all the actual
+coordinates in 3d space
+right so that's y hat and y respectively
+y hat being our dots and y being the
+actual dots in 3d space
+we are finding the mean squared error
+between those two
+sets of distances and then we're finding
+the derivative of that whole error
+function
+with respect to the actual coordinates
+in 2d space
+and by finding that gradient we can
+optimize those coordinates
+to put them in places where the
+distances match up
+best and so that is dimensionality
+reduction
+and of course though today is all about
+code
+so i'm going to show you how you can
+actually implement this technique as
+well
+using google colab let's take a look
+this one is a little bit more code heavy
+but it's not that
+bad and i'll show you what i mean now to
+start off of course we're doing a couple
+of
+pretty standard imports um and so i'm
+just importing the matplotlib library so
+we can actually plot out
+the data that we end up getting i'm
+importing tensorflow which is you know
+that
+that new library that we're using um and
+i'm also importing a
+framework called sk learn or scikit
+learn
+uh specifically i'm gonna be using their
+data sets module because
+using the data sets module i can load in
+a data set known as the iris data set
+the iris data set is incredibly popular
+um it's a data set that contains 150
+attributes uh or not 150 attributes um
+150 instances of flowers
+and each instance contains four
+measurements
+of the flowers themselves right so
+things like the petal
+um things like petal length and and
+width uh same thing for the
+uh sepal and what the what the data set
+it really aims to do
+is it aims to sort of provide
+researchers with this data set
+um where they can build algorithms that
+take those four
+attributes and try to predict is this
+flower
+or or which one of the three species
+does this flower come from right so
+each individual sample represents
+one species of a flower there are three
+different species in the data set 50
+samples for each 150 samples total
+uh and so basically the idea is can we
+build some kind of machine learning
+model
+to take those four attributes in and
+spit out a prediction of
+which species the flowers the flower in
+this case
+belongs to now it's a little bit more
+difficult than you might initially think
+um because it's very easy to tell one of
+the species against two of the others
+but then those other two species are
+really difficult to
+tell between each other and i'll be
+showing you what i mean by that today
+and then in the next episode we'll take
+a look at how we can fix that issue
+but for now let's actually take a look
+at working with the iris data set
+now the first thing that i go ahead and
+do uh is i go ahead and load in what's
+known as the iris dataset so we've
+already talked about what iris is
+and i load that into a variable called
+iris
+um then what i do is i take the data
+element of the iris dataset so the
+actual like you know
+150 instances of four features each
+and load them into a variable called x
+and i convert that to a list
+um now we're doing something called a
+target as well but don't worry about
+that just yet
+we'll come back to that code eventually
+for now all you need to care about is x
+now just to sort of give you an idea of
+what the state is like
+the shape of the x array is currently
+154
+that means that we have 150 arrays
+where each array is another or is
+actually another array
+of four values each um and so
+again 150 instances of different flowers
+and for each instance there are
+four different four different attributes
+now here's the thing about this data set
+it's really pushing
+us as humans to the limits of what we
+can physically perceive
+as i mentioned we live in three spatial
+dimensions not four
+and so we can never really just plot out
+this iris data set because it doesn't
+make sense to
+um instead what we have to do is we have
+to run the same dimensionality reduction
+technique that i talked about in order
+to reduce those dimensions down to two
+or three
+but in this case we're doing two and the
+way i do that is i start off by defining
+something called a batching function
+what i do in the batching function is
+pretty simple i create three new lists a
+b
+and c then what i do is 64
+times i actually choose two completely
+random elements
+from the actual data sets of two
+different flowers at complete random
+then i take the first flower put it in a
+i take the second flower i put it in b
+and then i take the
+euclidean distance between the two
+flowers and put it in c
+and so this euclidean distance is found
+by getting the square root
+of the sum of the squared differences
+in the actual coordinate values so each
+coordinate value you get the difference
+you square those differences you get the
+sum of those whole differences and get
+the square root of that sum
+and then you've got straight line
+distance then what i do
+is i go ahead and take each one of those
+arrays a b and c
+convert them all to tensorflow tensors
+and then return those three values from
+the batch function
+then what i do is i create something
+called a weight now this weight
+is just a tensor filled with random
+values
+the shape of this tensor is four comma
+two now why exactly do we have this well
+it's because we're going to be running
+what's known as a matrix multiplication
+of the actual input iris data set
+against this weight in order to get the
+dimension reduced
+output uh in order to get the um the
+versions of those coordinates in
+two-dimensional space instead of
+four-dimensional space
+so the input it's four the output is two
+that's a very simplified representation
+of a weight um
+and so in case you do not know how
+matrix multiplication works there will
+be a website linked in the description
+below
+describing um through an animation
+how exactly matrix multiplication works
+but for now all you need to know is that
+weight is what we multiply the iris
+flower by
+in order to get its two-dimensional
+representation
+and if we get a better version of this
+weight then we get a better
+two-dimensional representation of the
+four-dimensional input
+then what i do is actually pretty
+similar to the number negator
+watch what i do is i go ahead and take
+the two
+inputs which would be you know first set
+of coordinates and second set of
+coordinates
+as well as the distances between them
+from the batch function
+earlier then i create a gradient tape
+and i tell the tape to watch
+the weight then what i do is i go ahead
+and run the matrix multiplication of the
+first set of coordinates against the
+weight
+and the second set of coordinates
+against the weight then what i do
+is i use tensorflow functions in order
+to find the euclidean distances
+of all of those different um of all
+those different
+um individual coordinate pairs and again
+i do this by getting the difference
+i do it by squaring it then getting the
+sum and then finally by square rooting
+all right now the reason i found in a
+one here was in order to get the sum
+along the axis of the actual coordinates
+and not just the sum of the whole array
+including you know across the different
+coordinate pairs
+uh now then what i do is i go ahead and
+take the
+distance that we calculated and of
+course the actual distance that we
+expected from the batch
+i go ahead and get the difference square
+it and get the mean so this is the
+mean squared error
+like so all right then i find the
+gradient of that loss with respect to
+the weight
+i modify the weight just so that it you
+know moves in the better direction
+so that we can actually map that
+four-dimensional coordinate to a
+two-dimensional coordinate
+better and then i print out the loss
+just so i know
+how well my little uh little weight is
+doing
+now i'm going to go ahead and actually
+run this code for you so let's just say
+i
+go ahead and run this code from the very
+beginning it's going to go ahead and
+connect to a brand new collab
+environment
+i'm going to go ahead and initialize my
+weight run this
+and as you can see slowly but surely our
+loss value continues to decrease if i
+scroll all the way up in the output here
+you can see the loss actually starts off
+at a pretty high value it starts off you
+know in the
+0.8 and the ones but then slowly the
+loss value gets lower and lower and
+lower
+meaning the weight is better and better
+meaning
+the individual distances between points
+in two-dimensional space
+is closer to the distances between the
+points in four-dimensional space
+and guess what what i can do is actually
+run
+a little bit of matplotlib code and i
+can actually
+plot out that two-dimensional data that
+we just
+created with the help of matplotlib
+all i've got to do is take all of the
+input data convert it to a tensorflow
+tensor
+and then multiply or do a matrix
+multiplication of the all that input
+data against the weight to convert it
+from four dimensions to two
+and then i convert that to a numpy array
+use a little bit of logic to actually go
+ahead and have
+matplotlib plot out in a scatter plot
+those two dimensions
+and then show the plot now what i also
+did is i made it set for every dot that
+represents
+species one two or three i would have it
+put that dot
+in red green or blue color respectively
+and you can actually see through this
+plot that as you can see
+the red one is very easy to distinguish
+between the other two it's very far away
+um but then you've got green and blue
+that sort of
+touch each other there's certain points
+that are in this ambiguous area where
+you don't really know if they're green
+or if they're blue
+um and that's a bit of an issue for
+neural networks to deal with but we'll
+be fixing it
+in the next episode of learn deep
+learning from scratch
+now i know that this was a lot to digest
+all of the code will be in the
+description and of course if there are
+any questions please do feel free to ask
+me
+and i may go ahead and also clarify
+these examples a little bit more go into
+a little bit more detail in the
+beginning
+of the next video as well but overall
+though i do hope you enjoyed thank you
+very much for joining in today
+uh once again if you do enjoy this kind
+of content please do make sure to
+subscribe to the channel it really does
+help out a lot
+and also make sure to like the video if
+you did enjoy it once again would love
+to answer your questions down in the
+comments
+below apart from that thank you very
+much everyone for joining in today
+and goodbye

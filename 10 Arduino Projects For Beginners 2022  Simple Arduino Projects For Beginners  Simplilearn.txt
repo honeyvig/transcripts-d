@@ -1,0 +1,235 @@
+hey everyone welcome to another video by
+simply learn in this video we will be
+discussing about arduino projects the
+different domains where arduino can be
+used and how
+let's look at today's agenda
+we'll first look at logging projects
+using arduino then we will look at some
+of the rover projects using arduino
+game projects using arduino then
+automation projects using arduino
+followed by which we will look at
+robotics projects and help projects
+then we will look at some of the drone
+projects audio projects iot projects and
+lastly we will look at sensor projects
+using arduino
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell like so you never
+miss an update from simpler
+so without wasting any further time
+let's get started
+blocking projects using arduino
+frequently we need to secure a space in
+our home or business so that no one can
+enter without our permission and our
+valuable accessories and assets are
+protected from theft or loss
+there are many different types of
+security systems available today
+but they all rely on fingerprints retina
+scanners iris scanners face id tongue
+scanners rfid readers password pins
+patterns and other biometrics for
+authentication
+the most cost effective solution is to
+utilize an arduino based password or pin
+based system
+some of the locking projects using
+arduino are arduino door lock system
+rfid and keyboard lock system
+we have unlocked door with knock system
+push button lock system and gesture
+control dock using arduino
+then we have rover projects using
+arduino
+the arduino robot is the world's first
+arduino powered vehicle
+on each of robot's two boards there are
+two cpus the motor board is in charge of
+the motors while the control board is in
+charge of reading sensors and deciding
+how to run them
+each board is a complete arduino board
+that can be programmed using arduino ide
+using arduino we can create many rover
+projects like voice control rover
+line follower rover
+gesture control rover
+survey rover
+ir remote control rover
+and similarly we have autonomous rover
+and many more
+game projects using arduino
+some remarkable arduino based game
+projects changing from retro gaming
+played on a little screen to more
+sophisticated projects requiring some
+assembly some of the arduino gaming
+projects are
+snake game
+then we have chess game
+pinball
+spaceship simulator
+and claw machine
+automation projects using arduino
+the robust characteristics of arduino
+are well suited to a popular section of
+applications that is automation
+the arduino board can be used to create
+a wide variety of automation
+applications
+automation has brought convenience to
+whole new level from controlling room
+lights with your smartphone to
+automatically organizing events
+instead of using mechanical switches you
+can now operate all of your home
+electronics from the palm of your hand
+some of the automation projects using
+arduino are
+home automation and sanitizer dispenser
+automated shower boiler
+automatic motion sensor trash
+and ir remote controller home appliances
+health projects using arduino
+any medical equipment that has internet
+connectivity
+and can measure one or more health data
+of a patient who is connected to the
+device such as heartbeat body
+temperature blood pressure ecg steps etc
+is referred to as arduino based patient
+health monitoring system
+if there is a rapid change in patients
+health the equipment can record and
+transmit the data
+iot encompasses everything from smart
+watches to fitness tracker to hospital
+equipment that can link to the internet
+arduino-based health projects are being
+developed to create new medical gadgets
+it may be used to measure body factors
+such as ecg temperature moisture and
+heartbeat it also identifies the
+patient's physical state and location
+some of the health projects using
+arduino are
+smart bridge band smart bioware
+portable ecg
+ultrasonic site
+and smart health kit
+drone projects using arduino
+drone are airborne vehicles that range
+in size from micro to multi-rotor
+quadcopters a camera is sometimes
+included with a drone allowing the users
+to watch and record the bird's eye
+perspective a drone is made up of
+numerous parts one of the most
+significant of which is the flight
+controller which acts as the drone's
+brain
+the arduino development board is great
+for this purpose especially because
+there are variety of models available
+ranging from the tiny arduino nano to
+arduino mega all of which are small
+enough to fit into the design of a drone
+some of the drone projects using arduino
+are
+quadcopter
+autopilot drone
+mind control drone
+guide power drone
+and hover craft
+robotics project using arduino
+we can learn about electronics mechanics
+and software using the arduino robotics
+project it includes a number of project
+examples that you can easily copy as
+well as robust robotics platform that
+you may have to execute a variety of
+jobs
+some of the robotics projects are
+robotic arm
+drawing robot fire fighter robot ball
+tracking robot and spider robot
+if getting your learning started is half
+the battle what if you could do that for
+free visit skill up by simply learn
+click on the link in the description to
+know more
+audio projects using arduino
+if you enjoy working with both hardware
+and software arduino is the perfect
+hobby for you arduino is a programmable
+logical controller that can do a variety
+of cool things depending on your
+programming skills
+using the arduino to make music is a
+special genre of projects
+if you will some are straightforward to
+implement while others are more
+difficult
+so some of the arduino projects for
+audio are
+paper piano with arduino
+vfo or rf generator
+arduino mp3 player
+arduino uno guitar pedal and arduino
+beat detector and we even have mini
+vintage internet radio most good
+communication using arduino and many
+more
+iot projects using arduino
+arduino iot cloud is a tool that allows
+creators to create connected products
+quickly easily and securely multiple
+devices can be linked together and data
+can be exchanged in real time you can
+also keep an eye on them using a simple
+user interface from anywhere
+some of the iot or bluetooth projects
+using arduino are
+iot bicycle radar iot pet feeder
+telegram bot
+arduino bluetooth camera and smart
+parking system
+sensor projects using arduino
+one of the aspects that make an arduino
+so valuable is the simplicity with which
+it can retrieve sensor information
+sensors are devices that transform a
+physical quantity into an electrical
+quantity such as light intensity or
+temperature
+the different types of sensors that are
+available are
+light sensor motion sensor temperature
+sensor magnetic field sensor gravity
+sensor humidity sensor moisture
+vibration and pressure sensor electrical
+field sensor sound sensor and position
+sensor
+manufacturing machinery aircraft
+vehicles medicine and robotics are just
+few of the use cases of these sensors
+so the different sensor projects that
+can be made using arduino are
+temperature monitoring
+smoke detection using gas sensor
+3d scanner
+smart plant incubator
+and water quality monitoring system
+so with that we have reached the end of
+this video thank you so much for being
+here keep learning and stay tuned to
+simply love
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

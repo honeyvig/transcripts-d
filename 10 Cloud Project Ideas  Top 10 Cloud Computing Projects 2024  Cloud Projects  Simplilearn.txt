@@ -1,0 +1,260 @@
+hey awesome viewers come let's leap into
+the world of cloud computing whether
+you're a tech Enthusiast a student or a
+professional looking to upskill the
+cloud technology offers endless
+opportunities for Innovation and growth
+did you know that the global cloud
+computing Market is projected to reach a
+staggering 8 32.1 billion by 2025 we all
+know that projects are essential for
+your career in Cloud because they allow
+you to apply theoretical knowledge to
+real world scenarios gaining practical
+skills and experience through your
+projects you can showcase your skills
+and depth of your knowledge projects are
+often the key to impress your Employers
+in this video we are going to unve the
+top Cloud projects tailor made for
+beginners empowering you to Kickstart
+your journey into the clouds with
+confidence craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back before we begin if you are
+interested in acquiring skills and
+getting certified in the cloud do check
+out Simply learns Cloud architect
+certification course in this course
+you'll deal with AWS Microsoft Azure and
+Google Cloud platform from a beginner to
+advanced level through this course
+you'll gain Proficiency in the
+architectural design and deployment of
+Highly scalable and resilient
+applications making you job ready to
+transform yourself into a proficient
+Cloud professional and the best part the
+program includes an azured exam voucher
+and 100% job assistance from Simply
+learn buckle up because by the end of
+this video you'll be equipped with the
+knowledge and inspiration to embark on
+your own cloud Adventure so let's get
+started the first project in our list is
+website hosting here you will build a
+website and host your website on the
+cloud the steps are sign up for a cloud
+hosting service like AWS Google cloud or
+Azure upload your website files to the
+cloud storage provided by the hosting
+service then configure DNS settings to
+point your domain name to the Cloud
+Server after that set up SSL TLS
+certificates for secure https
+connections at last monitor website
+performance and scalability using
+cloud-based analytics tools next we have
+expense
+tracker in this project you have to
+develop an app to track expenses and
+manage finances using cloud storage for
+data synchronization now let's see the
+steps choose a cloud database service
+like Firebase or AWS Dynamo DB for
+storing expense data now design and
+develop the expense Tracker app
+interface and
+functionality Implement user
+authentication and authorization for
+secure
+access then set up realtime data
+synchronization between devices using
+Cloud database
+sdks after after which test the app
+thoroughly across platforms to ensure
+data integrity and
+usability the third one is virtual
+classroom platform here you create an
+online learning platform with live
+lectures and interactive features and
+hosted on the cloud the steps to do this
+include select a cloud-based video
+conferencing platform like Zoom or
+Microsoft teams for hosting live
+lectures integrate additional features
+like chat file sharing and quizzes using
+cloud-based apis or sdks set up user
+authentication and access controls to
+ensure a secure learning
+environment after which you will have to
+customize a platform to match the
+branding and requirements of your
+educational institution train Educators
+and students on using the virtual
+classroom tools effectively next we have
+document collaboration platform with
+Microsoft here you can build a document
+management and collaboration platform
+using Microsoft SharePoint on the cloud
+let's see the steps set up a SharePoint
+site on Microsoft 360 5 or SharePoint
+online create document libraries for
+storing and organizing files with
+metadata and content types configure
+access controls and permissions to
+manage document security and sharing
+customize a platform with workflows
+forms and templates to streamline
+document management processes train
+users on how to use SharePoint for
+document collaboration and Version
+Control the next is health tracker app
+with Google Fit API in this project you
+will develop a health tracking app that
+sends data from Fitness devices using
+the Google Fit API the steps are obtain
+API credentials and set up
+authentication for accessing the Google
+Fit
+API design the app interface and
+functionality for tracking user Health
+metrics like activity sleep and heart
+rate integrate the Google Fit API into
+the app to retrieve and display user
+help data Implement features for goal
+setting progress tracking and
+personalized recommendations based on
+heal data test the app on different
+devices and ensure compliance with
+privacy and security regulations the
+next is image recognition with Google
+Cloud
+Vision in this project you have to build
+an application that identifies objects
+and text in images using Google Cloud
+Vision API steps are set up a Google
+Cloud platform project and enable the
+cloud Vision API obtain API credentials
+and configure authentication for
+accessing the API develop the
+application interface for uploading
+images and displaying recognition
+results integrate the cloud Vision API
+into the application to analyze and
+process image data enhance the
+application with additional features
+like text translation or object
+detection based on recognition results
+seventh on the list is chat application
+with Firebase F St create a realtime
+chat application using Firebase F St for
+data storage and synchronization the
+steps are set up a file based project
+and enable file store as a database
+service after that design the chat
+application interface for sending and
+receiving messages in real time then
+implement the user authentication and
+authoriz Iz ation to secure access to
+chat rooms after which integrate F store
+SDK into the application to store and
+sync chat data across devices now test
+the application thoroughly to ensure
+reliability and real-time
+synchronization of messages next we have
+continuous integration or continuous
+deployment Pipeline with GitHub here you
+have to set up a cicd pipeline for
+automating software development
+processes using GitHub actions for that
+create a GitHub repository for your
+project and enable GitHub actions define
+workflows in yaml format to automate
+tasks like testing building and
+deploying configure triggers to initiate
+workflows based on events such as code
+pushes or pull requests Now integrate
+third party tools or services for
+additional tasks like code quality
+analysis or deployment to Cloud
+platforms after which monitor workflow
+runs and troubleshoot any issues that
+arise during the cicd process next in
+our list is iot data analytics with iot
+Hub and stream analytics here you have
+to collect and analyze data from iot
+devices using azzure iot Hub and stream
+analytics now the steps for this project
+include firstly set up an Azure account
+and create an iot Hub instance for
+managing iot devices connect iot devices
+to the iot hub and configure message
+routing for data inje now create an
+Azure stream analytics job to process
+streaming data from iot devices Define
+queries and transformations to analyze
+and aggregate iot data in real time and
+then visualize analyze data using Azure
+services like power bi or Azure data
+Explorer for actionable insights last
+project on the list we have budget
+friendly travel planner in this project
+you are required to develop a travel
+planning application that helps users
+discover budget friendly destinations
+and manag ship expenses now the steps
+include firstly design the user
+interface of the travel planner
+application allowing users to search for
+destinations and plan iies integrate
+apis like Google Maps open weather map
+and Skys scanner to provide travel
+information such as flight prices WEA
+forecasts and accommodation options now
+Implement features for Budget tracking
+expense management and ID customization
+based on user preferences test the
+application across different devices and
+platforms to ensure usability and
+performance and at last deploy the
+travel planner application to a cloud
+hosting platform for accessibility and
+scalability and continue to iterate
+based on user feedback and usage metrics
+so there you have it top 10 Cloud
+projects for beginners that can help you
+create a portfolio and land job we have
+explored a diverse range of projects
+that offer valuable insights into
+various aspects of cloud computing feel
+free to drop your doubts and queries in
+the comment section below we hope you
+like the video subscribe to Simply
+learns channel for more such informative
+videos thank you staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore exp our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

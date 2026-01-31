@@ -1,0 +1,465 @@
+so hello there and welcome to another
+tutorial my name is Henry Bakshi and
+this time we're gonna be going over how
+I can use the T MySQL kit that I've
+created in order to communicate MySQL
+with Swift natively in your iOS watch
+OST vos and even Mac OS applications
+let's begin it's not first of all we
+know that we have two things over here
+now first of all let's pretend we have a
+my SQL Server
+okay so we have my SQL Server now we
+also have a now I'm going to make a
+dotted box here and I'm going to say
+swift basically we have a soft end and
+we have a MySQL end now in the swift end
+we have an application your application
+okay and the MySQL now the thing is your
+application stores data let's say it's a
+chatting app it stores its data in the
+MySQL server now there's a problem we
+know that's Swift and MySQL don't
+communicate with each other they don't
+know that each other's language they're
+completely different and so usually what
+you need to do is you need to create
+your own sort of PHP bridge between your
+MySQL server and Swift okay now there's
+a big problem with this happening first
+of all it's very specific to this vast
+scale server and this Swift application
+okay it's not Universal if you want to
+put this bridge in a different
+application it won't work you're gonna
+have to change a lot of parameters it's
+very hard coded into the system and even
+if you do manage to not hard-coded that
+takes a bit of time to code in however T
+MySQL kit solves all of those problems
+for you essentially what team I asked
+you Elka does is it erases this bridge
+between MySQL and Swift and one of
+dozens of places the bridge with a very
+convenient wrapper of PHP around MySQL
+so for example I can just create a
+little wrapper here around - well now
+this is built in PHP alright it's not
+PHP does this now this PHP end is noted
+I call this t t my SQ okay all right so
+this is T my install kit that PHP end
+however T MySQL kit has two parts
+it has a PHP part and it has a swift
+part so there's another part apart from
+the just your application there's the T
+MySQL ok here's what all right so there
+are two parts the to tina SQL kits now
+the thing is your application instead of
+communicating directly with MySQL you're
+going to communicate with T MySQL kit
+however you will feel right at home
+because T MySQL kit runs in it
+essentially you could call it natively
+it allows you to use the same my SQL
+syntax the say MySQL queries everything
+you can give it your query in string
+format for example select star from
+table name and the table name could be
+users as a string to team I ask you LK
+you'll feel as I said you'll feel like
+you're communicating directly with MySQL
+and your application will give T MySQL
+kit a request
+okay now you pretend as if you're
+talking with MySQL because T MySQL can't
+returns you the result but what happens
+is in order for T MySQL kit to actually
+return that result what it'll do is
+it'll take your request and it'll do a
+bit of processing on that it'll convert
+that request to a URL request then what
+happens is that gets sent over to this
+PHP end alright and so here in the PHP n
+some sort of conversions happen and some
+processing and then it goes straight
+into the MySQL once MySQL you know does
+it's loading once it's done handling
+your request and it has
+response for you that goes in in JSON
+format to a PHP but it's not just JSON
+of course it's encoded and so
+essentially PHP will then take that
+decode that okay send that back to T
+MySQL ket and then what that's gonna do
+is it's gonna convert the JSON string to
+NS data which they've now renamed to
+data with sort three in the next release
+of the foundation framework they've
+converted an estate out to data and then
+s URL to URL and you know stuff like
+that and essentially this goes to TR t
+MySQL kit on the swift end and then
+finally after some processing and
+conversions it goes back to your
+application
+where you feel just at home
+communicating with my SQL and it doesn't
+even look like it's actually
+communicating with a server just seems
+like it's running locally on Swift and
+that is essentially what I'm going to be
+showing you how to do now again the real
+advantage to this is that this wrapper
+and this framework are universal they
+will run with almost any MySQL server in
+the world all right you just load this
+onto the Apache server that accompanies
+the MySQL server you put this into your
+Swift application technically this would
+also work on an objective-c application
+because you could integrate Swift into
+your objective-c project and they're off
+and so that's going to be its Fort Lee
+white worker today
+one more thing just before we get into
+the Mac part though is that this
+application can be quite a good and
+useful parse alternative if you have
+let's say a website like a GoDaddy
+website where you have MySQL hosting and
+for example you wanted to you know
+migrate to from parse because of course
+that's shutting down and you want to
+migrate from parse - let's say MySQL
+instead of some other database like
+MongoDB you don't want to self host
+parse because that would be let's say
+too hard to set up for you or you don't
+have enough resources and so essentially
+you can use TI my SQL kit which if you
+were wondering T stands for 10 made 10
+name is cool kit so you can use T MySQL
+kit on your GoDaddy server which is just
+a PHP file PHP wrapper you can
+connect to your MySQL sir database I
+mean you're my school database and you
+were Swift and can you communicate with
+that team is ql PHP n with its swift end
+and that's going to be it so as you can
+see that really makes it easy to Meyer
+it from parse to something like MySQL
+that's gonna be it for the tutorial
+today all right so now let's move over
+to the Mac part where I'm going to be
+explaining to you how exactly you can
+use T MySQL kits along with just a MySQL
+server and actually you know host
+database and accents would Swift and
+feel right at home
+communicating with MySQL with its normal
+queries let's get right to it so welcome
+back to my part and now I'm gonna be
+showing you how exactly you can use
+MySQL get in your iOS and watch us and
+TV us and Mac OS applications let's
+begin so as you can see I have this
+little sample application ready but I
+will actually be showing this to you a
+bit later but to begin first of all on
+my server over here I am I'm running PHP
+myadmin and as you can see I actually
+have this products available database
+and inside the products available
+database I have an ice-cream table and
+then the ice-cream table I have a flavor
+and quantity sort of column or columns
+and the first of all the flavor is text
+and the quantity is an int all right so
+now let's begin first of all our
+objective is to be able to use Swift to
+run these queries insert into ice cream
+flavor quantities value I mean flavor
+quantity values chocolate 5 meaning 5
+chocolate ice creams and also 3
+strawberry ice creams we want to get
+those into the database and then select
+star from ice cream meaning select
+everything from ice cream and then
+convert that data to a string and then
+print self and so first of all I know
+these don't exist these aren't real
+functions in Swift what I've created
+extensions that allow this to happen so
+now in order to explain what I mean
+let's actually get to the source code of
+T my SQL kit lets me
+so first of all of course I'm importing
+foundation and then I have an extension
+to the data class now of course they're
+renaming NS data to data and nsurl to
+URL and stuff like that they're moving
+the next step
+NS actually since for next step fun fact
+and so they're stripping that off
+because the next step is years old like
+almost a decade now more than more than
+a decade technically
+and so there's removed ns so now also
+they're basically I've created an AZ
+string sort of you call this computer
+property and so what I can say is I've
+created this asteroid computer property
+which is a string and essentially it
+returns a string data of self and then
+the encoding string of encoding that
+utf-8 now of course in a real sort of
+application scenario you probably
+wouldn't use this because I mean it
+assumes utf-8 encoding which is pretty
+common that's why I did that and of
+course it also forcefully unwraps is
+optional which is not the best way to do
+things but for an extremely simple
+application this works and so
+essentially this will convert data to a
+string really easily then essentially
+there's an extension to the string class
+and essentially I'm using the URL
+encoded computer property that I'm
+creating and essentially this is going
+to return a string and it will return
+self dot adding percent-encoding with
+allowed characters and its character set
+URL path allowed and so essentially this
+will just URL encode a string so like if
+I have this this query that I want to
+send to my skew well I'm going to URL
+encode before I actually send it to
+MySQL because of course it's going over
+an HTTP request then also to uh in the
+same string extension I have a function
+called print self which returns a string
+so essentially it prints self and then
+returns itself so that sort of is pretty
+convenient instead of putting print
+around the entire thing it becomes a bit
+more clean to read and then finally the
+juicy parts MySQL kit T - welcome and so
+essentially team il kit inside of that
+we have a very
+called msk handler my SQL kit handler
+and now this is the link to that PHP
+script on your website which I will be
+showing you in just a moment that's on
+my server right now and so essentially
+that's going to be a string or actually
+in this case a mil string it currently
+has no value and also a database
+variable because when you initialize
+minus QL can you give it the database
+that you want to connect to so then it
+gives my the MySQL kit on the server and
+that database so it knows what to
+connect to and then it gives it the
+query and so that's pretty interesting
+as well so in the initializer I just ask
+for an msk handler as a string and a
+database is a string and then I set the
+self values to exactly that whatever
+they gave through the initializer
+however I mean they actually currently
+cannot initialize without giving those I
+mean you could create like nil my
+shortcut object but you cannot
+initialize my ex Trel kit without an msk
+handler in a database all right so next
+we have I have a function that I've
+created called run request underscored
+data now I'm going to be creating more
+functions in the future and later
+releases of the MySQL case framework or
+scope my SQL cake code and essentially
+right now it returns data but soon also
+creates a JSON array
+you know integers stuff like that for
+eternity as well instead of you having
+to convert the data to whatever else
+you'd like but anyway so Kourt basically
+this function will run our quest to the
+team is cricket's side on the PHP end
+and essentially what happens is this
+function asks for a query from the
+developer and so that's as a string of
+course just normal MySQL query which is
+really what is so powerful about my SQL
+kick you can give it a normal MySQL
+query and then it will return data at
+you again they're stripping and as from
+NS data to make it just data then
+essentially what I do I create a final
+URL which is equal to the MS Cahan order
+that was given to us which is the PHP
+and the URL to PHP and and then I just
+add question mark meaning now the
+parameters come in of the URL of
+HTTP requests and for the DB which was
+database I send the database variable
+over here but I do RL encode that first
+and once I URL encode that that goes
+into the string and then another
+parameter is query and so I just URL
+encode it's a query that's that and also
+I return force try data contents of URL
+string of this URL that upgraded again
+in a real-life situation I guess you
+wouldn't exactly use exactly this code
+because the thing is with this code
+we're first of all forcefully trying
+something and forcefully unwrapping the
+URL so if the URL is not valid that's
+gonna crash if the data doesn't return
+then it's gonna crash and so you would
+probably want to implement some error
+handling but this is the bare bone sort
+of code that you're going to be putting
+in in order to actually make your
+application able to contact MySQL after
+that you can implement your hair error
+handling as well the way you'd like it
+whatever you'd like it to do this is how
+it's actually going to contact it all
+right so now let me also show you over
+here if I open up the file manager on my
+server here if I scroll down as you can
+see I have this PHP file called get
+anything and if I go to the code editor
+here or I believe I already have that
+open but anyway as you can see basically
+I have my username filled out and I have
+my password filled out now essentially
+these username and password credentials
+need to be of your MySQL database and
+the host of course needs to be the host
+of the MySQL database as well in this
+case since I'm running it on my own
+server
+this is localhost but if you were
+running this remotely like those PHP and
+or the Apache or the yeah a PHP script
+is let's say running locally on an iOS
+device for example and your MySQL server
+is on the cloud then you actually want
+to give it the host of the MySQL server
+but since I'm running the PHP and in the
+- Trillian side by side on the same
+server which GoDaddy happily does for me
+even though I mean Mac and cloud does as
+well
+or really any Mac Mac hosting service
+you can just use localhost because of
+course they are beside each other and
+don't really need to go remote to find
+each other alright so then as you can
+see just you know in my other database
+tutorials the normal connecting to MySQL
+code but except for the fact that I'm
+not giving it a database to connect to
+I'm actually finding a database from the
+parameters which I'm using underscore
+get to a richer root tree from the URL
+and so I'm using DB which is the
+parameter that is passed in order to you
+know give the database to the PHP script
+so I've connects the database and if
+it's unable to do that it's just gonna
+say unable to connect however if it is
+able to do that then it will get the
+query into a query variable and then get
+the results as JSON and echo them to the
+screen and after that what happens is
+Swift will take that convert that to NS
+data and send that off back to your
+application and that is quite a bit but
+now as you can see back to PHP myadmin
+in the ice-cream table there's currently
+nothing no quantity of ice-cream and
+that's not good for business we can't
+sell anything okay so let's say we
+receive a shipment of five chocolate ice
+creams and three strawberry okay and so
+basically you want to insert into
+ice-cream with flavor and quantity the
+values chocolate five and strawberry
+three all right let's try this out so
+now essentially what should happen is it
+should insert five chocolate in there it
+should insert three strawberry and then
+it's print exactly what happened with
+this select command however one more
+thing I'd like to do is do this one by
+one so you can actually see it happening
+in phpMyAdmin so if I comment out these
+two lines of code then if I run this on
+my simulator here then you'll be able to
+see that first of all the simulator
+shows nothing but right after this is
+done printing lots of stuff or which I'm
+not exactly sure why this prints out I
+have done a little bit of researchers
+because of you know the data how it's
+synchronous and how it's not able to
+connect
+to the server properly but again you
+don't need to worry about this these are
+just warnings and these don't these are
+ones actually errors so now this should
+be done inserting into the database
+let's see let's not might go over to PHP
+myadmin and I click on ice cream as you
+can see chocolate 5 MySQL kit is working
+till now let's try and see what happens
+when I insert something of let's say
+strawberry all right so I'm going to run
+this once more into the simulator all
+right as it loads up on the simulator
+and it's done printing lots of stuff all
+its warnings
+well no it's done no it has to print one
+more thing I believe yeah there we go
+and it should be done if i refresh in
+PHP myadmin as you can see it's inserted
+strawberry now all I need to do is just
+uncomment this last line of code which
+will actually select from the ice-cream
+database convert that NS or data just
+down out with a smile moved NSO convert
+that data to a string and then print the
+string let's try it out shall we
+alright so now if I run this as you can
+see the simulator is gonna load up
+iphone SE and in just as you can see it
+is done and it has selected this result
+as you can see here it says flavor
+chocolate hi this is actually an array
+of dictionaries and the first dictionary
+is flavored chocolate quantity 5 and I'm
+just gonna highlight that there add
+flavor strawberry quantity 3 and that's
+how my astir l can't hurt works i really
+hope you enjoyed that tutorial and if
+you did please make sure to leave a like
+and subscribe to my youtube channel you
+can actually contact me if you have any
+questions suggestions or ideas at my
+email tangi manage email calm down in
+the comments below or on my twitter @jj
+many the source code will as always be
+in the description and again i hope you
+enjoyed and if you did please make sure
+to leave a like and share it with anyone
+you think that it might help again thank
+you very much and if you really liked it
+you can even subscribe to the channel it
+really does help out a lot that's gonna
+be it for my tutorial today I hope you
+enjoyed thank you goodbye
