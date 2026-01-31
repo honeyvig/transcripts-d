@@ -1,0 +1,355 @@
+hello my name is Cameron de camera and
+welcome to a tour of the IFC SDK today
+I'm going to tell you a little bit about
+the motivation behind the IFC SDK what
+it currently offers at this point in
+time and what it can offer in the future
+let's Dive Right
+In okay so let's dive into the
+motivation here but before we do that
+let's talk a little bit about a brief
+history of the IFC container format
+itself the idea of the IFC was first
+publicly introduced back and Gabby's
+talk in CPP Con 2015 in this talk Gabby
+introduced what the icen container is as
+a format as a on disk format for C++
+modules then in CPP con 2019 Gabby
+elaborated further on what this IFC is
+in his talk in memory persistent
+representations of C++ in that talk he
+introduced the world to the IFC spec
+repo which contains the specification
+for the IFC container format and finally
+in 2023 just last year the visual C++
+team blogged about the IFC SDK which
+complements the IFC spec repo in
+providing the C++ projection over the
+IFC specification defined in the IFC
+spec repo and it's here which is where
+the focus of this particular talk is
+going to be all right so let's get back
+to the core motivation of why we're
+doing this ifcd thing and there's kind
+of three leading ideas one is that we
+observe this Gap in C++ semantics based
+tooling and what we kind of mean by that
+is there's there's a lot of tooling that
+focuses on the data that the parser
+emits and there's a lot of tooling that
+focuses on the final binary that is
+abided once you pass it through the
+Linker however there's actually a very
+small subset of tools that focus on the
+semantics elaboration in between and
+this is kind kind of where the data of
+the IFC sits and where um IPR which the
+IFC is built on also wants to operate so
+we saw the IFC SDK as an opportunity to
+help bridge that Gap the other thing we
+wanted to do was create transparency
+about the msvc internals so what you see
+in the IFC SDK is actually code that's
+running in the msvc compiler to drive
+all of the modules Machinery behind the
+scenes and finally we wanted to reduce
+friction for other compilers to take a
+dependency on the IFC if we provide this
+uh SDK for them there's a pretty good
+chance that we can sort of reduce the
+amount of work that it takes to adopt it
+and actually use it in their compiler
+since all of this stuff is already being
+used in production today with msvc so so
+let's finally get into what we're going
+to cover today which is the IFC SDK
+itself and it's kind kind of broken up
+into these five pillars today so the
+first one is providing a C++ projection
+of the IFC specification so the data
+structures that the IFC specification
+defines uh the the second one is testing
+currently msvc only a basic terminal
+printing of an IFC the IFC driver tool
+and finally the IFC
+visualizer so let's go into the most
+obvious one which is providing the C
+plus plus projection of the IFC
+specification and to do that let's go
+ahead and check out the repo build it
+and then kind of explore what the code
+has to
+offer okay so I have a fresh clone of
+the IFC SDK repo we can kind of check
+where we're at using get
+log
+online right so this is this is a commit
+that was made Fairly recently so we know
+that um we're on a recent version of the
+IFC SDK and we also know from
+status status that we are also
+clean okay so let's get building this
+thing so the first thing that the um
+build step tells us to do and you can
+find the build instructions at the root
+of the IFC SDK repo um called building.
+MD it tells us to um kind of figure out
+what our package manager situation is um
+and one pack it's it's kind of specified
+as a bring your own package manager
+situation and the package manager that I
+like to use is VC package so VC package
+and because I'm using the um the the
+built-in version of VC package that
+comes with visual studio and this is a
+visual studio command prompt here um I
+actually have to add my own Baseline and
+all of this stuff is covered in the
+building instructions so
+X Baseline and then we want to
+add initial
+Baseline and that's just going to make
+it so that VC package populates an
+automatic Baseline for us so now that
+that's in place we can get to the build
+step so we just want to cake
+build or c-b build and then we want
+to add a preset and this is going to be
+um test msvc
+okay that seemed to work so now we can
+build it so we can use C- build and the
+config we want to run is
+release and that's just going to build
+the thing for
+us now that we have a build of this
+thing we can actually go in here and run
+the test so one thing we could do is we
+can go to the the build directory itself
+um and again covered in the instructions
+is how to run this so we want to run c
+test- c
+release and then we want to test
+test and that passed and if you want to
+run the test yourself you can do
+something like
+IFC test and then
+release and this is the actual test
+that's running underneath so you can see
+that we passed all of the assertions
+which is a really good sign that we have
+a good we have a good build of this
+thing one last little gold nugget that
+the cmake process provides for us is an
+actual solution that we could take a
+look at a visual studio solution so
+we're still here in the build directory
+um we can take a look at what we have
+here and one of these files in here is
+the IFC SDK solution file so what we can
+do is we just do start SC SDK solution
+and that should pull up the IDE for us
+so now that we have the IDE up and going
+now um we can kind of go over here to
+our solution Explorer and take a look at
+all of the projects that are populated
+for us and this IFC basic thing is
+actually the test that we executed
+earlier so if we take a look at what
+this thing is doing right um what this
+file is doing is it reads in an IFC
+that's produced by by the currently um
+currently available msbc compiler and
+it's going to perform some various
+checks against that IFC versus what's
+defined in the IFC specification so if
+you go down here to some of the uh some
+of the checks you can see that it's
+validating that hey you know this IFC is
+actually adhering to the IFC
+specification that's produced from the
+compiler
+itself but the other great thing is that
+now that we have a full IDE we can
+actually search for files here so if we
+go to
+abstract s graph here this is actually
+the core file that defines the vast
+majority of all the data structures for
+the IFC and um all of these are really
+kind of just
+helpers uh to to help populate this
+particular file and uh this is a really
+good complement to the IFC itself the
+IFC specification itself and let's go
+ahead and pull that up side by side just
+so we can get an idea of like what we're
+looking for in this file okay so I have
+here a copy of the IFC
+specification and in this specification
+it's shown that um we're using version
+0.43 which is currently with the IFC SDK
+supports and this this actual
+specification can be found at the uh IFC
+spec repo under the Microsoft GitHub
+Corporation so if we scroll down here um
+we can check out the table of contents
+and this has everything that the IFC can
+produce um but let's go to a very simple
+example like declarations for example
+and we can see that here's the table of
+declarations and here's how everything
+is sort of laid out in memory um and
+here are the available declarations that
+we have to choose for from and in the
+IFC specification in the IFC SDK itself
+uh this thing is called deal sort
+so here is the actual enumeration which
+represents all of those values that you
+see in the IFC itself so whenever we
+whenever we're talking about like let's
+say enumerator we would expect that to
+have the value one inside of this sort
+list so we can see yes its value is one
+and let's go to something a little bit
+more complicated like function so
+function is 0 f which is 15 and we would
+expect function in here to be 15 which
+it is and the same is true for anything
+else here along with the description of
+what it actually does so this is kind of
+how uh one might map the IFC SDK to the
+IFC spec repo and and sort of like
+validate that way at a high level okay
+so let's refocus our attention back on
+the IFC SDK overview so we actually also
+kind of covered the testing in msvc
+which which I showed in the build step
+so let's go back to our overview and
+refocus our attention on the terminal
+printing from an
+IFC so to get started on this let's
+actually build a small module so we can
+sort of observe what the printing is
+going to what we expect the printing to
+print for us um so I have here a small
+uh module interface in visual studio all
+I did was I set the um I set the
+language standard to C++ latest and
+what we also want to do is we need to
+know where the build artifacts are going
+to go so to do that we want to set the
+build and
+run uh verbosity to something like
+detailed so we can figure out what Rams
+build is actually going to put
+everything let's go ahead and get this
+building so the build succeed now in the
+output window what we're going to look
+for here is we're going to look for IFC
+output and that is the Comm compiler
+switch that tells us where the IFC is
+going to go and you can see here that Ms
+build put it in this directory here for
+us so let's go ahead and copy that and
+once we have that copied we can go back
+to our Command
+Prompt and here we are back in the
+IFC uh SDK and we're in our build
+directory so we're going to go release
+and IFC printer and then we're going to
+provide it that directory that Ms build
+output for us and here you go you can
+sort of see all of the pieces that Ms
+that are contained within that IFC and
+you can see where our struct is here it
+is it's actually named life like we
+expected and you can see some of the
+other various informations that's
+printed out here and that's that's
+really just kind of the high level of
+how you use the IFC printer it's it's a
+little bit hard to grock um if you're
+not familiar with the structure of it
+but we have the visualizer to kind of
+bridge that gap for us so that might be
+the next thing we take a look
+at right so let's actually go ahead and
+tab over here to the IFC visualizer
+itself so one thing we can do is we can
+go back to that directory where Ms build
+dropped our artifacts into specifically
+that IFC and we can take that IFC and
+drop it onto this canvas here and here
+it is it's serialized in through
+JavaScript using the IFC specification
+as the backing to kind of interpret all
+of the data um so it literally read that
+IFC on this web page and we can kind of
+like navigate around here and see here's
+that question name space that we had
+from before here's life right here's
+like the answer um all the stuff that
+you would expect to see in the IFC in
+that in that module interface is all
+present inside of here um and we can do
+fun things like perform queries against
+this like what if we wanted to
+find like question for example like so
+it narrows it down to just that um we
+can also narrow it down by type so if we
+wanted to find only functions for
+example like there's our one
+function and there's lots of helpful
+options like color customization or
+being able to transpose the graph in
+case you want to view it um you know
+kind of in a different way that might be
+more familiar to you so there's a lot of
+options here and it gives you a lot of
+power in Just visually exploring what's
+available in the IFC itself um and again
+this is just a web page so it works
+across all operating systems that
+support you know your basic JavaScript
+stuff okay let's go back to our overview
+so we just finished talking about the
+the basic terminal printing that the IFC
+SDK can offer and we also talked about
+the IFC visualizer which is written in
+JavaScript and the final tool we're
+going to take a look at is the IFC
+driver
+tool okay so let's go ahead and go back
+to our man prompt where we were in the
+IFC SDK and uh to demonstrate the tool
+we're really just going to be using um
+that same IFC we generated with visual
+studio so to invoke the tool we're going
+to we're going to call IFC itself from
+the release directory we're going to
+give it the subcommand version and then
+provide it with the IFC that we want to
+get the version of and what that does is
+that reads and validates the signature
+of the IFC and tells us what the version
+is of that specific IFC this is
+currently the only existing subcommand
+of this particular tool and eventually
+it will be extended to include more subc
+commands as time goes on so this is kind
+of getting into the future of what the
+IFC of what we view the IFC SDK going uh
+the future Direction yeah and I just
+wanted to say thank you for taking this
+tour of the IFC SDK with me and we hope
+that you will go out and uh try out the
+IFC SDK for yourself and decide if it's
+the right set of tooling for your
+compiler and um perhaps it offers the
+the correct abstractions for your data
+structures and that we can create an
+ecosystem together yeah so thank you all
+bye-bye hello my name is camera to
+camera and today I'm going to tell you a
+little bit about
+h

@@ -1,0 +1,352 @@
+so I'm gonna switch topics now and talk
+about upgrade so kind of going back to
+for my overall theme of us evolving over
+time from TFS into and on into a cloud
+service upgrade was a big deal you know
+back in the case with TFS still case
+with TFS you got to take it down early
+on with the STS it was the same thing
+take service off line go upgrade it
+which it's complete non-starter for a
+global team if somebody somewhere is
+critically in it has a critical
+dependency on V STS they're trying to
+ship something they're trying to patch
+their service it doesn't matter
+they've got stuff going on there's never
+a good time for everybody so we got to
+be able to do this this online now if
+you're gonna do an upgrade not
+everything can change
+simultaneously it just not possible so
+if we're not going to be able to change
+the application tiers the job ages the
+virtual machines as a unit if we can't
+change the virtual machines in the
+database together at the same time who's
+gonna have to handle the fact that
+they're different where are we gonna
+absorb that complexity and we've chosen
+to absorb it in the application tiers
+and the job agents and a lot of this
+comes back to you know I mentioned
+before we got a ton of sequel the thing
+with sequel is sequel with if-statements
+is completely awesome right we all enjoy
+writing sequel with lots of branches in
+it it's crazy right so we said instead
+of complicating further complicating our
+sequel we're going to handle this
+complexity in net and now you could do
+this in Java or any number of different
+languages obviously for us its net so we
+created a set of factory classes that
+understand the sequel versioning so
+every sprint you create a new interface
+with that version and you kind of march
+along in time and that way there's
+always a set of binders that match
+whatever version of the database is this
+also by the way allows for easy rollback
+miners because the first thing we do is
+to ploy the binaries after we deploy the
+binaries then we kick off the database
+upgrade so if we deploy the new binaries
+something goes horribly wrong we can we
+can roll back the binaries that's easy
+enough and this is much easier to test
+because now we're testing you know
+standard net code we can write unit
+tests for it it's it's much easier to
+deal with step through debug etc than
+dealing with this as a crazy set of if
+statements and branch
+in sequel so how does this actually work
+so we need to be able to do these schema
+upgrades online and like I said the
+first phase is we go deploy binaries the
+binaries in a given sprint deployment
+let's say so we're currently in
+currently deploying sprint 123 the
+binaries understand sprint 123 database
+schema and they understand sprint 181 22
+schema so in and n minus 1 and the
+binaries will query a sequel and find
+out what scheme I'm not talking to you
+oh it's that one I'll load that binder
+again going back to the factory class of
+loading what matches the database and it
+is you decide hey I need to upgrade my
+data I've added some new feature let's
+say I've added a new feature to work out
+them tracking great I'll go add let's
+say a set of nullable columns I'll start
+populating that with data I may even put
+in place the sequel trigger to keep it
+all in sync but before any of the actual
+upgrade happens per se I've got to
+create the data because as you'll see
+when we want to do an online upgrade if
+we're not going to take you down it's
+got to be invisible to you so if I'm
+gonna do data transformations and if
+this is done at any scale it's got to be
+done before I lock the database schema
+before I block anything that you're
+doing because when I take that lock it's
+got to be fast so the first thing we're
+gonna do is you're gonna go manipulate
+our data whatever that means for the
+feature that you're working on and for
+something truly large this could take
+multiple sprints like when we changed
+work atom tracking from a wide schema to
+a long schema that was multiple sprints
+and every sprint made some changes to
+the schema some of them like that are
+very complex most of course are much
+simpler so once we've gone past the
+phase of creating this extra data in
+nullable columns it could also be in
+brand new tables with different names
+that will later swap in we go into
+what's called deployment mode for the
+application tiers and the job agents and
+this is where they when they make a call
+to the database they grab a reader lock
+on the schema and front from from a
+standpoint of of using the sequel if you
+will
+the the job agents and the ATS are
+effectively readers of the schema it's
+kind of a little bit of an odd
+terminology but that's what they are and
+meanwhile the upgrade itself is the
+schema writer and is trying to grab a
+writer lock and so there's this this
+dance that goes on in the code where
+every time a call comes from a tea or a
+job agent into the end of the sequel
+database it grabs the reader lock on the
+on the schema meanwhile the the upgrades
+sitting there trying to find a moment in
+time to grab that writing lock try to
+grab it nope can't do it try it can't do
+it oh wait there are no readers grab
+grab the writer lock make the final set
+of changes which is I'm gonna update the
+metadata I'm gonna swap in the new
+procedures I'm gonna swap in the new
+types
+I may even swap the names of you know
+let's say this new set a new table that
+I built on the side that's actually
+gonna take the place of the original I
+do that swap very very fast small number
+of relatively speaking of operations and
+then I'm going to release the lock and
+what you as a user should see is you
+should never notice if you happen to be
+using the your account at the moment
+this happens let's say you're you're
+gonna go save a work item it may take
+five or ten seconds to save that work
+item that particular time you go huh
+that was kind of slow and but everything
+else goes back to normal like the most
+you should see is that something slows
+down for a few seconds and then it all
+goes back to normal you don't lose any
+data you're in the midst of updating a
+work item that all happens for you none
+of that data gets lost it's completely
+invisible to you and by the way as part
+of this you know I don't really dive
+into it but we've also have to have the
+web UI handle online upgrade as well so
+when we upgrade the JavaScript files and
+the the style sheets and the icons and
+kind of all this stuff if I go make a
+let's say I do a major facelift to some
+particular area of the product if I have
+changed that UI and then you hit save
+and suddenly the end the call goes to
+the new stuff and the new stuff wasn't
+it was expecting something different
+than your data in the format that the
+browser sent it it's all gonna fail so
+even the web UI is versioned so we've
+got versions of the the type script that
+icons the style sheets everything it all
+loads from a bird
+and folder and that way until until
+there's a full page refresh that happens
+you're still using quote the old UI you
+do something along the lines along the
+way that triggers a full page refresh
+you switch hubs or something you get the
+new web UI but again everything set up
+so that you don't notice the upgrade
+happens you just get new functionality
+yes
+how are you deploying the the sequel
+using scripts using tack pack files good
+question so ed glass is going to talk
+more about how we do the actual
+deployment but a lot of it is driven
+through scripts so all of our sequel is
+checked in to birth control we've got
+lots of dot sequel files and the the way
+servicing is done and everything there's
+a set of things to get auto-generated to
+make some of the surfacing steps happen
+and so forth it's all done through
+through the sequels in text file so it's
+essentially a script and then we have
+something we call light rail that's a
+set of PowerShell scripts that actually
+drive the upgrade we built all this
+stuff a long time ago over time I expect
+to move to something newer but right now
+it's working well for us and kind of not
+a need to go crack it open but ed glass
+will talk more about how that actually
+gets deployed question No ah so a good
+question are the deployments manual
+thankful the answer is no we would go
+insane if we had to do 192 scale units
+manually so they're they're highly
+automated what actually happens and I
+think he'll show you some screenshots we
+actually use release management so the
+STS deploys V STS and that does mean we
+do have a way to deploy vs TSM vs TSS
+down right so but V STS release
+management workin straights the overall
+deployment there's a set of scripts that
+run the actual steps and everything so
+it's somebody goes to the UI and says
+hey I'm ready to deploy sprint 123 and
+they kick that off and it progresses
+through the Rings and he'll show you two
+it automatically goes from ring to rain
+it's not a manual thing that somebody
+says oh I've done ring 0 let me go queue
+a deployment for ring 1 now let me cue a
+deployment bring 2 doesn't work that way
+it will pause and you there are cases
+where we say hey we want it to pause
+we'll wait a day to do the next step
+somebody has to go say yes it's ok
+because if something goes wrong
+want to be able to react to it and not
+have it propagate out to the rest of the
+accounts of course but he'll go through
+it in detail but it's all fully
+automated and that always that wasn't
+always the case by the way question for
+all the different assets that you
+version whether it's store procedures or
+files JavaScript whatever how do you is
+your something do you have a complete
+copy for every version of the product
+internally or do are you doing some
+other kind of scheme like some form of
+copier and rage or something like that
+so it's a good question so the version
+it's actually got a full copy of every
+version so for example in Azure storage
+there's a full copy of every version of
+the the JavaScript files CSS etc the
+deployment itself carries you know full
+copy of the sequel so now as part of the
+servicing it generates deltas so it
+knows what to change so when we do the
+upgrade it's not you know changing one
+sprach into another one they're actually
+identical we detect all that at Build
+time and actually generate the Delta so
+we know what things need to be actually
+need to be upgraded but we've got full
+versions of all this stuff so that
+they're fully independent question what
+do you call this a Bluegreen deployment
+what I call it a Bluegreen deployment
+actually no because the way we do
+deployments today is since we're using
+pass we actually use something that's
+called a VIP swap with the azure load
+balancer so we actually spin up and I
+think ed will cover this too we actually
+spend up a new set of virtual machines
+in a staging slot and then we do a VIP
+swap and we swap all of them out all at
+once and the what's currently in
+production goes into the staging slot
+staging slot becomes production and it's
+it's it's not atomic but it's close
+enough to being atomic so that would be
+kind of a Bluegreen deployment right
+that you have a separate set of servers
+which are live and then a separate
+service set of servers that would go
+live later yes and and I guess when I
+think about it there there's no like
+rolling deployment for example right
+it's it's always the entire set of
+binary the entire set of virtual
+machines is always one sprint or another
+there's never a mix in there thank you
+question sue seems like you guys
+maintain
+two versions each time I deploy right
+yes so when do you do that cleanup
+because at some point you have to so
+like the next deploy you're gonna have
+to probably clean up the previous
+version right and keep like you know the
+to soap rate basically the current
+version and next so do you guys actually
+do the disk cleanup or this is something
+that you guys use in like an in the
+background that's making this easier was
+just like always like manual so so
+interesting set of questions there so on
+the binary or the the virtual machines
+once once we do the swap and they go
+into the staging slot it's not long half
+an hour later or something they
+disappear we delete those in the
+database you know of course there's only
+one copy of the data there's never two
+copies of the data that'd be incredibly
+expensive the the schema and all as the
+servicing runs and replaces the the
+sprach there's only ever one copy of
+sprach sort of active at one time and
+there's not a full second copy of this
+proxy in the database because again the
+servicing has generated the deltas and
+it knows exactly what what to go change
+the closest thing that has sort of two
+things at once is the is the binary
+since it's capable of talking to the old
+DB and the new DB and what happens is as
+you might imagine the code if you went
+looked at the code you're going to see
+okay milestone 100 1920 800 2100 2200
+2324 what happens this teams as they go
+add those eventually they go you rip the
+others out the other sort of interesting
+challenge and I'm not going to talk
+about this at all but really gets into
+on on-prem upgrade in the cloud we go
+every three weeks we upgrade on Prem you
+could be coming from TFS 2010 so that's
+all whole separate conversation so
+there's there's another conversation
+around how on-prem upgrade works but it
+leverages the same functionality because
+we couldn't literally have two separate
+upgrades we could nut
+[Music]

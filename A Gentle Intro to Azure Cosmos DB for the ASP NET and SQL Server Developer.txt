@@ -1,0 +1,646 @@
+hey everybody we're back at dotnet Comp
+2019 I have a new co-host my earth how's
+it going good yeah I know thank you so
+much for joining us so as you probably
+noticed with the entire conference we've
+shifted co-host just because we're doing
+this 24 hours yes it's pretty tiring
+after a while so thank you for all of
+our current or future and current
+co-hosts for taking the time to do this
+in particular I would like to thank our
+speaker Santosh how's it going hey I'm
+doing good how are you
+we're doing great thank you so you're
+here to talk about cosmos DB for asp.net
+and C Co server developers take it away
+yeah let me share my screen
+are you anime there we go perfect
+alright are you guys able to see them
+all looks good alright perfect
+I'm gonna go ahead and get started
+before it
+hello and welcome to dotnet conf my name
+is Santosh and I will be talking about
+cosmos DB today in particular what I'll
+be focusing on is introducing cosmos DB
+to the asp.net and sequel server
+developer a little bit about myself
+before we get started I am a Microsoft
+MVP in Azure and I'm also a consultant
+at new signature so today what I want to
+do is I want to talk about cosmos DB
+which is as we'll see Microsoft's
+database as a service for a variety of
+models and my whole approach to this is
+based around the fact that as a
+consultant I go out into the field and
+talk to customers
+I often see that people who have been
+working for a long time in the asp.net
+sequel server world especially in the
+relational database world they have a
+little bit of difficulty transitioning
+over to a more schema agnostic well that
+cosmos DB brings so I will be talking
+about some of the aspects of cosmos DB
+that I have learned along the way that I
+think are important and also I was
+looking at the schedule and there there
+is a data modeling talk couple of talks
+after mine so I highly recommend that
+you are listen to that one also because
+it's kind of complementary to this one
+so with that I'll get started so what is
+cosmos DB cosmos DB is Microsoft Dodgers
+database as a service this is
+proprietary to Azure which means that if
+you go to AWS or any other provider you
+would not find cosmos DB on there so
+let's forget that right off of the bat
+it's a horizontally scalable database it
+is schema agnostic which means that it
+you can save data on a wide variety of
+schemas and it really it will allow you
+to do that
+it's a globally distributed database
+which you can looking at this map you
+can click on you know in different
+regions or for Microsoft all over the
+world and it'll automatically spin up a
+cosmos DB instance for you over there so
+it's a very easy to use to be globally
+it's a multi model database which means
+it has it accommodates four different
+types of data
+the sequel API and MongoDB and I'll be
+talking about this shortly or document
+or unit cassandra is a column-oriented
+database and then you have table API and
+gremlin which is a graph database you
+can elastically scale throughput and
+storage so technically there are
+hypothetically speaking there is no
+limit to the amount of throughput and
+storage that you can provision for a
+cosmos instance and you can do this
+across the world in different Azure
+regions with a click of a button
+cosmos DB is super fast like you know
+you probably heard about this by now
+it's like single-digit millisecond
+latency and we'll talk about all of that
+but the most important thing about
+cosmos DB is that unlike sequel server
+it's not you're not connecting over TCP
+or you could do that but it's a club a
+bunch of cloud-based REST API and these
+are encrypted address so you can connect
+to this as you would connect to any REST
+API so and a lot of the SDKs and
+everything else is built around that so
+let's keep that in mind as we move along
+let's talk about the multi modal aspects
+the sequel API is a document oriented
+database it stores data in JSON format
+which as you know is the most widely
+used format and it provides sequel like
+query capabilities and below is an
+example of the type of data it stores
+ is similar to sequel in that it's
+a document oriented data
+I would say that the distinguishing
+factor is that is it suppose the
+MongoDB wire protocol which means that
+if you write your code geared towards
+MongoDB chances are chances are high
+that he can part it to the API at
+cosmos and it would just work so he can
+simply move from you know a hosted
+instance on Prem to the call to the
+azure cloud by simply pointing your
+connection string to cosmos our table
+API we have talked about assured we have
+heard about as your table storage
+previously our table API I call this as
+a premium version of as your table
+storage
+it's the provides exactly the same type
+of you can store exactly the same type
+of data with the same code except that
+you get much better throughput and you
+can leverage the global distribution of
+cosmos DB so seek you know with as your
+table storage we have you know read
+access zone redundancy and all of that
+we can easily scale or we can easily you
+enable global distribution by clicking
+on a map and I'm kind of moving fast
+because we're running you know we're
+running behind so bear with me
+gremlin API you know data as we know is
+in the real world is it cannot you know
+often we find it hard to describe in
+relational databases with gremlin API
+it's a graph database and it's super
+relation I call it super relational
+which means that he can easily spin up
+vertices which are the round entities
+and edges which are the relationships
+that are shown by their lines and you
+can spin this up real quick and attach
+them real quick which means that they're
+you can do multiple levels of nesting of
+relationships something relational
+databases find it hard to handle a
+cassandra idea is a column or in a
+database by grouping columns together
+you
+often lured entire set of columns and
+memory for super fast calculations great
+use cases for these is time series data
+talking of the different types different
+models use cases for these are usually
+found in industries like retail IOT and
+gaming this screen we are seeing right
+here is a great example of some use of
+cosmos because it uses the change feed
+which we'll be talking about later in
+the stock and you know it leverages
+micro-services with the change feed to
+handle different functions in the retail
+industry so cosmos DB can you can really
+power up your applications by using
+cosmos TV along the way through my talk
+I'll be talking about different
+developer tips and for this particular
+section I'll say that leverage here you
+have the appropriate data model based on
+the scenario so if you want relational
+somewhat super relational data you can
+use the graph API or you know if you
+want tabular data you can use the table
+API and finally you know these models
+are meant to complement each other and
+not replace each other so and talking
+speaking of that I want to give you a
+thought experiment so let's say if you
+are building your own linked end or I
+was building my own LinkedIn this is how
+I would do the MVP I would use the
+sequel API to do the profile pages and
+the posts and to do things to do
+research on people I may know I may use
+the gremlin API to list the graph or to
+log the visit so I may use the table API
+to run summary calculations on years of
+experience I may use Cassandra and
+finally for the sign up and building
+modules because I want them to be
+transactional I'm actually use sequel
+server so there's no
+bad answer what I'm saying is that you
+should use cosmos DB and complementary
+technology and appropriate scenarios
+hopefully if you can take something out
+of the dark let this be it but you know
+I have other great stuff in store for
+you and quick note this point forward I
+will not be talking about the other
+models I'll be sticking to the sequel
+server sequel API in cosmos speaking of
+the global distribution cosmos DB
+provides turnkey global distribution you
+can easily spin up replicas you can spin
+up replicas by clicking on the map so
+you can spin up different instances one
+region if you have your cosmos DB hosted
+in only one region you get four nines
+SLA which is 99.99 if you have greater
+than one region you get five nights
+which is obviously better and then you
+also want to talk about you know whether
+I want single region right or multi
+region rights and this may vary based on
+your scenario so if you have a red heavy
+application it's easy to ingest your
+data and then with a single region right
+so for instance your writer may be
+located on East us so you ingest in East
+US and then you distribute all over the
+world so that when someone in Australia
+tries to read the data it uses this
+feature called multihoming API is for
+cosmos DB and it connects to the nearest
+instance which is an Australia to read
+the data so that makes it super fast
+multi-region writes I would use this in
+a scenario like if you have clients all
+over the world trying to write data
+instead of sending someone from
+Australia to East us I would enable
+multi region right which means that they
+write to the Australian instance and it
+would sink up over time
+cosmos DB provides low latency for reads
+and writes and you can see that you know
+then single-digit milliseconds or
+customs deep
+provides five well-defined consistency
+models most databases that accompany
+does often provide like to which is
+strong and eventual but cosmos TV
+provides five I will say that strong is
+very similar to the acid compliant
+relational databases but it only works
+in one region so if you expand beyond
+one region you'd have to use one of the
+other for bonded stillness that you know
+your reads and writes are never out of
+order but the data lags by a certain
+interval or prefix now within this
+interval it's strongly consistent
+session session consistency provides
+strong consistency within a particular
+session that's connected to cosmos DB
+consistent prefix make sure that your
+reads are always in order with the
+writes but there's no strong consistency
+anywhere and eventually it means that
+your rights could be out of order with
+your rates through part this is one of
+the most important now we are getting to
+some of the important parts which impact
+performance throughput actually is
+measured in request units and it's a
+combination of memory plus CPU plus I
+ops and one request unit is the
+equivalent of reading a one kilobyte
+document I will say that writes
+obviously consume more than more
+throughput because of indexing
+and also depending on the consistency if
+you have strongly consistent was this
+somewhat eventual consistent it may
+consume different amount of our use the
+same write operation partitioning there
+are two types of partitioning logical
+and physical logical is controlled by
+the user by providing a partitioning key
+physical partitioning is because it's
+horizontally partition and store
+disks this is completely handled by the
+cosmos DB engine and transparent to the
+users the choice of partitioning key can
+make or break your data based
+performance which is why I will
+reiterate that you should attend the
+data modeling session after mine this is
+what a cosmos DB instance looks like we
+start with account choose create an
+account our account can have 0 or more
+databases and these databases have
+containers of data not to be confused
+with docker containers these containers
+can have different elements like stored
+procedures triggers user-defined
+functions and items items like the
+actual data not depending on the model
+of Cosmos like for instance if you are
+in sequel API you would call your
+container a collection and you would
+call your item a document so that's
+that's what this diagram represents
+obviously with your occur once you
+create your account you get an endpoint
+and connection Keys one quick another
+additional note on this there's
+readwrite keys and read-only keys so use
+these judiciously when you are designing
+a document like if you're doing a CQRS
+system you could reuse the readwrite
+keys on the right side and read-only
+keys on the reach side and the database
+the database is the unit under which
+container of containers of data is
+stored but you can provision throughput
+at the database level now if you have
+multiple containers under the database
+the throughput your provision here is
+the cap collections were with the
+collections in sequel or the containers
+that store the data you do not incur any
+charges until you create a collection so
+you can create as many databases as you
+want with no charge and at the
+collection level you can also provision
+you can cap an individual collection for
+a certain throughput otherwise it would
+vary based on what's
+the usage may vary based on what's
+provisioned at the database level and
+how many other collections so there are
+documents now these are the action this
+is the actual record example of a record
+that may be stored in a sequel API
+collection so for instance if you take
+JSON document that looks like the one on
+the left and store it you'll end up with
+one that looks like the one on the right
+and this is even though we say that our
+data ask schema agnostic cosmos DB adds
+some fields as you can see at the bottom
+the ID represents a unique name within a
+logical partition it can be system
+generated are user defined if the user
+doesn't provide an ID it will
+automatically generate one e tag is used
+for optimistic concurrency control which
+means that if there are multiple clients
+writing to the database this same record
+then it may use the e tag to resolve
+that concurrency issues ts is the
+timestamp and self is the actual URI for
+the item on the internet so how do I
+develop cosmos in Cosmos locally so and
+this is where you can you can go to you
+can google cosmos DB cosmos DB emulator
+and it's a simple Windows installer and
+it runs a service on your computer
+excuse me sorry
+so this loads
+Explorer this lots a emulator on a
+computer and you get the connection URI
+and the primary key for the emulator now
+the one thing to keep in mind is the
+local emulator stores multi models for
+instance you also see the MongoDB
+connection string and you see a data
+Explorer that will show you the data but
+unfortunately this data Explorer as I
+remember if I remember correctly is not
+available for Cassandra graph and table
+and that may change so the next thing I
+want to talk about is before we dive
+into code is the azure cosmos DBE dark
+net as decay since we're talking about
+you know dotnet code three this goes
+very well with that this is the latest
+instance of the sdk and it has some
+improvements on it and i'll be i'll dive
+into this shortly so definitely if you
+are using cosmos DB use the dotnet sdk
+v3 and with that i will jump into some
+code so I'll quickly show you the
+difference between dotnet core SDK
+version 2 and 3 so so for my dark net
+core SDK version 2 this is an example
+for the.net Korres decay version 2 so
+generally what you do is you instantiate
+client that with the endpoint and the
+URL that you get from the cosmos once
+you create a cosmos instance you get
+particular cosmos account you get the
+key and the URLs you instantiate a
+document client and then you create a
+database and
+generally in the cloud it's always Duty
+is defensive programming techniques
+which means that you don't assume
+something exists you always created and
+then use it I you plan for creating it
+or a plan that it doesn't exist so in
+this instance it goes through it reads
+the list of databases and creates a
+database now this is version 2 version 3
+actually is in version 3 the cost the
+document client has been replaced by a
+Kosmos client so that's cool because
+obviously you want to have a more
+generic one and you can use the cosmos
+client and the create database if not
+exists that call and similar calls at
+the database and collection level have
+been made much more stable and where you
+don't have to go through and catch the
+exceptions before you create the
+database so it's it's a more intuitive
+developer experience
+so there's definitely improvements on
+that side so let's see freaking one or
+the other thing that the dotnet SDK v3
+has introduced as it's using streaming
+api's and the advantage of using
+streaming api's is that previous
+versions always did serializing and
+deserializing of the data each time you
+requested data and that kind of incurs
+eye overhead and the streaming API is
+cut down on that because the stream or
+the wire so I if you want to pass if you
+want to get data from the container and
+pass it on to something else you can use
+the streaming API and not have the
+overhead of serializing deserializing in
+between so next thing I want to do is
+jump into this cosmos D beta obviously
+provides sequel style query
+so we will see if we can find a
+collection that has data in it and
+obviously I have a collection and this
+collection has some data in it so we'll
+run some queries in here so let's look
+at the form let me look at a data record
+and see what I can query so I'll query
+for all the records that have day of
+week Fridays and see what comes up so
+when I say select see third day of week
+equals Friday
+probably oh it's kiss and still so you
+gotta watch out for that so obviously
+this query Dan and it can zoomed you can
+see that it's only showing hundred
+records because when you get your
+records back if you don't want to
+display all of them we can paginate them
+and that's always a good practice and
+this 400 records it's consumed about 12
+our resource unit so you know as you can
+see can run sequel style queries and
+it's it's the one thing I would watch
+out for is every time you run a query
+always keep tabs on the request charge
+and you want to get your requests you
+want to constantly monitor a request
+charge because that may decide how much
+resource request units your provision
+for your collections
+so this is an example of how I would run
+a query from a class from a c-sharp
+client so in this instance I'm getting a
+query stream iterator and I'm passing in
+the actual query I'm passing in the
+actual query and and I'm using the
+partition key bridgetta in the partition
+last name so I'm in providing the family
+name Anderson and that will return some
+data so this one thing to keep in mind
+as if he generally when you run your
+queries if you wanted to get if you want
+to get the best efficiency in a in a
+large amount of if you have a large
+amount of data and you want to get the
+best efficiency somehow try to include
+the partition key in the query indexing
+so this is what this is another
+component that impacts query performance
+so in the so far let's take a look at
+this instance so this in this instance
+if I ran a query on locations where the
+city is Berlin it'll go through my
+collection and it'll filter out all the
+all the data that have fields called
+location and that have location fields
+and this location fields will have city
+subfields and the city will be called
+world and so it's filtering out all so
+if you have multiple schemas so let's
+say I have other records and my
+collection that have headquarters these
+don't have locations or city so in this
+case it will completely ignore those
+records so this is another way this not
+only helps filtering out data and making
+a query small efficient but it also
+helps with schema agnosticism I'll say
+that other things you want to think in
+here is you want to measure your request
+units per query and sure you have
+provisioned enough throughput when you
+run your
+you want to use always use partition key
+like I was saying earlier you want to
+follow SDK best practices like direct
+connectivity and all of these are listed
+in the documentation and also try to
+write a query swith in the same they
+account for network overhead when you
+run them server-side programming this is
+important because often when you get
+data you want to validate and transform
+your data before you before you store it
+or right after you store it and in that
+case you use something like a trigger or
+there's also stored procedures and
+user-defined functions that cosmos DB
+runs these runs server side because the
+JSON JavaScript code they can basically
+map to the JSON data and perform
+optimizations like lazy materialisation
+the other thing about server-side
+programming is that you can guarantee
+the database offs within stored
+procedures and triggers in particular or
+Atomics you can some amount of a in
+asset transactions talk about change
+feed processor which is one of the best
+features of Cosmos DB it's a basically a
+persistent log of documents so when
+Kosmos DB ingest data or updates data
+the it must maintains a persistent log
+and you can connect multiple clients to
+your logs and these clients basically
+use another cosmos color collection
+called leases that way even if they drop
+their connection they can come back and
+resume from a check point so this makes
+it really resilient and it's used in
+scenarios like even sourcing and you
+know even near real-time migration so
+for instance if you ever did the wrong
+partition key which happens you know
+more often than we
+I admit he can perform a near real-time
+migration by updating the records in
+your collection and then reading them
+through the change feed and copying them
+to different collections so he can
+actually use your change feed in a whole
+bunch of cool scenarios definitely
+something that should read more into
+entity framework three obviously in
+Lantana say where a discussion of cost
+cosmos in a darknet conference would be
+incomplete without entity framework
+three but because I'm running short on
+time I'll quickly see if I can
+you
+package and in your context you would
+use your basically over idea on
+configuring method to use the cosmos and
+in this case it uses the local
+connection string but obviously if you
+are deploying this to as your you would
+replace this with the as your connection
+strings and yeah so once you do that
+your context can use the cosmos client
+and then it kept performed it can access
+the database on the container and it can
+just work like any of the cosmos client
+and I see that I'm running clothes from
+pack so I'll keep this smaller I was
+gonna say where we're right on that
+whole a DevOps no no discussion of
+cosmos is complete without DevOps I want
+to talk about a couple of things
+a CentOS answer which I was gonna say if
+we're right on time ok ok I'll quickly
+wrap this up so cosmos DB provides the
+emulator and that you can use and you
+can actually connect your tests to that
+emulator so you can perform integration
+testing on your DevOps pipeline with
+cosmos and I will wrap up with a couple
+of thoughts and after that if time
+permitting I will take questions
+so my parting thoughts are get start
+started right away download the emulator
+it has sample projects you can get
+started
+polyglot data you know the LinkedIn
+example I gave so if we that's an
+interesting thought experiment to get
+you started but you you know they can
+use a whole bunch of different scenarios
+shift your focus from like thinking of
+course to thinking of what value it adds
+and TCR it's that total cost of
+ownership or non ownership so you don't
+have to host anything or that's really
+important and then understand
+partitioning throughput how it impacts
+performance attend the data modeling
+talk that's an hour from now
+learn to leverage server-side code like
+triggers and stored procedures use the
+change feed I'm sure that you'll find a
+good use case for that and finally use
+good coding and DevOps practices and
+these are some resources and that's
+mindful if you have a one on it till you
+get in touch with me the best way to do
+it as Twitter and I'll take any
+questions or if you have one time then
+I'll just wrap up yeah we're over on
+time so everybody if you have questions
+you want to bring up your your Twitter
+slide there buddy Santosh you can you
+bring it up for us minimize the Skype
+and she'll get quick so people can see
+that so anybody if you can any questions
+go ahead and put them there and we will
+get started thank you so much Santosh
+for taking the time to talk to us and
+we'll get here going with Steve and
+talking about the eShop ok thank you so
+much everybody pick

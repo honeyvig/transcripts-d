@@ -1,0 +1,771 @@
+so below there and welcome to another
+tutorial my name is Tamara Bakshi and
+today I'm joined by mark stir event so
+thank you very much mark for joining
+today
+would you like to quickly introduce
+yourself sure I work in developer
+advocacy in IBM specifically I work on a
+lot of code patterns so we're creating
+code patterns with Watson and AI and
+we're making the public on github so
+that you can follow the code pattern and
+try them out
+that's great thank you very much for
+joining in today but today specifically
+we're talking about the Watson assistant
+and how you can tie it in with the
+Google assistant and Amazon the lexo
+into example use cases
+first of all car rentals and how you can
+actually rent out car leasing chatbots
+and they're not going to be talking
+about checking the weather through
+natural language in fact you may
+remember I already have a video on the
+Amazon Alexa and tiny then would ask 10
+Meg and in fact helping me out with that
+project was Mark servant that guy wasn't
+able to find out how exactly to have
+Alexa output its intense or whatever you
+say to Watson system because that
+requires a little more grounds thank you
+very much for that Marc but now let's
+get into the actual use cases okay so
+tell us a little bit about what kinds of
+applications we're gonna be building
+today okay so the basic applications and
+then they're meant for demo they're
+fairly simple but the main thing we
+wanted to do with both of these is show
+you how you can use an Alexa or a Google
+assistant front-end which is fairly
+popular and available a lot of devices
+but instead of trying to build that
+conversation and those platforms take
+advantage of Watson wants an assistant
+and build a conversation a dialogue
+there so what we have is we have ways of
+getting basic text from the conversation
+when you're speaking to these other
+devices it gets into Watson and Watson
+controls the reply and the response in
+the back and forth so first we'll use
+slots to gather information so what kind
+of car do you want what color car all
+these slots need to be filled before you
+satisfy that and later we'll give an
+example of digressions because
+we did with the with the Google
+assistant example the rental cars is as
+you're talking to a retail agent and
+being prompted maybe what kind of car do
+you want a lot of people will ask
+questions typical ones are are you a
+robot you know guys talk to your manager
+or I'm just I'm really upset right now
+and you want to be able to handle those
+and we don't have examples where we're
+actually calling out to another person
+but we have example if I could handle
+the dialog you'd have to be able to
+reply to the digression and still jump
+right back to what kind of car do you
+want a very powerful feature and it's a
+very surprisingly natural conversation
+that you can have with a fairly simple
+chat bot that's great mark now I mean as
+you mentioned a lot of people are gonna
+do things like chit chat with a bot
+after you Bank in Australia I applied
+Watson to their mortgage or loan
+applications the second most asked
+question on that chat bot was what's
+your favorite color and the first most
+asked question was will you marry me so
+because you can tell a lot of people
+will use a job often when it's intended
+to work before before but even more
+gonna use it the things that it wasn't
+intended for I'm trying to stump it
+because it's a robot but that's why
+Watson exists and now using Watson
+assistant with other platforms like the
+Google assistant ends on Alexa Sirikit
+so anymore that you could use it with
+you're able to create one unified
+experience in chat BOTS across all
+platforms that having to rebuild it for
+every individual library or every
+individual platform and then you can use
+really powerful tools that Watson
+assistant provides in order to build
+more natural conversations like that
+Russians going from one topic to another
+and then slots trying to get the correct
+information and no matter how many
+messages you provide so now that let's
+talk a little bit about how exactly this
+application is gonna flow so what could
+you have to quickly walk us through say
+the car rental use case okay so the car
+rental use case is using Google
+assistant so we start over here with
+Google assistant
+we care how abbreviate some of these
+things on video so it's calling out so
+we're gonna have an HTTP endpoint
+calling out and it's got JSON in there
+with enough information basically all we
+want is the text so Google assistant
+will handle the voice and we're going to
+get a string of text along with some
+other information but that's the request
+so it's coming into IBM cloud which
+we're using to host an ojs server so
+that's where we have the endpoint so IBM
+cloud takes care of the hosting it gives
+us the endpoint we've got code that's
+getting this JSON and I've got the text
+and I could call out to Watson so Watson
+services our service also hosted on the
+cloud and so that's where we have
+workspaces for different conversations
+so the the Weather Channel one was one
+convert one workspace the rental car
+conversation was another workspace so I
+have those hosted and they have the
+node.js server setup so that it's going
+to communicate with Watson malfini Alexa
+one was built a little bit differently
+and we switched to another color I guess
+so I need another marker more than
+another color so if we go to the Alexa
+it's the same model we set it up so that
+we're basically just getting all the
+words that were said in in text and it's
+going to also call our HTTP we're going
+to have that text in a JSON structure
+but there we use cloud functions so IBM
+cloud functions
+that's hosting our code so that was
+JavaScript but again once we get that
+request we just call out using an SDK -
+call out - what's an assistant and get
+their reply now the amount of code you
+need to call out is very little and once
+you get the reply from once and you have
+the answer in both cases you're just
+building a little bit of JSON in a
+specific format that Google will
+understand or Alexa will understand the
+Alexa one does have one other bit the
+conversation is the same but if it comes
+back and says to a weather lookup then
+it has some code to call up to the
+weather game service I should mention
+that weather weather channel data
+weather channel data so even though
+that's a fairly simple test example that
+you can use you give it a location it'll
+give you the real weather report from
+the Weather Channel okay thank you for
+walking us through that now let's take a
+look at a quick demo how you can apply
+this to the Google assistant and that
+let's get into how this actually works
+featuring of course service computing
+the weather channel of course kind that
+really accurate weather day of my VM and
+of course using nodejs along with the
+Watson assistant in order to host these
+natural conversations let's take a look
+hey Google talked to Watson
+all right getting the test version of
+Watson I can reserve a rental car for
+you what day do you need a car I need it
+tomorrow what time on Thursday do you
+want the car to be ready sometime around
+noon
+what type of car would you like and like
+an economy car what color economy car do
+you want why don't you make that a car
+that's really fast what color sports car
+do you want definitely a red sports car
+okay please confirm you want a red
+sports car on the 16th of August 2018 at
+12 p.m. is that correct that's correct
+great unfortunately I don't really have
+any cars this is a demo chat
+let's start over what date do you need a
+car I'd like a blue mid-sized car
+Thursday at midnight what time on
+Thursday do you want the car to be ready
+how about 12 a.m. ok please confirm you
+want a blue midsize car on the 16th of
+August 2018 at 12 a.m. is that correct
+ok
+unfortunately I don't really have any
+cars this is a demo chat okay so we'll
+show you where the code patterns live so
+you can use them and you'll try them out
+on your own so we have the code here and
+all the steps you need to run it here at
+github.com slash IBM we have Alexis
+skill Watson conversation this is the
+one word we've hooked up a Watson
+workspace with an Alexis skill and if
+you look at the readme you'll see what
+we provide with code patterns a lot of
+information about what we're doing and
+the exact steps you need to run it so
+there'll always be an architectural
+picture that shows you what I tried to
+draw on the board you'll see the
+components here we're using IBM cloud
+functions we're using red is to store
+context and we're calling out to Weather
+Channel in addition of course to Watson
+assistant but if you look at the readme
+you'll see that we have an example video
+and we have detailed steps so you can
+run this one locally or on the cloud
+well this one we run it locally but we
+also use IBM cloud functions and we have
+a very similar thing for the Watson
+Google assistant so this one's at
+github.com slash IBM slash Watson Google
+assistant again with dashes and the
+readme here you'll see a very similar
+format you'll see the architecture you
+talk to Google it talks to no js' and
+talks to Watson assistant and the steps
+here since this one is running right on
+the cloud we just have a deployed IBM
+cloud button so you can do that and
+it'll deploy your node.js server it'll
+spin up your Watson assistant service
+with your workspace so very easy to get
+this one up and running but it's also
+documented so you have all the steps you
+need so one that fires up you'll get a
+Watson assistant service running an IBM
+cloud and it will upload a workspace so
+here we uploaded a workspace for the
+rent-a-car conversation and if we take a
+look at this you'll see that there are a
+lot of intense and I didn't have to put
+in most of these I simply use the
+existing content catalog we have some
+industry specific conversations and also
+things like vodka
+all general and customer care so for
+rent renting a car I used a lot of the
+bot control well I use a little of the
+bot control to say confirm reject for
+example and start over customer care for
+things like when are your open and
+general for things that people ask a lot
+that I wouldn't have even thought about
+but when I looked in there I saw
+questions like are you human are you a
+robot and I talked to your manager
+you're stupid
+all those things that can be thrown in a
+chat box and you want to address and
+since I have another sort of PowerPoint
+of walks an assistant is that you don't
+need to build absolutely everything from
+scratch of course some very specifics to
+your use case you will need to program
+in of course or the content catalog
+takes a bunch of things they are
+repetitive or mundane and you won't need
+to code those in because the intents and
+entities are there for you you just need
+to put it in the relevant dialogue for
+them yeah
+for example if you look at the intent so
+like taking those three categories I
+just added those to my workspace and
+you'll see the list of intents I got so
+a lot of bot control a lot of customer
+care a lot of just general you know like
+this human or bot question and if you
+look at any one of these you'll see
+let's see what's a very easy one just
+approve response you could expect a yes
+or no response in your chat bot and
+that's a pretty weak chat bot but just
+by using this one that came from the
+catalogue it already had 21 examples you
+know affirmative all right correct for
+sure got it great plus it's being
+trained so you don't have to
+specifically say any one of these these
+aren't keywords so you've gone from
+expecting and yes or no if you're hard
+coding it to 21 examples plus machine
+learning to build on that and get
+various variations of that it'll still
+understand your attempt yeah so if you
+scroll down like for example let's just
+say the word absolutely isn't here if I
+were to still say the word absolutely it
+would understand
+this is the intent I mean even though
+the word absolutely wasn't in the
+examples yes the reason it does that is
+because of machine learning it
+understands my Intendant understands
+what I listen man ticks not the sin
+tactics of what I'm trying to say right
+and if I found out that it doesn't
+understand
+you betcha I'm for sure you can just add
+the intent it'll train it immediately
+perfect and you'll you'll very quickly
+be able to handle that mmm-hmm so also
+if we look down here so the general ones
+are where it was interesting to see what
+people might ask like the human or bot
+and again you have a bunch of examples
+so in my dialogue I didn't care to
+address all of these all you really need
+is someone's going to type something in
+that more or less matches this intent
+you understand what they're thinking you
+don't need to know the details about
+exactly what they asked but you're going
+to reply with your answer for what you
+do when someone's intent is to find out
+whether you're a human or not mm-hmm so
+this takes a lot of the work out of
+trying to build that and a lot of the
+the machine learning the training is
+done now in addition to the content
+catalog I did a simple reserve a car cop
+you know intent that just says I need a
+car rent a car but this dialogue is
+fairly straightforward look its sole
+purpose is to rent a car and deal with
+these other digressions while it's
+trying to rent you a car exactly so it's
+going to go into reserve a car mode with
+pretty much everything you do and that's
+the dialogue so let's take a look at the
+dialogue well those are the intents now
+let's take a look at a dialogue yeah I
+mean the dialogue is the part that does
+this rental car thing I was talking
+about and so if we look here I kept it
+fairly simple there's a starting point
+where I wanted to be able to clear the
+context to make sure that it doesn't
+remember what you reserved last time
+there is a way to start over and start
+fresh but it always jumps right to
+reserve a car after it says hello I can
+rent you a car so that first time that
+intro you want is you want to say
+something what it's going to do so it's
+got the intro and it jumps to reserve a
+car quit is important
+be able to kind of end this especially
+with Google assistant there's some
+special checking in the code because if
+you don't handle that that end responds
+correctly you're gonna get an error in
+Google assistant it it will be unhappy
+if it says I want to quit and you reply
+with something that's asking for more
+information yes it's an error is which
+is kind of annoying so that's handled
+but all those intents that I consider
+digressions I put these in a folder so I
+can deal with them but I have the
+ability to jump in and out of those and
+let's take a look at the reserve at cart
+one the specific one for observing car
+it has slots so this is where you see
+what it's checking for and all these are
+considered slots when it wants to
+reserve a car if it doesn't know what
+day is going to ask you what day you
+mean it if it doesn't know what time it
+will ask you what time okay but if I say
+I need a car tomorrow at noon it's gonna
+fill in both those slots mm-hmm another
+slot is car type car color and then at
+the very end when this last ones in
+focus that's going to do the confirm but
+with these first four now if I say
+tomorrow at noon I need a red midsize
+car they're all filled in it'll go
+straight yeah so yeah you're right
+that's actually a very very powerful
+feature of these slots it's like for
+example last time I created a actual
+Facebook live series on the Watson
+system back on these we called Watson
+conversation and there was someone who
+asked during the Facebook slides well if
+I'm trying to order a pizza and I want a
+thin crust pizza the medium size with
+these toppings 22 specify them one by
+one and listen to everything watch
+enough to say no you don't now using
+slots in literally one conversation
+they're ready to put everything to get
+to and in this simplified rental car
+dialogue has two perfect examples for
+that the date and time if I say what day
+do you want a car and you say tomorrow
+at noon yeah a lot of chat bus might
+catch the tomorrow mm-hmm but and then
+they're gonna say what time because
+they're not looking for that time and
+that's really annoying if you said
+tomorrow at noon and in the bottom
+as what time - exact and the other great
+example is the car what I think what
+type of car would you want a person
+might say I want a red sports car yeah
+some BOTS would then say what color red
+that's right
+which it's okay I guess
+but it's really annoying and and people
+want to have BOTS to interact like a
+human and the entire point here is for
+the chat BOTS to a Cuban or else I mean
+why would you have a forum why would you
+want to use a chat bot - for it to be
+natural
+yeah our point is like for example when
+you call up one of those for example
+helplines there and the robot is answer
+anyway say tell me what your problem is
+and they don't understand yes it's so
+frustrating to keep telling them yeah
+we're trying to get to the point that
+you just want human on the line ASAP
+what this is meant to do is connect with
+humans be natural so you're not
+frustrated talking to it and absolutely
+repetitive questions you're going to get
+frustrated yeah I know people are a
+little concerned when chat BOTS start to
+sound too human-like
+like are these are they being tricky or
+is it sneaky is there something wrong
+with that I'm not sure but people are
+definitely a little uncomfortable with
+that but the great thing about talking
+like a human is it changes the whole
+interaction exactly the way people talk
+to a very robot a form-based prompting
+thing is very different than the way
+someone naturally conversely like with
+this time and date thing I don't need
+just I don't want to just have prompts
+where I have to say the word I can say
+oh I guess I probably need it by 3
+o'clock yeah um and it's should be good
+enough to understand the important part
+of that exactly without forcing me to
+clean up the way I talk exactly - magic
+form yeah a few years they're going to
+use a search engine you try and take
+whatever you're trying to search for and
+move it in this weird weird syntactical
+sort of template right we're for Google
+or Bing or to find what you're looking
+for because it's just doing simple
+keyword matching nowadays because of
+machine learning for example Watson
+right if you take a look at how Watson
+played Jeopardy seven years ago he was
+able to understand the puns a riddle
+we're playing jeopardy questions and now
+you can take it back soon New York
+technology implement your own chat BOTS
+right now the thing I thought was fun
+about this particular one we didn't demo
+digressions did we not yet let's take a
+look at that I forgot about that
+so this chat BOTS going to be very
+persistent about trying to fill these
+slots and get your rental car but as we
+mentioned with all the bot control and
+the other things I put in this digress
+and return folder I don't have the
+ability to in the middle of this
+collecting these slots digress and
+there's a little thing here with the cut
+under customize that allows you to turn
+on and off digression whether you're
+allowed to jump to a digression and
+whether you only want to go to
+digressions that return to the note so
+here I'm going into these this
+digression folder and they're all going
+to return to my node so I can digress
+but it's going to come back and say what
+color mm-hmm and most of my digression
+is that I that I was interested in are
+in this folder there was one bot control
+one here this starter start over that I
+left separate and I made sure I could
+not digress to that because at one point
+I did get another loop oh so the easiest
+fix for that was let's not allow that
+one because of this little jump to yeah
+but there would be a variety of ways of
+fixing that but if I go into the folder
+and I look into a digression so in the
+middle of this date and time size color
+if someone says are you a human that is
+this digression so I just have a note in
+the dialogue I put in one response that
+says oh I clicked on the wrong one this
+is the prefer me to a human agent asking
+for your manager things like that would
+be refer to a human and in this case I
+just had my my robot say I'm sorry the
+humans did not come actually watch so I
+just have some simple examples like I
+put one in there but of course you can
+have and should have many responses so
+that it doesn't sound so recorded that
+the same response at any time the better
+example for that
+is the the the joke I did one bad joke
+but if I really cared to do it I would
+put multiple responses in there you get
+a different one every time or at least
+feel like it's different every time why
+did the chicken rent a car to cross the
+road seemed relevant I didn't have any
+rental car jokes but in the middle of
+conversation these questions can be
+asked it will say this but since it's
+jumping right back to the chatbot you
+will get the joke
+the hahaha in a robot voice to some
+extent of this and then you'll get what
+color car did you want because it's
+still persistent about filling in those
+slots and getting you to the end of that
+part of the conversation the like refer
+to your manager refer to agent those
+types of things I think typically you
+might have more code in here where you
+would actually have some routing maybe
+from your chat bot to human engines but
+we certainly didn't get into that with
+our example mm-hmm so I don't did you
+want to see the digression example let's
+take a look because I was going to show
+you an example of Alexa but since we
+missed that we can go with this first
+yeah okay so I have the two different
+developer environments here the console
+for actions on Google and the Alexus
+skills developer kit so I happen to be
+here on the Google one and since we
+didn't cover that earlier let's just try
+this you can type or speak say talk to
+Watson unfortunately I don't really have
+any cost so this is a demo chat this was
+completing what I did last time let me
+see if I can get it to start over start
+over what Dave you need a car
+do you need do you know any jokes I know
+one joke why did the chicken rent a car
+to cross the road
+ha ha ha what do you need a car there go
+so that's a digression and it's still
+going to say what day do you need a car
+and if I say that was a stupid joke
+there's an intent to D it was still
+listen I know one joke sorry it caught
+on the joke thing yes let me try this
+again that was stupid
+I'm sorry you feel that way I'm still
+learning what there's an intent for
+negative feedback yeah and there's an
+intent for positive feedback this is a
+very simple chat bot knows how to say
+I'm sorry you feel that way but all that
+knows how to do is go back to prompting
+but at least it knows how to say I'm
+sorry exactly so what it's doing is
+you're saying you're providing it
+negative reinforcement and saying all
+right you know it it's responding to you
+phone's going right back to one is a day
+at the car and so you don't need to
+manually say hey you know based off of
+context where were you jump backs that
+no you do all of that now with this new
+directions future it can go over to
+notes and come right back to gather in a
+slot information and another very simple
+one is that was great well thank you
+it's my pleasure what day do you need a
+car but you'll see what this is actually
+showing here only by mistake you turn on
+the microphone there's some gibberish in
+there but it picked up on the bat was
+great exactly so what's happening to use
+a natural ended processing is
+compensating for the fact that the
+speech recognition that it was and and I
+really feel like the interaction I
+didn't spend a lot of time on these
+digressions
+but just a little bit like this thank
+you is my pleasure
+what did you need a car and the I'm
+sorry you feel that way yeah so much
+more natural than when it originally
+would just keep prompting the actually
+the Alexa one has that example
+doesn't have digressions it has weather
+yes and it will keep prompting for
+location over and over and over yes and
+it seems a bit rude this is much more
+easy to work with yes I see so we might
+as well jump to that I think we demo
+what we needed to demo your heads and
+that and the digressions but here the
+the Alexus skills kit very similar
+console if you go through the steps
+you'll set it up and you can test it
+right here I usually find this as the
+best place to test it but you can also
+you know you can release it there are
+other web forms you can test it with or
+if you have an Alexa device you can test
+it you see if this is ready to go this
+one this one I hold the mic the other
+one I just click it Oh
+Alexa talked to Weather Channel sorry
+I'm not sure I did this feels cold what
+is this one called Watson yes
+Alexa asked Watson what the weather is
+weather for what location remember if
+you enter your full address in the Alexa
+app I'll be able to automatically get
+the weather for where you are
+this is using the Alexa built in this is
+using the Alexa built in let's try again
+ask weather channel
+hi I can help you to find current
+weather conditions okay so it was a
+little tricky getting in and out while
+it was resetting but now Alexa's talking
+to our Watson Service I recognize that
+response yes says it can help with the
+current weather what's the forecast
+please tell me your location this is our
+one slot and the no content is because I
+keep clicking the microphone you haven't
+supposed to hold it so the one slot is
+the location
+so like the rental car one if I say do
+you know any jokes in what location it's
+gonna keep from anything okay yes yes so
+not only is it not funny not fun but
+it's in a lot of cases is kind of
+annoying yet because this agent that
+you're working with trying to accomplish
+something with is really just ignoring
+you exactly so this is what happens and
+you don't use directions so that's why
+you license it so that's digressions and
+we should say Honolulu because we want
+to show you that this actually songs to
+the weather forecasts okay Oh in what
+location oh it only got Luther Toronto
+it's a nice day here in Toronto yes it
+is okay I'll look up the weather for
+Toronto looking up weather information
+for Toronto partly cloudy
+lows overnight in the low 70s so the
+coat pattern for Alexa it it does have
+the wiring there to have that
+conversation that simple slot a simple
+example of how to work with Watson
+assistant but then when it's when you
+get to the point where you have a
+location want to look up the weather
+that's your intent it will call up to
+the Weather Channel and it will get back
+the the weather forecast where you
+actually have a lot of details about
+whether you could get much more
+information but when you're talking to a
+voice device yes fortunately there's a
+fairly brief one then you can be spoken
+okay so
+what didn't we cover we covered
+everything so we talked about the code
+pattern we talked about Watson system
+the attempts to use in the dialogue and
+how you can use a Content catalog before
+we talk about the slots that we can use
+specifically like our mental example of
+course the digressions and you've also
+shown a quick demo of the Alexa and now
+I think that's only half of code I think
+I think it is I think we covered it oh
+if you did want to look at the code
+though of course it's on github and
+remember there's it these are both
+written in JavaScript one has a node.js
+server one has IBM cloud functions so
+the that most of these call-outs are
+very simple not a lot of code you need
+to me but you have to code me alright so
+thank you very much everyone for joining
+in today that's what we had to show you
+the code the demo of a like site Google
+assistant and how you can use Watson
+assistant as the one sort of
+conversational fabric for all these
+different platforms so again thank you
+very much Mark for joining in today of
+course bad to have you on but apart from
+that good luck if you do have any
+suggestions questions or feedback please
+do reach out to either me or mark in
+fact marks the mark's contact will be
+down in the description below but would
+you like to keep matilda here's how
+people can contact you sure you can
+contact me mark stir at gmail it's ma RK
+s tu r as in short for mark's turbine
+but yeah you can use my gmail or look
+for my youtube channel and we'll talk to
+you there sounds good perfect again this
+contact will be down in the description
+below in fact mark actually has his own
+YouTube channel so there'll be a link to
+his YouTube channel down in the
+description below and if you like that
+for code patents that he creates make
+sure you subscribe to his channel too so
+again thank you very much mark you'd
+like to contact me my death my contact
+will be down in the description below
+and apart from that if you do like the
+content on this channel and you do want
+to see more of it please do make sure to
+subscribe and if you'd like to be
+notified whenever I release new videos
+make sure you turn on a little about my
+comments by the subscribe button too
+emailing annual notification yeah thank
+you very much and thank you for watching
+Sammy thank you bye-bye

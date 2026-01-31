@@ -1,0 +1,207 @@
+SCOTT GUTHRIE: Let's talk about one more company
+that's using technology to transform their
+products.
+Which is Adobe.
+Adobe is one of the largest and most innovative
+software companies in the world.
+And over the last 3 years, they have been
+working hard to transform all of their products
+to deeply use and take advantage of the cloud.
+And I'm really excited to announce today that
+Adobe is announcing that they are adopting
+Microsoft Azure as their preferred cloud platform
+going forward and will be running all of their
+Adobe SAS-based solutions using Azure.
+And I'm really pleased to invite up here to
+talk more about today's announcement the CEO of
+Adobe, Shantanu Narayen, as well as the CEO
+of Microsoft, Satya Nadella.
+Here they are.
+(Applause.)
+SATYA NADELLA: Good morning.
+It's fantastic to be here in Atlanta at Ignite.
+And welcome my friend, Shantanu, to Ignite
+and Atlanta.
+SHANTANU NARAYEN: Thanks, Satya.
+It's absolutely phenomenal to be here.
+NADELLA: Adobe and Microsoft have had a great
+partnership.
+We have innovated together, we have partnered,
+to really drive the success of our customers
+over a variety of different technology platforms.
+In fact, just two years ago I was even at
+your conference talking about some of the
+things we were doing on Windows and the devices
+front with Adobe.
+This conference today marks a big milestone
+today in our partnership.
+With the leading SAS services from Adobe,
+your document cloud, marketing cloud as well
+as your marketing cloud coming to Azure is
+a massive massive milestone.
+And to me it marks, I think, at the core of
+it, the product transformation and business
+transformation that you're leading.
+So maybe, Shantanu, you want to share a little
+bit about what drove this decision.
+NARAYEN: Happy to, Satya.
+And again, it's so wonderful to be here today.
+What an incredible community here for Ignite
+and here in Atlanta.
+And as you pointed out, it's absolutely the
+next phase in the partnership journey.
+All of the innovation we've already delivered
+across Surface Pro and Touch and embracing
+Windows 10 as the platform of the future on
+the desktop.
+We've been on this incredible journey at Adobe
+in the cloud-first, mobile-first environment
+that you talk about in terms of how we reinvent
+the company.
+I think most people here still know Adobe
+for everything we have done with Photoshop
+and PDF.
+We have completely rethought how, in the cloud,
+we can reimagine the creative process as well
+as document.
+So the entire content workflow with our Creative
+Cloud and Document Cloud.
+But a few years ago, we started to think about
+business transformation and digital disruption
+and we felt there was an incredible opportunity
+to also target marketers in terms of being
+the last bastion of people for whom technology
+was not brought to bear.
+Sort of combining the art and science of that.
+And in that journey, we created the Adobe
+Marketing Cloud which is now the leader in
+its category with respect to enabling all
+of these enterprises to deliver a phenomenal
+digital experience.
+And as we thought about how we needed to evolve
+all of our clouds and we thought about the
+next phase of innovation for this.
+I think was critical to us that we had to
+think about things like global scale and what
+we were doing with global scale or trust and
+compliance.
+But perhaps most important, things you have
+talked about.
+Machine learning and intelligence.
+And so we're thrilled and excited to be announcing
+that we are going to be delivering all of
+our clouds - the Adobe Document Cloud, the
+Marketing Cloud, and the Creative Cloud on
+Azure and it's going to be our preferred way
+of bringing all of this innovation to market.
+And I think together hopefully we will be
+able to leverage this entire IT ecosystem
+and developers and hopefully even make a tremendous
+spark for all of the partner ecosystems, systems
+integrators and digital agencies as they embark
+on digital transformation between the two
+companies.
+NADELLA: That's fantastic to hear.
+Because this coming together of the intelligent
+cloud with the transformative SAS applications
+across Document, Creativity and Marketing
+I think is a massive milestone.
+One of the things that is really exciting
+about our partnership today is that we go
+beyond that.
+We go beyond that to bring, in fact, our respective
+SAS applications around business process together.
+Again in support of our customer's digital
+transformation.
+Specifically the integration between Dynamics
+365 and CRM and the Marketing Cloud which
+I think is at the core of what we together
+can achieve for our customers as they look
+to engage customers in a very different way
+going forward.
+And I know you have talked to a lot of customers
+and what they are trying to get done as far
+as their marketing and customer engagement
+goes.
+And maybe you want to share a little of that.
+NARAYEN: Absolutely, Satya.
+You're right.
+I think we both would say that SAS has completely
+disrupted how enterprises are thinking about
+software, but as it relates to the entire
+customer journey, end to end, and building
+this connected enterprise, we think it's absolutely
+critical that we provide this integration
+that we can between sales and marketing and
+visualization.
+And so, from our point of view as we think
+about what you've done with Dynamics 365 and
+the intelligent business workflows that you
+are talking about and how you made it modular
+so we can integrate that within the Marketing
+Cloud.
+We just think that there is an opportunity
+to, out of the box, provide integration for
+all of our joint customers in terms of having
+one unified and integrated sales and marketing
+service.
+I think perhaps even more important is what
+we have talked about which is, we process
+23 trillion transactions a quarter as people
+are moving their businesses online.
+But to put that power in the hands of practitioners
+and users, if we can integrate with Power
+BI, then you know the power of all of this
+data is actually now in the hands of our customers.
+So we're very excited about this out of box
+integration between our joint solutions.
+NADELLA: Yeah, in fact, that richness of things
+like Power BI, power apps, some of the other
+new app platform tools we have like Flow and
+Functions, brought together with Adobe and
+Dynamics 365 is what customers can then tailor
+their specific business process.
+But I know one of the things that's grounded
+us as we've talked about this partnership,
+and where we've drawn inspiration, is actually
+from customers who are already using our products.
+And that's really what has given us the inspiration
+to say what exactly is that out of the box
+integration, how should we even think about
+extensibility, the data models.
+Maybe you want to talk about some of these
+customers.
+NARAYEN: Yeah, you know, I think there are
+a number of announcements that get made.
+But we have demonstrated that the deepness
+of the partnership only happens when we actually
+deliver product integration and I think that's
+what we're most excited about.
+You're right, when we talk about this customer
+journey, understanding the definition of how
+we jointly look at customers and lifetime
+value and promotions and campaigns.
+If we can standardize on the semantic data
+model between our respective offerings, that
+again I think enables people to out of the
+box start to use these solutions to solve
+their business problems and the use cases
+that they have.
+And as you point out, customer interest.
+Already companies like Virgin Atlantic and
+US Bank and VW are telling us that they want
+these solutions to work well together.
+And I think, ultimately, it's about delighting
+these customers through this partnership.
+NADELLA: Thank you so much, Shantanu.
+We're really looking forward to bringing the
+best in class SAS applications from Adobe
+with both our intelligent cloud in Azure as
+well as Dynamics 365 and ultimately really
+helping everyone in the room with their digital
+transformation agenda.
+Thank you all very very much, and thank you
+Shantanu.
+NARAYEN: Thanks for having us.
+(Applause.)
+END

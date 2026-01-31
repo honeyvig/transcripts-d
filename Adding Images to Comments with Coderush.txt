@@ -1,0 +1,662 @@
+today on vs toolbox we're gonna do
+something we've never done in the
+history of coding before what's that
+we're gonna take Robert Greene and we're
+gonna shrink him down and inject him
+into the source code just like that
+take a look hi welcome to visual studio
+tool box I'm your host Robert Greene and
+joining me today is Mark Miller
+hey Mark hi Robert welcome back on the
+show oh thank you gosh it's been a while
+it has been but I'm so excited to be
+here we're excited to have you well
+thank you I explain to the audience who
+you are and then we'll dive in okay my
+name is Mark Miller I work for
+DevExpress I work on the ID tool teams
+at DevExpress and I've been developing
+IDE tools for about thirty thirty years
+well developer tools specifically an IDE
+tools for about 23 years all right one
+of which is code rush code rush is one
+of those today yeah and I asked you to
+come on the show and show us some cool
+stuff cuz it's been quite some time and
+you claimed that you were gonna show me
+something that was gonna not only knock
+my socks off but that is impossible to
+do well it appears impossible to do it
+is impossible I should say that I always
+blow the demo I blow the demo by setting
+expectations so incredibly high at the
+beginning that there's no way that we
+can achieve those but I'm super excited
+about what we're going to show today
+guys it is when you look at it when you
+see it working it is arguably impossible
+it looks impossible to build yet it's
+not and this is a feature of code rush
+inside visual studio inside visual
+studio and it is available it's
+available now as you watch this sweet so
+it's available now can't wait all right
+so on my machine right here I'm just
+gonna go out here I've got a couple
+links here I'm in some HTML right here
+and I've got a link here says I'm saying
+I'm so excited to be meeting with Robert
+Greene today of channel 9 now one of the
+things that we're we're doing here if
+you'll notice Robert Green is a little
+bolder and so is channel 9 we have the
+ability to kind of mark those comments
+to kind of enhance them and what I want
+to show you today is is a lot it's about
+enhancing the documentation of the code
+that we write ok right and so I've got
+that let me go over here I'm going to
+click on
+on this link right here so Robert I'm
+going to come up here I'm going to right
+click on your image and I'm going to
+choose copy image and I want to do
+something kind of really cruelly
+groundbreaking in history-making today
+I'm gonna make me handsome I'm gonna
+make you handsome and not only am I
+gonna make you handsome but we are good
+you are going to be the first human
+being ever to be injected into source
+code that's what we're going to do so I
+just copied your image right huh and now
+inside the comment I'm just going to
+come down here and I'm just gonna hit
+the paste key like that and now there
+you are in the code and I'm gonna
+right-click you and I'm gonna choose
+crop image and I'm going to just grab
+right up here drag it down to about
+right there let me click up that image
+again and I might resize it let's hold
+down the shift key so we keep our
+original aspect ratio and now I've got
+you right there in the code and now that
+I've got you there in in the code I can
+come up and let's just copy that URL to
+Twitter let's right-click you
+let's choose link and let's open a URL
+let's specify that and click OK and now
+when I come and click on you like that
+we jump right up and we go right up to
+the so you could put a screenshot of a
+mock-up of the UI or something put it in
+the docs yeah you put it in the code is
+what you can do in fact let me show you
+the code on the comments on that yeah I
+got it let me show you this is this app
+that we're running right that we run
+right now so this is an application that
+I built for my twitch channel okay okay
+and this is going to be a bot that's
+going to have a rocket in it that's
+going to be remotely controlled by our
+chat the people in chat room so they'll
+be able to launch they'll be able to
+launch the bot like this and then fly it
+around and collect coins for example or
+maybe they'll be able to drop meteors
+that'll go down and blow up while I'm
+coding live in visual studio in
+JavaScript or C sharp so it's a little
+bit crazy right but you were talking
+about you were talking about screenshots
+right and if you look at my engine right
+here my
+let's go back over but if you look at my
+engine right here you'll notice that in
+the upper lot that in the the bottom
+right right here that engine is not
+quite lined up right so let's just do
+exactly what you said let's take a
+screenshot like that okay let's go over
+to my rocket this is the class that does
+the does that particular work let's use
+the visual studio function to go find
+that draw function let's get out to the
+draw function let's put a comment right
+here and let's paste it in okay and
+let's come in here and let's crop the
+image like this whoops not quite where I
+wanted to crop it right there and right
+there and now let's come in and let's do
+something called pixel scale and pixel
+scale is going to zoom in on this and
+and keeping the pixels in place as you
+as you as you zoom in is as opposed to
+having a smooth kind of scale so you can
+see the individual pixels of each piece
+in here so we'll do a pixel scale on
+there and now we can just put the
+comment move the engine to the left a
+bit now here's what's cool about this
+right this is not a comment that's going
+to stay in the code for the lifetime of
+the application this is a comment to
+myself or to another developer later
+right but it's increased in its visual
+capacity to communicate right that's
+what's kind of super cool about this
+right now let's say you now check this
+into source code and somebody also
+happens to have code rush they would see
+that and if they didn't have code rush
+what would they see oh okay good
+question so what would they say if they
+didn't have code rush there's an option
+here to turn this off for example I can
+just turn this off like this I get
+essentially what looks like markdown
+right there in the comment right and so
+there's a reference to
+engi file that PNG file is part of the
+solution what's really cool about this
+in fact is watch this I can take this
+code and I can cut it copy it move it
+somewhere else I can take it with other
+even the method the whole function take
+the whole draw function right which is
+pretty big
+take that come down take it put it in a
+new place paste it right come back in
+here let's rien a belay Topa nning this
+up on a machine with code rush on it
+and the comment moves with it okay right
+I can take and move and copy so comments
+in fact even if I do undo right now
+images in source code work with undo and
+redo stack as well right so here on
+undoing through all those changes I made
+right and then I can also redo and go
+backwards as well sweet right copy on
+the clipboard undo redo plus let's say I
+do have a developer on my team right
+that I don't want to that doesn't have
+code Russian I want to I don't want to
+leave them out right I can just come
+here and say see put a little note to
+them that's a see image in solution or
+whatever I'm going to see there and then
+now if I hover over that I'll see that
+as well if I have code right and if I
+don't I can still see it and I can still
+use it and work with it all right so
+that is that's one of the things that
+you can do with comments is you can
+extend the documentation can I show you
+another example all right okay so now
+I'm going to go over jump over to plain
+3d jjs it's a JavaScript file and I've
+got a function here called get line
+intersection this determines the
+intersection between a line and a flat
+plane right where is it and if I look at
+the code
+at first glance if I'm a new user or if
+I haven't worked on this function in a
+while and I come back in it's not
+immediately obvious how the code works
+right understanding this code is going
+to take some effort to figure it out
+right in part because it uses
+established formulas in part also
+because I've got a return null here I've
+got a return line here and I've got a
+return point here right there is this
+comment right here that says hey based
+on formulas found over here on Wikipedia
+so let's let's
+bring that up and oh this is what's
+going on here
+no intersection point or line is in the
+plane those are the three different
+possibilities so let's copy the image
+let's come over here to the source code
+let's come over here put a comment
+marker right there we're gonna come in
+here on parallel that's this one on the
+left so we're gonna crop the image
+we're just going to take this drag this
+over here like that and bring that up
+there a little bit and there's our
+parallel right take that copy that to
+the clipboard come down paste it in
+there let's paste it down one more time
+and we'll reason we will readjust each
+of these so here's this one the line I'm
+gonna go here and crop the image again
+bring it to the line that's when the
+line is contained in the plane entirely
+and let's come down here we're going to
+crop this image and let's it's the point
+it's the one right in the middle right
+so we have the ability to incredibly
+quick things so cool
+put images in code modify them as if
+they're first-class citizens right
+without hitting without an impacting
+compiled time editor performance or any
+other metric you might you know be
+concerned about and this works with all
+project types any version of the
+framework does what does it rely on
+other than Visual Studio 2017 in code
+right our understanding languages so
+right now we're supporting HTML CSS
+Visual Basic C sharp okay JavaScript
+typescript and F sharp okay so we're
+getting the big ones and other ones like
+Python and other other languages will
+likely add support for those because
+it's once what the engine the magic has
+the hard work is done right supporting a
+new language is generally not that hard
+because all we have to do is understand
+the comments sure I'll show you it can
+work cool things you can do absolutely
+you know to have a threshold for cool do
+you because if I don't want to I don't
+want to see the show all right excellent
+yeah excellent so see these Kannada
+limiters in the beginning I can get rid
+of those by just putting a back tick at
+the beginning of them like that and the
+comments still there but it just kind of
+cleans things up a little bit
+and I can also you know I can move this
+right just by putting spaces in it I can
+add things before I texted before or
+after it like that and and it works it
+also works with debugging too right so
+when you're stepping through code
+everything still works
+the only feature we haven't cracked yet
+is printing that's the only piece that
+we haven't cracked and and if there's a
+lot of enthusiasm for this as I as I
+think there might be we're likely to
+figure that out too okay and salt
+printing for you let me show you a
+couple other uses of it actually do you
+have I want to stop because I don't want
+to barrel all the way through do you
+have any questions or anything like that
+no this point okay any questions I have
+I will let you know okay let me show you
+another kind of cool thing that you can
+do I have this is my animation for the
+meters when we drop the meteors I'm and
+as you know if you know me I'm a little
+crazy I've got 63 frames of animation
+for this rotating medium that's what I
+do my explosions got something like 200
+frames of animation those are all PNG
+files that do that exploding at the
+bottom right so I go a little crazy but
+one of the things that would be very
+cool to do in the meteor class that's
+right there I just opened this up in
+Visual Studio right I just double
+clicked on my asset out there I hit
+control a to select all control C to
+copy and now I'm gonna go into my meteor
+class and I'm just gonna up at the top
+here in this comment I'm just gonna
+paste and then now what I've done is in
+my meteor class I've got a picture of
+the class some visual representation
+it's a sign post right and what's really
+cool about this is when I'm flipping
+through files right I'm going from one
+file to another right and then all the
+sudden I land on it I immediately get
+that visual recognition I am I'm on
+board I with the file I know the file
+that much faster instead of having to
+look at the code and recognize right
+right because you're using a serial
+process which takes so much more time to
+recognize instead I instantly see it
+right so that's kind of a cool thing you
+can do you can also you can do things
+like this where I've got here look at
+this I've got a setting that's not
+default that which bots oo auth token
+and right next to it I've just embedded
+an image at the end of the line I've
+hidden the comment right so if we come
+over here and we look at this there's
+that little the back tick to hide the to
+hide the comment there's what it really
+looks like and what's going on let me
+right click this so you can see this if
+I right-click this and choose link when
+I click it it's going to execute a
+visual studio command project properties
+so I'm here in the code looking at one
+of my project properties right this
+setting
+it's out here I can click on this like
+this and it opens it up for me and now I
+can see it make changes write code code
+that connects with acid tools or control
+commands a visual studio in some way you
+can invoke those commands codes that are
+related you can get to those other
+places let me show you something else
+let me jump over here into Excel and
+I've got some shortcut here that I need
+to implement I haven't implemented them
+yet right right okay I'm just going to
+select that choose copy I'm gonna come
+back over here and that's gonna be my
+main that I need to do look hey there's
+more key bindings that I need to add
+right here that's this comment well
+let's just put that in while I'm working
+right so I've got the spreadsheet from
+Visual Studio write anything that's out
+there with regards to you know any
+application that copies and supports a
+copy is an image we can put it in here
+and even if it's a temporary thing like
+this is an example what just while I
+work right it's information in parallel
+instead of having to switch over to it
+now you know the spreadsheet come back
+I've got it right in the code I can work
+a little faster and it is an image it's
+not a live link back to bright red sheet
+right right right
+more cool you ready for more cool yes
+all right so you can see why it's a
+little bit excited about this right so
+here I'm in this formula over here
+called distance a point right here and
+there's a comment says hey it's based on
+this formula to calculate the shortest
+distance well the formula is given to me
+in latex which is essentially a
+structured way of representing formulas
+now you can go online right over here
+there's a link right here in the editor
+you can go online and type in your
+equation well you can use these buttons
+so I'll just paste in what we had there
+and you can see there it is there I'm
+gonna make it a little bit bigger so we
+can see it maybe even bigger than that
+very large like that there's the formula
+that's what was happening in the code
+right there I'm going to right click it
+copy it to the clipboard come back over
+here and I'm going to just kind of
+replace all of this with the formula
+just like that cool so I can put that
+formula right out there right
+one last thing let me switch over into
+I'm going to switch over into f-sharp
+now so I'm in F sharp now I'm not an F
+sharp guy yet
+I do not I'm not an expert I'm barely
+barely holding on okay you're learning
+it right but I do know math and I know
+mathematic symbols so when I'm in here
+looking at this code right here this
+code says it's based on the have her
+sign formula and if I were to just look
+at this
+I'd be like a little bit lost I'll go
+look it up but if I look at this I see
+oh I think I see what's happening here
+now I understand the f-sharp I am
+getting myself up to speed faster
+because somebody left a comment here
+that included the formula and also if I
+hover over there's a link and if I click
+on the link it takes me out to the
+Wikipedia page on it and I can just if I
+want to augment this I just would take
+this image for example right click it
+copy the image come back over here and
+let's put it right up right up above so
+we just put a comment here paste it in
+let's use that symbol to hide those hide
+the beginning let's Center it on the
+page okay like that and there we go and
+that's it very cool so that's it that's
+like that's like the high speed run
+through and I'm just like I'm like I
+would say well I could take go long or
+you go short you know depending on what
+we do but I think I have a feeling if I
+look at the clock it's gonna be like
+said we're under 20 talk to us a little
+bit about what it took to make this okay
+because you were telling me earlier that
+even that this has been something you've
+been working on for a very long time
+yeah I tried this in Visual Studio
+before there was net and I had only
+linking and embedding mm-hm
+where I drop them in but the problem was
+storage is the problem one of the
+biggest problems with this always is
+storage and we might want to take a look
+at behind the scenes how that magic is
+happening yeah but but the first what I
+was doing is I was just encoding the
+comments into essentially a base64 and
+putting these giant comments in the code
+the problem is is that you changed the
+compile times right you compile times
+grow as the file size grows right right
+it's not not a good idea the advantage
+is it's there and if I give it to you
+and you edit the file it's it stays in
+this position mm-hmm right I tried that
+and and and that's how far I got
+ultimately I got to a point where I was
+like you you cannot release it the
+upside of all of that though is that I
+could actually at the time in beared
+actual spreadsheets actual audio files
+any
+the object could go in right right now
+we're just scaling back to be only
+images now we're saying only images with
+this with this release and then I tried
+again when I was in when I was working
+on code rush for Delphi and and I I kind
+of got close again but again we ran into
+the storage problem so I was storing I
+think externally at the time I had you
+know a file it there but you run into
+problems when you're storing externally
+separate from the file right what
+happens if somebody like you know is
+also pasting in images for example that
+sort of thing how do you resolve all of
+that so there's never ever any collision
+right and then how do you have you open
+up a code file without having to
+download the external image or if it's
+stored loped or stored remotely how do
+you work offline there's all kinds of
+issues right there there are loads and
+loads of issues in solving this problem
+um in fact most of the most of what
+you've seen most of these examples are
+really showing you the UI solution to
+the UI part of the problem mm-hmm right
+how do we get it so it's it's it's so
+crazy easy to take it from one place and
+stick it somewhere else right how do we
+get it so what it feels like it's really
+there right I can take this and I can
+click on it with the mouse right and
+there it's selected right I can change
+the size just like I can anywhere else
+right and there it is there's the resize
+right there right let me go ahead and
+I'll restore the original image right
+there so we can get back to that right
+so how does it how do we get it to work
+with cut and copy and undo stack and
+reduce tack right all of those that's
+the UI part of the problem right the
+storage part is trickier but we have a
+really clever way and this was I was
+telling you this so we we basically I
+think about a year ago or half a year
+ago we were like let's try it again
+because we had the rich text comments
+right right up here to notice real time
+is Boulder right to emphasize it right
+so we've got that ability right up there
+we had that going and I was like let's
+give it another stab and one of my
+developers sent me essentially a
+prototype and and then the prototype the
+file name was curious to me and I'll
+show it to you right up here so if we
+look at this file name right up here we
+look inside this we have to go inside it
+and there it is there's the file name
+and I'm like what is this finally miss I
+didn't go in because we talked about
+using Goods and and there are even
+problems with using goods because if you
+copy an image and then you paste it into
+several files you're gonna now have
+multiple copies of that image stored out
+on disk and we don't want that either
+we want to have an efficient efficiently
+stored set of images out on disk in fact
+if I take if I take this image and
+right-click and copy it just like that
+let's go we'll go over here into
+PowerPoint and I'll just paste it in
+here I should be able to paste it in
+there it is right there but it looks
+like that had transparency so it came in
+black on there in the background but I
+think we're probably gonna see the same
+thing with transparency here but I'll
+right-click here copy that because that
+also has transparency Oh looks like that
+one's okay
+so maybe it doesn't either it doesn't
+have transparency or it could be an
+issue in the face but but the hold on
+I'm like totally I was so like
+distracted by that I'm like we're only
+back image name oh the image name right
+so if we were to take this like say
+we're going to take it from here and
+copy this to the clipboard and then come
+in and like say okay let's paste it
+either multiple times in the file or
+through multiple files in my project
+right so the first time I paste this in
+the image name is three two starts with
+320 alright next time I paste it in
+right if we were using goods we would
+advance it but this is not the second
+time and it's a bitmap that's on the
+clipboard I'm not pasting text
+it's a bitmap right mm-hmm so what's
+going on here and he says oh I'm using a
+hash of the image and it was like oh and
+I started going through all the problems
+that we were having before with storage
+and I realized oh hash of the image
+really is nice because what happens now
+is when I when I paste that in right the
+I only get one file that's out there
+right the other thing that's cool about
+that is you you go out to that file and
+you modify it it updates everything and
+where is that file stored let's look at
+that so if we come in here and we go
+into the solution and we right-click and
+we say open file and file explorer like
+this we jump up over in here there's a
+folder inside the solution
+dot CR okay and inside there is a folder
+called images and if you take that and
+you can just upload those contents right
+there that's what you can do now we're
+seeing several DS because of what I was
+doing in the demo prior to this but but
+they're not all not all of these are
+used here we go back over to the other
+one I think you'll see something that
+looks a little bit cleaner because I
+cleaned them all out before I started
+today let's open that up and go to see
+our images and there are all the images
+right there
+and then you can just add these to
+source control and they go up with with
+the codes exactly and come down with the
+count as well yeah and I just it just
+reminded me of another thing that you
+can do if you have a code that's not so
+good like for example right here I've
+got a lot of hard-coded strings in here
+right I might be able to I think I have
+a template in here called scary do I
+know I don't
+well I can create one I do have one
+called nice I think
+right like that well that's not what I
+want I might want to have I have another
+one called P you like that this code
+stinks right like that and so you can
+put a message to your fellow developers
+right to get their attention and get the
+whole team's attention yeah as you're
+scrolling through the code right so you
+can put icons in there and what I just
+demonstrated there was a code rush
+template right I'm if I type in a slash
+nice I created a template that is just
+going to expand to the image right then
+it's already part of the project and put
+it in there very cool I may be the only
+time this emoji has shown up I'm gonna
+scroll that off screen so we don't get
+in trouble this is so awesome
+alright so to wrap up this is a feature
+of code rush it available now it is it
+as it is and people can we'll put a link
+to it in the show notes people can go
+check this out as well as figure it out
+look at all the other things that code
+Russia does horse
+I'll put outside just put in some of
+mine right there you can use it also for
+branding right I can't you stop right
+the beginning yeah yeah and it's if you
+go to DevExpress comm slash Holy Grail
+huh behind-the-scenes on how all of this
+is done you know there's nothing really
+proprietary about it at all we're just
+saying here's what we are here's what
+we're doing is what we're building this
+is the experience very very nice
+thank you Robert so much cool stuff hope
+you enjoyed that and we will see you
+next time on visual studio toolbox
+[Music]

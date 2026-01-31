@@ -1,0 +1,497 @@
+hey Traders welcome back to another
+video in today's video I want to answer
+a question from a student in the
+partnership Mastery course and in doing
+so we're going to build out a strategy
+idea that's a little bit interesting
+it's not something I'd personally trade
+in its raw form but it has potential to
+be turned into a system with a bit of
+creativity adding some filters adding
+some better risk management that sort of
+thing so this is just Pure Food For
+Thought while answering a practical
+question from a student so the question
+is I'm trying to get the exact price on
+the corresponding chart y-axis when a
+moving average crosses over another
+moving average the crossover can trigger
+at any time within the bars time frame
+but I'm working on closed bars there
+doesn't seem to be a crossover price
+option in pinescript it's just a Boolean
+true false result what the student has
+been doing is averaging the two moving
+average prices when ta cross occurs
+however it's not as accurate as they
+would like because the two moving
+averages don't necessarily cross when
+the bar closes as an FYI I want to use
+the crossover prices starting level when
+looking for higher highs and lows or
+lower lows in highs thanks in advance
+so the script I have here is one that I
+built out after a code an example of how
+to get the crossover price as just a
+pure indicator and then I added some
+strategy code to turn it into a system
+which wasn't part of the question but I
+just got carried away because I was
+curious to see how this concept would
+work as a trading system so to start off
+the video I'm going to show you how to
+get the crossover price and draw that
+onto your chart and then we'll add
+strategy functionality to the script to
+show you guys one how easy it is to turn
+anything into a system and two just to
+make the lesson more interesting because
+otherwise we're just detecting moving
+average Crossovers and when I make
+YouTube videos I like to try and give
+you guys a little bit more than
+something that simple so let's get into
+the pine editor and start coding okay so
+the first thing we need to do when
+detecting a moving average cross server
+is obviously get the moving averages now
+you don't need to do this but I'm going
+to make these user inputs
+so I'll just copy the code over to save
+time
+we're just getting two user inputs here
+for each moving average and after we
+have these inputs we need to get the ma
+values themselves so that's really easy
+we just use the ta.ema function pass in
+a price source and a length so now that
+we have our moving averages we should
+probably draw them onto the chart so
+that we can see what's going on so I'm
+just going to use a couple of plot
+functions here to draw these Mas there
+they are and get rid of this closing
+price plot now and there we go so what
+we want to do is detect when the
+crossover happens and figure out what
+the closing price of the crossover bar
+was so there are two ways we can do this
+we can do it the easy way or the hard
+way so I'll start with the easy way and
+then I'll show you the more complicated
+sophisticated way so the first thing I
+need to do is detect when the cross
+happens so to do that I'll just create a
+new variable here called cross and it'll
+be set to TA dot cross
+now this cross function takes two price
+sources and when they cross this
+function will return true otherwise it's
+false so we want to see if ema1 crosses
+ema2
+and now what we can do just really
+quickly to see
+when this cross is detected is we can
+just change the background color of our
+chart to Green whenever cross is true or
+n a whenever it's not true and now we
+will be getting a big green background
+whenever a cross occurs so that's the
+first step completed now in order to get
+the price of the crossover the easiest
+way to do this is to just simply
+reference the closing price of the bar
+whenever the cross occurs so we can just
+say here
+float cross price equals
+do we have a cross of our EMAs if so
+set it cross price to the closing price
+otherwise if we do not have a cross of
+our moving averages set cross price to n
+a and then finally we can draw a label
+onto our chart
+to display the cross price so for this I
+just need to check if our cross Boolean
+is true if it is we want to create a new
+label so label I'll just call it cross
+label
+equals label.new and then this requires
+two parameters to tell trading view
+where to draw the label the first one is
+a bar index or bar time
+the second one is a price for now I'll
+just set it to the bars high but we'll
+change that in a moment the final
+parameter here is the text we want to
+display so I can just say here cross
+price equals plus now you can't add a
+number directly to a string in trading
+view in Pine script we need to use the
+Str dot two string function to convert
+numbers into text so here we can pass in
+our cross price and if we save our code
+we should be getting labels now on the
+bars High whenever a cross occurs that
+label's a bit hard to read so let's
+change the color I'll just change the
+color to color.white
+um that'll give it a white background
+with dark text makes it easy to read
+um I don't like that it draws over price
+action what I'd prefer is this label
+drawing up here on the actual crossover
+itself so what I'm going to do here
+is check
+for the highest EMA price
+so we can check here is ema1 greater
+than ema2 if so then the highest EMA is
+ema1 otherwise it is eme2 and then I can
+paste this into our y-axis value on our
+label parameters now I want to save my
+code these labels will be drawing on the
+crossover itself on the highest moving
+average when the crossover occurs now we
+can get rid of our background color
+because that just clutters up our chart
+a bit and there we go we are detecting
+Crossovers and we're getting the price
+value from that crossover or cross under
+ta dot cross detects both Crossovers and
+cross unders if you wanted to detect
+just a crossover you would use the TA
+dot cross whoops
+crossover function and that takes the
+same two parameters alternatively you
+can use the cross under function
+ta cross will detect either of those
+conditions so that's the easiest way to
+get the closing price or any price value
+this could be the high of that bar the
+low whatever the volume on that bar
+whenever this condition is true whatever
+we set cross price to will be
+corresponding to the bar that caused the
+ma to uh officially cross an alternative
+way to get the cross price in Pine
+script would be to use the value when
+function so I'll show you what that
+looks like
+this is a little bit more complicated
+but gives us a little bit more
+flexibility with the values we are
+getting now I'll show you what I mean
+to use this function it's in the TA
+Library so ta dot value when
+and if I control click on this function
+here's an example and it's doing exactly
+what the student wanted to do it's
+getting the value of the closing price
+on the second most recent cross so what
+we need to pass in here is the Boolean
+condition we want to trigger this
+function so in this case that would be
+our cross Boolean the next thing we need
+is a price source so in this case we
+want to get the closing price and then
+finally we have to tell it which
+occurrence to reference so if I set this
+to zero and save my code I will get
+exactly the same price values drawing
+onto our chart however if I set this
+value to 1 then the value when function
+is going to treat this number like a
+historical operator for the values that
+occur whenever this condition is true so
+in other words if I set this to one this
+label will now be referencing the
+previous crossover because remember in
+coding we start counting from zero so
+one would be the second last occurrence
+of our crossover and cross under so now
+if I save my code this label will say
+287.11 287.11 it's now referencing the
+previous crossover and if I wanted to
+reference the one before that this one
+here 265 I would put two in here and now
+we're referencing one two three crosses
+ago so for now I'm going to comment out
+this line of code and we'll stick with
+the simpler version of this method since
+we don't need to reference previous
+crosses we just need to reference the
+current one that just occurred so so far
+the script is pretty simple we're not
+really doing anything particularly
+useful with this script we're just
+getting the price value of the Cross
+obviously that is useful in some
+circumstances but to wrap up this lesson
+I'm going to add some complexity to the
+script and what I'm going to do is I'm
+going to check if the closing price of
+our crossover is the highest close over
+the past 10 bars if that's true then
+we're going to flag this bar as
+important and what this will achieve as
+a side effect is whenever the moving
+average is
+crossing over multiple times during
+consolidation we won't be highlighting
+those bars because during consolidation
+obviously the crossbars close is not
+going to be the highest or lowest close
+over the past 10 bars because we're in
+consolidation so that can be useful to
+filter out some noise when dealing with
+a moving average cross system
+so let's code that out now first let's
+check if the crossover price is the
+highest price over the past 10 bars or
+in this case the highest close there's
+multiple ways we can do this the way I'm
+going to choose to do it today is this
+way I'm going to declare a new Boolean
+value called highest price and this is
+going to be set to cross so whenever we
+have a crossover or cross under highest
+price is going to be set to true but
+then what I'm going to do is loop from
+the previous bar right before the cross
+back to 10 bars ago and on each
+iteration of this Loop we are going to
+check if the cross price is less than or
+equal to the close
+on this Loop for Loop bar if that
+condition is met then we are going to
+set highest price to false and break out
+of the loop and then what I'll do here
+is I will flag the bar if it is a high
+or low close and to do that I'll just
+use the background color function it's
+the simplest way I know of to highlight
+a bar the plot shape function works as
+well but I like this method especially
+when I'm developing a script maybe once
+I'm finished with the script I'll add a
+nicer looking way to flag bars and
+market conditions but for now this will
+do so I'll set it to color.new
+color.green with 50 transparency
+and otherwise if highest price is not
+true then we want to set the background
+color to nothing just the default color
+so now when I save my code
+we should be getting some green bars on
+our chart there we have it and that's
+working perfectly so now we are only
+drawing the background color green when
+this buys the highest close over the
+past 10 bars now the reason we had to
+start our for loop from one instead of
+zero which you would typically do is
+because if we check if the cross price
+the closing price of our crossover is
+less than or equal to the closing price
+of the original crossbar we're comparing
+the closing price of the closing price
+and this will return false so we need to
+start counting from the bar before our
+crossover
+and we count back 10 bars from there and
+compare the closing price to each bar
+over that Loop so now I can pretty much
+copy this
+um block of code here but just flip
+everything around so that we're checking
+if the crossover bar or cross under bar
+is the lowest closing bar over the past
+10 bars and I can paint the background
+color red when that occurs and now we
+are ignoring any crosses
+that occur in consolidation essentially
+and that will give us slightly better
+quality
+crosses to work with especially if we're
+going to turn this script into a system
+which is what I'm going to do next so
+the code here is pretty simple and
+self-explanatory the for Loops obviously
+a little bit more complex if you're new
+to Pine script but everything else is
+pretty standard simple stuff what I'm
+going to do now is copy over the source
+code to the strategy version of the
+script and I'll just explain the changes
+I made to this original code base
+so here's the strategy script now the
+first part of the script is identical
+other than the fact we've changed the
+script to a strategy script and we've
+set the default quantity type to a
+percentage of equity and the default
+quantity value to 100 so this means
+we'll be investing 100 of our account
+balance on each trade by default but we
+can obviously change that in the
+properties of the script settings then
+we're getting our Mas drawing them to
+the chart and then here I've expanded
+our crossover detection code just
+slightly so now I'm differentiating
+between Crossovers and cross unders this
+is so we can go long and short we want
+to be going along when the shorter term
+EMA crosses over the longer term EMA and
+we want to be going short when the
+shorter term EMA crosses under the
+longer term EMA so I need to
+differentiate between those two we still
+have our cross Boolean here and this is
+going to be true of either of these
+conditions I'm at then we get our cross
+price just like before then we check if
+the crossover price the close closing
+price of the crossover or cross under
+bar is the highest or lowest closing
+price over the past 10 bars and then
+we're flagging when the bar is the
+highest closing bar over the past 10
+bars during a crossover condition or
+cross under condition and here's the
+biggest difference in the code compared
+to the last script so here we're
+checking if we have a cross condition
+then we're drawing our label like we
+were in the previous script but then
+we're checking if highest price is true
+and our strategy position size the back
+tester position size is flat equal to
+zero then we enter a long position where
+alternatively if we're flat and the
+current bar is the lowest closing priced
+bar over the past 10 bars after a cross
+has occurred then we enter short and now
+these should really say cross over and
+cross under and so if we get a cross or
+cross under and this code gets executed
+we go long if we're flat and the current
+buys the highest close over the past 10
+bars after a cross and highest price
+will only be true if we've had a
+crossover and that bar is the highest
+close over the past 10 bars and then the
+opposite for sure treats and then
+finally we just exit our trade if the
+current bars closing price is less than
+our short-term EMA so here we get our
+cross over the short-term email crosses
+over the long-term EMA the bar that
+caused that crossover is the highest
+close over the past tent bars we enter
+long and then we hold our position until
+price closes below our short-term EMA
+let me exit on the next bars open uh
+we're investing 100 of our account
+balance on each trade and we're on the
+one hour time frame here and you can see
+that this system shows potential now
+this is just one data sample it's not
+enough to tell whether or not this
+system is actually actually profitable
+we've only got 74 trades here this could
+be pure luck and I haven't taken the
+time to check how robust the system is
+because it's just it's not really
+something I would personally trade this
+is all purely just for example purposes
+to give you guys some food for thought
+and just demonstrate how you can create
+a simple base for a system in this case
+using moving average crosses now
+obviously we could improve this system
+by adding more filters by adding better
+risk management
+um I think this exit condition is
+adequate but there could be better
+systems out there such as a trailing
+stop or an exit reason better filters
+could include things like verifying
+momentum so you could use the adx for
+that rate of change you could check the
+RSI value of the RSI value is above a
+certain threshold then you can consider
+momentum to be strong you could check if
+the current Bar's size is greater than
+the recent ATR value there's dozens of
+different techniques you could employ to
+improve this system those are just some
+examples then obviously you can tweak
+the moving average length so we could go
+much shorter if we wanted to and now we
+get significantly more trades we can see
+how that affects the system much more
+return but also greater
+um the drawdown
+so there's obviously pros and cons to
+whatever you do with this sort of
+approach to a system there's different
+time frames so we could check how the
+daily chart performs
+um now the daily charts only taking nine
+trades so that could be an issue you may
+need to lower the moving average period
+for higher time frame so that we get
+more trades but anyway you get the idea
+hopefully this answered the original
+question for the student who asked it
+and hopefully you guys found this
+interesting and some food for thought
+When developing your own trading systems
+through the trading view strategy tester
+I'll wrap this up here the source code
+as always is below you can go and play
+around with this and see how you would
+improve it if you have any suggestions
+in the comments section please let us
+know I'm always curious to see what
+techniques you guys employ in your own
+trading but for now that will do it for
+this video just before we wrap up this
+video I just want to remind you guys
+that I've started a weekly email
+newsletter that you might find
+interesting in this newsletter each week
+I share a resource a technique a book a
+blog post a podcast anything that I've
+found to be extremely valuable in my own
+trading I share it on this weekly email
+newsletter there's no marketing it's not
+a sales thing it's just a way to Share
+value with you guys and give people a
+reason to be on a mailing list because
+if you're anything like me you hate
+signing up to mailing lists because it's
+usually just Spam or marketing or some
+annoying thing like that I'm trying to
+change that Trend by uh especially in
+the trading Space by just providing pure
+value to you guys in the latest email
+newsletter I gave a list of my favorite
+chat with Traders podcast episodes
+there's 28 of them here I've listened to
+every chat with Traders podcast ever
+released every episode and this is a
+compilation of the ones that stood out
+to me that I got value from either I
+learned a new technique or Insight from
+one of these episodes and so if you're
+interested in that go to the art of
+trading.com you can sign up to the
+mailing list and I'll speak with you
+there get sent out every Wednesday
+otherwise if you're not interested in
+that that's fine I will speak with you
+next Friday when I release the next
+YouTube video best of luck with the
+trading take care and I'll speak with
+you soon

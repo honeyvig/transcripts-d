@@ -1,0 +1,120 @@
+it is very common for extensions to use
+settings
+either as a mechanism for storing data
+internally
+or for allowing users to change some of
+these settings to better meet their
+needs
+either way the implementation
+is the same
+so let's take a look at how to add
+settings to an extension
+we're going to start by right-clicking
+the project node and select add new item
+from here we're going to navigate to the
+extensibility category and select
+options page and we're going to give it
+a name in this case general which is
+the
+default that will create general.cs
+inside a folder called options
+it contains two classes
+the second of which is called general
+and that is our options class
+so for this sample
+we're going to create an option to
+determine whether or not to use
+uppercase when we insert the good as
+part of our extension
+so i'm just going to update the text and
+the type as if it was any other
+property
+i'm also going to change some of the
+metadata and the metadata is contained
+within
+attributes on top of each
+property
+so i'm going to give it a display name
+and then a description that explains to
+people what this
+property is for
+and you can
+be very precise here and that will help
+out people better understand
+we're going to set a default value
+and make sure that that default value is
+also accurate
+reflected on the property itself like it
+is right here
+it's now time for us to consume this new
+setting in our code
+so we're going to navigate to our
+command class
+and start by getting an instance of
+the general settings class
+so those apis are async so i'm going to
+await general dot get live instance
+async
+and now i can simply query my properties
+located on the options class like right
+here
+so i'm testing for whether use upper
+case is set to true and if it is
+i'm going to change
+the guide here to be uppercase
+we now have settings that we can use
+internally in our extension
+to persist
+between instances of visual studio
+but now we need to make sure that the
+user can also modify those
+settings
+so if we go back to general.cs we can
+see that we get a few lines of code here
+that we can copy
+and paste into our package class
+these are two
+attributes that registers our settings
+class as tools options pages
+all i have to do is to modify the names
+to match that of my extension
+so now that we're done implementing our
+settings
+it's time to build and run our extension
+in the experimental instance of visual
+studio
+let's open a code file
+and
+just insert a good just to make sure
+that everything still works as it did
+before and we can see we get a lowercase
+good
+now let's open tools options and find
+our newly created options page called
+insert good
+here you can see the category the
+display text and the description all
+coming in
+and i can now as a user change the value
+to true
+and if we go back
+and run the command again to insert a
+good
+we can see that the changes have taken
+effect the settings are applied and we
+get an uppercase good inserted
+you can have as many options classes as
+you'd like in your extension
+and you decide which ones to expose to
+the user through the tools options menu
+by only copying those attributes over to
+the package class that you want
+there's a lot more to explore when it
+comes to settings and options
+how to dynamically update the values and
+save them or listen to events on when
+they change
+it's all exposed through the api and
+very simple to get started with
+so go try it out
+enjoy

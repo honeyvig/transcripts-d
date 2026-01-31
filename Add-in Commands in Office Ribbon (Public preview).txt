@@ -1,0 +1,246 @@
+hello my name is pratish Abraham I'm a
+principal program manager on the Outlook
+extensibility team in this video I'm
+going to talk about Outlook add-in
+commands and show you how easy it is to
+build them in addition I'll cover new
+features and capabilities including the
+new outlook inclin store which is a
+great way for users to discover and
+acquire your added first let's do a
+quick recap on Outlook add-in addin help
+developer extend Outlook across
+platforms using standard web
+Technologies there are two main
+components to an addin the XML manifest
+that registers the addin with Outlook
+and your HTML plus JavaScript code
+that's running on your web servers
+addins can communicate with Outlook
+using a lightweight JavaScript library
+called
+office.js one of the key features of
+Outlook add-ins is that you can write
+the addin once and it runs everywhere be
+it desktop outlook on Windows or Mac or
+the Outlook client that runs on all the
+major browsers including phone and
+tablet depending on your scenario your
+Adin May Target consumer or business
+users as we support addins in Office 365
+on premise exchange and
+outlook.com by extending Outlook
+functionality addins allow users to
+complete their task quickly and help
+them be more productive there are three
+ways developers can extend Outlook today
+in read compose or contextually notice
+how the Salesforce addin lets the user
+lookup CRM information it allows the
+user to add new leads or opportunities
+without ever having to leave Outlook
+Boomerang and compose reminds you when
+folks have not responded to your email
+it is a great follow-up
+scenario add in commands allow
+developers to create their own buttons
+directly on the native command surface
+of office and in Outlook 2016 this is
+the Outlook ribbon by doing so your
+addin looks more native and it really
+stands out to the user add-ins are
+easily accessible and now your buttons
+are just a click away we announced
+add-in commands back in April and we
+continue to update this model with more
+capabilities such as the ability to
+insert a menu as you can see in the
+Emoji example below it's time to see
+this in
+action notice the add-in commands in my
+Outlook 2016 client I can now launch the
+Salesforce addin on the ribbon with just
+one click I can see the CRM information
+about the people and accounts associated
+with this email let me switch over to
+compose no is how Boomerang took
+advantage of the many functionality I
+can now choose one of the remind me
+options and Boomerang updates the
+infoboard letting me know that this
+message will return in a week's time
+it's time to build an addin command now
+this demonstration uses Yen Yen is a
+scaffolding tool for modern web apps in
+this example I will use the Yan office
+generator that builds all the
+scaffolding I need to build an Outlook
+addin command in addition it hosts the
+add-in right off your Dev box so you can
+try it out out an Outlook immediately I
+have a slide in the end with all the
+links to get started including these
+yman steps and the GitHub add-in sample
+that I will use shortly in this demo in
+the interest of time I ran some of these
+commands already but I will walk through
+them the first step lets you install
+yman the office generator and dependent
+component called B now this will spew
+out a bunch of text which I don't show
+here the Second Step I created a folder
+called demo add- in commands I then ran
+the yman office generator I followed all
+the default uh commands which then
+generated all the code I needed for the
+Outlook addin I then went to GitHub and
+I downloaded the sample called command-
+demo once I did that I copied all the
+files and folders from the GitHub sample
+into my scaffolding
+folder once I did that I ran gulp server
+static gulp basically starts the web
+server this step basically run starts
+the web server on Local Host
+8443 running gulp will generate a self
+signed certificate you can view the
+certificate from your browser by
+navigating to this URL please install
+and Trust the certificate as all addin
+must be hosted off an SSL
+endpoint let's go to the management
+interface you can go to the management
+interface and NOA by clicking on the
+gear icon and clicking on manage addin
+you can see in manage addins I can
+install add-ins a couple of ways one is
+to install from the store the option I'm
+going to pick is install from
+file I will browse to the scaffolding
+folder find my
+manifest and install it this will upload
+my manifest to my mabox Outlook will
+check to see if syntactically everything
+looks right and if so the addin is
+installed in my mailbox let's go into
+Outlook
+now Outlook gets a notification whenever
+a user or an admin has installed an
+addin in my mailbox when it gets that
+notification Outlook will uh refresh the
+ribbon as you can see and these commands
+automatically showed up on my ribbon if
+I go into my compost uh surface you can
+see that this sample creates a menu I
+can choose one of the items in the menu
+which creates some text and inserts it
+into the body of the email it also
+updates the info bar saying that it did
+so successfully
+let me resize the
+ribbon you can see that I didn't have to
+do any coding to handle uh the scaling
+of my commands and my buttons and my
+icons Outlook did all of that for me so
+how did this all work I will go through
+the Manifest as this is the most
+important piece to understand the
+Manifest provides a declarative way to
+define ux and describes how your add-in
+would show on the Outlook ribbon in
+other words Outlook passes your manifest
+XML and automatically creates creates
+all the native ux for your buttons and
+your
+menus see how I defined a control here
+which is of type button on the composed
+command surface the button has a set of
+icons and it has an action associated
+with it the action type is execute
+function the function name here is ADD
+default message to body this function is
+defined in this function
+file the second control is of type menu
+as you can see
+as you know menu has a set of items
+associated with it the first item also
+is of type is has an action whose type
+is execute
+function the second item in the menu um
+is of type show task pane what that
+means is when you click on item number
+two in this menu it launches this task
+pain from this
+URL Below in this manifest you can see
+all the resource definitions for the
+names of your buttons over here as well
+as the URL to your icons and the URLs to
+your task Pane and function
+file let's take a quick look at the code
+see home.js under the app compos
+folder using office.js I'm able to
+navigate to the item body object and
+call the method set selected data async
+this inserts text at the selected cursor
+you can see it takes two parameters the
+text to insert and a ction parameter
+which lets me specify if I want to
+insert it as text or
+HTML since this function uh is an async
+routine the call back method lets me
+know if the operation succeeded and if
+so it writes to that info bar saying the
+message was inserted
+successfully so what else is new I'm
+happy to announce that add-in commands
+is coming soon to Outlook 2013 you can
+see that the Evernote addin Works in
+Outlook 2013 same with the PayPal app
+and both of these addins work without
+any code changes both in Outlook 2016
+and in
+2013 now that we talked about Outlook
+adding commands in Outlook 2016 and 2013
+let's talk about how you can get these
+add-ins users can now install apps right
+from inside the Outlook experience we
+call this feature the incline store our
+primary goal was to give the store a
+native Outlook experience and make it
+super easy for users to install add-ins
+let's do a quick demo you can see this
+inclined experience by clicking on the
+store button on the Outlook ribbon
+notice how some of the add-ins are
+already toggled to the on state that's
+because these add-ins are already
+installed on my mailbox to install an
+addin I can simply toggle the aod addin
+to the on state notice there is search
+functionality here I can search for any
+addin in this
+experience I can click on it to see more
+details for example I can see the
+ratings and the reviews and
+screenshot when I'm done I can close
+this inclined experience and you can see
+Outlook has refreshed and install the
+evode addin on my
+ribbon add-in commands is already
+available in Outlook 2016 in January we
+will release support for add-in commands
+in Outlook 2013 and the incline store
+will also be broadly available in
+Outlook 2016 our plan does not stop here
+our goal is to take add in commands to
+overand outlook.com we also plan to
+bring the incline store to the other
+clients stay tuned for more
+updates here are some resources for you
+I encourage you to visit Dev out.com you
+can find the giup example that I use to
+build this Outlook add in command you
+should have everything you need to get
+started thanks for attending this
+session and I hope you found it useful
+happy coding folks

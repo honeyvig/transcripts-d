@@ -1,0 +1,824 @@
+so please everyone give a welcome to Jim
+Radigan who is going to talk about dress
+sanitizer continue on error hey Jim how
+are you doing hi good morning everybody
+thanks Psy
+this morning I was just gonna talk a
+little bit about a new
+runtime uh mode that we have for the
+address sanitizer it's called continue
+on error and what happens is that
+this essentially gives you a check build
+for C plus plus and the check builds are
+defined as
+finding memory safety errors
+without any false positives
+so I'm going to go through a little
+story to begin with I did two
+presentations
+separated by two years about memory
+safety and um
+I started out the 2019 talk with the
+2018 data and on the left in the graph
+you can see that the number of cves
+had continuously increased and cves are
+common vulnerabilities and exposures
+that are
+basically bugs that have been kept in an
+international database
+after some analysis
+out of all the cves 70 are due to memory
+safety errors and on the next slide I'll
+start to get into what is a memory
+safety issue
+now this was 2018 data
+so skip ahead to 2021 when I I in 2022 I
+did a talk and went back and looked at
+the previous year's data
+and here's the top 25
+uh bugs for memory so not for memory
+safety but just for uh common weakness
+enumeration
+and
+they each get a score now I was able to
+clip or snip the top 17 and out of the
+top 17 six are memory safety errors now
+remember this is two years later
+so the yellow ones are memory safety
+errors and out of bounds right and out
+of bounds read a use after free
+an editor overflow and an effective
+address calculation for a memory
+reference that uses that no pointerview
+reference
+and the last one is when people annotate
+their code or write their own range
+checks
+so that's 2021 and then I did a talk in
+2022
+and then
+things haven't stopped so if we go to
+the next piece of data for 2022
+this is
+um
+an award
+and I'll show you this
+the hackers have uh an award show every
+year for the top hacks in all different
+categories
+and the best remote code execution bug
+in 2022 was awarded to Microsoft and
+that was due to a heat buffer overflow
+so you can see that
+we continue to find uh really scary
+memory safety errors
+so what am I going to talk about
+I'm going to show why memory safety is
+critically important
+and hopefully that gets people to use
+the tools and
+um try to improve this problem which is
+uh systemic
+and then I'm going to talk about the new
+tool that we've got here with a demo and
+it's basically going to arm you with
+something that will allow you to expose
+all the C plus plus memory safety errors
+in your code
+and memory many are hidden so that last
+award for example
+that was code that was a heat buffer
+overflow that had been in the code for
+20 years
+so to make this more Sim simple
+um I'm gonna
+tell this as a story between the bad
+guys and the good guys so the bad guys
+are the ones that make memory safety
+critically important and I'll show why
+in a second
+and then I'll talk about how the good
+guys are going to get a well-defined
+checked build for C plus plus
+it'll be a turnkey ship or do not ship
+so in other words when you use the new
+tool if your tests pass but we still log
+memory safety errors you shouldn't ship
+and you shouldn't integrate your code
+full stop
+so let's go talk about the bad guys for
+a second and hopefully this will
+motivate you into using the tools that
+we Supply and the new one especially
+so the bad guys have invented new
+programming paradigms
+and
+people may have heard about return
+oriented programming that's the first
+one that's been around for a long time
+that's ROP and data oriented programming
+or dop block oriented programming which
+is related and DDM which is direct data
+manipulation
+these are all started by the bad guys
+exploiting a memory safety error in your
+code
+and I'm going to show ROP how that works
+next and I'll show you that it's
+Turing complete so in other words you
+can write
+a program
+that can match any program functionality
+but using a stack pointer and the return
+instruction only
+[Music]
+okay
+so here I'm going to just start out with
+a traditional
+constant store and what we're going to
+do at the top is we're going to store
+valve one into array
+indexed at Bell too
+and the stack is in yellow and that's
+the stack pointer at the bottom it stays
+fixed and then the green box at the
+bottom are three different registers and
+then on the left is the machine code
+that the compiler would generate so it's
+just three machine instructions
+and these instructions are going to
+execute in the fall through fashion and
+it's going to update at the very very
+bottom in the green box the instruction
+pointer
+so that's 32-bit Intel
+so in this example
+we'll start out at address one
+so the instruction pointer is loaded
+with A1 and we execute that instruction
+which means load from the stack pointer
+into eax so the stack pointer is
+pointing at vowel one so this is how we
+get valve one into the machine
+we fall through
+we're at A2 now what we're going to do
+is we're going to load ESP Plus 8 which
+means we're going to get Val 2 into the
+machine
+you fall through to A3
+and when we do that instruction with
+those register contents we're going to
+implement that store
+okay so that's traditional programming
+if you're using a fixed stack pointer
+and for
+manipulating the instruction pointer in
+the EIP register
+so with return oriented programming I'm
+going to show you what they call a
+gadget
+so what I can do is that exact same
+array store but I'm only going to use
+pops and Reps
+and what's going to happen is on the
+right hand side I'm going to get the
+stack to have exactly those values
+because I'm going to exploit a stack
+buffer overflow
+and I'm going to do that before I get to
+address one
+and that's going to set me up to
+actually do the following ROP Gadget
+so as we walk through this
+we're going to pop eax
+first
+which puts Val 1 into eax
+then we're going to do the return
+instruction at A2
+sorry there's the increment for the
+stock pointer
+from the pop
+now we're at A2 and we're going to do
+the red and when we do the rat we're
+going to return to whatever the stack
+pointer points to which is A3 so that's
+how we get a fall through
+so we're going to pop ebx which puts Val
+2 into the machine
+at A3
+now at A4 because we did another fall
+through we're going to do a return and
+we're going to return to A5
+and at address 5 we actually do the
+store
+so right there
+what I've done is
+smash the stack with the right values
+like an S print out for something into a
+local variable
+and then I knew about particular code in
+your existing program that would allow
+me to carry out
+this instruction
+so we went from traditional programming
+to something that is only done with
+moving the stack pointer executing
+returns doing a few things moving the
+stack pointer executing return that's
+return range Pro return oriented
+programming
+so now you can stitch these gadgets
+together and that's how you can get
+something that's touring complete
+so you can imagine that this is
+incredibly powerful
+and it's done just using memory safety
+errors in the existing code in your
+machine
+it all starts with one memory safety
+error
+wait what's memory safe that you ask
+well on msdn if you go to msdn address
+sanitizer
+uh I put those I think it's 15 or 17
+categories of memory safety air bugs out
+there and each one of these URLs this is
+what I cut and paste from msdn
+has a link to a specific set of examples
+so there's a double free for example and
+then
+we give a source code example which is
+compilable
+and then we've integrated this into the
+IDE
+so
+if you open up that screen dump in a tab
+on a separate tab you'll actually be
+able to see how we've integrated the uh
+um the error into the IDE which is uh
+also in parallel with
+the command line dumps
+sorry
+well I'm gonna move on
+so you get a specifically well-defined
+notion of memory safety and this is a
+great way to understand
+what um is glossed over a lot in um in
+the literature
+we've very concisely Define this
+so you know in all uh what does
+Microsoft do for security in other words
+where does this all fit uh the address
+sanitizer uh relative to the
+Technologies we Supply
+so I've broken it down into a Venn
+diagram and there really are four
+buckets and if you go top down you can
+modify the source
+and then if you go a level down you can
+actually do static analysis on that or
+dynamic analysis and then as a fail safe
+for the last I would say
+God at least 20 years we've provided
+secure code generation which isn't
+something people talk about a lot but
+basically
+these two areas are run time and these
+are not as familiar as Source
+modifications and static analysis
+and so those are the forms of static
+analysis everybody is familiar with and
+those are the existing forms of source
+modification that you can look up on
+msdn
+but what I want to bring your attention
+to today is the secure code generation
+called guard and that's something that
+we spent
+many years introducing to thwart the ROP
+attacks that I just showed you
+your protection is only as good as
+what's used and so what I'm going to
+show you now is the result of a study
+that was performed
+finding out how much of the code on a
+Microsoft installation for Windows 10
+used guard
+so they downloaded 10 applications from
+one of the top websites and only 21
+files used guard
+that's two percent and then for Windows
+itself
+only 90 percent of the program files in
+the windows system folder used guard
+frustrating
+so that it to add to that you
+you can emit the use of guard which I
+just showed you obviously but then there
+are a lot of other things that you can
+just turn off you can turn off the
+canaries that we put on the stack for
+overriding locals you can turn off
+safe structured exception handling
+you can turn off aslr which is the
+address space linear randomization where
+we put things in different spaces
+randomly
+and then you can turn off depth which is
+basically the ability to protect code
+pages
+this should highlight the importance of
+a tool like Asam with continue on error
+so the war continues today after seven
+years of basically control control flow
+Integrity protection CFI is what they
+call it in the literature that is the
+Microsoft uh to on Microsoft that maps
+to guard which I just showed you so it's
+been really seven years in the industry
+of control flow integrity versus ROP
+attacks
+and
+the bad guys have not uh rested on their
+Laurels I found a really great paper
+here Roper which is a blazing fast
+multi-threaded ROP Gadget finder that's
+2018.
+and that's in use pretty heavily today
+so the bad guys have also got moved on
+from ROP attacks
+which is trying to exploit control flow
+to data oriented attacks
+sorry
+so here we have what data oriented
+attacks do they manipulate non-control
+data like they'll just variable they'll
+change variables and pointers
+which don't contain Target addresses
+they'll change benign Behavior
+and without violating control flow
+so a simple DDM data direct data
+manipulation example would be to flip a
+bit in a variable that's used in an fnls
+so if I at the right time
+flip the bit in if x is true
+and invert it to what it what was
+expected I can change the behavior of
+your program dramatically just by
+flipping that one bit
+through a memory safety error
+so these are how they're oriented
+they're related I didn't have enough
+time usually I go into them
+but
+um data oriented programming and block
+oriented programming are
+um
+sophisticated attacks that take chunks
+of your existing code to carry out
+actions that you can actually program in
+a separate language
+and DDM is what I just direct data
+manipulation I just talked about by
+flipping a bit
+and so dop and Bop
+are actually
+used by a compiler called sploit
+so this is actually the sploit language
+you can program something to create your
+own shell here
+and it'll do it by going out and looking
+at a binary whatever binary you feed
+into it and it'll get blocks of code to
+actually carry out exactly this program
+so
+real world examples
+here's the Windows Movie Maker this is a
+famous famous exploit that happened
+before
+CB size is 44.70
+we allocate a buffer that's 44.70 bytes
+that accidentally changes it to 44.96
+and then down here we have a heat buffer
+overflow and you're gone
+the SQL Slammer this hit the internet
+a while ago though
+so this is an instance of a read name
+from a socket and then down here we have
+a stack overflow stack buffer overflow
+because of this s printf
+and what happens here is that the return
+address is corrupted and so they've got
+the bad guys starting an ROP attack with
+an open name socket
+so how bad is it really so
+um Ness the National Institute of
+Standards and Technology from the U.S
+Department of Commerce has put out
+guidelines on minimal standards
+and when the government gets involved
+it's very scary you've heard that you've
+heard the phrase we're from the
+government we're here to help well
+they're here to help now
+so the bad guys are using those four
+forms of abstract programming against us
+so what about the good guys
+that's us
+so delivering C plus plus requires both
+static analysis and dynamic analysis
+end of story you've got to do both
+so when I talked about static analysis
+and dynamic analysis I'm going to relate
+it back to our Venn diagram
+and you everyone's familiar with Slash
+analyze and I think people are beginning
+to get more familiar with the address
+sanitizer
+so
+what I want to do is show a little demo
+that shows the difference between static
+and dynamic analysis to make this
+tangible
+in the program on the right what you can
+see down at the bottom in Maine the
+first line what we're going to do is
+we're going to
+allocate a derived object which is
+larger than the base object but we're
+going to point to it
+through a typed pointer which is the
+base that's polymorphism 101.
+but then what happens is we're going to
+delete B
+and when we delete B where the red arrow
+is we're going to delete the base in
+other words we're going to delete
+something that's smaller than the space
+that we allocated and you're going to
+have a leak
+so if we use static analysis that's in
+the IDE
+then what happens is
+you get three four errors or four
+warnings the default Constructor should
+not throw
+work with delete can be declared no
+except
+down here we should not use
+an explicit smart pointer reassignment
+and then the real core error here
+it says do not delete a raw pointer that
+is not the owner
+now if I go to
+the address sanitizer and just run this
+this is what you'll get on the command
+line it'll tell you that there's a new
+and delete type mismatch
+the allocation was 12 bytes
+the delete was of a one byte object
+it'll give you the call stack for where
+things were allocated and it'll give you
+the call stack
+oh wait this is where it was deleted
+that's where the error was detected and
+then here it'll tell you where the new
+occurred for that error
+and then
+if you'll notice down here what it does
+is it aborts so in the old model it's
+one and done upon hitting the first
+error it'll kill your process
+which a lot of people thought was pretty
+draconian
+foreign
+[Music]
+okay so that showed the difference
+between static and dynamic analysis
+so what you can see with static analysis
+that takes place at compile time the
+language itself limits what you can do
+so there's an there's a a circle or a
+cycle
+abstract cycle that where type
+propagation will thwart Alias analysis
+and Alias analysis can thwart type
+propagation
+so if I don't know the type of the
+pointer p
+when I get to the call of Foo I can't do
+the Alias analysis and I can't really
+even type propagate across that
+so for example star Q if their p and Q
+are Global pointers I have no idea in
+this program what they're pointing to
+and I have to assume worst case
+so Dynamic analysis takes place at
+runtime
+it breaks that cycle that I just showed
+you
+and basically you just need good code
+coverage and the other win too is that a
+dynamic analysis like the address
+sanitizer all of your third-party
+libraries are in there affecting the
+behavior as well so you see exactly
+what's going to be going on as long as
+you've got good code coverage
+yeah
+but I run over 3 million tests daily why
+do I need this well here's an example of
+a program that we call secure by
+coincidence
+there's the red arrow should be or the
+the red Loop exit condition for that for
+Loop uh is off by one
+it shouldn't be less than or equal to it
+should be less than
+and so what happens then is you get a
+buffer overflow in the abstract
+but in reality this program will run
+almost all the time
+system
+allocates the storage into local but
+Malik has what we call slop in it we're
+going to actually allocate
+a chunk of memory that's cash word
+aligned so it might actually allocate
+something that's zero Mod 32 padded
+and so invariably local is going to
+always have one extra cash line in it
+and that's what we call
+the slop so this program is secure by
+coincidence and the memory safety error
+or the buffer overflow is uh
+hidden you'll never see it
+so Dynamic analysis is a simple
+recompile
+the address sanitizer will compile in
+all the necessary runtime checks it'll
+link to asan.lib and it'll diagnose all
+your errors at runtime
+so the problem with the as I showed you
+before is the existing X sanitizer is a
+one and done
+it'll do a great job diagnosing the
+first error it hits but then it will
+abort your process
+so one and done is a problem so a top
+five isv they build 36 hours they have
+200 000 plus tests and 100 distributed
+test machines and the first day you try
+to deploy uh the address sanitizer
+you basically blow up a super large test
+lab and it is a giant un undefinable
+triage effort so it's not practical to
+do the one and done for large code bases
+and there's a lot of wins to do
+something different other than aborting
+this negative
+so what I'm going to do is show you uh
+another demo and here we go and we are
+in Padre
+so
+power is a ray Tracer and the first
+thing it does is it hits a new delete
+type mismatch
+and it aborts it's a popper is a really
+large program by the way so
+normally you would see the one error and
+you think oh I'm almost done you go home
+no problem but
+foreign
+options equals continue on
+[Music]
+equals one
+can I run the same program what's going
+to happen is we're not going to stop on
+the first error
+so in this particular case what you can
+see is that we have found
+14 unique memory safety errors and there
+we Define a unique based on call Stacks
+so in other words call Stacks are paths
+so there are 14 different ways that this
+program will leak 14 different paths
+[Music]
+well the new address sanitizer with
+continue on error provides a checked
+build you can actually compile this way
+and just run all of your normal testing
+because it's not going to die on the
+first error and it won't interfere with
+the output of whatever's being produced
+by your program
+and you'll get well-defined errors
+they'll all be Memory safety errors and
+the compiler will insert all the
+necessary assertions
+so this is well defined it's not like
+you have to manually annotate your code
+in any way shape or form
+so in essence it's a turnkey system you
+know you just compile your programs with
+the address sanitizer and then you uh
+set an environment variable and you go
+the interface is really not that complex
+we give you two choices you go to the
+command line through stood out or stood
+error or if you really don't want to
+interfere with any output whatsoever all
+of the memory safety error information
+can go to your log file of choice
+that's it hopefully everybody
+understands that and the importance of
+it and
+I look forward to answering any
+questions
+if we're still there
+yeah thanks very much for the the great
+talk Jim
+um
+if folks have any questions please drop
+them in the chat if you're watching
+somewhere which is not the visual studio
+YouTube then you can head over there
+and uh you should be able to see the
+chat
+right underneath the window
+it has a question of my own is
+what would you urge people to do right
+now for making their bills safer
+well the the easiest thing to do is use
+17 6 and start
+um trying to compile it this way
+it's just that simple and it becomes a
+pass failgate all you got to do is run
+it this way and if it fails
+by
+passing your tests that you normally do
+day to day but actually suddenly logs
+memory safety errors you shouldn't ship
+and you shouldn't integrate into the
+next branch
+yeah that makes sense
+okay we've got a question from
+um John who says can you tell us the
+difference between continue on error
+equals one versus two
+yeah sure that what that
+um
+what that means is that that's this
+slide
+the uh continue on error one is stood
+out this stood outstream
+standard output and uh two is standard
+error we map one and two of those
+just like on Unix
+and then another question is would you
+recommend enabling asan for debug
+configurations as well as release should
+there be a difference
+there will be a difference and
+um
+the I would enable them for the debug
+releases because what happens is there
+are
+so when you run debugged the optimizer
+is not on although we to be sure we went
+through great pains to make this work
+with all the Myriad Optimizer supplies
+but the interesting thing is
+when you optimize you eliminate memory
+references
+and so what can happen then is it'll
+hide or mask what our memory safety
+errors because things only live in
+registers or you do things like dead
+code elimination
+so I'd start with the debug builds or
+you know O2 check builds
+which is that's a term that we use I'm
+sorry at Microsoft quite a bit which
+check builds are we turn on some
+optimizations and we have assertions in
+there
+and uh
+it's like
+two-thirds of the way towards production
+code but it finds a lot of errors
+and this is a way of giving you a check
+build on steroids
+yeah
+any other questions for Jim we are five
+minutes until
+the next session is scheduled so we
+still got a little bit of time if anyone
+has
+any questions
+[Music]
+and Jim could you drop a a link to to me
+or in the the chat for the best place
+for folks to go
+um if they want to find out more about
+this
+sir the blog is going live today perfect
+can you see me and the slides that are
+on the screen
+uh we can see you we can get that yeah
+this slides are there now okay
+uh John's also asking is the continue on
+error support in production today
+yeah it's in 1706 I'm in the middle of
+when I get out of here we are building
+all of office with this right now and uh
+I'm also working with a team in France a
+big isv and we're trying to get
+um their entire code base
+uh covered with this
+and office takes we're building on just
+to give you an idea the size when we
+build office the machine I'm using right
+now is a 32 core threadripper it's got
+256 gigabytes of memory and it has 10
+terabytes of SSD
+I think it runs for 30 30 hours wow so
+the we're really trying to scale this up
+for production use and that's why
+um in 178 we're going to move this to uh
+move it out of experimental into full
+production full guarantees so we're
+really looking for feedback on this and
+we plan to
+add the leak sanitizer to this as well
+in the C in in an internal demo I add
+the leak sanitizer by adding one more
+flag here
+and then uh of course we're going to
+optimize so that
+um when you compile this way you won't
+take the performance hit from all the
+assertions
+yeah
+I think we got
+um last question here from fppt1 says is
+asan built in to be easy to use
+graphically within Visual Studio
+oh yeah so
+um
+in my failed attempt to pop the screen
+if you go here to the website where I
+drilled into
+um
+the double free for example and
+you open this in a new window
+you'll see on the left hand side is the
+command line output and then over here
+for the double free we've integrated the
+address sanitizer error reporting
+directly into the IDE
+so if you start out with Dev EMD slash
+debug XE and you just run this thing
+it'll actually pop that up with the
+source code for you
+okay and then
+Ken's asking is Asun new functionality
+for which yes we can say that it's been
+around a while but the Windows support
+is the last few years and this is brand
+new stuff that we're talking about today
+yeah the address sanitizer has been
+around in the end Google's responsible
+for starting it and that's I think Circa
+2012 really was when they first did the
+use next conference what's been
+difficult in bringing this up on the
+Windows platform though is uh we have a
+tremendous amount of legacy and
+um the interop for all the different
+languages
+and then one other thing to note is that
+continue on error is first being brought
+up on the Windows platform it didn't it
+doesn't exist anywhere else
+we're going to open source it and move
+it Upstream but there was a there was a
+lot of comp complexity so what what's
+neat about this is that um if you hit a
+memory safety error we're going to
+continue executing so that bad mutating
+right will actually do its thing and we
+found that that was actually modifying
+metadata in the asan runtime and the
+asan runtime would blow up so we had to
+move the metadata around make sure it
+was safe and it was a pretty involved
+thing and so it's going to be slow going
+to get this up upstreamed and accepted
+by the community
+right well thank you so much for your
+time there's um one more question in
+chat but I can get that answered over
+text for you because we are on time for
+the next session now so thanks very much
+Jim

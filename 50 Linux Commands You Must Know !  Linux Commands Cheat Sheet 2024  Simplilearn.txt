@@ -1,0 +1,399 @@
+welcome back Linux Enthusiast whether
+you are a beginner or looking to refresh
+your skills today's video is packed with
+invaluable knowledge we are diving into
+50 Linux commands that are absolute must
+NOS for anyone using this powerful
+operating system so let's get started
+just a quick info for you if you want to
+upskill yourself master cyber security
+skills and land your dream job or grow
+in your career then you must must
+explore simply learns cohort of various
+cyber Security Programs simply learn
+offers various certification and
+postgraduate programs in collaboration
+with some of the world's leading
+universities like MIT I kpur EC Council
+and many more through our courses you
+will gain knowledge and work ready
+expertise in skills like Advanced
+hacking Concepts Network packet analysis
+ethical hacking network security and
+over a dozen others and that's not all
+you also get the opportunity to work on
+multiple projects and learn from
+industry experts working in Top Tire
+product and security companies and
+academicians from top universities after
+completing these courses thousands of
+Learners have transitioned into cyber
+security role as a fresher or move on to
+higher paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comment and
+description box to find a cyber security
+program that fits your experience and
+areas of Interest so now let's get
+started and the first thing we have to
+do is open the terminal so we'll just
+press contr alt T and here's a terminal
+and we'll get started with the commands
+now so the First Command we'll see here
+is
+LS so what does Ls do it list all the
+files and directories in the current
+directory so as you can see we are on
+the home screen only so it has listed
+all them that is desktop documents
+downloads music pictures public snap
+templates and videos
+as you could see uh so this is the home
+screen and these are the directories
+that are listed in the home and that
+this LS command has provided all the
+directories here and I'm running the
+ento on the virtual box for your
+information so if you have the window
+install on your system so it's well and
+good and I was using Windows so I use
+the virtual box to install the one2 and
+here we are running all the commands
+and if you use LS minus Al so it will
+give all the hidden directories also
+hidden stuff so these are the hidden
+stuff that was there so it has listed
+them also so now moving on to the next
+command that would be
+PWD and what does the PWD command do it
+prints the current working directory
+where we are working so
+PWD so we are at home abisara so this is
+our current working directory and now
+we'll see the next command that is CD
+and what does it does is change the
+directory if you want to move to any
+directory you can just write CD and the
+name of the directory and we'll see
+which one we will go to
+documents we'll just write
+documents and press enter so now we are
+in the documents
+directory and with the command CD dot
+dot we'll jump back to the previous
+directory
+that is CD space dot dot oh sorry now
+you have been reded to the previous
+directory that is home only and if you
+want to just get back to home you can
+just write CD space and click on you'll
+get back to the home as we are already
+on the home so we have not changed any
+directory and the next command would be
+mkd that is to create a new directory so
+for that we'll just write mkd and the
+name of the new directory what you want
+to create so I will create the new
+directory with the name abisal so we
+have created the new directory you can
+check here that abar that has been
+created and if you want to remove that
+directory you just have to use the
+command rmd space abar and press enter
+and that active would be removed from
+there that has been removed and now
+we'll see the command to create a file
+and this is the easiest way to create
+any file so we'll just use the touch
+command that is to create a file and
+after touch you just have to write the
+name of the file so I'll write abar do
+txt so you'll see so the txt file has
+been created here so here we have
+cleared the terminal and now we'll see
+another command to create a file that is
+cat so just write cat greater than
+symbol and the name of the file that
+would be a Bart 2 do
+txt okay and press enter and now you can
+write the content you want to insert in
+this file so I'll write my name is
+abar
+and today I'm
+creating a video on Linux
+okay and after writing this you just
+have to press controll and D so this
+will be inserted into your file so after
+pressing the control+
+D this content has been inserted so we
+can just check
+it you can see here that the content is
+already been inserted in the file
+okay so moving
+back now we'll see the next command that
+is Echo and Echo is mainly used to get
+get something to display in the terminal
+only or you just want to talk to
+yourself you can use the echo command so
+here I'll write echo in inverted commas
+I will write simply
+learn and press enter you could see that
+it has return return simply learn so it
+get backs the text or anything you want
+to display on the terminal only and now
+we will see another command that is CP
+and that is used to copy files or
+directories
+so here we'll use the command CP and
+here we'll copy a file that is uh abis
+2.txt into documents so for that we'll
+write CP after that the name of the file
+that is abar 2 do
+kxt and then the folder name that was
+documents and then enter now we'll check
+in the documents we have
+2.txt file and that has been copied into
+that and the next command is MV so if
+you want to move any file into any
+directory you just write
+MV and we have the file that is abhr TT
+this file we will also move into
+documents so we'll just write the name
+of the file that
+is Sir doxt
+andt and the name of thep Dory in which
+you want to move it so that is documents
+Flash and then enter and now we'll check
+it so you can see that it has been moved
+so it has been moved from home to
+documents and now uh we'll see another
+command that is RM that is to remove any
+file or
+directories so from the documents only
+we'll remove the file aisar 2.txt
+okay so here we'll write
+rmr2 do
+txt
+and from where you want to remove it
+that is
+documents
+okay uh can it's a directory okay so
+we'll
+just write this
+command we in the home so first we'll
+move to
+documents sorry
+CD
+documents and here we will remove the
+file that is RM abar 2.txt and now if we
+see that has been removed from here and
+now we see another command that is nano
+and that is also used to create a file
+or if you have the exact file what file
+name you will enter here which there it
+will open that or else it will create a
+new file so we'll write abar 3.txt
+enter and here you can
+directly like edit the file you could
+just write the file so you could edit it
+here and write
+anything that is we are learning
+Linux and to save it we'll just press
+contrl x y Y and then enter so it has
+been
+saved we are learning
+Linux so this is also the mode to create
+a file and you would just go with the
+editor directly and you could just enter
+in the file and then to save it you just
+have to press control x y and
+enter and now uh the next command that
+is shred command if you want to hide
+something or you want don't want to show
+any content in a file to anyone so you
+will just write or use the shred command
+that is shred and after that file name
+that
+is that is file name obar
+3.txt and press enter and we'll use cat
+to open
+that that
+isar 3 do txt and press enter you can
+see see that it won't show any content
+to
+anyone so after that we'll see another
+command that is
+htop and what does it do is like it's
+not found here and it's not installed so
+if you want to install
+it you could just write this
+command that
+is
+sudo
+inall HED toop and press
+enter and now it's asking for
+password and now mov on to the next
+command we will create another window
+for that close these
+windows close this thumbnail and in this
+thumbnail we'll use the command less
+and this command is used to view the
+contents interactively of the
+file so we'll use less and see the
+contents of aa. txt press enter so you
+could see that the contents are I am a
+sir
+and see that the content is I
+Aisa and
+now we will see another
+command and for that we'll create a new
+window and close the previous
+Terminals and in the new terminal we'll
+use the GP command that is used to
+search for specific patterns or words
+within the within the files so GP and
+then the special term that is abar will
+search and then the file name that is
+abisa do txt and press Center so it will
+return the full sentence in which that
+pattern is found that is I am AAR and
+you could see in the file that we have
+Aisa text and that is in the line I'm
+Aisa and it has returned us that and to
+the next command we'll use the find
+command and with the find command you
+could search for various files or
+directories based on a given criteria so
+we will find the
+a txt file file here and like it has
+returned that we are in documents only
+and it has returned the abis txt file so
+this was about the find command and
+moving on to the next command that is to
+change file access permissions and that
+command is
+chmod so missing open uh so we have to
+add the open also that is chm O and we
+will write
+755 and the name of the file that is
+abisa do txt and press enter so the
+permissions of the file have been
+changed
+here and what does this indicate so we
+have set the file permissions of ab
+visa. txt file to read write and execute
+for the owner and read and execute for
+other sale and if you want to change the
+ownership of the file we
+will
+cut and now moving to the next terminal
+and here we will use the command gzip
+that is to compress the files so gzip
+and then the name of the file that is
+a.txt and press enter so it has been
+compressed you could see that it has
+been compressed and to uncompress or
+decompress the compressed files we'll
+just write the
+command gunzip and then the name of the
+file that is
+do txt and it has been compressed so the
+extension has been changed gz and now if
+you see that has been
+decompressed so now we will use another
+command and now we will see another
+command that is date so we'll just write
+date and you could see that that date
+has been printed and then we have
+command who am I and it will just
+showcase the current username that is
+abisara and the next command is which
+and that is to locate a program or
+command in the system
+path you could just write history to get
+all the commands that you have executed
+in today's terminal and there another
+command that is up time so what does it
+indicates is it displays system up time
+and load average so system has been up
+from which time or how much time so that
+is up
+time and then there is another command
+that is DF that is to display disk space
+usage and then we have another command
+du that is to display dis usage by file
+or
+directory so this directory has been
+using 12 memories and the next command
+is UN
+name so un name is used to check the
+complete OS information of the system so
+we are using Linux here so it has
+provided Linux over here and now moving
+on to the next
+command that is clear command if we use
+the clear command so all the things in
+the terminal would be cleared so the
+next command is man command the man
+command displays a user manual for any
+command utilities available in the
+terminal so we'll just write MN LS and
+so these are the commands that are
+present in the terminal including the
+name description and
+options and now moving on to the next
+command that is we will use the W get
+command to help me download the files
+from the internet so for
+that if I want to download a YouTube
+video just open the Firefox
+browser so we just copy the URL from
+here and get back to a terminal and use
+the command W get and paste the URL
+here and press
+enter so you could see that it has
+downloaded
+the file for
+us and there's another and we will open
+a new terminal for the
+command that is shutdown command and for
+that you just
+outout beat for that you will just write
+shutdown space and now and press enter
+and the system will be shut down now
+only or you could just write shutdown
+and the exact time at which time you
+want to shut down the system so it will
+shut down at that point so these were
+the commands for the Linux and that's a
+WRA on a top 50 Linux commands remember
+the best way to learn is by doing so
+open up your terminal and start
+experimenting if you found this video
+helpful please like subscribe and share
+it with your fellow Linux users and drop
+a comment below on what Linux topics you
+would like to ask for next staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

@@ -1,0 +1,502 @@
+hello everyone welcome back to our
+Channel if you are new here don't forget
+to hit that subscribe button and the
+bell icon so you won't miss our future
+videos today we are diving into the
+fascinating world of AI especially we
+are talking about chat Tubidy a language
+model developed by open AI whether you
+are a developer a student a researcher
+or just an AI Enthusiast this video will
+provide you with some essential tips to
+get started with chat GPD chat Jeopardy
+is a powerful tool that uses machine
+learning to generate human-like text
+it's been trained on a diverse range of
+internet text but it can also be
+fine-tuned with your own data to perform
+a variety of task so buckle up and
+before that if you are one of the
+aspiring Ai and ml enthusiasts looking
+for online training and graduating from
+the best universities for a professional
+who only sits to switch careers in Ai
+and machine learning by learning from
+the experts and try giving a show to
+Simply learns postgraduate program in Ai
+and machine learning in collaboration
+with Purdue University and IBM the
+course link is mentioned in the
+description box that will navigate you
+to the course page where you can find a
+complete audio of the program being
+offered so let's get started with the
+top tips for beginners for using charge
+APD and to get started you will need to
+access the open AI API
+so we'll start with the first trip that
+is change your dashboard appearance so
+for that we'll move to chat GPD and you
+could change the desktop appearance for
+Dash to Port appearance of charge
+debating you can customize your
+dashboard by going to settings and
+choosing a new theme or layout so for
+settings
+you will go here and in general you can
+just select the theme that is light you
+can change it to dark system theme or
+light theme so these are the options you
+can use to change your dashboard
+appearance so this can help you create a
+more comfortable and personalized
+working environment for example you can
+change the color scheme and you can also
+change the font size also and you can
+generally change the font size by just
+zooming in the window
+and the second tip we have is switch on
+beta features so we have moved back to
+charge repeat and here you can see the
+beta features so for that we'll go in
+settings and data that is custom
+instructions try a new feature that lets
+you share anything you would like charge
+gbd to consider closets responses so we
+have switched on these beta features the
+plugins try a version of chat chipity
+that knows when and how to use
+third-party plugins that you enable the
+code interpreter that is a version of
+child Tubidy that knows how to write and
+execute python code and can work with
+file uploads so asking for help with
+data analysis image conversions or
+editing a code file and these files not
+persist Beyond a single session so these
+are the plugins or the beta features
+that we have turned on and we are using
+them and in chat gvt4 gbt4 you could see
+that is code interpreter beta and the
+plugins beta they both are available for
+us so this was the second tip that is
+switch on the beta features and you can
+use them that is you can toggle on beta
+features to try out new and experimental
+features if you like trying out new
+features you can switch on beta features
+there are experimental features that are
+still being tested keep in mind that
+they might not always work perfectly and
+the next is change the tone of your
+writing that is you can ask chat GPT can
+you rewrite any sentence in a more
+formal way so now we will ask a prompt
+to check GPT that is can you rewrite
+this in a more formal tone and what we
+can ask is that could be hey how are you
+okay so we will ask this so you could
+see that the child CPT has changed the
+tone of the sentence or the imperative
+you were asking that is hey how are you
+now greetings how do you find yourself
+today so this is a more formal tone and
+you can ask chargpt for more such
+responses that is give me more such
+responses
+so you can change the tone of the
+sentence that is you could give any
+sentence or any imperative or any
+language to chat GPT and you can ask for
+any tone that could be emotional that
+could be funny tone or that could be
+sarcastic tone so chat Jeopardy would
+reply with the particular tone
+so this was our third tip and now moving
+on we'll see the fourth tip that is use
+chat GPT for quick learning so you can
+ask can you explain the basics of
+anything that could be the simple
+biology Concepts the solar system and
+you can use charge apt for quick
+learning that is for instance you could
+ask any prompt
+that is here we will ask chargpt that
+teach me
+how to write
+hello world in Python
+so you can see that Jupiter responded
+that is shown writing a hello world
+program in Python is quite
+straightforward due to python Simplicity
+and here's how you can do it that is
+print hello world and in this code it
+has given you some sentences so you can
+just read them and understand how the
+code works that is print is a built-in
+python function that outputs specified
+information to the screen then the text
+that is hello world that is an inverted
+commas is a string which is a type of
+data representing text then the
+parenthesis that are used to include the
+arguments of the function so when you
+run this program it will give the output
+of the text that is hello world to the
+console so this is the fourth tip and
+moving on now we have our fifth tip that
+is view the plugin store so now chat GPT
+has many plugins that is we will create
+a new chat and in gbt4 you could just
+click on plugins So currently no plugins
+are enabled
+and this is the plugin store so the
+developers are developing plugins so you
+could use them and be more productive
+and add more features to the chat CPT so
+you could see that is aipdf that is
+super fast interactive chats with PDFs
+of any site complete with page
+references for fact checking ask your
+PDF chat with PDF Expedia notable link
+reader so these are the plugins that you
+could use
+and this comes with the gpt4 version
+that is the paid version
+so you could enable any plugin and you
+can write any prompt and the chat jbt
+will respond to it now moving on to the
+next step
+that is tip 6 use the web browsing
+feature so with gpt4 and with the beta
+versions you get a feature to search
+with Bing or to browse with bank that is
+not available for my account or for my
+area so this is the new tip you can use
+it if you have the paid version and if
+you are accessible for the beta version
+of browsing with pink so this was our
+next step and moving on we will see our
+seventh tip that is template eyes useful
+prompts so you can ask can you create a
+10 minute full body workout using some
+kind of dumbbells or a barbell roll and
+save this problem for future use you can
+also templateize useful prompts for
+instance you can also ask can you create
+a menu or to do list and save this
+prompt for future use so we'll see a
+quick example that would be
+creator
+10 minute
+full body workout and that would be
+using so you could see that the chat GPT
+has given us a templatized routine so as
+a quick high intensity bowel workout
+that you can complete in about 10
+minutes that is bubble deadlifts and
+bubble squats bubble overhead press
+bubble Rose marble bench press so for
+that you also need to have bench press
+also and the notice remember the key to
+this workout is intensity and form not
+necessarily the paid used okay so this
+is how you can templatize useful prompts
+and moving on the next step we have is
+summarize text that is you can paste a
+long article and ask chat Jeopardy to
+convert it or summarize in few sentences
+for example you can paste a long arcade
+article
+so I will show you how we can do that we
+will just search for
+synchronous articles
+so we'll
+use any article just copy it and give
+this to chat Jeopardy that is paste it
+and ask it can you
+summarize this article
+five sentences
+so you know that this prompt will just
+summarize the whole article into five
+sentences and this is the feature of
+charge apt to summarize anything and in
+a very concise manner and this was our
+tap eight and moving on
+the next tip we have is analyze your
+writing pattern
+that is can you you can ask chargpt can
+you analyze my writing style and
+generate a paragraph by making it that
+is you can give it any text or chat that
+you have done you can just copy that
+chat and give that as a prompt to chat
+GPT and you can then write a prompt that
+can you analyze my writing style and
+generate a paragraph by making it on any
+topic so the chat Jeopardy will analyze
+your writing pattern and will mimic your
+style and you can also ask it to act as
+a famous person like you can ask chargpt
+to act like Elon Musk and give your
+thoughts on AI
+so here
+we will ask strategypt that is
+act as Elon Musk and give your thoughts
+on here
+so you could see that it has stated that
+artificial intelligence was immense
+potential for human advancement it's
+eventually digital superintelligent and
+can be on a human intelligence but it is
+not saying that it can perfectly act as
+Elon Musk or it can directly speak to
+Elon Musk but you can provide a
+perspective based on his public
+statements on the topic of artificial
+intelligence so the child CPT has
+analyzed all its statements that are
+present that is gpd4 has some browsing
+features so it has analyzed all the
+statements and on behalf of that it has
+given us the result and now moving on to
+the next step practice act as an
+examiner so you can ask can you check
+this essay for grammatical errors you
+can ask it to check your project or even
+grade your homework so as we have copy
+pasted the article you can copy paste
+your if you want to check your code or
+debug your code you can just give way to
+chat jpt and it will give you the
+suggestions or it will point out some
+matters and can give you a perfect code
+or you can just ask him to get some
+grammatical errors in your article or
+essay so this was the 10th tip that is
+act as an examiner and now the next is
+formatted outputs so you can give any
+data to chat jpt and ask him to format
+this into tables and you can ask him to
+add some columns to the tables that
+would be Monday Tuesday Wednesday and
+you can ask him to prepare to-do list or
+something like that so you can format
+your outputs chargpt will respond to
+that so for that we'll just give it a
+prompt with jpt that is
+format the days of week in a table and
+days put days in column so let's see so
+you could see that it has given us and
+it has given all the days in one column
+so you have to correct your prompts and
+rewrite your prompts and see what chat
+Jeopardy is responding with those
+problems so you have to be concise and
+be conscious and just regenerative forms
+so now moving on to and next step
+that is tip number 12 let us generate to
+do list you can say I need to do grocery
+shopping finish a report and call my
+friend today and can you create a to-do
+list for me so chat GPT can create to-do
+list just tell it what task you need to
+complete and it will create a to-do list
+for you you can just you just have to
+give it a prompt and the next step we
+have is explain it to a child so this is
+you can ask can you explain how a rocket
+Works to a five-year-old you can ask
+chat Jeopardy to explain complex
+conception simple terms just say explain
+it to a child followed by the concept so
+for example you can also ask that can
+you explain quantum physics to a child
+so we will just try this prompt
+that is explained quantum physics
+to a child
+so this will give you
+so you could see that the charge GPT has
+given the answer that is absolutely
+there's a very simple way to explain
+quantum physics to a child and it has
+given a Lego books example you can build
+a castle a spaceship or whole city so
+this is how you can use this prompt
+that was the tip number 13 that is
+explaining to child then the next step
+we have is Shadow chat thread links so
+after having a productive conversation
+with charge everyday you can share this
+conversation by clicking on the share
+button and sending the generated link to
+your colleagues this is a great way to
+collaborate with others for instance if
+you are working on a project with a team
+you can share the link to a chat thread
+so everyone can see the conversation and
+contribute so I will show you how you
+can do it that is this is the share
+button share a chat and you can just
+copy the link and send it to anyone and
+you can collaborate with them and now
+moving on to a next tip that is tip
+number 15 let us export data to mail if
+you want to export a chat you can click
+on the export button and enter your
+email address you will receive a copy of
+the chat in your inbox this useful
+feature is used if you want to save a
+record of your conversation or if you
+need to share the information with
+someone who doesn't have access to
+charity
+so I will show you how you can do it so
+simply you have to go here click on
+settings and go to data controls and
+here is your option that is export data
+so just click on export confirm export
+and the successfully exported data you
+should receive an email shortly with
+your data and now moving on we will see
+another tip that is
+organize your chat history
+so you can organize your chat history
+that is you can edit it and you can name
+anything that is
+tips for share jpd so this is how you
+can organize your
+chat history
+and now moving on
+now we'll see the next step that is go
+minimalist
+so what do you understand where
+minimalist is you can just
+close this sidebar so this is the
+minimalist options here you can just use
+the chat GPT here so in settings you can
+choose a minimalist theme which will
+remove any unnecessary elements from
+your dashboard leaving only with
+Essentials and if you prefer cleaner
+look you can go minimalist and this
+removes any unnecessary elements and you
+can delete all your history that is in
+settings you can find the delete all
+history button clicking this will erase
+all your previous chats and for privacy
+reasons you might want to delete your
+chat history you can do this by going to
+a settings and selecting delete old
+history so this was a tip number 18 that
+is delete all your history
+so we'll just go to settings data
+controls and here we have chat history
+and training that is turn on if you will
+turn off it will just turn off and it
+will also act as an incognito mode and
+here you can clear all the chats this
+will delete all the history
+and the next step we have is describe
+images and the Nexus summarize YouTube
+videos
+so this is available with beta features
+of Bing that is you can just write
+describe image
+and paste any image link here so the
+charge GPT will describe the image for
+you and if you want to like know about
+any YouTube video so you can just write
+described YouTube video and then paste
+the link and it will describe the
+YouTube video for you and that is
+available with the beta feature of
+browsing with Bing and if that is
+available with you
+and currently that is not available with
+me you can like if you if the feature is
+available with you that is a better
+feature you would able to see here that
+was the beta feature and you can also go
+into settings and data and check out if
+the feature is available for you or not
+so these were the tips and that's it
+those are some of the ways you can
+customize your charge APD experience
+remember the key to mastering any new
+tool is practice and experimentation so
+don't be afraid to dive in and start
+exploring what chat Deputy can do and if
+you found this video helpful please give
+it a thumbs up and share it with your
+friends and before ending let's hear
+from our Learners who have experienced
+massive success in their careers hey
+I'm Sharia Jaleel I live in Ontario
+Canada I have been in I.T sector for the
+past 20 years I recently took the
+professional certificate program in
+artificial intelligence and machine
+learning the course has changed the way
+I look at things and helped me back some
+amazing freelance projects I started my
+career in 1999 and over the years I have
+worked with many companies my last tenor
+was with IBM Canada my aim was to
+restart my career and learn something
+that would help accelerate my career
+I thought artificial intelligence can
+make me Future Ready
+the course in artificial intelligence
+and machine learning is provided by
+simply learn in association with Purdue
+University which is why I chose the
+course I did not have high expectations
+from online course but my experience was
+simply awesome the quality of
+interaction within the course was simply
+amazing the course faculty was also very
+experienced and knowledgeable
+after the course my knowledge has grown
+manifold I have immensely benefited from
+Python and coding skills I am able to
+get some new freelance projects also I
+am planning to start an AI based startup
+with my friend where I feel that the
+learning from the course to be very
+helpful I am really delighted and happy
+in my free time I try to create
+meaningful content on YouTube and I talk
+about new technologies and what kind of
+courses professionals should be taking
+along with many other topic I definitely
+recommend this course to everyone after
+all when it comes to new skills to
+advance your career there should be no
+compromise you should always learn from
+the band
+[Music]
+and thanks for watching and we'll see
+you in the next one staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

@@ -1,0 +1,479 @@
+right I shared my screen yes you do have
+a chair give me one second okay all
+right everybody we are live now we got
+Holly on here talking about the ABP f--
+framework open source so let's let's
+take it away hey leo
+oh there you go okay hi everybody today
+I will introduce an open-source project
+the ABP framework probably some of you
+have already heard about it or using it
+in your applications in any way I
+believe that this talk will be usable to
+understand the need for such a project
+and what ABP is offering with its next
+version I am a Libra whom Kalkan a
+Software Architect and co-founder of
+palo soft i am the lead developer behind
+the ABP framework ABP is an open source
+web application framework for the latest
+asp.net Corie 3.0 ABP provides a
+complete architecture and the strong
+infrastructure to create modern web
+applications it follows best practices
+and conventions to provide a solid
+development experience first we should
+understand why we need to such a project
+and why we have created it if you are
+building your applications on top of the
+plain asp.net core you mostly find you
+on repeating yourself to build a similar
+infrastructure again and again you need
+to decide on an architecture say a
+layered architecture based on domain
+driven design or clean architecture
+principles you will write some action
+filters or interceptors to automate
+cross-cutting concerns like
+authorization validation exception
+handling database transaction management
+audit logging caching and so on you
+definitely don't want to repeat these
+logics in every source method you need
+to create base classes abstractions
+integrations extension methods how
+purrs library workers to simplify your
+application code you will deal with all
+this infrastructure and much more stuff
+again and again for every project for
+that reason big enterprises are building
+their internal application frameworks on
+top of asp.net core but it's hard to
+build maintain and document it this is
+why most of such works finally failed or
+no one knows how it works because of the
+missing documentation beside the big
+enterprises most of the software
+development companies don't have such
+development resources to build the
+infrastructure themselves we have
+created the ABP framework to address
+this problem and provide a full stick
+application model and infrastructure for
+everyone it's hard and time-consuming to
+select the right tools and we'll the
+clean architecture while starting a new
+application as a Software Architect you
+need to close the followed software
+trends tools principles and patterns you
+have to believe the fundamental solution
+structure and train your team to align
+them to follow the same principles and
+coding styles to create a consistent
+source code when you use a VP
+fundamentals of the architecture will be
+already decided and implemented for you
+a VP solution model is based on the
+domain driven design principles and
+patterns DDD offers four fundamental
+layers domain application presentation
+and infrastructure a VP startup
+templates implement this layering by
+providing a multi project solution
+structure a b.p framework provides
+infrastructure for your application to
+implement TDD easier and finally a VP
+documentation supports you to truly
+implement TDD in your source code a
+beefy framework is designed to create
+fully modular applications it provides
+infrastructure to distribute your
+entity's services api's UI components
+and page
+into isolated modules in the development
+time and bring them together to act as a
+single application on runtime we already
+created tribute modules like account
+management Identity Management and
+talent management those are ready ready
+to use in your application documentation
+and guides help you in building your own
+modules micro-service is another
+training approach to create scalable
+systems both in development time and on
+run time NIV ABP has been designed at
+micro services in mind it provides
+infrastructure to implement common micro
+service communication patterns easily
+it's integrated to the island server for
+for authentication pre-built application
+modules are designed so that they can be
+deployed to separate servers or
+containers with date they're dedicated
+databases as independent micro services
+we have also created a complete micro
+service solution sample and documented
+it to be a reference model you can check
+it on the website multi-tenancy is a
+fundamental architecture to create
+software as a service solutions
+ABP framework and modules provide a
+complete multi-tenant infrastructure
+tenon determination automatic data is
+relation dynamic database selection
+channel pays the setting system and much
+more are already implemented by the
+framework it not only supports to
+develop multi-tenant applications but
+also makes your codebase mostly unaware
+of to multi-tenancy pre-built tenant
+management module provides the
+application logic and basic UI to manage
+and create your tenants ABP framework is
+not a new project actually it's the
+successor of the asp.net boilerplate
+framework asp.net boilerplate has been
+around for six years
+it has been more than 7,000 stars on
+github
+1.5 million downloads on new yet it has
+been actively used by tens of thousands
+of developers around the world we have
+been working on the next generation of
+the asp.net boilerplate framework for a
+few years and it's finally here the
+first stable version will be released in
+a few weeks
+based on the asp.net core 3 it's a
+complete rewrite so we don't use the log
+name anymore
+it's the ABP framework and the new
+website is ABP dot io it's now more
+modular and micro-service compatible
+supports relational and on relational
+databases provides more options to
+create composable and distributed
+systems in addition to simple monolithic
+web applications we are very excited to
+introduce it in the same event Microsoft
+launches asp.net Court 3 now I want to
+show you how to create a new project
+based on the ABP framework and make it
+running in a few seconds first I'm
+entering the ABP our website in the
+getting started page we have two options
+to create a new project via a BP
+command-line interface
+CLI or we can directly download from the
+website once we enter a project name
+then we can select application template
+or module template to create a reusable
+module I select the application template
+we have two options as the UI framework
+for now MVC and angular and we have now
+two database providers and two framework
+or supports most of the relational
+databases at MongoDB and now we can
+create a new project but in this demo I
+will create the project via CLI
+ABP new project name its grace the
+complete solution in a few seconds
+yeah the solution has been created I am
+opening in the visual studio I have a
+preview one it has a mom it is a multi
+project solution consists of the source
+code and related unit tests it's layered
+based on domain living patterns and
+principles and layers it's also well
+documented on the website so you can
+easily understand how solution structure
+is design it when I run the application
+the solution template has is include
+some of the pre-built modules like
+tenant management and identity
+management when I run the solution yeah
+I see the account module I can enter the
+user name and password at the startup
+time place uses two modules as I said
+before identity management is used to
+create and manage roles then we can set
+permissions for each role that means we
+can allow to do something in the system
+for the human role also in the user side
+we can set rules for the for a user we
+can create a new user
+it also supports multi-tenancy
+out-of-the-box we can create tunnels and
+use multi-tenancy as well it's localized
+to a few language
+okay that's all
+the solution is stuff actually doesn't
+contain any user interface component or
+any functionality I have shown it uses
+nougat package for all the functionality
+related identity management talent
+management account login and register
+page okay let's continue now I want to
+highlight some features of the ABP
+framework as a brief the main goal of
+the AVP framework is to make you focus
+on your own bussiness code by handling
+repeating tasks by conventions
+it handles cross-cutting concerns and
+provide services you need let's see a
+typical application service class to
+understand how ABP can help you in this
+very simple code block AVP provides base
+classes for ddd elements in this example
+class inherits from the application
+service application service base class
+provides properties and methods commonly
+used in the application layer AVP
+automatically registered this class to
+dependency injection container as a
+transient service you can use the
+generic repositories to work with the
+database declaration authorizing tribute
+can be used to check permissions which
+are auto policies actually it is
+completely integrated into asp.net
+course authorization system and extends
+it unit org system automatically creates
+and managed database connection and
+transaction for you
+it rollbacks if your metal drops and
+exception otherwise it saves all changes
+to the database as a single transaction
+it works out of the box by convention it
+automatically validates the input and
+throws exception if it is invalid so you
+can safely work with the palette in put
+inside your method it automatically
+creates and saves
+audit logs for each method call so you
+can then get add attack
+tailored report to know which user
+called which method audit log system is
+very detailed detailed and configurable
+it can also save entity and property
+changes as well
+you never handle exceptions manually ABP
+handles all exceptions and send an
+appropriate result to the client ABP
+extant asp.net calls localization
+systems to make it more dynamic and
+extensible object mapper is used to make
+objects it has Auto mapper integration
+out-of-the-box and can be replaced by
+another mapper AVP also provides some
+other services usable in the application
+source in this way you only write the
+code related to your business without
+repeating yourself if your application
+service basically performs quadruped
+operations then you can also inherit
+from the root of service to get it fully
+implemented for you you can then
+override and customize any method you
+need once you create an application
+service you type collie want to expose
+it as an HTTP API by writing an API
+controller AVP can automatically create
+API controllers by convention based on
+your method names input and output types
+so most of the times you don't need to
+manually create API controllers arrange
+routes and HTTP methods okay you have
+created your HTTP API and or let the ABI
+a VP framework dynamically create it for
+you what about when you want to use the
+API from a client application AVP can
+dynamically create JavaScript and C
+sharp proxies you can use the client
+proxies to use the remote HTTP API just
+like calling a regular method in the
+client side you don't deal with
+authentication exception handling JSON
+serialization deserialization and point
+configuration and so on notice that it
+doesn't generate any code it all handles
+in the run time you don't have a large
+machine generated code that you don't
+understand what it does here to example
+code that uses the dynamic client
+proxies JavaScript code calls the method
+just like calling a JavaScript function
+c-sharp client injects the application
+service interface which is shared with
+the server the injected service is a
+dynamic proxy object which internally
+performs HTTP calls to the remote server
+then you can use any service method just
+like calling a local local method and
+you get the result if provided ABP
+provides a distributed event pots
+out-of-the-box publishing and even is
+pretty easy just injected I distributed
+even post service and use the publish
+method subscribing and consuming an
+event is also easy just implement our
+distributed even hunter interface and
+fill in the handle even method the rest
+of the communication and retry
+mechanisms are handled by the ABP
+framework it's integrated to RabbitMQ as
+a first implementation we will add more
+options in the feature a BP is framework
+UI framework agnostic you can use
+different UI frameworks like asp.net MVC
+angular react whooshes or blazer it
+currently has a missing and angular
+startup templates more will become by
+time in the section I will show some of
+the ABP features for a missile age razor
+face UI option in a modular application
+you typically want to em and make your
+UI components like wheels or javascript
+file CSS files and image into the LS or
+may get packets you may want to create
+application independent reusable modules
+with their own entities services API and
+UI elements
+ABP provides a virtual file system that
+acts as a single file system but
+internally can read contacts from
+various resources like physical files
+embedded files or even from dynamic
+files created created on runtime this is
+an essential feature when you want to
+work with files distributed into modules
+we have created tackle programmers for
+most of the bootstrap for components
+like buttons models cards tops and so on
+in the sample you see a button and the
+model the dialogue code writing using a
+BB tag helpers it produces native
+bootstrap code on runtime in this way
+you write less code to create bootstrap
+components in your views it makes
+possible to get the power of the
+intellisense when you want to directly
+work with the bootstrap code you are
+free to write native with dropped HTML
+which is cooperates nicely with the AVP
+toc helpers in addition to wrappers to
+bootstrap talk helpers we taught that
+creating a regular form requires a lot
+of boilerplate code to reduce the code
+we type we have created a VP input tag
+helper which generates most repeated
+localized and validated input controls
+it understands the input type and can
+work with the existing attributes to
+customize the HTML output time we
+thought why we should define an a VP
+input tag for each form element when we
+want to create a simple form what if we
+create a single tag helper that gets the
+model and generates the complete form
+for us
+ABP dynamic form tag helper does exactly
+this creates a complete form for you
+with a single line of code it gets all
+the information from your view model
+class handles validation and
+localization to
+the last feature I want to highlight in
+this top is the bundling and
+minification system provided by the ABP
+framework you may think that why we need
+to create another bonding and
+unification system while we have a
+speed-up net course bundle and minifiers
+or gulp or grunt GS the main reason is
+that none of them are modular none of
+them can read CSS files inside the dll
+none of them can this arc the bundle
+content on the fly and actually none of
+them are easy use which bundling and
+minification system can be simpler than
+this code it's just a tack helper
+directly used in your page or view it
+adds given files individually to the
+page in development time bundles and
+minifides
+on runtime it works with the virtual
+file system out of the box so you can
+add an embedded or dynamic resource into
+your bundle it can automatically include
+dependencies to the bundle that means if
+you included the library to the bundle
+that depends on jQuery it automatically
+includes jQuery to the bundle if jQuery
+was not already added to the current
+page before that means it rearranged
+bundles on-the-fly
+can't determine the bundle content
+conditionally it allows you to create
+named bundles and reuse it in an
+application or even across multiple
+applications it has many more features
+that are needed to create modular web
+applications check you can check its
+documentation so I highlighted some AVP
+features that are easy to explain in
+such a short talk then there are me many
+built-in features and extensibility
+points waiting for you to disk or visit
+a BPO and follow tutorials to learn it
+deeply as the last word
+ABP doesn't try to reinvent the well
+instead it tries to fill the gap between
+the plain asp.net core and real-world
+enterprise application the
+not scenarios it helps you to code in
+best practices to build maintainable
+software solutions okay that's all for
+my talk if you have any questions I'm
+glad to answer them
+yeah somebody was that's a great great
+story the Helena somebody was asking
+Ritesh um Tamara carcasses are they any
+real use of a BP at the moment yes
+actually a BP is the next generation of
+the asp.net boilerplate framework so
+it's widely used by thousands of
+developers for the ABP IO the next
+generation it's in the preview know we
+have just upgraded to asp.net code 3
+yesterday
+immediately upgrade nicest asp.net core
+so we are using it in production but we
+don't call it 1.0 for now because it has
+some locking documentation and we we
+want to test more so some of the custom
+some of the developers are using the NIV
+a BPO in their production and one but we
+don't such as for a few weeks more a few
+weeks more Dom we will release the first
+stable version for the BPO awesome
+awesome yeah people been saying great
+presentation there's a comment here from
+Oz Bob Western Australia I've been
+reading a VP documentation all did a
+support slash buckle integration and
+open API and swagger UI Wow definitely
+gonna give it a go so yeah your you did
+a great job for sending all the features
+of your framework that's awesome so I
+want to thank you for taking the time
+talking about it and showcasing it I
+know everybody were excited so we're
+gonna hang up here folks and we're gonna
+get Martin who's gonna talk about
+indexing nougat with a sure functions so
+again Ellie oh thank you so much
+thank you very much and thank you to
+everybody listening me okay
+oh so much have a good one I will be
+back in a bit folks

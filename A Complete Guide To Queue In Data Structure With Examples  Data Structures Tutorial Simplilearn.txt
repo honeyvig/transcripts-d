@@ -1,0 +1,3562 @@
+hey everyone
+welcome to simply learns youtube channel
+today in this video we are going to
+cover everything that you need to know
+about queue in data structure
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies
+so if you are a tech geek in a
+continuous hunt for latest technological
+advancements then consider getting
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+now without any further audio let's get
+started with the agenda for today's
+discussion
+we'll start this session by looking at
+the basics of queue data structure
+here we'll discover the algorithmic
+structure of queue data structure along
+with the possible data manipulation
+operations
+after that we'll go through the
+differences between stack and queue data
+structure
+in this section we'll figure out how
+these linear data structures differ from
+one another
+once you are clear with that we'll dive
+through the array and link list
+implementation of queue data structure
+next we'll figure out an advanced
+version of the queue that is circular
+queue in data structure
+here we'll understand the logical and
+coding implementation of circular queue
+using both array and linked list
+finally we'll discover the priority
+queue in data structure in this section
+we'll understand theoretical details of
+priority queue along with its coding
+implementation
+i hope i have made myself clear with the
+agenda now let's get started with our
+first topic that is understanding basics
+of queueing data structure we are going
+to discuss cues and data structures we
+will start this session with an
+introduction to the queue
+later we will discuss the structure of
+the queue in detail
+after that we will deal with different
+operations that can be performed on
+queues
+advancing further we will understand
+various types of queues and their
+structures
+and finally we will discuss different
+applications of queues to understand how
+queues are used to manipulate data on
+that note without further delay let's
+get started with introduction to queue
+you know that all of us depend on
+messaging applications like whatsapp
+facebook messenger instagram chats to
+communicate with our friends and family
+members and while using them you must
+have observed that the person you are
+trying to communicate with receives
+messages in the same order as you have
+sent them now the question that arises
+here is how is this happening how are
+these applications maintaining the order
+of these text messages
+and the solution to these questions
+bring us to queue
+basically in these applications a queue
+is maintained for each user containing
+the messages to be delivered to the user
+when the user connects to the network
+all the text messages in the queue gets
+delivered and once the messages are
+delivered empty queues get deleted
+this example clearly illustrates the
+importance of data structures so let's
+dive further and understand the
+structure of the queue in depth
+but before doing that let's look at a
+real-life example of queues to
+understand it more clearly
+the most common and relevant example of
+a queue is a movie ticket counter
+in the movie ticket counter you must
+have observed that both of its ends
+remain open
+also these ends are fixed with the help
+of barricades and that is why no one can
+enter in between these ticket lines
+additionally the person who enters first
+receives a ticket first and the person
+who enters last will obviously get
+served at last
+queues and data structure resembles all
+these properties of a movie ticket
+counter which makes them better at
+creating virtual first come first serve
+systems
+basically they are defined as a linear
+collection of different data types that
+allow insertion at one end and deletion
+at another
+unlike any other data structure the
+queue ends remain open allowing it to
+have different functionalities at both
+ends
+the end at which insertion takes place
+is called rare
+and the end at which deletion takes
+place is known as front
+furthermore there are two approaches to
+consider the structure of the queue and
+both of them depend on the approach of
+the programmer
+that means being a programmer if you
+consider the left hand as front then
+your rear node will be at right end
+otherwise if you consider the left hand
+as rare then the right end will be your
+q's front node
+unlike arrays and linked lists elements
+in the queue cannot be operated from
+their respective locations here they can
+only be operated from the front or rare
+position
+moving on let's discuss the operations
+in queue data structures one by one
+the first operation is nq it is used to
+store the elements in the queue
+next up is dq this operation is used for
+removing them
+further we have is full and is null
+operations is full function scrutinizes
+if the queue is full or not and the is
+null operation evaluates if the queue is
+empty
+we also have a peak operation that helps
+you get the element from the front of
+the queue without removing it
+let's now understand how these
+operations work with the help of the
+following examples
+here we will look at nq5 and q1 and q
+minus 2 then is full
+then dq peak
+and is null
+but before explaining these operations
+it's essential that we initialize the
+queue data structure by assigning some
+random size to it
+for example int q of 3 by this
+declaration we are assigning only three
+spaces for insertion and q
+also at this phase there is no element
+in the queue as it's empty so both the
+front node and rear node will point to
+the same location with null memory space
+in the storage system
+let's consider that null index to be -1
+for ease of our convention
+now the first operation on our list is
+nq of 5.
+as we discussed previously nq operation
+is nothing but the insertion of data
+into a queue data structure it begins
+with checking if the queue is full or
+not
+if the queue is full then the previously
+assigned memory is completely filled
+with data elements so insertion would
+not be possible this is also known as
+overflow error in terms of programming
+but as our queue is empty so the
+insertion can be performed here for that
+we have to increment the rare pointer to
+index 0 from index -1
+and once we do that the data element 5
+will be added to the queue
+also for front insertion both front and
+rear will point to the same location as
+there is only one element present in
+this queue
+let's insert two more elements into this
+queue with the operations in q1
+and nq-2
+for that we have to increment the rare
+pointer to the next index which will be
+1.
+now as the point is incremented so the
+data will be entered into this position
+next up is nq minus 2. again we have to
+follow the same process of incrementing
+the rare pointer we will increment the
+rare pointer to point towards the next
+index that is index 2 and hence the data
+element with value -2 will be entered
+here
+the next operation on our list is is
+full
+in this operation if the rare pointer
+points to the max size then the queue is
+considered to be full as there is no
+space left for insertion
+in our case the max size of rq is 12
+bytes
+additionally we are considering to enter
+only three integer elements
+and one integer data element takes four
+bytes of the memory space that means
+three integer elements will take 12
+bytes hence this function will prompt q
+is full on the screen
+now we will discuss the dq operation if
+we want to access data from a queue we
+have to perform two sub-tasks the first
+one is access the data where the front
+is pointing and another is to remove the
+data after access and this complete
+process is called as dq operation
+the first step of this operation is to
+check if the queue is empty
+if the queue is empty then there is no
+element available for deletion this is a
+case of underflow error
+but as our queue is not empty we can
+proceed with the next steps we will be
+accessing data from the front node and
+later we will be incrementing the front
+pointer in order to remove the link to
+the previous node so that the data gets
+removed now front will point to the
+index 1.
+thus the data value 5 will be removed
+from the queue and will also be prompted
+on the screen therefore this function
+comes with an integer return type
+next up is peak operation
+in this operation element at the front
+node will be accessed without deleting
+it
+the algorithm for this operation begins
+with checking if the queue is empty or
+not
+if the queue is not empty then data at
+the front node will be accessed with
+temporary variable and printed on the
+screen
+advancing further let's perform two more
+dequeue operations here first is dq of 1
+and another one is dq of -2
+the data at a front node will be
+accessed primarily and the front pointer
+will be incremented to point to the next
+data element
+when we do the point incrementation the
+link to the previous node gets remote
+which results in data deletion
+similarly we will perform a dq of minus
+2 operation here now the front will be
+pointed to null memory space as there is
+no element left in rq and the data minus
+2 will be removed
+the last operation on our list is is
+empty this function checks if the queue
+is empty or not in the previous
+procedure we mentioned that if the front
+points to the null memory space then the
+queue is empty and in our case the front
+is already pointing to -1
+so the output of this function will be q
+is empty
+this is all about operations in the
+queue i hope that you all are clear with
+these operations
+next we will discuss different types of
+queues and their structures at a glance
+basically there are four types of queues
+linear queue circular queue priority
+queue and double ended queue
+the structure which we have discussed
+till this time is that of a linear queue
+so now we will move on to circular queue
+the circular queue is almost similar to
+the linear queue except that the last
+node of this queue is connected to the
+first
+it is also known as ring buffer as all
+the ends are connected to another end
+additionally this circular queue is a
+better version of the linear queue as it
+removes the drawback of insertion in the
+linear queue
+the empty space available in a circular
+queue can be filled with the new element
+by simply incrementing the value of the
+rare position
+we will learn about this in detail in
+our further sessions
+a priority queue is another special type
+of queue data structure in which each
+element has some priority assigned with
+it
+based on the priority of each element
+the elements are arranged in a priority
+queue if the elements occur with the
+same priority then they are served
+according to the first in first out
+principle
+in the priority queue the insertion
+occurs based on the arrival while the
+deletion occurs based on the priority
+the above figure shows that the highest
+priority element comes first and the
+elements of the same priority are
+arranged based on the first in first out
+structure
+the last type of queue is dq
+dq is a linear data structure in which
+the insertion and deletion operations
+are performed from both the ends
+we can say that dq is a generalized
+version of the queue
+dq can be used as stack as well as q as
+it allows the insertion and deletion
+operations on both the ends
+if the insertion takes place at one end
+and deletion at another then that dq is
+known as a linear queue
+and if both addition and deletion are
+performed at a single end then that dq
+is called stack
+advancing further let's discuss some
+applications of queues to gauge an
+insight into the importance of queues
+the queue data structure is used in
+computers printers and applications to
+utilize the benefits of the first come
+first serve technique
+in computers whenever you work on
+documents or ppts you must have observed
+that whichever key you press on the
+keyboard appears in the exact same order
+on the screen but when your processor is
+too busy with other tasks you might
+notice that the keys you press appear on
+the screen with some delay after you
+press them
+basically those keys are stored in queue
+and when the processor becomes free it
+processes in the order the keys are
+pressed
+that means the key pressed first will be
+written in a word document first
+so this is how computers use a queue to
+eliminate deadlocks when multiple
+processes are in a ready state
+next up is printers
+a queue data structure is used in
+printers to maintain the order of pages
+while printing that means the pages are
+stored in a queue in the order that you
+want to print them and once the page is
+removed from an ordered queue it gets
+printed
+another most common application of queue
+data structure is their usage in web or
+mobile apps
+applications like domino swiggy uses a
+queue for maintaining food order status
+if you place an order from an online
+portal your order id enters the queue
+and once the previous orders before your
+order id gets catered then your order
+will be catered as well
+from these examples we can clearly say
+that queues are used whenever there is a
+need for an fcfs strategy in software
+development so whenever you work on
+projects that need a first come first
+approach then remember that you have to
+implement a queue data structure to
+complete it successfully
+finally let's have a look at some key
+takeaways that we discussed in this
+session
+we started this session by examining the
+structure of the queue we learned that
+the queue is a linear data structure
+after that we talked about different
+operations of queues in which we learned
+nq and dq are responsible for data
+manipulation in a queue
+later we discussed different types of
+queues as well
+finally we discovered some applications
+of queues and how they fulfill the need
+of fcfs systems
+we have also made it clear that queues
+can handle multiple data types as well
+we will be discussing about stack versus
+queue
+primarily we will discuss the
+definitions of both these data
+structures first
+the stack is a linear data structure
+similar to arrays and linked lists
+restricting the random access of
+elements
+in the case of arrays on linked lists
+you can access elements by either
+traversal or random indexing which is
+reframed in stack data structure
+you can understand a stack by
+visualizing it as a container of
+elements in which elements can only be
+placed on top of each other
+and remove from that same direction only
+stack as a data structure in computer
+science is not very different from stack
+as a way of organizing objects in the
+real world
+so stack can be thought as the way you
+arrange books stacked on top of each
+other these books can only be placed
+upon each other from the top end
+furthermore to remove any particular
+book you will first have to remove books
+stacked over it
+this scenario accurately depicts
+sequential book access equivalent to the
+stack data structure in computer science
+the queue and data structure is also a
+linear data structure like a stack
+having some restrictions on insertion
+and deletion
+in the case of q insertion is performed
+from one end and the removal is
+performed from another or opposite end
+the queue in data structure can be
+understood using the real-life example
+of a food coat line
+in any food coat line or a movie ticket
+counter line the customer who enters
+first always gets served at first and
+the customer who enters last will
+absolutely get served at last
+furthermore both the ends of these
+queues remain open
+performing different operations
+the rear end of the footcode queue
+performs the insertion of a customer
+whereas the frontend performs the
+removal of the customer after providing
+him with the service that he desires
+both the stack and queue data structures
+follow the different operational
+principles to execute data manipulation
+operations
+the stack data structure follows last in
+first out or first in last out
+principles to execute its operations
+in simpler words the stack data
+structure removes the last inserted
+element at first and the first inserted
+element at last let's understand the
+principles mentioned above with the help
+of an example
+as you can see in this example 3 is the
+last inserted element and if we start
+removing elements from this stack 3
+should get removed at first and 7 should
+get removed at last
+unlike stack the queue data structure
+follows fifo which is the first in first
+out principle to execute its operations
+according to this principle the element
+which gets inserted in a list at first
+gets removed at first as well
+for example in this queue 6 is the
+element which is inserted first
+so while performing the deletion it
+should also get removed before all the
+other elements inside the queue
+moving forward let's discuss different
+data manipulation operations for both of
+these data structures
+the first parameter that we will talk
+about is the insertion operation
+the process of inserting data entities
+in the stack is called a push operation
+this operation can only be performed at
+the top end of a stack
+for instance consider the simulation of
+stack inserting few data elements the
+elements that are getting inserted
+inside the stack are of homogeneous data
+type
+thus we can say that stack can only
+store one type of data element
+the insertion of elements in a queue
+data structure is referred to as an nq
+operation it gets executed at the rear
+end of a queue
+the simulation given in this section
+represents the execution of rnq
+operation
+the next data manipulation operation we
+have on our list is deletion
+the deletion of data entities from stack
+data structure is achieved using pop
+operation the deletion of data entities
+from stack data structures is achieved
+using pop operation this operation
+removes the elements where a top pointer
+is pointing thus we can see that the
+stack performs the removal of data
+entities from its top end
+this simulation shows how the removal of
+elements happens in the case of a stack
+data structure
+now let's move to the deletion and queue
+data structure
+the process of deleting data elements
+from the queue data structure is called
+dq this operation is usually performed
+at the front end of a queue
+the simulation given below represents
+how deletion happens from the front end
+of a queue abiding with the first and
+first out principle
+both of the data manipulation methods we
+reviewed earlier can be matched with
+previous real-life examples what i mean
+by that is
+the book stacking system can only place
+books at the top end as well as it can
+remove them from the top end only
+furthermore the waiting queue analogy is
+deemed to be consistent with queue data
+structure because it adds people from
+the back end and removes them from the
+front end
+now here's interesting question that we
+want you all to answer
+so until now we have understood the
+structural differences between stack and
+queue data structures and both of these
+data structures can be implemented using
+static or dynamic data structures
+so based on your comprehension of these
+data structures which implementation
+strategy for constraint memory
+management is the best choice
+the first option is array implementation
+static
+and your second option is linked list
+implementation dynamic
+do think and answer it will be
+interesting to see how many of you all
+will get this right
+so guys leave your answers to this
+question in the comment section below in
+a week's time we will be announcing the
+right answer and you all can check it
+out
+so moving ahead we will discuss about
+the pointers maintained in the case of
+both these data structures
+for stack data structure our adi only
+remembers one location that is the
+address of the topmost element
+this tracking of a topmost element is
+achieved using one pointer which we name
+as a top for our convenience
+whereas in the case of q we maintain two
+pointers named front and rear
+the rare pointer points to the last
+inserted element in the queue and the
+front pointer points to the first
+inserted element in the queue
+we use and maintain these two pointers
+to execute different operations at both
+the front and rear ends
+the last parameter that we have for
+differentiating stack and queues is when
+to use which data structure
+the stack data structure is mainly used
+to solve problems that are recursive in
+nature
+for example memory management and
+programming environments the resource
+allocation and execution of the programs
+is a repetitive process based on the
+invocation of different function calls
+and stack is the basic memory management
+architecture for any modern computing
+environment
+a stack is at the heart of the runtime
+environment for java c c plus plus ada
+fortran and other languages which is
+independent of their native codes like
+x86 sun or wax
+the stack memory management unit is
+compatible with old and new operating
+systems including windows nt10 solaris
+and linux runtime environments
+the next applications of the stack on
+our list are expression handling and
+backtracking algorithms
+the expression handling algorithms
+evaluates the output for arithmetic
+operation closed inside the parenthesis
+the stack data structure is also used to
+perform expression conversions as infix
+to postfix infix to prefix postfix to
+infix or prefix to infix
+furthermore the backtracking algorithm
+is also implemented using a stack
+this algorithm moves backwards in
+perform steps to evaluate a more adept
+solution
+now let's discuss about when to use
+queue data structure
+the queue data structures work on
+sequential processing of data hence
+whenever your application needs a
+sequential processing a queue data
+structure can be implemented for example
+queue is used in messaging applications
+you are probably aware that we all rely
+on messaging apps like whatsapp facebook
+messenger and instagram chat to interact
+with our friends and family
+and you must have noticed that the
+person you are attempting to communicate
+receives the messages in the same
+sequence as you have sent them
+irrespective of whether he's online or
+offline
+actually the queue is implemented in
+messaging applications at the user's end
+containing the messages to be delivered
+to the user
+so when the user connects to the network
+all the text messages in the queue gets
+delivered and once the messages are
+delivered empty queues get deleted
+the next application of queue is its use
+in operating systems
+multi-user multi-programming and time
+sharing environments are common in
+today's computers
+in this os setting a system handles
+multiple jobs at once and the concept of
+a queue is employed to manage these
+activities
+so remember guys you can implement stack
+data structure to solve recursive
+problems and queue data structure to
+solve problems that need sequential data
+processing
+queue implementation using array first
+we are going to take a small recap on
+queue in data structure
+we then dive into the declaration of a
+one-dimensional array and pointers for
+queue implementation
+finally we will formulate code for queue
+data structure using the c plus coding
+language
+on that node without any further ado
+let's get started with the recap on cue
+in data structure
+in the last session we introduced you to
+queue data structure as an abstract data
+type as we know when we talk about data
+structure as adt we define it as a
+mathematical or logical model we specify
+all the features or operations available
+with the data structure
+so considering that we learnt a few
+basic features of a queue in the last
+session let's go ahead and learn more
+a queue is a linear collection of
+different data types that allow
+insertion at one end and deletion at
+another
+unlike any other data structure the
+queue ends remain open allowing it to
+have different functionalities at both
+ends
+additionally the queue works with the
+restriction that insertion should be
+performed at the rare node and deletion
+at a front node
+those processes of insertion and lesion
+are called nq and dq respectively we
+discovered both of these operations
+along with three more supportive
+procedures named as peak is full and is
+null
+now that we are considering to implement
+a queue data structure so all these
+operations will become different
+functional blocks additionally all these
+operations must take constant time and
+it must not depend upon a variable like
+the number of elements in q or the size
+of the queue
+by that what i mean is the complexity of
+all these operations must be o of 1.
+having said that let's dive deep into
+the strategy to implement q data
+structure until now we have understood
+that q is a special kind of list with
+some restrictions on insertion and
+deletion and there are two approaches to
+deal with queue implementation the first
+one is array based and another one is
+linked list based in this session we are
+going to focus on array-based
+implementation
+initially let's say we want to create a
+queue of integer elements for that
+purpose firstly it is essential to
+declare an array of random spaces let's
+take hundred as the size of our array
+that means our array can have a maximum
+of 100 integer elements the declaration
+of an array is made with this line of
+code intq 100
+where int represents integer data type
+and q is the name of our array and 100
+is its size
+the array that we just initialized is
+going to store our queue
+by that what i mean is that any random
+index of an arri q is going to start
+with two marked ends front and rear
+in this array i'm showing front of the
+queue towards the left and rear towards
+the right
+for making those end nodes we need to
+initialize two pointers front and rear
+at this moment as our queue is empty so
+both of those pointers should point
+towards -1 so initialization of these
+pointers should be done as inch front is
+equal to -1 and int red is equal to -1
+when the insertion or deletion happens
+in queues these pointers will be either
+incremented or decremented so they are
+an essential part of this queue
+implementation process
+now you must be clear with the array and
+pointers declaration part so let's dive
+further and formulate code for queue
+implementation using a one-dimensional
+array in c plus plus
+it is essential to include header files
+into our source file as we cannot access
+standard c plus functionalities without
+them
+that is why here we are going to load io
+stream and standard input output files
+along with using namespace sdd
+once this is done we will initialize our
+array along with front and rear pointers
+remember we always have to declare the
+size of an array before compilation
+that means we cannot update the size of
+an array at runtime
+this scenario is the biggest limitation
+of queue implementation using arrays
+having said that let's proceed with
+pointers declaration
+now we are done with the initialization
+process we will now work on
+implementation of queue functionalities
+let's first work out supportive queue
+functions like is null is full and peak
+isn't function validates if the queue is
+empty
+and as per our previous discussion when
+both front and rear points to -1 then
+the queue is considered to be empty
+so the condition to determine if q is
+empty will be
+if
+rare is equal to is equal to -1
+and front is equal to is equal to -1 it
+will return q is empty
+if the queue does not satisfy the
+previous condition then it is not empty
+so by using the else condition we can
+display the queue is not empty
+next up is is full function this
+function validates if the queue is full
+and we can clearly say that if the rare
+pointer is equal to the max size of the
+queue then our queue is going to be
+completely full
+next is peak
+the peak function extracts the element
+where the front pointer is pointing
+without removing it from the queue
+for this functionality to work our queue
+must contain data elements in it
+what i mean is our queue should not be
+empty if our queue is not empty then
+data at the front node can be accessed
+this is how we implement supportive
+queue functions let's immediately dive
+into the development of main queue
+operations nq and dq
+for enqueue operation if the queue is
+full then our function should prompt an
+overflow error
+for that to happen we have to put this
+condition
+if the front pointer is pointing to -1
+then we have to increment the front
+pointer to 0 manually
+otherwise it can be incremented by rare
+plus plus
+after pointer incrementation we have to
+ask for a data element to enter into the
+queue
+once the data is given it should be
+inserted at the position where the rare
+is pointing now
+finally let's code the final main queue
+operation called as dq
+if the queue is empty then there is no
+element for deletion so it should prompt
+an underflow error on screen
+also if there is only one element left
+inside q then both pointers should again
+be pointed towards minus 1.
+for that let's write another condition
+here
+if both the previously mentioned
+conditions are false then deletion of an
+element can be achieved by just pointer
+incrementation
+we have implemented all the queue
+functionalities here but we haven't
+implemented a function that can show us
+how our queue looks so for that let's
+implement one more function with the
+name display
+this function should prompt the elements
+of the queue on the screen
+elements will only be printed if the cue
+is not empty hence we have to check for
+the emptiness of the cube first
+finally we are done with the hard part
+so let's arrive at the main function to
+contemplate these operations in order to
+visualize outputs
+we are going to use a switch case to
+take a user command
+thus not to waste your time on this let
+me just get done with this block asap
+that's all we are done with the queue
+implementation using arrays let's just
+examine if our code works fine or not by
+compiling it
+this program should return a console
+that asks the user to give commands for
+performing different operations
+so as you can see on your screens if i
+input 1 i can perform insertion in a
+queue
+let's perform some insertions now we
+will insert four elements first three
+then 21
+next 78
+and finally 12.
+after inserting these elements we will
+print the state of the queue using case
+3.
+now let's also check the dq function
+if we perform a dq operation then 3
+should be remote from the queue
+let's check if it is remote using the
+display function
+and yes our code works just fine
+now if you're concerned about this code
+then don't be as we can send it over to
+you if you drop your email ids in the
+comment section below
+additionally you can also try to run it
+on your local system to have a better
+understanding of the concept
+we will be discussing about queue
+implementation using linked list
+at first we will quickly revisit the
+queue functionalities that we have
+covered in previous sessions
+followed by that we will understand the
+need for linked list implementation of
+queue
+advancing ahead we will deal with
+representation of q using linked list
+and the challenges that occurs while
+implementing queue using linked list
+finally we will cover the coding
+implementation of queue data structure i
+hope i made myself clear with the agenda
+now let's get started with our first
+topic which is quick recap on q
+functionalities
+q as we know from our previous
+discussions is a structure in which
+whatever goes in first comes out first
+for example customer service queue in a
+customer service queue the customer who
+enters first will leave the billing line
+first and the customer who enters last
+will definitely get served at last this
+scenario for insertion and deletion is
+also known as first in first out
+principle moving ahead let's discuss
+some features of this queue data
+structure
+basically q is a linear data structure
+that follows certain restrictions on
+insertion and deletion the insertion can
+only be made from one end and deletion
+can only be performed from another end
+further deletion is called as dq and
+insertion is called as enqueue
+along with these two primary queue
+operation there exists three more
+supportive queue operations named as
+peak is full and is empty peak operation
+should simply return the element at the
+front without removing it from list and
+its full and is empty operation should
+return the state of q that is empty or
+full
+all these discussed operation must take
+a constant execution time by that what i
+mean is the time complexity for all
+these operations should be big o of one
+now moving ahead we shall understand the
+need for linked list implementation of
+queue
+when we discuss the implementation of
+queue using arrays we discussed the
+limitation of fixed size according to
+that limitation an array will always
+have a fixed size and it should be
+declared before the compilation of
+program furthermore once all the
+positions in an array are taken or it is
+exhausted then we only have two options
+we can either deny insertion by saying
+that the queue is full and we cannot
+insert anything now or what we can do is
+we can create a new larger array and
+copy elements from the previous array to
+the new large array the time complexity
+for this copy operation will be
+proportional to the number of elements
+inside field array in other words we can
+say that the time complexity of this
+copy operation will be big o of n
+but again as we are giving random larger
+size to the array there is a possibility
+of massive memory loss like right now in
+this area 70 of the memory is unused and
+the memory is a crucial resource that we
+should always be protecting
+it's not that some amount of unused
+memory will be real problem in today's
+modern day computer but it's just that
+while designing solutions and algorithms
+we should always analyze and understand
+these implications regarding memory
+along with this memory wastage there
+exists another sort of memory management
+issue that occurs while utilizing an
+array to implement a queue data
+structure the space of an array which is
+used to store elements can never be
+reused to store the queue elements
+because items can only be inserted from
+the front end and the front end's value
+may be so high at that time the space
+before the pointer will be lost for
+eternity
+let's have a look at an example to
+understand this drawback more clearly in
+this example of array representation of
+q a queue of size 10 having 5 elements
+is shown the value of the friend pointer
+is 5 therefore we cannot reinsert values
+in the place of already deleted elements
+before the position of front that means
+the space of the array before print
+pointer can never be reused for storage
+purpose
+these drawbacks represents the need for
+a more appropriate method to implement
+cues and by using a proper dynamic data
+structure like linked list these
+drawbacks can be easily removed on that
+note let's discuss about the
+representation of queue using a linked
+list
+a linked list as we know is a collection
+of data elements that we call nodes
+these nodes are stored at non-contagious
+locations in memory further each node
+contains two pill one to store data and
+another to store the address of next
+field or the reference to the next node
+let's assume that the node in this
+figure are at addresses 200 400 and 500
+respectively i have failed these
+addresses in the address field as well
+the identity of the linked list that we
+always give with us is address of the
+head node we often name a pointer or
+reference variable at which we store the
+address as head
+so now we are saying that we want to use
+a linked list to implement queue data
+structure and the basic definition of
+queue conveys that a queue is a linear
+data structure in which insertion is
+performed at the rear node and deletion
+at the front node it's really effortless
+to enforce this property of a queue in
+linked list we can simply pick one side
+of a linked list for insertion and
+another site for deletion if the head
+node is considered to be print then the
+tail node will be the rear otherwise if
+the head node is deemed to be the rear
+then the tail node will be the front end
+whatever side we are picking for
+whatever operation we just need to make
+sure one thing and that thing is the
+operations that we are carrying out must
+take a constant time or in other words
+that time complexity should be big of
+one
+i hope that you guys are clear with the
+representation of a linked list as a
+queue data structure now moving forward
+we will discuss about its implementation
+but before that let's have a look at the
+time complexity management challenge
+which occurs in queue implementation of
+a linked list
+in the case of linklish the cost for
+insertion or removal from the head side
+is bigger of one but the cost for
+insertion or removal from the tail side
+is big o of n
+so here is the d in a standard
+implementation of q using linked list if
+we insert element at one side and remove
+them from other side then one of these
+operation nq or dq depending on how we
+are picking this side will cost us big o
+of n
+but the requirement that we have
+specified before for q implementation
+suggest that both these operations must
+take a constant time
+so we'll definitely need to do something
+to ensure that both nq and dq operations
+take constant time
+let's call this side front and this side
+rear
+so
+i want to enqueue a node from the tail
+side and i want to perform a dq at the
+head side
+we are good for dq operation because
+removal from the front will take a
+constant time but insertion or enqueue
+operation will be costing us big of n
+let's first see why insertion at the
+tail will be costlier and then maybe we
+can try to do something to insert an
+element at the rear end what we will
+have to do is first we'll have to create
+a node let's say i got this node at
+address 350 and the integer that i want
+to enqueue is 7 the address part of this
+node can be set as null
+now we have to build a link with this
+created new node and to do that first
+we'll set the address part of the last
+node as the address part of this newly
+created node but the only identity that
+we always keep with us in case of linked
+list is address part of head node so to
+get a pointer to any other node we need
+to start at head that is why first we'll
+create a pointer variable temp and we'll
+initially set it to head node and now
+using this temp pointer will traverse to
+the end of our linked list that is the
+tail node
+and here using this pointer temp we can
+write the address part of the newly
+created node at the previous tail node
+to build this new link
+this traversal of pointer from head to
+tail is taking all the time for
+insertion we use a statement like temp
+is equal to temp dot next to move the
+next node what we can do is we can avoid
+this whole traversal with the help of
+pointer variable just like head node we
+can call this variable tail or even rear
+let's call this variable rear for now
+and also the variable with storing an
+address of head as front in any
+insertion or removal we'll have to
+update both brand and rear now but from
+now on whenever we will perform enqueue
+operation we can directly check where a
+rear node is and update its address to
+formulate a new insertion link this
+simple addition of one pointer resolves
+a problem with the cost of insertion
+let's understand this scenario with the
+help of an example previously we were
+traversing from head node to the tail
+node but now as we know the location of
+tail node there is no need for any
+traversal we can directly update the
+address part of rear node to make a link
+for new node
+here the new node with data element 7
+will be linked to the previous node and
+the rear pointer will also be updated to
+point towards the newly inserted node
+now the complexity for both the
+operation will be big of 1
+which means we can now begin with the
+coding implementation of q using a
+linked list
+so let's dive directly into that
+in order to get started with our coding
+implementation will need to load some
+dependencies that are called as header
+files i have already included those
+header files here so first of all we'll
+declare a structure to create nodes for
+our linked list and inside the structure
+we'll initialize data and address path
+so let's get started with creation of
+this structure
+struct
+node
+now the initialization of data and
+address part
+and data
+struct
+node
+star
+next
+now using this created structure we will
+initialize front and rear pointers so
+let's create this front and rear pointer
+struct
+node
+star
+front
+is equal to null
+similarly struct
+node star
+is equal to
+none
+the declaration of variables that we
+have done here is in global scope the
+reason behind that is to make sure that
+these variables will be accessible to
+all the functions
+so moving forward let's work out the
+primary queue operation we'll start with
+enqueue operation so let's create a
+function for that void
+enqueue
+and inside this function will pass an
+argument in x to insert a element
+now
+inside the enqueue function will take an
+integer as an argument in this function
+will create a new node for purpose of
+insertion so let's create that new node
+struct
+node
+star
+temp
+is equal to
+struct
+node
+star
+malloc
+size of
+struck
+no
+so with this size of function we have
+allotted the size of address part as
+well as the data part
+one more thing i want to tell you guys
+is i am using malloc in c here for
+dynamic memory allocation if you want to
+implement this code using c plus plus
+then you can use new operator instead of
+malloc the purpose of using malloc here
+is to create a node in dynamic memory
+now moving ahead
+we can start working on two cases of
+enqueue operation primarily there won't
+be any element inside the queue so for
+the first insertion will manually set
+both front and rear to the address of
+this newly created node so to do that
+first we'll have to create a if
+condition
+if
+front
+is equal to equal to null
+and and
+rear
+is equal to equal to null
+front
+is equal to rear is equal to
+temp
+which is nothing but the new created
+pointer variable and will return
+the control
+if this condition fails that means there
+are already some elements present inside
+our queue so
+using else condition we can write
+another statements ria
+dot
+next
+is equal to 10
+and here
+is equal to
+10
+basically these two lines of code are
+just updating the address part of the
+next node along with setting the
+temporary data into rear nodes data
+field
+this code will be further clear if i'll
+show things moving in simulation so
+let's revisit powerpoint for that
+purpose
+let's say initially we have an empty
+queue so both front and rear will be
+null null is only a macro for address
+zero at this stage let's say we are
+making a call to enqueue function
+passing number 2 as an argument now
+let's go through the enqueue function
+and see what will happen first we'll
+create a node the data part of this node
+will be set as 2 and the address part
+will initially set as null let's say we
+got this node at address 100 so a
+variable named temp will store this
+address right now the front and rear
+both are null so we'll go inside this if
+condition and simply set both front and
+rear as hundred
+after the first enqueue operation our
+queue will look like this
+let's say we are making another call to
+enqueue function at this stage passing
+number 4 as an argument once again a new
+node will be created let's say i got
+this new node at address 200 this time
+the queue is not empty so in this
+function will first go to the statement
+rear dot next is equal to 10.
+so we'll set the next part of this node
+at address 100 as the address of a newly
+created node which is 200 so we'll build
+this link now and now we'll store the
+address of this new rear node in this
+variable name rear so this is how my
+queue will look like after the second
+enqueue operation
+i hope that you guys are clear with the
+implementation of enqueue operation and
+the working of its code let's deal with
+the next queue operation named as dq in
+our code editor
+now inside this dq function i'll create
+a temporary pointer to the node in which
+i'll store the address of the current
+front or head node so that we can
+directly delete it so the statement i'll
+write for that is struct node
+star
+temp
+is equal to
+front
+now the first condition that will write
+in this dq function is underflow error
+so
+let's begin with if lock f
+front
+is equal to equal to null
+printf
+q
+is in empty state
+slash n
+and return the control to the next
+function
+otherwise in next case when both front
+and rear will be equal will set both
+these pointers to the null manually so
+to do that we'll insert another if lock
+if
+front
+is equal to equal to rear
+front
+is equal to rear
+is equal to null
+this if lock will get activated when
+there is only one element inside the
+cube in all other cases we can simply
+make a front point to the next node so
+we'll simply do a front is equal to
+front dot next so for that we'll write
+else block
+else
+front
+is equal to
+front
+dot
+next
+in all three previous mentioned cases we
+are trying to remove elements and that
+can only be done by implicit call of
+function pre so let's call function free
+to delete the front node from our queue
+so the statement that we'll write as
+front
+free
+the temporary variable which is actually
+storing the head node address
+next we'll work on peak operation and
+for that we'll create a new function
+int
+peak
+basically the peak function is used to
+extract the value of print pointer for
+front pointer we will simply check if
+the queue is empty if it is empty then
+obviously there is no element at front
+node to extract but if it is not empty
+then we can extract a value from print
+pointer so for that we'll create a if
+block if
+front
+is equal to equal to null
+which also means the queue is empty
+then we'll return
+printf
+q
+is empty
+slash and
+otherwise we will return
+the data present at front node
+now we have implemented all important q
+functionalities but we won't be able to
+check the state of queue with the help
+of these functions so let's formulate
+one more function called as print to
+visualize our queue so
+let's define this function void
+print
+inside this
+function will create a temporary pointer
+struct
+node
+star
+temp
+is equal to front
+we are initializing this temporary
+pointer to the front so that we can
+traverse the whole queue elements using
+iterator element so moving forward let's
+create this iterator element using a
+while block so the statement that will
+write for that is while
+temp
+is not equal to null
+printf
+modulus d
+comma
+temp
+dot
+data
+and we will set
+temp is equal to temp dot
+next
+this is nothing but the traversal of
+linked list
+now we'll also print f
+slash n
+so that
+all elements will be printed in order
+with this we have completed the
+implementation of print function as well
+now let's work on our driver method
+called as main function to contemplate
+the output of our program
+inside this we'll make call to the
+enqueue function nq
+2
+and we will print the state of our queue
+using print function next we'll make
+call nq
+4
+and we will also print this state using
+print function
+next we'll make call to enqueue 6
+and we'll also print the state of our
+queue at this instance
+now after this we'll dq few elements dq
+and we'll print a state
+next we'll enqueue one more 11 and cue
+8.
+now that we are done with the coding
+implementation of queue using linked
+list let's execute the program and
+visualize the output
+this is the output that we have received
+let's compare it with the calls that we
+have made in order to judge its
+correctness
+the first call that we made was nq2 so
+the print function has printed 2 over
+here
+after that we inserted 11 4 and 6 and
+our print function has printed the state
+after these operations as well
+next we deleted the element present at
+front pointer which is 2 so after
+deleting 2 the output that we got is 4
+and 6.
+finally we inserted one more element to
+check if it is getting inserted at the
+rear end and that element was 8 which is
+exactly inserted at the rear end of cube
+we will be discussing about circular
+queueing data structure
+so at first we'll discuss why the
+concept of circular queue was introduced
+followed by that we will understand how
+we can represent a circular queue using
+an array and linked list advancing ahead
+will deal with the implementation of a
+circular queue using array and linked
+list and finally we will cover the
+applications of a circular queue to
+understand its importance
+i hope i made myself clear with the
+agenda
+now let's get started with our first
+topic which is why the concept of
+circular queue was introduced
+in our previous sessions of queue
+implementation we discussed the
+challenge of memory wastage while
+operating on linear queue and as per our
+previous discussions we know that memory
+is a crucial resource that we should
+always be protecting it's not that some
+amount of unused memory will be real
+problem in today's modern day computers
+it's just that while designing solutions
+and algorithms we should always analyze
+and understands implication like memory
+usage as well as the time taken for
+execution
+in the case of linear queue we have
+already learned that insertion is done
+at the rear end and deletion is done at
+the front end
+initially when the queue is empty both
+of these pointers point to null memory
+space that is -1 according to our
+convention
+but as we keep adding elements into the
+queue the rear pointer keeps
+incrementing until it reaches the max
+size of the queue in this particular
+example of the queue the new data
+element will be inserted after each
+incrementation of a rear pointer until
+the pointer reaches the end of a queue
+when the front pointer remains pointing
+at the exact same location until we
+perform dq operation
+but here comes the challenge when we
+perform those dq operations the empty
+space gets created at the starting part
+of the queue and there is no way we can
+re-utilize this blank space as the rear
+pointer has already reached the end of
+queue so to overcome this limitation the
+concept of a circular queue was
+introduced
+a circular queue is nothing but the
+extended notion of a linear queue as it
+also follows the principle of first in
+first out with the exception that the
+last position of this particular queue
+is connected to its first position
+making a circular link
+this circular link is responsible for
+naming of this queue as a circular queue
+or a ring buffer
+additionally this new circular link
+feature resolves the problem of memory
+wastage in a linear cube
+let's understand how this problem is
+actually getting resolved with the help
+of an example
+this figure is an illustration of a
+circular queue having size 5 the element
+at the front node is 7 and the element
+at the rear node is 9. as we can clearly
+see this queue is completely filled and
+if we try to perform enqueue operation
+it will definitely return an overflow
+error
+we can only perform a dq operation on
+this queue
+but if we perform dq operation the front
+pointer will be updated to point to the
+next available data element further due
+to this decay operation the empty space
+will get created in the beginning part
+of a queue but because of the circular
+link rear pointer can arrive back at the
+empty space for making insertion of a
+new data element
+hence the circular queue concept is
+better version of a queue data structure
+considering its benefits over a circular
+queue
+moving ahead we'll discuss how we can
+represent a circular queue using an
+array and linked list
+however initially we should also look
+into the principle of circular
+incrementation which drives the
+insertion in a circular queue
+the circular queue incrementation is a
+process of pointer incrementation that
+allows zeropointer to arrive back at the
+beginning part of a queue once it
+reaches the max size of queue let's
+understand how circular incrementation
+works with the help of an example
+the simulation of a circular queue shown
+here has max size 6 which means it can
+store 6 data elements in the first
+scenario when queue is empty it can
+store elements by simply incrementing
+the rear pointer as shown in the
+animation
+the other scenario for insertion in
+queue is when the rear pointer is at the
+end of q and there is an empty space at
+the beginning portion of a queue due to
+dq operations in this case the rear
+pointer can arrive back at the beginning
+of q to insert a new element at any
+empty space
+but the biggest question that arrives
+here is how the circular incrementation
+is happening logically or arithmetically
+let's contemplate the logic for this
+process of circular incrementation with
+the help of previous example
+in the last example of a circular queue
+the max size of a cube was 6 and rear
+pointer was pointing to the index 5
+where print pointer was pointing to
+index 2.
+now for the new incrementation to happen
+we have to bring rear pointer to the
+index 0. let's analyze how we can do
+that if we simply add 1 to the rear
+pointer then we will get 6 as a result
+which is also the max size of our queue
+now if you guys remember the modulus
+operator in programming you can clearly
+achieve the circular incrementation for
+example in this case rear plus 1 modulus
+max size will output 0 the result which
+we want so with the help of modulus
+operator we can perform the circular
+incrementation to formulate a circular
+link using arrays now that you have
+understood how circular link is
+implemented in case of array
+implementation of circular queue we will
+now look into representation of a
+circular queue
+in the array representation of circular
+queue you can clearly see that the last
+index of the array is connected to the
+first index by circular incrementation
+process
+moving forward we'll look into the
+different cases of inserting an element
+into the queue
+the first case that we are going to
+discuss is to determine if the queue is
+full as we cannot insert a new element
+into the queue when it is full but how
+can we judge if the queue is full well
+that's quite easy
+if the result of circular incrementation
+matches to the index value of friend
+pointer then there is no space for
+insertion of a new data element that
+means if rear plus 1 modulus max size is
+equal to front then the queue is full
+and insertion cannot be achieved
+the next case for inserting an element
+into a circular queue is when there is
+space at the beginning of a queue
+let's say the size of an array is 5 in
+which the rear pointer is pointing to
+the index 4 and the front pointer is
+pointing to index 2.
+by making circular incrementation we can
+insert element at the empty space by
+using rear is equal to rear plus one
+modulus max size statement we can bring
+our rear pointer to the beginning part
+of our queue to make a new insertion
+that's all about array representation of
+a circular queue now moving ahead we
+will discuss the representation of
+circular queue using a linked list
+the linked list representation of a
+circular queue can be achieved by
+changing the reference field of the tail
+node for that we can just add the
+address of head node in the reference
+field of the tail node the
+implementation of a circular queue using
+linked list is more efficient than array
+implementation as it manage memory more
+effectively further it is a dynamic
+structure that can be allocated with
+more memory space if required at the run
+time
+on that note we have covered the
+representation of circular queue using
+both arrays and link lists now we'll
+implement a circular queue using both of
+this data structure with the help of c
+programming language
+first let's dive into the array
+implementation of a circular queue using
+the c programming language for that
+let's visit our code editor and get
+started
+the program for array implementation
+will begin with the declaration of array
+and pointer variables so let's create an
+array first and
+a
+close braces and semicolon now the size
+that we want to allow to this array is 5
+so let's define our max size value as 5
+first
+hash
+define
+max
+underscore size
+as 5.
+now let's pass this as an argument to
+this array
+now we will define the pointer variables
+as well
+so end
+front
+is equal to -1
+and also the rear pointer
+okay now we have successfully created
+our array and pointer variables so after
+this we'll begin with the implementation
+of circular queue operations the first
+primary queue operation that allow us to
+manage data flow in a queue is enqueue
+so we will create this function first
+void
+and queue
+and we'll pass an argument
+variable x to insert an element
+for implementing this operation we have
+to check if the queue is empty if a
+circular queue is empty then we'll set
+both the front and rear pointer to zero
+manually for that we'll write the
+statement if
+front
+is equal to equal to minus one
+and and
+rear
+is equal to equal to minus 1
+then
+set
+front
+equal to
+rear
+equal to
+0.
+we have just written the condition for
+instance when the queue is empty next
+we'll write the condition to check if
+the queue is full so for that we'll
+create else if condition
+else f
+rear
+plus one
+modulus
+max underscore size
+is equal to equal to
+front
+then printf
+q
+is
+full
+slash n
+and return the control to the next
+function
+if both these above mentioned conditions
+fail
+then we'll have to increment the rear
+pointer using the technique of circular
+incrementation so for that we'll create
+another else loop
+else
+rear
+is equal to
+rear
+plus
+1
+modulus
+max
+underscore
+size
+and outside this we will make an
+insertion into our array
+with this we have successfully created
+our enqueue operation now we'll move
+towards the dq operation
+for that we'll create another function
+void
+dq
+the dq operation is responsible for
+removing the element from the print node
+of a cube further an element can only be
+deleted when there is at least an
+element to delete so
+first we'll have to check if a queue is
+empty or not for that we'll write a
+statement if
+front
+is equal to equal to minus 1
+and and
+real
+is equal to equal to minus 1
+now inside this block will
+print f
+q
+is
+empty and we cannot delete any element
+and we will return the control to the
+next function
+in addition to that if there is only one
+element inside the queue we'll have to
+set both front and rear pointer to the
+null manually so for that we'll write
+another condition
+else f
+front
+is equal to equal to rhea
+which must be the zeroth index or the
+last element inside q
+and inside this function will write
+front
+is equal to rear
+is equal to minus 1 which means we'll
+set it back to the null state
+if both these conditions fail then we'll
+simply have to increment the front
+pointer using technique of circular
+incrementation for that we'll write
+another condition
+else
+front
+is equal to
+front
+plus one
+under basis
+modulus
+max
+underscore
+size
+with the help of these three conditions
+we'll be able to delete element from our
+queue
+now moving forward we'll look into
+another operation that is print function
+so let's create a new function for that
+void
+print
+we will understand this function with
+the help of powerpoint because it will
+be more understandable to all of you if
+i show things in moving simulation so
+let's visit powerpoint for that purpose
+the count variable used in this print
+function is supposed to count the number
+of elements inside the queue we'll
+understand how it is operating
+arithmetically with the help of an
+example
+let's say the max size of our array is 5
+where front pointer is pointing to index
+1 and rear pointer is pointing to index
+4.
+to work out the value of count variable
+we'll need to perform following
+operation
+rear plus max size minus front modulus
+max size plus 1 is equal to count
+by filling the values in this operation
+we'll get 4 as a result which is the
+exact number of elements inside the
+queue
+now we will iterate through the queue
+using for loop and will also print the
+elements i hope you are clear with the
+implementation of this print function
+now
+moving forward we'll revisit the code
+editor to write main function and to
+check the result of our program in c
+inside this main function we'll call
+enqueue function to insert some elements
+into the queue
+and after few insertion operations we'll
+call print function to represent the
+state of our queue
+so let's insert few elements at first
+nq
+5
+nq
+7
+next element that we will insert is
+nq
+minus 3
+next
+and q
+0
+now
+let's write one printf statement
+the element
+inside
+the q
+r
+and in next line will return the state
+of queue using
+print
+function
+well there is single mistake in this
+code here we have written printf
+statement in uppercase which is a case
+error in c programming so we'll change
+it to the small p
+now
+we'll dequeue few elements to understand
+the operation of dq as well so let's
+dequeue two elements
+one more time
+and after these two operation we'll also
+print the state of queue once again
+using the print function
+well we'll write one more statement
+print f
+the state
+of
+q after
+two
+deletions
+and also
+we want this statement to come in next
+line
+so let's write slashing
+okay
+so with this we have successfully
+completed a coding implementation of
+circular queue using arrays so let's
+compile this code and check if it is
+working fine or not
+well
+here is the output that we have got the
+elements inside the queue are five seven
+minus three zero so let's check our
+order of insertion so we incur five
+seven minus three and zero and in
+similar order
+the elements are inserted in our queue
+also we deleted two elements from the
+front node that is 5 and 7 which are
+also deleted here
+with this
+we can say that our code works fine so
+let's move towards link list
+implementation of circular queue
+for linked list implementation of queue
+first we'll need to create structure of
+a linked list and pointer variables so
+first we'll create a structure for node
+struct
+node
+end
+data part
+and
+the address part
+[Music]
+now we'll create pointer variables so
+for that we'll write statement struct
+node
+star front
+is equal to -1
+similarly
+struct
+node
+star
+rear
+is equal to
+-1
+after done with this pointer declaration
+we'll begin with the implementation of
+queue operations the first operation
+that we'll work on is enqueue operation
+for that let's create a new function
+void
+enqueue
+and
+x
+and inside this function will create a
+temporary node using the previous
+structure of node so for that
+we'll write statement struct node star
+new
+node
+is equal to
+struct
+node
+star
+malloc
+size of
+struct
+no
+after creating a new node now we will
+also insert values into both data and
+reference fields
+data will be the argument provided by
+the user and the reference field will be
+set to null initially
+so
+let's do that here
+new node
+arrow operator
+data is equal to
+x
+and similarly
+new node
+arrow operator
+next is equal to
+zero
+now there are two conditions for
+inserting a new node into the linked
+circular queue
+in the first condition we'll insert a
+new node into an empty queue
+in this case both the front and rear
+pointer must be not so let's write a
+condition for that f
+rear
+is equal to equal to minus 1
+then
+front
+is equal to zero
+is equal to
+new node
+and
+rear
+dot
+next
+is equal to
+front
+now in the second case the queue already
+contains more than one data element
+the condition rear is equal to equal to
+minus 1 becomes false in this scenario
+we'll just update the rear pointer to
+point to the new node for that we'll
+create a else block
+else
+rear
+dot
+next
+is equal to
+new node
+and
+rear
+is equal to
+new node
+where
+rear
+dot
+next is equal to
+front
+with this we have successfully
+implemented our nq function so now let's
+move towards dq function for that we'll
+create a new function
+void
+dq
+and inside this function body will also
+create new temporary
+pointer so let's create that struct
+node
+node
+start
+and we'll set this temp
+as equal to front so that we can delete
+it from our queue
+next we'll build a condition for
+deletion the first condition that will
+check is if our queue is empty or not
+for that we'll write statement f
+front
+is equal to equal to minus 1
+and and
+real
+is equal to equal to minus 1.
+if
+this condition becomes true then we will
+print f
+q
+is empty
+let's add slash in here
+so that it gets printed in next line
+and semicolon
+okay
+further if there is only one element in
+the queue then we'll set both front and
+rear pointer to the null manually so for
+that purpose we'll create another block
+else f
+front
+is equal to equal to rear
+which will happen when there is only one
+element in our queue
+and inside this condition
+we'll
+put current is equal to rear
+is equal to minus 1
+and we will
+free
+the temporary variable
+which is also storing the front pointer
+okay now if both these above mentioned
+conditions fail
+then we will update the value of front
+pointer to point to next node and will
+also de-allocate the memory
+of deleted node using free function for
+that we'll write another else condition
+else
+front
+is equal to front
+arrow operator
+next
+and
+rear
+arrow operator
+next
+is equal to
+front
+and we will
+free
+the pointer present at front node which
+we have previously stored in this
+temporary
+structure
+with this we have successfully
+implemented the dq operation now we will
+work on the display function which will
+represent the state of our queue for
+that
+let's create
+new function
+void
+display
+and inside this function
+we'll also create
+the temporary node
+struct
+node star
+10
+is equal to front
+and
+now let's write one printf statement
+to display the elements in a queue the
+elements
+inside
+queue
+are
+okay
+semicolon
+now the first condition that we are
+supposed to check inside this function
+is if a queue is full or not for that
+we'll write if statement if
+front
+is equal to equal to minus 1
+and and
+rear
+is equal to equal to minus 1
+then
+printf
+q
+it's empty
+let's add slashing
+otherwise
+we will print the elements inside the
+queue using while block
+temp
+arrow operator
+next
+it's not equal to
+front
+then
+print
+f
+modulus
+d
+which is nothing but
+the data part of
+our temporary pointer
+and again
+print
+f
+modulus d
+comma
+temp
+data
+okay
+with this we have successfully completed
+the implementation of our display
+function
+now next we'll look into our driver
+method that is main function
+inside this driver method we'll call
+enqueue function to insert
+few elements
+first we'll pass 5
+then we'll insert
+minus 32
+then
+6
+and we will enqueue
+3
+final
+now let's
+print
+the state of queue using display
+function
+now after this we will dq few elements
+we will display the state of cube once
+again
+but before this
+we'll write one more
+statement
+printf
+the state
+of q
+after
+deleting
+two
+elements
+and let's have slash and so that this
+statement
+gets added to the next line
+with this we have successfully
+implemented our link list implementation
+code for circular queue so let's compile
+it and check if it is working fine or
+not
+okay there are few
+we have successfully implemented our
+code now but the only problem we are
+facing here is all the elements are
+getting placed close to each other
+to remove this close proximity will have
+to make changes in our display function
+so let's do that
+we'll add
+space before modulus d in both the cases
+and again compile it
+so let's
+run it again
+okay so now our output looks fine
+right the elements inside the queue are
+5 minus 32 6 and 3 and after deleting
+first two elements that are front
+elements
+we will remain with 6 and 3 that means
+the first two front elements 5 and minus
+32 will get removed out of our circular
+queue
+okay so we have finished the circular
+queue implementation using linked list
+as well so let's move back to our
+powerpoint presentation the last topic
+that we have on our agenda is
+applications of a circular queue so
+let's deal with this topic to understand
+the importance of circular queue
+the first application of a circular
+queue that we are going to discuss about
+is data buffer after that we'll discover
+cpu scheduling algorithms and computer
+control traffic light systems
+data buffer is a region of a physical
+memory which is used to temporarily
+store data while it is being moved from
+one place to another typically the data
+is stored in a buffer as it is retrieved
+from an input device such as a
+microphone or just before it is sent to
+an output device such as speakers
+basically when the input is provided to
+the microphone while using applications
+such as google mid whatsapp zoom meeting
+etc then the input does not get stored
+in the physical memory of the device
+instead it gets stored in data buffer
+implemented in this application the data
+buffer will store the input signal in
+order and similarly it will dequeue it
+in exact same order just like first in
+first out circular queue
+furthermore this data buffer is also
+used in internet streaming applications
+let's understand how it is used in case
+of one of the most famous streaming
+platform netflix
+netflix uses amazon cloud services to
+cater for their computing as well as
+storage needs the server of netflix are
+deployed over aws cloud
+which are further connected to the
+content delivery network servers that
+are spread across the globe
+these servers work together to provide
+fast delivery of internet content in the
+form of audio and video chunks or
+packets
+these packets will be received in a
+virtual data buffer implemented inside
+ms silver site which is an application
+used by netflix to stream content on
+remote devices this buffer acts like an
+accordion in this streaming application
+it gets filled when packets are being
+delivered at a rate that exceeds the
+video stream data rate and empties when
+the packets are not being delivered fast
+enough
+the next application of a circular queue
+is a ready queue in cpu scheduling
+algorithms cpu scheduling determines
+which process will own cpu for execution
+while other processes are on hold the
+main task of cpu scheduling is to ensure
+that whenever the cpu remains idle the
+os at least selects one of the processes
+available in radiq for execution
+the algorithm named round robin uses a
+circular queue to implement the ready
+queue state
+the radicu stores all the processes that
+are available for resource allocation
+having their own burst time the burst
+time is the time that processes need to
+hold the cpu for their execution but in
+this algorithm the cpu has assigned with
+timestamp of 2 microseconds this
+timestamp is the actual period for which
+the processors can hold the cpu for
+execution so for example the first
+process p1 had a burst time of 4
+microseconds but it can only access the
+cpu for 2 micro seconds due to its
+timestamp
+so this process will again re-enter the
+queue at the rear end further the empty
+space created at the beginning of radicu
+will be managed by the process of
+circular incrementation this is the
+advantage of implementing ready queue
+using a circular queue
+the next application is computer control
+traffic system the circular queues are
+used in these systems to activate the
+signal lies for constant intervals of
+time the computer system used for
+traffic light control stores a circular
+queue containing the commands to let the
+traffic lights these commands will be
+activated for a certain amount of time
+and will be re-inserted at the rear end
+of a queue this process is an example of
+circular fifo principle which is
+followed in insertion and deletion for
+circular queue we will be discussing
+about priority queueing data structure
+we'll start this discussion with
+introduction to the priority queue
+followed by that we will understand how
+we can represent a priority queue
+advancing ahead will deal with different
+implementation strategies for priority
+queue
+after that we'll understand what is a
+heap data structure and what different
+types of priority queue are available
+followed by that we'll contemplate
+different operations in priority queue
+once finished with that we will
+implement the priority queue using heap
+data structure and finally we will cover
+applications of priority queue to
+understand its importance
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic introduction to priority
+queue
+primarily we will have a look at the
+real life example of priority queue to
+understand it better a hospital
+emergency queue is almost an ideal
+example of priority queue when you go to
+the hospital you must have observed that
+the person who needs immediate medical
+attention will be treated first
+irrespective of his arrival at the
+reception that means treating a person
+who is in agonizing pain or in emergency
+medical condition is the priority of the
+queue of patients
+priority queue in computer science also
+works with same approach
+so what exactly is this priority queue
+well a priority queue is an abstract
+data type that operates similar to the
+normal queue except for the fact every
+element has certain priority assigned to
+it
+this definition of priority queue
+suggests that this particular type of
+queue also follows the same restrictions
+for insertion and deletion of data
+elements the insertion in the priority
+queue will only be achieved at one end
+and deletion at another or opposite time
+additionally the priority of data
+elements will determine the order of
+removal the elements which have higher
+priority will leave the queue at first
+and the elements which has lower
+priority will definitely leave the queue
+at last
+as a side note i would like to tell you
+guys that the priority queue only
+supports the elements that are
+comparable
+meaning the data that we are going to
+insert into priority queue must be
+orderable the compiler should not be
+facing any difficulty while comparing
+these data elements otherwise the
+execution of a priority queue will
+definitely fail moving ahead let's have
+a look at an example of priority queue
+in this priority queue we'll insert 7 2
+45 23 and 12 respectively these elements
+are not ordered so how the priority
+queue is going to store them in order
+well at the time of insertion the
+priority queue conducts a comparison of
+each element with every other element
+present inside a queue to store them in
+order but as there is no element inside
+a queue so the first insertion that is
+an element with value 7 will be attained
+followed by that the next element will
+be inserted in a queue
+since the newly inserted element is
+smaller than that of previously inserted
+element will swap their positions in
+order to maintain order remember the
+element with least value will have a
+higher order and the element with
+greatest value will have a least
+priority or order
+now we will insert the next element in a
+queue that is 45 as 45 is a larger
+element than the elements inside the
+queue there is no need to shuffle
+elements when we make the next insertion
+the element 32 will get inserted at
+index 3. now this element is smaller
+than that of 45 so the algorithm will
+have to swap the locations of these 11
+now we will perform the final insertion
+into our queue we will insert 12 at
+index 4 now but as you can see this
+element is smaller than both the
+previous elements thus the algorithm
+will have to swap their positions
+now 45 will reach the end of q as it is
+the element with highest value and 2
+will remain at the front of q as it is
+the least valued element
+as a humans we could see the numbers
+visually inside the priority queue and
+further we can easily arrange them
+but how does the machine know this does
+it restore all the elements inside the
+priority queue before each insertion no
+obviously that would be highly
+ineffective as there will be n
+comparisons for insertion of n elements
+leading to time complexity big of n
+square
+this is an enormous time complexity
+which we cannot allow in any software
+application we will understand how the
+priority queue manages to reduce this
+time complexity in upcoming topics
+but right now we will contemplate
+different properties of a priority queue
+that we have learned from previous
+example the first property of priority
+queue suggests that each element has a
+certain priority assigned to it that
+priority might depend on value of data
+element it can be either larger or
+smaller the next property states that
+element with higher priority will leave
+the queue at first where the element
+with least priority will leave the
+priority queue at last
+further if two elements have the same
+priority then the element will be
+removed from the priority queue based on
+their arrival that means the element
+which arrived at first out of the
+elements having same priority will be
+removed first
+now moving ahead we'll deal with the
+representation of priority queue using a
+linked list as usage of array is not an
+ideal way to implement priority queue if
+we consider array implementation of
+priority queue then inserting items into
+the sorted array will cost us big o of n
+and in general processing each element
+will further cost us big o of n square
+as discussed previously so in this
+tutorial we'll just look into the linked
+list representation of priority queue
+we will understand the representation of
+priority queue with the help of an
+example
+initially let's say there are three
+elements inside a link priority queue
+and all of them are in order three being
+the least element has highest priority
+where 43 has the least priority the
+purpose of keeping three at the head
+node is that we want our priority queue
+to delete elements according to their
+priority
+now we want to insert a new node
+consisting of data element 2
+and as the data element is smaller than
+the element at head node that is 3 so
+this new node should be inserted prior
+to it
+this particular scenario of insertion
+seems pretty perfect but it does not
+cost us more time but what if the
+element is significantly larger than all
+the nodes in queue for instance let's
+say we want to insert 45 as a new
+element
+in that case primarily it will be
+compared with element 2 and as 45 is
+larger than 2 our temporary pointer will
+move to the next node for comparison
+now
+45 will be compared with element 3 and
+again the temporary pointer will be
+moved to the next node for comparison
+after two comparisons the temporary
+pointer has reached element 17 for
+performing the next comparison and here
+also 45 is larger than 17 so the
+temporary pointer will again move
+towards the next node
+now finally our temporary pointer has
+arrived at the tail node consisting of
+element 43 again in this case the
+element 45 is larger than 43 thus the
+new node will be inserted after node
+containing data element 43.
+from this specific example of insertion
+into a priority queue we can clearly see
+that there are n comparisons leading to
+the time complexity big of n
+where the complexity of deletion remains
+constant that is big of one
+while understanding the representation
+of priority q we came across some packs
+that make priority queue implementation
+using linked list quite vulnerable so
+here we will again try to recall them
+the first drawback of priority queue
+implementation using linked list is that
+it cost us big of n for inserting a new
+element further it also cost us big of n
+for peak operation
+and as memory and time management is the
+purpose of data structure hence we must
+try to analyze other implementation
+strategies
+that is why in upcoming slides we'll
+look into different approaches to
+implement a priority queue
+there are three approaches that
+implement a priority queue with
+complexity less than big op and square
+we have already discussed the linked
+list so let's also look into other two
+approaches
+binary heap and binary tree provides
+almost similar complexities these
+approaches cost us big of log n for
+insertion and deletion
+and big of one for peak operation but
+which one of these operation is most
+optimal approach to implement priority
+queue
+well to answer this question we again
+need to discuss about memory management
+in the case of both this data structure
+you guys know that binary heap data
+structure is implemented using arrays
+and since it utilizes arid there is
+always a better locality of reference as
+well as operations become more cache
+apprentices the binary search tree uses
+pointer to implement front and rear node
+which definitely takes up more space in
+memory due to that building a cell
+balancing bst cost us big o of n log n
+where binary heap just cost us big o of
+n these facts clarify that the binary
+heap is the best data structure to
+implement a priority queue
+now you must be thinking about what
+exactly the heap is and how does it work
+so moving forward we'll look into the
+definition of heap and its properties
+basically a heap is a tree based data
+structure that satisfies the heap in
+variant or in simpler words heap
+property the heap invariant states that
+if a is a parent node of b then a is
+ordered with respect to b for all nodes
+a and b in heat
+what that means is the value of parent
+node is always greater than or equal to
+the value of child node in the heap or
+other way around the value of parent
+node is less than or equal to the value
+of child node for all nodes in a heap
+further there are two types of heap
+named as max heap and minimum heat first
+we will look into maxi
+the max heap is heap in which value of
+parent node is greater than the value of
+child node
+for this particular example of max heap
+you can see that the root node is the
+biggest element in tree and each child
+node is smaller than its parent node
+the next type of heap is minimum heat
+the mean heap is heap in which the value
+of parent node is less than the value of
+child node
+in this specific example you can observe
+that each child node is larger than its
+parent node and the element at the root
+node is smallest element of the heap
+both the structures that we have
+discussed are binary heaps as every node
+has only two children in upcoming slides
+we will discuss some complex structures
+of heap data structure to better
+understand how we can judge if a tree
+like structure is heap or not
+ok so you can see a tree like structure
+on your screen and we are supposed to
+check whether if it is a valid heap data
+structure or not but actually here i
+would like you all to give it a try by
+yourself you can also pause this video
+if you want but here i will provide you
+with a short moment to inspect this
+structure
+all right i can clearly say that this is
+not a valid heap data structure as you
+can observe the highlighted part is
+violating the heap invariant
+moving forward let's analyze another
+tree-like data structure to consider if
+it is a valid heap or not
+well yes this is a valid heap because
+even though this one is strangely
+structured we are free to move around
+the visual representation of nodes to
+make it organized now you all must be
+thinking how we can do that well we'll
+understand that scenario in upcoming
+slides
+now
+how about this one is this a valid heap
+no right this is not a valid heap this
+structure is not even a tree as it forms
+a closed cycle and every heap must be a
+tree so it's pretty clear that this is
+not a valid heap
+now
+what about this one
+is this a valid heap
+yes this is a valid heap as it satisfies
+the heap invariant that all the child
+nodes must be greater than or equal to
+or smaller than or equal to its parent
+node
+now this is the last structure that we
+are going to check if it is a valid heap
+or not what you guys think
+is this a valid heap
+well i think it's pretty clear that this
+is not a valid heap but it can be
+converted into a heap by making a one
+small change
+now
+if we make 6 as our root node then this
+structure will get converted into a
+maxie which is absolutely a valid heap
+i hope you all are clear with the heap
+invariant and how to judge if a given
+tree is a valid heap or not
+now moving ahead we'll discuss the
+different types of priority queue
+basically there are two types of
+priority queue based on the priority of
+elements if the element with smallest
+value has highest priority then that
+priority queue is called as min priority
+queue and if element with higher value
+has the highest priority then that
+priority q is known as max priority
+queue furthermore it's vividly clear
+that the mean priority queue can be
+implemented with a minimum heap where
+the max priority queue can be
+implemented using maximum heap
+moving ahead we'll deal with the
+operations in priority queue considering
+the heap as implementation strategy
+the common operations that we can
+perform on priority queue are insertion
+deletion and peak but there is one more
+hidden additional operation that gets
+performed during these operations
+that operation is called as hippiefy
+hefify manages the priority of data
+elements in a heap by shuffling the data
+elements after new insertion or deletion
+first of all we will understand how
+insertion in priority queue happens with
+the help of an example
+in this example we are inserting a new
+data element that is 43
+but due to this insertion the structure
+disobeys the priority queue invariant
+that the parent node of the max priority
+queue must be greater than its child
+node
+now the hippie pi operation solves this
+problem by rearranging data elements by
+carrying out the comparison in this
+particular case 43 becomes the parent
+node where 40 becomes the child node
+the next step is deletion
+as we know the highest priority element
+will be the first to leave the priority
+queue and further it is stored at the
+root node of a max heap so definitely
+the element present at the root node
+will get removed
+but due to this operation the order of
+priority queue gets affected however the
+hepify operation comes to the rescue it
+reshuffles the elements of the priority
+queue to rearrange them in order
+the next operation that we are going to
+discover is peak
+the peak operation simply returns the
+element present at root node without
+removing it and it is easily accessible
+thus the time complexity of this
+operation is big of one
+i hope you all are clear with the
+operations that can be performed on
+priority queue moving forward we'll try
+to implement them with the help of
+minimum heap
+as discussed earlier while implementing
+a heap data structure we know that all
+the elements will get stored in an array
+and we don't have any pointers pointing
+to either child or parent nodes so how
+exactly does the heap data structure
+remember nodes like parent nodes and its
+left or right nodes
+well if you have learnt binary trees
+then you must know the formulas present
+on your screen these formulas determine
+the left child right child or even the
+parent node of any binary tree
+let's understand how this phenomenon
+works with the help of an example we'll
+begin with index 0. if we enter 0 in
+this arithmetic expression then we will
+get 1 and 2 as output that means the
+element at index 1 will be the left
+child and element at index 2 will be the
+right child and tree structure will look
+like this
+now moving ahead let's take an example
+of index 1. for index 1 the left child
+will be at index 3 and the right child
+will be at index 4.
+similarly for index 2 the left child
+will be at index 5 where the right child
+will be at index 6. using these formulas
+we'll be implementing hifify and primary
+queue operations so note them down for
+further reference
+now moving further we will visit code
+editor to implement priority queue data
+structure using c programming language
+previously i mentioned that heap is
+implemented using arrays so to begin
+with heap implementation primarily we
+will create a structure consisting of
+different variables or objects needed to
+implement heap data structure so let's
+create a structure
+struct
+heap
+consistent
+size
+and
+count variable
+and
+in
+star
+heap
+array
+which is a dynamic array that we are
+creating here
+and next we'll also declare a pointer to
+heap structure along with size and count
+variable in a global scope so let's do
+that and
+star
+heap
+comma
+size
+comma
+count
+we'll create one more variable end
+initial
+underscore size
+to represent the initial size of our
+priority queue and let's assign it value
+4 for now
+okay
+now it's time to allocate memory to our
+heap array for this purpose we'll create
+a new function called heap underscore
+init so let's create this function void
+heap
+underscore init
+and inside it will pass an argument
+struct
+heap
+star
+h
+which is a reference of this structure
+that we created previously
+okay
+in this function let's initialize the
+variables that we have created inside
+this heap structure
+so for that we'll initialize h
+arrow operator
+count
+is equal to zero
+similarly
+h
+arrow
+operator
+size
+size
+is equal to
+initial
+underscore size
+and
+h
+array
+is equal to
+end
+star
+malloc
+size of
+end
+star 4.
+this statement is just allocating four
+integer variables to our heap array
+basically our heap array is dynamic data
+structure that's why we have to
+provide it with dynamic memory using
+malloc if you are using c plus
+programming language to implement this
+data structure then you can use new
+instead of malloc
+moving forward
+now we'll work on our condition f
+not h
+arrow operator
+allocates memory to heap array then
+printf
+error while
+allocating
+the memory
+and
+that slash one
+next
+we will write exit command
+okay with this we have successfully
+implemented our heap init function
+now moving ahead let's implement heavify
+function to move the nodes
+for that
+we will create a heavify function
+void
+max underscore
+hippify
+and
+star
+data and
+log
+and
+count
+so all these are required variables to
+implement this hippify function
+that we have passed in argument for this
+maximize function
+now let's create few more variables that
+we need
+and left
+comma right
+comma largest
+now as discussed earlier left
+will be equal to
+2
+star
+location
+in array plus
+1
+and
+right
+will be equal to
+left
+plus
+one
+now let's
+say largest is equal to loc
+and
+we'll work on conditions now
+f
+left
+it's greater than or equal to
+count
+and
+data
+left
+it's
+greater than
+data
+largest is
+the location we have stored in largest
+variable
+then
+largest
+is equal to
+left
+with this block what we are doing is we
+are checking if the element at location
+left is greater than the element at
+recent position and the value at left is
+also greater than the value of recent
+location if these conditions are true
+then we will set the recent location as
+left
+and here we are getting signal that
+there is semicolon missing over here so
+we'll add it
+okay
+now let's work on next condition
+now we will check the value at right
+position if the recent location is
+greater than the right and the value at
+right is greater than the largest value
+then element at largest will be set to
+right so for that we'll write condition
+f
+write
+its
+data
+count
+and and
+data
+right
+it's greater than
+data
+largest
+then
+largest
+is equal to right
+otherwise if
+largest
+it's not equal to
+location
+then
+we will store
+the data present at location in
+temporary variable
+and
+data
+loc
+is equal to data
+largest
+this is a swapping operation that we are
+carrying out here and next data
+largest
+is equal to
+10.
+and now
+we'll make recursive call to our hippify
+function
+max underscore
+if we find
+data
+comma
+largest
+comma
+count
+with this we have successfully completed
+our hippify function
+now we will work on insertion operation
+on priority queue let's call this
+function heap underscore push
+because we are treating this structure
+as heap right
+so
+in heap insertion is called as push
+operation so we'll call it
+void
+heap underscore push and will pass
+arguments
+struct
+heap
+star
+h
+end
+value
+and inside this function will create few
+more variables and index
+and parent
+if you guys remember the initial size
+that we have allocated to our array is
+16 bytes
+you can verify with this statement here
+that we are providing 16 bytes size to
+our heap array
+but what if you want to insert elements
+more than 4 then what we'll do
+well for that we'll need to increase the
+size of our heap array so we'll do that
+here
+for this resize we'll create if
+condition
+f
+h
+dot
+count
+it's equal to equal to
+h
+dot
+sides
+then
+h
+dot size
+plus equal to
+1
+and h
+dot
+heap
+array
+is equal to
+reallock
+h
+dot
+heap array
+size of
+end
+star
+etch
+dot
+size
+basically we are using real lock
+function in c
+to extend the dynamic memory space for
+our heap array and in order to increase
+the size we have to increment the size
+variable first so that's what we have
+done in this statement here
+and now once done with this we'll check
+if our dynamic memory is getting
+allocated or not so for that we'll add
+one more if condition inside this if
+block so it can be called as nested if
+if you guys want
+dot
+heap array
+then
+exit
+-1
+now we will move out of this if block
+and we will set index variable
+to
+edge
+dot
+count
+plus plus
+basically we are iterating with help of
+index variable here
+so
+next
+we'll add for condition
+for loop
+index
+to
+index
+is equal to parent
+and then set this condition
+will make parent node
+is equal to
+index
+minus 1
+by
+2.
+this is nothing but the formula that we
+have discussed
+in previous
+part
+now
+we'll add one more condition inside this
+follow f
+h
+dot
+heap array
+parent
+it's greater than or equal to
+value
+then
+we will break this for loop
+otherwise
+h dot
+heap array
+index
+will be equal to
+h
+dot
+heap array
+parent
+now we'll move outside this for loop and
+we'll add one more condition
+of insertion that is h
+dot
+heap array
+and at
+position index
+we will add
+the value provided by
+user using
+argument to heap push function
+okay with this we have successfully
+created our heap
+push function now we'll move towards the
+next function
+that it's
+heap underscore delete for that we'll
+create new function
+heap
+underscore delete
+and
+let's make this function
+integer
+and we'll pass
+struct
+heap
+star
+h as an argument
+we will create one more
+variable
+temp
+is equal to
+h
+arrow operator
+heap
+array
+and
+inside this will pass
+a negating index that means we are using
+this temporary variable to traverse
+through all list of elements so for that
+we'll write
+dot dot minus minus
+h
+arrow operator
+count
+which will
+decrease count one by one
+now next we'll add condition f
+h
+arrow operator
+count it's greater than or equal to
+edge
+arrow operator
+size
+plus
+2
+and and
+h
+arrow operator
+size
+it's also greater than
+the initial
+underscore
+size okay
+then
+what we will do is we will
+set
+size to negate itself
+by one for each iteration and then
+we will
+and
+h arrow operator
+keep
+array
+is equal to
+real lock
+h
+dot
+heap
+array
+comma
+size of
+and
+star
+h
+arrow operator
+and size
+sorry
+sides
+and semicolon
+so basically what we are doing here is
+we are checking if count is smaller than
+the size of heap plus 2
+and and the dynamic size of q is also
+larger than initialized size that is 4
+then what we are doing is we are
+reducing the size for deleting an
+element using this statement
+and in next statement we are
+reallocating the deleted space
+so this is how this ip block works
+now moving forward we'll add a condition
+to check if memory is getting
+allocated or not for that will write
+condition f
+not h
+arrow operator
+heap array
+then
+what we will do is exit
+with
+minus one
+okay
+now let's move out of this block
+and now
+we will
+set this removed variable to
+h
+arrow operator
+heap array
+and index
+zero
+so if you guys remember
+0 is the index of the highest element in
+our maximum heap
+what i mean here is the element with
+highest value is stored at index 0 for
+maxi
+now moving forward to delete this
+element what we'll do is we will set
+h
+dot
+heap array
+and index 0
+is equal to
+temporary variable
+or pointer that we have created
+previously
+and
+next what we'll do is we'll call max
+underscore hippie five function
+to
+rearrange the structure of our priority
+queue which has been shuffled due to
+this delete operation now for that we'll
+pass arguments
+our heap structure
+that is heap array
+and next
+the index which was removed and
+the count
+variable
+and will
+return the remove element
+okay with this we have successfully
+implemented our delete function
+now to understand the order of deletion
+in priority queue we will implement one
+more function called as mtpq
+so let's create this function
+and in this function will pass the
+reference of heap structure in order to
+operate on it so let's pass
+the structure
+here
+star
+h
+and insert this function
+we will create a while loop
+h
+dot
+count
+is not equal to
+zero
+then
+printf
+modulus d
+and
+recursive call to
+keep
+delete
+function
+in which will pass h
+now
+we are done with this empty pq function
+further we will create one more function
+to visualize our priority queue
+let's call this function
+void
+heap
+underscore display
+and inside this will pass
+structure heap
+star
+h
+and
+now
+we will create one iterator element
+and
+using that iterator element will create
+for loop i is equal to 0
+to
+i
+it's greater than
+arrow operator
+count
+plus plus i
+and insert this for loop we will print
+elements present in our queue using this
+format
+modulus d
+and we'll call
+heap
+array but for that we'll need to call
+structure as well
+if array and
+will pass
+this
+i a variable into it
+okay
+and then next we'll get outside this for
+loop and we'll print f
+this to the next line
+using slash
+okay
+now we have implemented all the required
+function for our priority queue moving
+forward we'll work on our driver
+function that is main method to
+contemplate the result of our program so
+for that we'll first call struct
+heap edge
+then
+we'll call
+init function to create heap
+structure
+so heap in it
+and we'll pass
+the address of
+h
+next
+we will call
+heap
+underscore push function
+to insert element
+and h
+comma
+one
+next
+i'll copy this
+part
+will paste it to insert another element
+now we'll insert five here
+next
+twist and we'll
+pause three
+next we'll insert element
+seven
+next we'll
+insert element nine
+and after this we'll insert element
+eight
+okay
+so now
+let's display the elements inside our
+key
+using heap underscore display function
+and let's pause and edge
+object
+to print it and
+again
+we'll call
+mtpq function
+empty
+pq
+and after deleting all elements
+it will return the state of our heap
+array again or our priority queue so
+finally we will add return zero
+statement
+and now a code is ready so let's compile
+it and check it if it works fine or not
+so we are getting four errors here guys
+so we'll need to resolve them
+first we'll need to check line number 82
+so for 82
+okay here we haven't added semicolon
+so i think this should be fine now still
+we have two errors
+before i
+it's there
+so let's recompile it and check it if it
+is working fine now
+so we have received our output now
+now if you look at our output our output
+is printing elements 9 7 8 1 5 and 3 and
+deletion of elements is also happening
+according to their order so 9 is getting
+deleted first after 8 7 5 3 and 1.
+so
+that means our elements are getting
+removed in proper order further we can
+say that our program for priority queue
+implementation works fine
+now if you guys are worried about this
+program then not to worry we have you
+covered you can mention your email ids
+in comment box below and we will send it
+over to you remember guys we can make
+comments private to protect all your
+data so you can fearlessly put all your
+email ids in comment box below
+now we will discuss applications of
+priority queue to understand its
+importance
+the first application that we are going
+to discuss is use of priority queue in
+google maps you must have used google
+maps several times to navigate from one
+city to another or from your location to
+nearest desired location have you ever
+wondered how google maps managed to do
+that how does it provide an optimal path
+to reach your location
+well digital shortage path algorithm
+implemented in google maps actually
+manages to do that by gaining access to
+all possible paths this algorithm uses
+the priority queue to maintain all the
+paths in order let's understand how it
+works in detail
+now when you provide the location of
+place you want to reach via your mobile
+device google maps feeds the data of all
+possible path to digikestra's algorithm
+those paths or road are stored in
+minimum priority queue considering the
+distance as parameter for priority
+assignment and we have learned that the
+minimum priority queue maintains the
+lowest value at the print or root node
+this is how the priority queue helps
+google map to search for an ideal path
+for reaching destination location
+the next application that we are going
+to discuss is data compression in winzip
+or gzip these applications use hubman
+encoding algorithm to reduce the size of
+files
+hubman coding is a lossless data
+compression algorithm and in this
+algorithm a variable link code is
+assigned to input different characters
+the code length is related to how
+frequent characters are used most
+recurring characters have the smallest
+codes and longer codes are for the least
+frequent characters this is how the
+generated codes will maintain the
+complete data while utilizing less
+memory space
+let's understand how this process works
+with the help of an example let's say
+our text file contains these random
+characters
+the hubman encoding algorithm creates
+codes for each character based on its
+number of occurrences for instance the
+frequency of character a is more
+prominent than b and character c has
+less frequency so the length of code a
+is smaller than b and length of code b
+will be smaller than c
+now according to the amount of generated
+code the priority queue will determine
+the priority of characters and will
+store them these codes takes less size
+than the actual characters in memory
+space and due to the mapping of
+occurrences data does not get lost
+i hope now you guys understand why the
+priority queue is treated as an abstract
+data structure itself and why it is the
+better version of queue data structure
+with this we have come to an end to this
+complete guide to qn data structure
+tutorial
+if you have any queries regarding the
+topics covered in this particular
+session then please mention them in the
+comment section below our team of
+experts will be happy to resolve all
+your queries
+thank you so much for watching this
+video and stay tuned for more from
+sinclair
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

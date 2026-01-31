@@ -1,0 +1,202 @@
+>> Access Options for
+Visual Studio Subscriptions.
+There are two main options
+your subscribers have
+for accessing their Visual
+Studio subscriptions.
+This video will explain
+Microsoft accounts and
+work or school accounts,
+which are a feature of managed tenants
+like Microsoft 365 or
+Azure Active Directory.
+We'll also show the impacts
+of choosing a type of account
+for your subscribers
+and some of the benefits that
+come with managed tenants
+such as improved security
+and ease of subscription management.
+What is a Microsoft account or MSA?
+The Microsoft account,
+commonly referred to as an MSA,
+is a personal email account
+owned by an individual
+to access Microsoft services
+when an organization isn't
+using a managed tenant
+for M365 or Azure AD.
+An MSA is set up by the individual
+and maintained by the individual.
+For example, Kai may have set up
+kai.carter20@outlook.com
+as his MSA.
+This would be created, owned,
+and maintained by him.
+Why would subscribers need an MSA?
+Companies use MSAs when they're not using
+managed services by Microsoft,
+such as M365 or Azure AD,
+or if they're using managed services
+from other companies.
+For example.
+Kai Carter was assigned a subscription
+by his company, Contoso.
+His admin assigned it
+to his company email,
+kai@contoso.com.
+However, Kai needs to make it an MSA
+because Contoso is not yet
+using Azure AD or M365.
+kai@contoso.com
+is owned and managed
+on-premise by Contoso,
+so an MSA needs to be created for Kai
+to access his subscription.
+Are there governance
+risks to using an MSA?
+Since MSAs are owned by an individual,
+any policies you've defined
+for account security,
+like password strength,
+won't apply to that MSA.
+Additionally, if the individual
+is no longer with the company,
+they can still access
+services that are connected
+to their identity.
+For example, if Wesley
+Brooks used his own MSA,
+wesley.brooks01@outlook.com,
+to assign Visual Studio subscriptions
+and manage admins,
+he would still be able to do this
+even after he leaves the company
+if his account is not removed
+from the Visual Studio
+Subscriptions admin portal,
+Wesley owns this email address
+and will continue to own it
+even after he leaves.
+This can pose a security
+risk to your company
+if the user maintains unauthorized access
+to confidential information.
+What can I do about it?
+Consider transitioning your
+users to a managed tenant,
+such as Azure AD or M365,
+as well as making sure
+that your subscribers
+choose a work or school account
+when signing into their
+subscription for the first time.
+What is a managed tenant?
+A managed tenant is a
+cloud-based directory
+that allows the organization
+to have end-to-end control
+over the user's access
+to Microsoft services.
+This can be achieved in a couple of ways
+through hybrid or full cloud solutions,
+such as M365 or Azure AD.
+The organization has full
+control of the email address
+and can manage access this way.
+Why does this matter?
+Unlike MSAs, managed
+tenants allow your company
+to have increased governance
+and full control over a user's access.
+For example,
+let's say that Wesley Brooks is an admin
+and uses wesley@fabrikam.com
+to manage Visual Studio
+subscriptions and admins.
+When Wesley leaves Fabrikam,
+as soon as his email
+address is deactivated,
+he no longer has access to sensitive
+or confidential information
+like product keys,
+Azure resources, and more.
+Wesley also doesn't have
+the task of setting up
+and maintaining his own email account
+as he would with an MSA.
+Since the sign-in and security
+for Wesley's email address
+is within M365 and entirely
+in the control of his company,
+once his account is deactivated,
+he loses access to cloud services.
+Is it possible for
+subscribers to use an M365
+or Azure AD work email for their MSA?
+Yes,
+your subscribers can create an MSA
+out of their work email.
+For example, Hannah could
+have an email address
+assigned to her by her company,
+such as hannah@fabrikam.com.
+When she's setting it up,
+Hannah should choose the option
+to sign in with a work or school account
+if the organization is
+using a managed tenant
+like M365 or Azure AD.
+If she chooses a personal account,
+then she will be creating an MSA.
+This means that even if
+Hannah left Fabrikam,
+and she'd used that
+email address as an MSA
+to sign into other services,
+such as Visual Studio Subscriptions,
+that would still be her user sign-in.
+How do managed tenants
+make Visual Studio
+subscription management easier?
+Using an M365 or Azure
+AD work email as an MSA
+still provides some ease
+of administration benefits
+at the cost of security risk.
+The Visual Studio
+Subscriptions admin portal
+will recognize all of your users
+and be able to track the
+status of their email accounts.
+This is helpful because
+the system will identify
+when a person's account
+is deactivated in Azure AD
+and remove access to the subscription.
+However, the subscription
+will still be listed
+in the portal until it
+is removed by the admin.
+If you delete the user out of Azure AD
+instead of just deactivating them,
+then the Visual Studio subscription
+will be automatically
+removed within 30 days.
+This makes subscription management easier
+since there are fewer
+steps that an admin needs
+to take to remove unauthorized access.
+If you're already on a managed tenant,
+make sure your users are
+not using consumer domains
+like Hotmail or Outlook
+by looking at their sign-in email address
+and changing them to their work accounts.
+For information about how to do this,
+watch our video at aka.ms/MSAsignin.
+Still have questions about how this works?
+Check out managed tenants
+on M365 or Azure AD
+at aka.ms/M365Domain
+and aka.ms/AADDomain.

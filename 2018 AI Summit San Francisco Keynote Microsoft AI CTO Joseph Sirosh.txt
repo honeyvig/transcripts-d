@@ -1,0 +1,767 @@
+>> I'm going to tell you
+about the three key trends in
+AI that are really
+powerful that you probably
+haven't really heard about.
+Now, let me start
+with an example.
+This is an arm that can see.
+It's 3D printed, it has a camera
+in the palm of his hand,
+it is connected to
+a service in the cloud.
+The cloud service can
+trigger the movement
+of the fingers,
+based on what the arm
+actually sees.
+Let's take a look at
+it in this video.
+So, watch the arm.
+Now, as someone brings
+it over a keychain,
+the camera and the palm
+recognizes the keychain
+and on the right,
+you see the classification of
+the object and
+a pincer grip was selected.
+With the flexion of a muscle,
+with the muscle sensor,
+I can close the grip and you pick
+up that and then you
+can put it back down.
+Now, watch as we bring
+it to another object,
+in this case, a wine glass.
+The classification is
+for a palmar action,
+closing all the fingers together,
+and with a flexor of a muscle,
+I can pick that up and
+I can put that back.
+All it takes is a
+few off the shelf components
+like a Raspberry Pi,
+an Arduino board, servomotors,
+a 3D printed arm.
+In fact, inside of this are
+fish lines that pull
+the fingers closed,
+but of course, the magic is
+the Cloud AI service behind it.
+An AI service in
+the cloud that can
+recognize what
+the camera in the palm
+sees and then match
+it to the grip action
+that should be taken so
+that the right grip action
+can be performed.
+That's trainable.
+It's adaptable.
+It really is something
+you can set up,
+something that
+others could set up,
+in the service in the cloud,
+personalized prosthetics.
+That's very powerful.
+So, that leads me to
+the most important macro trend,
+which is that a cloud AI service
+behind every device,
+it might be a prosthetic,
+it might be any device that
+you use in your house.
+Of course, your apps on
+your phone have AI services
+behind them eventually,
+some of them already have
+AI, but others as well.
+Everything in the world that
+is connected with Wi-Fi or
+Internet connectivity
+can now be backed
+up by an AI service.
+That's very powerful and
+profound when you think about it.
+Now, think about this one,
+the grip classification.
+How it works is there's
+a muscle sensor that I've
+attached to my arm here,
+there's a camera in the hand.
+So, through the electronics,
+it goes to an Azure
+Custom Vision Service,
+where our classification model
+has been set up,
+a deep learned model
+that recognizes object,
+classifies it to the right
+action and then that triggers
+the appropriate grip
+classification in
+the servo motors connected
+to an Arduino board in the arm.
+Two undergraduates built this.
+Hamayal Choudhry from
+the University of Ontario
+Institute of Technology
+and Khan from University
+of Toronto. Samin Khan.
+They did this for the
+Microsoft Imagine Cup.
+They were the winners in 2018.
+Building this took
+them a few weeks.
+Of course, then the magic
+was provided by
+a cloud AI service to be
+able to make this device
+intelligent.
+That's a power. Even
+an undergraduate can
+build something as
+powerful as this today.
+So, why is this revolutionary?
+Step back and think
+about this device.
+Look, there are over
+a million amputations per year.
+That's an amputation
+every 30 seconds.
+WHO estimates that
+30-100 million people
+in the world live with limb loss.
+Only five to 15 percent
+of these have
+access to Prosthetics.
+Even though prosthetic
+devices have
+been around since
+the Egyptian times,
+that what you see on the left is
+a toe on an Egyptian mummy.
+You can see this in the Egyptian
+Museum and then you see
+the iron hand of a knight
+from medieval era,
+his arm was cut off
+and he got one.
+Even though these devices
+have been there,
+they have been purely
+physical devices
+and very severely limited.
+Limited by cost.
+The bionic arms that you
+have heard about today,
+they cost tens of thousands
+of dollars and
+it takes a lot of effort
+to fit them on you.
+They're limited by availability,
+very few people
+have access to it,
+and they're limited
+by the interface
+you can attach to the body.
+Above all, they're limited
+by the nervous system that
+we have because
+we've got to train
+ourselves to use that device.
+In fact, literally, we had
+to force our will into
+these devices to be able
+to use them effectively.
+How could we change all of that?
+What could change us
+from having to wrestle
+with physical devices?
+How could we break these limits?
+The answer is an AI or a cloud
+AI service backing it up.
+Think about this, what if you
+had low-cost electronics
+to build with it?
+What if we could
+change the game of
+availability with 3D printing?
+So, you can print these
+things anywhere in the world.
+What if you had a Cloud
+AI service behind it that
+provided the ability to
+recognize things and
+make the movements?
+What if it could be personalized?
+What if it could be adapted?
+What if other people,
+your friends could train
+your arm to make
+the right kind of movements,
+in the right kind
+of environments?
+How could you have
+customizability of all types?
+What if you could tap
+into the knowledge
+of the world beyond
+our senses through
+the cloud service
+so that you can
+keep improving it?
+What if all of these
+things came together for
+a very low cost like the
+$100 it took for
+this arm to be built?
+That would be
+revolutionary, right?
+Imagine, now every prosthetic in
+the world or orthosis
+in the world which is,
+let's say you break your arm and
+[inaudible] sling and
+you need assistance?
+What if you could get
+something very cheap that
+you could move around but it's
+controlled by a Cloud
+AI service and all you
+have to do is express your intent
+to that Cloud AI service
+somehow and it
+does the more complex task
+of actually doing the grasp?
+See, this is the difference
+that the services can make.
+What you do is you express
+your intents and
+your constraints,
+and the service generates
+the behavior you need.
+So, it's a generative service.
+The behavior is generated
+but from high-level intention
+that you communicate.
+So, the future is
+affordable, intelligent,
+cloud-powered, personalized,
+prosthetic devices and
+really devices of every type.
+That's hugely revolutionary.
+So, let me keep this here
+and now talk about
+the next trend.
+So, you realize how
+empowering AI can be.
+Now, with all this power,
+we have 3D printing. We have AI.
+You're going to be able to
+revolutionize every aspect of
+your life and potentially
+for millions of people
+who are disabled,
+that could be
+a new lease on life.
+So, now let's talk about
+how these things are built.
+What we're seeing
+is a huge explosion
+of APIs in the cloud
+that democratize AI,
+so that every developer
+can tap into
+this incredibly sophisticated AI
+without knowing AI.
+Now, this is
+a standard common trend
+in computing by the way.
+Incredibly sophisticated
+algorithms are wrapped
+up in functions that are so
+simple you just call them.
+When you call a sort function
+in your programming.
+Well, there might be an extremely
+sophisticated implementation
+of quicksort behind it,
+but you don't have
+to worry about it.
+You learn to build it.
+Same thing is happening with AI.
+So now, there are cloud APIs
+with machine learning in it.
+I call them AutoML.
+So, let's look at some
+of the current trends.
+There are APIs for perception.
+There are APIs for comprehension.
+So, perception vision
+is being solved,
+and a lot of vision tasks
+are being solved.
+There are capabilities
+like face recognition,
+identifying a face and
+you can train them.
+Computer vision,
+meaning put an image,
+get a caption or
+a description of it.
+Custom vision, where
+you can upload
+your own images with
+class labels and train
+them to classify.
+Speech, speech recognition.
+All of you know about it
+but it's trainable now.
+You with the right
+language model,
+with audio environment
+and text to speech,
+text to generating voice.
+Then comprehension,
+the world of language.
+Language understanding.
+So, you can train a system with
+the kind of language
+that you might see
+and it will recognize
+the intent that's
+expressed and call the right
+functions to execute them.
+Filtering objectionable
+content or
+translating text or
+analytics on text.
+Then, the whole power of
+search engines like
+the Bing search engine,
+including customizing
+the search to
+different domains or
+doing search with images.
+All of that is available as APIs.
+These are just the start.
+A lot more APIs like
+this are coming.
+What's important about these APIs
+is they're not just algorithms,
+they are built with
+proprietary data,
+so it brings the power of
+the company that is
+building it behind it,
+whether it be a Microsoft
+or a Google or an Amazon.
+They're bringing data
+and algorithms and
+all of those things together
+to build these APIs.
+Very sophisticated ones.
+So, here's an example of
+a custom vision thing,
+called free customization models.
+You upload images with labels.
+You train it. You deploy
+it as a rest API.
+You can even take those models as
+containers and deploy them in
+your software application.
+So, what's an example
+of an application?
+Here is a fun example.
+That image, by the way, is
+from a real customer of ours.
+They asked us if we could
+understand all those images
+and catalog and organize them.
+It happened to be
+the Ministry of Justice
+of a country, by the way.
+We quite couldn't get
+access to all of that data
+for security reasons,
+but we asked ourselves "Hey,
+how would we go about
+solving such a challenge?"
+I want to now show that
+with a fun example.
+In November 22nd, of 1963,
+John F. Kennedy was
+assassinated by
+a lone gunman in the streets
+of Dallas or so,
+they lead us to believe, right?
+Well, this topic was so
+controversial that
+Congress mandated that
+all the documents associated with
+the Kennedy assassination be
+released to the public by 2018.
+So, end of 2017 came out
+all these documents,
+lots of PDF scans.
+If you pile them up on the stage,
+it would be four huge
+tax seven feet tall.
+So, how would we understand
+all of these documents?
+How would we categorize,
+organize, discover
+who killed JFK?
+All other controversies
+around it.
+So, our software engineers
+took this challenge on.
+So, they've created this thing
+called cognitive search,
+is actually a service
+in Azure which allows
+you ingest all types of
+documents with the majors
+were taxed and all of that.
+You then apply these cognitive
+skills that I talked about.
+You enrich it and then you put
+a search engine on
+top of it to explore.
+So, let me show
+you the JFK files.
+I'll actually show
+you a fun demo.
+So now, switching.
+So, this is our website,
+live website that you can
+actually go to
+jfkdemoazurewebsites.net.
+I'm going to just search for
+Oswald and let's
+see what comes up.
+Here's a PDF document.
+It did OCR and recognized
+Oswald in here.
+Even more interestingly,
+you see something here.
+This is an handwritten
+document and
+OCR allowed you to recognize
+terms like Oswald in here.
+Right there. Then,
+I can even go down,
+take a picture of Oswald.
+The custom vision,
+the vision service
+actually captioned it.
+It's a Lee Harvey Oswald
+posing for the camera.
+Now, he's not really posing for
+the camera but close enough.
+It even recognizes
+the OCR numbers here.
+Very interesting.
+So, now I can even see
+relationships between them.
+I can see Oswald is connected to
+lots of interesting people
+like Sylvia Duran.
+As I go look through this,
+I see things like Cuba in here.
+So, what's Cuba
+doing in JFK files?
+So, let me show you.
+This is a fun thing.
+We search for
+Castro operation in here
+and we found all of this by
+just building this application.
+You see Castro operation
+and you see, apparently,
+in around that time
+in the late 1960's,
+the CIA in an operation
+called Operation Mongoose had
+hired the Chicago mafia
+to poison Fidel Castro
+with poison pills.
+Fun thing. No one
+knew but apparently,
+the pills took a whole day to
+dissolve in
+Fidel Castro's coffee.
+So, our test coffee.
+So, Chicago mafia got
+cold feet and backed
+out of the whole thing.
+So, out of the fun thing.
+So, now let me show
+you another thing.
+Like, when a government releases
+this kind of very
+classified documents,
+you hope your name
+is not in there.
+Now, my name is not in there,
+but the name of one of
+Microsoft's products is in
+the JFK files. SQL Server.
+Well, SQL Server didn't kill JFK.
+But, we found that
+SQL Server was selected
+as the platform for
+the secure classified
+information facility by the CIA
+when they built it
+and Lotus Notes
+from IBM was selected as
+a medium of communication.
+They even gave us
+a whole architecture for
+how these things will look.
+You've been a complete with
+dial-up lines and so on.
+So, really fun story.
+The amazing thing again,
+is this kind of things
+can be built by
+an engineer in
+a very short time period.
+In this particular case,
+it took about three weeks
+for an engineer to
+build it using these APIs
+and all of that.
+So, let me just get
+back to my slide here.
+These are incredibly useful.
+What is really useful is that
+you can take pretty much any data
+in an enterprise,
+like legal contracts,
+or engineering plants, or
+extract form information,
+connect all of these things up,
+understand it in
+a cognitive sense,
+you think it's
+cognitive APIs and apply it.
+Which then leads me to
+the third big trend.
+AI Enables Natural
+User Interfaces.
+Well, all of you know about
+bots and speech interfaces,
+there are even neural
+interfaces emerging,
+behind all of these things is AI,
+and AI is enabling completely
+new types of interfaces.
+Now, one that you may not
+be as familiar with is Ink,
+Digital Ink, using a pen.
+So, let me show you some
+examples of the power of ink.
+Look, all of these are
+drawn by ink, and the pen.
+There's this famous saying,
+the pen is mightier
+than the sword.
+Try and type any of these things,
+you can't quite create that.
+But with the power of
+a digital pen and a Digital Ink,
+backed by a Cloud AI service,
+you can now start capturing
+these creative experiences,
+and even go beyond.
+So, let me show
+you some examples.
+Now, we have Digital
+Inking as a service
+in the Cloud behind PowerPoint
+and Word and Office 365.
+Here's an example of
+what you can do in
+PowerPoint, you can write,
+you can turn that into text,
+you can now draw boxes like this,
+especially on a touch screen,
+you got all of that,
+and yes Lasso it
+with a circle and
+then you can turn it into
+actual printed letters,
+you can make those boxes
+look much cleaner,
+and you can even draw
+lines between them, right?
+So, now you've created
+something new.
+Same thing with Word,
+you can edit in Word with a pen.
+So, you can put an arrow there,
+you can write what you
+want like brand and then
+it'll get inserted right
+there in that resume, right?
+You can cut out a line
+and that will clear up.
+So, all of these interactive
+experiences that you're
+seeing can be done with
+the power of the pen.
+So, let's keep going,
+what if I had
+handwriting like this?
+I can make it look prettier
+using a Cloud AI service,
+this is ink beautification.
+So, that's my handwriting,
+and you will see it
+getting cleaned up.
+This is beautified, original,
+beautified, original,
+you see that it's improved,
+my handwriting became better.
+Let me give you another example,
+what if I'm actually
+drawing diagrams?
+These diagrams are not as clean.
+By the way, this
+enables speed as well.
+I can quickly draw something and
+then let the AI service
+clean it up for me.
+So, this is the original, this
+is beautified,
+original, beautified.
+Now over time by the way,
+we can keep improving
+these things,
+and it'll become
+better and better,
+and your interactions with
+these devices will
+become very powerful.
+It doesn't stop there.
+Now, here's another example
+that I'm going to
+show where you're
+drawing on a whiteboard,
+and a picture is done,
+and then you can focus with
+your hand on
+the right portions of
+the whiteboard and then
+touch any of those.
+>> Zoom catcher,
+eliminates scenario
+for selection in
+an extremely lightweight manner.
+The user can then
+act on the strokes,
+such as to recognize.
+But only what areas the user
+wants and only when
+the user chooses to do so.
+>> Cool. Right. So, you saw
+that interactive power.
+So, this is a progression
+of Ink in Microsoft.
+It's been a journey, but around
+2017 is where the magic
+started happening,
+where we saw a big step
+change improvement with
+the power of more data and AI,
+and I wanted to show that to you.
+Really, up until 2017
+we were using a shallow machine
+learning models,
+limited data, limited accuracy
+and a client API.
+But then starting 2017,
+we started using DNS,
+and we started using
+much more data.
+We had a Cloud AI
+service behind it.
+We had a Cloud service
+that draw the
+country's improvement,
+significant improvement
+in the capabilities
+and all of the endpoints to
+which you could bring them.
+Now, I want to end
+with a final story.
+So, this is a story of
+an application called Helpicto.
+Helpicto was built by
+a French developer.
+A French developer who just used
+the Cloud AI services to create
+an application to communicate
+with autistic children.
+Now, communicating to
+autistic children,
+mothers, fathers,
+communicating, that's
+always a challenge.
+The standard of care has been you
+bring up a picture book,
+you take pictures from it,
+compose pictorial conversation at
+the same time as you speak.
+So, the child hears you and at
+the same time sees the picture
+and that increases comprehension.
+But of course, this is
+incredibly unwieldy.
+So, the developer
+ask the question,
+why can this be on
+a mobile phone?
+Why can't this whole thing
+just recognize my speech,
+make that conversation
+happen pictorially on
+a mobile phone and so
+the child can be shown that,
+and it just improves the speed
+at which you can do this,
+and you don't have to carry
+a book around with you.
+Let me play the video and look at
+the subtitles so you can
+understand it, it's in French.
+>> [FOREIGN]
+>> AI powered Natural Interfaces
+can be very empowering.
+So, AI is the new normal.
+It is an incredibly
+empowering technology,
+and Microsoft, by the way,
+is about empowering others
+by creating platforms on
+top of which all of you can
+build these types of
+powerful applications.
+So, I hope you go
+away from this event,
+inspired by the power of
+what AI can do for you,
+and build on top
+of this to change
+the world and to change
+your communities,
+and make it the next
+technology that empowers us
+all. Thank you very much.

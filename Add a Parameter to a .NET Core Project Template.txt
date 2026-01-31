@@ -1,0 +1,367 @@
+last time on our template mini series we
+discussed creating a template and
+getting it to work in visual studio
+now we're going to talk about how you
+can continue expanding on that
+by adding parameters so learn more on
+this episode of visual studio toolbox
+hey everybody welcome back to another
+episode of visual studio toolbox
+i'm your host leslie richardson and i'm
+joined once again
+by senior pm syed hashimi welcome back
+hello great to be here thank you yep
+long time no see
+so in the last episode we talked about
+creating a template and then getting it
+to work within visual studio so
+what are we going to talk about today
+yeah that's right so today we're going
+to
+we're going to talk about you know how
+can i take an existing template
+uh and add you know one or two
+parameters to that and then we'll see
+uh how that works in visual studio as
+well all right
+well uh i'd love to just dive right in
+because i'm sure
+everyone wants templates that go beyond
+just the hello world
+type setup right there's no doubt about
+it all right so let's go
+let's go and jump right into it here so
+i've got my uh github open here
+and a reminder for how to get to this
+repository is ak dot ms slash net core
+templates let me basically just kind of
+show what we're going to do here so let
+me go into the
+to the my command here and inside the
+template.json file is where we're going
+to start adding these parameters so
+everything that i'm going to do here
+today
+is basically just right here inside this
+uh inside these files here i'm just
+going to snap it here
+let me open up my uh let me open up the
+the demo solution here that's got the
+templates and all that sort of stuff
+all right i'm going to go ahead and open
+up my template.json file here and here's
+where we're going to go ahead and start
+adding some parameters here
+and by the way the the first parameter
+that
+there's a very kind of special parameter
+here and that's for framework
+so what's the target framework for this
+project
+and uh you know it's important to add
+this for a number of reasons one
+um whenever you have parameters inside
+of a project
+and if you want those parameters to
+appear in visual studio
+uh the framework parameter always has to
+be
+uh it always has to be declared there
+and uh and it's also good for users just
+so that way they know
+you know what uh what target framework
+is going to be used here to create
+is going to be used uh when they create
+a project there so let me just go ahead
+and copy
+this content from here and then
+then we'll we'll kind of just describe
+more about this so symbols
+and paste that in let me uh double check
+my
+project here real quick so if i go take
+a look at my cs proj i can see the
+target framework is actually not five
+i'm going to take that and then we'll go
+ahead and fix this so instead of
+the choice being that core app 3.1 it
+should be net five
+and target net five and then the same
+for these replacements here
+all right so this is basically uh it's
+called the choice parameter that has
+one choice it's like a drop down with
+with one particular value there
+all right so now let's also go back and
+take a look at what can we do
+for other parameters here so in the code
+uh the the demo kind of project had an
+author name
+uh somewhere inside the code and then
+there was a replacement that was
+happening for that
+let's go and add let's go and add
+something like that to the code that we
+have here so let me just go and grab
+author new
+author name here you could say created
+by
+author name period all right so now
+what's going to happen is i'm going to
+create a parameter that users can
+uh specify a new value by who this has
+been created by right and
+you know what i'll do is let me take
+this and maybe we'll put it into
+there you know what i'll do is i'm
+actually just going to put this inside
+my um inside my project file as well
+maybe like you know as a comment or
+something
+all right there we go great all right so
+now what i'll do is let's go back to the
+template.json
+we're going to go ahead and add the the
+new parameter here
+author name uh the type here is
+parameter
+and you notice i'm just kind of
+intellisensing my way through all this
+stuff right
+yeah must be super helpful
+not having to remember every single
+piece of syntax
+yeah it's very difficult to remember all
+these things you know
+absolutely so i just specified a default
+value
+so um when this template gets
+instantiated you know either from or
+actually when this template gets used
+from.net new
+if that parameter is not specified this
+default value will be used
+and then that will be the default value
+and visual studio that gets kind of
+plugged in there as well
+cool so if you put author name anywhere
+else within
+this template it would also pick up on
+the schema or this uh rule would be
+applied to
+every instance that's right that's right
+that's right also file names as well so
+if you got a file that's called
+you know author name blah blah blah then
+author name part of that would get
+would get modified to whatever the user
+specified here
+and uh there's also clean up that
+happens to
+let's say for example uh you let's say
+for example the user specifies
+some value that can't be used in a file
+name
+the template engine will basically take
+care of fixing that up to where it would
+be a valid file name there
+right sorry so now i've added uh two
+parameters here we've got the
+framework parameter that's a choice and
+it's just got one choice for.net five
+we also got the author name parameter
+and the default is author demo
+and it's a text let's go ahead and
+reinstall
+we'll we're going to do uh pretty much
+everything here so i'll say reset
+templates
+and then i'll do a semicolon and i'm
+just going to copy the
+additional commands here so we can just
+do everything in kind of one go here and
+also with the correct order here all
+right
+what i did was i just combined those
+three commands with a semicolon so this
+will run
+and then this will run and then this
+will run
+all right we can see it reset the
+template uh and then it created the
+nuget package
+and then install the nuget package and
+we can see our
+we can see it's here so if i were to do
+dot net new
+syed con h i should see those new
+parameters here
+i see i've got author name here
+framework doesn't
+uh automatically appear here because
+because it's it's like
+um there's just one value there i think
+and i'm i'm really not sure why
+framework doesn't show up here i think
+it probably should this
+is probably a bug i'll kind of talk to
+the team about that
+so now i just reinstalled that template
+so i have to uh close visual studio and
+then reopen it
+so that way visual studio gets kind of
+you know the latest definition of that
+let me go into create a new project and
+if all goes well we should see uh in the
+additional info page
+those those parameters that we have
+defined here
+all right so now i see oh yeah that's
+right that's right that's right okay so
+yeah i see the target framework but i
+don't see my author name parameter
+so there's actually an additional step
+that needs to happen here let me open up
+that
+that solution so demo.solution
+so that's another thing that i forgot to
+mention here uh framework parameter
+you know that one's kind of special case
+then if you've got the framework
+parameter in your template.json
+it will just appear in visual studio
+itself
+uh but for the other parameters you know
+in visual studio where we're not sure
+what parameters should and shouldn't be
+shown so what we do is we have to
+actually put an indication
+in the ide.host.json and let me show you
+where that is in the samples here
+so all you have to do is basically
+define this simple symbol
+info property here and it's an array
+of values here so let's go ahead and do
+that so i'll say symbol
+this is not in the wow it's not in the
+intellisense for some reason okay so
+this is a
+another kind of bug here i definitely
+want to get that one fixed so i'll be
+bringing that up with the team of course
+all right so this is just an array of
+objects here
+so we give the id and you know the id
+here is uh
+author name and we'll check this real
+quick so id
+author name and then the the name is
+author name and then is visible to true
+so yeah that looks all good to me
+the schema declaration looks good too
+i'm not sure what's going on with the
+intel sense here but that's okay
+let me go ahead and close out of visual
+studio and then we'll go ahead and
+rerun that command to get it reset and
+then reinstalled
+yep author name okay so we'll say
+um demo
+author here okay and and uh we can see
+that there's just one choice in the
+target framework and i
+don't have the ability to uh to change
+that but you know if you wanted to you
+can definitely go through and
+and create a template that supports
+multiple target frameworks but you know
+it's definitely
+uh some additional work for those types
+of templates
+let's take a look at what we get out of
+here let's go ahead and just run this
+with ctrl f5
+let me just run it here
+all right so we can see hello from
+console one created by demo author
+it's going to take a look at this make
+sure the replacements happen so
+we saw that the namespace and then this
+the string here got replaced with the
+project name as expected
+nothing see demo author has been uh
+replaced as expected
+and then inside the cs proj that string
+was replaced also a demo author here
+so that is really about it for you know
+how to create uh
+how to create parameters here uh and
+then get them to appear you know not
+only in dot net new but also in visual
+studio
+and uh one thing that i want to kind of
+point out that that i did point out in
+the previous video but let me go ahead
+and point it out one more time is you
+know let's say if you do want to support
+something that's more kind of complex
+right like if you want to create a
+template that supports more than one
+target framework or if you want to
+create a template that has
+different types of parameters right like
+maybe you want a checkbox instead of a
+text or
+or stuff like that the best thing to do
+is to go take a look at the existing
+asp.net core templates
+that have been created by microsoft here
+so this is the repository where all our
+kind of source templates
+appear and most of them that you'll
+probably be interested in are under
+project templates
+so that's definitely a great resource
+for how to create you know kind of a
+more kind of complex template
+uh but yeah you know we'll also kind of
+cover some some additional kind of info
+in the
+uh and the upcoming video as well
+that is exciting and yeah that's great
+once again it seems super easy to be
+able to
+continue expanding your template like
+that
+yeah definitely yeah exactly so it's
+kind of a grow up story here you know i
+wanted to make it very easy to kind of
+get started with a basic template
+but then also make it kind of easy to uh
+to grow that template as well and you
+know that's kind of what we're doing
+through these uh series of videos here
+yeah
+yeah so what's next what will be next is
+uh you know i think what we're going to
+cover next
+is uh kind of troubleshooting and
+analyzing templates here you know so
+what are the
+kind of common pitfalls and then what
+can we do
+to avoid those and and what's available
+so so i created a
+a.net core tool that that template
+authors can use
+uh to analyze their templates so i'll
+show how to install and use that and
+then uh go through just kind of the some
+of the uh the gotchas there yeah
+yeah that sounds like some good stuff to
+know because i don't think anyone ever
+gets it right on the first try you know
+yeah definitely definitely sweet so
+until then happy coding that's it thank
+you
+you

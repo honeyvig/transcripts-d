@@ -1,0 +1,967 @@
+hey everyone my name is Celia I'm a
+product manager on the visual studio
+team and I'm really excited to be joined
+here today by the amazing Tim Curry Tim
+is an amazing educator that has helped
+millions of students through his YouTube
+channel and training courses learn all
+about Visual Studio C sharp and so many
+other Technologies hi Tim I'm really
+excited to have you here
+thanks for having me
+so in this video we're hoping that we'll
+walk you through some of our favorite
+features that been introduced in the
+latest versions of Visual Studio 2022 if
+you update to 17.7 you'll have access to
+all the features we'll be talking about
+in this video Tim go ahead and take it
+away okay so here we have Visual Studio
+we have the release notes up for 17.7
+what's going on there's a lot of great
+stuff in here if you ever lose this by
+the way
+um I have updated before I've seen this
+and I've closed it out and then went
+wait what was in there
+um under the help menu
+you can say uh what's new it will bring
+this back up so lots of great stuff in
+here yeah I love this view
+um if you ever want to know more about
+the features you can actually click on
+those tiles so for example that copy and
+term indentation one is one I worked on
+and in here you can kind of figure out
+what is this feature about in this case
+we just simply made it so that next time
+you copy and paste some code you don't
+have to fix indentation manually it's
+automatically going to be done for you
+so if you ever want to learn more about
+a feature that you see there by the way
+the tiles are selectable and sometimes
+if you have to enable the feature you'll
+see an enabled button at the very top
+that lets you do it really easily
+um so definitely interact with this page
+and
+urinal standpoint I love this feature it
+seems so simple and yet
+um can't tell you how many times I've
+I've messed around with stuff like this
+so it's it's definitely huge for me at
+least
+um so yeah so this is a great you know
+overview what's going on and then like
+you said you can you can jump into any
+of these things another great feature
+we're gonna look at this one today
+um with file comparison but you can look
+at these get more information turn
+things on it's a it's a great place okay
+so today we're getting something a
+little bit different
+um
+instead of saying file new project we're
+going to go to an existing repository
+and the repository we chose is Orchard
+CMS or Orchard core and we're going to
+grab this repository and clone it down
+so I'm going to copy this we'll talk
+more about this in a minute once I
+actually clone it because it's going to
+take a little bit to clone down but
+let's copy the URL for cloning but
+instead of going over to like you know
+terminal and saying git clone and then
+open up a solution afterwards you can
+just say clone Repository
+paste in your uh your path here I'll
+give a different path
+there we go
+and hit clone and that's going to pull
+everything down you can do the
+background but I'm going to do in the
+foreground so you can see you know just
+how many megabytes worth of stuff it's
+downloading there's tons of stuff in
+this repository but this also gives us
+kind of a good picture of even the large
+projects Visual Studio is pretty
+performance when it comes to you know
+loading them in which this is just
+download speed this is my internet
+um trying to bog down getting 200 plus
+megabytes of stuff and then extracting
+it
+um but also how performant Visual Studio
+is it loading this stuff up and getting
+intellisense and telecode and all that
+stuff running pretty quickly so there's
+204 projects in here that's pretty
+impressive yeah we're always making
+adjustments and improvements in the
+performance area so you'll notice with
+all the different release notes a lot of
+times you'll see those different
+performance improvements we just did
+some improvements in the finding files
+area because we know that's a really
+critical function in the editor so we're
+definitely always making improvements as
+much as we can so keep those feedback
+suggestions coming
+excellent
+um and you know this is the first place
+I want to talk about because it's a
+solution View and the solution view has
+been pre-limiting at times you know I
+I've grown up with visual studio so my
+first Visual Studio was for Visual Basic
+before I believe
+um yeah originally before
+vb6b4.net even came around
+um oops let's go ahead and repin that
+um but you know I've had it for a while
+one of the things that has always been
+kind of a limit is that solution view
+where there's files in there that aren't
+really a part of the of the projects but
+you still want to see them and I love
+the fact we now have this solution items
+folder inside here let's see the gulp
+file package.json and the readme
+so I can open this up and actually see
+the readme
+um and what's in this this package
+one point go ahead oh go ahead I want to
+point out that this is not a great view
+to read the readme this is markdown but
+it's um not a great view so you can go
+to preview now
+and actually see the the produced
+version of this and read very easily
+what's what's in here
+yeah and and my team added support for
+the markdown
+um view here and because a lot of folks
+wanted something where you can preview
+these options but also
+being able to have access to the editor
+features in the editor window so for
+example if you go Tim to the left there
+and maybe you want to switch your Visual
+Studio section from bullets to maybe a
+list you could use the shift alt select
+and select the three lines
+and then you can edit it all together so
+if you delete that and put the one dot
+now it's turned into a list on the right
+there
+um so just the same editor features
+you're used to but now you can do it in
+markdown files as well
+excellent yeah I like to be able to do
+things quickly that's kind of the point
+of this video but also the point of as
+developers we don't want to spend a ton
+of time
+working with the tools we want to get
+the job done and so be able to be quick
+on this stuff is really great I'm going
+to save that we're going to go ahead and
+contribute that later
+so
+um so now we have you know we have our
+solution open we want to look at you
+know what's in here and how you find
+stuff so there's there's some new stuff
+with find isn't there
+yes we have a new uh search feature
+called All in One search that we're
+really really excited about
+um you used to have the search you know
+come up in the at the top
+um and all your files there but now we
+have a new view called all-in-one search
+that you can access using the same
+shortcuts because we didn't want to you
+know muscle memory and all we didn't
+want to mess with that but we you could
+access it using Ctrl T if you want to
+search for code
+and you can just search for what you
+have and some of my favorite things
+about this is that you get a preview
+panel now so for example a lot of times
+if I have this you know repo and I'm
+curious about the program.cs file in my
+repo I searched for that and I like to
+browse through the file like I just kind
+of browse through and see which one
+should I actually be paying attention to
+because there's a few here and I'm like
+all right which one should I actually go
+into and go and uh look at
+so I I love the ability to prove you fun
+fact we used to have the preview panel
+on the right side and then people were
+like well I want to see more of that
+horizontal space so we've switched it
+but you can still toggle it at the top
+right if you want to try that Tim
+there you go
+I like options
+which one do you prefer
+so probably a personal I
+so this would work well but I can't see
+where it is
+in program.cs I'm like we've got six or
+seven of them
+um that's hard to see so I think for me
+personally I would probably do the do
+the bottom search uh or bottom results
+because I can see the whole path and go
+okay like this is hard you know it's
+orchardcore.cms.web versus
+orchardcore.mvc.web it says it's just a
+little bit of difference here
+um but being able to see that and go
+okay that's what I want and then double
+click and go right to it
+is super helpful I love it and we can
+show you how to enable that because
+we're gradually rolling it out if you
+want to enable it then it's not enabled
+for you you can go to actually let's do
+all in one search we can use that so
+instead of code search which is Ctrl T
+we'll do control Q which is perfect
+opens up feature search you can search
+for all in one
+there we go top one yes and then if you
+open that up then you'll see it under
+your preview features and if you scroll
+down
+here we go new Visual Studio search
+experience exactly so you can enable it
+and restart and then you'll see the new
+search experience
+excellent and while you're here under
+the environment there's preview features
+there's a lot of other things in here
+you can check out to see if maybe it
+fits in your organization to do this or
+maybe you want to get ahead of the curve
+and kind of get some of these new
+features and test them out these are
+preview features which means they might
+break
+but or they might change or they might
+change
+um but but they are some there's some
+pretty awesome stuff and as you can see
+I think I have most of them checked so
+um so yeah I I use pretty much all of
+them just to try them out we we really
+love the feedback we get when we have
+things in preview
+um for example for the compare
+experience that we're going to show here
+in a minute we got a lot of great
+feedback when we were iterating on it
+and that has been immensely useful so
+folks if you know we love it when you
+all try the preview features and give us
+that feedback so please keep that coming
+absolutely I do want to kind of give a
+plug here because
+you know these things don't just happen
+because you decide that's what you want
+it's because you decide that's what we
+want based upon what we say and so built
+right into Visual Studio this little
+icon in the far right hand corner send
+feedback
+where you can report a problem or
+suggest a feature one of the things that
+I have found is
+um you know
+there are times and we're all guilty of
+this where we kind of grumble and
+complain you know pick rocks at
+something because we're irritated about
+something but until you take that step
+of actually doing something about it
+you're just whining you know and so
+being able to say okay I have a problem
+let's go ahead and report that because
+that gives Microsoft the ability you
+know Dahlia specifically the ability to
+go in there and look and say oh I can
+fix that problem or maybe it's a person
+like a a per computer problem or
+something like that but report a problem
+is great but also suggest a feature
+so if you want something
+suggest that feature two of the features
+that uh our team worked on is based on
+highly voted suggested feature because
+we that communicates to us that a lot of
+people are gonna be helped from
+implementing that feature
+um so we we love it when we see so much
+Community engagement and kind of a
+direction of what the community really
+wants
+I think I saw somewhere I'm not sure if
+it was the um under what's new or if it
+was it wasn't here
+um maybe it's in the release notes for
+17-7 but they had a list of
+you know this had so many people
+upvoting this and this had so many
+people upvoting it and that's why it's
+in this update
+um so yeah they can't do everything you
+know you're you're not superhuman but
+you know as much as possible yeah you
+try
+um but as much as possible the feedback
+drives the product
+so yeah great stuff
+so while we're navigating this Library
+there's gonna be things that come up
+that we just don't know because this is
+the first time we're in the in this
+library and that's a pretty common thing
+to have happen right either you're
+working a new a new system or a new
+application or you just get hired at a
+company and you're trying to figure
+stuff out so one of the things I
+discovered in here is if we go to email
+um email address validator
+I found this
+um this email address validator it uses
+mime kit which I might not be familiar
+with and it seems pretty simple if we
+look at this we can probably read okay
+it's take looking for the at symbol
+which if you've known anything about
+email address validation that's pretty
+much all you can do to validate email
+addresses say does it have an at symbol
+otherwise you know sure but
+um we have some stuff in here that you
+know might not be something we're
+familiar with such as email address dot
+triparts but if you Mouse over this a
+really cool newer feature is we have
+right down here GitHub examples and
+documentation so I just moused over this
+and it's like hey you want to see what
+people are doing to make this work
+and here we go
+so there's examples of other people
+doing this in their code and how they
+implemented this mailbox uh or mailbox
+address dot triparts that's pretty
+pretty impressive
+you're also notice that at the top
+um you can see all the different
+overloads so you got the overloads here
+um and you can try different ones while
+we're
+here nice
+all right so
+um so while we're in here let's also
+talk about kind of figuring out stuff
+that maybe you don't understand and you
+need more information on like this try
+parse here we can hit F12 and go to it
+and this is in mind kit which is not
+part of this project It's actually an
+external library but but you know what
+is it so let's actually go to the very
+top here
+and we're in the namespace mind kit and
+I'm gonna go you know what alt slash I
+use the keyboard shortcut and we'll say
+We'll ask copilot which that's looking
+at the entire class now
+what does this do
+yeah that pink on the left kind of gives
+you a hint of what context it's looking
+at when you're asking a question so I
+like to pay attention to that to figure
+out hey do I want to go maybe further
+into a method or outside the method
+um so it's really helpful to you know
+pay attention to that pink on the left
+yeah that's definitely helpful for
+seeing what exactly it's kind of
+processing and thinking about
+um so this is a mailbox address which
+inherits from an internet address it
+explains more about about how this thing
+works which is really impressive just to
+understand what's going on but some
+really cool stuff down here there's some
+additional suggestions so it's like okay
+here's the information you're probably
+looking for but maybe what's the next
+step in this process now you can ask
+anything you want you know
+um is this a popular library or you know
+some of that you could ask at that but
+it's saying hey what other classes
+inherit from internet address how is
+this class relate to mine and so many
+other things and just you know if we
+select how it's related to mine it's
+going to talk more about how this
+relates to mine so really good stuff
+here to kind of go even deeper and even
+help coach you on what you might want to
+know more of next I find that it does
+really well when it's summarizing a long
+list of information whether that's code
+or whatever and then generating
+something out of it so I often use it to
+say like what is this thing like
+concisely or like generate docs because
+if you think about it it's basically
+reading everything in the class or
+everything in the code and summarizing
+it in a few sentences which is what Doc
+is and it does really well in that case
+as well
+one that the fun thing I saw recently
+that did was I asked it to explain like
+explaining like I'm a five-year-old what
+does this thing do and explain it in
+Lego terms which is just awesome that it
+was actually really good explanation and
+yet broke it down into Super simplistic
+you know talk like I'm five because
+sometimes I need that so some really
+creative stuff you can do with GitHub
+besides just documentation and break
+unit tests and all the other stuff they
+can do for you
+sorry cool stuff
+all right so while we're here I kind of
+want to show off something that came out
+recently that I have enabled
+um which I have a question for you we're
+going to look at talk about the
+um the different curly brace
+colorization so you have the yellow one
+here then the pink one here
+um can be a little bit more difficult if
+you are colorblind but we'll get to that
+in just a minute but this came out in
+17.6 I believe now
+um is this something that gets turned on
+by default we have to turn this on
+that's a great question right now it's
+not enabled by default so you have to
+enable it but if we're planning on
+hopefully turning this on by default but
+let's show folks how to turn it on and
+off just in case they don't want to see
+it so if you see that let's go back to
+the control Q shortcut because I love
+accessing features from that and if you
+look for brace colorization
+my little brace pair colorization
+perfect
+there we go yes and if you scroll down
+it's right there enable brace pair
+colorization
+right there cool
+now that does raise the question though
+what happens if I'm colorblind I can't
+see red green or another pair of colors
+am I just out of luck or no you can
+actually customize the colors and uh
+accessibility is a big reason we added
+the customization feature
+um so if you go to the font
+so if you go to search and look at the
+fonts menu
+yes fonts and colors I love it search by
+the way
+I love it too and then if you scroll
+down a little bit
+you'll see brace matching level one two
+and three because we repeat after three
+colors so if if you want to teach that
+go ahead I actually ended up uh getting
+a lot of comments on our choice of
+colors uh a lot of people have a lot of
+opinions about what colors they want to
+see so you have opinions feel free to
+adjust this all you want and it'll apply
+the setting and that's the color that
+you're gonna see with your brace
+colorization awesome I like options
+um so brace causations I really
+appreciate it I
+I'm usually deep into something I can't
+figure out where I'm at and that's um
+that's really helpful but the other
+thing that I've got turned on
+um again we'll talk about if it turn on
+my default but sticky scroll is another
+thing that I'm showing off right here
+um right now I can see even though I'm
+I'm kind of in this this if statement
+here I can see that I'm inside of an if
+statement instead of a set inside of
+public string address inside of the
+class inside the namespace so you can
+kind of see where I'm at in this really
+long I mean we're this right here let's
+just go to the end
+um we're talking 14 1500 lines of of
+code and yet I can tell in the middle of
+it
+kind of where I'm at in this whole
+structure of things
+um so that's sticky scroll where it kind
+of sticks to the top
+I I want to point uh point out a couple
+of things here so we hear a lot of
+people say this is a really important
+real estate and I don't want sticky
+scroll to take up so much space so you
+can actually customize it uh when you
+enable it to say I just want three lines
+so if we go back to our feature search
+or tools options and we go to Sticky
+and if you go up a bit
+I'm on sticky scroll and the maximum I'm
+zoomed into my text here this is one of
+those things I have been talking to
+people about and they're working on
+um but notice it cuts off but right here
+that's five lines what I've got and I
+can prefer outer Scopes or interscopes
+I love that one as well because we
+recently added it if you don't want the
+outer scope like the namespace and all
+the stuff that you already know about at
+the top and you want the inner scope you
+can switch that I have it actually on
+the inner Scopes uh settings and as you
+are coding like maybe you're in a while
+loop you can see that you're in a while
+loop and that is really helpful for me I
+think I saw that in here somewhere I was
+I was deep enough
+it's I probably lost it but
+but yeah so that would drop off if I
+have five it's gonna drop off
+on the sixth one the sixth one would go
+on and the namespace would go off that's
+exactly inner and outer is the sixth one
+doesn't show up in that list we always
+get namespace through number five
+so or three or two whatever you want to
+choose for your your level of
+indentation but
+um yeah that that's a okay so let's be
+honest here
+um as developers we're supposed to write
+short methods and say a short classes
+that are really easy to maintain update
+and
+we don't we have four thousand line
+class files that have you know the
+everything all in one junk drawer of of
+stuff and this is really helpful so so
+yeah this is you know me personally I
+like this feature
+um even though I try to violate the
+put everything in one class um that's
+really helpful
+so while we're here
+um let's talk about you know one of the
+things I kind of ignore a lot but
+there's these like different colors on
+the side what do they mean
+that's a great question so this is
+something I recently dug into because we
+were trying to answer some questions
+those colors you see on the scroll bar
+actually means something so on the very
+far uh left side for example you'll see
+anything to do with Version Control so
+if you make a change in this file right
+now
+in a file that actually is in Version
+Control that was in the mind kit yeah
+um let's go ahead and let's just put a
+class here
+um
+public class or yeah public class
+Tim because you know
+gotta make my mark
+and you can already see it on the right
+here do you see how there's like a green
+uh over here yes and it's empty now if
+you say we'll switch to uh green all the
+way
+and it tells you
+this is a tracked file I've just added
+something new and now it's deep green if
+you remove something if you remove maybe
+the class that's up above it you'll see
+it show up in red
+um or blue blue also means changed or
+modified and then if you save it it'll
+go deep and that's like Version Control
+but it not only is the left side means
+something but also the middle and the
+right side so on the right side you'll
+see any errors so if you introduce an
+error right now you'll see a small
+little red box that will show up so
+let's let's undo that and then let's
+just start putting in some errors down
+here I'll create a Constructor
+[Music]
+um
+a hard time writing errors intentionally
+right you know like
+um how about this try to do a find and
+replace and do something awful like put
+in null
+oh
+so Ctrl H is the find and replace
+shortcut by the way
+and if you do like find yeah email and
+like put in now let's just break it
+there's illusion current project current
+project
+so you'll notice now you have a red on
+the right side here
+but you don't have the change yes and
+you'll also notice that when you did the
+find it'll annotate that in the middle
+of the scroll bar so if you try to find
+for example
+um add
+you'll notice that there's a DOT exactly
+so any fine matches will show up there
+um any bookmarks or break points if you
+add a breakpoint they'll show up there
+and you can also customize these Colors
+by the way so if you go to that same
+menu let's start let's not show it right
+now but if you go through the same menu
+of fonts and colors you can customize
+all the colors so just think about the
+tip that if you if you always ignore it
+that's okay but if you're all any if
+you're curious at all you'll notice that
+scroll bar will also give you a hint on
+what you just did excellent now there's
+other ways of setting up your scroll bar
+I believe there's a thing called map
+mode I'm going to talk about that and
+what we can do with map mode yes so if
+we go to our favorite control queue now
+and you switch to
+search for map mode
+use scroll map mode yeah
+and I'll come up with this menu so if
+you switch the behavior to use the yes
+mode for vertical scroll bar and click
+ok
+and I see a lot of people have using
+this for very long classes where you'll
+notice a scroll bar switch so now you
+see an outline of your class and if you
+hover over you can see a preview of what
+you're on if we go back to maybe a
+longer class
+so let's go into our triparts again even
+though we don't control it
+there's there's a lot of stuff in here
+and it's really useful when you're
+navigating and maybe you're writing code
+at the top of a class and you see
+something going wrong at the bottom of
+the class you can use the combination of
+the annotations to get a hint of okay
+what's going on over there I still want
+to write where I'm writing but I want to
+just get a preview of down below the
+class at the bottom what's going on
+there so that's useful for that if you
+like that kind of Mac mode excellent
+that can be really helpful
+so let's talk now we've kind of gone
+over you know browsing through your
+stuff and but now we're maybe at a point
+here I'm already starting to make some
+changes but I'm kind of a point where I
+want to add some stuff and you know one
+of the new features I really like and
+let's let's close out all the stuff that
+I've broken
+um we'll leave that for a senior
+developer to take care of
+um but let's just say that I wanted to
+add something new in this email folder
+or somewhere else
+um I really like the new shortcut we
+have Ctrl shift a I believe yes um to
+bring up the file new items um I
+actually did a whole video just on this
+because of all the different stuff you
+can do in here but
+um other thing really helpful for you
+know if we did something like I don't
+know
+um email clients
+like dot CS but I also want to have the
+interface for it I want to create it now
+um you know I can put a comma and say I
+email client
+dot CS
+and then it will add this right to the
+path it's at
+so
+there's our email client and I email
+client
+um the really cool thing is this is an
+internal class email client it says okay
+you want a DOT CS file right but this
+one is an internal interface because you
+started with the convention of capital I
+so that's that's super awesome to really
+get quickly into creating new new stuff
+so that that's a um a nice new feature
+we've we've added or they've had you've
+added I'm sure it's not me I keep saying
+they and we and you know I'm taking full
+credit for everything that's right in
+Visual Studio everything is wrong go to
+report a problem no problem that's
+that's how I roll you know so love it
+but yeah
+um great new feature so and and I love
+that you opened up the two files and
+kind of like struggled to see the
+differences I think that is a great
+segue to the new compare option
+so if you want to compare the two files
+you would select the two
+yeah right click this is uh one of the
+highest voted suggestion feature
+suggestion tickets that we got and it
+was hey could you just add a way for us
+to compare two files in solution
+Explorer and we're like yes that's
+totally reasonable we should do that
+yeah
+so now you can just see it side by side
+and all you needed to do is hold Ctrl
+select the two files you want to compare
+and click on compare selected excellent
+a file comparison is something that you
+kind of take for granted but at the same
+time it's always been like bring a third
+party tool in or you know and yet we
+have it for like git we have to have
+file comparison all the time it's
+already kind of there but not and so
+this is a really nice addition but you
+can't just it's not just you can compare
+two files you can also right click on
+one of your files and say compare
+selected whoops I've got both selected
+still
+let's try this again so if I compare
+this I can right click and say compare
+with
+and then find something else on disk now
+that's totally different but I can
+compare from a file on disk and find
+something maybe a different project
+that's it's close you know one of the
+things I do a lot is I'll have data
+access it's pretty close from one
+project to the next and I can compare
+from one project to a totally different
+solution somewhere else on disk and say
+hey what did I change here they want to
+bring those changes back to the original
+so yeah really cool feature
+love it
+all right so so yeah that's that's a
+bunch of features we've covered I think
+nine features so far plus a couple of
+bonuses along the way
+um but one of the ones that kind of gets
+lost in the kind of shuffle a lot and
+it's been there for
+years I think is code cleanup
+um so let's talk more about code cleanup
+and you know what is that and how does
+it work
+I love that because it's we
+we keep wanting folks to not have to
+format files manually
+um we know it's tedious we notice a lot
+of work so we keep making improvements
+to how do you automatically format or
+how do you automatically clean up your
+files so there's this small little room
+that keeps getting overlooked and I I
+think we need to like have you know a
+giant little box or kind of have it pop
+up that allows you to clean up your code
+so if you hover over there down below
+so icon right down down here yes
+you can actually configure code cleanup
+and you can run code cleanup so the way
+you can do that is not only can you do
+it from this broom but you can use the
+control K control e shortcut so if you
+click on configure cleanup and you're
+curious about some of the rules that we
+apply every time you clean up we'll
+format the document we'll remove
+unnecessary Imports all these stuff that
+you can not have to manually do and
+you'll get that if you do Ctrl K Ctrl e
+or click on that broom
+okay
+um let's let's just do that first so
+let's click on the broom and run this
+I've I've intentionally indented this
+wrong we have using statements up here
+or using directives I'm sorry that are
+you know incorrect or not needed so
+let's just click on the Broom
+problem solved
+I I love that so much and in my own
+Visual Studio I have it actually run on
+Save let's do that
+um so I have found that just coming here
+and
+searching
+super helpful there we go so we can
+select profile one or profile two and
+then say check the box run code cleanup
+profile on save so if we were to back
+this stuff out of here
+and then let's just create another
+property here sure that was that was
+GitHub cop
+they just suggested the last name I
+believe
+there's a little bit of a a really cool
+thing but it's also a little bit of a
+um
+you're not sure who would give the
+credit to so just create a visual studio
+I guess but it's either intellicode or
+it's GitHub copot and it kind of
+dovetail on each other and and both do
+some work there but we now have a change
+we're going to save this file I'll hit
+Ctrl s to save this file
+and cleanup is done so yes so really
+awesome picture highly recommend turning
+it on
+um if if you have your own settings
+for your repo you can go to your editor
+config file adjust the settings there
+um you don't have to stick with the
+defaults feel free to customize it all
+you want I've seen different repos use
+different editor config where the team
+agrees on which you know indentation and
+all those stuff they check it in to get
+and then after they do the code cleanup
+on save it automatically formats it for
+you so if you ever find yourself in the
+future doing any formatting manually
+think about using Code cleanup and as I
+brought this up because there's a lot of
+available fixes in here that you can
+look through and just add
+yes you can add this up remove
+unnecessary casts well that'd be great
+probably maybe you know so it's up to
+you if you want to do that or not
+um the the included fixes by default are
+kind of the safe ones
+you know remove unnecessary casts might
+actually change your code which is
+pretty fine I mean or it could be kind
+of scary for you so that's why
+um these are different options and you
+can just decide I'll put that in profile
+two I'll run profile one on Save but I
+can run profile two and see what changes
+Again by watching what changes in this
+right hand side scroll bar with a
+different color and say okay these are
+the changes that happened and kind of
+scroll to them so so really good stuff
+there and that's again been in visual
+studio for ever seemingly um it's been a
+long time
+um but it's one of those things that
+gets overlooked because it's just a
+little icon at the bottom that gets
+ignored and we keep updating those rules
+and you know that you see on those
+different profiles and the different
+language teams add items in there all
+the time so definitely check that out
+excellent so that's been 10 plus things
+in Visual Studio kind of make you a um a
+faster developer which is you know
+there's a lot of stuff baked in here I
+keep telling people that when you start
+using visual studio you're using just a
+little percentage of the overall power
+of it definitely learn more and more
+about your editor learn more and more
+about what it can do because our goal is
+not to spend time tinkering our goal is
+to to write good code and focus as much
+time as possible on doing that and using
+these tools can really help you speed up
+your process and make sure that you know
+you get the job done faster
+so so yeah thanks for all the all the
+new updates 17.7 is out now I appreciate
+the you know the listing the community
+and and making some of those great
+changes in it
+uh we we love hearing from the community
+and I am so so appreciative that you
+came on with us and showed these
+features from your perspective because
+we love hearing it from our users
+perspective too like what do you love
+like what are the things that are making
+your job more difficult how can we make
+that better our goal is to really help
+developers be more and more productive
+so that they focus on more of the coding
+and less of the tedious work
+um so keep that feedback coming we love
+having it and thank you so much Tim for
+coming and joining me excellent thanks
+for having me

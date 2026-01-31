@@ -1,0 +1,208 @@
+Hey there! Today I'm going to 
+give a short demo of the four main
+C++20 features in Visual Studio. Those are 
+coroutines, modules, ranges, and, concepts.  
+So what I've got right now is an implementation of 
+a generator type. If you're familiar with a Python  
+generator it's much the same thing.
+This is based on C++20 coroutines.
+It's also compatible with ranges and it's using 
+modules; it's exporting a module called generator.  
+And then the single type which exports is 
+called tl::generator. Now what I want to demo  
+today is I'm going to implement iota, where iota 
+is a function template which is going to give  
+you back something which counts up in increments 
+of one, so if you start with zero then it's going  
+to give you zero, one, two, three, four, five, six so, 
+on so forth. Could start at 20 and give you 20, 21,  
+you get the picture. And I'm going to 
+implement this using my generator type. 
+Now I want iota to be exported as a module, 
+so I'm going to go and create a new item.  
+One of the options down here now is C++
+module interface unit, which has an .ixx  
+extension. It's going to go ahead and create an 
+iota.ixx. This will create a new file which is  
+exporting a module called iota. Now I want a 
+single function template which I'm going to  
+export which is going to be called tl::iota. 
+So I'm going to have namespace tl. export,  
+because I want to export to this from 
+the module. It's going to be a template.
+I want to take anything which is an integral type,  
+which i can use std::integral for in concepts. 
+It's going to be going to return a generator  
+for T. This is where all of the magic for coroutines happens, it's all in the return type.  
+It's gonna be called iota, and I'm going to take a T or 
+you can just pass nothing and it will default to  
+zero. Okay so I've got a few errors here 
+because I haven't included ranges and I haven't  
+imported my generator type. You can see if I 
+hover over here it gives me an error.  
+So you might think that I
+want to #include here.  
+This is actually subtly wrong. Anything underneath 
+this export module will have module linkage and  
+we don't want everything in this header file 
+to have module linkage, we'll get some weird  
+compiler errors. The way to get around that 
+is to put it in the global module fragment, which  
+you do with a single module semicolon, like that. 
+We're also going to need to include coroutine
+and we want to import generator.
+And if we save this..
+There we go! IntelliSense just 
+found std::integral in the ranges header.  
+And we should hopefully get tl::generator soon 
+as well. Now if I control click on this import  
+statement, this is going to go and look for the generator module, and it's taking a  
+little while because it's having to scan for all 
+the dependencies and all of the the modules in  
+the project, the next time that you do this it 
+will be a lot faster. And if I ran a build first...  
+But there we go, we got our generator module. 
+That's handy. For example if I do this again
+then it goes pretty much instantly because it's 
+already worked out dependencies and you can  
+see the intellisense has now found tl::generator. 
+We're all good. Okay so our implementation of iota.  
+We're gonna loop infinitely. You could give this 
+a bound or end, I'm just gonna count up infinitely.  
+And we're gonna co_yield back n and then increment 
+it. So all this looks like an infinite loop.  
+And it is, but this function's not going to hang 
+when you call it. Whenever it gets to co_yield it's  
+going to suspend, return back to the caller, and 
+then this function can then resume later when it's  
+asked for. So this will stop in the co_yield and 
+then loop round and then loop around whenever you  
+ask for a new value. That's what 
+the tl::generator is going to be doing.  
+Okay, so we've got modules, we've got our 
+generator, which is built on coroutines.  
+We can go and test this out. Okay, so in 
+our generator test I'm gonna import iota.  
+We're gonna need ranges, we're gonna need 
+coroutine again. Note that we do not get  
+the imports, the hash includes from 
+here, this is all like firewalled, which is one of the  
+actually good things about modules. And I'm also 
+going to do some output so I'll include iostream.
+Okay, I'll just have a single main function and 
+we can test our iota like this. for i in tl::iota,  
+start off at 10.
+Oops, std::cout i.
+And a space. Okay, so this will never 
+stop, right, because tl::iota is gonna  
+loop around and we'll just get 10 up 
+to you know when this loops around and  
+we don't want that. So let's pipe this, like I, 
+said this is ranges compatible so we can say  
+std::views::take 10 to take the first 10 
+items from this range. So now if I go ahead  
+and compile this. So what this is going to do is 
+call tl::iota, which will get us back a generator.  
+It's going to pipe it into views::take and 
+now whenever we go around in this loop, 
+something's going to be dereferenced internally 
+which is going to cause the coroutine  
+which we defined here to drive forward and give 
+us a new value, and then take is going to make  
+sure that we finish once we've got 10. So this is 
+kind of a nice way to compose things, this is the  
+the value proposition of ranges, you know, this is 
+a kind of a silly example, but you can see how you  
+could compose these things as much as you want, and 
+also the implementation for iota is way smaller  
+than anything you would write by hand for ranges 
+which, would be, you know, a couple hundred lines of  
+code or something, it's about 15 with all of the 
+the includes. Okay, so that succeeded, we can go  
+ahead and run this and hopefully we should see 
+10 through 19 being printed out to the console.
+10 through 19. There we go 10 
+through 19. Okay now say that we want,  
+like right now this takes any integral type.
+Maybe we have something which you know acts like  
+an integral type um but isn't. 
+Maybe it wraps some integer.  
+int_like. It could have other things basically 
+anything which you can increment and subtract  
+to take the difference between. So say we have int_like 
+which has some internal integer, and it has an  
+operator++ which you can use to increment 
+it and then we also need operator++,  
+a post increment operator which you know makes a 
+copy first and then increments and then returns  
+temp, and then we want to be able 
+to take the difference between two.  
+friend auto operator  
+minus takes a couple of int_likes
+and returns the difference. Oops.
+Just return a.i minus b.i.
+Okay, so if we compile this right now then 
+we're expecting to get an error because  
+iota says it requires something which is an integral 
+type, like you know, int, or short, or long and we've  
+given it something which is not an integral 
+type, so we're expecting a compiler error here. 
+And this is concepts. You know, we're 
+constraining this function template-  
+Oh, we're getting a different error. I must have 
+class type... Oh, I need to give it int_like here.  
+Yeah, so we're expecting an error here because 
+int_like  acts like we want, all we really need  
+is to be able to increment this thing, but it's 
+not an integral type, so the compiler is going to  
+give us an error. One other thing to note here 
+if I look at my output is this is scanning for  
+module dependencies. This means that the build 
+system is doing all of the dependency handling  
+for us, for these modules. We're not going to 
+have to tell it in which order to build these  
+modules and things like that, it's going to work it
+out automatically, which is very nice, and you  
+can see here in our errors we did get no matching 
+overload found, because the associated constraints  
+were not satisfied. So that's what we expect, 
+that's what concepts gives you: the ability to  
+constrain functions and for the compiler to 
+tell you that something went wrong. You didn't  
+have the right constraints satisfied. We can 
+fix this by changing this to weakly_incrementable,
+which basically says you can pre-increment 
+it, you can post increment it, you can find  
+out the difference between two values. Slightly 
+weaker than incrementable, the difference between  
+the two is weakly_incrementable supports single 
+pass operations, whereas incrementable allows  
+you to do multi-pass. So this is going to go ahead 
+and compile again, and hopefully this will succeed. 
+And we will print out, because we're starting at 
+zero then we'll get zero through nine. So again  
+this is scanning for dependencies. Oh we forgot to return a value here return *this.
+There.
+It's one thing I always forget when 
+doing things like that, returning  
+this. This is going to go ahead and rebuild, 
+and one other thing like I mentioned you can  
+control click on generator here and it will 
+go to your module, the go to definition will  
+also work, so if I go ahead and control click on generator then this is going to take me
+straight to the the implementation 
+for our generator type.
+As soon as IntelliSense works 
+out we're going. There we go.
+Okay, that succeeded. We can now run this
+and we should see zero through nine. 
+There we go, okay, that all worked!  
+So that was my whirlwind demo of the main 
+C++20 features inside Visual Studio.  
+Please do give it a try, let us know if you 
+find any issues, we'd love to hear your feedback.  
+We'll be continuing to work on the IDE experience 
+to make it the best we can, and also please do  
+check out pure virtual C++ on the 3rd of 
+May, where we'll be talking a lot more depth about  
+Modules in particular and also our general C++20 progress, so thanks very much, i'll see you there!

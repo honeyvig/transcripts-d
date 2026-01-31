@@ -1,0 +1,45 @@
+hi everyone thanks for joining this
+session on accessing code in the cloud
+with GitHub where we'll go over how to
+clone a repo to your local machine with
+Visual Studio
+I'm starting off on the learning series
+main repo page where I can see this
+green code drop down button I'm going to
+copy this https URL and then I'll go to
+visual studio and click clone a
+repository
+here I'm going to paste the link and I
+can decide where in my file system I
+want the repository to live
+by default Visual Studio groups all of
+your clone repositories together in the
+source slash repo folder of your user
+Drive
+I click clone and my repository begins
+cloning
+I know it was successful because I can
+see the name of my repository in the
+status bar and also in the get changes
+window label
+you may notice that there's a
+notification Banner prompting me to
+enter a username and email
+this is a git configuration that adds
+your name and email to each of the
+commits or snapshots of code that you
+push
+it can be different from your GitHub or
+Visual Studio account
+also depending on your use case you may
+need to adjust your username and email
+per repository if for example you'd like
+to push your code changes with your work
+email or your personal email
+we'll keep the checkbox for its set in
+global.git config checked for now since
+for this series we don't want to change
+this information every time but you can
+always go into the tools options get
+settings to adjust this later
+thanks for watching everyone

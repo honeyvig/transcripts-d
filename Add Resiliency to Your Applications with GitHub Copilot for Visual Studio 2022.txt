@@ -1,0 +1,227 @@
+let's say you're writing an application
+that calls out to a web API and that web
+API crashes find out how you can make
+your application Not Crash by writing
+some code with Copilot
+all right so this is the web application
+that we're going to make not crash it
+has a bunch of pizza menus on it and
+what this does we have one web
+application calling out to a web API
+that returns well pizzas
+and when I go over here and I keep on
+clicking refresh it refreshes pizza's
+just fine but what I wanted to do now is
+go through and introduce an error into
+my web API that Returns the menu of
+pizzas so right here as you can see I
+have just a minimal web API that has
+returning pizzas and so what I'm going
+to do here is introduce using some
+co-pilot to help me out an air
+so I'm going to type in a comment and
+I'm just going to say
+generate a random number
+between
+one and two
+because I can never remember how to use
+the random number generator
+all right and it doesn't remember for me
+between
+one and two let's see if it does it now
+all right so how about we just do VAR
+random equals new random and see if it
+does it here all right so now we have it
+then if random number is one
+I'm going to want to return
+a 503 error
+so all I'm doing now is setting up my
+web API
+so it returns an error every time that
+it's a random number generator is number
+one and if it comes back be number two
+we're gonna return
+good
+so just setting things up any copilot
+help me out writing that
+by me prompting it just a little bit
+all right
+so I'm going to restart my web
+application and we're going to go over
+to the Swagger tooling and see it air
+out hopefully roughly every other time
+that we call it
+coming back up
+Swagger that's my cart here's my pizzas
+I'm gonna try it out real quick execute
+go down here and I did I got a 503
+execute 503 and now I got the 200 to
+come back so it's airing out roughly
+every now and then
+so we're implementing some transient
+errors coming back from our web API and
+so what I really don't want to have
+happen then is my web application you
+can see right here has crash it tried
+calling out to my web API got that 503
+and crashed but if I refresh it
+eventually it'll come back up like right
+here because it actually got the good
+response back so what I want to have
+happen and this is the key what we're
+all here today to see is to make sure
+our web app stays up by implementing
+some kind of retry policy to try that
+web app web API again
+keep on going to that transient error
+resolves itself
+oh hey
+back to the code
+and so what I want to do then is right
+here this get menu method is the one
+that is responsible for calling out to
+the pizza service to return to menu
+and so the first thing I'm going to ask
+is I'm going to actually open up
+GitHub copilot chat
+and I'm just going to want to say what's
+ah good.net Library
+for doing retries
+of http
+error
+and see what it comes up for me
+and it says
+when it's done typing everything poly so
+I'm going to go through and
+bring in poly for my packages to my web
+project
+browse through
+the little poly
+you bet
+and as it brings it all back in
+I'm going to jump back over to copilot
+chat for just a second
+and it actually is going to show me
+something pretty neat
+in
+that it shows me how to implement
+knows what I want to try or wait and
+retry async it's already guessing by
+where my code is and what it what what
+it thinks I want to do
+but
+I'm going to save here
+and then
+I'm going to highlight the code
+I'm going to right click on it and I'm
+going to say hey ask Copilot
+how can I retry this code when an HTTP
+error
+occurs
+copilot thinks about it
+and then gives me
+a way to do it
+so I don't like the way that it just
+gave me to do it I want to actually use
+poly to do it so one of these things
+about when you're using copilot or
+copilot chat is that you want to
+Trust
+but verify the code that it brings back
+and so what it has here let me open it
+up just a little bit more
+is that if it fails three times you know
+go back you know while retries less than
+three I want to use poly I want poly to
+do all the work for me I don't want to
+have to think about it myself so
+let's actually do that for us
+let's try it one more time
+right click ask Copilot
+have Ollie
+create a poly
+policy
+to retry when HTTP exception occurs
+how about that
+and let's see what a copilot comes up
+with this time
+make this a little bit larger so we can
+see what's going on
+and then I'll scroll up because I want
+to get the menu
+and here we go
+what I'm going to do is I'm just going
+to copy
+this in
+topic comment on what I had
+and then put the new one in
+make sure I actually copy it from the
+copilot chat
+happy paste is very hard for me let's
+see if I can get it now roll C
+TRL V and here we go
+and so what it's saying you know what
+we're gonna try a wait and retry a sync
+policy first time's gonna be three
+seconds next time is five one second
+three five seconds five seconds
+and then
+retry
+and it's saying you know what all the
+pizzas that might be null here so
+initially I'm just going to say new list
+Pizza
+so again
+trust but verify so let's start it up
+and see if what copilot gave us works
+there were Bill Bears what did I do
+wrong
+new expression
+after the type let's see line 35.
+have to do my parentheses all right
+let's go again start
+everything spins up
+so let's try our Swagger tooling out try
+it out let's see we should just be
+getting 200
+values back
+code 200 we should not see a 503 coming
+back at all but we or we should still
+see the 503 coming back from here
+because we're calling directly to
+the web API web API is still an error
+what we shouldn't have happen is our web
+app should be catching those and
+continuing on assuming that we don't get
+three errors in a row looks good so far
+let's refresh
+good
+good
+still looks like we fixed it
+all right there we go so you've seen now
+actually a couple good points here you
+saw that how we use copilot and GitHub
+copilot chat to introduce well we how we
+use it to find a random number and then
+introduce a random error into our code
+to return a 503 status code and then how
+we use copilot chat put in the poly
+nuget Library so we can have a retry
+policy inside of our web code to retry
+whenever our web API blew up
+but the cool thing that you saw is that
+sometimes co-pilot and copilot chat
+aren't 100 correct so you have to trust
+but verify and we saw that oh what a
+return the first time wasn't what we
+thought it would do or was so we went
+through tried it again and it did give
+us something that worked better so press
+but verify sometimes everything's great
+sometimes
+you're just on the start of it so
+anyways at the end of the day we got it
+working and so there we have it making
+sure our application can call a web API
+not fail even when web API on us blows
+up

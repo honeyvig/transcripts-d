@@ -1,0 +1,308 @@
+hi my name is Daya I'm a product manager
+on the visual studio team in this video
+I want to share with you some tips that
+will help you be more productive in
+Visual Studio what you're seeing here is
+a very simple application that I built
+for this demo it's a rock paper scissors
+game
+the first tip I want to share with you
+is the most fundamental one which is to
+learn your keyboard shortcuts there's
+lots and lots of keyboard shortcuts out
+there the more you learn the keyboard
+shortcuts and you keep your hands on the
+keyboard instead of reaching for the
+mouse the better because not only are
+you saving time but you're also not
+context switching one of the really
+important shortcuts that I use all the
+time is the control Q shortcut to search
+for other shortcuts as well so for
+example one of the shortcuts I had a
+really hard time remembering is to
+comment out the current line I'm on so I
+would look up comment and find out that
+it's not control slash it's control key
+slash and I wasn't used to that in other
+programs I would just use control slash
+all the time so the other tip that I
+want to share here is that you don't
+have to go with the default shortcuts
+what I ended up doing I actually ended
+up overriding the defaults for
+commenting out online and you can do
+that by going to the keyboard settings
+options page
+it's under options environment keyboard
+you can search for any keyboard shortcut
+that you want to override in my case I
+want to override the comment out align
+shortcut you select it you'll see what
+the current shortcut here is and you can
+switch it out so for me I want to switch
+it out to control slash assign it press
+OK and now I can just use it to comment
+out online I don't have to do Ctrl K
+Ctrl sash anymore I can just use control
+slash the other thing I want to point
+out is I know a lot of people switch
+back and forth between programs so if
+you want to use shortcuts from a
+different program you can actually do
+that in visual studio so if you go back
+to the keyboard shortcuts page that I
+was on
+you can switch the the shortcuts that
+you're using to a different program for
+example I know a lot of people use vs
+code and switch between vs code and
+visual studio if you want to use a
+shortcuts from vs code in Visual Studio
+you can select this option and do that
+uh one of the ways that I've learned a
+lot of shortcuts is using the visual
+studio cheat sheet so you can access
+that actually directly in Visual Studio
+by going and uh looking up keyboard and
+then you can do you can click on that
+first reference here which is gonna find
+the page that we have on keyboard
+shortcuts
+um what I ended up doing was I actually
+ended up printing off this cheat sheet
+and I would go through it every week and
+learn a couple of shortcuts and just
+force myself to use it all the time so
+that next time my muscle memory is right
+there and I remember how to use some of
+those shortcuts and some of these you'll
+probably already know so you can scratch
+it off that's done but some others you
+might be thinking oh I need to learn
+that so next time you can try to use
+those keyboard shortcuts so you're
+building that muscle memory
+my next tip is around navigating your
+code quickly we actually spend a lot
+more time reading code than writing code
+so it's really important to learn how to
+navigate your code quickly so let me
+show you an example of how I do this
+let's say I am in my test class and this
+test is actually failing right now
+so if you take a look at uh the expected
+result and what it's providing it's
+taking in scissors and it's not
+assigning it to the right enum so
+instead of going all the way to the
+method definition and kind of going back
+and forth between your test class and
+your implementation what I like to use
+is the alt F12 uh keyboard shortcut or
+the peak definition feature and what
+that does is it gives you the method
+implementation or the definition right
+within your view so you're not having to
+go back and forth and if you want to
+make any changes you can make it right
+in here so for example in this case I
+made a classic error of copying pasting
+something without actually replacing the
+value so in this case I'll change it to
+scissors and what you'll notice now is
+my tests are passing and if you're
+wondering heydaya you didn't actually
+have to run any tests I'm using this
+really awesome feature that I found out
+about recently called live unit testing
+and the feature is a feature that allows
+you to continuously run tests as you're
+changing code I didn't even have to save
+the file here and it's running the test
+continuously the feature is only
+available in Enterprise so if you have
+access to the Enterprise Edition you
+have access to this really cool feature
+so back to navigation so Peak definition
+alt F12 is one that I really like to use
+the other one I like to use and by the
+way you can use escape to get out of
+peak definition mode
+um the other shortcut that I really like
+to use is the control shift backspace
+and that shortcut goes to the last place
+that you changed any code so for example
+I just changed the code in the
+implementation from paper to scissors
+and when I use the Ctrl shift backspace
+it took me where I changed the code and
+I know sometimes you don't really want
+to just change code and not look at the
+contacts make sure that no one else is
+using your code so in case you want to
+go to the last place that you edit it
+you can use Ctrl shift backspace the
+other one I use all the time is control
+minus and that one will just kind of
+navigate through Visual Studio and go
+backwards and then you can use Ctrl
+shift minus to go forward so think kind
+of a browser kind of situation where
+you're just kind of going backwards to
+where you were
+um you can also use the control tab
+shortcut to switch between
+Windows just kind of similar to you know
+alt tab in Windows you can use that
+control tab in visual studio and switch
+between the classes that you're writing
+um I know there's a lot of navigation
+shortcuts so if you're ever wondering
+about more navigation shortcuts or what
+they are there's this secret menu that I
+recently found out about and it's the
+alt back tick
+um shortcut and it brings up this menu
+that's different than what you do what
+you get when you right click on a file
+and it brings up some of the most common
+uh shortcuts that I talked about and it
+talks about some of the navigation
+shortcuts as well so that's just kind of
+cool just in case you don't know that
+this secret menu exists the next tip
+that I want to share with you is around
+reading code and it's around the feature
+that we recently added to visual studio
+that I think is really helpful for
+readability and it's called a sticky
+scroll so the way that you can enable
+these features by going to control Q
+and searching searching for sticky
+and you'll notice that it's under text
+editor General There's a sticky scroll
+section here and once you enable this
+feature what's going to happen here is
+that you're going to be able to see this
+section at the top that shows you the
+class or the method definition along
+with the code block you can't really see
+it in my test class let's go back here
+because I think you can see it a lot
+better here so for example when I was
+writing the while loop for my play
+Method it was really helpful to have
+sticky scroll on because I could see
+that I am in a while loop right now I
+actually didn't have a way to exit out
+of the game previously and then which is
+really dangerous but because I saw that
+there's I'm in a while loop I remember
+to add my break condition in my while
+loop generally it's really helpful to
+have sticky scroll if you have long
+methods I heard recently that it's a
+code smell to have long methods if
+that's the case any code base that I've
+worked on is really stinky because
+that's just really common everywhere so
+if you have long code you know if you
+have long methods or long classes you
+could really benefit from sticky scroll
+so that as you're writing code you can
+kind of see what's the top level of the
+code block that you're in the next set
+of tips I want to share with you is
+around editing code a lot of time when
+I'm editing code I like to go into full
+screen so I can limit any distractions
+you can do that using the alt shift
+enter key and that will take up as much
+of your screen as possible with your own
+code so you're not breaking your flow or
+anything one of the fundamental keyboard
+shortcuts to know when your editing code
+is the control dot shortcut which is
+going to bring up any quick actions that
+Visual Studio is recommending for your
+code for example in this case it's
+recommending I replace my VAR to an
+explicit type which is probably a good
+idea so I'll take that suggestion
+one more thing that I want to show you
+around here is if you want to make
+changes to multiple lines at a time I
+really like to use the multi-select
+feature
+let me show you an example of that let's
+say I have a few messages here and I
+want the computer to be a little bit
+more excited when someone wins what I
+can do is I can select the line that I
+want to change or the place that I want
+to change the line in I can press Ctrl
+alt and then click in the other
+positions where I want the cursor to be
+so I can make those changes and then I
+can make the changes here so I want to
+add some exclamation points here and in
+order to exit out of the mode you can
+just press Escape
+and that will allow you to change
+multiple lines at a time and I know
+sometimes people have to do that
+um one more thing that I learned about
+recently is that a lot of times I'm in
+the middle of the line and it's obvious
+that I want to just start a new line so
+I press enter and I'm like oh no I can't
+do that well I recently found out that
+you can actually press shift enter and
+it will start a new line even if you're
+in the middle of a line already so I
+really like that shortcut the last tip I
+want to share with you is to use code
+cleanup a lot of times when I'm writing
+code like this if statement it
+originally looks something like this
+where I just focused on getting the
+logic right but not quite the formatting
+the way that you can fix that is by
+using the control K control e shortcut
+which will invoke code cleanup but even
+better I actually have it so that it
+invokes code cleanup whenever I save my
+file
+um the way you can do that is to go to
+your cleanup save setting
+which is available under text editor
+code cleanup and then you can enable run
+code cleanup profile on save so
+technically speaking if I had done this
+and I saved the file it will format my
+file automatically which I really like
+because I don't like manually formatting
+my files that's something that should be
+automated
+highly recommend turning that on and if
+your team has specific like formatting
+that they all use you can use the editor
+config file in order to change the
+formatting to whatever your team uses
+you don't have to use the defaults that
+Visual Studio provides you you can
+customize the formatting that your team
+uses so that it's consisting consistent
+across repos
+and that's all I had for you
+um I hope you found any of those tips
+helpful there's lots and lots of more
+tips out there
+um I will include a link in the
+description to some more resources that
+you could use and a place where you can
+find more shortcuts so you can learn
+more
+um more ways to be productive in Visual
+Studio thanks for watching

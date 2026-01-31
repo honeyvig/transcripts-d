@@ -1,0 +1,60 @@
+[MUSIC]
+Assigning subscriptions
+is a key role
+for a Visual Studio
+Subscriptions administrator.
+To assign a subscription
+to an individual,
+select "Add" and choose individuals
+subscriber from the drop-down.
+In the Flyout Panel,
+the fields to add a
+subscriber are displayed,
+there are two ways to
+continue from here.
+If your organization is using
+Azure Active Directory,
+you'll have the option to
+search Azure Active Directory.
+Leveraging Azure
+Active Directory will
+automatically populate
+the individual's name,
+sign-in e-mail, and notification
+e-mail if one is maintained.
+At a different
+notification e-mail for
+receiving communications
+if you'd like.
+Select the subscription level,
+choose to allow software downloads
+and product keys, or not.
+Choose the country and language.
+To make notes about a
+subscription assignment,
+just add some details
+into the reference field.
+Lastly, click "Add" and you'll see
+the page update with a subscription
+assigned to your user.
+If your organization
+isn't using Azure AD,
+it's just a few extra steps.
+Instead of searching in the
+Azure Active Directory field,
+type the subscribers
+name and e-mail address,
+then follow the same
+steps as before.
+Lastly, click "Add" review
+any notices displayed,
+then once you're ready,
+click "Confirm".
+You'll see the page update with
+a subscription
+assigned to your user.
+For more helpful
+information like this,
+check out our docs pages or
+other recommended videos below.
+[MUSIC]

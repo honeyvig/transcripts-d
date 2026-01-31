@@ -1,0 +1,266 @@
+hello everyone and welcome to Simply
+Lars YouTube channel today in this video
+we are diving into a powerful machine
+learning algorithm that is made waves in
+the world of data science adab boost
+whether you are a beginner or experienc
+data scientist understanding adab boost
+is crucial for building robust and
+accurate predictive models but what
+exactly is adab Boost adaboost short for
+adaptive boosting is an unable learning
+technique that combines multiple
+classifiers to form a strong classifier
+think of it as a term of experts working
+together where each expert focuses on
+their areas where others might have made
+mistakes so by the end of this video you
+will be clearly understand how adab
+boost work why it is so effective and
+how you can implement it in your
+projects so we will start by breaking
+down the concept of boosting and how
+adab boost fits into this category then
+we will dive into how the algorithm
+adapts by assigning different weights to
+each instance focusing more on mistakes
+made by a previous model this unique
+approach help us to reduce errors and
+improve model accuracy significantly to
+make things even clearer we will walk
+you through a practical example showing
+you step by step how adab boost can be
+applied to solve real well problems
+whether you are working on
+classification problem or trying to
+improve your model performance adab
+boost is the technique you will want in
+your toolkit so stay updated and by end
+of this video you will not only
+understand adab boost but but also feel
+confident in using it to boost your own
+models craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we start if you want to
+learn Ai and ml from the industry
+experts Tri simpl postgraduate program
+in Ai and Ma machine learning from part
+University in collaboration with IB this
+C teaches in demand skills such as
+machine learning deep learning NLP com
+revision reinforcement learning
+generative AI chat gbt prompt
+engineering and many more so don't
+forget to check out the course link from
+the description box below and the pin
+comment so without any further Ado let's
+get started so what is boosting in
+machine learning boosting refers to the
+process of creating a strong learner
+from a collection of weak Learners a
+week learner is a model that performs
+only slightly better than random
+guessing on the training data by
+iteratively adjusting the weights of the
+training instances boosting algorithm
+assign higher importance to
+misclassified instances forcing
+subsequent weak Learners to focus on
+these challenges samples the final
+prediction is determined by aggregating
+the prediction of all weak Learners with
+higher emphasis placed on those that
+demonstrate Superior performance so now
+move forward and see types of boosting
+in machine learning types of boosting
+algorithm the first one is add a boost
+add adaptive boosting adab boost is the
+most popular boosting algorithm it
+assign ways to train instances and
+adjust these weights based on the
+performance of weak Learners it focuses
+on misclassified instances allowing
+subsequent weak Learners to concentrate
+on these samples and the final
+prediction is determined by aggregating
+the prediction of all week Learners
+through a weighted majority vote the
+second one is gradient boosting gradient
+boosting is a widely used boosting
+algorithm that builds an enable of
+decision learning the the third one is
+XG boost algorithm which is also known
+as extreme gradient boosting XG boost is
+an advanced boosting algorithm that
+combines gradient boosting with
+regularization techniques the fourth one
+is light GBM light gradient boosting
+machine light GBM is a high performance
+boosting algorithm that uses a Lea wise
+approach to construct de centries so now
+let's see what is adaboost algorithm so
+there are several machine learning
+algorithms available to address your
+problem statement and adab boost is one
+of these powerful productive modeling
+techniques known as adaptive boosting so
+adab boost is an anible method in
+machine learning it commonly uses desent
+Tre with just one split often called
+diffusion stems as its base estimator in
+this approach the model initially assign
+equal weights to all the data points it
+then increases the weight of the
+incorrectly classified points in
+subsequent models these points with
+higher weight are given more attention
+the process continues training new
+models until the overall error is
+minimized so now let's see working of
+adaboost algorithm so this image
+illustrate an example of adaboost
+algorithm using the data set provided
+okay so this is a classification problem
+since the targeted column is binary
+initially each data point will be
+assigned an equal weight as you can see
+1X 5 okay so the sample weights are
+calculated using this following formula
+and here n denotes the total number of
+data points okay in step two we will
+first assess how well gender classifies
+the samples followed by evaluation of
+how the variables age and income perform
+in classifying the samples for each
+feature we will create a decent stump
+and calculate its Guinea index the tree
+with the data lowest guine index will be
+selected as a first system let's assume
+that in our data set gender has the
+lowest guine index making it our first
+step so in step three using this
+approach we will now determine the
+amount of say or importance or influence
+for this classifier and categories dat
+data points using this formula okay here
+the total error is just the sum of
+misclassified data Point sample weights
+if there is one incorrect output in our
+data set thus our total error is 1x5 and
+the alpha performance of this STM okay
+using this so now we will find out the
+performance of the stemm so using this
+formula here zero represent a Flawless
+stemm while one represent a bad stem so
+according to this graph where zero is
+misclassification there is no error
+hence the amount of say Alpha you can
+say will be a huge value okay when the
+classifier predicts half correctly and
+half incorrect the total error is 0.5
+and the classifier signif amount of say
+equals to0 okay and if all the samples
+were improperly categorized the error
+will be quite large about to one and our
+Alpha value will be negative integer
+Okay negative integer you can say minus
+two okay in step four you might be
+wondering why it's necessary to
+calculate as stms total error and
+performance the reason is
+straightforward we need to update the
+weights because if the same weights are
+used in the next model it will yield the
+same result as previous one the weights
+of incorrectly predicted points will be
+increased while those of the correctly
+predicted points will be decreased okay
+more emphasis will be plays on the
+points with higher weights so after
+assessing the classifier significance
+the total error we update weights using
+this formula new sample weight equals to
+Old weight multip by amount of C Alpha
+okay when the sample is successfully
+identified the amount of say you know
+Alpha will be negative and the when the
+sample is misclassified the amount of of
+alpha will be positive you can see here
+plus and minus there are four correctly
+categorized samples and one incorrectly
+classified sample so in this case the
+sample weight of the data point is 1x5
+and the quantity of sa performance of
+The Gentle stamp is
+0.69 okay so these are the following new
+sample weights okay so this is the
+adjusted weight for incorrectly
+categorized okay 0.398 so here the total
+sum of the weights must equal 1 but the
+updated weights add up to
+0.84 to normalize them we divide each
+weight by
+0.84 making the total sum equals to one
+after normalization the DAT weights now
+sum to one okay see now sum to one so in
+step five we must know how to create a
+fresh data set to see whether or not the
+mistake have decreased to do this we
+will delete the same and new sample
+weights column and then split our data
+points into buckets based on new sample
+weights okay and in Step six we are
+almost done here the method now selects
+random values between 0 to one since
+misclassified records have higher sample
+weights so they are more likely to be
+selected let's say the algorithm
+randomly select the number
+0.38 or 0.26 or anything next we will
+see where the these random number Falls
+within the Ved range and create our new
+data set so this is our new data set so
+in Step seven the the new data set will
+be used to repeat the previous steps
+start by assigning equal ways to each
+point identifying this term the best
+classify the sample of calculating the
+guine index and selecting the one with
+the lowest value so assume we have
+sequently built three DEC entries dt1
+d22 and dt3 using our data set okay so
+when we run our data set through these
+trees the class with the majority will
+be determined and we will make
+prediction based on that so with this we
+have come to end of this video if you
+have any question or doubt please feel
+free to ask in the comment section below
+our team of experts will help you as
+soon as possible thank you and keep
+learning there simply not staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to no
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
