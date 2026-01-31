@@ -1,0 +1,384 @@
+[Music]
+>> Scott G.: What I'd like to do is 
+actually start off this event with
+some cool demos. And I'd like to
+invite Scott Hanselman on stage
+to actually show off both what you
+can do with VS 2015, as well
+as highlight a whole bunch of new
+capabilities that we're excited
+to bring to market for the first time
+as part of this week's announcement.
+So here's Scott.
+[Applause]
+>> Scott H.: Cool.
+Thank you, sir. So today we're going
+to be showing a whole series
+of demos based on a health clinic theme.
+We'll be using healthcare throughout.
+Everything will be based on this health
+clinic. In this particular
+application, it's going to be the public
+facing app for the health clinic.
+And this has been written in ASP.NET
+5 using the .NET Core CLR.
+And this is kind of a Hello World
+demo you've seen before, and
+I'll go run this app. You'll see
+what you've usually seen.
+This is a standard the Hello World.
+And now of course ASP.NET
+5 is open source and .NET Core
+is open source. We use a lots
+and lots of open source at Microsoft.
+And, in fact, I can usually
+bring in additional open source.
+From Visual Studio, I'll say
+Manage NuGet Packages. NuGet is where
+.NET service side libraries
+come from. You can see a number
+of popular ones there. But I'm
+going to try to bring in a
+library called RequireJS.
+This is a JavaScript library. It's
+a client side library that
+people use in other platforms.
+And you'll notice here that in
+Visual Studio Update 1, it's actually
+promoting that I use Bower instead.
+Bower is a package manager that's appropriate
+for client side technology.
+So now we've got tooling within
+VS for me to go and bring in
+that JavaScript library. And you'll
+notice here on the side Bower
+and MPM are both available as package
+manager options. And now
+I've brought RequireJS to that
+client side loader. So we've
+got all that rich tooling for technologies
+that people want to use.
+Now, I want this Hello World app
+to look a little bit prettier.
+So I'm just going to pick these
+up, some existing assets, and
+drop them in and then replace. And
+then I'll come over here to
+Edge and I'll hit refresh. And then
+the front end of my application
+looks nice. And that kind of make a
+change and hit refresh experience
+is what you would expect with static
+things like CSS and JavaScript.
+But I can also go back into Visual
+Studio and look for the home
+controller, for example. And I'll
+grab some actual C# and I'll
+make a change to the code,
+best health clinic ever.
+And then I'm just going to hit
+save. But I'm not going to do
+a build. I'm going to come back
+into Edge and then hit refresh.
+When we go over to the About page,
+it's actually recompiled that app.
+So I can have that kind of make changes
+to code and hit refresh.
+Make changes to code and hit refresh.
+The experience you'd expect
+with a Ruby or Node, but you're
+getting that with the power of
+C# and Core CLR. That actually compiled
+the application itself.
+So Visual Studio didn't do the compilation;
+ASP.NET did the compilation.
+And that's going to enable us to
+do that across platform as well.
+A really nice experience. This application
+is going to need diagnostics
+and telemetry. I'm going to bring
+in Application Insights.
+And this is going to send all the
+performance and availability
+and diagnostics information and send
+that telemetry up into the cloud.
+So as I run this application, if
+errors occur, exceptions happen,
+either in JavaScript or in .NET, that
+will be sent off to the cloud.
+So we'll right click and hit publish.
+And we're going to send
+this to the East U.S. We've got
+datacenters all over the world.
+In this case we're going to send
+this one to the East U.S.
+While that's happening, I'll run
+over into the Azure dashboard,
+and there's a thing called Traffic
+Manager that allows me to
+do geographically load balanced
+systems. We have this not just
+in the East US but also North Europe
+and Brazil all at the same time.
+So this public facing website is now
+suddenly available everywhere.
+What can I do with that, it just
+got published, it popped up.
+I'll switch back over to the dashboard
+and pick that website
+and click on tools here because I want
+to do some performance testing.
+Now that I have a scaleable website
+that's been sent all over
+the world, I'm going to performance
+test it. And I'm going to
+do that using the power of the
+cloud to create that load.
+We're going to generate load from
+the East U.S. And with Azure
+and Visual Studio Online we're
+going to collect a whole bunch
+of computers that are going to
+now start hitting that machine
+and generate load. That's going to
+take a few moments to start up.
+So I'll show you some load that I
+generated just a few minutes ago.
+You can see here we had 130,000
+successful hits. I can see how
+many requests a second. We're hitting
+that sight. So already
+I know that I'm going to have a great
+experience no matter where
+in the world that we are. And all
+of that information is being
+sent into Application Insights. Now,
+I can look at that Application
+Insights diagnostics
+and telemetry in
+Azure, but also I like spending
+time in Visual Studio and with
+Visual Studio Update 1 we have included
+the ability to look at
+that telemetry from within
+the IDE itself.
+So I'm going to come in here and bring
+up the Application Insights
+search and look at the time range
+over the last few hours to
+see that telemetry data. And here
+I've got all this information
+that I can query and see page views,
+what browser it used, where
+the data came from. Look at time ranges.
+I can dig in on individual
+page views and see all the detail,
+both server side and client
+side, and query that richness of
+the telemetry. But I can do
+it from inside Visual Studio. So
+you can see that with ASP.NET
+.NET Core and Azure and Application
+Insights I've got everything
+that I need in one place.
+>> Scott G.: Great.
+Thanks, Scott.
+Excited to announce today some
+of the things that Scott also
+showed there in terms of the ability
+to use the new ASP.NET 5
+based on the new .NET Core runtime
+that enable a bunch of new
+capabilities, including the dynamic
+compilation, that we're releasing
+the release candidate of both of
+those technologies this morning.
+And they're now available for you
+to go ahead and take advantage
+of and use.
+And what's great about the release
+candidate is not only can
+you download them, build apps with
+them, they also include a
+Go live license and enables you
+to also now start to go into
+production and start deploy real
+apps to real customers using
+all those technologies. Let's take
+a look at what you can do
+now with the new support that's cross
+platform. So here's Scott.
+>> Scott H: Thanks. I liked that little
+bit applause when we talked
+about how we can get this to run everywhere.
+I hope you enjoy this.
+I'm going to go right click, say
+publish again. When we publish
+something to Windows, we can go
+to Azure, we can go to IS, when
+we publish to Linux, you'll not necessarily
+FTP that up to Linux,
+you'll send it maybe up to Docker
+in a container. You can notice
+here, when I hit publish in Visual
+Studio, that Docker appears
+in the list there. It's first class
+inside of Visual Studio.
+So I've gone and said publish to
+take the exact same ASP.NET
+5 application running on the .NET
+Core RC1 and I'm going to send
+this now up to Azure on a Linux
+VM with Docker inside. This is
+using the same Docker tools we
+already know how to use.
+Just like we saw that integration
+with Bower, a tool that people
+know how to use at the command line,
+here's an example of using
+Docker, another tool we know at
+the command line. I'm going
+to bring up the command line. And
+in fact I'm going to use the
+new SSH client that you may have
+heard we're going to be shipping
+with Windows. Little tiny clap
+for that. Appreciate that.
+[Applause]
+So what we're going to go and SSH
+into this machine over here.
+This is now switching from the command
+line now. We are looking
+at Ubuntu running in Azure. I'm
+going to hit top to prove it.
+You can see Docker right there using
+up some CPU as Visual Studio
+is sending that up to Docker and
+that build is being sent.
+And that Docker container is going
+to be one of these images.
+Those are Docker images. You can
+see here's my health coming
+in here. I can say Docker PS A.
+Just 14 seconds ago was created
+the image called My Health and
+in the background, in the bottom
+left, you can see Visual Studio
+trying to talk to Docker to get
+that fired up. That is going
+to be a version of this exact same
+website. So I can publish
+to the operating system of the
+choice that I have, publish to
+the container that makes me happy.
+And in this case that's going
+to pop up. Now this again has been
+kind of a Hello World demo.
+Sometimes when we see Hello Worlds
+we're not really impressed.
+We're like okay there
+it is. Hello World.
+But we are not joking when we say
+this is ready today. This is
+a Hello World demo. Let's see a
+more advanced one. Let's see
+the private section of this health
+clinic with authentication,
+with SQL and entity framework with
+Linux talking to SQL Server.
+This is real data on a real app,
+running in Docker. Now, you
+could run one app on one VM in
+one Docker container, but in a
+real sophisticated production environment
+you might start including
+things like many Docker containers
+on many virtual machines.
+This is in fact running in a cluster
+of virtual machines running
+multiple Docker containers. And
+we managed all of that with the
+Azure Container Service. That takes
+care of all the complexities
+of creating all of those containers.
+And then I can go and layer
+on top of that and include technologies
+like Mesos or Marathon
+to manage them. So I'm getting
+to use the technologies that I
+want to use on the cloud
+that makes me happy.
+So hopefully that gets you excited.
+You can go and make this happen.
+You can start writing apps with
+ASP.NET and C# and putting it
+on Docker containers and Linux today.
+Start doing that now. This is some
+of the stuff we're doing today.
+Let's take a moment and talk about
+the potential for tomorrow.
+So I'm going to switch to
+another machine here.
+Here we go. So here I'm on an Ubuntu
+machine, and I'm going to
+look in this folder and see that
+I've got some C# code there.
+And, you know, wouldn't it be nice
+if at some point in the future
+I could do something like App Get
+and ask Linux for .NET and
+be rest assured that .NET was there
+and ready for me; and wouldn't
+it be nice if I could say something
+like .NET compile and then
+compile a .NET application and
+run this on Linux. This is a
+preview of some of the work that
+we're going to see early next
+year where .NET and the .NET command
+line here is going to allow
+us to go and run an application like
+this with a .NET Core on Ubuntu.
+Now, this example
+is the .NET that you know and love.
+This is the .NET where we've
+created a DLL and we have a Jitter
+and we have a garbage collector
+and all that. But wouldn't it be
+nice if I could do something
+like this and say dash dash native and
+use that .NET Native technology
+that you're familiar with for Windows
+that makes Windows universal
+apps so nice. I'm going to go
+add dash dash native there.
+And I'm going to compile the application,
+same exact application,
+same compiler same command line .NET
+compiler. There's the original
+one and there's to be clear a statically
+linked, no dependency
+required, native code application
+compiled from C#.
+And when I run it,
+it's fast because it's native code
+running on Linux that was
+compiled with the open
+source .NET Core
+and this is where you applaud.
+[Applause]
+I know it takes a moment to absorb.
+But that's a big deal.
+So I'm going to go ahead and just
+pull that applause from you.
+So this is some of the future work
+that we're doing. But I want
+you to know that you can take .NET Core RC1
+today and start building applications.
+You can deploy them in Docker, deploy
+them on Linux, Ubuntu and
+Red Hat, and put them in Azure.
+And I hope you have as much fun
+working with it as we
+had building it.
+>> Thanks, Scott.

@@ -1,0 +1,402 @@
+hey everyone welcome to simply launch
+youtube channel in this session we will
+be learning how to create a calendar
+using excel that is capable of
+automatically updating itself sounds
+interesting right but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you are a gig in a continuous hunt for
+latest technological trends in the it
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with the
+automatically updating calendar using
+excel
+so for that we might want to use a few
+simple functions in excel and let's get
+started with it
+so on the first sheet we will try to add
+some data so we will be using data
+validation in excel so we don't want all
+that list of data to be appearing on our
+calendar right so for that reason let's
+create a new sheet and in the sheet
+let's add our months
+and
+also let's consider a few years
+we are not creating the automatically
+updating calendar for just one year
+let's create for a couple of years maybe
+uh a 10 right so let's add in january
+and excel has this feature where you can
+just drag it and you'll get all the
+months altogether at once
+so it should be around december yeah
+january february march april may june
+july august september october november
+and december similarly so we are in 2022
+right now so let's add 20 23 and a
+couple of more years maybe
+so
+just ctrl not ctrl shift lower arrow key
+and now drag that to the december part i
+think we'll get
+a 12 years
+so we have 20 33
+now our list is ready now let's get back
+to the original sheet
+and i tried to take month and year as
+well
+copy the cells
+and
+paste it here
+so there you go we have our months and
+years now this will be our self months
+and years
+so here get into data option and here
+get into the data validation option and
+here select list option and
+now it will ask you for the source now
+where is the source
+this is our source so we are hiding the
+sheet from the users
+now select ok and there you go now you
+have a drop down menu same goes to here
+get into the data validation option
+select list and
+go to the sheet number two where we have
+hidden our okay select source now go
+into the sheet where we have hidden our
+ears select the range
+and press ok
+so there you have our month and year so
+months you can select any one out of 12
+so you have this crawl bar here and
+similarly you can select any year which
+you want so for now let's select 2022
+and
+the first month of 2022
+now here
+our calendar
+so let's type in
+monday
+and the same applies here you can just
+drag it until saturday
+and sunday so you have all that here
+right
+now let's keep it a little wider so that
+it's visible a little clearer
+okay not too wide
+that should be good
+now
+we will begin creating the calendar so
+we don't know what day was the first of
+uh
+january 2022 of course it's saturday but
+what if we didn't know or we don't have
+any idea of the upcoming years what if
+if someone asks you what's the first day
+of jan 1st of 2033
+so it would be a little difficult right
+so let's use the help of few inbuilt
+formulas from excel to find it out so
+you can use the
+inbuilt function that is date value
+there you go we have our date value
+and in date value we will consider
+the month and
+the year but before that let's provide
+the date value as one for default which
+is the first day
+so this is a date value and
+hyphen now let's press ampersand to add
+the remaining part that is the month and
+uh year so we use ampersand and
+press double quotes
+and inside double quotes press
+hyphen
+i guess we already have a hyphen so
+instead of hyphen what we can do is
+we can directly select the
+month cell
+there we go we have the muscle and after
+that now we might need the hyphen
+heisen and
+press the ampersand again now our ear
+value
+so there you go we have our date value
+function ready press enter and there you
+can see some random numbers over here
+this is because of a little formatting
+error so you can change it you can get
+into home and in home you can see the
+number group and select that and inside
+that you'll have custom option you can
+also check with the date option but
+let's go with the custom as we might
+want to add a few more extra things to
+our date
+right so here you go
+so you have
+date month year
+right so
+we'll also add
+a
+day to our
+calendar just ddt
+they should help us with the week as
+well that is first john 2022 saturday
+right but
+you can see that it doesn't go with
+monday right here we have monday but the
+date is
+first jan and it is saturday and this
+cell is supposed to be coming
+here right
+so there is some error regarding this so
+this position of the week can be fixed
+right this position of the week can be
+fixed that's what we are going to focus
+on in the next step so what we need is
+the same formula but
+with a little modification to it what
+we're going to do is subtract this with
+weekday of this particular value right
+so now what you're going to do is minus
+weekday formula
+tab space
+and
+try to copy the same formula and place
+it inside the weekday function
+copy
+paste
+and another
+yeah it should be somewhere here so
+another attribute what weekday considers
+is
+the
+date value
+the day value that is a few people will
+consider sunday as the first day of a
+week few will consider monday as the
+first day of the week so accordingly we
+have here so if you're the one who's
+considering sunday at the first day of a
+week then the attribute should be one
+but here we are considering monday as
+the first day of our week so our
+attribute will be three so tap space to
+select it and close the function
+there you go now you have the formula
+ready to identify the correct position
+of the weekday and the date value right
+now
+usually we might require or we know that
+we have four weeks in a month but
+sometimes you might end up having
+five weeks or even six weeks according
+to the arrangement of the position of
+the day and the date of value so for
+that let's create six rows to be on the
+safer side so for that let's again cut
+paste this formula here to the first day
+that is monday
+and as we know this is the perfect day
+that is 27th of december 2021
+right now our first day of january 2022
+is somewhere over here so you are just
+going to add one value to it right
+so
+equals to and the cell value plus one
+enter
+so there we have our next day so again
+you can just
+drag it to
+have all these seven days
+there you go we have the perfect dates
+and similarly this one
+so let's try to select all of these and
+drag a little bit
+so that we have a little more space to
+fit in our data
+there you go
+now here
+you're adding
+seven more days to complete the week so
+here we'll add
+the
+cell value plus seven days to get the
+next adjacent date right so the value of
+the date plus seven
+seven days of a week to get the next
+consecutive date followed by the second
+january we'll have third january right
+and now he can do the
+same to this one and you'll have the
+consecutive days now drag this to all
+the
+four
+rows so that we have six rows there you
+go a calendar is perfectly fine now now
+we'll try to do few more modifications
+to our
+date value
+so instead of having all the month year
+and
+week name we can just keep it as just
+the date number right so just get into
+numbers again numbers row and here
+eliminate all these data and just keep d
+for date
+press ok so there you go we have our
+perfect date arrangement over here
+now
+we will try to
+minimize the calendar length or we can
+just you know make a few modifications
+to it monday tuesday wednesday
+thursday
+friday
+saturday and sunday right
+now we will
+make some modifications
+then try to fit it
+there you go it looks good now
+but we still have one issue to fix
+that is we still have a few days from
+our previous year that is 2021
+and we have a few days from february as
+well right so this looks like a problem
+which is fixable
+so we can make use of condition
+formatting here to fix this
+so get into
+home and conditional formatting
+and in conditional formatting
+try to use a new rule and use the
+formula to determine which cells to
+format
+now here
+we are going to use the month function
+month of the first cell that is
+e
+five in my case
+not equal to
+month of
+any any cell in between the month so
+we'll choose this one
+and press ok
+so what you want to do if if the cells
+are not equal what you want to do get
+into format
+and
+get into number and here choose custom
+and
+choose as
+three semicolons or you can also do
+an idea of you know kind of blurring the
+numbers up so for now i'll choose to
+eliminate the numbers or you know remove
+the numbers or keep a blank space when
+the condition fails right so we're going
+to use three semicolons to fix that and
+press ok
+and press ok so there you go so the date
+values which do not belong to the month
+of the current month
+will be eliminated
+now you can also
+try to
+add a little more detail to your
+calendar
+you can you know you can
+try to
+highlight them
+right
+so
+again you might want to get into
+conditional formatting and new rule
+and use a formula so here if if the
+months are equal
+month of
+e5 or yeah the first cell e5
+is equal to
+month of
+any location
+that is month current
+values
+then
+fill with some color which is relevant
+to the calendar
+so i'll choose blue and
+press ok
+and press ok
+so those particular cells will be
+highlighted
+and
+you can also make some minor
+modifications to this as well
+in a kind of fill it with
+a blue
+the text could be
+white
+bold
+and you can also increase the text
+font size
+then
+add borders
+there you go and again if you wish to
+uh also have the
+month name and earning you can also do
+that
+margin center
+and
+equals
+to the value
+space and
+the ampersands and
+cell ear value press enter and there you
+go
+and even you can try to modify this as
+well
+you can choose to have darker variant of
+blue and
+increase the font
+you can also choose to highlight the
+cell color
+you can also add borders to your
+list
+so there you go your automatically
+updating calendar is ready
+now let's select
+the
+january and
+as our first query was to
+find the first day of
+2033
+right so here we have 2033 and the first
+day of 2033 january is saturday
+and if you want another month you can
+also choose that
+let's say march and you have the changed
+updated calendar over here so this is
+how you create the automatically
+updating calendar using excel so if you
+have any queries regarding any of the
+topics covered in this session or if you
+need the resources that we used in this
+session then please feel free to let us
+know in the comment section below and
+our team of experts will be more than
+happy to resolve all your queries at the
+earliest until next time thank you stay
+safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

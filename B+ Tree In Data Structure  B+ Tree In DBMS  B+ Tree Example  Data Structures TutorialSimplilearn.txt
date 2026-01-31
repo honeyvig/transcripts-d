@@ -1,0 +1,870 @@
+hey everyone I'm B kandwal and I welcome
+you all to Simply learns YouTube channel
+in this session we will talk about B+
+trees we shall begin our session by
+introducing B+ trees then we will
+discuss properties of B+ trees after
+that we will try various operations on
+them like insertion and deletion finally
+we will sum up what we have learned from
+this session but before we begin make
+sure you have subscribed to our YouTube
+channel and clicked on the Bell icon
+below so you never miss an update from
+Simply learn so without any further Ado
+let's get started with what is a B+ tree
+a B+ tree is a special mway tree data
+strcture a B+ tree of order M can have
+at most M minus1 keys and M children a
+B+ tree can be used as B tree with only
+key leav to each node and with linked
+leaves to which an additional level is
+added at the bottom now let's discuss
+some properties of B+ 3es first up every
+node in B+ 3 can have at most M elements
+next every node except the root and the
+leaf node must have M by2 children next
+maximum keys for any nude is M minus1
+and at the last minimum keys for any
+nude is ceiling of M by 2 - 1 now let's
+discuss what are the various operations
+we can perform on B+ 3 we can perform
+two operations on a
+b+3 first up insertion second
+deletion now let's discuss these in
+detail first up
+insertion we have to insert an element
+is in such a way so that we won't
+disobey any properties of b+3
+now let's try this operation in a code
+editor we will start by creating a node
+to create a node we need a
+struct
+B+ tree
+node int star
+data
+B+ 3 node
+space
+star child
+PTR
+buan
+leaf and int
+n for the object star root will be
+equals to null
+star NP pointer will be equals to
+null comma star X will be equals to
+null now we will write a Constructor for
+it so
+B three
+node
+starit in
+I NP equals
+to
+new
+B+ TR node
+NP
+Arrow
+data is equals to
+new space int bracket
+5 n
+NP
+child
+PTR is equals to new
+b +
+3
+node
+star
+bracket
+6 and
+Bel is equals to
+true and NP at the n is equals to
+0 now we will write a full loop I equal
+to
+0 I less than
+6 I
+++ NP
+child is equals
+to return
+Traverse
+B+
+three
+node star
+P
+out
+handle
+I again a all
+loop from i =
+0
+to I less than P at
+n i
+++ okay
+B doesn't have
+leave then we will Traverse that
+child Travers
+the
+child P bracket
+I see out
+P
+do at
+I now we will check these conditions
+again for I at P at n
+will Traverse it
+again from P child
+at
+I
+out
+andle now next function will be used to
+sort this so void
+sort in starp
+comma in
+n and I comma J comma
+temp for Loop
+a = to
+I a less than equal to
+n
+j++
+f p braet
+i greater than P braet J
+then we will swap these two so temp will
+store P at
+I and then P will replace its value with
+P at
+J now we will store the temp value in
+the P of
+J for
+now let's write a function to split
+these child
+in child
+e + 3
+node star X comma in
+I and Jed
+B+ 3
+node star
+np1 comma star
+np3 comma star
+y n
+B3 is equals to I
+it n
+P3 = to
+True
+f i is equals to minus
+one m is equals to X
+data bracket
+2 x data bracket
+2 will be equals to
+zero then X will store nus minus
+1 is equals to I
+it now when P1
+leave will be equals to
+false and xlea is equals to true
+so four
+Loop J is = to
+3 J less than
+5 J ++
+a minus
+3 will be equals
+to
+X
+data J
+MP3 child
+PTR at J minus
+3 is equals to X at child
+PTR braet
+J np3
+n++ X data braet
+J is equals to
+zero now X greater than n minus-
+another for
+loop from Jal to
+0 to J less than
+6 at j++
+rate X child
+PTR at J
+will be stored at
+null now
+np1
+data at zero
+Position will be equals to
+Mid
+np1 child PTR
+at
+np1 on
+N will be equals to
+X N
+P1
+child at
+np1 on n +
+1 will be equal = to
+np31 all
+n++ root is equals to
+np1 now else
+Y is equals to
+X
+child PTR at
+I and mid is equals to Y at
+I at
+2 and Y on data at
+two is equals to
+zero y will store n minus minus
+now for
+Loop J = to
+3 J less than
+5 J
+++
+np3 data
+Aus
+3 is equals to
+Y
+data
+a n
+P3
+n++ y
+data bracket
+J is equal
+zero
+y n minus minus
+X
+child
+PTR at I +
+1 is equals to
+Y X
+at child
+PTR I +
+1 is equals
+to
+np3
+return now we will write a function to
+insert into the
+tree
+void
+insert argument as int a
+so
+in high comma
+temp X is =
+root
+if x = to
+null then root
+is equals to in
+it and X will be equal to
+root
+otherwise
+f x is a leave
+and X at 9 ft and X at n is equals to
+5 temp is equals to split
+X comma
+-1 x is equal to root
+F A is greater than
+x at data at I
+and a is less than
+x at
+data I +
+1 I
+++ and break
+else
+if a is less than x at
+data0 then
+break else
+continue X is equals to X
+at
+child at I
+else
+while x
+s is
+false for Lo
+I is equals to
+zero when I is less than x at n
+I
+++
+F A is greater than
+x at
+data I
+and a is less
+than x and
+data I +
+1 I ++
+break
+as
+if a is less than
+x
+data break
+else
+continue
+f
+x child
+n is equals to
+5 then temp is equals to
+split
+child at X comma I
+X
+data at xn on
+N is equals to
+Temp
+X at
+n++
+continue else
+X is equals to
+X
+child
+p
+i x on data
+at x
+n is equals to
+A
+Sort X at
+data exit and
+X at
+n++ now let's write the code for the
+main
+block first we will declare some
+variables as an i n and T
+now we will
+request
+enter number
+of
+element to be inserted
+at now see
+out now we will enter the element so
+enter the
+element now we will write a full
+loop I equal to 0 to I less than
+n at I
+++ so CN
+T and
+insert
+T now we will Traverse this tree so see
+how
+d
+s of b +
+3
+RAV
+root let's execute this
+we will enter five
+elements 2 comma 3A 5A 7A 9 as you can
+see we have successfully traversed our
+first B+ 3 let's get back to our
+slides next deletion while deleting any
+element from B+ 3 we have to be careful
+not to break any properties of B+ 3 like
+all the leaves must be present at the
+same level or elements must be in
+ascending order now let's try these
+operations in a code
+edor let's start by creating a B+
+Tre first we will declare a global
+variable int Max = to
+3 then we
+will create a
+class PP tree
+and a
+class
+node
+bullion is
+leavea
+and star
+key comma size
+Cod star star
+PTR and a friend
+class now public
+load
+variable now we will write class BP
+tree so
+node star root
+void
+insert
+Jal
+and node
+star
+comma
+Noe star
+void remove
+internal in comma
+node star comma node
+star and a node
+function find
+parent no
+star now
+public
+bp3 the
+Constructor a search function
+uh insert
+function vo
+remove Vo
+display get root
+is equals to
+new
+in bracket
+Max yeah
+is equals
+to
+new
+node
+star ret Max +
+1 BP tree
+now
+void
+with baby tree
+insert in
+X
+if true is equals to null
+then
+root is equals to new
+node
+root call
+Key at
+zero that XX
+rot
+checks is
+leave
+I is equals to
+1 else
+node
+cursor is equals to
+root
+node star
+parent right
+csor is
+leave is equals to
+false
+parent to
+cursor now for
+Loop and I =
+to0 to I less
+than
+cursor size
+i++
+f x is less than
+cursor key
+at
+I
+cursor is equals to
+cursor
+at
+PTR at I
+f i is equals to
+cursor
+size minus
+one
+cursor
+CS at
+PTR I +
+1
+break now
+if C
+size is less than
+Max then
+end I is = to
+0
+while X is greater than
+cursor e
+at
+I and
+then I is less than
+csor size
+I
+++ for
+Loop
+in is equals
+to
+cursor at
+size and
+J is greater than I
+ausus so
+cursor calls
+key at
+J is equals
+to
+cursor
+key at J minus one
+cursor calls
+key at I is equals to
+X
+csor calls
+size Plus+
+calls
+PTR add
+cursor size
+equals
+to
+cursor
+PTR
+at cursor
+size minus one
+now
+cursor at
+PTR
+cursor
+size minus one
+cursor PTR
+equals
+to
+else no
+equal to
+new
+virtual
+node Max + one
+for
+and I =
+0 to I less than
+Max at the rate I
+++ virtual node
+at
+I is equals to
+cursor
+e at I
+I = to
+0 comma
+J
+while X is greater than
+virtual
+node make
+I I is less than
+Max I
+++
+for
+INT Jal to
+Max +
+1 comma J is greater than
+I jusus
+virtual
+node let
+say is equals
+to
+Virtual
+mod at J minus one
+so
+virtual
+node
+I is equals to
+X so new leave
+is
+leave is equals to
+True
+size is equals
+to
+Max +
+1 by 2
+new
+leave
+size is equals to
+Max +
+1
+minus
+Max +
+1 divide by
+two
+cursor
+I is equals to
+New
+Leaf a new Leaf
+New
+Leaf is equals
+to
+cursor
+PTR m
+X now
+void BP
+tree insert
+internal in
+X comma node
+star
+cursor
+comma node star child
+f c sir
+I is less than
+Max
+then
+in is equal to
+0
+while X is greater
+than cursor
+at
+Key at
+I
+and I is less than
+cursor of
+size I
+++ for Loop
+and J is equals
+to cursor
+size a is greater than
+I A minus
+minus csor
+head
+key head
+J is equals to
+cursor Aus
+one cursor
+key
+I is equal to
+X
+cursor
+i++
+cursor at PT
+r braet i +
+1 is equals to
+child
+else
+node star
+internal is equals to new
+node
+in
+Virtual
+key is Max + one
+node star
+virtual
+key at Max +
+one uh where
+P
+or and
+I is equal zero
+I less than
+Max I
+++
+virtual
+key
+I is equals to
+cursor
+key
+for
+and I equal to0
+I less than
+Max +
+one I
+++
+virtual
+p
+i to cursor
+PTR add
+I node
+star PP
+tree
+find
+parent
+node
+star
+csor comma node
+start
+child
+C star
+parent
+if cursor
+is
+leave
+or
+cursor at
+p z
+this then
+return
+null or
+Loop
+and I equal 0
+I less than
+cursor
+size +
+one I
+++
+F ver
+to
+child
+parent is equals to
+cursor
+return parent
+else
+parent is equals to
+find
+parent
+cursor p
+f
+parent not equals to
+null return
+return now
+void
+TR remove
+and X
+F
+root to
+n
+then see out
+empty
+else
+node star
+cursor to root
+no star
+parent
+in left
+sibling
+comma
+right
+sibling so while
+cursor is
+leave equals to
+false so
+for in
+I =
+to0 I less than cursor
+size and I ++
+curent is equals to
+cursor left
+sibling is equal to y -
+1
+write sibling
+is = to I +
+1
+f x is less
+than
+is at I
+then
+cursor will be equals to
+cursor p
+if I is equal
+to
+cursor
+SI minus
+one to I
+right
+sing to y +
+2
+cursor is equals
+to
+csor braet I + 1
+like
+found is equals to
+false
+f
+for po
+=
+to0 for is less than
+cursor
+size course
+++ f
+key head
+PO is equals to
+X then
+found equals to
+true and then bre
+now
+if not
+found
+then
+out not
+if
+cursor
+size to
+zero then
+see
+out
+right delete
+cursor
+delete sir
+PDF
+delete
+root is equals to null
+return
+return for
+Loop
+and I is equals
+to
+cursor
+is to zer
+J less
+than right
+node
+size I
+++ comma
+j++ cursor
+key at
+I is equals
+to right node
+add
+cursor
+size to
+n now see
+out
+merging to
+remove internal
+that right
+simping minus one
+comma
+parent
+comma right node
+delete write
+node
+key right node
+right nowe
+avoid
+E3 display
+F
+cursor is not equals to
+null
+or I = to 1
+I less
+than
+cursor
+size I
+++ see out
+C see out
+cursor
+key at
+I see
+out handle
+if
+cursor is
+leave not equals to true
+and
+for and I = to
+0 I less than
+cursor
+I +
+one I ++
+PD
+node star BP
+tree get root
+return
+root now we will write the main block
+we will start with an empty tree BP
+tree
+node now node
+dot
+insert
+5 node do
+insert 15
+note do
+insert
+25 node do insert
+35 do
+insert do
+display
+dot get
+so
+node to remove
+15 do
+display
+mod do
+let's execute
+this as you can see this program is
+working flawless ly we have successfully
+deleted the key 15 let's get back to our
+slides at last let's sum up what we have
+learned in this session first up B+
+trees are fast at performing all its
+operations next all the leaves must be
+present on the same level and data is
+only stored in the leaf node next
+elements of the B+ Tre are sorted in
+ascending order from the left to the
+right finally every node contains one
+more pointer than the number of elements
+of the
+node and this was all for today's
+session hope you guys found it
+informative and helpful if you like this
+session then like share and subscribe if
+you have any questions then you can drop
+them in the comment section below thanks
+for watching and stay tuned for more
+from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

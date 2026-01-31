@@ -1,0 +1,1196 @@
+how's it going my friends I am so
+excited to be back here is this on am I
+good ok they're giving me thumbs up I'm
+excited to be here how you doing my
+friend I'm doing great how are you why
+don't you introduce yourself my name is
+Eric Boyd I lead the AI platform team of
+Microsoft so the first question
+obviously in the most important that
+everyone has for you is are the robots
+taking over and how can we become their
+friends the robots are totally taking ok
+ok no I mean that question is such a
+great one to get I've gotten variants of
+that and I hear some of these variants
+by the way please get your questions in
+because I'm sure I've gotten some really
+weird questions about AI you know I was
+at an onyx conference and onyx is the
+open neural network exchange it's
+something we work together with Facebook
+on and Amazon and NVIDIA and invited the
+whole ecosystem in as a way to exchange
+you know models from one format to
+another but in a space it's a file
+format yeah and after sort of talking
+about onyx I got a question that was
+well have you ever had an onyx model you
+know like become self-aware and I'm just
+like it's a phone format that's really
+not how this stuff works so it was yeah
+there's a lot of misunderstandings
+around what AI is how it works and you
+know what people can do with it and so
+that's a lot of what we need to work
+through is hey I can do some really
+incredible things particularly in the
+areas of vision and speech and those
+types of areas but you know it's not
+sentient it's not self learning like if
+you have an AI model that plays chess
+really well it's not gonna clean your
+floors no I've tried and it made a mess
+and my wife got mad yeah that it made a
+mess I bet it didn't do it did do
+anything so here's here's a question for
+those that are out there they're like
+because there's a lot of AI they say/i
+that all over the place for businesses
+out there that are like ok I I think I
+need to take advantage of this where are
+some good opportunities to start yeah
+that's a great question I spend a lot of
+time talking to companies about what are
+their opportunities and what are the
+things they can do you know the the
+great thing about AI is it really is
+touching and transforming each and every
+part of every business and so even like
+the feature that we showed today
+some of the key notes the Intel Akkad if
+you think about that that's such a small
+feature in Visual Studio right just
+reordering the way that the intellisense
+or options come back but they were able
+to make that better and and you know by
+using AI and having a predictive model
+that knows what am i likely to be using
+it for they really made Visual Studio
+better how much better a half percent
+better but if you can do a half percent
+across all the different capabilities
+you can make so much better and so you
+know I was talking to one company it was
+a you know a beer manufacturer and I
+said well how are you using AI and beer
+manufacturing and his answer was we
+don't use it at all in the beer
+manufacturing we use it in everything
+else in logistics in the supply chain
+and predicting the inventory that we're
+gonna need and pre and forecasting the
+prices we're gonna pay all the other
+capabilities that they had they were
+using AI models and those areas of their
+business and so really it's it's that's
+what's so interesting to me is just
+finding each business and how its gonna
+transform each of their businesses and
+really challenging companies you need to
+have the creativity to figure out how
+are you going to actually make your
+business better where can a I really
+work for you and really learning those
+different areas so what is it good smell
+humor code smells I don't know where
+that term came out it was such a weirdo
+know that term it all his code smells
+like you're looking at code and you're
+like this smells like something we could
+fix it or make it better
+where are the AI smells so to speak in a
+business that you're like hey you know
+maybe you should consider using this
+program because I consider AI a
+programming technique that's right you
+know what our good clinic cases for it
+if you have something where you know you
+are you're applying some rules like the
+sorting algorithm and Intelli code right
+someone came up with a rule that said
+let's sort it alphabetically
+you can almost always find an AI
+algorithm that's going to predict or do
+that better fraud detection is a classic
+place where people have rules if we're
+get too many requests from this IP
+address is probably fraud AI is going to
+do fraud production prediction way
+better if there are you know financial
+forecasts I'm gonna look at these three
+things about you know the
+the industry or the trends and sort of
+project what our finances are gonna look
+like a is gonna do that better insurance
+industry is getting completely redone if
+you think about how insurance works
+today they look at five different
+factors about your driving history or
+your car you have or maybe your
+neighborhood and a I can consider ten
+thousand factors effectively okay and so
+those are things where a is gonna do a
+much better job of predicting and so
+yeah those are all things that smell
+like a I would do well in it so tell me
+about the requirement the data
+requirement for a I like cuz a lot look
+I've had people come up to me be like
+hey just do some AI and I'm just like
+well can you give me some data why is
+data such an important element of AI
+yeah one of the first things I talked to
+companies about when I meet with them is
+if you don't have differentiated data
+you don't have differentiated AI so what
+is the thing that you have that's
+special and unique about your business
+that's gonna make your business and your
+product better and so you know if a
+company is not collecting that today and
+a lot of companies I've talked to
+companies and they're like oh we throw
+all that data away and you're like
+that's gonna be the foundation that
+you're gonna build your models and make
+things successful from but you've got to
+understand what is that differentiation
+what is the thing that you've got that's
+unique about your business that you can
+build a great date asset on and then
+build models on top of that so before
+you even start thinking about AI you
+should probably think about saving your
+data just making sure that and saving
+collecting and really looking for places
+where you have data where you can tell
+this was a good outcome or this is a bad
+outcome right if you take insurance this
+person default on a loan this person
+didn't default on a loan so I can I use
+that to predict forecasting financials I
+knew why I predicted very accurately
+based on this information I predicted
+poorly here the more you have those
+those are the labels that's the stuff
+that's gonna feed into your model and
+it's really gonna you know be the way
+that your AI algorithm is gonna learn
+and so if you have that then you've got
+the foundation to do something
+interesting
+awesome so you're using the term a lot
+model yeah and for those that are maybe
+don't know what a model is how would you
+describe what is a model yeah
+a model is it's really just a system of
+predicting what's gonna happen based on
+some inputs and so I mean you can think
+of a really simple model you can think
+of Scott today Scott Guthrie was talking
+about I want to predict the price of a
+car and so a model could be as simple as
+you know I take the year that the car
+was and I take the condition of the car
+and I multiply it by three and that's
+the price of the car that would be a
+particularly bad model an AI model is
+now going to take those same inputs and
+come up with a price based on you know
+how a I sort of learned and so there are
+a lot of different ways you can
+represent models and think about them
+but at base that's what a model is it's
+something that predicts something
+awesome so we want all of your questions
+so make sure you get them in and I want
+to ask them for those that maybe don't
+have a lot of data and they want to do
+AI how can Microsoft help so there are a
+lot of ways that companies can get
+started there are a lot of use case that
+depends on what people are trying to do
+if you look at their speech you know if
+I want to add speech recognition to any
+application that I've got how could I do
+it well I could go and collect a whole
+bunch of speech people talking and
+transcribe that and then build a model
+that predicts that or I could use a card
+in my service which is gonna do it way
+better than what they're already doing
+so we have a wide suite of cognitive
+services that'll just really help
+accelerate people you don't need
+anything to go and use a cognitive
+service and you can do speech you can do
+vision you can do language you can do
+search all of these you know right off
+the bat you can go and get started with
+them yeah and it's really easy I have it
+here on my screen you go to a sure calm
+front slash cognitive I think it'll go
+right to it and like an easy one to look
+at is his vision basically I'm clicking
+it right here and if you go to for
+example seen an activity recognition and
+images you basically just upload your
+picture yeah
+it's really simple if you have you know
+you want to be able to identify the
+objects in a particular scene just
+upload it and it'll sort of show you the
+different things on it then you can go
+further with that the custom vision
+service and you can say everyone's
+favorite example if you watch the TV
+show Silicon Valley not yet but I will
+hot dog or no hot dog hot dog no hot dog
+this is a classic app
+really funny part of the the movie or
+the TV show you can build that in about
+I built it in two hours but that's
+because I'm not a great programmer
+anymore I usually happened I got old
+yeah I stopped programming as the main
+you know two hours though to build a hot
+dog non Hunter and it was really very
+good I did you use cognitive services
+what I did is I use the custom vision
+model okay and so I went to Bing and I
+searched for pictures of hot dogs and I
+found about 20 of them and I put them in
+there and I four pictures of things that
+weren't hot dogs nice and there's your
+classifier and it really was very
+straightforward to go and build awesome
+so here's some questions coming in does
+Microsoft AI support self training
+classifiers so I think we do with Auto
+machine learning so automatic machine
+learning will do that automatic machine
+learning is yeah so I guess it depends a
+little bit what they mean by self
+training classifier automatic machine
+learning is gonna do a lot of that what
+automatic machine learning does is you
+basically would specify here's the data
+set that I have and I don't know do I
+need a support vector machine do I need
+a neural network to a needle gistic
+regression I'm not an AI expert please
+just figure out the right model for me
+and so automatic machine learning is
+gonna do that for you and so that's
+available today you can get that as part
+of Azure machine learning in the SDK
+it's one line of code and it'll go and
+build you a model just based off a data
+set I have the line of code actually
+right I'm scrolling it here it is it's
+it's literally oh no that's the
+deployment sorry that's this here it is
+it's the auto machine learning yeah it's
+actually two lines but because one you
+define the problem and to run it it's
+actually one line right actually really
+nice it's really straightforward really
+simple to use and we're finding a ton of
+customers who are using this and it
+really broadens the scope they're really
+two ways I see people using it one is
+you know if you're a data scientist
+there's a lot of tedium that you go
+through in trying let's try the support
+vector machine let's try a learning rate
+of 0.1 and trying to change all these
+parameters now you can just sort of say
+just give me a model that's pretty good
+you know an automatic machine learning
+will just go and do that the other class
+of users are people who don't even know
+what they would need to do and they can
+you know if I'm a developer but I don't
+know how to do machine learning I can
+use automatic machine learning and get a
+model just from two lines of code so
+let's see if I understand so basically
+you have a bunch
+yeah III obviously usually I think of
+Excel because it's the canonical I say
+Excel and everyone's like oh I just
+pictured a row like a bunch of square of
+data and you say here are the columns I
+want to use to learn and then here's the
+column I want to learn you feed it in
+and then it does it and it's funny you
+say excel because in power bi in and we
+announce this as in preview that it'll
+be integrated as a wizard where you can
+walk through the experience doing
+exactly that and so create a model just
+from saying this is the column I want to
+predict and here's the rest of the data
+that I've got and that's pretty amazing
+I mean if you look at the code right
+here hopefully you can go to the screen
+you can see that there is this data
+script that's basically says get data
+and in there you define and you can see
+my get data script right over let me go
+here real quick get data script right
+here it's basically saying here's the X
+and here's the Y you want to learn you
+give it that and then it says I'm gonna
+run a bunch of model that's right it
+goes through it tries all the different
+models it's really great it's a it's a
+little meta it is a machine learn model
+that predicts which machine learned
+model is gonna work best on this set of
+data and the more you use it the more
+you use it on your sets of data it
+actually learns right from the history
+of how it's gone and predicted and it
+gets better because it has a great
+answer of like well how well did it
+predict against the test set and so the
+more you use automatic machine learning
+the better it's gonna work for your data
+the better is gonna work for you which
+is really pretty neat and the cool thing
+about this and this and this is the meta
+bit like it's using a recommendation
+algorithm so basically like your
+shopping cart when you go shopping
+online and it recommends other products
+we have that AI when you run a model and
+it says oh it did okay it starts to
+recommend others and it runs them it's
+pretty cool it's exactly it's the same
+idea so the exact same implementation
+was the same ideas that yeah really cool
+really simple to use and I think
+honestly going forward I think more and
+more stuff is gonna start fitting into
+that automatic machine learning paradigm
+I think you're gonna start seeing image
+classifiers work that way you know I all
+the types of things that you're doing
+today more and more of it's gonna fit
+into automatic machine learning and
+that's that's really our goal is how do
+we simplify this stuff because there's
+so many people now who the demand to
+have a machine learn model the number of
+people who wanted the demand freya is
+really high but there aren't enough
+people who can go and develop it and so
+how do we make it simple so that any
+developer can go and build and have an
+AI model you have developers today if
+you think about I use the analogy of a
+hash table developers use hash tables
+without even thinking about right they
+probably learned about it in college and
+they studied what's a good hash function
+and things like that
+no one's ever actually implemented that
+they just use a map and they just call
+it right how do we get that you know
+machine learning from the days where it
+is today we kind of need to be an expert
+in linear algebra and calculus and you
+know back propagation to know this is a
+space here's my data push a button and
+go do it it's coming and we're gonna get
+there but you know what it's still okay
+to learn linear algebra or calculus
+because it is dear to my heart because
+I'm a nerd I'm not wearing my glasses
+but if I was you would see love
+calculator oh and and this is what
+you're seeing a lot of people doing
+everyone who's a developer out there
+today is learning more and more about
+how to be a data scientist and it much
+like the hash table understanding the
+fundamentals is really going to be
+important to doing it effectively
+awesome so it looks like Tony from
+Brazil is watching we want to say hello
+to you my friend I have an idea in mind
+to build a face recognition for my
+business customer comes profile loads
+for receptionist can azure help me with
+this that's a great question so we have
+the Congress service the face
+recognition API and so you can
+absolutely go and do that and have it
+recognize your customers and and suggest
+a profile of it I think it's you know
+it's really great idea right a customer
+walks in and you say oh they typically
+order you know this particular type of
+cup of coffee or something
+you can start getting it ready as soon
+as they walk in and so for your regulars
+what a great experience right I'm coming
+back to that restaurant every time
+because they're gonna be ready that much
+faster they see me coming and that's
+amazing like just with computer vision
+it will tell you the box around the face
+right and then you can use in China
+together with with custom vision with
+faces of your customers and so you get
+the face box you take the box out and
+you give it to custom vision and now
+it'll tell you that's right you can
+build up the profile in the history over
+time and so I think it's a really
+interesting use for how face recognition
+they're actually already are
+coffee shops and China that do this
+really so absolutely you you walk in and
+they they recognize you and they get
+your drink already so I think this is
+gonna be coming more and more awesome so
+follow-on question but do you have an
+auto classifier where the data does not
+have predefined data so the auto
+classifier would group similar things I
+mean that's a really good question
+I'd like look I'm an engineer and most
+people don't know this but I'm like an
+AI person yes so like right away when
+you say group things I'm thinking like
+k-means or hierarchical clustering or
+Gaussian mixture models so there's
+already ways to do that yeah but we have
+the compute to do any type of machine
+learning I'll tell us a little bit about
+Auto a machine Azure machine learning
+service and what that is sure so you
+know you talk about you need access to
+the compute to go and train your
+different models that's one of the you
+know why is AI really taken off it's
+been three factors first is the amount
+of data that's available the advent of
+big data and product you know products
+like spark and an azure data bricks and
+now you can use those to really manage
+your large data sets
+the second you alluded to is compute and
+it comes in in two different ways one is
+it comes through GPUs which have really
+accelerated the amount of parallel
+computation you can do and things
+particularly matrix multiplication as
+well as the cloud where these GPUs are
+really expensive and if I need twenty or
+a hundred of them I don't wanna have to
+go buy them because I probably only need
+them for a few hours and so the cloud
+ability to go and use all that compute
+you know for the time that I need and
+only pay for what I use has really
+transformed it and then the third thing
+is the new algorithms coming up with you
+know deep learning and convolutional
+nets and things like that has opened up
+a whole host of applications and so with
+Azure machine learning what we're trying
+to do is bring that together and make it
+really easy for you to consume and so
+you know we do it through a Python SDK
+so you can be in an azure notebook or a
+jupiter notebook or in vs code or in
+pycharm or whatever you like to use
+you're right there in your notebook and
+you can get access to start training
+locally change one line of code you know
+now i'm accessing a whole host of
+resources on the cloud and you know
+managing the data that's stored in
+anyway you can store it on Azure data at
+everything from Azure data Lake to you
+know
+cloud DB everything is all out there
+cosmos DB awesome so yeah it's all
+really simple and integrated so we
+started with if you want to just get
+started quickly you should use cognitive
+services yeah if you want to customize a
+little bit we have some custom versions
+of cognitive services we mentioned
+custom vision there's also others you
+can I think you can upload your own
+acoustic and language models for speeds
+that's right you can use Lewis to start
+to tag your own data and get so there's
+ways easy ways to enter but let's talk
+now to those that maybe are more
+advanced that are starting to use like
+scikit-learn or pi torch or tensorflow
+can you tell us what the current
+development process is like and how
+Azure machine learning trimmers can help
+sure you it's interesting the
+progression you walked with we think
+about it as cognitive services are you
+know Microsoft's model Microsoft's data
+the custom services are Microsoft's
+model with the customers data and then
+when I want to get to a custom model
+well then it's the customers model and
+the customers data and so you know how
+do you do that if I'm building a model
+you know frequently what I'll do is I
+will come up with the set of data that I
+have that I think has the best features
+in it and I'll come up with the
+algorithm that I think I'm going to use
+and I'm gonna Rigaud and train it and
+then we call that an experiment and I go
+and run and I compare that experiment
+against the the history that I've got
+the test data that I've got and I see
+how well I performed and what you find
+people doing is this iterative loop over
+and over where they keep changing maybe
+I need some more features or made this
+feature is gonna make it predict you
+know in my car example maybe the year is
+not very interesting but the location
+the zip code is or something like that
+what features can I add in and so as
+your machine learning will keep track of
+all the experiments that you've run so
+that you can see which one actually
+perform the best without and you know
+basically keeps the history of what did
+you do different each time that you had
+it and then when I have a model and I'm
+ready to sort of deploy it then the you
+know Azure machine learning will put it
+in the model registry and so now I can
+keep track of all the models that I've
+got and as I deploy them I can
+understand where each model is and its
+life cycle is it deployed in which
+different systems and so it can manage
+that deployment and management of them
+much
+much simpler there a couple of other
+capabilities that I think are pretty
+interesting I talked about sort of the
+the the lifecycle of I'm going through
+all these different experiments a lot of
+times what I want to do is what's called
+hyper parameter tuning right each of
+these models there are probably a dozen
+different parameters the learning rate
+the number of nodes in each level all
+sorts of different things and so hyper
+parameter tuning is a way of helping you
+select the best ones without having to
+sort of painstakingly iterate through
+them all yourself and so you put all
+that together and it dramatically
+simplifies the machine learning
+developer the data scientists in getting
+their models develop they're become much
+more productive we talked to people who
+you know have spent weeks training a
+model and rather like we can get this
+done in a day I can do this much much
+faster and the important thing to note
+is that like look generally when I'm
+running these things I usually run it on
+my machine and then my machine is tied
+up and then I try to get someone else
+and I'm using PI torch 0.4 0.1 9 7 & 8
+you know and Sally's using PI torch 1
+preview because she's all way more
+advanced than I am and it's hard to get
+all these things to match up how does a
+skirmish e-learning help people that
+work in teams and data science teams
+what is it about Azure machine learning
+that will help people work together yeah
+I mean there are a couple things you can
+look at you know one is you mentioned
+like my machines all tied up that's the
+beauty of the cloud right is I can now
+use extra computation on the cloud I can
+put it in a data science VM I can put it
+on the training modules a whole host of
+GPUs and have sort of complete access to
+my machine the other is really the
+reproducibility I can take sort of each
+model and I can sort of run it the exact
+same way that you ran it and so yeah you
+mentioned the different versions and all
+the different things that I'd need to do
+you know makes it much easier to sort of
+say hey we're all sort of working on the
+same thing and share the code and and
+really stay aligned with it and that's
+something that we've learned internally
+you know we have on our internal
+services thousands of developers working
+on the same model and Bing and how do
+you do that effectively how do you have
+a thousand people try and make
+improvements to the single model you
+have to have all this infrastructure and
+so as we've learned from Bing all that
+infrastructure that we built is
+through our machine learning and that's
+what we're deploying in as machine
+learning all the things we've learned in
+making that product much better awesome
+well keep your questions coming
+obviously any AI questions that you
+might have we want to get those in so
+there was announcements regarding AI
+today can you tell us about those sure
+it's a couple announcements that we made
+first and foremost our machine learning
+is generally available I'm really
+excited about this we've had a whole
+bunch of customers try it and preview
+and their feedback has been really
+really great they think the direction
+that we're going with it has been
+fantastic we feel like the quality of
+the service the quality of our
+documentation understanding is all great
+and so we're happy to announce that it's
+generally available product and you know
+with that all the things that come with
+that automated automatic machine
+learning which we've talked about is
+generally available the hyper parameter
+tuning the experimentation capabilities
+the model management the ability to
+deploy all of that service generally
+available and something that people can
+go and take and use which is really
+exciting another thing that we announced
+today is the onyx runtime so I talked a
+little bit about onyx at the start onyx
+is this file format for exchanging
+models and you know for really making it
+simpler for hardware manufacturers to to
+optimize them one of the challenges that
+hardware manufacturers talk us or talk
+to us about is they say look I've got
+tensorflow I've got PI torch I've got
+chain ER I've got paddle paddle I've got
+cafe I've got all these different
+frameworks and people expect me to
+optimize each and every one of them how
+do I do that simply and onyx says hey
+you can just sort of make this in onyx
+model they can all convert into onyx and
+now you can optimize one of them what
+the onyx runtime is is this is the same
+runtime we've been using in Windows and
+Windows machine learning it's now
+available open source it runs on Linux
+it will run on Windows and it runs
+dramatically faster than sort of the
+native implementations and so we've seen
+internally you know virtually every
+model has run faster some have the
+average is probably around 2% two times
+faster but some have been as many as
+like seven or eight times faster and so
+this is available it's open sourced and
+people can go and get it I'm really
+excited about that as well another thing
+that we announce that there's sort of
+major areas around cognitive services
+we are the only company that does
+containerize Congress surprises people
+want to be able to run AI models and
+they don't want to just consume it in
+the cloud sometimes they have latency
+requirements or they have intermittent
+connectivity for some machine that
+they're trying to run it in and so they
+want to be able to take the model and
+run it on Prem or on the edge right and
+so we announced containerized models and
+today we announced that the language
+understanding model is also available in
+a container amazing Lewis Lewis Lewis is
+now available in containers so that's
+amazing I was recently like I was
+recently in in New Zealand and one of
+the hospitals there they wanted to use
+cognitive services to do OCR yeah but
+they couldn't do it because they could
+not but the records could not be upload
+to the cloud this really enables them to
+start to do that work that's exactly one
+of the use cases we see is you know
+regulations prevent them from moving the
+data and so being able to bring me the
+cognitive service directly to where they
+actually have the data opens up all
+kinds of doors that previously they
+couldn't do before and so we have had a
+ton of positive feedback from customers
+on it people are really excited about
+this so I'm excited to see that going
+out it's basically the first ever lift
+and shift down that I've ever seen yeah
+it's interesting all the you know
+everyone is trying to lift and shift up
+to the cloud and and look that's an
+important trend because the cloud offers
+a lot of advantages but as a company
+we've been very committed to the hybrid
+and making sure we work with people
+where they need to be and often that
+means hey some of the things we've done
+in the cloud need to happen on the edge
+there are real legitimate requirements a
+little why that needs to be done and so
+we want to make sure that that's support
+like just basically and here's a really
+silly use case that I thought of if you
+run a parking lot and you want to have
+an unattended parking lot and still
+charged people you can have a local
+model taking picture as cars drive in
+with OCR getting license plates that's
+right all sorts of examples like that
+where you know we hear of manufacture of
+companies that have manufacturing plants
+that you know their connectivity comes
+and goes right they have vehicles that
+they want to drive out into the field
+that they might not have any
+connectivity at all and so to be able to
+still run models locally
+these did a lot of great examples with
+drones they want to fly drones along
+power lines and sort of see hey are
+there defects and the power lines and
+things like that things they need to go
+repair you could have someone drive for
+thousands of miles you could fly a drone
+and have it take pictures say this is
+where you need to go to that's awesome
+and so yeah it works great so here's a
+couple questions well ml dotnet expand
+to training framework so I don't have to
+learn Python numpy tensorflow PI torch
+and I can rather stay in c-sharp or I
+feel at home so I'm all that nut has a
+whole host of algorithms where you can
+it you can train models directly in
+c-sharp in ml dotnet and well that net
+again grew out of internal technology
+that we had were a bunch of internal
+developers use C sharp and wanted to
+have a good framework for developing
+their models in c-sharp and so we've
+wrapped it up and made it ml dot and
+that is something that now you can go in
+and train models in c-sharp you know we
+have a ton of developers in c-sharp that
+are really not well served by the ml
+community because the ml community says
+everything has to be in Python and so
+being able to have ml net as a way that
+you can now stay in c-sharp is really
+pretty interesting for people and you
+know there's still a ton of activity
+happening on Python so I wouldn't
+necessarily discourage you from learning
+Python because that's where there's a
+lot of value being created but
+absolutely I'm Ella and that's gonna let
+you stay in c-sharp awesome next
+question ai is more than just image
+recognition what about searching for
+text and dynamic images kernels your
+engine is not accurate and cost per
+transaction forces us to use on-premise
+solution interesting so I'm not really
+sure what they mean about not dangerous
+or dynamic images yeah I mean maybe in
+videos or something
+I mean so the the OCR solution that we
+have I get benchmarks on all of our
+under services on a weekly basis we're
+beating everybody else with OCR so I
+believe we have the best
+OCR solution that's out there it really
+performs quite well and you know we have
+I talked to our researchers they are
+very proud of the techniques that
+they've used some of those some of the
+tricks that they've done in their models
+to make it really perform so well you
+know additionally with images you need
+to sort of talk about finding different
+things within the image I mean I love
+the example today that you had
+the NBA example showing really the face
+detection working on all sorts of small
+areas there's also logo detection right
+and being able to find the logos and all
+sorts of different places in it and one
+of the places where we really pull all
+this together is a knowledge mining
+right so you take exactly what you were
+doing and now you've got your extracting
+all this information from across an
+image and some of it is OCR some of it
+is looking for text in an image some of
+it is face recognition on the image some
+of it is sentiment analysis on the image
+or on the text or whatever it is I'm
+building an index that's now searchable
+and brings all the you know the named
+entities you can sort of think of
+whether they're people or places and
+what's the relationships between them
+you can bring all that together and so
+knowledge mining makes that really
+powerful now and I will say for for you
+that that submitted this question like
+if it's not working for you can you
+email me and I'll look at it because
+I've seen our OCR engine get like words
+behind chain-link fences that say stop
+that are crooked and give you the right
+bounding box it's ridiculous I've even
+seen it there's you love the blacked-out
+text where they used a magic marker and
+you can still kind of see the text
+interact of it and our OCR is telling
+you what the text is underneath of it
+which is really very cool it's amazing
+okay so tell us a little bit about some
+of the exciting things that you see some
+of the customers doing because one of
+the problems with this technology is
+people have a hard time like saying they
+once they get it they're like oh okay I
+can see how this works yeah but they
+have a hard time seeing where it might
+fit in there in their business what are
+some exciting things you're seeing
+customers you know there's been a lot of
+interesting examples you know one of the
+things I may be more fun ones is you
+know we've talked to shell and so shell
+has gas stations of course all around
+the world and so they put cameras in
+there gas stations and what they really
+want to detect is fire which is a big
+problem at a gas station but what they
+also are detecting are is the person
+who's filling up with gas is he's
+smoking and if they are they want to
+alert the attendant say hey go yell at
+that person it's really dangerous to
+smoke at a gas station and so lots of
+applications like that we see a ton of
+image classification applications
+companies you know Jabil is looking they
+manufacture chip boards and so
+the last step they wanted to sort of
+take an image of it and see did we miss
+any of the solder is in it is there
+anything any defects we can see with
+this and so just improving the quality
+that they have there we see a ton of
+Bott solutions people are looking for
+BOTS you know often in customer support
+can I deflect you know twenty percent of
+my customer support costs and save
+myself twenty million dollars while
+giving my customers a better experience
+we see virtual assistants where people
+want you know their branded experience
+their voice you know sort of interacting
+with a customer in a virtual assistant
+way so we see a lot of solutions there
+so yeah just a ton of applications
+across the board awesome so we have a
+question coming in how could I use AI to
+help with accounting such as invoice
+coding so I'm not an accountant and I'm
+not entirely sure what invoice coding is
+but I'll guess um you know presumably it
+sounds like a classification problem
+right I have an invoice come in and I
+need to decide which budget do I charge
+it to or which type of invoice it should
+be or anything like that there are a
+number of different ways you can do it
+depending on sort of higher invoice
+comes and one is you can do image
+classification if you have an invoice
+that sort of looks like image one or an
+image and something else that looks
+different you can do it that way the
+other is to build sort of text
+classification and sort of understand
+what type of system this is but that's
+the standard classification problem and
+that's the exact example of what I'm
+talking about of each business and each
+industry needs to find the ways that
+things are changing for them and how
+they can really use it to make their
+business better where you know if you
+can speed up your your classification on
+your accounting invoices and have better
+accuracy with that you just get so much
+acceleration from that as a business and
+so really finding those ways that
+haven't really getting the industry to
+have the creativity to understand one of
+the places they should be using this
+technology that's gonna be one of the
+most exciting things over the next few
+years I found earlier Mike early in my
+career as a programmer anytime someone
+wanted me to optimize something I would
+look for tasks that someone repeated
+exactly the same way off that's right
+now I feel like when I'm doing AI my
+particular smell is if someone is like
+altering code like point seven to 0.5 or
+adding extra if statements and then
+deploying yeah like for me when you're
+doing those kinds of tweaks where you
+feel like you need to take a shower
+afterwards as a coder that's a good
+place to start thinking about using a on
+they're using rules to make a prediction
+that's what you're sort of describing
+should it be 0.5 is the threshold should
+it be point 3 isn't threshold and you
+know this is where I say you saw this in
+fraud a lot and I get a thousand
+requests from the same IP is probably
+fraudulent and you know I remember the
+early days when I was working on fraud
+you know AOL dial-up modems were a huge
+problem that tells me how old long I've
+been working on fraud because they all
+came from the same ip address and so you
+shut down all of AOL from their one IP
+address and they and I are models gonna
+be much better to learn that hey they're
+different patterns that I should be
+looking for and so instead of having
+these broad course rules I'll have these
+you know I can really pull in a thousand
+different features in and build a model
+around that let's talk a little bit
+about sort of the elephant in the room
+and this is important because people are
+looking at this and they're like hey how
+much is this gonna cost if I want to use
+if I want to build my own machine
+learning model and Azure machine
+learning service is this gonna cost me a
+lot so the beauty of using the cloud is
+that you use only what you consume right
+and so the cost for GPUs if you were to
+go out and buy a whole host of them
+they're tremendously expensive and so
+the rates that you can use when you're
+using the training service you know is
+measured in you know the tens of cents
+per hour and things like that so
+dramatically cheaper you know building
+models yeah there's cost associated with
+it but it's it's not exorbitant this is
+something and the benefits that you get
+from it on the other side I don't think
+I've seen anyone come back and say hey
+we're not gonna build this model because
+the the training costs are too high and
+here's the thing like I I've laid down
+an azure machine learning service
+workspace and we basically lay down for
+things we lay down a pin sites which is
+nothing yeah we lay down storage which
+is empty yeah right we lay down a CR
+which there's a free version yeah right
+and then we lay down so app insides
+Azure storage ACR and there's there's
+one more thing that I'm forgetting
+happens science as your storage ACR and
+there's one more that'll come to me and
+compute back
+oh yeah the computer yeah the compute
+stuff and like you and even the compute
+isn't laid
+until you specifically specifically
+asked for it and so you can also create
+a compute environment that has zero to n
+nodes yeah and it won't even run yeah I
+mean that's you know I honestly I don't
+know how everyone doesn't develop on the
+cloud these days the the economies of
+scale that you get from being in a cloud
+are just they just give you such a
+better efficiency from that it's pretty
+amazing okay so we've got about three or
+four minutes left where can people go to
+find out a little bit more about this AI
+stuff and how can they like get start
+like if you're a programmer and and
+because you already know all about all
+this AI stuff what would you suggest
+someone go do right now I mean the
+things that the easiest way to really
+get started is to go and look at the
+azure notebooks and start with they're
+the azure notebooks will walk you
+through how to use Azure machine
+learning service notebooks are such a
+great environment for learning in
+because there's a description of what
+you're trying to do right in line with
+the cell that executes the code you can
+change the code and continue to execute
+it and make it just go right there in
+line that's the thing that I would
+recommend everyone go and do it'll both
+you know depending on sort of what you
+need to learn if you need to learn how
+the services work they're great document
+they're great notebooks sort of walking
+you through how to use the service if
+you need to learn how to build AI models
+there are notebooks that'll show you hey
+here's some of the simple iya models do
+I want to do like you know the classic
+amnesty I can type draw number and sort
+of have it recognize you can those are
+really straightforward ways to go and do
+that
+I just remembered it's key vault is the
+last one so there's four things we lay
+down storage app insights key bald and
+Azure as er a CR right which is as a
+container registry okay so I figured I'd
+show just a little bit of its what this
+looks like because a lot of you are
+probably wondering what this looks like
+and like it's really simple and the cool
+thing is that the part that maybe we
+haven't seen in Francesca's showed that
+a little bit during Scott's demo is we
+actually have these amazing integrations
+individuals to your code where I can go
+in and submit experiments by
+right-clicking right or viewer
+experiments or attaching right and and
+that's that the coolest part right and
+the other thing that I really liked
+about this that I've used so far
+there's a team of like four or five of
+us that work on these models and all of
+us can see what all of us are doing yeah
+like here's an example that you talked
+about hyper parameter tuning yeah it ran
+20 experiments and notice that here
+there's like this green line it actually
+stopped running it because it's like
+yeah this one didn't work what a type of
+rider is not working and that's cool
+because initially like usually I'm
+running a for loop and spanning over
+hyper parameters like the learning rate
+or momentum or whatever here it's a
+smarter for loop because if it's within
+and I use the bandit method if it's got
+20 percent it's gonna kill it now and
+that's a great example of you know
+usually you'd have to sort of be sitting
+there and watching and tracking having
+it basically printf hey this is what's
+the learning rate how it's converging
+you know high parameter tuning is just
+gonna do that for you and so it's it's
+really saves a ton of time for you and
+the other thing is and this is the part
+that's really cool here's all the
+computer environment you see on my
+computer we have like some batch AI we
+have some kubernetes services in our
+compute and it's basically we just
+submit and forget and then we can see
+all the output it shows us all the
+output in notebooks it's amazing now
+here's the the part that we were talking
+about models to me are like the
+executable part of a on yeah that's
+right it's like it's like when you
+compile your code to get this assembly I
+feel like that's what a model is - it
+was a great analogy you put something in
+and something comes out and as a
+programmer it's something that we want a
+version yeah and in here you can see we
+are versioning all of the models that's
+right and then we can marry models with
+scoring files to create images and then
+we can do deployments and so for example
+you can see the simple m nest service
+right here I wrote it like a cheesy
+little app here where I submit like I
+can draw a number this is the cheesiest
+version the cheesiest thing but you can
+see it returns things from me directly
+from the service and I'm gonna make like
+weird numbers and you can see that oh it
+really thinks it's a 4 but if I start to
+do crazy things like this you can see
+that it's gonna start to be sure about
+other things right and it's it's pretty
+cool that you're able to go from idea to
+submit a job to save a model to create
+an image deployment all within the same
+environment yeah I think it's really
+important that the software development
+lifecycle for models is different than
+for software so it is and so
+understanding what are the tools that I
+need and how do I really use that more
+effectively those are the things that
+are gonna make you productive and
+successful in building your models and
+deploying them if you if you try and do
+it you know sort of the standard
+software way you're gonna have a hard
+time figuring out how it all fits
+together
+awesome well anything else to finish up
+with my friend I'm really excited that
+Azure machine learning is GA I think
+there's gonna be a ton of amazing uses
+for it and I'm excited to see what
+people will do with it
+well thank you so much for being with us
+Eric all right well the show is not over
+we have my amazing colleague Brian Benz
+just over there with Beth to talk all
+things java let's go to that

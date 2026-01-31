@@ -1,0 +1,348 @@
+hey everyone we all know that microsoft
+azure has established a global standard
+for its certifications microsoft azure
+has been delivering not only one of the
+greatest cloud platforms but also some
+of the highest skilled individuals in
+the cloud sector
+thanks to its role-based certifications
+and one such certification is azure
+administrator associate
+the certificate will help you take your
+career to a new height and therefore we
+welcome you to a new video of simply
+learn on azure administrator associate
+in this video i will take you through
+its various important factors that you
+need to know before proceeding with this
+certification
+so without further ado let's get started
+but before moving any further please do
+subscribe to our youtube channel and do
+hit the bell icon to never miss an
+update from simply not
+so let us first see what are topics that
+we are going to cover in this video
+first we will explore the basics and
+understand what azure certifications are
+then we will explore what azure
+administrator certificate is about
+after which we will look into who can
+take this certification
+then we will see what all syllabus we
+need to cover
+on to appear for this examination
+after that we will explore how to apply
+for the certification
+later on we will discuss some tips and
+tricks required for this examination
+preparation
+and then we will look into some of the
+practice questions for your better
+understanding
+and in the end we will see what will
+companies hire as your administrators
+so let's first understand what azure
+certification is
+aspirants who wants to manage upgrade
+and establish applications and
+networking routes over the global
+channel can get a specialization in
+cloud computing with the microsoft azure
+certification
+microsoft azure is then known and
+respected around the world as the most
+trustworthy cloud provider as a result
+folks who have earned a microsoft
+certification have a plethora of options
+to choose from now that we know what
+azure certification is let's move on to
+the explanation of what
+azure administrator associate
+certification
+is about
+azure administrators are in charge of
+cloud storage security networking and
+compute services the microsoft azure
+administrator associate certification is
+a role-based certification that verifies
+a professional's competence to implement
+manage and maintain microsoft azure
+systems including major compute
+services storage network and security
+services
+now let's have a look at who all can
+apply for this examination
+candidate must have at least six months
+of hands-on experience administering
+azure and a solid understanding of key
+azure services in order to take the
+certification
+along with that one should also have
+experience in powershell azure cli azure
+portal and azure resource management
+templates
+now let's dive deeper into this and
+explore what syllabus are required to
+appear for this examination
+first is
+manage azure identities and governance
+now this topic covers 15 to 20 percent
+of the examination
+then comes implement and manage storage
+this topic also covers 15 to 20 of the
+examination
+after that we have deploy and manage
+azure company resources
+this covers 20 to 25 percent of the
+examination
+then we have
+configure and manage virtual networking
+this covers 25 to 30 percent of the
+examination
+and then we have monitor and backup
+azure resources which covers 10 to 15 of
+the examination
+now let's have a look at
+how to apply for this examination
+now the details you need to focus on are
+the cost of the examination is
+165 usd
+and its annual salary is 107
+hundred eighty three dollars
+the duration of this examination is 120
+minutes and the number of question
+varies between 40 to 60.
+the types of question can be either
+multiple choice or multiple response and
+the passing score to ace this
+examination is 70 with the renewable
+time of two years
+now that we have covered all the
+technical details needed to appear for
+this examination
+let's have a look at some of the
+important tips for the preparation of
+this examination
+first is
+check microsoft official
+az104 exam page
+you should review the official asid104
+exam detail page on the microsoft
+website before beginning your
+preparation
+this is microsoft most reliable page for
+sharing the most up-to-date and accurate
+examine information
+second is understand the exam topics
+each exam has its own set of modules and
+weights as a result it's critical to
+thoroughly comprehend the revised az-104
+exam objectives if you have a good
+understanding of each domain and module
+you can prepare successfully for the
+exam
+this act will assist you in maintaining
+a higher level of concentration on the
+modules that have a high weightage in
+the exam
+third is online training resources and
+reference books
+online training is one of the simple and
+convenient training techniques that can
+help you prepare for the exam
+you will study the topics of the exam
+modules from industry experts through
+online training classes you can also pay
+for customized instructor-led
+instruction from any other training
+provider to prepare for exam goals
+but this can be costly also you can seek
+help from books like microsoft azure
+administrator exam reference az 103 book
+that is a part of exam reference series
+fourth we have study groups and online
+discussion forums joining study groups
+and discussion forums for exam
+preparation should be the first step in
+your preparation
+joining study groups and discussion
+forums gives you the opportunity to
+network with other as your
+administrators and exam candidates
+on forums you may get answers to your
+concerns and have your issues fixed as
+as a result it's critical to participate
+in some azure discussion
+groups and at last but not the list the
+fifth one is
+practice with simulators and mock exams
+you can improve your confidence and have
+everything set for your e0104 exam in
+this final phase when you feel you have
+covered all of your bases in terms of
+resources and preparation steps you
+should focus on getting some good
+simulators
+these az104 test simulators are meant to
+simulate a real exam setting you can use
+the simulator to identify your skills
+and weaknesses so that you can work on
+them
+now let's have a look at some of the
+practice questions for your better
+understanding of this examination
+so the first question is
+you have an azure subscription named
+subscription1 that contains an azure log
+analytics workspace named workspace1
+you need to view the error events from a
+table named even
+which query should you run in the
+workspace one and the options are
+get event where even type equal equal
+error
+option b
+search in event error
+option c select from even by even type
+equal equal error
+and d
+search in even where even type is equal
+error
+and the correct answer is
+option b
+now moving on to the next question
+you have an azure subscription name
+subscription one
+subscription one contains the resource
+groups in the following table
+rg1 has a web app named web app one
+web app one is located in west europe
+you move web app to rg2 what is the
+effect of the move
+and the options are
+the app service plan
+for web app 1 remains in the west europe
+policy 2 applies to web app 1.
+option b
+the app service plan for web app 1 moves
+to north europe policy 2 applies to web
+app 1.
+option c the app service plan for web
+app 1 remains in the west europe and
+policy one applies to web app one
+and option d the web app service plan
+for web app one moves to north europe
+policy one applies to web app one
+and the correct answer is option a
+if the source and target plans are in
+the same resource group and geographical
+region you can migrate an app to another
+app service plan
+now the app service plan in which your
+app runs determines the region in which
+it runs you cannot however change the
+location of an app service plan
+so now coming on to the next question
+you have an azure subscription link to
+an azure active directory cleaning the
+tenant includes a user account name
+user1
+you need to ensure that user one can
+assign a policy to the tenant root
+management group
+what should you do and the options are
+assign the owner role for the azure
+subscription to user 1 and then modify
+the default conditional access policies
+option b assign the owner role for the
+azure subscription to user 1 and then
+instruct user 1 to configure access
+management for azure resources
+option c assign the global administrator
+role to user 1 and then instruct user 1
+to configure access management for azure
+resources
+an option d create a new management
+group
+and delegate user 1 as the owner of the
+new management
+and the correct answer is
+b
+now let's move on to the next question
+you need to ensure that an azure active
+directory
+username admin 1 is assigned the
+required role to enable traffic
+analytics for an azure subscription
+now the solution is you assign the owner
+role at the subscription level to admin
+1.
+does this meet the goal and the option
+is either yes
+or no
+and the correct answer is
+yes
+your account must meet one of the
+following to enable traffic analytics
+so your account must have any one of the
+following as your roles at the
+subscription scope owner contributor
+reader or network contributor
+now the next question is
+you have an azure subscription
+users access the resources in the
+subscription from either home or from
+customer sites
+from home users must establish a
+point-to-site vpn to access the azure
+resources the users on the customer
+sites access the azure resources by
+using site-to-site vpns
+so you have a line of business app named
+app1 that runs on several azure virtual
+machines
+the virtual machines run windows server
+2016
+so you need to ensure that the
+connections to app one are spread across
+all the virtual machines so what are the
+two possible azure services that you can
+use
+and the options are
+a an internal load balancer
+b a public load balancer
+c
+an azure content delivery network or cdn
+option d traffic manager
+and option e and azure application
+gateway
+and the correct answer is
+a
+and e
+network traffic from the vpn gateway is
+routed to the cloud application to an
+internal load balancer the load balancer
+is located in the front-end subnet of
+the
+application
+now let's have a look at the companies
+that hire azure administrator associate
+excellent ncr corporation cognizant
+bosch microsoft and yahoo are some of
+the great companies that hire azure
+administrator
+with great amount of packages
+and good amount of salary
+well this was all about azure
+administrator associate i hope you liked
+this video and learned something new
+from it if you have any questions feel
+free to ask away in the comment section
+our experts will reach out to you soon
+thank you for watching this video
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,361 @@
+welcome to Azure devops road map 2024
+your compass to navigating the ever
+evolving landscape of cloud development
+and collaboration in this video we will
+embark on a journey into the future of
+azure devops over the next few minutes
+we will unveil the Innovative strategies
+tools and best practices that will shape
+the way we build deploy and manage
+application in the Azure ecosystem
+whether you're a season devops
+professional or just beginning your
+Cloud development Adventure this road
+map is your key to staying ahead of the
+curve let's dive in and explore the
+promising Horizons of azure devops in
+2024 that said if these are the type of
+videos you'd like to watch then hit that
+subscribe button and the bell icon to
+get notified and if you're a
+professional with minimum one year of
+experience and an aspiring devops
+engineer looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simply learns postgraduate program and
+devops from Caltech University in
+collaboration with IBM is just what you
+need for more details head straight to
+our homepage and search for postgraduate
+program and devops from calch University
+or simply click on the link in the
+description box below now without
+further delay over to our training so
+without further delay let's get started
+by understanding the agenda for today's
+session first we will learn who exactly
+is an Azure devops engineer followed by
+that we will look into the skills
+required to become one then the roles
+and responsibilities of azure devops
+engineer then the most important point
+of today's session which is the road map
+or how to become an aure devops engineer
+in 2024 next ahead we will discuss the
+salary compensation offered to Azure
+devops engineer
+and we will wrap up the video by
+discussing the top companies hiring
+Azure devops engineers in 2024 and
+Beyond now let's get started with the
+first point that is who exactly is an
+Azure devops engineer Azure devops now
+known as Azure devop Services is a
+cloud-based platform by Microsoft that
+provides that provides a comprehensive
+set of tools and services for software
+development and collaboration it covers
+the entire software development life
+cycle offering features for planning
+coding testing and deployment the key
+components include Azure boards for
+project planning Azure repos for source
+code management Azure pipelines for
+automating build and deployment process
+Azure test plans for testing and equal
+quality assurance and aure artifacts for
+package management teams can use Azure
+devops to work together efficiently
+track projects progress manage a source
+code automate software bills and
+Implement continuous integration and
+continuous deployment or also known as
+cicd pipelines it promotes collaboration
+between a development and operations
+teams streamlines development processes
+and helps organizations deliver high
+quality software products more rapidly
+and reliably and the professionals who
+take care of all these processes are
+none other than Azure devops Engineers
+now moving ahead we will discuss Azure
+devops Engineers skills so what EX
+exactly are the skill set that you need
+to become one to excel as an Azure
+devops engineer you need a diverse skill
+set that combines technical expertise
+with collaboration and problem solving
+abilities here are the top five skills
+that you need to become one first one
+Azure Services knowledge as an Azure
+devops engineer you should have a strong
+understanding of azure cloud services
+and resources familiarity with services
+like Azure virtual machines azure your
+app service Azure functions Azure cubity
+service or AKs Azure SQL database and
+more are crucial for Designing and
+deploying applications on aure the
+second one continuous integration and
+continuous deployment or cicd pipelines
+Proficiency in cicd is fundamental you
+should be able to design Implement and
+manage cicd pipelines using aure devops
+or similar tools this includes Auto
+meeting builds testing and deployment
+processes to ensure smooth and efficient
+application delivery followed by that we
+have infrastructure ascod or IAC Mastery
+of IAC tools like Azure resource manager
+or armm templates terraform or anible is
+essential IAC enables you to Define and
+manage your infrastructure in a
+cloud-based automated manner ensuring
+reproducibility and scalability now the
+fourth one one scripting and automation
+strong scripting skills especially in
+Powershell and Bash are important for
+managing and automating Azure resources
+we should be able to create scripts to
+provision configure and maintain Azure
+Services efficiently now the last one
+collaboration and communication
+effective communication and
+collaboration skills are vital for
+working in cross functional teams Azure
+devops Engineers of and collaborate with
+developers system administrators and
+other stakeholders the ability to
+communicate ideas manage project tasks
+and troubleshoot effectively is
+essential in addition to all these
+Technical and collaboration skills
+continuous learning and staying up toate
+with the evolving Azure ecosystem are
+essential for success in this role Azure
+devops Engineers must adapt to new
+technologies and best practices as they
+emerge in the fast space world of cloud
+and devops now let us discuss the aure
+devops roles and responsibilities aure
+devops Engineers play a critical role in
+software development process focusing on
+optimizing development and deployment
+workflows here are the top five
+important roles and responsibilities of
+an Azure devops engineer first one cicd
+pipeline development create and maintain
+continuous integration continuous
+deployment pipelines using Azure devop
+automate build test and development
+processes to ensure fast and reliable
+software delivery Monitor and improve
+pipeline performance and efficiency next
+one is infrastructure as code Implement
+infrastructure as code practices to
+manage and provision Azure resources and
+environments use tools like Azure
+resource manager templates Azure CLI or
+Azure Powershell to Define
+infrastructure in a code-based
+controlled version controlled manner
+next is conf configuration and release
+management manage application
+configuration and release process to
+ensure smooth and controlled deployments
+coordinate release schedules including
+roll back plans and Implement release
+strategies like blue green deployments
+or Canary releases now the fourth one is
+about security and compliance enhance
+security by implementing secure code
+practices and incorporating Securities
+scanning tools in the cicd pipeline
+ensure compliance with industry
+regulations and standards by configuring
+Azure security and compliance tools
+lastly monitoring and troubleshooting
+set up monitoring and logging Solutions
+using Azure Monitor and application
+insights to track application
+performance and detect issues
+troubleshoot the resolve deployment
+performance and security issues in
+azured environments Azure devops
+Engineers need to collaborate closely
+with development and operations teams
+continuously improve processes and stay
+up toate on Azure services and best
+practices they play a pivotal role in
+delivering highquality software products
+efficiently and securely now let's
+discuss the most important point of
+today's session which is about how to
+become an Azure devops engineer creating
+a comprehensive Azure devops road map
+requires an understanding of these
+specific goals projects and Technologies
+your organization is planning to
+implement however this can provide a
+general outline of the key areas to
+consider when creating an aure devops
+road map so first one is assessment and
+planning evaluate the current state of
+your development and operations process
+identify pain points and areas for
+improvement Define your organizational
+goals and objectives for adopting Azure
+devops the next step is tool selection
+choose the Azure devops services and
+tools that best align with your need
+needs this may include Azure boots Azure
+repos Azure pipelines Azure test plans
+and Azure artifacts consider integration
+with other Azure services and third
+party tools now the third step is
+training and skill development invest in
+training and upskilling your team in
+aure devops practices and Technologies
+encourage certification and continuous
+learning to ensure team's proficiency
+the fourth step is migration and
+onboarding plan and execute the
+migration of existing projects and code
+repositories to assure devops onboard
+your team to the new platform and
+educate them on best practices moving
+ahead we have agile and devops practices
+as the fifth step Implement agile
+methodologies and devops practices to
+streamline development and operations
+procedure Define workflows processes and
+the policies that promote collaboration
+and automation sixth step is continuous
+integration and continuous deployment
+set up cicd pipelines using Azure
+pipelines to automate the build and
+deployment processes Implement testing
+quality control and release management
+as the part of your cicd pipeline
+seventh step is monitoring and feedback
+Implement monitoring and logging
+solutions to track application
+performance and detect issues collect
+and analyze user feedback to make
+continuous improvements now the eighth
+step security and compliance integrate
+security practices into your development
+and deployment pipelines ensure
+compliance with industry standards and
+regulations by using Azure security and
+compliance tools now the ninth step is
+scalability and cost management plan for
+scalability and cost optimization by
+leveraging Azure resources and services
+Implement cost tracking and optimization
+strategies to control Cloud expenditure
+now the next one is long-term strategy
+develop a long-term strategy for Azure
+devops adoption including future
+upgrades new services and evolution of
+your devops practices the 11th step is
+about collaboration and communication
+Foster collaboration amongst development
+and operations teams through
+communication channels and tools
+encourage a culture of collaboration and
+knowledge sharing now the 12th step is
+performance metrics and KPS Define and
+track key performance in indicators kpis
+to measure the success and efficiency of
+your Azure devops initiatives use
+metrics to identify areas for
+improvement now the 13th one and the
+last one is feedback loop and iteration
+establish a feedback loop that allows
+for continuous Improvement in your Azure
+devops processes iterate and adapt your
+road map based on feedback and changing
+organizational needs remember that your
+azure devops road map should be dynamic
+and adaptable to changing circumstances
+regularly review and adjust your plans
+to align with your organization's
+evolving goals and the everchanging
+technology landscape now moving ahead we
+will discuss the devops engineer salary
+details if you are in India and if you
+are a beginner then you can expect
+salaries ranging from 3 lakhs to 6 lakhs
+per anim and if you're an intermediate
+candidate let's say one to 2 years of
+experience as a aure devops engineer
+then you can expect salaries ranging
+from 6 lakhs to 12 lakhs per Anon and if
+you're a highly experienced candidate
+with more than four years of experience
+you can expect salaries ranging from 12
+lakhs to 20 lakhs per anim remember
+these salary figures are based on the
+organization you're working with and the
+experience and the job location moving
+ahead we have us so if you are a
+beginner as a short devops engineer and
+you are in America then you can expect
+salary ranging from $60,000 to $90,000
+per anom if you are an intermediate
+candidate let's say 1 to two years of
+experience then you can expect salaries
+ranging from $90,000 to $120,000 per
+anim and if you're a highly experienced
+candidate with more than four years of
+experience and you can expect salaries
+ranging from
+$120,000 to $160,000 per an again these
+salary numbers vary based on the company
+you're working with your experience and
+job location moving ahead we will
+understand the companies which are
+hiring Azure devops Engineers there are
+a lot of companies hiring Azure devops
+Engineers but the prominent players in
+the industry are Microsoft Amazon web
+services Google Cloud IBM Oracle Deo Del
+Technologies Cisco Systems Accenture
+cognizant enosis IBM and many more and
+with that we have come to the end of
+this session and and with that we have
+reached to the end of this tutorial on
+Azure devops road map for 2024 should
+you need any assistance PP or any other
+resources used in this session please
+let us know in the comment section below
+and our team of experts will be happy to
+help you as soon as possible until next
+time thank you for watching and keep
+learning stay tuned for more from Simply
+learn staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our program s and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

@@ -1,0 +1,3428 @@
+foreign
+work was founded by Microsoft and
+introduced to programming World in
+January of 2002. it is used by numerous
+custom software development companies
+globally still regarded as one of the
+go-to Frameworks for the purpose of web
+development asp.net is still widely
+regarded as one of the most prominent
+languages in the web development space
+according to a report around 12 902
+companies reportedly use asp.net in
+their Tech Stacks including slacked
+Alibaba travels and Roblox with around
+one or three thousand dollars as average
+salary for mid-level Professionals in
+this field learning asp.net can be the
+right career choice for you with that
+being said hello everyone and welcome to
+Simply launch YouTube channel where we
+talk about everything about technology
+upskilling and Innovation make sure to
+subscribe to our Channel and hit that
+Bell icon to never miss an update from
+us so without any further Ado let's
+quickly jump onto the agenda for this
+session we will start by knowing the
+basics of asp.net and difference between
+dotnet and Java understanding asp.net
+lifecycles MVC asp.net architecture by
+the end of this video we'll cover a few
+projects on asp.net followed by
+interview questions so without any
+further Ado let's begin over to our
+tutors
+Java is a programming language and
+Computing platform there are lots of
+applications and websites that will not
+work unless you have Java installed in
+it
+Java was first released by Sun
+Microsystems in 1995 and the Oracle
+Corporation later acquired it Java
+software platform runs on the billions
+of devices including notebook computers
+mobiles devices gaming consoles medical
+devices and many others
+Java is widely used object oriented
+programming language the rules and
+syntax of java are based on the C and C
+plus plus languages
+Java is fast secure and reliable from
+laptops to Data Centers game consoles to
+Scientific supercomputers cell phones to
+the internet Java is everywhere
+Java is a multi-platform object oriented
+and network-centric language it is among
+the most used programming language
+now let us understand what is.net
+.net is a free cross-platform open
+source developer framework for building
+many different types of applications
+.net core is a cross-platform that
+supports Windows Linux and Mac OS
+Microsoft began developing.net framework
+in the late 1990s by early 2000 the
+first beta version of dotnet 1.0 were
+released
+with.net you can use multiple languages
+editors libraries to build web mobile
+desktop games and iot applications
+we can write.net apps in c-sharp F-sharp
+or Visual Basic whether you're working
+in C sharp F sharp or Visual Basic the
+code will run natively on any compatible
+OS
+dot net standard is a base set of apis
+that are common to all.net
+implementations
+nugget is a package manager built
+specifically for dotnet that contains
+over 90 000 packages
+now let us look at the comparison
+between Java and dotnet
+the first parameter is the fundamentals
+Java is a programming language and
+Computing platform that was first
+released by Sun Microsystems in 1995.
+Java is widely used object oriented
+programming language and software
+platform that runs on billions of
+devices including computers mobiles
+medical devices and many others
+whereas.net framework is free
+cross-platform open source framework for
+building different applications
+by early 2000 the first beta version
+of.net 1.0 was released
+the next parameter is languages
+Java itself is a programming language
+however Java virtual machine supports
+other programming languages like python
+R and Ruby
+with.net we can use multiple languages
+we can write.net apps in C sharp F sharp
+and Visual Basic
+operating system
+Java can work on different operating
+systems like Microsoft Windows the
+Solaris operating system Linux or Mac OS
+whereas.net Works only on Windows
+operating system that is Windows 98 or
+later Windows NT 4.0 or later
+integrated development environment
+Java uses Ides like Eclipse bluej
+IntelliJ IDEA J grasp J Creator netbeans
+green foot and J developer
+and in.net IDs like Autumn bracket
+Sublime Text ikmas and Vim are used but
+the most common one is Visual Studio
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+the next parameter is libraries
+the Java class library is set of
+dynamically loaded libraries the Java
+virtual machine languages can call at
+runtime
+a Java library is just a collection of
+classes that have been written by
+somebody else
+some of the library is used in Java are
+Apache Commons Google guava and Jackson
+whereas in.net framework class library
+is the collection of classes namespaces
+interfaces and value types that are used
+for dotnet applications
+class libraries are shared Library
+concept for dotnet some of the.net
+libraries are swashbuckle poly Auto
+mapper and SAS kit
+performance
+Java's efficiency is from just in time
+compiler and concurrency capabilities
+the just in time compiler is a part of
+the Java runtime environment
+the compile code is immediately called
+by Java virtual machine compiling does
+not require processing time or memory
+use because the code is not interpreted
+as a result Java program is as quick as
+native application
+whereas
+in.net.net users natively compiled
+languages like C sharp and C plus plus
+they are faster and less memory
+consuming than
+java.net also enables optimizing the
+code and writing less code which
+increases the performance
+the shorter the code also means less
+effort spent on the court maintenance
+and easier debugging
+versions
+in Java the first beta version was
+released in 1995. following which the
+version 1.0 was released in Jan 1996 and
+so on
+the most recent versions was Java sc16
+released in March 2021
+and five months later Java SC 17 was
+released on September 2021 and it's
+likely that on March 2022 Java sc88 will
+be released
+in.net the first version 1.0 was
+released on 15 Jan 2002.
+and the most recent version released is
+version 4.8 on 18th April 2019.
+now let us look at the licensing of java
+and dotnet
+since the Java 8 update on April 16 2019
+all versions and update for Java above 8
+has no cost for personal use and
+development purposes
+but any other use needs a commercial
+license
+whereas in.net.net is free open source
+developer platform with no licensing
+cost and free development tools for
+Linux Mac OS and windows there are no
+licensing costs including commercial use
+lastly we will look at jobs and salaries
+there are over 3 lakh 16
+715 Java developers currently employed
+in United States
+whereas in.net there are over 2 lakh
+54189.net developers currently employed
+in United States
+the average salary for a Java developer
+in India is 4 lakh 61 000.
+whereas the average salary for a.net
+developer in India is 4 lakh 14 000.
+the average salary for Java developer in
+United States is 76 000 dollars
+whereas the average salary for a.net
+developer in United States is 72 000
+dollars
+now let us see when to use Java and
+dotnet
+Java is suitable for Web projects big
+data and GUI applications
+Java is used as server side language for
+backend development
+Java is also used for embedded systems
+Android applications and web
+applications
+because Java is portable you may choose
+which operating system you want to work
+on this adaptability allows to select
+tools without having to worry about
+compatibility difficulties
+dotnet is used to build for web mobile
+desktop games and iot .net is also used
+for web applications client applications
+and Enterprise development
+dotnet has taken over for web services
+and eapis
+it is mostly preferred for Windows aapi
+service let's first see why do we use
+asp.net
+many questions arise in our mind while
+building an application
+all we think about is speed cost and
+language
+but with respect to building a web
+application asp.net is much easier as
+compared to other Technologies like PHP
+and node.js
+it is much faster and much more
+efficient than many other languages
+asp.net also allows you to build many
+types of applications like rest apis and
+web pages
+asp.net takes comparatively less time to
+execute and the execution takes place
+only once now when you have an idea
+about why we use asp.net let us
+understand what exactly asp.net is all
+about
+asp.net is a server-side technology used
+for developing Dynamic web applications
+asp.net was developed by Microsoft and
+it is mainly used to build websites and
+web applications
+asp.net is the latest version of active
+server Pages which Microsoft developed
+to build websites it was released in
+2002 and had an extension of Dot aspx
+active server pages is a server-side
+scripting language an engine used for
+developing web applications
+asp.net produces interactive data-driven
+web applications on the internet
+now when we know what is asp.net let's
+have a look at the architecture and
+components of asp.net
+first let's have a look at the
+architecture and then we shall focus on
+the components
+asp.net architecture helps in increasing
+performance scalability and flexibility
+first asp.net requests an HTML file from
+the server then internet Information
+Services or IIs passes that information
+to the asp.net engine and after that
+asp.net engine reads the file and
+executes the script IIs or Internet
+Information Services is an extensible
+web server used to host asp.net web
+applications
+after that asp.net Returns the file to
+the browser as an HTML file
+now when we know the architecture of
+asp.net it is time to move on to the
+components of asp.net
+asp.net architecture depends on three
+different components the three
+components are language library and
+Common Language runtime let's have a
+look at these three components in detail
+the first component we have is language
+when we build an application we need to
+code the application so that we can
+communicate with the computer
+there are many computer languages that
+help to communicate with computers to
+develop web applications some of them
+are vb.net and c-sharp which are
+typically used to build applications in
+asp.net
+the second component we have is the
+library
+library is a pre-written class or a
+coded template that a developer can use
+while developing an application
+the most common Library used for asp.net
+web applications is the web Library
+web library is a part of a website that
+offers a stock of websites when users
+browse
+the third and the last component we have
+is the common language runtime common
+language runtime is a platform used to
+execute the programs it is also used for
+performing Key activities like garbage
+collection
+moving forward let's understand some
+basic skills that are required to master
+asp.net
+some of the basic skills that are
+required to understand asp.net are
+first you should have some basic
+knowledge of C sharp JavaScript and HTML
+then you should have some knowledge
+about asp.net MVC along with this we
+must have good knowledge of object
+oriented programming Concepts and some
+experience in web development
+moving forward let's understand the
+tools and Frameworks used for asp.net
+the first tool we have is the Microsoft
+web platform installer Microsoft web
+platform installer is a free tool that
+can help run web applications and get
+the latest SQL Server Express
+the second tool we have is SQL complete
+SQL complete is a customizable tool that
+improves the quality of the code and
+simplifies the creation of SQL queries
+with context based code completion
+moving forth the next tool is web
+Essentials for visual studio web
+Essentials for visual studio is a tool
+that opens up the inventory of CSS HTML
+JavaScript and typescript the fourth
+tool on our list is the resharper
+resharper is the tool that provides an
+absolute productivity boost in code
+quality analysis and reduces Time by
+identifying errors which makes
+developers build applications quickly
+now when we know about the tools and
+Frameworks of asp.net let's have a look
+at some of the benefits of using asp.net
+first the applications developed using
+asp.net perform better than the
+applications developed using other
+Technologies like PHP and node.js
+then asp.net provides more security to
+the application so that you can easily
+develop secure applications through the
+built-in Windows authentication and
+pre-application configuration features
+asp.net also provides multiple
+development modes for the applications
+so that the applications are easy for
+configuration and deployment
+one of the best features of asp.net is
+its language independent feature which
+means we can use any language that we
+are comfortable with hence the
+applications built using asp.net can be
+used across the globe
+asp.net is a server-side technology used
+for developing Dynamic web applications
+it is the latest version of the active
+server Pages active server pages is a
+server-side scripting language and
+engine used for developing web
+applications it is essentially a
+web-based platform that helps to create
+Dynamic web pages for programmers
+asp.net produces interactive data driven
+web applications on the internet
+it works on HTTP protocols and uses HTTP
+commands to set communication between
+the server and the browser
+the codes can be written in many
+different languages like c-sharp visual
+studio and JavaScript
+the latest version of asp.net is the
+active server Pages which Microsoft
+developed to build websites it was
+released in 2002 and had an extension of
+Dot aspx
+asp.net consists of a large number of
+controls such as text boxes buttons and
+labels for assembly it reduces
+interactive data-driven web applications
+on the internet which helps to build
+websites and web applications in a
+better and colorful way
+now when we know what is asp.net let's
+have a look at the architecture of
+asp.net
+asp.net architecture consists of three
+different components the first component
+is language then comes library and
+finally comes the common language
+runtime
+moving forward we should learn about
+these three components one after the
+another the first component we have is
+language
+whenever we build an application the
+first task is to communicate with the
+application which is made possible by
+different programming languages
+the three major languages that asp.net
+uses to communicate with a computer are
+C sharp vb.net and F sharp the second
+component is the library library is a
+pre-written class or a coded template
+that a developer can use while
+developing an application
+the most common Library used for asp.net
+web applications is the web Library
+web library is a part of a website that
+offers a collection of websites when
+users browse
+it possesses all the properties that
+help in building a web application
+the third and last integral component is
+the common language runtime
+common language runtime is a platform
+used to execute the programs
+common language runtime mainly helps to
+execute.net programs and it is also used
+for performing Key activities like
+garbage collection and exception
+handling
+the code that the common language
+runtime directly manages is called the
+managed code
+now when we know about the architecture
+and its components let's have a look at
+some of the characteristics of asp.net
+here we shall see five characteristics
+of asp.net beginning with code behind
+model then we have directives followed
+by caching and after caching we have
+user controls and State Management
+let's have a look at all these
+characteristics one by one
+beginning with the code behind model
+characteristic
+code behind model helps in dealing with
+dynamic programming code it also helps
+to place code in a separate designated
+script or a specific file named as
+mypage Dot aspx.cs
+while the main page file is my page Dot
+aspx
+code behind model also helps to create
+applications with different content the
+second characteristic is directives
+directives act like a support to the
+pages it gives support by providing
+special instructions to the developer on
+how a page should be processed
+directives also specify and enable the
+attribute to show how an application
+should be used
+then comes the third characteristic and
+that is caching
+caching helps in improving the
+performance of an application which
+helps a user to use an application more
+efficiently
+it also helps to store Page requests of
+the user in a temporary location
+the fourth characteristic is user
+controls
+the sections of pages that are
+registered and used as controls are
+called as the user controls user
+controls also create markup files that
+contain static HTML markup and server
+side web controls
+the fifth and final characteristic is
+the state management characteristic
+asp.net provides State Management which
+helps to store the state of every user
+by providing the state of every user it
+becomes easy to use asp.net applications
+asp.net lifecycle is very crucial when
+it comes to developing applications
+the life cycle includes two different
+stages that help in producing Dynamic
+outputs these two stages together are
+known as the asp.net lifecycle
+the two stages in which the life cycle
+is divided are application life cycle
+and the page life cycle
+now we shall have a look at both of
+these types in detail
+first let's have a look at the
+application life cycle
+application lifecycle is the part that
+starts when the user makes a request
+these requests involve several stages
+and these stages are application start
+object creation HTTP application dispose
+and application end
+let's have a look at each of these step
+in detail the first step we have is
+application start
+whenever a user requests an application
+for accessing a web server first the
+request is checked and then the request
+for accessing it is provided
+the second stage we have is the object
+creation object creation helps in
+holding all the information about the
+request cookies and browsing information
+it also holds HTTP context HTTP request
+and HTTP response by the browser the
+third stage is the HTTP application
+HTTP application holds back all the
+subsequent information sent back to the
+user by the web driver
+for example if we have two different
+applications like one is a gaming
+application and the other one is a
+social media application
+then that means there will be two HTTP
+applications that are to be created to
+process the application
+the fourth stage is dispose dispose
+helps in erasing the unmanaged resources
+when the objects are no longer needed
+moving forth the last and the final
+stage is the application end
+application end helps to unload the
+memory of an application here unloading
+memory means cleaning up The Unwanted
+files in the application
+now when we know about the application
+life cycle let's have a look at the page
+lifecycle
+page lifecycle includes initialization
+restoring and execution
+when an asp.net page is called it goes
+through some phases before the response
+is sent to the user
+let's have a look at the phases involved
+in the page life cycle beginning with
+page request
+then comes page start page
+initialization page load validation
+event handling rendering and unload
+let's have a look at all these steps in
+detail
+the first phase of the page life cycle
+is Page request
+when the user requests a page the server
+checks the request compiles the page and
+responds to the user
+if the page is requested several times
+then the cache will check the request to
+see if the output exists or not and
+after that it will send a response back
+to the user the second phase is paid
+start
+pH start holds two objects request and
+response the request holds all the
+information which was sent when the page
+was requested and the response holds all
+the information sent back to the user
+the third phase is the page
+initialization phase during the page
+initialization phase all controls are
+initialized and each controller is
+provided with a specific ID
+in the page initialization phase themes
+are also applied to the applications
+the fourth phase is Page load
+in this phase the application is
+provided with some control properties
+and the information is also set using
+view State and control State the fifth
+phase of the page life cycle is
+validation
+when a page is executed the result of
+those pages are provided in the form of
+two conditions
+true and false if the execution goes
+successful the result is true while if
+there is an error in execution it
+returns false
+the sixth phase in the life cycle is
+event handling
+this phase is the response to the
+validation phase in this phase pages are
+loaded again and display the same
+information
+in order to overcome this a postback
+event is called this event helps in
+checking the credentials of the user
+the seventh phase of the life cycle is
+the rendering it occurs when all the
+response information has been sent back
+to the user the phase also stores all
+the information that is being sent
+the eighth in the final stage of the
+page life cycle is unload
+unload helps to clean all The Unwanted
+information of an application
+it also cleans the memory once the
+output is sent back to the user
+what is a navigation bar in asp.net
+navigation bar in asp.net is used to
+create a navigation header for a website
+or a web application
+it makes it simple for an application to
+browse
+asp.net has three navigation controls
+Dynamic menus tree views and sitemap
+path
+Dynamic menu displays the standard site
+navigation menu
+whereas tributes displays a multi-level
+navigation menu
+and sitemap part displays a trail to the
+current page and link to the previous
+page
+now let us look at a demo on how to
+create a navigation bar
+so we have open Visual Studio 2019 go to
+file
+new
+create a new project
+will select asp.net core web app model
+view controller template scroll down
+so select this template
+click on next
+provide the project name
+since we are creating a navigation bar
+so we'll provide the project name as
+nav bar
+click on next
+and if you want to change the target
+framework you can change it here
+I'll skip the default one
+click on create
+so here you can see the project is
+successfully created
+let's click on view and open solution
+Explorer
+so now let us run this and see what is
+the output
+here you can see the build has started
+here you can see it is running on
+localhost and
+this is the default nav bar
+which is created so what we'll do is
+we'll go and change this navigation bar
+so go back to visual studio
+go to solution Explorer
+go to views go to layout.cshtml
+open this file
+and here you can see
+if you look look inside the header this
+is the nav bar
+so what we'll do is
+we'll delete the snap bar
+so this is the small code which I have
+pasted here so I have created a class
+nav bar and provided the background
+color as dark and I haven't provided any
+link as of now and I have named it as
+simply learn
+and similarly I have created another
+class
+in this class I've created a drop down
+in this drop down I have named it as
+courses articles and others
+so let us go and run this
+and see the output
+so this is the nav bar which we created
+they simply learn whom about and we
+created a drop down
+resources in this drop down we have
+courses articles and others
+similarly we have contact us and we have
+this search bar
+this one this is the navbar which we
+created so we'll go back to the code
+so here we have created
+another class nav path contact us and
+this is where we created the search bar
+what is asp.net core
+asp.net core is an open source
+cross-platform high performance
+framework for developing modern
+cloud-enabled Internet connected apps
+asp.net core is the open source version
+of asp.net that runs on Mac OS Linux and
+windows
+asp.net core was first released in 2016
+and is a redesign of earlier Windows
+only versions of asp.net
+why use asp.net core
+asp.net is used by millions of
+developers to construct web applications
+esp.net core is a redesigned version of
+asp.net that includes architectural
+improvements to create a more modular
+framework
+with asp.net core we can build web apps
+and services iot apps and mobile
+backends
+we can use development tools on Windows
+Mac OS and Linux
+using asp.net core we can deploy to the
+cloud or on-premises
+we can run on.net core now let us look
+at the features of asp.net code
+esp.net core provides a single framework
+for developing web UI and web apis
+asp.net core is designed for testing
+it provides Razer pages that make it
+easier and more productive to code page
+Focus situations
+laser allows use of C sharp alongside
+JavaScript in the browser
+share server side and client-side
+application logicbuilt-in.net
+asp.net core has the capability to
+design and run applications on Windows
+Mac OS and Linux
+it is Community Driven and open source
+it provides modern client-side
+Frameworks and development methods that
+are integrated
+asp.net is a configuration system that
+is cloud ready and environment based
+it gives high performance lightweight
+modular HTTP request Pipeline and
+provides build in dependency injection
+asp.net core has the capability to host
+on the following platforms that is
+Kestrel IIs HTTP nginx and Apache docker
+now let us look at the architecture of
+asp.net
+the concept of asp.net fundamental
+architecture is similar to n layer
+architecture that defines the layer as
+the core component of the platform
+releasing the developer the burden of
+redefining it in order to make solution
+more flexible and reusable
+the main business logic and UI logic in
+asp.net core are encapsulated in the web
+app layer while the database access
+layer CAD services and web API services
+are encapsulated in the infrastructure
+layer common utilities objects
+interfaces and reusable business
+services are encapsulated as micro
+services in the application core project
+the data sources could be SQL database
+and the third party Services include
+GitHub API sendgrid API and others
+dotted Arrow shows the compile time
+dependency and the regular Arrow
+indicates a runtime dependency
+application core project
+the business model which contains
+entities services and interfaces
+restored in the application code
+these interfaces contains abstractions
+for operations done by infrastructure
+such as database access file system
+access and network calls and so on
+application code types include entities
+interfaces services and DDOS
+infrastructure project
+the infrastructure project includes data
+access implementations such as Entity
+framework EF core migration objects and
+data access implementation classes
+the infrastructure project contains
+implementation of services that must
+interact with the infrastructure
+concerns
+these Services Implement interfaces
+defined in the application code and so
+infrastructure should have a reference
+to the application core project
+infrastructure types include AF core
+types data access implementation types
+and infrastructure specific services
+benefits of asp.net core over asp.net
+framework
+benefits of dotnet core over dot NET
+Framework include it provides
+cross-platform it runs on Windows Mac OS
+and Linux
+asp.net core has improved performance
+it provides side-by-side versioning
+it provides new apis and it is open
+source
+now let us look at the industry trends
+of asp.net core
+this picture depicts the industry trends
+of asp.net and Net Framework
+asp.net core is the most used framework
+and it is growing in popularity as the
+majority of developers use it on regular
+basis
+it is expected that asp.net will
+overtake.net framework in popularity in
+coming years
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+so now let us look at the demo
+so we'll first look at the prerequis
+sites
+first we need to install the required
+software and set up the system for
+asp.net core development first we need
+the editor maybe Visual Studio Sublime
+Autumn or any other but I would
+recommend to go with Visual Studio 2019
+next we need dotnet core SDK software
+development kit so let's go to the
+browser and install this
+so go to the visual
+studio.microsoft.com and go to downloads
+from here you can download visual studio
+2019
+the Community Edition this is free any
+Community Edition then to download.net
+SDK
+go to dotnet microsoft.com from here you
+can download.net core
+from here you can download dotnet Core
+3.1
+so click on this side get this download
+once you have downloaded these files
+open Visual Studio code open Visual
+Studio 29.
+so open Visual Studio 2019 when you open
+it for the first time in the workloads
+under the tool set section select.net
+core cross platform
+on the left hand side it shows a recent
+project that you have worked on
+and at the right hand side we can create
+a new project we can open a folder open
+a project or a solution and clone a
+reposited
+so we'll click on create new project
+so these are the different project
+templates
+present in Visual Studio 2019
+we have asp.net core web app this is
+used for creating core application for
+example laser Pages content and we have
+Laser Web assembly and then we have
+esp.net core MD in this template we can
+create dotnet core application from the
+scratch then we have asp.net core web
+app model V controller we'll discuss
+this in the upcoming videos similarly we
+have laser server app usb.net core web
+API and many more
+then scroll down and explore we have
+many more we have asp.net core with
+angular with react.js
+so for now we'll use asp.net core Mt
+so select this asp.net core Mt and click
+on next
+and name the project so we'll name the
+project as
+demo application
+if you want to provide a different
+solution name you can check this box and
+provide a different solution name
+so click on next
+select the target framework
+dot net core 3.1 or 5.0 I'll select it
+as 5.0
+and click on next
+click on create
+okay so here we go the demo app project
+is created
+these are the default folders that I've
+generated you have dependencies folder
+in which we have analyzers and
+Frameworks and we have properties folder
+in which we have launch setting.json
+file
+then we have app settings.json file and
+we have program and startup file so
+we'll run this
+and see click on run
+and here you can see build started
+here we can see
+the localhost
+44313
+so it's showing hello world so where is
+this hello infecting generator from
+so go back to visual studio
+so go to solution Explorer
+and go to startup.cs file
+if you scroll down
+you can see here
+this is where hello world is getting
+generated from
+so we'll change this
+change the message and enter
+so change the message and enter thanks
+for watching stay tuned
+so let me run this
+and here you see
+so here you can see thanks for watching
+and stay tuned
+what is MVC pattern
+the model view controller MVC
+architectural pattern divides an
+application into three major component
+groups model view and controller
+the principle behind developing MVC is
+the separation of concerns this
+principle implies that software should
+be classified based on the type of task
+it performs
+separation ensures that the business
+model is simple to test and can change
+without becoming too involved in
+low-level implementation details
+using this MVC pattern user requests are
+routed to a controller who is in charge
+of interacting with the model to conduct
+user actions and receive query results
+the controller selects the view to be
+displayed to the user and supplies it
+with any model data it requires
+what is asp.net core MVC
+the asp.net core MVC framework is a
+lightweight open source and highly
+testable presentation framework designed
+specifically for use with asp.net core
+asp.net core MVC is an application
+framework that allows you to create
+modern web apps by using the MVC model
+view controller architectural pattern
+asp.net core MVC provides a pattern
+based approach to developing Dynamic
+websites that allow for a clear
+separation of concerns
+it allows you to complete markup control
+facilitates tdd friendly development and
+corresponds to the most recent web
+standards
+functions of MVC
+let's look at the model functions the
+responsibilities that a model carries
+in an MVC application the model
+represents the applications State and
+any other business logic or activities
+that should be executed by it
+business logic and any implementation
+Logic for maintaining the application
+State should be wrapped in the model
+view model classes intend to contain the
+data to display on that view are often
+used in strong typed views
+the model is used by the controller to
+construct and populate this view model
+instances
+view responsibilities
+views are in charge of displaying
+content through the user interface
+day embed.net code in HTML markup using
+the Razer view engine
+view should have minimal logic and any
+logic should be related to presenting
+content
+consider using a view component view
+model or view template to simplify the
+view if you need to perform a logic in
+View files to display data from a
+complex model
+now let us look at the functions of a
+controller
+controllers are the components that
+manage user input interact with the
+model and finally choose which view to
+render
+the view just displays information in an
+MVC application the controller processes
+and responds to the user input and
+interaction
+the controller is the initial entry
+point in the MVC architecture and it is
+responsible for deciding which model
+type to interact with and which view to
+represent hence its name is controller
+as it responds to a given request
+now let us look at the components of
+asp.net MVC
+some of the components of mvcr routing
+model binding model validation
+dependency injection filters and areas
+now let us look at them one by one
+at first we have routing
+asp.net core MVC is built on top of
+asp.net core routing a robust URL
+mapping component that enables the
+creation of applications with logical
+and searchable urls
+this allows us to establish URL naming
+patterns for applications that perform
+well for search engine optimization and
+Link generation regardless of how the
+files on your web server are arranged
+routes can be defined with a simple
+route template syntax that takes into
+account route value limitations defaults
+and optional values
+next we have model binding
+model binding in asp.net core MPC
+transforms client request such as form
+values route data query string
+parameters and HTTP headers it transform
+this data into objects that the
+controller can handle
+as a result the controller logic does
+not have to do the job of determining
+the incoming request data instead the
+data is passed as parameters to its
+action methods
+next we have model validation
+validation is supported in asp.net core
+MVC by decorating your model object with
+data annotation validation attributes
+before values are sent to the server the
+validation attributes are checked on the
+client side the framework validates
+request data on both the client and the
+server side
+dependency injection
+asp.net core includes dependency
+injection capabilities
+controllers in asp.net core MVC can
+request required Services through their
+Constructors allowing them to follow to
+the explicit dependencies principle
+dependency injection is the software
+design technique that achieves inversion
+of control between classes and the
+dependencies
+does
+filters in asp.net core enable code to
+be executed before or after particular
+stages of the request processing
+pipeline
+filters can be used as attributes on
+controllers or actions
+filters manage duties such as
+authorization restricting unauthorized
+access to the sources and response
+catching
+filters allow for the execution of
+custom pre and post-processing Logic for
+Action methods and they may be see to
+run at certain points in the execution
+pipeline for given request
+last we have areas
+areas allow you to divide a large
+asp.net core MVC web app into smaller
+functional groups
+an area is an MVC structure that exists
+between an application
+logical components such as model
+controller and view are kept in separate
+folders in an MVC project and MVC uses
+naming conventions to build a
+relationship between these components
+it may be good to partition a large app
+into different high-level functional
+regions
+for example consider an e-commerce app
+with numerous business units such as
+checkout billing and search among others
+each of this unit has its own set of
+logical component views controllers and
+models
+now let us look at the demo in this demo
+we will create our first asp.net core
+MVC application
+so first we need to install the required
+software and set up the system for
+asp.net core MVC development firstly we
+need dot net core SDK software
+development kit then we need to install
+jsql server and then we need to install
+editor-like Visual Studio
+once you have installed the visual
+studio click on launch
+Visual Studio 2019 is getting opened
+so this is how the visual studio 2019
+looks like towards the left hand side we
+have the recent applications which we
+have worked on and towards the right
+side we have the options to clone a
+repository to open a project or a
+solution to open a local folder or
+create a new project so click on create
+a new project
+here we have different project templates
+we have console application which is
+used for creating a command line
+application that can run on.net core
+Windows Linux and Mac OS
+similarly we have other templates like
+asp.net core web app Blazer web assembly
+app and if you scroll down you have many
+more templates
+but for this project we need the
+template asp.net core web app model view
+controller since this project this video
+is related to MVC we need this template
+so select this template this template
+basically is used for creating an
+asp.net core application
+with asp.net core MVC model view and
+controller
+so select this click on next
+if the project name
+so we'll enter it as a demo since we are
+showing a demo so we'll enter the
+project name demo if you want the
+solution name to be different from the
+project name then check this box and
+provide the solution name
+so we'll keep it as it is
+click on next
+select the target framework
+authentication type if required then
+click on create
+here you go the project is successfully
+created
+so here you can see there are different
+types of files and folders
+for this template the addition of
+folders is the controller model and view
+so these three folders are added for
+this particular template MVC
+you can check out our previous video on
+esp.net code tutorial wherein I have
+explained each of these folders in
+detail
+shared you can see
+layout.cs.html open this file
+so let's click on run and see what is
+the output
+click on run here you can see build
+started
+here you can see it is running on the
+Local Host server
+so this is the project this is the
+template
+let us go back to the visual studio and
+change this so this is where
+you can change the title from demo
+will change it to Simply learn
+similarly if you want to change
+the home or the Privacy you can change
+it here
+this is where you modify all the setup
+so we'll reset and click on run restart
+so here you can see the demo is changed
+to simply done so this is how we get
+started with MVC application from here
+you can modify all this go back to the
+visual studio and modify if you click on
+home this will come back to the same
+homepage click on privacy
+it shows this page
+so this was about the template model
+view controller
+what are web apis
+the asp.net web API is a framework for
+creating HTTP Based Services that can be
+used in a variety of applications on a
+variety of platforms such as web games
+windows and mobile
+on the dotnet framework asp.net web API
+is an excellent foundation for
+developing restful labs
+some of the examples of web API are
+Microsoft graph Microsoft graph is a
+collection of apis that gives us
+information back out of our Microsoft
+account
+Azure devops Azure devops we can get
+information about devops pipeline using
+the Azure devops API
+cognitive Services we can use cognitive
+Services if we are interested in adding
+machine learning
+playfab playfab is a set of apis for
+games
+features of web apis
+the asp.net web API platform is suitable
+for creating restful services
+the asp.net web API is based on asp.net
+and uses asp.net request response
+pipeline
+HTTP hypertext transfer protocol works
+are mapped to Method names in the
+asp.net web API
+web API can be hosted on IIs or any
+other web server that supports dotnet
+version 4.0 and more
+asp.net web API supports different data
+types like dot Json XML and many other
+formats that are supported natively
+to interface with web API server the
+asp.net web API framework contains a new
+HTTP client HTTP client can be used in
+asp.net and MVC server-side applications
+now let us look at the demo
+in this demo we will create a web API
+project
+first let's go to visual studio
+launch the visual studio
+create a new project
+scroll down and search for asp.net core
+web API this project template is used
+for creating an asp.net core application
+with an example controller for a restful
+HTTP service
+so select this template and click on
+next
+provide the project name
+since we are showing a demo I'll name it
+as demo web API
+click on next click on create
+foreign
+so here you can see the project is
+successfully created
+on the right hand side if you can see we
+have startup and program.cs file
+if you notice here in controllers we
+have weather forecast controller.cs open
+this
+in this we have a single get method this
+method receives request for weather data
+and returns some response
+if we also notice here we have weather
+forecast.cs
+open this
+in this we have the class weather
+forecast the function of this class is
+to form the structure of information
+that we want to return from our API
+so let's go ahead and run this
+click on this green arrow Mark and run
+the build has started
+it's running on the Local Host
+this is the output it shows the date and
+the temperature in Celsius and the
+temperature in Fahrenheit and this
+summary
+so in this video we are going to create
+a login application
+which has the username password and a
+login button
+so before we begin make sure you have
+subscribed to our YouTube channel and
+click down the Bell icon so you never
+miss an update from Simply learn
+watch the video till the end so that you
+don't miss on the demo so without
+wasting any further time let's get
+started
+so let's go to visual studio
+after opening Visual Studio
+on the left hand side you have all the
+recent applications which you have
+opened and on the right hand side you
+have the options to clone a repository
+which means you can get a code from an
+online repository like GitHub or Azure
+devops or you can open an existing
+project or a solution
+or you can open a local folder or create
+a new project so we'll create a new
+project
+once you create a new project here you
+can select the template
+so we'll search for the asp.net web
+application template
+so in the search for template search box
+type asp.net web application
+so here you can see we have two asp.net
+web
+application.net framework templates
+the difference between these two is this
+template uses Visual Basic and this
+template uses C sharp
+so we will select the template which
+uses C sharp
+this template is basically used for
+creating asp.web application where forms
+MVC or web API applications
+so select this template and click on
+next
+and provide a suitable project name
+since we are creating a sign in page I
+have entered the project name as sign in
+Project similarly if you want to change
+the location you can change the location
+and provide the solution name
+and select the framework version which
+you want
+so I'll keep the default framework
+latest one in my system is 4.7.2
+so click on create
+so here we need to select uh
+template whether we want empty web forms
+MVC web API or single page application
+empty it is basically a template which
+does not have any content in it and web
+forms waveform is a template for
+creating web form applications it is
+used to build Dynamic websites using the
+familiar drag and drop functionality it
+is it has the event driven model
+similarly if we look at MVC this
+template allows to build applications
+using the model V controller
+architecture so model view controller
+has the features that enable fast test
+driven development for creating
+applications that use the latest
+standard then we have web API web API is
+used for creating restful HTTP services
+that can reach a broad range of clients
+including browsers and mobile devices
+and we have single page application this
+template is basically used to create
+client-side JavaScript driven HTML5
+application using asp.net web API so for
+this project we will select MVC
+and we'll
+not change any Authentication
+and
+keep all the settings as it is and click
+on create
+so here we go we have successfully
+created the project so if you look at
+the right hand side in the solution
+Explorer we have a list of folders
+so we have the root folder this is the
+root folder so the default root folder
+is used for storing the static files
+related to the project and those files
+can be accessed programmatically with
+the relative path and we have the
+controller folder so this controller
+folder
+contains controller classes where the
+operation related code is written
+the model folder contains the domain or
+entity classes models can be written
+anywhere in the solution such as in
+separate class library or folder Etc
+similarly we have views folder so the
+views folder holds the Eraser Pages
+which are responsible for showing and
+getting the data from the user
+similarly in the folders We will have an
+app setting.json file this folder
+contains the configuration and secret
+details of the application and we will
+have the program.cs file the program.cs
+file is the starting point of the
+application which will create the host
+for an application to run the
+application and we will have the
+startup.cs file so this startup.cs file
+allows to configure the behavior of the
+application such as defining the roots
+and dependency injection
+so we'll get started with this
+so we'll run the application and see the
+default output
+so the build has started
+so this is the default output here we
+have application name
+whom
+home page about and contact so what
+we'll do is we'll create a login page
+that is assignment page here
+so we'll go back to visual studio
+go to solution Explorer
+right click on the controller folder add
+a controller
+select MVC controller empty
+and click on ADD
+and name the controller so we will keep
+it as default controller
+and click on that
+let's go to models right click click on
+ADD
+and add a class
+select the class
+and click on ADD
+here you can see a class is created
+so what we'll do is we'll rename this
+class
+right click rename and we'll rename this
+as user controller class
+once the class is renamed go inside this
+public class
+and write a code
+type prop and double tap
+so the first property will be of the
+type integer and it will be
+a number
+ID number
+similarly
+second property
+crop and double tap will be of the type
+string
+and this will be username
+similarly third
+so after writing this code go back to
+the default controller
+here
+go to the action result index page right
+click
+and click on ADD View
+here you can see it contains mvc5 View
+select this and click on ADD
+and provide the index name
+so I'll keep it as it is
+and select the template
+in the template it has create delete
+details edit empty list all these
+templates but we'll select the create
+template and select the model class
+select the user controller this was the
+model class which we created
+user controller
+so select user controller and in the
+options select create as partial View
+then click on ADD
+here you can see this page is created
+so we'll run this page and see the
+output
+so here you can see
+this is the signing page which we
+created we have the number username and
+password
+so what we'll do we'll make some changes
+we'll change this create button to sign
+in button and we'll change this user
+controller
+so we'll go back to the visual studio
+and here you can see we have user
+controller
+we'll change it to
+sign in page
+foreign
+[Music]
+and we'll change the create button to
+sign in button
+so we'll save this
+and click on run
+so here you can see this is changed to
+sign in page and the button is changed
+to sign
+so you can enter the any value here
+number
+and enter the username password and
+click on sign
+what is a web API
+the asp.net web API framework is used to
+create HTTP services that may be
+accessed by a variety of clients
+including browsers mobile phones and
+tablets asp.net web API is the extension
+of WCF rest API
+in a nutshell it's a replacement for the
+WCF rest API it's compatible with
+asp.net MVC and other web applications
+such as asp.net web forms asp.net web
+API is an excellent foundation for
+developing restful Labs so what is this
+WCF rest API
+WCF stands for Windows communication
+Foundation is a communication framework
+that may be used to create web services
+in.net it is secure dependable and
+scalable it offers an uniform
+programming model for service oriented
+application development
+asp.net is quite similar to asp.net MVC
+because of its MVC capabilities like
+routing controllers action results
+filters model binders ioc container and
+dependency injection
+asp.net web API is an excellent
+foundation for developing restful apps
+restful apps that is their
+representational state transfer is an
+architecture Paradigm that follows the
+concepts of rest architecture principles
+the concept of resources support the
+rest architecture the concept of
+resources that supports the rest
+architecture may be the use of resources
+to express an application State and
+functionality over the HTTP protocol
+this resources are identified using URLs
+now let us look at the examples of web
+API
+the first one is router API
+Twitter API allows you to show tweets on
+your website using the Twitter API then
+we have YouTube API this allows you to
+embed videos from YouTube on your
+website Facebook API allows to display
+information from Facebook onto the
+website similarly we have Microsoft
+graph Microsoft graph is a collection of
+apis that give us information back out
+of our Microsoft account next we have
+Azure devops using Azure devops we can
+get information about devops pipeline
+using the Azure devops API
+cognitive Services we can use cognitive
+Services if we are interested in adding
+machine learning
+playfab playfab is a set of apis for
+games
+why use an web API
+truly chooses a web-based application is
+insufficient people use iPhones mobile
+phones and tablets and other devices on
+regular basis these smartphones also
+come with a plethora of apps that makes
+life easier in fact we are migrating
+away from the web towards the realm of
+app so if you want to expose your
+service data to browsers and all of this
+contemporary devices apps in a quick and
+easy way you will need an API that's
+compatible with both browser and devices
+web API is an excellent foundation for
+making your data and service available
+to a wide range of devices web API is an
+appropriate platform for developing
+restful applications using the.net
+framework because of its open source
+unlike WCF rest API it uses all of the
+HTTP features
+and you don't have to declare any
+additional configuration for different
+devices
+now let us look at some of the key
+features of web API this of web API the
+asp.net web API platform is suitable for
+creating restful services
+the asp.net web API is based on asp.net
+and uses the asp.net request response
+pipeline
+HTTP verbs are mapped to Method names in
+the asp.net web API IIs self-hosted or
+any other web server that supports
+dotnet 4.0 version or above can host
+asp.net web API different data types are
+supported by asp.net web API Json XML
+and differentiation formats are all
+supported natively to interface with the
+web API server the asp.net web API
+framework contains a new HTTP client
+HTTP client can be used in asp.net MVC
+server side applications window forms
+applications console application and
+other application
+let us look at the different versions of
+web API
+the first web API version is 1.0 it is
+supported by dotnet framework 4.0 and it
+coincides with asp.net model view
+controllers 4. the current version of
+web API is version 2.0
+it is supported by dotnet framework 4.5
+and coincides with asp.net mvc5
+let's see the difference between asp.net
+web API and asp.net MVC
+asp.net web API is used to create fully
+fledged HTTP service that can only
+return data and not views
+whereas asp.net MVC is used to construct
+online applications that return both
+views and data web API allows to create
+restful services using the.net framework
+and it also enables content negotiation
+and self-hosting
+whereas in asp.net MVC it doesn't
+support this
+web API returns data in specific format
+such as Json XML or any other
+whereas MVC only returns data in Json
+format in web API the request is
+translated to actions based on HTTP
+verbs in web API
+whereas in MVC it is mapped to action
+names similarly web API is lightweight
+design that may be used with smartphone
+apps in addition to web applications
+when we have a controller that is both
+MVC and web API and want to implement an
+authorization we must construct two
+filters one for MVC and one for web API
+because they both are different
+now let us look an introduction to http
+the HTTP protocol can be used to access
+a web API over the Internet its
+framework for creating and developing
+HTTP based restful Services hypertext
+transfer protocol is a protocol for
+retrieving resources such as HTML
+documents it is the foundation of any
+data interchange on the internet
+and it is a client server protocol
+meaning that the requests are started by
+the recipient which is commonly the web
+browser text layout descriptions photos
+videos scripts and other subdocuments
+are fetched and a complete document is
+reconstructed for them
+grid operations can be mapped to the
+four primary HTTP methods that is get
+put post and delete get fetches the
+resources representation at a given URL
+and put changes the state of resource at
+a given URL post is used to create a new
+resource and delete removes a resource
+from a given URL
+hypertext transfer protocol is a request
+response protocol that communicates
+between a client and a server a client
+that is a browser sends an HTTP request
+to the server which is then responded by
+the server the answer may include the
+requested content as well as the status
+information about the request
+so this is an example of HTTP request
+the client submits a request to the
+server via the HTTP protocol and the
+server and the web browser respond to
+the client based on the request
+every HTTP request has three parts a
+request line a request header and a
+request body and the request body is
+optional the request line defines a
+method which instructs the server on how
+to handle the data or resource
+and the request header contains a
+request URL which is used to locate the
+requested resource to the server it also
+defines which version of HTTP protocol
+is being used this is an example of HTTP
+response HTTP response is a server
+response with the goal of providing the
+client with the request resources
+now let's have a look at the server's
+response this is how the response header
+status line looks like the HTTP protocol
+version status code and reason phrase
+are all included and this is known as
+status line
+and the response header one or more
+response header lines can be present and
+they are used to transmit additional
+information from the server to the
+client the response body contains a
+resource that client has requested if
+the request fails the response body
+specifies the cost for the failure as
+well as the steps and decline must do to
+complete the request successfully let us
+see how to set up the development
+environment the prerequisite is we need
+to have Visual Studio installed in our
+device and dotnet software development
+kit so let's jump into the browser and
+see how to install this first of all we
+need to install Visual Studio Microsoft
+Visual Studio to install that go to
+visual studio.microsoft.com
+and in downloads
+go to the downloads and here you can
+install the community version which is
+free
+so Microsoft Visual Studio is an
+integrated development environment from
+Microsoft it is used to develop computer
+programs as well as websites web apps
+and web services and mobile apps then
+after this we need to go to
+dotnet.microsoft.com here you can
+install the software development kit
+with the latest version
+scroll down select your operating system
+and select the installer which you want
+to install
+then we need to install the SQL Server
+management studio just go to the browser
+and type download ssms and it will take
+you to this website here scroll down
+and you can click here to download free
+download for SQL Server management
+Studio
+so after installing these three
+softwares you are ready
+for the demo now finally let us look at
+the demo let's go to the visual studio
+open Visual Studio code I have Visual
+Studio 2019 installed in my device so on
+the left hand side you can see the
+recently opened projects on the right
+hand side you have these options where
+we can clone a repository include a
+repository we can get code from an
+online repository like GitHub or Azure
+devops or we can open an existing
+project or a solution
+similarly we can open a local folder and
+we can create a new project
+so let's create a new project
+here there are many templates you can
+explore all the templates just scroll
+down you have many number of templates
+so for this project we will be using
+asp.net web application.net framework so
+basically we have two asp.net web
+application.net framework One is using
+Visual Basic and the other one is using
+C sharp
+so we'll select the one with the C sharp
+asp.net web
+application.net framework select this
+and click on next
+provide the project name
+and
+keep the default project name web
+application 9 and you can change the
+location if you want so I'll keep the
+default location and if you want the
+solution name you can change it and
+select the latest framework so I have
+the dot NET Framework 4.7.2 the recent
+one so I'll keep it as it is and next
+click on create
+so here you have the following templates
+so you need to select one among this
+template so empty is a template where
+the there is no content in it and web
+forms waveforms in asp.net is the extend
+the event driven interaction Concepts to
+web application the browser sends a web
+form to the web server which responds
+with a full markup page or a HTML page
+all users actions on the client are sent
+to the server for stateful processing in
+web forms or you can select MVC so MVC
+basically it is a project template for
+creating asp.net MVC applications model
+view controller applications so it
+allows us to build applications using
+the model view controller architecture
+and similarly we have web API web API is
+a project template for creating restful
+HTTP services and we have single page
+application that is used for creating
+Rich client-side JavaScript driven HTML5
+applications and it is a single page
+application so that provides a rich user
+experience which includes client-side
+interactions using HTML CSS and
+JavaScript
+so for this project we will select empty
+and we will check these boxes MVC and
+web API since we are using a web API
+here
+so we'll check these two boxes and
+and keep the authentication as it is
+with no authentication don't change it
+and keep this options as it is and click
+on create
+so here we go we have successfully
+created the project so
+on the right hand side you can see the
+solution Explorer so before we start
+with the project I will explain you the
+different folders that are present in
+the solution Explorer so first of all we
+will have the root folder so the root
+folder is the default root folder for
+storing the static files related to the
+project and those files can be accessed
+programmatically with relative path and
+similarly we have controller folder the
+controller folder contains the
+controller classes where the operation
+related code is written similarly we
+have model folder model folder contains
+the domain or entity classes models can
+be written anywhere in the solution such
+as in separate class libraries or folder
+Etc
+and we have views folder
+in views folder The View folder holds
+eraser Pages which are responsible for
+showing and getting the data from the
+users and we have app settings.json file
+so this app setting.json folder contains
+the configuration and secret details of
+the application
+and similarly we will have program.cs
+file so program.cs file in solution
+Explorer it is the file that is the
+starting point of the application which
+will create the host for an application
+to run the application and we will have
+startup.cs file the startup.cs file
+allows to configure the behavior of the
+application such as defining the routes
+dependency injection so that was about
+the few of the folders in solution
+Explorer as we go further we will
+explore other folders in detail so
+asp.net web API basically it returns
+data only the data may be from the
+database and it does not return any view
+or user interface and the asp.net web
+API returns data in either XML format or
+Json format so whenever you run an
+application so suppose if we make an
+application here and run an application
+the application start methods get
+invoked
+so whenever you run an application the
+first thing that happens is the
+application start method gets invoked so
+where is this method so this method is
+in global dot ASX folder
+let's open this so you can see here
+application start so as you can see here
+application start this is the method
+which gets invoked first whenever we run
+an application so basically this method
+checks the routing so as you can see
+here in this line we have the system
+object sender the object sender supports
+all classes in the dotnet framework the
+class hierarchy provides low level
+services to the drive classes this is
+the ultimate base class of all the
+classes in.net framework it is the root
+of the type hierarchy and we also have
+event argument it represents a base
+class for the classes that contains even
+data and provides a value to use for
+events that do not include event data we
+have area registration so area
+registration provides a way to register
+one or more areas in an asp.net MBC
+application and this register all areas
+this this is a register where all areas
+in asp.net MVC application are
+registered and we have Global
+configuration.configure in this line
+what happens is global configuration
+provides a global HTTP configuration for
+an asp.net application
+and the register route store the URL
+routes for an application and what is
+this route table so basically route
+table gets a collection of objects that
+derive from the route based class and it
+returns an object that contains all the
+routes in the collection so now the
+question is where is the route file so
+to find the route file go to the app
+start
+go to this folder in this folder we have
+two files route config.cs and web API
+config.cs so this route config.cs stores
+the routes and web API config.cs stores
+the web apis so open this route
+config.cs
+so this is the file where we have class
+route configuration so as you can see
+here route config this is the public
+class and we have register routes route
+collection so route collection it
+provides a collection of routes for
+asp.net routing
+and we have the parameter routes dot
+ignore route so ignore route ignores the
+specified URL route for the given list
+of available routes and and this class
+system dot string represents the text as
+a sequence of code units and we have map
+route map route Maps the specified URL
+route and sets the default route values
+and returns a referenced to the mapped
+routes
+similarly we have three parameters that
+is name URL and defaults name is a
+string and URL is the controller you
+have controller action and id id is
+optional and default are the objects so
+we have three objects here controller
+action and ID and we have specified it
+as optional so basically this route
+config.cs is the MVC application where
+the routes are present so now the
+question is where are the web API routes
+so the web API routes are in the web API
+config.cs file so open this file so as
+you can see here the public static class
+web API config so we have web API
+configuration and services and web API
+routes here so config dot routes dot map
+HTTP route
+so here the route gets the HTTP route
+collection associated with this HTTP
+configuration instance
+so what is this map HTTP route
+the map has CTP route Maps specified
+route template and sets the default
+route values and it returns a reference
+to the mapped route it has a string a
+route template and object default so it
+has a string named as default API and a
+route template with API controller and
+we have default object as ID is equal to
+Route parameter which is optional
+so this I ID is equal to Route parameter
+optional this is the route parameter
+class that can be used to indicate
+properties about a route parameter now
+we have understood about routes and web
+apis so now let us go to the controller
+folder
+so as you can see this is empty folder
+but before that we will close this files
+so go to the controller folder
+right click and go to add
+and add a controller
+and go to web API
+and here you can see web API to
+controller empty so here we have five
+different types of web API controllers
+one is the empty the other one is web
+API to controller with actions using
+Entity framework similarly we have a web
+API controller with read and write
+actions we have controller with actions
+using Entity framework and with read and
+write actions for data version V3
+so for this project we will select web
+API to controller empty so select this
+add it
+so we need to provide the controller
+name
+so we will keep as it is default
+controller so we'll provide it as
+default data controller as the
+controller name
+so controller is mandatory
+to be kept in the name and you can
+change the other part so we have
+provided the name now let's click on ADD
+so this is the default data controller
+which got created so namespace this is
+the name of the project and as you can
+see here with the extension controller
+so this is the controller which we have
+created and the name of the controller
+is default data controller
+so this API controller it basically
+defines the property and method for an
+API controller so next we'll write
+a few lines of code here first we'll
+call a string will keep it public
+string
+we'll call the array of string
+then we'll call it as my data
+is equal
+so we'll
+declare some values in the string say
+data one
+data 2
+and data 3.
+so just randomly I've called some values
+just to for an example
+so
+next we'll call and another string we'll
+keep it as public
+public string
+array array of string then we'll use the
+get method get data
+next we'll return this data
+return my data
+so we'll save this next we'll click on
+run
+so the build has started
+so we need to call the controller web
+API controller which we created for that
+first enter the API
+foreign
+ER name so the controller which we
+created was default data
+next content so here we go this is the
+array of string in XML format
+so this was the strings which we created
+XML is the extensible markup language
+XML is basically used to describe data
+the XML standard is a flexible way to
+create information formats and share
+structured data via the public internet
+so how XML basically works so it works
+by providing a predictable data format
+XML is a strict on formatting if the
+formatting is off programs and processor
+display the encoded data will return an
+error so this is the registration form
+which we are going to create wherein we
+will have employee name employee ID date
+of birth Department country with drop
+down and address contact number and the
+gender and we'll create a save button
+so this is the registration form we are
+going to create
+so we'll get started we'll jump into
+Visual Studio
+go to visual studio click on create new
+project
+scroll down and select asp.net web
+application.net framework select this
+template and click on next
+and enter the project name
+since we are creating a registration
+form I'll enter the project name as
+registration form
+click on create
+so basically we are creating a web form
+so select web form
+click on create
+so here you can see the project
+registration form is successfully
+created
+if you scroll down here in the solution
+Explorer you will see site Master open
+this
+foreign
+so this is the file which has the home
+about and all the contact page
+information so let us run this file
+it has started
+so this is the output wherein we have
+the application name
+home
+about
+and contact so what we'll do is we'll
+create an another heading called
+registration in inside which we will
+create a registration form so for that
+we'll go back to the
+site Master page in the visual studio
+so next to contact we'll create another
+heading for that we'll copy this
+and paste and we'll rename it as
+registration
+and we'll
+change the link
+save this
+let's go back and check it
+so here you can see registration is
+added
+so go back to visual studio
+go to the registration form
+right click
+go to add
+new item
+in add new item select the template web
+form with Master page select this
+name the web form
+so I'll name it as employee registration
+employee
+registration
+click on ADD
+select site dot master
+and click on OK
+so this is the employee registration
+page which we have created so go back to
+site master and add the link here to the
+registration bit
+and save it
+if you want to change the footer you can
+change the footer here
+so let us go back to the employee
+registration page and create the
+registration form here
+so here I have pasted a few lines of
+code
+firstly I have created a section ID so
+the section HTML element basically it
+represents a generic Standalone section
+of a document so which doesn't have a
+more specific element to represent it
+and ID is a global attribute that
+defines an identifier so I have created
+a section ID called main content and a
+section class called wrapper so class is
+an attribute which specifies one or more
+class names for an HTML element
+so the class attribute can be used on
+any HTML element
+so we have created a diff class called
+row so div is the content division
+element it is a generic container for
+flow content
+so here we have created a div class
+called column large that is 12000 pixel
+the pixel numbers are the breakpoints
+similarly we have diff class column
+medium four so this is basically for a
+maximum width of the container that is
+720 pixel and we have written the
+heading in H1 that is the registration
+form so we'll save this and run and see
+the output
+so here you can see we have created The
+Heading registration form
+now we'll go back and create the
+employee name department and other
+details
+similarly so now we'll create the
+columns for employee name and employee
+details so after the header
+and paste a small three four lines of
+code so basically here I have created a
+class called panel body and inside the
+class row with the column medium of
+length that is greater than 720 pixel
+so basically here I have created the
+column employee name
+let us save this
+and click on run
+so here you can see we have created the
+employee name so similarly we'll create
+the employee ID details contact number
+and the country so go back to visual
+studio
+so similarly now we have created
+employee name
+after creating the employee name I have
+pasted a small code wherein we have
+created the employee ID same as the
+employee name
+similarly we have created the date of
+birth and we have created Department
+and the country for Country we have
+created a drop down with a list of items
+so we have provided the list of country
+names that is India Pakistan China and
+so on similarly we have created a column
+for address
+and if we scroll down we have created a
+column for contact number and for gender
+and for gender we have provided the list
+and we have at last created a save
+button to create a button we have
+created a class and we have now provided
+the ID as button save
+so let's save this
+and click on run and see the output
+so you can see here so we have
+successfully created the registration
+form with the employee name so we can
+enter the employee name
+and employ ID
+and date of birth date of birth you can
+select the month year and
+the day
+similarly
+enter the department country
+and enter the address
+contact number
+let the category
+and click on Save
+so
+this is the registration form so we have
+successfully created the registration
+form
+we'll first start with who is an asp.net
+developer
+asp.net developer is responsible for
+Designing Solutions and monitoring
+existing and new applications
+the responsibilities of asp.net
+developers include writing code
+designing solution for applications
+managing performance analyzing
+requirements and improving functionality
+to be successful as an asp.net developer
+one must demonstrate excellent problem
+solving skills high quality coding
+skills and the ability to manage time
+efficiently
+skills of an asp.net developer
+let us first look at the some of the
+technical skills that are required for
+an asp.net developer
+firstly we
+have.net.net is a free cross-platform
+open source framework for building
+different applications knowledge of
+coding using.net languages
+asp.net core MVC asp.net core MBC is an
+application framework that allows you to
+create modern web apps by using the MVC
+architectural pattern
+servers and database SQL Server is a
+relationship database management system
+or rdbms developed and marketed by
+Microsoft
+the other skills are client-side
+Technologies such as jQuery HTML CSS and
+JavaScript developers should possess
+good understanding of these client-side
+Technologies
+some of the non-technical skills are the
+asp.net developer should be very
+creative
+and he should have good strategic
+planning and he should have good
+communication skills similarly good
+analytical skills and problem solving
+skills and the time management skills
+come in handy
+now let us look at asp.net developer
+responsibilities
+the asp.net developer is responsible for
+developing high quality software
+he is responsible for working with
+front-end Developers and supporting and
+improving functionalities
+making most use of the up-to-date and
+relevant Technologies
+is also responsible for creating and
+designing application layers
+assuring that certain performance
+standard is always met
+and he should be good at writing
+background server side code
+and finally he should have good
+analyzing skills and need to develop new
+features
+asp.net developer salaries
+in India the average salary for an
+asp.net developer is 3 lakh 26 000 per
+annum whereas the average salary ranges
+from 1 lakh 45 000 to a maximum of 7
+lakh 14 000 rupees
+whereas in USA the average salary for an
+asp.net developer is 68 000 and it
+ranges from minimum of forty one
+thousand dollars to ninety three
+thousand dollars per annum
+finally we will look at asp.net
+developer resume
+this is the sample resume for asp.net
+developer firstly we need to fill in the
+personal information we need to give our
+name location email address and phone
+number
+then we need to give a brief intro about
+yourself and the objective
+then we need to mention the projects
+that we have worked on we need to
+clearly depict the goal of each project
+then we need to provide internships that
+is done during the course of studies or
+after the studies
+then we need to provide education and
+final degree with score
+and the most important thing is we need
+to provide technical skills
+the technical skills depend on the job
+role for an asp.net developer you need
+to provide the languages first which you
+are proficient in then similarly provide
+the Frameworks the SQL server and other
+server-side Technologies
+similarly mention some of the
+non-technical skills if you have work
+experience then please mention previous
+professional experience
+the interview plays a vital role in any
+job selection process for that reason
+preparation is key technical questions
+are part of the interview process which
+impact more in the interview
+hey everyone I welcome you all to this
+session in this session we will see
+asp.net interview questions with answers
+if you are planning to start your career
+as a developer you have to possess some
+development skills that Empower your
+ability to crack the interview
+if you want to make a career in software
+development and improve your chances
+then this video on asp.net interview
+questions and answers will help you make
+your preparation easy but before we
+begin make sure you have subscribed to
+our YouTube channel and click down the
+Bell icon so you never miss an update
+from Simply learn so without wasting any
+further time let's get started
+we will look at the first category of
+asp.net interview questions that is
+beginner level interview questions
+what is asp.net
+asp.net is a server-side technology used
+for developing Dynamic websites and web
+applications on the internet
+it also produces data driven web
+application
+Microsoft released asp.net in 2002 to
+build Dynamic websites and web
+applications using the.net framework
+what platform does asp.net use
+asp.net is a cross-platform which works
+on the.net framework and runs on Linux
+Windows Mac OS and docker
+what is the asp.net lifecycle and list
+the types of life cycle when asp.net
+Pages run it goes through several steps
+of the life cycle which performs a
+series of actions like initialization
+running restoring and rendering
+lifecycle is classified into two
+categories application life cycle and
+Page lifecycle
+in application lifecycle the user
+request for accessing the application
+page lifecycle has faces like
+initialization restoring execution and
+Page rendering
+what is MVC
+so MVC is basically a software
+architectural pattern that divides an
+application into three main parts that
+is model view and controller
+model helps to create the data domain of
+the application and represents the
+public properties and business logic of
+the application
+view view represent the data tables
+charts and diagrams by collecting the
+data from the model
+controller the controller helps in
+handling the user interactions and
+controls the flow of the application
+list the languages used for asp.net
+esp.net uses object oriented programming
+languages that provide a framework and
+patterns which are easy to use languages
+used by asp.net framework are C sharp or
+vb.net c-sharp is a programming language
+developed by Microsoft that runs on the
+dotnet framework it is used for
+developing web applications on the.net
+framework
+vb.net is a modern object oriented
+programming language developed by
+Microsoft to combine the features of CLR
+and dotnet
+what type of library is used in asp.net
+a library is a pre-coded object-oriented
+programming template collection used to
+develop web-based and desktop
+applications in asp.net
+asp.net uses a web library to develop
+web applications what is CLR
+CLR is the basic common language runtime
+virtual machine component of the.net
+framework used to run the code it
+manages the executing.net programs and
+implements a virtual execution system
+internally
+services that CLR provide are
+verification garbage collection security
+and memory management
+what is IIs and why do you use it
+internet information server IIs is the
+most popular web server used to host and
+provide internet Based Services to
+asp.net and ASP web applications
+IIs has its own process engine to handle
+the request using an IIs computer one
+can work as a web server and provides
+functionally to deploy asp.net web
+applications
+it is also responsible for providing
+responses to the request made by the
+users
+list the types of application life cycle
+application lifecycle is of five types
+application start object creation HTTP
+application dispose and application end
+application start is a method that you
+execute when a user makes a request
+object creation contains all the
+information about current request and
+browsing information
+HTTP application processes all
+subsequent requests sent to the
+application
+dispose
+dispose is responsible for releasing
+manually unwanted resources
+application end helps to unload the
+memory of an application
+list the advantages of using asp.net
+asp.net is a development framework that
+is used for developing web applications
+it is one of the most preferred web
+development Technologies at present
+there are a lot of benefits of using
+asp.net here are some of its advantages
+applications created using asp.net show
+better performance
+esp.net provides multi-development modes
+for the applications
+applications created using asp.net can
+be used across the globe
+esp.net is a language independent
+what is an active server page
+active server page is an HTML page used
+to develop Dynamic web pages it includes
+one or more scripts on the Microsoft web
+server before sending the request to the
+user ESP was first released in December
+1996 it is used to generate the content
+that is sent to the client web browser
+via the HTTP response
+describe web forms web forms are web
+pages that a user request using a
+browser it is built using asp.net
+technology
+it executes on the server and generates
+output to the browser it also allows you
+to add and create custom controls
+some of the custom controls provided by
+asp.net are label text box button
+hyperlink and image button
+what is a solution Explorer
+solution Explorer displays the folder
+and files of a project that appears on a
+physical hard drive
+list the components of asp.net
+asp.net provides data driven web
+applications on the internet using
+various components
+some of the components are common
+language runtime language Library common
+type system and windows forms
+what is the difference between ASP and
+asp.net
+ESP is the first server-side scripting
+language developed by Microsoft to
+design Dynamic web forms whereas asp.net
+is a server-side technology used for
+developing Dynamic websites and web
+applications on the internet
+ASP uses Ado that is ActiveX data
+objects to connect with the database
+whereas asp.net uses
+ado.net to connect with the database ASP
+is written in vbscript
+asp.net is written in C sharp
+what type of protocol is used to call
+web service
+web service is a web-based functionality
+accessed by using protocols it uses XML
+to exchange the software using common
+internet protocols
+web service in asp.net has three aspects
+they are creating web service creating a
+proxy consuming the web service the HTTP
+protocol is used in asp.net to call a
+web service
+explain users of global.asax
+Global file is used to execute the
+application Level events and set
+application Level variables
+Global dot ASX is used to handle
+high-level applications like application
+start session and and session start
+now let us look at some of the
+intermediate level asp.net interview
+questions and answers what is a web
+Library
+web library is a part of a website that
+accesses all libraries from the browser
+and helps in adding collections online
+it contains base and user-defined data
+types
+boom
+it supports to create web services
+describe a view state
+view state is a page level State
+Management technique that is used to
+preserve the values of the page and
+controls
+view state contains the sections like
+features background scenario and class
+reference
+what is a multi-view
+multi-view is a parent control for the
+view it is used to control all types of
+the view multiview has the prefix MV
+this is the syntax of multi-view
+what is early binding
+early binding is used to check the
+methods and properties during
+compilation
+it is fast and easy to code and also
+reduces the compilation time it also
+reduces the time by identifying the
+errors
+what is lead binding lead binding takes
+more time to compile it is hard to find
+out the object through late binding lead
+binding has Dynamic objects and is
+achieved by virtual machines
+how asp.net is different from asp.net
+core
+asp.net is used to build application for
+Windows whereas asp.net core is used for
+Windows Mac OS and Linux
+asp.netusers.net framework whereas
+asp.net core users.net core framework
+asp.net is a single version
+asp.net core has multiple versions
+what is catching
+catching is a technique used to sort the
+user data or information in memory it
+boosts the performance of the
+applications and creates Pages
+automatically
+catching is also essential for data
+related transactions
+what is the role of page directives
+page directives describe the attributes
+of specific page file for the compiler
+below is the syntax of page directives
+where code file specifies the name of
+code behind the file
+and debug enables or specifies
+compilation debug
+and client name specifies the class name
+of the page
+and decline Target browsers the server
+controls
+list the types of states in asp.net
+state in asp.net is used to store the
+information between request and to
+retrieve it when required and holding
+the information
+asp.net provides four types of States
+application State cookie State view
+State and session state
+application state in this state all
+collections of web pages and files in a
+single directory on a web server
+cookie state it stores the information
+on the client machine view States
+view State States the state of web pages
+and its control
+session State this state is used to sort
+the application data
+list the sources of data Allowed by
+asp.net
+data sources are responsible for
+operations like insertion deletion
+sorting and updates some of the data
+sources Allowed by asp.net are SQL data
+source object data source and access
+data source
+list the events of calendar control
+calendar control is a function used to
+provide a calendar on a web page it also
+enables you to change and move to the
+previous months and years
+the events of calendar control are of
+three types selection changed day render
+and visible month changed
+what is a Trace
+tracing enables view diagnostic
+information about a single request at
+runtime and debug the application
+the trace contains features backgrounds
+code examples and class references
+how can we add a style sheet in Visual
+Studio
+to add a stylesheet open solution
+Explorer and right click on the option
+then click on new and the pop-up will
+appear to choose
+how can a page layout help in asp.net
+page layout provides an overall
+container for the pages on the website
+for example navigation area and footer
+page layout also includes the main event
+list the advantages of using HTML server
+controls
+HTML server controls are the standard
+HTML controls used to enable server-side
+processing some of the advantages of
+using HTML server controls are HTML
+server control does not process any
+mechanism to identify the capabilities
+of a client browser coding can be easy
+by adding run nut is equal to server
+attribute controls can interact with the
+client-side scripting
+explain about event bubbling
+even bubbling is used by data bound
+controls when a parent control contains
+child controls and when an event occurs
+in the child controls it bubbles the
+event to the parent this is called event
+bubbling
+even bubbling is classified into two
+categories on Bubble event that handles
+the even data rice bubble event that
+sends the event data
+list the most common built-in objects of
+asp.net
+built-in objects access the information
+from the web server
+it is also responsible for recognizing
+the client who is accessing the web page
+some of the commonly built-in objects of
+asp.net are context application request
+server trace and response
+list types of catching
+catching is a technique used to sort the
+user data or information in memory
+caching is divided into three types
+output catching it specifies a duration
+of catch and the attribute fragment
+catching it is user control catching
+used in a basic web form page data
+caching it is used for catching the data
+of the data source controls
+what are breakpoints
+breakpoint helps to specify the run time
+to run a line and stop the execution it
+is used to examine and perform various
+debugging functions and methods
+now let us look at some of the advanced
+level interview questions
+list any five web controls in asp.net
+web controls are HTML elements used for
+script tagging and functionality for web
+forms and pages
+the five web controls in asp.net are as
+follows
+HTML controls HTML server controls user
+and custom controls asp.net server
+controls asp.net Ajax server controls
+what are button controls
+button controls in asp.net are used to
+display a push button on a web page
+this is the Syntax for button controls
+where you provide button ID and run at
+server and the text is of the type
+button
+what is range validator and its syntax
+range validator checks the input values
+that lie in between the specified ranges
+rage validator has three main properties
+that is type minimum value and maximum
+value
+this is the syntax of range validator
+wherein we have provided minimum value
+as 1 and maximum value as 6 and it is of
+the type integer
+what is a threat priority
+in multi-threading each thread has its
+own priority that gains access to CPU
+resources
+whenever a thread is created in C sharp
+it always possesses some priority it is
+mainly used to set up value
+what is the role of post pack in asp.net
+pushback is a request sent from a client
+to the server from the page on which the
+user is working it puts the complete
+page back to the server for a new page
+postback is submitted to a server before
+processing the page and holds
+credentials such as verification like
+username and password using a database
+list the types of authentication in
+asp.net
+authentication is a process of ensuring
+the user identity it is divided into
+four types form authentication Windows
+authentication custom authentication and
+passport Authentication
+Define web configuration
+web configuration is used to describe
+the property and behavior of web
+applications
+it also helps to manage settings each
+file of a web configuration is an XML
+file that contains a set of
+configuration elements
+explain client-side script events
+Blind Side script runs on the browser
+and speeds up the execution of the page
+some of the client-side events are as
+follows on click it is used when the
+control is clicked on focus it is used
+when control receives the focus on
+change is used when the value of control
+is changed on blur is used when the
+control loses Focus
+on key press is used when the user
+presses the key
+what is anonymous personalization
+Anonymous personalization helps and
+allows the user to personalize this site
+before identifying themselves for
+example enable Anonymous identification
+by passing the value true provide the
+cookie name cookie timeout and cookie
+path
+and set cookie sliding expiration as
+true and keep the cookie protection
+encrypted and cookie less is equal to
+user
+what is form-based Authentication
+form-based authentication is used to
+edit the web configuration files and add
+a login page to authenticate it is used
+for web applications
+form based authentication also provides
+a way to handle authentication using
+custom Logics in asp.net applications
+Define the types of configuration files
+right
+configuration files help to manage the
+settings of a website settings of
+configuration files are stored as XML
+files which are separate from the
+application
+configuration files are of two types web
+configuration and machine configuration
+web configuration contains the machine
+specific value for all settings of the
+applications
+machine configurations help to extend
+restrict and override the settings
+list the different types of cookies used
+in asp.net
+cookies are a small piece of information
+stored at decline site the cookies in
+asp.net are provided into two types
+session cookie valid for a single
+session persistent cookie valid for
+multiple sessions
+explain the difference between custom
+controls and user controls
+custom controls is designed for a single
+application
+whereas user control is designed for
+multiple applications custom control is
+Loosely coupled user control is tightly
+coupled user interface can be changed in
+custom control whereas in user controls
+the user interface is fixed
+then the difference between web
+configuration and machine configuration
+files
+web configuration is automatically
+created when the application is created
+whereas machine configuration is
+automatically installed with the visual
+studio
+in web configuration file inherit
+settings from the machine configuration
+whereas in machine configuration only
+one machine configuration exists
+we will start with the beginner level
+asp.net MBC interview questions and
+answers
+what is MVC
+MVC is a software architectural pattern
+that divides an application into three
+major components MVC stands for model
+view and controller the model represents
+the shape of the data and stores the
+data that it retrieves from the database
+view view is a user interface used to
+represent the data of the application as
+tables charts and diagrams it also
+communicates with models and controllers
+easily
+controller the controller in MVC holds
+the user's request it handles the HTTP
+request made by the user
+explain the life cycle of MVC
+lifecycle is a series of steps used to
+handle the request to change the state
+of the application
+the life cycle of MVC is divided into
+two categories application life cycle
+and request life cycle application
+lifecycle runs the IIs application until
+it stops
+the request lifecycle handles the HTTP
+request of the application
+list the advantages of using MVC
+MVC has a lot of advantages with
+building the application some of them
+are MVC provides separation of
+components that allows the ReUse of
+applications across the several
+platforms MVC allows applications to
+change features like layouts fonts and
+colors without affecting the entire
+architecture of the application
+MVC uses asynchronous techniques to
+build applications that can be easy for
+a developer to build application in a
+faster and secure way
+what are the actions and lists a few of
+them
+action methods in MVC execute the
+request and generate the response
+actions have one-to-one mapping with the
+user
+here is a list of few of the actions
+content result it returns a string file
+path result it Returns the file path
+content file content result it returns
+file content JavaScript result it
+Returns the script for execution Json
+result it returns Json formatted data
+view result it helps to receive a
+response for the view engine and file
+stream result it returns file content
+and redirect to result it helps to
+redirect to the specified URL
+what other actions filters and list the
+types of action filters action filters
+are attributes that apply to the
+controller or a controller action that
+helps in modifying the executed actions
+MVC framework includes several actions
+some of them are output catch output
+Catch catches the output of a controller
+at a specific time
+handle error handle error handles the
+error when it executes an action
+authorize authorize enables you to
+restrict access for a control
+what are action verbs
+action verbs are HTTP requests applied
+to the action methods to work for HTTP
+request methods
+some of the action verbs are HTTP post
+HTTP get HTTP put and HTTP delete
+what are code blocks in MBC
+code blocks in MVC are used to enclose
+c-sharp statements
+this is an example for code blocks it
+starts with the symbol at the rate and
+encloses with curly braces code blocks
+work with loops and keywords in
+different ways
+what are helpers in MBC and is the types
+of helpers
+helpers in MVC are HTML classes that
+help to create HTML control
+programmatically
+HTML helpers in MVC generate HTML and
+result as a string
+some of the different types of helper
+methods that asp.net provides are create
+links
+create links is to get the information
+from the routing tables create inputs
+this helps to create text boxes and
+buttons create form
+handle post back to an action on a
+different controller
+what are non-action methods
+non-action methods are attributes used
+when a public method in a controller
+does not want an action method
+here is an example that shows how to
+create a non-action method in MVC
+what is model binding model binding in
+MVC allows mapping the HTTP request data
+with the models using the data sent by
+the browser in an HTTP request
+model binding also acts as a bridge
+between the HTTP request and c-sharp
+action methods using model binding it
+automatically transfers post and get
+into a specified data
+explain the process of validation in MVC
+validation in MVC is used to check the
+user input and provides a set of
+validation that is easy to use and
+Powerful to check the errors of the user
+what is a partial View
+partial view is a view that is rendered
+from the another view which helps to
+break the larger view into smaller views
+a partial view is also used to reduce
+the duplication of the common markup
+content across the markup files
+what are logic layers
+the logic layer defines and decides the
+information needed to solve the assigned
+problems
+logically as in MVC are divided into
+three types business layer display layer
+and input control layer
+what are the drawbacks of MVC there are
+many advantages and disadvantages of
+using MVC applications
+you will Now understand some of the
+disadvantages of using them
+MVC is not suitable for large type
+applications the complexity of the
+applications is high using MVC it is
+difficult to understand the design
+pattern in MVC deployment of
+applications is hard compared to the
+other applications
+what are file extensions for razor View
+laser is a view engine used to write the
+mix of HTML and server side
+it is also a general purpose template
+engine that does not provide any thighs
+to the MVC which allows the creation of
+new engine inside the application laser
+in MVC contains laser markup c-sharp and
+HTML
+file extensions of laser view are
+divided into two types
+dot cshtml used for c-sharp DOT VB HTML
+used for Visual Basic
+what is an unobtrusive Ajax
+it is a progressive enhancement that
+focuses on the delivery of the content
+HX calls in unobtrusive Ajax which are
+made through built-in helpers to
+eliminate the need to add the blocks of
+code
+what are get and post actions
+get in MVC is used to request the data
+from a specific resource it is the most
+common HTTP method below is the syntax
+of get action
+post is used to send data to the server
+to create an update a resource
+below is the syntax of post-action
+now let us look at intermediate level
+interview questions
+what is a resource
+razor is a view engine used to write the
+mix of HTML and server side it is also a
+general purpose template engine that
+does not provide any ties to MVC which
+allows creating a view engine inside the
+application
+below is the syntax in C sharp it is dot
+CS HTML in Visual Basic it is dot VB
+HTML
+what is exceptional handling in MVC
+exceptional handling in MBC is used to
+execute the action methods using try and
+catch blocks it is the process for
+responding to the exceptional condition
+for the special processing
+for example here in this program you
+will create an exception for the
+application that shows an error on the
+web page that displays a custom error
+message or custom error pages
+what is a layout View
+layout view in MVC allows creating a
+common site template that inherits
+multiple views to provide a consistent
+look for an application
+the layout view has the same extension
+as other views which you can store in
+the shared folder
+esp.net MVC layout allows the child
+views using some methods like render
+section method and render body method
+what are web apis
+web API is a platform used to build
+restful applications using.net
+Frameworks that include small and large
+application for devices tablets and
+mobile devices
+here is an example for web apis this is
+a basic program to add the configuration
+of web API in the configuration folder
+of the MVC application using the name
+web API config
+what is form authentication in MVC
+form authentication in MVC is
+responsible for users credentials like
+sign up sign in login and logout
+it also provides a way to handle
+authentication using custom Logics in
+asp.net applications
+you can do form authentication using the
+SQL database to provide the user
+credentials and information it is used
+to edit the web configuration files and
+and add a login page to authenticate
+explain bootstrap and its use
+bootstrap is a front-end framework tool
+used for web applications to build a
+user interface using HTML CSS and
+JavaScript
+it was first developed by Twitter
+Developers for personal use and became
+popular with the designer and developers
+with flexibility
+bootstrap provides all pieces of layouts
+menus fonts widgets and other many
+features you can find bootstrap files in
+the solution Explorer as bootstrap.css
+and bootstrap.js
+what are Glimpse in MVC
+Glimpse in MVC is a free and open source
+nugget platform used to perform
+operations like performance debugging
+and diagnosis for the applications it
+allows users to find information about
+every action by the server including the
+Azure test in the application
+list the types of action results in MBC
+action result is an action method used
+along with an action it is the result of
+action execution the action result is a
+return type action results are divided
+in MVC into three categories status
+results content returning result and
+redirection result status result provide
+the status of the code to the browser
+content returning result is responsible
+for returning the content and
+redirection result redirects the
+specified URL
+what is a request life cycle
+request lifecycle is a sequence of
+events that occur when the application
+handles the HTTP request
+request lifecycle involves 5 Steps
+routing MVC Handler controller action
+invoker and result execution
+routing is used to map the incoming URL
+to the router and creates request
+content and sends it to the next layer
+MVC Handler is responsible for creating
+the controller instance controller is
+used to deal with the request and
+implement the controller interface
+action invoker is used to execute the
+action method sent by the controller
+result execution is responsible for the
+execution of action method in the
+controller
+explain the ways of adding the
+constraints to a router
+constraints to a router in MBC are added
+in two ways
+using the object that implements the
+router constraint interface or using the
+regular expressions
+explain routing in MVC
+routing is the process of mapping the
+browser request to the controller and
+Responding back router handles the
+information and URL patterns in routing
+and it stores all the configured files
+to the application in the routing tables
+routing in MVC is divided into two types
+convention based routing and attribute
+based routing
+this is an example of registering the
+routing with different custom routes
+using the name default the default maps
+with the URL pattern in the routing
+table
+what is output caching
+output caching is responsible for
+improving the performance of the
+application it also enables you to
+remove unwanted actions
+below is the example for output caching
+mention the benefits of areas
+areas in MVC allowed to organize the
+models views and controllers into a
+separate function in the application
+like building support Etc
+let's see some benefits of using areas
+in MVC
+using areas it is easy to perform unit
+testing it allows you to separate the
+functional sections of the applications
+it also helps in communicating with the
+other areas by creating another area
+what is a view start
+view start is introduced by a view
+engine that applies to all views
+automatically below is an example for
+reviewed sort
+what is attribute routing
+attribute routing is a type of routing
+that provides more control over the URL
+by defining routers directly on the
+actions and controller in the
+application
+some of the advantages of using
+attribute routing are it reduces the
+chance of errors in the application it
+is easy to map routes pointing to the
+same action it provides more control
+over the URL
+how to change the action names in MVC
+the action name attribute is used to
+change the action name in MVC
+explain data annotations
+data annotations in MVC are responsible
+for providing the instance checking for
+the client side
+MVC provides various data annotations
+some of them are required is used to
+indicate the property of the required
+field
+string length is used to indicate the
+string length
+bind is used to include or exclude The
+Binding parameters email address is used
+to Value the email address
+what is the difference between MVC and
+web forms MVC is based on a design
+pattern that helps to clear the
+application faster
+web forms are based on functions and
+code behind MVC provides HTML helpers to
+create the controls whereas in web form
+every control in web form has server
+control MVC is used to create partial
+views and web forms are used to create
+user controls there is no view state in
+MBC view state in waveforms is used to
+maintain the state it is easy to use
+jQuery JavaScript and CSS in MDC web
+forms use a little jQuery and JavaScript
+differentiate between view bag and view
+data
+view bag is used to transfer the
+temporary data from the controller to
+our view view data is used to transfer
+data from the controller to the view
+bag is a type of object whereas view
+data is a key value collection view back
+is slower than view data and view data
+is faster than view back
+view back Works only on dotnet 4.0 and
+above view data works on dot net 3.5 and
+above mu bag is used as Dynamic so no
+need for type conversion
+whereas in view data type conversion is
+required
+explain Scaffolding in MVC
+scap folding is a technique used as code
+generation for asp.net web applications
+it also generates code for crude
+operations using the Entity framework
+models
+it reduces the time and generates clean
+code while creating the application it
+is automatically installed in visual
+studio 2013 and above versions
+explain the difference between temp data
+and view back
+temp data is a key value collection
+whereas viewbag is a type of object
+temp data is used to pass data between
+two consecutive requests view back
+values becomes null
+temp data works during the current and
+subsequent request view back Works only
+at the current time temp data works on
+dotnet 3.5 and above your bag works with
+dotnet 4.0 and above
+explain the difference between render
+page and render body
+render page is a layout page that
+contains content filled by the other
+pages
+whereas render body is a method of
+Master page or is or commonly used as a
+layout page
+render page is obviously present in the
+layout view render body doesn't have a
+fixed path
+render page does not include any
+parameters but render body always
+includes the parameters like Boolean
+multiple methods are not allowed in
+render page
+render body allows multiple methods
+list a few rules of resource synthresor
+is a view engine used to create web
+applications by combining the features
+of MVC there are certain rules to be
+followed for the razor they are laser
+block having C sharp and enclosed with
+curly braces variables are always
+declared with the VAR keyword variables
+and functions within line always start
+with the symbol at the rate
+c-sharp file has an extension of Dot
+cshtml
+code statements always end with
+semicolon
+now let us look at the advanced level
+interview questions
+what are bundling and minification
+bundle is a logical group of physical
+files used to improve the performance of
+the application by providing the inbuilt
+features bundled into a single file
+which improves the performance using
+HTTP request known as bundling
+this program below shows all the bundles
+of CSS files present in the folder of
+finally
+minification is a technique of removing
+the unnecessary comments and characters
+from CSS and JavaScript to reduce the
+size to improve the performance of the
+application
+below is the example of minification
+it alerts if the number is even or if
+the number is odd
+what is Json binding
+Json binding is known as JavaScript
+object notation binding that supports
+mvc3 using Json value provider Factory
+it allows action methods to accept and
+model bind data in Json binding
+this is a simple program that shows how
+to bind data using Json binding
+what is cross domain Ajax
+HX cross domain sends a request to
+refresh the URL domain of the web pages
+there are many ways to implement and use
+the cross domain Ajax the most commonly
+used cross domain hxr send Json
+pre-request and cross domain resource
+sharing
+explain the usage of remote validation
+in MVC
+remote validation is the process of
+validating specific data posting to a
+server without posting the entire data
+to the server this program on remote
+validation helps in checking the
+validation of the user using the
+parameter username and the displays the
+message name already exists
+list the standard HTML helpers in MVC
+standard HTML helpers in MVC are used to
+render the HTML controls like label text
+box password checkbox Etc
+some of the standard HTML helpers in
+mvcr html text box it is used to create
+a text box HTML password this is used to
+create a text box with password identity
+next we have HTML checkbox it is used to
+create the property in the checkbox HTML
+radio button it automatically displays
+the property in the radio button
+explain the implementation of Ajax in
+MVC
+Ajax is asynchronous Javascript and XML
+client-side script that communicates to
+the database without any need from the
+postback it also speeds the responses
+time in the application
+below is the syntax of Ajax in MBC
+explain about MVC model binders
+model binders in MVC allow mapping HTTP
+request with the model
+it works when a user requests the data
+from the browser to the controller at
+this time model binding works on
+middleman to map the incoming request
+with the controller action method
+update model method function observes
+the request and updates the model class
+this program is process of adding the
+controller with the index action method
+to the MVC
+explain areas in MVC
+areas in MVC allow organizing the model
+view and controllers into a separate
+function in the application like
+building support Etc it is mainly used
+for large applications
+when the developer or user is working
+with the area it is important to
+register with the areas
+the Syntax for registering the areas is
+as follows in this each MVC has its own
+area folder that allow it to keep
+controllers models and Views separately
+explain the roles of presentation
+abstraction and control in MVC
+presentation obstruction and control is
+an architectural pattern that separates
+MVC interactive system into three types
+of components presentation
+presentation in MVC is responsible for
+formats of the visual and audio
+presentation of the data
+abstraction is responsible for
+retrieving information and processing
+the data control handles the flow of
+control the communication between two
+components
+explain the uses of keep and peak in MVC
+keep in MVC is used to preserve the data
+of temp data after the value is read
+peak in MBC is used to read the value in
+temp data without clearing the data
+here are some differences between keep
+and Peak
+key provides two overloading methods
+whereas Peak provides no overloading
+method once the data is read by the keep
+then the data is erased the data in Peak
+Remains the Same after the operation is
+successful in keep redirect to result
+and redirect to Route result are called
+to get the items back
+in Peak there is no action called by the
+peak internally to retrieve so here we
+wrap up the asp.net full course for
+2023. if you have any questions please
+add in the comment section below and the
+experts will get back to you as early as
+possible do subscribe to Simply learn
+for more such amazing content until then
+stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

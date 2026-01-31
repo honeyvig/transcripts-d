@@ -1,0 +1,790 @@
+up next app services every dotnet
+developer needs to know
+with Tim Heuer and Angelo's petropolis
+that I say right perfect off we go
+awesome thanks everybody good morning
+good evening good afternoon wherever
+you're watching from I'm Tim this is my
+esteemed colleague Angelo so we're here
+to talked with you about Azure services
+that every dotnet developer should know
+and get excited about using your apps so
+first I want to set the stage Angelo
+sands just make sure everybody we're
+gonna we're gonna throw out some terms
+about Azure you know we should probably
+make sure everyone knows what those
+terms are in Azure there's a lot of
+different things that we'll talk about
+but just a level set so we're gonna say
+things like accounts and subscriptions
+and accounts is something that
+represents you and me our actual
+identities that's how we authenticate
+with the service a subscription is
+something that we can share together
+right that's kind of a billable unit
+you'll also hear us talk throughout this
+session about resources and resource
+groups a resource represents an
+individual unit of any service that's
+created in Azure and so like I have an
+app service is actually which is one of
+the things we'll talk about today is an
+actual resource a resource group is
+things that we can group together
+perform some more security on establish
+some you know more boundaries of what
+can be in those services and
+configuration around there so we'll talk
+about those two things quite a bit
+most explicitly today we're going to
+talk about two things right Angelo's
+we're going to talk about hosting and
+services right and the way that we think
+about these things is hosting is you're
+gonna provide the code and Azure is
+gonna run it for you and the services
+that we're going to talk about is more
+you're gonna provide the data and Azure
+is gonna these Azure services are going
+to take some action on the data supposed
+to so specifically during this session
+we're going to focus on those two
+aspects of hosting and service and to do
+that Angelo's has built a very simple
+application to allow us to walk through
+that so we have a we're gonna we're
+gonna show an image gallery right and so
+was it worth me yeah we you you we were
+gonna IPO at the end of this
+want to get in at the bottom here so I
+think we should just like dive right in
+and get started and let's so throughout
+this we're gonna cover roughly five
+services that are really kind of table
+stakes that dotnet developers done at
+core developers should want to know
+everybody should be aware yeah so tell
+us about this this site and show us the
+first demo here let's jump straight in
+because we have a lot to cover so I have
+the simple asp.net core MVC application
+working here already running locally
+localhost
+it's called core image gallery I can
+register a new user and log in so I'm
+gonna go ahead and log in with my demo
+account this is as you're logging in
+yeah so what what are you using for this
+authentication here now this is powered
+by a speed on that core identity so go
+set for that if you want to know more
+about it but the whole register with
+different accounts social and all of
+that comes kind of for free and you
+basically configure it and it just works
+and it's all taken care of for you you
+know when you do the initial
+configuration right that's right so now
+I've logged in I'm gonna click upload
+image I can pick one for my local
+machine to upload it to our gallery
+it's gonna take a little while to upload
+it it's telling me it did some file
+processing and the file will be
+available shortly in the gallery and I
+can just click return to gallery and
+here's the picture I uploaded and I'll
+open it up to show you that the
+processing we're talking about it's just
+a little what am i copy mark copy right
+so that we protect our millions oh yeah
+this is this nobody cool still this no
+yeah all right
+so very simple application let me stop
+it from working let's go back to the
+code and check out what I just showed
+you
+simple solution a couple of projects
+I'll start with image gallery dot model
+nothing but a class library nothing
+interesting here really just a class
+with some properties that's what we use
+in the page that shows you the
+confirmation after the upload so just
+showing there's no tricks so nothing
+will interesting there the main project
+a speed net core MVC also you start up
+the CS go quickly classic stuff
+like we said we're using asp.net core
+identity we're using MVC but they think
+I want to draw your attention to is we
+have a service
+an interface called I storage service
+and in implementation of it with file
+storage service so let's start with the
+interface let's check that out it's
+pretty simple just a couple of
+operations on it Gate get images async
+that's so we can populate the gallery
+and add image async it's just when you
+do another upload so nothing too crazy
+here
+close it down actually I want to show
+you the I want to show you the
+implementation yeah but the one we're
+currently using yeah yeah so let's go
+and take a look at the class that
+implements I store at service and this
+is giving away the secrets immediately
+you'll see here there's going to be a
+folder called user images we're going to
+put it under double W root and that's
+where all the pictures we upload go into
+it's the local store for the server
+nothing really interesting in the
+constructor add image async
+I have a little helper method here to
+get some properties out of the image so
+I can show the confirmation page later
+we just get the path here for the
+destination we create a stream we use a
+little watermark in class to add the
+watermark I'll just show you that real
+quick just I'm not curious I don't
+really know what it's doing but it works
+all right and then finally we just
+record the upload and you get to see the
+screen that says go back to the gallery
+so it's a standard asp net core web
+application uses NBC yep
+nothing nothing special there's any
+cloud specific or binding us to any
+decisions at this point so let's now
+we've only been running it local yeah
+this is all local and I forgot to
+mention that asp.net core identity uses
+local DB so we have a dependency on
+sequel server right now but yeah it's a
+local instance of it that's right so
+let's take this application which is a
+typical application it's deployed to
+Azure and then slowly we'll try to
+modernize it and make it a bit more
+cloud native let's do it all right so
+I'm gonna right click on the project and
+I'm gonna click publish now the one
+thing that we've already done is we've
+already created that account in
+subscription that we talked about it
+yeah because we don't want to waste too
+much time now in the demo that's pretty
+easy to look up and you can do via the
+CLI through the portal it's all pretty
+easy so here when I right click
+published I'm picking other up service
+and because you're nice and you
+ready provision the resources for me I'm
+just gonna select existing and go find
+them I try to add value by yeah
+provisioning resource creates all this
+fantastic yeah
+so here it's gonna access my
+subscription and then it's going to go
+look for the resource groups under that
+subscription and then I will be able to
+find up service instances running in
+those resource groups so like you said a
+resource group is just a folder it's
+basically a nice way to organize your
+stuff so you can go find it easily and
+you can have more than one subscription
+and in fact that's we took it a little
+bit long because you do have a lot of
+subscribers sorry yeah alright so here's
+my demo resource group and I'm picking
+my existing instance of app service I'm
+clicking ok and now visual studio will
+talk to that instance capture some
+information and all I have to do now is
+hit publish before I do that I have to
+make sure my asp.net core identity data
+and schema makes it up to the new
+instance of sickle cell you've created
+for me right because we were using the
+local DB right and now we want to use an
+azure sequel provider in fact a direct
+sequel itself but you did all the
+provisioning so I'm not really sure what
+you did there but thankfully Visual
+Studio will let me do everything through
+its options so if I just edit the
+publish profile so I can access settings
+you will see here at the bottom of the
+dialog we're discovering data contexts
+what that means is Visual Studio is now
+hitting the app service instance I've
+selected and it's asking it if it has
+any sequel server connection strings cuz
+if you already done the work I might as
+well benefit from it yeah so now that
+the spinner is done in its real time
+this is real time yeah this is the
+communicating with our subscription and
+I've already done the provisioning and
+Azure sequel for you and provided a
+connection string force so why should I
+bother with that again right now all
+that is there I can just pick it checker
+box that will apply entity framework
+data migrations as soon as I publish so
+all I have to do is save hit publish now
+what's going to happen is visual studio
+of course will build a project will talk
+to the app service instance upload all
+of the content then it's going to go and
+check xico server run it the framework
+migrations and we try to give you you
+know visual clues what's going on you
+can always go to the output window and
+get more verbose
+information about what's happening here
+so why are we using app service and not
+a VM
+right so VMs are great in fact if you go
+and create a VM through the other portal
+we even have a very nice template where
+it will set up IRS and ms deploy and
+then you can just come into Visual
+Studio like I did now right click
+publish to the VM it's all great but
+this is a talk about you know services
+of also that you should know about an
+app service should really be your go-to
+hosting option in Azure at the very
+least you're getting a fully managed
+instance so you don't have to worry
+about parties and security fixes and
+frameworks all that kind of stuff
+it can very easily scale out and scale
+back based on just setting some metrics
+and some options up it can make sure
+that you can keep your site running even
+when you're deploying into the same
+instance by taking advantage of a
+feature called deployment slots like
+aging in production there's many many
+good reasons it's it's your go-to and
+don't be all these features if you don't
+necessarily need them don't think that
+it's superfluous there is different
+queues and tiers so there is different
+pricing and features for dev test than
+productions yeah maybe you don't need
+everything I think one thing that I like
+about app service is what you mentioned
+is you know VMs are great but there
+still is some configuration you have to
+do to kind of boots drop them whereas
+apps per app service as we just saw you
+know deploying even directly from an IDE
+or from dev ops you know it's it's
+taking care of a lot of that
+configuration for us we know we're just
+telling it hey we have a dotnet core
+framework and here's my bits yeah great
+okay so we deployed look the URL doesn't
+say localhost anymore right so this is
+lives that's running it now so right now
+awesome fantastic yeah so let's say
+let's go back to the slides real quick
+and just kind of review those first two
+things so we said we're going to cover
+hopefully cover five services here the
+first two things we we just were able to
+show is talking about two services app
+service which kind of is that hosting
+platform here app service is really
+great for web apps and api's as angelos
+mentioned it's a fully managed
+environment so you get the OS patching
+high availability and high scale by
+default with you able to kind of provide
+the throttling mechanisms
+within that and it's it's first-class
+tooling across visual studio family of
+products as well as you saw here we're
+using Visual Studio for Windows but we
+also have similar experiences in vs for
+Mac and code then the second thing
+because we were using ASP Nets identity
+integration we were using the local DB
+sequel server instance and so we were
+able to use any framework migration
+scripts to put that into Azure sequel so
+now our app that you know was running on
+Prem basically Prem bugging your box
+here is now hosted in Azure and our
+identity is also in Azure but we've got
+a couple more bits there right so we
+were uploading images were those images
+in sequel no okay
+let's take care of that yeah probably
+bad so yeah the app is running in either
+but we can do a bit better because if we
+want to take advantage of our service
+and its ability to scale out for example
+you will notice or you'll remember that
+the images are being stored on the WWE
+Road yeah the file storage provider that
+you had right so a new instance is
+provisioned then the folder will be
+empty if traffic goes to that server the
+gallery would look empty ah yeah relax
+we don't like red X images no all right
+let's solve that so we can go back to
+the demo all right so what I'm gonna do
+here is I'm gonna introduce the third as
+a service called Auto storage basically
+we want to be able to store files it's a
+common thing apps have to do also has a
+service for it so what I'm gonna go do
+here is show you a new implementation of
+I storage service the same interface we
+saw before some simple strings and
+variables here we'll talk about those
+it's nothing to worry about but let's go
+back to the add image async and compare
+it to the previous one so here we have
+getting as properties like before we
+have an upload container and we just get
+a reference to it this is basically a
+stream we can write into we then create
+a memory stream before we were creating
+a file stream because we're writing
+locally here when I do the watermarking
+so I'm gonna do it in memory and then
+image blob which is a reference to other
+storage which is going to copy the
+stream into it and now the picture is
+uploaded
+now those two api's that you're calling
+they're the get blocked blob reference
+and the upload from stream
+those aren't things that you wrote no no
+that's that's that's a sure that's a
+library that I get for free and so
+because we're making the decision we're
+using Azure storage and blob storage in
+this case we have an SDK available to us
+that allows us as dotnet developers and
+she sharpened developers in this case to
+work in the language we love get all the
+productivity in visual studio that we
+like and have kind of as this strongly
+typed interface with the service not
+have to worry about rest and all that
+exact type of thing perfect so now what
+I have here is the Apple work just as
+before but now it's gonna take the
+pictures and upload them into storage so
+even if new instances are fired up then
+they will just talk to the same instance
+of storage so I'm good but we can do
+even better when you're in the cloud and
+in your migrating applications it's a
+great opportunity to optimize and get
+efficiencies and modernize an
+application yeah
+and when you're on Prem they statically
+tasks like things firing off on timers
+and scheduled events and triggers that
+to get workflows and multiple operations
+and typically those things are achieved
+with let's say your window service
+running somewhere or Linnaean or
+crime-lab or something like but how do
+you do that in app service you can't
+really do whatever you want on that box
+so azor offers you a service called
+other functions which I'm gonna use now
+to take the watermarking process out of
+the main app and just do the
+watermarking after the picture has been
+put into storage with some sort of
+background task great so we're
+identified an area where it's not
+mission critical to us exactly has
+someone's uploading and we're kind of
+almost like a sync workflow in nature to
+offload this little micro service that
+you're gonna create yeah I mean it
+doesn't really matter if the image takes
+a second or two together name is one
+dollar an hour well I think okay nine
+it's good good what we lose will make up
+for in saving right on Azure they tell
+me all right so back on the project so I
+have a new project here in my solution
+called image gallery dot AZ functions
+how did I get this in here I did right
+click add new project and I picked other
+functions because I had picked it before
+or can search for other functions appear
+and I create a project now in
+I did I have my water market classroom
+before I just moved it over here it's
+the same color I still don't know I
+still don't know what it does yeah
+image uploaded so that's my first Amazon
+function I'm gonna right click and I'm
+gonna show you how I did that I click
+add new as a function you get to name it
+whatever you like I click Add and here's
+where I talked before about you know you
+probably want to have some sort of
+trigger or timer so here we have the
+list of possible ways you can execute
+your other function very commonly you
+have a TTP triggers maybe you do
+something with the website and the
+website calls the founders as I get and
+post and exactly actions yeah and but I
+also have or what I want here to use in
+this case which is The Blob trigger so
+as soon as the picture gets uploaded to
+blob storage I'm gonna get told that
+this happened yeah so I just give it a
+connection that's how I got it in there
+so let's take a look at the code there's
+not a lot to it I have my watermark up
+here I have an attribute telling me that
+this is actually going to be a natural
+function and the name can be you know
+whatever I wanted it can be different
+than the name of the method and I'm
+gonna look at my first parameter called
+input blob that's basically whenever the
+picture gets uploaded because the
+annotation I said it's a block to give
+exactly the name of the container is
+going to be called images and then
+whatever the file name is it's going to
+go into this variable called name so I
+have a string name here and I can
+reference it conveniently through here
+and then I have a second variable
+parameter which is basically my output
+so after I do my watermarking I'm gonna
+put the contents in here and it's gonna
+get written we're into a new folder
+container called images - watermark and
+that's also an azure storage blob
+container yeah in the blob container you
+can create as many of these groups as
+you like acharya so all this will do is
+be notified do the watermark and then
+move the picture but since i'm creating
+this two groups and i'm moving pictures
+from one to the other
+what i want to do is also clean up after
+myself so when i go and delete the
+original image that was uploaded so i'm
+gonna do is go to delete original image
+that's just another as a function again
+with a blob trigger so keep in mind you
+can have more than
+one per project sometimes it's often
+easy to miss I'm on more than one
+function per project and here what I'm
+doing is I'm showing you that you can
+even access configuration values in the
+definition ah so before where we had
+candy you had the hard-coded yeah blob
+name now you're pulling it from asp net
+config exactly so just showing you that
+both are possible the other one was just
+easier to read right so here what we're
+going to do is we're going to be told
+when the image lands inside the
+watermark container so that's after the
+first function has worked and what I'm
+going to do is I'm going to know to go
+into lit the original one now all right
+so I have this working and I think it's
+gonna work but I want to make sure it
+works locally before I put it into Azure
+and even though I'm using Azure
+functions something that is native to
+Asher I can still run my project locally
+including other storage what I have to
+do is fire off the azure storage
+emulator there's a good point so this is
+a another set of tools that are allowing
+you to do cloud developments right but
+have a faster inner loop development you
+know f5 debug kind of lifecycle and the
+emulator you have to start it on your
+own because it's kind of really hard for
+visual studio to know exactly when
+you're gonna access it and by then it
+might be too late okay but for other
+functions all I have to do is
+right-click set it as the startup
+project and what I put a breakpoint see
+what happens so that we've started the
+storage emulator and now you're starting
+the Azure function this is gonna run on
+the cloud now or this is also another
+emulator this is now the emulator being
+fired up by Visual Studio because it's
+clever enough to know that's exactly
+what you need and so there's a local
+instance of the azure functions runtime
+that's running ours that's right and
+you'll notice this is the 64 bit which
+we added support for recently nice
+so vs has detected the runtime is up he
+deployed my function and acquired a lock
+to it and now the function should be
+working now two ways second other
+functions there it's ready to listen
+it's yeah it's ready ready for the
+trigger all right exactly
+okay and since we're on the topic of
+working locally I also wanted to show
+you the other storage Explorer
+that's a kind of cross-platform app that
+you can download separately similar
+functionality exists in vs if you go to
+cloud that
+so look that up but I'll just towards
+Explorer lets me interact with other
+storage whether the instance is in the
+cloud or locally so here I can actually
+go and look at my storage account
+locally I can look at my emulator
+running I can look at my blog containers
+and I can actually see that the
+containers I had before images and
+images were marked so if I really want
+it to execute my user function locally I
+can literally just drug drop a file
+using this tool and it's gonna kick it
+off but let's do the full thing I'm
+gonna come back to visual studio and I'm
+gonna fire up the website and now we're
+gonna run there the app itself I'm gonna
+run that locally and just exercise the
+full end-to-end
+now what we have here as this is
+spinning up we're running our local
+process that's that's using the storage
+SDK instant using serverless functions
+but running both of those basically in a
+local inner loop that's exactly right we
+haven't published anything to our
+everything is local right now localhost
+so I'm gonna do the same thing now
+upload an image pick a different one
+this time so file is being processed
+blah blah blah it will be available to
+oh that's our breakpoint okay alright so
+that if I go here but a breakpoint on my
+delete 1 so go back to upload I'll just
+let it go come back to my website Oh
+didn't have enough chance a second
+trigger has fired off everything is
+happening in sequence Lee alright it's
+all good I'm gonna continue this now
+when I'm gonna hit return to gallery the
+image will already be there and it's
+already what I marked that's awesome so
+now we can go ahead and republish these
+republish our app to a sure at that
+point exactly
+so what I want you to see here is if I
+want to take this as a function and
+publish it to the cloud right click
+publish exactly the same experience as
+before I already had the profile there
+create the existing same configuration
+the same others difference I'm not gonna
+bore you with the same stuff awesome so
+now we've got we're using app service to
+host as your sequel in the cloud
+storage for our files and serverless for
+some lightweight functions at kind of
+asynchronous in nature
+we've got like four services we're
+running on top of the app itself so how
+are you gonna feel good about the health
+of the app here okay so feedback we get
+from customers a lot is running things
+in the cloud feels like maybe they're
+far away from the Diagnostics a little
+bit yeah
+that's not true that's not true let me
+show you how all right so let's go back
+close all this down I don't need
+anything local running I'm gonna go to
+my production cluster and I'm gonna go
+to my production research group so this
+is my website running in production
+right now and I have a report that if
+you try to upload an image without
+logging in first something happens to
+the app so let's go check it out I will
+go and upload the image pick one
+Scotland that one alright so we've got
+in we've got a crash here effective this
+is the dreaded you know something went
+wrong but you're not in the development
+mode and you can really get the call
+stack and now you're probably gonna be
+worried about well how do I get access
+to logs and this is annoying it was so
+much nicer when I was local okay let me
+just show you something called our zoo
+monitor I'm gonna what we're going is
+we're logging into the portal I'm gonna
+go back to the portal and you know how
+we said that we just groups are a nice
+way to organize your resources what I'm
+gonna go do here is we're going to go to
+my research groups scroll down until I
+find my production bridges group and
+here I get a list of all the services
+this users group has provisioned and you
+were kind enough when you provisioned
+our up service instance to actually
+attach it to our monitor what you get by
+just attaching it to our monitor is
+Diagnostics so all I'm doing is
+navigating to the instance and oh look
+there is a chart there for failed
+requests well that's exactly what I
+needed so I'm gonna click that see where
+it takes me okay I'm screwed okay so
+there's an action post upload yep that
+sounds like what I just did and it lets
+me drill into because I'm gonna keep
+clicking until I get to a call stuck
+here yeah so we're able to go to the
+portal now and
+is almost real-time diagnostics as well
+I just didn't and get basically to our
+core exception here and then so this has
+an end to end transaction it has
+automatically recorded for me without me
+doing anything special if I keep going I
+will eventually get to the call stack
+this is what we all wanted to see and we
+can figure out the exception there at
+this all right so this says Korematsu
+gallery extensions okay so I wrote me
+authorization yeah I mean it's kind of
+obvious I shouldn't let you upload the
+picture without sending in first but the
+point was getting to the cost right so
+now I can go back to my code and see
+that Gideon was proper this is assuming
+I'm authenticated base that's awesome so
+let's go back to the slides and review
+that what we've seen here
+so what Angeles was able to show is we
+had a typical asp.net core application
+for the simple one at this point that
+was doing a couple different things and
+we basically moved it all to the cloud
+not having to worry about managing our
+own box and infrastructure we got
+hosting out of app service we've got
+data storage in two ways actually using
+Azure sequel which you know if we needed
+relational database needs on top of our
+identity we could still use that as well
+we're using blob storage as kind of our
+durable storage for objects and things
+like that
+a serverless function that is just kind
+of asynchronous and actually by the way
+we only pay for that one we call it
+that's right so it's not this
+long-running process and then we have
+really rich insights and monitoring into
+our app so there's there's a ton more
+and after that we could do as well we
+didn't even talk about containers and
+things but that's kind of like the next
+level that I think you know an
+enterprise level application might look
+at is you know how do we do container
+orchestration and Azure has given any
+services that we can do there as well as
+other services that you know there's
+data services with cosmos DP active
+directory another service bus and sequel
+managed instance and everything like
+that so I think it's a really quick
+overview of kind of some key services
+that dotnet developers should should
+know here's some resources for you we
+want you to kind of go get the tools and
+SDKs done at core 3 release getting
+Visual Studio and both the core SDK and
+then as well that second link if you
+want to learn more about Azure and
+actually walk through some of the same
+tutorials of the
+services and get those SDKs that make it
+easier for a.net developer that's the
+place to go and if you haven't tried out
+you're yet you can get a free
+subscription that gives you free
+services some forever and some for a
+12-month period I think the good thing
+about the you know we didn't there's a
+lot more richness in the monitoring and
+diagnostics and I think a good thing is
+the session right after this as Robin is
+gonna go over some more of what we've
+done more and dotnet core 3 and for
+those type of things so thanks Angelo
+said it was good good primer and
+encourage everyone to take a look at
+this
+Mika alright I thank you Tim and
+Angelo's as you don't know Tim is
+actually my boss how are you doing - I'm
+doing well you have a fantastic job
+thank you so yeah we have a few
+questions that we can go over right now
+let's see this one's for Tim good to see
+Tim representing brings back bittersweet
+memories of Silverlight you have
+anything to say about that probably not
+allowed to say anything let's see the
+next one can app services run laser app
+service yes and if you're into blazer
+and do app service also check out the
+azure signal our service if you need
+more info let me know yeah Dan Roth gave
+two presentations earlier today but also
+yesterday kind of how that kind of all
+works together as well with blazer
+here's another one this one's from John
+will vs generate the EF scripts if you
+just saved the published profile instead
+of clicking publish clicking publish
+actually deploys the app and then
+executes the migration scripts I had
+already set up before so I just didn't
+type you know create migration but you
+have to do that first and then publish
+will execute it for you so creating the
+profile doesn't create a migration
+script for it does it doesn't the server
+get yeah but but locally it doesn't you
+yeah locally yeah yeah

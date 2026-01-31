@@ -1,0 +1,1365 @@
+foreign
+YouTube channel today's session will be
+a guide to automate Excel using Python
+and with the help of chat jpt
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to never miss an up and before starting
+let's have a simple quiz question to
+brush upon our knowledge and your
+question is what does GPT stand for in
+chat GPD
+and your options are generative
+pre-training Transformer and your second
+option is generative pre-training
+transmission and the third option is
+generative pre-training turbine and your
+fourth option is none of these please
+answer in the comment section below and
+we will update the correct answer in the
+pin command you can pause the video give
+it a thought and answer in the comment
+section
+and moreover I have an insightful for
+you guys if you are focused on building
+strong foundational skills for career
+growth in that case you can check out a
+free course to Learn Python Basics with
+a completion certification from scale up
+by simply loan you can check this course
+with the link in the description box
+below
+and moving on
+now we'll start with that chat jbt to
+automate our Excel and we have some
+Excel files I will upload them
+in the link
+with the GitHub so you can freely
+download them and you can also try this
+project with those files and here we are
+with the chat jpt so now we are on the
+chatgpt website and here you can see
+option and when you click it we will be
+redacting to the chat jpt the chat box
+and before that I will show you the home
+page
+it's showing us the samples what we can
+do with the jet GPT
+the methods
+and there's the collect demonstration
+data and train a supervised policy like
+how it's trained how open AI has trained
+the child GPT and its limitations
+they have mentioned all the things here
+iterative deployment
+and moving on now we will login
+to our chat repeating
+foreign
+with my Google account
+tell us about you and this is my name
+and he is asking
+my phone number
+so I will get this blood so you guys
+won't be seeing my phone number okay
+he's asking for the code
+I am waiting for the code after entering
+the OTP you would be directed to this
+page that is chatgpt and this is the
+feed box where you can write any query
+in the simple natural language that
+would be English and the chat gbt would
+answer your questions
+and if we talk about chat jpt a little
+bit information about chargeability that
+it's an AI powered chatbot that has been
+developed by open Ai and the chatbot
+understands natural language and
+response in a human-like manner it is
+based on GPT 3.5 which is a language
+model
+and the chatbot was unveiled as a
+prototype on November 30 2022 while
+announcing the chatbot open AI wrote on
+its announcement page that we have
+trained a model called chat jpt which
+interacts in a conversational way the
+dialog format makes it possible for chat
+GPD to answer follow questions admit its
+mistake challenge incorrect premises and
+reject inappropriate requests so now we
+will talk about the chat gbt so chat jbt
+is an AI powered chat board that has
+been developed by the artificial
+intelligence and it's been researched by
+the company open Ai and the chatbot
+understands natural language and
+responds in a human-like manner it is
+based on GPT 3.5 which is a language
+model the chatbot was unveiled as a
+prototype on November 30 2022 while
+announcing the chatbot open AI wrote on
+its announcement page that we have
+trained a model called chat jpd which
+interacts in a conversational way the
+dialog format makes it possible for
+chatgpt to answer follow-up questions
+admit its mistake challenge incorrect
+premises and reject inappropriate
+requests
+so this is jtpd and it's been going all
+the developers around the globe
+so now we will start with automating
+Excel with the help of child deputy and
+with the help of Python language
+so first
+we will create a folder and see the
+Excel files with which
+we will use Python and with the help of
+chat jpt
+we will automate them
+so first we'll create a folder for our
+project and we'll create in Python
+projects and name it as
+automate Excel using
+chair jpt
+and inside this
+we will open the command prompt
+and now we'll open any idea link so that
+we will write a request to chat GPT and
+he'll answer us with the suitable code
+and that code will copy paste into our
+ideally and run it if it gives any error
+we will copy paste the error same to the
+chat jpt and as I know he answers them
+so here
+we will open our ideally and for that we
+are writing a command that is code space
+period and that will open our ideally
+that is Visual Studio mode
+now
+we have open our ideally and first we'll
+create a file here
+or first we will see our Excel files on
+which we will
+do the automation
+and for that
+we'll get back to our folder
+and here we have the number folder in
+which we have two files that is CSV
+files
+phone number and phone number two
+and other we have the sales folder and
+in that we have the date of the sales of
+the Year 2022
+so we will use these files
+sales and the number so we'll cut them
+and
+get to a folder
+and inside the number file no we'll
+start with sales
+first we'll do the automation
+with the sales files
+so we'll open the sales folder
+and inside that we will create a file
+that would be the py file
+and the first automation we would be
+doing is concatenating all the files in
+a single Excel file we have the files
+from January to December that is the
+sales files so we will concatenate them
+and ask the chat GPT to write the code
+sorry to concatenate all these
+so for that
+we'll name the file as concatenate only
+need
+underscore data Dot py
+so now
+we will give the command to the chat GPT
+so here is our child GPD and here
+we will write a command for it
+that would be I have 12 Excel files
+and I want to concatenate them
+and we'll also mention the name named
+January
+spelling of January is this only
+but we'll check with the file January
+and then we have February
+and moving on
+soon we have till December
+so we have all these 12 files and now we
+will command him
+to use python
+to concatenate the data inside the 12
+axis files into one file
+so this is our Command and it's in the
+simplest natural language that is the
+English language so we'll just press
+enter
+okay it shows us that an error occurred
+if the issue is
+so for this thing we will just copy the
+open a link and paste it here and open
+it
+as the chat jpd is seeing a huge traffic
+sometimes it shows
+these errors
+so he's very famous but we are a robot
+or not
+so
+we will agree with the charge ability
+and answer its questions here
+it's asking again okay now we are clear
+with the charge ability and we'll paste
+our Command here and press enter
+and here you can see that it has started
+answering our question that you can use
+the pandas library in Python to read in
+the data from each of the Excel files
+and use the concat function to combine
+the data for more levels into one data
+frame here's an example of how you want
+to use okay
+he's going you know very right menu
+and he has imported pandas and then
+create a data name and using the for
+Loop
+is going through all the months reading
+the Excel file
+and appending okay done
+and result he is concatenated but he has
+not created the
+Excel file where we can see all the data
+and he has also not printed it
+so what we want
+so first we'll see
+what does this code do as I have seen so
+it will concatenate but it has not
+created the Excel file in which we can
+see all the data
+so we have copied the code
+we'll paste it here
+save it and run it
+and most important thing you have to
+import the pandas Library
+and if you have not installed it please
+install it in the command prompt with
+the command pip install pandas or you
+can use it in the terminal
+okay
+it has not found
+the january.xls
+okay so J and u a r y
+okay we will see
+what error it expects
+we'll save this and run once again
+so we'll just copy the error and write
+it back to chat GPT and see
+how does it respond
+okay is seeing is indicating that the
+panel server is unable to find the Excel
+file you are trying to read in based on
+the error message look like the files
+are not located in the same directory as
+the python script
+okay we'll see that but we have
+the python script and the library
+in the same
+folder
+yeah
+and we'll check once again here
+let's go data.py yeah
+they are in the same folder and why we
+have this error
+okay into
+soon there it is we have opened our
+ideally
+in
+the automated Excel using chat GPD
+folder and currently we are in sales
+folder
+so it is not recognizing
+the directory
+so what we'll do
+we'll copy all these files
+copy the sales files
+and paste it here
+now
+we'll run the port that
+chat CPT provided us
+okay uh yeah it has done successfully
+is good successfully okay we'll try once
+again we'll kill the terminal
+save it and run it again
+now we'll see yeah it has executed
+successfully uh but the thing is it has
+note
+converted it into
+a single Excel file for that we will
+write
+you forgot
+to
+create
+the concatenated
+file
+as we also haven't mentioned in our
+Command
+specifically
+so we have to be specific with our
+commands also
+let's see
+yeah after concreting the data frame
+to export to a Excel file and we can
+just write this command
+and index equal to false here okay and
+he's giving all the explanations so you
+can just read them correct I apologize
+for the oversight to create a new Excel
+file that contains a container data you
+can use the to underscore Excel method
+of the data frame here is an example of
+how you could do this okay you create a
+new Excel file name underscore data.xl
+SX the same directory as your python
+script and it will contain the
+concatenated data form
+from all of the original Excel files you
+could also use a to underscore CSM
+method to save the data frame in CSV
+format yeah
+we can do that also
+okay well
+make the xlsx file
+and just beneath it
+okay uh
+yeah
+see part two uh
+okay
+we don't need any path we'll just do it
+here only
+here result.2 Excel
+and then let's put data dot SLS
+so we'll save this and run it
+is showing that it has executed
+successfully
+area outside the seeds folder we'll
+close it you can see that it has created
+the concatenated underscore data.xlsx
+so for that we move area it has created
+it here
+we'll open it
+and first I will show you
+what these files contain
+so every file have the entry of around
+thousand
+every file has 1000
+entries
+so the account created file should have
+around 12000.
+so this is the concentrated underscore
+data
+and if we go beneath
+yeah we can see
+2000
+and it's 12 guy it says it has
+concatenated all the data
+responded and we have to precise with
+the commands what we are writing in
+English
+as it has not mentioned to convert it
+into Excel file now when we have written
+it again it has done that
+now moving on we will do the second
+automation
+and for that we'll move back to our
+ideally and the next automation we would
+be doing would be
+that we will be using the sum and the
+average function
+to all the files that is from January to
+December files and will
+use sum and average function I will show
+you we will use
+so it's concatenated data
+so we'll open the August file
+and here
+you can see the
+quantity in the H column
+so we'll average down the quantity so
+what is the average per customer
+and
+in the J column we have the total cost
+so we'll add all the cost in all the
+files
+this is the August file from January to
+December we will do in column match
+the average for the quantities and
+column J will do the sum of the total
+amount per customer
+and we'll get it printed at the last
+column
+that would be we have the Thousand
+entries
+it's going till
+h1001 so we would get it printed on
+h1002 and the sum we would get it
+printed on j1002
+okay so moving on we'll close these
+files
+we will get back to our charge repeating
+and give him a command that
+I have 12 Excel files
+and will tell him that we have named
+them
+January
+then we have
+February
+then
+we have till December
+and now
+we want you to use python
+to
+apply
+the sum formula
+the sum formula and the average formula
+so the sum formula would be applied from
+J2 to j1001
+let's see okay we have closed file you
+have already remember
+some formula
+from
+J2 to J one double zero one
+okay and
+the average function
+and now we want him to use the average
+formula
+from H2 to h1001
+okay and that would be in all the Excel
+files
+and we want him to write the results
+in the cells and that would be J one
+double zero two
+and
+h1002 is respectively
+so we have to be precise with the
+commands and we have
+an error here and that is done and yeah
+it's all done
+now just
+give this command to charge jpt and see
+how it answers use dependence library in
+Python to renew okay
+and perform the sum and average
+calculations good and then write the
+results back to the same file here is an
+example of how you could do this
+now we are writing in the same file
+okay very important is PD and running a
+loop for all the months
+we have red
+all the Excel files one by one and
+we are taking the cell movement
+and
+doing the sum
+and doing the mean
+of the H column yeah it's good
+Excel
+yeah
+I think it would
+do a job
+so we'll copy this and create a new file
+and name it as
+sum Dot py
+and inside this we will paste the code
+that our GPT has provided us
+and we'll run this
+and it has executed successfully okay no
+uh we got an error that is
+it has made the mistake
+and got it
+okay let me just see what query
+Spherion I have 12xl files named January
+2 the summer and use Python to apply the
+sum formula from J2 to
+j1001 and the average formula from H2 to
+h1001 in all the files and write the
+results
+a
+done
+uh we would be a little specific
+and the cells j102
+and okay
+okay okay yeah
+then once again submit it if we didn't
+get
+okay yeah now he has used open
+Excel Library that's good
+yeah
+that would be working for us
+let's see
+what he will provide to us
+okay
+oh she active and
+okay
+okay
+yeah
+I think
+oh you can solve the purpose but first
+we'll run it
+so he is
+giving us the explanation for what he
+has written this code that is this code
+will apply the sum formula to the range
+j22 j1001 and the average formula to the
+range H2 to h1001 in all the Excel files
+the results will be written in j1002 and
+h1002 respectively it is important to
+note that this code will overwrite the
+original file so that it's recommended
+to make a backup okay we don't need that
+and we have backup in the sales folder
+also so you can also the read underscore
+excellent to underscore Excel function
+from Panama
+okay
+so we'll try this code
+uh it is
+import OS and guys uh you have to
+install all these libraries open p by
+Excel I have already installed them you
+can search on the browser that open py
+Excel installation Python and it would
+be directed to pypi.com that's the
+official website for the particular
+libraries and there you can see the
+command that will be the PIP install and
+the particular command for the module
+name
+uh it is showing that it has run
+successfully so we'll just see
+if it has done its job or not
+and in the April file we have in the H
+column that is the average of the edge
+column that puts items and in the J
+column we have the total sum of the
+amount of the customers yeah
+the query has run successfully chat GPT
+has provided us with the perfect code
+hats off to the jet GPT and moving on
+now we'll do some other automations
+and now
+what we can do
+uh
+we have other files that is phone number
+and phone number two
+and what it contains
+it contains the phone numbers
+so what we could do is
+we could add the plus 91 extension that
+is the country code for India we will
+ask chargpt to add the country code plus
+91 to both the files
+so I'll close these files
+and first
+we'll copy them and paste in a
+root directory so we don't get any error
+and we'll
+change the Slate
+name
+instead of hyphen
+we will add the underscore
+okay
+now
+we'll move back to charge upd and write
+a command
+and these files are CSV files node xlsx
+file
+yeah these are CSV files both the files
+are cable files other files are xlsx
+files
+okay so for that we will write the
+command to charge everything that
+I have two files
+uh
+with DOT CSV extension
+and they are named
+phone underscore
+number and the second was named
+phone underscore number underscore 2.
+okay so we have told the jet GPT that we
+have two files and now we will tell him
+to use python
+to add the country code
+and the
+country
+code
+plus 9 1
+as
+string prefix
+and that would be adding as a string
+prefix else it would only show nine when
+it won't show plus so we'll see if chat
+jpd understand that or not
+as string prefix in both the CSV files
+with
+column name that was phone
+okay now we'll just press enter
+and wait for a charge update to answer
+this query
+and we'll see
+how it responds
+you can use the printers as well okay
+and the prefix to the phone numbers and
+and the modified data packages are okay
+here you know
+I wouldn't do this okay
+[Music]
+um
+[Music]
+it's heading as step string okay it has
+an estimate that
+and to CSV
+then this code will get in both of us
+here I think this will work
+we have copied the code it's controlled
+in both CSV files and the plus timeline
+string to the phone numbers and
+write the modify data back to the sales
+files it's modern to know that this will
+overwrite the original file so it's
+required to make a backup of The
+Originals okay
+uh you could also use the apply function
+to add the prefix to the phone number in
+the column okay
+so okay yeah we can do this also
+with the Lambda function
+and that's all
+this will also do a job
+first we'll see this
+and we will
+create a file
+for this Automation and name it as
+country code dot py okay
+and we'll
+paste the code here
+and run it for you guys
+it's showing that it has executed
+successfully
+uh yeah it has executed successfully
+so we'll just
+go back to our files
+and see
+whether the code plus 91 as in prefix or
+not okay the numbers
+okay the files code only nine one as
+the column it's still in the number
+format
+it hasn't
+converted into string format
+uh we'll see the second chord also
+like
+yeah it has converted xender string
+okay Lambda X we'll see
+whether it's working or not
+it has worked uh and the issue is we
+have
+change the files permission denied okay
+we have opened a file we'll close it
+on Save
+tillness and run it again
+now it shows it has
+executed successfully
+we'll open the files
+and now if we see
+it is showing here now it has added two
+nine months
+you know
+uh so now issues uh the thing is first
+we have to
+transform it into the string format and
+then we can add plus 9 1 as a string to
+that string
+so chat Jeopardy misses with the
+slightest
+implementation the code
+now moving on uh we'll see this command
+later
+if you want to see how we can add Plus
+90 I will tell you how to write that
+code
+okay
+so now moving on we will do another
+Automation and we would be glad to know
+that chat GPT
+improves the existing code
+like uh in the first automation it has
+concatenated but it hasn't converted the
+concatenated file like it hasn't created
+that file it had created the file when
+we have returned to it that you forgot
+to create that file so chat jpd it
+modulates the existing code also
+and moving on
+now
+uh in any
+okay we'll open the concatenated
+underscore data Dot xlsx
+and inside this
+okay we have the product line
+so what we'll do is
+we will change the
+name of the electronic assessors to
+electronic equipments and home and
+lifestyle to Lifestyle
+now we'll automate this process
+and we can do this automation all the
+files also from January to December
+so we'll do that only okay
+now here
+we will command is
+okay now we'll command the charge APD
+that using python
+I trade
+through
+all the Excel files
+in the
+directory so we are asking him to
+iterate to all the Excel files in the
+directory and we will ask him to replace
+electronic access
+electronic accessories
+see the spelling
+accessories okay
+yeah electronic access with electronic
+equipments
+and
+also ask him
+equipments
+[Music]
+okay I'll do equipment only
+and
+home and lifestyle we have chosen yeah
+and
+um and lifestyle
+and
+change it with only
+live Style
+okay so using python we are iterating
+through all the Excel files and changing
+these
+uh that would be in each Excel file
+so we have to be specific without
+written language and now we'll save the
+modified workbook in
+will create another folder and in that
+we'll save the files
+okay
+save the
+modified
+file
+in the
+out
+put folder
+and if the folder is not created
+we'll ask him to create it
+okay
+then create one
+hold on and
+add it in
+okay oh I don't know why I'm saving this
+so I have written the command I will
+press enter
+so that charge upd can process it and
+give us the code for that
+so it's showing us
+sweating and that was show what you're
+showing us
+uh you can use the voice Library tools
+Excel files and inductory the panel's
+library to read in the files and make
+the changes and to save the modified
+files okay here's an example of how you
+could do this
+now here
+we imported OS and others PD
+and it has written the code we'll copy
+that this code will write to all the
+Excel files in the current directory
+replace electronic recesses with
+electronic equipment and home and
+lifestyle with lifestyle in the data
+frame and then save the modified files
+in the output folder if the
+sorry if the output folder doesn't exist
+the script will create it
+you can also use replace function to
+replace the values in the column okay
+and they selected through all the cells
+in each row of the Excel sheet and
+replace electronic accessories with
+electronic equipment and human lifestyle
+with lifestyle if the cell value is
+equal to the respective string okay we
+have copied a code
+and now
+we will create a file
+and
+name it as itrade.py
+it paste the code here and run it for
+you guys
+the code has been executed successfully
+now we'll see
+open all the files not all but yeah let
+me open some
+that was the previous Electronics this
+is
+okay so it hasn't changed
+in this
+okay we will open another file
+and see if we code the changes in that
+or not
+that also States the electronic
+accessories so it hasn't
+done its job
+so we'll move back to GPT
+and use this code if it functions else
+we will write back to the chair GPD
+okay
+just a second and read the code okay we
+are using the place
+and find the next sentence
+okay
+so for there you have to import the OS
+done
+node underscore book
+and for that
+about this
+and run it
+include these files
+okay
+now we'll see
+if we quote our solution or not
+no it's showing electronic accessories
+and home and lifestyle
+so
+chair GPT doesn't
+go to the code to change them
+so we'll ask him another time and with a
+different language this time
+so I don't think it has created the
+output folder
+it has oh sorry
+I'm really sorry what I have done is my
+mistake
+those were the original files
+and we have the product line here
+and we have electronic accessories here
+and that should be equipments
+okay uh we have electronic accessories
+and lifestyle
+let me see my command
+okay I have asked them to
+change electronic accessories with
+electronic equipment and
+women lifestyle with lifestyle so let's
+change only lifestyle
+and see
+okay
+okay
+uh the E here is small
+we'll update that
+in the code
+you can write this back to chat jpd also
+but yeah
+first do this
+showing
+notice executed successfully
+foreign
+accessories
+that's in the capital E okay okay
+okay okay so this code is giving us
+error
+we'll see the last word and copy that
+and
+try to use this
+and close the terminal and run it again
+it has executed successfully now we will
+see the file
+whether it has changes or not it has not
+ask the chat GPT
+what have you done brother
+using python Android through all the
+Excel files in the duct and replace
+electronic accessories with electronic
+equipment and home and lifestyle with
+lifestyle okay in each Excel file save
+the modified
+modifies
+[Music]
+okay
+we will ask the same thing once again
+to him
+and with this electronic accessories oh
+sorry
+and save the modified file
+the output folder and get a folder it
+doesn't exist okay
+okay
+um
+[Music]
+you haven't seen once again
+let's close these files
+it's actually rooted successfully now
+will open it
+and now we can see that it has changed
+to electronic equipment
+electron equipment
+yeah now it has executed successfully
+maybe there would be an error
+with this while copying it as we have
+also created the output folder but we
+forgot to see in that photo maybe that
+could be the error from our site
+now we are done with the
+changing of the column names
+uh it's the cell names that was
+electronic accessories to electron
+equipments and home and lifestyle to
+Lifestyle
+now we'll do the next automation
+for that
+first we'll open an Excel file
+this was in the output folder
+you get back to our main directory and
+open the file July
+inhale
+here we will
+filter the Excel file or gender
+that is we'll select gender as female
+and with the unique values in column
+City
+and we'll extract the data from
+column A to q that would be the whole
+data
+and for each Unique city value we'll
+create a new Excel file for each City
+and that will contain data only for that
+City and for females only
+and after that we'll save this file in a
+folder named City so we'll give this
+command to chatgpt
+and here you can also specify the module
+you want chat jpd to use for the
+particular command
+here we will be commanding our chat GPT
+to use the pandas module and for that
+we'll write the command
+command in the natural language I'll
+give this command to the chat jbd
+and for that we'll write using Python
+and pandas
+filter the
+okay we will just pick a single Excel
+file or we can
+pick the concatenated file
+that is concatenated underscore data
+filter the
+concatenated
+underscore data
+Dot
+Excel SX
+foreign
+Excel file
+and that would be for gender
+female
+and by the
+unique values in column City
+we first will give the command
+by the
+unique values
+in the column
+City
+and after that we want to extract the
+data from column A to q that is the
+whole sheet
+extract the data
+from the column
+A2
+q and for each Unique city value
+foreign
+for each unique
+City
+value
+now we will extract the data and now
+we'll create a new Excel file so for
+that also we'll give the command to chat
+jpd and we'll write create a new Excel
+file
+and that would be for each City
+okay
+so we will write
+create a new
+Excel file
+or each
+City
+containing
+data
+only for
+that
+City
+and four females
+okay
+and save this file in the
+City folder
+and if it's
+not being there
+chargpt can create the folder for that
+also
+okay
+City folder and
+naming the
+each file with the city name okay
+naming each file
+after the
+course
+bonding
+City
+okay
+now
+if the
+CT folder that is we have written the
+small City
+ok
+if the city folder doesn't exist
+then create it
+before saving the files
+okay
+now we have given this command to the
+chat GPT and it has responded us with
+you can use the pandas Library as we
+already mentioned to use that to read in
+the concatenated underscore data.xlsx
+file and filter the data for gender
+female group the data by the unique
+values in the city column and extract
+the data from the specified columns for
+each group and here is an example
+so we have Port the code
+we'll wait till chat GPD continues
+and we can see that the chat GPT has
+completed
+and
+we will copy this code
+settings
+[Music]
+for setting group in female data root
+Group by okay City
+and you could also use the SN method to
+filter the data frame for female gender
+okay first
+we'll see this
+and for
+that we will create filter.py
+and run the code
+it has been executed successfully so now
+you'll see that the city folder has been
+created or not
+I'm not able to see the city folder
+okay it's been created
+as you can see okay it's been created
+man it's still empty
+so we'll give time
+okay and we quote an error take
+everything
+okay okay we will pass this error to
+chat jpd first
+and after that we'll see what's wrong
+with this
+on your so direct messenger scene isn't
+getting that the column name specified
+in the list
+are not present in the data frame it's
+likely that the actual column names in
+the data frame are different than the
+ones you specified in the list
+okay you just see the list
+that is concatenated data
+and go back
+and see that is A2
+okay it's still r
+okay we made a little mistake here
+so we'll just
+change our Command
+yeah
+this is it
+and
+instead of Q now we'll write r and save
+and submit now we'll see what it would
+generate for us
+I'm going to close this
+thank you
+okay this one will end up on any friends
+in Excel files we'll turn the data for a
+few minutes and group the data by the
+unique values in the city column great
+and extract the data from the column
+eight wire for each Unique city name and
+then create a new Excel file for each
+City containing data only for that City
+and for females files will be saved in
+the city folder naming each file after
+the corresponding setting okay
+it's done now we'll copy the score
+and paste it here and see
+whether this code works for us or not
+so it's been executed successfully
+now we have moved to the setting okay
+it's executing so I will give time
+to the code
+and it do it so yeah it's been execute
+successfully
+okay so there were three cities that was
+Mandalay
+and Yangon
+and if I show you the data
+you could see
+there's the three cities and it has
+created the Excel files with the name of
+the settings only the unique cities and
+it has extracted the data for the gender
+female
+now we'll see those files
+close this
+and back
+in the city folder
+would see them and lay City
+and the data is just for the females
+so this automation works well with
+chatgpt
+now moving on we will do one more
+automation
+and that would be to use Python to
+identify what is the count of each
+payment mode
+so for that
+I will just
+get you aware of the payment modes in
+our sheet and we'll do this automation
+on the concatenated data sheet only
+so this is the payment column and you
+can see the amount of payments that is
+evolit cash credit card
+and these are repeating so we'll use
+Python to identify what is the count of
+each payment mode from column m
+column entry and that is from this sheet
+only and then we'll create a new sheet
+and name it as
+count.xlsx and write the count against
+each payment method
+so we'll give this command to our
+chatgpt
+and ask him to write the code for our
+automation
+so we are writing use Python to identify
+use Python to identify
+what is the
+count
+of
+each
+payment method
+from
+column and the column was n from column
+n and that was in
+concatenated
+underscore data dot xlsx sheet
+and
+create a new sheet
+named
+count Dot xlsx
+and
+write the count
+against
+each payment method
+okay
+now we have given this command to our
+chat jpd and we'll see what it offers to
+us you can use the panel library today
+okay that's the same value counts
+function to get the count of each main
+method okay and you can use the 2XL
+method to the data frame to write the
+count to a new sheet okay that's good
+and he has imported the pandas library
+and create the DF variable in which he
+has read the concatenated file and used
+counts function with the payment method
+and when we go look okay the column name
+is payment
+note payment method I think it would
+generate
+an error for us
+so
+it's python of each one method from
+column
+and
+and we will specify
+column M and that is named
+payment
+as it has used payment method here you
+can see
+that it has used the
+column name as payment method
+so we'll specify this
+we have to be very specific with our
+commands
+for these automations for simple tasks
+you can use
+simple language
+no complex sentences or you have to
+mention every detail but for these
+automations you have to use them
+now our charge Deputy is working with
+this and mostly he will deliver us with
+the perfect code I hope so
+okay uh
+test right and the value count and it
+has
+exported
+mode reset
+you would also have function to group
+the data by the payment method and use
+the size version
+method okay
+okay we'll see this
+oh
+and here
+we will
+create a file
+as count.py
+and in this file we'll paste the code
+delivered us by the chatgpt
+we have
+executed it
+s being executed we'll wait for that
+it's mean as you would successfully
+so we have back to our folder
+and we have to look for
+well count file now yeah account file
+yeah
+it is
+okay yeah
+it's showing us the
+mode of payment status ewallet cash
+credit card and the number of
+usage
+you know four four eight thousand three
+yeah it's twelve thousand that was the
+whole entry of the account candidate
+underscore data dot xlsx so we have done
+with this Automation and now we'll do
+one last automation
+and first we'll
+close all these files
+okay
+and moving back to our chat GPT and now
+we will do
+we will rename all the 12 Excel files
+that was January February to December
+and we'll add the word
+or car sales
+just before the month name that would we
+will just add the prefix before the
+month name
+and for that
+we will give the command to the chair
+GPT in the natural language
+and here only we'll change it in the mid
+director only as we have the copy of all
+these files
+so for this we'll write the Quant use
+python
+rename
+all the 12 Excel files
+named
+January
+February
+until December
+okay
+and that is present in my
+directory
+and what we have to do is we have to
+add
+the word
+will add Car Sales okay
+car sales
+and
+front of
+each
+in front of
+each file name
+okay
+so what it will do is Car Sales
+underscore January Car Sales underscore
+February and so on
+so we'll wait for the chat GPD you can
+use the OS library to iterate through
+all the Excel files and indictment then
+use the restore training function okay
+to rename the files here's an example of
+how you could do this
+photo s and we have the months
+okay
+this code will iterate through all the
+Excel files in the current directory and
+add car sales in front of each file name
+and those files would be those only the
+months
+and good it's using the glow module
+and you could also use the global model
+okay that's the second chord
+it's the easy one okay
+but we'll go with OS first
+and get back to R
+Aid ideally and name the file as rename
+Dot py
+and here we'll paste the code
+and run it
+it's been executed will move back yeah
+you could see that car sales have been
+added to all the files
+and with that we have done with our
+automations
+and if you want you can also submit your
+code to chatgpt and ask it to add
+commands to your code so that it could
+explain you what that line does or what
+that function is it would explain very
+tediously and
+if you want you can also try chat jbd to
+automate many office tasks
+you can automate PowerPoint for that and
+do many more tasks with chat jpd and
+with that
+we have come to the end of this session
+and I have an another insightful for you
+guys if you are aiming to get certified
+in Python Programming and want to build
+a python software development career in
+that case you can check the python
+certification course by simply learn
+which will open the doors for the best
+career opportunities and to find the
+details you can check the description
+box below and I hope the session was
+interesting and informative if you liked
+it please let us know in the comment
+section below and also do subscribe to
+our Channel and stay tuned for more from
+Simply love
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

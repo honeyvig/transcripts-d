@@ -1,0 +1,223 @@
+hey everyone i am weber khandelwal and i
+welcome you all to yet another exciting
+video from simply learn
+in this session we will be discussing
+async and await in c-sharp
+however before we begin this session
+make sure that you have subscribed to
+our youtube channel and clicked on the
+bell icon below so you never miss an
+update from simply learn
+now let's look at the agenda for today's
+topic
+we shall begin our session with an
+introduction to asynchronous programming
+then we will discuss the need for
+asynchronous programming
+after that we will look into async and
+await keyword
+then we will look at the demo of async
+and await
+finally we will conclude this session
+with differences between asynchronous
+and sicros programming
+so without any further ado let's get
+started with what is asynchronous
+programming
+the application can work on other tasks
+while waiting for the task to be
+completed using asynchronous programming
+asynchronous programming is very popular
+in c-sharp thanks to the async and await
+keyword
+when dealing with the ui we use a
+long-running method like reading a large
+file or something similar
+if any synchronous process is blocked
+the entire application will be blocked
+and our application will stop responding
+until the task is completed
+and if there is no await operator in the
+async method then the method will
+execute synchronously
+now let's discuss the need for
+asynchronous programming
+in synchronous programming compilers run
+one statement and wait for it to
+complete and then move to the next one
+whereas in asynchronous programming
+compilers run one statement and while it
+gets completed we will also work on the
+next one
+now we will discuss async and await
+keywords
+first up async keyword
+asynchronous methods are created by
+using async modifier on a method
+an async method runs synchronously until
+it reaches its first await operator
+at which point it suspends
+an async method runs synchronously until
+it reaches its first await operator at
+which point it suspend
+next up
+a wait
+while the asynchronous operation is
+running
+this await operator suspend the async
+method
+when the asynchronous operation
+completes the await operator returns the
+result
+and if there is no await operator in the
+async method then the method will be
+executed synchronously
+next let's try it in the code editor
+let's start by creating a class
+class
+program
+we will create
+a main function which will be static
+void
+main
+string
+args
+then we will declare
+method
+1
+and method
+two
+these will be the two method which we
+will be calling simultaneously
+then console
+dot
+read
+key
+now
+let's create a asynctask method1 so
+public
+static
+async
+task
+and method1
+then we will call the await keyword
+with task
+dot
+run
+and we will include another
+small bracket
+and go out of it and equals to
+with
+greater than
+in this we will declare a for loop
+and
+i equals to
+zero
+and we will run it 100 times
+until
+i plus plus
+then we will print console
+dot
+writeline
+method
+one
+is running
+now we will add a delay
+for this task
+so
+it will queue up
+different tasks
+we will give it 100 milliseconds of task
+delay
+so it will be finished in 100
+milliseconds
+and dot
+wait
+we will close this with the
+semicolon
+now
+let's write
+a public
+method or two
+repeat
+now let's write
+definition for method two
+it will be a simple function
+definition
+so public static
+void
+method
+two
+a for loop
+and
+i
+is equals to 0
+i less than 25
+i plus plus
+console
+dot write line
+and we will print method
+to
+is running
+and we will give it the task delay
+of 100
+dot wait
+here the code will start with the
+method1
+when it will come to await task then it
+will run this for loop and print
+method one is running
+and then it will trigger this delay
+operation
+when this delay operation will be
+triggered it will stop for 100
+millisecond while that time the method
+two will be
+executed because of the async property
+now while this method two is working
+when it will hit the avail method it
+will again come back to the method
+one now this method 2 is only running 25
+times so after a point the method 2 will
+stop running and then the method 1 will
+work as normally let's try and run this
+let's save first
+as you can see
+these methods are starting working
+you can see that method 2 is running not
+that simultaneously as method1 is
+running
+that's because the method 2 is low in
+number
+now let's get back to our slides
+we have now discussed asynchronous
+programming async and await keywords in
+detail
+now let's look at the differences
+between asynchronous and synchronous
+programming
+first up
+using asynchronous programming the
+application can work on other tasks
+without waiting for the task to be
+completed
+whereas the synchronous programming
+allows us to run one task at a time
+also the async modifier is used on a
+method to create an asynchronous method
+finally while the asynchronous operation
+is running the await operator suspends
+the async method evolution
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

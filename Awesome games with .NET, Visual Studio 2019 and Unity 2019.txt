@@ -1,0 +1,673 @@
+welcome back and today I'm going to be
+talking about unity my name is christos
+Matias I am a product marketing manager
+for unity and mobile and I have really
+created interesting this product you
+probably have had a lot of announcements
+throughout the two days so far so dotnet
+core Visual Studio and visual studio for
+Mac so today what I want to show you and
+why I wanted to pick up this session is
+because I wanted to showcase that with
+dotnet you can build some amazing things
+including games right
+our agenda for today is very simple I'm
+going to introduce unity to you just to
+let you know what it is and what he can
+build with it and then I'll show you how
+to get started if you never done get
+into gaming before like I haven't so
+it's a great experience to see how you
+can set up your machine then I will show
+you why you want to use Visual Studio or
+visually for Mac to write your games and
+we'll do that a few demos just to
+showcase the capabilities and finally
+we'll talk about why Visual Studio is so
+well aligned with unity and what makes
+it such a great product for debugging
+and writing your games or your 3d
+real-time applications and hopefully at
+the end we'll leave you with some
+learning materials and set you up for
+the next few sessions of the day so
+getting started unity of course is a is
+a the most widely used real-time 3d
+framework right it started as a gaming
+team but now they're targeting different
+industries so the goal there is to give
+you the tools to create applications for
+not just games but 3d real-time
+applications and they're the most widely
+and known engine and it's built on
+dotnet so if you are Dalton a developer
+there's nothing stopping you from
+writing games starting today and the
+nice thing about unity is that you don't
+just have one platform but you have over
+25 different platforms whether you want
+to develop games for xbox whether you
+want to build solutions for the run on
+Windows or Mac OS obviously mobile is
+very big mobile games are fantastic
+these days and many people monetize on
+that so if you want to build things for
+that and that's also their TV OS that
+the platform is insane so taking your
+dotnet skills with a unity and our IDs
+means that you can build almost
+anything for any platform out there and
+getting started obviously the first
+thing that you need to do and you need
+to be aware of is that ever since twin
+2019 point to version of unity things
+have changed quite a bit on how you
+install and unity so there are two ways
+to get started with unity one is you go
+to the unity website and you download
+the Installer and then allows you to
+actually go and get the bits that you
+need so it's a unity first experience
+and many developers that know unity will
+start from there but if you're already a
+Visual Studio developer there is a way
+for you to add the unity workload to
+allow you to get started so we'll we'll
+see how you do both so if you're inside
+Visual Studio that you select the game
+development with unity and that will
+download the unity dependencies for you
+and the other way around if you are
+ready on unity then you can go and add
+the components that you need so if you
+aren't on V on Mac OS then it will
+download the adversity for Mac
+components if you're on Windows it's
+clever enough to let you know that you
+need to download Visual Studio so I
+already have both the installers here so
+if you're in visited installer it's just
+going to modify it kicks off the
+modification of the latest version that
+you're using today we're using 16/3
+which is the latest and greatest and if
+I scroll down here you'll find out they
+have selected a game development with
+unity if you don't have it selected you
+add that and we'll bring down all the
+necessary dependencies so I can close
+that off and if I go to the unity hub up
+until this point that didn't exist so
+you download directly unity and get
+started but now and they have a unity
+hub like the views to the Installer and
+allows you to add multiple versions of
+unity because certain things may not be
+working with the latest version of unity
+especially their component engine and so
+here you just come to install you add
+your installation and then from here you
+can also add modules so in this instance
+you'll notice that we already have the
+Unity game development checked in
+because we went from the Visual Studio
+workflow first but if you don't have it
+if you start with unity then that's the
+way you get started and that's all you
+need as soon as you do that
+if we jump back the slides you'll notice
+that there are certain things both in
+inside unity and the visual studio
+installer that show you that everything
+has been configured correctly so we're
+ready to go with this ones and what this
+one is telling here for the external
+tools is that if you are working with
+unity and you are on Windows it has
+already recognized Visual Studio 2019 as
+present and I've already checked in the
+editor attaching because one of the big
+things that you want to do is as you
+write your code for your games you want
+to make sure that you can debug the code
+right and you want to do it in velocity
+because it's the best editor out there
+so next we're going to look at why would
+you want to use Visual Studio or
+velocity for Mac over say notepad or
+OneNote or whatever there are if you if
+you've been developing for a long time
+with Visual Studio you probably know
+some of these capabilities but if you're
+not if you're new to TV studio or if you
+just focus on unity then I would like to
+highlight some of the big features here
+obviously refactoring as big as your
+code grows you want to be able to
+quickly jump into the code and change
+things move them around clear your code
+and what-have-you so you can always use
+the mouse and right-click on the line or
+you can instantiate the command by using
+ctrl or command dots and you can go
+straight to definitions I will show
+these in and then demo very quickly you
+can navigate the compiled assemblies you
+can get suggestions for variable names
+the idea guides you through a lot of a
+good practices and would try to give you
+the tools that you need to build good
+code so if you're creating a method that
+you want to duplicate for example then
+we can quickly do that in the code there
+are a lot of tools there to make you
+more productive with the scripting in
+your games Multi cursor mode editing we
+got global certs and that's very big
+because if you have a big codebase and
+as your codebase grows you want to be
+able to quickly search and find a
+different components in your code going
+to enclosing block if you have big
+blocks of code and finally whether
+you're working on Visual Studio
+or video for Mac and you'd like a
+specific set of bindings then we also
+give the ability to actually switch the
+bindings around around so if you're
+envious to do for Mac there's a setting
+there tells you I want to use my visual
+studio key bindings and since I have
+both machines as well I like to have
+that consistency across the two IDs so
+you can do that as well and next one we
+have Intel akkad some people may already
+know intelligence and Intel quad is is
+the next level
+it's the AI guided intelligence that you
+get inside your code and it's always
+context aware as well I will do a demo
+on how Intel code works and how you can
+improve your game coding visit of your
+life sir this is a life-changing
+experience because up until this point
+you maybe have been developing in teams
+or developing in isolation and you
+always get stuck right yeah there's
+always the internet but there's nothing
+as somebody out there that can help you
+out
+so using live server you can actually
+set up a session to sir your existing
+coding environment with somebody else so
+there could be somebody sitting three
+hours away from you watching TV on their
+on their you know on the surface go and
+then you call them and say I'm stuck
+with this solution here in my game I
+don't know what to do can help me out
+and you can actually spin up a session
+inside Visual Studio they could be
+sitting on the sofa playing with their
+vision studio code doing some web
+development they don't need to have the
+exact same setup you'll be setting your
+environment so live sir allows you to
+unblock it allows you to share your
+environment and find solutions to
+problems sometimes you can use it for as
+a learning experience as well so that's
+really important I will show you how to
+spin up a live search session if you
+want to we have built in source control
+obviously if you're using git and most
+people these days tend to use git and we
+do have built in an ID support there we
+have real-time code analysis that's very
+important as you write your code you
+want to have real-time feedback you
+don't want to have to write your code
+save it and then build it only to find
+out that something is not as you like it
+to be that also includes some of the
+things that I'll be talking later like
+rosin analyzers and getting a
+get feedback about the quality or the
+errors in your code editor config is
+very big
+lots of people talk throughout the
+conference so far about a tour config
+and how it ties very well with visual
+studio or visitor for Mac and for those
+people that have not used a tour config
+before it's it's a way to actually
+define a code how the code should look
+and behave how you want your variables
+to be declared how you want your spaces
+and tabs to be declared in your code if
+you want to go down the route and
+because it's a file that is checked into
+your solution it follows the code
+everywhere you go so if a new developer
+joins the team then editor config allows
+them to pick up the exact same code
+habits if you want and apply them to
+their code base as they code a code
+lence gives you a very quick glance
+about how your code and has changed over
+the times and over the years how many
+seconds you had for a specific method
+and what have you and then some other
+capabilities obviously if you're
+changing across machines if you work at
+the office and then you come home and
+you pick up the work you can actually
+synchronize your settings for the IDs
+across those devices and across those
+environments so you can have a
+consistent Windows layout you can have a
+very consistent look and feel so if
+you'd prefer dark themes and that's how
+it works and then we have custom screen
+layouts which you can save as well and
+then take them with you and if you
+didn't know we're at the support light
+and dark themes on your ID to make it
+look and feel as you would like to so
+next I'm going to jump to a couple of
+demos and we're going to talk about some
+of the things I have shown you already
+so moving back to my code and we'd have
+talked about refactoring so usually when
+you are sitting in your ID you can
+control dot and then we get intelligence
+and says you know we can remove those
+usings and you know make sure that you
+don't have them anymore
+you can also fix on all document or
+projects and all solution so if you
+brave enough you can apply that setting
+across to the whole solution so let's do
+the document over here you'll see it
+says I can preview your changes and then
+you can apply them we have things like
+limited to another one you can see here
+again we have fixes
+talked about the multicolored editing so
+if I were to say I add new methods I
+could do control out dot and then select
+multiple locations or control shift dot
+sorry control out select one two that
+seems to not working okay I move on but
+we can also do multi line editing so if
+you're here and you want to change from
+private to public and go public and
+automatically applies again we do
+support multi carry at editing across
+the files but let me change that back to
+private we don't want to break our code
+okay so this one I did talk about a tour
+config and they just way to showcase
+these if I jump into my files desktop
+and I can I already have an editor
+config they just way to get started I
+find is if you jump to the Roslin repo
+on github
+they have already an ATAR config that is
+pretty well tweaked so far so as soon as
+we drop the editor configure there
+you'll see we have all these different
+settings and obviously you can also
+change them to fit your team's needs and
+that means that if you want to break or
+if you want to go from a warning to an
+error then it allows you to go that so
+you can see here the severity set the
+suggestion but you can change it to
+error and then that will cause everybody
+to actually go and fix their issues but
+if I go back up I'll pick up something
+that's very well debated and a heated
+conversation so I go with tab and save
+that saving thinking about it there you
+go
+so if I switch back to my code you'll
+notice that right now I have 4 spaces
+everywhere but if I do ctrl K and ctrl D
+automatically applies the editor config
+settings to my code that means that the
+soon as you you add your ATAR config you
+can go back and apply those settings to
+your files which is fantastic that that
+means that your team can have a
+consistent code base there so I mean
+just
+don't save that one obviously let me
+just go back and revert that because I'm
+pretty sure my team will be upset about
+the tubs space save that and again not
+applies and I did say I did mention
+about life sir so you've never used life
+sir it's available on V video and visit
+your code and you don't have to have the
+exact same environment on the target
+machine the one that you're sailing with
+but you can go into live sir it's
+already kicked off a stirring session I
+don't have any one right now - sir with
+but if I go into more info you'll not
+study it says just copy this URL send
+somebody else and with that they can
+actually join your session and say
+exactly what you see here which is
+fantastic especially if you're in games
+development you're new and you need
+support and throughout the your coding
+session so I'm just gonna stop that life
+sir in case anybody wants to join and
+I'll go back to some of the other things
+I talked so let's see here what else do
+we have and code lands we're building
+source control yet let me just show you
+this one
+so we source control again it will
+automatically pick up I was using get
+locally here so you'll notice that
+there's a lot of files that have changed
+throughout my editing you can also use
+an an exclude circuit ignore to exclude
+some of the files because obviously you
+don't want to take in everything and on
+your source code and like in dark themes
+with the settings if you didn't know you
+can create custom settings as well so if
+you want to have a very specific layout
+for your games development you won't
+ignore your debug you want to ignore
+other things and that are not relevant
+to you or Windows that are not like to
+box then you can come here create your
+session and your your layout and then
+you can apply it I know where you're
+these settings do carry with you as soon
+as you log into business to do with your
+account so if I were to change the web
+layout you will ask me whether I want to
+do that and then it does it there you go
+it's very different right I want to go
+back to my default one because I don't
+like this one I save great one for a
+guarantee obviously but it's fine so
+I'll go back to
+my default layouts go applying this one
+fantastic anything I want to highlight
+here and Intel Kota I will show you in a
+bit
+and now I will explain why real-time
+analyzers we have Roslin if you know if
+you don't know about Rosen you can
+download and install Rosen analyzers the
+ID also comes with some default
+analyzers here as I type it might come
+back with a suggestion saying you're
+missing an underscore prefix or you
+could make this field read-only so
+straight away it actually tries to make
+me a better developer by providing some
+suggestions for my code and rows
+analyzers are very powerful because they
+run at real time as you type your code
+so you don't have to again again save
+and build before you find out that there
+are some warnings against your your code
+right moving on I want to highlight why
+Visual Studio is so important with with
+unity and why when you use them together
+there they said your code on fire right
+did you become a lot more efficient
+obviously Intel code now has been
+designed to work with most of the SES
+our default projects but our team is
+working to bring the unity API messages
+into Intel code which means that we're
+scanning our code bases out there to
+make sure that we pick up the best
+skills for your for your unity games and
+Intel code goes one step above
+intelligence because as I said earlier
+on it's context sensitive it knows
+exactly where you are and what you're
+doing it will provide you with the best
+ideas as you type and Visual Studio does
+come with superior debugging we have the
+ability to set up trace points and
+breakpoints and really dig through the
+code there have been already sessions
+that so what vance tips and tricks on
+how to debug using Visual Studio so I
+would urge you to go and see these and
+we also added a unity project Explorer
+which makes your experience slightly
+better so if I switch back to my visual
+studio you'll notice that I don't have
+it down here but if I search for unity
+you'll notice it has unity API reference
+and unity project Explorer so that
+it gives you a more simplified version
+or a look and feel of your files and
+your assets so you don't have to go
+through the standard solution Explorer
+so we have an optimized experience for
+you
+I thought simply going back to the ID up
+until this point we only had that ATS so
+you had to spin up the game and so you
+spin up the the video studio attached to
+unity and they had to go back to the
+unity editor and spin up the game and
+then set break once here in order to be
+able to attach but now lo and behold we
+have attached the unity and play
+straightaway so you will kick off your a
+game end to end so if I were to try this
+one
+and we can also put a breakpoint over
+here we'll kick off my awesome game it's
+not it's not awesome but I did spend an
+afternoon writing this game so I wanted
+to prove to myself that as a.net
+developer I can write something in unity
+in and not a lot of time so within one
+afternoon let's say four or five hours I
+was able to put this thing together so
+let's see if it's already kicked off the
+breakpoint is there if I'll go to my
+game trying to switch now maybe right
+let me stop that one bring it back to
+focus I think it's right something
+something resolutions something okay so
+that's my game it's a very basic game I
+created a car and I put some obstacles
+on the road and what I'm trying to do is
+circumnavigate around them so I had no
+knowledge of that
+I've used some ready-made components so
+unity makes it very easy to actually
+create a whole world out of ready-made
+assets so all you have to do literally
+is write the experience or the behavior
+around these objects and how you want
+them to behave right now and before even
+starting coding anything this these were
+just Dom objects sitting on our scene so
+what I did is I actually add user
+controls to be able to navigate around
+the car and then I wanted to to also add
+the behavior of moving the camera behind
+the car so it follows the car as it goes
+through and later in the game or in my
+talk we're gonna add one behavior which
+is exploding crates
+because there's no fun if there's no
+explosion right so I wanted to make sure
+that if you toss the crate it just
+explodes so right now we're here you see
+it actually has kicked off the game so I
+can see ya think there you go
+we can never get around the space it's
+very basic I showed them to my daughters
+and we're not very impressed because you
+know they play xbox and then when I saw
+them this I was really excited but the
+excitement not really pan out with them
+so as you can see I can already control
+it and the code that I needed to write
+to make this happen was literally a few
+lines of code so in this instance we
+have four lines of code that control the
+forward and backward and the sideways
+movements and then one more line of code
+that actually allows us to control the
+camera now I did speak about Intel akkad
+and how it works for us so if I were to
+do transform here and then do a dot
+you'll notice that we do have position
+local scale parent local position and
+rotation
+it's the Intel code here it tells us
+that the code that you might want to use
+this first because these are the most
+common ones in the context of the update
+so maybe you want to pick these ones up
+rather than try to find through the API
+as you can see it's a massive API here I
+have no idea what I'm to do so Intel
+occurred really helps me focus on the
+things that really matter and the nice
+thing about that is that if you go into
+an if statement then it will actually
+change the whole experience so let's say
+if I go down here and say if and then
+transform and dot you notice that it's
+changed sadly so it gives us the route
+which was not there before it also gives
+us a child object so it looks for like
+if transform has child objects you might
+want to do something so intel code hones
+in into those skill all those parts of
+the API that do you make sense to you
+right I did talk about Intel code yes
+and one more thing about and Teleco
+right we already have the automatic
+Intel code which does a lot of things
+out of the box for us but you can take
+it one step further by train
+in Teleco to apply specifically to your
+codebase so if you search for Intel
+akkad up here in Turley codes you notice
+that there's a Intel code model
+management and what this does is allows
+you to submit your code to your Intel
+code engine to create the model that you
+need to apply to your machine and that
+makes it very specific to your codebase
+you can also share that with the rest of
+the team and that makes everybody more
+efficient so if you have a large code
+base with a low of classes that you want
+to be able to quickly bring to the
+surface and Intelli code allows you to
+do that and you also have a custom model
+for unity to allow you to even be more
+efficient right by ends up jumping back
+into our unity the last thing I wanted
+to do is obviously show you some of the
+the good things in Visual Studio we do
+have they're built in out to create C
+sharp files sader files and in um files
+directly in the unity project in the
+Explorer faster project reloading so we
+want to make sure that as you change
+your code from unity then the project
+reloads much faster especially if you
+are the law of assets we want to have
+reduced time for debugging so no not
+many delays the team has really focused
+on better performance we also want
+support more unsafe code debugging
+options and and we have unity specific
+analyzers and diagnostics inside Visual
+Studio to make you look better and have
+better code and finally we're
+suppressing non-applicable sis or
+Diagnostics so with that I wanted to go
+back to our game and just add the
+explosion because as I said I promised
+your explosion so we'll see some
+explosions this time I'm going to go via
+unity so here you'll notice I have an
+obstacle and which are actually using to
+create new lots of obstacles in our game
+because we have about six of them it
+does have any behavior or code so what
+I'm going to do now is add a component
+and in this instance we're going to add
+some C sharp files so a new script we'll
+call it collision detection because it's
+actually colliding with something
+collision helper there you go
+can you script collision helper create
+an ad so this will add it to our
+obstacle now because everything else
+in our code base inherits from that base
+obstacle all I need to do now is go into
+our where did that go
+oh it's still loading right okay still
+fixing it adding it there you go so the
+collision helper here now that file is
+here let's tidy up a little bit we won't
+have a nice tidy solution and I'm going
+to jump into my collision helper
+this will open inside Visual Studio I'm
+going to delete this ones because I
+don't need them and I'm going to add my
+snippet so what we're doing here very
+basic it took me probably two hours to
+figure it out for lives of code and
+there you go what we're doing is we're
+getting the game object we need to make
+sure that it's only the vehicle that
+collides with our without crate right
+because if everything else collides then
+we don't really need to know about that
+then we grab the particle system that
+actually throws the explosion we make
+sure that we have a handle on that in
+fact achieve use the curly brackets that
+Matt stalked on the first day to check
+whether it's null or not and then we
+need to make sure there's no playing
+right now and then kick off they're
+destroyed so I'm going to kick off the
+game now let's save this one and then
+kick off the game blow something up and
+then we can move into questions there
+you go it's going to take a couple of
+seconds and
+explosion right that's it four lines of
+code and you have an explosive crate
+right last slide for me for today is all
+about what you can do next so if you are
+if you are keen on learning what you can
+do next we just go and download Visual
+Studio add the unity we recently
+launched some amazing learning tutorials
+with unity in collaboration so go there
+we have more than six hours of learning
+materials and then we also have a how to
+build your first game our PM John Miller
+wrote this one it goes through step by
+step on how to use versity for mac and
+build your own tic-tac-toe game so thank
+you very much thank you very much for
+joining me today

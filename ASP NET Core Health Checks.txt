@@ -1,0 +1,511 @@
+thank you so I think I'm life yes you
+hopefully cool so let's start yeah I
+will talk about the asp.net core health
+checks today but first I will quickly
+introduce myself so my name is Sharon
+Gooch I'm from southern Germany I'm a
+Microsoft MVP for several years five
+years I think I'm blogging writing a lot
+leading it on a user group since years
+and speaking at several community events
+and meetups and I also started a stream
+on Twitch not regularly but from time to
+time and I'm a software engineer at the
+U in Basel so I'm working Switzerland
+living in in southern Germany hopefully
+the sound is good last turn last year
+the first 10 minutes were awful it's
+it's going well this time so I have a
+quick agenda
+oh I need to quickly close not close
+minimize Skype window as well I see two
+versions of the agenda currently so yeah
+I will quickly quickly introduce asp.net
+core health checks and then I will show
+a basic implementation of the health
+checks and there are also a lot of
+checks in the community so we'll have a
+quick look there and how to visualize
+the health of subsystems of an
+application and if it's some time left I
+will show you quickly on an enhanced
+scenario so I built something with
+docker containers to show how this could
+look like so all the sources I will show
+today are will be available on github so
+the repo already exists but I will push
+it afterwards so what's next
+exactly about the health checks what are
+the health checks so that health checks
+are kind of a framework inside of the
+ASP
+and framework to check the health of
+application subsystems maybe databases
+or services which are not inside the
+application or you can also check your
+your system you can check memory you can
+check your space of your hard drive
+whatever you want to check you can also
+handle the health of your subsystems we
+get a feedback and the checks give you
+the state of your subsystems and you can
+handle them we can show the states in
+your weekly application and you can
+provide an endpoint to show the
+information about the health of your
+current application and of the
+subsystems of the current application so
+the namespace is Microsoft add
+extensions that diagnostic start health
+checks you'll find all the stuff here
+and yeah a little bit of history so I'm
+was pretty much involved into health
+checks so the development started at
+2016 I think I'm not sure when exactly
+but during the MVP summit in 2016 LAN
+Condren asked via Twitter if there's
+anyone who want to attend the asp.net
+hackathon and help him through write
+checks for the asp.net health checks the
+first version I think it was a draft at
+that time so Damien said yes I said yes
+and we met Glenn Conner in an Andhra
+nurse at the asp.net hackathon and
+started hacking some checks then it
+moved through some repositories until it
+makes it into the product so it is in
+the product still in speed on that code
+2.2 I think what can you do with health
+checks
+you know maybe mention it it is
+monitoring the health of parts of your
+application or yours or subsystems of
+application imagine it databases some
+Web API is G RPC service is any other
+services
+or the environment of application you
+can check memory performance drive space
+and so on and you can provide the health
+state of your application including the
+health of the subsystems you want to
+check so you get an endpoint that that
+tells you about the health of the whole
+system the entire system I think yeah
+that's almost about the theory why
+should you use the health checks yeah
+you can handle unhealthy states in the
+application you can maybe provide
+information to the users that some of
+the subsystems or databases aren't
+available currently you can keep you a
+partially running in case of an
+unhealthy state of an subsystem maybe
+there's yeah a specific database not
+running and you can keep your
+application partially running without
+this database for example or you can
+tell the users about the unhealthy state
+and so on I can switch to alternative
+subsystems in case of an unhealthy state
+of this specific system subsystem maybe
+you have a different one and what I
+didn't mention here in the slide is you
+can provide a an end point I think it's
+the exactly same endpoint to the what is
+called Essure a load balancer thing as I
+can connect your Asia environment to
+this end point and the load billets I
+can is able to to switch the
+applications or they the switch between
+the instances of your application
+okay let's share some code and this
+section I will demo you a simple
+implementation of health checks so this
+is the kind of agenda of this section
+just created a spill don't care a SP
+donate core MVC application using
+the.net CLI I already did this then we
+will configure some basic simple health
+checks without any logic in it we will
+implement a custom health check and we
+will use the health health check service
+to to curl the checks and to to
+visualize the states of the subsystems
+this is the basic configuration of the
+startup of your SP donut corportation
+you can add the health checks services
+and the configure service method and you
+need to provide the the endpoint I
+mentioned this is the endpoint which
+provides the state of your application
+including the subsystems so we say abuse
+health checks is the mom exactly I will
+switch to the console hopefully the font
+size is okay we can increase it a little
+bit and I'll open
+yes code and go to the startup and this
+is common asp.net MVC application
+already added the health checks here
+I'll check your services and I added the
+endpoint this is a little different than
+in the slides because in asp.net core
+3.0 we have the new endpoint routing and
+the middleware which provides routes are
+now registered here with map something
+map controller route or map health
+checks this is the endpoint I mentioned
+so this is the basic configuration just
+to add health checks or just to have the
+possibility to bad health checks
+so now I want to add a few health checks
+so this is a way to add the liquid based
+Orlando based health check pretty simple
+this doesn't add us nothing here it just
+outputs unhealthy state so we can say
+add check yeah I'm sum over I to you you
+can do it the delegate way or we can add
+an health check instance we don't see
+this later we can do it the generic way
+to add an health health check type here
+Oh as well with thee with a funk we get
+a health check result so we return the
+result that's that so that's one I can
+also return an unhealthy States or some
+options some things to return we can
+return healthy unhealthy or something
+but in between degrade it so we leave
+this and I have another quick sample
+which is more useful I think it is a
+check to ping a subsystem okay this one
+starts a ping oops wrong keys here I did
+you know that you can press windows
+start to add emojis here yeah what works
+okay we create a new ping I said send
+the ping to localhost because it's
+currently it's hard to find a service on
+Azure or somewhere which responds to a
+ping I think all the edges services
+don't respond so I can't ping dead
+confident nets are also kind of ping my
+own block and so on so I need to find
+find a host to ping so if it's not a
+success state then I will return
+unhealthy if this needs more than 100
+milliseconds I think yes
+then it's degraded it's pretty slow then
+and if it's all fine I will return and
+healthy state so in case of errors I
+will also return an unhealthy state I
+think that's with the delegate a checks
+but we can also create more your more
+complex checks using classes so it's
+this one you can create an eye health
+check so I need to find the interface
+it's not implemented correctly so I need
+to get this one the cancellation token
+and now it's implemented so it's almost
+similar to their to the lambda
+expressions here so I in this so we will
+return a health check result and get a
+context and we get a cancellation token
+so this is more complex way we can check
+the state of something so this is just
+an example I set it to true so it's
+healthy and if it's if the subsystem is
+healthy or we return our healthy state
+and otherwise unhealthy state so here
+this line you can put your checks
+whatever you want to check
+I will show you a more useful sample
+later okay so we need to add this you
+say add check I'll use that generic way
+it's so I don't need to add a name next
+ups let's get be null I think and here
+we need to add some tax a different
+keyboard layout here so now it's working
+so I'm switching between German and US
+American layout okay so this should work
+but I this should work if I call the
+endpoint let's try it I press ofin the
+five also the language is switching
+between German and English I'll place
+only if something bad with the with a
+stream font size audio and so on okay if
+this should work buzzer OH
+open up in the wrong window so yeah yes
+so it's running
+if I press f5 um I see something's going
+on here and the end and wash
+think it's unhealthy
+yep it's unhealthy the complete
+application is unhealthy because of this
+here if I switch this to the healthy
+state I've said it okay
+I'm to restart it it will be healthy so
+this is the endpoint okay you can't
+extend the endpoint a little bit so I
+need to find the snippet for this yep
+there's some options we need to set and
+configure and we can have this lines
+here say predicated true say response
+writer s d-u-i response writer to find
+the using so this isn't there okay let's
+check the namespace check options
+response my turn okay let's remove this
+I was sure in the next day more than
+okay that's about the one endpoint but
+what about visualizing so to visualize
+the the health of the epic of your
+application now I can use their health
+check service
+and you can call all the checks on
+demand and display reserve and the
+results in your view so to do this I'll
+go to the home controller and inject the
+health check service so like this this
+is already in the DI container so I can
+use it wherever we want and I'm going to
+add a new view so I also need to add the
+views here so just copy the privacy and
+call it health and put some code in it
+so okay so we use the diagnostic self
+checks here our model is the health
+report and then we write out the the
+status of the models of the model is the
+health report we return this from the
+control action we can display the
+duration of all the checks and we can
+iterate through the checks and display
+the state of all the checks we have okay
+let's change this back to unhealthy turn
+a better message and restarted so paid
+there
+so we haven't created a link for the
+health I will do it so I think I did
+something wrong at the end point end
+point and if you do have the same URL so
+I will rename this end point no I'm
+wrong I did it wrong so I shouldn't have
+changed the the end point here it should
+be under home health exactly so that's
+it so the state is unhealthy yeah
+needed five milliseconds seconds or
+milliseconds than that
+so the foo is healthy the bar is not
+healthy healthy and we have the ping
+here you should have set the name and we
+have the simple health check so the ping
+is healthy don't we have a name here tag
+[Music]
+should be pink they don't see it yet I
+don't know why anyway so it's working we
+have the the health state of our sub
+substance here and we can also add an
+indicator to the page
+to see if the entire application is
+healthy or not so to do this open the
+layout see is HTML pennants injection
+here so you can do a dependency
+injection in your view I inject the
+health check service and I use it in our
+code block let's put it here so we await
+that check health async armed with this
+we get the health health state so I
+think this is a health state response
+our health result so as you can see it
+here this is a health report okay that
+we have the same in the layout and we
+can check the states here so as SATA
+background come current in case the
+state is unhealthy degraded or I don't
+set it in case it's all healthy so and
+I'm able to set it here and let's see
+what happens I need to repeal it I think
+yep so let's close this one now the head
+is red and unhealthy and if you changed
+this and let's say this is decorate it
+to rebuild it again it should be orange
+them or whatever set here orange yes so
+under and healthy state doesn't have a
+background color so it's it's white
+okay do we have any questions until yet
+if not that will continue with the
+slides out there and let's have a quick
+look into what the community did so what
+was expected after I had another look
+into the health checks health checks um
+a post playing around with the health
+checks for a year or so uh didn't had a
+look until this time this period and
+after had another look expected some
+health checks created by Microsoft but
+there are almost no health checks the
+reason is that it's pretty simple to
+implement some and the other reason is
+that the community already created a lot
+of health checks so if you see this
+slide yeah if you entered interested go
+to this repository that's better it's a
+burial I'll pronounce it right he
+created the asp.net core diagnostic
+health checks package or packages on the
+right side let me see a list of nougat
+packages available so you can check the
+system cat Network sequel server MongoDB
+and so on ready event store secret light
+a lot of other stuff also um Amazon Web
+Services can't be checked and fire a
+signal or and so on Kuban eighties and I
+think the list will increase a lot so
+this project is port from beat pulse and
+it also provides UI features so well
+show you in there more enhanced steam
+off so please have a look also you some
+of these packages to check sequel server
+or
+or Seco light and so on um also try to
+check circulate I think this doesn't
+work currently I need to check it again
+maybe I did something wrong and if not I
+will a pricing issue you also it wasn't
+possible to connect to and secure light
+database you know inside the docker
+container that's didn't work okay so
+about the health check your ISO also
+ends of this project they created a
+pretty nice health check UI so you can
+add it with with this service
+registration and with these middlewares
+here and this also provides another
+endpoint which is specific for this UI
+and it also provides health checks UI
+endpoint with them with a nice HTML UI
+so let's have a look what I did for this
+demonstration I created something like
+dummy weather statistics application
+downloaded a lot of weather data from
+Washington State
+I have implemented four different with
+the station spree mutton Cedar Lake and
+Monroe and a health monitoring app and
+what's missing currently so where the
+data visualization app but this is not
+important here and it's all running on
+docker
+I'll close this one here and go to the
+console
+this one oops openly is coached there so
+these are six applications this one
+doesn't count it's not implemented yet
+at at a common library to share classes
+also shared the the dbcontext this is
+this is the health monitoring app and we
+have the four different weather stations
+here I'll go through the f qor to
+connect to the secret light database so
+this is all wired together with docker
+compose this is the visualization of the
+health health visualization export some
+ports it depends on the day and
+therefore stations and also need to link
+the docker containers together it was
+talking it working stuff here and I
+created four different
+docker files per container one to run so
+so let's quickly look here this is the
+configure services of the of the check
+visualization app so I created the dummy
+foo health check just to check whether
+it's working or not and edit a database
+context check I think this is the only
+health check provided by Microsoft
+the only finished health check then
+added a check for URI so this is called
+your group it's in the URI package
+you can set your I want to check give a
+name like with the other ones you need
+to tack this or it make sense to tag
+this let me to filter it later on
+so I created for ping checks and for
+data checks there's this one for checks
+only check whether the services are
+available or not and the other one are
+really loading data and check whether
+there's a result or not
+so I also added the health checks UI and
+also set it to the to the after the apps
+here so this is the health checks this
+is what I wanted to show in the previous
+demo you need to define a different
+response writer and with this you can
+enhance your own endpoint to add some
+more information I will show it quickly
+and I need to add the hell check CIA
+middleware
+so I don't want to start it here with
+Mia's code I used the console one and
+run docker come powers up it's all
+compiled and it only needs to start so
+all the services are available so we see
+the name docker container here tennis
+here this one is the monitoring app and
+the other ones are the stations so it's
+called 5,000 that's not HTTP and it's
+running this one is just a single
+Web API application and this is our
+endpoint we extend it so now we get a
+JSON result we get this state here it's
+not a longer a simple text and we get a
+lot of more informations so the duration
+we get all the entries these are all the
+checks we have they have the checks I
+also provide it's an endpoint this is
+almost the same but needed for the for
+the UI so and this is the after checks
+UI provided by these guys by the
+community so and here we see all they
+all the services that are running so
+these are running in the docker
+container this is in the alternate
+docker container but in the end the
+visualization yep
+and this is our dummy justice to check
+so what happens if we kill one of these
+ok a little bit so here are the
+containers running so looks a little bit
+bad I will resize it all the way around
+so like this ok I want to kill one of
+them let's say the weather station in
+canvas
+well don't have container killer okay
+some it was the idea
+it's just darker kill it's it's not
+docker container kill really try to lift
+up your containers there you go
+yeah no it's killed thank you almost
+almost done let's just this last demo
+okay you can see now there that station
+in Kent was offline its offline and you
+see the checks are unhealthy no okay so
+that's pretty much it um I say thank you
+and hopefully you enjoyed it I thought I
+really liked seeing the level of
+community interaction here with the
+health checks you're right they're so
+simple to write and already so many of
+these that really help with those other
+integrations and services that we want
+to know the health of mm-hmm yeah
+absolutely there's a lot of
+implementation see a lot of
+documentation and from the community yep
+the user interface right we saw the same
+thing with the folks who do swagger
+stuff to have health checks you want yes
+it's something every user administrator
+is going to need yeah absolutely yeah I
+didn't know that I'm I definitely need
+to make sure I had that to my
+applications going forward thanks to
+thanks for hosting thanks for having me
+for champagne

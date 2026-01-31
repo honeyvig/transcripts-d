@@ -1,0 +1,631 @@
+hey everyone welcome to another session
+by simply learn in this session we will
+learn about asp.net web apis
+let's look what's in it for you in this
+session
+we'll first start with understanding
+what is a web api
+followed by which we will look at some
+of the examples of web api and then we
+will understand why do we use n-web api
+then we will look at some of the
+important features of web api and we
+will see the different version released
+by microsoft for web api and we will
+look at some of the difference between
+asp.net web api and asp.net mvc that is
+the model view controller
+then we will look at the introduction to
+hypertext transfer protocol and finally
+we have a hands-on demo but before we
+begin make sure you have subscribed to
+our youtube channel and clicked on the
+bell icon so you never miss an update
+from simplyland
+watch the video till the end so that you
+don't miss the demo so without wasting
+any further time let's get
+started what is a web api
+the asp.net web api framework is used to
+create http services that may be
+accessed by a variety of clients
+including browsers mobile phones and
+tablets
+asp.net web api is the extension of wcf
+rest api
+in a nutshell it's a replacement for the
+wcf rest api it's compatible with
+asp.net mvc and other web applications
+such as asp.net web forms asp.net web
+api is an excellent foundation for
+developing restful apps
+so what is this wcf rest api
+wcf stands for windows communication
+foundation is a communication framework
+that may be used to create web services
+in dotnet
+it is secure dependable and scalable
+it offers a uniform programming model
+for service oriented application
+development
+asp.net is quite similar to asp.net mvc
+because of its mvc capabilities like
+routing controllers action results
+filters model binders ioc container and
+dependency injection
+asp.net web api is an excellent
+foundation for developing restful apps
+restful apps that is the
+representational state transfer is an
+architecture paradigm that follows the
+concepts of rest architecture principles
+the concept of resources support the
+rest architecture the concept of
+resources that supports the rest
+architecture may be the use of resources
+to express an application state and
+functionality
+over the http protocol these resources
+are identified using urls now let us
+look at the examples of web api
+the first one is router api
+twitter api allows you to show tweets on
+your website using the twitter api then
+we have youtube api this allows you to
+embed videos from youtube on your
+website
+facebook api allows to display
+information from facebook onto the
+website similarly we have microsoft
+graph
+microsoft graph is a collection of apis
+that give us information back out of our
+microsoft account next we have azure
+devops using azure devops we can get
+information about devops pipeline using
+the azure devops api
+cognitive services we can use cognitive
+services if we are interested in adding
+machine learning
+playfab playfab is a set of apis for
+games
+why use an web api
+to reach users a web-based application
+is insufficient people use iphones
+mobile phones and tablets and other
+devices on regular basis
+these smartphones also come with a
+plethora of apps that makes life easier
+in fact we are migrating away from the
+web towards the realm of app so if you
+want to expose your service data to
+browsers and all of these contemporary
+devices apps in a quick and easy way you
+will need an api that's compatible with
+both browser and devices
+web api is an excellent foundation for
+making your data and service available
+to a wide range of devices
+web api is an appropriate platform for
+developing restful applications using
+the.net framework because of its open
+source unlike wcf rest api it uses all
+of the http features
+and you don't have to declare any
+additional configuration for different
+devices
+now let us look at some of the key
+features of web api because of web api
+the asp.net web api platform is suitable
+for creating restful services
+the asp.net web api is based on asp.net
+and uses the asp.net request response
+pipeline
+http verbs are mapped to method names in
+the asp.net web api
+iis self-hosted or any other web server
+that supports dotnet 4.0 version or
+above can host asp.net web api
+different data types are supported by
+asp.net web api json xml and different
+json formats are all supported natively
+to interface with the web api server the
+asp.net web api framework contains a new
+http client http client can be used in
+asp.net mvc server side applications
+window forms applications console
+application and other application
+let us look at the different versions of
+web api
+the first web api version is 1.0
+it is supported by dotnet framework 4.0
+and it coincides with asp.net model view
+controller 4
+the current version of web api is
+version 2.0
+it is supported by dot net framework 4.5
+and coincides with asp.net
+mvc5 let's see the difference between
+asp.net web api and asp.net mvc
+asp.net web api is used to create fully
+fledged http service that can only
+return data and not views
+whereas asp.net mvc is used to construct
+online applications that return both
+views and data
+web api allows to create restful
+services using the.net framework and it
+also enables content negotiation and
+self-hosting
+whereas in asp.net mvc it doesn't
+support this
+web api returns data in specific format
+such as json xml or any other
+whereas mvc only returns data in json
+format in web api the request is
+translated to actions based on http
+verbs in web api
+whereas in mvc it is mapped to action
+names similarly web api is lightweight
+design that may be used with smartphone
+apps in addition to web applications
+when we have a controller that is both
+mvc and web api and want to implement an
+authorization we must construct two
+filters one for mvc and one for web api
+because they both are different
+now let us look an introduction to http
+the http protocol can be used to access
+a web api over the internet its
+framework for creating and developing
+http based restful services hypertext
+transfer protocol is a protocol for
+retrieving resources such as html
+documents
+it is the foundation of any data
+interchange on the internet
+and it is a client server protocol
+meaning that the requests are started by
+the recipient which is commonly the web
+browser text layout descriptions photos
+videos scripts and other sub-documents
+are fixed and a complete document is
+reconstructed for them
+crude operations can be mapped to the
+four primary http methods that is get
+put
+post and delete get fetches the
+resources representation at a given url
+input changes the state of resource at a
+given url post is used to create a new
+resource and delete removes a resource
+from a given url
+hypertext transfer protocol is a request
+response protocol that communicates
+between a client and a server
+a client that is a browser sends an http
+request to the server which is then
+responded by the server the answer may
+include the requested content as well as
+the status information about the request
+so this is an example of http request
+the client submits a request to the
+server via the http protocol
+and the server and the web browser
+respond to the client based on the
+request
+every http request has three parts a
+request line
+a request header and a request body
+and the request body is optional request
+line defines the method which instruct
+the server on how to handle the data or
+resource
+and the request header contains a
+request url which is used to locate the
+requested resource to the server it also
+defines which version of http protocol
+is being used this is an example of http
+response
+http response is a server response with
+the goal of providing the client with
+the request resources
+now let's have a look at the server's
+response this is how the response header
+status line looks like the http protocol
+version status code and reason phrase
+are all included and this is known as
+status line
+and the response header one or more
+response header lines can be present and
+they are used to transmit additional
+information from the server to the
+client the response body contains the
+resource that client has requested if
+the request fails the response body
+specifies the cause for the failure as
+well as the steps and the client must do
+to complete the request successfully let
+us see how to set up the development
+environment the prerequisite is we need
+to have visual studio installed in our
+device and dot net software development
+kit so let's jump into the browser and
+see how to install this first of all we
+need to install
+visual studio microsoft visual studio to
+install that go to
+visualstudio.microsoft.com
+and in downloads
+go to the downloads and here you can
+install the community version which is
+free
+so microsoft visual studio is an
+integrated development environment from
+microsoft is used to develop computer
+programs as well as websites web apps
+and web services and mobile apps
+then after this
+we need to go to dotnet.microsoft.com
+here you can install the software
+development kit with the latest version
+scroll down select your operating system
+and select
+the installer which you want to install
+then we need to install
+the sql server management studio just go
+to the browser and type download ssms
+and it will take you to this website
+here scroll down
+and you can click here to download free
+download for sql server management
+studio
+so after installing these three
+softwares you are ready
+for the demo now finally let us look at
+the demo let's go to the visual studio
+open visual studio code i have visual
+studio 2019 installed in my device
+so on the left hand side you can see the
+recently opened projects on the right
+hand side you have these options where
+we can clone a repository in clone
+repository we can get code from an
+online repository like github or azure
+devops or we can open an existing
+project or a solution
+similarly we can open a local folder
+and we can create a new project
+so let's create a new project
+here there are many templates
+you can explore all the templates just
+scroll down you have many number of
+templates
+so for this project we will be using
+asp.netwebapplication.net framework
+so basically we have two asp.net web
+application dot framework one is using
+visual basic and the other one is using
+c-sharp
+so we'll select the one with the c-sharp
+asp.net web application
+dotnet framework select this and click
+on next
+provide the project name
+i'll
+keep the default project name web
+application 9 and you can change the
+location
+if you want so i'll keep the default
+location and if you want the solution
+name you can change it and select the
+latest framework so i have the dotnet
+framework 4.7.2 the recent one so i'll
+keep it as it is and next click on
+create
+so here you have the following templates
+so you need to select one among this
+template so empty is a template where
+the there is no content in it and web
+forms web forms in asp.net is the extend
+the event driven interaction concepts to
+web application the browser sends a web
+form to the web server which responds
+with a full markup page or a html page
+all users actions on the client are sent
+to the server for stateful processing in
+web forms or you can select mvc so mvc
+basically it is a project template for
+creating asp.net mvc applications model
+view controller applications so it
+allows us to build applications using
+the model view controller architecture
+and similarly we have web api web api is
+a project template for creating restful
+http services
+and we have single page application that
+is used for creating rich client-side
+javascript driven html5 applications and
+it is a single page application so that
+provides a rich user experience which
+includes client-side interactions using
+html css and javascript
+so for this project we will select empty
+and we will check this boxes mvc and
+web api
+since we are using a web api here so we
+will check these two boxes and
+and keep the authentication as it is
+with no authentication don't change it
+and keep these options as it is
+and click on create
+so here we go we have successfully
+created the
+project
+so
+on the right hand side you can see the
+solution explorer
+so before we start with the project i'll
+explain you the different folders that
+are present in the solution explorer so
+first of all we will have the root
+folder so the root folder is the default
+root folder for storing the static files
+related to the project and those files
+can be accessed programmatically with
+relative path
+and similarly we have controller folder
+the controller folder contains the
+controller classes where the operation
+related code is written similarly we
+have model folder model folder contains
+the domain or entity classes models can
+be written anywhere in the solution such
+as in separate class libraries or folder
+etc
+and we have views folder
+in views folder the view folder holds
+eraser pages which are responsible for
+showing and getting the data from the
+users
+and we have
+app settings.json file so this
+appsetting.json folder contains the
+configuration and secret details of the
+application
+and similarly we will have program.cs
+file so program.cs file in solution
+explorer it is the file that is the
+starting point of the application which
+will create the host for an application
+to run the application and we will have
+startup.cs file the startup.cs file
+allows to configure the behavior of the
+application such as defining the route's
+dependency injection so that was about
+the few of the folders in solution
+explorer as we go further we will
+explore other folders in detail so
+asp.net web api basically it returns
+data only the data may be from the
+database and it does not return any view
+or user interface
+and the asp.net web api returns data
+in either xml format or json format so
+whenever you run an application so
+suppose if we make an application here
+and run an application the application
+start methods get invoked
+so whenever you run an application the
+first thing that happens is the
+application start method gets invoked so
+where is this method so this method is
+in global global.asax folder
+let's open this
+so you can see here application start so
+as you can see here application start
+this is the method which gets invoked
+first whenever we run an application so
+basically this method checks the routing
+so as you can see here in this line we
+have the system object sender the object
+sender supports all classes in the
+dotnet framework the class hierarchy
+provides low level services to the drive
+classes this is the ultimate base class
+of all the classes in dotnet framework
+it is the root of the type hierarchy and
+we also have event argument it
+represents a base class for the classes
+that contains even data and provides a
+value to use for events that do not
+include event data
+we have area registration so area
+registration provides a way to register
+one or more areas in an asp.net mvc
+application and this register all areas
+this is a register where all areas in
+asp.net mvc application are registered
+and we have global configuration dot
+configure in this line what happens is
+global configuration
+provides a global http configuration for
+an asp.net application
+and the register route store the url
+routes for an application and what is
+this route table so basically route
+table gets a collection of objects that
+derive from the route base class and it
+returns an object that contains all the
+routes in the collection so now the
+question is where is the route file so
+to find the route file go to the app
+start
+go to this folder in this folder we have
+two files route config.cs and web api
+config dot cs
+so this route config.cs stores the
+routes and web api config dot cs stores
+the web apis so open this route
+config.cs
+so this is the file where we have class
+route configuration so as you can see
+here route config this is the public
+class and we have register routes route
+collection
+so route collection it provides a
+collection of routes for asp.net routing
+and we have the parameter routes dot
+ignore route so ignore route ignores the
+specified url route for the given list
+of available routes
+and and this class system dot string
+represents
+the text as a sequence of code units and
+we have map route map route maps the
+specified url route and sets the default
+route values and returns a reference to
+the mapped routes
+similarly we have three parameters that
+is name url and defaults
+name is a string and url is the
+controller you have controller action
+and id id is optional and default are
+the objects so we have three objects
+here controller action and e id and we
+have specified id as optional
+so basically this route conflict dot cs
+is the mvc application where the routes
+are present
+so now the question is where are the web
+api routes so the web api routes are in
+the web api config dot cs file so open
+this file
+so as you can see here the public static
+class web api config
+so we have web api configuration and
+services and web api routes here so
+config.routes.map http route
+so here the route gets the http route
+collection associated with this http
+configuration instance
+so what is this map http route
+it map http route maps specified route
+template and sets the default route
+values and it returns a reference to the
+mapped route it has a string a route
+template and object default so it has a
+string named as default api and a route
+template
+with api controller and we have default
+object as id is equal to route parameter
+which is optional
+so this i id is equal to route parameter
+optional this is the route parameter
+class that can be used to indicate
+properties about a route parameter now
+we have understood about routes and web
+apis
+so now let us go to the controller
+folder
+so as you can see this is empty folder
+but before that we will close this files
+so go to the controller folder
+right click
+and go to add
+and add a controller
+and go to web api
+and here you can see web api to
+controller empty so here we have five
+different types of web api controllers
+one is the mt the other one is web api
+to controller with actions using entity
+framework
+similarly we have a web api controller
+with read and write actions we have
+controller with actions using entity
+framework and with read and write
+actions for data version v3
+so for this project we will select web
+api to controller empty so select this
+add it
+so we need to provide the
+controller name
+so we will keep as it is default
+controller so we'll provide it as
+default data controller as the
+controller name
+so controller is mandatory
+to be kept in the name and you can
+change the other part
+so we have provided the name now let's
+click on add
+so this is the default data controller
+which got created so namespace this is
+the name of the project and as you can
+see here with the extension controller
+so this is the controller which we have
+created
+and the name of the controller is
+default data controller
+so this api controller it basically
+defines the property and method for an
+api controller so next we'll write
+a few lines of code here first we'll
+call a string
+we'll keep it public
+string
+we'll call the array of string
+we'll call it as my data
+is equal
+so we'll
+declare some values in the string say
+data one
+data two
+and data three
+so just randomly i've called some values
+just to for an example
+so
+next we'll call an another string we'll
+keep it as public
+public string
+array array of string
+then we'll use the
+get method get data
+next we'll return this
+data
+return my data
+so we'll save this
+next we'll click on run
+so the build has started
+so we need to call the controller web
+api controller which we created for that
+first enter the api
+then slash
+the controller name
+so the controller which we created was
+default data
+next
+connect so here we go this is the array
+of string in xml format
+so this was the strings which we created
+xml is the extensible markup language
+xml is basically used to describe data
+the xml standard is a flexible way to
+create information formats and share
+structured data via the public internet
+so how xml basically works so it works
+by providing a predictable data format
+xml is a strict on formatting if the
+formatting is off programs that process
+or display the encoded data will return
+an error so with that we have reached
+the end of this video like and share it
+if you found it interesting thank you so
+much for being here keep learning and
+stay tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

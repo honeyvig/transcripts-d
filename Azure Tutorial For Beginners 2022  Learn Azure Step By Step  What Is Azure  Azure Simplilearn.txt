@@ -1,0 +1,776 @@
+Microsoft aure is a growing set of
+cloud-based Computing Services offered
+to corporations developers government
+organizations and anybody else who wants
+to build an app or run a business on the
+internet without having to install and
+manage Hardware or server
+software but this much information is
+not enough to understand the complete
+cycle of its
+Concepts and that is what I'm here for
+hey everyone welcome to this new video
+on simply learn on Azure tutorial for
+beginners in this video I'll take you
+around crucial Azure services and their
+in-depth
+Concepts so without doing any further
+Ado let's start with the
+video but before diving into the Azure
+world let's have a quick introduction to
+what is cloud computing
+so cloud computing is the distribution
+of Computing Services VI the internet
+including servers storage databases
+networking software analytics and
+intelligence to provide faster
+Innovation more flexible resources and
+economies of
+scale you usually only pay for the cloud
+services you use which helps you cut
+cost run your infrastructure more
+efficiently and scale as your business
+grow
+grows so this was all about cloud
+computing now let's start with the start
+of this video that is
+azure first let's understand what is
+Microsoft
+Azure Microsoft Azure is a growing set
+of cloud-based Computing Services
+offered to
+Corporation developers
+government and anybody else who wants to
+build an app or run a business on the
+internet without having to install and
+manage Hardware or server
+software in recent years it has eclipsed
+both windows and office in terms of
+sales making it Microsoft fastest
+growing business
+sector the Azure platform is designed to
+assist organizations in overcoming
+obstacles and achieving their objectives
+it supports a wide range of Industries
+including e-commerce finance and a
+number of
+organization and it is open-source
+compatible
+this gives consumers the freedom to use
+whatever tools and Technologies they
+want now coming to how asure Works
+customers who subscribe to Asar get
+access to all of the services available
+through the Azure
+interface these Services allow
+subscribers to create cloud-based
+resources such as virtual machines and
+databases asure comes with five
+different customer support Sol solutions
+from Microsoft basic developer standard
+professional direct and
+Premier the scope and cost of these
+customer assistance programs vary all
+asure accounts get basic assistance for
+free however Microsoft charges a premium
+for the other Support options developer
+support is $29 per month $100 per month
+for standard assistants and $1,000 per
+month for professional directs bought
+Microsoft does not provide pricing
+information for Premier
+support now that we have covered the
+basics of Microsoft Azure let's dive
+down and explore the services offered by
+Azure well there are multiple services
+offered by Azure like machine learning
+analytics containers compute databases
+developer
+tools devox hybrid and multicloud
+identity
+integration Internet of Things
+management media migration mobile
+networking Security Storage web and
+virtual
+desktop but among these we will be
+discussing only a few which are widely
+used by organizations and
+individuals around the world and we will
+be vividly discussing these features in
+depth and these service are compute
+containers databases identity security
+networking and
+storage now let's start with the first
+one that
+is
+compute asure compute is a service that
+allows you to run cloud-based
+applications on
+demand this CPUs memory networking and
+operating systems are among the
+Computing resources IT supplies and the
+resources are on demand and can be
+accessed in minutes or even seconds you
+only pay for what you use and for how
+long you use it aure offers a variety of
+computing solutions for development and
+testing application deployment and data
+center
+expansion Linux Windows Server SQL
+Server orle IBM and sap are all
+supported by the server
+the following are some of the most
+well-known Services Azure virtual
+machines virtual machine skill sets
+Azure container instances Azure app
+service and Azure functions are also
+serverless
+Computing now let's discuss each of this
+one by
+one first is azure virtual
+machines virtual machines are
+software-based computer
+simulations a virtual processor memory
+storage and networking resources are
+among the resources
+available virtual machines or VMS run on
+operating system and allow you to
+install and run software much like a
+regular computer you can use and operate
+the virtual machine as if you were
+sitting in front of it by utilizing a
+remote desktop
+client as for virtual machines allow you
+to construct and operate virtual
+machines in the cloud infrastructure as
+a service is provided through virtual
+machines and they can be used in a
+variety of ways virtual machines are an
+excellent solution when you need
+complete control over an operating
+system and its surroundings all of the
+software running on the VM can be
+customized just as on a real
+machine also when you're running custom
+software or hosting Arrangements this
+capability comes in handy
+now coming on to the next one that is
+virtual machine scale sets scale sets
+are an Asher computer resource that may
+be used to deploy and manage a group of
+identical virtual
+machines virtual machine scill sets are
+meant to provide real Auto scale when
+all VMS are set up the
+same virtual machines do not need to be
+pre-provisioned as a result developing
+large scale services for big Computing
+big data and containerized workloads is
+easy more VM instances can be added as
+demand grows VM instances can be
+withdrawn when demand decreases the
+procedure might be human automated or a
+hybrid of the
+two now moving on to the next one that
+is azure container
+instances container instances are Azure
+compute resources for managing and
+deploying container ERS containers are
+virtualized application environments
+that are lightweight they're buil to be
+dynamically formed scaled and stop on a
+single host machine you can run many
+instances of a containerized
+application then comes Azure app
+Services you can create deploy and scale
+Enterprise grade web mobile and API apps
+on any platform with Azure app services
+while employing a fully managed platform
+to handle infrastructure maintenance you
+can meet stringent performance
+scalability security and compliance
+requirements a platform as a service
+solution is app
+service and following that we have as
+job
+functions when you simply care about the
+code that runs your service and not the
+underlying platform or infrastructure
+functions are great they're frequently
+used when you need to respond to an
+event typically via R request a timer or
+a message from another Azure service and
+the job can be accomplished rapidly in
+seconds or
+less now that we have completed all the
+services offered by compute let's
+proceed to the next one that is
+containers containers are a type of
+virtualization system you can run
+several containers on a single phys
+physical or virtual host in the same way
+that you can run numerous virtual
+machines on a single physical
+host unlike virtual machines you don't
+have control over a container's
+operating system containers are
+lightweight and designed to be built
+scaled out and stopped dynamically
+whereas virtual machines appear to be
+instance of an operating system that you
+can connect to an
+administer containers are built to help
+you to react to changes on the go
+containers allow you to swiftly resume
+in the event of a crash of Hardware
+failure Docker is one of the most
+popular container engines and Azure
+supports it containers offer these
+particular
+service container instances aure
+container services and container
+registry container instances are the
+quickest and easiest method to operate a
+container in the ashure without needing
+to manage virtual machines or use any
+extra Services it's a pass service that
+lets you upload your containers and have
+them run for
+you moving on to the next one are Asha
+container
+services Asha container services or Asha
+kubernetes Services allows users to
+manage deploy and control operations of
+kubernetes
+container orchestration is a term used
+to describe the process of automating
+managing and interacting with a large
+number of
+containers a your kubernetes service is
+a comprehensive container orchestration
+service for distributed architectures
+and high volumes of
+containers and then comes container
+registry a container registry is used to
+ease container development by easing
+store storage and management of
+container
+images now that we have covered
+containers and their services offered
+let's move on to the next Asher service
+that is
+databases Asher database is a fully
+managed platform as a service database
+engine that automates the majority of
+database management tasks such as
+updating patching backups and
+monitoring my Microsoft has released a
+manage instance aimed at on premises
+clients so if we have any SQL databases
+on premises that we want to migrate to
+Azure without any complex configuration
+or
+ambiguity we can use manage instances
+the most prominent Services Under
+database service are as your Cosmos DB
+as your SQL database and asure postre
+SQL now coming to the Azure Cosmos DB
+Azure Cosmos DB is a multimodel globally
+distributed database
+service you may increase throughput and
+storage across any number of aure
+locations around the world in an elastic
+and independent man you can use any way
+of several common apis to get single
+digigit millisecond data access
+throughput latency availability and
+consistency assurances are all covered
+by asure Cosmos DB service level
+agreements now Azure Cosmos DB enables
+schema less data allowing you to create
+extremely responsive and always on apps
+that can handle constantly changing data
+this functionality can be used to store
+data that has been updated and
+maintained by users all around the
+world the next comes aure SQL
+database aure SQL database is is a
+relational database based on the
+Microsoft SQL Server database engines
+most recent stable
+version SQL database is a fast
+dependable well-managed and secure
+database you may use it to create data
+driven applications and websites in your
+preferred programming language without
+having to worry about
+infrastructure so SQL databases pass
+capabilities allows you to concentrate
+on the domain specific database
+Administration
+and optimization task that are vital to
+your
+business SQL database is a fully managed
+service with high availability backups
+and other typical maintenance features
+built in Microsoft is in charge of SQL
+and operating system code changes you
+don't have to worry about the
+infrastructure coming to the next one
+the aure post three
+SQL now aure database posty
+SQL is a cloud-based relational database
+solution the server software is based on
+the open- source posty SQL database
+engines
+Community when you use Asha database for
+a postc SQL your experience with tools
+and knowledge comes in handy more
+however it has various benefits like in
+comparison to on premisis resources
+there is built in high availability to
+ensure that your apps are always online
+no additional configuration replication
+or cost is
+necessary pricing is straightforward and
+adaptable you can expect consistent
+performance thanks to a pricing TR tire
+that includes software patching
+automatic backups monitoring and
+security within seconds scale up or down
+as needed to ensure that your service
+adapts to usage you can draw computation
+and storage
+independently as
+needed automatic backups can be
+customized and restored to a specific
+point in time for up to 35 days and
+Enterprise level security to safeguard
+sensitive data and Transit and at rest
+this production includes data encryption
+on disk as well as SSL encryption for
+Cent server
+communication now we have covered one
+more crucial service offered by azure
+now let's move ahead and explore another
+service that is security and
+identity these two services are
+integrated so we will be discussing them
+together identity management in specific
+is a process of authenticating first and
+then authorizing using security
+principles and it involves controlling
+information about those principal
+identities it provides these important
+Services Azure security Center Key and
+very important aspect of azure service
+that is azure active
+directory Azure security Center first
+Azure security Center is a collection of
+tools for monitoring and managing the
+security of virtual machines and other
+cloud computing resources in Microsoft's
+public
+Cloud the Azure security Center is
+access through the ashure management
+interface by
+administrators they may find a number of
+security tools in the security Center to
+help them prevent identify and respond
+to possible security risk to the aure
+deployment to use the security Center
+organizations must have an aure
+subscription next is ashure
+keyal ashure keyal is a cloud ser Serv
+for storing and accessing secrets in a
+secure manner anything you want to
+restrict access to such as API Keys
+passwords certificates or cryptographic
+Keys is a secret Vols a manage and
+Hardware security module pools are two
+types of containers supported by the key
+service software as well as HSM backed
+Keys Secrets and certificates can be
+stored in WS only EDM back keys are
+supported by man
+HSM
+pools coming to the next one is asure
+active
+directory aure active directory or aure
+ad is a cloud-based identity and access
+management service from Microsoft that
+allows your employees to sign in and
+access resources such as Microsoft 365
+the Azure portal and thousands of other
+SAS apps internal resources such as apps
+on your company's in inet and network as
+well as any Cloud apps built by your
+company as ad is required for sign in
+and identity protection in Microsoft
+online business such as Microsoft 365
+and
+Azure if you sign up for any Microsoft
+online businesses you'll be given access
+to ashr ad which includes all of the
+free
+services now we covered one more as your
+service let's move on to the next
+service which is
+networking now Azure provides the
+scalability performance High
+availability and Enterprise grade
+security you need to satisfy your most
+extreme workloads requirements with more
+than 1 lakh 65,000 M of private fibers
+across 60 plus regions and 170 Plus
+network poops around the
+world customers will have consistent low
+latency experience thanks to service and
+integrate smoothly across on premises
+multicloud and Edge
+locations so when you use as your
+networking Network as a service you can
+concentrate on delivering your
+application
+logic Network Watcher Express root
+monitor ashure monitor or
+vnet terminal access point are all asure
+networking services that can be used to
+monitor your network resources
+so the first one we will talk about are
+virtual
+Network asual virtual networks allow
+aure services such as virtual machines
+web apps and databases to connect with
+one another with internet users and with
+on promises client
+computers an Asher network is a
+collection of resources that connects
+other Asher resources isolation and
+segment
+ation internet communications
+communicate among asual resources
+communicating with on promises
+resources route Network traffic filter
+Network traffic and connect virtual
+networks are some of the code networking
+features provided by Asha virtual
+networks next we will talk about VPN
+Gateway a virtual Network Gateway or VPN
+Gateway is a form of the virtual Network
+Gateway as
+your instances are install an Azure
+virtual Network instances and provide
+connectivity for services such as a
+sight tosite connection connects on
+premisis data centers to Virtual
+networks a PO to site link connects
+individual devices to Virtual networks
+and a network to network connection
+connects virtual networks to other
+virtual Network
+works so now moving on in Express
+rout with the support of a connectivity
+provider express route allows you to
+expand your on promises networks into
+the Microsoft cloud over a private
+connection you can connect to Microsoft
+cloud services such as Microsoft Azure
+and Microsoft 365 using express route
+and any to any ipvpn network a point too
+ethernet Network or a virtual cross
+connection through a connectivity
+provider at a collocation facility can
+all be used for
+connectivity so Express root connections
+are not made through a public network as
+a result Express root connections
+provide more reliability quicker speeds
+constant latencies and higher security
+than traditional internet connections
+now we have reached the last service
+offered by Asher that we will
+discuss
+storage Microsoft aure storage platform
+is a cloud storage technology designed
+for current data storage
+scenarios a massive scalable object
+stored for data object desk storage for
+Asher virtual machines a file system
+service for the cloud a messaging store
+for Reliable Communications and a nosql
+store at all available through core
+storage
+Services the services offered by are as
+your blob storage as your table storage
+as your Q storage and aszure file
+storage so the first one is azure blob
+storage blob storage is a Microsoft
+Azure service for storing binary big
+objects made up of unstructured material
+like text photos and videos and as well
+as Associated
+metadata blob storage objects can be
+accessed through HTTP or https from
+anywhere in the globe by users or
+clients
+applications blob storage objects can be
+accessed using the Azure storage rest
+API Azure power cell and Azure CLI or a
+client library for Azure
+storage coming to the next one is azure
+table
+storage large volume voles of structured
+data are stored in Azure table storage
+the service is a nosql data store that
+takes request from both inside and
+outside the Azure
+Cloud now Azure tables are great for
+storing non- relational structured data
+table storage can be used to store and
+query large amount of structured non-
+relational data and it will scale as
+demand
+grows moving on to the next one that is
+as aure Q
+storage aure Q storage is a service that
+allows you to store massive amounts of
+data authenticated HTTP or https call
+allow you access the messages from
+anywhere in the world a q message can
+have a maximum size of 64 KB a q can
+hold millions of messages up to the
+storage of account's overall capacity
+limit cues are widely used to build a
+backlog of work for asynchronous
+processing now coming to the last one is
+azure file
+storage Azure files provides fully
+managed cloud files that can be accessed
+via the industry standard server message
+blog or network file system
+protocols cloud and on premisis
+deployments can both Mount as your files
+file shares at the same time Windows
+Linux and Mac OS clients can access SMB
+Azure file shares clients running Linux
+or Mac OS can access NFS Azure file
+shares additionally using aure file
+synchronization SMB Azure file shares
+can be cached on Windows servers for
+Rapid access near where the data is
+used so now that we have covered all of
+the important services offered by AAR
+and the
+functionality let's dive deeper into the
+into the concept and look into how Azure
+is better than other Cloud
+platforms so first is Microsoft Azure
+PASS gives developers the environment
+tools and building blocks they need to
+create and deploy new cloud services
+quickly it also provides the critical
+devops linkages required for monitoring
+maintaining and fine-tuning such apps m
+roft handles much of the infrastructure
+management behind the scenes with Azure
+pass as a result Azure deployment allows
+for a singular emphasis on
+Innovations second is the compatibility
+of aure with one of the most beneficial
+feature of
+asure and that is the net programming
+language which gives Microsoft a
+significant advantage over AWS and the
+rest of the competition
+aure was designed and tuned to work
+seamlessly with both old and new apps
+built on the platform framework for net
+programming now aure was built using the
+security development cite which is a
+leading Assurance process in the
+industry it has security at its core
+ensuring that private data and services
+are kept secure and protected while on
+Azure cloud
+fourth is on ASO hybrid apps like can be
+created that take advantage of resources
+in data centers at the service providers
+end or within aure itself to increase
+usability and speed Asha now offers a
+greater selection of hybrid connections
+such as virtual private networks caches
+content delivery networks and express
+rout connections
+fifth is if a company already utilizes
+Microsoft software it is likely to be
+covered by Microsoft Enterprise
+agreement it is eligible to discounts on
+Microsoft software because Microsoft
+frequently modifies their agreements to
+reduce Azure pricing as a result of the
+Enterprise agreement businesses can
+often get large discounts for adopting
+Azure let's have a quick demo for Azure
+services for the better
+understanding so in this demo we will
+first create our Resource Group and an
+SQL database for it and a server
+also so first you need to log in in your
+Microsoft as your
+account and then click here and go to
+Resource
+groups click on create
+button so for subscription we will have
+a free trial option
+and uh give it a name according to our
+requirement like for now I'm giving it
+uh as
+your
+demo
+simply and the region according to your
+uh area like where you want to deploy
+your apps where you that you will be
+publishing here and click on review plus
+create here you will get all the
+information that you need to review that
+all the information here are correct or
+not and then click on create
+button it will take a few
+seconds now you can see this
+notification that your resource Group is
+created and here you can see that uh
+your the name of your resource Group the
+subscription and the
+location so now what what we need to do
+is we will create a SQL database for it
+here you can see all the
+details so to create our SQL database uh
+we will first need to create a web app
+so where we need to go
+is we will go to app services
+and here we will click on create
+button and again we need to give it a
+first we need to select our Resource
+Group so we will click on the resource
+Group we just
+created and we will uh give it a
+name so here uh I'm giving it as
+your demo
+simply web app and click on code so that
+uh while publishing we can upload our
+code and runtime stack we can uh select
+the language we have created our
+application
+in again the
+reion and click on review plus create so
+here you can just review all the details
+you just uh
+mentioned it's taking a
+while yeah so here you can see
+subscription Resource Group which you
+just created name you gave and uh the
+publishing runtime
+stack now all you need to do is click on
+create you can see it's initializing
+deployment
+uh you need to be very careful with the
+region because sometimes it may create
+problem while
+deploying you can see deployment is in
+progress
+now you can see your deployment is
+completed
+so you just need to go to
+resources coming back to the page you
+can see uh the name of your application
+you just
+created now as we are done with the web
+app uh now we need to create our uh SQL
+database so coming to the SQL database
+page we will click on create
+button again the subscription we have to
+give free trial and the resource Group
+we just created because that's what
+where we are publishing our web
+application and that's where we need to
+create uh attach our datab base
+with so now we need to give a name to
+our database so here I'm
+giving so I'm giving it as your demo SQL
+DB and uh here you can see that we don't
+have any items to select as a server so
+we will click on create
+new here we will create a server for our
+SQL database and uh give it a
+name so I'm giving it a
+name this
+is sorry
+I'm giving it a name as your simply
+server as you can see it's already taken
+so I need to change it so let's take as
+your demo
+server yeah so now we are done with the
+name again for location we need to
+mention the region so here you can see
+I've selected
+now
+coming here we have to enter our admin
+login so here I'm giving my
+organizations
+name I need to give it a
+password then confirm password
+and click on
+okay so here you can
+see that database name has already been
+attached to it the database we just
+created
+for elastic pool we will go for no
+option only and uh then again we will
+click on review plus
+create so here you can see all of the
+information that you just
+mentioned whatever privileges you will
+have with your SQL database and click on
+create
+you can see uh deployment has been
+initialized it's going to take a
+while you can see the
+status constantly and track
+them here you can see deployment is in
+progress and in a while you will see the
+name being flashed over here
+now you can see your deployment is
+completed and in deployment details you
+can see your database being created and
+the demo server you just
+created now going back to your resource
+Group the one we created at first
+clicking on the
+name we can see all the tasks we just
+did like creating a web app C creating a
+database for it and also a server for
+your
+database now all you need to do is
+publish your uh application that you
+created for yourself and deploy it over
+here so this is all in our demo I hope
+you liked it and learned something from
+it and see you in the next
+tutorial well this was all about
+Microsoft ashure and its revolving
+Concepts I hope you find this video
+informative we have almost reached the
+end of this video if I missed anything
+important do let me know in the comment
+section I hope you enjoyed this video
+and learn something new from it if you
+like this video then please do hit the
+like button thanks for watching this
+video and stay tuned for more updates
+and videos from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn n up and get certified click
+here

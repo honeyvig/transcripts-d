@@ -1,0 +1,251 @@
+foreign
+YouTube channel
+and before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell
+button to never miss an update today we
+are gonna automate WhatsApp using python
+Pi pivotkit library and with the help of
+chat chipity and before starting
+I have a quiz question for you guys
+and your question is
+how much did meta that is formerly
+Facebook spend to acquire WhatsApp in
+2014 and your options are your first
+option is dollar 10 billion dollars
+second option is 19 million dollars
+third option is 20 billion dollars and
+the fourth option is 21 billion orders
+please answer in the comment section
+below and we'll update the correct
+answer in the pin comment you can pause
+the video give it a thought and answer
+in the comment section
+so moving on
+now we'll move to create a project
+so first we will create a folder for a
+project
+and for that we will
+create a folder in
+python projects
+and my name is
+automate WhatsApp
+using chat jbd
+okay
+and inside this will open the command
+prompt
+and open our ID
+that is we want to automate the mode
+step using Python and with the help of
+chat Deputy we won't write the code on
+our own we will ask charitivity to
+automate it
+we will create the file and name it as
+main.ty
+and now we'll move to chat jpd
+and ask chat jbt
+to write a code to send messages through
+WhatsApp using Python and the pivot kit
+Library
+so we will give a command
+send message
+through
+WhatsApp using
+Python and
+pivot kit
+let's see but
+response to us and we have also created
+the automate WhatsApp using python video
+I will just Link in the I button you can
+check that out
+and we'll see what
+chat jpt tells us okay
+[Music]
+country code message
+minutes yeah it could work
+and first you need to install the
+pivotkit library
+by running weapons to private kit in
+your terminal or command prompt okay
+replace Target phone number with the
+Target phone number you want to send the
+message to country code with the country
+code of the Target phone number message
+with the message you want to send r with
+the RN 24 hour format and you want to
+send message and minute with the minute
+you want to send the message okay for
+example
+yeah okay
+all right so we'll copy this code
+and
+paste
+in our ID
+but before that
+first you need to install the pivot kit
+library and for that you can go to the
+command prompt and write the command
+pip
+e install space
+pivot kit and press enter
+it states that the requirement is
+already satisfied as I have already
+installed this module and you can
+install it by writing the simple command
+and you will get it installed and if you
+face any error installing it just
+comment down
+and would be very happy to resolve your
+queries
+Okay so
+as chat GPT States we will just enter
+the
+things it want from us so it's asking
+the
+Target phone number and the country code
+without plus sign
+okay
+so here we'll just
+write all the things but as you can see
+it has also given us an example
+to see
+and work on the code
+so here
+we'll just clear it
+I will write the phone number to whom I
+want to send the message
+so it would be
+and I would just blur this number so you
+guys
+won't be able to see okay
+and here
+will just
+add the country code
+and that is without plus sign
+okay
+so my country code is
+you can search it that is I live in
+India
+and the message I want to send to Ms
+hello
+how are you
+and now
+we'll set the
+RN minute so the current time is 15 14.
+set
+16. okay
+we'll save this
+and run it
+so it says that the country code is
+let me sing
+so I'll just
+copy the error and give it to chat jbd
+as we are taking the help of chat
+Jeopardy in this video
+so he has given us the code so we'll
+just provide the error to him let's see
+but it states if it's not able
+to resolve this then we will resolve it
+[Music]
+country code whether in the phone number
+you're trying to send okay
+yes and the country code is now I'm
+going to send the message correctly you
+need to make sure
+okay
+um one two three four five six seven
+eight nine
+yeah mentioned
+in the question right now provide that
+phone number is this and the country
+code is nine one okay
+you need to make sure the country code
+is prefixed to the phone number like
+this
+two three four five six seven eight nine
+uh
+okay we don't have to make it a string
+yeah now
+we will turn it again
+okay it's a string only
+so I will write the phone number again
+yes
+three
+okay now we'll see
+and
+what I will do
+I will write the country code here we'll
+save this
+and the time is 15 17 now so we'll just
+turn it to 15 18.
+save this and run it
+so our code has been executed
+successfully that is in 20 seconds
+WhatsApp will open and after 15 seconds
+message will be delivered
+so we just have to see that
+we have enter the time as 15 18. is the
+seconds
+available for
+the code to get executed yeah
+it has opened the WhatsApp
+and it will take time as my WhatsApp has
+loads of chats and contacts
+yeah I have to scan it
+I don't think
+it would be a less we have reached the
+15 18.
+you have scanned it
+let's see if it would deliver the
+message or not
+hence we have to change the time
+so we just have to wait for 15 seconds
+let's see
+okay
+just stop the terminal
+and run it again
+4 15 21 so we'll
+save this and run it again
+so it states that in 85 seconds WhatsApp
+will open and after 15 seconds message
+will be delivered
+so we'll get fast forwarded here
+so we are still waiting
+let's see and it will open the WhatsApp
+okay it states that the phone number
+shared by URL is invalid
+okay I'll just check the phone number
+again
+[Music]
+okay I entered the wrong phone number
+sorry guys
+so I will just update the time again
+and it would be 15 22. will make it fast
+we'll run this
+okay let's say that the call time must
+be greater than so we'll at 15 23 7.
+we will make the
+time is 15 27.
+save it and run it
+okay States that's in 40 seconds
+WhatsApp will open and after 15 seconds
+message will be delivered
+it has opened the WhatsApp
+and it has started the chat
+okay it has
+written the
+and we have send it to hello how are you
+that's good
+and now
+with that we have come to the end of
+this session
+and I hope the session was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also do subscribe to our Channel and
+stay tuned for more from Simply love
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

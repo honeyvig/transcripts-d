@@ -1,0 +1,680 @@
+so without further Ado I will introduce
+the first Speaker Keith Stockdale who's
+going to be telling us about automated
+testing of Shader code welcome Keith
+Hello nice to be here hello all right
+take it away all right then okay so this
+is automated testing of Sher code at
+rare my name is Kei doil and I'm a
+senior software engineer at rare and
+I've given a this a talk on this topic
+um just at this year's GDC but this is
+going to have a bit more of a C++ spin
+on
+it so a little bit about me first um
+this is me in case my audio my uh video
+quality is a bit poor and if you're
+wondering the accents from Northern
+Ireland that's where I'm originally
+from and I've been working at rare uh
+for the last six and a half years on the
+engine and rendering teams I quite Bas I
+basically my whole job is just writing
+things on the GPU that probably
+shouldn't be r on the GPU
+and at my time at rare I have worked on
+CAF thieves seaf thieves is a game that
+we launched initially in 2018 it is our
+first onreal engine game and it is based
+on a very heavily modified onreal engine
+4.10 so quite old and I said we
+initially launched in 2018 because we
+have been consistently putting out
+updates um throughout the years just
+last week we released a major update and
+today in fact fact we released for the
+first time on PS5 which we're all very
+happy about um so still Lots going on
+with CF th still very much in
+development and alongside the
+development of CF thieves we also have
+ever wild and ever wild is our upand
+cominging game at rare and it's a little
+bit different with CF thieves in that we
+are trying to stay up to date with the
+latest and greatest Unreal Engine So
+currently we're on Unreal Engine 5.2 and
+we're in the process of of upgrading to
+5.3
+okay with all that out of the way the
+problem and the problem that we have at
+rare is that we are writing more GPU
+code and this GP code is not your
+typical GP code that I put pixels it's
+more general purpose simulation code so
+just in C of Thieves we have two very
+prominent GPU part um simulations so the
+first is our fft water simulation so you
+can't really have a game called CF THS
+while having having a very good looking
+C so that has all been simulated on the
+GPU and then we also have our GPU
+particle simulation so anything to do
+with fire or Sparks fireworks smoke
+bubbles water spray all of that type of
+stuff that's all being simulated on the
+GPU and with all of this general purpose
+code being executed on the GPU we like
+to test it and the reason for that is
+because we as a studio love adoma
+testing and we love it so much that we
+have given a number of talks on it this
+one included um one particular talk was
+automated testing of gameplay features
+and see of Thieves by Rob Mella way back
+in 2019 at
+GDC this these are some links if you
+want to go to it if a QR code's easier
+there's a QR code otherwise some words
+um but this is the mean slid that I felt
+was the most prominent thing on his
+presentation where he's talking about
+all the benefits that we have reaped
+from autom testing so we've got things
+like um redu time to verify bills so we
+get our content out to players much
+quicker um lower bug count with
+comparison to previous rare titles and
+observably reduced crunch as well so
+these are all the reasons why we like to
+do it but Rob here was talking about
+testing of gameplay features but I'm
+here to talk about testing of Sher code
+and if you don't know how to get started
+with testing Sher code this is a
+fantastic article by Bart ronsky um it's
+called how not to test Graphics
+algorithm
+and in it he lays out two main ways of
+testing Graphics algorithms the first is
+screenshot testing which is what's we've
+been doing at rare since before I
+started back in 2015 um and then the
+second approach is what I'm going to be
+talking about today which is sheer unit
+testing so our unit testing framework
+for sheaters we just called it rare
+sheeter test and it is a testing
+framework for hlsl codes and if you
+don't know what hlsl is it stands for
+high level shoting Lang language and it
+is the shading language that all
+directex applications use as their
+shading language so if it's a directex
+app on the PC or if it's an Xbox game
+chances are the Shader code will be
+written in
+hlsl our unit tests are written in hsl
+2015 so quite an old version and the
+main reason for that is because our
+testing framework is being used for both
+CF thieves and ever while so 2015 has a
+common feature set there so we stick to
+that
+and it runs on top of an unreal testing
+framework so this is not a standalone
+testing framework by all means it is
+just adding on top of what unreal
+already gives us um so that we can use
+all the nice tooling that unreal
+provides as well as letting us test our
+Sher code an example of the testing
+framework that we are building upon is
+CQ test which stands for code quality
+test um and because I know in the
+audience there are probably at most one
+or two people who actually know what
+this is
+um it's an Unreal Engine testing
+framework like I said and it's available
+from Unreal Engine 5.3 and on so it's
+fairly
+recent um it's quite comparable to
+Microsoft's unit testing framework and
+if you haven't seen it before um this is
+what's a testing Suite might look like
+with CQ test so you have your test class
+macro at the top and that defines the
+actual name of the test suite and then
+you have any number of test methods
+within it which are your actual test
+that run and within your test method
+method you'll have various assertions
+basically just making sure all of your
+code works as you expect it to and then
+in addition to test methods you also
+have setup methods called before each so
+these methods will be called before each
+test method as well as after each so
+that'll be called after each test method
+to do some
+cleanup now um before I go any further I
+want to just like make it clear what our
+coding environment is um Onre engine 5.2
+currently so we are upgrading soon but
+very much still on
+5.2 and that means we're in C++ 17 land
+so unfortunately we don't get the nice
+C++ 20 just yet um that will be coming
+with 5.3 so another reason why I'm very
+excited about
+53 and we are using HL C 2015 as I
+said um now throughout the course of
+this talk I'll be showing C++ code as
+well as hlsl code so if you see the C++
+symbol at the top right it be C++ code
+on the screen and if you see the hlsl
+doggo you will be seeing hlsl code okay
+then on with actually showing how to
+write a sh unit test in our testing
+framework so HL C Dogo at the top right
+this is hlsl so it starts off with some
+includes so at the minute it kind of
+looks like
+C++ um with it with the includes the
+first include is the header that all
+unreal shaders must um include so
+there's nothing interesting there
+then we have the actual testing
+framework I'll be talking a little bit
+more about that header later on and then
+we have our system under test header
+which is in this case the water particle
+framework and then we have the first
+clue that this is not in fact C++ this
+is a Shader so this is an attribute that
+you tag on to the entry function of a
+compute Shader to tell it how many
+threads to run per thread group so this
+is a very simple it is running a
+single thread so not very good use of
+your GPU
+but we don't really need it to be very
+fast we just need it to be
+correct and then we have the entry
+function and we name the entry function
+the same name is the test this just
+makes it easier to connect up the hlsl
+side to the C++ side and at rare we like
+to use the given when then naming scheme
+um for writing tests so in this case we
+have got giving moving water exists so
+we construct some water with our known
+velocity when the particle spawn on the
+surface so in this case we're passing in
+water into this spawn function and it
+returns us a water particle then the
+velocity is inherited so we assert that
+the spawn particles velocity is in fact
+the velocity that we expect it to be and
+that's quite that's basically it so
+you've got your standard given when then
+um that you might see in any other
+testing framework with any other um
+language now this is a Sher so we need
+some C++ code to dispatch the code
+itself self and we try to make sure this
+is as minimal boiler plate as possible
+so we start off with the header of the
+testing Suite which looks like CQ test
+test class macro except it has an extra
+argument and that argument is the path
+to the actual Sher test
+themselves and then we have any number
+of um test methods so again it's just
+giving the method and giving the name of
+it so you can search that name and
+you'll find the C++ code as well as the
+HL cell code in your code base now our
+the Shader I just showed is extremely
+extremely simple it has no external
+parameters to bind or anything like that
+there it'll just run with no nothing to
+provide in the C++ side so all we need
+to do is call run compute Shater test
+with the dispatch configuration so if
+you're familiar with direct xit all this
+will be equivalent to calling dispatch
+111 right so it's um dispatching a
+single thread group on your GPU so it's
+a single thread group and that single
+thread group will be running a single
+thread so not very fast not very not
+making use of your GPU in any way your
+perform but that's fine because we are
+the main thing we're consider we're
+concerned about here is testing our code
+on the actual Hardware that it would be
+running on during your
+game now at this point I want to talk
+about the goals of the framework and
+initially I was going to talk about all
+of them but um just for the sake of time
+I'm only going to talk about two the
+first is we want our test to be fully
+automated avilable so I mentioned that
+we have screenshot testing for CF
+thieves and we've had that for ages um
+but the problem with it is it's not
+fully on amable we do require our test
+team to verify um screenshots from time
+to time to make sure everything is still
+right however that's not ideal we'd
+rather them just get a green tick for
+happiness and red tick for sadness um so
+to demonstrate that this is actually
+something we can do now um we have this
+feature in CF thieves which is our calm
+water system and what it will do is as
+you get closer to an island it will
+smooth out the fft water
+simulation um so in the distance there
+you can see it's all very choppy then as
+as you get closer it Smooths out quite
+considerably and we have a full test
+Suite just for this feature and the nice
+thing about building on top of our
+testing framework in unreal is that we
+get all the nice unreal um test running
+capabilities as well and Reporting so we
+can just open this up in our session
+front end like anything else
+um hit run on all of them so there's 29
+tests and they run lightning quick so
+there are 29 tests here and they're
+running at in about 0.3 seconds so about
+10 milliseconds a test and that is
+lightning quick especially if you
+consider how slow screenshot test can
+take um so yep fully automatable we're
+happy with this and then right to goal
+number five error driven development and
+what I mean by this is if you get an
+error as a developer in the while rating
+the test in the framework that error
+should tell you how to proceed so it
+tells you what you did wrong and how to
+fix it now to explain to give a
+demonstration of that um we have a
+slightly more complex sheeter test here
+um so instead of just passing in the
+dispatch configuration we are passing in
+a setup function and that within that
+setup function you can set some
+parameters on the actual Shader itself I
+I'll go into more detail on this later
+on the talk but suffice to say developer
+writes this it looks right um but you'll
+get a compilation there and it's not a
+massive big Litany of template errors
+it's actually a single line which says
+expected a single parameter of f sheer
+test context reference so it is very
+very common very easy to just miss out
+an ampersound right how often have we
+seen like performance regressions
+because we accidentally um forgot theant
+in a sorting functor right um so we we
+do as much static reflection at API
+boundaries of functions that are
+templated as much static reflection as
+the language currently allows us we're
+not quite at the land of static
+reflection proper yet but I'm very
+hopeful for C++ 26 to get us
+there um so yeah as much as we can and
+then we static a search and give nice
+error messages now you'll notice here
+that I'm not able to actually format the
+message I'm not able to say what they
+did wrong I can just tell them what they
+need to change something to or to make
+sure that the parameter is a reference
+rather than just passing by value and
+that's because we don't really have user
+generated static assert mesages right
+it's currently not possible these have
+to be string literals you can't do stood
+format or anything like that with them
+um at least it's not possible for us um
+depending on what your development
+environment is it might be possible for
+you right now um because it got accepted
+into C++ 26 very happy about that we'll
+get there soon maybe possibly um and
+it's mented in K 17 at a minute and I
+think it'll be making its way to gcc1 14
+um still no word on msvc yet which is
+the compiler that we use um but some
+people might be able to use it and I'm
+very excited for them um these are the
+links to the discussion art basically
+seeing the progression of it and also a
+link to the paper um it's all of the
+points that quarantine brought up in his
+paper are basically all the things that
+I want so yeah rational solid there um
+definitely worth a read
+now binding extra sheeter resources in
+the previous example I talked about
+binding extra parameters um and we do a
+lot of static reflection whenever we're
+binding extra sheeter resources um and
+to give more of an example of what that
+actually means is if we have this test
+Shater here called test with extra
+parameters very imaginative name and we
+have these parameters themselves so
+we've got a biess buffer and we've got
+an inst float so if you've got a
+non-static global variable in HL cell
+code that is a sheeter binding so that
+is an object that you can bind to on the
+C++ side to pass in information to be
+used within your
+Shater and here we're just asserting on
+them essentially so to be able to do
+this you need to a littleit of extra
+work on the C++ side and the nice thing
+about unreal is it provides some nice
+macros for us to do that so if you've
+written any rendering code in onreal
+engine you'll have seen this macro here
+so begin Sher parameter struct we give
+it a name and then we just pass in all
+of the parameters that we are going to
+be using so in this case it's our bodess
+buffer our uent and our float and we end
+it off with an end Shader parameter
+struct
+however this is wrong and we'll get a
+nice compilation error here out of this
+it will first say the test Shater that
+this test uses has a parameter struct
+which does not contain the Bas Shater
+parameters it might shock it might not
+Shock you to believe that um the test
+framework itself requires extra
+parameters be bind because whenever we
+are running a Sears what that's doing is
+logging some information to a buffer
+behind the scenes and then we read back
+that on the GPU on the CPU um so it
+needs its own parameters and whenever we
+just use this begin shter parameter
+struct for ours we're not including the
+ones that are required for the test so
+how do we get around that well
+thankfully the error message
+continues says to fix this please use
+begin CQ test sheeter parameter struct
+so it's telling you that the thing you
+need to change so change begin sh
+parameter struct to begin CQ test sh
+parameter struct and that will fix
+things for you and then it continues and
+says the line below this one is the test
+that uses this inal theator so we're
+telling the developer that it is the sh
+it is the um test that is signified in
+the next line of the error message that
+is the problem so we're telling people
+where the issue is what they did wrong
+and how to fix it so this is what I
+strive for in this framework just to
+make it as easy as possible for people
+to write tests without having to go
+diving into the documentation of
+somewhere
+else um so all of this is predicated all
+the static reflection is predicated on
+being able to detect invalid expressions
+and in C++ 20 this is quite trivial um
+you just use Concepts so you have a
+concept here I've just called it C has
+sheeter test parameter strict and we
+have our requires Clause here and within
+our requires Clause we will Define some
+constraints and essentially if you pass
+in a t uh to this concept and these
+constraints hold so they are valid
+constraints with this type T then the
+concept will evalue to true and
+everybody is
+happy so you could just static aert on
+this because the evaluation of a concept
+is a Boolean expression and if
+everything is fine turns true
+everything's good if it returns false
+then the whole concept framework gives
+compiler writers the opportunity to
+provide good helpful um compilation
+errors
+however I did say that we don't have the
+luxury of C++ 20 just yet um so what
+people typically do in this situation is
+lean back on void T um but there's
+another way that I want to talk about
+today which is what I would call
+emulating C++ Concepts so it's trying
+its best to make it look like it if you
+squint hard enough so we start off with
+a non-templated struct called C Shader
+test parameter struct so it's the same
+name and then we have a templated
+requires function declaration and in
+this we're just passing in a type T just
+like with our concept so if you start
+squinting it's starting to look almost
+there and the return type of this
+requires Clause is a decal type and the
+deal type will evaluate to this
+expression so it's our constraints so
+yeah if you squint hard enough you will
+see that this is somewhat concept e like
+um one of the difference here is that
+we're using the comma operator rather
+than having semicolons and the reason
+we're using the Comm operator here is
+because we're sort of abusing it a bit
+um the result of the Comm operator is
+the left um upper hand and the right
+upper hand and then it Returns the right
+upper hand but if any one of these
+Expressions is ill formed then the whole
+expression is ill formed therefore the
+type that's returned by The Deco type
+expression is ill formed so the whole
+requires function is thrown out it is
+ill formed it does not exist
+SP kicks in and then to make use of this
+in a static assert you don't obviously
+get the automatic um conversion to an
+operate to the operator bull like you do
+with Concepts we instead pass this
+concept in to t- models which is the
+driver of this feature and you can see
+here this is our lovely error message
+whenever you get this um now I'm going
+to go through the actual implementation
+of this because I haven't actually seen
+it anywhere else although then again I
+haven't really dived into too many um
+temp meta programming libraries but I
+thought it was pretty neat so I'll talk
+about it so it starts off like any other
+uh templated meta function it's a a
+template struct called t- models and it
+has a function here which will return a
+reference to a character array of of two
+elements so two characters if the
+concepts requires function is well
+formed with the arguments passed into it
+so if everything's well formed
+everything passes then this function
+will
+exist if it doesn't resolve if it's if
+it's if the requires Clause is ill
+formed then this function will be
+created instead and the difference here
+is that it returns a a reference to an
+array of one character so there's a size
+difference here and you can probably see
+where I'm going with this the output of
+this expression is then um B asserting
+that if you get if the result of resolve
+is of size two if it's of size two
+everything's well formed everything is
+good
+and it goes even further you can do a
+little bit of I'm not going to call
+subsumption because subsumption is very
+complicated and it's um it's got It's
+got well- defined rules so I'll say
+inheriting so you can inherit concept
+using the refines
+Clause um and that's about it really and
+I just want to talk a little bit about a
+future goal I have with this framework
+before I end um and that is hlsl 2021 I
+mentioned the start that we are stuck on
+2015 for now but I really want us to get
+to 2021 and the main reason for that is
+we get templates and I love me some
+templates but the main reason why
+templates is a great thing is because it
+allows us to program to an interface
+rather than to types and if you've
+written any amount of aom um testing in
+the in the past you'll know that
+dependency injection is your best friend
+right um and with templates we get
+static polymorphism which is nice way of
+getting dependency injection somewhat
+into the language and it allows us to
+write much more expressive
+code and um it is easier to write and
+share hlsl libraries and but the problem
+is it's a breaking change to go from
+2018 to 2021 so um I'm going to fight
+that battle but I'm not I'm not sure how
+I'm not um that sure how far I'll get
+with that one um but if you do want to
+see what a testing framework in hsl 2021
+looks like look no further than mine so
+I have uh an open an open source project
+on GitHub any go and see it um and it's
+running Sher tests on GitHub actions and
+all of that fun stuff so it's got a full
+CI and everything going running Shater
+code tests um and the nice thing about
+it is it is well the the main goal of it
+is just to experiment and see what a
+testing framework can look like in this
+language and I'm heavily basing
+everything off catch 2 and by that means
+by and by that I mean I just I'm just
+taking every feature that I can for me
+catch to I really like the the framework
+and I want to see how how far you can
+get to it in
+shoters um but yeah that's basically it
+um so I just want to leave you with an a
+nice thing I like to say Shater code is
+code please test
+it and that's about it so if there is
+any questions or if there's even time
+for questions I can answer them hey yeah
+thanks very much it was really
+interesting uh we have a few questions
+and a few minutes for them uh the first
+question is from V OA says asks um Can
+this code be used with GSL glsl yes
+glsl theyan I see no reason not to it's
+just I haven't used glsl since
+University days I'm I'm sorry I've been
+a rare too
+long another question from Leslie Li is
+how does how do assertions work on the
+GPU um so assertions so I I go a lot
+more in depth into this into in my GDC
+talk but effectively at the bottom of an
+assertion if an assertion fails it'll
+write some data to a buffer um with some
+sort of information on it so um the type
+of data that failed the data itself and
+what kind of assert that fails and then
+we read that back on the CPU and then
+assert on that data um using the
+underlying testing framework that we're
+building upon um so yeah it's just it's
+all it's all big lie around a readback
+buffer
+essentially cool um question from bsdb
+is screenshot testing still a thing why
+not just grab the state of the rendering
+pipeline just before all the pixels are
+colored uh that would be huge screenshot
+testing is still very much a thing and
+it's something that we rely on quite a
+lot at rare especially on CF thieves it
+has been extremely beneficial throughout
+the development of CF thieves um for us
+like it has shown up so much stuff um
+for us and has caught a lot of things
+before getting to release
+so may I can speak for us at least it is
+very much a thing for us I don't know
+about other
+Studios cool and one from D candy um can
+this be extended to glsl which you also
+already answered but also spear V open
+GL or Vulcan yeah that is something I
+want to I sort of want to try it because
+yeah you can't you can compile uh HL C
+down to spear V and then run it in
+Vulcan and that' be something really
+cool I have a I have a pipe dream of
+getting that to run on my Raspberry Pi 5
+like I think that'd be really cool to
+get that to run just like on a like on
+my own Rosary Pi server um something I
+want to
+try that sounds cool and uh a talk sorry
+a question from Peter nmo for me is uh
+speaking of catch 2 in the future will
+there be more support for testing
+Frameworks in Visual Studio yes we're
+still very much working on uh other test
+T in Frameworks um for the test Explorer
+in in visual studio and uh crossplatform
+testing uh remote unit testing all that
+kind of stuff so yeah keep your eyes out
+for more in that space uh and then I
+think we've got time for one last
+question from Michael voling who asks
+have you all had issues with developers
+forgetting to register tests that's my
+biggest fear with manually registered
+tests uh these are not manually
+registered as soon as so as soon as you
+write that uh macro test class it's
+that's it in it's a it's a static
+registration on yeah so that that can't
+happen you can you can opt out so like
+you can say this test should not run on
+server for example and if it's a client
+only thing um but it's Auto registered
+yeah great all right well thank you so
+much for joining us Keith and uh
+hopefully see you around see you

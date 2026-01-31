@@ -1,0 +1,394 @@
+hi my name is Glenn Condren I'm a
+program manager on the asp.net team and
+today we're going to talk about some of
+the cool features coming up in a bit in
+their core 2.2 we're going to
+specifically talk about a few of the
+features we have that build together
+really nicely in order to help you build
+api's api is everywhere most of your
+applications probably have a couple
+floating around and so in 2.2 we really
+wanted to focus on making that
+experience better so we're gonna talk
+about api's our analyzers and our
+conventions and we're going to talk
+about health checks as well and so
+bringing a little bit of cloud native
+micro services in here and then at the
+end we'll have some links to where you
+can get started where you can find more
+information and where you can see a demo
+app that kind of shows off every feature
+that we talked about plus a lot more
+that we that we won't have time for
+today so let's get started with some
+demos so here we have an asp.net core
+API project what it is is this is its
+kin this is a startup class and all we
+do is we add MVC we say that we're using
+the 2.2 version compatibility switches
+we add some swagger if you're not using
+swagger swagger is a way to kind of
+document your api's and show other
+people that other people consume your
+API eyes and knowing the sorts of things
+that your API does it describes it it
+tells everybody about the things that
+you're going to return and the things
+they can do with your API then we add an
+ended identity framework here with this
+section of code and in this case we're
+also starting to use this net topology
+suite which is the beginnings of using a
+new feature in AF core 2.2 their spatial
+types we don't talk about it much but it
+is a feature that you can check out if
+you're interested in and then at the end
+here we add the necessary services to be
+able to do health checks in asp net core
+2.2 which we'll talk about a lot more
+later so to begin with here let's open
+up the browser now I have the browser
+open to my application running and it is
+hitting the swagger slash wagga endpoint
+right if we go back to our startup CS
+just here we say add us this in this
+line of code adds this wagon endpoint
+that I'm hitting that displays swagger
+UI and what swagger UI lets you do is
+describes your applique
+it shows you me the end points that I
+have in my app but it describes the
+models that my application can return so
+in this case I have a solutions at
+places controller it has a get that
+returns a list of all the places that I
+have in my database and has it get by an
+ID which returns a specific place and
+then if we look at the swagger UI for
+that then it has the places I can try it
+out I can execute this and it returns me
+a list of places from my database here
+in the browser so I can test out my API
+and I can also try it out by passing in
+a parameter now we're gonna say let's
+execute one now if you look up here in
+my dataset I don't actually have my IDs
+of goods so there's not gonna be a one
+and that's interesting because the UI
+says that the only things that this API
+could respond with is 200 okay but we
+know that's not true because right here
+it's returning a 400 and it's returning
+this type some type here which is not
+documented in any way in our swagger now
+the reason for that is that in order for
+the code that generates the swagger
+document from my code to know what my
+API does I need to give it some
+attributes so in here you need to add
+more information telling the swagger
+generator what stuff it does so into 2
+we added some stuff to try and make that
+easier and we did that by having a
+package but i'm going to uncomment here
+this is asp net core MVC api analyzers
+what these do is kind of augment your
+tooling experience to let you know when
+you're doing things that aren't
+documented and so if I build my project
+now with this new package ref and I come
+down here and I look at my warnings
+you'll see I have this action method
+returns an undeclared status code 404
+and if I go into my actual method then
+what I see is return not found has a
+squiggly line and it has a squiggly line
+because
+I'm not documenting the fact that I'm
+returning this not found and so if I
+control dot on this it'll say hey let me
+add all the attributes that it looks
+like you're doing here and it's saying
+okay you're going to return the 200 you
+go through 10 to 404 and you're going to
+do this producers default response type
+so if we just do that we control dot and
+then save a file then if we head back
+over here to our swagger endpoint then
+what we'll see is that we now have this
+new model this problem details model
+which is another feature that we added
+in to two problem details are basically
+a type that we will return that
+describes what ask what went wrong when
+something bad happens or when something
+that when you don't tell us to return
+something else will return a problem
+details when there are problems it's
+just a structured way of giving
+information back to people who aren't
+humans necessarily so you could parse
+this and you could understand it when
+you're writing a client that talks to
+this API so now it now that we've added
+those attributes the swagger doc you the
+swagger document now knows that we could
+return to 404 we could return a 200 we
+could return default right it's pretty
+cool you get some good this just gives
+you hints it gives you help when you
+start doing stuff but adding all of
+these attributes to every one of your
+API is this kind of kind of adds a lot
+more boilerplate code to your controller
+and we like to try and avoid that so
+over here in our program CS we can see
+us another feature that we added - - -
+which is the concept of API conventions
+so with an API Convention what it's
+saying is what this is saying is add to
+this whole assembly an API Convention
+type of default API conventions we ship
+this type and you can ship your own if
+you wanted to you could have this code
+in here with any type that you want that
+implements this stuff and if we go to
+the definition of this type we can see
+it has a lot of Method declarations with
+a lot of attributes and so if we look at
+our get 1 because that's what we've been
+live been looking at then this says name
+match prefix so this is saying any
+methods in my application to start with
+get
+and have an ID have something with an ID
+suffix so this could be you know place
+ID or something like that then apply
+these attributes to it dosent default
+attributes because if you've got to get
+that accepts an ID you probably get a
+return of 404 when that ID doesn't exist
+yoram generally going to return a 200
+when that does when it is there and we
+know we're gonna do the default response
+type stuff because that's what that's
+what we do now into two so now without
+any attributes in my controller if I go
+back to my swagger document and hit the
+same endpoint then I'll be able to see
+the same thing that we just saw where
+I'll be able to go to places go to
+places ID now I have this 200 I has
+documented that I've done a for f4 it's
+documented that I've got a default so if
+you are following some patterns or
+guidelines within your organization that
+either are the same as the ones that we
+ship or different but a fairly
+consistent or you want them to be
+consistent this is a really good way for
+you to get reminders and hints and help
+around getting just the right things
+into your app now one thing that your
+one thing is that we do not give you
+warnings and squigglies if you give us
+give more information than what you
+return so it's not a warning from the
+analyzers point of view if you say that
+you returned a 404 but there's no code
+that we can tell to actually do it
+that's us walking the line because
+sometimes it can be difficult to know
+exactly what you do and we believe that
+over specifying information is better is
+is good it's okay but under specifying
+is really bad so we want to give you
+help to under 4 when you're under
+specifying but we're not really worried
+when you go when you say more than what
+you're actually gonna do okay so then
+the other feature that we saw you know
+startup CS was health checks so this is
+a new feature that we added specifically
+around building using load balances
+deploying to things like kubernetes
+using the power of a clouds like you
+like using
+ah sure or or one of the other clouds so
+and the reason for that is you
+frequently want to be able to ask your
+application are you okay should I send
+traffic to you should I restart you and
+you can do that today you could make a
+controller you could put an endpoint on
+it you could make it that controllers
+job to report the health of your
+application but that's a fairly common
+pattern and you writing the code to
+check all of your dependencies
+potentially it can be can be some time
+consuming so we wanted to just remove
+that from something that you needed to
+think about so we have a service you
+could add this health check service this
+gives you a service that you can consume
+in your application like any other
+service that's added to the DI system so
+you can go manually invoke this to check
+whether you're healthy within your app
+if you wanted to and then we also add
+this dbcontext check so what this is
+going to do is if I ask the health check
+system are you healthy if it cannot
+connect to the database that this
+context is configured to talk to it will
+say no I am NOT healthy if it can talk
+to it then he will say yes I am healthy
+and what that lets us do is we have this
+middleware you can add to your
+application saying app don't use health
+checks / ready in this case and what
+that means is if I go to slash ready in
+my application then it says healthy
+because I have a docker container
+running on my machine that's running
+sequel server and my application is
+communicating with them if I was to go
+and stop that container then it would
+return unhealthy right makes sense
+so this is interesting and it's valuable
+for things like if I was going to load
+balance to this application I was gonna
+have several instances of it and I was
+going to put say and as a traffic
+manager or any load balancer in front of
+those several instances and then route
+traffic to them say on geographical
+location maybe you want to deploy an
+application to several regions of the
+world and you want you want to prefer
+the locations that are closer to any
+customer that's going to come to you
+well you need an endpoint that your load
+balancer can know don't send traffic to
+this one because it's now down and in
+order this
+let you do that you just tell the load
+balancer the slash Radio endpoint is
+going to be the one that you hit in
+order to tell whether or not this app or
+API is ready and we are going to use
+that now what this where this also
+becomes really powerful is if you have a
+file that looks like this guy this is a
+kubernetes configuration file then just
+here we have the concept of a readiness
+probe now a readiness probe in
+kubernetes means that if this prove
+there's two things that it will do very
+importantly so let's talk about them in
+order if you're doing a deployment
+you're deploying a new version of a
+service that you have running in
+kubernetes and the readiness probe never
+says that it's ready that never returns
+a success or 200 then the deployment
+doesn't continue it just sits there and
+waits for somebody to resolve whatever
+that problem was so for example if you
+add a new dependency to your API and you
+forget to deploy that dependency as part
+of your deployment but you do add it to
+the health check system for the ready
+endpoint this will be caught right and
+we all know and you won't be able to
+actually finish that deployment the
+other thing that already readiness
+probes do in communities is you can't
+they will not route any traffic to you
+just like a normal load balancer
+scenario we talked about if this area
+ever returns false so super powerful
+from cuba Nettie's it plays into what is
+built in here the other concept that
+kubernetes has is a liveness probe so in
+here we could do so we could write
+liveness probe and we could do exactly
+the same thing that we just did we could
+do a hasty to beget and we could add
+anew them another path now generally
+what we want here is we don't want to do
+the same exact path we don't really want
+to say slash ready because the
+difference here is that when a liveness
+probe returns unhealthy crimini restarts
+it so we really want a different set of
+checks to be available on ready versus
+liveness versus ready and so you what we
+were the way that you would do that is
+in your arc in your startup CS you would
+add a second use health checks
+middleware in here
+and you would name all of your checks
+and then in your in your options we use
+health checks middleware then you would
+only run the ones that made sense so you
+can interview where you can add a new
+health check options in here and then
+you can configure how that works and you
+can name when adding health checks you
+can name them and you can add tags to
+them in a future version which will let
+you tag health checks and then only
+execute subsets of them for when you
+want to do the different tasks but we
+expect readiness to be like the main
+line the one that the vast majority of
+people need in all sorts of scenarios
+and liveness is interesting as well when
+you're in other places where somebody is
+monitoring you and wants to reset you
+and so the last thing that we should
+mention is you noticed over here in the
+CS proj I have this new asp net core
+hosting model up here and says in
+process now in process asp net core
+hosting means that when running in IRS
+you should see significant performance
+improvements because of us running
+within the IRS process instead of it as
+today we start up a second process and
+we send all the traffic over so those of
+you using ia yesterday with asp.net core
+should get some pretty significant perf
+improvements by by switching to this
+model and yeah that's all of our demos
+today ok thanks for watching these demos
+here's a few links to help you learn
+more and get started this first link
+here is how you can download all of the
+pieces you need to be able to run
+asp.net core 2.2 and dotnet 2.2 we have
+a link here to a demo to a sample app
+with all these demos came from so on
+github you can send pull request log
+issues talk about it ask about it it's
+there as a resource for everybody to
+learn and it is really supposed to be
+about learning not about like you know
+shipping it to production so it has lots
+of stuff but it shows off all of our
+features really well and then that will
+these last couple of links are our blogs
+almost nothing that I talked about today
+would be a surprise if you had been
+following along reading the
+announcements we show code we talk about
+roadmaps we can be posted we post there
+fairly regularly so if you want to
+follow along in the future then check
+those out and read some more and
+thank you for watching have a great
+Kinect

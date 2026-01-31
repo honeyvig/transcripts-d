@@ -1,0 +1,188 @@
+hey everyone i welcome you all to this
+session in this session we will learn
+everything we need to know about the
+asp.net lifecycle
+first let's have a look at the agenda
+for today's session
+we shall begin with learning the basics
+of asp.net
+then we shall go on to learn the asp.net
+lifecycle
+by learning about the life cycle we
+shall focus on two different types of
+asp.net lifecycle the application life
+cycle and the paid life cycle
+but before we begin
+make sure you're subscribed to our
+youtube channel and click on the bell
+icon so you never miss an update from
+simplylearn
+so without any further ado let's get
+started with what is asp.net
+asp.net is a server-side technology used
+for developing dynamic web applications
+it is the latest version of active
+server pages
+active server pages is a server-side
+scripting language and engine used for
+developing web applications
+it is essentially a web-based platform
+that helps to create dynamic web pages
+for programmers
+asp.net produces interactive data-driven
+web applications on the internet which
+helps to build websites and web
+applications in a better and colorful
+way
+now when we know what is asp.net it is
+time to move on to the lifecycle of
+asp.net
+asp.net lifecycle is very crucial when
+it comes to developing applications
+the life cycle includes two different
+stages that help in producing dynamic
+outputs
+these two stages together are known as
+the asp.net lifecycle the two stages in
+which the life cycle is divided are
+application life cycle and the page life
+cycle
+now we shall have a look at both of
+these types in detail
+first let's have a look at the
+application lifecycle
+application lifecycle is the part that
+starts when the user makes a request
+these requests involve several stages
+and these stages are
+application start
+object creation
+http application
+dispose and application end
+let's have a look at each of these steps
+in detail
+the first step we have is application
+start
+whenever a user requests an application
+for accessing a web server
+first the request is checked and then
+the request for accessing it is provided
+the second stage we have is the object
+creation
+object creation helps in holding all the
+information about the request cookies
+and browsing information
+it also holds http context http request
+and http response by the browser
+the third stage is the http application
+http application holds back all the
+subsequent information
+sent back to the user by the web driver
+for example if we have two different
+applications like one is a gaming
+application and the other one is a
+social media application
+then that means there will be two http
+applications that are to be created to
+process the application
+the fourth stage is dispose
+dispose helps in erasing the unmanaged
+resources when the objects are no longer
+needed moving forth the last and the
+final stage is the application end
+application end helps to unload the
+memory of an application
+here unloading memory means cleaning up
+the unwanted files in the application
+now when we know about the application
+lifecycle let's have a look at the page
+lifecycle
+page lifecycle includes initialization
+restoring and execution
+when an asp.net page is called it goes
+through some phases before the response
+is sent to the user
+let's have a look at the phases involved
+in the page lifecycle beginning with
+page request
+then comes page start
+page initialization
+page load
+validation
+event handling rendering and unload
+let's have a look at all these steps in
+detail
+the first phase of the page lifecycle is
+page request
+when the user requests a page the server
+checks the request
+compiles the page and responds to the
+user
+if the page is requested several times
+then the cache will check the request to
+see if the output exists or not
+and after that it will send a response
+back to the user
+the second phase is paid start paid
+start holds two objects
+request and response
+the request holds all the information
+which was sent when the page was
+requested
+and the response holds all the
+information sent back to the user
+the third phase is the page
+initialization phase
+during the page initialization phase all
+controls are initialized and each
+controller is provided with a specific
+id in the page initialization phase
+themes are also applied to the
+applications
+the fourth phase is page load
+in this phase the application is
+provided with some control properties
+and the information is also set using
+view state and control state the fifth
+phase of the page lifecycle is
+validation
+when a page is executed the result of
+those pages are provided in the form of
+two conditions
+true and false
+if the execution goes successful the
+result is true
+while if there is an error in execution
+it returns false
+the sixth phase in the life cycle is
+event handling
+this phase is the response to the
+validation phase
+in this phase pages are loaded again and
+display the same information
+in order to overcome this a post back
+event is called
+this event helps in checking the
+credentials of the user
+the seventh phase of the life cycle is
+rendering it occurs when all the
+response information has been sent back
+to the user
+the phase also stores all the
+information that is being sent
+the eighth and the final stage of the
+page lifecycle is unload
+unload
+helps to clean all the unwanted
+information of an application
+it also cleans the memory once the
+output is sent back to the user
+and this was all for today's session i
+hope you guys found it informative and
+helpful thanks for watching and stay
+tuned for more from simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel
+and click here to watch similar videos
+turn it up and get certified click here

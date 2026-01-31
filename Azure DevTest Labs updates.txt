@@ -1,0 +1,325 @@
+hi my name is Xiao Ying I'm the Senior
+Program Manager for Azure death has
+slabs the commercial as a service that
+helps developers and testers to quickly
+create environments while minimizing
+waste in controlling cost in this video
+I'm going to show you all the key
+features with ship since the connect
+conference last November before jump
+there in case you haven't heard about
+dev test labs please allow me spend a
+couple minutes explaining what it is
+that has labs aims at solving the real
+problem in dev testing arrow that has
+investments are usually significant when
+we talk to most traditional IT
+organizations we realize that up to 50%
+of their infrastructure spending is
+happening on non production environments
+furthermore neither IT nor developers
+are very happy about their provisioning
+experience 65% of developers say that is
+too complicated and time-consuming it
+takes weeks to get infrastructure for
+that test sometimes not even enough for
+testing and there's a lot of unused
+resources what is the case the demand
+for death has infrastructure is a linear
+it typically looks like this spiky grass
+when devs are working on Springs you see
+Peaks when there is off time like night
+weekends or holidays
+you see valleys and when there is a
+release the demand for test environments
+is high so you see a bit peak if you're
+provisioning infrastructure in a
+traditional way here's what you do
+results in 80% of wastage that's a lot
+of good money being put to bad use
+however when you use Azure you can map
+your infrastructure spending closely to
+your needs pay for the use only and
+enjoy cost savings with Azure being the
+only cloud that does per minute billing
+for VMs you only pay for what we used
+more importantly lightning-fast
+provisioning and automation
+improves productivity driving top-line
+business value for to quickly get
+started with theft has environment here
+we have solution called
+dev test labs it's in out-of-the-box
+solution that won't getting any other
+cloud
+it empowers our developers and gives the
+cost control and governance that your IT
+ones dentists Labs is a good for
+multiple scenarios including hosting
+your developer machines test
+environments and beyond them testing
+arrows it's also good for training
+education scenario and trowel hexam or
+demos in arrow as well now let's talk a
+little bit more about these narrows one
+by one first developer machines because
+that has elapsed make it super easy for
+IT teams to enable cost controlled
+self-service environments for developer
+teams developers have the flexibility to
+quickly compose their own development
+machines on demand by using the reusable
+templates and artifacts under the
+policies defined by the IT team the
+needs are satisfied from both sides the
+IT team gets the control and developers
+are happy about agility similarly you
+can test the latest version of your
+application by quickly provisioning
+Windows and Linux environments using
+reusable templates and artifacts that
+says labs provides a rich set of API is
+in permit VSDs tasks that help you to
+easily integrate with your deployment
+pipeline to provision only mul
+environments you can also scale up your
+load testing by provisioning multiple
+test agents in the lab once the testing
+is done you can also create your golden
+image from test machines and make the
+image available immediately for all the
+lab users through a single step as
+mentioned earlier in addition to dev
+test environment you can also create pre
+prevention environments for training and
+demos in the classroom scenario a set of
+identical VMs are created in a shared VM
+pool before the class starts students in
+the class simply click a button together
+VMs needed all the VMS can be
+automatically clean up after the class
+similarly in the trowel hack phone or
+demo scenario lab users pick a machine
+from the VM pool in dev test labs if
+needed
+once this event is over the lab can
+automatically clean up all the VMS for
+next event so at this point I've talked
+about what is step
+have in how they can help you in various
+narrows before talking about new
+features let me quickly walk you through
+the core capabilities in dentists laughs
+you're destined slab is created from as
+your marketplace once created you can
+use and manages through either Azure
+portal or api's here are logging Azure
+portal in open one of my favorite dev
+test lab as a lab user that is granted
+with dev test labs user role I can cream
+as VMs or environments with past
+resources from a set of reusable
+templates under the policies defined by
+malleable me once created a VM I can
+start stop or connect to the VM apply
+artifacts in film or software or attach
+my data disks that contains my latest
+source code or test data as an owner or
+admin of the lab Delta slabs gives me
+full control to deform the lab policies
+including allowed VM sizes maximum
+numbers of VMs each user or lab can keep
+at the same time auto shutdown and auto
+start identified were usable templates
+for my lab users to create VMS including
+arm templates added through my git
+repository my selection of azure
+marketplace images in the custom images
+I can also monitor the current spending
+in the lab check the projection defy my
+cost target income range and get
+notification when there is a risk of
+overspending when I see a red flag a
+list of cost by resources reviews more
+details on the usage in each resource ok
+now let's look at what's new since the
+connect conferencing last November the
+first big thing we've shipped recently
+is to support managed disks in creation
+of VMs cut images and data disks in
+desert labs before they support because
+of if's limits in a single start account
+for optimized performance ESS labs
+create VM OS disks in additional start
+account when they are already many VMs
+using the same start account in addition
+because creating VMs from a cousin image
+VHD in a different storage account can
+takes a long time usually around 40 or
+even 60 minutes in order to optimize
+the VM creation the same custom image
+VSD is replicated to all the new storage
+accounts with managed disk support this
+flow is significantly simplified as its
+name indicates all manage these
+resources are automatically managed by a
+j''r instead of the start account in
+your subscription you don't need to
+manage any storage accounts anymore and
+all the VMS can be created from the same
+cutting image VHD file another key
+experience will be enabled dentist Labs
+is claimable viens with this lab Allah
+means can prepare VMs and put them in a
+shared VM pool lab users can then take a
+vm from the pool to use without spending
+any time to create it from scratch this
+is very helpful for a couple of
+different scenarios in test narrows
+claimable VMs that are installed with
+the latest build for testing can be
+generated automatically from the release
+pipeline developers and testers can then
+start using the latest build immediately
+for further testing or validation
+trimmable VMs also make it easier for
+trainers and teachers to get all VMs
+ready before class because all the VMS
+for the same class are identical
+students can ask the lab to print any vm
+for them at the beginning of the class
+once claimed the VM will automatically
+start up for students to use during the
+class that test labs also supports
+creation of multiple identical games for
+the same VM image and artifacts all at
+once the only additional thing you need
+to do is to provide the number of the VM
+instances where you create a VM in order
+to make VM cleanup easier now can also
+set time when you create a VM to expire
+it automatically at the specified
+expiration time dentist labs
+automatically deliver VM by using it
+together with cream above VMs you can
+fully focus on creating the right VM
+without taking any actual effort to
+manage the VM retirement in the case
+that a lot of public facing VMs needed
+to be created in the lab temp test labs
+provides a solution to share the same
+public IP address with those VMs
+it can help you reduce costs and avoid
+exceeding the public IP oh just call de
+in you're a sure subscription what you
+need to do is simply choosing an IP
+configuration option to use a shared
+public IP address in the lab will do all
+the remaining work for you now let's get
+back to my lab and see how these
+features work in practice at the bottom
+of the overview page is a lab user I can
+see a list of claimable VMs for me to
+choose I can also view all the claim of
+VMs through the claim above virtual
+machines page if all the VM started
+saying such as in the case of classroom
+scenario
+the only thing I need to do to get a VM
+is to click the claim any button on the
+top of the page if I need a particular
+VM from the pool it's also very easy
+I think please select the VM I'm
+interested in and click the cling
+machine button the selected VM would
+then be moved to my virtual machine list
+and automatically turn on if it's
+stopped now let's create some claimable
+VMs it's also very straightforward what
+I need to do is to go through the same
+VM creation flow as creating a VM for
+myself I start with choosing a base from
+different types of templates supporting
+the lab including arm templates formulas
+custom images and azure marketplace
+images then I fill in my desired values
+for some properties such as the VM name
+username and password VM size and
+artifacts
+the only difference from creating my own
+DM is to specify some advanced settings
+here what I need to do is to switch the
+claim options toggle
+I can do more things in advanced
+settings let's say I want to create 5 km
+of VMs with the same configuration for a
+small group of people and those VMs
+cannot be used after the end of next
+week to achieve that I give the number
+of instances as five instead expiration
+date for all these lives it means that
+the midnight is next Saturday all these
+VMs will be automatically deleted
+regardless whether they've been claimed
+by
+buddy or still in the claimable pool
+here you can see that the default IP
+address configuration is shared which
+means that all these five VMs will be
+created with the same puppy IP address
+if the share public IP address has
+already been created in the lab these
+VMs will use that one
+otherwise the lab will create a new
+public IP address for them at this point
+I'm good to click the Create button and
+kick off the creation for these five
+years that share the same puppy IP
+address it will be expired at midnight
+of next Saturday once created these
+claimable VMs will be automatically shut
+down and wait for lab users to claim it
+now let's talk a little bit more about
+the shared public IP address well
+understand that not all the
+organizations allow the VMS accessible
+through the internet there are also
+cases where shared public IP address is
+not desired in your scenario at all
+so left has Labs provides flexible
+settings for level means to define which
+IP address configuration is allowed in
+the lab in the lab version network
+settings leather means can select the
+virtual network in the subnet to change
+the options they allow their lab users
+to use including whether the subnet can
+be using this lab for creating VMs
+whether shared public address is allowed
+and whether each lab VM is allowed to be
+created within exclusive public IP
+address
+once the VM uses a Sherpa VIP in the lab
+it will be automatically assigned to a
+unique port number which will be used
+together with the sheer public IP
+address when you connect to that VM you
+can see which IP address and port number
+to use from the essential section on the
+selected lab VMs page or for Windows VM
+just click the connect button on top of
+the page to get a RDP file that contains
+all the required info directory it's a
+quick recap in this video we've talked
+about the new features available in that
+ASAPS
+and how it can help you in multiple
+scenarios to enable a secured
+self-service experience with fast easy
+and agile dev tests or training
+environmental adjure hopefully fun and
+helpful if you want to learn more
+please visit our service introduction
+page at Alcott ms / DTL and subscribe
+our newsfeed to get a latest service
+update thank you

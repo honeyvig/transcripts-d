@@ -1,0 +1,77 @@
+- [Narrator] Assigning
+subscriptions to groups
+using Microsoft Entra ID.
+(upbeat music)
+Assigning subscriptions to
+entire Microsoft Entra groups
+can really simplify the
+management of your subscriptions.
+To add a Microsoft
+Entra group, select Add.
+Then in the dropdown, select
+Microsoft Entra group.
+In the flyout panel,
+search your organization's Entra tenant
+for the group you'd like to add.
+Select or hover over the View Members link
+to see all members in the group.
+Remember to add or change
+any members of the group.
+A Microsoft Entra admin
+needs to edit the group
+in the Microsoft Entra admin center.
+After selecting the group
+you'd like to assign subscriptions to,
+make your selections for
+the remaining options,
+then select Add,
+and you'll see the Microsoft Entra group
+listed in the Name column of
+your subscription assignments.
+The assignment options you selected
+will apply to all members of
+the Microsoft Entra group,
+simplifying administrative work for you
+and any other admin supporting
+these subscriptions.
+As users are added to the group
+through the Microsoft Entra admin center,
+they will automatically be assigned
+the Visual Studio subscription indicated.
+When users are removed from
+the Microsoft Entra group,
+their subscription assignments
+will be removed as well,
+all without any action needed
+in the Visual Studio
+subscriptions admin portal.
+If a user already has an
+individual subscription assigned
+and is later assigned the
+same subscription level
+through Microsoft Entra group assignment,
+that user will still only
+have one subscription
+and will be organized within
+the Microsoft Entra group
+rather than being listed individually
+in the main subscription assignments list.
+If an individual user has
+a subscription at one level
+and is later assigned another subscription
+at a different subscription level
+as part of a Microsoft
+Entra group assignment,
+that user will be shown
+in the list of assigned
+subscriptions as both an individual
+and as a member within
+a Microsoft Entra group
+and will have two subscriptions
+assigned, one at each level.
+For more about Visual Studio
+subscription assignments
+and Microsoft Entra groups,
+check out some of our recommended content
+in the links below.
+(upbeat music continues)

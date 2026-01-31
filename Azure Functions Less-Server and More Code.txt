@@ -1,0 +1,876 @@
+all right what do you guys what do you
+guys get ready to film we are going to
+do a visual studio tool box at the soda
+I'm one of the co-hosts of visual studio
+tool box to show that Robert Green
+started and myself and Batman Brown
+there now co-host the episodes and I
+have my guess you Jeremy yeah I just
+randomly wandered into the studio I'm
+actually a cloud developer advocate and
+have been doing a ton of things without
+your functions we're going to talk about
+serverless today both compute with
+functions and then we're going to do
+another episode that focuses on cosmos
+DB which is the less server version of
+the database
+I always say flip it backwards what's
+cloud developer advocate I advocate for
+developers in the Clausura less is less
+server it's not no server yeah and then
+a full-time job I'm actually the product
+manager for visual studio team services
+which is our DevOps cloud offering so I
+have a lot invested in Azure and I mean
+this guy did a so pretty recent about
+that as well so being able to Jeremy in
+the show a lot more stuff together I'm
+sure all right well we're ready to get
+started and talk about as your functions
+so Jeremy why don't you kick it off
+those what are we gonna talk about today
+in detail yeah so one of the best ways
+to get familiar with the technology I
+think is the dog food it right and I
+wanted to talk about a project that I
+made that's my own URL link shortener so
+you're familiar with these we have a kms
+here for example who isn't know exactly
+and what I wanted to do was take
+ownership over the data so I'm very
+interested in when do people click
+through links what links generate the
+most click throughs right is it Twitter
+is it LinkedIn is it Facebook is it one
+of these social media sites yeah and
+then I wanted to also look at different
+statistics like what time of day is the
+most popular time of day for people to
+click or day of the week so I thought
+what better way to leverage functions
+and server lists than to build a link
+shortening tool awesome so what don't we
+just roll it back just a little bit
+because I think sometimes people might
+be watching the video and they're like
+what would it what are you talking about
+what is this functionary
+so at like five words or less summary
+what is functions and
+we are talking about something on a so
+it's a cloud hosted thing but what does
+functions give to a developer well if
+you're going to restrict me to five
+words I would say events and code right
+it's functions but but the idea when we
+talk about server less I like to flip it
+backwards and say it's less server yes
+so it's the ultimate realization of
+focusing on your code and not having to
+worry about necessarily how your codes
+hosted it's not even
+platform-as-a-service
+because we're not necessarily talking
+about web applications right we're
+talking about some sort of event that
+triggers the code and then we're talking
+about the code that actually runs right
+and that code could occur in that the X
+or Y right it's all it's all dependent
+on what you do in the implementation
+it's not specific the code doesn't care
+what you do with it you can write to to
+a script file something you could
+generate some data it could execute a
+web service call it could return
+something to to an end user but really
+it's agnostic it doesn't care what codes
+inside of it I think that's something
+that you and I took awhile to overcome
+as a train of thought right this is like
+you said a function in the cloud right I
+mean it feels to me like the ultimate
+realization of the dream that's
+microservices if you will I hate to use
+an overloaded term it's a valid term in
+this case I mean so some of the things
+that are really neat about functions are
+number one you can write them in
+different languages I'm gonna
+demonstrate it in dotnet through Visual
+Studio but you can do them in Python PHP
+node.js you can even write bash shell
+scripts that launch function so that's
+one neat thing the other cool part about
+the way Azure implements functions is we
+have a concept of triggers and bindings
+and these are ways we set up the
+environment to allow us to interact with
+things like storage and queues and and
+it can be file storage it could be blob
+storage and it makes it really easy for
+the developer to work with those
+resources and I'm going to show that in
+the application that I built
+that's awesome well let's jump into it
+it sounds like a great demo alright so
+what I'm going to do is is jump into the
+portal right now so I've already
+deployed this application I'm going to
+take a step back and show how this is
+built but I want to set the stage with
+the link shortener that I have
+I wrote a web front-end but just to
+focus on the function side it's a small
+window but you can test functions
+directly from with inside the the UI
+which is pretty cool
+yeah so what I've loaded up here is a
+link that if I just paste this link in a
+new tab you can see goes to some of the
+azure functions documentation so if I
+run this through the tester I'm just
+going to click run here it will go out
+and call that function and I see a
+little completed success and I get some
+text back that has what is the short URL
+that I can use for tracking so I'm just
+going to copy that and paste that so you
+can see the way the experience works so
+jli K which is my first name and part of
+my last name dot M e right and then BW
+is the short URL when we hit this it
+goes through my function and redirects
+now for the end user it's a very simple
+experience you just end up where you're
+going for me a ton of data is generated
+from that that really simple event right
+if we have collects quite a bit right it
+does and looking at that I actually
+wrote the part that shortens the URLs I
+wrote that as a script that's this run
+script so you can see my shortener
+there's an encoding routine but the the
+main part of this grabs a request and
+you know obviously if I have no requests
+I'm going to return and say basically
+not found there's nothing there we get
+the input we check the input for null we
+go through and basically I'm tagging if
+it's coming from like Twitter or
+LinkedIn or some other things and then
+at the end of the day I'm really just
+creating a record here that map's the
+short URL to the long URL and I'm saving
+it to table storage and that's it so
+when I'm putting the link in it's here's
+the long link and then give me something
+short back that I can use yeah now the
+real power of this comes from this
+function host that I have here and by
+the way all of this code is available on
+github so I open-source this so people
+can work with this project
+yeah well link it in the show notes
+definitely right so the the redirect
+comes in and this is when you're hitting
+the short end point so you're hitting
+the the BW e for example so what happens
+here is it'll grab that short URL and
+then I have a keepalive that sort of
+pings the server make sure it's running
+I also get requests from robot
+so I tell them not to follow right
+because this is my link shortener yeah
+and then we come out and we go in to
+table storage now this little piece of
+code here where you can see the start
+time and I'm starting a timer this is
+something that I love about functions
+because when you create the function app
+you can check a box and say you want to
+use application insights and this will
+automatically start building telemetry
+and analyzing response times and
+basically giving me the feedback I need
+to know the health of my application
+right what I wanted to do is because I'm
+using table storage is I wanted to
+measure how long it takes to read from
+table storage so with this telemetry I
+have this operation that goes out to the
+table and finds the long URL if it gets
+it back it says it found it gets that
+redirect URL and it's tracking how long
+that operation took and this is that's
+the most sensitive operation you don't
+people to wait when they're being
+redirected that's I mean it happens all
+the time now these public link
+shorteners you get to some URL and write
+events whining whining whining exactly
+so I wanted to test that and I wanted to
+just highlight how easy this was to put
+this custom data and I literally am
+tracking tables storage that's the thing
+I'm tracking retrieve is the action I'm
+taking and then I'm just passing it how
+much time elapsed the first two like
+strings it or they have any bigger
+significance or they're just the way you
+decided to store just the way I decide
+to categorize the data with application
+insights and then it's as simple as two
+two steps one is I want to do some more
+operations with this data but I don't
+want to slow down the redirect so I'm
+going to add some information to a queue
+that I can pick up in process later
+right now the event is an HTTP trigger
+it came in and requested an endpoint I
+throw this on the queue and then I
+redirect them that's it that's the
+redirect code then I have will ignore
+keep alive for now I have this process
+queue so again we said that serverless
+functions were events in code right in
+this case the event is there's an item
+in the queue and my code pulls that off
+and does some additional processing so
+I'm breaking apart the message in this
+code and I'm writing
+some custom information one of these is
+what I call a custom event which is
+literally this came in from Twitter or
+this came in from LinkedIn the source
+yeah right and then the other thing so
+you can see I do the the track event
+here the other thing I'm doing and
+that's actually adding a document I'll
+get to that into a minute there is a
+page view so with this piece of code I'm
+highlighting a page view so now I know
+which page it actually went out to so
+I'm saying what was the medium what was
+the page right and I'm adding that all
+through application insights and I want
+to show what that looks like and then
+this is a piece that we can probably
+dive into at another time because this
+is creating a document for Cosmos DB and
+I added this on later I started just
+tracking through application insights
+but then I decided to create a Cosmos DB
+database because then I can stand up a
+power bi dashboard and do some exciting
+things around that well and so what what
+is it Cosmos DB database or those they
+don't know yeah it's the actually the
+function is serverless compute the
+cosmos DB is a server list database it's
+a not only sequel right no sequel
+document based database that's hosted in
+the cloud what's really neat about
+cosmos DB is that you can pick your
+interface we have a document DB
+interface that was developed for the
+previous incarnation document dd what
+well it was cold document DB when it
+first came out on Azure right was you
+know very comparable to that's how
+people wasn't talked about it at
+Microsoft Center no sequel space and
+then more recently be renamed at the
+cosmos so there's any confusion out
+there that's sorry
+Microsoft love to rebrand but right the
+product has been very solid very you
+know long development cycle already for
+it and then quite you know the the cloud
+scale player I think is what they often
+call it right this lady right lives in a
+ton of data centers as a concept and use
+the developer of powerful flexibility to
+deploy your data across the world well
+you do you you get to choose your
+consistency levels and you get to just
+click with replication which is pretty
+powerful and the other thing I'll point
+out is this is using the document DB
+interface and the reason why I call that
+out is because you can use sequel syntax
+to query with document DB however there
+are a ton of developers are used to
+MongoDB as you mentioned yeah
+and you can use a MongoDB interface and
+write an application around so
+it's very flexible in that respect yeah
+it's very cool that you have these
+options and you know I'm a sequel
+developer most of my life and I've been
+toying with no sequel I kind of like it
+and it's awesome to see this not not
+really stopped me because I actually
+start with is my first database
+that I learned you know just the basics
+around that that claim me I'm a
+developer yet on that space right having
+sequel I didn't realize we've even added
+that so that's awesome I'm working
+something new in each episode here and
+that's what I'm finding out with cosmos
+DB it's so easy I'm a sequel developer
+myself I worked with it for 15 years
+yeah so I had that mindset transition to
+a document DB but after standing up
+actual applications using this for my
+analytics I'm finding out that it's not
+only easy to work with but it is
+scalable and fast which is is everything
+someone wants and I don't have to hire a
+DBA yeah it's literally inexpensive I
+run this shortener on my own
+subscription through Azure and one of
+the huge benefits I see four major
+functions is I only pay when someone
+clicks through the the function yeah
+right and with the model I get a million
+calls per month right now I'm sure it
+may change at some point but with that
+it's literally pennies for me a month I
+think last month there was a quarter for
+the storage and the function calls so
+cheap to handle and it's 2,000 requests
+a day yeah it's pretty cool that the
+thing about you know all of this
+technology on top of azure is that you
+you are living in the cloud that your
+credit card is plugged in they're yours
+or your companies or whatever in the
+trial we do give you a limit so if you
+want to now go over the free trial limit
+we provided an azure but I'm always kind
+of encouraging developers thinking about
+moving to the cloud as the first things
+they think about telemetry so it's
+awesome to see application in size
+built-in you actually want to know
+what's going on with your cloud service
+it's not just you know consuming your
+resources of your service it's going to
+cost you money potentially depending on
+how much you know requests come in and
+people just need to think that way it's
+a right slightly different world you
+know the other day money matters so it
+does and speaking of application
+insights what I thought I would do is
+show some of application insights just
+so people can see and this is just the
+check mark out-of-the-box when I created
+the function app and some of that custom
+code and I want to show the reports that
+it gives back and then we can look at
+what it
+looks like to create a function from
+scratch three visuals thank you let's
+take a look so let's pop over back to
+the the website so this is the the
+function app I had running and I've got
+all these features that are configured
+one of the things I wanted to call
+attention to is this is using a feature
+functions called proxies and that allows
+me to map one route to another route
+so the function app itself is something
+like blah blah blah as your web sites
+dotnet slash API slash URL redirect
+question mark short URL equals totally
+friendly which is is not a short URL so
+in in my proxies and you can see this in
+in the code this is part of that code
+base I've mapped what is a short URL
+right here so just slash and what the
+code is to that longer URL and that
+allows it to translate behind the scenes
+no one sees that happen and and Maps it
+on to that longer function so I have my
+custom domain and then I have the azure
+functions running behind it cool if we
+come into the application insights
+portion the very first thing that
+application insights pulls up for me
+which I love is the overall health of
+the system so we've got this live stream
+which I'll show you in a second but this
+is really informative to me here because
+this has given me an overview of
+response times over time and you can see
+that I'm averaging a few hundred
+milliseconds but this is across all of
+my services so it's not necessarily just
+the redirects right you can also see a
+count of requests and then up here we've
+got something called smart detection
+this has actually alerted me several
+times when it finds something that's
+outside of the norm it will
+automatically email me and tell me you
+know what your redirect usually only
+takes a hundred milliseconds suddenly
+it's taking two seconds you should look
+into it it automatically does that and
+when I click on it if there was a smart
+detection it also helps me diagnose and
+shows me the sessions that were slow
+sessions so I can look into them and try
+to figure out what's going on I'm gonna
+scroll down here to performance and when
+we see performance this will let me pick
+so overall you can see 122 milliseconds
+what's really important to me is the
+redirect experience right that's what
+the end users are experiencing
+so we've got a 94 millisecond average
+and if I want to drill into more detail
+I can come up here and over in this
+graph I've got my percentiles so I can
+see what the 99th percentile looks like
+and you can see the majority Falls even
+faster than that yeah so and this is the
+least expensive version of functions you
+can back it with beefier servers but
+even with minimal resources it's still
+giving me this type of performance the
+other piece is because I tracked that
+custom application insights telemetry if
+I click on dependencies you're gonna see
+my as your table storage operation right
+and you can see the average there is 17
+milliseconds which is more than fast
+enough for my needs and what I'm doing
+here yeah it's cool the fact that you
+can drill down all the way from like
+what the requests are doing overall to
+the custom tracking that you did but in
+a particular block of code I think
+that's super powerful the fact that it
+alerts you is even more awesome I've
+used application insights kind of since
+the beginning I'm okay in some products
+so I do have dashboards but I haven't
+implemented recently and it's cool to
+see it even though they added that new
+automatic notification yeah it's pretty
+cool the other thing that I call this
+the the sad portion of the application
+because it is sad to think that you
+might be sitting in a hotel room
+watching the livestream of your website
+saying it so when clicking it is someone
+clicking it but it's a think it has its
+own level of use Melissa when you when
+you sort of create something this is
+your your baby one of your babies now
+you know better or worse it's it's fun
+to watch so this is a live set of
+requests and as the requests come in
+it's it's going to show me those and I
+may actually force the issue over here
+but let's go ahead and do a redirect and
+I'm just going to the generic as ER
+Doc's so that's the shortcode to land on
+the azure documentation you can see it
+here I'll show me the request that
+showed me how long it took and then I
+have all my trace information on the
+side so if I want to drill into details
+I'm not going to click on this now
+because it'll go into IP addresses a Mac
+and like everything you want to know
+about right session but you can drill
+into the detail the other piece with app
+insights and again this is just out of
+the box without me adding anything is
+this nice little tab right here for
+lytx if I click on this it's going to
+drop me into basically everything that
+it stores is Coria Bowl for insights so
+I can set up pie graphs and charts I'm
+gonna just open up my folder here and
+look at mediums over the past 24 hours
+and run that and this will give me a pie
+chart that breaks down Twitter clicks
+LinkedIn clicks blog clicks etc so you
+can see Twitter is definitely my main
+medium of choice for for generating
+links yeah yeah I remember somebody
+showing showed me this at ignite
+actually this this is like a sequel
+light language right yeah yeah they call
+the language itself but it's to me when
+I saw the first times ago this is the
+sequel close enough I guess it allows
+you to query all the various parameters
+and this is again this is the back end
+of application insights data has been
+collected it's not any other kind of
+data but but it can I think be mixed
+with other kind of data sources to give
+you a more holistic view of your
+environment if you have complex
+deployments these doesn't help the
+person described this I mean the dumb
+right ya know it cannon it's all prompt
+able if I'm inside and I start to type
+it's giving me a tell us and
+intellisense so it'll walk you through
+creating these these queries and that's
+exactly how I built the one you just saw
+and I'm gonna open top page views and
+we'll just do this talk these rolled
+ones you built yourself right yes they
+didn't have those and it saved it for me
+and then I just drop in the table and I
+could see channel 9 it's actually one of
+the more popular links in the bag 24
+hours right so that's always nice to
+pull up on the fly
+we've got a juror this is actually
+interesting these are all Microsoft
+properties I actually do tweet other
+links but these are the popular ones for
+24 hours yeah that's cool so that's the
+application insights experience let's
+pop over to visual studio and just show
+someone what it looks like to start a
+new function out yeah that's really
+great I think I think it's awesome when
+we show how we did something and we
+provide the code but often forget this
+part right exactly how do you get
+started
+yeah so the the prerequisite here is I'm
+working with at least 15.3 right so it's
+a preview version of Visual Studio 2017
+right think we're up to 15.5 any of
+those versions will
+work for functions yeah if anybody has
+been kind of away from the visual studio
+versioning game for a while that's the
+versioning scheme we've gone to and if
+you like go into about dialogue for a
+second under the help menu sure yeah
+you'll be able to show so if anybody has
+any doubt which version they're on you
+can jump in there and there's 15.4
+preview of that particular you know
+preview branch and you can install side
+by side so I have always the RTM version
+and the preview right machine it tends
+to work really well I've never had any
+issues asterisk a string like now you
+said it I know I care but your machine
+in your environment users out there yeah
+that's how people know in case they
+don't know which version yeah so once
+you have that install and you have to
+pick the cloud work load will go into a
+new project and as your functions lights
+up and the way I like to talk about this
+we talked about a Vincent code the
+function is the actual piece of code
+that gets executed the function app is
+the host for those different events and
+pieces of code right so you have a host
+that's what this as your functions is
+it's a minimal amount of you know stuff
+around it to make it work as a function
+and the rest is up to you right so what
+this will do is it'll create an empty
+project for me that's just ready to host
+an endpoint so then I can click on that
+and add a new item and fortunately these
+are sorted alphabetically so as your
+function comes up right off dial this
+yeah that that's convenient and I'm just
+going to give this a name of echo name
+and click add and what will happen is
+it's going to create a class for me the
+entire experience for functions within
+Visual Studio is is attribute driven so
+it's very easy to add what we call
+bindings or connections to things like
+table storage and queues what I'm gonna
+do is create an HTTP trigger this says
+basically you know what call this piece
+of code in response to an HTTP request
+which is a pretty common scenario and
+I'm making it anonymous so anyone can
+test it out and access it but you can we
+support permissioning but for our
+example here right no big deal and I
+think they also good just to connect
+line so we've gone the dependency is
+like what NuGet packages is this team
+bringing into to make this the default
+so you just got the function SDK and
+that's about it
+it's very bare-bones at this point
+there's no application inside there's no
+you know there's no gunk if you don't
+need that stuff it's not right by
+default free right and then if you want
+to start tracking custom telemetry you
+would just you know add a new get
+package going to the Explorer and add
+that that experience yeah I think if
+your right click on dependencies it
+would give you that yep as reference so
+what we've got is our async task and
+what's coming out of this is a response
+message because we have to respond to
+the request what's going into it is a
+trigger there's two types of parameters
+we're typically gonna pass a trigger is
+what actually causes it to get called
+and then a binding is something we might
+interact with and I'm going to show how
+to do a binding in a second
+cool so we've got this anonymous it
+supports getting posts the routes no
+here's to the request and here's the log
+and by default it creates some code that
+expects you to put the name in the
+request body or in a quarry string and
+it's gonna echo it back right but what I
+want to show is before we even touch a
+j''r I've downloaded the prerequisites
+I've created a function app I can put a
+breakpoint right here and press debug
+and what will happen is it's gonna run a
+full version of the function host right
+on my laptop and we just announced that
+we have this experience available
+cross-platform
+cool so it's not just Windows machines
+this will run on on Linux as well and
+and Mac OS nice so it's a been waiting
+for that when I give I kept hearing it
+was coming in it's awesome that we we
+finally announced that I I missed that
+part not not that I'm a Linux person or
+anything I still run a PC so I'm quite
+biased alright I spent a lot of time I
+actually was having fun running the
+function host in my Ubu - on Windows 10
+yeah through the windows subsystem for
+the neighbors I should try then
+accessing it so all I'm doing is pasting
+the URL it gave me and you can see we
+hit the breakpoint and if I continue for
+that it's going to slap my wrist and
+tell me that I needed to pass a name so
+we'll go ahead and give that a name name
+equals vs toolbox hey Brandon go and we
+hit our breakpoint again
+and we'll go ahead and continue through
+that and what we'll see is it'll echo
+back and say hello this toolbox so
+that's a great start we've got it
+running locally we were able to debug it
+let's take it one step further and load
+it into Azure what I'm gonna do is just
+right click and go into publish and the
+publish experiment experience will allow
+me to create a function app in the
+portal and connect to an existing one or
+I can spin up a completely new
+application right from right here so
+we're gonna use live there earlier put
+the publish experiment that hey
+sometimes the world can be a public
+experiment yeah we're gonna try for the
+publish experience today let's see if we
+get that so we're gonna call this my vs
+toolbox app use my subscription and I'm
+gonna give it a second to spin because
+what's validating is making sure that is
+indeed a unique application name yeah
+I'll give it an agree eating the cloud
+you know resource that's assigning it to
+to the research group of your choice or
+new ones so there's a lot a lot to do
+there but you never have to leave the ID
+in this case right I'm gonna pick a
+location will do West us since we're
+filming here and let's the biggest
+machine can we do here oh my goodness
+you would want to do this right so one
+thing I do want to call out I can pick
+these various course to back my
+experience I can also pick the
+consumption plan the consumption plan is
+what I call the easy button for
+functions I don't have much control over
+size of the servers but I'm allowing
+Azure to do all the scaling for me it
+will automatically look at incoming
+requests and do what it feels it needs
+to do to accommodate those listen
+there's always trade-offs right if you
+have dedicated machines you can
+configure them to be always on so
+they're ready to start where with the
+consumption plan it may go to sleep and
+you have a new request and it takes a
+little bit longer to start up but again
+you have flexibility of options and I
+think consumption there's a reason to go
+at a price wise right there's some
+different right that's a good deal if
+that's good enough for your production
+environment right and that's what I'm
+using for my redirect experience as well
+I just have a cheat a little bit with a
+keepalive that pings the server to keep
+it awake yeah
+well that's valid they know you're
+consuming it nobody feels cheated in a
+dream I'm sure right yeah know it
+they're keeping an eye on you but for
+good reason that's right yeah so this is
+going to deploy there's really I like to
+share when people are watching this spin
+there's two steps to this the first step
+is creating the assets to host the
+application so it's going to create a
+resource group which if someone's not
+familiar with Azure that is a a logical
+group of related assets I think of it as
+life cycle if something's going to be
+created or destroyed with something else
+so you have an app and a database if
+they're related they probably belong in
+the same resource group and you can
+track cost by resource group and you can
+script out and even delete entire
+resource groups yeah it's a very
+powerful idea at first that was you know
+when resource groups were introduced I
+was a bit frustrated like another thing
+to do there's a girl wait oh there's a
+lot of benefits to this other thing to
+do so now I don't even think about it
+twice I really started to memorize
+resource groups I'm getting that bad on
+my glasses my out of my miscellaneous
+one if I need to just throw something
+out versus okay this is a bunch of real
+stuff together then I group right and
+it's great to if you're giving demos or
+meeting meetups or user groups because
+you can create a resource group for that
+experience and go through the same demo
+but partition it off so once it spins up
+those assets it's got the hosts it's got
+the function app the function app has
+storage with it next thing it does is
+builds and creates a set of assets that
+it then bundles up and deploys out so
+the first step is what is my target and
+then the second step is publishing and
+now it says publish succeeded so what
+we'll do is we'll just copy this in
+point right here I click copy to
+clipboard and we'll paste it in and
+notice now instead of running off
+localhost I'm doing the full my vs
+toolbox after we selected that was the
+unique name yeah and we called it echo
+name I believe so if we hit that it's
+going to spin up and it should slap me
+on the wrist again and tell me that it's
+expecting me to put a name inside the
+corey string and what we're seeing right
+now is that spin up you know for the
+first time and we'll let that go and and
+I always encourage people to use the
+mouse trick right if it's a clockwise
+mouse rotation should speed things up
+for that that is definitely the matter
+right there I mean you know Jeremy's
+magic tricks and look at that so please
+pass the neighbor Cory string now that
+it's spun up if I correct this and we'll
+do this again name equals vyas toolbox
+boom immediately it comes back hello vs
+toolbox and that that's the experience
+so basically I showed you how to create
+the function app from scratch from
+visual studio but then if you want to
+see what a mature application looks like
+something I'm using in the real world
+then that's going to be on the the
+github site for the link shortener that
+I created yeah and the fact that you can
+write this thing many languages the fact
+that it's so globally hosts the bowl I
+mean it's it's amazing what you can do
+nowadays it is yeah the only thing I
+don't have in production for more recent
+stuff is probably functions but we
+should some find some excuse do to put a
+function up there but it's cool yeah
+yeah no it's a great experience and and
+it's something that I'll be looking at
+too is is how do we take existing web
+applications and migrate them where it
+makes sense just because you can't move
+them doesn't mean you have to but where
+it makes sense because ultimately what
+happens is instead of one app with five
+endpoints that if you make one update
+you have to redeploy the entire line
+with the function you can literally just
+test and redeploy that one endpoint in
+isolation and you know you are very
+familiar with DevOps and and that
+experience and being able to
+continuously deploy at a micro service
+level is a huge benefit in my book yeah
+it's super awesome in the fact you can
+monitor it you can really get a sense of
+T to roll something back how is it doing
+or if there's any underlying performance
+issues in the infrastructure like the
+table storage slow down whatever I mean
+I have lots of flexibility nowadays to
+understand what is going on with my
+production environment and my staging
+environment if you put everything up on
+Azure you have all that same telemetry
+for all your environments which is
+really awesome right I've always loved
+love that part of a my def the Devon's
+experience is awesome right to get you
+going but get it up in the cloud you get
+all Morris or a benefit absolutely I'm
+digging am a one-man shop right with
+your shorting tool but I get all the
+telemetry and information I need to make
+sure it's running and up and healthy
+awesome well is that all you wanted to
+demo for this particular there was epic
+all right well thank you for being on
+visual studio toolbox and we hope you
+folks enjoyed the episode we'll make
+sure we'll put the links to the github
+repo and to any other resources we
+mentioned in the show notes and we hope
+you come back again and watch another
+episode of visual studio toolbox so
+thank you Jeremy for being on and see
+you folks later thank you see ya
+[Music]

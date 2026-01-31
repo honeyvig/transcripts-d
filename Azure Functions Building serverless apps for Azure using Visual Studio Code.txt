@@ -1,0 +1,146 @@
+hi everyone welcome to the session at
+connect on Azure functions
+my name is Ansari and today I'll be
+speaking to you about what Azure
+functions is how you can build your very
+first serverless function and all the
+capabilities we provide to help you
+develop publish and monitor using visual
+studio code so let's get right to it I
+do want to talk about what Azure
+functions is at its core as your
+functions is server less compute that is
+the ability to run custom code on demand
+and at scale in the cloud
+whether it's written in c-sharp node
+Java or even Python you give your code
+to Azure and will manage and run it for
+you all dynamically based on events and
+to help you accomplish this we provide
+various options for integrated
+development using tools such as Visual
+Studio we as code maven Eclipse or even
+just a cross-platform CLI today we'll be
+looking at one such example for
+functions using vs code so let's get go
+ahead and get started
+let's take a look at how anyone can get
+a function up and running in just a few
+minutes for this I'll use huius code and
+the azure functions extension so here I
+am in huius code on my Mac and I've
+already got the azure functions
+extension installed since I'm logged
+into Azure I can see a list of
+subscriptions that I have access to the
+functions extension enables us to create
+new function projects add new functions
+to that project and even publish to
+Azure directly from within we S code
+just at the click of a button
+so let's go ahead and create our very
+first function once a picker directory
+will be presented with a menu of
+languages to use to initiate the project
+for the purpose of this demo let's go
+ahead and pick JavaScript
+and so what this did for us is
+initialize the functions project with a
+couple of files namely the local and the
+hosting configuration now we can go back
+to the azure functions extension and add
+a new function to this project
+again we'll be presented with a menu of
+templates that we'd like to use to
+create the function interestingly these
+templates directly correspond to the
+triggers available to us to execute the
+function let's go ahead and pick HTTP
+trigger provided with a friendly name
+and secure the HTTP endpoint with a
+function or an API key so what did this
+do for us going back to our directory it
+created a new sub directory with the
+name we gave for the function with a
+node script and a function JSON
+configuration file looking at the node
+function it consumes an HTTP request
+input and parses the contents of that
+input to find the name property in the
+body of the query string it then uses
+the name property to construct an HTTP
+response which is returned back from the
+function you can see the function JSON
+configuration describes the HTTP request
+input and the shippi response output
+binding right here within function JSON
+now that we have our function we can go
+two ways either we can go ahead and
+publish to Azure and trust our fate for
+it to work out of the box as it is or we
+can use the open source functions
+runtime to debug and test locally and
+the great thing is that we as code
+enables you to do all of this simply on
+the click of an f5 in fact if you've got
+the node extension installed you can
+even go ahead and set breakpoints in
+your code to debug and look at the call
+stack now let's take a look at a
+slightly different function here I've
+got a node function that triggers off a
+message or an event received on an IOT
+hub it then grabs the contents of this
+message and
+out puts it to the console now that I
+have my function I can go ahead and f5
+into it to test locally and I can also
+go ahead and deploy this function to
+Azure so let's take a look at how to
+publish the app I can go ahead and pick
+a subscription and create a new app with
+a unique name let's call it connect demo
+and then we can pick a resource group
+for this function app as well as a
+storage account to contain the contents
+of the app and the files
+and now that we have our function app
+provisioned we have one more step to
+configure any settings or secrets for
+the function app picking the
+subscription again and here's our app
+now these settings while running locally
+are saved as either environment
+variables or properties in the local
+settings file for a function to connect
+to IOT hub we'd configure the IOT hub
+connection string that we can now go
+ahead and provision as an app setting on
+the function app and once we have that
+we're pretty much ready to go ahead and
+test our application running in Azure
+for this will connect to the streaming
+logs for our function app again picking
+the function app and we can go ahead and
+start seeing the application inside
+slogging and to simulate these events on
+the IOT hub I've got an app that will
+register multiple devices and start
+sending notifications to the IOT hub and
+we should notice shortly that our
+functions started to pick these up and
+output those events or messages back to
+the console and that's it we developed
+an end-to-end service application tested
+a locally published it to Azure and even
+looked at the monitoring logs right here
+from within a local instance of vs code
+with Azure functions we strive to keep
+improving developer experiences and
+provide support for the languages and
+tools that you're most familiar with so
+you and your team can be more productive
+to find more information and get started
+please find the link on the screen we
+look forward to helping you with your
+service mission thank you

@@ -1,0 +1,286 @@
+hey everyone i welcome you all to this
+session in this session we will learn
+about asp.net core tutorial if you are
+interested in building web application
+and wondering which framework to use
+then don't worry you're in the right
+place
+this video will help you explain about
+asp.net core and guide you through it
+let us look what's in it for you in this
+session
+we shall begin with understanding what
+is asp.net core
+and then see why to use asp.net core
+followed by which we will look at some
+of the features of asp.net core then we
+will understand different layers of
+architecture present in asp.net core
+proceeding further we will see some of
+the key benefits of asp.net core
+over.net framework
+then we will look at the industry trends
+of asp.net core
+finally we have a demo wherein we will
+create and run an asp.net code but
+before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell like so you never
+miss an update from simply learn
+watch the video till the end so that you
+don't miss on the demo
+so without wasting any further time
+let's get started
+what is asp.net core
+asp.net core is an open source
+cross-platform high performance
+framework for developing modern
+cloud-enabled internet-connected apps
+asp.net core is the open source version
+of asp.net that runs on mac os linux and
+windows
+asp.net core was first released in 2016
+and is a redesign of earlier windows
+only versions of asp.net
+why use asp.net core
+asp.net is used by millions of
+developers to construct web applications
+asp.net core is a redesigned version of
+asp.net that includes architectural
+improvements to create a more modular
+framework
+with asp.net core we can
+build web apps and services iot apps and
+mobile
+we can use development tools on windows
+mac os and linux
+using asp.net core we can deploy to the
+cloud or on-premises
+we can run on.net core
+now let us look at the features of
+asp.net code
+esp.net core provides a single framework
+for developing web ui and web apis
+asp.net core is designed for testing
+it provides laser pages that make it
+easier and more productive to code page
+focus situations
+blazer allows use of c sharp alongside
+javascript in the browser
+share server side and client-side
+application logic built-in.net
+asp.net core has the capability to
+design and run applications on windows
+mac os and linux
+it is community driven and open source
+it provides modern client-side
+frameworks and development methods that
+are integrated
+asp.net is a configuration system that
+is cloud ready and environment based
+it gives high performance lightweight
+modular http request pipeline and
+provides built-in dependency injection
+asp.net core has the capability to host
+on the following platforms that is
+kestrel
+http
+nginx and apache docker
+now let us look at the architecture of
+asp.net
+the concept of asp.net fundamental
+architecture is similar to n-layer
+architecture
+that defines the layer as the core
+component of the platform releasing the
+developer the burden of redefining it in
+order to make solution more flexible and
+reusable
+the main business logic and ui logic in
+asp.net core are encapsulated in the web
+app layer while the database access
+layer cache services and web api
+services are encapsulated in the
+infrastructure layer
+common utilities objects interfaces and
+reusable business services are
+encapsulated as micro services in the
+application core project the data
+sources could be sql database
+and the third-party services include
+github api send grid api and others
+dotted arrow shows the compile time
+dependency and the regular arrow
+indicates the runtime dependency
+application core project
+the business model which contains
+entities services and interfaces is
+stored in the application code
+these interfaces contains abstractions
+for operations done by infrastructure
+such as database access file system
+access and network calls and so on
+application code types include entities
+interfaces services and dtos
+infrastructure project
+the infrastructure project includes data
+access implementations such as entity
+framework ef core migration objects and
+data access implementation classes
+the infrastructure project contains
+implementation of services that must
+interact with the infrastructure
+concerns
+these services implement interfaces
+defined in the application code and so
+infrastructure should have a reference
+to the application core project
+infrastructure types include af core
+types data access implementation types
+and infrastructure specific services
+benefits of asp.net core over asp.net
+framework
+benefits of.net core over.net framework
+include
+it provides cross-platform it runs on
+windows mac os and linux
+asp.net core has improved performance
+it provides side by side versioning
+it provides new apis
+and it is open source
+now let us look at the industry trends
+of asp.net core
+this picture depicts the industry trends
+of asp.net and dotnet framework
+asp.net core is the most used framework
+and it is growing in popularity as the
+majority of developers use it on regular
+basis
+it is expected that asp.net will
+overtake dot net framework in popularity
+in coming years
+if getting your learning started is half
+the battle what if you could do that for
+free visit skill up by simply learn
+click on the link in the description to
+know more
+so now let us look at the demo
+so we'll first look at the prerequisites
+first we need to install the required
+software and set up the system for
+asp.net code development first we need a
+editor maybe visual studio sublime
+autumn or any other but i would
+recommend to go with visual studio 2019
+next we need dot net core sdk software
+development kit
+so let's go to the browser and install
+this
+so go to the visual studio.microsoft.com
+and go to downloads from here you can
+download visual studio 2019
+the community edition this is free free
+community edition
+then to download.net sdk
+go to
+dotnetmicrosoft.com from here you can
+download.net core
+from here you can download.net core 3.1
+so click on this and get this download
+once you have downloaded these files
+open visual studio code
+open visual studio 29
+so open visual studio 2019 when you open
+it for the first time in the workloads
+under the tool set section select.net
+core cross platform
+on the left hand side it shows the
+recent project that you have worked on
+and at the right hand side we can create
+a new project we can open a folder open
+a project or a solution and clone the
+repository
+so we'll click on create new project
+so these are the different project
+templates
+present in visual studio 2019
+we have asp.net core web app this is
+used for creating core application
+for example laser pages content and we
+have blazer web assembly and then we
+have asp.net core empty in this tablet
+we can create.net core application from
+the scratch
+and we have asp.net core web app model v
+controller we will discuss this in the
+upcoming videos similarly we have laser
+server app asp.net core web api and many
+more
+then scroll down and explore we have
+many more we have asp.net core with
+angular with react.js
+so for now we will use asp.net core
+empty
+so select this asp.net core empty and
+click on next
+and name the project so we'll name the
+project as
+demo application
+if you want to provide a different
+solution name you can check this box and
+provide a different solution name
+so click on next
+select the target framework
+dot net core 3.1 or 5.0 i'll select it
+as 5.0
+and click on next
+click on create
+so here we go the demo app project is
+created
+these are the default folders that are
+generated
+we have dependencies folder
+in which we have analyzers and
+frameworks then we have properties
+folder
+in which we have launchsetting.json file
+then we have appsettings.json file and
+we have program and startup file
+so we'll run this
+and see click on run
+and here you can see build started
+here we can see
+to localhost
+44313
+so it's showing hello world
+so where is this hello world getting
+generated from
+so go back to visual studio
+so go to solution explorer
+and go to startup.cs file
+if you scroll down
+you can see here
+this is where hello world is getting
+generated from
+so we'll change this
+change the message and enter
+so change the message and enter thanks
+for watching stay tuned to simply
+so let me run this
+and here you see
+so here you can see thanks for watching
+and stay tuned to see later
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you for being
+here
+so in the upcoming videos we'll be
+creating web apps and we'll be using
+mvc model view controller so stay tuned
+to simply learn and keep learning thank
+you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

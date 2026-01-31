@@ -1,0 +1,313 @@
+in cloud computing the competition for
+leadership is a quite tough three-way
+race
+amazon web services
+microsoft azure and google cloud
+platform clearly are the top cloud
+companies who are commanding lead in the
+infrastructure as a service and platform
+as service markets
+hey everyone i'm shamlee and i welcome
+you all to this new video of simply
+learn on aws versus azure versus gcp
+in this video we will compare and
+contrast aws azure and gcp based on a
+few related concepts around these cloud
+computing platforms
+it will help us understand the
+functioning of these top cloud platforms
+and will also let us figure out the
+individuality of each one of them
+but before starting with the comparison
+let's have a quick introduction of aws
+versus azure versus gcp
+so let's get started
+amazon web services or aws is a cloud
+computing platform that manages and
+maintains hardware and infrastructure
+reducing the expense and complexity of
+purchasing and running resources on site
+for businesses and individuals
+these resources are available for free
+or for a fee per usage
+microsoft azure is a cloud computing
+service that it offers a collection of
+cloud computing services for building
+testing deploying and managing
+application in the cloud including
+remotely hosted and managed versions of
+microsoft technology google cloud
+platform offers a variety of cloud
+computing services for building
+deploying scaling monitoring and
+operating a cloud
+the services are identical to those that
+power google products such as google
+search gmail youtube
+and google drive
+now let's move on to the comparison
+between aws assure and gcp
+we will be comparing them based on few
+major parameters like
+origin
+service integration
+availability zone
+cloud tools like compute
+storage
+networking
+market share
+pricing
+and at last who uses them
+now
+let's move ahead and start with the
+first comparison origin
+in the year 2006 amazon web services aws
+was introduced to the market
+and in the year 2010
+azure launched its services
+whereas on the other hand gcp was
+established in the year 2008.
+from the start aws has been supportive
+of the open source concept but the open
+source community has a tense
+relationship with azure
+on the other hand gcp similar to aws
+provides google cloud with manage open
+source services that are tightly linked
+aws offers services on a large and
+complex scale that can be manipulated
+but azure support is comparatively low
+quality
+whereas gcp's monthly support price is
+almost 150 dollars for the silver class
+which is the most basic of services and
+is quite expensive
+now let's move on to the service
+integration of these cloud platforms
+service integration is a set of tools
+and technology that connects different
+applications systems
+repositories and data and process
+interchange in real time
+aws makes it simple for users to combine
+services such as amazon ec2 amazon s3
+beanstalk and others
+on the other hand azure allows customers
+to effortlessly combine azure vms
+as your app service sql databases and
+other services
+whereas users can utilize gcp to combine
+services such as compute engine
+cloud storage and cloud sql
+now that we know briefly about all these
+cloud platforms let's have a look at the
+availability zones of these platforms
+because aws was the first in the cloud
+domain they have had more time to build
+and extend their network
+but
+azure and gcp both have various
+locations around the world
+but the distinction is in the amount of
+availability zones they have
+aws now offers 66 availability zones
+with an additional 12 on the pipeline
+close to it azure is available in 140
+countries and is available in 54 regions
+throughout the world
+but google cloud platform is now
+available in 20 global areas with three
+more on the way
+now let's move on to the next important
+factor which is tools
+now let's move ahead and have have a
+look at the first feature
+which is compute
+elastic compute cloud or ec2 is aws
+compute service which offers a wide
+range of features including a large
+number of instances
+support for both windows and linux high
+performance computing and more
+as sure on the other hand virtual
+machines is microsoft azure's core
+cloud-based compute solution it includes
+linux windows server and other operating
+systems as well as better security and
+microsoft program integration
+in comparison to its competitors
+google's computing services catalog is
+somewhat smaller
+compute engine that companies principal
+service offers custom and pre-defined
+machine types
+per second invoicing linux and windows
+support and carbon neutral
+infrastructure that uses half the energy
+of traditional data centers
+within the compute category amazon's
+different containers services are
+gaining prominence it has docker
+kubernetes and it's also far gate
+service
+which automates server and cluster
+management when using containers as well
+as other alternatives
+azure unlike aws uses virtual machine
+scale sets of two container services
+azure container service is based on
+kubernetes and container service
+uses docker hub and azure container
+registry for management
+for enterprises interested in deploying
+containers google offers the kubernetes
+engine
+it's also worth noting that google was
+significantly involved in the kubernetes
+project
+providing it extensive knowledge in this
+field
+now let's move on to the next parameter
+of comparison which is storage
+simple storage service
+for object storage elastic block storage
+for persistent block storage and elastic
+file system for file storage among aws
+storage offerings
+block storage for rest based object
+storage of unstructured data queue
+storage for a large volume workloads
+file storage and disk storage are among
+microsoft azure core storage services
+gcp offers an increasing number of
+storage options its unified object
+storage service
+cloud storage also has a persistent disk
+option
+relational database service or rds
+dynamodb nosql database elastic
+in memory data store
+redshift data warehouse neptune graph
+database and database migration service
+are all sql compatible databases offered
+by amazon
+the database choices in azure are
+specially wide
+sql database mysql
+database and postgre sql database are
+the three sql based choices
+when it comes to databases gcp
+offers the sql based cloud sql and cloud
+spanner a relational database built for
+mission critical workloads
+now the next parameter is networking
+aws uses amazon virtual private cloud
+or vpc
+on the other hand azure uses
+azure virtual network
+we net
+and gcp uses cloud virtual network
+now let's move on to the another factor
+which is market share
+and pricing
+all these cloud services are based on
+comparative pricing strategy which means
+you need to pay on the basis of its
+usage
+according to canalis the worldwide cloud
+market rose 35
+to 41.8 billion in the first quarter of
+2021.
+aws accounts for 32 of the market
+with azure accounting for 19
+and google accounting for seven percent
+on one hand amazon charges on a yearly
+basis and on the other hand microsoft
+azure and google services charge on a
+minute basis and also of them provide
+you a standard price for you to access
+these services
+aws charges roughly 69 per month for a
+very basic instance with two virtual
+cpus and 8gb of ram
+and aws largest instance with 3.84 db of
+ram and 128 vcpus
+will set you back roughly 3.97 per hour
+but in azure the same type of instance
+one with two v cpus and 8 gb of ram cost
+roughly 70 dollar u.s
+per month and asia's largest instance
+has 3.89 tb of ram
+and 128 virtual cpus
+it costs about 6.79 per hour
+compared to aws gcp will supply you with
+the most basic instance which includes
+two virtual cpus and eight gigabytes of
+ram for 25 percent less as a result it
+will set you back roughly to 52 dollar
+every month and the largest instance
+that include
+is 3.75 db of ram and 160v cpus it will
+cost you around 5.32 dollar per hour
+amazon other than this also provides
+spot instances reserved instances and
+dedicated host where you can look for
+multiple offers and discounts
+but for ensure it provides special
+prices to developers based on situations
+or even ensure hybrid benefit which
+benefits your organization up to 40
+percent if it uses microsoft software
+in their data centers
+whereas google offers quite a sorted
+pricing to its customer compared to
+other two
+it gives you sustained use discounts
+which activate if you use the same
+instance for a month
+the printable instance which is very
+similar to amazon spot instances
+but one thing is common in all three
+cloud services which is they all offer
+long term discount
+now let's have a look at the last
+comparison which is companies using them
+because aws is the oldest player in the
+cloud business
+it has the largest user base and
+community support as a result aws has
+the largest number of high-profile and
+well-known clients including netflix
+airbnb unilever bmw samsung mi senga and
+others
+with time azure is getting a large
+number of high-profile customers
+azure currently boasts around 80 percent
+of fortune
+500 firms as customers johnson controls
+polycom fujifilm hp honeywell apple and
+others are among its key clients
+google cloud on the other hand uses the
+same infrastructure as google search and
+youtube and as a result many high in
+enterprises
+trust google cloud hsbc paper
+20th century fox bloomberg domino's and
+other among google clouds many clients
+so this was all about aws versus assure
+versus gcp
+we have almost reached the end of this
+video if i missed anything important do
+let me know in the comment section i
+hope you enjoyed this video on aws
+versus azure versus gcp and learn
+something new from it if you like this
+video then please hit the like button
+thanks for watching this video and stay
+tuned for more updates and videos from
+simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,841 @@
+hey what's up traders welcome back to
+another video sorry i've been a little
+slack with uploading to youtube lately
+i've been really busy doing my own
+studying into system automation i'm in a
+mentor program with nick raj who goes by
+the chartist and he teaches how to build
+fully automated equity trading systems
+and i'm learning some really cool stuff
+there really advanced techniques for
+back testing and building robust trading
+systems so i'm hoping to be able to
+share some of the stuff that i learned
+from that course in the months to come
+i've also been really busy building out
+more content for the mastery course so
+in today's video i'm going to share a
+lesson from the mastery course that i
+recorded to answer a student's question
+he wanted to know how to work with
+fibonacci so today's lesson is going to
+be breaking down the automated fibonacci
+tool that was created by the trading
+view developers and it includes some
+pretty cool advanced features such as
+detecting pivot points and analyzing
+impulsive moves in the markets and then
+automatically calculating fibonacci
+ratios between those two price points
+before we start the lesson can you
+please leave a comment in the comments
+section to let me know what subject in
+part script you are personally
+struggling with the most or want to
+learn more about and that will help give
+me some ideas on what to cover next so
+without further ado let's get into the
+lesson i hope you find it interesting as
+always thank you for your support
+there'll be a link to the source code in
+the video description and if you want to
+increase your luck in the markets you
+can always hit the subscribe button i've
+heard that helps a lot in this lesson
+we're going to be
+breaking down the built-in trading view
+auto fib tool so this tool right here is
+automatically detecting a pivot point
+like a an impulsive move in the market
+and it is drawing the fibonacci ratios
+between
+the high and low of that move and it's a
+pretty cool tool we're going to break
+down the source code to it how it works
+now it's a pretty fleshed out script it
+has quite a lot of options here you can
+turn on and off several uh well over a
+dozen
+fibonacci levels i've simplified the
+script a bit i've turned off a bunch of
+the fibonacci levels by default and
+we're only working with some of the more
+popular fibonacci ratios before we start
+i should mention that the way i got the
+source code to this script is i just
+added the autofib retracement script to
+my chart so this is the built-in
+automatic fibonacci tool that the
+trading view developers created if i
+open up the source code by clicking on
+this little source code button here this
+is what the source code looked like when
+i first saw it it's not a lot of
+commenting here it's pretty dense code
+but it does the job and so i copy and
+pasted all of this code into my pine
+editor and just made some small
+adjustments to make the code a little
+bit easier to read a little bit tidier
+and i commented some of the sections of
+code changed some of the function names
+because they weren't very intuitive to
+me personally and i just
+organized the code a little bit better
+so let's start breaking down the source
+code first up we have a whole bunch of
+user inputs i'm not going to go over all
+of these they're pretty simple to
+understand
+if i open up the settings here we have
+our deviation so this is
+a multiplier that affects how much
+uh price should deviate from the
+previous pivot point in order for the
+bar to become a new pivot now we haven't
+covered pivots yet in the course but i
+will create a lesson on that when i get
+around to it in this lesson we'll touch
+on pivots a little bit as the
+script code here depends on
+automatic detection of pivot points for
+determining which price values to draw
+the fib between so by default it sets
+three deviations so this affects how the
+script detects uh its price points so if
+we increase this
+now you can see it's detecting bigger
+swings in the market
+but it's set to 3 by default and i find
+that to work pretty well on most markets
+the next setting here is depth this is
+how many bars
+the minimum number of bars that will be
+taken into account when calculating
+what price points are important for
+drawing the fibonacci between then we
+have a bunch of like visual options here
+you can reverse the ratio so if i click
+on that now it's drawing from here down
+to
+here
+if i turn off reverse it's drawing in
+the direction of the impulsive move so
+it's drawing the fib from the low up to
+the high in this particular case
+but you can reverse that there if you
+want to you can also extend the lines
+left and right
+i turn these off by default to make it
+easier to see what the indicator is
+actually doing you can also turn the
+prices on and that will display the
+price values of each ratio and i added a
+little option here i called delete last
+line if i turn that off you can see that
+the script is now displaying previous
+pivots previous impulsive moves that it
+detected in historical price action so
+this is the pivot points at play this is
+showing how the script identifies pivot
+points which levels it thinks are
+important and you can turn that on or
+off in the settings menu i added this
+option it's not in the default inbuilt
+indicator i just was curious to see how
+the script identified its swings
+but this is turned on by default so that
+you don't see those previous lines you
+only see the current line then you can
+turn the levels on or off which will
+turn the text on or off and you can
+change it to percent if you want to
+or values then we have our labels
+positioned left or right
+um and our background transparency then
+all of our fib levels here so you can
+adjust the levels if you want to
+and that will change where the lines
+draw anyway that's the user inputs
+covered let's get into the code here so
+the first thing we do is um determine
+our extending parameter so this is the
+extend left or extend right for our
+lines
+we use this later on to tell the script
+whether or not to extend the lines left
+and right the next thing we do is
+calculate the deviation threshold for
+identifying major swings in the market
+so dev threshold is deviation threshold
+and that is calculated by dividing the
+atr over the past 10 bars by the closing
+price multiplied by 100 multiplied by
+our threshold multiplier which is this
+setting here and we use this later on to
+identify major swings in the market the
+next thing we do is prepare our pivot
+variables
+so these are for drawing and analyzing
+the pivots in price action and the line
+between them the next thing we do is
+create a custom function for detecting
+pivot points so this pivots function
+takes a price source a length look back
+length and whether or not it is a high
+this function here returns some tuples
+so two values
+so the values it returns is either a bar
+index and a
+price value
+or n a a bar index that's n a or nothing
+and a price value that's nothing n a so
+a float type of n a or an integer type
+of n a now let's hide the indicator just
+briefly and analyze what this code here
+is doing
+let's break it down so
+down here is where the this custom
+function is called so this function
+returns two values
+the bar index of the pivot point and the
+price of the pivot point and it's
+passing in a high and a low so it's
+getting swing high pivots and swing low
+pivots it's passing in our depth value
+divided by two so that's this setting
+here divided by two so
+it's passing in five by default and then
+we have these two boolean values here
+this is for detecting high swing high
+pivots
+or swing low pivots if it's set to true
+then it treats this code as if it's
+trying to analyze a price high otherwise
+if this value here is false
+then it's trying to calculate the pivot
+of a low swing low in price the first
+thing is function does is it multiplies
+the length by two and then gets a price
+value over our look back period so five
+bars by default so let's analyze this
+bar right here if i put a vertical line
+there
+we divide our depth by two so we're
+looking back five bars by default that's
+what this value here would give us it
+would give us the high of this bar five
+bars ago then it creates a flag boolean
+here called okay is this an okay pivot a
+valid pivot it's set to true but then we
+have a for loop here that invalidates
+the pivot if certain conditions are met
+so we loop over our look back period
+this l2 variable which is our length
+multiplied by two so this here would be
+our actual depth in the settings menu
+because we pass in this value divided by
+two so we get half of this value and
+then this l2 variable multiplies it by
+two and then in this for loop here we
+loop up to our look back periods or our
+depth so 10 so if we're analyzing this
+bar
+we loop all the way back to this bar
+here and then if we are analyzing swing
+highs for pivots it checks if is high is
+true
+and the price source so in this case the
+high
+of this loop is greater than
+our price value in the middle here then
+okay is set to false and this pivot is
+ignored so what this code here is
+basically trying to do
+is identify
+a price action pattern that looks like
+this so it takes several bars to
+identify the swing high either side of
+our midpoint so if we have a 10 bar look
+back which is
+this 10 bars between these two lines
+because it passes in depth divided by 2
+this is the bar that is analyzing as a
+swing high and if this bar's high was
+higher than the high of this bar and the
+higher this bar
+then this would be considered a valid
+pivot point
+and then we also um check the price
+deviation to make sure that
+it's a significant swing higher swing
+low and price has moved significantly
+from that swing high and then it's
+obviously the same for swing lows but
+opposite direction so it's looking for
+this sort of pattern and we have our
+midpoint and our
+current bar
+and the look back our depth our value
+and it's looking for a pivot
+between those two
+uh candles anyway moving on we then get
+those values calling this custom
+function so i already explained what
+these are the index of the pivot high
+and the pivot high price the index of
+the pivot low and the pivot low price
+and when i say index i mean the bar
+index so the bar count for that pivot
+the next thing we have here is another
+custom function that calculates the
+price deviation from uh or between two
+prices so we have our base price and the
+price you want to analyze we multiply
+the difference between these two prices
+divided by the price multiplied by 100
+and that gives us our price deviation
+between these two values and this is
+used for validating major swings in
+price action by
+analyzing this value here the next
+custom function here is a custom
+function for detecting pivots that meet
+our deviation criteria so we already
+have our function for detecting pivots
+we get those pivot values
+we also have a function for calculating
+the deviation between two price values
+this function here basically updates the
+line
+between our pivots only if the pivot
+meets our criteria so if i turn off this
+value here so that we can actually see
+all of the lines that are being drawn so
+you can see that it's actually ignoring
+this swing high even though it's higher
+than this one that's because of our
+deviation setting here if i set this to
+2 now it's detecting this pivot as valid
+because this move here is now two
+deviations from the high and it is
+considered a valid uh move in price if
+we increase that
+uh deviation value this move in here is
+no longer considered a big enough move
+to be valid so depending on the market
+you're trading you will need to play
+around with this deviation value to get
+the script to be more accurate for now
+i'll move this down to two so that
+we're getting a little bit more accurate
+pivot detection but you can see through
+here when price contracted because we're
+using the atr in our calculation of
+calculating the deviation
+it's now detecting a little bit more
+noise now that we've lowered that
+deviation value but increase that now
+it's treating consolidation a little bit
+more accurately but anyway that is
+something you'll need to play around
+with that is how the inbuilt autofib
+tool works
+in training view it's not perfect
+nothing when it comes to identifying
+discretionary patterns and impulsive
+moves in markets are discretionary
+patterns
+because how you identify a impulsive
+move in the market depends very heavily
+on how you read markets so is this
+a
+impulsive move is that a valid important
+pullback or is this a valid important
+pullback or is this whole move just one
+impulsive move
+that is something that will differ
+between every trader and every script
+that you write and all the parameters
+that you input into that script will
+affect how your script analyzes those
+pivot points there is no black and white
+answer to what constitutes a valid
+impulsive move and a valid pivot so it
+really is up to you how you define your
+parameters for detecting these moves but
+anyway moving on
+let's break down the code for this
+function this if statement here checks
+if we have a new pivot in the same
+direction as the last
+and if we do it updates the line so i'll
+show you what this looks like in real
+time for this we'll use the bar replay
+tool so if i put the bar replay tool on
+let's do it here so now you can see that
+the script is identifying this
+as a impulsive move but if we cycle
+forward a little bit once we get a
+valid deviation from this low
+the line will update so it will change
+from here to something more like this so
+let's keep cycling forward there we go
+now we've had a significant move up from
+this low and so the line has updated
+from here
+all the way down to here and this will
+continue to happen as price action
+develops so if we go even further now
+this is the line
+and if we keep going even further
+eventually we'll get that retracement uh
+here's the new price base the new price
+low keep going keep going now we have
+our impulsive move down to here and the
+script is now detecting this as the next
+pivot the whole time that this was
+happening and this line kept updating
+in the same direction the bearish
+direction
+so if we go forward a little bit more
+and you saw that line update just then
+that's what this if statement here does
+so if we have a new pivot in the same
+direction as the last
+pivot then we update our line because we
+have trend continuation occurring and to
+update the line we use the line dot set
+x y
+to function we pass in the last line the
+line that we were already drawing
+and then a new bar index so that's the
+new bar index and the new price value in
+this case that would be a low and that
+updates our line to reflect the new
+development in price action and
+otherwise if these conditions are not
+met then we return a null or n a line
+and an n a boolean value because we have
+had no valid pivot detected so return
+nothing and then this else statement
+says if we do not have a
+pivot point in the same direction as the
+last then we check is the deviation
+significant so does it exceed our
+deviation
+threshold
+if so the price move is significant and
+we have a new line
+we need to create a new line between the
+pivot points and if you have this turned
+on in the settings menu then it would
+delete the previous line so this line
+here so the easiest way to explain this
+bit of code here is to show you what it
+looks like on the charts so that's what
+happens here if we go forward a little
+bit further one more bar
+a couple more bars
+there we go
+what you just saw there this new line
+being drawn is this else statement we
+just had a significant move after a
+valid pivot was detected that was
+significant enough to overwrite the
+previous one and now this is the new
+pivot that we are analyzing with our
+fibonacci tool and otherwise if we
+detected a new pivot point and a new
+impulsive move that was below our
+deviation threshold then we just return
+nothing and we don't update the line at
+all we do nothing we wait for a more
+significant move in price action before
+we do anything so that's what the pivot
+found function does it's a bit difficult
+to explain
+the code here but if you play around
+with this in your own time edit the code
+a little bit
+play around with some of these values
+you'll get a feel for what this code is
+doing but basically it's either updating
+the line in the same direction or
+creating a new line when a new pivot is
+detected anyway moving on we then check
+if the bar index for the current pivot
+high is not n a or in other words we
+have a new pivot a new valid pivot then
+we calculate the deviation from the last
+pivot the last pivot high so this code
+here is analyzing pivot highs so
+any
+swing high that the script is analyzing
+is handled by this if statement and then
+we get this tuple
+value here the id
+of our line and the is high boolean
+value so we call our pivot found
+function here we pass in the deviation
+which is used for calculating whether or
+not the pivot is a major swing in the
+market we pass in this true boolean
+value which tells the function that we
+are analyzing highs price highs and then
+we pass in our index of the last high
+and the price value of the last high as
+well so that we can analyze the new
+pivot against the old pivot and then if
+our function here returns a valid line
+id so if the line is not
+n a or in other words if the line has
+been updated then update the price
+values and delete the previous line so
+this is our setting here if i turn this
+on you can see all of our lines just
+disappeared except for the last line on
+our chart that the script detected so it
+deletes the last line
+and it updates all of our price values
+so it updates the last line id it
+updates whether the last pivot was a
+swing high or a swing low it passes in
+the last bar index that we analyzed it
+passes in the previous index of the
+pivot and the current pivot value it
+saves these two values so that's this
+index and this index and it saves the
+last price value so this is analyzing
+swing highs pivot highs so ph is pivot
+high price value that's this value up
+here it saves all of those values into
+our
+var variables here and the script just
+continually analyzes and updates these
+values when major pivots are detected so
+next we have this else statement and
+then this is exactly the same code here
+that we have here but for swing lows so
+if i unindent this
+you can see that the code is identical
+except that we are analyzing price lows
+instead of highs or pivot lows instead
+of pivot highs but in pine script if i
+were to save this the script will not
+compile because the indentation is not
+correct so we need to indent and tab all
+of this if statement in order to get our
+indentation
+compiling correctly but all of this code
+here is doing exactly the same thing as
+this code except for pivot lows anyway
+moving on we then have another custom
+function here that draws our fib lines
+and this function takes two parameters a
+price value or a fibonacci price value
+and a color value and then it just
+creates a new line at the current bar
+index and it draws this line from the
+last bar index of a pivot to the current
+bar index and it just draws a horizontal
+line between these two price values
+which is our fibonacci
+ratio and then it also assigns its
+extending parameter so if i turn extend
+right on
+now the line the extend value here is
+set to
+extend right but i'm going to turn that
+off so that's a little bit easier to see
+what the script is currently doing
+so here it updates the line if it
+already exists otherwise if the line
+does not already exist then it just
+returns the
+new line id and then next up we have our
+custom function for drawing the labels
+the text labels on our fibonacci tool it
+takes a price value to draw out a text
+value
+and a text color value so this code here
+just basically checks
+where the label position is set to and
+then we use the line.get bar index the
+x1 and x2 values in a line is the bar
+index
+so if the label position is set to left
+it gets the x1 value which is this bar
+index here and it draws the text
+to the left of this bar otherwise if
+label position is set to right then it
+draws it to the right of the
+last bar index or the x2 value of our
+line here but i'll set that back to left
+and then if our label position is set to
+left
+we set the label style to style label
+right otherwise we set it to style label
+left so if we set this to right now this
+is drawing to the right and then we set
+our line
+parameter based on whether we have
+selected left or right here
+if we've selected left then we align the
+text to the right otherwise we align it
+to the left
+that's just to keep the text closer to
+our
+drawing tools here and then we have a
+couple of strings here that
+have a bunch of blank spaces
+that's what this little red um character
+with the white dot in it is if you
+scroll up to the top here you can see
+them here as well these are like forced
+spaces in the string i'm not sure what
+character this is you see this quite
+often in a lot of the inbuilt training
+view indicators especially in the
+settings menu pinecoders tend to use
+this character to help format their text
+so you can see here that there's a space
+between this character this line
+character if i were to just replace this
+with four spaces and save the code now
+when i open up the settings menu you can
+see that that space is gone because
+pine script gets rid of any white space
+in your
+strings when drawing onto the chart or
+into the settings menu and so if you
+want those spaces to not be
+trimmed from your string you need to use
+this strange red character with the
+white dot i'm not sure what this
+character is or how you even get it but
+you can just copy and paste this into
+any scripts you want to use it in and it
+will have the same effect
+if you want to play around with this
+source code and you don't want the
+numbers drawing above the line like they
+are here and you prefer them to draw in
+line with the line then just delete
+these special characters anyway the next
+thing we do here is create a new label
+with all of these values passed in to
+the parameters the label also has a
+color
+of
+black with a 100 transparency so that's
+why you can't see any label color in the
+background normally you would see a
+colored label behind the text by setting
+it to this value it's basically just
+full transparency on a black color and
+so it doesn't draw any label background
+and that's it for our fibonacci labels
+the next custom function here formats
+our text so this is for the price values
+if i turn on prices you can see that
+we now have the prices in brackets
+that's what this
+function here does and we should
+probably put a space in there so that
+you have a space between the fibonacci
+values like that
+um the next custom function here formats
+our label text so that's this fibonacci
+ratio here if values
+is set to
+the show levels is set to values then we
+show the fibonacci value if it's set to
+percent then we multiply that fibonacci
+ratio by 100 and add a percentage sign
+on the end and that gives us our
+fibonacci ratios as a percentage i'll
+leave mine as values for now
+the next custom function here checks if
+price is crossing one of these fib
+values so if the price on the current
+bar is testing one of these fibonacci
+values this custom function will return
+true so this code here will check if
+price has
+dipped above or below one of these
+fibonacci ratios and this function is
+used later on
+to trigger alerts but we'll get to that
+in a moment the next thing we do here is
+actually calculate our fibonacci values
+so if you've watched the previous lesson
+on how to manually calculate the
+fibonacci values the code here the math
+here is very similar first we get our
+start price and our end price we use the
+line
+get function this gets the price value
+of our line
+so in this case on this particular bar
+that would be the high of this bar so
+end price would be set to the price
+value at the end of our line which is
+this bar's high price here and start
+price is set to the starting price of
+the line
+so the line starts from the low here and
+draws to the high
+so our start price would be this bar's
+low and our end price would be this
+bar's high unless reverse is set to true
+so if you turn on reverse in the
+settings menu
+it flips these values around
+but i'll turn that off because i find
+reverse fibonaccis to be a little
+confusing not sure why you would use
+them but i'm sure there are reasons to
+the next thing we do is calculate the
+price difference between our starting
+price and our ending price that's what
+this diff value is and then once we have
+these values all of these values here we
+can use these to calculate our fibonacci
+price in the next custom function here
+which is called process level and this
+function this custom function processes
+the given fibonacci level by calculating
+the fib drawing the line and label for
+each fib
+detecting alerts so if one of these
+fibonacci levels is being tested by
+price section and it also fills the
+background color of our chart between
+the last fib so each fib is filled
+between to get the background color here
+if you set background transparency to
+100 that will get rid of those
+background fills let's set that back to
+85 and break down this custom function
+so here we have if show is set to true
+and this show value is determined by
+if the value is ticked so if i took that
+on you can see it's now showing an extra
+fibonacci level there if i turn it off
+it goes away that's what this
+parameter is for so if show is true then
+this code gets executed we calculate our
+fibonacci price using this formula here
+this mathematical formula then we get
+our line id by calling our draw fib line
+function from up here this guy here that
+draws the line once we have our line id
+we can then draw our label so that draws
+the text label next to the fibonacci
+line and that's this function here
+then we check if price is crossing the
+current fibonacci line that this
+function is processing if price has
+crossed that line then we trigger an
+alert that says autofib plus
+the ticker id so in this case that would
+be ada usdt is crossing level and then
+it passes in the fibonacci value that
+it's crossing and then the next thing we
+do here is check if we have a previous
+fibonacci line value if we do have a
+previous fibonacci level then we fill
+the line between those two levels with
+the line fill function so the line fill
+function takes a current line id and a
+previous line id so in the case of this
+lower fib that would be the lower one
+and the 786 that would be these two
+values here these two lines then it
+passes in the color so the color is
+whatever you've set in the settings menu
+here combined with the overall
+transparency setting and then once all
+of this code has been executed and we've
+processed each fibonacci level we return
+the line id that we created up here and
+then otherwise if we are not showing
+this current fibonacci level we return
+the previous line id
+which is what we used to fill
+between the two lines like i just
+explained and then that's pretty much it
+for the script the final thing here is
+we get a whole bunch of user inputs all
+the fibonacci levels from the settings
+menu and this is all the same code all
+grouped under fibonacci levels under
+this little subtitle here all of this
+code is just copy and pasted and the
+level numbers are changed none of them
+have titles because it's obvious what
+they are they're fibonacci ratios they
+have a checkbox to turn them on or off
+and they have a color parameter here so
+you can change the color of each fib if
+you want to and then once we get all of
+our fibonacci user inputs
+then we process each fibonacci level one
+by one using the process level function
+and this function here basically
+combines everything above it all of this
+code here that we just went over is
+processed
+for each fibonacci level but only once a
+significant pivot is detected so this
+script combines pivot detection with
+fibonacci calculation it's quite an
+advanced uh script actually just in
+terms of all the layers it has and how
+fleshed out it is in terms of its
+drawing capabilities and everything all
+of the formatting the settings menu it's
+quite a powerful script not a hell of a
+lot of code considering what it does
+but anyway that's it for this lesson
+that is how the autofib script works
+again the best way to understand what
+this code is doing is to do what i did
+which is copy this source code into your
+editor and just play around with some of
+the values for example maybe you want to
+try drawing a horizontal line at the
+pivot high and pivot low to try and
+isolate exactly where in the code the
+pivot high and pivot low prices are
+detected and then you could reverse
+engineer how the script detects pivot
+points for
+any other use case you might have for
+analyzing impulsive moves and price
+action and then if i get out of my bar
+replay tool
+and we cycle through some markets
+you can see the tool at work again it's
+not perfect it is going to miss some
+impulsive moves some of you might draw
+the fib from this swing low to the swing
+high for example but this script
+requires
+a decent deviation
+from the previous swing lower swing high
+in order to consider it a major move in
+the market all right thanks for watching
+everybody i hope you found that
+interesting and useful in your own
+trading and coding make sure to
+subscribe because i'll be back very soon
+with some more content about trading and
+plan script especially system
+development as i get more proficient
+with that side of things but for now
+thanks for watching take care best of
+luck with your trading and i'll speak
+with you in the next video
+[Music]

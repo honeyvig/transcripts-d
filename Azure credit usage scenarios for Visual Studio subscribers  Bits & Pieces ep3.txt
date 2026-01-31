@@ -1,0 +1,959 @@
+(upbeat vocalizing music)
+- Hello everyone,
+and welcome to another
+episode of "Bits & Pieces."
+This is a series for
+Visual Studio subscribers.
+And I wanna thank you
+for joining us today.
+I'm your host, April Edwards.
+And just like you, I'm a
+developer, and I work for GitHub.
+Now, as part of my job, I
+wanna know what tools I can use
+to help me develop
+applications more effectively.
+Now, to set expectations
+in today's episode,
+we're briefly gonna give you an overview
+of the monthly Azure credit
+and what it can be used for.
+Now, Visual Studio Subscriptions has
+an Azure monthly credits,
+which are included
+if you're a paid volume
+licensing subscriber,
+or you have a retail Visual
+Studio Enterprise subscription,
+or even a Professional
+or a Test Professional,
+and even the MSDN platform subscriptions.
+Now, some of the other
+programs or channels,
+like MPM, MCT, MPSA, and
+BizSpark, also have Azure credits.
+And kudos to you
+if you know exactly what
+those acronyms stood for,
+because I don't.
+So here's the basic breakdown
+of how much monthly
+Azure credit is included
+with each of those subscription types.
+So if you're a Visual Studio
+Enterprise subscriber,
+you're gonna have 150
+US dollars per month.
+If you're a Visual Studio Professional
+or Test Professional subscriber,
+you're gonna have 50 US dollars per month.
+Now, if you're an MSDN's
+platform subscription subscriber,
+you're gonna have 100
+US dollars per month.
+So these credits are part
+of your subscription,
+and automatically renew
+every single month.
+So you don't have to put down
+a credit card to get going.
+It's pretty easy.
+Now, in case you do exhaust
+your credit, which does happen,
+these services will
+shut off automatically,
+not incurring you any further charges.
+So if you don't know what
+subscription level you have,
+or which program you have access to,
+you can go to subscriptions
+page in your portal
+by visiting
+my.visualstudio.com/subscriptions.
+So to help me today,
+I'd like to introduce our very
+special guest, Javier Lozano.
+Hey, Javier.
+- Hey, April. How's it going?
+- I'm doing well, man.
+It's good to see you.
+- I know.
+Thank you very much for
+having me on the show.
+This is really exciting,
+and can't wait to talk to you
+about all the awesomeness of
+Visual Studio subscriptions.
+- Me either.
+And, you know, before we get started,
+I mean, you and I know each
+other, like, super well.
+We're pretty much biffles.
+Can you tell everyone
+else out there who you are
+and what is you do?
+- Yes, like April said,
+my name is Javier Lozano.
+I'm a Microsoft MVP,
+which stands for most
+valuable professional.
+I spend a lot of time of
+giving back to the community,
+so in particularly in the .NET space.
+So I'm a .NET developer,
+primarily in ASP.NET.
+I live in the middle of the US in Iowa.
+So I actually have an Azure
+data center close to my house,
+which is great.
+- That's awesome.
+But first and foremost, I wanna
+thank you for being an MVP,
+'cause the hard work you put
+into the community is amazing.
+And I know there are tons of
+MVPs out there watching today.
+And thank each and every one of you,
+'cause your contributions
+help make what we do
+at GitHub and Microsoft so much better.
+So, thank you.
+- Yep.
+- Alright, so, we wanna talk
+about Azure credits today.
+So I'm gonna let you get started.
+- Yep.
+So let's go take a look
+at the Azure Portal,
+and we can go from here.
+So for this specific situation,
+like this conversation,
+is I wanted, I created a simple,
+a different resources
+out in the Azure Portal
+that I kind of wanna talk through
+and highlight as we go along.
+So now, I have the Visual
+Studio Enterprise subscription.
+That means that I have $150
+that I can reuse month to month.
+Now, I have barely am able
+to tap into those $150,
+because there's a lot of
+free resources out there
+within Azure that I can play with
+and get an understanding
+of how to use them, so.
+- So we can work smarter, not harder, and-
+- Right, exactly.
+- I like that. I like that.
+- Yep. Yep.
+I think my average Azure bill is
+about 55 US dollars a month.
+So I'm barely tapping into it,
+and I have things running
+out there full time.
+So it allows you, depending
+on what kind of development
+or kinda proof of concept
+things you want to do,
+it is great way to get to dip your toe
+into the Azure services.
+- Awesome.
+Now, I'm based in the UK,
+so they convert that
+150 US dollars a month
+to British Pound, GBP.
+And so, for those of
+you in other countries,
+they'll convert that
+to your local currency.
+So you'll see whatever
+the local currency is
+in the Azure Portal,
+and you'll get that currency
+in your monthly allowance every month.
+- Right, and there's a
+way there, right now,
+I don't have it set up
+in the dashboard here,
+we just have the plain
+old view of the resources,
+but you can actually drop
+widgets in a dashboard,
+and it will tell you,
+"Hey, you have this, you've
+consumed this many credits."
+Or you can say,
+"Hey, you have this many
+credits left in your monthly."
+So it allows you to,
+if you're doing a lot of playing
+around with those credits,
+you sort of know where
+you're at and at the level
+when you go around.
+- Awesome.
+So you can keep track of it.
+You can also put spending
+limits, all that good stuff.
+So, I want to know,
+what kind of usage
+scenarios can we get into?
+Like, what are the most
+cost-effective ways to get started?
+And I know you're a .NET developer.
+I'm more kind of like cloud native,
+working with serverless and all that,
+but let's start with some
+kind of cloud scenarios
+that we can get started with in Azure.
+- So the scenario that works the best
+for both being a .NET
+developer or a web developer
+and cloud native developer
+is something called an App Service, okay?
+And the App Service,
+essentially it is a way
+to carve out a website
+out in Azure that,
+and Azure does all the managing for you,
+because it's platform as
+a service, which is great.
+So, let me bring that
+up here in the portal.
+So I'm gonna go through to
+the hamburger menu up here
+and say create resource.
+I'm gonna look for App Service.
+And when you look for App Service,
+there's several things
+that sort of come up here.
+There is a App Service environment,
+App Service plan, and web app, okay?
+The big thing to realize here is
+that even though we're
+talking about an App Service,
+like here, we're actually talking
+about an App Service plan.
+That's the thing that you pay for.
+And the plan is great,
+because you're literally
+are carving out a server
+of a certain size out there for you,
+and that's what the
+credits are being used for.
+- So paying for compute
+on someone else's machine.
+- Correct.
+And the nice thing about it is, like,
+you can put as many websites as you want
+as that compute instance that
+you carved out can handle.
+So if you have six websites
+that you wanna try out
+and have them each do different things,
+it's not like, oh, I have to
+pay for each individual one.
+No, you're paying for the plan,
+and the plan is spread out
+across all those instances.
+- Awesome.
+- So, great.
+So, if we go and kind of look at that,
+one of the things that we can do
+if I create an App Service
+is pretty straightforward.
+So the entire portals steps
+you through the wizard.
+So you can say, "I have my
+Visual Studio subscription here."
+That's the number of my subscription.
+I have the Bits and Pieces resource group.
+And then I can start picking
+and choosing the settings that I want.
+For example, I can call
+it "bitsandpiecesapp",
+and it will validate that it's there,
+and I can select, yep,
+I'm gonna make this a .NET
+6 app or a .NET 7 app.
+You know, I can pick whichever I want to.
+And I'm, as I mentioned,
+I do have a data center close to me,
+and I'm gonna pick US Central.
+Actually, Central US.
+There it is.
+And from here,
+this is where you can start picking
+and choosing the size of
+that App Service plan.
+So you have the option of
+creating a brand new one,
+or creating an existing one,
+depending on what sort
+of where you wanna go.
+- Okay.
+And I can see you have,
+your pricing plan has the
+total amount of consumption,
+so, RAM and CPU.
+- Right, it has it, yep.
+So if you were, if we were to click here,
+this is where it,
+and by the way, I've been
+using Azure for a long time.
+This is by far the best
+way of looking at the data,
+because it just tells you
+specifically what you're getting,
+what is the virtual CPUs, right,
+what's the memory, what's the storage,
+and how many instances
+you can scale each individual website to,
+and you see the price on the right.
+- Awesome.
+- Which is awesome. Yep.
+So then you can say,
+"Hey, you know what, for
+my $150, I can go as,"
+and believe it or not,
+Azure is phenomenal when it
+comes to cost for hosting.
+You can get a Premium v3, PV3,
+which essentially has 4 gigs of memory
+and 250 gigabyte storage.
+And you can go up higher,
+depending on what kind of
+workloads that you foresee having
+with your applications.
+But the sky's the limit.
+You can spend as much as you want on it,
+and obviously with your credit,
+you will be consuming, like you said,
+to that specific point,
+and then the App Service plan will stop.
+- Perfect. Awesome.
+So yeah, so we can build a
+website, host our webpages,
+and we could use a basic plan,
+we could use a simple plan,
+even a premium plan that's
+pretty cost effective.
+- Yep. Yep.
+From my perspective,
+the Visual Studio
+Subscription is a great way
+to kick the tires around with Azure,
+especially if you work in an
+enterprise that has Azure.
+You can figure out, hey, here's what,
+how I actually configure an App Service.
+Because you may, you
+as a developer, right,
+or front-end worker may not
+be doing that day-to-day.
+Someone in your IT back
+office could do it.
+And it's great, so that way,
+you can have that conversation
+with them and figure out,
+oh, we should do X, we should do Y.
+- Absolutely, and work together as a team.
+So, what if I have a database?
+'Cause I'll be honest,
+a lot of my websites have
+databases attached to them.
+How do we handle that?
+- That's a great question.
+So, just like we did with that,
+we can go back to "Create a resource"
+and we can search for SQL Database.
+Now, SQL Database is
+essentially a hosted instance
+of SQL Server-like functionality.
+It's not SQL Server per se,
+because it's totally different, right?
+But it's essentially a platform
+as a service SQL Server.
+And one of the things that you can do,
+and similar to here, I'll go ahead create,
+and I'll create a SQL Database,
+is you can cherry pick the
+different type of resources
+that you can do.
+Now, this is a little bit different
+from this type of wizard,
+because there's an option here
+where it talks about want to
+try SQL Database for free.
+- Absolutely.
+- Yeah, so there are tool tips
+that you can easily go through
+and select the different
+types of cores that you want.
+So in this screen, we
+can create a database,
+just like we can with the
+other wizards in within Azure.
+One of the things to note
+here is the price is estimated
+at $272 per month, right?
+So that's more than our credit.
+But there's a service, there's an offer,
+what you can see here,
+where we can apply and get
+SQL Azure Database for free.
+- Awesome.
+- The way we are able to
+trigger something like this is
+that we have to go and change
+the workload environment
+from production to development
+because we're in a subscription.
+So we're not in a actual
+production Azure subscription.
+- Right, correct.
+- So, by switching the
+workload environment,
+now we can see that the price
+has significantly dropped.
+Right, so it's now much,
+much more affordable,
+even with our credit.
+So now we apply the offer.
+We can see
+that we now have the database
+running completely for free.
+- Awesome.
+That's a really cool trick,
+because databases are expensive.
+Storing data's expensive.
+So that's really, really cool.
+So Javier, that's awesome. I love that.
+I love, I mean, I've
+seen the discount before.
+I've never seen the free
+offer for the free database.
+- Right, in particular, since
+it's 32 gigabytes of data.
+I mean, I have production
+subscriptions out there
+that are paying for 200, you
+know, gigabytes and so forth,
+and the price goes up.
+So for 32 gigabytes, kick the
+tires with Azure SQL Database.
+It's amazing.
+- That's awesome. That's really cool.
+So, that was awesome to see
+Azure Web Apps with databases.
+That's a really huge use case,
+getting started with Azure, right,
+moving web applications over.
+We can containerize and we can
+do all sorts of stuff there.
+But I wanna talk about some
+of the other free services.
+What are some of the other
+free ones that we have?
+I have a few that I love,
+but what's your favorite one?
+- So, one of the ones
+that I like the most,
+which is ties there
+directly to App Services,
+is Azure Functions, right?
+I'm not sure if you like Azure,
+if you're a fan of Azure Functions or not.
+- I love Azure Functions.
+The reason why I love Azure Functions is
+you can literally automate
+anything with an Azure Function.
+So you can use a timer trigger,
+you can use an action or an event,
+but they also connect to legacy systems.
+So they're great in serverless
+cloud native systems,
+but then they're also great connecting
+to maybe like an on-prem data
+center or a legacy monolith,
+where you're trying to just do
+a thing or automate a thing.
+I will automate so many
+things with actions,
+excuse me, with Azure Function apps.
+And I believe on Azure Function apps,
+your first million calls
+to a function are free.
+So they're not entirely free,
+but if you're making, like,
+a million calls a month, that's insane.
+So let's look at some use
+cases for Azure Functions,
+'cause I think there's some
+good enterprise use cases
+and some good fun use cases.
+- Yeah.
+So ideally with an Azure Function,
+it's kind of one of those settings
+where you can easily set
+it and forget it, right?
+So, where you can say,
+"Hey, behind the scenes,
+I've received this request,"
+for example, uploading a file, right?
+So you have an API that you send the file,
+and you wanna be able to say,
+"Hey, I wanna be able to index this file,
+change the name, do
+something else with it."
+You will then can trigger a function
+after the upload is done
+or after the file has been
+saved to storage per se,
+and it will pick it up
+and it will do the work,
+at that point,
+it will be completely out of
+band from what you're doing.
+- So I actually used Azure
+Functions in a customer product,
+and it was very cost savings.
+So they had a very
+manual process happening
+in their organization, and
+they need to process data.
+When I say data, images and videos.
+And we use the function,
+anytime an incoming image or
+video came in, to process that,
+and we chain them together.
+Then there's things like
+durable functions and logic apps
+that you can hook it, obviously.
+You can chain all these
+serverless things together.
+But the compute cost to the
+customer was minimal every month
+in a production environment,
+'cause we could chain them.
+But actually I have a favorite use case
+for Functions I think
+we should talk about.
+- Oh, you do.
+I think we talked about this before.
+- We did.
+And you know exactly where this is going.
+And this is something I
+haven't done in a while,
+but with an Azure Function,
+you can use sentiment analysis.
+And you're thinking,
+okay, why do I wanna know
+what other people are
+feeling and thinking?
+Now, first use case is if
+you own an organization,
+or are trying to get
+feedback off of people,
+especially social media,
+you can hook in sentiment
+analysis from a function
+that anytime someone does a
+thing, you get that feedback.
+So for instance,
+I have potentially been
+stranded at an airport,
+and a specific airline just left me there,
+and I sent an angry,
+formerly tweet, now X
+or whatever we call it,
+and they picked up on
+it and they responded.
+And I love this, so I love
+Twitter, well, we call,
+it's still called the Twitter
+Sentiment Analysis component,
+but it, X, Twitter, whatever.
+We have all these connectors
+that are pre-baked into Function.
+So Twitter's one of 'em.
+So it's great if you wanna use a hashtag
+and get the sentiment
+anytime that hashtag's used.
+And actually I use that
+on one of the engineering
+teams I worked on
+to get product feedback from that product.
+But it's also fun if, like,
+you send a tweet or an X
+or whatever we call it,
+and you wanna get that
+feedback from someone,
+like, whether people liked
+or disliked your post.
+So I really like it.
+I'm a big fan of the sentiment analysis.
+- When you think about it, it
+kind of shows you, you know,
+'cause sentiment analysis just is
+yet another Azure service, right?
+It's part of, you know,
+even though it says here
+Azure Cognitive Services,
+is now Azure AI Services,
+because of recent rebranding, right?
+But it kind of shows you,
+like you were talking earlier,
+how you can stitch the
+different pieces together.
+And the nice thing about it,
+it's, A, not gonna break the bank,
+B, you already have the credit,
+and so you can pay for
+those to that analysis
+as the texts come in.
+And the best part about this one is
+that it's completely turnkey.
+So you can just get it for
+free, create the Functions,
+it steps you through everything, right,
+and it tells you specifically
+what you need to configure
+and where you can get the settings from.
+How do you trigger it?
+And it literally just runs for you.
+And the best part about it,
+if you go with a consumption level,
+which means essentially
+the function only runs when it's called,
+rather than something
+just sitting out there
+and being in the background,
+your cost and usage just literally drops.
+- Yes, and it's practically free,
+unless you hit those million calls.
+And that's crazy.
+Now, I know there's some other free things
+we want to talk about,
+but I actually wanna
+touch on the AI piece,
+'cause AI's a hot topic right now.
+- It is.
+- What are some of the other
+AI features that we can use
+in Azure with our credit?
+- So that's a great question.
+So another, some of the other
+features that we can use,
+and I'll come back to the Marketplace,
+and I will say Create a resource,
+if we look for Azure, Azure AI,
+we can see all the different
+things that we have out here.
+So we can actually, this is,
+and the nice thing about is
+when you look at the Marketplace,
+you can see other stuff
+that comes up, right?
+It may not be applicable
+to your subscription,
+because it's an extra cost,
+'cause you need to have that
+subscription with that vendor,
+for example, like,
+this Generative AI for
+Software Developers.
+That might be a third party thing
+that you can align to and pay for.
+But in particular here,
+anything that you can do
+with the Azure AI services,
+which is, again, hosted and ran by Azure,
+you can pretty much do whatever you want.
+And you can pick the
+different types of services
+that you want.
+You can pick the different pricing tiers.
+You can look at what's out there.
+But for example, one of the
+cool ones that you can do is
+that you can do computer vision.
+- Ah, that's pretty cool.
+- So, and I've actually used
+computer vision several times,
+where with working with clients,
+where you can upload an image
+and you can tell computer vision,
+these are the type of
+images that I am uploading.
+For example, that could be a form
+that you wanna be able to
+parse to be able to know,
+oh, this is a form X compared to form Y.
+So as the images get uploaded,
+and they get thrown into Azure storage,
+the computer vision can look 'em up
+and actually start sorting 'em
+and provide metadata for you,
+completely out of the box.
+- Yes, and I've used this
+before where we've, again,
+processed images with tags, right?
+We use tags to process the metadata.
+And it was all done under
+.NET Functions actually.
+This is really cool.
+So I love that.
+And I think everyone's
+looking how to use AI
+to how do we collate our data,
+how do we index it, how do we use it?
+How do we do more with it?
+So this is really good.
+This is a really good usage scenario.
+- And another thing, like, for example,
+here you can also do the Video Indexer,
+so, if you're uploading video,
+so it's not just static content
+such as an image, right?
+But if you wanna able
+to do an upload a video,
+and able to understand what's
+going on in that video,
+and split it and get
+that metadata out of it,
+the AI is there to do it.
+And the nice thing about it is
+that you can scale it, right?
+So as you saw on the other screen,
+you can pick what's standard,
+and you can say, "Hey,
+I need more horsepower."
+So, and then you can change that
+after you've created the service.
+- Awesome.
+Now, I've used a lot of the
+stuff with the serverless stuff.
+We talked about Functions.
+I wanna switch gears again,
+and talk about another one
+of my favorite services.
+So, you talked about Azure Web Apps.
+One of my favorite Azure features
+is Azure Static Web Apps.
+- Yes.
+- So, because they're entirely free.
+I mean, there's a paid-for
+tier, but it's a free tier.
+You can hook in your Functions to it.
+You can hook an AI to it actually.
+And it gives you a pretty good foundation
+to build a Static Web App.
+- Yep, it does. Yeah.
+The nice thing about
+Static Web Apps is that
+that point is the sky is the limit, right?
+So, say for example, you,
+your company or you're playing around
+with front-end development, right,
+whether it be Blazor from
+the .NET perspective,
+Angular or React or whatever
+those, whatever the content is,
+you can actually tell and
+deploy that application
+as it sits, right, into
+the Static Web Apps,
+get 100 gigabits of bandwidth.
+That is a lot of bandwidth.
+- That is a lot of bandwidth.
+- Per subscription, right, total.
+Especially if you're just
+playing around with it, right,
+if you have an Angular app or a Blazor app
+that you wanna throw out there.
+You also get free domains
+attached to it, which is great,
+because that way you can say,
+"Hey, I have my example .com, right,
+or example .net URL's
+gonna tie directly to it."
+And those Static Web
+Apps can call resources,
+such as an Azure Function
+behind the scenes,
+to do whatever processing you want.
+So, all in all, you can deploy
+a very powerful application
+on the free services very quickly.
+- You just chain them all
+together, effectively.
+- Yes, exactly.
+- Create your whole workflow,
+which I think is awesome.
+Now, when you deployed
+your Azure Web App before,
+you did it from the Portal,
+which is fair, you know,
+everyone likes to point
+and click a little bit,
+but I wanna talk about automation,
+'cause I'm a big fan of
+automating everything.
+So when you deploy an
+Azure Static Web App,
+or even Azure Web App,
+you have the ability to automate this
+after you deploy it with either
+GitHub and GitHub actions,
+which we'll discuss another day,
+but also things like Azure DevOps,
+and Azure DevOps is free if
+you use up to five users.
+So you can automate all these deployments
+with Azure DevOps hooked
+into the Azure Portal.
+- Right, and I already have.
+I do use leverage quite a bit,
+the free offering from Azure DevOps,
+because it allows you essentially
+have unlimited projects,
+right, unlimited private GitHub
+repo, I'm sorry, Git repos,
+right, as compared with GitHub,
+or, like, by default
+they're public, right?
+So there's a little bit different there.
+And it allows you to use Azure Pipelines.
+So you can either use the YAML pipelines
+that you have out of the box,
+or you can use what it's
+called the classic pipelines,
+which is like WYSIWYG, right?
+So you're able to select,
+click, and do those.
+The same thing with releases.
+You can do YAML based releases,
+or you can do classic releases,
+which is, again, it's more of a GUI based.
+So in here, I'm just sort of showing,
+here's some of the pipelines
+that I've built in the past,
+and these are mostly GUI-based ones,
+and they're kinda old,
+but they work, right?
+And the nice thing about it
+is that for what I'm doing
+for deploying that simple app
+into my Azure resources that,
+sorry, for my free Azure
+resources, this costs me nothing.
+So not only do I have CICD for free,
+I also have the Azure hosting
+for free, which is great.
+- That's awesome. I love that.
+I think that that's a whole, I mean,
+with Azure DevOps, you also have planning.
+You have a repo.
+You can put your code in there.
+You don't have to pay for that.
+You can do also things with, like,
+test plans and your project as a whole.
+So, that's awesome.
+So we could literally
+build out our, put our,
+we have somewhere to put our code.
+We have somewhere to deploy
+it to with pretty much free,
+if not mostly free with our credit.
+That's awesome.
+I think that's a really good
+start for people out there.
+All right?
+So we can, let's see,
+we have App Service plans with databases.
+We have Azure Functions.
+We have Azure Static
+Web Apps, Azure DevOps,
+and a lot of the AI services.
+Is there anything else that we're missing
+that we should tell people about?
+- That's a good question.
+You know, there's a
+lot of different things
+that you can go into
+that obviously cognitive search
+that you can get into in the AI pieces.
+You can also get into storage.
+And actually the thing that
+people miss about is storage,
+and storage is so cheap in Azure
+that you don't even think about it,
+'cause you just assume
+that's always there.
+It's kinda like RAM and CPU, right?
+But all of these different services,
+as you go and develop
+and you start playing around
+and kicking the tires,
+you will realize that, oh,
+I didn't know I could
+do X or I could do Y.
+And obviously your mileage will vary,
+depending on the type of workloads
+and the type of problems you're solving
+in your organization.
+- And there's a list, we will
+put it in the description,
+that has a list of just
+all the Azure services
+that you have access to that
+are either free or discounted.
+And actually, the list
+shows all the free services.
+So there's a lot of good stuff.
+So we talked about CICD,
+but you can throw in monitoring tools.
+Azure Policy actually is free as well.
+So you can do some checks and balances.
+You could actually
+practice what you would do
+in a production environment
+for pretty much nothing.
+So, Javier, this is awesome.
+This was great to see.
+I love being able to see
+the ways we can kind of like
+really leverage our spending budget,
+because I don't wanna go over
+that 150 US dollars a month,
+because I've done that.
+I've accidentally gone over.
+- Trust me, I've had
+services that, you know,
+out there that I'm like,
+oh, I'm doing a demo.
+I'm presenting in front of, you know,
+doing my MVP duties and
+doing something like that.
+And the thing dies because, oh,
+I forgot that I forgot to
+shut off the other demo
+that I did the week before,
+and it consumed all the resources.
+So, that will happen.
+But if it does, I mean,
+it just shuts off, right?
+So it's not like you're on the hook
+to pay the difference in
+the money that's there.
+- Awesome.
+Well, Javier, thank you so much,
+and thank you everyone
+for tuning in today,
+and we'll see you all next
+time on "Bits & Pieces."
+- Thanks, everybody.
+(upbeat vocalizing music)

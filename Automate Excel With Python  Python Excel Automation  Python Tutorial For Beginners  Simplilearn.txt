@@ -1,0 +1,2109 @@
+foreign
+today we will take you through the
+Hands-On lab demo of how you can
+automate Excel using python before we
+start I hope this screen is clearly
+visible and the audio is fine if yes
+please type in yes in the chat section
+if there are any issues do let us know
+in the chat section so that we can
+resolve them I am repeating again before
+we start I hope this screen is clearly
+visible and the audio is fine if yes
+please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+let's wait for some more minutes to let
+other people join
+so I am waiting for some more winners to
+let other people join
+okay till then let me tell you guys that
+we have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+let me tell you guys that we have
+regular updates on multiple Technologies
+if you are a tech geek in a continuous
+hunt for the latest technological Trends
+then consider getting subscribe to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn
+great I think we can get started so in
+today's session we will go through what
+is Excel after that we will see what is
+Python and moving forward we will see
+what is Automation and where it is used
+at the end we will see a Hands-On lab
+demo like how you can automate Excel
+with python in detail
+we already have data set with us we will
+perform different function and automate
+Excel data set using python before we
+move on to the programming part let's
+discuss what is Excel first and
+importance of the same
+so Microsoft developed Microsoft Excel a
+spreadsheet for Windows Mac OS Android
+and iOS it has calculating or Computing
+capabilities graphing tools pivot table
+and the Visual Basic for applications
+the Microsoft Office program package
+includes Excel users of Microsoft Excel
+May format arrange and compute data in a
+spreadsheet data analyst and other
+analysts can make information easier to
+examine as data is added or altered by
+organizing data using tools like Excel
+the boxes and excels are referred to as
+cell and they are arranged in a row and
+column the key features of excels are
+they spreadsheet document in Ms Excel
+can have headers and Footers and user
+can protect their data by giving it
+password protection
+and the second one is filtering is
+supported allowing you to locate the
+necessary data in your spreadsheet and
+replace it with the appropriate value
+after discussing what is Excel let's go
+through and see what is python
+so python is the one of the most popular
+programming language available today it
+is widely used in various sector of
+business such as programming web
+development machine learning and data
+science given its expected use it is not
+surprising that python has surpassed
+Java as a top programming language
+python frequently used to create
+software website and to perform data
+analysis and many more because python is
+a journal purple language it may use to
+develop a wide range of programs and
+isn't alert for any particular issues
+so the key features of python are it is
+open source and free
+python can be downloaded from the
+company official website it is simple to
+download and install
+python is open source because allowing
+users with solid technical background to
+modify the code to suit certain business
+use case and product requirements since
+python is a language for beginners most
+anyone with the understanding of
+programming can quick pick it up and
+begin coding
+so after seeing what is python let's
+move forward and see what is automating
+Excel with python
+we all know python is dominant
+everywhere and we also know that
+compared to other language python is
+beginner friendly and simpler to use
+automation is the one of the coolest
+thing you can do with python so how to
+automate an Excel sheet in Python
+imagine that you are asked to create
+accounts for 30 000 employees on a
+website what would you think you will
+undoubtedly become frustrated carrying
+out this talks manually and repeatedly
+additionally it will take too much time
+which is not the wise choice
+so just try to picture that what it is
+like for employers who work in data
+entry
+the responsibility is to extract the
+data from tables like Excel or Google
+sheet and insert it in the another
+location they read various magazines and
+website get the data there and they are
+entered it into the database
+additionally they must perform the
+calculation for the entries in general
+this job performance determines how much
+money is made greater entry volume more
+pay of course everyone wants a higher
+salary in their job so however don't you
+find doing the same things over and over
+boring
+the question is now how can I accomplish
+it quickly
+and how to automate my work spend an r
+in coding and automating these kind of
+codes to make your life simpler rather
+than performing these kinds of things by
+hand by just writing fewer lines of
+python code you can automate your
+laborious activity in simpler so overall
+python Excel automation is a creative
+method that allows you to build visual
+reports on python in a smoother manner
+similar to how you would on Excel
+businesses can use Python Excel
+automation to streamline their operation
+in accordance with their requirements
+so here is one question for you guys I
+will give you one minute for this you
+can comment or you can give answer in
+chat section so I can see the answers
+are given by you are correct or not
+I'm repeating again here is one question
+for you guys I will give you one minute
+for this you can comment or you can give
+your answer in chat section so I can see
+if the answers given by you are right or
+wrong
+so the question is which type of
+programming does python support
+object oriented programming structured
+programming functional programming and
+all of the mention
+so I'm repeating again which type of
+programming does python support
+option a object oriented programming
+option b structured programming
+functional programming and all of the
+mention
+so I am starting the timer of one minute
+just type your answers in comment
+section or in chat section do let me
+know your answers guys so like please I
+want that everyone should participate in
+this so I am starting the timer
+so
+so your time starts now
+so I want that everyone should
+participate in this guys please to let
+me know your answer in chat section or
+in comment section
+so I can see if the answer is given by
+you are right or wrong so
+like 36 seconds or more
+is guys I want that everyone should
+participate in this so
+let me know your answers in chat section
+or comment section
+so you can just type the answers or a b
+c d
+your wish totally your wish so
+10 seconds are left guys hurry up please
+I want that everyone should participate
+in this five second more
+okay so time is over we will give reply
+those who gave correct answers and those
+who didn't give correct answer we will
+give you a reply with the correct answer
+okay so no worries
+so now let's move to our programming
+part to perform Excel automation using
+python so first we will open command
+prompt to write command to open Jupiter
+notebook computer
+notebook
+yeah
+so this is the landing page of Jupiter
+notebook and select open
+select here new open new file
+so this is how the Jupiter notebook UI
+looks like so at first we will import
+some major libraries of python which
+will help us in importing our workbook
+or worksheet so the first one is let me
+first rename this
+we will write Auto meeting
+so
+using python
+yeah sounds good
+okay
+so the first one is Open PI Excel open
+py
+Excel okay I have to write import yeah
+perfect
+so a python package called open pyxl can
+read and write Excel 2010 xlx format
+Excel SM format xltx and xltm files
+it was created since there was no
+library that could read and write office
+open XML files natively from python
+since open py Excel was initially based
+on PHP Excel all pressed to the PHP
+Excel team so open py Excel does not by
+default provide protection from your
+quadratic blow up or billion after XML
+as sold install diffused XML to protect
+yourself from these assaults so
+we will write open py Excel and then
+like
+yeah
+so
+then we will write for important our
+workbook so we can write here from open
+p y Excel
+port
+workbook
+underscore workbook
+is capital here
+so and this is for code for the
+importing our workbook so let me write
+in command like you can import workbook
+like this so I can write you can import
+workbook
+this
+okay perfect
+yeah
+so
+here
+let me import workbook then
+so I have to write WB for Workbook
+question
+load
+underscore workbook
+the destination of the workbook so uh
+the destination is in like desktop so I
+have to write C
+users
+lp09
+375
+stop
+Dash automation
+that
+you learn
+Dot
+cell SX format
+okay cool
+users SLP this one desktop automation
+simply learn DOT xlx fine
+so our workbook is loaded to Jupiter
+notebook
+we can see yeah perfect no error so
+let's activate this workbook for the use
+so we have to write WS for worksheet so
+worksheet equals to WB DOT active
+active
+like import from openmpy Excel our book
+there must be always been one worksheet
+in a workbook it is accessible through
+the workbook dot property active so
+that's why we have write WB DOT active
+so after making workbook active so we
+will print our workbook like
+we can print
+so print
+WS
+so here
+so here you can see the sheet one so it
+is showing worksheet sheet1 why sheet1
+because if you open your workbook and
+see here is your worksheet name like
+like so this is my automation
+file
+this is simply learn
+so here you can see
+the shade one
+that is why it is showing sheet1 there
+so uh okay so let me just
+finish it
+so moving forward
+let's change the worksheet name so
+I will write here import
+open
+pyxl
+so like it's your wish that you want to
+write this import file or like this
+thing this is not necessary at all so
+now I will import the workbook so I will
+write here
+WB equals to open py Excel
+dot load underscore
+workbook
+when pyx L it is
+my bad sorry guys
+so
+you have to give the path so I can copy
+path from here
+yeah perfect
+okay sounds good
+yeah yeah WB underscore sheet
+equals to
+WB and square brackets then you have to
+write the sheet name so there we have
+sheet 1.
+sheet 1.
+so sheet1 okay correct
+so I can change with WB underscore sheet
+dot title
+cheat
+dot title
+equals to
+code with
+simply learn
+perfect
+yeah seems good let me save this
+WD dot save
+and the same
+copy
+here paste
+yeah
+so when a sheet is generated it
+immediately receives a name like they
+have sequential numbers of names like
+sheet sheet1 sheet 2 and so on with the
+worksheet you can modify this name
+whenever you want to like using the
+title property so
+here let me save this
+and yeah where are
+so again go to Simply learn
+yeah you can see code base simply learn
+first it was sheet1 and now it is
+changed to codebase Simply learn
+so let me cut this again
+okay
+so if you want to change the color of
+your sheet name tab whereas written code
+will simply learn so you can write like
+here
+you can write
+WD
+or okay let me make this new one
+okay right I will write here so
+underscore sheet
+dot sheet
+underscore properties
+app
+color
+was to
+here you have to give hex
+values so four zeros okay
+so let me save this okay it is saying
+sheet1 why sheet1 because we already
+changed sheet1 to code which simply
+learn so what you have to do is
+here we have to write code with
+simply learn
+relearn
+okay same same simply learn simply learn
+same code code yeah so what I will do
+here I will just
+make W Capital so yeah
+now it will work fine yeah
+so
+if you save or run your code like like
+this let me
+let me show you one thing uh like
+color is already changed wait for one
+minute guys I will show you something
+crazy so it will see like this w
+okay
+so here I will small
+so
+if you save or run your code not
+actually save but run your code while
+your Excel sheet is open so my Excel
+sheet is open code will simply learn
+yeah
+so my Excel sheet is open so it will
+give you error like vital
+repeat like whatever
+this okay let me do one thing this is
+one okay
+it will give you
+the brilliant one does not exist let me
+check this is simply learn code will
+simply learn
+one
+code with okw's capital there
+okay see this is a
+permission denied
+then the location it is showing
+permission denied
+so this is something important to
+remember that Excel file should be
+closed while running the code and
+repeating again so like this is
+something important to remember that
+Excel file should be closed while
+running the code
+so first what I have to do is close the
+Excel file
+then I have to run it again so no error
+now so here you can see
+what we simply learn that red color came
+yeah perfect
+so moving forward let's create new
+workbook till we were working on the
+same worksheet which was present me in
+my like desktop so let's create new book
+so for that I have to write
+import
+cell as X writer
+so I will write here in command to
+create
+new notebook
+WB equals to xlsx
+writer
+Dot
+workbook
+and where you want to
+save the workbook so I will give
+the same
+path
+but with different name
+so this time I will give only like
+coders simply
+okay simply coders
+then I will write WD close close
+okay I will run it yeah
+so the primary class export by the XLS
+writer module in the workbook class and
+that is only class you will need to
+instantiate directly so the workbook
+class represent both the whole
+spreadsheet as it appears in the Excel
+and the Excel file as it is stored on
+the disk internally
+so you can see now
+yeah you can see now
+the workbook which is created in the
+desktop with the same name is like
+simply coders
+so this is done
+let's move forward and let's retrieve
+cell values so right now we are not
+having any data inside the workbook so
+let's put some random values like names
+and all so uh
+I will put some random values
+we'll put here
+names
+okay
+uh mayank
+kaushal
+okay well
+like jelly
+Chloe
+so let's save it
+let's save it
+and let's move to our coding part so
+here what I have to write to retrieve
+cells here I just write a equals to A is
+variable here
+so I am assigning is WS
+that
+A1 value
+the value which is presented at A1
+so here I will write in comments like
+to
+retrieve cells
+okay
+so here I will print
+print
+a
+okay okay
+what I have to do is like we have
+created this one file so it's it is not
+giving
+the uh this is giving sheet1 dot A1 why
+because it is taking from the simply
+coders one so what I can do is I can
+import this file because we have saved
+data in this file
+so that base is here and make it active
+detective yeah so yeah you know I
+haven't write here value
+so that is why it is giving the cell
+name and that A1 name cell name A1 only
+so now it will print
+names why why names
+because at the A1
+at the A1 position we have names so if
+you want to like print Anjali so what
+you have to do is okay let me check this
+B3 okay
+if you want to print Anjali you have to
+just write here just copy paste this
+code
+okay just right here the location
+B3
+so you can see Angel is printed
+so this is how you can retrieve cells
+and we can do the same for the others as
+to
+so there is one thing like retrieving
+we can change the sales values too
+so just we have to write here so let me
+give first enter enter for the better
+visual
+yeah
+so here what we can write is WS
+like I want to change the name of uh
+name of name of
+uh
+I will take this A4 Smith
+let me close this
+okay
+I will give here A4
+dot value
+equals to here you can give the value so
+here you can write Smith you can write
+John
+here as a replaced value
+so I will write here in as a command
+change
+cell
+value
+okay
+so what you have to do is just save it
+WB dot save
+you have to give the path for the same
+yeah
+fine
+so let me save this and
+let me save this first and run this
+first okay no error and let's open our
+workbooks to see the changes
+so here you can see
+the changes has been implemented in our
+workout
+first there it was like Smith and now
+John so like this you can change the
+cell values and let's move forward and
+see how we can merge the cells in a
+worksheet
+so like just close this and yeah
+so
+we are doing for the merging cells so
+here I will write from open pyxl
+dot styles
+both
+alignment
+so here I will write
+much cells
+for your better understanding
+okay
+so here I have to write WB equals to
+workbook
+okay let me active this workbook
+WB DOT active
+merge
+the cell
+set which one uh let's take for a while
+A1
+and B2
+okay A and B should be in capital
+letters
+so after that we have to save this
+we will save in this only
+so I can copy I can paste it here
+okay
+fine
+like using merge underscore cells and
+after giving cell position you can
+easily merge the cell so let's see the
+output so let me open this simply learn
+file
+you can see
+Nima they are merged together and like
+but what if you want the values at the
+same times
+so you can write here I have to cut this
+so you can write here like
+from open py Excel
+dot styles
+port
+alignments
+alignment a should be capital
+alignment
+okay
+so the same thing you have to write wdb
+equals to
+workbook
+WS equals to
+WB DOT active
+you don't have to give parenthesis
+WS dot merge
+underscore cells
+cells
+A1
+B2
+so here I have to give the cell value
+equals to WS dot cell
+which row which column so I can write
+row equals to 1
+column
+equals to 1.
+so cell
+dot value
+equals to
+here you can give the value which you
+want to print at the cell so here I will
+write code with simply learn
+okay fine so what we can do this we can
+give the alignment
+alignment equals to
+alignment
+horizontal horizontal
+equals to Center
+and from vertical
+and from vertical the same
+Center
+okay let me save this file WB dot save
+at the same location so I can copy the
+path from here
+copy here and paste here so I will
+yeah seems good let me save this
+white is giving error cell object has no
+attribute alignment okay alignment
+spelling is wrong
+sorry my bad
+g and m e and t
+eight seems good now
+oh good to go
+so
+so here you can see
+like by giving rho equals to one column
+equals to one basically position and
+after giving the value to what to print
+on that cell and one more thing is
+alignment like it is not necessary to
+give alignments like I just wrote it to
+cover it uh like in video so you can
+give alignments like uh right left this
+time I gave the center to print in the
+center
+so let's
+move and see the results
+so you can see the value has been
+printed exactly at the center of the
+cell
+I will make it like this you can see
+the value is printed exactly at the
+center of the cell because I gave the
+alignment center so let's do one more
+for like
+to see what is the default place if you
+don't give the alignments okay if you
+don't give the center alignments what is
+the default value so let me first remove
+this okay save no issues
+okay yeah
+so
+red align
+alignments
+or here what we can do is like
+from
+when UI Excel dot styles
+import
+alignment
+it is not necessary to light import
+alignments
+okay this is without
+okay I can write this default
+leave
+seems good
+okay everything we have to cover from
+here so I can just copy from here and
+paste it here
+so what we will do here we will change
+the cell value we will use like C
+6 and be
+it
+sorry guys so
+uh here I have to give row
+equals to 6
+and column must be
+eight so let's make it be cs6b6
+okay let's column should be six
+so code will simply learn coders of
+Simply learn
+orders of Simply learn like we are
+giving the value
+so at the same time we have to just save
+it WB dot save
+copy
+paste here
+okay
+so this time we are not giving the
+alignments you can see here we have gave
+alignments not now so let's run this and
+after that we will open our workbook
+so this is saying merge cells
+okay 2 must be greater than 3. okay so
+here what is happening
+okay I can write here D6
+right
+so now it will run properly I guess yeah
+it's working
+so
+let me open this
+so you can see
+this is the default value of like uh
+it so here you can see the value is
+printed at its default location
+not in centered or not in right not in
+left it is default location
+so till now we know how to merge cell so
+I repeat I hope you guys understand till
+here if you have any questions or any
+query regarding any code or question
+just put as in comments our team will
+shortly provide you the correct solution
+so
+moving forward
+until now we know how to merge cells so
+let's learn how to earn muscle okay so
+let me open the code
+yeah
+let me open the code and write for you
+so let me quickly write the code how we
+can merge cell so we can write open
+from
+open
+y
+Excel
+dot styles
+you just I can copy this from here
+I have to write here import alignments
+alignment only
+so what we are doing here we will not
+give any value or any this
+so here I will remove like B6
+actually we can give
+like a
+six
+P6 as a value so
+let's see the cells are merged or Not by
+running it
+okay see permission denied because our
+Excel was open so let me save this and
+close it
+and turn it again no error
+so
+here you can see
+let me Zoom if I can yeah so as you can
+see A6 and B6 are
+merged so what should I do to unmerge I
+have to write
+as you can write here like
+where you can write WS Dot unmerge
+underscore cells
+okay cells
+got it
+and just give this same value
+A6 underscore B6
+okay colon B6
+let me save this again no error let me
+open the file
+so you can see here
+A6 and B6 now unmerged
+so by just using unmerged cells you can
+easily unmerge the cells in your
+workbook so let's move forward and see
+how can you set dimensions for a
+particular cell or column
+so
+let me close this and go to the workbook
+again
+this is something frustrating by like by
+regularly doing the same thing going
+next next next
+so like you need a particular column
+height should be something and which
+should be something so that is what I'm
+like meant to be Dimensions so let's
+write code for it you will see and
+understand by seeing so
+import
+open p y Excel
+#to set
+dimensions
+of a particular
+cell
+okay
+WB equals to
+open p y Excel
+dot workbook
+worksheet equals to
+workbook DOT active
+ws.row underscore dimensions
+okay
+one I will explain you don't worry
+height
+equals to
+let me give 70 for a while
+okay
+WS dot column
+underscore
+dimension
+wait I will explain you don't worry
+don't worry it
+so let me save the file WB dot save
+and let me copy the path from here
+okay
+everything seems
+good
+okay
+y column okay column name is like
+function or column Dimension okay
+dimensions
+so like one height 70 and B which is
+eight
+color one let me open the workbook
+so here you can see
+by giving row Dimension and column
+Dimension and by adding height and width
+then we can set the dimension for a
+particular cell y1 and B for this
+you can see here 1 for the column like 2
+for the column 3 for the column let me
+Zoom it
+you can see now one for the all the one
+column Row 2 for the two Row 3 for the
+three row like this
+for you can say I use one for the
+particular row or you can say one for
+denoting row particular Row one two
+three four five six like this
+chicken I repeat
+and particular alphabet to denote the
+column see a for this column B for this
+column C for this column D for this
+column like this okay
+so here you can see every cell of Row
+one has the same height this this this
+this this this this this this
+and every cell of
+bit and every cell of column B has same
+width
+BS same width
+so
+like we can do one more thing we can
+print
+value though in a particular cells like
+okay let me
+close this
+and open this one
+so what can I do is I can write
+here
+like we can write at wd's cell
+rho equals to 1
+comma column
+equals to 1.
+okay
+dot value
+equals to
+hello
+okay and WS dot cell
+here I will write rho equals to 2
+comma column
+equals to 2
+dot value
+dot value
+equals to
+coders
+so I have to write it here not below
+this yeah
+okay cool let me give this space line
+okay so let me save this
+and
+let me check
+so here you can see
+hello is for the row one and coder at
+the column B
+okay fine
+so let me close this and
+okay next I repeat next let's see how we
+can move data to a particular row or
+column or you can say a particular cell
+here we need data to make it move so
+let's fill some random data
+on it so what I can do is
+I can put some random data
+of like
+fruit
+vegetables
+and some names like Mayan
+jelly
+above
+partial
+oh no
+and we can give like
+anything is myth
+John
+and Chloe
+Sarah
+and
+all right surgeon
+okay
+I think this much is enough so let me
+save this
+and yeah
+so data part is done and let's move to
+the this one and write import
+open pyxl
+yeah
+so let me write here move
+cell
+you can say move or jump whatever you
+want to say so from open p y Excel
+import
+workbook
+command load
+underscore workbook
+will be equals to
+load
+can give the path like this
+C and we
+okay let's make it active WS equals to
+WB DOT active
+of X seems good okay
+so I have to move WS
+dot move
+score range
+this is I can give okay let me see
+the data first
+okay I will make
+an above here
+and
+blank here
+or here okay
+so let's see again I forgot it is B
+5 and A4
+B5 A4
+okay
+so what we can do it uh like
+oh
+e
+five
+comma like rho
+plus two two
+and call
+V rho is equal to 2 and calls equals to
+so let me save this w dot save
+and let me
+so here what I'm doing is changing the
+position of the value which is present
+in the location
+A4 and B5 so and moving them by you can
+say the value will jump by two rows and
+two columns because I gave here two rows
+rows equals to 12 columns equals to 2.
+so let me save this run this okay
+and
+so here you can see
+so let me run this
+and what you have to do is open this
+file
+yeah
+so you can see A2 means 1 2
+it comes fruit comes here and coders
+come here so this is how you can move
+your
+coding part
+I repeat so this is how you can move
+these cell values so let's move forward
+and
+G so moving forward let's see how we can
+insert a row in our workbook okay so
+first what I will do is
+I will add some data like
+name here like fruits
+and something like car
+and here I can like bike
+okay
+something here coding
+okay all the data is filled and all rows
+are filled by some values so here we
+have no like no empty row present here
+till now so what we will do is
+we will insert a row
+okay so what we have to write is import
+open p y Excel
+hashtag
+insert
+pose
+okay
+from open p
+Excel report
+book
+command load
+underscore
+load
+all right
+let me copy the path
+see
+so let me make it active
+so I want to insert row
+deposition to
+one more row
+at the position 5.
+so let me save this I will copy from
+here
+okay
+I will make it like this so let me save
+this no error
+let's move to the workbook
+so you can see here Row 2 is created and
+Row 5 is created with no values
+so
+here you can see rows are added to the
+particular position or you can say the
+indexes
+so we have seen how we can insert the
+rows let's see the deletion of the rows
+so what we can write is let me open the
+code
+so what we can write is let me copy to
+save our time
+okay just delete this
+so we can write WS
+dot delete
+underscore
+rows and which row
+2 5 uh I will delete row number two
+for a while
+so let me save this
+and run this
+so you now you can see empty Row 2 is
+deleted
+so by using insert rows and giving them
+index you can insert the row at the
+index position you give and meanwhile
+you can use delete underscore rows
+function to delete the particular row so
+moving forward let's quickly write code
+for the insert column
+so for inserting column
+I will copy from here
+yeah insert row
+column
+and this one is for
+relating
+row
+okay
+so I have to write here WS
+Dot
+active not active sorry insert
+calls add the position second
+okay at the position one and
+okay I will make it
+insert
+calls at the position three
+okay
+let me save this file by copying this
+part
+okay saving let me do one thing
+yeah perfect
+so let me open the workbook
+so here what I have done is insert call
+at second position here we can't give
+alphabet we have to give a number for
+denoting a position so
+as you can see the column is added at
+the position one
+and three
+so by using insert underscore calls and
+by giving index you can insert column in
+your workbook
+so let's do one thing guys
+okay first let me close this and yeah
+so what I was saying that let's do one
+thing guys
+you will tell me how can I delete a
+particular column
+okay let me write here
+the question
+comments like
+how
+can
+you
+delete a
+particular
+particular
+column
+okay
+I'm giving you one minute for this just
+comment the code for this column
+deletion or else you can reply on chat
+it will suggest you to write a comment
+because after this session our team can
+easily check who gave the correct answer
+and who didn't give the correct answer
+don't worry I will provide you the
+answers at the end of the session or our
+team will reply at your comment at the
+same time
+so uh like for those who are watching
+this video like we watch normal video
+means you are not watching the live
+session so what you can do is just pause
+the video right now and put the comment
+how you can delete the column
+I am repeating again I will suggest you
+to write a comment because after this
+session our team can easily check who
+gave the correct answer and who didn't
+give the correct answer
+don't worry I will provide you the
+answer at the same time
+or our team will reply at your comment
+at the same time
+and those who are watching the video
+like we watched normal video
+so that you can do is just you can pause
+this video and put the comment how you
+can delete the column
+so I guess time is up guys I hope most
+of you gave the correct answers by
+putting comments we will verify your
+comments and we will back to you soon so
+okay moving forward let's see how we can
+style the font in Excel
+okay this is something crazy and
+interesting
+so you will not get bored and writing
+from open py Excel
+dot styles
+import
+font
+so here I will write for your styling
+okay
+so what I can do is like WB is equals to
+open
+p y Excel dot workbook
+blue s dot
+equals to WB DOT active
+I will don't worry I will explain you
+rho equals to 1
+comma column
+equals to 1 equals to
+um relearn
+okay
+and I will set the size of the cell
+so WS equals to
+sell
+rho equals to
+1
+comma
+column
+equals to one
+Dot
+value
+okay here I have to write font
+equals to
+font
+equals to
+font and you have to write size
+equals to 24.
+okay here I have to give
+dot value
+now we can do it for the many others
+but we will do it
+we will
+change
+hello
+not world again we will write coder
+hello coders and
+have you write code with
+simply learn
+and here we will write
+hello YouTube
+yeah
+so
+what I will do is like it will
+2 column two row two
+two here
+what I will do is font size equals to
+24 and and I will make it italic
+question
+true
+okay fine and I will make it
+old
+because true
+and here I will give
+three
+three
+okay and at the end what I can do is
+okay bye
+Thanks new
+one
+so let me save it quickly
+WB dot save
+with a fart
+so let's run this and see the results
+so let's run this again one more time
+so here what I did is just gave the
+particular row and column value where we
+want to print the value like simply
+learn hello coders hello YouTube code
+which simply learn
+okay and by using font I am giving the
+font size and font like italic board and
+so on like this is italic this is bold
+okay and here you can see at the End by
+using name here you can see
+at the End by using name
+we assigning the styles of the
+particular text like Times New Roman and
+you can give the name of your choice
+so why it is not because
+I have gave the it is collapsing
+so here I have write 444 okay now it
+will it is collapsing now hello YouTube
+and simply learn
+so what I will do is now I will run
+now you can see
+yeah perfect
+so this is simple one this is it in
+italic this is in bold and this hello
+YouTube is in Times New Roman Style
+okay
+so okay let's move forward and do
+something with cells
+um like what we can do it let's do color
+them okay
+let's add code for this
+how we can like color a particular cell
+we know how to color the particular tab
+of sheet
+and now
+let's color it so we can write as import
+open py Excel
+here I will write coloring
+particular cooler
+cell
+okay
+so I will first copy this thing here
+from here
+okay I don't think I want this I have to
+write from open
+UI Excel
+port
+and fill
+I want something like this
+okay so WD dot open py Excel workbook
+here I can write open pyxl
+dot load workbook
+okay
+book
+and here I will give the path
+yeah it seems good
+so what I will do is
+make it active and I can write here WS
+equals to WB
+square brackets then I can write a name
+of working sheet
+I don't remember
+only sheet
+sheet
+so we can write a fill underscore cell
+equals to pattern
+will
+ATT pattern
+type should be I will prefer solid
+okay
+and
+comma
+FG color
+foreground color equals to
+I will write here f
+c 2 C
+0 3 okay
+fine we can make four cells
+four cells
+four cells are enough I guess
+so we can write here cell one
+paste copy paste copy paste so we'll
+four
+three
+two
+solid solid solid yeah
+so let's change color we can give 0 3
+FC
+F4
+here I will give
+uh three five FC 0 3.
+perfect
+here I can give
+o f c
+a 0 3.
+so now let me assign
+let me assign the cells to them WS
+like
+you can assign a
+a one
+sign A2
+dot fill
+equals to
+fill
+let's go sell
+KR
+ill
+underscore cell one
+foreign
+A3
+everything seems good
+let me save this so I will copy from
+here
+why error permission denied because it
+was open so let me cut this
+so let me see
+so here I'm using the pattern field to
+fill the color in solid style and giving
+the FG color like foreground color
+and at the below you can see I'm like
+assigning the cells to a particular
+pattern field cells so
+let's see the output yeah it's working
+here you can see the results we colored
+these for the particular cell like A2 A3
+A4 A5
+so this is something you can style the
+color so let's move forward and see how
+we can import the image in our workbook
+like something here something here
+something here let's see
+so let me first cut this okay
+let me do one more thing yeah perfect
+coloring particular cell
+so how we can import
+our file or image you can say
+so I will write
+from
+open p y Excel
+both
+load underscore workbook
+okay load underscore workbook load
+underscore workbook
+and
+I have to write here from
+open p y Excel
+dot drawing
+dot image
+import image
+okay fine
+workbook
+write w d equals to
+load underscore
+workbook
+a cave
+let me copy this and this hole
+so logo is for
+variable used for the image image
+okay so I don't have an image for right
+now
+let me do one thing
+uh let me import one image
+any kind of image for a while so I can
+do like
+so this is my image
+what can I do is
+what can I do is I can give the path
+like
+uh
+path would be same
+path would be same
+we will change here something don't
+worry don't worry
+X stop
+don't remember name of the file
+this is picture two
+yeah
+piece is smaller capital
+p is capital so I have to write
+picture
+2 dot PNG
+okay so
+I will give logo
+dot height equals to 150
+logo
+dot width
+equals to
+150 a bit of resizing to not fill the
+whole spreadsheet with the logo
+so that's why just for that so WS dot at
+image
+to logo
+comma
+cell in which cell you want to print I
+will M two
+fine
+so here we will
+save it
+by using this one
+okay perfect
+cannot image import name image from
+mobile file doing this one
+so might be there is problem
+open p y Excel Dot
+drawing
+dot image
+okay
+import image
+I think I is capital here
+James
+logo image okay is capital here
+yeah it seems good
+yeah here is the picture so what I do is
+what can I do is
+so here we need one more Library drawing
+image a variable logo this one
+is for the location of the image and
+giving and height and weight because a
+bit of resizing to not fill the whole
+spreadsheet with a logo like with the
+whole spreadsheet with the logo so just
+a bit of resizing
+and add image function is used to append
+image on it and M2 is for like this M2
+M2 is for position m
+2 like that it's for in which cell you
+want to append it so
+image is is coming to the particular
+index M2
+okay
+so this is how you can import image in
+Excel using python okay let's move
+forward and see how we can import date
+and time
+so let's write code for that quickly
+okay
+so what I will do is I will write here
+import
+date time
+I will write
+date
+time
+from
+open p y Excel
+import
+workbook
+time
+so what can I do is
+make it WP equals to
+workbook
+low should be Capital here
+and WS equals to WB
+DOT active
+what can I write is Ws dot cell
+row 1
+comma column
+goes to 1
+dot value
+equals to
+date
+and time
+something
+so I can write copy it
+paste it
+what I can do is
+let me first change the
+three
+oh
+equals to 3.
+okay
+value
+so here I can assign date and time
+date
+time dot date time dot now
+Dot string
+format strf
+time
+what you have to write it
+percent y
+percent M for month
+percent D for days
+percent h
+then percent
+and for minutes and percent
+against
+so this should be
+in between this
+okay
+yeah but
+so let me save this
+close it
+import date start time not date time
+it's date time
+okay row equals to 1.
+data time not date time
+again
+date time dot now
+daytime Dot date time
+so date time objects has no attribute
+strf
+time okay time it is yeah
+okay
+yeah
+finally it's working no errors
+so air like okay
+so here I have imported some libraries
+like date time and so on strf time used
+for string formatter and date time now
+used for the current date time this date
+time now is used for the current date
+time
+and so let's run this and see
+so here you can see the correct time and
+date is coming it can be different from
+your from which country you are watching
+this live session
+so what if you want to print the time
+after like two seconds late
+so for that we can write here
+quickly
+so I will copy this whole
+B
+so like
+we have to copy this and just what you
+have to do is
+let me make for to see the difference
+v v okay three are enough
+so what I will do is
+go four
+five
+okay fine what I will add here is time
+dot sleep
+how much second you want like two
+for this one and
+something for this one like
+five seconds for this one
+okay
+so what we can do is let's save it
+and let's see the results
+so here I've used the time dot slave
+function given parameter as two or four
+I guess five operating the seconds
+difference
+so here you can see the difference in
+seconds okay the time is not coming wait
+wait let me check
+sorry guys
+now I have to turn it open it
+and it is not coming why so
+shouldn't denied
+okay
+let me run it again
+okay okay because I am giving seconds
+difference no that was that is why is
+giving permission denied so let us wait
+for two five five seconds
+okay I think five seconds are over
+now we can open it
+yeah you can see 47 seconds and 49s two
+second difference and 49.54 five second
+difference
+so here I've used the time slip function
+given parameter as 25 for printing the
+second different
+so let's move to the workbook
+repeat here you can see the difference
+in seconds so I hope you understand till
+here if you have any questions or any
+query regarding any code or question
+just put as in comment our team will
+shortly provide you the correct solution
+I'm repeating again I hope you
+understand till here if you have any
+questions or any doubt
+or any query regarding any code or
+whatever it is so just put as in
+comments or our team will shortly
+provide you the correct solution
+so moving forward
+moving forward let's see how we can add
+values as an array
+okay
+so what I will write import
+xlsx
+writer
+WB
+equals to xlsx
+writer Dot
+workbook
+okay I will give the path
+from here
+okay WS equals to
+WB dot at
+worksheet
+W should not be Capital here
+okay so what I will do is rho equals to
+0
+and column equals to zero
+okay so I will write here uh
+data
+equals to
+take us the names just names
+we
+just random names they are
+above let's take
+one more
+so for
+atom
+and data
+and WS
+dot right
+I will explain you line by line don't
+worry
+rho comma
+column
+comma item
+perfect so here what I will do is rho
+plus equals to 1 or you can write rho
+equals to rho plus 1
+w b Dot
+close
+okay
+let's save this
+let's see our data is appended or not
+okay first I will explain this code to
+you
+so here I have created one new workbook
+like name
+no I haven't created so let me create
+two
+okay
+example
+okay
+so I will run this yeah perfect so yeah
+I repeat so here I have created one new
+workbook name example
+so at row 0 column 0 I am printing my
+content values
+like for data values using for loop I am
+moving to the next iteration of the
+values like from undue to core shoe and
+then mayank then so on
+so let's see the results
+okay
+yeah
+so here you can see all the values are
+printed so using these chords of line
+you can do things like this easily
+so as we know how to write multiple
+values at the same time what if if you
+want to retrieve values of a particular
+row or column so for that we need
+so we need data for that so let me add
+the full data
+of let me
+copy some data from somewhere
+so just give me a minute
+okay
+it's the blank worksheet
+let me give me one minute guys
+okay what I will take is
+fun
+I can take this
+some values we can copy like 50 values
+okay
+50 is high enough
+see
+yeah
+yeah
+we have data now
+you have data and they simply learn okay
+now we can write code for that like how
+to retrieve multiple column
+so the same
+font
+see
+let's do WB
+DOT active
+okay
+WS
+question
+WB
+spreadsheet
+column
+in worksheet
+a
+okay
+so what I have to do is just print
+column values
+column dot value
+I hope it will work uh
+WB DOT active
+workbook object has no attribute active
+okay let me see
+okay sorry
+import open p y Excel XLS writer is used
+for
+to create new workbook okay open p y
+Excel
+dot load
+underscore workbook
+now it will work I guess
+still it is not working
+out
+it should work I guess
+open pyxl
+open p y Excel dot load okay okay sorry
+my bad here Dot
+now it will work okay sheet
+too much this is sheet one
+you never know
+when the sheet will create
+one
+yeah
+you can see all the list of column A is
+printed here
+all the 50 values and you can match from
+here to
+all the 50s values okay Trail Travis
+Scott
+so let me match this
+got okay
+so
+I hope you understand till here if you
+have any questions or any query
+regarding any code so just put as in
+comment or our team will shortly provide
+you the correct solution after doing
+importing exporting the values and all
+let's perform some basic operation like
+addition average and all okay
+so first we will start with the addition
+so I will write here so we need data in
+workbook for the addition
+so let's take some data from
+from which set
+the same install data set
+so I will take this
+this
+values are enough
+okay
+copy it
+and let me paste here
+so what data we have let's code for it
+we have to write here import
+open p y Excel
+we are doing sum of columns
+not column column values values
+yeah
+like from open
+p y Excel import
+book
+comma load underscore workbook
+so WB equals to load
+underscore
+a note workbook
+workbook
+copy the path
+a
+so I will make it active
+so here what I'm doing is
+I will tell you shortly
+so it is in C I guess CRP
+which column
+of P
+B 50
+one I guess yeah
+P51
+B should be capital
+equals to
+see carefully what I'm doing like sum
+from B one
+one
+till
+B I guess 50 values we have 50.
+okay B should be Capital my bad sorry
+okay this is what I'm doing and WDS dot
+save
+where is the same one
+so here I have added all the values
+which are between in the range of B1 to
+B 50. and what I'm doing is the result
+will be displayed on the b51 cell
+okay so let's run this code
+okay
+let's go to the b51
+yeah result is coming for verifying the
+result is correct or not I won't use
+calculator
+for this so we can use
+this code for the same for average
+product and count so let's
+do it quickly
+okay
+so let me just copy paste this stuff
+c v this is will be for
+average
+a spelling mistake average
+okay what I will do is just write
+Capital heavy
+Bridge here
+okay and I will print it to 50
+2.
+okay code is almost same just one change
+like you have to write instead of sum
+you have to write average
+there
+and just okay
+let's see then
+so now you can see this is the 137 point
+something something is the average of
+these all values
+everything look good
+let's see the count
+quickly let's
+be
+Port is almost same just we have to
+okay capital
+fifty three
+visible okay
+this count will give you how many values
+are there between the range till 1 to
+50. so let's check let's run it again
+and check
+if it's working or not yeah 49 values
+okay
+so
+what I'm planning is let's do one thing
+now guys uh you will tell me how I can
+find the product of a particular range
+I'm writing question as a command as I
+did before
+so
+how to
+a
+okay
+how to find
+product
+of numbers
+like where
+yeah
+at the range is between
+a A2 to a 98
+okay
+so I'm
+giving you one minute for this just
+comment the code for this like
+multiplication or else you can reply on
+chat you can write just syntax only for
+the product
+I will suggest you to write a comment
+because after this session our team can
+easily check who gave the correct answer
+and who didn't give the correct answer
+don't worry I will provide the answers
+at the end of this session or our team
+will reply at your comment at the same
+time
+and those who are watching the video
+like we watch normal video or you are
+not attending the live session so you
+can just pause this video and comment on
+how we can find the product in Excel
+using python
+I am repeating again I will suggest you
+to write a comment because after this
+session our team can easily check who
+gave the correct answer and who didn't
+give the correct answer don't worry I
+will provide you the answers at the end
+of this session or our team will reply
+at your comment at the same time
+those who are watching this video like
+we used to watch normal videos uh so
+what you can do is just pause this video
+and comment on how we can find the
+product in Excel using python
+so I guess time is up guys I hope most
+of you gave the correct answer by
+putting comments we will verify your
+comments and we will back to you soon
+so moving at the last
+of this session let's do something with
+charts
+so what I will do is first I will move
+it bit up
+yeah
+so let me write code for that for the
+chart
+so I will write from open
+p y Excel
+import
+workbook
+um
+open p y Excel
+dot chart
+import
+reference
+comma
+line chart
+okay we will create line chart WB equals
+to workbook
+WS equals to
+workbook DOT active
+so after this I will set the chart title
+title equals chart
+okay
+let me create these rows so rows equals
+to
+uh what I will do is
+I will create something like
+um
+X
+okay comma
+uh
+sale
+comma
+veggiesel
+yes
+Oma
+not here
+comma
+and I have to give the values weeks are
+Monday
+okay let me keep this same
+what cell should be like 100
+comma 200
+Tuesday
+from a 200
+comma 300
+Wednesday
+300
+comma 400
+but
+the Thursday
+I'm a 400
+or 20 30
+day
+20
+comma
+at today
+60 comma 30.
+okay it seems good
+let me do
+like four
+s
+okay Row in rows
+blue s dot append
+oh
+values
+equals to
+reference
+WS comma min
+call
+s to 2 comma Main
+rho equals to 1
+comma Max
+column equals to 3
+comma Max
+underscore row equals to 7.
+okay it seems good okay x dot values
+equals to
+reference
+the score string
+k equals to
+chart
+A2
+A7
+so chart equals to line chart we are
+making
+so let's add the data to line chart
+object
+chart
+dot add underscore data
+values
+comma titles
+t i t
+t i t l e s titles
+let's go from underscore data
+construct row
+okay
+it should be capital
+so let's set x axis
+chart dot set
+categories
+X underscore values
+okay let's set chart
+Dot
+let's go
+tails
+chart Dot
+access
+l equals to
+weeks
+and chart
+dot y
+axis
+dot title
+equals to
+put
+and
+veggies
+sales
+chart dot Legend
+dot position
+is to B
+okay
+so WS dot add
+underscore chart
+comma
+H1 cell
+so WB okay let me copy this code from
+here
+so here I am importing reference and
+charts Library like this reference and
+charts Library
+and just giving title as charts you can
+see here chart
+so rows are the data from which we will
+make chart
+and for Loop
+is to append the data on the workbook
+chart add data chart add data
+values titles from data equals to true
+this is for adding data to the line
+chart object just giving the title X
+action and y axis
+and all so let's save this and see
+whether chart is visible or not let's
+save this
+okay what is going cannot import name
+reference from open file
+reference okay let me see
+error in line two error in line two
+okay sorry my bad okay
+now it will workbook
+forward number okay W should be capital
+should be Capital now it will work I
+guess
+again that's reference
+okay
+start values
+dot my bad
+h a r t
+c h a r t
+dot save okay WB Dot
+okay finally no errors
+so let's save this and see whether chart
+is visible or not
+let me go to this simply learn
+yeah you can see chart is coming and it
+is it's looks so good I hope you guys
+must have understood the concept of
+automating excel with python if you have
+any queries or doubt you can ask them in
+comment section below our team will
+respond as soon as possible and if you
+want this full code just comment for the
+same thank you so much for being here if
+you enjoyed this live session please do
+subscribe to our YouTube channel and
+give like to this video thank you and
+keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

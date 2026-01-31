@@ -1,0 +1,586 @@
+>> Diagnosing your performance
+issues with your apps that are
+already in production may not be
+the greatest thing in the world,
+but have no fear
+because Azure has got
+you covered with the Azure
+Application Insights tool.
+Learn more on this episode
+of Visual Studio Toolbox.
+[MUSIC]
+>> Hey, everybody. Welcome to
+another episode of
+Visual Studio Toolbox.
+I'm your host, Leslie Richardson,
+and today, I am joined by Principal
+Software Engineering Manager,
+Chuck Weininger, who is a member of
+the DevDiv Azure Services
+Team. Welcome, Chuck.
+>> Hello, Leslie. Thank you.
+>> Thanks for coming.
+Today, we're going to be
+talking specifically about
+Azure Application Insights.
+Can you tell us more
+about what that is?
+>> Yeah. Application Insights is
+application monitoring
+features within Azure
+that allow you to collect data about
+your application while it's running.
+The Profiler is an advanced feature
+of Application Insights that lets
+you collect performance data about
+your application while it's
+running in production.
+As you know, with apps
+running in the Cloud,
+it can be really hard to get
+debugging data about
+those applications.
+You can't just put
+a debugger on them.
+You can't just run a Profiler
+on them whenever you want,
+unless you're using our service,
+which we run the Profiler for
+you and collect that data
+and upload it to our service
+and make it available
+for you through Application Insights.
+>> Cool. That's really interesting.
+Just the whole space of profiling,
+I feel like that's a subject that
+a lot of people are aware of,
+but don't quite use or learn
+up on until it's imperative,
+so something's going
+wrong while the apps
+already out in production.
+>> Yeah, it's very true. A
+lot of times, users are like,
+"Oh, I have a performance issue.
+What do I do? How do
+I look into this?
+It happened yesterday.
+How do I find out why and
+what I can do to fix it?"
+That's the cool thing
+about our Profilers.
+You can turn it on today
+and just let it run.
+It'll be collecting data in
+the background and
+it'll have that data
+ready for you when you have
+a problem that you
+want to investigate.
+It does so in a way that's
+not intrusive to your app.
+It doesn't change your app code
+at all. It runs out of proc.
+For Window services, it's
+collecting ETW traces,
+which is a Windows eventing,
+and getting call
+stacks from that data.
+By default, it runs a
+couple minutes an hour,
+so it's not running all the time.
+It's just a sampling Profiler.
+We're hoping that over a
+period of time, it'll collect
+the relevant data that you need
+to debug your application.
+>> That's cool. I like that you
+can leave it on in the background
+and go about the rest of your dev
+work that you need to do. Sweet.
+>> Yeah. Why don't I show you how to
+enable it and start
+collecting this data?
+>> Yeah, sounds good.
+>> This is an application that
+we have that demonstrates
+the Profiler.
+It's an Azure App Service,
+which is the easiest way
+to use the Profiler.
+We have a real simple switch
+to turn it on and off,
+which I'll show here in a minute.
+But for this App Service,
+you can go to the
+"Application Insights" tab.
+If you have Application Insights
+enabled for your app,
+it'll look like this.
+It shows the Application
+Insights is turned on,
+and if it's not enabled,
+you can enable it here.
+But then you'll see
+this Profiler section,
+and you can turn the
+Profiler on and off.
+As you can see for this app,
+we have the Profiler on.
+When the Profiler's on, like I said,
+it's collecting data a
+little bit every hour.
+The hope is that over
+a period of time,
+all kinds of requests will be coming
+into your application during
+those couple minutes an hour,
+and you'll hopefully get
+some long-running requests and
+you can see what's happening,
+why those are taking a long time.
+Once you've got it on, you can go to
+your App Insights resource by
+clicking the "View Data" at the top.
+This takes you to the actual
+Application Insights resource.
+I'm in a different
+resource now than before.
+I've gone from my App
+Service to App Insights.
+The Profiler is part of the
+performance features of App Insights.
+This is the performance blade
+for Application Insights,
+and there's a lot of information on
+this blade that I'll
+get to in a little bit.
+But the first thing you can do is
+hit the "Profiler" button at the top.
+This is our configuration
+page or Profiler homepage.
+This allows you to set
+some different properties
+about the Profiler.
+We have triggers, which
+I'll show you here,
+and this is a list of profiling
+sessions that have happened.
+This app's been running
+for a long time and been
+collecting profiling traces
+every day for a long time,
+and it lists those here.
+But at the top is
+some information about the Profiler
+or settings about the
+Profiler that you can set.
+The first one is "Profile Now".
+If I click that button,
+it will start profiling
+right now in my service.
+This is really cool if
+you're doing some testing.
+You might have a perf test or
+a stress test that you're running
+and you want to get a
+profile from that test.
+You can click that button and
+it'll start profiling now.
+Then there's triggers
+that you can set.
+If CPU goes above
+a certain threshold on the machines
+that are running your service,
+it'll trigger the Profiler to start.
+We have that by default
+set at 80 percent,
+and it'll run for 120 seconds.
+>> That's really cool. You
+don't even have to play
+the trial-and-error game or trying to
+figure out where those
+specs are coming from.
+>> Yeah, it'll start for you when
+CPU gets to a certain point.
+We also have a similar
+thing with memory.
+If your memory threshold
+gets above a certain point,
+we'll start the Profiler.
+Again, that's set at 80
+percent as the default.
+Then there's this setting here.
+This isn't released yet.
+I'm showing you testing bits here.
+Like I said, the Profiler runs by
+default a couple of minutes an hour.
+Up until now, we haven't had
+a way to change that setting.
+It's just that's what it is
+and that's what you get.
+We've had a lot of people ask
+us, "Can I turn that off?
+I only want to have
+the other triggers
+or I only want to
+have "Profile Now"."
+We've given you ability to turn
+default profiling on and off,
+and then you can also set
+it normal, high, or max.
+Instead of running
+two minutes an hour,
+you might want to run
+it more than that.
+That's high or max is
+like run it as much as
+you can possibly run it.
+I wouldn't recommend doing that in
+a production service for very
+long because you could start
+affecting the performance of your
+app because we're collecting
+some very low-level data and
+then uploading that data,
+it could take up resources that
+your app would need to run.
+>> Sure.
+>> Yeah. I recommend
+keeping it on normal,
+but there are cases where you
+might want to increase it.
+Then this shows you recent
+profiling sessions that we've done.
+On the left here you
+can see, it tells you
+how those sessions were triggered.
+Most of these are default sampling,
+which is that random
+we're just going to
+profile and hope we
+catch something cool.
+Then we have a few here that are
+triggered by the CPU trigger.
+>> That's so helpful.
+>> Yeah.
+>> Just filtering out my problem.
+>> Yeah, and it's nice too
+because the date's here.
+If you knew you had a problem
+at a certain point in time,
+you can come in here and look, "Okay.
+On Tuesday at nine o'clock in
+the morning we had a high CPU,
+let me click on that and see."
+I don't want to click
+on this right now
+because it takes a
+bit of time to load,
+but if you do click on that,
+it loads all the events that happened
+during that profiling session
+and lets you look at
+traces for that session,
+which I'll show you that in a
+minute in a slightly different way.
+>> Cool.
+>> That's the Profiler homepage.
+Now let's go back to
+the Performance blade.
+This is the page that
+people are going to
+use to investigate
+performance problems.
+By default on this page,
+it shows you the average
+length of time for a request,
+but I would recommend if
+you're looking into a problem,
+you want to switch this
+to the 99th percentile.
+This is showing you
+the longest requests.
+In this chart down here,
+so you see all the requests that
+your application server serves
+and how long those requests
+took for the 99th percentile.
+You can see, we have
+some requests here.
+Now, this is a contrived example.
+We've done this on purpose to make
+it have long-running requests.
+But you can see this one
+here takes 23 seconds.
+>> That's a long time.
+>> That's quite a long
+time for requests.
+You want to look into that,
+why is that taking so long?
+This chart over here is now,
+not very interesting for this
+service because all of my requests,
+because it's an example,
+take the same amount of time.
+But this is a histogram
+that'll show you,
+for each time slot,
+how many requests you
+had in that time slot.
+Then the little triangles
+at the top indicate for
+that time slice or that time
+slot, you have a profile.
+I can drill into that
+if I went and see,
+I have request that take 20 seconds,
+I have request that take 22 seconds.
+On a production service, hopefully,
+you have a broader range
+of times and it looks
+cool to see all the
+different time slots
+that your requests are taking.
+But once you drill into this,
+you can click down
+here to this Profiler
+traces button. You
+can see it says 41.
+It means that for the filters
+that I have on this page,
+we have 41 examples of a request that
+took that amount of time that we
+can show you detailed data about.
+I'll click that, and this will
+load the list of
+requests on the left,
+and you could probably count them.
+This should be close to 41
+or if not exactly on 41.
+This is the detailed data that
+we have about that request.
+You should be able to
+see your code in here.
+This is a call stack of what
+happened during that request
+and what took the most time.
+We try to highlight
+the hot path for you,
+which is the pieces of that request
+that took the most CPU time.
+For this one, you can see
+we're doing an array sort
+and that sort is taking a long time.
+There's CPU time scattered
+throughout here,
+and there's waiting time scattered.
+The waiting time is because this
+is taking so long for the sort,
+that this thread is getting
+swapped off to CPU and back
+on because the CPU can't allow
+one thread to just take over,
+so it keeps sending
+it off to the CPU,
+then go, "I'll get back
+to you in a minute,
+call me back on," that's
+what the waiting is.
+You probably want to look into
+why is my sort taking so long.
+Am I doing it some weird way?
+Am I sorting too much data?
+There might be something you
+could do to speed that up.
+>> For instance, I noticed
+the Download Trace button
+and Visual Studio,
+that got 10 profiler,
+so could you theoretically
+download this trace,
+upload into VS and then
+track down on what line of
+code is causing that
+giant performance spike?
+>> Yes, you can.
+Very good question. That's
+exactly what you can do.
+The really cool thing about
+the Download Trace button
+is it gives you that
+whole two-minute trace.
+The view we have here is
+only what happened during
+your specific request
+that you are looking at.
+But this Download
+Trace button downloads
+the whole two-minute ETW file,
+which you can open in many
+different tools like Purview,
+Windows Performance
+Analyzer, or Visual Studio.
+I can show what that looks
+like in Visual Studio.
+This is one I've opened
+in Visual Studio.
+One thing to note about when
+you download that file,
+it downloads it as a Zip file.
+Visual Studio doesn't
+recognize a Zip file.
+You have to rename the file
+to end in .diagsession,
+D-I-A-G-S-E-S-S-I-O-N.
+If that's the file extension,
+Visual Studio can open it.
+>> Got you.
+>> But Purview and Windows
+Performance Analyzer
+can open the Zip files.
+>> Sweet.
+>> Yeah. Then you can use
+the Visual Studio DIAGSESSION
+tools to dig into this and
+see what's happening with
+your code at that point.
+>> That's awesome that you can
+work together harmoniously
+if you want to.
+>> Yeah. The really
+cool part about it
+is you're getting this
+from a production service.
+You didn't have to do anything
+to collect this data,
+we've collected it for you.
+Hopefully, it has interesting
+things in it and you
+can find something
+to fix in your app.
+>> Yeah, that's awesome.
+>> Let me just show you a view
+of Windows Performance Analyzer,
+because it has amazing
+analysis that you can do.
+This is from a DIAGSESSION
+session that I
+collected from one of our
+actual production services.
+You can see just the
+charts and graphs are
+just unbelievable data that
+you can get from this.
+>> Yeah.
+>> It takes a little bit of
+time to figure out what
+all it's telling you.
+>> I'm a little overwhelmed.
+>> Yeah. But it has really
+nice documentation,
+and I know users that have got
+some really valuable
+information from this tool,
+so it works very well.
+>> It's just nice that users
+have options either way.
+>> Yeah. This being a
+Visual Studio show,
+we hope you use Visual Studio,
+but there's other tools too.
+>> Sweet. If I wanted
+to go learn more,
+since I'm very much new to
+the profiling space especially
+with Application Insights,
+where can I go to learn more?
+>> You can go to our Help
+page, which is here.
+We have a pretty
+extensive documentation.
+We're always looking
+to improve it so leave
+us a comment if you have questions
+and we can edit this
+documentation anytime.
+But this tells you
+how to enable it for
+different types of services,
+and then some other
+options that you have,
+and then there's some
+troubleshooting at
+the bottom if you have problems.
+>> Great. Seems like
+that's a lot of good stuff
+to get started with.
+>> Yeah, we hope so.
+>> Sweet. What's next
+for the Profiler?
+>> Thanks for asking. We are
+looking at expanding what we show.
+In the browser, we have this
+view of just one request,
+but we'd like to be able to show,
+and then we've recently
+added this flame graph,
+I can't remember if I
+showed that earlier.
+But we want to be able to show
+you information from
+the whole Trace file.
+This is a very
+request-oriented view and
+we've gotten a lot of feedback from
+users that they'd like to see,
+without downloading the Trace,
+can I see information
+about the whole Trace?
+That's what we're
+looking at doing now,
+is it's allowing you to see maybe
+a flame graph for the
+entire ETW session.
+We want to give you some
+more insights too as to
+where things might be
+slowing down and why,
+and so we're working on
+some detection of patterns
+that we see in people's
+code and we could
+give you hints about what might
+be slowing your code down.
+>> Cool. Yeah, I can't
+wait to see that stuff.
+>> We'll have to come
+back and do another
+show when we have some of that ready.
+>> Yeah, definitely.
+Speaking of which,
+thanks for coming now.
+I think that's really cool
+info that I'm sure tons of
+people would find incredibly useful
+whenever they run into
+those performance issues.
+>> You're welcome.
+>> Great.
+>> At the top here, there's
+the help and send feedback.
+If you use these links,
+it will contact our team also so
+if you need help with things,
+we're there ready to help people.
+>> Awesome. We actually do pay
+attention to the feedback
+that people send.
+Don't hesitate to reach out.
+With that, once again, thank
+you so much and hope everyone
+goes and tries out the cool
+profiling tools that
+we just talked about.
+With that, happy coding.
+[MUSIC]

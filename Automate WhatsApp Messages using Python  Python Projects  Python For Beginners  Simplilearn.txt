@@ -1,0 +1,165 @@
+[Music]
+hello everyone today we are here to
+discuss a project on
+python and how python can be used to
+invoke
+and send messages
+in
+whatsapp
+so what we're gonna today do is we're
+gonna demonstrate you
+how to use pi what kit it's a python
+utility which is available
+in order for you to interact directly
+with the
+python and whatsapp
+so we will show you certain examples
+using which you can directly interface
+with your whatsapp now in order to
+perform this activity
+first you need to go to your python
+installation folder
+now in my case i have my python
+installed in my app data local programs
+python python 310
+so your first task is to go and open a
+command prompt from this folder
+and then
+you need to install
+pip install pi what kit
+so under python 310 there is a folder
+script
+and you paste this command
+and you should get
+this particular message if you have
+already installed pi what kit if not
+then python will install the relevant
+library in your computer
+after you have done this then
+go back
+to your python root folder
+go to the python terminal
+and then run the command import
+pi what kit
+okay so after you have installed the pi
+vodkit library then you need to import
+the pi what kit and this message should
+be successfully imported
+now
+i want to send a whatsapp message
+to
+a phone number
+and i want to send it at a particular
+time so right now i'll just set the time
+as
+20 38
+and please make sure that you are
+already logged in to your
+web.whatsapp.com
+and so that
+you know uh the when python tries to
+send a message you are already
+pre-logged in okay
+okay so now if you see with this message
+with this api i'm going to send the
+message at 8 39 so this will go and open
+the whatsapp window in next 46 seconds
+and after 20 seconds the message will be
+delivered so 8 39 so when the timer in
+my system clock will reach to this
+particular time
+python will open a whatsapp window
+log into that
+reach to this phone number which is
+there in my whatsapp contacts and then
+after 20 seconds this message will be
+delivered
+so let's just wait for a few seconds and
+wait for python to perform that activity
+yes now
+python has opened the web.whatsapp.com
+in which i'm already logged in it has
+reached out to that number
+and typed the message welcome to simply
+learn world
+and i can send this message
+now
+let's move on to the another example
+if i want to send a message to a
+whatsapp group
+then you need a whatsapp group chat id
+and the message you want to send so now
+in order to send a message to the
+whatsapp group
+you can pick any
+whatsapp group in which you are
+administrator
+go to the
+group info
+and
+click invite to group via a link
+and in this link
+copy
+copy this part
+copy link
+go to notepad
+just copy this part this is the group id
+okay and paste it over here
+okay
+so now
+you can
+send message to a group
+copy paste this
+in your command prompt
+set the timing
+in 16 seconds whatsapp will open a
+window and after 30 seconds the message
+will be delivered
+okay so whatsapp window is open
+it will reach out to that particular
+group
+it will type the message
+and submit it
+and even it will close the window
+automatically now okay
+so this particular
+command has typed the message submitted
+it and closed the window
+now if you want to send the whatsapp
+message instantly
+you just
+use the api send what's message
+instantly
+and it will send it instantly to the
+user
+now another utility is that if you want
+to
+find a keyword
+on youtube
+so we'll just play
+on youtube simply learn on youtube
+so
+it will automatically play the youtube
+channel which you have put in that
+particular keyword
+on the youtube so
+python can also directly open a youtube
+url
+or if you want to do a google search
+here we go so as soon as you put that
+command on the python
+console it will open google.com and
+search it
+so with these utilities you can
+directly interact
+create your program to interface
+python with whatsapp
+i hope you had a great learning session
+and i look forward to connecting with
+you in my next session thank you
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

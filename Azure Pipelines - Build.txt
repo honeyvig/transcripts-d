@@ -1,0 +1,655 @@
+>> On today's Visual
+Studio Toolbox part
+1 of a two-parter on how you
+can deliver more value to your
+end users more efficiently.
+Hi, welcome Visual Studio Toolbox.
+I'm your host Robert Green.
+Today we're going to
+look at how you can get
+started using some of the
+basic DevOps practices.
+Now, DevOps is a hot topic.
+Lots have been written about it.
+Lots of people talking about it.
+There are entire channel 9
+shows devoted to DevOps.
+But it's really important,
+and I thought we would take
+an opportunity on Toolbox
+to look at how you as a
+Visual Studio developer
+can get started down the path.
+Now, the question is, why?
+What does DevOps offer you?
+DevOps, one of the key
+things about it is,
+it gives you the ability to
+continuously deliver
+value to your customers.
+Key point there is the idea
+of continuously delivering.
+Now, think about apps on your phone.
+How often do the apps
+on your phone update?
+The answer, often. Why
+is that a good thing?
+It's a good thing because you're more
+likely to get bug fixes sooner,
+and you get new features sooner,
+which all in all is a better
+experience for you as the customer.
+Now, you as a developer,
+you should also want to
+take advantage of this.
+So consider an
+application you've built.
+You and your team just spent
+a year building V1 of a very
+important internal application.
+You released it, and
+your users are using it.
+Everybody's happy.
+Users being users,
+they do two things.
+One, they find bugs
+that they want fixed.
+Two, they have feature requests.
+Sometimes large, sometimes small.
+So if someone comes to you with a
+bug or a minor feature and says,
+I would like this updated.
+What do you want your answer to be?
+Do you want your answer to be,
+yeah we'll fix that bug in
+the next service pack
+which ships quarterly?
+Or yes that's an interesting
+feature we'll consider that for
+the next version of the application
+which will be six months
+to a year from now?
+Consider a world flipping that
+where you could say, well yeah,
+we do weekly bug updates, so
+we can fix that bug this week.
+We do twice monthly
+minor feature updates.
+So we'll take a bunch of features,
+and you can have those in a
+couple of weeks. All right.
+The latter's a better world for
+the customers who at
+the end of the day are why
+you're building software.
+So how do you do that?
+How does DevOps enable
+you to do that?
+It's a couple of key pieces.
+One, is the concept of sprints,
+which is a fixed period of time
+in which you're going to do work.
+So maybe you're on two-week
+sprints, three weeks sprints,
+and at the end of that sprint,
+you've got some shipping software.
+It's a very interesting topic but
+not what we're going to discuss here.
+The other part of it
+is DevOps pipelines,
+particularly build and release.
+What we're going to do in
+this video and the next one
+because I think this
+will be a two parter.
+Is we're going to look at build
+pipelines in this episode,
+and release pipelines in
+the next episode also known
+as Continuous Integration,
+Continuous Deployment, and
+therefore CI, CD pipelines.
+It's basically a way of having
+machines in the Cloud do
+a lot of the work for
+you of building an application
+and then releasing
+it to test to production to QA etc.
+All right. So what have we got?
+Best place to learn about this of
+course is the
+docs.aka.MS/VST/AzureDevOpsdocs.
+Azure DevOps docs are excellent,
+and you can learn a whole
+bunch of stuff in there.
+All right. So I have an application.
+It's a very simple MVC application,
+built with.net framework
+it's ASP.net application.
+I could've used core. I
+didn't. Doesn't really matter.
+I have the webapps.
+It's an MVC app.
+I've got tests. Of course,
+I have a grand total of three tests.
+They all pass, the app
+builds everything's good.
+So if I'm going to build this,
+then I need the source
+code to be somewhere
+that Azure DevOps service can get to.
+So I will add this to source control.
+What I'm going to do is pick
+a place to store the code.
+I could use GitHub.
+I can use Azure DevOps repos.
+Both are excellent.
+To keep things really simple here,
+I'm going to use Azure DevOps.
+So I go to my Azure DevOps site
+which is rogreen.VisualStudio.com.
+I'm pretty sure if you sign up now,
+there's a different
+URL naming scheme.
+But because I've had this
+for quite some time,
+it's still uses the old one
+rogreen.VisualStudio.com.
+I'm going to create a new project.
+This project will be
+Toolbox DevOps Show.
+Okay. I can make it
+private or public.
+I will keep it private.
+Then I can choose to use
+get I could use TFVC,
+and I can choose from the Agile,
+the Scrum, the Basic
+templates are here.
+I'm just going to leave the defaults,
+and I'm going to create a project.
+Now, this is my central location
+for doing DevOps, if you will.
+Okay. There are a bunch of pieces
+in here. There are boards.
+This is where you
+maintain work items,
+and your sprints in your backlogs.
+Again, that'll be a good
+subject for a feature Toolbox.
+Your repose, this is
+where we have our code,
+and then the pipelines,
+is what we're going to focus on.
+We're going to work on a build
+pipeline and a release pipeline.
+You can also do test
+plans and artifacts,
+which is a way of managing
+your NuGet packages.
+But again, we're going
+to focus on pipelines.
+Okay. We don't have
+code in here yet because we
+haven't pushed it in here yet.
+So we were in Visual Studio,
+we said add to source control,
+and we're going to publish
+this to Azure DevOps.
+So at Visual Studio will now do is,
+based on who I am,
+go out and find what Azure DevOps
+organizations I belong to.
+So I obviously belong to the
+rogreen.VisualStudio.com,
+there's actually a couple
+others I belong to.
+If you notice this line
+here keeps moving,
+so it's going out and searching.
+It has found a number
+of organizations.
+I'm going to pick this Ro Green one.
+Then what I'm going to do after
+it connects and brings
+down information on that.
+Notice that it suggests a
+repository name of Toolbox webapp,
+which is actually the
+name of this application.
+But in reality, my repo's
+called Toolbox DevOps Show.
+So what I really want
+to do is come in here,
+choose this Toolbox
+DevOps show project,
+and that gives me the
+right repository name.
+I don't want to create
+a second repository.
+I want to put it in the
+existing repository
+because I created the project first.
+Now, if I come in here
+and do a refresh,
+here's my code in an
+Azure DevOps repo.
+Okay. Perfect. Now I'll be
+checking code into that.
+What I want to happen is,
+I want to set up a build.
+So the first pipeline
+I'm going to build,
+is a build pipeline also
+known as a Continuous
+Integration pipeline.
+Couple places I can do it.
+I can do it from here.
+I can click "Setup Build".
+What I'm going to do is,
+duplicate this page because I'm
+going to create two of these.
+So from the code, I
+can set up a build.
+I'm asked what type of
+application is this.
+Here are some of the
+more common ones: ASP,
+ASP Core, Xamarin, etc.
+There's a whole bunch more: Docker,
+etc., Node, and you can get
+additional ones in the marketplace,
+but we have an ASP.NET
+application here,
+and now what happens is a build
+pipeline is created using YAML.
+Now, YAML, some people think
+YAML stands for Yet
+Another Markup Language.
+YAML.org says it's YAML
+Ain't Markup Language.
+Either way, it's like XML,
+it is a configuration language,
+and what we've configured
+here is a build.
+So this says trigger on master.
+So anytime I make changes to master,
+if I check code into
+the master branch in my
+repo, trigger this build.
+Then grab a machine,
+a machine sitting in
+a pool of machines.
+So up an Azure, there's a pool
+of VMs ready to do my build.
+The one Windows latest,
+this says there's a machine
+running Windows Server 2019,
+also running Visual Studio 2019,
+so there's a pool of those.
+Pick one of those machines,
+then set some variables,
+then get the latest version of NuGet,
+do a restore, and then build
+using these variables.
+What's the solution?
+It's *.sln,
+the buildPlatform and configuration
+are any CPU and release,
+and then also run any tests I have.
+Remember, this application
+has three tests.
+So this says run those next,
+all on a server up in the Cloud.
+Now, before we actually
+take a look at this,
+I want to show you another
+way of building a pipeline.
+So if I come down to pipelines here,
+then I create a pipeline,
+again, it asks me where's my code.
+It also gives me the opportunity
+to use the classic editor.
+There's two ways you can do builds.
+One is in YAML,
+one is in the classic editor.
+If you've done build
+pipelines before,
+you're more used to
+the classic editor.
+YAML is the new way of doing it,
+but let's go look and
+see what happens if
+we use the classic editor.
+First question is, where's your code?
+Could be in GitHub,
+could be anywhere else.
+Here, it's in an Azure
+repo called Toolbox Show.
+I click "Continue," and
+now I can create an empty
+job and build from scratch.
+I can just go and do YAML,
+or I can choose what type
+of application this is.
+It is ASP, where is it?
+There it is, ASP.NET.
+I click "Apply," and I'm going to
+rename this Classic Build Pipeline.
+It says grab a pool agents.
+The agent pool is the
+machines that are available.
+This one defaults to a machine
+running Windows Server
+2016 with Visual Studio 2017.
+I'm going to choose Windows 2019
+running Visual Studio 2019,
+which is equivalent to this
+Windows latest in the YAML.
+Then we're going to get the sources.
+We already said that.
+We're going to get the latest
+version of NuGet and do a restore,
+which again is equivalent
+to this YAML here.
+You're going to install
+or NuGet command,
+and then this will build the
+solution based on some variables,
+release any CPU, so so far the same.
+Then this will also
+run the unit tests.
+So we're still doing the build,
+is still doing the tests.
+So far, these are
+pretty much the same.
+One big difference though
+is using the classic build,
+the build pipeline or published
+a symbols path and
+publish the artifacts.
+Interestingly, the YAML build
+at the moment does not
+publish the artifacts,
+which means when it's time to release
+this and deploy this
+application somewhere,
+like to testing, there's nothing
+to deploy because you built it,
+but you didn't take the
+results and put it somewhere.
+Now, why is this? Needs
+to be said that YAML at
+this point is still in preview
+and will improve over time.
+So eventually, hopefully sooner,
+this will contain that.
+So what do we do about it?
+We need to add some YAML to this.
+Well, there's a couple
+of ways we can do that.
+One, is we can say we want
+to publish the artifact,
+and we can view the YAML for that.
+So for any of these tasks
+that constitute the build,
+we can look at the YAML.
+So here's the YAML that will do that.
+So I'm just going to
+take this and copy it,
+bring it over here,
+and put it in the YAML for
+the build I want to use.
+Another way to do it,
+if I click "Show assistant",
+here's a number of tasks including,
+if we scroll down,
+the Publish build artifacts tasks.
+So if I double-click on this and
+then "Add," I can add
+that YAML in here.
+They're not 100 percent the same,
+so I'm going to use the one
+from the classic build.
+Then the last thing
+that I want to compare
+the YAML to the classic build is,
+this automatically is triggered
+when there is any code
+written to master,
+whereas in the classic,
+you have to come to
+triggers and turn that
+on by enabling
+continuous integration.
+Now, at this point,
+these two build definitions
+do the exact same thing.
+Now, I don't actually
+need two of them,
+so I'm only going to
+run the YAML one.
+I'm going to save this and run this,
+and we'll see what happens.
+It triggers a build like this.
+So if I click on this,
+I can actually watch it.
+Now, granted, watching builds
+go is not anybody's
+idea of a good time,
+but when you're learning and you
+want to know what's happening,
+it's actually quite instructive,
+also this build takes
+about a minute and a half,
+so it's not too too terribly bad.
+So what happened is we waited
+for a agent to be available,
+a machine somewhere in this
+pool running in the Cloud.
+Once that's available,
+the job initializes,
+tasks get downloaded,
+code gets checked out..
+Then we Update NuGet,
+the latest version of NuGet,
+then we do a restore
+for all our packages.
+Okay that's happening.
+Then we do a build.
+Now remember this build agent is
+a VM running Visual Studio 2019,
+so it's using MSBuild obviously.
+So all of this is going to look
+very familiar because
+it's essentially
+the same thing you do in your
+machine when you build solution.
+So all of that should look familiar
+and again this takes
+about 90 seconds.
+Your build might take longer,
+might be a five-minute build,
+it might take 10 minutes
+to run all your tests.
+You're certainly not going
+to sit here staring at this.
+One of the benefits is
+you're not expected to,
+you've handed this off to a
+machine sitting somewhere,
+a VM from a pool of VMs
+available and that machine is
+going to do all the work for you.
+So all the tests are run
+and then in one minute
+and 19 seconds this works.
+Okay, so now if we go back to
+here we can see the job succeeded
+in one minute 19 seconds.
+We look at the tests,
+we can see that all of the
+tests passed and life is good.
+Okay, so now, we said that every
+time we check code into master,
+we're going to do a build.
+So let's see this happen again,
+or let's see this be triggered
+by checking in code.
+So if I pop over to Visual Studio,
+let's make a change
+to some code here.
+I'm going to come into the home
+controller and I'm going to
+change the ViewBag message,
+save that then I'm going
+to check this code in.
+Check this code in by clicking here.
+Put a comment, updated
+about ViewBag message.
+All right, let's "Commit" it.
+Let's "Push", now what this does is
+it pushes the current
+branch and this failed
+because since I created a build
+I need to do a "Pull first,
+usually when doing
+this demo I remember
+to do that occasionally, I don't.
+So let's try this again
+updated about ViewBag message.
+Now, let's "Push", and now this
+gets pushed into master in
+my Azure DevOps Repo which
+because I've set up continuous
+integration kicks off another bill.
+Now we could sit here
+and watch this for
+a while but while that goes let's
+look at a couple other things.
+An additional thing that
+happens when a build is kicked
+off is that when it
+succeeds or potentially
+fails is you get mailed.
+So here's the scenario.
+You write a bunch of code,
+you test it locally,
+you check it in and then that
+builds the entire application.
+Now, try to think about this,
+on your machine you've got
+the code you're working on,
+you've got the tests
+you're working on.
+You've got the latest
+version of everything
+as of the last time you
+pulled everything down,
+but you're focused on your code.
+You don't want to have
+the entire application
+necessarily sitting locally.
+You're really interested
+in stuff you're working
+on or maybe you're doing a PR,
+you've got a branch and you're
+going to do a pull request.
+So everything works on your
+machine and then you check
+code in and what's built
+is the entire application.
+Now, it's entirely possible that
+you've written some code that breaks
+somebody else's code
+or somebody wrote
+a test that you didn't get updated,
+now the code you wrote
+working on the old version of
+the test fails the new
+version of the test.
+Anything can happen
+to break the build.
+So the idea is that you check in
+code and then you run a build,
+you run the entire application,
+not just your piece of it but
+the entire application as it
+stands with everybody's code,
+and this is still queued,
+it's not running.
+Okay, so what we'll do at this point
+is speed this up a little bit,
+so we don't have to actually
+sit here and watch.
+We see that the job failed.
+Apparently now if we
+were watching carefully,
+we would have seen somewhere
+in here that VSTest,
+that task failed and
+there's a hint in here I
+saw as it was scrolling by,
+some red, a test fail.
+Now, again, I'm not going to look
+at that but if I come back here,
+I see that the test
+failed and if I go to
+look at the tests it is
+because a test failed.
+Then in addition I get an
+e-mail that tells me that
+the build failed and
+the reason the build
+failed is that a test run failed.
+Okay. Again, I can come back here,
+view the results, which
+takes me back to here.
+I can click here on "About" and I
+can see exactly why this failed.
+So again, the beautiful thing
+about a build pipeline is that
+every time anybody
+checks in code we can
+do a build of the entire application
+and make sure that
+things one person has
+created or worked on don't
+interfere with another and that
+entire application builds.
+Now, if you're the only
+one working on this,
+it's still useful to do if it's
+a complicated application.
+Now here, of course, it's
+a simple MVC app and you might
+be sitting there and
+saying to yourself,
+"Well, yeah no kidding green.
+If you would just run
+all of your tests before
+you check that code in you
+would have discovered this."
+So it is not the case
+that the beautiful thing
+about Azure DevOps is
+it means you don't have
+to run your unit tests.
+I am just using this
+as a simple example.
+The beautiful thing is
+that once I check in code
+the entire application gets
+built and then we can
+see if it still works.
+Okay, I think this is
+a good place to stop,
+we'll pick this up again in our
+next episode where I think I might
+show you one more thing about build
+pipelines but then we'll move
+on to release pipelines.
+So I hope you're
+enjoying this so far,
+we'll see you next time
+on Visual Studio Toolbox.

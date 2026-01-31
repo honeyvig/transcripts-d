@@ -1,0 +1,302 @@
+hello
+in a last video on cryptography we took
+a look at symmetric key cryptography
+we used a single private key for both
+the encryption and decryption of data
+and it works very well in theory let's
+take a look at a more realistic scenario
+now
+let's meet joe
+joe is a journalist who needs to
+communicate with ryan via long distance
+messaging
+due to the critical nature of the
+information people are waiting for any
+message to leave joe's house so that
+they can intercept it
+now joe can easily use symmetric
+cryptography to send the encrypted data
+so that even if someone intercepts the
+message they cannot understand what it
+says
+but here's the tricky part
+how will joe send the required
+decryption key to ryan
+the sender of the message as well as the
+receiver need to have the same
+decryption key so that they can exchange
+messages otherwise ryan cannot decrypt
+the information even when he receives
+the cipher text
+if someone intercepts the key while
+transmitting it there is no use in
+employing cryptography since a third
+party can now decode all the information
+easily
+key sharing is a risk that will always
+exist when symmetric key cryptography is
+being used
+thankfully asymmetric key encryption has
+managed to fix this problem
+this is bever from simply learn and
+welcome to this video on asymmetric key
+cryptography
+let's take a look at what we are going
+to learn today
+we begin by explaining what asymmetry
+key cryptography is and how it works
+we take a look at its application and
+uses we understand why it's called
+public key cryptography and then learn a
+little bit about rs encryption
+and then we learn about the advantages
+of asymmetric key cryptography over
+symmetric key cryptography
+let's understand what asymmetric key
+cryptography is
+asymmetric encryption uses a double
+layer of protection
+there are two different keys at play
+here a private key and a public key
+a public key is used to encrypt the
+information pre-transit and a private
+key is used to decrypt the data post
+transit
+these pair of keys must belong to the
+receiver of the message
+the public keys can be shared via
+messaging blog posts or key servers and
+there are no restrictions
+as you can see in the image the two keys
+are working in the system the sender
+first encrypts the message using the
+receiver's private key after which we
+receive the cipher text the cipher text
+is then transmitted to the receiver
+without any other key on getting the
+cipher text the receiver uses his
+private key to decrypt it and get the
+plain text back
+there has been no requirement of any key
+exchange throughout this process
+therefore solving the most glaring flaw
+faced in symmetric key cryptography
+the public key known to everyone cannot
+be used to decrypt the message and the
+private key which can decrypt the
+message need not be shared with anyone
+the sender and receiver can exchange
+personal data using the same set of keys
+as often as possible
+to understand this better take the
+analogy of your mailbox
+anyone who wants to send you a letter
+has access to the box and can easily
+share information with you
+in a way you can say the mailbox is
+publicly available to all but only you
+have access to the key that can open the
+mailbox and read the letters in it
+this is how the private key comes to
+play
+no one can intercept the message and
+read its contents since it's encrypted
+once the receiver gets its contents he
+can use his private key to decrypt the
+information
+both the public key and the private key
+are generated so they are interlinked
+and you cannot substitute other private
+keys to decrypt the data
+in another example if alice wants to
+send a message to bob
+let's say it reads call me today she
+must use bob's public key while
+encrypting the message
+upon receiving the cipher message bob
+can proceed to use his private key in
+order to decrypt the message and hence
+complete securities attained during
+transmission without any need for
+sharing the key
+since this type of encryption is highly
+secure it has many uses in areas that
+require high confidentiality
+it is used to manage digital signature
+so there is valid proof of a document's
+authenticity
+with so many aspects of business
+transitioning to the digital sphere
+critical documents need to be verified
+before being considered authentic and
+acted upon thanks to asymmetric
+cryptography senders can now sign
+documents with their private keys
+anyone who needs to verify the
+authenticity of such signatures can use
+the sender's public key to decrypt the
+signature
+since the public and the private keys
+are linked to each other mathematically
+it's impossible to repeat this
+verification with duplicate keys
+document encryption has been made very
+simple by today's standards but the
+background implementation follows the
+similar approach
+in blockchain architecture asymmetry key
+cryptography is used to authorize
+transactions and maintain the system
+thanks to its two key structures changes
+are reflected across the blockchain's
+peer-to-peer network only if it is
+approved from both ends
+along with asymmetric key cryptography's
+tamper-proof architecture its
+non-repudiation characteristic also
+helps in keeping the network stable
+we can also use asymmetric key
+cryptography combined with symmetrical
+cryptography to monitor ssl or tls
+encrypted browsering sessions to make
+sure nobody can steal our personal
+information when accessing banking
+websites or the internet in general
+it plays a significant role in verifying
+websites of authenticity exchanging the
+necessary encryption keys required
+and generating a session using those
+keys to ensure maximum security instead
+of the rather insecure http website
+format
+security parameters differ on a session
+by session basis so the verification
+process is consistent and utterly
+essential to modern data security
+another great use of the asymmetric key
+cryptography structure is transmitting
+keys for symmetric key cryptography with
+the most significant difficulty in
+symmetric encryption being key exchange
+asymmetric keys can help clear the
+shortcoming the original message is
+first encrypted using a symmetric key
+the key used for encrypting the data is
+then converted into the cipher text
+using the receiver's public key now we
+have two cipher text to transmit to the
+receiver on receiving both of them the
+receiver uses his private key to decrypt
+the symmetry key he can then use it to
+decrypt the original information on
+getting the key used to encrypt the data
+while this may seem more complicated
+than just asymmetry key cryptography
+alone
+symmetric encryption algorithms are much
+more optimized for vast amounts of data
+on some occasions
+encrypting the key using asymmetric
+algorithms will definitely be more
+memory efficient and secure
+you might remember us discussing why
+symmetric encryption was called private
+key cryptography
+let us understand why asymmetric falls
+under the public key cryptography
+we have two keys at our disposal
+the encryption key is available to
+everyone
+the decryption key is supposed to be
+private
+unlike symmetric key cryptography there
+is no need to share anything privately
+to have an encrypted messaging system to
+put that into perspective we share our
+email address with anyone looking to
+communicate with us it is supposed to be
+public by design so that our email login
+credentials are private and they help in
+preventing any data mishandling
+since there is nothing hidden from the
+world if they want to send us any
+encrypted information this category is
+called the public key cryptography
+there are quite a few algorithms being
+used today that follow the architecture
+of asymmetric cryptography none more
+famous than the rs encryption
+rsa encryption is the most widely used
+encryption or public key encryption
+standard using asymmetric approach
+named after its founders rivest shamir
+and edelman it uses block ciphers to
+obscure the information
+if you are unfamiliar with how block
+ciphers work there are encryption
+algorithms that divide the original data
+into blocks of equal size
+the block size depends on the exact
+cipher being used once they are broken
+down these blocks are encrypted
+individually and later chained together
+to form the final cipher text
+widely considered to be the most
+secure form of encryption albeit
+relatively slower than symmetric
+encryption algorithms it is widely used
+in web browsing secure identification
+vpns emails and other chat applications
+with so many variables in play there
+must be some advantages that give
+asymmetrically cryptography an edge over
+the traditional symmetric encryption
+methodologies
+let's go through some of them
+there is no need for any reliable key
+sharing channel in asymmetric encryption
+it was an added risk in private key
+cryptography that has been completely
+eliminated in public key architecture
+the key which is made public cannot
+recruit any confidential information and
+the only key that can decrypt doesn't
+need to be shared publicly under any
+circumstance
+we have much more extensive key lengths
+in rsa encryption and other asymmetric
+algorithms like 2048 bits key and 4096
+bit keys
+larger keys are much harder to break
+into via brute force and are much more
+secure
+asymmetric key cryptography can use as a
+proof of authenticity since only the
+rightful owner of the keys can generate
+the messages to be decrypted by the
+private key the situation can also be
+reversed encryption is done using a
+private key and decryption is done by
+the public key which would not function
+if the correct private key is not used
+to generate the message hence proving
+the authenticity of the owner
+it also has a tamper protection feature
+where the message cannot be intercepted
+and changed without invalidating the
+private key used to encrypt the data
+consequently the public key cannot
+decrypt the message and it is easy to
+realize the information is not 100
+legitimate when and where the case
+requires
+hope you learned something interesting
+today feel free to ask us in the
+comments section if you have any more
+questions and subscribe to our channel
+for videos like this thanks for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

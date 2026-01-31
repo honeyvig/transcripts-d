@@ -1,0 +1,360 @@
+hello folks welcome to yet another
+exciting video from Simply learn are you
+ready to unlock the doors to your
+thriving career in cloud computing the
+job market for AWS is booming and
+companies are on lookout for talented
+individuals like you AWS holds a
+significant 32% share in cloud computing
+job listings making it the go-to choice
+for many businesses what makes AWS so
+appealing well it's known for its cost
+Effectiveness scalability and Rock Solid
+security features however to stand out
+and succeed in the job market it's
+essential to be fully prepared to a
+those interviews in this video we have
+compiled the top 20 AWS interview
+questions that will not only sharpen
+your knowledge but also boost your
+confidence when facing those crucial
+interviews craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+subscription to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we get started if you
+are interested to dive into the world of
+cloud and get certified don't forget to
+explore simply learns Cloud architect
+Masters program this course is designed
+to equip you with expertise in AWS
+Microsoft Azure and Google Cloud
+platform right from the basics you'll
+gain Mastery over the architectural
+principle principles and services of
+these leading Cloud platforms learn to
+design and deploy highly scalable fall
+tolerant applications and acquire the
+skills needed to evolve into proficient
+AWS and Azure Cloud professional for
+more information check out the course
+Link in the description and pin comments
+below so no more waiting around let's
+get started as a bonus in this video
+along with the top 20 frequently ask
+questions we will also cover five
+questions based on case studies that you
+can definitely expect in your AWS
+interview so the first question is what
+is AWS and what are its key components
+AWS or Amazon web services is a cloud
+computing platform offered by Amazon it
+provides a wide range of services like
+computing power storage options and
+networking capabilities key components
+include ec2 elastic computer Cloud for
+virtual servers S3 or simple storage
+service for scalable storage RDS
+relational database service for managed
+data bases and I am identity and access
+management for security you can also
+Imagine AWS like a huge toolbox which
+has everything you need to build and run
+your applications without worrying about
+infrastructure you have ec2 which is
+like the section for renting virtual
+computers S3 for storing your file
+securely RDS for managing databases and
+I am for controlling who can access what
+now what is the difference between ec2
+and S3 EC C2 provides resizable compute
+capacity in the cloud allowing you to
+run applications S3 or simple storage
+service on the other hand is storage for
+the internet ec2 is like having a
+computer in the cloud while S3 is more
+like having a hard drive in the cloud
+where you can store files think of E2 as
+a rented computer in the cloud you can
+install software run applications and do
+pretty much anything you would do on a
+regular computer now S3 on the other
+hand is more like a giant external hard
+drive
+you can store all your files there like
+images videos or backups and access them
+from anywhere on the internet now let's
+move on to the third question explain
+the concept of elastic load balancing or
+elb now elb automatically distributes
+incoming application traffic across
+multiple targets such as ec2 instances
+containers and IP addresses to ensure no
+single resources is overwhelmed elb is
+like having a traffic manager for your
+website or application it automatically
+spreads incoming visitors or requests
+across multiple servers so that no
+single server gets overwhelmed it's like
+having a multiple cash registers open at
+a store during rush hour let's move on
+to the next question what is auto
+scaling in AWS Autos scaling
+automatically adjusts the number of ec2
+instances in a group based on demand it
+helps maintain application availability
+and allows you to only pay for the
+resources you actually need so Autos
+scale SC is like having a magical
+elastic band around your servers when
+there's a sudden spike in traffic to
+your website or application autoscaling
+automatically adds more servers to
+handle the load and when the traffic
+slows down it removes those extra
+servers so you don't waste money on
+unused resources now describe the
+difference between I am users groups and
+roles I am users are individuals within
+your AWS account where groups are
+collections of users roles are similar
+to users but they are meant to be
+assumed by other AWS services or users
+for specific tasks okay imagine you are
+the boss of your AWS account I am users
+are like your employees they can log in
+and do stuff but only what you allow
+them to groups select teams of users
+with similar permissions and roles are
+like special hats that users or even
+other services can wear to do specific
+tasks now the sixth question is what is
+Amazon RDS Amazon RDS are relation
+database service is a managed relational
+database service that makes it easier to
+set up operate and scale a relational
+database in the cloud Amazon RDS is like
+having a personal database expert on the
+call it takes care of all the basic
+details of setting up operating and
+scaling a relational database like MySQL
+or post SQL so you can focus on building
+your app instead of worrying about
+database management now explain the
+difference between Amazon RDS and Amazon
+Dynamo DB RDS is for relational
+databases and SQL Server while Dynamo DB
+is a fully managed no SQL database
+service provided by AWS RDS is like a
+traditional database with tables rows
+and SQL queries while Dynamo DB is more
+like a super fast super flexible storage
+system for all kinds of data from simple
+text to complex jent documents it's like
+comparing a filling cabinet to a magic
+box that can hold anything you throw at
+it now what is Amazon VPC Amazon VPC or
+Amazon virtual private cloud is like
+having your own private corner of the
+AWS Cloud it's a virtual Network that
+you can set up and customize to keep
+your resources isolated and secure think
+of it as creating your own little
+neighborhood within the vast city of AWS
+now what is the difference between
+public and private subnets in Amazon VPC
+imagine public subnets or houses with
+doors facing the street they're directly
+accessible from the internet
+private subnets on the other hand are
+like houses with backyard entrances
+they're shielded from direct internet
+access making them perfect for storing
+sensitive data or running internal
+Services moving on to the 10th question
+how does cloud front work and what are
+its benefits Cloud front is like having
+a network of delivery trucks all around
+the world ready to bring your content
+closer to your users when someone
+requests a file from your website or
+application cloudfront finds the nearest
+delivery truck or Edge location and
+serves the file from there reducing
+latency and speeding up the overall
+experience for your users now what is
+the difference between Amazon S3 and EBS
+Amazon S3 is a giant storage locker in
+the cloud where you can dump all your
+files and they'll be safe and accessible
+from anywhere ABS on the other hand is
+more like renting a hard drive that you
+can attached to your virtual server you
+can install your operating system and
+applications on it just like you would
+on a regular computer now the next
+question explain the difference between
+the Stop and terminate actions in ec2
+when you stop an ec2 instance it's like
+putting your computer to sleep all the
+data and settings are saved and you can
+start it back up later without losing
+anything but when you terminate an
+instance it's like shutting down your
+computer and throwing it away you lose
+everything and you can't bring it back
+now what is aw's Lambda and how does it
+work AWS Lambda is like having a team of
+tiny workers waiting in the cloud to
+execute your code whenever you need them
+you just upload your code to Lambda
+Define when you want it to run and
+Lambda takes care of everything else
+scaling monitoring and billing you only
+for the compu time you actually use so
+let's move on to the next question how
+do you secure your data addressed in AWS
+think of securing your data address like
+locking it in a safe AWS offers various
+encryption options to keep your data
+safe from crying eyes whether it's
+stored in S3 buckets databases like RDS
+or even on your EBS volumes you can use
+AWS managed encryption keys or bring
+your own keys for added security moving
+on what is cloud formation and how does
+it work cloud formation is like having a
+blueprint for your entire AWS
+infrastructure instead of manually
+setting up each resource you define
+everything you need in a template file
+using simple Json or yl syntax
+then with a single click cloud formation
+creates and configures all the resources
+for you saving your time and ensuring
+consistency now the next question
+explain the differences between Amazon
+S3 EBS and EFS Amazon S3 is a versatile
+storage solution for the files of all
+types accessible from anywhere EBS or
+elastic Block store is more like a
+traditional hard drive attached to a
+single ec2 instance perfect for storing
+data that require slow latency access
+now EFS or elastic file system on the
+other hand is like a shared network
+drive that multiple ec2 instances can
+access simultaneously making it ideal
+for shared file storage across multiple
+instances now what is Amazon sqs and how
+does it work Amazon sqs or Amazon simple
+Q Service is like having a virtual queue
+for your messages in the cloud when one
+part of your application sends a message
+sqs holds on to it until another part of
+your application is ready to receive and
+process it it helps decouple different
+components of your system making them
+more resilient and scalable yeah now the
+next question is what is the difference
+between Amazon S3 and glacia Amazon S3
+is like having a storage locker where
+you can quickly access your files
+whenever you need them glacia on the
+other hand is more like putting your
+files in Cold Storage it's cheaper but
+slower to retrieve it's perfect for data
+that you don't need to access frequently
+but still want to keep for archival
+purposes now what is AWS elastic bean
+stock you can relate AWS elastic bean
+stock to a personal chef who takes care
+of all the cooking and serving while you
+focus on enjoying your meal so it
+automates the deployment and management
+of your web applications handling all
+the heavy lifting of provisioning
+servers load balancing and scaling so
+you can just upload your code and let
+elastic beant stock take care of the
+rest now coming to the last question on
+our list how do you monitor AWS
+resources and services monitoring AWS
+resources can be explained as having a
+dashboard that shows you how your
+applications and services are performing
+in real time ads offers various
+monitoring tools like cloudwatch which
+collects and tracks metrics logs and
+events from your resources an AWS
+trusted advisor which provides
+recommendations for optimizing your AWS
+environment based on best practices and
+cost efficiency and that wraps up a
+rundown of the top 20 AWS interview
+questions but wait let's have a look at
+those five bonus questions now number
+one you are setting up a website for a
+small shop using AWS how would you
+choose the right AWS tools to make sure
+the website stays fast and reliable
+whether there are only a few visitors or
+a lot of people shopping at once during
+a big sale your second question imagine
+you are like a tech detective
+investigating why a website's database
+is slow for a busy online shop how would
+you use AWS tools to find out what's
+causing the problem and make the
+database super fast again number three
+as the hero for a startup your mission
+is to control their AWS costs while
+still allowing them to grow how would
+you do this making sure they can expand
+without spending too much money or
+slowing down their operations now your
+fourth question a nonprofit organization
+needs help migrating their data to AWS
+what steps would you take to ensure a
+smooth transition considering their
+limited budget and Technical expertise
+and the last question we have a startup
+wants to store their customer data
+securely on AWS how would you recommend
+they do this considering both cost and
+security try answering these questions
+in the comment section let's have a
+discussion there so I hope you found
+this video helpful if you have any
+questions or topics you'd like us to
+cover in the future videos please let us
+know in the comments below also do let
+us know if you want us to make a
+detailed video for these questions so
+don't forget to like share and subscribe
+for more content like this thanks for
+watching and see you in the next video
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simp learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

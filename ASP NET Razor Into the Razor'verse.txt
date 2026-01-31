@@ -1,0 +1,670 @@
+alright everybody we are back when and
+talking about asp.net racer
+take it away are you guys doing good Oh
+take it away sir ready to go yeah all
+right so I'm gonna talk about razor
+today and there are a lot of razor
+things to cover so I'm ready to go ahead
+and switch to my my screen here when you
+guys are we're all set sir all right so
+hello net Kampf hopefully everybody's
+enjoying the show so far my name is ed
+Charbonneau I'm a developer advocate for
+progress and let me get a justed here
+there we go I'm a developer advocate for
+progress software a Microsoft MVP and
+today we're going to talk about razor
+into the razor vers razor is an
+ecosystem that has expanded over the
+last few years and includes many
+different razor technologies so we have
+razor the engine itself the syntax razor
+views HTML helpers razor pages raise
+your tag helpers blazer and it's razor
+components so we're gonna start at the
+top level but we are gonna deep dive
+into each one of these things we only
+have a short period of time so let's get
+going the first thing that I want to
+cover is the syntax itself so razor the
+syntax is a template markup syntax based
+on the sea shark programming language
+the nice thing about razor is that we
+don't have opening and closing tags with
+razor we use the @ symbol to open up our
+template and it intelligently finds the
+end for us so if we look at the old way
+of doing this in web forms you can see
+it's a lot more verbose than using razor
+if we look at something a little more
+modern like angular we still have this
+very specific angular language that
+we're using to define our templates in
+our markup where razor is just using
+c-sharp and markup so there's some
+benefits to razor here and there's even
+more with the ability to do complex
+expressions so we open up an @ symbol we
+can do all sorts of things in this
+example we're doing some math and just
+writing out an out
+into our HTML we also have control
+structures like for each if then
+statements try catches all of those
+things are valid within our c-sharp
+syntax or a razor syntax here's an
+example of an if statement and we can
+branch out and write out different
+portions of HTML to our page using razor
+this way so let's talk about razor
+execution really quick it's actually a
+complex thing happening behind the
+scenes so razor generates c-sharp code
+from the template if then compiles that
+code into a dotnet assembly it loads it
+into memory and then execute that
+compiled code so that's the razor syntax
+that's a quick overview let's jump into
+razor views in HTML helpers next so
+razor views our streamlined way of
+writing code focused templates in dotnet
+there return from a controller action as
+a view result and the content is
+generally made up of HTML and components
+that are HTML helpers
+now other component models are valid
+here like tag helpers and razor
+components but typically with views
+you'll find HTML helpers being used this
+project template comes from file new
+project if we click on web application
+and specifically that Model View
+controller application we're talking
+about the view portion here so razor
+views in that template so that's razor
+views in a nutshell we're gonna talk
+about HTML helpers next
+so HTML helpers are the component model
+for razor views they're invoked as
+methods within HTML razor views they
+encapsulate code and HTML so we're
+building components using this this
+structure at the end of the day these
+things turn into an HTML string and
+that's really important to remember here
+and we're gonna get into the reason why
+it's important later but the main
+takeaway here is these things turn into
+HTML strings so keep that in mind so
+this is what an HTML helper looks like
+and how we use it in a razor view we
+call at HTML and that identifies that
+we're info
+being a helper and then we call the
+method on that extension method on the
+HTML class now we pass in our parameters
+and output the type of helper that we
+were looking for in this case we're
+doing an action link so we get a nice
+anchor tag with the path that we're
+specifying in our HTML helper creating
+these is actually fairly simple we just
+need to extend my HTML helper as an
+extension method and we've returned I
+HTML content so let's take a look at
+what that looks like if we look at the
+function signature signature it's very
+simple we take in IH tml helper we
+output IH tml content and we have an
+example here of a hello helper we're
+gonna write out a span with a message
+inside we're actually going to break
+away here and do a quick demo and we'll
+view that HTML helper in visual studio
+so let's do that let's break over to
+visual studio and in this solution I
+have three projects and we're gonna
+start with the razor view project and
+this is identified specifically by
+saying that there is a controller model
+and view folder so this is an MVC
+application and we have razor views so
+I'm gonna open up the index page here
+the index view will zoom back out and we
+can see that we have our razor mark up
+and we've got a couple lines of HTML a
+mark up here and two things I want to
+point out specifically we have that HTML
+helper that is at HTML hello and we're
+passing in the value world and I also
+have a tag or a piece of razor markup
+that is at this get type base type so
+I'm gonna discover what the actual type
+is that's resolved for this view so
+that's gonna be interesting
+first let's open up our HTML helper and
+take a look at how that was built so
+first of all we're returning an eye HTML
+content and the method name is going to
+be hello and we're passing in a HTML
+helper as an extension method so that's
+what this keyword is for we're extending
+the eye HTML helper interface with
+method called hello and passing in the
+message job parameter we're gonna write
+that out into a span an HTML span and
+that gets turned into an HTML string so
+this is the basis of an HTML helper
+which act as components in a razor view
+so let's give this a run I'm going to
+ctrl f5 we don't need a debug I just
+want to see what this looks like on the
+page so we're gonna load this up in the
+browser and our application loads and we
+have hello world this is our HTML helper
+being executed and we also have that
+segment where I said at this so tell me
+what this thing is and what is the base
+type so this is actually the razor view
+is a razor page of T so a razor page
+takes some sort of type in this case
+it's an object that object is actually
+your model being passed into the razor
+view so interesting stuff there let's
+break out again to a folder view so what
+I'm gonna do next is a little crazy I'm
+gonna dig into the bin folder for this
+project and inside of the bin folder
+we're gonna find a project views dll
+file I'm going to use a free tool called
+telluric just decompile to open up this
+razor view and let's go ahead and see
+what was actually compiled from a razor
+code here so I'm gonna dive in if you
+see me dismissing a window here this is
+actually trying to decompile any
+dependencies that are on that object
+don't need all the dependencies
+decompiled I just want to look at the
+specific razor view so inside of this
+razor view this is what was compiled
+from that code that we wrote and we have
+our our class of view home index that
+inherits from razor page so that's where
+the razor page came from of tee object
+also interesting inside of this is that
+we automatically generate some
+properties here so we have an HTML
+property so remember in our code when we
+wrote at HTML that's actually where that
+property is being extended with our
+extension method
+but what's really important is at the
+very bottom here so we have a task at
+the bottom called execute async and what
+this does is actually renders the string
+based on all of the markup that we wrote
+in our razor library so we have write
+literal and write and in here you can
+see our actual HTML helper being
+executed all of this stuff gets turned
+into a literal string an HTML string
+that we can view in the browser so
+that's very important to know because
+later on we're going to talk about rays
+or components and things are going to be
+much different so let's go back into our
+presentation and we will talk about the
+razor views and sorry razor pages in tag
+helpers next so razor pages was
+introduced with asp net core it's a page
+focused approach versus
+model-view-controller like the previous
+template so pages incorporate their own
+controllers actions and routings inside
+it's in a it's able to be integrated
+with MVC so these things aren't mutually
+exclusive you'll find that's a common
+trend with all the things I'm talking
+about today the content is actually made
+up of HTML and typically tag helpers so
+tag helpers are new to asp net core
+we're going to talk about those next but
+we can still use HTML helpers and even
+razor components in a razor page will
+show that last if we do file new project
+and choose web application we will get a
+razor pages application this is
+different from the model-view-controller
+application as we'll see in a minute if
+we look at them side-by-side the asp net
+MVC application has controllers models
+and views or a razor pages application
+has just a pages folder and inside of
+that pages folder each page has their
+own code-behind file so that's how
+they're primarily different the razor
+page versus of view is also written
+differently so we have an at page
+directive this identifies that this is a
+page in a razor pages application we
+also have an at
+all directive that ties into the
+code-behind so this is where the code
+vine comes from this is where the page
+model is represented so we can set
+properties and things as you see in the
+example here we have a message that is
+used within our markup on the left-hand
+side now also unique to raise your pages
+is we have an on get method these
+methods actually correspond to HTML or
+HTTP methods so get post put in delete
+so you'll have on get on put on post on
+delete and those things are used in
+place of controller actions so the the
+page concept is more of a vertical slice
+and we're able to do everything in the
+code behind so the component model for
+razor pages is actually tag helpers and
+tag helpers our asynchronously
+server-side processed pieces of HTML
+these you these use tags and attributes
+much like HTML does which helps
+eliminate context switching between HTML
+and C sharp they're also designed for a
+unit testing in mind I don't have time
+to show that today but it is something
+that is a benefit of tag helpers over
+HTML helpers so HTML helpers versus tag
+helpers when you're writing them there
+are some fundamental differences between
+the two now one of the things I like to
+point out when talking about these two
+types of component models is HTML
+helpers are nice they have nice fluent
+syntax but when you go to add things
+like HTML attributes such as a class you
+have to do some special things so when
+we want to add a class which is a normal
+thing normal operation to do in HTML we
+have to do something like this we have
+to new up in add-on of this object then
+we have to escape the word class because
+that's a reserved word in c-sharp so
+things start getting a little messy when
+we have to do this HTML helpers have
+this problem tag helpers alleviate this
+problem by using tags and attributes
+directly so this same example below
+we're producing the same output but with
+very minimal effort the tag helper
+portion of this is actually the
+a sp4 attribute so that identifies this
+as a tag helper and Razer knows how to
+handle this and they output the same
+thing and what's nice in the second
+instance here is our class when we
+define it we actually get intellisense
+within visual studio and we don't have
+to escape it and create those anonymous
+objects and those types of things if we
+look at a more complex example like a
+teller at grid we have a nice fluent
+syntax with the HTML helper but if you
+look at the tag helper it looks a lot
+like HTML and inside of a big page this
+doesn't really stick out and there's no
+context to switch between if we want to
+control the scope of tag helpers within
+our raiser pages we have special
+directives to bring those things into
+scope or remove them so we can use the
+add add tag helper directive and there's
+built-in tag helpers in asp net core all
+the things that you need to build a form
+are there and if you look at something
+like the telluric UI for asp net core
+there are both asp net HTML tag helpers
+and tag helpers for both sorry for both
+razer tag helpers and razer HTML helpers
+this is a mouthful guys there's about 60
+UI components there that support either
+type of type of model so an example of
+that would be a big picker and you can
+see these are very easy to read and
+understand so let's jump into a raiser
+pages demo and we'll decompile that one
+at the end as well so I'm gonna pull my
+Visual Studio project back up here and
+want to switch projects over to raise
+your pages and we're gonna dive into the
+raiser pages project and right away
+you'll notice I only have a pages folder
+now the code for our index page is
+actually represented in the code behind
+and we'll look at the mark-up as well so
+this is the raiser page for our index
+page the mark-up is in this CS HTML dots
+yes file behind it and you can see I
+have an on get method that's not being
+used so we're not actually doing a whole
+lot of work here but it is nice to know
+that it's there most of this page is
+written in HTML and I also have a tag
+helper on my page here this is a
+some tag helper so we're gonna talk
+about custom tag helpers for a moment so
+let's jump over to custom tag helpers
+and we'll take a look there and then
+we'll go back into our demo oh sorry
+that that actually got removed for time
+concerns we're actually going to dive
+into the code instead of some slides
+here so in our tag helper it's a little
+bit different than writing an HTML
+helper so instead of writing at HTML
+we're gonna target a specific tag and we
+do that through HTML target element this
+is a directive that we can use to target
+something inside of our markup so I have
+a tag helper called dotnet - comp that
+I'm going to be targeting with this tag
+helper and when we build a tag helper we
+need to override or inherit the tag
+helper base class and override the
+process method when we do that we're
+able to take in content and write it
+back out as HTML so we're gonna take in
+some parameters we have a property
+called name we're gonna take that in as
+a parameter and then we're gonna write
+that out to a string and that string is
+going to say property the the name
+property loves dotnet comp
+we're gonna ignore some errors here
+visual studio is not playing along
+for dotnet cough but anyhow once we're
+done we're gonna say we're going to set
+that HTML content and then we're going
+to render that out to the browser so
+we're consuming this custom tag helper
+here you could see it's highlighted it
+says dot net comp I'm passing in my name
+and we're gonna render it that out to
+the browser so we'll ctrl f5 and again
+this is the component model for a razor
+page and we're going to write out ed
+Charbonneau love's net comp
+that's our custom HTML helper let's take
+a look with inspect and you can see
+we're writing out a span in that text
+that was produced by our tag helper gets
+emitted there so let's take one more
+look here we're gonna go back into the
+folder view
+and we're gonna find our dll file again
+so we're gonna go bin I'm in debug and
+we have our project dot razor or project
+views dll we're gonna decompile that I'm
+gonna ignore any dependencies once again
+I don't need to decompile the entire
+universe I just want to see the one page
+that I've written some custom code in
+let's see what we get here this is the
+compiled version of that razor page and
+in that page we have a static class or a
+public class of pages underscore index
+but notice here it's inheriting from
+page so a razor views actually
+inheriting a razor page razor page is
+just a page there's some similar
+properties in here you'll find hTML is
+here so we can still do HTML helpers and
+down at the very bottom once again we
+have this asynchronous task called
+execute async which turns everything
+inside of that razor page into a literal
+string so again keep that in mind that's
+very important that is the main takeaway
+that I want you guys to have today so
+we're gonna go back and we're going to
+close just decompile and next we're
+gonna start talking about blazer so
+blazer brings with it razor components
+so razor components is the component
+system for the blazer framework now can
+still be used in asp net projects which
+we will see in a moment but for the most
+part keep in mind that the Razr
+component model came from the blazer
+framework now blazer and razor
+components use the razor syntax they are
+a component architecture versus HTML
+generation tools they create what is
+called a render tree which is a dom
+abstraction i'm going to show you a
+little bit of that in just a moment
+there file extension is dot razor vs.
+dot CS HTML and one of the reasons that
+we have this distinction is because how
+different they are
+in execution so razor files are used to
+generation and these special dotnet
+classes that implement a render tree so
+what is a render tree well in a typical
+JavaScript or jQuery application we're
+responsible for writing directly to the
+Dom Blaser does that work for us and it
+does it through a difficult job a script
+application we use a selector using
+jQuery in this example we might find
+some elements in the Dom remove them and
+replace them so this is an expensive
+task for our browser to do so for
+removing things from the DOM and then
+scrapping all of that and writing it
+back there may be some things that were
+actually unchanged in this process but
+we've gone and removed it and re added
+it to the bra the browser anyway so this
+is a very efficient model of operation
+pleaser does something different so
+Blaser creates a Dom abstraction or a
+shadow Dom so it has a copy and object
+graph as you if you will and it can
+operate on this object graph much like
+it would directly in the browser so if
+we will remove elements using Blaser it
+will do it to the render tree first and
+then when it adds things back and
+notices that some elements may not have
+changed it only goes to the browser with
+those changes so there's a difference
+and says only update the things that
+have changed in the browser so this is a
+system that is very efficient and we
+don't want to circumvent that so Blaser
+has all of these wonderful features the
+component model and the render tree are
+some of the key features that I want to
+talk about today so we're gonna go into
+a blazer application and first I just
+want to mention that with these
+components we also have all of these
+available with telluric UI for Blazer so
+let's jump into a blazer application and
+see the difference between the views
+razor views and razor pages and now how
+razor components act within the razor
+environment so I've got in my project
+here
+a razer components project in my
+solution and again you'll notice that we
+have this pages idea so we don't have
+model views and controllers so this kind
+of is a the next step in raiser pages
+but then it does a little more so we
+have all of our pages and components
+inside of this folder here because pages
+and components in razor or a blazer are
+the same so I'm going to open the index
+dot razor file and we'll also open the
+cup the counter razor files so these are
+components with page routes so these can
+act like pages we can call them from
+route in our browser but they also still
+maintain the ability to be components so
+they are both so if I go back to my
+index page I can reuse my counter
+component so I can call a counter here
+and now I have that counter component
+which also has a page route on my index
+page as well as it being its own counter
+component and page so I have that
+reusability there and the counter
+component is made up of HTML rays or
+markup in c-sharp there is no JavaScript
+here so we don't have to write
+JavaScript to build a component
+architecture for blazer and razor
+components so let's run this application
+we'll see what it looks like and then
+we'll do a deep dive again and see what
+the differences are between what we saw
+with razor pages and razor views earlier
+so we've got this nice component
+architecture I can use my counter on my
+index page I can also navigate to it as
+a route so it's acting as both page and
+component let's go back into our
+application and one thing I want to
+point out before I do the deep dive is
+that our razor application here if we go
+under pages we have a host CS HTML file
+so this is a razor page that is using
+and I'm gonna focus on this line here
+it's using an HTML helper in a razor
+page to render a razor component so
+we've got all three technologies here
+just
+mashed up together and we were awaiting
+at HTML render component async and then
+we are rendering the the app component
+which is the container for our blazer
+application so we're using razor pages
+and an HTML helper to bootstrap a blazer
+application how interesting is that
+let's go to our source code now I'm
+going to go open a folder view and we're
+going to go D compile our application
+again so I'm going to go under the bin
+folder and inside of the bin folder
+instead of opening the views folder I'm
+going to open the actual application
+folder because the Razr components are
+not views so they actually get compiled
+into the main application DLL so we're
+going to open this up with just
+decompile we're going to look at the
+guts of that counter component I'm gonna
+ignore all the dependencies once again
+I'm gonna dive into razor components DLL
+and under pages I have counter we'll
+open this up and this is completely
+different from razor views and razor
+pages so what the main takeaway here is
+we're actually inheriting from a
+component based architecture and this
+counter component becomes a class that
+uses a method called the build render
+tree method and this build render tree
+method actually is responsible for
+building that Dom abstraction that I
+talked about earlier so it's not writing
+directly to a string it's not writing
+this as HTML anywhere so when you're
+writing components for the Blaser
+framework you don't want to go in and do
+manual Dom manipulation a lot of people
+when they start using Blaser they ask
+how do I write raw HTML in Blaser you
+can but you shouldn't so this is why you
+shouldn't because you're going to skip
+past this build render tree method and
+you're not going to have that efficiency
+of the system doing updates for you so
+the build render tree actually adds the
+content to the this object graph
+through these methods so we can see add
+markup open element add content all of
+those things and it uses us to keep
+track of that object graph so we don't
+really need to know how all this works
+in great detail just remember it's there
+so you're not writing things in your
+application to go in and manually
+manipulate that Dom let's zoom back out
+here and I am free to take questions and
+hopefully you guys found that
+interesting so we got the top level of
+what all those technologies is and then
+we dove into the source code and saw
+what was actually compiled front of all
+those racers views that's probably
+something you don't do every day so I I
+hope that you guys found it interesting
+all right thanks so much yet I think we
+have time for one question one question
+Oh quickly so a question was asked how
+do you avoid the bad patterns of web
+forms with razor pages how do you avoid
+the bad patterns of web that's a kind of
+a broad question I'm not sure what bad
+patterns were talking about but I would
+assume things like viewstate which a
+viewstate doesn't exist in Blaser the
+way it does in web forms so there's no
+viewstate for us to manage what is held
+in State in the render tree is managed
+by Blaser so we don't have any control
+over that so that's not something that
+we need to worry about web forms has the
+idea of an abstraction around state that
+doesn't exist in Blaser we handle state
+in Blaser through dependency injection
+and plane class objects just like we
+would in any other type of net
+application so that that concern really
+isn't there's no parallel for it to kind
+of make a comparison ok so then a quick
+question if you are familiar with web
+forms and you want to dive straight into
+razor pages and Blaser
+quickly what would your Learning Path be
+so the learning curve for Blaser in my
+opinion is pretty small because if
+you're already a.net developer it's
+using all DET dotnet technologies so i'd
+say go to blazer net and click on get
+started and just follow the first few
+examples there on building your first
+blazer application there's a nice to-do
+list app in there that you can build and
+the component architecture architecture
+in blazer is so dead simple that I think
+people will gravitate to this very
+quickly alright awesome thank you so
+much thanks so much thank you guys and
+enjoy the rest of net comp thank you so
+much yep now we're gonna get Geoffrey
+Palermo up talk about Azure DevOps so
+we'll be moving things around and really
+quick we were talking about legacy stuff
+check out this Visual Basic for that's
+you can get a workout just lifting this
+this is nothing but books see it's a box
+we still say in the box in the out of
+box experience that's right all right
+shows in the box we will all see you
+guys shortly

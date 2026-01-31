@@ -1,0 +1,523 @@
+>> We talked about why debugging
+asynchronous code is hard,
+we've also talked about
+asynchronous call stacks,
+and now we have reached
+the main event and we're
+actually going to talk about
+all the cool tools that
+you can use in Visual
+Studio to debug
+your asynchronous applications on
+this episode of Visual
+Studio Toolbox.
+[MUSIC]
+>> Hey everyone, welcome to
+another episode of
+Visual Studio Toolbox.
+I'm your host, Leslie Richardson,
+and we are closing out
+our mini-series on
+asynchronous debugging
+by talking about how to
+actually debug your async
+code in Visual Studio.
+Joining me once again is
+Isadora Rodopoulos on Visual Studio
+Debugging Team. Welcome back.
+>> Hello Leslie, nice to be back.
+>> Sweet. In part 1,
+we talked about why asynchronous
+code is hard to bug, in part 2,
+we introduced the different kinds
+of call stacks that you need
+to consider in regards to
+workflow with asynchronous code.
+This time we're actually going to
+demo some stuff in Visual Studio,
+which I'm really excited to see.
+>> Yeah. We finally have some
+hands-on experience on what
+it actually looks like
+debugging our async call
+with Visual Studio.
+>> That is great.
+>> Yeah. Here I have
+so the famous app,
+an example that I have been talking
+about in the previous
+sessions, I have it here.
+It's an actual app and it's
+basically My Song Finder.
+It's basically able to find
+a particular song in my Spotify
+account according to the lyrics.
+I just want to walk
+you through that.
+As you can see here,
+I have something very similar
+to the code that we
+have seen before,
+which is basically the playlist.
+It's trying to find the
+song asynchronously,
+and then I have effects,
+and then for each task,
+I'm getting the lyrics.
+This is everything
+we have seen before.
+I just want you to do
+some hands-on experience.
+We can actually see the famous,
+furloughs specs fast enough.
+I will try here, I have a playlist
+which is called Monday Morning.
+This is just my
+Monday Morning songs.
+Then I can just prepare
+the lyrics for something
+which is like try again.
+It's just the song
+that I love and I want
+to know which song it is
+because I forgot the name,
+I just know how to sing it.
+>> I never remember the
+names of the songs.
+>> Yeah. The first thing
+I just need to login to
+my account so I can be sure
+that I can actually look it up.
+That just takes some time.
+Then I'm just going to login to
+my account sooner than later.
+It also authenticates
+with Genius and Spotify.
+You can see here that
+I'm now logged in.
+Then now I am actually
+able to search
+for it so I can just click "Search",
+and then as you've seen before,
+it's looking up song.
+It's trying to look up
+this particular song.
+Then we have a responsive UI that
+unfortunately is not working.
+What could I do? I could do
+a break call and just try to
+understand why that is the case.
+Why exactly I couldn't
+find any song and I was
+just stuck there
+awaiting for something.
+>> Your screen is ever helpful.
+>> You have a very
+classical, not helpful,
+but the application
+is in break modes,
+but we're not exactly
+sure why or how.
+All of we have is just this.
+Then I can try looking
+for the call stack.
+I don't have anything
+very helpful either.
+Each one has their own workflow,
+but you can try looking
+from the trends here.
+Let's see the main front,
+maybe that'll help.
+Then it's not helping.
+There's a WPF app,
+so I just have WPF stuff.
+It's just running.
+It's just nothing that I'm
+interested in looking.
+An option here would be
+maybe I can try opening
+the specs window just
+looking for the effects because
+I'm using async debugging.
+I can go here and debug.
+Then I can go to
+Windows and then barrel
+specs and then I can
+go here for effects.
+Then basically what I'll see
+it's just the effects that
+are currently executing.
+I don't really care
+for any of the code.
+This is nothing that I'm looking at.
+If I just miss any external code,
+I can see that any of these code,
+it's not any of the
+code that I wrote.
+>> Yeah, it's not helping.
+>> Yeah. It's basically not helpful
+at all as we have seen before,
+which is basically just the
+mainframe pooling UI operations.
+That's it. I don't have
+anything here that might help.
+I don't know what I'm doing,
+what I'm waiting on.
+I would just be doomed
+if I didn't know
+any other async debugging
+tools. I don't know.
+>> It could work.
+>> Ecxept that we know we can go
+here and then switch to tasks.
+Then suddenly we have all
+this information and we have
+code that is ours and we
+can actually recognize.
+Here it's quite small,
+but one of the things that
+I really enjoy about this,
+is just being able
+to search for stuff.
+For example, I know
+that we have playlist.
+It's the name of the class, so
+I can just search for that,
+then it'll look for any of
+the frames with the playlist.
+That's one way that if you
+were just seeing a lot
+of tasks and you just want to start,
+you just to do Control F,
+I do it all the time and I always
+iterate back and forth
+with tasks and friends.
+>> Yeah, that's so useful.
+The parallel stacks window have
+so many different task
+continuation blocks,
+and it's just like, where
+do you start with that?
+That's a lot going on.
+>> Yeah, especially because
+this is a simple app.
+It has a small scope,
+but if you're dealing
+with huge dumps,
+which usually are every day.
+Oh, my God, it's so much.
+I do enjoy filtering
+as much as I can and
+contracts so great for that.
+>> [inaudible]
+>> Here, we have what we call
+the async logical sense.
+See what I mentioned before each
+of these mocks are real frame.
+For example, if I go here to
+playlists and try and find song,
+suddenly I'm on the actual code.
+I'm here at the try find song async,
+and I have this nice constant here,.
+>> You have async in
+brackets, so for.
+>> Yeah.
+>> Calls back.
+>> What we can see
+here it's that waiting
+for a multiple tasks
+because it went, Oh.
+This is actually a graph.
+If you look here, we have one task,
+which is the one for try find
+song async, because that's async.
+Then here we actually have four
+different tasks because we have
+four songs in that playlist and
+for each song we are
+looking for the lyrics.
+We have some graph
+here that they are
+all continuing inside
+that same method.
+Here, this is Async.
+If you look here for
+the Fred for example,
+it's not a real friend,
+is async call stack.
+That's a virtual friends.
+It's not real like it's fake.
+It's made up. It's all because
+we are in state machine.
+Yeah. We can see all
+the fields here.
+Let's say that I want to
+look for some of the songs
+and tried to figure out because
+we do know that we are hanging,
+but we get to the
+point where you fetch
+the songs and we are
+fetching the lyric now.
+Let's say we are fetching
+the lyrics here.
+Then I can basically select
+which one I want to look at.
+Let's say I want to the first task.
+I can go for a here and then
+suddenly I can even pin this.
+Then I have the artists.
+>> Frequently in the [inaudible]
+>> Yeah I love how this.
+>> Was anymore companies.
+>> I love it.
+>> You have here the artists and
+the name and if you just
+look for all their tasks,
+you can see that they change.
+Suddenly, I have all of
+these other songs and they are
+all just fetching their lyrics,
+and this is a very nice way
+to just differentiate them.
+You can also see here that
+we have the cost right here.
+You have the try find song async,
+so for each of these
+tasks that's if they are
+existing on each of their own front.
+Even though they're actually
+all state machine so
+it's technically
+alive but's marking.
+>> But just make it
+more understandable.
+>> Yes. So we
+can actually go and actually
+debug this code because
+we know we're hanging,
+so I can just use here the
+Tasks View and then Fetch
+Lyrics Async and then this
+is the top of the stack,
+so I know this is something that
+it's been waiting on something,
+and here it looks like I'm awaiting
+for this reach your async,
+so it's basically waiting for
+the web request operation.
+Because I did implement
+my own service for just
+acquiring the lyrics and
+caching them that database
+and blah blah blah with
+Genius and that has been
+provided here by the local host.
+Then I basically have
+this endpoint here,
+and what's happening is
+that for some reason that
+requests does never
+seem to be returned.
+We are all forever waiting
+for the get response.
+Since, I already know
+how this thing works,
+I can just take a closer look
+at this particular method and
+notice that here I should
+not be parsing the song id,
+but rather I should be parsing
+the song path because song also
+has the path variable.
+That's one looks like a chart.
+>> Poor little things.
+>> Yeah. That's actually what
+it looks like for the Genius,
+so I could just stop
+debugging this and
+then I can just see if that
+actually fix this or if I
+can actually get something.
+Again, I'm just reviewing
+and restarting my WPFF
+>> That's so great because
+the parallel stacks
+for tasks tool did exist,
+it has existed for a while,
+but it was never that buffed
+up as much as it is now.
+>> Yes. Essentially,
+because we have worked so
+hard with augmenting
+into integrating
+and making sure things work for
+different scenarios so
+for as log for WPF.
+>> So exciting to say
+this in trial and error.
+So it means if I find the one
+little property that you got wrong.
+>> Yes. It has so many
+tricky scenarios,
+so we are always welcoming if
+a new users have
+tricky scenarios like,
+"Oh, I can not figure this out."
+It's always interesting maybe,
+it's something that we need to
+implement to cover it as well.
+Any feedback is always
+so very welcome,
+we do use it and it's
+very useful for us.
+>> Sweet. We actually
+read your feedback.
+>> Yeah. We do read them all,
+developer community
+I'm always there.
+>> Once every other week
+I'm on browsing spree.
+>> Yes.
+>> Sweet.
+>> I think you are a back.
+See if we can built.
+>> Now I have my fix in place,
+so I'm very hopeful
+for my Monday morning,
+and then just try again,
+and I'm already logging because
+I cashed my previous logging.
+>> Awesome.
+>> Then if I just search,
+then we would just be
+anxious for a couple
+of seconds and wait if
+that's going to work or not,
+and then it's just fetching
+from within all the songs in
+my playlist is trying to find
+the song that I'm looking at.
+>> Fingers crossed.
+>> Then we go. It's the
+Hunter and Hunter opening.
+>> I was [inaudible]
+>> Yes. You just try again
+and that's the song and
+then it's called Departure and I
+just know it's Hunter
+Hunter opening,
+so now I know there is Departure.
+>> Most of my playlist on
+Spotify are just video games,
+movie soundtracks like
+animated soundtracks.
+>> Just one last thing that I
+want to go over here is that,
+just something that I like
+about this feature though,
+is if I add a breakpoint here,
+what we're zooming is that next time
+that we hit this
+particular path here,
+it's actually going to
+be running on a friend.
+Why? Because it's a breakpoint.
+We just hit right in the spot
+and say you're executing.
+You can see that it also
+changes the wise likely,
+because suddenly we have this icon
+here basically saying that it's
+currently being executed and we also
+have some functionality so we
+can actually go to the front,
+and then it's just going to
+switch to the front view as well.
+>> That's convenient.
+>> Yes.
+>> When Visual Studio
+response is convenient.
+No worries it happens. Demo shy,
+but I think having that ability
+to swap between the task view
+versus the front view
+is really helpful.
+>> Really?
+>> Yeah. The breakpoint is great,
+it definitely gives slightly
+different experience,
+but it's hard when you
+don't even know where to put
+the breakpoint to begin with,
+so having those easy tools like
+the parallel stacks tool
+in place is really nifty.
+>> Yes. I do love all
+the helpers such as
+the Control F or just there's
+some other things as well where
+you're actually able to save
+the parallel task view as an image,
+so you can actually just
+look it through and just
+share it if it's a huge
+one with your coworkers.
+So we can actually try to debug
+it together with someone else.
+>> That's awesome. Sweet.
+That was really great,
+and this was such a
+cool start to finish to
+look at how asynchronous
+debugging works
+and how async code works in general.
+I feel more comfortable
+and confident
+about being able to diagnose my
+asynchronous related problems.
+Hopefully at least you
+too. But if they want to
+learn more, where should they go?
+>> If they want to learn more,
+I have some resources that I
+share so they can actually
+look through them.
+There's a lot of talks
+and some talks very
+lively that they can also
+check it out and just
+walk through all of that
+or just a communication
+or there is things that they can
+find out about async and I recommend
+going through all of them,
+they are very useful.
+>> Awesome. Thank
+you so much Isa for
+the very thorough breakdown of
+how asynchronous code
+works and how to debug it.
+I think a lot of people will
+find this to be a lifesaver.
+>> Oh yeah. [inaudible] we now
+have a debugger Tweeter account.
+>> Oh yeah.
+>> Yeah. You should
+go there and give us-
+>> We will post that below
+because I can't remember
+the tag right now,
+but I'm so glad that
+that got revived.
+>> No [inaudible].
+>> Sweet.
+Thank you once again, everybody.
+Thank you Isa, for joining us,
+this was really informative
+and I hope everyone
+has a better experience
+debugging their asynchronous
+code from here on out.
+Until next time, happy coding.
+[MUSIC]

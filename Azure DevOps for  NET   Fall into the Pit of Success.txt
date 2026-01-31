@@ -1,0 +1,686 @@
+all right we are here with Jeffrey
+Palermo hey Jeffrey how are you I'm
+great how are you I'm excellent and
+you're gonna talk to us about Azure
+DevOps for dotnet absolutely it's a
+really exciting topic and let me share
+my screen
+all right should be on now so today
+we're talking about a DevOps for dotnet
+and falling into the pit of success and
+I'm so glad that you're here you're
+tuning in to this session then that
+means that you want to get more done you
+want to move faster you want to produce
+higher quality so that you can deliver
+for your team your company your
+customers and that's what this session
+is about falling into the pit of success
+there's so many choices the complexity
+is endless but I'm going to narrow it
+down to the seven key elements that you
+need to put into your as your DevOps
+pipeline to move fast and and building a
+smarter Manor and run your systems with
+confidence so I know from experience
+that if you map out your software
+delivery process and then automate it
+you will deliver more you'll absolutely
+love programming again but we do have an
+enormous problem serious problem problem
+we're gonna have to deal with and solve
+most teams automate work for their own
+customers by producing software but then
+saddle themselves with new
+administrative work to build deploy and
+monitor software that you know it
+relieves their customers of their
+administrative work there's no reason
+that the Cobblers kids shouldn't have
+shoes and I work with teams all the time
+we're one of the most senior most
+capable developers is trapped by the
+task of deploying the software because
+he's the one who understands the
+software the best so they take their
+best talent with the most experience in
+the software and reduce them to weeks
+full of administrative tasks a
+deployment is a set of administrative
+tasks copying files changing a config
+file configuring a credential starting a
+service and then doing it again and
+again over and over and we all got into
+software because we saw the tremendous
+power available to us we can write code
+and make the computer do something that
+makes ours and our lives better so then
+why shouldn't wash should we settle for
+a process that takes people with
+technical creativity you and turn them
+into an automaton and so for you
+managers listening in I want to share
+with you what goes on in the brain of
+your people who have to do these manual
+processes over and over we as humans are
+always on a pursuit of happiness
+whether we get fulfillment and serving
+others or making something new your
+people aren't finding happiness in the
+process of manual builds environment
+configuration and deployment they want
+to get it done as fast as possible so
+that they can get back to why they get
+into software in the first place to
+create things to solve interesting
+problems to make others lives easier
+through software and as a result the
+manual tasks are error-prone and just
+mind-numbing and the more your staff in
+doors tasks that don't bring happiness
+and satisfaction the more they become
+open to perhaps considering other
+employers that might be able to provide
+more work that does bring satisfaction
+so whether you're an individual
+developer a lead a lead of a team or a
+manager and technology this talk is for
+you so today's session we're going to
+talk about the the pipeline structure we
+have already discussed the challenge
+that we're faced with in software and
+how DevOps solves that next we'll go
+through the key seven stages of the
+DevOps pipeline and then I'll show you
+how to get started so I want to give you
+something of value and help you get
+automated I don't want you to continue
+to be frustrated and sometimes trapped
+by the software that that you work on
+and I understand lost weekends and
+surprise overtime due to software builds
+and deployments over my career I've
+helped tons and tons of people to do
+this and I want to just give you a copy
+of my latest book for free not selling
+anything I want to give this to you for
+free we want this to be in your hands we
+gave the preview Edition out of the
+build conference dotnet DevOps for a
+sure and it exposes the secret about how
+any team can have a fully automated
+DevOps pipeline using Azure DevOps
+services by following a concrete seven
+stage design and so here's what you need
+to do read the book and and I'm giving
+you a free e-book copy just send me an
+email for being here today on the.com or
+even stumbling on the recording then
+second you need to understand the seven
+stages of your DevOps pipeline which I'm
+giving you now in this talk and then
+three on turd launcher dotnet DevOps
+pipeline and and use the free public
+project as a template it's a
+community projects help you get started
+with Azure DevOps services and you'll
+find that in the book and if you do this
+you'll have a fully automated DevOps
+pipeline using Azure that will enable
+you to move fast and and with higher
+quality and also you can tune into the
+azure DevOps podcast and and get more
+information there so let's dive right in
+the seven key elements of a DevOps
+environment are the pre-code design
+process how you set up your your version
+control which sets the stage for the
+rest of the automation your build and
+then your levels of validation which
+include full system testing user
+experience testing production release
+and then telemetry observation we have
+to make sure that we are watching how
+the system is running in production and
+so to look at how that would lay out in
+as your boards for example we have the
+top level that is your pre code design
+process there's four types of design
+decisions that have to be made before
+you put your hands on the keyboard is
+the conceptual definition what the heck
+are we building that's the good old
+fashioned requirements user experience
+design wireframes what's it gonna look
+like how's the user gonna use it then
+technical design libraries patterns
+architectural changes and then
+acceptance criteria and test design that
+is what does it mean to be done and how
+are we going to test this once it's put
+together armed with that we're ready to
+code and then move on to the next pieces
+this is what it would look like in Azure
+boards you're going to configure the
+columns for you you're going to nobody
+has no nobody's full process has fewer
+than nine columns because ahead of
+development ahead of the column that
+represents hands on keyboard coding you
+need to represent these four different
+types of pre code design because even if
+you don't have them on the board these
+decisions are going to be made and if
+they're not made explicitly by the right
+person or people then a developer's
+gonna have hands on the keyboard and
+just have to make assumptions and make
+it up as they go and so these are the
+four types of pre code design decisions
+you need to have these representative in
+your process or you're just kind of
+kicking the can down the road
+you need to structure your version
+control system you need to factor out
+your git repositories properly and one
+of the big things the mistakes that
+people make is putting more than one
+application in a single git repository
+or maybe taking a subversion or a TFS
+repository and just dumping it into a
+git repository and it has a huge tree of
+software and then they try to figure out
+how to do a DevOps pipeline it just
+doesn't work I'm here to tell you the
+rules that are gonna cause you to fall
+into the pit of success and putting one
+application into a single git repository
+is the beginning of the automation chain
+that causes you to fall into the pit of
+success because we're going to have one
+build that builds one get repository one
+application altogether and produces a
+set of release candidates that all have
+the same version number so you can have
+a large software system but it's I mean
+it's segmented into multiple
+applications anyway you just need to
+make sure that each application has its
+own git repository so that you have the
+source of what is versioning okay then
+we need to build and there are various
+stage you need your private build along
+with your continuous integration build
+if you haven't read the addison-wesley
+book on continuous integration back from
+2006 you need to read that book and
+because your private build is going to
+be leveraged by your continuous
+integration build and so building
+whether it's test-driven development or
+build process any test uses the natural
+pattern of a range act assert or setup
+get ready do something and then check to
+see how things went and so these are the
+basic build steps there some people put
+static code analysis in the assert
+column it's not not required but notice
+that I have two levels of automated test
+unit tests these are in unit or X unit
+tests that do not call out of process as
+a result they are super fast because
+they don't call out of process then
+there's component level integration
+tests these are the integration tests
+that you can run in the build process so
+if you're calling out through entity
+framework to sequel server database you
+can test that boom that's an integration
+test and notice that my great database
+is here and
+lost that over your applications
+generally use the database so for your
+build process you need to stand up a
+shell of your database so that you can
+run tests against your code to make sure
+that your application talks to the
+database and uses it a continuous
+integration build that doesn't create
+the database that the application owns
+and depends on is woefully incomplete so
+pit of success make sure that your data
+stores are in your build okay static
+code analysis is a proven quality
+control method and so whether it's
+Roslyn or any other static analysis
+tools every language has static
+analyzers make sure that that is in your
+build process don't leave that out okay
+and then we're going to publish test
+results we're going to package it up
+into various new get packages and
+publish it to Azure artifacts so let's
+dive into an example and this example
+we're using is asp.net core web
+application and a sequel database and
+with with any application it's important
+for all of the components to be built
+and deployed together if they reside in
+the same git repository they have the
+same version number and they are built
+and deployed together if you don't know
+why you would be an exception to this
+rule then you're not an exception this
+is the pit of success we build the
+solution we run automated test and
+package up our deployable components and
+here we are full platform as a service
+application as your app services as your
+sequel and so in this case we end up
+with four new Kias that are published to
+artifact because you see we have three
+components that are going to be running
+processes in our environment we have the
+web application we have an offline job
+of some sort and we have a statement
+server database and so we have the app
+service the web app will push our job
+into an azure function and will push our
+database into an azure sequel and also
+we have some acceptance tests some full
+system acceptance tests now remember
+back in our pre code design process we
+listed out our acceptance tests these
+are simple bullet points but then going
+into coding
+we create a full system test suite if
+it's a web application we're gonna use a
+lot of selenium to actually pull open a
+browser and click around and and test
+test our screens and so we want to
+package up the test suite that is the
+version number of this application so
+that we we tie that all together and
+then we are going to push those into
+Azure artifacts don't use the old build
+artifacts store if you're building new
+pipelines as your artifacts is where all
+of you or release candidate packages
+should go and and use that okay so build
+steps I want to show you what your
+continuous integration build generally
+gonna look like and this is coming from
+from one of the preview on preview
+Edition so we had to install on the
+hosted agents the SDK for three oh but
+that's released now this is using all
+platform as-a-service there is no
+virtual machine in the mix now for speed
+a lot of teams use a private agent so
+that they have a VM that they control
+for the builds and I like that approach
+and that's a good approach this approach
+uses a hundred percent hosted and so
+there is no server that you have to spin
+up therefore when you grab this template
+and when you do it this way you're gonna
+get up and running really really quickly
+so first thing we're gonna do we're
+going to use as your resource manager
+and tie it to our Azure subscription and
+actually create a sequel database just
+for the build process that they work on
+a throw away after this build is
+finished then we're going to then we're
+gonna run our build script which is a
+PowerShell build script the private
+build that runs locally is just simple
+PowerShell and just look in the book I
+give you a template for that build
+script it's not complicated but after
+that build runs which includes the MS
+build exe or the.net build those kinds
+of commands it's doing all the
+compilation it's running the in unit
+test suites or X unit and then we
+publish our test results and then we're
+gonna do a and it also packages up and
+we're going to do our new get push and
+then
+we call into Azure and say hey throw
+away my build database so that we clean
+up okay this is what our whole pipeline
+is going to look like in in Azure DevOps
+services so we're gonna have our
+continuous integration build tied to the
+git repository that automatically kicks
+off and then we automatically kick off
+the various stages and the the template
+will soon be converted to Hamel that
+just came out at the build conference
+those those things are being enhanced
+and that's getting better and better
+every day
+so gamma will be the future but most
+people are who've adopted this already
+are using the steps and so I'm showing
+you the steps which easily convert to
+gamble just for clarity and so we have
+TDD UAT and productions there are three
+types of environments three unique types
+of environments in your DevOps pipeline
+and you need at least one of each
+remember this is the pit of success this
+is the rule of thumb okay everybody
+knows production you can have one knee
+at least one and sometimes we have a
+different production environment for
+each customer so you can have multiple
+then we need a manual test environment
+we call this uit for user acceptance
+testing you can have multiple of those
+we find common manual test environments
+all over the place dev test queue a
+staging those are all manual environment
+you could have as many as you need and
+then there's the TDD environment it is
+the automation environment there's no
+humans allowed on this environment it is
+it is for full system test automation it
+is for running test suites that require
+a fully deployed environment in order to
+run and so functional selenium tests
+that are the execution of your
+acceptance test perfect for running in
+there so you see in our pipeline we have
+a hundred percent of our tests did pass
+after the TDD deployment let me show you
+what that looks like for when you
+configure it these are the things you
+need to put in it so the first thing
+that we do is we give the signal and
+send a message over to application
+insights that we are performing a
+release to this environment that is
+super important because I'll talk about
+Salemi tree
+after a while we tell application
+insights hey we're starting to deploy
+then one at a time we grab a deployable
+component that is a new gate package in
+Azure artifacts and we deploy it so we
+grab our database and then we then we
+use Azure resource manager to to create
+our database in a TDD environment again
+we're using infrastructure as code here
+the TDD environment does not exist we're
+creating it on demand we're using it and
+then we're throwing away so it's super
+cheap to do this and for feature
+branches you can have as many feature
+branches as you go and you can have a
+full deployment with a full system test
+run even before you do a pull request
+really powerful and then we're going to
+going down the list create the database
+schema and our database is ready to go
+then we're gonna grab them just
+truncating in here we're gonna grab our
+web application package create the azure
+app service do the deployment start the
+website then we execute the self health
+check that is important every time you
+do a deployment it could be as simple as
+a PowerShell invoke web request and you
+call out to some endpoint so that the
+application can say hey I'm here I'm
+started up all of my dependencies are
+reachable that that proves your
+configuration and I am ready to rock now
+now here comes the full system testing
+we download the package of our full
+system test then we push in the
+connection string to the database and
+the URL for where the web application is
+and then we use the visual studio test
+step to run our full system tests which
+is actually going to open up a browser
+on that VM that that is the hosted agent
+and is going to run all of our
+acceptance tests and then after this is
+all said and done like we have an azure
+resource group deployment that actually
+deletes the resource group and throws
+away this environment because we don't
+need it anymore
+all right let's dive into the what the
+full system testing looks like after it
+runs because this is really sweet this
+is really empowering I think a lot of
+you understand unit tests and a lot of
+you using integration tests but we find
+that UI tests or full system tests that
+are driven through the UI
+are not as often used and they are
+absolutely empowering and the perfect
+implementation of the acceptance test
+criteria which is a common part of scrum
+because a lot of teams I know are using
+scrum for project management and so this
+is the view of the this application has
+six of these full system tests that run
+and a powerful thing is that we can
+actually do a screen capture of every
+single screen as the tests move through
+the application we can capture them and
+as your devops services happily just
+grabs all those attachments and makes
+them available on absolutely every
+deployment every stage every test run
+and so if we zoom in on what that screen
+looks like we can see that what we're
+showing here is the inside of the
+browser and it doesn't grab the title
+bar or the chrome of the browser but it
+just grabs that essentially the document
+the body of the screen that you're
+looking at and so it's typing in those
+text boxes it's it's clicking buttons
+and it's actually driving and recording
+what that screen looked like okay really
+powerful and really easy to do and the
+the free azure devops services project
+template that we have available online
+has literally this examples of this you
+can get up and running really quickly so
+let's look at how the different
+environments are arranged here's a
+principle never do anything in
+production for the first time everything
+that you do while deploying to
+production should have been done at
+least once and preferably multiple times
+in environments prior so that we can see
+all the things that we do in our in our
+TDD environment which no humans can use
+that because they try to get on and it's
+just gonna be the environments gonna be
+ripped out from under you so no humans
+allowed it's just to deploy and run some
+test Suites and then you eighty or
+whatever you choose to call your manual
+environment manual test environment that
+comes next but we're going to load test
+data on demand in TDD we're going to
+recreate the environment recreate the
+database running acceptance test we're
+going to
+that completely unattended all the time
+we're gonna destroy the environment now
+for our manual test manual test
+environments we don't do as much and you
+can see that on the chart now let's talk
+about telemetry every one of these
+runtime components needs to be monitored
+now as your monitor wraps up some
+services that really make this easy and
+so every one of these can be attached to
+application insights and if your
+application has things that run on VMs
+log analytics is your answer to get
+absolutely everything that doesn't have
+native application insights integration
+but let me give you the principles for
+falling into the pit of success with
+telemetry everybody in those logs log
+Fernet just flat file log files trace
+but there's two others that you need to
+make sure your application is emitting
+metrics and events you probably have
+applications that create a data
+warehouse or a star schema or some type
+of queryable denormalized data store
+that analytical reports can be can be
+run off of for your for your users
+well emitting metrics and events gives
+you that same type of capability where
+events are akin to dimensions in a star
+schema and metrics are akin to facts in
+a star schema and that way you can you
+can select by events group by events and
+then do average and some and min max
+over your metrics and you are creating a
+data warehouse of what your application
+is doing and that's absolutely
+empowering and then you need to take all
+of this information and make sure it's
+available in a centralized store now
+application insights gives that for us
+and this is on the screen just a really
+quick snippet of some of the free things
+that application insights gives you just
+by grabbing the nougat packages now if
+you go to the azure portal you can also
+see our deployment markers when we said
+hey as your application insights I'm
+deploying that little arrow is the
+deployment marker and if something goes
+haywire right after that we can click on
+that and in application insights in the
+azure portal we can see all the
+information about that deployment
+and link right back to it and where it
+came from and so that's to tie it all
+together now this is the seven key
+elements of a DevOps environment
+pre-code design process the version
+control structure the build full system
+testing user experience testing the
+production release and then telemetry
+observation you need all seven don't
+stay frustrated by a slow and manual
+process take pride in delivering to
+customers faster automate your DevOps
+pipeline so that you can ship software
+quickly and also preserved your weekends
+okay now remember send me an email so I
+can send you a free copy of my book that
+walks you through in detail everything
+you need to set up and of course it
+refers to documentation because the
+azure devops services has great
+documentation and I didn't want to
+regurgitate documentation here on this
+30-minute talk I wanted to give you the
+guidance to fall into the pit of success
+and if you if you haven't if you're
+struggling to get started yes just do it
+that way and as you read the book use
+the included as your devops services
+project template that's linked here
+bitly on the top right bitly slash
+dotnet devops project and literally get
+up and running within a day feel free to
+copy literally copy that completely
+working project along with the
+infrastructure is code and azure air and
+templates just attach it to your Azure
+subscription you'll be up and running
+fast and I do a lot of DevOps education
+webinars and and the next one I'm doing
+is how to educate how to organize your
+git repository to make DevOps automation
+easier and and also another resource is
+the Azure DevOps podcast but if you
+email jeffrey at clear - measure com
+I'll send you that free book and I'll
+also post the slides and tweet those out
+at jeffrey palermo and i'll be happy to
+take any questions that there are
+all right thanks Jeffy that was
+fantastic we don't I don't know that we
+really have many questions so just take
+a couple of minutes and what's what do
+you best
+what are you recommendations for how
+people get started doing this I think
+you know people have seen a lot of
+DevOps they definitely want to do this
+I'm gonna dive in you know I've got an
+hour here an hour there how do i how do
+I get started and get up to speed
+well if the adjective op services is
+completely new then you need to get the
+skeleton working first because you're
+gonna have applications and everybody
+has tons of applications and if you try
+to try to start automating one of your
+applications first you're just going to
+really struggle with the complexity of
+your application and the new tool so I
+recommend going online creating the new
+org and then there's downloading or
+creating a skeleton a shell of an
+application that doesn't actually do
+anything that way you can get the
+automation down without being distracted
+by the features and so but there's a lot
+of concepts there and so if the the
+shell of the application that the
+community the community template ought
+to talk about that's the jump start and
+but either way get a shell of an
+application create the private build the
+continuous integration build throw in
+your unit test suite integration test
+suite and a full system test suite that
+uses selenium make sure you can have one
+function and it calls a nothing query to
+a database and then three deployments a
+test automation environment a manual
+test environment and then your
+production environment and so if you can
+get just the skeleton of your pipeline
+with a you know file new at file new
+project type shell of an application and
+visual studio solution then you can get
+all the pieces accounted for you can see
+how all fits together see how it flows
+and then you can start adapting one of
+your applications to the pipeline
+and you know sidestep a lot of confusion
+a lot of complexity because you will
+have a working pipeline for an
+application that doesn't do anything but
+you'll you'll have that full working
+pipelining you can adapt it to seam
+coins that have a hundred a hundred plus
+applications with no automation and it's
+a mountain of effort but that's a way to
+get started
+perfect cool that's a nice well thank
+you so much Jeffrey for taking the time
+to share your talent with us we're gonna
+get going here we're gonna get J power
+talking about static content thank you
+so much Jeff awesome

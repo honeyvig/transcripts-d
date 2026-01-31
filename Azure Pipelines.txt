@@ -1,0 +1,979 @@
+>> Joining me today on
+Visual Studio Toolbox
+is Tupelo, Mississippi's
+second-most famous resident.
+We're going to talk about
+DevOps and Azure Pipelines.
+Hi, welcome to Visual Studio Toolbox.
+I'm your host Robert Green
+and joining me today
+is Mickey Gised. Mickey, how are you?
+>> Hi Robert, I'm excited.
+I'm very excited to be here.
+>> I'm excited too. I've
+been trying to get Mickey on
+this show for probably years.
+Now, that you are Microsoft employee,
+and you're in town, today is the day.
+>> I am. I'm a DevOps Architect on
+the Microsoft DevOps Customer
+Advisory team and I'm very excited.
+>> You are from Tupelo, Mississippi.
+>> I am. Now, Robert,
+do you know what Tupelo Mississippi
+is world famous for?
+We are a small 30,000 person
+town in Northeast, Mississippi.
+We get about 30,000 people
+a year that visit my town,
+half of which probably
+come from Europe.
+>> Yeah, it's the home of one of
+my favorite blue Sires,
+Mr. Paul Thorn.
+>> That is all- that
+is true but that is
+not why they are world famous.
+>> That would be the birthplace
+of the iconic Mr. Elvis Presley.
+>> That is correct.
+>> I didn't know that.
+>> Elvis was born in a two room,
+not a two-bedroom but a two room
+house in Northeast, Mississippi.
+So they come, they tour
+his house. They tour his church.
+They go to the hardware
+store downtown
+where he bought
+his first guitar at age nine,
+and it's still a hardware store,
+and then they drive up to Memphis,
+Tennessee to see Graceland
+where he got famous.
+>> Cool. But that's not what
+we're here to talk about today.
+>> No, that's not what
+we're here to talk.
+>> We're going to do
+some DevOps stuff.
+We're here to talk
+about Azure pipelines.
+>> We are indeed.
+Do you know what Azure
+pipelines are, Robert?
+>> I'm going to.
+I do but I'm going to pretend I
+don't for the purpose of the show.
+So, I do know about DevOps.
+I know about Continuous Integration,
+Continuous Deployment,
+your CICD Pipeline.
+Are the Azure Pipelines
+the same as those?
+>> It fits into that story.
+Yes. So, we have Azure DevOps
+which used to be called
+Visual Studio Team Services which is
+the co-version of what used to be
+called Team Foundation Server.
+So, one of the different-
+one of the components
+of Azure DevOps is Azure Pipelines,
+and it's been referred to by
+a lot of different names.
+They call it the Build System.
+It's got build.
+It's got the build ability to do
+Build Management, Release Management,
+all of those things but
+we encapsulate that
+into what we call just
+Azure Pipelines in general.
+>> Okay.
+>> What's nice about Azure Pipelines,
+is it works with a multiple or
+a multitude of different languages.
+So, we're talking
+Ruby C-sharp Python.
+You can use it to deploy both
+On-prem or into the Cloud,
+and you can target pass,
+you can target
+infrastructure as a service.
+It's got multiple different options
+for being able to work,
+and the goal being to be able to
+automate do that
+whole Continuous Integration,
+Continuous Delivery to honestly
+build better software.
+>> Okay. Cool.
+>> Because, I mean,
+the whole point of having
+a Build System is because,
+if you have multiple developers
+working on the same code,
+if you're not doing a daily build,
+doing a nightly build,
+running your Smoke Test,
+running your other-
+your Integration Tests,
+then, you can run into a lot of
+problems farther down the road.
+You can have a lot of bugs
+that creep into the system,
+and once that happens,
+that's Technical Debt and
+other things you have to
+deal with at a later point in time.
+What's interesting
+though, is you also need
+to look at your releases,
+not just your builds.
+Look at the Continuous
+Delivery aspect of it.
+Because with Continuous Delivery,
+the point is you want to be able
+to release in just say your Dev,
+your QA, and your Prod the same way,
+the same code every time.
+>> Right.
+>> If you're doing it manually,
+you might miss
+that quotation mark that you
+forgot to copy when you were
+copying over the line of
+code to push things out.
+>> Okay. Cool.
+>> Now, one of the things I
+like about Azure pipelines,
+is that we have the ability to
+build out these pipelines
+in a nice GUI Interface,
+which I'll show you in a moment,
+but we also have the ability
+to do it with code.
+So we can write what's called a YAML
+file and actually write some code
+that stays with the rest
+of our code to be able
+to make our Builds.
+>> Yeah. I definitely want to talk
+about that when we get to that point.
+>> Now, the other thing I
+really want to point out
+real quick about Pipelines,
+is it doesn't just work
+with Azure DevOps,
+it works with Azure Repos,
+which are the Repos and Azure DevOps.
+But also, they also
+works with GitHub,
+it can work with Bitbucket,
+it can work with a variety
+of different systems.
+So, it's very nice
+from that standpoint
+but what's really nice about
+Azure Pipelines is that,
+if I have an Open Source Project,
+and it's a Public
+Open Source Project,
+then I can get 10 free Pipelines
+on the service to be
+able to do my Builds
+from my Open Source Project which can
+really speed up the Build Time
+for some of these projects
+that are out there.
+>> Cool. Let's see how it works.
+>> Okay. So, where I got started,
+is that I wanted to create
+a quick little test
+project to work with.
+So, I use the Azure
+DevOps Demo Generator,
+which is a publicly available
+Demo Generator out there,
+which has like, a lot of
+different templates
+that you can work with.
+They've got ASP.net templates.
+It's got you know NodeJS.
+A lot of different projects.
+>> Some of our famous demos from
+Keynotes and launches parts.
+>> Exactly.
+>> All right.
+>> So, I work with Parts Unlimited,
+and honestly this is open for
+anybody to use and all you
+have to do is come out
+here and give it your organization
+that you want it to deploy to.
+Your Azure DevOps organization.
+Give it a name and punch the button
+and Bob's your uncle. There you go.
+Now what that created
+for me out here was
+a Parts Unlimited Team Project
+in my Azure DevOps organization.
+If you've not used
+Azure DevOps before,
+which I'm sure you have,
+but you have the board's area with
+a Boards Hub which is where
+you can do with work items.
+One of the nice things
+about the Demo Generator,
+it generates a ton of
+work items for you.
+So you can actually see how
+the Work Item System works.
+It also generates code for you.
+So you can see how Repos works.
+But what we're going to
+work with is Pipelines.
+So in the Azure Pipelines Hub,
+I've got my build section
+for building my code.
+That's the CI portion.
+I've got my Releases
+Section for doing
+the releases which is
+my Continuous Delivery Portion.
+We have a bunch of other features,
+libraries, and way to
+group like Servers.
+You might want to deploy too
+into groups things like that.
+But if we just go look at the Builds,
+I've got one Build here.
+I just want to show you
+what this Build looks like.
+I've got all green.
+If I go to edit,
+this is the Build System that
+we have in Azure Pipelines.
+So, for example, right now I'm
+deploying to Hosted Build.
+Meaning that I'm using
+a bunch of Build Servers that
+Azure DevOps has up in
+the Cloud for me to use.
+>> Okay.
+>> I can use those
+Hosted Servers or I can
+use my own Private Servers.
+Those are called
+Private Build Servers.
+Those could be in
+the Cloud or On-prem as well.
+Now, the Hosted Servers are
+really nice thought because
+the things you need to do your
+Builds already installed on them.
+The Pre-software that you might
+need to make things work.
+So, what you do is you
+select your Pipeline,
+you specify where you want
+to get your source from.
+In this case, I'm using
+Repos but as you can see,
+I could be using Team
+Foundation Version Control or
+GitHub or any of these options.
+>> Okay.
+>> Then you specify the agents
+that you want to use.
+These are the different jobs.
+I could specify multiple jobs.
+Then you have the specific tasks
+that you want to do in this Build,
+and these Builds just doing
+a new get restore and then it's just
+doing a Regular Build
+on the solution,
+running some tests and then
+publishing my artifacts out
+to a drop location where then I
+could use them as
+part of the release.
+>> The demo generator
+created that build
+for you if you are creating
+a build from scratch,
+that you have to know how to
+select each of these things
+in what order they go in?
+>> You would have to understand
+the basics of how
+your Build would work.
+What you do is just come here
+and add different tasks.
+There's different tasks for building,
+for doing tests, for maybe
+helping with deployment,
+and these are a lot of
+tasks that both Microsoft
+provides as well as
+there's a marketplace
+out there for other tasks as well.
+So, yes, you do can
+have to understand
+how what you're building
+needs to be built.
+Then, you can add the things
+in here that you need.
+So you can add the different task.
+You can also have variables
+in your build process.
+So, these are different things
+where you might want to be able to
+specify certain values that you-
+then you set the variable
+in the task itself,
+and then anytime you
+need to change it,
+you can modify the variable here.
+>> Okay.
+>> In releases that comes
+in very handy as well.
+You can trigger. Determines
+when you want to trigger.
+Do you want to do
+Continuous Integration or not.
+So, Continuous Integration
+being every time
+I check in or maybe
+every time I do pull request,
+depending on how you
+want to set things up.
+You can run certain tests
+to verify that everything
+looks good before it moves on to
+the next step in your process.
+>> Okay.
+>> Or you can even schedule on the
+nightly builds, whatever
+you want to do.
+Then of course, you've got
+different things where you can set
+your build number format,
+how long you want to retain
+your builds, things like that.
+I'm not going to kick this off
+because it could take
+a few minutes to run,
+but what I will do is come out here,
+and if you look at the results
+from one of these builds,
+then you can see that for each task,
+it breaks down what happened,
+you can actually
+drill in to each task
+and see the details of what
+occurred on that particular task.
+So if you've got
+errors in your build,
+this is where you would come
+to try to find the errors
+that were related to why
+you're build failed.
+Just got a good summary
+overview where you
+can flip through here to
+see what's happening.
+It shows you the test information,
+so when your tests ran,
+it shows you which ones
+passed, which ones failed.
+>> Assuming you had a test.
+>> Everyone has tests.
+>> Yeah.
+>> Right? You have to have tests.
+Then if you're doing code coverage,
+it has code coverage
+information as well.
+So that gets my code built,
+and then I store my code
+in a drop location.
+Since I'm building in Azure DevOps,
+it stores it in a drop location
+up in Azure DevOps.
+If I was building local,
+I could have maybe a file share
+somewhere that I might
+want to put those at.
+So that handles
+the CI portion of things,
+but then we have
+the CD portion of it.
+>> You can set it up so that
+every time you check
+in, the build occurs,
+or you can schedule builds,
+or of course, you could
+do them manually.
+But the beautiful things about
+the DevOps mindset is you have
+things happen automatically.
+So you can decide whether you want
+to turn on Continuous Integration,
+which is turned off by default,
+and have every time you
+check in, a build runs,
+or you just do a nightly build based
+on the code that's been checked in.
+>> Correct. Then also,
+you can just kick them off
+manually whenever you need to.
+The second half of
+this whole process is releases,
+we need to release our code.
+So again, one of the things that
+the DevOps build
+generator did for me is
+create a default release
+pipeline for me.
+So what this release pipeline
+is doing is I'm
+specifying the build that
+I want to pull from,
+and I could turn on
+Continuous Integration to
+where as soon as the build passes,
+it automatically starts
+releasing if I want to.
+What I have is different stages,
+different environments
+that I can relate to.
+>> Is that typically done?
+>> It depends on the organization.
+>> You would release
+it to test, I presume.
+>> We might release it to test
+and then have tests that are run.
+>> Just because the build succeeded
+doesn't mean the app works.
+>> That is correct.
+So you want to have
+gates in place to make sure
+that you're not just
+pushing out something
+all the way to prod just because.
+So what we've got is
+different environments.
+Now, these are logical environments,
+say, like a dev and a QA.
+You'll notice I've
+also got a production
+but I don't have it
+actually linked up.
+This is because in this scenario,
+I manually pushed to production.
+So what happens is this build runs,
+if I had Continuous
+Integration turned on,
+it would immediately push
+out to the dev environment.
+If we look at the tasks that
+make up the dev environment,
+since this is just a website,
+it just is doing
+an Azure App Service Deploy,
+and then it settings some variables
+specific to the dev environment.
+So it's setting
+some specific things related
+to the dev environment.
+>> So this is just a web app?
+>> This is just a web app, yeah.
+PartsUnlimited is just a website app.
+By the same token,
+if we go back to here, wait,
+let me go back to my releases,
+see this is the fun part,
+you can see that I've also got
+a QA where I've got tasks in
+my QA as well that would deploy to
+the QA portion of
+wherever things are.
+Now, I've got variables that I set,
+I set the website name based off
+of whether I'm in
+the dev environment,
+or the QA environment,
+or the production environment.
+So I've used these
+variables and I've set
+these variables in
+the different tasks
+in the pipeline to
+where then it goes,
+"Oh, you're deploying to dev".
+Let's set these variables,
+let's replace this stuff in
+app.config or wherever we
+need to make some changes.
+What we've actually got
+here with this pipeline
+is if we go back to
+my actual release,
+right now, we've deployed the dev.
+It deployed perfectly,
+but we're waiting on QA.
+That's because I can
+actually specify gates.
+So I can specify
+post-deployment conditions and
+pre-deployment conditions.
+So here in this
+pre-deployment condition,
+I've specified that
+someone has to approve
+it before it can go to QA.
+I've got a lot of different options,
+I can gate off of a web hook
+into something else,
+or gate off of tests completing,
+I have multiple different options
+for how I want to gate.
+Then it just becomes
+a matter of, "Okay, well,
+if you've gated, well,
+then let's go look at that release."
+I would have gotten
+an e-mail, which I did,
+and I can just come in here
+and say that I approve.
+Toolbox forever.
+Once I approve that, it will
+then start deployment into QA.
+So you have the ability to create
+these multiple pipelines that
+can release into
+multiple different environments.
+If you enable all of this up,
+we now have continuous integration.
+So when we're checking in,
+we're building our code,
+and then when we're
+building our code,
+we can have it automatically
+start going down
+whatever our pipeline
+processes to do delivery,
+hopefully, getting
+code out there faster,
+but also ensuring quality.
+That's one thing I think a lot
+of times people don't realize,
+is the quality aspect that
+doing this Continuous Integration
+and Continuous Delivery can give you.
+>> It really puts you in a world
+where you've got a work item,
+whether it's add a feature,
+fix a bug, you make the fix,
+you check the code in,
+and like, "I'm done",
+and you walk away.
+But you're not really done,
+you're done with your code
+which you tested locally,
+and it works locally with
+your current version of the code.
+But you check it in,
+it might've broken
+somebody else's code or somebody
+else's code might've broke yours.
+So the build itself may or not work.
+If it does work,
+then all the tests run,
+then it gets deployed,
+but all of that's automated for you.
+So you just code all day long,
+it's whatever time you
+leave, you check in,
+you leave, and then all this work
+happens automatically.
+The dev guys or the QA guys
+come in the next morning,
+and there may or may
+not be a new version.
+If everything went well,
+that new version's already there
+and they can proceed to testing.
+Nobody has to wait around and wait
+for somebody to do the release.
+Nobody has to go,
+"Oh, it's Wednesday?
+Oh, it's my turn to do
+the release? Oh, I forgot."
+It automates a lot of
+this stuff for you
+and checks to make sure along
+the way that things worked.
+So QA gets in in the morning
+or you get in in the morning and
+there's no new version for them,
+it's because something went
+wrong in-between you checking in
+your code and pushing out
+the new version to them.
+It's all automated, it's
+all logged for you,
+and you may or may not get an e-mail
+or text message at
+midnight telling you,
+depending on whether you want to,
+but you certainly could, right?
+>> That is all correct.
+>> Cool, and it's pretty easy to use.
+>> It's pretty easy to use. As long
+as you understand
+the general process,
+getting everything set
+up is pretty easy to do.
+>> You don't have to be
+part of a massive team,
+you don't even have to be part
+of a multi-developer team.
+I think even if you're writing
+just code for yourself,
+just an app you use yourself,
+you should run it through the full
+DevOps processes to get better
+at building software yourself so
+that even if it's just for you,
+it makes you better at
+delivering software,
+but now you have the skills
+that you can bring
+to work or to the multi-developer
+applications as well.
+>> I agree 100 percent.
+So let me take it one step further.
+I've shown you the GUI way of
+building out these pipelines.
+But one of the things
+that people ask for,
+especially with build systems,
+is a way to track the versions of
+their build pipeline
+with their actual code.
+So the way we do that is with
+what's called a YAML file.
+>> YAML.
+>> YAML.
+>> Which stands for?
+>> It depends on who you ask.
+But according to my research,
+it stands for YAML
+Ain't Markup Language.
+>> So it doesn't stand for
+yet another markup language?
+>> That's what I've been told.
+>> If you go to yaml.org,
+what do they say?
+>> Let's see, what do they say?
+Do they have YAML
+Ain't Markup Language?
+>> There you go, a myth busted.
+>> But YAML dot org is
+a great place to go to get
+some basic information
+on YAML in general.
+YAML, everybody you can define
+how you want your YAML to work.
+Everybody can define it differently
+but essentially what you have is
+structure that's enforced through
+indentation with spaces not tabs.
+>> Right.
+>> Key value pairs.
+>> Which is one of the first things
+you use when we're
+working with the YAML
+that that matters.
+>> Yes, yes it does.
+>> I found that the right way.
+>> That's why its very
+difficult often to
+just copy and paste YAML code in,
+because this code you
+copy it in and it
+winds up putting tabs in and
+then it doesn't work and
+you have no idea why.
+>> Exactly and it's
+basically a human-readable
+data serialization language.
+It's based off of JSON
+obviously, as you can tell.
+If we go and look.
+I love by the way, our documentation.
+if you go and look at
+the documentation for pipelines,
+they actually have a creature.
+First pipeline
+documentation section with
+a lot of different
+selections for you,
+so we've provided a bunch
+of the code you need to get
+started with creating
+your first pipelines using YAML.
+>> Okay.
+>> So what I did is,
+I took the pipeline's JavaScript
+one and I forked it into my it.
+So it's on GitHub Microsoft
+Docs pipeline JavaScript
+and I forked it to be just have
+my own version of the project
+and it gives you all this out of
+the box including
+a starting Pipelines file,
+so I'm now working with
+GitHub as my repo.
+So I'm able to take
+this repo and I'm able
+to clone it down and
+start working with
+it and my tool of
+choice for working with
+pipelines or YAML files
+is Visual Studio Code.
+Love Visual Studio code.
+One of the nice aspects
+of Visual Studio Code,
+if you're working
+with Azure pipelines,
+is the Azure Pipelines extension.
+Now, what we've got here if we
+look at this very simple pipeline,
+is we're basically saying,
+this is the pool,
+this is the image
+that we want to use.
+So this is the Linux image
+we want to use when we
+do our build and we're
+saying use the node tool
+task and just pitch,
+just for grins we'll change
+this to be eight instead of 10,
+just to make a change.
+You know what, I really want this
+to show up with a better name.
+I figure there's a way
+to do display name.
+You notice I've got a space in twice.
+But then if I do
+"Control Space" I get
+"IntelliSense" and I can
+say well I want to do
+display name and this is just
+going to be the node tool.
+Now this is a task
+that I'm going to run,
+one of those tasks remember when
+I click the plus sign in the GUI.
+>> Yeah.
+>> This is using one of those tasks.
+This is actually running a script.
+So it's going to say just run npm
+install and then npm test and
+I'm using some other tasks to
+publish out and publish the code.
+>> If you build a pipeline
+using the Visual Designer,
+is there a way to convert it
+over to YAML automatically?
+>> Yes there is,
+well not to convert it
+over automatically.
+>> To export it.
+>> But what you can do is,
+if I go to this build
+and I go to "Edit".
+What I can do is, I could try to
+view the YAML for this entire build.
+>> Okay, well there you go.
+>> Sometimes the build may be
+doing things like putting in,
+setting certain variables for me.
+>> Yeah.
+>> Then I have to make sure
+I add that to my YAML file.
+>> Okay.
+>> But one of the ways
+I've taught myself
+YAML and to build out some of
+these pipelines is to select
+a particular task you want and you
+can view the YAML just for that task.
+>> Okay, cool.
+>> I build it, first in
+the GUI to understand.
+>> Yeah.
+>> Then I can transpose
+the code over.
+Then of course once
+we've made these changes
+in Visual Studio Code,
+we can just and we
+save those changes.
+Then we can just come back over
+"here" and commit that locally.
+I could type and
+then once it finishes doing
+that we'll just push it on up
+to or push it back out to GitHub.
+>> Okay.
+>> Now what I've done
+in my repo in GitHub,
+is I've gone to
+the marketplace and I've
+grabbed Azure Pipelines
+and I've gone through
+a configuration where
+I've setup my team
+project in Azure DevOps to be
+connected to my GitHub repo.
+>> Okay.
+>> So that now since there was
+a check-in to my GitHub repo,
+it will have kicked off a build.
+If we come over here to builds,
+come on, you can do it.
+You can see there's
+my change node to eight.
+>> Yeah.
+>> It's kicked off my build process.
+>> How does it know to read
+that YAML file and how does
+it that that YAML file
+contains the information.
+>> Because I came into
+my Azure DevOps team project and I
+created a new pipeline
+and I pointed it to.
+>> That YAML.
+>> That YAML file.
+>> Got it.
+>> By pointing it to that YAML file
+you can see "There".
+I need no Tool.
+Now, what's really cool about this.
+Is that one of the things you have to
+remember is that you can come in here
+and it's not what I
+meant to click but you
+can come in here and you
+can modify the triggers.
+You can use variables.
+So, you have the ability,
+just like we had variables
+over in the build GUI
+and in the pipelines.
+>> Yeah.
+>> I can have different variables
+that I can access.
+I can set the trigger.
+I can point to a different
+YAML file if I need to,
+so if I ever needed to say,
+change the YAML file
+I was working with,
+I can a point that
+to a different area.
+>> Would you agree
+that if you're just
+getting started with
+these you should use
+the visual designer and then once
+you understand what's going on,
+then you can go over to
+YAML or you would just
+start with the YAML?
+>> The answer is, good
+consultant answer is it depends.
+For me it was easier to
+get started with the GUI.
+>> Okay.
+>> For a lot of people that
+maybe are used to using
+other build systems
+like maybe Travis or
+CircleCi where they use
+YAML files as well.
+>> You might have learned
+they're familiar with
+YAML files already that's what
+Helm charts are written in,
+if I'm not mistaken.
+They are used in
+Deploying Containers?
+>> Put this dust
+over. Think about it.
+Now I've got my build,
+and my build is now
+or the description of
+my build is now being
+version-controlled with my code.
+It's following me
+around when I branch.
+>> Okay.
+>> I'm able to track the changes to
+my build in addition to
+the changes in my code.
+Now this leads to the question,
+"Can I do this with my releases?"
+The answer is not yet.
+>>.Okay.
+>> The product team is aware of
+it and they're actually
+working on it.
+If you go to Microsoft slash
+Azure dash pipelines dot YAML,
+you can actually see the design docs
+that we have out there.
+>> Cool.
+>> Kind of what the plan is.
+They're aware that people
+want that feature.
+>> Very nice.
+>> So they're working on it.
+I'm working closely with
+some of the open source
+projects on GitHub to
+help them with pipelines
+and it's just a very,
+very solid robust product.
+So I really hope people
+will check it out.
+>> Very nice.
+>> So that was a great overview of
+the pipelines and I think we
+saw how easy they are to use.
+We'll put in the show notes.
+Number of resources, you
+pointed to the docks
+and the demo generator and
+a couple other things.
+People should just
+absolutely get started using
+this stuff and learning how to apply
+the DevOps practices
+in their development.
+>> Absolutely.
+>> All right. So thanks a lot.
+Thanks for being on the show.
+>> Thank you. This was so much fun.
+>> We will see you next time
+on Visual Studio Toolbox.

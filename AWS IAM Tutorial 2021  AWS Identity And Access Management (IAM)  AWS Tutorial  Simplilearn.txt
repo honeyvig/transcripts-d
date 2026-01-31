@@ -1,0 +1,1640 @@
+hello everybody my name is kent and
+today we're going to be covering aws
+identity and access management also
+known as i am
+tutorial by simply learn
+so these are the topics which we'll be
+covering today
+we'll be defining what aws security is
+the different types of security in aws
+what exactly is identity and access
+management
+the benefits of identity inaccess
+management
+how
+im works
+its components
+its features and at the end we're going
+to do a great demo on i am with
+multi-factor authentication and users
+and groups
+so without any further ado let's get
+started
+so let's get started with what is aws
+security
+your organization may span
+many regions or many accounts and
+you may encompass hundreds if not
+thousands of different types of
+resources that need to be secured and
+therefore you're going to need a way to
+secure all that sensitive data in a
+consistent
+way across all those accounts in your
+organization while meeting any
+compliancy and confidentiality standards
+that have to be met so for example if
+you're dealing with health care data or
+credit card information or personal
+identification information like
+addresses this is something that needs
+to be thought out across your
+organization so of course we have
+individual services in aws which we will
+explore
+in this video however in order to govern
+the whole process at an organizational
+level we have aws security hub now aws
+security hub is known as a cspm which
+stands for a cloud security posture
+management tool so what does that really
+mean well
+it's going to encompass like i said all
+these tools underneath the hood in order
+to bring a streamlined
+way for you to organize and adhere to
+these standards across organization
+it'll identify any misconfiguration
+issues and compliant risks
+by continuously monitoring your cloud
+infrastructure for the gaps in your
+security pulse reinforcements
+now why is that important
+well these misconfigurations
+can lead to unwanted data breaches and
+also
+data leakages so in order to govern this
+at a very high level like i said we need
+to incorporate aws security hub that
+will automate and manage all these
+underlying services for us in order to
+perhaps take automated
+action we call that remediary actions
+and
+you can approve these actions
+manually or you can automate those
+actions as you see fit across
+organization so let's delve a little bit
+deeper into what is aws security and
+then we'll start looking individually at
+some of these services
+and so
+our organization has special needs
+across different projects and
+environments so of course
+the production development test
+environments all are gonna have their
+own unique
+needs however it doesn't matter
+which project or which business unit
+we're talking about what are their
+storage backups needs
+they should all be implemented in a
+concise standardized way across our
+organization to meet that compliancy
+we're just talking about so we want to
+automate all these tedious manual tasks
+that we've been doing like ensuring that
+perhaps our buckets and s3 are all
+encrypted or all our ebs volumes are
+encrypted and we want to have an
+automated process in place in order to
+give us time
+on other aspects of our business perhaps
+our application development to bring
+better business value and that allows to
+grow and innovate the company and a way
+that's best suited for it so let's take
+a look at the different types of aws
+security
+now there are many different types of
+security services out there however
+we're going to concentrate primarily on
+i am in this video tutorial so i like to
+think of i am as
+the glue between
+all aws services because by default we
+don't have permission for any one
+service to communicate with another so
+let's just take for example an ec2
+instance that wants to retrieve an
+object from s3 well those two services
+could not
+interact unless we interacted with i am
+so something that's extremely important
+to learn and by the end of this video
+tutorial you'll be able to understand
+what im is we have amazon guard duty
+here which is all about logs basically
+aggregates all logs from example
+cloudtrail which we still haven't talked
+about at the end of this list over here
+but instead of looking at cloudtrail
+individually guard duty will actually
+take a look at trail
+cloudtrail we'll take a look at your vpc
+flow logs and we'll take a look at your
+dns logs and monitor that account and
+your network and your data access via
+machine learning algorithms and it'll id
+and e threat
+where
+you can automatically remediate the
+workflow
+that you've approved so for example
+if you know of a malicious ip address
+that's making api calls well those api
+calls are registered in cloudtrail right
+so
+this machine learning
+algorithm will be able to detect that
+and take action
+so this is really
+governed at a higher level than you
+having to you know individually inspect
+all your dns logs flow logs and cloud
+trails individually and take action
+through some scripting fashion that that
+you've come up with so guard duty
+manages all that
+we have amazon macy which once again
+uses machine learning but also uses
+pattern matching pattern matching can be
+used with
+matching
+kind of libraries that are already in
+place or you can come up with your own
+pattern matching and that's used to
+discover
+and protect your sensitive data so for
+example if you had health care data also
+known as hipaa compliancy or credit card
+data that's lying around well macy will
+discover it and will protect it
+so as your data grows across your
+organization
+that might be harder and harder to do in
+your own way so macy really facilitates
+uh discovering and protecting that so
+you can concentrate on other things aws
+config is something that kind of works
+in tandem with all the other
+services
+it's able to continuously monitor your
+resources configurations and ensure that
+they match your desired configuration so
+for example
+maybe you state that your s3 bucket
+should be encrypted by default all of
+them or you want to make sure that your
+im
+user access keys are rotated and if
+they're not then take remediary action
+so a lot of these automated remediary
+actions right are
+basically executed via aws config so
+you'll see the aws config actually used
+by other services underneath the hood
+and then you have cloudtrail cloudtrail
+is all about logging every single type
+of api call that's made so it'll um
+it'll always record the api call who
+made it from what source ip um the
+parameters that were sent
+with the api
+the response
+all that data which is really a gold
+mine for you to
+investigate if there's any security
+threat and again
+this
+trail over here and there can be many
+and there's lots and lots of data
+generated by these trails can be
+analyzed by these other services
+uh specifically guard duty here
+and that automates that process so you
+don't have to
+so let's get to the next one which is
+what is identity and access management
+so what is ion
+like i said im is the glue between all
+aws services
+it will
+allow those services to communicate with
+each other once you
+put im into place
+the other thing is is it allows to
+manage our aws users which are known as
+iam users and group them together in two
+groups to facilitate
+assigning and retrieving or removing
+permissions from them
+instead of doing it on an individual
+scale so of course if you had
+200 im users and you wanted in one shot
+to add a permission to a group that
+contained 200 item users well you can do
+that in one operation instead of 200.
+now we do have a distinction between im
+users and end users end users use
+applications online whereas im users
+are your employees in your organization
+that are
+interacting directly with aws resources
+so for example an ec2 instance would be
+a resource that let's say a developer
+would be interacting with and
+traditionally those are resources that
+are used
+full time from nine to five let's say
+five days a week 365 days a year okay
+now sometimes those users have to
+have elevated permissions for a
+temporary amount of time and that is
+more suited for a role and that will
+eliminate the need to create separate
+accounts
+just for you know
+type of actions that are needed for
+let's say an hour a month or two hours
+a week or something like that something
+like backing up an ec2 instance removing
+some files doing some cleanups
+traditionally you don't have those
+permissions as a developer
+but
+you can be given temporary permissions
+to assume this role so it's kind of like
+putting a hat on your head and
+pretending you're somebody that you're
+usually not for a temporary amount of
+time once you take off the hat you go
+back to being your old boring imuser
+self which doesn't have access to
+performing backups or cleanups and stuff
+like that so
+the roles interact with the service
+called the secure token service which
+gives us specific keys three
+specifically an access key a secret key
+much like a username and password and
+then we have a token key which only
+gives you access to this role this
+elevated permission for
+1 to 12 hours so we'll talk more about
+roles
+as we go on through this video tutorial
+but it's important that you at least
+remember at this point even if you don't
+know all the details that roles have to
+do with
+temporary permissions elevated
+permissions
+so what are the benefits of im
+well
+across our organization
+we are going to have many accounts and
+like i said hundreds if not thousands of
+resources so scalability is going to be
+an issue if we don't have a very high
+level
+uh visibility and control over the
+entire security process
+and once we have a tool like for example
+security hub which we saw on the first
+slide we can continuously monitor
+and maintain a standard across our
+organization so very very important to
+have that visibility
+and we do when we integrate with aws
+security
+now we also need to eliminate the human
+factor right so
+um
+we don't want to
+manually
+put out fires every single time of
+course there will be times when
+something new occurs that we've never
+seen before that that you know will be
+needed however
+once an
+occurrence happens and reoccurs we can
+obviously come up with a plan to
+remediate the action so once we automate
+we can definitely reduce the time to fix
+that reoccurring error or it could be a
+new erdogan we don't have to interact
+with because we're using machine
+learning algorithm services like i was
+talking about like our duty or macy
+and we can really reduce the risk
+of
+security intrusions and data leakage and
+such by using im to facilitate this
+of course you may have many compliance
+needs you may be dealing
+with applications that use healthcare
+data or credit card information for
+payments
+or
+you might be dealing with a government
+agency let's say in the u.s that has
+certain compliancy
+requirements that needs assurances that
+if their data is stored on the cloud
+that you're still following the same
+compliance controls that you were let's
+say on premise so we have a very very
+long list
+of compliance requirements that each aws
+service
+adheres to and you can go on the um aws
+documentation online and you could
+figure out if for example
+dynamodb is compliant with hipaa
+compliancy and it is and so you you can
+be sure that you can use that so aws
+itself has to constantly maintain these
+compliancy controls in place and they
+themselves have to pass all these
+certifications and that gets passed on
+to us so much less work for us to
+implement these compliance controls we
+can just inherit them by using
+aws a security model by im
+and last but not least we can build the
+highest standards for privacy and data
+security
+now having
+all this on our own
+on-premise data center
+poses security challenges especially
+physical security challenges you have to
+physically secure the data center you
+might have security personnel that you
+need to
+hire
+24 7 camera surveillance etc etc so just
+by migrating to the cloud
+we can
+take advantage of aws's global
+infrastructure they're very very good at
+building data centers that's part of
+their business and securing them so of
+course we have a shared security model
+in place however you can rest assured
+that at least as the lowest common
+denominator
+physical security has been put into
+place for us again
+as other services are used more managed
+services or more higher-end services
+used in aws more and more of that
+security model
+will be aws responsibility and less
+yours we will always have a certain type
+of responsibility for our applications
+but we can again use these high-level
+services to ensure that our ability to
+encrypt the data at rest and in transit
+are always maintained by coming up with
+specific rules that need to be adhered
+to
+and if those rules are not adhered to
+then we have remediary actions that take
+place in order to maintain again that um
+cross account or organizational wide
+security control okay so lots of
+benefits of using i am
+and let's now take a look at exactly how
+im works and delve deeper into
+authentication and authorization
+so there are certain terms here that we
+need to
+know about one of them is principle now
+principle is nothing more than an entity
+that is trying to interact with an aws
+service for example an ec2 instance or
+an s3 bucket now that could be
+a user an im user it could be even a
+service or it could be a role so we're
+going to take a look how principles need
+to be specified
+inside i am policies
+authentication
+so authentication is exactly how it
+sounds who are you could be something as
+simple as username and password or it
+could involve an email address example
+if you're the root user of the account
+when you're creating the account for the
+very first time
+other normal users will not need to log
+in with their user
+email it'll only be the root user that
+needs that
+you could also have developer type
+access which needs access let's say via
+command line interface or a software
+development kit also known as an sdk
+now for those kind of access
+points we're going to need
+access keys and secret keys or
+public private keys let's say if you
+want to even authenticate and log in
+through ssh to an ec2 instance so there
+are many different types of
+authentication that we could set up when
+creating im users based on what kind of
+access they need do they just need
+access to the console do they need
+access to just services
+in terms of as a programmatic needs
+so those are the different types of
+authentication
+and then we have the actual request now
+we could make a request in aws through
+various ways
+we're going to be exploring that via the
+console the aws console however every
+button you click every drop down list
+you select that invokes
+an api call behind the scenes so
+everything goes behind a
+centralized well-documented api every
+service has an api so if you're dealing
+with
+lambda let's say well lambda has an api
+if you're dealing with ec2 ec2 has an
+api
+now you could interact with that api
+like i said via the console
+indirectly you could use a command line
+interface you can use an sdk for your
+favorite programming language like
+python
+so all of them get funneled through all
+your requests get funneled through an
+api
+but that doesn't mean you're allowed to
+do everything just because we know who
+you are and you have
+access to some keys let's say to make
+some api calls you have to be authorized
+in order to perform certain actions so
+maybe you're only authorized to
+communicate with dynamodb and also maybe
+you're only authorized to perform reads
+and not write so we can get some very
+fine-grained
+authorization through some i am policies
+in order to control
+not only who has access
+to our aw releases but what they're
+allowed to do so very fine-grained
+actions read actions right actions both
+maybe just describe or list some buckets
+so depending on the aws user that's
+logged in we can control exactly what
+actions
+because every api has fine grained
+actions that we can control through i am
+and of course many many different types
+of resource
+when we're coming up with these policies
+all these
+actions can be grouped into resources so
+perhaps we can say
+well this user only has access or read
+only access to s3 specifically these
+buckets and can write to
+a dynamodb table but cannot
+terminate or shut down an ec2 instance
+so all these kind of actions can be
+grouped into resources on a pro-resource
+basis based on the kind of role you have
+in
+the projects
+or in the company
+so now let's take a look at the
+components of im
+we've already seen that we can create i
+am users
+and that how they are different than
+your normal end users
+now those entities represent a person
+that's working for organization that can
+interact with aws services
+and some of those permissions that we
+assign through what's called identity
+based policies to such a user will have
+permissions for example that are always
+necessary every time that they're logged
+in so perhaps this
+user tom
+always needs access to the following
+services over here for example an rds
+instance or an s3 bucket etc etc and
+sometimes they will need temporary
+access to other
+services for example dynamodb
+so in those cases there would be a
+combination of normal i am policies
+assigned to the user
+and certain
+assume role calls done at runtime in
+order to acquire this temporary
+credential elevated permission
+there is also
+the root user which is different than
+your typical super user administrator
+access there are some things that a root
+user can do
+that administrator access cannot
+for example a root user
+first of all logs in with their email
+address
+and can also have the option to change
+that email address something that is
+very tightly coupled to the aws account
+so you cannot change the email address
+with an administrator account
+the other thing your user can do is they
+can change the support contract
+they can also
+view billing information or taxes
+information that information for example
+so the best thing to do the best
+practice is that once you've created
+your
+aws account
+you are obviously the root user the best
+thing to do is to enable multi-factor
+authentication
+store away those keys
+in a secure location and your first
+administrative task should be to create
+an administrator super user
+from which that point on you will log in
+as only an administrative user and you
+will create other type of administrative
+users and those administrative users
+will create other i am users so never
+log into your aws account as a root user
+unless you need to access that specific
+functionality that i said that is over
+and above a super user administrator
+account
+so here we have a set of im users and
+we could assign
+to them directly im policies which give
+them access to certain services however
+the best practice is to create groups
+which is just a collection of im users
+and suppose we have
+a developer group and a group of
+security administrators of course we
+could assign different types of policies
+to that group and every user that is
+assigned to the developer group will
+inherit those im
+permissions makes it much easier to
+manage
+your im users this way for um and for
+the fact that also you can have users
+that can be
+assigned to groups as you can see here
+but
+what's not shown here that is possible
+as well is you could have a user that is
+part of
+two groups at the same time the thing
+that you cannot have though is the
+notion of sub group so i can't extend
+this group and create a smaller
+group of developers out of this big
+group here so we don't have hierarchical
+groups
+but we do allow users to partake in
+different
+groups at the same time so they will
+inherit those permissions those im
+policy permissions from for example if
+user a was part of developers and user a
+was part of security they would inherit
+these two policy
+statements over here
+now there is another type of iam policy
+and that is called a resource-based
+policy so resource-based policies are
+not attached directly to for example
+users but they're attached more to
+resources like
+an s3 bucket for example and so when you
+have such a case a user group can't be
+designated
+as a principal to a group that's just
+one of the restrictions however there
+are other ways to get around that
+as i said
+when you think of an i am role i want
+you to think
+that these are temporary credentials
+that are required at run time
+and are only good for a specific amount
+of time
+now an iem role is really made up of two
+components we have what's called a trust
+policy
+so who do you trust to assume this role
+who do you would trust to even make an
+api call to assume the role after that
+we have an iron policy once you've been
+trusted to assume the role and you get
+those temporary tokens what are you
+allowed to do maybe you're allowed to
+have read write access
+to the dynamodb
+so
+here we have no long-term credentials
+that are connected to role you do not
+assign
+a role to a user the user or service
+will
+assume the rova api call via the secure
+token service sts and with those
+temporary credentials we'll then be able
+to access for example an ec2 instance if
+the im policy attached to the imroll
+says that you can do so
+so your users
+and your applications perhaps running on
+an ec2 instance and the awf aws services
+themselves
+don't normally have access to the aws
+resources but through assuming a role
+they can dynamically
+attain those permissions at runtime
+so it's a very flexible model
+that allow you to bypass the need to
+embed
+security credentials
+all over the place and then have to
+maintain those credentials and make sure
+they're rotated and they're not
+acquired by anybody trying to find a
+security hole in your system so from a
+maintenance point of view
+they're really
+an excellent tool to use
+in your
+toolbox your security toolbox
+so let's take a look at the components
+of i am we have the i am policy over
+here which is really just a json
+document
+and that json document will describe
+what this user
+can do if it's attached directly to it
+or if the im policy is attached to the
+group whatever
+user is attached to that group will also
+have
+the same policy inherited so these are
+more long-term credentials in terms of
+or permissions rather that are attached
+to your login for the duration of your
+login whereas roles are as we've already
+stated temporary and again once you've
+established a trust relationship then we
+can assign a policy for example a policy
+that gives you only read only access to
+a cloud trail to a role now it's up to
+the user to assume that role either
+through the console or through some
+programmatic means whichever way is
+performed the user will have to make a
+direct or indirect call to sts for the
+assume roll call
+now these permissions are examined by
+aws
+when a user submits a request so this
+all happens at run time dynamically so
+when you change a policy it will take
+effect pretty much immediately as soon
+as
+the user makes the next request that new
+security policy whether you've just
+added
+or removed the permission will take
+immediate effect so what we're going to
+do now is just really quickly go to the
+aws console and actually show you how an
+im policy looks like
+so i've just logged into my aws
+management console and if i search for
+identity and access management should be
+the first one to show up i'll just click
+on that and i want to show you actually
+how these im policies look like if you
+go to the left hand side here there is
+an entry for policies
+and there are different types of
+policies that we can filter out so let's
+filter them out by type we have customer
+managed
+we have aws managed and more in line
+with job functions that aws managed also
+so we're going to take a look at aws
+manage all that means is that aws has
+created
+and will actually update maintain these
+pre-established and already vetted
+identity policies i am identity policy
+so i could further down
+maybe
+look at all the s3 policies that are
+available and we can see there are some
+that allows only read only access
+there are some that will give us full
+access and there are of course other
+types here that we're not all going to
+explore but let's just easily kind of
+take a look here at the full access you
+can see it's just a
+json document
+and of course you cannot modify it since
+this is a managed
+policy however you can copy it and
+modify it in that case it will become a
+a
+your own version of it and so it'll be
+customer defined and so when you go here
+and you
+do a filter you can filter on your own
+customer
+managed policies
+so over here we are simply allowing
+certain actions right we talked about
+actions before that were based on api so
+here we have an api that starts with s3
+so this is for the s3 api and instead of
+filtering out exactly specifically what
+api calls are there we're basically
+saying all api calls so star
+representing
+all api actions and again there is
+another
+category of s3 which deals with object
+lambda and we are allowing
+all operations on that specific api as
+well
+we could if this was our own customer
+managed
+ident
+policy actually scale down on which
+resource which bucket let's say or which
+folder in a bucket
+this would apply to but in this case
+since this is a full access we're
+basically
+being given permission to
+execute
+every single api action under s3 for all
+buckets we're going to see in the lab or
+the demonstration at the end of this
+tutorial that i'm going to show you how
+to scale that down okay
+so that's how an im
+policy looks like and if you want to
+assign an im policy to a user well stay
+tuned for the demonstration at the end
+of the video tutorial what's not at the
+end of video tutorial is really how to
+create a role so i'll show you what a
+role is here again there's a whole bunch
+of roles already
+set up that we can go and and take a
+look at here but we can go and create
+our own role as well
+and i might create a role
+for example that gives
+an ec2 let's choose choose ec2 access to
+s3 so if i click
+ec2 and click next permissions
+i can actually assign
+the s3 permission
+right over here just a policy just like
+we took a look at
+obviously assign it a tag and review it
+and i'm just going to call this
+my ec2 role
+2s3
+create the role
+and because i selected
+ec2
+as
+a
+service it automatically will include
+that in the trust policy so now when i
+go and i create an ec2 instance i can
+attach this role to that ec2 instance
+and that ec2 instance will automatically
+be able to if we're using the linux 2mi
+let's say have access to or full admin
+access to any s3 bucket
+uh in the aws account so let's go take a
+look at where we would actually attach
+that role on the ec2
+so when you're creating an ec2 let's
+just say we go here we say launch an ec2
+instance
+and we'll pick this ami over here
+because it'll already include the
+packages necessary to perform the assume
+rule call to sts4a so we won't have to
+code that
+and we don't have to embed any
+credential keys
+in order to get this running which is
+really good which is the whole point of
+what i'm doing because by assuming a
+roll i don't have to manage that
+and i'm just going to pick the free
+t2 micro and it is here once you you
+know pick whatever you need whatever vpc
+and whatnot
+then you come to the im roll and you
+select the role to be assumed
+dynamically now i have a whole bunch of
+them here but this is the one that
+i had created here my ec2 roll to s3 and
+if i go and i launch this
+ec2 instance and then i had an
+application let's say that i needed to
+contact s3 or even if i went on the
+command line of the ec2 instance i would
+be able now to communicate with the s3
+service because
+they would use vaping aws would actually
+use this role to perform an assume roll
+call to get those temporary sts tokens
+for me which will then allow me to
+access my i am policy which gives me
+full access to s3 and off i go so this
+is a great way like i said to avoid
+having to administrate any embedded keys
+in this ec2 instance and i could take
+this role away at any time as well so
+there you have it a little demonstration
+on how to create a role how to attach it
+to an ec2 instance and also how manage
+and customer
+managed policies
+look like
+in i am
+of course there is also the fact that we
+have multiple accounts and so
+we could assign a policy that will also
+allow a user in another account
+access to our account so across account
+access is something that's very
+very well needed and also is a feature
+of i am
+so when you need to share access to
+resources from one account to another in
+your organization
+we are in need of
+an ion policy to facilitate that
+so also roles can come into play here
+for that
+by also assigning granular permissions
+we can make sure that we
+implement the
+concept or the best practice of
+the
+least privileged access
+and also we have
+secure access to aws resources because
+by default again we have the principle
+of least privilege and no service can
+communicate with another until
+we enable it via im so very very secure
+out of the box
+of course if you want to add an
+additional layer of authentication of
+security we have
+multi-multi-factor authentication rather
+and that'll allow you to ensure through
+a hardware device
+perhaps
+let's say a hardware token device or
+your cell phone that has some software
+that generates a code that will allow to
+identify
+you are actually the person that
+is
+typing the username and password and
+that's somebody who's actually stolen
+your username and password so at the end
+of this video tutorial
+we will show you or i will show you how
+to enable that
+and of course identity federation is a
+big thing
+where your users may have been defined
+outside of aws you may have
+thousands of users that you've already
+defined let's say in an active directory
+or in an ldap environment on prem and
+you don't want to recreate all those
+users
+again in aws as i am user so we can
+tie in we could link the
+user's
+your user database that's on-prem
+or even users that have been your user
+account that's been
+defined let's say
+on a social site like
+facebook or twitter or google and tie
+that into your aws account and though
+there is an exchange of information
+there is a setup to do but at the end of
+the day it is either a role in
+combination with an i am a policy that
+will allow
+to
+map what you're allowed to do once
+you've been authenticated by an external
+system so
+the this has to do with
+perhaps
+like i said ldap
+or
+active directory and you can tie that in
+with aws sso
+there are many different
+services here that can be leveraged to
+facilitate what we call identity
+federation
+and of course im itself
+is free so it's not a service per api
+request aws is very concerned to put
+security first and so
+i am is free
+it's just the services that you use
+uh for example if you're securing an ec2
+of course that ec2 instance falls under
+the current pricing plan
+so of course compliance like i mentioned
+is extremely important making sure that
+it's business as usual in the cloud and
+so for example if you were using the
+payment card industry
+uh data
+security standard to make sure that
+you're
+storing and processing and transmitting
+credit card information appropriately in
+order to do your business well you can
+be assured that the services you use in
+aws are pci dss compliance and there's
+many many other types of compliance that
+aws adheres to as well
+so password policies of course are
+important by default we do have a
+password policy in place but when you go
+to the im console you're free to update
+that password policy make it
+more restrictive based on whatever
+policy you have at your company
+so many features
+and so i think we're ready now to go
+into a full demonstration and i will
+show you how to
+incorporate i am users groups
+and also multi-factor authentication so
+get ready let's do it
+i'm going to demonstrate now how to
+attach an s3 bucket policy via i am i've
+already created a bucket called
+simply learn s3im demo
+and what we're going to do is we're
+going to attach a bucket policy
+right over here we're going to have to
+edit it of course and the basis of the
+demonstration will be to allow a user
+that has mfa so multi-factor
+authentication set up to have access to
+the contents
+of a folder within
+this bucket so of course now i have to
+create a folder just simply call it
+folder1
+create that folder
+and now i'm going to go into that folder
+and upload a file
+so that we can actually see
+this in action so i'm going to select a
+demo file that i prepared in advance
+called demo file user 2 mfa
+i'm going to upload that
+all right and now what's going to happen
+is eventually when i create our two am
+users one will have access to view the
+contents of this file
+which
+should look like something very simple
+if i open this up within the console
+you'll be able to see well it's pretty
+small right now i'll make this a little
+bit bigger of course
+it says this is a demo file which user
+two dash mfa should only be able to have
+access to so what's left to do now is to
+create two users one call user one
+and one called user two dash mfa and
+that's what we're gonna do right now
+let's head over to im
+identity and access management
+and on the left hand side here we're
+going to click on users
+you can see here i don't have much going
+on i just got an administrator user so i
+want to create two
+new users we'll start with one at a time
+so one called user one
+now by default we have
+you know the principle of least
+privilege which means this user is not
+allowed to do anything unless we give
+them access to either the console right
+over here which i will do right now
+and also if they were a kind of
+programmatic user that needed access to
+specific keys in order to
+interact with the apis via the command
+line interface or the software
+development kit for example if you were
+a java developer
+so in this case that is not what i want
+so i'm just going to assign console
+access and i'm also going to create a
+default password
+for this user
+but i will not allow them to reset it on
+the first login just for demonstration
+purposes
+now over here we have the chance to add
+the user straight to a group but i'll
+only do that later on at the end of
+demonstration for now i want to show you
+how to attach
+to this user and i am policy which will
+give them access to specific services so
+if i type in s3 full access here this is
+an administrative access to an s3 bucket
+if you take a look at the json
+document attached or representing that
+ion policy you can see that it is
+allowing all api actions across s3 star
+and also object lambda across all
+buckets and i say all buckets because
+the star represents all buckets
+so it is a very broad permission so be
+very careful when you're actually
+assigning this to one of your users make
+sure
+that they deserve to have such a
+permission
+so i'm not going to assign any tags here
+but i'm just going to review what i've
+done i can see here i've just attached
+an s3 full access
+permission to this one user and i'm
+going to create that user now
+of course now is the time for me to
+download the csv file which will contain
+those credentials if i don't do it now i
+will not have a second chance to do this
+and also to send an email to this user
+in order for them to have a link to the
+console and also some instructions i'm
+not going to bother with that i'm just
+going to say close
+and now i have
+my user 1. you can see here
+that it says none for
+multi-factor authentication so i have
+not set anything up right now for them
+and that's what i want to do for
+this second user that i want to create
+called user 2
+dash
+mfa or mfa rather
+all right so now i want to do the same
+exact thing as before
+i'm going to assign a custom password
+and i'm going to go through the same
+steps as we saw before i'm going to
+attach an existing
+managed policy that aws has already
+vetted for us
+review
+create
+now right now they're exactly the same
+so i have to go back to user 2 and set
+up multi-factor authentication
+and to do that you have to go in the
+security credentials tab
+and you'll see here assigned mfa device
+we have not assigned any yet so we're
+going to manage that right now
+and we have the option to
+order and get an actual physical device
+that's uniquely
+made for performing multi-factor
+authentication however we're going to
+opt for the virtual mfa device which is
+a software that we're going to install
+on our cell phones let's say so i can
+actually open this link just to show you
+the um very many
+options that we have for that right over
+here i'm going to go with google
+authenticator so go to the app store on
+your android device and you can download
+that of course if you have an android
+device if not you have other options for
+iphone and other softwares for each one
+of those so i'll let you do that once
+you've installed that software
+on your cell phone you can come here
+and show the qr code now what that is
+going to do is you're going to need to
+go to your phone now and i'm going to my
+phone right now as we speak and i'm
+going to open up
+that mfa software in this case the
+google authenticator
+and i'm going to say there's a little
+plus sign at the bottom i'm going to say
+scan qr code i'm going to point my phone
+to this
+square code here this qr code
+and it's going to pick it up i'm going
+to say add account there's a little
+button there at account and it's going
+to give me a code so i'm going to enter
+that code right now
+so once i've entered the code i have to
+wait for a second code and that's
+because this code on the screen of my
+cell phone is going to expire it's only
+there for about 20 to 30 seconds once
+that
+token expires it refreshes the display
+with another token so i have another
+token now
+that's only good for a couple of seconds
+again and now i'm going to say assign
+mfa what this does is it completes
+the link between my personal cell phone
+and this user right now
+so now that this has been set up we can
+see we actually have an arn
+to this device which we are going to
+possibly need depending on how we write
+our policies in our case here i'm going
+to show you a way to kind of bypass
+having to put that
+so now we've got those two users one
+with an mfa device and another one
+without okay so now the lab is going to
+be or the demonstration rather is going
+to be how do we allow
+user to mfa
+access to
+this file
+in folder one and not allow
+user one
+the distinguishing factor will be that
+user two has an mfa
+set up and user one doesn't so based off
+of just that condition
+that'll be the determining factor if
+they can view the file or not so let's
+get back to s3
+and actually create this i am bucket
+policy
+and see how it's done
+so back we are in our bucket and now we
+have to go to permissions in order to
+set up this bucket policy
+we're going to click on edit over here
+and we're going to click on policy
+generator to help us generate that json
+file through
+a user interface
+of course we're dealing with an s3
+bucket policy
+now what we're going to do is we're
+going to deny
+all users and services so star
+s3 is great out here because we selected
+s3 up here we want to deny all
+s3 api actions we're not going to go and
+selectively go down the list
+the
+specific
+bucket and the folder so in this case
+here we're missing the amazon resource
+name so we have to go back here
+and we have to copy the arn of our
+bucket right so we're going to copy that
+come back
+control b
+and we're going to of course have to
+specify the folder as well so i'm going
+to just do slash
+folder one
+and then i'm also going to do slash
+star for all the objects
+in that folder okay
+so here's the mfa condition that i want
+to add though because we cannot assign
+the mfa condition up here we have to say
+add conditions very powerful feature
+here that's optional but very powerful
+we want to look for a condition that
+says boolean
+if exist or bool if exists all right so
+there's got to be a key value pair that
+exists and there are many but we're
+going to look for one
+that is specifically
+known as multi-factor authentication
+present
+and we want to make sure that value is
+equal to false so i'm going to add that
+condition and then i'm going to add that
+statement
+and i want to generate the policy just
+to show you now how that user interface
+has generated this
+json document for us that we're going to
+attach to our s3 bucket what i want to
+do is i want to take this in its
+entirety copy it
+and go back to our s3 bucket that's just
+waiting for us to
+paste our policy in here okay so let's
+see what's actually going on here
+we've created a policy again this policy
+could have any id it's just a an id that
+was given by the
+user interface you could name that
+whatever you want of course something
+that makes total sense and then we have
+one or more statements and then we only
+have actually one statement and again
+you can select any id here that was just
+auto-generated by the ide we're saying
+that all actions
+on the simple storage service i say all
+again because of the star
+are denied
+specifically on this resource which is
+our bucket and the folder named folder1
+and all the objects within that folder
+under the certain conditions
+so the condition is
+if
+you have
+a boolean value of false associated with
+a key called multi-factor authentication
+present and it has to exist
+okay
+then if that value is equal to false you
+don't have access to the objects in this
+folder which means that
+if you do have mfa set up you will be
+allowed access to the contents of this
+folder so if we
+assign this and apply this to all
+principles which would encompass user 1
+and user 2-mfa
+then let me just apply this
+that would mean
+that user 1 would not be able to see the
+contents
+of
+our object inside folder one
+and user two dash mfa would
+so let's go take a look and log into
+let's log out first and then when we're
+going to log back in we're going to log
+in as the individual user 1 and user 2
+mfa and prove this
+is actually the case
+so i am now logging back in as user one
+that we created moments ago
+and of course if i for example go see a
+service like ec2
+we don't have access to ec2 we've just
+given ourselves access to s3 so this
+makes total sense
+we're just going to go see what we have
+access to which is s3
+should be able to list
+and describe all the buckets there
+because we've been giving pretty much
+administrative access
+now if we go here to our
+created bucket and go inside folder one
+and want to actually open up this
+document we can see now that that's not
+happening okay and that's because of
+that condition
+that is checking if we actually have a
+value
+of true for that um mfa
+key that we specified okay so this is
+expected and this is exactly what we
+wanted
+now what we're going to do
+is we're going to log out once again
+and we're going to do the same thing but
+with user 2 dash mfa
+let me log back in
+and then specify the new password we
+created
+now of course now i have an mfa code
+right because i've set that up for user
+two so back on my cell phone i go
+i am opening up the google authenticate
+application
+and i have in front of me a new amazon
+web services code
+that is only good for like i said maybe
+20 seconds so it's a little
+nerve-racking if you're if you're not
+good under pressure you're going to
+choke
+so i've just entered the code and i have
+to wait for uh
+you know that to actually work now it
+looks like i actually didn't check off
+um
+not to recreate the the password so
+unfortunately
+i must have missed that check mark so i
+wanted to kind of avoid this here so i'm
+going to start
+over and
+create a brand new password
+a little painful for
+you know demonstrations but it's good
+for you guys to see how that actually
+looks like
+so because i've set up my
+mfa device properly i am able to log in
+after i enter that mfa code and once
+again if i go to ec2
+now i haven't been given the permissions
+for easy to have only been given the
+permissions for s3 so nothing changes
+here
+i'm gonna go to s3
+and i'm going to go into folder one
+of our bucket in question and i'm going
+to see if i have access now to
+opening up and seeing the contents and
+here i have the contents this is a demo
+file
+which user 2mfa should only be able to
+have access to so that worked so now you
+guys know how to create
+a bucket permission policy
+uh that is also known as a resource
+policy because it's assigned to the
+resources assigned to the bucket
+and let me actually show it to you once
+one last time here it is and that'll
+only allow us to have access to the
+contents of folder one if we have
+multi-factor authentication set up in
+our account so that's really good the
+last thing i want to show you now is how
+to maybe
+create i am users
+in a better way in terms of not having
+to assign over and over again
+the same permissions like you saw me do
+for user one and user two
+of course now i cannot do anything i am
+why because i'm user i'm user 2. i don't
+have access to im so once again i'm
+logging out and we're going to actually
+see the best practice in terms of how do
+i assign i am policies to a group
+and then assign users to that group in
+order to inherit those permission
+policies so let's get to it let's sign
+up first
+so let us go back to i am
+and we're going to be creating our first
+group
+we're going to simply create the button
+or click on the button create group and
+we'll come up with a
+group called testers
+we have the
+ability to add existing users to this
+group so we will add for example user
+one only
+to the testers group
+and we can also add
+permissions to this group so we're going
+to go here and add for example the ec2
+[Music]
+full permissions
+create group
+and what's going to happen now
+if we go take a look at testers we can
+see we have that one user that we added
+and we also have
+the permissions associated with that
+group so this means now that any new
+users we create will automatically
+inherit whatever permissions the group
+has which is really good for
+maintainability so
+for example let's say we were to create
+many new testers
+so let's say user 3 over here
+now
+of course i'm going to have to go in
+this case through the same steps as i
+did before
+i'm just going to remember this time not
+to forget to check uncheck that
+and instead of attaching policies
+directly i'm going to say well i want to
+inherit
+the policy permissions that were
+assigned to the group
+so i'm going to say this user is going
+to be part of the testers group
+and of course i'm just going to skip
+through the remaining
+repetitive tasks that i've already
+described
+and this user three now
+is already going to have the permissions
+to access ec2
+that they've gained through the group
+testers
+whereas if we go back to user one
+this user also has
+the permissions from the group but has a
+unique permission added to itself
+so in this case
+you do have the option of doing that you
+have the option of adding a permission
+over and above
+that is assigned to the group to
+yourself directly
+so this is really good
+adding permissions to groups when you
+have of course lots of users
+in your company
+in your organization
+and instead of going to them and adding
+permissions after permission
+you can centrally access this in one or
+manage this in one place so for example
+if i go back to my roles
+groups rather
+in my testers
+and let's say i forgot
+to add a permission to all the users in
+this group so let's say there was 20
+users attached to this group okay i'm
+not going to bore you with creating 20
+users and we have we have two now that's
+good enough to show the demonstration
+and let's say now i need to add another
+permission all right so in this case
+here i'm going to add a permission
+for example let's say based on dynamodb
+right so i'm going to get full access to
+dynamodb i'm going to add that
+permission
+and what's going to happen now
+is if i go back to my users for example
+user 3
+i'm going to see that user 3
+automatically has inherited that
+permission
+and so has user 1.
+show two more and there they are so in
+this case it really allows
+for you to easily manage
+a lot of users in that group because you
+can simply go to one place which is the
+group and add and remove policies
+as you see fit and the whole team will
+inherit that so it saves you lots of
+work and that is the best practice so
+there you have it guys
+you have learned in this demonstration
+how to create users
+how to create groups how to
+add users to groups and manage their
+policies in terms of best practice and
+you've also
+learned
+how to attach to an s3 bucket
+a policy
+that allows you to permit access based
+off of if a user has
+multi-factor authentication set up and
+we showed you how to actually set that
+up
+when creating an im user so again
+permissions tab is where this all
+happens hope you enjoyed that put that
+to good use and i'll see you in the next
+demonstration
+so i hope you enjoyed that demonstration
+we're just going to wrap things up in a
+summary and
+kind of see what
+was looked at throughout the tutorial we
+first started with what is aws security
+we took a look at how important it was
+across our organization to maintain best
+practice and also
+standardize that practice across
+accounts organization we took a look at
+the topmost services
+in which we concentrated then after on i
+am and we took a look at what exactly
+what i am was in terms of i am users
+groups long-term credentials that are
+applied as i am policies and then the
+concept of a role we took a look at the
+benefits of im and the actual
+terminology used with working with i am
+of course principle being an entity
+that is a either a user or a service
+itself that can gain access to an aws
+resources and we actually saw the
+different types of authentication and
+what we can do to implement
+authorization by im policies and also
+through the use of roles
+so we took a look how to organize our
+users into groups and what actually goes
+into acquiring
+a role through a demonstration we took a
+look at how to actually create a role
+and attach that role to an ec2 instance
+and then we took a look at the high
+level features
+of i am which allowed us to either
+grant access to another im user from
+another group implement multi-factor
+authentication like we just did in the
+demonstration
+or
+ensure ourselves that we are following
+all the compliancy standards that have
+been
+adhered to by whatever project we're
+working on and that aws is there to
+support us
+so all in all i hope you enjoyed that
+journey into i am if you are looking
+into
+a more thorough
+covering of this topic or any other
+topic i suggest you take a look at
+simply learn's websites and which is in
+the description box below and to visit
+all the courses that we offer in which
+we go into a much greater detail and
+more demonstrations and hands-on labs
+and all this so i thank you for your
+time
+i'm signing off and until next time
+all the best
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,740 @@
+so my name is Jimmy Campbell I am a
+developer on Azure app configuration
+team I'm excited to be here today to
+talk about our service and also to
+celebrate net core 3.0 I've been a
+dotnet core developer since beta 8 and
+definitely a lot of change since then
+and I think that a drive configuration
+is a great tool for a Donette core
+developer to add to their arsenal
+whether they're developing modern global
+cloud applications micro services or
+maybe just sticking in a DevOps pipeline
+whatever configuration is all across the
+stack so a centralized configuration
+service really makes a lot of sense so
+what ended up happening was we saw a lot
+of problems with configuration the way
+applications are moving today so some
+examples of some of these problems might
+be how do I centralized application a
+centralized configuration when I'm
+running on an agile function I'm also
+running on kubernetes I'm running on
+some VMs that I own and I kind of need
+to share settings between them or maybe
+something like I'm running apps in North
+America and I'm running in them in
+Europe I need to share settings but I
+also need them slightly nuanced because
+the application just needs to behave
+differently in North America or Europe
+to more advanced use cases like wherever
+I'm getting my configuration from how do
+I dynamically update it during runtime
+and so configuration is a very
+fundamental piece and there are some
+common problems we saw people trying to
+develop their own solutions that comes
+with a cost we also saw things like
+people try to use things that weren't
+necessarily meant for configuration and
+then they would eventually get to a
+point where they got stuck because the
+solution they were using just wasn't
+designed for that so it really made
+sense to make this service a drop
+configuration which is then in preview
+now since April I've yes April and we
+got on this and now it exists so a
+centralized
+configuration service for.net core
+developers specifically we offer things
+like a configuration provider simple
+similar to the JSON file provider and
+dotnet core things we have a STK a
+configuration client where you can write
+read settings but I think first of all
+what I should do is get started saying
+what is a Drac configuration it's a
+natural resource what happens when I
+create it what do I actually get when I
+start using it and so what kind of do
+like I getting started right now so I'm
+going to go into my command line and get
+started with a draft configuration from
+the CLI dotnet core has a pretty good
+CLI and we're all developers here so I
+think we can kind of enjoy the
+automation opportunities that come with
+the CLI so I'll go ahead and get started
+creating my first Azure app
+configuration so I'm using the add your
+CLI now as denoted by a Z and then app
+config is our command group and I'm
+going to create an azure app
+configuration dotnet Contin demo my
+resource group is going to be Jimmy C a
+config when I already have configured
+and I'm going to have a location of
+central us so what am I getting when I
+create as your app configuration so it's
+an azure resource and I'm going to get a
+place where I can store settings
+settings in our model are stored as key
+value pairs so you may have a message
+which is hello world or something like
+that just a simple key value and that's
+really what we stored the foundation we
+do offer metadata on top of that so
+you're storing your settings and they're
+available to you through a web endpoint
+so if you look on the configure 8 that
+app configuration instance that I just
+created my endpoint that has been
+allocated to me is https dotnet conf
+demo that AC config die oh so now I have
+a REST API listening on this endpoint
+that was allocated just for me where I
+can start creating settings in a central
+manner start consuming them and all my
+applications my dev
+anything that really speaks the rest API
+can start writing and reading settings
+from this app configuration instance and
+of course the CLI is one of the things
+that can do this we can go ahead and
+create our first setting here now that I
+just booted this up easy app config kv-4
+key value set I want to set a key value
+so the name of my store is dotnet comp
+demo I have a key online create color
+pretty typical setting name and a value
+of blue all right so now we just use the
+CLI the azure CLI to create a app
+configuration instance and create our
+first setting alright this kind of shows
+some of the automation with the service
+so you can kind of run these things in a
+script or whatnot but now we're going to
+go into the portal and we can show the
+UI for this thing and we can kind of get
+the best of both worlds so I'm going to
+go into the portal here then they
+refresh the page we're going to see this
+dotnet comp demo now everything I've
+done in the CLI can be done through the
+portal and also the things that I do in
+the portal can be done through the CLI
+we look for feature parity across both
+and so if I wanted to create my app
+configuration through the portal I could
+have created it to create a resource and
+I create settings through configuration
+Explorer alright so here we see the
+setting that I created color and then
+blue simple sea key value pair to
+represent a setting and then we see some
+metadata on top of it
+label last modified content type the one
+I actually do want to mention before we
+get too deep here is is label so key
+value are definitely important because
+you need those to have a setting but
+label is something important to our
+service because it can be used when
+you're querying settings and it gives
+you a way to add a new dimension to your
+configuration for example I may have an
+application that runs a premium and a
+standard SKU and I might want the color
+to be green and standard and I might
+want it to be red and premium or
+something like
+that and so I can kind of model this
+with label it's not just a metadata it's
+not just like a tag that when you get it
+it's actually used in queries so when
+you query configuration you can say give
+me all the settings for the standard
+label or give me all the settings for
+the premium label so this is kind of
+what I talked about before where I have
+nuanced configuration maybe like a West
+US or North America and Europe stuff
+like that so label is something
+important for our service layer so now
+we have the ability to create settings
+we know what it kind of means to have an
+app configuration instance how I can
+create settings for it I want to go a
+little bit further into the portal here
+before we leave it just kind of get the
+the coverage we see some other things
+down here and operations such as feature
+manager feature manager is a value on
+top of just simple configuration I could
+probably go into that into another time
+but we also have some configuration
+utilities down here we are storing
+configuration and where a configuration
+service so it makes sense for us to have
+utilities like for example I need to
+restore my configuration to what it was
+yesterday because it worked yesterday
+but doesn't work now you can do that
+through the restore tab so you can
+select a day of what my what I want my
+configuration will look like for example
+on September 11th I didn't have any keys
+so it's saying hey do you want to delete
+these keys I can compare settings I can
+compare across app configuration stores
+I can compare across labels so like I
+said I have a premium and a standard app
+I want to compare these things I can see
+o of red and green and I can also do
+import and export import and export is
+really valuable it's actually my
+favorite thing because especially when
+you're bootstrapping app configuration
+from a dotnet core developer point of
+view you probably have app settings dot
+JSON something along those lines and we
+support the ability to comment from a
+configuration file import settings we
+also allow export of settings to a JSON
+file and this can also be done through
+the CLI that's that feature parity I
+talked about all right so that is kind
+of the background for
+app configuration the portal CLI
+interacting with it and now that we know
+how the settings are represented and how
+we can kind of get started it makes
+sense to move into a dotnet core app
+that's actually utilizing this and so
+before I do that let me go ahead and use
+to another app move to another app
+configuration that I already allocated
+this one doesn't have any settings yet
+but I'm gonna show the import I talked
+about from a configuration file I'm
+going to import some settings app config
+web demo Jason I'll actually show that
+file
+it's just like appsettings JSON file if
+you will and I imported it into my
+configuration store and now you can see
+I have all these settings here they all
+start with web demo : that's kind of a
+prefixing practice I may have multiple
+apps configuration set stored in my
+single app configuration and one way to
+separate them is by namespacing them so
+all these are from my web demo app and
+they all start with web demo and now I
+have these settings here I can start
+consuming them in a dotnet core
+application so let's move into an
+asp.net core 3 application that I have
+this is a ASP nightcore 3 razor pages
+application it's doing very little
+actually the main point to get out of
+this app is that it's pulling the
+configuration from app configuration and
+the way we're doing that is we're
+binding our configuration to a model
+called settings and you can see there's
+kind of a one-to-one mapping here
+refresh rate languages these
+these all map to settings here
+and we're binding them to that model and
+we're using those properties in our
+razor view so essentially we have like a
+one-page app pulling configuration and
+just using those settings to show what
+we're seeing on the webpage the very
+simple way to demo the configuration now
+the typical practice and dotnet core for
+configuration is to use a configuration
+provider dotnet core comes with a few
+very common ones like JSON file
+configuration provider environment
+variable configuration provider command
+line etc we offer a configuration
+provider
+it's the azure app configuration
+configuration provider and so that is
+what's going to be showing right now on
+my program CS on top of the one on top
+of the environment variable and JSON
+file providers that come by default and
+default builder I'm wiring up as your
+app configuration so it's these lines
+right here this API add a drop
+configuration is exposed by the nougat
+package right here Microsoft Azure app
+configuration asp net core so i just
+need to add a reference to this to my
+asp net core project and that i can go
+ahead and start using this API okay so I
+go in I call a - your app configuration
+and then I need to do a little bit of
+configuring to actually set up the app
+to pull the settings from my app
+configuration instance the most
+important thing is I need to connect now
+what I'm doing right here is called
+connect with managed identity this is a
+feature that we utilize on Azure
+platforms that are running applications
+that support managed identity these
+identities can be assigned to these
+agile platforms in this case I'm running
+an app service so I assigned an identity
+to my app service and I granted that
+identity access to my app configuration
+instance so I can actually go into my
+app configuration instance and I can
+look at the role assignments and I say
+oh I granted access to my app service
+and so using this flow
+allows me to short-circuit the other way
+of connecting that I'm going to get to
+it allows me to like I can short-circuit
+connection string basically and I can
+take advantage of the fact I'm running
+an app service I'm running on dotnet
+core up there but if you don't want to
+do that that's perfectly fine you can
+just use connect and you pass a
+connection string the connection string
+comes from our portal or our CLI you can
+list it there and then you would just
+provide it in to bootstrap your app but
+since I am running this app for the demo
+in app services I can utilize this way
+of connecting and one of the great
+things about this is I don't need any
+configuration to bootstrap my
+configuration because as you can see I'm
+not using a connection string all I'm
+doing is specifying the end point of my
+app configuration instance ok moving on
+to some other options used in this we
+have a little bit of filtering here this
+use is just specifying a key filter
+because I mentioned that I kind of
+wanted to segment my applications and in
+this case I have them all name space by
+web demo : all right and so I'm
+selecting only those then finally we
+have this configure refresh and this
+links back to what I talked about before
+where we have a notion of wanting to
+dynamically update configuration during
+the runtime of our application because
+some application designs depend on this
+behavior and so before I go into
+configure refresh I actually want to
+talk about where the Refresh is
+triggered and so I'm going to go into
+program or startup CS and we see this
+use Azure app configuration this is the
+only other place where any a track
+configuration code is found in the
+application and what this does is it
+wires up a middleware inside of your asp
+net core app that uses requests to
+actually trigger a refresh of the
+configuration if you are using our
+configuration provider previously you
+may have been aware that we were using a
+polling model before and now we switch
+to a middleware model and the reason for
+this is that
+when you're polling for configuration
+especially in a micro service world you
+end up maybe just using a little bit of
+unnecessary resources if you're doing
+that continuously even if the
+application is dormant with a middleware
+based approach we can be smart about
+when we want to refresh our
+configuration if you have 10 apps maybe
+not all of them always getting requests
+your load balancing or something like
+that only the ones that are getting
+requests need to really be triggering
+configuration refreshes when the other
+ones start getting requests then it
+makes sense for them to start triggering
+refresh as well and so that's what this
+does right here request based refreshes
+now we can go back to we're actually
+configuring the Refresh because we know
+that refreshes are being triggered but
+what actually hat what does it mean to
+trigger a refresh and that's what we're
+configuring right here essentially what
+we're saying is what do we want to keep
+up-to-date what's setting so we want to
+refresh every setting maybe one or two
+settings that are really important that
+need to be dynamically updated during
+the app that's what's configured right
+here in this case I'm watching a setting
+called web demo Sentinel and not only am
+i watching that setting I'm specifying
+something called refresh all which means
+when that setting changes when I noticed
+a change in that setting
+I want to refresh my entire
+configuration just like I did when the
+application started up so I want to go
+back to app configuration and just get
+everything again that's what's happening
+right here and so with that that's the
+full set up of app configuration in my
+dotnet core app now I can actually see
+it in action so I have this application
+right here it's blank right now because
+I didn't have any settings before but I
+uploaded some JSON settings and if i
+refresh the page you'll actually see
+that I have some configuration form as
+wrap configure some settings some data
+that came from the settings it came from
+my ad hoc configuration
+came because I uploaded that JSON file
+but to kind of give a better view of
+that we can go in and edit some more
+things right now I show the values for
+these let's change the background color
+to green maybe increase the font size
+just kind of do what we can to make the
+changes very apparent I also make
+better message alright so now what
+actually happens if i refresh the
+application now nothing is going to
+change because we're only watching that
+sentinel value like I mentioned but as
+soon as I update the Sentinel value I
+just need to change it I don't really it
+doesn't matter what I change it to the
+application can start picking up the
+changes to all the settings that I
+updated so we're going to start seeing
+the change to the green color hi net
+comp bigger font so this kind of just
+shows dynamically updating settings
+during the runtime of the application so
+to get started all you really need to do
+pull in the nuga org the new get package
+Microsoft Azure the app configuration
+dice B net core that's if you want to
+build an asp net core app if you're just
+building a dotnet core app a screen at
+core is and involved we also have
+another package called microsoft of
+extensions that configuration dialog
+configuration it uses that common
+configuration provider namespace that
+one doesn't pull any ASP nets our core
+stuff into it so if you're just building
+a console app or maybe a hosted service
+makes sense to use that it's still going
+to give you the ability to do refreshes
+it just doesn't give you the request
+based refresh middleware but you can
+refresh the configuration yourself on
+demand all right so that's the dotnet
+core seen but for dotnet core developer
+just developing applications isn't the
+whole picture there's also you need to
+build and you need to be able to release
+your applications so we've been seeing a
+lot of mention of Azure DevOps for this
+these kind of needs and we actually have
+a DevOps build and release task it is on
+the DevOps marketplace you can go look
+for agile app configuration and you can
+add it and right now to your
+organization or project to start using
+it and what this does is it utilizes all
+the settings we put in our app
+configuration and injects them as
+variables into our build into our
+release
+so I can actually go ahead and create a
+new build pipeline to kind of show off
+using this so create a new build
+pipeline here delete all the steps just
+to add in a girafft configuration my
+subscription my configuration instance
+name so now with this task every setting
+that's present here is going to be a
+available to my build pipeline and if I
+use it in other builds it's going to be
+available in those build pipelines so I
+can share my settings across builds now
+very easily if I'm centralizing them in
+my app configuration and I can also put
+my app settings there and so it kind of
+makes it easy to manage them in one
+place and have one interface that you're
+working with for settings one set of
+tools one see a lot one form of
+automation and now to demo this I will
+add in a PowerShell task right here and
+I'm just gonna echo a setting from Azure
+app configuration message I don't have
+that yet but I can create it message
+hello DevOps cool and now when I run
+when I save and run this build
+I don't want to commit to master but
+I'll save and run this build and then
+what we'll see is it's going to pull
+very quickly pull the settings put them
+in as build variables and then say hello
+DevOps
+and we'll kind of have that and like I
+said what this allows us is we can
+easily have one interface for managing
+our settings for the applications we're
+building we can share these settings
+across all these builds all these
+releases just make sure to bring them in
+through this one build task and then we
+can kind of keep with the semantics of
+how we want to add dimensions to our
+configuration with label things of that
+nature and I even want to go a little
+bit deeper into the DevOps and travel
+ability without configuration I mean
+configuration is really all across the
+stack so applications using
+configuration DevOps is using it and
+there's even more room to talk about it
+here because as your DevOps is very easy
+to interact with the azure CLI you can
+spin up very quickly as your CLI and
+line script to start doing something and
+so this kind of ties in to a scenario
+where you may have an application and
+you can't afford to pull settings at the
+runtime of your application you can't
+make a HTP request to pool settings you
+can't talk to the service possibly as a
+requirement well if you still want to
+use as your app configuration it's
+perfectly reasonable to have those
+settings pulled at Build time or release
+time package them in app settings JSON
+file and deploy them with your
+application so I can go ahead and show
+kind of what that might look like right
+here and also show using the address CLI
+to talk to app configuration so let's
+hook up an address CLI tasks let's do a
+[Music]
+inline script and we're going to use a
+functionality you saw import on the
+portal but now let's do an export on the
+CLI we're going to do export all the
+settings in our app configuration to a
+JSON file so that's what we have in this
+right here app config Cavey export we're
+saying to a file we give the file path
+settings the azure app configuration not
+Jason it's a JSON file the separate word
+separator we want to use and it can
+fixed where it comes from
+finally let me go ahead and publish
+these artifacts so that we can see them
+at the end of the build and it
+demonstrates as I mentioned you want to
+pull settings during build you don't
+want to pull them during the runtime
+your application you want to kind of
+have that very consistent or it's just a
+requirement for when you're running your
+apps so let me run this build and then
+so this will take just a second for the
+addressee allied to login that's
+probably the longest part of using the
+address CLI and this build but it will
+produce the Azure diet can app as your
+app settings that as your app
+configuration JSON file and if you were
+doing this in a real scenario you just
+put that right next your app settings
+Jason and then BAM you now have dynamic
+settings but they came from
+during build time so that's pretty much
+all I have right now for Azure app
+configuration centralized configuration
+management solution we have utilities
+for managing your configuration a way to
+share your configuration across all
+kinds of different platforms DevOps it
+doesn't matter where in the stack you
+are Azure app configuration can help out
+provide the configuration there and I
+guess real quick I do just want to show
+the build artifacts of this
+did say published build artifacts
+okay well there was supposed to be
+adjacent
+there I may be typed something wrong in
+the build pipeline but I think the idea
+is there it basically produces the exact
+same file is this and it would be
+present and the build artifacts I
+mustn't this types of thing but yeah
+that's pretty much it for me all right
+this has been a pretty amazing Jimmy
+like look and I'm gonna tell you this
+because matheus I think I said if I say
+it wrong I'm so sorry
+I thought this presentation was going to
+be about appsettings Jason as your app
+configuration is amazing it's cool to
+have this other place to put that stuff
+and manage it was about I'm saying so
+Jason kind of find them and then the
+other one which was interesting which
+you answered there at the end but I'd
+love for you to reiterate what's the
+best way to do a fallback to offline
+settings you kind of showed this a
+little bit in your demo why don't you
+see what method maybe he's gonna tell me
+how to say his name I'll say Matthew
+American nice so how do you do a
+fallback to offline settings that's a
+good point
+so there are multiple different
+considerations when you're talking about
+fallback to offline settings there's
+what I just talked about about putting
+your settings there during build time
+and release time so you don't have to
+make a query during runtime so I just
+demoed that that's exactly how you do it
+I don't know I'd like I said I probably
+miss type something in the build
+pipeline but there would have been a
+JSON file there that could have been
+used as absolutely Jason another aspect
+would be something that we have in our
+configuration provider which is called a
+offline file cache which if you're
+running on the same VM or something and
+maybe one time when your app is starting
+out it doesn't have network connection
+you can use offline file cache in our
+configuration provider library and it
+will pull the last retrieved settings
+they write them to a file encrypt them
+and it will pull them in case it doesn't
+have a network connection so kind of two
+different practices for offline so
+probably met the first one but the
+second one is there as well that's right
+that's cool cuz I thought maybe you just
+pull it at Bill but then you also have a
+cache to fall back on as well
+yes that's cool is as your app
+configuration recommended for secrets
+like connection strings another good
+question all right so as your app
+configuration is a completely secure way
+to store any key value encrypting things
+I mean there's no worries there
+authentication authorization all
+however there is another shirt service
+named kee volt which is more which is
+better for management or management of
+secrets they have things like if you're
+managing things like certificates Auto
+renewal of certificates or if you have
+things like connection string they'll
+expire your connection string and they
+have very granular access policies so
+they are the one like the best place to
+store a secret so there's nothing wrong
+per se with storing connection string
+and app configuration but ultimately for
+secrets that's exactly what key vault
+was designed for whereas we were
+designed for just configuration
+extensive querying mechanisms things of
+that nature and one of the things that
+we're actually gonna be coming out was
+soon is a way to reference key vault
+secrets in the dotnet core configuration
+provider so we'll go through the key
+ball for you in your app it kind of
+abstract skeeball but your secrets can
+still live there and that's cool because
+Nick had the same sort of question
+what's the difference between this new
+app config and key vault so keep all
+this four secrets app config is for how
+would you finish that sentence yeah key
+ball is 100% of that designed for
+secrets as wrap configuration is done
+designed for configuration there's
+nothing limiting you from putting
+anything you want in app configuration
+but ultimately the like as we have
+configuration management utilities key
+vault is going to have secret management
+utilities the expiration secret rotation
+or certificate rotation things like that
+so those are values that we're not gonna
+be able to give because that's not what
+we were designed for that's also does
+this configuration service integrate
+directly into Azure function so I don't
+need to manage that config there okay so
+two things our dotnet core configuration
+provider is net standard you can use
+that in app function and pull it right
+when your app function starts off the
+second thing is I exported something to
+a JSON file in the last presentation you
+can export it to a app service through
+the CLI or through the portal and so
+other app other platforms with an azure
+we want to integrate with to be able to
+push our stuff there add your function
+aks you name it on our roadmap is the
+ability to do this automatically via
+sync tasks and to just have your
+configuration live there
+still manage it centrally in a
+configuration amazing last question is
+there an app configuration nougat
+package for the.net framework so there
+is yes there is net the one I just
+mentioned is net standard so you could
+use it in the.net framework also we do
+have a configuration builders and you
+get package the configuration builders
+was introduced I believe in four seven
+and it's kind of a net framework way to
+do configuration well built into the
+framework there and we do ship something
+for that so it's a drop configuration
+specific dotnet framework configuration
+builder amazing thank you so much
+assuming we have some feedback coming in
+on may I say there Mekas jokes that I
+was asked to read okay the joke's on
+dotnet Kampf I I told her that they may
+not work but she was adamant so maybe we
+should have a talk with her afterwards

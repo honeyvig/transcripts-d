@@ -1,0 +1,1504 @@
+hello my friends and fellow traders
+welcome back to another pine script
+lesson in today's video we are going to
+dive even deeper
+into pine connector
+if this is the first video in this
+series you've stumbled across make sure
+to go back and watch the previous videos
+especially if you're new to third-party
+automation as that is what we are doing
+today
+today i am going to give you the source
+code to a profitable
+strategy script that you see on your
+screen right here
+this is a strategy i learned from jason
+graystone over at tier one trading
+one of if not the best trading education
+mentors and he runs one of the best
+training courses
+for forex in the world this is a
+strategy he learned from a trader who
+works
+at a large financial institution
+managing millions of pounds
+and it is called the follow the bear
+strategy
+so strap in today is going to be a very
+interesting lesson for multiple reasons
+one we're dealing with a profitable
+strategy two this strategy is already
+written in code
+so it's objective we know it's
+profitable there's no discretion
+involved here either we have a trade
+or we don't three it has quite a high
+win rate 60 percent
+over 60 percent of trades hit their
+profit target
+and we have a sample size here of 92
+trades
+since the 2nd of january 2018
+and if i use the bar replay tool to load
+more price data onto my chart
+you can see that it had a above 50 win
+rate
+for the few years prior to 2018.
+so from january of 2014 till today
+this script has taken over 200 trades
+with the
+settings we've set up here if i exit out
+of the back tester you'll see we had 111
+trades there
+and 92 trades here so since 2014 until
+now we've taken
+just over 200 trades we have on average
+around a 60
+win rate if i open up my forex testing
+spreadsheet
+and i do have a lot of strategies under
+development this is
+a strategy i really enjoy due to its
+simplicity
+but if i open up my back testing results
+for this you can see
+this is my manual spreadsheet for this
+strategy i did go back and manually
+back test every signal that this script
+generated
+since the 9th of january 2014
+it has had a 60 win rate and returned 83
+over that time with a max drawdown of
+around 10
+so it has quite a high win rate this is
+with a one-to-one risk reward profile
+now these results are calculated based
+on a one-to-one risk
+reward profile so for every pip i risk i
+get an equal amount of pip in profit
+or loss that's why normally this would
+be in pips but because it's a one-to-one
+i just went with one ones
+negative ones and zeros for break even
+but anyway this is not a trading
+lesson we're not going to go over the
+back testing process if you want to
+learn more about back testing go to
+backtestingfx.com and that will redirect
+to my website with more information on
+backtesting
+in my panscript courses i go into much
+more detail about how to manually
+backtest
+but anyway what i love about my custom
+setup for this strategy is that it has
+such a high win rate which means i can
+risk
+up to two percent per trade and still
+keep my max drawdown
+under around 25 so when i am developing
+a strategy i
+try to keep my max drawdown
+under the s p 500s max drawdown over
+the past 30 to 40 years of that index
+so you can see in the 2008 financial
+crisis it had a 50
+drawdown so if you were just buying and
+holding the s p 500 you would have lost
+50
+of your capital at one point what i like
+to do is average all of these numbers
+and i think
+the average drawdown max drawdown is
+around 30
+for this market 25 to 30 percent i like
+to keep my strategy
+drawdowns below 25 and that's quite
+aggressive
+most traders would prefer under 10 if
+they're trading a lot of money
+i'm quite aggressive because i'm
+obviously young have
+uh not a lot of living expenses so i can
+stomach
+pretty bad drawdowns in my trading so
+i'm an aggressive trader
+i go up to as high as three percent per
+trade i rarely exceed three percent
+because that opens up the potential for
+catastrophic drawdowns
+but even with a three percent risk per
+trade over the past
+six or seven years on this strategy you
+would have only had a max drawdown of 20
+now obviously past performance is not
+indicative of future performance and all
+of that
+you've all read the disclaimers but the
+fact that this has taken so many trades
+over 200 trades over six or seven years
+these numbers are quite reliable i would
+not expect the max drawdown
+to fluctuate too dramatically outside of
+the stats you see here
+but anyway i just wanted to point out
+that this strategy is profitable
+let's jump over to the charts really
+quickly and i'll explain how the
+strategy works then we'll jump into the
+pine editor
+and then i'll wrap up this lesson by
+showing you how to automate this
+script through pine connector so let me
+go to a trade i took
+recently um just a week or two ago
+this strategy is only intended to be
+traded on the hourly chart
+it is only intended to be traded on euro
+dollar
+i've optimized it for euro dollar it's
+only meant to be traded during certain
+times of day
+hence you see these background colors
+here this is the trading session
+i trade this strategy during and that is
+the european open
+now the trader that taught jason
+graystone this strategy or made him
+aware of this
+pattern in the markets traded this
+pattern very differently to how i trade
+it
+he was an institutional trader so he was
+trading millions and millions of dollars
+he couldn't just enter and exit trades
+the way we do as retail traders
+basically what we're looking for here is
+during the european open we want to see
+a rally
+we want to see buying pressure leading
+into the
+open of the european market after we get
+this rally
+it's quite simple all we want to see is
+a swing high candle
+that pushes up to its high
+and then closes in the lower 50 percent
+of that candle's body or size so if i
+bring out my fib tool here
+zoom in a bit and we drag it from the
+bottom here to the top
+the green line here is my 50 mark
+you can see that on this candle here the
+candle both
+opened and closed below that 50
+mark what this symbolizes is a lot of
+traders becoming trapped on the wrong
+side
+of a retracement during the european
+open
+leading into the united states open when
+volatility tends to pick up a bit
+so basically this is a mean reversion or
+counter
+counter momentum trade or strategy we
+want to see buying pressure we want to
+see
+buyers get trapped and then we want to
+profit off their
+panic selling or forced selling as this
+market moves against them
+and so what this basically symbolizes is
+probably on a lower time frame five
+minute 15 minute chart even the one
+minute chart
+inexperienced money the dumb money is
+the uh professional traders call it
+they're buying up this market they're
+buying up this rally they get trapped
+and now they're forced to sell as the
+market retraces against them
+according to this institutional trader
+that taught jason
+this strategy this pattern has been
+occurring in the markets for years and
+years and years
+and so this strategy script that i've
+written takes advantage of that pattern
+in the markets
+so that's the rundown of the strategy
+let's jump into the pine editor and i'll
+go over the code
+for this strategy but before we do that
+one last thing i should mention is that
+i found it worked best
+during tuesday wednesday and thursday
+during the week
+mondays and fridays were not profitable
+for me using
+the approach that i use with this script
+so that's important to mention too
+but we'll get to that in the code in a
+moment it is also a
+short only strategy so we only trade
+this to the short side
+we only trade bearish patterns and
+finally before we get
+started there is a link to pine
+connector in the video description
+if you create an account for pi
+connector you get a seven day free trial
+and then if you decide
+you like pine connector and you want to
+subscribe to the
+service or script then if you used my
+link
+to create your account then i get a
+small commission when you
+purchase access to this script at no
+extra cost to you
+and that's just one way to support the
+channel if you would be so kind
+anyway that's enough intro for today's
+lesson let's jump over to the editor and
+break down the source code now
+so here is the source code to this
+script
+um i haven't added the pi connector code
+in just yet because i want to focus on
+the strategy
+source code before we get to that i'm
+going to rush through this a little bit
+so if you're not really experienced with
+pine script this might be a bit
+difficult for you to follow
+this is definitely more of an advanced
+lesson if you get lost along the way i
+would encourage you to go to
+panscriptmastery.com and take my free
+basics course on pinescript and that
+might make this
+lesson a little bit easier to follow and
+if you've taken my mastery course
+this will be very easy for you to
+understand
+i'm going to rush through this i'm not
+going to write out the code like i
+normally do i will do that with the pi
+connector
+part of this script but for now let's
+just rush through
+the code for this strategy so that we
+understand what the script is doing
+and then i will show you how to
+implement the pi connector aspect
+to this script or the pi connector
+functionality so the first thing we do
+is
+we're working with a strategy script so
+instead of the study annotation function
+we're using the strategy annotation
+function to tell the pi
+editor or trading view that this is a
+strategy script
+we have a title long title short title
+overlays set to true
+calculate on order fills is set to true
+that means that when
+if i turn that off you can see here that
+on this bar here
+we entered short at the open of this bar
+and our target was hit on the same bar
+if i turn calculate
+orders after order is sorry let me say
+that again
+if i turn off recalculate after order is
+filled
+then that breaks the script you can see
+that our
+take profit was hit here but the script
+exited our trade on the open of the next
+bar
+we do not want that with the script so
+we need to turn this on
+and so i did that in the source code so
+it's always on by default because
+normally for a strategy script this is
+set to false by default but i wanted
+this on by default
+next up i set my initial capital and my
+default trade quantity or position size
+these two values aren't very important
+because i don't trade this strategy with
+a fixed position
+i trade it with one percent of my
+account balance per trade
+so the only reason i bumped these
+numbers up by default was so that this
+strategy tester would have a more
+readable
+net profit and max drawdown keep in mind
+that because i trade one percent per
+trade my max drawdown and net profit was
+very different to what the strategy
+tester
+calculated i'll leave a link below this
+video description to my spreadsheet
+for my manual back testing for this
+strategy so that if you want to test it
+yourself you can compare your results
+and obviously this script has a lot of
+options we can customize here
+including a few filters that i added
+that you can play around with which will
+affect the win rate
+trade frequency and all of that anyway
+next up we have a bunch of user
+input settings right now i have two
+groups i have my
+g underscore risk this stands for group
+underscore risk
+this is risk settings and i set the
+group parameter of all my inputs
+to one of these two so down here we have
+our filters
+so g filter is set to filter settings
+and you can see
+every input here uses the group
+g filter which means that when you open
+up the settings menu
+they will fall under this category
+so that's what these two var variables
+are next up we have pips
+this particular strategy uses a fixed
+pip
+stop loss i don't normally use fixed
+stop
+fixed pip stop losses in my strategies i
+prefer to use a dynamic stop loss such
+as an atr based
+stop that adjusts based on market
+volatility
+but this particular strategy the premise
+of this strategy
+is that this swing high candle should be
+the high of the session
+before our target is hit so we can
+afford to have a slightly tighter
+stop-loss here
+or just significantly tighter stop-loss
+here normally a one-atr stop-loss would
+put our stop-loss up here somewhere
+but we do not want that with this
+particular strategy we want to get in
+at the close of this candle with a tight
+stop and get out quickly
+because remember we're only capitalizing
+on the short-term retracement from all
+the trapped
+buyers of this particular bar so we have
+our fixed
+pip stop-loss setting by default that's
+set to two pips above the swing high of
+the candle
+you can play around with this if you
+want to but i did find that to be the
+optimal
+setting next up we have our risk reward
+profile another thing you can play
+around with
+by default it's set to one to one
+because i found that to be optimal
+for having a high win rate and therefore
+being able to risk more per trade but if
+you want to set this to say two to one
+our risk reward profile you can see that
+moves our take profit
+um further from our entry but it's still
+profitable you need at least a 33
+win rate to be profitable with a two to
+one risk reward and this still has a 43
+win rate so this will affect your
+drawdown and your net profit
+i personally in my own testing found it
+more profitable to trade with a
+one-to-one
+but risk more on the trade then i found
+trading a two to one with less risk on
+the trade so keep that in mind all of
+the settings here are optimized
+based on my personal testing so far so
+that's our
+risk settings next up we have our filter
+settings we have a time zone to trade in
+we have the days of the week to trade we
+have an rsi
+filter if you turn this on or off then
+the script
+checks if the rsi is over
+bought before it considers a setup valid
+now i'm not sure if i mentioned this
+already but this script is a short
+only strategy we are only trading to the
+short side
+which is another reason why i love this
+strategy we get multiple trades
+per week on average there's only a
+certain time of day we need to look for
+these trades
+and only one direction we're trading in
+so it's
+it's very rare that you have a strategy
+this simple that is this profitable
+but anyway i've set up my rsi to be
+based on a
+three period length so the rsi has been
+calculated on
+only the past three bars and if those
+past
+three bars if the rsi for those past
+three bars is above
+70 then my setup is considered valid
+the purpose of this filter is that
+remember we want to be selling against
+momentum
+as buyers get trapped so anyone who
+bought up here is trapped
+and as price retraces they have to sell
+at least on a lower time frame which is
+what fuels this
+retracement so this is a filter i added
+if you turn this off
+then for example we would have entered
+short on this trade and this
+turned a winning trade into a losing
+trade
+now there are pros and cons to using any
+kind of filter the pro of this if i
+change this to a one to one is uh we
+take a lot more trades
+we take double the amount of trades over
+double the amount of trades
+but our win rate has dropped
+significantly still profitable
+a 55 win rate with a one-to-one risk
+reward is still quite profitable
+um so it may be worth testing this back
+testing this
+with that filter disabled to see if you
+make more money over the same period of
+time
+but your drawdown will be affected by
+removing
+this filter so keep that in mind then we
+have a couple of other filters here we
+have
+the previous bar must be bullish
+so that means that the this bar could
+not be bearish if this was bearish
+this signal would not be considered
+valid that's a filter i like to play
+around with with this particular
+strategy
+then we have a high filter this checks
+if the
+bar is the highest bar over the past x
+amount of candles
+so by default it's set to a 10 look back
+so i found that this filter can affect
+the win rate
+quite a bit so you might not like the
+rsi filter but you still want to use
+this
+um swing high filter and that will also
+affect the win rate see now we're taking
+more trades with a much closer
+win rate than before so that's why i
+included some of these
+filters here and you can obviously
+adjust the look back here so that's what
+this high filter setting is then we have
+our look back period
+setting then we have our fib setting for
+the candle close
+remember i said that the bar must open
+and close
+in the lower fifty percent of this
+candle
+if you wanted to you could change this
+to the lower thirty three point three
+percent the lower third
+so the candle must open and close below
+this red line to be considered a valid
+shooting star candle
+but the way i've set this script up with
+the filters i'm using i found a 50
+mark to be the optimal setting that's
+why it is the default setting
+the next up we have our rsi length for
+the rsi filter
+and the rsi overbought level which you
+can adjust here but is set to 70 by
+default
+so moving on i can get rid of this
+because i do not use the atr in this
+script
+that was a remnant from when i was
+testing an atr filter
+the next thing we do after we get our
+user settings
+is we get our rsi filter
+and our high filter swing high filter
+and the
+previous bar must be bullish filter so
+we get our rsi value
+we check has the user turned rsi filter
+on if they haven't
+then rsi filter returns true if they
+have
+then we check if the rsi value is
+greater than or equal to our rsi
+overbought setting and that is our rsi
+filter
+variable next up we check has the user
+turned on the swing high filter
+if they haven't then this returns true
+if they have then we check
+is the current bars high the highest bar
+over our look back period
+and then our final price action filter
+is our
+close filter or bullish filter
+this means that the previous bar must
+have been bullish so we check
+has the user turn that filter on if they
+haven't this returns true
+if they have turned this on then it
+checks if the previous bar closed higher
+than it opened
+next up we check is the current bar
+within
+our given time session so if i open up
+the settings this is our time zone
+in utc time i want to be trading between
+2 am and 7 am
+utc time which is around i think 3 or 4
+p.m
+to 9 or 8 p.m my local time
+but remember all of our scripts are in
+utc time so
+this is what i've set the time zone
+filter to by default
+this little custom function here checks
+if the current bar falls within our time
+session
+and within our given weekdays
+so the weekdays start from um
+so two is monday three is tuesday four
+is wednesday
+five is thursday six is friday seven is
+saturday and one is sunday
+when working with pinescript i'm not
+going to go into more detail about this
+filter because i don't want this lesson
+to be too long
+you can just copy and paste this
+function into your own scripts and it
+will work
+without you needing to understand why it
+works if you want to learn
+how this function actually works i do
+have a bunch of lessons in the mastery
+course about this
+next up we have our 50 mark for
+our candle size this is our bare fib so
+this calculates the 50
+or whatever we set this to it calculates
+that mark on the current bar so if we
+were to set it to 25
+or 0.25 then it would look for the
+0.25 fibonacci line
+and check if the bar opened or closed
+below that line in order to be
+considered a valid
+shooting star next up we have our
+filters
+this combines all of our filters into
+one variable called
+filters so this combines all of these
+into one variable so that when we detect
+our shooting star candle
+we can check all of our filters in one
+boolean variable
+and that is what we do next so this part
+of our code here
+uh declares a var variable called taken
+trade already
+one thing i forgot to mention is that
+this strategy performs best when you
+only take
+one set up so if this was a valid setup
+and we took it
+and it got stopped out we would not be
+allowed to take this second set up
+according to my back testing that
+increases the profitability of this
+strategy
+and so i've included this taken trade
+already
+flag this resets every time a new
+session begins
+or rather when a current session ends
+this variable resets to false and when
+we take a trade
+this is set to true and that way when we
+detect our shooting star candle
+we also check at the end have we not
+already taken a trade and in order to
+detect a valid shooting star candle
+all we check is that the open and the
+close occurred below
+our 50 mark by default
+so long as this is the case we have a
+valid
+shooting star candle because no matter
+what this means that the candle
+looks something like this it has a wick
+that accounts for two thirds
+of the total candle size and it doesn't
+matter if it's bullish or bearish
+a shooting star can be green as you can
+see here at least
+for this strategy that does improve the
+profitability of this strategy
+so we don't discriminate based on the
+candle color all we're looking for is
+that the bar
+opens and closes below the lower 50 mark
+of
+the bar next up we calculate our stops
+and targets
+so we're only dealing with short trades
+here so this is quite simple all we do
+here is add
+our pips setting so by default that's
+set to two
+so two times ten i remember
+everything in pinescript is in points so
+if we want to convert our two pips
+into points we need to multiply it by 10
+so this would be 20 by default and
+minimum tick
+sim info dot minimum tick is just the
+minimum tick value
+so in this case that would be
+zero 0.0000 one multiplied by
+twenty and that will give us a twenty
+point or two pip
+distance above our high of the current
+bar
+that is how we calculate our stop loss
+price next up we calculate the distance
+from our entry which is the close of
+this bar
+of our entry bar so our short stop
+price minus our close price gives us
+the distance in pips of our stop loss
+and then to calculate our profit target
+we subtract our short stop distance so
+the distance from our stop loss to our
+entry
+we multiply that by our risk reward
+setting so by default that's just one
+and then we subtract that value from our
+entry price to get this green line
+or our profit target and once we detect
+a valid shooting star candle
+we save our stop loss we save our target
+price
+we set taken trade already to true so
+that we don't take another trade during
+this session
+and then we use the strategy.entry
+function in order to
+enter short on the backtester system
+it's quite simple we're just entering
+short with our
+long parameter if you set this too long
+then this would buy
+instead of going short but we want to go
+short here and we want to do it
+only when we have no position open so
+strategy.positionsize
+equals zero will only return true if we
+do not have a trade open currently
+and all of this code is only executed if
+we have a valid
+shooting star candle that includes all
+of our filters
+and the current bar is confirmed meaning
+it is
+either a historical bar in the case of
+this bar here
+or it's a current live bar but it is on
+its final tick and is about to close
+and a new bar is about to start printing
+so on the very last tick of a bar
+this is set to true and so if we have a
+valid shooting star on the last tick
+of the current bar all of this code gets
+executed
+and this is where we will eventually
+put our pine connector code
+or alert to send a pi connector to enter
+our trade
+but we'll come to that in a moment let's
+finish the last few lines of code in the
+script
+let me finish explaining them the next
+thing we do after checking for a valid
+entry is we check
+if we have exited the follow the bear
+session
+the trading session this red background
+on your chart
+represents the trading session we're
+looking for this setup in
+if this setup occurs outside of this
+session we do not trade it
+but if we have exited our session then
+reset our
+taken trade already flag for the next
+session so this is then reset to false
+and that means that if we've already
+taken a trade in this session
+the moment that the session ends on this
+bar here
+taking trade already is set back to
+false so that when the next session
+starts
+whenever that is we can begin looking
+for a new
+trading setup and then all we do is draw
+our stops and targets
+we plot our stop price our target price
+we plot a shape a triangle in this case
+above the bar that we're entering short
+we plot a triangle
+down shape dot triangle down with the
+color of red
+we only plot this if star is true if we
+have a valid shooting star
+then we plot a triangle above that setup
+to
+indicate that this is our valid
+trading setup and then on the next bar
+we enter short
+and then finally we change the
+background color to highlight our
+detection zone
+so if the current bar is within our time
+session
+then the color is set to red with 80
+transparency
+otherwise it's set to n a or nothing and
+it's just the default chart background
+and then finally at the very end of my
+script
+we exit our trades whenever our stop
+loss or
+take profit target is hit this is in the
+back tester system
+so when we send our pi connector alert
+to metatrader
+our alert will include our stop loss and
+take profit so we do not need to send
+another alert when the trade exits
+our broker will do that for us but we do
+need to tell the strategy tester when
+to exit our trade and that's what is
+plotting this purple
+arrow and purple take profit line
+onto our chart if we didn't have this
+then
+the script would never exit our entry
+and
+the tester system would not work um the
+way we exit our
+position is we use the strategy.exit
+function we give it its own id
+so if i pull this down a little bit you
+can see this says short
+exit that's this id here so every market
+order
+in the backtester system needs its own
+id in this case we are sending a
+short exit a new command to exit our
+short
+we want to exit from this id
+so this is our entry id called short
+we want to exit from that same
+short entry we only want to exit
+when we have a position open so when is
+set to
+strategy.position size not equal to zero
+if our position size was zero then we
+would be flat
+and not involved in a trade and so
+basically what this is doing is on every
+tick
+at the end of our script this function
+gets called
+it checks if prices hit our limit order
+our take profit
+or if prices hit our stop loss price if
+either of these prices are hit
+then our trade is exited either for a
+profit or a loss
+and it only does this while we are
+involved in an open position
+that is it i hope you followed me there
+i did rush through that quite quickly
+normally i would take a lot longer to go
+through all of this to to carefully
+explain everything
+but today's lesson is about pine
+connector not about this
+strategy there will be a link below the
+video to the source code for the script
+now would be a good time to jump over
+there and copy and paste this code into
+your pine editor
+and then you can follow along while i
+add the pine connector code
+to the script but before we do that i
+should mention that
+uh if you haven't updated your expert
+advisor for pine connector if you've
+downloaded
+pine connector for metatrader for one of
+my previous lessons
+make sure you're updating your expert
+advisor regularly
+because alex is constantly updating the
+script and you can see here that he
+recently added
+pending order entries based on pips
+instead of price
+so this is for our limit orders you can
+now set a limit order based on pips
+and not just price which is important
+because that is what we're going to be
+using in today's
+lesson so make sure to update your
+expert advisor if you haven't already
+the syntax for sending this command is
+the same as with price
+we send our id we send our
+buy limit or in our case it's going to
+be a sell limit
+but you would send your buy limit syntax
+comma and then the syntax for sending
+your pending order
+based on pips is the same as price we
+specify
+price equals and then normally you would
+put
+a dollar amount or whatever you're
+trading uh whichever market you're
+trading
+in today's lesson we're going to be
+using pips we're going to be sending a
+0.5
+pips pending order which means that when
+pi connector receives our
+entry command to enter a trade it is
+going to set a limit order
+0.5 pips or half a pip above
+our short entry there are a number of
+reasons why we're going to do that
+and i'll go over them later when we get
+to that part of today's lesson
+but now let's jump back into the editor
+and i will add in our pi connector code
+so that we can fully automate this
+script
+through metatrader i hope you're as
+excited as i am about this because this
+is awesome
+so i hope you've watched the previous
+lesson in this series where we
+created a test script this is a test
+script it might look a little bit
+different to the lesson
+as i've been playing around with it a
+little bit since then
+in preparation for today's lesson but in
+this
+uh script we wrote out all of the pi
+connector code we need
+in order to automate any strategy script
+that we want to work with
+and so for today's lesson i'm going to
+be copying pasting a lot of this code
+into my ftb script so let's do that now
+the first thing i need to do is copy
+over all of my pi
+connector settings code i'm going to
+paste that in there
+this should all look familiar to you if
+you watched the previous lesson
+this code allows the user to tweak what
+pi connector does we have our id
+for our license id for pi connector we
+have our risk amount
+depending on what you've set pi
+connector up to this could either be a
+fixed position size based on lots or it
+can be a percentage of your account
+balance
+i like to trade a percentage of my
+account balance so by default this is
+set to one
+or one percent of my account balance and
+over on metatrader
+i've set pi connector up to receive this
+command as a percentage of my account
+balance
+next up we have our prefix and suffix
+this is the little tag your broker puts
+before or after
+certain symbols in metatrader again
+i explained that in the previous video
+if you lost make sure to go back and
+watch that
+the addition the new uh parameter that
+i've added to the
+settings for today's lesson is spread
+pc or pi connector underscore spread
+this is your average spread for this
+pair
+and it is used for offsetting our limit
+orders
+like i mentioned earlier by default i've
+set mine to 0.5 or half a pip
+this will be different depending on your
+broker if you're on a demo account this
+is usually much higher it could be as
+high as one or two or
+even three pips which could be a problem
+with this particular strategy
+as it is quite tight the spread can
+affect your fills
+since we have such a tight stop loss if
+you do have a wide spread this could be
+a difficult
+strategy for you to trade through your
+broker this is optimal
+on a tight spread broker my broker
+owanda
+typically has around a 0.2 0.1 pip
+spread
+at this time of day when this strategy
+is operating
+but for demonstration purposes i've set
+it to half a pip by default
+for today and then finally we have our
+pc limit order setting
+if this is turned on let me save the
+script here so we can see this visually
+if this is turned on then the script
+will use a limit order
+otherwise it will just use a marker
+order and you will be paying the spread
+so the whole point of using this limit
+order and having this spread option
+is to mitigate the issue of spread
+because
+this strategy depends on a good fill
+in order to get a good risk reward
+profile we are on the one hour chart so
+if you get like a one or two pip
+um slippage and you get filled somewhere
+down here
+that will negatively skew your risk
+reward profile and instead of a one to
+one you'll be getting more like
+a one dollar risk for 80 cents a profit
+or something like that
+and ideally we do want to avoid a
+negative risk reward profile
+that is not a good idea when it comes to
+trading
+we want at least a minimum of a
+one-to-one risk reward profile
+so next up we're going to add our pine
+connector
+alert generation code here
+first we declare two var variables that
+never change in our script once they're
+initialized the first one is our symbol
+the second one is our limit text so if
+the user has turned pc limit on
+then we add limit to our directional
+syntax
+otherwise we add nothing this will make
+sense to you if you watched the previous
+video
+on our test script next up
+i will paste in the custom function i
+wrote
+for generating our alert syntax to send
+the pi connector
+the main difference here is that instead
+of sending the closing price
+as our limit order parameter we send our
+pc spread setting or 0.5
+since i've set up metatrader to receive
+this value
+as pips instead of a price and at the
+end of the lesson i'll show you what i
+mean there
+so this string here generates our syntax
+so
+we have our license id the direction in
+this case it will be cell
+and then our limit so in this case if pc
+limit is turned on this will say
+cell limit then we have our symbol which
+includes our prefix and suffix
+then we have our price which is this
+string here
+then we have our stop loss take profit
+and risk parameters
+we can send this function the direction
+we want to trade
+our stop loss and our take profit and it
+will return the syntax required
+to send to pi connector this looks
+confusing especially at first if you
+haven't
+played around with this sort of thing
+before but it's actually quite simple
+we're just generating a really long
+string here that includes all of our
+alert syntax parameters to tell pi
+connector what to do
+and now we're pretty much done
+there's just a couple of final things we
+need to do in order to send
+this string to pi connector so let's
+wrap this lesson up by finishing off our
+pi connector code remember when i put
+this comment in here
+well this is where we are going to put
+our pi connector alert code
+and what i'm going to do here is create
+a new variable called alert string
+and this will be set to our custom
+function pine connector pc
+underscore entry underscore alert this
+takes
+three parameters in this script the
+first is our direction
+so cell the second parameter is our stop
+loss so trade
+stop price and then the final parameter
+is our target so trade
+target price with a capital p
+now i can add this as a comment to our
+entry order
+and we can see what this string looks
+like so let me save the script here
+minimize the editor and now you can see
+our pi connector string above
+every entry that our strategy test
+descript generates
+so our custom function is getting our id
+from the settings menu
+generating a sell limit saying which
+symbol we want to trade
+specifying our limit order price in pips
+remember this is in pips so 0.5 pips
+above our entry in this case
+that would be like just slightly above
+our
+uh close of this bar next up we have our
+stop loss
+price i've set up pine connector to
+receive my stop loss and take profit as
+a price instead of a pip
+value so our limit order is in pips our
+stop loss and take profit is in price so
+there's our
+take profit and stop loss price and our
+risk
+today is one percent of my account
+balance if you set this to 0.1
+that would mean a mini lot or 0.1
+of a full lot depending what you set pi
+connector up to
+make sure you've checked because if
+you've got a small account balance and
+you try to trade a full lot
+on this strategy you could be in for a
+rude shock if you're using this on a
+live account which i wouldn't recommend
+you do until you're very
+very comfortable with this information
+so if i come up to the settings menu
+let's play around with some of these
+settings
+in my case my metatrader suffix adds a
+dash
+f after the symbol so if i click off
+there
+now we have euro dollar dash f that is
+what my symbol looks like
+over on metatrader and if we want to we
+could turn off
+use limit order let me turn off use
+limit order and keep an eye on this
+text here and our price text when i turn
+this off
+these values will change so let me turn
+that off
+there we go you can see now instead of
+cell limit it just says sell
+and there is no price parameter in our
+syntax because we're not using a limit
+order this would just generate a market
+order
+to sell euro dollar with our stop loss
+and take profit and risk
+so hopefully all of that makes sense the
+final thing to do is just
+send this string to pi connector using
+an alert
+so to do that could not be any simpler
+all we do is use the inbuilt alert
+function
+and we send our alert string
+to that function now you could save the
+script and this would all work fine
+as it is i like to specify a frequency
+after my string this is optional since
+we are already checking if the bar state
+is confirmed
+but i'm going to set this to once per
+bar close just out of habit i like to
+set a frequency
+in my alert function and that's it if i
+save the script
+and we set an alert and we select
+i'll let the script load if we select
+our script
+ftp and we select alert function calls
+only
+make sure you've set up your hook url
+correctly
+and enabled it if you've done these two
+things
+the script is ready to auto trade just
+make sure you've got metatrader open
+when you create this alert and then the
+next time a signal is detected
+pi connector will enter your trade with
+the specified stop loss
+take profit and position size based on
+your
+risk parameter so pretty cool stuff
+there i hope you found this interesting
+so far
+there is one last thing i want to do to
+finish this
+script off and that is i want to detect
+if our take profit is hit by price
+action
+and if it is then i want to send a
+cancel limit order command
+to pi connector the reason for this is
+let's imagine we get a candlestick
+pattern here
+that closes valid let's pretend that
+this wick here doesn't exist
+and price did not retrace at all after
+our signal was generated
+that would mean that our limit order
+never got filled and it would still be
+open on our broker if price action were
+to then
+come down and hit our take profit
+without filling us on our
+sell limit order and then retrace and
+then fill us on our
+sell limit order and then stop us out of
+that trade
+that is a loss that the tester system
+and our
+our manual back testing would not
+account for
+and that is the kind of thing that can
+ruin
+a strategy little things like that can
+turn a winning strategy into a losing
+strategy because you should not be in a
+trade once
+its take profit has been hit if we
+missed the trade we missed the trade we
+do not want to be filled
+on a retracement after the take profit
+was hit
+this is a perfect example if this wic
+was not here
+this is a trade where we would want to
+cancel our limit order as soon as our
+take profit was hit
+otherwise we would have been stopped out
+on this next bar
+here so the way i achieve that in pine
+code
+is a check if price has exceeded
+our target then cancel limit order
+if it's still active so if the limit
+order
+does not exist and we did get filled on
+our limit order
+then this alert will do nothing if
+however the limit order is open
+on this pair it will get cancelled so
+the way i check this is i say if
+pc underscore limit so the user has
+turned on the limit order
+setting and the current bar's
+low is less than or equal to our trade
+target price then we want to send a new
+alert
+to pi connector this is a really simple
+alert it looks
+something like this we first need to
+send our license id
+so pc underscore id then we need to add
+on
+a comma and then the command to cancel
+our short limit order
+our cell limit order which is cancel
+short
+then we need to add another comma then
+we need to specify which market or which
+symbol we want this command to be
+triggered on and to do that we just add
+symbol which we created up here
+we do not need to specify uh a frequency
+for this
+we want this to trigger as soon as price
+action hits our take profit
+so that is it we are done here if i save
+the script we have finished
+our ftp automated pine connector script
+sorry guys just really quickly i want to
+interject here um when recording this
+lesson i made a mistake
+well not a mistake but i i overlooked
+something with this particular part of
+the script
+if we do not set trade target price to
+na
+then this alert just keeps firing every
+time price moves below our
+trade target price so if you've copied
+the source code from my website
+this um will be added into that source
+code
+but for this lesson i forgot to add this
+part of the code
+we also only set our trade target price
+to na
+after our strategy.position size equals
+zero meaning we are flat so our take
+profit has been hit
+the strategy tester has exited our trade
+now it is safe to set our trade target
+price to na
+because remember we need our trade
+target price down here
+in the strategy.exit function in order
+for the backtester system to know where
+to exit our trade
+and so this is just something i should
+mention before we
+move on sorry about that normally i
+extensively test
+these scripts before i make lessons on
+them but this one i overlooked
+in my testing if i get rid of this white
+space down here that i added
+just so that the banner at the bottom
+here doesn't get in the way
+we have a 95 line
+script 95 lines of code much less if you
+exclude the gaps and comments and we are
+fully automating
+a profitable strategy through pine
+connector
+and metatrader using tradingview alerts
+pretty awesome stuff i hope you found
+this interesting
+if you are interested in getting pi
+connector there will be a link in the
+video description
+it is an affiliate link so i get a
+commission if you do use my link that's
+one way to support the channel
+you do not get charged any extra than
+you would if you don't use my link
+it's just a way to support the channel i
+get a couple of bucks
+out of your order which just goes
+towards supporting the channel i mostly
+spend that money on
+buying better audio equipment and
+software for editing and all of that
+stuff
+so if you do want to support the channel
+and make these videos better that is one
+way to do it
+another way to do it is to go over and
+check out my courses at
+panscriptmastery.com
+you can steal every script i've ever
+written including this one
+over at panscriptmastery.com i have a
+course
+full of all of my indicators and
+strategy scripts all the profitable ones
+i've ever made in my life
+one of them my ultimate pullback
+indicators over 700 lines of code
+and does almost anything you could ever
+want out of a
+strategy script so if you're interested
+in learning more and shortcutting the
+learning process
+make sure to go and check that out again
+if you're new to panscript and this was
+all way over your head
+check out my free basics course over at
+that same website
+and if you're intermediate and you just
+want to take your pi code into the next
+level
+there is the mastery course where i
+teach you the fundamentals
+of this awesome scripting language
+before we end
+the video though i will show you how
+this looks
+over in metatrader because this depends
+on a valid setup being detected between
+a certain time of day and all of that
+we're not going to use this actual
+script to test an alert
+i'm going to use this version of the
+script instead which
+is a practice script that i wrote in the
+previous lesson
+and i've modified it to basically do the
+same thing as
+our ftp strategy basically what this
+does is
+it just checks if we have a bullish or
+bearish bar
+if that bar is the last bar on our chart
+then it enters long or it enters short
+if i uncomment that and uncomment that
+and i get rid of this which is something
+i was just playing around with
+um this script basically does the same
+thing as the ftb script
+the only difference is the entry reason
+is much simpler
+since it is for testing purposes so let
+me save this script to make sure
+i didn't miss anything there there we go
+now let's drop down to a five minute
+time frame
+and i'll set an alert on the script and
+we'll watch
+what happens over in pi connector when
+this code that we wrote today
+is fired so this script will generate a
+limit order
+to either go long or short depending on
+how the bar closes
+with a 10 pip stop and a 10 pip target
+so the first thing i need to do is copy
+my license id
+into this settings box here
+so i'm going to do that now and i'll
+obviously have to blur this number since
+that is my actual license id for my live
+trading account
+i've set up my risk per trade the one
+percent of my account balance
+i've set my suffix i've set my spread
+i've turned limit order on
+let's click ok and now let's come up to
+the alert dialog
+select in this case my pi connector
+strategy test
+we want to select alert function calls
+only we want to make sure the web hook
+is turned on and sending this alert to
+the correct
+url and then i want to click create
+and we wait until this bar closes and
+we'll see
+what happens over here on metatrader
+so let me drop down to the five minute
+time frame here i'll stay
+on training view until the last few
+seconds and then we'll hop over to
+metatrader and see what happens alright
+here we go
+in a couple of seconds the alert should
+fire let's hop over here
+there we go a limit order has been
+placed
+our stop loss is 10 pips below the entry
+and our take profit 10 pips above we
+just got filled
+this is on a small live money account so
+this is working on a live account
+you can see my position size here is
+0.04 lots which accounts for one percent
+of my account balance if you jump back
+over to trading view here
+you can see my position open here and
+there you have it that is the end of
+today's lesson i hope you found this
+interesting if you did make sure to hit
+the subscribe button i'll be back soon
+with another lesson i think i might do
+one more at least one more lesson on pi
+connector
+where we might add this pi connector
+code
+to the same strategy script that i
+created for auto view
+which was also a profitable daily chart
+strategy so i should be able to show you
+a couple of different techniques
+for using pi connector in your pine
+scripts anyway thanks for watching
+again if you want the source code
+there'll be a link in the video
+description
+i will see you in the next lesson and
+thanks for being a part
+of this trading community i'm grateful
+for your time
+i'll speak with you soon take care and
+best of luck with your trading
+you

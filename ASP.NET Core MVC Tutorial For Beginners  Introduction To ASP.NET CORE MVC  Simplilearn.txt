@@ -1,0 +1,307 @@
+hey everyone i welcome you all to this
+session in this session we will learn
+about asp.net core mvc
+let's look at today's agenda
+we shall begin with understanding what
+is mvc pattern
+then we will see what is asp.net core
+mvc
+followed by which we will look at the
+functions of mvc
+and then understand the different
+components of asp.net core mvc finally
+we have a demo wherein we will build our
+first asp.net core mvc application
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn so
+without wasting any further time let's
+get started
+what is mvc pattern
+the model view controller mvc
+architectural pattern divides an
+application into three major component
+groups
+model view and controller
+the principle behind developing mvc is
+the separation of concerns
+this principle implies that software
+should be classified based on the type
+of task it performs
+separation ensures that the business
+model is simple to test and can change
+without becoming too involved in low
+level implementation details
+using this mvc pattern user requests are
+routed to a controller who is in charge
+of interacting with the model to conduct
+user actions and receive query results
+the controller selects the view to be
+displayed to the user and supplies it
+with any model data it requires
+what is asp.net core mvc
+the asp.net core mvc framework is a
+lightweight open source and highly
+testable presentation framework designed
+specifically for use with asp.net core
+asp.net core mvc is an application
+framework that allows you to create
+modern web apps by using the mvc model
+view controller architectural pattern
+asp.net core mvc provides a pattern
+based approach to developing dynamic
+websites that allow for a clear
+separation of concerns
+it allows you to complete markup control
+facilitates td-friendly development and
+corresponds to the most recent web
+standards
+functions of mvc
+let's look at the model functions the
+responsibilities that a model carries
+in an mvc application the model
+represents the application's state and
+any other business logic or activities
+that should be executed by it
+business logic and any implementation
+logic for maintaining the applications
+state should be wrapped in the model
+viewmodel classes intend to contain the
+data to display on that view are often
+used in strong type views
+the model is used by the controller to
+construct and populate this view model
+instances
+view responsibilities
+views are in charge of displaying
+content through the user interface
+they embed dotnet code in html markup
+using the razer view engine
+view should have minimal logic and any
+logic should be related to presenting
+content consider using a view component
+view model or view template to simplify
+the view if you need to perform a logic
+in view files to display data from a
+complex model
+now let us look at the functions of a
+controller
+controllers are the components that
+manage user input interact with the
+model and finally choose which view to
+render
+the view just displays information in an
+mvc application
+the controller processes and responds to
+the user input and interaction
+the controller is the initial entry
+point in the mvc architecture and it is
+responsible for deciding which model
+type to interact with and which view to
+represent
+hence its name is controller as it
+responds to a given request
+now let us look at the components of
+asp.net mvc
+some of the components of mvc are
+routing
+model binding
+model validation
+dependency injection
+filters and
+areas
+now let us look at them one by one
+at first we have routing
+asp.net core mvc is built on top of
+asp.net core routing a robust url
+mapping component that enables the
+creation of applications with logical
+and searchable urls
+this allows us to establish url naming
+patterns for applications that perform
+well for search engine optimization and
+link generation regardless of how the
+files on your web server are arranged
+routes can be defined with a simple
+route template syntax that takes into
+account route value limitations defaults
+and optional values
+next we have model binding
+model binding in asp.net core mbc
+transforms client request such as form
+values route data query string
+parameters and http headers
+it transform this data into objects that
+the controller can handle
+as a result
+the controller logic does not have to do
+the job of determining the incoming
+request data instead the data is passed
+as parameters to its action methods
+next we have model validation
+validation is supported in asp.net core
+mvc by decorating your model object with
+data annotation validation attributes
+before values are sent to the server the
+validation attributes are checked on the
+client side the framework validates
+request data on both the client and the
+server side
+dependency injection
+asp.net core includes dependency
+injection capabilities
+controllers in asp.net core mvc can
+request required services through their
+constructors
+allowing them to follow to the explicit
+dependencies principle
+dependency injection is a software
+design technique that achieves inversion
+of control between classes and their
+dependencies
+filters
+filters in asp.net core enable code to
+be executed before or after particular
+stages of the request processing
+pipeline
+filters can be used as attributes on
+controllers or actions
+filters manage duties such as
+authorization restricting unauthorized
+access to resources and response caching
+filters allow for the execution of
+custom pre and post processing logic for
+action methods and they may be see to
+run at certain points in the execution
+pipeline for given request
+last we have areas
+areas allow you to divide a large
+asp.net core mvc web app into smaller
+functional groups
+an area is an mvc structure that exists
+between an application
+logical components such as model
+controller and view are kept in separate
+folders in an mvc project and mvc uses
+naming conventions to build a
+relationship between these components
+it may be good to partition a large app
+into different high-level functional
+regions
+for example consider an e-commerce app
+with numerous business units such as
+checkout billing and search among others
+each of this unit has its own set of
+logical component views controllers and
+models
+now let us look at the demo in this demo
+we will create our first asp.net core
+mvc application
+so first we need to install the required
+software and set up the system for
+asp.net core mvc development firstly we
+need dot net core sdk software
+development kit then we need to install
+the sql server and then we need to
+install editor like visual studio
+once you have installed the visual
+studio click on launch
+visual studio 2019 is getting opened
+so this is how the visual studio 2019
+looks like
+towards the left hand side we have the
+recent applications which we have worked
+on and towards the right side we have
+the options to clone a repository to
+open a project or a solution to open a
+local folder or create a new project so
+click on create a new project
+here we have different project templates
+we have console application which is
+used for creating a command line
+application that can run on.net core
+windows linux and mac os
+similarly we have other templates like
+asp.net core web app blazer web assembly
+app and if you scroll down you have many
+more templates
+but for this project we need the
+template asp.net core web app model view
+controller
+since this project this video is related
+to mvc we need this template so select
+this template this template basically is
+used for creating an asp.net core
+application
+with asp.net core mvc
+model view and controller
+so select this
+click on next
+if the project name so we'll enter it as
+a demo since we are showing a demo
+so enter the project name demo if you
+want the solution name to be different
+from the project name then check this
+box and provide the solution name
+so we'll keep it as it is
+click on next
+select the target framework
+authentication type if required
+then click on create
+here you go
+the project is successfully created
+so here you can see there are different
+types of files and folders
+for this template the addition of
+folders is the controller
+model and view so these three folders
+are added for this particular template
+mvc
+you can check out our previous video on
+asp.net code tutorial wherein i have
+explained each of these folders in
+detail
+open views and in shared you can see
+layout.cs.html
+open this file
+so let's click on run and see what is
+the output
+so click on run here you can see build
+started
+here you can see it is running on the
+localhost server
+so this is the project this is a
+template
+let us go back to the visual studio and
+change this so this is where
+you can change the title
+from demo will change it to simply learn
+[Laughter]
+similarly if you want to change
+the home or the privacy you can change
+it here
+this is where you modify all the setup
+so well reset and click on run restart
+so here you can see the demo is changed
+to simply done
+so this is how we get started with mvc
+application from here you can modify all
+this go back to the visual studio and
+modify if you click on home this will
+come back to the same home page
+click on privacy
+it shows this page
+so this was about the template model b
+controller
+in the upcoming videos we will discuss
+asp.net in more detail
+so with that we have reached the end of
+this video like and share it if you
+found it interesting thank you for being
+here keep learning and stay tuned
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

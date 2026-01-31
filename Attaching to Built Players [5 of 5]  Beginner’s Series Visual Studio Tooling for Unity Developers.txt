@@ -1,0 +1,205 @@
+>> My name is Charles.
+In this video, I'm going
+to show you how to attach
+the Visual Studio debugger
+to your Unity Builds.
+That way, you can fix bugs that only
+appear on the devices that
+your games actually run up.
+Have you ever heard the phrase
+"Works on my machine."?
+It's pretty common amongst
+programmers because
+some bugs just don't show
+up during development.
+Dead PCs handle lots of
+computationally heavy tasks,
+so they tend to be pretty
+high-end machines.
+But the device that your
+games actually run on,
+the ones your player zone,
+aren't always going to be that great.
+Even the ones that do match
+your specs can contain
+hundreds of variables that all
+affect the way your games run.
+Luckily, for us, the debugger at
+Visual Studio has the ability to
+attach to instances of
+your game that aren't
+running in your editor.
+As long as you've
+built them correctly
+and configured your
+environment properly,
+you can debug your games on
+any device you want.
+Let me show you how.
+Here's a simple project
+that you may recognize
+from our other videos
+in our debugger series.
+It runs just fine on my editor,
+but I'd like to see how it
+fares on my low-end laptop.
+I could just install Unity,
+download the project, and run
+it directly on my laptop.
+But that wouldn't be a
+true test of how the game
+would actually perform in production.
+To do that, we'll need to create
+an actual build and
+run it on the device
+which we can do by clicking on
+"File" then "Build Settings".
+The Build Settings
+window gives us tons of
+control over how our games build.
+We can add and remove scenes that
+will be included in the build.
+Choose the build's platform
+and toggle a number
+of options that will change
+the way that build functions.
+For the purposes of this video,
+the option we're interested
+in is development build.
+Depending on the platform,
+development build
+will give you access
+to a series of options that we
+can use to profile and debug
+our game once it's been built.
+The only option we need to worry
+about now is Script Debugging.
+This option will allow us to connect
+the Visual Studio
+debugger to our build.
+So let's go ahead and enable it now.
+That's the only one we
+need to enable for now.
+Next, we'll click on
+"Build" and choose a place
+for our build to live.
+Next, we need to transfer the build
+to a device that we want to debug on.
+For me, that's my laptop, so
+I'll go ahead and do that now.
+Just make sure that
+whatever device you
+use is accessible on your network.
+That could be running it on
+the same network or
+that you've opened up
+the necessary ports and configured
+the firewall to allow
+the debugger to connect,
+but more on that later.
+I've transferred the
+builds to my laptop here.
+Let's run it and move
+the character to
+a safe position so we can connect
+the Visual Studio debugger.
+Back on my dev machine,
+I've opened our project
+up in Visual Studio.
+Let's set up a break point
+we have something to debug.
+I've been quite a few
+changes to this class and
+should probably confirm that
+they still work in production.
+Let's add break points at the
+top of this function here.
+It gets called fairly
+frequently, so it will make for
+a great test case for our
+remote debugging process.
+Now, we can start the debugger.
+At this stage, we normally just click
+the "Attach to Unity"
+button and be ready to go.
+But in this case,
+we'll need to locate the running
+build on our network until
+Visual Studio to attach
+to that instead.
+To do that, first,
+we need to expand the Debug menu,
+and then click on
+"Attached Unity Debugger".
+This will give us a list of
+all the Unity debugger instances that
+our dead machine
+currently has access to.
+Each row displays the project
+name, machine name, type,
+player or editor, port, and finally,
+some extra information which
+sometimes contains the process ID.
+If you don't see your
+instance in this list,
+you can just click on "Input IP" and
+manually enter the IP address
+of the device that's
+running your build.
+If you still don't see
+your build in the list,
+then Visual Studio probably
+can't connect to it.
+There are few reasons
+why this happens,
+but the most common is your firewall.
+Firewalls are designed to protect
+computers from malicious connections.
+They do this by blocking traffic from
+certain host and disallowing
+connections on certain ports.
+Unity's official documentation
+has an entire page
+dedicated to setting
+up your environment
+for remote debugging sessions.
+If you encounter any issues,
+I recommend reading through
+the troubleshooting section
+to help solve your problems.
+However, once you do see
+your build on the list,
+all you have to do is select
+it and Visual Studio will
+automatically start the debugger.
+Look at that.
+The debugger has already pause
+the execution of our
+code on our break point,
+and we have access to all of
+the amazing features that are
+available in the Visual
+Studio debugger,
+just as we'd expect,
+and that's all there is to it.
+When you finally build
+and distribute your game,
+there's no telling how
+it will respond to
+the large variety of devices that
+your players will run it on.
+However, when bugs do occur,
+you can attach the debugger in
+Visual Studio directly to the devices
+that caused them or at
+least the devices with
+similar environments.
+The best thing is, it
+works the same way
+across all Visual Studio projects.
+Whether you're using Visual Studio,
+Visual Studio for Mac,
+or Visual Studio Code,
+be sure to take advantage of these
+powerful time-saving features.
+[MUSIC]

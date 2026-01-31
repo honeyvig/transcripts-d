@@ -1,0 +1,340 @@
+hey everyone i am weber khandelwal and i
+welcome you all to simply learns youtube
+channel in this session we will discuss
+backtracking algorithm we shall begin
+our session by introducing backtracking
+then we will discuss the end queen's
+problem to understand the backtracking
+in detail
+after that we will implement the end
+queens problem in the code editor
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply
+learnt's youtube channel so without any
+further ado let's get started with an
+introduction to backtracking
+backtracking is an algorithmic method of
+alternately
+solving a problem
+to explain the issues it employs a
+recursive approach backtracking is
+required to find every possible
+combination to solve an optimization
+problem
+backtracking is used in solving various
+problems like n queens knight store the
+rat in the maze problems and so on
+now to get better understanding of
+backtracking let's have a brief look at
+and queen's problem
+let's say we have four by four matrix
+we have to place four points in that
+every row and column has exactly one
+queen and none of them falls under the
+same diagonal
+we will start with the left most column
+then we will check our base condition
+that if we have placed all the queens or
+not
+now we will try every row in this column
+if we found a location where the queen
+can be safely placed then we will mark
+it as a part of an answer
+and then we will recursively check if
+placing queen here will lead us to the
+solution or not
+if yes then we will return true
+otherwise if false then we will
+backtrack and try other rows and repeat
+these steps
+if all rows have been tried and nothing
+worked then we will return false to
+trigger backtracking
+now let's implement this end queen's
+problem in the code rater
+we will define a vector
+inside a vector
+it will be a end vector
+result
+now we will write a utility function to
+check if the queen can be pleased on
+board
+so
+it will be a boolean function
+bull is safe
+as argument we will place a vector
+inside a vector
+and
+board
+comma and
+row
+comma
+and
+column
+we'll define
+and i comma j
+and
+n
+will be equals to board size
+now we will check if this row on the
+left side
+so
+for loop
+i is equals to zero
+i less than column
+i plus plus
+f
+board
+at row
+i
+then we will return
+now we will check upper diagonal on left
+side
+so for
+i is equals to rho
+comma j
+is equals to column
+j greater than equals to zero
+and
+i
+greater than equals to zero
+i minus minus
+comma
+j
+minus minus
+f
+board
+i
+comma j
+then return
+now we will check lower diagonal on left
+side
+so for
+i equals to rho
+comma j
+is equals to column
+i
+less than n
+and
+j greater than equals to zero
+i plus plus
+comma j minus minus
+now if
+at i
+and j
+will return
+else we will return
+basically what we have done in this
+function is we have checked that row and
+the right diagonal and the left diagonal
+so that no queen can overlap
+now
+next we will write a recursive utility
+function to solve and queen's problem
+so
+pull
+solve
+thank you
+its argument will be vector
+inside a vector
+enter
+ampersand board
+comma and
+column
+now we will first check our base case if
+all queens are placed
+so int
+n is equals to
+board
+size
+f
+m
+is equals to n
+then we will define a vector
+and
+b
+so for
+and
+i is equals to zero
+i less than n
+and i plus plus
+another nested for loop
+and
+j is equals to zero
+j less than n
+j plus plus
+f
+board
+at i
+j
+is equals to
+one
+then
+v dot push
+back
+j plus one
+now
+we will print result
+dot
+pushback
+and we will return
+true
+now we will consider this column and try
+placing this queen in all rows one by
+one
+so
+boolean
+plus
+is equals to false
+now for loop
+and i is equals to zero
+i less than n
+i plus plus
+now we will check if queens can be
+placed on board i
+can call them call
+so if
+is safe
+bored
+my i
+know
+if it's safe then we will
+place this coin at the position so board
+i
+call
+is equals to
+1
+now we will make result true if any
+placement is possible
+so
+res
+is equals to
+solve
+and cube
+at
+board
+comma
+call
+plus one
+or
+rus
+now if placing queen in board i call
+doesn't lead to a solution
+then we will remove the queen from the
+board i column
+and backtrack
+board
+now if queen cannot be placed in any row
+in this column then we will return false
+so
+return
+plus
+now this function solves the end queen
+problem using backtracking
+it is basically using solve enqueue to
+solve the problem it returns false if
+queen cannot be placed otherwise returns
+true and print placement of queens in
+the form of once
+now there may be possibility that there
+are more than one solution
+then this function will print one of the
+feasible solution
+vector
+add a vector
+and queen
+and
+n
+result
+dot
+clear
+now we will call vector
+inside a vector
+board
+and
+comma
+vector
+and
+bracket n comma 0
+now if
+solve
+nq
+at board
+comma 0
+is false
+then we will return
+empty set
+otherwise
+we will sort
+result
+begin
+mama
+result
+and
+and we will return
+result
+now we will write the main block
+so end
+n is equals to
+4
+so for
+vector
+inside vector
+and
+v
+will be equals to n queens
+at n
+so we will write for loop
+auto
+are we
+we will call c out
+then for loop
+auto
+atr
+ar
+c out
+itr
+and see out
+and then we will return 0.
+now let's run this code
+as you can see we are getting two
+answers
+now this end queen can be solved with
+both of these answers
+now let's get back to our slides
+at last let's sum up what we have
+learned in this session
+first up backtracking is simple to
+implement and has fewer lines of code
+most backtracking codes are composed of
+few lines of recursion
+function code
+next
+since we use recursion the function
+information is stored on the stack which
+has high space complexity
+next when the branching factor is
+significant it is very time consuming in
+many cases
+finally many problems such as knight
+stewart
+and queens rat in the maze subset some
+problem and so on can be solved using
+backtracking
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply
+learn hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

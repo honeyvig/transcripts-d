@@ -1,0 +1,432 @@
+hi my name is Abel and I'm a senior
+cloud developer advocate specializing in
+DevOps I am so excited to show you
+what's new and Azure DevOps we've always
+said Azure devops is everything you need
+to take an idea and turn that idea into
+a working piece of software in the hands
+of your end-users for any language
+targeting any platform and now we've
+made it even better in the name of the
+game has been all about integrating with
+github so let's go check it out
+alright so here you can see as your
+boards where you can track any unit of
+work in your software project now
+wouldn't it be cool if we could link
+Azure boards up with our github repos Oh
+guess what now you can and it's as easy
+as this if you want to set up that
+linkage let's first go into our project
+settings and from here we're going to do
+some integration integrations with our
+boards now the first thing that's going
+to ask you is which github repo do you
+want to integrate with now I'm gonna go
+ahead and use my personal access token
+to connect up to my github repo and
+let's see if I can remember my token I
+think it's that and let's go ahead and
+authorize that and now it's going to ask
+me which we po do you want to connect to
+so let's go ahead and connect up to my
+able tailwind
+front end so we'll select that we'll
+save it and that is all we need to do to
+connect up as your boards with my github
+repo so let's jump back to our boards
+and you can see my Kanban boards
+alright so notice I have this super
+duper important bug that needs to be
+fixed immediately right so it sure would
+be cool if the changes that I did inside
+my github repo would automatically link
+to this work item so I could track all
+of my work and you totally can now
+because we linked up our Asscher boards
+with github so let me show you what I
+mean let's jump into github and make a
+change so here's a demo comment and
+we'll go ahead and save this and when we
+save this we'll go ahead and create a
+branch to start a pull request so we'll
+go ahead and create a new branch and we
+do need to leave a good comment so let's
+leave a comment that say this fix is as
+your bug number and what number was that
+I think it was 64 and now let's go ahead
+and create that branch for myself to fix
+so what am i doing I have now created a
+branch with my code fixes now it's ready
+to start my pull request now if I jump
+back into my add your boards check this
+out if we look at the details
+don't--don't done BAM there's a change
+that I just did inside of github and if
+I click on this this is a deep link that
+will take me directly inside of github
+to see what branch it's in as well as
+what my changes are so now let's go
+ahead and jump back into github because
+what we want to do is we want to create
+a pull request so let's go ahead and
+create a pull request so now my
+teammates can review my code changes to
+make sure everything that I'm doing
+looks good now let's jump back into
+Azure boards again because if we look at
+the development details check this out
+here is where we initiate the pull
+requests so everything that we do inside
+of github is now tracked inside of Azure
+boards pretty cool huh the only thing
+left that we need to do is go ahead and
+finish this particular poll request so
+we'll come in here let's merge the poll
+requests in the master so now we've
+finished up that particular pull request
+and bam did you see that just happen
+automatically the bug because we
+resolved it inside of github it
+automatically resolved on our work item
+board as well this right here is so
+incredibly cool github issues they work
+great but if your project gets a little
+bit more complex having the power and
+the flexibility of Azure boards it's
+awesome and now with the github repo and
+Azure board's linkage you can use both
+so great tracking all this work is
+awesome
+but we still need the ability to add si
+ICD for our repos even for our git repos
+and how we can do that super easily and
+let me show you what I mean let's jump
+back into our github repo and what we're
+going to do is create a CI CD pipeline
+into Azure pipelines directly from
+github so what we need to do is we need
+to go to the marketplace and from here
+we need to search for the Azure
+pipeline's marketplace extension so both
+go ahead and jump in here we'll do a
+search so this is currently already
+installed so I won't go through the
+whole install process but I will show
+you how easy it is to configure it we'll
+go ahead and say let's go ahead and
+configure a short pipe lines and it's
+gonna ask for my password let me go
+ahead and enter that in and now it's
+gonna come in here and we're gonna say
+you know what let's go ahead and add a
+CI CD pipeline for my specific
+repository we'll go ahead and save that
+and now it's gonna route me back into
+Azure DevOps and it's gonna ask me to
+log in so let me log in with my
+credentials and now it's going to ask me
+which organization do you want to use
+now I have a million organizations and
+I'm in hopefully you guys don't have
+nearly as many as I do so it'll be
+easier to find but let me find my demo
+account so it's going to be called as
+your DevOps demo a and the project is
+going to be my connect 2018 project and
+we'll go ahead and continue and now it's
+gonna walk me through a wizard to create
+for me my build pipeline so we'll go
+ahead and choose my github repo and
+notice it analyzed my repo and it
+figured out what technologies is being
+used inside of that repo this repo is
+holding a node.js app so it's going to
+provide for me a no J's template that I
+can just start using and immediately it
+creates me a build pipeline written in
+Yammer this is pipeline as code so as a
+DevOps person this makes me super
+excited because I can check this file in
+and now any changes I make to it to the
+build pipeline it will be version right
+alongside
+my code if you need more information
+about it we have a handy link that will
+take you directly to the docs pages as
+well so here you can find everything
+that you need all right so let's go
+ahead and jump back into our build
+pipeline we'll go ahead and save and
+we'll run this so we'll save it and
+we'll run it and so what is it doing
+right now it's taking this yamo file and
+it's taking this particular yamo file
+and saving it in my github repo now
+after it saved it to my github repo it's
+gonna kick off the build and the very
+first thing that's gonna do is it's
+gonna go to github and download all of
+my source code including this camel file
+it will then load this build up and
+start executing all the build steps
+described in the yamo file this right
+here like I said before as a dev ops
+person this makes me ridiculously happy
+pipeline as code so this build system
+right here this is no different than the
+visual editor that we used to use before
+and in fact it's still around and you
+can still use it it's the exact same
+build engine underneath doing the exact
+same thing it's just a task runner doing
+one task after another but with the Gamo
+build it describes it using a yamo file
+instead of using the visual editor let
+me show you what that visual editor
+actually looks like so here's my build
+and I created a build a custom build
+that uses this particular editor the
+visual editor and you'll notice it does
+one task after another after another
+after another
+so customizing a build is super simple
+with Visual Studio with Azure DevOps
+because this right here is a task runner
+just does one task after another so if
+you want to customize this all you would
+need to do is add or remove tasks now
+out of the box there are hundreds of
+tasks that you can just download and
+start using but if you want to do
+something that doesn't exist
+out-of-the-box go to the marketplace in
+the marketplace our partners have
+created over 500 build and release tasks
+that you can just download and start
+using pretty cool and if what you want
+to do doesn't exist out-of-the-box and
+doesn't exist in the marketplace you can
+write your own custom tasks as well
+custom tasks nothing more than
+PowerShell or no js' so what that means
+is anything that you can do from the
+command line you can easily get this
+build and release system to do as well
+all right so now if we go ahead and look
+at our build it should be finished and
+that's great right it's a pretty
+rudimentary build it doesn't do a whole
+lot it just kind of packages everything
+up but what I really want to do is I
+want to customize that build Yambol file
+right I want to make it do exactly what
+this visual build is doing I want it to
+install NPM I need to set up my eat my
+database connections I then want to
+build my app this is a no js' app that
+we compile into static web pages and
+then I want to take all this up bundle
+it up as a zip file so that's ready to
+be deployed and check this out if you
+have a visual editor you can just save
+you as yamo and it'll take this visual
+build and create all the gamal steps for
+you where you can copy and just make
+those changes so let's jump into the
+build Yama file to make those changes so
+let me jump in here let's pull our
+changes down from our repo and now check
+this out here's our ashore pipelines
+demo file and here's what's in the repo
+right now if we want to make changes
+guess what we can just go ahead and
+start making changes all right so let's
+customize this and let's add a new task
+and notice we're getting autocomplete
+and we're getting syntax highlighting
+and if we do a control space we'll
+actually even get intellisense so this
+right here makes editing the gamma file
+so much easier we have in Azure
+pipelines vs Cote extension that gives
+us intellisense syntax highlighting and
+autocomplete so we're going to add a new
+task let's do something like I don't
+know maybe we'll add a new get task and
+we can do the inputs and we can see what
+the input can be right and notice it
+even gives us red highlights or red
+squiggles so this is fantastic
+intellisense syntax highlighting and
+autocomplete makes
+editing these yamo files so much easier
+alright so what I wanted to do is I
+really wanted to customize this with all
+of my steps above so here is all we need
+to do let me paste that in here and
+we'll go ahead and save this and we'll
+upload that code and we'll commit it and
+what did we do we customized or build
+and let's push those changes back in to
+get help now as soon as my code hits
+github it should kick off my build so
+let's go ahead and jump back in to Azure
+pipelines to see if the build has been
+kicked off and there we go we customized
+the build and it's kicking off the build
+so what is this doing right now this
+build its gonna go ahead and download
+the latest source code from github
+including the build ml file now it's
+going to load that Gama follow-up and
+it's going to execute the build steps
+described in that build a mo file oh
+this is awesome
+so there's going to go ahead it's gonna
+get my sources it's going to install NPM
+it's going to setup my database
+connections it's gonna go ahead and
+build my app turn my node.js app into a
+static set of files and it's going to
+archive all of that so now it'll be
+ready to be deployed all the way out
+into production
+all right looks like the build is
+finished if we jump into a summary we
+get a nice summary page that shows
+everything that's happened during the
+build but notice we haven't created a
+release pipeline yet all right so let's
+go ahead and create our release I'll
+click on the release button and what
+this will do is it will take us to our
+visual editor now the very first thing
+it's going to ask us is do we want to
+apply a template which makes our job so
+much easier now for this demo I'm gonna
+go ahead and deploy my code into Azure
+app service so I'll just use the app
+service template now the way you set up
+these releases is first you describe
+what your stage is going to be so my
+first stage is going to be for my
+staging environment so we'll name it
+staging and after we define what the
+environment is going to be we can go
+ahead and go into that particular
+staging environment and now we'll
+describe all the steps that we need to
+take to deploy our application into this
+particular stage now since I'm just
+deploying an azure app service it
+becomes super simple it's one task so
+the first thing I'm gonna do is I'm
+gonna pick my subscription here's my
+Azure subscription and after I pick my
+subscription let's go ahead and deploy
+this into the correct app service so let
+me bring up the list of app services and
+from here we'll go ahead and deploy this
+into my staging environment which is
+right here and that's literally all we
+need to do we can jump back into our
+pipeline because we've just described
+one environment you describe your
+environment you want to deploy to you
+describe what tasks that you want to use
+to deploy your application and now you
+get to define who are the approvers so
+before and after each environment you
+can add a set of manual approvers so
+I'll go ahead and add myself as an
+approver and you can add a list of
+people where every single person in the
+list has to approve before it can flow
+through the gate or you can add a group
+of people where if one person approves
+then it will flow through the gate or
+you can use a combination of lists and
+groups as well so I have a staging
+environment I do need to have my
+production environment so let me just go
+ahead and clone that and let's describe
+this correctly
+so we'll call this my
+environment and we have to go in and
+update the tasks that we're going to use
+to deploy my application into my
+environment so instead of deploying this
+into staging let's deploy this into my
+production environment so of course some
+of you are probably asking what do I
+need to do if I need to customize my
+deployment and do special tasks well
+guess what this right here is just a
+task runner exactly like the build so
+what that means is to customize it you
+would just add or remove tasks that you
+need and just like the build out of the
+box you get hundreds of tasks if what
+you want to do doesn't exist
+out-of-the-box jump into the marketplace
+and if what you want to do doesn't exist
+in the marketplace write your own tasks
+tasks nothing more than nodejs
+or PowerShell so anything you can do
+from the command line you can easily get
+this build and release system to do as
+well so we've just completed this let's
+go ahead and save this and let's go
+ahead and kick off our release to see
+what that will look like so we'll come
+into our pipeline let's go ahead and
+create a release and so now what is it
+gonna do it's gonna grab the latest
+build that we have and take those bits
+and start releasing it through our dev
+environment and it will go ahead and
+execute the steps that we pimped
+so here it is queued everything up and
+now it's going to go ahead and deploy my
+application into my staging environment
+and grave that looks like we just
+deployed into our staging environment
+let's jump into our staging environment
+we fresh that to make sure we deployed
+and voila here's our code deployed into
+staging fantastic so we can go ahead and
+approve this looks good and staging and
+after approving it now it's going to go
+ahead and flow into our production
+environment
+and there you go there's our app
+deployed all the way into the production
+environment so as you can see creating a
+full CI CD pipeline that will take your
+code from github and deploy it all the
+way out into production super simple to
+do so there you go
+as your DevOps we are the only cloud
+vendor that makes it so simple to go
+from nothing to a full CI CD pipeline
+for any language targeting any platform
+and yes this is for your code sitting in
+your repository of choice deploying to
+wherever you need it to be deployed of
+course it can be a sure and man we've
+made it so simple to deploy to Azure but
+it can also just it easily be behind
+your firewall in front of your firewall
+remember any language targeting any
+platform and not only that if you have
+an open source project guess what you
+get all of this for free you get 10
+parallel pipelines out-of-the-box and if
+you need more just ping us and we'll
+give you more so what's that Donavan
+Allah says go rub some DevOps on it no
+man all you devs out there go to dev
+Asher comm and let's drop a bucket load
+of dev ops over all of this using at
+your dev ops thank you

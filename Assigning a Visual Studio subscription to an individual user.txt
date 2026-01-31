@@ -1,0 +1,56 @@
+(bright music)
+- Assigning subscriptions is a key task
+for a visual studio
+subscriptions administrator.
+To assign a subscription to an individual
+select add, and choose
+individual subscriber
+from the dropdown.
+In the flyout panel,
+the fields to add a
+subscriber are displayed.
+There are two ways to continue from here.
+If your organization is
+using Microsoft Entra ID,
+you'll have the option to search
+your Microsoft Entra ID tenant.
+Selecting the individual's
+Microsoft Entra ID
+will automatically populate their name,
+sign in email,
+and notification email,
+if one is maintained.
+Add a different notification email
+for receiving communications
+if you'd like.
+Select the subscription level.
+Choose whether the subscriber can access
+software downloads and product keys.
+Then select the country and language.
+To make notes about a
+subscription assignment,
+just add some details
+into the reference field.
+Lastly, click add.
+And you'll see the subscription
+as assignments list
+update with a subscription
+assigned to the user.
+If your organization is not
+using Microsoft Entra ID,
+it's just a few extra steps.
+Instead of searching
+in the search Microsoft Entra ID field,
+type the subscriber's
+name and email address.
+Then follow the same steps as before.
+Next, click add.
+Review any notices displayed.
+Then once you're ready, click confirm.
+You'll see the subscription
+assignments list
+update with a subscription
+assigned to the user.
+For more helpful information like this,
+check out our docs pages, or
+other recommended videos below.

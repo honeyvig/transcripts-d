@@ -1,0 +1,925 @@
+hey everyone welcome to another video by
+simply learn i'm sure you must have
+watched our previous videos on
+automation anywhere if you haven't
+watched them already i suggest you to go
+through easy tutorials on every topic on
+automation anywhere
+automation anywhere is a well-known rpa
+tool it has grown in popularity over the
+years and is now used by organizations
+all over the world
+automation anywhere enables id
+departments to set up software robots
+that collect and interpret data in
+variety of applications
+if you are planning to attain an
+interview for an rpa or automation
+anywhere developer role here is a
+comprehensive list of most frequently
+asked automation anywhere interview
+questions with answers
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+so without wasting any further time
+let's get started
+we'll first look at the beginner level
+questions
+what is automation anywhere
+automation anywhere is well-known
+robotic process automation tool that
+enables business to automate end-to-end
+business operations
+it provides powerful and user-friendly
+rpa capabilities such as cloud native
+web-based intelligent automation
+solution for automating any complex
+tasks
+it is a web-based management system that
+employs a control room to execute
+automated tasks it improves the
+efficiency of business process and
+reduces the need for human labor
+what are the features of automation
+anywhere
+automation anywhere offers an easy to
+use interface for building bots and
+designing business process automation
+workflows
+it supports multiple operating system
+such as windows linux and mac os
+it consists of a recorder that works on
+a variety of platforms including
+microsoft windows citrix web and sap
+it consists of different bot views for
+collaboration flow view for business
+users list view for developers and dual
+view for collaboration
+automation anywhere supports platforms
+like javascript python and vbscript as
+well as advanced variable capabilities
+another key feature is its versatile
+architecture that allows for the
+addition of new command packages
+what are the different components in
+automation anywhere
+automation anywhere robotic interface
+aari
+is a user friendly interface that allows
+business users to collaborate with bots
+aari enables enterprises to unlock
+previously unavailable automation
+opportunities between humans and bots
+that rpa could not address
+iqbot an intelligent document processing
+solution capable of reading and
+processing a wide range of complex
+documents and emails
+iqbod intelligently captures classifies
+and extracts semi-structured and
+unstructured data using rpa and multiple
+ai techniques allowing document centric
+business process to be automated
+end-to-end
+bot insight the analytics platform that
+delivers real-time interactive and
+intelligent insights into the business
+process and operational intelligence
+discovery bot an intelligent business
+solution for enterprise business that
+enables end users to discover automation
+opportunities through process discovery
+discovery board collaborates with
+business workers to identify automation
+opportunities that can maximize the
+return on your rpa investment
+what is an enterprise control room and
+how does it work
+the enterprise control room serves as a
+single point of management for all bots
+the enterprise control room manages
+schedules
+executes and configures various bots and
+bot runner capabilities using a
+collection of specialized web services
+the enterprise control room is placed on
+a server in the data center and
+configured to work with the other data
+center components
+explain the different type of bots in
+automation anywhere
+task bot task boards are used for
+automating repetitive tasks based on the
+rules
+these tasks are simple to create and can
+reliably complete multi-step procedures
+document administration claims
+management hr departments i.t and other
+areas benefit from task bots
+metabot metabots are more advanced
+version of task bots metabots are
+automation building components that help
+with next generation integration
+scalability
+these are intended for a scalable
+complex process
+on a computer metabots are used to
+automate applications
+iqbot iqbots are the next generation of
+intelligent bots
+with the ability to think like humans
+these bots are designed to learn on
+their own and carry out tasks in
+accordance with that learning
+iq bots also learn to recognize patterns
+so that the bot knows exactly what to do
+the next time the pattern appears with
+each human confirmation it learns and
+improves its ability to carry out the
+act
+explain briefly the architecture of
+automation anywhere
+automation anywhere platform is built
+using a distributed architecture the
+enterprise control room is a web-based
+platform that manages the development
+and execution of digital workforce and
+provides a centralized management
+bot creators and bot runners are linked
+to the enterprise control room
+bot creators are software development
+platforms for authorizing and
+customizing automations
+bot runners are runtime system deployed
+on machines that carry out the
+automations
+bot runners can be installed on desktops
+in data centers or in the cloud
+what is a bot creator
+a bot is a self-contained task that
+requires little to no human intervention
+to complete the bot creator is a
+customized development client for
+automation anywhere that is used to
+create bots
+task editor event watcher bot player
+auto login and local scheduler are all
+included
+the bot creator also includes the
+ability to create bots from a device
+utilizing the enterprise client
+application
+the device is registered with the
+enterprise control room after the bot
+creator user signs in for the first time
+and the user can deploy bots on that
+device
+what is a bot runner
+a bot runner has ability to run bots
+from a device utilizing the enterprise
+client application the device is
+registered with the enterprise control
+room after the bot runner user locks in
+for the first time and the user can
+deploy bots on that device
+bots are run by bot runner which is a
+software machine bot runners can run
+bots at a scale after they have been
+developed by the bot creator
+explain triggers in automation anywhere
+triggers integrate predefined events
+into your process reducing the amount of
+tasks that users must do repeatedly in
+automation anywhere you can use
+attendant automation to create unique
+triggers for numerous apps these
+triggers can then be used to launch a
+bot
+at triggers to have the bot execute
+automatically whenever a specified event
+occurs for instance pressing a specific
+key or series of key strokes
+explain the benefits of automation
+anywhere
+time saving an easy to use interface
+that allows users of varying skill
+levels to easily use the product and
+accelerate the learning process
+with instant web-based deployment you
+can get started with writing bots right
+away
+business adaptability
+automation anywhere provides regular
+updates ensuring that you are always up
+to date on any device anywhere it
+provides continuity of operations with
+high availability and disaster recovery
+low cost of ownership
+there is no need for additional
+infrastructure investment a unified
+platform for front office back office
+and employee applications
+it gives lower maintenance cost
+what are bought
+insights the analytics platform that
+delivers real-time interactive and
+intelligent insights into business
+process and operational intelligence
+bot insight takes a large amount of
+content level and productivity data
+generated by deployed bots and converts
+it into insights via automatically
+generated and customizable dashboards
+what are the different excel packages
+that automation anywhere offers
+automation anywhere offers three
+different excel packages
+excel advanced package it's utilized to
+automate actions involving the workbook
+worksheet rows columns and cells the
+system must have microsoft office
+installed the versions of microsoft
+office that are supported range from
+2016 to microsoft office 2019.
+excel basic package enables quick
+spreadsheet activities for dot xlsx
+files without requiring the msxl
+software to be installed
+office 365 excel it provides commands
+for working with excel online the office
+365 xl bundle includes actions that
+allow you to automate operations in
+microsoft excel online if you are using
+microsoft excel 365 via a web browser
+you can use the office 365 excel package
+to automate excel process
+let us look at the intermediate level
+questions
+explain functions of the following excel
+commands
+open spreadsheet
+allows to open the excel spreadsheet
+close spreadsheet closes a spreadsheet
+that was opened
+save spreadsheet saves a spreadsheet in
+an open workbook
+activate spreadsheet activates a
+specific spreadsheet in an open workbook
+it specifies whether to activate the
+sheet by index or sheet by name
+get cell allows to retrieve the values
+of a specific cell as well as the range
+of the cell
+set cell sets the value of the active
+cell or a specific cell in an excel
+spreadsheet
+you can assign a variable to the cell
+value
+go to cell move to a specific cell
+within a spreadsheet
+delete cell
+delete the value of a specific cell
+within a excel spreadsheet
+run excel macro
+runs a macro that is stored within an
+excel spreadsheet enter the macro name
+and specify the parameters of the macro
+arguments
+explain the types of triggers to start
+abort
+email
+in email trigger a bot is launched when
+a new email message arrives in the given
+email service
+such as microsoft outlook email server
+or ews server
+file and folder when a predefined file
+or folder event occurs it starts a bot
+as the trigger you can choose from the
+following options like when you make a
+new file or a folder or when a file or a
+folder that already exists gets
+destroyed or when you rename a file or a
+folder
+the next type is hotkey
+when a predetermined combination of
+keystrokes is performed on the keyboard
+a bot is launched
+as the trigger you can use any
+combination
+like control alt windows
+and escape are all control keys
+particular alphabetical characters are
+used in the key
+interface when a predetermined event
+occurs on the selected user interface
+element abort is launched
+some instances of pre-configured events
+are a button is pressed by the user or
+an application is opened or closed by
+the user a checkbox is selected or
+cleared by the user
+how to record the task with universal
+recorder
+step 1 create a new bot or open an
+existing bot
+then click on the start recording and
+select universal recording
+step 3 perform the required steps and
+click on finish
+step 4 edit the actions and click on
+save
+let's jump into the automation in our
+control room and see how to record the
+task with universal recorder
+so here we are in the control room we
+have created a new bot
+so let's search for a message box
+double click on the message box
+enter a message
+close message box after 5 seconds
+now go to start recording or you can
+press control plus r
+click on start recording
+and select the window which you want to
+record
+so
+i'll select the calculator
+and click on universal recorder
+and now you can perform actions
+so i'm adding the numbers
+um
+so i have randomly performed some
+actions now i'll click on finish and
+let's finish the
+recording
+now let us save and click on run
+so here you can see the message is
+displayed hello it will close in 5
+seconds and it has closed
+and the recording is been played
+and it shows the actions which we have
+recorded
+you can see your bot has run
+successfully
+how to clone a bot in automation
+anywhere
+create a read-only duplicate of the bot
+in the private workspace from the public
+workspace so you can have a local copy
+without checking it out
+step 1 login to the control room
+as a bot creator user
+and then in public space click bots the
+my bot page is displayed with the list
+of folders or files containing the bot
+then select the bot you want to clone
+click the actions menu and click clone
+task bot the clone bot appears in the
+same folder structure in the private
+workspace
+so let's jump into the automation in our
+control room and see how to clone a bot
+so this is the my bot folder
+so these are the bots which i have
+created
+so let's go to this python board select
+this bot and go to the options
+and
+click here copy task bot
+and here you can see a copy of that bot
+is been created and name the bot
+whatever you want so i'll keep the
+default name python board copy one and
+click on copy you can select the folder
+where you want to store it
+i have kept the default folders
+and here you can see python board copy
+one has been successfully created
+so that is how you clone a bot
+explain the following commands delay
+command weight command and task command
+the delay command is used to delay the
+execution of next command for a set
+length of time
+you have the option of specifying the
+time in milliseconds or seconds
+weight command the weight command is
+used to add a condition that forces the
+next set of actions to wait for the
+contents of a screen to change before
+proceeding
+task command
+task command is used to start a task
+within a task or pause it and stop it
+explain predefined variables in
+automation anywhere
+predefined variables are variables that
+provide specific information about the
+machine on which the bot is run
+the values of a preset variable cannot
+be changed by users
+below are the examples of predefined
+variables
+clipboard
+date and time
+string
+and system settings and parameters
+explain the date time predefined
+variables in automation anywhere
+using the datetime packages activities
+you can manipulate date and time
+variables
+date returns a date that includes the
+hours minutes and seconds
+day the day is written in date format
+r is a function that returns the rs in
+as format
+machine the device name is returned as a
+string by the machine
+millisecond millisecond returns a value
+between 0 and triple 9 milliseconds
+minute
+the minutes are returned in minute
+format
+month month is a function that returns
+the month in month format
+seconds the seconds are returned in
+seconds format
+year returns the current year in the
+year format
+how are loops used to control a bot in
+automation anywhere
+loops are one of the most powerful board
+building constructions loops are the
+instructions that repeat a set of
+actions a certain number of times or
+until a condition is met
+when a loop checks for the completion of
+a defined number of iterations or
+satisfaction of a condition
+if not satisfied the loop is executed
+the same conditions are checked
+repeatedly until the condition has been
+satisfied if the condition is satisfied
+then the loop is not being executed
+explain error handling and automation
+anywhere
+error handling in automation anywhere
+consists of the error handler package
+that comprises actions that make it
+simple to handle exceptions that abort
+encounters and pass control to the bot's
+other activities
+you can use the error handler actions to
+separate the actions that you can't use
+to complete a task from the actions or
+to handle an exception
+when a bot meets an error handling
+exceptions ensure that the work is
+complete
+how is automation anywhere different
+from uipath
+on the basis of single integrated
+automation platform automation anywhere
+provides intelligent automation platform
+like attended automation unattended
+automation intelligent document
+processing and many more
+whereas uipath requires third party
+products and integration to deliver a
+similar solution
+increasing installation and support
+complexity
+modern architecture automation anywhere
+provides efficient java based
+microservice architecture ensuring
+scalability reducing the cost of
+infrastructure and maintenance
+ui path on the other hand built on a
+legacy window workflow foundation with
+the last update released in 2012 the
+scalability is slow and difficult due to
+lack of modularity
+ease of use
+in automation anywhere the easy-to-use
+platform enables regular employees to
+create their own automation
+but uipath is targeted towards the
+developer community and needs more
+intervention from it and development
+team
+most secure and compliant
+automation anywhere
+provides the best in-class security
+standard whereas uipath has incomplete
+security certifications that create
+business and compliance risk
+easier to scale
+automation anywhere quickly scales to
+thousands of bots in front and back
+office no matter the type attended
+unattended or document processing
+ui paths architecture unable to scale
+horizontally and require to duplication
+of entire application for every service
+expansion
+quicker roi
+in automation anywhere the modern
+microservices architecture enables a
+platform to scale both vertically and
+horizontally delivering faster roi
+in ui path with most deployments limited
+to a single digit large scale
+deployments become difficult
+explain javascript package in automation
+anywhere the javascript package contains
+actions that allow a bot to run
+javascript
+on windows linux and unix-based devices
+these activities can launch javascript
+the javascript includes the following
+actions open
+this action opens a javascript file in
+automation anywhere
+close this action closes the session and
+specifies the same session name from the
+open action
+run javascript action runs a function
+within the java script
+now let us look at some of the advanced
+level automation anywhere interview
+questions
+how to write inline scripts using python
+command in automation anywhere
+step 1 create a new bot and step 2 drag
+and drop the following actions
+that is python script open
+execute function and python script close
+finally add a message box to display the
+result variable
+us go to the automation in our control
+room
+so i have already created a bot
+i'll open that bot
+search for the python script
+package
+from the python script package drag and
+drop the open function
+in the open function specify the session
+name if you already have an existing
+file on your device then select the
+import existing device and enter the
+file path
+or you can enter the input manually so i
+have entered the input manually in which
+i have defined a function
+function which i have named it as name
+and i have called an argument called
+string
+and i have returned that argument so
+select the python runtime version in my
+device python version 3 is installed so
+i have selected the three
+and then drag and drop the python script
+in this enter the session name and enter
+the name of function to be executed as
+you can see here in the previous open
+action i have entered the function name
+as
+name
+so and enter this in the python script
+action enter the name of the function
+then argument to the function create a
+variable so i have created a variable
+and named it as python variable
+so and i have assigned the value to this
+variable
+and i have assigned a value called
+thanks to this variable
+and then in the display message
+enter the variable which you had created
+so we had created
+the variable python variable and
+assigned it
+so enter the variable
+just second
+so select the variable and then close
+the message box after 10 seconds then
+once you open the python script then we
+have to close the python script as well
+and the session name should be the same
+so for in detail explanation and better
+understanding check out our tutorial on
+automation anywhere using python check
+out this video in which i have explained
+all the steps in detail how python is
+used in automation anyway
+so now we'll click on save and
+click on save
+and run this
+downloading
+dependencies downloading dependencies
+and here you go the message from the bot
+is being displayed as thanks this was
+the value which we had assigned to the
+variable
+and the window will close in 10 seconds
+how to create a credential in automation
+anywhere
+step 1 navigate to bots and go to the
+credentials section
+then enter the credential name and
+description for the configured
+credential
+then enter the attribute name and supply
+the description for the attribute then
+select the external keyword then select
+input standard or user provided set the
+security and click create credential
+let's go to the automation anywhere and
+create a credential
+in the control room
+go to manage
+in the manage you can see credentials
+click on credentials
+and if you if you go here you can see
+create credential click on create
+credential
+enter the credential name enter the
+credential description which is optional
+then scroll down
+and enter the attribute name
+whatever the attribute you want enter
+the attribute name and enter the
+description which is optional and
+provide the input either you can keep
+the input standard or user provided when
+you keep the input as user provided when
+the credential is added to the locker an
+email will be sent to the consumer of
+the locker so you will receive an email
+but we don't want to receive an email so
+we'll keep it as standard
+and enter the value
+so enter the value of the attribute
+which you are creating and you can keep
+the value it must when you keep it
+masked the value gets encrypted usually
+we use it for passwords when you enter
+the password we encrypt the value that
+is why we select mask and you can create
+the attribute like this and if you want
+you can create multiple attributes click
+on plus and you can create the multiple
+attributes once you have created the
+attributes then when you scroll up here
+you can see this option create
+credential this option will get enabled
+then you click on create credential and
+the credential gets created
+this is how you create a credential
+how to set up a locker and assign
+credentials
+step 1 create and assign roles step 2
+create a credential and step 3 create a
+locker
+so it is very simple let's go to the
+control room
+go to the credentials sections in this
+you can see the lockers option here go
+to lockers
+and
+click on create locker
+once you click on create blocker enter
+the locker name enter the description
+so in the credentials whatever
+credentials you have created will be
+shown here
+so i have already deposited this
+credential in the locker that is why it
+is disabled for me
+so once you have created the credential
+check this box select the credential and
+click here to deposit this credential in
+the locker once that is done go to the
+owners
+and
+select the owner
+so your owner email address will be
+shown here
+select that email address and deposit
+that in the locker once that is done go
+to managers this is optional and this
+manager is not enabled in the community
+edition
+and even the participants this is also
+not enabled in the community edition so
+skip these two steps and go to consumers
+and in consumers check the community
+edition user and deposit that in the
+locker
+once this much is done you can see this
+option create locker this option will
+get enabled
+so click on create locker and the
+blocker will get created check out my
+previous video on automation anywhere
+excel operations in which i have shown
+how to create a credential and how to
+create a locker in detail
+create a bot to login web page using
+automation anywhere actions using the
+above question are as follows
+we will use the browser package that
+contains actions that enable you to
+download files find broken lines and
+launch a website
+it contains a capture action from the
+recorder package to capture an
+interaction with the user interface
+object such as text box button table etc
+let's go to the automation anywhere
+control room and create a bot to log in
+web page using automation anywhere
+so this is the login bot which i have
+already created you can check out our
+automation anywhere tutorial in which i
+have detailedly explained each step
+how to create a bot to login inside any
+web page
+so basically in this we are using a
+browser action
+in the browser action we will open it in
+the new window
+will browse in the google chrome you can
+select whichever you want
+for now i have selected google chrome
+and select the link to open
+so in this project i will login inside
+the simply learns webpage
+so for that i have selected the link
+that is the
+link in the simply lens
+so go to the simply lens web page go to
+the login page
+and i have copied this link of the login
+page
+so i have pasted the link to open here
+then i have used the recorder package
+from the recorder package i have used
+the capture action in which in the first
+action i'll capture the email address in
+the second capture action i'll capture
+the password in the third capture action
+i'll click on the login button
+so i have captured this three action
+so let us save and click on run
+here you go it has opened the webpage in
+the new window
+so entering the email address password
+and clicking on the login button
+and it has logged it inside the simply
+learns webpage
+and your bot has run successfully
+create a bot to merge two data tables
+from a different excel sheets into a new
+sheet
+so to merge two data tables together in
+a single data table in automation
+anywhere we use merge action from the
+data table package
+so let's go to automation anywhere so i
+have the two excel files file one and
+file two so in file one i have
+six rows
+of employee names and salaries
+in file two i have five rows of salary
+of salaries and employee names so i'll
+merge both these tables into a new excel
+sheet
+so for that
+let us go to
+let us go to the automation anywhere
+control room you can check out our
+automations anywhere excel operations
+videos in which we have explained all
+the excel operations and actions in
+detail
+in step one i have selected the file one
+that is i have opened the excel file one
+and assigned it to get multiple cell
+actions and close the file similarly in
+step 2 i have opened the file to and
+similarly assign the get multiple cells
+and close the file tool then from the
+data table package
+from the data table package i have used
+this merged action this merges two data
+tables together in a single data table
+so i have used this
+so i have used this action so
+i'll disable the
+other actions click on save and run the
+file
+so the excel bot is running
+and a new file name named as result will
+be created on the desktop
+so the bot has run successfully
+let us go to the desktop and see the
+result file which got created let us
+open this file
+and here you can see both the data
+tables have been merged into a new excel
+files
+six first six rows from the file one and
+the next five rows from the file tool
+have been merged into a single data
+table
+how to remove duplicate rows from a data
+table in automation anywhere
+to remove duplicate rows from the data
+table use remove duplicate rows action
+from the data table package
+as you can see in this data table there
+there is a duplicate row named john
+which is repeated twice
+so let us go to automation anywhere
+and perform action to remove this
+duplicate rows
+so let us close this so if you go to the
+data table action here you can see
+remove duplicate rows so double click on
+this and then you will get the double
+click on remove duplicate rows and in do
+remove duplicate rows select the data
+table name
+so
+i'm selecting the data variable which i
+had created so just specify the data
+table name and the automation anywhere
+will remove the duplicate rows so let us
+click on save and
+let us run
+here you can see the excel bot is
+running
+it is opening both the excel files it is
+checking for duplicate rows and your bot
+has successfully run so let us close
+this and go to desktop
+and here you can see the duplicate row
+has been deleted so there was one more
+duplicate row with the name john
+so that row has been deleted so this is
+how you delete duplicate rows in
+automation
+from the excel from the data table the
+last question
+how to sort data in the data table using
+automation anywhere
+to sort data in a data table automation
+anywhere provides a sort action from the
+data table package
+so if you look at this data table you
+can see the salaries column
+the salaries is not sorted so we'll sort
+the salary scholar in the descending
+order
+the employee with the highest salary
+will be at the top and the employee with
+the lowest salary will be at the bottom
+so let's close this
+and we'll enable this sort data action
+so what you have to do is select sort
+data
+action from the data table package
+once you select this specify the data
+table name and the column name so we
+want to sort the column salaries
+then select the order in which you want
+to sort we'll sort it in the descending
+order
+click on save and click on run
+here you can see deploying to the
+computer downloading the dependencies
+and the bot is running
+so your bot has run successfully let's
+go to desktop and open the file results
+and here you can see the data is sorted
+in the descending order the employee
+with the highest salary is at the top
+similarly in the decreasing order the
+employee with the lowest salary is at
+the bottom
+so with that we have reached the end of
+this video like and share it if you
+found it interesting and thank you for
+being here keep learning and stay tuned
+to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

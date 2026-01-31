@@ -1,0 +1,106 @@
+hey everyone welcome to Simply learns
+YouTube channel in this session we will
+be learning AutoFill in Excel but before
+we begin let me tell you guys that we
+have daily updates on multiple
+Technologies so if you're a tech gig in
+a continuous hunt for latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply Lear so without further Ado let's
+get started with our onepoint agenda
+that is AutoFill in
+Excel now AutoFill in Excel is a feature
+where you can add some series
+automatically using Excel for example
+let us imagine that you wanted to add
+index numbers right so starting from 1
+to 10 so manually you will be typing in
+the numbers and you'll be doing it right
+so instead of this what if I said you
+there was a simple way where Excel will
+fill all the data for you right so just
+start with one 2 and select these two
+cells and you can see the flash logo
+over here right so that's the indication
+that Excel has understood your pattern
+and it is ready to fill the remaining
+numbers so as long as you drag this logo
+or that ending part where you have a
+small square box that will fill all the
+numbers until where you have tracked so
+that's how autofill works and you might
+be wondering will it work only for
+numbers no it will also work on some
+Logics as well okay this was the first
+part let us also look at some other
+tricks with autofill now most of the
+time you might be just adding one number
+and try to drag that cell and the result
+is it'll copy the same number all the
+time right so you can change it by
+clicking on this menu you can click on
+fill series and it will change to series
+and this was one more trick with numbers
+now getting back to the next type so let
+us imagine now the next type of series
+you want to add is weeks in a day right
+so you'll be having
+Monday Tuesday Wednesday right so you
+can also do the series of week days
+using autofill and Excel as well so drag
+that cell and it will give you all the
+days or week days in a week now let's
+try
+January and this will will give you the
+months in a
+year in the shortcut TOA right since you
+just added the first three letters of
+the month it will recognize the pattern
+and it will do the same for you now let
+us try the full names of
+months right and now let's try to drag
+it it'll fill all the full names of all
+the
+months now let's try the dates so let us
+imagine that this is the first day of
+the current year
+right it will now give you all the dates
+of that current month or until the end
+of the year as
+well there you
+go now let us imagine that your manager
+tells you to add the dates of working
+days in the month of January so how can
+you do that it's simple all you need to
+do is select the cell go to the fill
+option select series and here select
+column wise since you w the dates and
+columns and here in the type select date
+date unit should be weekday and the stop
+value should be the next month right
+since your manager asked for the week
+days of January so your stop value will
+be the 1st of February press okay and
+there you go so since the 1st of January
+is Friday it's selected over here and
+the rest to Saturday and Sunday are
+eliminated similarly we have all the
+dates here of working days only so
+that's how you use AutoFill in Excel and
+with that we have come to an end of this
+session on AutoFill in Excel if you have
+any queries regarding any of the topics
+covered in the session then please feel
+free to let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+your queries at the earliest until next
+time thank you stay safe and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

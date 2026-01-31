@@ -1,0 +1,109 @@
+hi I'm Donovan Brown DevOps manager for
+Microsoft I'd like to introduce you to
+Azure test plans manual testing can be a
+key testing technique to delivering a
+great user experience as your test plan
+offers the features you need to manage
+your testing effort from manual and
+exploratory testing to load and stress
+testing let's jump right in and let me
+show you how you can get started to
+begin with manual testing I'm going to
+start right here on the landing page of
+dev Asia calm I know which project I
+want to start testing with so from here
+I can click on the test link this is
+going to take me to my test plans before
+you can add test cases you have to
+create a test plan simply click this
+link and enter a name a test plan is
+made up of configurations test Suites
+and test cases which can be broken down
+into shared test steps and use
+parameters let's begin by adding
+configurations upon which we intend to
+run our tests to add a configuration
+click the configurations link and the
+left navigation here you can review all
+your configurations and configuration
+variables we're going to be testing a
+web application using Chrome and edge
+both from Windows 10 we can edit the
+existing windows configuration and add
+the browser configuration variable and
+set it to Chrome
+now save the changes and let's add a
+second configuration for Windows 10 and
+edge
+you
+if we need to track additional
+attributes of our configurations we
+could add additional configuration
+variables and the valid list of values
+we can then add them to our
+configurations but for now OS and
+browser are all we need test
+configurations can be assigned to the
+entire test plan or individual test
+Suites and even test cases assigning a
+test configuration to the entire test
+plan will ensure all test cases added
+are automatically assign to those
+configurations setting up your
+configurations first and associating
+them with your test plan makes creating
+your test matrix snap with our
+configuration set we can now start
+adding test Suites which are collections
+of test cases there are three different
+types of test Suites static requirement
+based and query based a static suite is
+a logical container where you can add
+any test cases you like when creating a
+static test suite you just add a name
+a requirement based test suite is where
+you associate your test cases to a work
+item to define its acceptance criteria
+this linkage will be visible even
+outside of your test plan
+the final type is a query based suite
+where you create a work item query to
+select which test cases to include any
+test cases that meet these criteria will
+automatically be added to the test suite
+let's edit a test case to see what they
+are made of you have the steps to
+execute in any expected results steps
+that are repeated often can be extracted
+as shared steps to ease with tests
+maintenance lets associate the new
+configuration to our test case once we
+do you will notice our test case is now
+listed twice once for each configuration
+now we can run our test case and collect
+the results notice that we can test web
+applications and desktop applications as
+well with the test runner being
+web-based we can execute our test
+anywhere including on a mobile device
+now we simply follow the steps and pass
+or fail them based on what we observe
+the first step instructs the tester to
+open the admin page
+then open the security page and finally
+click members to see if Stephen is shown
+as we can see my name is the only one
+listed so therefore this test step has
+failed I'm able to leave a comment and
+even follow bug
+notice that the bug already has the
+steps to repo filled in from the test
+case
+once I stopped testing my test status is
+updated and I can continue with
+additional testing
+from the runs page I can review all my
+previous test runs
+before I go I want to encourage you to
+visit Docs Microsoft comm to learn more
+about manual testing

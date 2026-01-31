@@ -1,0 +1,152 @@
+hey everyone i welcome you all to this
+session in this session we will learn
+everything we need to know about the
+asp.net architecture
+first let's have a look at the agenda
+for this session
+we shall begin with learning the basics
+of asp.net
+then we shall go on to learn the asp.net
+architecture
+after the architecture we shall focus on
+the components and the characteristics
+of asp.net
+but before we begin make sure you're
+subscribed to our youtube channel and
+click on the bell icon so you never miss
+an update from simply learn
+so without any further ado let's get
+started with what is asp.net
+asp.net is a server-side technology used
+for developing dynamic web applications
+it is the latest version of the active
+server pages
+active server pages is a server-side
+scripting language and engine used for
+developing web applications
+it is essentially a web-based platform
+that helps to create dynamic web pages
+for programmers
+asp.net produces interactive data-driven
+web applications on the internet
+it works on http protocols and uses http
+commands to set communication between
+the server and the browser
+the codes can be written in many
+different languages like c-sharp visual
+studio and javascript
+the latest version of asp.net is the
+active server pages which microsoft
+developed to build websites it was
+released in 2002 and had an extension of
+dot aspx
+asp.net consists of a large number of
+controls such as text boxes buttons and
+labels for assembling
+it produces interactive data-driven web
+applications on the internet which helps
+to build websites and web applications
+in a better and colorful way
+now when we know what is asp.net let's
+have a look at the architecture of
+asp.net
+asp.net architecture
+consists of three different components
+the first component is language
+then comes library and finally comes the
+common language runtime
+moving forward we shall learn about
+these three components one after the
+another the first component we have
+is language
+whenever we build an application the
+first task is to communicate with the
+application which is made possible by
+different programming languages
+the three major languages that asp.net
+uses to communicate with a computer
+are c sharp vb.net and f-sharp
+the second component is the library
+library is a pre-written class or a
+coded template that a developer can use
+while developing an application
+the most common library used for asp.net
+web applications is the web library
+web library is a part of a website that
+offers a collection of websites when
+users browse
+it possesses all the properties that
+help in building a web application
+the third and last integral component is
+the common language runtime
+common language runtime is a platform
+used to execute the programs
+common language runtime mainly helps to
+execute dot net programs and it is also
+used for performing key activities like
+garbage collection and exception
+handling
+the code that the common language
+runtime directly manages is called the
+managed code
+now when we know about the architecture
+and its components let's have a look at
+some of the characteristics of asp.net
+here we shall see five characteristics
+of asp.net
+beginning with code behind model
+then we have directives followed by
+caching and after caching we have user
+controls and state management
+let's have a look at all these
+characteristics one by one
+beginning with the code behind model
+characteristic
+code behind model helps in dealing with
+dynamic programming code
+it also helps to place code in a
+separate designated script or a specific
+file named as mypage.aspx.cs
+while the main page file is mypage.aspx
+code behind model also helps to create
+applications with different content the
+second characteristic is directives
+directives act like a support to the
+pages it gives support by providing
+special instructions to the developer on
+how a page should be processed
+directives also specify and enable the
+attribute to show how an application
+should be used
+then comes the third characteristic and
+that is caching
+caching helps in improving the
+performance of an application which
+helps a user to use an application more
+efficiently
+it also helps to store page requests of
+the user in a temporary location
+the fourth characteristic is user
+controls
+the sections of pages that are
+registered and used as controls are
+called as the user controls
+user controls also create markup files
+that contain static html markup and
+server side web controls
+the fifth and final characteristic is
+the state management characteristic
+asp.net provides state management which
+helps to store the state of every user
+by providing the state of every user
+it becomes easy to use asp.net
+applications
+and this was all for today's session i
+hope you guys found it informative and
+helpful thanks for watching and stay
+tuned for more from simplylearn
+hi there if you like this video
+subscribe to the simplylearn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

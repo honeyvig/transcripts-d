@@ -1,0 +1,512 @@
+machine learning's major purpose is to
+train models and anticipate outcomes
+that may be used by applications
+scripts are used in azure machine
+learning to train models using machine
+learning frameworks
+that enable us to quickly operationalize
+diverse machine learning jobs and
+iterative processes
+by leveraging microsoft azure's massive
+computational power
+but knowing this much is not enough and
+therefore here we are
+so hello everyone welcome to this new
+video of simply learn on azure machine
+learning
+in this video we'll go through azure
+machine learning in detail including its
+capabilities the azure ecosystem that
+supports machine learning
+and the various ways we train and build
+models
+starting with
+what is azure machine learning followed
+by who is machine learning for
+then we will look into its
+infrastructure readiness and security
+then we will dive into machine learning
+project workflow
+following that we will understand ml ops
+devops for machine learning and at last
+we will explore the azure machine
+learning studio
+after that we will have a demo too
+so without doing any further delay let's
+start with the video
+so what is azure machine learning
+azure machine learning is a cloud
+solution that helps you speed up and
+manage your machine learning projects it
+can be used by machine learning
+specialists data scientists and
+engineers in the daily workflows
+models are trained and deployed and
+mlops are managed
+you can use an open source platform like
+pytorch tensorflow or scikit-learn to
+build a model or use one created in
+azure machine learning
+model monitoring retraining and
+redeployment are all made easier using
+these tools
+but this brings us to a question
+that who exactly machine learning is for
+so individuals and teams deploying mlops
+inside their company can use azure
+machine learning to move machine
+learning models into production in a
+safe and auditable environment
+data scientist and machine learning
+experts will find tools to help them
+speed up and automate their daily tasks
+tools for embedding models into
+applications or services will be
+available to application developers
+platform developers will find a strong
+set of tools for constructing advanced
+ml technology
+underpinned by resilient as as all
+resource manager apis
+now that we know the basics of azure ml
+let's have a look at its infrastructure
+readiness and security
+so azure machine learning is an azure
+cloud platform that adds security
+to machine learning projects
+so integrations for security include the
+following
+network security groups in azure virtual
+networks
+azure keyword is a world where you may
+store security secrets like storage
+account access details
+and set up an azure container registry
+behind the v-net
+so now let's dive down deep and explore
+its project workflow
+models are usually created as part of
+project with a specific goal and
+objective multiple people are usually
+involved in these projects iterative
+development is used while experimenting
+with data algorithms
+and models
+now coming to the project life
+cycle while the project lifespan will
+differ depending on the project it will
+typically look like this
+a workspeed space organizes a project
+and facilitate collaboration among
+multiple users who are all working
+toward the same goal
+users in a workspace may easily share
+the result of the experiments through
+the studio user interface
+or they can use versioned assets for
+jobs like environments and storage
+references
+so users work can be automated in a
+machine learning pipeline and activated
+on a timetable or https request when a
+project is ready for operation
+therefore
+models can be deployed to the manage
+interferencing
+solution in real time or batch
+abstracting away the infrastructure
+management that is traditionally
+necessary for model deployment
+now let's proceed further and understand
+the concept of mlops that is
+devops for machine learning
+mlops or devops for machine learning is
+a process for generating models for
+production use
+if not
+reproducible the lifetime of a model
+from training to deployment must be
+auditable
+mlops or machine learning operations is
+based on devops principles
+and methods to improve workflow
+efficiency
+continuous integration delivery and
+deployment for example
+these ideas are applied to the machine
+learning process by mlops with the
+purpose of experimentation and model
+deployment can be done more quickly and
+quality assurance and end-to-end lineage
+tracking are more efficient ways to put
+models into production
+now
+let's explore what is azure ml studio
+so azure machine learning studio is an
+online service that includes low code
+and no code alternators for project
+development and asset management in
+azure machine learning
+basically it is a workspace where you
+can create build train the machine
+learning models
+for an inclusive data science platform
+the studio integrates no code and no
+code first experience
+so now that we have covered all the
+important concepts of azure machine
+learning
+let's have a demo for a better
+understanding of how machine learning is
+used in azure
+so let's start with the demo first you
+need to browse the link
+studio.azureml.net
+and here you need to log in with your
+azure account
+so once you have logged in you will be
+led to a new window
+this is your window here you can see a
+few options
+so
+let's start
+and see one by one what these options
+are
+so the first one is projects
+basically this gives you a list of all
+the experiments that you have already
+worked on so here you can see we haven't
+worked on any experiment yet
+then comes uh experiment
+experiments are all the programs and
+codes that you have worked on to create
+it or deploy a model that you've just
+created for an experiment
+so as i said we haven't created any
+experiment yet so the list is
+null over here
+when you click on samples you can see a
+few
+sample experiments provided to you by
+azure
+portal by default
+and
+following that we have web services
+so we all know since azure is a cloud
+computing platform so all the data
+gathered from our experiments needs to
+be uploaded to the cloud
+so web services gives you a list of all
+the experiments that you have in the
+cloud so you can access them from
+anywhere
+so uh
+when you create an experiment and work
+on it when you add it to the cloud the
+data is stored here
+so then comes data sets
+it gives you all the data sets you have
+in your azure portal when you click on
+the samples option
+again you can see all this data sets
+provided to you
+by default in your azure portal
+then comes train models
+so while working on an experiment you
+will come across a point where you need
+to train your model
+so basically this gives you a list of
+all the models that you have trained in
+experiments or azure programs
+and in the last come settings
+any changes that you want to make to
+your workspace is done under settings
+here you can see
+this is your workspace name workspace
+description which is by default
+and all the details is provided
+here only so whatever changes you want
+to make your workspace
+you will be doing this over here
+so now let's start with a demo
+so down below you can see the add or new
+option here
+so click on it
+and then you can see there are a few way
+uh templates provided by you
+provided to you by azure itself so we'll
+click on blank experiment
+once you click on the blank experiments
+uh you'll be guided to a new experiment
+window
+so this is the new window and this
+window is divided into three parts
+these are the components
+where you will plan your model
+this is the canvas to design your model
+and then the properties of the model
+in the components section you can see
+samples already present there so you can
+select any one of them according to your
+requirement
+so here when i'm typing samples
+uh
+i'll work on airport quotes datasets so
+i just need to drag this option over
+here
+but before starting
+with our experiment let's change the
+name
+so here i'm changing it to
+airport
+codes
+demo model
+so now you can see the name of the
+experiment is changed
+now when you click on it
+and
+select visualize
+just a second
+you can see the number of rows and
+columns provided to it the data which is
+required
+for its data set to be created and for
+its model to be created
+so the four rows who columns are airport
+id
+city state and name
+now
+we will move towards the part where we
+define field we need to make a
+predictions for
+so type columns in the search
+bar
+uh under manipulation
+section
+you can
+see there are multiple options provided
+to you
+so here we will select
+select columns and data sets
+as we are working on data sets
+now connect your data set with this
+option
+so you can see a red alert over here
+so
+when you click on it
+you can see it is asking for values in
+your data set so to add values
+click on the launch column selector
+under properties
+section
+so once you click on it here you need to
+select all the options
+needed per required values so for my
+experiment model i need all these data
+sets so i'll add
+all of these and then click on the save
+option
+so let me just add this
+now i have saved
+all the
+values i need in our in my data set
+so now
+you can see the alert is
+gone
+so now we have the data sets that we
+want to work on so let's look for an
+appropriate algorithm for it
+so
+while looking into the classification
+algorithm
+we
+know that our
+so here you can see it under
+classification model we have
+these options
+so we know that our target value is
+divided into two classifications so the
+algorithm we will be using
+is a
+two class
+so we will be using two class booster
+decision tree
+because it calculates the accuracy for
+every mode and once the calculated
+accuracy is more than a required
+accuracy then only it moves to the next
+node
+so basically this gives you a prediction
+value close to the accurate value of the
+model
+so we will just drag this option over
+here
+so now the next step we have is to train
+our model
+so we just need to type train over here
+and select train model option
+so
+just
+drag it to the canvas
+now connect the two booster decision
+tree to the train model
+now you can again see the red alert for
+required
+data as it doesn't have any data to work
+on so our next step is to
+split the data
+so we'll type split
+and drag display data option on our
+canvas
+as you can see this is also
+saying
+it needs an input port data set so we'll
+connect a data set
+with it so
+that it is provided with the
+data
+so when you click on it you can see it
+it is asking for a split percentage
+so you split the data into training and
+testing where 80 goes to training and 20
+to testing so we will mention 0.08 over
+here
+and
+so
+now we will just connect the 80 data to
+the train model
+as we
+said the 80 goes for training
+but you can still see the alert in the
+train model because it is not aware of
+the column
+it needs to train on
+so we will click on
+column selector
+now you just need to select all the
+columns
+you need to work on so i'm selecting the
+airport id number
+now you can see
+once i save it
+that the alert is gone
+now our next step is to find the score
+of a model so let's type score
+in our search bar
+and drag the score model over
+here
+let me just reduce the size of the
+canvas yeah
+so we will just connect our train model
+to the score model
+so again you will see the red alert as
+it doesn't know the data it needs to
+test on so for that we will connect the
+remaining testing data in the split data
+option to the
+score model
+now you can see the alert option is gone
+now coming to the final step that is
+evaluation of the model so let's type
+evaluation
+and here you can see the evaluate model
+option you just need to drag it to the
+canvas
+so
+let's
+connect it with our score model
+now your model for the app port code
+data set is complete so this is the
+whole
+model
+now you need to save the model and then
+click on run option
+so here i have saved it
+and you can see it's running
+you can see the model running and going
+through every node
+as you can see the green mark
+as it's verifying through every node
+so once it's done click on evaluate
+model
+and
+then click on visualize
+now you can see the accuracy is a
+98.
+you know you can see the accuracy is 98
+which is almost the prediction value now
+you can see the positive and negative
+labels as well
+so this whole data is known as confusion
+matrix
+now for the values close to the pos
+positive label it gives me the number of
+true predictions
+that uh the number of data i'll provide
+it will it shows that
+72 predictions will be right and one
+will be
+wrong
+now let's go back and
+run this model over the web
+so by clicking on uh setup web service
+we will click on predictive web service
+now we will just connect web service
+input to the score model
+so that once the program is uploaded to
+the cloud it is directly connected to
+the score model
+and gives us the
+output
+so now you need to save this
+and
+run
+this will execute the entire model
+now
+all uh we are
+left with is deploying the model
+now
+we just need to click
+on deploy web service
+so then you will see you will be taken
+to a new window
+here you can
+see
+the response page where it's showing
+test option you need to click on it
+so here you can see a new window has
+popped up so you just need to mention
+the details like for city i am
+mentioning bangalore
+for state i am mentioning karnataka
+our name of the airport is
+campagoda
+international
+airport
+and i just need to save this data
+so now down below you can see it gives
+me predictive values
+and this is the airport id
+for my mentioned details so the accuracy
+of this id will be 0.98 which is 98
+percent
+which is almost accurate to 100 percent
+so this was our experiment and this is
+how we can use ml in azure thank you
+well this was all about azure machine
+learning i hope you find this with your
+informative now we have almost reached
+the end of this video if i missed
+anything important do let me know in the
+comments section i hope you enjoyed this
+video on azure machine learning and
+learn something new from it if you like
+this video then please do hit the like
+button thanks for watching this video
+and stay tuned for more updates and
+videos from simplyload
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

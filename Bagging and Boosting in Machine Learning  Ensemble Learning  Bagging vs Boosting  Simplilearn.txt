@@ -1,0 +1,246 @@
+in the vast landscape of machine
+learning where algorithms strive to
+unlock the Mysteries hidden within vast
+data sets a powerful technique emerges
+and sber learning like a symphony of
+Minds working in Harmony and sber
+learning combines the diverse
+perspectives of multiple models to
+create an entity greater than the sum of
+its parts just as a conductor unifies
+musicians to create a captivating Melody
+emble learning or castrates the
+collective intelligence of individual
+Learners producing predictions of unpar
+accuracy and robustness drawing
+inspiration from the wisdom of crowds
+this captivating approach explores the
+art of collaboration among algorithms
+leading us to a world where the whole
+truly surpasses the individual in the
+pursuit of knowledge according to recent
+studies Ai and machine learning related
+job postings have increased by 344 in
+past 5 years companies across the globe
+are actively seeking professionals who
+can harness the power of data and build
+intelligent systems the average salary
+is
+$150,000 in the US and 15 lakhs perom in
+India so if you want to become an expert
+a ml professional with this pgp in Ai
+and ml that is delivered in partnership
+with IBM this artificial intelligence
+course CES the latest tools and
+Technologies from the AI ecosystem and
+features master classes by keltech
+faculty and IBM experts hackathon and
+ask me anything sessions this program
+showcases celex ctm's excellence and
+IBM's industry progress the artificial
+intelligence course course course key
+Concepts like statistics data science
+with python machine learning deep
+learning NLP and reinforcement learning
+through an Interactive Learning model
+with live sessions enroll now and unlock
+exciting AI ml opportunities the course
+link is mentioned in the description box
+below with that having said hey everyone
+welcome to Simply L YouTube channel but
+before we dive into that don't forget to
+like subscribe and share and in this
+video we'll cover topics like what is
+Ensemble learning and after that we look
+what is bagging and boosting following
+that we'll cover steps to perform
+bagging and boosting after this we'll
+look at some advantages of bagging and
+boosting and at last we'll see the
+difference between bagging and boosting
+so without any further Ado let's get
+started and we'll start with what is
+Ensemble learning the emble methods in
+machine learning combines the insights
+obtained from multiple learning models
+to facilitate accurate and improve
+decisions Ensemble learning enhances
+machine learning outcomes by combining
+multiple models leading to Superior
+predictive performance in contrast to
+using a single model the fundamental
+concept involves training a group of
+classifiers referred to as experts
+enabling them to collectively make
+predictions through voting bagging and
+boosting represent two types of Ensemble
+learning techniques both methods
+effectively reduce the variability
+inherent in a single estimate by
+combining multiple estimates from
+diverse models consequently the outcome
+can be a more stable model let's first
+take a look at some real world examples
+that will simplify the concepts that are
+at the core of Ensemble learning example
+one if you're planning to buy an air
+conditioner would you enter a showroom
+and buy the air conditioner that the
+salesperson show you the answer is
+probably no in this day and age you are
+likely to ask your friends family and
+colleagues for an opinion do research
+and on various portals about different
+models and visit a few review sites
+before making a purchase decision in a
+nutshell you would not come to a
+conclusion directly instead you would
+try to make a informed decision after
+considering diverse opinions and reviews
+and moving forward let's see what is
+bagging and after that we'll cover what
+is boosting machine learning so we'll
+start with what is bagging bagging also
+known as bootstrap aggregating it's an
+assemble learning technique that helps
+to improve the performance and accuracy
+of machine learning algorithms it is
+used to deal with bias variance
+tradeoffs and reduces the variance of a
+prediction model bagging avoids
+overfitting of data and is used for both
+regression and classification models
+especially for decision tree algorithms
+now we'll see steps to perform
+bagging so first consider there are n
+observations and M features in the
+training set you need to select a r
+random sample from the training data set
+without a replacement and then you have
+a subset of M features that is chosen
+randomly to create a model using sample
+observations the feature offering the
+best split out of the lot is used to
+split the nodes the tree is grown so you
+have the best root nodes and the above
+steps are repeated and
+times it Aggregates the output of
+individual decision trees to give the
+best predic
+so these are the steps to perform
+bagging now we'll move to advantages of
+bagging in machine
+learning so the First Advantage is
+begging minimizes the overfitting of
+data the next is it improves the model's
+accuracy and the third Advantage is it
+deals with higher dimensional data
+efficiently and now we'll see what is
+boosting in machine learning after
+seeing the advantages of bagging now
+we'll move to boosting so boosting is an
+assemble modeling method that aims to
+create a robust classifier by combining
+multiple V classifiers this technique
+involves constructing a sequence of
+models using weak models initially a
+model is built using the training data
+subsequently a second model is
+constructed which seeks to rectify the
+errors made by the first model this
+process is iterated with additional
+models being added until either the
+entire training data set is accurate L
+predicted or the maximum number of
+models is reached now we'll see steps to
+perform
+boosting the training process for
+boosting models varies depending on the
+specific boosting algorithm employed
+however in general an algorithm follows
+these steps to train a boosting model
+now we'll see those steps and the first
+step is the boosting algorithm initially
+assigns equal weight to each data sample
+it then feeds the data into the first
+base algorithm also known as the base
+model the base model generates
+predictions for each data sample and
+then we have the step two the boosting
+algorithm evaluates the predictions made
+by the base model and increases the
+weights of samples with larger errors it
+also assigns weight based on the
+performance of the model a model that
+produces more accurate predictions will
+have a greater influence on the final
+decision and then we have the step three
+the algorithm passes the weighted data
+to the next iteration which typically
+involves training another decision tree
+or model then we have the step four the
+algorithm repeats step two step three
+iteratively until the training errors
+Falls below a specific threshold or
+until a predefined stopping Criterion is
+met now we'll see the advantages of
+boosting the First Advantage is it
+effectively handles data sets with
+higher dimensions and the other
+advantages it effectively handles
+missing values and maintains accuracy
+even with in complete data now this is
+the time to see the difference between
+bagging and boosting so we'll start with
+bagging so randomly selected subsets of
+training data that are drawn with the
+displacement from the entire training
+data set and in boosting every new
+subset includes the elements that were
+incorrectly classified by preceding
+models and the next difference is
+backing aims to address the problem of
+of overfitting and in boosting it aims
+to minimize bias and if we talk about
+the begging when the classifier exhibits
+instability with high variance the
+application of bagging becomes necessary
+and in boosting when the classifier is
+stable and straightforward indicating
+High bias the application of boosting
+becomes necessary and in bagging each
+model is assigned an equal weight
+whereas in boosting the model are
+assigned weights based on their
+performance and in bagging the objectiv
+is to reduce variance rather than bias
+and while in boosting the objective is
+to reduce bias rather than variance and
+with that we have come to the end of
+this session if you have any doubts
+please feel free to comment down in the
+comment section and our instructors
+would be happy to help you till then
+stay safe keep learning and get ahead
+staying ahead in your career requires
+continuous Le learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

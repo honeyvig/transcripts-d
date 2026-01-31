@@ -1,0 +1,1160 @@
+hello everyone welcome to an amazing
+video of simply learn on azure devops
+this video will help you understand the
+use of devops in azure as well as it
+will help you explore the in-depth
+services and features provided to you by
+azure devops so without doing any
+further ado let's start with the video
+but before moving ahead please do
+subscribe to our youtube channel and hit
+the bell icon for more updates from
+simply learn
+so let's see what we are going to cover
+in this video
+first we will understand what is azure
+devops
+followed by features of azure devops
+then we will dive into and explore azure
+develop services followed by azure
+develop server and then we will look
+into the azure develop services and
+azure develop server differences
+and at last we will explore azure
+develops labs with proper demonstration
+so let's get started
+so what is azure devops azure devops
+enables teams to organize work
+collaborate on code development and
+build and deploy applications using
+developer services
+azure develops the culture and set of
+protocols that brings together
+developers project managers and
+contributors to collaborate on software
+development it enables businesses to
+create and enhance products more quickly
+than they could with additional software
+development methods you can use azure
+devops services in the cloud or azure
+develop server on premises
+azure devops has built-in functionality
+that you may access via a web browser or
+an id client depending on your business
+needs you can use one or more of the
+following standalone services
+azure repos azure develops a building
+functionality so for source management
+of your code azure repos
+offer git repositories or team
+foundation version control
+azure pipelines build and release
+services provided by azure pipelines to
+assess continuous integration and
+delivery of your applications
+azure boards
+using kanban and scrum methodologies
+azure boards provides a set of agile
+tools for planning and tracking for code
+bugs and issues
+as your test plans manual and
+exploratory testing and continuous
+testing are among the options available
+in azure test plans for testing your
+applications
+and at last azure artifacts this allows
+teams to share packages from public and
+private sources including
+marvin npm nuget and more and
+incorporate packet sharing into their
+pipelines so this brings us to the
+features of devops
+first we have is dashboard control you
+can rapidly navigate to different
+regions of the project build and manage
+dashboards and set dashboard widgets
+using the devops dashboard functionality
+then we have improved source control git
+and team foundation version control a
+centralized client server system which
+are two prominent methods of source
+control supported by azure develop
+solution to observe change history you
+can add and manage azure git tags
+reviews downloads and modify files
+following that we have planned and
+tracked your work you can utilize azure
+devops systems to track features
+requirements user stories tasks issues
+and more using a variety of work items
+then we have integrated collaboration
+servers the tool that allows teams to
+collaborate throughout the whole azure
+develops feature set including team
+dashboards project wiki discussion
+within work item forms and many others
+then we have support for exploratory
+testing manual exploratory and
+continuous testing are made easier with
+azure develop which include workflow
+customization end-to-end traceability
+criteria-based selection and real-time
+visualization that show the test
+activities and at last comes continuous
+integration and deployment many
+developers use cicd and azure devops
+makes it so easy to do so developers may
+automate various design activities with
+azure pipelines including defining and
+building association steps writing test
+instructions and managing simultaneous
+releases
+well this brings us to azure develop
+services
+you get an integrated set of services
+and tools with azure develops to manage
+your software project from planning to
+development to testing and deployment a
+client or server model is used to
+deliver these services many of them are
+offered via a user friendly web
+interface that works with all major
+browsers the source control bill
+pipelines and work tracking are just a
+few of the services that may be managed
+through a client you can see the left
+pane is where you access azure develop
+services as demonstrated in the figure
+below so now that we have covered azure
+develop services
+let's move on to azure devops server
+version control reporting requirements
+management project management automated
+bills testing and release management are
+all capabilities of azure develop server
+a microsoft product it provides devops
+features and spans the complete
+application cycle so now that we know
+what i should develop services and i
+should have observer on so let's have a
+crisp comparison between them to know
+how exactly they differ from each other
+despite the fact that azure develop
+service is a hosted version of azure
+develop server there are several
+features that differ some functions of
+azure developer server aren't available
+in azure develop services
+so when deciding which platform to use
+or considering a transition from
+on-premises to the cloud keep the
+following points in mind cope and scale
+data authentication
+users and groups and manage use access
+so first is scope and scale data azure
+develop services and azure develop
+server are slightly different
+organizations and projects are currently
+the only alternatives for scoping and
+scaling data azure developer services
+organization get their own urls and
+always have exactly one project
+collection whereas deployment project
+collection and projects are the three
+methods for scoping and scaling data in
+azure develop server then we have
+authentication to connect to azure
+develop services using the public
+internet depending on your
+organization's arrangement you can use
+microsoft account credentials or azure
+ad credentials to log in you can also
+configure
+azure ad to require multi-factor
+authentication ip address restrictions
+and other security features but you
+connect to an intranet serving using
+azure develop server windows
+authentication and your active directory
+domain credentials are used to login so
+this method is completely open and you
+will never be asked to sign in next we
+have users and group you may use a
+similar technique to grant access to
+groups of users and azure developer
+services azure ad groups can be added to
+azure develop services group so you must
+add users one at a time if you utilize
+microsoft account instead of azure ad on
+the other hand by adding active
+directory groups to multiple azure
+developer groups you make grant user
+access to deployment in azure develop
+server the membership of ad groups are
+kept in sync so users gain and lose
+access to azure devops server as they
+are added and withdrawn in ed and at
+last there is manage user access you
+manage access to features in azure
+devops and azure develop server by
+signing users to an access level each
+user in your azure develop services
+organization
+must be assigned an access level as
+usual as visual studio subscriber sign
+in azure develop services verifies them
+so without a visual studio subscription
+you can give basic access to five users
+for free whereas all use of azure
+developer server is on the honor system
+specify the access levels on the
+administrative administration page to
+set access levels for users based on
+their license and assign unlicensed user
+stakeholder access only so now that we
+have covered all the important features
+and concepts of azure develop now let's
+move on to the next very important
+aspect of azure develop which is
+azure devops lab
+the azure develop lab is a place where
+you can learn about software development
+and operations with azure devops
+services you can simplify and speed up
+the devops process it explains how to
+use azure develop services to automate
+software delivery and satisfy business
+requirements so to understand it in a
+better way let's have a demo of azure
+developer lab so let's start with our
+azure develops demo so first what we
+need to do is navigate to this
+website
+ashore.microsoft.in or we can directly
+uh log in through
+dev.azure.com also so first what we need
+to do is sign into a microsoft azure
+account
+so
+after
+signing in
+you'll be led to this page
+you just need to click on continue
+and here what you need to do is create
+an
+organization under which you're gonna
+create your
+projects
+multiple projects and you're gonna
+attach your team members to it or group
+members to it and you want to get the
+access
+to your projects
+so what is the difference between
+organization and project is
+if you have given anybody access to your
+organization or somebody is a part of
+your organization then
+then that particular individual will
+have access to all of your projects but
+if you have given somebody only access
+to your project then you'll be only
+restricted to that particular project
+you won't be able to access any other
+project that is present under that
+particular organization
+that you both are part of so basically
+organization is something that is used
+to connect to groups of a related
+project or somebody who is already a
+part of a particular organization so
+here we will give it a name so i am
+giving
+simply
+demo
+as the organization name
+and here you can see that the projects
+under this organization will be hosted
+under the south india
+region
+and
+we need to enter the capture
+and click on continue
+just a second
+so now you can see this saying that it
+is taking you to an organization
+okay so we already have an organization
+of the same name so let's just change it
+to something else
+let's give it
+simply demo
+a large
+so here you can see that i see this
+thing that if it's taken to your azure
+devops organization where you'll be
+creating your projects
+so now you can see
+your organization name
+here
+and here you just need to create a
+project name
+so i'm giving it a
+simply
+demo
+project
+now below you can see
+visibility we can opt either public or
+private so what is public or private so
+basically
+if
+you keep it keep the project of
+keep the visibility of the project
+public
+then once
+you copy this
+url
+so
+as i was saying once you copy this url
+into some other browser or incognito
+mode
+you will be able to have the access to
+the project
+but if you keep its visibility private
+then only the people who have real
+access to your organization or to your
+project they'll be able to access that
+project or will be able to see that
+project or work on it
+as you can see uh public projects are
+visible for our organization so
+we can't uh
+select public
+so we'll go for private
+and click on create project
+now here or you can see
+the home page of your organization where
+you have
+this project
+and here you can access the statistics
+of project how it is performing how much
+time you have contributed to it or what
+all services you have added to your
+project
+and down below you will be able to see
+that there is just one member which is
+the
+root user of this project
+and
+once you start adding more members to
+your project it will their details will
+be
+added to this particular
+block so
+now here you can see
+these are the services boards reports
+pipelines test plans
+and artifacts services that is
+provided to you to add to your
+project so
+now let's have a
+look
+at them one by one
+so first one is boards
+as we click on boards you can see
+multiple options
+your work items boards backlogs sprints
+queries delivery plans
+here you can see this all empty as we
+haven't added any service or we haven't
+worked on our project yet
+so let's just click on
+new work item
+so here you can see one is epic issue
+and task
+so epic is an option that is uh
+you can see a pro
+option
+for work items
+so basically epic represents the
+business initiative to be complete and
+it is basically available for basis
+agile scrum
+and cmmi process templates
+so what it exactly does is increases
+customer engagement that whoever
+whatever your project is if it's
+the engagement
+of your project that how it's performing
+and how it is performing towards
+the people
+whom you have given access to the
+project also helps to
+create new architecture to improve the
+performance of your project
+and
+it also support mobile applications so
+basically when you're deploying any
+mobile application in your project or
+creating a mobile application as a
+project so it will be able to
+support that as well
+let's click on epic
+so here you can see you need to
+enter a title for your
+epic option
+so here you need to add the title of
+your effect like
+for say
+we are creating a health care or an
+e-commerce application so obviously it
+will be segmented into different parts
+like you'll be having search options or
+support options
+or home page so we just need to give
+it a name
+and here you can see its state is to do
+for now we just have to do because we
+haven't
+actually created anything in our project
+and we haven't given any input
+so it's a to-do list and
+once we start working on it it gets we
+can change the state it
+can be in progress or completing
+so there are multiple states for your
+epic
+and here you can see the area is simply
+demo project that means that we want to
+assign
+this
+search you know epic into this project
+and we can also click description over
+here that what exactly our new effect is
+about like for search options we need to
+specify or give a description that
+you know this is for searching options
+related to our application like for
+healthcare one can type for
+medicines
+or
+doctors
+or sloths
+so
+that is
+that that is thing that we can add in a
+description
+that it will help the user to understand
+what this feature is about
+so this will epic and
+once done we can click on save
+so here you can see other
+stuffs also like priority
+so we can select priority according to
+our
+will
+so here by default it is priority two
+so friday basically is
+which function will come first
+and here you can mention start date
+target date
+so once it's done you can click on save
+now let's move
+to the next one
+second what we have is issue
+so basically issues are
+for you to that's your work
+and the epics are used to
+track the group work and the large
+scenarios
+but
+this is
+track like like we saw the project
+statistics so it will
+help you to understand the individual
+progress
+so basically issues are raised when
+you
+find any obstacle in your
+progress or in your work so it can be
+compared to impediments also so when
+you're working with agile or
+you need to deal with issues so by
+default we have agile
+to our project assign
+so
+like for example we can see that uh
+we have a meeting so during the meeting
+members report if they have encountered
+any bug or any any impairments
+so
+what next we have to do is we have to
+track them and resolve it so these are
+the issues that can uh
+one can find
+like possibilities
+so you can assign here
+and give it a description again
+and just save it so
+once a user faces these issues
+we can keep a track of it
+and
+once it is raised we can resolve it
+coming to the
+next one
+next we have is task
+by the name only we can uh
+well understand what task is
+so a task is a smaller item or a
+smaller segment to track activity that
+contains all the information needed to
+accomplish a part of
+an issue
+or you can say user story requirements
+so this option is available for basic
+agile scrum and cmmi process templates
+so again we can give it a name
+what task we want to assign
+and give it a description
+and according to that we can
+select the priority
+and save it
+so the task will be added to your
+project
+we are not
+assigning any task right now because as
+i said we haven't added any
+uh particular
+project or particular details or
+application or we haven't deployed any
+application yet in our project
+so
+that is why we are not adding anything
+over here again
+because first we need to understand what
+these services are and what these
+services are used for
+next we have backlots
+so
+backlogs helps you
+to understand the flow of your problem
+like today you have contributed 10
+of
+your time and
+you have completed the 10 of the work or
+you have worked on certain segments of
+the project like for
+say
+you have worked in the support area
+so
+it helps you
+to
+understand and keep the track of the
+flow of your project how it is
+performing and how it is developing and
+how it is built every day
+next we have a sprint
+so sprints are basically a time box
+interval that supports your team's
+ability
+to work using the agile processes and
+tools so what you can do is whether
+you're having let's say you're having a
+healthcare application so you just
+need to
+have a segment of it and drop it over
+here
+so what would what it will do is uh it
+will get the attention of all the team
+members so basically what it does it it
+makes your project more manageable
+it uh increases the quality of your
+project and also makes it work even more
+faster and more frequently once you add
+the segment to the sprint
+so you can see it in one way it gets the
+priority and people need to work on it
+and it gives the project more
+flexibility to adapt to change
+now now sometimes what happens is many
+associates scrum sprints
+with agile software development
+so
+sometimes
+agile are often thought to be the same
+thing
+coming to the next one we have queries
+so the query page basically remembers
+the view you have
+last navigated
+and when you log in again or when you
+come back again
+to the same portal it returns you to
+that very particular view only
+so it can
+you can say that it runs with azure
+devops command line interface
+and
+all the
+open uh like all the pages that you have
+gone through you can
+keep a track of it over here
+you just need to click over here all and
+you can just see all the queries you
+have
+defined
+in all this while and
+also you can
+share the queries with the team members
+so they can also know that where you
+have been working lately
+or which segment you have been working
+on
+or what was the last navigation
+which you have been going through in
+this whole project
+so it can help you manage your project
+in a more efficient way
+and keep a track of
+how
+and what all segments you have been
+working on and what are the segments you
+need to work on in your project
+coming to the next one we have delivery
+plans
+so here you can see uh we haven't
+created any plan yet so basically
+delivery plans are a calendar view of
+multiple
+teams or team backlogs or individual
+backlogs from different projects
+so basically it replaces the delivery
+plans marketplace extension
+and it is only available for azure
+develop services
+so here you can
+you can you can say it's a summary or
+a time summary of all the projects you
+have been working on in a particular
+organization
+so now that we have covered both uh
+let's
+move to the next one which is
+repose
+so with the name itself we can uh well
+understand that repo stands for
+repositories
+so basically it is a set of repositories
+that allows you to control and manage
+your project code like for say you're
+deploying a healthcare application so
+these
+repos options
+help you create repositories and
+manage your code of that particular
+application and more efficient way
+so
+what you can do is you can connect
+project solutions by using the repos
+link
+uh as you can see here it is shown
+so let's look into its option one by one
+first we have files
+so in files your project solution will
+be available in this section
+so
+repositories can create manage and
+import those solutions
+okay so you just need to upload your
+solutions
+of
+code or your project
+here and
+it will
+just create repositories for it
+and it will help you create manage those
+solutions in a better way
+you can see these
+clone to your computer push an existing
+repository from command line and import
+repositories if you want to import any
+uh solution
+like here you can just
+click on import and add the solution to
+a repository
+so
+this is what files
+do
+basically you can see it say uh it is a
+it's like a physical folder itself where
+you have all your
+mini files or repositories or solutions
+you can say of
+data so basically it's it functions like
+a
+physical folder itself
+so it helps you keep a track of
+your codes and
+everything
+next comes is comments
+so uh
+in commit section you can manage commit
+history
+for your repositories that you have
+created and files
+so it just commits those uh repositories
+with author details from branches like
+for say we have a team
+one from uh
+spot branch and
+one from management branch
+so
+whoever creates that repositories and
+have the solution it commits that
+repositories under that under that
+particular member of the team
+with the branch name
+then comes pushes
+so push histories are available in this
+section
+from each pull request done by the
+developers developers per say the team
+members who have been working on this
+particular project and creating
+repositories and solutions
+so what is full request
+so full requests or prs are a way to
+change or review or merge
+code in our repositories
+so
+basically team uses these pias to review
+code and get feedbacks or changes
+whether like
+for say you are deploying a code or a
+solution
+so one can review them what all changes
+needs to be made or what all application
+needs to be made or whether the code is
+already fine or not
+so basically teams use these prs to
+review the solutions and codes storing
+these repositories
+or
+you can merge multiple solutions or
+multiple codes into the main branch
+so basically the viewers can step
+through the proposed changes and leave
+those comments
+and what to approve or reject that
+particular code
+or you can say to upgrade or whatever
+changes you want to make it they vote
+for it that whether that needs to be
+made to that particular solution or not
+so these are the prs
+next
+we have branches so
+we can manage multiple branching
+information in this particular section
+you can create create or release
+branches
+from master to death
+okay so all users
+can actually
+can actually
+create or release branches from
+branching information available in this
+particular section
+next come
+tags
+so
+tags are
+used to point out specific comments
+like uh
+giving message tags and data information
+to branches you can create your name in
+conventions to branches by using
+commit tags
+and
+the second the next one is pull request
+which we have already discussed
+the pr's that are basically
+in pushes
+so now we have commit
+completed repose also
+so let's move on to the next one which
+is
+pipelines
+so here you can see see that we don't
+have any pi pipeline
+created for us yet so let's have a look
+at the
+provided options one by one
+the first one is environments
+so basically it is a collection of
+resources where you actually deploy your
+application that you're working on
+so it contain you can say it contains
+one or more virtual machines containers
+web apps etc whatever
+resources you have actually used for
+deploying your application
+or whatever services you have used for
+creating the environment for the
+deployment of your application of course
+we need to
+deploy our
+application and it needs an
+windows
+java environment so
+whatever
+resources you need to
+create that environment
+that will be added to this environment
+list that will be listed over
+this section
+next we have releases option
+so basically this
+pipeline stores the data of your
+pipelines or stages
+or
+tasks
+and
+deployments in azure pipelines that
+departments you have done so far
+in your applications
+for your applications actually
+so you can say that
+it helps your team continuously deliver
+software to your customers at a
+faster pace
+with a very minimum
+you can say lower risk
+so
+if you can fully automate and
+automate the testing and the delivery of
+your
+software or applications
+on
+multiple
+stages
+or you can also set up an automated
+process with approvals and on-demand
+deployments
+then comes
+library
+so again you can see the pages blank
+from the name itself you can scrutinize
+that will be a collection
+of assets from
+azure devops projects
+so basically it is a collection of build
+and release assets of a particular
+project
+so assets defined in the library can be
+used in multiple bills and multiple
+releases pipelines of the project
+okay so all assets that are defined you
+know library share a common security
+model
+so you can control who can define new
+items in a library and you can use an
+existing item that you have already
+added in this library
+roles are defined for eye library items
+for say you have added a particular
+asset a particular item
+to this library segment
+and you can assign a particular member
+who will be working on this item
+okay so
+the roles are defined here for these
+and these governs the operation you can
+perform on those items
+that person will be keeping track of
+whatever changes have been made
+or whatever upgradation has been made to
+the particular item that has been added
+to this
+segment library segment
+so then comes task groups
+so
+task groups are a way to standardize and
+centrally manage deployment steps for
+all applications
+in your projects
+so when you include a task group in your
+definition and then make a change
+centrally to the task group the changes
+automatically reflected in all the
+definitions
+so we can conclude with this that a task
+group allows you to encapsulate a
+sequence of tasks
+already defined in
+you can say build or release pipelines
+or into a single task group
+so it just encapsulate all those
+sequences of task
+so you can choose to extract the
+parameters from those encapsulated tasks
+as configured variables
+and
+abstract the rest of the task
+information
+so what happens is the new task group is
+automatically added to the task catalog
+and it is ready to be added to other
+release and build pipelines
+so task groups are stored at the project
+level and are not accessible outside the
+projects group so
+the task groups
+will be only limited to the members who
+you have assigned in this project and it
+won't be
+accessible to the other people or other
+team members from different projects
+even though they are
+the member of the same organization so
+you can say it's more of a private
+segment
+now that we have covered task groups
+next we have deployment groups
+so
+deployment groups are only available
+with classic release pipelines
+and it is totally different from the
+deployment jobs
+it is basically a collection of
+deployment related steps
+defined in a yaml file to accomplish a
+specific task
+so
+in nutshell it is a logical set of
+deployment target machines
+that have agents installed on each one
+the deployment groups represent the
+physical environment for example
+testing or development or production
+environment
+so a development group is just another
+grouping of agents much like an
+agent pool you can say
+so what you can do with this is you can
+specify the security context and runtime
+targets for the agents or you can
+let yourself view live logs for each
+server as a deployment take place
+or you can also enable you to use
+machine tags to limit deployment
+to a specific set of
+servers
+so this was about deployment groups now
+that we have covered one more service
+let's move on to the next one that is
+test plans
+so
+test plans the first one we have
+is progress report
+so you can
+analyze with this only the progress
+report will be the
+progress of the
+project you have been working on or the
+deployments you have been
+doing or the tasks you have been
+performing
+so
+so basically it lets you
+analyze and view data for
+more than one or an individual test
+plans in a particular project
+so data for test plans in migrated can
+be migrated from
+an on-premises azure develop server
+that won't show up in this report
+okay so basically this section lets you
+drill down by each test plans and give
+you summary of each test
+plan in it
+the section also lets you to navigate to
+a test plan or shoot of choice by double
+clicking on it okay
+so
+this was the progress report next we
+have
+runs
+so basically it represents the execution
+of pipelines
+during the run the pipeline is processed
+and agents process one or more jobs
+so when you run a pipeline many things
+happen under the copper while you often
+won't need to know about them
+occasionally
+it's useful to
+have the bigger picture right
+so
+azure
+pipelines
+will get processed under this
+test runs
+segment so you will be able to see water
+performance
+is happening over here like while you're
+running a pipeline you can see
+uh the running state
+the date you have started that
+or what all that
+running pipeline includes like jobs
+steps and tasks
+runs power both continuous integration
+and continuous delivery pipelines
+next we have
+load test
+so basically assure load testing is a
+fully managed as azure service
+that enables developers and testers to
+generate high scale load with custom
+apache j meter strips
+and gain actionable insights
+to catch and fix performance bottlenecks
+at scale
+basically application performance and
+resiliency are more important than ever
+before
+so how you can
+run an azure devops test
+so first you need to click on it and
+select a test suit that contains all the
+automated tests
+and
+you can just choose the run test option
+and it will start processing it so the
+service this service basically simulates
+traffic for your application
+you can say regardless of
+on which platform or
+where it is actually hosted
+so now that we have covered test plans
+as well let's move on to the next one
+that is artifacts so this is the last
+service that is provided to your project
+by azure devops
+so artifacts is a
+product produced during the software
+development process
+so it mainly consists of the project
+source code dependency or binaries or
+resources
+that could be represented in different
+layout depending on the particular
+technology
+so it's like an extension that makes it
+easier
+to discover install or publish
+and may even packages in azure devops
+it's basically deeply integrated with
+other hubs like build so that package
+management can become a seamless part
+for your existing workflows
+so what is exactly it is used for
+so it
+basically it can be used
+for both public and private organization
+with teams of any size it
+it basically
+manages your
+npm or
+new get packages via feeds and it allows
+you to create and share your making
+it's a package management solution
+indicated with your azure device
+this was all about the services that is
+provided to your projects so now that
+you know what all services
+do for your project and what are their
+benefits and how they function now you
+can actually plan your project and start
+creating and working on it and start
+deploying with the users and
+what all services you want for your
+particular project so what you can do is
+click here on project setting
+just a second
+you can just click on
+project settings
+so now what you can do is you can add in
+description that uh what your actual
+project is about so for say like i said
+if you're creating you know a health
+care application so you can just give me
+the description that it is related to
+issues queries and the helps needed and
+like you're trying that particular
+application with different hospitals or
+healthcare organizations so you can
+actually add those
+information in this description
+and the process which basically it is
+basic or private one
+but you
+do get a range of
+process
+for your project when it depending on
+the visibility of it like for a child or
+scrum you can say
+so now here you can see that only my uh
+id is
+attached to it as i'm the only member
+here and i'm the administrator so you
+can add members
+here
+and
+scrolling down you can
+now that you know what all services
+uh provide you or what they provide to
+your project depending on the need of
+your project you can just uh select the
+services you want to assign to your
+particular project like per se if i
+don't want both assigned to it or
+you can say if i don't want the
+services provided by the code
+pipelines
+artifacts but i don't have
+uh test plans and boards as you can see
+basically all the
+collection of whatever you're managing
+which is indirectly assigned to the
+boards
+so as
+you remove the both the test plans also
+get
+removed
+okay
+and once
+like this you can just
+select what all services you want
+and
+if you want to delete your project you
+can just go ahead and delete it
+so this was all about
+azure developer services
+and i'll show them what the studio you
+can see and how the demonstration of
+how a project actually functions in this
+virtual studio
+well this was all about azure devops
+i hope you like this video and learn
+something new from it
+if you have any questions or doubts
+please feel free to ask them away in our
+comment section and our experts will
+reach you back
+thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

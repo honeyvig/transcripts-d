@@ -1,0 +1,1864 @@
+welcome to the launch of Azure DevOps my
+name is Jamie cool I'm the director of
+program management for the Azure DevOps
+team we got a ton of exciting things to
+talk about today here with me I have mr.
+DevOps himself Donovan Brown thanks for
+having me Jamie I'm really excited to
+get started because some of the demos
+we're gonna show today I'm really gonna
+highlight the power that we have with a
+chanela what I want to make sure people
+realize is that you can also be a part
+of this conversation it's not just the
+two of us but if you're out there on
+social media make sure that you use the
+hashtag as your DevOps
+and if you want to learn more about what
+we think about DevOps here at Microsoft
+make sure that you go to a sure com
+forward slash demo right now we're gonna
+be talking about DevOps you know for
+this next hour I think it'd be important
+for us to level set well we actually
+mean when we said DevOps and I've been
+led to believe that you might have a few
+opinions on this particular topic a few
+and it's really important to level set
+because if you ask several different
+people what DevOps means you're gonna
+get several different answers so it's
+really good to make sure that we level
+said on what we believe DevOps is here
+at Microsoft and we believe that it's
+the union of people process and products
+to enable continuous delivery of value
+to our end-users the most important word
+of that definition is value too many
+people focus on just moving files or
+automation but it's the value that
+you're trying to deliver to your
+end-users and what I've found is that it
+takes the products to support the
+process what your people have chosen
+that's empowers your people to deliver
+that continuous value what I think is
+even more important than that is that
+when you start to take that digital
+transformation when you're on this
+journey the gains that you get are
+staggering and sometimes almost
+unbelievable as I go and I visit our
+customers all over the world those that
+have started this transformation are
+deploying sometimes like 47 times more
+frequently than they were before and
+historically there used to be fail fast
+but they're not failing fast they're
+succeeding fast because they have seven
+times less failure eight yeah you know
+when I hear some of those numbers on the
+surface they just seem kind of
+staggering and crazy when I step back
+and I think about it I realized you know
+what like I've experienced that you know
+firsthand you know it wasn't that long
+ago that a Microsoft you know the
+average chip cycle was two years
+sometimes longer you know now I look at
+just last week last week we shipped
+hundreds of changes just as your DevOps
+itself
+you do the math between a couple you
+know a couple years and hundreds of
+changes a week you get these big numbers
+and it's not like the folks today are
+just that much better than the folks ten
+years ago it's that we've gotten smarter
+we've learned we have better processes
+we have better products and that's a lot
+of what we're going to talk about today
+and what I'm excited about because we're
+now providing the products that we use
+that we've invested in and bringing them
+to you so you're going to be able to
+take advantage of them and that's what
+as your DevOps is as your DevOps are a
+set of services that span the entire
+DevOps lifecycle you can use them all
+together for a full solution or if you
+just need a one with a particular
+problem you can use just that or you can
+put it together with other tools that
+you're already using that you want
+regardless of how you use it it's going
+to provide a lot of value for it for you
+and I know that because inside of
+Microsoft we get that value we see that
+regularly just in the last month over
+80,000 folks here at Microsoft have used
+a shred of ops to deliver our products
+to you from both the smallest all the
+way up to some of the largest so let's
+start by drilling in and what we
+actually mean by ours our DevOps and
+let's start with Azure pipelines so
+Azure pipelines is really the heart of
+the DevOps process it's a CI CD system
+it's a continuous integration and
+deployment system and you use this to
+keep the quality of your application up
+to make sure every change that you make
+is taking you forward instead of
+backwards and that's really the key
+thing if you want to be able to ship
+whenever you want to keep your code
+quality high you can also use it as a
+launchpad to get your code up into the
+cloud whether it's our cloud Google AWS
+or any other because as your pipelines
+is a system that works for any language
+any platform and any cloud we have
+hosted pools and machines of Linux
+Windows and Mac that we manage for you
+so that you don't have to because
+everything we're trying to do with this
+is to make your life easier as a
+developer and as your pipelines doesn't
+stop with what we've shipped it's highly
+extensible we have an ecosystem of over
+500 extensions that have been
+contributed for both the community and
+from our partners from slack to Soner
+cloud all right you know one of the
+things that always excites me the most
+is when I see a new extension showing up
+and seeing what someone's been able to
+to do and extend you know with
+are with our product now you can use it
+for any type of application in any type
+of deployment mechanism but containers
+are increasingly becoming that unit of
+application deployment so as your
+pipelines works great with containers
+you can use it to build your containers
+to test and validate your container to
+publish it to whatever register you want
+and deploy it to whatever service you
+want including kubernetes now it's a lot
+more interesting to actually look at it
+then talk about it
+so Donovan can you give us a walkthrough
+of Azure pipelines so Azure pipelines is
+the CI CD system that we have that can
+build any language targeting any
+platform and that's what excites me
+about it as Jamie said earlier we give
+you access to max to Windows machines
+and to Linux machines there's nothing to
+install you just give us code and we'll
+build it for you Here I am on my
+dashboard and what I'm going to do is
+I'm going to click on this icon for this
+particular spring MVC application this
+is a Java app over here I happen to have
+a no js' application again any language
+in any platform clicking on this icon is
+then going to take me to my build
+results of some of the bills that I've
+been running previously if we look over
+here I can see exactly what branch I was
+building I can see if I was actually
+working on a pull request or not and
+clicking on one of these builds is now
+gonna take me to a summary page and a
+log that I can quickly review as we can
+see here I had an error on this
+particular build if I go ahead and drill
+in on here I can see this log file I can
+see this great map on the right-hand
+side and if I scroll down to this huge
+palm file build you'll see that we
+actually had some errors down here so
+it's very easy for me to diagnose but
+this isn't the only way that I can see
+my test results and I'll show you some
+other cool ways of doing that here in
+just a moment another thing that we can
+do is we can use this histogram at the
+top and start to see other builds that
+have already run and luckily we've had
+some of whom that have succeeded and as
+you can see here I have the same log but
+better than that I also have this great
+summary the summary here allows me to
+see my test results it allows me to see
+any associated work I can come down here
+and also see any deployments that may be
+running a matter of fact you've already
+successfully deployed this build into
+our dev environment and it's pending my
+approval to go all the way into our QA
+environment you get to see the real
+power of our pipeline system when you go
+back in and you start to look at editing
+one of these it's a really nice
+graphical user interface that allows you
+to simply drag and drop town
+again I want to highlight over here if
+you look at this drop down here you can
+see all the different hosted pools that
+we give you what I mean by hosted is
+there's nothing for you to install all
+these resources are provided for you and
+they come in a variety of different
+platforms you need to build your iOS
+application we have a Mac sitting in the
+cloud ready to build that for you you
+want to build your containers on Linux
+we have multiple Linux images and
+containers running for you
+so you can go and build those images and
+once they're build you can deploy it in
+the docker hub or to ACR wherever your
+images need to be stored in addition to
+that where can you get your code you can
+get your code from the most popular
+source control systems your doing open
+source work and you want to put your
+code in github no problem you want to
+have private repositories because you
+want to secure your code and you don't
+want anyone else to see it you can use
+our get support as well you already have
+your code in subversion or some other
+form of source control don't worry about
+it you can still use as your pipelines
+to get your code wherever it exists
+today and be able to start running CI
+and CD against it again adding new tasks
+is very simple you simply click on this
+plus here and you can simply drag and
+drop from hundreds of tasks that we have
+available for you right out of the box
+what I really like about the
+out-of-the-box tasks is that they're all
+open source you can go and see exactly
+how we wrote all of these hundreds of
+tasks and use this as a way for you to
+learn how to write your own if you
+already know nodejs or PowerShell you
+know how to write these particular tasks
+but before you go off and write your own
+adriaen courage you to go and look at
+our marketplace as jamie said earlier
+hundreds of our partners have gone off
+and written extensions that add a lot of
+value and all you have to do is simply
+click on it you get them for free and
+add them to your pipeline and you know
+you have new value not only in your
+building your release but new hubs and
+widgets and all other cool places that
+you can extend our system now I love our
+graphical user interface but I've known
+a lot of people prefer to use yamo they
+want everything in source control now
+what's really nice about this is you can
+just simply click on this link here and
+we will export the handle for you so you
+don't even have to write it what I
+really like about this is I actually
+keep both of these up because I want the
+best of both worlds I love the visual
+representation I love the ease of
+editing I can come in for example make a
+quick change to a particular task and
+then export just the Amal
+for that task I can copy this to my
+clipboard I'll run over here to get hub
+where my code is currently sitting I can
+find that Yemma file that I created
+earlier and I could edit it right here
+inside of github so let's just go ahead
+make a quick edit I'm gonna paste the
+code I did I just want you to see that
+we can have a really cool pull request
+let's make some changes I'm gonna come
+down here and save this into a different
+branch because I want to show you some
+cool stuff here so I'm creating a patch
+branch for the change to my llamo file
+and when I do this and create this pull
+request I've wired up Azure DevOps to my
+github repository sets that every pour
+request that is submitted
+will actually have to run that build and
+succeed before I'm even notified as we
+can see down here we now have a bill
+that is queued it's currently in
+progress now if I go ahead and click on
+the details I will be able to jump right
+back inside of Azure DevOps see the
+pipeline that it actually started
+running for me and in a moment here once
+it connects to the agent I'll be able to
+see a full live log of everything
+running against my particular build that
+way I can get quick verification that if
+the pull request is good that it passed
+my test and doesn't need the attention
+of the moderators and the contributors
+to go back in and review that particular
+pull request another thing that I wanted
+to talk to you about was the testing
+that I mentioned earlier so if we to go
+back to that definition let's pick this
+one here for some fun and I'm gonna
+click on analytics what analytics does
+for me is it actually watches the test
+results over the history of this
+particular build and it gives me a
+report letting me know how successful
+our testing has been over the course of
+a period of time if I click on this I
+get to drill down into these analytics
+and I actually identify the tests that
+we need to go back in and verify there's
+different ways that I can slice and dice
+this data find out which of my tests are
+taking too long so that we can focus to
+get our build times down I can figure
+out which tests are flaky
+for example the about test was the one
+that was broken and then and spend some
+time going in and investing to make sure
+that is safe once I know I have a high
+quality output from my build the next
+thing we have to do is release that code
+and that's where our release product or
+what we call pipelines as you'll see in
+the navigation here is where we take the
+output of the build and we run it
+through a pipeline deploying it into
+multiple environments and even allowing
+you to do approvals between those
+environments to make sure that your code
+has
+safely landed in the target environment
+if I were to go back in for example and
+look at one of these releases we'll be
+able to see that I'm actually deploying
+this application into kubernetes if you
+wanted to use helm you could I'm a
+newbie when it comes to using containers
+in kubernetes so I just went ahead and
+do some coop cuddle commands to get my
+code into the cluster and as you can see
+here I did a coop cutter will apply and
+another coop cuddle set and then I was
+able to deploy my code if I go back in
+here really quick and edit it well
+you'll be able to see here is that if I
+go and look at my tasks I can see
+exactly what it was that was doing
+before I was playing with infrastructure
+as code so I was actually able to take
+an arm template and deploy my entire
+kubernetes cluster into Azure before it
+even existed which is really nice as
+well I could come in here make some
+really quick edits the tasks are so well
+written that even your pool secret is
+automatically handled for you again
+allowing you to take your code from the
+fingertips of your developers and
+putting it into your hands of the users
+using Azure pipelines so that just shows
+you some of the power that we have
+inside of Azure pipelines for any
+language in any platform all right Jaime
+show us some more stuff thanks Donovan
+so over the last six years or so we've
+been on a journey here in Microsoft that
+we often talk about internally as the
+new Microsoft and it really starts at
+the top but at this point it's
+percolated really all throughout the
+entire company and it's someone that's
+been here for 20 years this has been a
+really exciting time to be part of
+Microsoft you know a big part of what it
+means to be the new Microsoft has been
+the embrace of open-source and if you
+look over the last six years you know
+the amount of things that we've been
+doing in this space continues to grow up
+go up year after year after year you
+know it starts with things like simply
+making sure that we're embracing the
+projects that the community has chosen
+to embrace a great example of this would
+be kubernetes on Azure another example
+that I was directly involved with seven
+years ago was get right it seems obvious
+now but back then it wasn't such an
+obvious question about whether we should
+embrace git or whether we should try to
+compete with it we chose to embrace it
+and now seven years later almost all of
+the development that happens at
+Microsoft happens in gets
+including windows and just step back and
+think about that for a minute the
+windows team uses the source control
+system that line is built to build
+windows it really is a very new
+Microsoft another example is open
+sourcing more and more of the products
+that we deliver vs code and typescript
+are great examples as your pipelines
+itself has core parts of its
+infrastructure open sourced so I'm
+excited today because we're gonna a
+bolide amiss list and that is free CI CD
+with Azure pipelines for any open source
+project that wants it this means any
+open source project can use Azure
+pipelines
+you get unlimited minutes up to 10
+concurrent jobs running at the same time
+access to our Linux Mac and Windows pool
+we use the same exact infrastructure for
+open source that we use internally for
+our own builds and that we use for our
+customers this means open source gets
+the same quality of service that we can
+that we give to everyone we also want it
+to be really easy for projects to get
+started that includes open source and
+really all of them since most open
+source projects live on github as your
+pipelines is now part of the github
+marketplace this means that you can
+discover configure and even pay for
+Azure pipelines through the github
+marketplace so if you already have a
+billing relationship with github you
+don't have to set up a new one with us
+and again the key theme of all of this
+is just about making the lives of
+developers easier and if they got one
+less payment vehicle to manage your life
+just got a little bit easier I'd like to
+show you that in action so let's switch
+over here and I'm going to show you as
+your pipelines as part of the github
+marketplace so I'm looking at your
+pipelines I can configure my plans or I
+can set up a new plan we scroll down we
+can see that you could configure a free
+plan and like I said it's just free for
+open source we also have a free plan for
+private projects you get up to eighteen
+hundred three minutes if you want to use
+it for private projects you can add more
+parallel jobs you can run more of them
+at the same time you can do that for $40
+each
+and again you can configure this and pay
+for it right through github itself let's
+go ahead and choose the free offer and
+let's set this up we're going to
+configure this in the Raleigh labs
+github organization and now what's going
+to happen is we're gonna consent to
+grants as your pipelines access to the
+repositories it could be all the
+repositories it could be just individual
+repositories in this case we're gonna
+just grant access to some repositories
+and then we'll go ahead and create a new
+Azure DevOps organization and what this
+is going to do is it's going to set me
+up with everything I need to use as your
+pipelines and as your DevOps so it's
+going to create our organization and
+then it's going to set up our first
+project and land me an experience where
+I can configure my first pipeline on for
+whatever repo that I want to in that
+github organization so let's go use the
+node container repository once I select
+that we'll go and analyze that
+repository to see what's inside of it
+and we see that there's a node app in it
+so we're suggesting a whole variety of
+different node templates that we have
+out of the box but we also saw that
+there was a docker image so our default
+recommendation is to use our docker
+template now Donavan mentioned config is
+code we're gonna use that in this
+situation and this is the definition of
+my build process and it's simply saying
+it's going to use our abun to pool and
+then it's going to go build our dock
+it's gonna build our docker image I
+could go and modify this process as part
+of it but I'm just gonna use the default
+state and now I'm going to save it
+you
+and we're gonna check it into a new
+branch so what this is gonna do this is
+gonna create a pull request when the
+github repository to add this yamo file
+to that repository which will then have
+configured pipelines and ensure that all
+changes that go into that repository
+from now on are validated then it's
+going to kick off the first build to do
+the validation of the actual
+configuration of pipelines being added
+to this repository so as that kicks off
+we can jump back over to the github repo
+and we can see that there's now a pull
+request
+and go into that pull request
+see the file that we're adding is the
+actual pipeline yamo file to go back to
+the conversation we can see that
+pipelines is in the process of actually
+validating this change itself we also
+support the github checks API which is a
+rich experience for showing the status
+of a variety of check of all of the
+sources that are hooked up to this
+repository so here you can see as your
+pipeline's publishing that status into
+it so this just gives you a taste of how
+easy it is to get started and you know
+the type of integration that we have
+with github as part of Azure pipelines
+now as part of the run-up to the launch
+of Azure pipelines we've been working
+with a number of open source partners to
+do some more early onboarding and we've
+been really enthused with both the
+feedback and the reception that we've
+gotten so I thought it'd be interesting
+if we invited some of them to come join
+us so we have folks from a number of
+from a number of them the first is
+github desktop so we have Bill hack from
+github and he's here with Donovan to
+share his learnings Donovan thanks Jamie
+so again we have Phil here from github
+tell me what you do it github hi I'm
+Phil hack a director of engineering at
+github I and in charge of the client
+applications team so we're the team that
+builds all the software you use outside
+of github such as get a desktop atom
+which is text editor
+electron which is a framework for
+building cross-platform apps using web
+tech okay and then we also have a team
+that builds extensions to third-party
+editors such as a visual studio just to
+do code and unity awesome so I would
+imagine managing that many products
+something is crucial to CI has to be
+important so what is CI really mean to
+you and what does it bring to your
+development I think one of the best ways
+to understand CI especially when it
+comes to open source projects is to
+imagine a world without it and how
+people would collaborate with open
+source so imagine you know someone named
+John is right and you know approaches
+github see the repo says I want to
+contribute to this fixes a bug pushes
+the code up and now Egret you know who's
+if one of the project maintainer comes
+along and she notices that oh this
+person submitted this
+fix let me try it out so it pulls the
+code down and hits the build and it
+doesn't build and I'm like oh darn it
+you know so Wright's comment you know
+nothing you know good fix the build and
+then the next day you know John's back
+let sees that you know okay fix the
+build pushes it Ygritte takes it down
+the next day runs a test and and
+realizes oh the tests fail because you
+know maybe John only random in the dev
+configuration not the prod configuration
+and what continuous integration brings
+is it really tightens that feedback loop
+so that rather than you know John having
+to wait for some human to look at it he
+pushes up the code all the tests run in
+all the proper configurations and it
+gives immediate feedback it can run your
+tests your static analysis your linters
+and that way like you know you take the
+grunt work out and really tighten a
+feedback loop and then force your
+project standards and all of that and so
+that's one of the beauty of CI for
+open-source project yeah I remember the
+days when I used to come into work do a
+get latest and the build was broken and
+because someone left right and then that
+person has to bring Donuts the next day
+and when we had CI it was really cool
+because it would point the finger at the
+person who told us donuts but you knew
+not to go do a get latest because you
+had that signal saying the build is
+broken which also protected us that way
+as well yeah a lot of people would try
+to do the whole traffic light thing
+exactly in the office right now they're
+doing raspberry pies with LEDs and like
+you know if it's if it's okay or not so
+there's a lot of CI systems out there
+we've been doing CI for a while what is
+exciting you about a sure pipelines in
+particular I mean the thing that most
+excited me about as your pipelines when
+I first heard about it is the
+cross-platform nature of it with
+electron apps like I mentioned before
+you're targeting Windows Mac and Linux
+and that it means that you often will
+have three different CI providers each
+of them with a different yam will file
+sure and it becomes a bit of a
+maintenance headache and with that your
+pipelines you know we could have one
+provider with one Yamma file and have it
+build on all three targets absolutely I
+always get on stage and I'm saying any
+language any platform and people think
+I'm bluffing I'm like no look at our our
+queues right there any platform you need
+is in there for Mac
+for Linux if you're doing mobile if
+you're doing containers that's amazing
+and I've it was interesting I was going
+around github the other day and every
+time I'd go into a repository I see
+three and four llamo files like I don't
+understand like why are people doing
+this right don't they know that they can
+get one yeah mole to rule them all and
+get you all the platforms well I mean
+that wasn't an option not too long ago
+right that's true and it's particularly
+nice the other thing about Azure
+pipelines is you know through your
+generosity you're all are offering it to
+open-source projects are free so I think
+yet we have millions of open-source
+projects on github I think that's a
+great option for them especially for
+electron projects who really want to
+target all this all three platforms cool
+so you show me what you did yeah so here
+we have get up desktop and this is our
+git git and github GUI client okay and
+it's an open source project we develop
+it in the open and if I scroll down here
+you can see that we have badges for our
+builds and this is the azure pipelines
+build and then you know let's take a
+look at pull requests so you know these
+are submissions by the core team as well
+as people outside and so let's say you
+know I'm looking through here and I see
+oh here's a submission from an external
+contributor and the build failed let's
+investigate so I click on that you know
+hey thanks Damon for contributing I'm
+going to scroll all the way down to the
+checks API and we can see that we can
+see that for there's for failing checks
+and when I expand that we can see you
+know each of the individual checks and I
+see that you know the azure pipeline's
+build is failing so I can click details
+and takes me right to logs for this
+build you can see that you know it's
+it's building on Windows Linux and Mac
+and it failed for all three platforms if
+I scroll down here on the right I can
+see each of the steps of the build and
+how long those steps take and here I can
+see oh the linting had an error and if I
+click on the error I get the full log
+output so it helps me see that I needed
+to leave
+some strange characters from somewhere
+and then you know I now know how to fix
+my bill and if I want to go right back
+to the pull request I click there and
+I'm back where we started
+awesome and this allows like I said I
+don't have to as a I maintain open
+source projects too and this just saves
+me a ton of time as you mentioned
+earlier just having to allowing them
+they get the feedback from the system
+and not having me stop what I'm doing
+clone their repo try to build their code
+find out it's broken like oh my god I
+was like five minutes of my life I'm
+never getting back again please someone
+help me do this and now or sec the build
+fails I don't even look at it
+all right great that's someone you get
+the same notification that I do go fix
+that and then when you're ready I'll
+finally go ahead and take a look at it
+so yeah saved me a ton of time as well
+that's exactly right
+awesome Phil thank you so much for
+coming and showing us how you at github
+or actually using Azure pipelines all
+right Jamie
+go ahead and take it back you know what
+really excited and resonated with me
+from that conversation was the notion of
+being able with one product with one
+pipeline with one llamó file to be able
+to validate across all three operating
+systems and not have to deal with
+managing any of those machines itself
+it's a pain point I hear again and again
+and again you know so the next project
+we're gonna look at is in the Python
+space so Steve dower is here with
+Donovan Donovan so I want to go ahead
+and address the elephant in the room I
+just heard Microsoft and Python what in
+the world that you do here at Microsoft
+that has to do with Python I so I've
+been here I've been here at Microsoft
+for about six or seven years now and the
+entire time being working on Python
+stuff Wow so a whole lot of the visual
+studio integration Visual Studio code
+support for Python a whole lot of the
+Azure services support for Python has
+kind of come through my team or out of
+my team so I've been working on that few
+years and I'm also a core contributor to
+Python itself so I'm one of the one of
+the team of volunteers distributed
+around the world that work on C Python
+the reference implementation awesome
+design and build a language so how did
+you start to use Azure pipelines when it
+comes to Python so I've been using agile
+pipelines internally for years now say
+all of our products are built on it as
+we've already heard earlier Visual
+Studio has been building on it for long
+time now so I had a lot of experience
+you know getting pipelines up and going
+with that and then I saw the
+cross-platform support was cured because
+early on that wasn't there and now and
+now it's here and I start looking at
+that I'm like oh I could be doing a
+Python builds on this across all the
+platforms with a single setup right and
+then the open source offer comes along
+it's like oh yeah let's let's get pipe
+and running on this so I just kind of
+went out and started doing it cool and
+just just to put a bit of context on
+that I've got the the Python home page
+up here we can see we've got three
+badges going for the Linux Mac OS and
+Windows build but Python runs on so many
+more platforms than that if I run over
+to this is our our existing build bot
+site this runs tests against all of the
+configurations that Python supports on
+every single commit and you'll see this
+is a really really long list sure and so
+you know the the value and being able to
+get off all of these manually configured
+manually managed configurations onto
+something that's you know cross-platform
+continuous integration in a single
+service is like really appealing ok and
+so I did that for the main platforms and
+so we have all of these pull request
+builds and commit builds running now for
+the main platforms and that was really
+just I went to the dev guide that we
+have we have all the instructions for
+all the platforms on how to build we
+have all the instructions for the
+existing continuous integration systems
+and I just pulled them over into that
+visual designer that you showed earlier
+sure and just got them running in their
+view llamó exported out check it in and
+now it's in the repository and we've got
+all these builds running out of the
+Python repository configured as code now
+what I've noticed is that we offer a lot
+of hosted agents and a lot of different
+platforms but we don't offer all the
+platforms you just showed there so how
+did you tackle the fact that you needed
+to run on even different platforms than
+that
+yeah so so so far this is not the
+hundred different configurations right
+we're not at that yet but the potential
+is there because as your pipeline
+supports private agents so I can set up
+any machine anywhere I want virtual
+machine and the cloud
+physical machine on my desk old
+Raspberry Pi sitting under the under the
+chair wherever it happens to be put the
+the pipelines agent running on it so
+it's dotnet core anywhere don't
+gotta run I can run that thing if it's
+connected to the Internet I can start
+running builds on that machine from the
+edge of pipeline service that's all
+still going through the one thing one
+pleasure I'm already doing that it's
+actually the windows release build so
+one of my jobs for cpython is doing the
+official releases so the the python.org
+downloads for Windows built by me code
+signed published all of that is is one
+of my jobs as a volunteer and so you
+know that's a manual process right I log
+into a VM and type all these commands
+and and you know sit there wait for it
+to finish to the publish I want to
+automate that so I put all of that into
+a a pipeline build which you can see
+here basically my commands this is not
+running on one of the hosted agents
+because it's got kind of some special
+requirements to it we do profile guided
+optimization on on every release build
+so we want you know much more powerful
+machine faster CPUs to get through the
+training that much quicker gotcha
+just to save us some time there's also
+code signing so it's every single binary
+and the Python package is signed with
+authentic code certificate under the
+Python Software Foundation name it's
+valid on every Windows machine in the
+world basically that's that's a high
+value we don't want I I don't want that
+you know bouncing over the internet
+every time I do a build that's locked
+down on a private virtual machine that I
+have running on Azure here's my cue or
+my pool you can say it's offline at the
+moment I don't even turn the machine on
+if I'm not building anything that's
+encrypted at rest it's encrypted while
+it's running it's BitLocker the whole
+way through the machine and so I just
+log into the azure portal start this
+machine up queue up my builds let them
+run shut the Machine down and we have
+like a custom secured machine that no
+one else has access to no one no one's
+making one of those poor requests where
+they just like download all your
+certificates and send them off to their
+own site absolutely because we never
+even run poor requests against this
+machine yeah so having that private
+agent there as an option to be able to
+expand beyond not only the platforms
+that we provide but also very unique
+secure scenarios like the one that you
+just described where you're able to no
+there's no way anyone's getting to that
+file because there's only it only exists
+in one place and that one place is
+encrypted to the enth degree but I can
+still use that machine to run my build
+which is incredible yeah and so
+as far as getting cpython building
+there's there's integration steps more
+to do like there's a whole lot of cool
+features that we're not using on
+pipelines yet but the flexibility is
+there the potentials there and so I'm
+really excited to keep building on that
+I know I'm gonna be building on more of
+this this week so if people log in at
+the end of the week then they're
+probably gonna see changes in this
+already yeah but this is for what I
+understand the engine that most of this
+code is actually in see that actually
+drives a Python but what if you actually
+want to build a Python app is I mean are
+you able to do that just as easily yeah
+that's yeah one of the the newer thing
+that's that's showing up in pipelines
+with you know this you know being
+released right now is a whole lot more
+Python support and we actually reached
+out and got a couple of projects on
+board they were very excited to do it
+talks pip pip End Python developers will
+be familiar with this because they're
+very well known projects there but I
+want to have a look at talks actually
+because it's one of the the more
+thorough and complete integrations that
+they've done and there's some really
+cool aspects to it so ok
+talks is actually a tool that is used in
+CI systems people it lets you specify a
+configuration file with all the build
+steps and run that across all of your
+full matrix of target platform ok so a
+Python project is normally you care
+about Windows Mac Linux you care about
+Python 2 7 3 3 3 4 3 5 3 6 there's a big
+matrix of C test against talks helps you
+with that it lets you write one set of
+instructions if I pull up their file you
+can see there's a lot of environments
+that they care about and they have all
+of these steps and this was already
+there ok this was already there in talks
+like people have this file so when they
+came came on board the pipelines and
+started using it they set up a build
+that like they wanted to reuse that file
+you guys they didn't want to go oh we
+have to rewrite everything in a
+completely new form so if I pop open
+their most recent build which I've got
+here we can see that in fact let me jump
+to there there yeah more file because I
+made a yellow file 3 because that's you
+know they want everything in code yep
+and it's not it's not even as long as
+the other one there's a few steps in
+here but essentially all it does if I
+look at one of these examples they're
+picking a version of Python we have them
+there we let you choose the version you
+want at the start of
+thing okay then they install themselves
+they install talks and then and then
+they use talks to test okay but what
+they have done is they've actually
+inverted it so normally you'd say run
+talks run everything sure and it does
+all of the platform's all the
+configurations in one go
+they've inverted this they're actually
+using our multi version so our matrix
+support okay so they have the matrix
+here of all the versions and then they
+use talks to run each one and let us do
+it in parallel gotcha
+so if I jump to the build and have a
+look at the logs you can see all of
+these jobs down the side which is every
+configuration they care about all the
+operating systems different queues for
+each one of these so this one ran on Mac
+this one ran on Windows different
+versions each of these ran in parallel
+yeah
+because we'll run them in parallel each
+one is running talks just a single
+environments you're inside it so they're
+actually getting the same result as they
+would have if they were running talks on
+a single machine but it's all come in
+parallel some of the cool stuff they've
+done here is they're using these guys
+you know really good at using kind of
+the standard tools that exist in pythons
+so they use the standard code coverage
+tool that most Python projects use this
+generates a cobertura file okay which we
+can upload and give you the summary
+right here
+and so that integrates nicely with
+pipelines because we understand that
+file format tests they run in PI test
+which connects port j-unit perfect XML
+they then push that up and we get the
+summary here if I jump over to the Test
+section we get all the results they have
+good results right now so let me clear
+that filter and all of the test results
+for their process sorry about the size
+here that's fine here we go we can see
+all of the tests that have been run and
+if any of these had failed then we'd get
+the information from that so all they've
+really done is taken their existing
+build and test tools and switched it
+over they've inverted the matrix a
+little bit to run on pipelines and they
+they get all this really nice
+integration they haven't had to rewrite
+their entire system to keep using the
+standard Python tools that is already
+out there and they're really just
+bringing over you know what
+what shell command should we run at each
+step and it's really nice to not have to
+learn something new yet you get this
+really rich first-class experience like
+you showed me the code coverage and the
+test results and it's
+integrated into your summary it's not as
+if yeah we know how to run your stuff
+but we don't know how to display the
+results to you but we do which is really
+amazing that you can now use it again
+any language any platform but you don't
+sacrifice anything when you do write we
+don't care we whatever you want to bring
+us we're gonna build it for you and help
+you deploy it so I really enjoy and I'm
+really glad that you came and shared
+with us how Python is actually able to
+leverage as your pipelines as well so
+thanks again for coming and Jamie back
+to you thanks Donovan so the last
+project we're gonna look at is Visual
+Studio code and I have Amanda silver
+here with me from the Visual Studio code
+team and Amanda everywhere I go I see
+people using Visual Studio code
+developers really of all types have just
+embraced in an amazing way you must be
+thrilled
+yeah I mean I joined the Visual Studio
+code team about two years ago and since
+its release in 2016 it's actually become
+one of the most beloved code editors
+that's out there in the planet and part
+of the reason for that is because we
+have a really rapid cadence of updates
+and releases that have new features and
+the way that we can support that is we
+have actually a lot of community
+contributors we have over 4 million
+monthly users of v/s code and we
+actually have one of the it's one of the
+most popular open source projects out
+there on github in terms of people
+contributing to it we've had about
+15,000 non-microsoft contributors to the
+vs code project wow that must take a lot
+of work to take it out many
+contributions yeah it is it's actually a
+lot to manage and our development team
+definitely says that that one of the
+most challenging things to deal with is
+actually code reviews and in fact even
+when we interview other developers who
+are users of our tools they also say
+that code reviews can be really really
+painful senior developers are just
+bombarded with requests for reviews and
+when they actually go in to do a review
+it's really hard to figure out kind of
+where to focus and even further you're
+oftentimes using a web editor or
+something that's kind of not your usual
+tool set so we've been working with the
+github team over the last couple of
+months to see if we could address some
+of these problems and actually we've
+just released a new version of es code
+that
+some new API is in it and the github
+team just released a new extension for
+PRS that allows us to kind of have a PR
+experience directly NBS code so that
+should make it a lot easier awesome one
+out sure okay so what you can see here
+is I have my vs code at code editor
+right here and you can see that I have
+all the colors that I expect all the
+theming that I'd like to see I have the
+get like it lens extension here which is
+a super popular community contributed
+extension to the vs code community but I
+might have a pull request to do and so
+if you go to the source view right here
+we can go right here and look at the in
+addition to kind of seeing the usual
+changes viewlet i now have a new viewlet
+in here called github color pull
+requests and i can further just go ahead
+and expand that and see that there are
+some new pull requests that are waiting
+for my review so what I can do here is
+expand that as well and even look at the
+description now right in the context of
+of BS code now what I probably want to
+do is then actually go look at the code
+changes so I can come in here and I can
+see a dip few right here in vs code
+which is pretty awesome and that allows
+me to do that kind of you know first
+glance a review that I might want to do
+looking at the two deaths and but I get
+the the color the colors and theming
+that I'm used to you for the you know
+typescript code that I'm looking at in
+this case if I want to do a deeper
+review though what I can do is go back
+to the pull request here and go ahead
+and check that out and what that's going
+to do is it's actually going to switch
+vs code into a code review mode and
+bring all of those changes locally so
+now I can go ahead and look at the
+changes in that pull request go to the
+files look at that same file and I'm
+going to just expand this so that in the
+full kind of view I actually get all of
+those same extensions completely running
+in this in this code editor right here
+and so what you can see here is that I
+actually get a squiggle and the reason I
+get that squiggle is that because all of
+the extensions are running on my local
+copy of the power of the changes
+the typescript compiler is actually
+checking statically analyzing the code
+here so if I mouse over this you know we
+can see that we can see that this
+variable is declared but its value is
+never read so what I can do is then just
+go ahead into the gutter here and just
+add plus and make a comment looks like
+this isn't used and go ahead and add
+that comment and then the other thing
+that looks really weird to me is that
+these hard-coded values so again I'm
+going to just add another comment here
+and say hard-coded values and go ahead
+and add that comment and then I can go
+back to the description page for this
+pull request and just go ahead and add a
+top-level comment left a few notes so
+add that comment and now what I can do
+is actually go ahead and look at this
+change directly in github and what you
+can see is that the comments that I
+added are still there just right here
+hard-coded values looks like this isn't
+used you know immediately what I what I
+just showed is now in github now even
+further if I go back to vs code what I
+can then do is go ahead and just exit
+review mode because I'm done with this
+review and just go ahead and exit it and
+just go back to my normal coding go back
+to my normal view but now what I want to
+do is go ahead and look at that look at
+that pull request one more time just to
+make sure that you know the build past
+and that's really where as your DevOps
+pipelines come in so if I look down here
+what you can see is I can go directly to
+the vs code build and this will bring me
+directly into the azure devops pipeline
+experience and what you can see here is
+that we for the vs code project we
+really have as your DevOps pipelines and
+the reason is because it allows us to
+build for Windows Linux and Mac OS all
+simultaneously using all the same kind
+of infrastructure all the same scripts
+and so what we can see is that we have
+all of those builds and
+all unfortunately failed so let's just
+go ahead and look at one of these
+compiled sources and what you can see
+down here is that yeah so we also have
+the zoom level default is declared but
+its value has never reached so you know
+well that error would have been picked
+up in the CI which add your DevOps
+pipelines really would help with as well
+you know now because I could run that as
+part of my review it it might not even
+get to that level I might actually be
+able to to say hey you know before you
+actually merge this you probably should
+fix this error this looks really cool I
+can see how a lot of folks are gonna get
+a lot of benefit out of doing this and
+it's going to make their their review
+process and just a lot of what they do
+every day a lot simpler and I'm happy to
+hear that as your pipelines is able to
+make the actual development of vs code
+simpler in and of itself yeah we really
+appreciate it and definitely our
+development team I think is going to you
+know feel super powered by having as
+your pipelines behind them
+if other folks want to try out the the
+github pull requests review extension
+it's actually available with the latest
+vs code and in our extension gallery so
+they just need to search for github pull
+request awesome thanks a lot Amanda cool
+thanks Jamie so we've talked a lot about
+open source projects and you know the
+thing about Azra devops is that it works
+great for open source but really for all
+types of applications from both the
+smallest to the largest we have
+organizations of all shapes and sizes
+using it today shell is an example of a
+large organization they have over 2,800
+developers using average or DevOps all
+over the world Hawaiian Airlines when
+they moved to Azure DevOps was able to
+increase their bill to improve their
+build time by over 400% you know because
+as your DevOps is a cloud hosted service
+getting up and running is really simple
+so Accenture is able to spin up new
+projects in no time with Azure DevOps
+now really the largest of all
+organizations that use Azure DevOps is
+Microsoft itself we have over 80,000
+people that use it every month to ship
+our saw
+and the numbers are just staggering in
+terms of the scale we do over 4 million
+builds each month we do 500 million
+tests executed every single day every
+single day every we have over half a
+million work items to get updated and
+the number that I find the most
+satisfying is that 78,000 deployments
+are done with Azure pipelines every
+single day which means there's a much
+smaller window from when we write code
+to when it gets to you which is better
+for you and frankly it makes our
+customers our developers happy too
+because they have a much shorter wait
+before what they've created gets in your
+hands so I thought it'd be interesting
+to actually show you how we use Azure
+DevOps on a regular basis so of course
+we use agile devops to build Azure
+DevOps
+so Donovan is going to give us a
+walkthrough of our actual engineering
+system the actual system that our
+engineers are using right this minute to
+build Azure DevOps so Donovan let's
+taken us have a look thanks Jamie I love
+that inception kind of work that we have
+where you actually use the product to
+build the product and we're not the only
+ones inside of Microsoft that uses it we
+obviously have the windows team some of
+the Xbox teams and everyone's moving to
+what we call our one engineering system
+so what I thought it would be cool to do
+is take you through like the day in the
+life of an engineer on the azure DevOps
+team and what they experienced to get
+their work done using the product that
+they build to build a product that they
+use so here we have a dashboard imagine
+you're coming into work and you see this
+dashboard on your plasma screen or on
+your surface and you can see exactly
+what your team is working on what sprint
+you're currently in how many days are
+left you can go and see what work is
+currently assigned to you how many bugs
+you have out there you can see the
+health of your builds your team members
+what features you're working on and make
+sure that you're focusing on the most
+important things first this dashboard is
+completely customizable yours can look
+completely different have a great
+library of widgets that you can use to
+build it and what they're able to do
+here very quickly is see exactly what
+they're supposed to be focusing on so
+that they can deliver the highest level
+of value not only do we have great
+dashboards but we also have product
+backlogs backlogs are a priority list of
+all the things that you want your
+software
+do you can simply drag and drop items
+from here to assign them to a particular
+sprint so you can start doing some
+sprint planning as well I won't drag
+anything now because as a Jamie pointed
+out this is literally where we're
+building the product and I don't want to
+assign work to the wrong sprint I love
+the fact that I can expand this and get
+a really nice view of exactly all the
+work necessary to turn one of these
+ideas into a working piece of software
+we also have the ability to have Kanban
+boards this allows you to visualize the
+movement of an idea from creation all
+the way to being done and actually being
+run in production and done for us means
+it's actually being monitored in
+production so that we can learn from the
+telemetry and decide if our priorities
+are in the right order and go back and
+use that data we call it monitor and
+learn again this is a very rich user
+interface where we can simply drag and
+drop these tiles are already assigned to
+people and one of my favorite things
+that we can do here is actually create a
+branch right from the board for the work
+that we want to go off and create so now
+I'm using git we're using feature
+branches I have a feature I want to go
+implement I don't have to go off and
+create the branch separately I can
+create the branch right here from this
+board and what happens up happening is
+that work item now becomes associated to
+that particular branch and that
+traceability lives throughout the entire
+course of this work so not only do I
+have the branch tied to the work item
+every commit is also associated every CI
+build that is triggered every release
+that is deployed is all traced back to
+this particular work that I was doing
+here I like being able to see every line
+of code that I changed so I can do test
+impact analysis and I don't have to go
+running around to find it the system
+actually gives that to me by simply
+creating a branch once that branch is
+created I go off and do my work and
+here's our git repository and you can
+see on the left hand side how all these
+branches start to come back together
+this allows me to visualize the branches
+that were created the pull requests that
+merge them back in the master to make
+sure that we're delivering on our goals
+we don't just go merging back into
+master willy-nilly right that could be a
+recipe for chaos so what we do instead
+is we use a process called a pull
+request a pull request is an opportunity
+for our peers to review our code before
+it gets merged back into master because
+master is the law this is our golden
+master and we want to protect that and
+we protect it through a process called a
+pork
+if I were to come over here to the pool
+request tab it shows me all the pull
+requests that are currently running a
+pull request is a chance for your
+engineers to review each other's code it
+also has the ability to run tests and
+run builds against the code as well if I
+were to drill in on one of these for
+example I'll just pick a random one here
+we'll be able to see everyone who's
+involved in the commit we'll be able to
+see everyone who has made changes what
+lines they're on I could actually leave
+comments on each individual line
+discussing with the engineer what's good
+and what's bad about these particular
+changes if I wanted to I could see if
+there's any conflicts the commits and we
+also have policies applied to different
+branches and the policy that we have
+applied to our master branches you have
+to survive a build and in that build we
+run a lot of tests I believe if I
+remember correctly
+we're running somewhere near 83,000 unit
+tests every single time you do a pull
+request and if a single one of these
+fails your entire pull request gets
+stopped so we want to make sure there's
+a lot of quality a high level of quality
+because these are unit tests we can
+actually run 83,000 of them in less than
+20 minutes we're getting that signal
+back to our developers very very quickly
+and because they are supposed to pass
+we've all had flaky tests in the past
+and people start to ignore those we
+worked really hard to make sure that
+these are solid they're fast and they're
+reliable such that if a single one of
+them fails no one ignores that we go
+immediately and figure out what failed
+and we fix that code and we start this
+process over again to ensure we only
+ship the highest quality code to our
+customers and to ourselves because we
+are our first and biggest customer here
+at Microsoft running all these unit
+tests allow us to ship the highest
+quality code to our end users and it
+doesn't stop there we continuously run
+tests against build after build release
+after release to make sure that we only
+ship high quality code and it behooves
+us to do this because we're the first
+people to get the code that we ship we
+don't put it on to our customers unless
+it survived time with us here at
+Microsoft when you use the tool that you
+build to build the tool that you use you
+cannot risk having bad quality software
+because it could stop everything that
+you're doing as a matter of fact here is
+our deployment plan and what's really
+cool is we actually use safe deployment
+here at Microsoft which means
+we deploy two in a production
+environment and we let the coat sit
+there for 24 to 48 hours and it has to
+survive our telemetry and our monitoring
+and our daily use before we then allow
+it to deploy to another environment this
+first environment which is identified
+here as ring zero is actually where the
+Azure dev ops team actually works so
+when we're pushing out new features
+we're the first to fill those features
+if we make a mistake or the only ones to
+feel the pain of that mistake
+we go back in and recorrect it after we
+let it sit here and we monitor the
+telemetry we check for any new work
+items that have been logged for
+particular bugs we make sure that it's
+healthy and can sustain our traffic we
+then promote it to the next string of
+our deployment and we rinse and repeat
+this until it gets all the way out into
+production for all of our current users
+so this is how we ensure and how we use
+Azure devops to produce Azure DevOps for
+our end users thanks Donovan now as you
+saw as your DevOps is really a full
+end-to-end solution across the entire
+DevOps chain with great traceability
+from the start all the way through to
+the finish it's highly scalable from the
+smallest team all the way up to the
+largest team its Enterprise ready you
+can run in whatever geo that you want so
+you can keep the data close to home you
+can run it in our cloud or we'll take
+care of everything for you
+or you can run it on premise with Azure
+DevOps server which lets you install and
+manage a cert the azure devops services
+however you want you really have a
+choice between a public and a private
+cloud now Azure DevOps is the evolution
+of visual studio team services which is
+why we're able to capture so many of the
+learnings and innovations that we've had
+over the years and this evolution is
+really based on the feedback that we've
+gotten from customers and that cost that
+feedback is about choice you know lots
+of folks want to be able to use the full
+end-to-end solution the way Donovan just
+showed you but others want to have the
+choice of just choosing a particular
+part of it just using pipelines or just
+using artifacts or just using boards and
+putting them together however you want
+and you're able to do that so you can
+choose which parts of Azure DevOps you
+want to use and assemble them with other
+solutions so for example
+if you wanted to use Azure boards to do
+your planning and github to store your
+source control and do your pull requests
+but use Azure pipelines for your CIS CD
+and take the artifacts that were
+produced and put them in artifactory and
+then use ansible to deploy them to AWS
+or Google great you can do that you want
+to mix and match you know however you
+want if you want to use Azure artifacts
+instead of artifactory and jenkins
+instead of Azure pipelines
+it's up to you you can assemble these
+solutions in whatever form make sense to
+you now this is really an evolution and
+in a broadening of the azure ecosystem
+so Azure DevOps now provide a juror with
+a new set of services to help developers
+make their lives better we're really
+making a charade developer first cloud
+as ur already has very broad support you
+know there are hundreds of tools and
+technologies many of them open source
+that are part of that the azure
+ecosystem from terraform to Jenkins to
+chef to puppet you name it and Azure
+itself has a whole set of first-class
+services that are really important to
+the DevOps lifecycle one category of
+those is really focused on telemetry
+analytics and insights
+you know when Donovan talked about what
+DevOps means to him and the definition
+of it it's really clear that DevOps does
+not stop with deployment you have to get
+telemetry in your application you have
+to know whether that application is
+performing well how folks are using it
+you know in this day and age data is
+becoming a core part of how we build
+software and asher has a whole set of
+services that help you do that from
+Azure monitor application insights and
+log analytics they provide predefined
+defaults so that you know what the
+thresholds are you should be expecting
+from a high-performing applications it
+helps you visualize all of this data
+it's coming in and customizable
+dashboards and it has infrastructure to
+help you separate the signal from the
+noise because as we move into this more
+data-driven world there's so much data
+coming in it can often be hard to really
+tell what the important signals are from
+all of the different noise and of course
+all of these services are highly
+extensible and work with existing
+processes and tools like ServiceNow
+and this includes of course as your
+DevOps so one of the really powerful
+things that you can do is take all of
+this telemetry insights and tie it in to
+the actual workflow processes and in
+terms of how you work and Donovan is
+here to give us a walkthrough of how you
+can do that
+Donovan thanks Jamie like you said going
+back to the definition of DevOps we want
+to continuously deliver value you can't
+just randomly copy files to a server and
+assume that you delivered value if no
+one uses them you didn't the only way
+that you know is that you monitored the
+application and here inside of azure we
+have an amazing offering that allows you
+to monitor not only the application
+itself but the infrastructure upon which
+it is actually running I can make sure
+that my infrastructure is secure see if
+there's any patches that need to be run
+I can see my application health and I
+can configure all of that using
+application insights in addition to that
+application insights ties in really well
+inside of Azure DevOps and Azure
+pipelines here I can go to our dashboard
+that I've created this is the actual
+application insights container or all
+the data from an ojs application that
+I've written is actually being pumped in
+I'm able to see if I've had any failed
+requests luckily I have not I'm able to
+see what my server response time is if
+that starts to go up or down I can go
+back in and make adjustments to my code
+ship out a new version and come back in
+and check these numbers to make sure
+that they're looking good I also have
+availability tests running it's been
+rock-solid since I deployed this I've
+had a hundred percent success rate if
+for any reason one of my applications is
+unaccessible I will actually get a
+notification saying I can no longer
+reach your particular application and I
+can actually test from several different
+locations so it'll test from all the
+different regions that we have available
+for you from Azure to make sure that
+your app is accessible from everywhere
+and if not I'm able to go back in and
+make it a fix for that what I really
+like about this is that I can actually
+incorporate this information back into
+Azure pipeline so what I mean by that is
+earlier I talked about how we use safe
+deployment how we deploy our application
+into a production environment and we
+monitor it there well that monitoring
+historically has been manual people
+would go and run queries against our
+work items to see if any new bugs had
+been logged someone would go and look at
+a dashboard like the one I just showed
+you to see if there's any spikes in our
+traffic or increase in the number of
+we have but we want to automate
+everything that we possibly can and
+thanks to release management I can do
+just that
+I can come here and enable something
+called a release gate a release gate is
+an automated way for me to take those
+tasks that I used to do manually and
+verify them as I move through my
+pipeline for her to add a node new gate
+here you'll see there's several
+different types I can run an arbitrary
+function so this is an Asscher function
+that can go off and do whatever it needs
+to do and then send back either a
+positive or negative response letting me
+know that things are good or not I can
+call a REST API
+maybe I'm deploying a API myself and I
+want to be able to call a few of those
+api's beyond just normal testing but
+specific API so let me know the health
+of my particular system and this one I
+like a lot is I can actually query
+application insights that I just showed
+you directly from Azure pipelines and
+make sure that our we have my really
+healthy deployment and that everything
+is going as it's supposed to go and if
+and only if it is move on to the next
+environment I'll show you how to
+configure one of those in just a moment
+and also we have the querying the work
+items this is the ability for us to go
+back in and run queries and see have
+there been any new bugs logs or new
+issues logged against our software while
+it's being deployed and if so you
+probably want to stop our release and go
+look at it right go ahead and click over
+here on Azure monitor I just have to
+configure a few things it's going to ask
+me for my Azure subscription because
+this is where my application insights
+lives this is where the delet telemetry
+is being collected and it allows me to
+then find the exact application which I
+want to monitor so I'll pick my Azure
+account here inside of my Azure account
+obviously have resource groups the
+resource group I'm looking at that has
+my kubernetes cluster in it and also my
+application insights is expressed now I
+want to look at application insights
+information one more time I'm going to
+tell the exact resource that I'm looking
+at because I can actually have a
+different application insights container
+for every environment I don't want all
+my telemetry going into the same place I
+want to be able to know how my
+production environments doing but might
+be different than my QA environment and
+or my development environment as I go
+between one gate and another I can go
+and review the previous environments
+gates right here using application
+insights then I'll choose a particular
+alert and if I have any failure
+anomalies during the deployment of my
+code release Menace what we'll be able
+to protect me and stop my release and
+give me a signal letting me know that I
+need to go back in and investigate that
+this
+is a potential bug that would have been
+able to escape into the next environment
+had I not had an automated way for me to
+be able to monitor that information so
+we're taking the monitoring and we're
+automating that was the review of that
+monitoring for you the final thing is
+having that single pane of glass it's
+great to have those really rich
+dashboards in Azure but I want to be
+able to bring the data that's being
+collected by application insights
+directly inside of Azure DevOps and I'm
+doing that here with a dashboard that
+I've been able to create as you can see
+I have tiles here from my dev
+environment my QA environment and my
+production environment I can see how
+many events have been triggered I can
+see what my response time is and down
+below I can see my team members the
+health of my build and the health of my
+release this again is taking all the
+power and the data that we need to make
+a good decision and have a really high
+functioning piece of software and we're
+surfacing it here right here in Azure
+DevOps on a single pane of glass that we
+can use so again I hope you realize any
+language any platform and everything
+that you need to turn an idea into a
+working piece of software thanks Jaime
+thanks Donovan so to pull all of this
+back together
+aser now has five new services that are
+going to help you as developers to be
+more successful to collaborate to ship
+faster with higher quality they work for
+any platform any cloud any operating
+system you can use all of them together
+or you can use them individually it's
+all up to you they embrace open source
+as your pipelines has free open source
+for any project that once it
+they work for projects of all shape and
+size from the smallest up to the largest
+and it's really easy to get started if
+you want to get started you can go to as
+recom slash DevOps and Donovan I think
+that's about it did I miss anything
+actually I have a few questions because
+I'm gonna go on tour here soon and I'm
+gonna speak bombarded with questions now
+you said it's free for small teams but
+what if I'm not a small team how do I
+pay for this yeah so for Azure pipelines
+you know if you're an individual doing
+private build you get 800 3 minutes if
+you'd like to grow up from that you buy
+units of paralyzation you know you can
+run more jobs at a time each one cost
+$40 ok so if you buy a 10 new jobs you
+can buy it run 10 jobs at the same time
+$40 each gosh yeah most of the other
+services you buy per user for about $6
+you can go to the pricing page on our
+website and get more details great so
+obviously we've been using V STS for a
+long time looks like the URLs are
+changing like what is my experience
+gonna be as a current V STS user moving
+over to Azure DevOps yeah this is gonna
+be a good thing for existing users the
+transition is going to be seamless and
+automatic the existing customers will
+get to decide when they make that
+transition so they can decide when the
+right time to go do it for them is okay
+if you're using all of the capabilities
+of VST s all these as your DevOps
+services like you showed work great
+together they're not going to lose
+anything they're just going to get more
+choice
+so if they want to set up a project and
+only use it for planning and only have
+as your boards on it for example they'll
+have a much cleaner and better
+experience for doing that sure yeah cuz
+I've noticed that I've done that on a
+couple I maintain a couple open source
+projects and all I needed were pipelines
+and it was really nice to be able to
+streamline my experience right I mean I
+and as the team gets bigger and as we
+grow I think I'm gonna start turning
+back on some of those other things but
+for now is really neat to be able to
+just streamline it and just let's just
+focus on what it is that we want to work
+on which is great but now we talked
+about bsts but I always say that there's
+a twin the bsts called TFS does how does
+that transition work yeah so TFS is now
+as your DevOps server okay it's still
+the vehicle that we use to deliver all
+the value we provide in the cloud one
+premise the way that we ship it and
+update it and the way you use it will
+continue to be the same we'll continue
+to update it on the same cadence that
+been doing forever so it'll be again a
+nice seamless transition for EFS users
+as well right so that next quarterly
+update I get it'll just gonna magically
+change its name from one to the other
+next major the next update of TFS will
+be the azure DevOps server gotcha
+awesome okay so the last thing I want to
+talk about is just how do we get started
+if I'm not an existing customer I'm
+brand new I've seen this I'm excited I
+see the value of cross-platform any
+language any platform in one tool chain
+how would I go and get started there's a
+couple ways you know one if you want to
+use as your pipeline and your github
+user you can go to the github
+marketplace like we looked at earlier
+sure otherwise I suggest you go to Azure
+calm slash DevOps pick the service that
+you want to get started with and go from
+there awesome well I thank everyone for
+joining us but be sure and join us also
+on September 17th we're gonna have a
+live stream and a Q&A where you can ask
+some more questions and interact with
+those of us who helped develop this
+amazing product and can answer your
+questions and and make you productive on
+your DevOps transformation thank you so
+much for joining us thank you
+you

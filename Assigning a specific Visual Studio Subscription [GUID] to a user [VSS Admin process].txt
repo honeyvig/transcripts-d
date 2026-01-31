@@ -1,0 +1,49 @@
+- [Narrator] Assigning
+specific subscription GUIDs.
+Rather than assigning an individual user
+and allowing the next
+available subscription
+to be assigned
+you may prefer to assign
+a specific subscription
+of your choosing.
+To assign a specific
+available subscription,
+you will need to reference
+that subscription's GUID.
+The GUID for each subscription is listed
+in your subscription details.
+To find this, choose export
+to get a full list of assigned
+and available subscriptions.
+This will serve as a reference to fill out
+the bulk upload template.
+Once you've identified the specific GUID
+or GUIDs you'd like to assign
+return to the portal to
+begin the assignment process.
+Select add and then bulk
+add from the dropdown menu.
+Then download the Excel template
+from the dialogue box and save it locally.
+This template allows for the assignment
+of one or multiple subscriptions.
+In the required fields of the template
+enter the details for the
+new subscriber or subscribers
+including the specific GUID
+you identified previously
+and its corresponding subscription level.
+Once complete, save the template again.
+Then return to the
+dialogue box in the portal
+to upload your saved file.
+Click okay and you'll see the
+newly assigned subscriptions
+listed in the grid below.
+For more about Visual Studio
+subscription assignments
+check out aka.ms/VSS/Admin/AssignGUID
+or some of our recommended
+content in the links below.
+(upbeat music)

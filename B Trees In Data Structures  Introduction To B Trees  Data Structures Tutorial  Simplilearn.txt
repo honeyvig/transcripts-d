@@ -1,0 +1,1915 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to simply runs youtube
+channel in this session we will talk
+about beatrice we shall begin our
+session by introducing beatrice
+then we will discuss the properties of b
+trees
+after that we will try various
+operations on them like searching
+insertion and deletion finally we will
+sum up what we have learned from this
+session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply none
+so without any further ado let's get
+started with what is b tree
+b tree is a special m tree data
+structure
+a b tree of order m can have at most m
+minus 1 keys and m children
+now let's discuss some properties of b
+trees
+first up every node in a b tree can have
+at most m elements
+next every node except the root and the
+leaf node must have m by 2 children
+next a root node must have at least two
+nodes
+at last a leaf node must be at the same
+level
+now let's discuss what are the various
+operations we can perform on a bakery
+we can perform three operations on a b
+tree
+that is searching
+insertion
+and deletion
+let's discuss these in detail
+first up searching
+in this we will traverse the complete b
+tree until we have found a key
+we will start from the left side to go
+all the way up to the right side
+now let's try this in a code editor
+we will first start by creating a b tree
+node
+to do that we will use class
+b3 node
+and keys
+it is an array of keys
+then end
+t
+this will define the range of the number
+of keys
+then we will
+create a child pointer
+e3
+node
+see
+it is an array of child pointer
+then
+then a variable
+to check the current number of keys
+and a boolean variable
+which will be true when the node is
+leave
+now define some
+functions in public
+first constructor
+then a function to insert a new key in a
+subtree
+void
+insert
+non-full
+argument as end k
+next a utility function to split the
+child y of the node
+argument as end i
+comma
+a function to traverse the b tree
+and a function to search a key in the
+subtree
+it will return null if key is not
+present
+now we will create another class b3
+and make it a friend of this so that we
+can access private members of this b3
+of this class in b3 function
+now
+we will create a pointer root
+minimum degree
+then
+public
+a constructor b tree
+put equals to null
+and t is equals to
+underscore d
+now we will write a function to traverse
+this tree
+point traverse
+if
+not
+null
+and root
+traverse
+now we will write a function to search a
+key industry
+return
+if root is equals to
+null
+and null
+else
+root
+earth
+now the main function that inserts the
+new key in this b tray
+void
+insert
+now
+we will write the constructor for b3
+node class
+c
+now we will copy the given minimum
+degree and leave property
+now we will allocate the memory of the
+maximum number of possible keys and the
+child pointer
+and c equals to
+new
+b tree
+load
+star bracket
+to start t
+now we will initialize the number of
+keys at zero
+now let's write the function to traverse
+all node in the subtree rooted with this
+node
+there are n keys and n plus one children
+to traverse through n keys and first and
+children's we need to do int eyes
+i is equals to 0
+i less than n
+i plus plus
+if this is not leaf node then before
+printing key
+traverse the subtree rooted with child
+ci
+so if
+if
+equals to false
+then
+c bracket i
+l equals to
+traverse
+else
+see out
+case
+now we will print the subtree rooted
+with the last node
+so if
+leave
+equals to false
+and see
+i
+traverse
+now we will write the function to search
+key k in sub tray rooted with this node
+so b3
+node
+are
+e3
+search
+okay
+we will first find the first key greater
+than or equal to k
+so
+while
+and i
+is less than n
+and
+k
+is greater than
+is
+bracket i
+then i plus plus
+now if we found the key is equals to k
+then we will return this node
+bracket i
+is equals to k
+then we will
+return
+if key is not found here and this is a
+leaf node then
+if
+leaf is equals to
+true
+then we will return
+now we will try to go to the appropriate
+child
+so we will use return
+c bracket i
+arrow
+search
+now we will write the bean function that
+insert the new key in this v tree
+so void
+b tree
+insert
+and k
+so if
+root
+is equals to
+null
+then we will allocate the memory of our
+root
+now root
+keys
+bracket 0
+is equals to k
+now we will change root
+here we are updating the number of keys
+in this route
+now if else
+else if tree is not empty
+then
+if root is full then tree grows in
+height so
+if
+root
+arrow n
+is equals to
+2
+star t
+minus 1.
+then we will allocate the memory for the
+new root
+b3
+star s equals to new
+e3
+node
+t comma
+false
+now we will make the old root as child
+of the new root
+so
+s arrow
+c bracket zero
+is equals to
+root
+now we will split the old root and move
+one key to the new root
+so
+as
+split child
+root
+now
+new root has two children's
+we have to decide which of the two
+children is going to have a new queue
+new key
+so end
+i is equals to zero
+if
+if
+as
+keys
+0
+is less than
+k
+then i plus plus
+and as
+arrow
+c bracket i
+arrow
+insert
+known
+full
+okay
+now we will change the route
+equals to us
+else
+if root is not full we will call the
+insert non-full
+now we will write a function insert for
+non-full
+we'll initialize and
+i is equals to
+n minus 1
+f
+if
+is equals to
+true
+then
+while
+i is greater than equals to zero
+and
+if
+is greater than k
+then
+case
+i plus 1
+will be equals to key is i
+and i minus minus
+now we will insert the new key at the
+found location
+else
+while
+i is greater than equals to zero
+is
+i
+is greater than
+k
+then
+i minus minus
+now we will see if the found child is
+full
+f
+c
+bracket
+i plus one
+l
+is equals to
+to start t
+minus one
+then
+we will use split child
+i plus 1
+comma
+c
+i plus 1.
+now if
+k is
+bracket i plus 1
+is less than k
+then i plus plus
+c
+i plus one
+okay
+now we will write the function split
+child
+i
+comma leaf
+and
+equals to
+t minus one
+now for dough
+and
+j is equals to zero
+j less than t minus 1
+j plus plus
+z equals to
+equals to y
+now we will copy the last two childrens
+of y to z
+if
+y leaf
+is equals to false
+and four
+into j
+is equal to zero
+j less than
+t and j plus plus
+now we will reduce repeat now we will
+reduce the number of keys in y
+since this node is going to have a new
+child we will create a space for the new
+child
+so for loop
+and
+j is equals to 9 j is equal to n
+j greater than equals to
+i plus 1
+j minus minus
+c bracket
+j plus 1
+equals to c bracket j
+now we will link the new child to this
+node
+now a key of y will move to this node
+and find the location of new key and
+move all greater keys one space ahead
+now we will increment the count of keys
+in this node
+now let's write the main block
+we will define a b tree with menu of
+degree 3.
+now t dot insert
+then
+t dot insert
+20
+d dot insert
+five
+two dot insert
+six
+d dot insert
+12
+a dot insert
+30.
+t dot insert
+7
+and
+t dot insert
+17
+now let's try to traverse this
+c out
+traversal
+of
+b3
+d dot
+now let's search some keys so let's take
+end
+k is equals to 6
+so if
+t dot search
+k
+is not
+null
+then
+see out
+okay
+else
+see out
+not present
+let's try this function one more time
+with k is equals to
+15.
+let's execute this
+as you can see we have successfully
+traversed this b tree and we have
+checked two keys if they are present or
+not the k is equals to
+15 was not present and k is equal to 6
+was present
+let's get back to our slides
+next up insertion
+we have to insert an element in such a
+way so that we won't disobey any
+properties of b trees
+now let's try this operation in a code
+editor
+we will start by creating a node to do
+that we will use class
+b3 node
+then we will create an array of keys
+minimum degree
+an array of child pointers
+current number of keys
+and a boolean variable leaf
+this variable will tell if the node is
+leaf or not
+then we will define some public
+functions
+we will start with constructor
+now we will create a function
+to insert a new key
+into the non-full node
+a utility function to split the child
+function to traversal
+tree
+a friend class petery
+now we will create this class b tree
+now we will define a pointer to root
+node
+minimum degree
+then we will create some public
+functions
+first constructor
+root equals to
+null
+and t equals to
+underscore team
+now
+void
+traverse
+now if
+root is not equational
+then root
+arrow
+traverse
+now we will define a main function that
+inserts a new key in this b tree
+now we will write the constructor for
+the b tree dot class
+and d1
+comma
+boolean
+leaf one
+now we will copy the given minimum
+degree and leave property
+now we will allocate memory of maximum
+number of possible keys and child
+pointers
+now we will initialize the number of
+keys as zero
+now let's write a function to traverse
+all node in the subtree
+now there are n keys and n plus one
+children so we will traverse through n
+keys and first and center
+so end
+i
+for do
+i is equal to zero
+less than n
+and i plus plus
+now suppose if this is not leaf then
+before printing key we will travel the
+subtree rooted with this child
+so
+if
+if
+is equals to false
+then c
+i
+arrow
+traverse
+now we will print these keys
+now we will print the subtree rooted
+with the last child
+so if
+leaf
+is equals to
+false
+then
+ci
+arrow
+traverse
+now we will write the main function that
+inserts a new key in this b tree
+void
+b3
+and k
+now if tree is empty
+then we will allocate the memory to root
+so root
+is equals to new
+b3
+node
+e
+comma
+true
+now we will insert the key
+root
+arrow
+keys
+equals to k
+and we will update the number of keys in
+root
+root
+arrow
+n
+equals to one
+else
+if tree is not empty
+and if root is full
+then tree will grow in height
+if
+root
+arrow n
+is equals to
+2 star t minus 1
+now we will allocate the memory of new
+root
+now we will make all root as child of
+new root
+is equals to
+root
+now we will split the old root and move
+one key to the new root
+so to do that we will use split child
+function
+0 comma shoot
+now new root has two children's now
+we have to decide which of the two
+children is going to have new key
+so to do that we will use end is equals
+to 0.
+if
+s keys
+0 is less than k
+then i plus plus
+and s
+arrow
+c i
+now we will change the route
+else
+root
+insert
+non-full
+okay
+now we will write a utility function to
+insert a new key in this node
+we will assume that node must be non
+full when this function is called
+so void
+b tree
+node
+insert non full
+k
+we will initialize index as index of
+right most element
+so int
+i is equals to n minus 1.
+now if this is a leaf node
+and the following loop does two things
+a finds a location of new key to be
+inserted or move all greater keys to one
+place ahead
+so
+while
+i is greater than equals to 0
+and
+is
+i
+is greater than k
+now
+is
+i plus 1
+will be equals to
+keys
+at i
+and
+i minus minus
+now we will insert the new key at the
+found location
+so keys
+at i plus 1
+will be equals to k
+and
+n equals to n plus 1
+now else
+if this node is not leave then we will
+find the child which is going to have
+the new key so while
+i is greater than equals to 0
+and
+is
+i
+is greater than k
+then
+i plus i minus minus
+now we will see if the found child is
+full
+so if
+c i plus 1
+arrow n
+is equals to
+2 star t
+minus 1.
+now if the child is full then we will
+split it
+to
+split
+child
+at i plus 1
+comma
+c
+i plus 1
+after split the middle key of ci goes up
+and ci is splitted into 2 now we will
+see which of the following will have the
+new key
+f
+keys
+i plus 1
+is
+less than k
+then i plus plus
+c
+i plus one
+insert
+normal
+okay
+child
+and
+i
+comma
+e3
+node
+now we will create a new node which is
+going to store t minus keys of y
+so b tree
+node
+star z
+d
+comma
+y arrow
+leaf
+now z
+arrow n
+is equals to t minus 1.
+now we will copy the last d minus 1 case
+of y to z
+so for loop
+j is equals to 0.
+a less than
+t minus 1
+j plus plus
+so z
+arrow
+is
+j
+equals to
+y arrow
+is
+j plus t
+now we will copy the last decimals of y
+to z
+so
+if
+y leaf is false
+so for
+end
+j is goes to zero
+j less than t
+and j plus plus
+so z
+c j
+is equals to
+y
+c
+j plus t
+now we will reduce the number of keys in
+y
+so y
+arrow n
+is equals to d minus one
+now since the node is going to have a
+new child we will create the space for
+the new child
+so
+for into j
+is equals to n
+and j is greater than equals to i plus 1
+and j minus minus
+c
+j plus 1
+will be equals to
+c j
+now we will link the new child to this
+node
+so c bracket i plus 1
+equals to z
+now a key of y will move to this node
+so we will find the location of new key
+and move all greater keys one space
+ahead
+so for
+end
+j
+is equals to
+n minus 1
+j greater than equals to i
+j minus minus
+is
+a plus one
+equals two
+is
+j
+now we will copy the middle key of y to
+this node
+sub key is
+bracket
+i
+is equals to
+y
+arrow
+keys at t minus one
+now we will increment the counts of key
+in this node
+so n equals to n plus one
+now we will write a driver program to
+test above functions
+now we will write the main block
+we will start with a b tree with meaning
+of degree 3.
+now we will insert keys in this tree
+so t dot
+insert
+15
+d dot
+insert
+five
+t dot insert
+x
+d dot
+insert
+12
+d dot
+insert
+7
+now let's print this constructor tray
+so see out
+created
+b3
+yes
+now t dot
+traverse
+now let's execute this
+as we can see we have created b3 of
+order 3.
+let's get back to our slides
+finally deletion
+while deleting any elements from b tree
+we have to be careful not to break any
+properties of the b tree
+like all the leaves must be present at
+the same level or elements must be in
+ascending order
+now let's try this operation in a code
+editor
+let's start by creating a node to create
+a node we need a class
+node
+and
+start keys
+this is an array of keys entity
+a minimum degree
+now we will define an array of child
+pointers
+so b3 node
+number of keys and
+a boolean variable leaf to tell us if
+the node is leaf or not
+now we will define some public functions
+we will start with the constructor to
+this class
+b3
+node
+and underscore t
+comma
+boolean
+underscore leaf
+and a function to traverse the whole
+nodes in the subrooted tree
+so void
+traverse
+now a function to search a key in the
+subtree
+so b tray
+node
+star
+search
+and k
+this will returns null if k is not
+present
+now we will write a function that
+returns the index of the first key that
+is greater or equal to k
+so end
+find key
+and k
+now we will write an utility function to
+insert a new key in this subtree
+rooted with this node
+we will be assuming the node must be
+non-full when this function is called
+so void
+insert
+non-full
+as argument as
+k
+now we will write a utility function to
+split the child of y
+of this node
+void
+let
+child
+and
+i
+comma
+b3
+node
+star
+y
+a wrapper function is to remove the keys
+k in substituted with this node
+so
+remove
+end k
+another function to remove a key present
+in the eighth height position in this
+node which is a known leaf node so void
+remove
+from non-leaf
+and
+idx
+now we will write a function to get the
+predecessor of the key where the key is
+present in the idx position in the node
+so end
+get
+read
+idx
+now we will write a function to get the
+successor of the key where the key is
+present in the idx position in the node
+so end
+get
+successor
+and
+idx
+now we will write a function to fill up
+the child node present in the idx
+position
+in the c array if that child has less
+than t minus 1 keys
+so void
+fill
+and
+idx
+now we will write another function to
+borrow a key
+from the c idx minus one node and place
+it and place it in c idx node
+so void
+borrow
+idx
+a function to borrow a key from the idx
+plus one node and place it at the i
+idx node
+subvoid
+borrow
+from
+next
+and idx
+void
+merge
+idx
+now we will make b3 class
+as friend so that we can access private
+members of the this class in the b3
+functions
+so friend
+class
+b3
+so class
+we'll start with the pointer to the root
+node
+so b3
+node
+star root
+now we will write some public functions
+we will start with the constructor so b3
+and
+underscore d
+so root
+is equal to
+null
+and t is equal to
+underscore
+now
+a traverse function
+void
+traverse
+so we will check if
+root is not null
+then
+root
+arrow traverse
+now we will write a function to search a
+key in this tree
+so b3
+node
+search
+and k
+we will return
+if
+root is equals to
+null
+then we will return null
+else
+root
+arrow
+search at key
+now we will write the main function that
+inserts a new key in this b tray
+so void
+insert
+k
+now another main function that remove
+the new key in this b tree
+so void
+removed
+now we will write the constructor for
+this bitrate node
+and d1 comma
+bull
+leaf one
+so t will be equals to t1
+and
+leaf
+will be equals to leaf one
+now we will allocate memory for the
+maximum number of possible keys and
+child pointers
+so keys
+is equals to
+new
+int
+bracket
+to start t
+minus 1
+and child c is equals to new
+b3 node
+star bracket
+to start d
+now we will initialize the number of
+keys as zero
+so n is equals to zero
+now we will write a utility function
+that returns the index of the first key
+that is greater than or equal to k
+so
+int
+b tree
+node
+find
+key
+end
+k
+now end
+by dx
+is equals to zero
+then while
+i dx
+is less than n
+and
+keys
+idx
+is less than k
+plus plus idx
+return
+idx
+now we will write a function to remove
+the key k from the subrout tray rooted
+with this node so world
+d3
+node
+remove
+end key
+and
+idx equals to
+point key
+okay
+if the key to be removed is present in
+this node
+then if
+i dx
+is less than n
+and
+keys
+at idx
+is equals to k
+now if node is leaf node
+then we will remove from leaf node is
+called
+otherwise remove from non-leaf function
+is called
+so if
+leaf
+then remove
+from
+leaf
+idx
+else
+remove
+from
+only
+idx
+now else
+if this node is a leaf node then the key
+is not present in the stream so
+if
+leave
+see out
+okay
+yes
+does not
+exist
+industry
+and return
+the key to be removed is present in this
+sub tree rooted with this node
+the flag indicates whether the key is
+present in this subtree rooted with the
+last child of this node
+so
+bull
+black
+is equals to
+idx
+equals to and
+if
+it is true
+else
+false
+if the child where the key is supposed
+to exist has less than t keys then we
+fill that child
+so if
+c
+at idx
+and
+it's less than t
+then fill
+idx
+now if
+flag
+and
+i dx
+is greater than n
+see
+dx
+minus one
+remove
+okay
+else
+c
+idx
+removed
+return void
+b tree
+node
+remove
+from leaf
+and
+idx
+now we will move all the keys after the
+idx position one place backward so
+for loop
+and
+i is equals to idx plus one
+idx plus 1
+i less than n
+i plus
+plus plus i
+so keys
+at i minus 1
+should be equals to
+at i
+and we will reduce the count of keys so
+n
+minus minus
+then return
+now we will write the function to remove
+the idx key from the node which is
+non-leaf node
+so void
+d3
+node
+remove
+from non-leaf
+and
+idx
+so int
+k is equals to
+keys
+at idx
+if the child that precedes k at c i d x
+has at least t keys then we will find
+the predecessor thread of k in the sub
+tree rooted at ci dx we will replace k
+by predecessor recursively and delete
+thread in c i d x
+so if
+c idx
+arrow
+and
+is greater than equals to
+t
+then end
+equals to
+get
+red
+idx
+keys idx
+equals to
+red
+c
+idx
+remove
+else
+f
+c at i d x plus one
+arrow
+and
+is greater than equals to
+t
+and end
+suck
+is equals to
+get
+suck
+idx
+of keys at idx
+is equals to suck
+c at idx plus one
+you just remove
+suck
+else
+will merge
+idx
+and c at idx
+we'll call
+remove
+remove
+return
+now we will write a function to get
+predecessor of keys idx
+so end
+v3
+node
+get bread
+and
+suck
+repeat
+and idx
+so b3
+node
+star curve
+is equal to c at idx
+while
+there is not a leaf
+then
+will be equals to
+curve
+arrow c
+calls n
+now we will return
+key
+now we will write
+end
+bakery node
+get
+suck
+and
+idx
+curl
+equals to c
+i d x
+plus one
+while
+curve
+arrow
+while curve is not leaf
+0
+now we will return
+now we will write a function to fill
+child c idx which has less than t minus
+one keys
+b3
+node
+l
+and
+idx
+if
+repeat if the previous child c idx minus
+1 has more than t minus 1 keys then we
+will borrow a key from that child
+so if i dx
+is not equals to zero
+and
+c at i i dx
+minus one
+calls
+and
+greater than equals to
+t
+then we will borrow from previous
+idx
+else
+if
+i dx is not equals to n
+and
+c at i dx
+plus 1
+cos
+n
+greater than equals to 1
+a t
+then
+we will borrow
+from next
+at idx
+else
+if
+i dx
+is not equals to n
+and we will merge
+idx
+as
+merge
+idx
+minus one
+return
+now we will write a function borrow from
+previous
+a tree node
+star child
+is equal to c idx
+a train
+node
+star sibling
+is equals to c i d x
+minus one
+now
+the last key from c idx minus 1 goes up
+to the parent and key idx minus 1 from
+parent is inserted as the first key in
+cidx thus the losses sibling one key and
+child gains one key
+moving all keys in c idx one step ahead
+so for loop
+and
+i
+is equals to
+child
+at n
+minus 1
+i greater than equals to 0
+and i minus minus
+minus minus i
+child
+calls keys
+at i plus 1
+equals to
+child
+calls
+keys
+at i
+now if cidx is not a leaf
+then we'll move all its child pointers
+one step ahead
+if underscore
+child
+calls leave
+or
+and
+i
+equals to
+child and
+i
+greater than
+equals to zero
+i
+minus minus i
+child
+at c bracket i plus one
+equals to
+child
+c bracket eye
+now we will set the child's first key
+equal to the key at idx minus 1 from the
+current node
+so child
+is
+at 0. is equals to
+keys that i dx minus one
+now we will move siblings last child as
+cid access first said
+so if
+child is not leave
+and child
+arrow
+c bracket 0
+is equals to
+sibling
+at
+c
+sibling
+calls
+and
+now
+keys
+at i dx minus 1
+will be equals to
+strip length
+keys
+sibling
+false
+n minus one
+now child
+at n
+will be plus equals to
+1.
+and sibling
+and
+will be equals to minus equals to
+1.
+return
+void
+b3
+node
+from next
+int idx
+now we will start by b3
+node
+child
+is equals to c at idx
+and b3
+node
+sibling
+is equals to c at idx
+plus one
+now key idx is inserted as the last key
+in the cidx
+so child
+keys
+and
+is equal to
+keys
+at idx
+now child
+at keys
+if
+child is not leave
+let's see
+equals to
+sibling
+at
+c
+zero
+now
+the first key from sibling is inserted
+into key idx
+so key at idx
+is equals to
+sibling
+keys
+zero
+for loop
+and i is equals to 1
+i
+less than
+sibling
+at n
+plus plus high
+sibling
+i
+minus 1
+is equals to
+sibling
+now if
+sibling is not leave
+hello
+i
+equals to one
+less than equals to
+sibling calls n
+plus plus i
+false
+c
+at i minus 1
+equals to
+sibling
+calls c at i
+now we will be increasing and decreasing
+the key count of cidx and cidx 1
+respectively
+so
+child
+at n
+is plus equals to
+one
+sibling
+calls
+n
+minus
+equals to
+one
+return
+now void
+b3
+node
+merge
+with argument as end idx
+b3
+node
+star child
+is equals to c
+dx
+beat tree
+node
+or sibling
+first to c at idx plus one
+now we will be pulling a key from the
+keyed node and inserting it at t minus
+one position is c idx
+so
+child
+calls keys
+t minus 1
+is equals to
+keys
+at idx
+now we will be copying
+keys from cidx 1 to ci dx at the end
+so for
+end
+i
+is equals to 0
+i less than sibling
+plus n
+and plus plus i
+so child
+i plus t
+equals to
+sibling
+if
+not
+child
+calls
+leave
+for
+i is equals to 0
+i
+less than equals to
+sibling
+cos
+plus plus i
+child
+false
+c
+record
+i plus t
+equals to
+sibling
+because i
+now for
+is equals to i dx
+plus 1
+i less than n
+plus plus i
+i minus 1
+is equals to
+case
+at i
+i dx plus 2
+i less than equals to
+n
+and plus plus i
+c
+at i minus 1
+is equals to
+c
+at i
+child
+and plus
+equals to
+sibling
+and
+plus one
+elite
+sibling
+return
+now we will write the main function that
+inserts a new key in this battery
+so void
+b3
+and k
+if
+root is equals to
+null
+then we will allocate memory to root
+sequence to
+new
+v3 node
+d comma true
+[Music]
+note
+is
+bracket 0
+is equals to k
+and root
+at n
+is equals to one
+else
+f
+root
+calls
+n
+is equals to
+star
+t minus one
+so b tree node
+starus
+is equals to
+new
+b3
+node
+e
+comma false
+now as
+c bracket 0
+is equals to
+root
+as
+split
+child
+zero comma
+root
+and
+i is equals to zero
+f
+has
+keys
+bracket zero
+less than k
+i plus plus
+s
+c bracket
+hi
+insert
+non-poll
+okay
+now we will change the root to s
+else
+root
+calls
+insert
+non-full
+at key
+a utility function to insert at non-full
+node
+i
+is equals to n minus 1
+f leaf equals to true
+the following loop does two things
+finds the location of key to be inserted
+or moves all greater key to one place
+ahead
+so while
+i
+is greater than equals to zero
+and
+keys
+at i
+are greater than k
+then
+keys
+at i plus 1
+will be equals to keys at i
+and i
+minus minus
+keys
+at i plus 1
+will be equals to
+a
+and n will be equals to n plus one
+else
+while
+i is greater than equals to zero
+and
+is
+at i
+greater than k
+i minus minus
+f
+c bracket i plus 1
+at n
+equals to
+2 star
+t minus 1
+child
+i plus one
+comma c
+i plus one
+f
+is
+bracket i plus 1
+k
+5 plus
+c bracket
+i plus one
+insert non-poll
+okay
+b3
+node
+and i
+comma
+b3
+node
+star y
+b3
+node
+star z
+is equals to new
+b3
+node
+argument as y calls t
+and y called slave
+now that calls
+n equals to
+t minus 1
+now we will copy the last d minus 1 keys
+of y to z
+so for loop
+and j is equals to zero
+j less than
+t minus one
+j plus plus
+so z keys
+okay
+is equals to
+y
+at keys
+j plus
+t
+so if
+y
+if
+equals to
+false
+for
+and
+j is equals to zero
+j
+less than t
+j plus plus
+j
+c bracket i
+is equals to
+y calls
+c bracket j plus
+e
+now y calls
+n equals to t minus 1
+now since this node is going to have a
+new child we will create space for the
+new child
+so for loop
+and
+change equals to n
+j greater than equals to
+i plus 1
+j minus minus
+c bracket
+j plus 1
+equals to c bracket
+j
+now c bracket
+i plus 1
+is
+equals to
+c bracket
+j
+e bracket
+i plus 1
+is equals to z
+now for loop
+and
+j is equals to n
+minus 1
+j greater than equals to
+i
+j
+minus minus
+is record j
+plus one
+equals to
+keys
+at j
+is i
+equals to
+y
+is
+bracket
+t minus 1
+n is equals to n plus 1
+now we will write function for traverse
+so void
+b3 node
+traverse
+i less than n
+i plus plus
+if
+leaf
+equals to false
+and c bracket i
+will traverse
+if
+is equals to false
+then c i
+will call
+traverse function
+now we will write the function to search
+key in the subtree rooted with this node
+so b3
+node
+star
+betrayal
+node
+search
+and
+k
+and
+i is equals to zero
+while
+i is less than n
+ampersand
+k is greater than keys
+bracket i
+so i plus plus
+now f
+is bracket i
+is equals to k
+and return
+this
+now if
+if
+is equals to true
+then return
+null
+otherwise return
+c bracket i
+calls
+search
+okay
+now we will write the utility function
+to remove
+so void
+e3
+remove
+hint
+k
+f
+not root
+and see out
+the
+tree
+is empty
+return
+now we will call the reboot repeat now
+we will call the remove function for
+root
+so root
+calls
+remove
+okay
+now if root has zero keys then we will
+make its first child as a new root
+if it has a child
+otherwise set root as null
+so if
+root
+n
+is equals to
+zero
+then b tree
+node
+star dmv
+equals to root
+if
+root
+leaf
+root
+equals to
+null
+else
+root
+equals to
+root
+c bracket
+zero
+now delete
+return
+now we will write the code for the main
+block
+we will start with b3
+of order 3.
+now let's traverse this crater tree
+see out
+created
+tree
+now c out
+and l
+now we will use t dot remove
+to remove five
+now see out
+modified
+p3
+after
+deleting
+5.
+t dot traverse
+as you can see we have successfully
+deleted 5 from our b3
+let's get back to our slides
+at last let's sum up what we have
+learned in this session
+first up all the operations on b tree
+have time complexities of log n
+next all the leaves must be on the same
+level next elements of b3 are sorted in
+ascending order from left to right
+finally every node contains one more
+pointer than the number of elements of
+the node
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simplyla
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

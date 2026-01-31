@@ -1,0 +1,168 @@
+hi everyone my name is Yuri Bhatia and
+I'm a program manager in the cloud
+native compute team and today I'm we
+talk to you guys about how to auto scale
+with aks and a new public preview
+feature we have called virtual node in
+the agenda we have first the background
+of Azure container instances and then
+I'll go through an open source project
+called virtual couplet and finally we'll
+talk about the virtual node in public
+preview with a couple demos to show you
+guys what it's all about
+so the first thing is containers so
+sometimes all you need to do is just run
+a container and VMs just take up too
+much management for just trying to run a
+single workload and that's when we came
+up with as your container instances it
+takes away the need of VM management it
+starts in seconds and we support Windows
+and Linux it's also hyper-v isolated so
+that means you have the same level of
+isolation that you get in VMs today it's
+just at the container level you can also
+configure the amount of memory and CPU
+that you want so you can say you want
+four cores and maybe 14 gigabytes you
+really get to choose which is pretty
+awesome
+our virtual cubelet project in the open
+is something that we released last
+December and it's scart it's gained a
+lot of support since then basically what
+we've done is we figured out how to
+extend kubernetes and connect the api's
+of kubernetes to api's of any other kind
+of service for Azure we're connecting it
+to outer container instances but we also
+have another provider for the IOT edge
+which is pretty great and we also have
+support from the rest of the community
+so not only Microsoft but providers from
+Amazon hyper SH VMware have all joined
+the cause of helping us build virtual
+couplet and the github link is on the
+slide so with a CI and virtual cubelet
+and aks we've basically come together
+and built a preview within a short
+called virtual node so now today we're
+announcing that it's in public preview
+and you guys can basically get this
+virtual node within your cluster through
+the portal or the CLI this is the way it
+works the virtual node architecture is
+basically
+you get the management of a chaos and
+the masters are already controlled for
+you it's a managed control plane but
+then you also get an extra burst
+capacity through a CI and virtual node
+so now you can have one to X amount of
+VMs in your in your cluster and then you
+can install virtual node to be able to
+scale out basically infinitely into a CI
+and there's no VMs to think about so
+when you're scaling you don't have to
+scale VMs and then think about the
+workloads that go on top of them all you
+do is just scale out as your container
+instances and you don't even realize it
+the management plan is still kubernetes
+which is pretty awesome so now what I'm
+gonna do is take you through a demo of
+first how to install virtual node in
+Azure and then how to actually use
+virtual node in your own applications
+and how to auto scale from your cluster
+to virtual node itself and to add your
+container instances so now that we've
+already installed virtual node in my
+cluster I have went ahead and installed
+an entire application it's basically
+just a simple front-end that simulates a
+Black Friday event so we're selling
+service books we're selling X boxes and
+it's just this simple website from here
+what I've gone ahead and done is I've
+started a big amount of load so I have
+this load tester basically paying this
+front-end a lot and we're gonna see how
+our cluster scales would that demand and
+with that customer traffic so what I'm
+gonna do is head over to application
+insights and they have this thing called
+live metrics stream and from here we can
+see the amount of incoming requests how
+long the requests are actually during it
+for and we can see the amount of servers
+that are coming up - and if you look at
+this we have a couple coming online we
+started with just one of these and now a
+couple of them are starting to show up
+which is pretty nice I also have another
+dashboard to show you guys what's going
+on so this was a sure's on live metrics
+stream but I'm also using Griffin ax
+which is an open-source dashboarding
+tool and over here we can see that the
+RPS which is
+per second per pod is going
+exponentially up and so the RPS per pod
+and RPS in general is going up the
+response time is actually going down
+because we're getting a bunch of more
+infrastructure starting up here and
+they're all starting up in pods in ACI
+so we have eight already there's two on
+the actual VMS in my cluster so two pods
+in there that are helping this cause and
+they're all working together to get the
+request per per second down per pod so
+if I go ahead over here
+we can see the amount of containers that
+are pending
+so this is where kubernetes is stepping
+in and helping us a lot to Auto scale
+out I'm using the horizontal pot on a
+scalar which is an unknown thing in
+kubernetes that allows you to
+horizontally scale out your pods and I'm
+scaling on request for a second so once
+you hit ten requests per pod it says oh
+now we need another pod so anytime you
+get 10 requests per pod that's why we're
+spinning out so many different
+containers and if I go over here I can
+refresh this page it's my resource group
+and now we can see all of the container
+instances that are actually spinning up
+and they're all spinning out in the same
+resource group which is pretty awesome
+we have so many that started up within a
+couple seconds now if you think about if
+you did this with just VMs in your
+cluster it would have taken you first of
+all a couple minutes to start up the VM
+and then another another minute to start
+up all of those containers but for this
+amount for this amount of containers you
+would need probably 5 to 10 VMs all
+starting and starting up one after the
+other in this case we just had I don't
+know 20 30 thing pots start up in tandem
+in parallel which is pretty great so you
+can use virtual nodes to auto scale out
+from your cluster into a CI and
+hopefully this gives you an easy
+solution for scaling in kubernetes so
+that's how easy it is use virtual node
+and if you want to get started check out
+these links
+we have the demo repo which is right
+there for you to install all the
+different bits and we also have the
+feedback form so if you have any
+feedback for us please reach out thanks
+for watching

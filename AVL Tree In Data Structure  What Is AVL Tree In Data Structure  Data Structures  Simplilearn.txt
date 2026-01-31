@@ -1,0 +1,1134 @@
+hello everyone i am pepper khandelwal
+and i welcome you all to simply learn's
+youtube channel
+in this session we will talk about avl
+trees we shall begin our session by what
+is an avl trees
+then we will discuss various rotations
+we can perform to balance avl trees then
+we will discuss the complexity of avial
+trees
+after that we will try various
+operations on them like insertion
+deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so let's get started with introduction
+to avl trees
+an avl tree is a height balanced binary
+search tree for each node we have to
+make sure that the height of the left
+subtree and the right substrate can
+differ by at most one
+we can calculate this balance factor by
+subtracting the height of the left sub
+tree from the height of the right
+subtree
+now let's discuss various rotations we
+can perform on avl trees
+first up ll rotation next rr rotations
+next lr rotation
+at last rl rotation
+let's discuss them in detail
+first up ll rotation
+it is a clockwise rotation when a node
+is inserted on the left subtree of the
+left subtree of a node then we apply
+this rotation to balance that tree it is
+applied on the node below the balance
+factor 2 node that is we will apply
+write rotation on the green node
+next rr rotation
+when a node is inserted into a right
+subtree of the right subtree of a node
+then we perform rr rotation
+it is an anti-clockwise rotation which
+is applied on the node below a node
+having balance factor minus 2 that is we
+will apply it on the green node
+next up lr rotation
+when a node is inserted into right
+subtree of the left subtree of a node
+then we perform lr's rotation
+it is a combination of rr and ll
+rotation
+first we will apply rotation on green
+and yellow node after this red node is
+still unbalanced so we will perform ll
+rotation on the yellow node
+finally
+rl rotation
+when a node is inserted into the left
+sub tree of right sub tree of a node
+then we perform rl rotation
+it is a combination of ll and rr
+rotation
+first we will apply ll rotation on green
+and yellow nodes
+after this the red node is still
+unbalanced so we will perform rr
+rotation on the yellow node
+now let's discuss complexity of avl
+trees
+first up
+space complexity is a big o of n
+next up avl tree offers a complexity of
+bigger of log n for searching
+next up
+avl trees offer a complexity of bigger
+of log n for insertion
+finally avl tree offers a complexity of
+big of log n of for deletion
+we have now introduced an avl tree and
+rotations on it
+now let's discuss some of the operations
+we can perform on avl trees
+first up
+insertion and deletion
+let's discuss them in detail
+first up insertion
+we will insert a node following binary
+search tree rules
+then we will check if the nodes are
+balanced or not if they are not then we
+will balance it by using suitable
+rotations
+now let's try these operations in a code
+editor
+let's start by creating a node to create
+a node we need a class node
+we will create its member as public
+and key
+node star left
+star
+right
+and
+height
+now
+let's write a function to get maximum of
+two integers
+so
+int
+max
+comma
+and b
+now let's declare of utility function to
+get maximum of two integers
+so int
+max
+a
+comma
+enth
+v
+now let's write a function to get the
+height of the tree
+and
+height
+node
+star
+and
+now if
+n is null
+then we will return zero
+else
+we will return
+and calls
+now let's write that function to get
+maximum of two integers
+hint
+max
+and a
+comma
+and b
+we will return
+if
+a is greater than b
+then we will return a
+else we will return b
+now let's write a helper function that
+allocates a new node with a given key
+and null left and right pointers
+so node
+star
+new node
+and
+key
+code
+star
+node
+equals to new
+node
+so node
+key
+will be equals to key
+node
+left
+will be equals to
+left
+node
+left
+will be equals to null
+and
+node
+write
+will be equals to null
+and node
+height
+will be equals to
+1.
+and
+return
+node
+here we have kept height as one because
+at the new node is initially added at
+leaf so by default it will always be at
+1.
+now let's write a utility function to
+write rotate subtree rooted with y
+node
+star
+right
+star why
+now node
+star x
+is equals to
+y is left
+and
+node
+star
+e2
+is equals to
+x
+right
+now we will perform rotation so
+x right
+will become y
+and
+y is left
+will become t2
+now we will update the heights so y
+height
+is equals to max
+of height
+of y left
+height
+plus 1
+now
+x
+height
+equals to
+maximum of
+height
+x
+left
+comma
+height
+of
+x
+right
+plus one
+now return
+x
+now let's write a utility function to
+left rotate subtree rooted with x
+node
+left rotate
+node star x
+node star y
+will be equals to
+access right
+and
+node
+star t2
+will be equals to excess
+sorry
+twice s
+now we will perform rotation so y
+left
+will be equals to x
+and
+x
+right
+will be equals to t2
+now let's update height so x
+height
+is equals to
+maximum of
+height
+of
+excess left
+comma
+height
+of
+access right
+and
+wise height
+is equals to maximum of
+height
+of
+y is left
+comma
+height
+of
+wise right
+return
+bye
+now let's write a function to get
+balance vector of node n
+so in
+that
+balance
+argument as node pointer
+and
+if
+n is n is equals to null
+then we will return
+0
+otherwise
+we will return
+height
+of
+ends
+left
+minus
+height of
+enzorite
+now let's write a recursive function to
+insert the key in the subtree rooted
+with node and returns the new root of
+the subtree
+so
+node
+star
+insert
+notes
+star
+node
+comma hint
+key
+now we'll perform the normal bst
+insertion so if
+node is equals to
+null
+then we will return
+new
+node
+key
+now if
+this key
+is
+less than
+node's key
+then
+node
+left
+will equals to
+insert
+node
+left
+comma key
+or else
+we will insert that in the right node
+right
+is equals to insert
+node
+type
+comma
+key
+now we will return node
+this if else will make sure that we will
+reach to the leaf node and then we will
+insert the key
+now we will update the height of the
+sensor node
+so node
+height
+is equals to 1 plus
+max
+height
+of
+mode
+left
+comma
+height
+of
+node
+right
+now we will get the balance factor for
+this ancestor
+node to check whether this node became
+unbalanced
+so int
+balance
+is equals to get
+balance
+now if this node becomes unbalanced then
+there are four cases
+so if
+balance
+is greater than one
+and
+e
+is less than
+node
+left
+key
+then
+we will return
+right
+rotate
+note
+this if statement for the left left case
+so or ll case
+now let's write it for the right right
+case or r case
+so if
+balance
+is less than minus one
+and
+e is greater than
+node
+right
+key
+then
+we will return
+left
+rotate
+node
+now write for the left right case or lr
+case
+so if
+balance
+is greater than one
+and
+e
+is greater than node
+left
+key
+the node
+left
+is equals to
+left
+rotate
+node
+left
+i'll return
+write
+rotate
+now let's write the right left case or
+rl case
+so if
+balance
+is less than -1
+and
+key
+is less than
+node
+to the right
+key
+and node
+right
+will be equals to
+light
+rotate
+node
+to the right
+and we will return
+left
+shortly
+now we will return this node
+now let's write a function to print
+pre-order traversal of this tree
+so
+void pre-order
+node
+star route
+so now if
+root
+is not null
+then
+c out
+root
+key
+and now pre
+order
+root
+and pre-order
+now let's write the code for the main
+block
+we will start with an empty tree
+node
+star route
+is equal to null
+now we will try to construct tree
+so root
+is equals to
+insert
+root
+comma 10
+our root
+is equals to
+insert
+root comma
+5
+root
+is equals to insert
+root
+comma
+2
+root
+is equals to insert
+root
+comma
+3
+root
+is equals to insert
+root
+comma
+7.
+and root is equals to insert
+comma
+nine
+now let's try to print this tree
+so see out
+behavior
+tree
+is equals to
+three
+in
+the order
+spray order
+root
+let's execute this
+as you can see we have successfully
+created our first avr tray
+let's get back to slides
+at last deletion
+we will delete a node following a binary
+search tree rules
+then we will check if all the nodes are
+balanced or not if they are not then we
+will balance it by using suitable
+rotations
+now let's try these operations in a code
+editor
+let's start by creating a node to create
+a node we need a class
+node
+we will define its members as public
+and key
+note star
+left
+note star
+right
+end
+height
+now
+let's write a utility function to get
+height of the tree so end
+height
+node
+star
+n
+if
+n is equals to null
+then in that case we will return
+0
+otherwise we will return
+hence height
+now let's write a utility function to
+get maximum of two integer
+and
+max
+a comma and b
+so we will return
+if
+a is greater than b
+then a else
+b
+now let's write a helper function that
+allocates a new node with a given key
+and null left and right pointers
+so node
+star
+new
+node
+and
+key
+so node
+star
+new node
+is equals to new
+node
+parenthesis
+now new node
+will get key
+as
+key
+new
+node left
+is equals to null
+and new node
+right
+is equals to null
+and new nodes
+height
+is equals to 1
+because new node is initially added as
+leaf
+that's why it is always be given as one
+now we will return this node return
+node
+now let's write a utility function to
+write rotate a sub tree rooted with y
+so node
+are
+write
+rotate
+node
+star
+y
+star x
+is equals to
+y left
+node
+star d2
+is equals to
+x
+right
+now we will perform rotation so x
+right
+is equals to y
+y
+left
+is equals to t2
+now we will update heights
+so why
+hi
+equals to maximum of
+height
+of
+y's left
+comma
+height
+of
+vice
+right
+plus one
+and
+x height
+is equals to
+maximum of
+height
+of
+access left
+comma
+access right
+one
+now we will return this new route so
+return
+x
+now we will write
+node
+star
+left rotate
+node star
+x
+load star y
+will be equals to access right
+and
+our star t2
+will be equals to y is left
+now we will perform rotation so y
+left
+equals to x
+and x
+right
+is equals to t2
+now we will update these heights so x
+height
+is equals to maximum of
+height
+of x
+left
+comma
+height
+of
+x
+right
+plus one
+and
+y's height
+is equals to
+max
+of height
+of
+y's left
+comma height
+of
+vice
+right
+plus one
+now we will return this way
+now we will write a function to get
+balance factor of node n
+so int
+get
+get balance
+note star n
+so if
+n is equals to null
+then we will return
+zero
+otherwise we will return
+height
+of
+ends left
+minus
+height
+of
+ends
+right
+now let's write a function to insert a
+node
+so node
+star insert
+so node
+star
+node
+comma
+and
+key
+now we will perform normal bst rotation
+so if
+node
+is equals to null
+then we will return
+new node
+key
+so now
+if
+key
+is less than node key
+then
+node
+left will be equals to insert
+node
+left
+comma key
+now if
+e
+is greater than node key
+then
+node
+write
+is equals to
+insert
+node
+right
+comma key
+else
+we will return
+node
+because equal keys are not a lot
+now we will update the height of the
+ancestral node
+so node
+height
+is equals to
+1 plus
+max
+height
+of node
+left
+comma height
+of
+node
+right
+now we will get the balance vector of
+this ancestral node to check whether
+this node becomes unbalanced
+so if
+end
+balance
+equals to
+get
+balance
+of this node
+now if this node becomes unbalanced then
+there are four cases that could be
+possible
+first up llks
+so if
+balance
+is greater than
+one and
+key
+is less than
+node
+left
+return
+write
+rotate
+now let's write right right case
+so if
+balance
+is less than -1
+and
+key is greater than node
+write
+key
+then we will return
+left
+rotate
+node
+now
+let's write left right case
+so if
+balance
+is greater than one
+and
+e
+is greater than node
+left
+key
+and
+node
+left
+will be equals to
+left rotate
+and we will return
+right
+rotate
+now let's write the case for right left
+case
+if
+balance
+is less than minus 1
+and
+e
+is less than
+node
+right
+so node
+right
+is equals to
+right rotate
+node
+right
+now we will return
+left
+rotate
+note
+now let's return the unchanged node
+pointer
+so return
+node
+now let's write a function to find
+minimum value node
+so node
+star
+min value
+node
+node star node
+so node
+star
+current
+equals to node
+so while
+current left
+is not equals to null
+current
+is equals to
+current
+at left
+now we will return current
+now we will write a recursive function
+to delete a node with the given key from
+subtree with the given root
+so node
+star
+delete node
+its arguments are
+not pointer root
+comma
+end key
+for starters we will perform standard
+bst delete so if
+root
+is equals to null
+then we will return
+root
+now if the key to be deleted is smaller
+than the root key then it lies in the
+left subtree
+so
+if
+e
+is less than
+root
+e
+then
+root
+left
+will be equals to
+delete
+node
+root
+to the left
+comma key
+now if key to deleted is greater than
+the root key then it lies in the right
+subtree
+so else
+if
+e is greater than root
+be
+then
+root
+write
+equals to
+delete
+node
+root
+height
+comma key
+now if the key is same as the root key
+then this is the node to be deleted so
+else
+if
+root
+left
+equals to
+hull
+our
+root
+to the right
+is equals to null
+then node
+star
+temp
+is equals to root
+left
+now if
+temp
+is equals to
+the temp
+will be equal to root
+and root
+will equals to null
+else
+root
+will be equals to star temp
+and free
+temp
+let's
+node
+star temp
+is equals to
+min value node
+root
+light
+now we will copy the inorder successors
+data to this node
+so root
+e
+is equals to temp
+key
+now we will delete this in order
+successor so root
+write
+is equals to
+delete
+node
+key now if
+root
+is equals to null
+then we will return
+root
+now we will update the height of the
+current node
+so root
+height
+is equals to 1 plus
+max
+of height
+of roots
+left
+comma
+height
+up
+comma height
+of root
+height
+now we will get the balance factor of
+this node
+so
+end
+balance
+is equals to get
+balance
+root
+if this node becomes unbalanced then
+there are four cases
+first up ll case
+so if
+balance
+is greater than one
+and that balance
+of
+roots
+left
+is greater than equals to zero
+then we will return
+right rotate
+now if
+balance
+is greater than one
+and
+get
+balance
+of root
+left
+less than zero
+then
+root
+left
+will equals to left rotate
+root
+left
+now we will return
+write
+rotate
+now let's write right right case so if
+balance
+less than minus 1
+and
+cat balance
+is less than equals to zero
+then we will return
+left
+rotate
+now we will write right left case so if
+balance
+is less than minus 1
+and
+get balance
+of root
+right
+is greater than zero
+then root
+right
+is equals to
+write
+rotate
+output right
+now we will return
+left
+rotate
+and we will return this route
+now let's write a function to print
+pre-order traversal of this tree
+so void
+tree
+order
+code
+star root
+so if
+root
+not equals to
+null
+and see out
+root
+e
+pre-order
+root
+duct
+and pre-order
+root
+right
+now let's write a code for the main
+block
+we will start with an empty tree so node
+root
+is equals to
+null
+now root
+is equals to insert
+root comma
+2
+root
+is equals to insert
+root comma
+10
+root is equals to insert
+root comma
+9
+root
+is equals to insert
+root
+comma
+7.
+root is equals to insert
+root
+comma 5
+root
+is equals to insert
+root comma three
+now let's try and print this of avl tree
+so see out
+created avl
+pre-order
+harder
+now we will delete a node so root
+is equals to
+delete
+node
+root
+comma
+done
+now let's again try and print this
+so see out
+modified
+behavior
+tree
+after
+deletion
+of
+10.
+layout
+handle
+prey order
+root
+now let's execute this
+as you can see our deletion function is
+working perfectly
+now let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up avl trees is a self-balancing
+binary search tree
+next every node must have a balance
+factor of either -1 0 or 1.
+next after every rotation we must verify
+if each node is balanced or not
+finally avl trees offers fast insertion
+and deletion operations
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any questions then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simpler
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

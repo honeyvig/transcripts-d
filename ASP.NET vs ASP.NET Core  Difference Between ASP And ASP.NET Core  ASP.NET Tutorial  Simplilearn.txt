@@ -1,0 +1,164 @@
+hey everyone welcome to simply learns
+youtube channel i welcome you all to
+this session and in this session we will
+be discussing about asp.net versus
+asp.net core so before we get started
+with the session let's have a look at
+today's agenda
+we shall begin with learning about
+asp.net followed by that we'll be
+learning asp.net core then we shall see
+some differences between asp.net and
+asp.net core after that we shall focus
+on versions of asp.net and finally we
+shall have a look at versions of asp.net
+core
+however before we begin make sure that
+you have subscribed to our youtube
+channel and click on that bell icon so
+that you can never miss an update from
+simply learn
+so without further ado let's get started
+about asp.net
+in the present the world is developing
+its technology in a speedy manner to
+make everything like communication
+development etc in a better way
+all these are used with the help of the
+applications when it comes to our mind
+for building those applications then
+asp.net is the best choice
+it is a server-side technology used for
+developing dynamic websites and web
+applications on the internet asp and
+asp.net stands for active server pages
+which microsoft provides for building
+applications it produces data-driven
+interactive web applications microsoft
+released the first version of asp.net in
+2002 for building dynamic web
+applications
+now when you have an idea about asp.net
+let's understand what exactly asp.net
+core is all about
+asp.net core is an open source version
+of asp.net which have some direct
+features compared to asp.net it runs on
+three different platforms like windows
+linux and mac os the first version of
+asp.net core was released in the year
+2016 to provide some better features
+than asp.net
+moving forward let's see some more
+differences between asp.net and asp.net
+core
+applications built using asp.net can be
+applicable only for windows but
+applications using asp.net can be
+applicable for windows linux and mac os
+asp.net uses dotnet technology as the
+platform for building the applications
+where asp.net core uses both dot net and
+dot net core as the platform for
+building applications
+languages that asp.net uses are c-sharp
+f-sharp and visual basics.net whereas
+asp.net core uses c-sharp and f-sharp
+the next difference is the types of
+applications using asp.net we create web
+user interface applications web apis mvc
+applications and signal r whereas using
+asp.net core we create web forms web
+apis mvc applications and web pages the
+performance of applications using
+asp.net technology is good whereas
+asp.net core applications have
+high and better performance
+if the user makes any changes to asp.net
+that the user has to compile whenever he
+makes changes but in asp.net core there
+is no need to compile every time it
+automatically compiles
+now when you know about some differences
+between asp.net and asp.net co let's
+have a look at versions of asp.net and
+asp.net core
+microsoft released the first version of
+asp.net on 16th of january 2002 and
+named it dotnet 1.0 and later in 2003
+24th of april the next version was
+released it was dotnet 1.1
+and it had some features to support the
+database for mobile application
+developers
+after that on november
+7th of the year 2005 the third version
+of dotnet which is the dotnet 2.2 was
+released by adding features like great
+view and navigation plus controls after
+2.0 the dot net 3.0 was released on the
+year 2006 november 21st
+with more features like windows
+presentation foundation and windows
+workflow
+then on 12th of april 2010 the next
+version that is dot net 4.0 was released
+by adding features of metadata and meta
+description for page class
+after 4.0 the version was 4.5 which was
+released on the year 2012 and 15th of
+august by adding features that help
+applications run faster and more
+scalable
+then on 17th of october 2013 the next
+version of dot net that is dot net 4.5.1
+was released with features of entity
+framework both strap and signal r for
+better communications after dotnet 4.5.1
+the.net 4.6 was released on july 20th
+2015 with entity framework and bootstrap
+features then on 11th of april 2017 dot
+net 4.7 was released to support tls
+protocol that is transport layer
+security after dot net 4.7 on october 17
+2018 the dot net 4.7.1 was released by
+adding secure hash algorithm to support
+tls
+and on 18th april 2019 the current
+version of asp.net was released with the
+name dot net 4.8 by adding web forms and
+compiler features
+now let's see the features of asp.net
+core microsoft released the first
+version of asp.net core on 27th of june
+2016 and named it as dot net core 1.0
+and later on 16 november 2016 the second
+version dot net core 1.1 was released
+with some features to support more
+development after that on 14th of august
+2017 the third version of dot net core
+2.0 was released with entity framework
+features after 2.0 the.net core 2.1 was
+released on 30th may 2018 with some
+features to support windows applications
+then on 4th december 2018 the next
+version that is.net core 2.2 was
+released
+after 2.2 the next version was 3.0 which
+was released on 23rd september 2019 then
+on 3rd december 2019 the current version
+of asp.net core was released with the
+name dot net core 3.1 by adding features
+of long-term support for applications
+and this was all for today's session i
+hope you guys found it informative and
+helpful if you have any queries and
+questions do let us know in the comment
+section below and thanks for watching
+and stay tuned for more on asp.net from
+simplylearn
+hi there if you liked this video
+subscribe to the simplylearn youtube
+channel and click here to watch similar
+videos turn nerd up and get certified
+click here

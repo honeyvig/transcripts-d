@@ -1,0 +1,219 @@
+hey everyone i'm shambly and i welcome
+you all to this new video of simply
+learn on azure active directory
+in this video i will take you through
+what is azure active directory
+followed by what is the difference
+between windows 80 and azure 80
+then we will look into the services
+audience i.e who uses these services
+and at last we will have a quick demo of
+azure active directory
+so let's get started with the video
+first
+what is azure active directory
+but before getting into the definition
+of azure ad let's have a real-life
+example of azure ad to understand it in
+a better way
+there are a lot of pre-created
+applications that you can offer
+user access to using azure ad
+so netflix is one of them
+so here's the scenario
+you want to share a netflix account with
+a dozen people from your organization
+giving your netflix username and
+password to everyone isn't safe
+so how do you give them access
+your enters azure ad
+the netflix application is available in
+the azure ad gallery and can be added to
+your azure edit tenant
+this adds the application to your
+tenancy and allows you to save your
+netflix credentials in the secured
+credential store
+so that users can be assigned to it
+the only people who have access are the
+ones you give it to unless they have
+their own account you're essentially
+building a company
+wide password vault then assigning
+people to the systems
+they require access to so they can log
+in without
+knowing the username and password for
+those systems all they need is the azure
+ad account or password and azure ad will
+handle the rest
+so saying in technical terms azure
+active directory is a cloud-based
+identity and access management
+service from microsoft that allows your
+employees to sign in and access
+resources such as microsoft 365 the
+azure portal and thousands of other sas
+apps
+and internal resources such as apps on
+your company's intranet and network as
+well as any cloud apps built by a
+company
+azure ad is required for sign-in and
+identity protection in microsoft online
+business services such as microsoft 365
+and azure
+if you sign up for any microsoft online
+business
+you will be given access to azure ad
+which includes all of the free services
+but what makes azure 80 so different
+from windows 80 that it has become more
+popular among people from technical
+firm what is windows 80
+active directory saves information about
+network objects and make it easier for
+administrator and users to find and use
+their information
+it organizes directory information
+logically
+and hierarchically using a structured
+data store
+but its supreme drawback is its layers
+so let's have a look at its layers and
+its functioning
+first is adds
+windows active directory domain services
+active directory domain services is an
+example of a directory service that
+provides mechanisms for storing
+directory data and making it available
+to network users and administrators
+second is adfs actor directory
+federation services
+federated identity and access management
+is made possible by active directory
+federation service
+which securely shares digital identity
+and entitlements right across security
+and corporate boundaries to provide
+customers partners and suppliers with a
+streamlined user experience while
+accessing an organization's web-based
+applications
+adfs extends the ability to employ
+single sign-on capability accessible
+within a single security or enterprise
+boundary to internet pacing apps
+third is
+adrms active directory right management
+services microsoft's active directory
+rights management services safeguard
+sensitive documents and emails unlike
+traditional security methods like
+firewalls and acls a the rms encryption
+and protection remain constant
+regardless of where file goes or how it
+is transferred
+but
+azure active directory actually combine
+these layers and make the whole process
+more easier and hassle free
+azure ad combines these layers into two
+layers waad windows active azure
+directory and windows azure access
+control service
+windows active azure directory combines
+all the problems revolving around
+identification management
+and windows azure access control service
+takes care of federating all the
+services of an organization
+so let's have an example when an
+employee joined the premises of an
+organization the administrator guides
+them towards signing to particular
+services they use
+and then give access to it and the
+employees can access these services
+through the credentials like username
+and password
+now that we know what is azure active
+directory and how it functions different
+from adds let's have a look at the
+service audience of azure active
+directory
+azure ad is majorly intended to rit
+admins app developers and online
+subscribers
+for it admins you can use azure ad as an
+it administrator to limit access to your
+apps and app resources based on your
+business needs
+when accessing critical organizational
+resources for example you can utilize
+azure ad to enforce multi-factor
+authentication
+finally azure active directory provides
+you with strong features to help you
+protect users identities and credentials
+while also meeting your access
+governance requirements as an app
+developer you may utilize azure ad to
+add single sign-on to your app using a
+standard based method
+allowing it to function with the user's
+existing credentials
+also azure ad
+has apis that may be used to create
+customized app experiences based on
+existing organizational data
+for online subscribers
+you're already using
+azure area as a subscriber
+each tenant of microsoft 365 office 365
+azure and dynamic crm online is an azure
+ad 10 by default
+you may begin managing access to your
+connected cloud apps right away
+so now that we know the basic concept of
+azure ada let's have a quick demo of it
+so the first thing we need to do is log
+in in our azure id account
+and then go to azure active directory
+sector here you will see add option
+where you can
+add a user group enterprise application
+app registration according to your
+choice
+and below that
+you can search for any intent like for
+user
+or for any group
+so right now it doesn't belongs to any
+group
+or there is no user
+with this name
+here you will get basic information
+like their name what is their id
+what is the license
+which groups they belong
+and what are devices they use you can
+also have an access to
+their password as well
+so this was all about azure active
+directory we have almost reached the end
+of this video if i missed anything
+important do let me know in the comment
+section i hope you enjoyed this video on
+azure active directory and learn
+something new from it if you like this
+video then please hit the like button
+thanks for watching this video and stay
+tuned for more updates and videos from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

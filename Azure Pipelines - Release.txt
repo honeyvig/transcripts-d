@@ -1,0 +1,503 @@
+>> On today's Visual Studio Toolbox,
+part two of our two-parter,
+we're going to look at release
+pipelines and continue to
+see how you can deliver more
+value to your customers,
+more frequently and more efficiently.
+Hi. Welcome to Visual Studio Toolbox.
+I'm your host Robert Green.
+In this episode, we're going to
+continue our two-part look at how
+you can start adopting
+basic DevOps practices,
+and we're going to
+focus on pipelines.
+We created a build
+pipeline last time.
+Today, I want to show one more
+thing about build pipelines
+and then we're going to
+look at release pipelines.
+So again, best place to get
+more information on this is
+the Azure DevOps
+services documentation,
+aka.ms/vst/azuredevopsdocs.
+Great place to look at that.
+So in the previous episode,
+what we did was we
+created a build pipeline,
+and that build pipeline waits for
+a machine to become available,
+downloads the latest
+version of NuGet,
+restores the packages,
+builds the solution,
+runs the unit tests,
+and then publishes
+the build artifacts,
+which is the thing that you built
+so that it can later on be deployed.
+We saw that we ran one of these.
+It took about a minute-and-a-half.
+Then I went into Visual Studio and
+made a change to the
+broker unit test.
+Check that code in,
+push that code into the repo
+that triggered the build,
+which then failed
+because I broke a test.
+Then in the meantime,
+I went back to that code,
+change the code back.
+So the test worked
+again, checked it in,
+and that triggered a
+build which succeeded,
+and I did this part off-air.
+What I want to do is show one
+more thing about build pipelines,
+and I want to talk about branching.
+Because so far, we've just been
+working with the master branch.
+So I'm going to come into
+Visual Studio and I'm going to,
+in the master branch, I'm
+going to create a new branch,
+and I'm going to call
+it AboutPageV1.1.
+It's off of master and
+I'll create that branch.
+Then what I want to do
+in this branch is make
+a change to the AboutPage and,
+let's say, provide more
+additional information.
+Perfect. Now, I'm going
+to check this in to
+that branch because this is
+V1.1 about the AboutPage.
+Updated AboutPage
+text, commit all push.
+This push is add up to the branch.
+Then in the last episode when
+we push things to master,
+that trigger the build,
+we've now push things to a branch
+which does not trigger a build.
+The reason it doesn't
+trigger a build is because,
+we come in here and we
+edit this, there we go.
+Because this build gets triggered
+when we check into master.
+Now, you can if you want,
+have this build triggered when
+things are checked into branches,
+but the default is that it's only
+triggered when it's
+checked into master.
+Now, that means that if we come
+over to here and to our repo,
+we create a pull request.
+So let's do a new pull request,
+and this is AboutPage V1 into master.
+You can do this from
+inside Visual Studio.
+You can do this in Azure
+DevOps Services, either way.
+I'm going to call this
+AboutPage V1.1, etc.
+I can assign reviewers.
+I'm not going to do
+that. I'm just going to
+create the pull request.
+Then I can approve it.
+I can reject it, etc.
+I'm just going to approve it,
+and then I'm going
+to complete the PR.
+I can delete the branch if I want.
+Complete the merge.
+I have approved the PR.
+That code gets checked into master.
+Now, you might expect a
+build to be kicked off,
+and indeed it is.
+At this point, again, we could
+sit here and wait for
+a minute-and-a-half.
+We can look at some
+additional information.
+We can view reports on pipelines.
+We can see how often this
+is building and failing.
+It's worked two out of three times.
+There's a whole bunch of
+information that you can get here.
+But I think what we'll do at this
+point is we'll just let this go.
+Then in the meantime,
+we're going to build
+a release pipeline.
+There are a couple of ways you
+can build release pipelines.
+You can come into "Releases" and
+create the release
+pipeline from here.
+What you can also do is
+go into the "Repos."
+Go into your "Repo," and you can
+select to set up a release from here.
+So either way, it works.
+I'm going to go back
+to doing it from here.
+So we'll go to a "Release,"
+and I'm going to create a
+"New Release Pipeline."
+The Release Pipeline
+says two questions;
+What are you releasing
+and where is it going?
+So the first question you get
+asked is, where is it going?
+I could do an Azure App
+Service deployment.
+I can do a bunch of things to Azure.
+I can do an IIS website
+with SQL Server.
+If I keep scrolling down,
+there's IIS without SQL Server.
+There's a whole bunch of options here
+you can get more in the marketplace.
+I'm going to deploy to an
+Azure App Service because
+I have created a couple
+Azure app services.
+So I've got
+vstoolboxtest.azurewebsites.net,
+that is a place to
+test the application.
+Then vstoolbox.azurewebsites.net
+is production.
+At the moment, I haven't
+put any code up in here.
+I just created the app services.
+I'm going to call this stage
+test because what I'm going to
+do is create a release pipeline
+and that releases to test first,
+and then to production.
+Now, the question is,
+what are you releasing?
+So if I click "one job one task,"
+I said that I was going
+to deploy to Azure.
+So the question is, what Azure?
+So I will select one of
+my Azure subscriptions.
+I'll choose this one.
+Now, I need to authorize,
+I need to say that from
+Azure DevOps Services,
+I can go and talk to
+Azure, to my Azure,
+username and password, and of
+course, now tokens come down.
+Things are configured. It
+takes a little bit of time.
+You'll have to do this
+once per project.
+So the next time I create a
+Pipeline on this subscription,
+everything will already
+be on my computer
+to enable me to talk to Azure.
+I said it was a Web App on Windows.
+Now which one? It's VS Toolbox Test.
+Now, then I come back
+to the Pipeline,
+and the first couple of
+times I tried this out I
+forgot to specify
+something in the Artefact,
+so I said, let's publish to Azure,
+but I never said what
+are we publishing,
+don't make that mistake.
+Let's click "Add an Artefact".
+You can base it off a Build.
+You can go directly
+to the source code.
+I'm just going to do it off a Build.
+I'm going to select the YAML
+Build that we built last time,
+Toolbox DevOps Show, and click "Add".
+Now, look at a couple options.
+If I look at the trigger,
+the continuous deployment trigger,
+just as when we built
+the Build Pipeline using
+the classic build process,
+we had to enable
+Continuous Integration.
+So too here, we need to
+enable Continuous Deployment.
+Meaning that after
+the Build succeeds,
+we will take what got built
+and send it up to Azure.
+You could also do it on pull request,
+I'm going to leave
+that disabled for now.
+Then what I also want to do is
+I want to create another Stage.
+I could create a new Stage
+and specify all the things,
+or I can clone this Stage
+because it's almost the same.
+Instead of saying copy of tests,
+I'm going to call this Production.
+Then the only thing here that's
+different, same subscription,
+but I want to deploy to VS Toolbox
+which is the Production site.
+There's other options, I
+can pass in variables.
+I can say, how long
+to retain or release.
+There's all kinds of
+things I can do here.
+But I also want to look at
+the pre-deployment conditions and
+the post-deployment conditions.
+I don't want any conditions on Test.
+The thing built, send it to Test,
+Test can start working on it.
+But before we go to Production,
+I want to require approval.
+So let's set pre-deployment
+approvals to Enabled.
+Let's say me.
+There's an option here to say that if
+you requested the
+release or deployment,
+you can approve it, so can
+approve your on stuff.
+Here, because I'm a
+glorious team of one,
+I'll make me the approver.
+The default timeout
+interestingly is 30 days.
+That seems a bit long to me.
+I would probably make it
+earlier, but that's okay.
+You also have the ability to
+define gates if you have.
+More than just approval,
+one person's approval is required.
+You want to see that certain
+load tests passed or certain
+statistics that you want to be met,
+certain conditions that
+you want to be met.
+You can learn more about that here,
+but it's really more of you
+can set a particular bar.
+Unless the application meets that
+performance bar or security
+check or something,
+then and only then
+can it be deployed.
+So I set a pre-deployment
+approval on the way in,
+and you can also set
+deployment conditions on
+the way out. All right.
+Now let's save this.
+Now we have a Release Pipeline.
+Now, if we pop back to
+our previous example,
+where we merge the PR
+that kicked off a Build.
+Okay, perfect. All right.
+Now, what I want to do
+is I want to create,
+well, I have a Pipeline.
+We have a Pipeline that's created,
+that's automatically going to
+run if we do another Build,
+so let's go do one last Build.
+Then "Okay". Let's make
+yet another change here.
+Actually, let's not do that because
+I still am on the About page.
+I want to bring down Master.
+Stash that. I want to
+bring down Master.
+Because we did the pull request,
+so now I want to make
+sure that I have in Master
+the current versions.
+Now, what I'm going to do,
+I'm not going to work off a Branch,
+I'm going to work off Master.
+I'm going to check this in,
+updated, about page texts,
+not going to worry about my typos.
+Yes, I am because it's in perpetuity.
+All right, let's push this.
+Now, checking in this
+change into Master,
+which will kick-off a Build,
+and we're not going to sit
+here and watch that Build go,
+so let's fast forward until
+this Build completes.
+Fantastic. The Build worked,
+which should kick off a
+Pipeline. There it is.
+Release one is just been kicked
+off because the Build succeeded.
+What happens is, we're now
+going to deploy that to Azure.
+Again, you're starting to
+see why this is beneficial,
+and how this helps you deliver
+value more consistently,
+because all of this is automated.
+The idea of building,
+running the test,
+taking what got built,
+and deploying it to Azure.
+In our case here, we're just
+taking a simple app and putting
+it into an Azure Web App.
+You can imagine that for testing,
+you might have an ARM template
+that not only puts the app up there,
+but creates a new
+copy of the database,
+maybe populates it
+with some sample data.
+There's a lot going on.
+Do you want to have to manually
+do that over and over again?
+No. What you want to do
+is work, work, work.
+Then when you're done with your code,
+you check it in, you go home.
+The build works, the
+deployment works.
+Whether it takes 15 minutes
+or three hours, who cares.
+The next morning test comes in.
+That application has been deployed.
+It's all ready for tests to go.
+That's repeatable, and it happens
+the same way over and over again.
+That's the benefit
+of these pipelines,
+is to get repeatable, reliable,
+things happening automatically
+so that you make a change,
+they test, you make
+a change, they test.
+You do that over and
+over then you release,
+and then you do that
+again in the next Sprint.
+In the meantime, this has succeeded.
+It has deployed this to Test.
+Let's see if that's true.
+Let's refresh here.
+We should see the website.
+There's the website with the
+course, the latest version.
+Now, in the meantime,
+there is an approval pending
+to send this to Production.
+Again, if we go into mail,
+I see that the Build worked,
+and there is pre-deployment approval.
+Me as the approver,
+I get an e-mail telling me
+that we will go to
+Production when I approve.
+Now, what is the process
+for me to approve?
+It's probably more
+than I got an e-mail.
+I want to see what
+the Test results are.
+I want to talk to the Testers.
+Whatever process there is,
+let's say that's all happened.
+Again, I can do this from the mail.
+I can view the approval
+from the mail.
+I can come in here.
+Click "Pending Approval", we'll
+take many of the Approval.
+I can add comments.
+I can differ for later,
+but because its all good,
+I'm going to approve this.
+What that does is,
+it kicks off the process of
+sending this to Production.
+This may take more time,
+it may take less time in the Test.
+It may take more time because you're
+creating a new version
+of the database,
+you want a clean environment.
+In production, you're probably
+not wiping out all the data.
+It may actually take less time.
+Although, you may then have
+a series of tests that
+occurs to see if we
+literally roll this out.
+There is canary deployment,
+blue-green deployment.
+There's some techniques you can
+use to roll out the changes
+bit by bit rather than just have
+everybody use the new version,
+only to discover then
+that there's a mistake,
+a bug, or something got wrong.
+There are ways to
+roll that out beyond
+our scope here, but
+what's discussing.
+Now we're just waiting
+for this to get sent
+to Production. That worked.
+Now, we come over to the
+Production site like that.
+There we go, and head
+over to the About page,
+and of course it's correct.
+Again, the docs here they are,
+Azure DevOps documentation,
+aka.MS/vst/AzureDevOpsdocs.
+Great place to learn how to do this.
+Start slowly, build some
+simple Build Pipelines,
+some simple Release Pipelines.
+Learn at the cadence that
+makes sense for you,
+and start adopting
+the DevOps practices
+to be able to shorten
+your release cycles,
+better value for the customers,
+better world for you
+as the Developer.
+Hope you enjoyed
+this. We will see you
+next time on Visual Studio Toolbox.

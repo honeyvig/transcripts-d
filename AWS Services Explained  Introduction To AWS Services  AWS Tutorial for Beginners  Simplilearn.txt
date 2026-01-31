@@ -1,0 +1,1893 @@
+hi everyone I am M and welcome to this
+fantastic video on AWS Services by
+simply learn but before we begin if you
+enjoy watching these videos and find
+them interesting subscribe to our
+Channel as we bring out the best videos
+daily also hit the Bell icon to never
+miss any updates from Simply learn and
+just a quick info for you if you want to
+upscale yourself master cloud computing
+skills and learn your dream job or grow
+in your career then you must explore
+simply learns cohort of various cloud
+computing programs simply learn offers
+various certifications and post-graduate
+programs in collaboration with some of
+the world's leading universities like
+celtech I guati AWS and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like serverless Computing
+containerization and orchestration VPC
+design and implementation and over a
+dozen others and that's not all you also
+get the opportunity to work on multiple
+projects and learn from industry experts
+working in Top Tire product companies
+and academicians from top universities
+after completing these courses thousands
+of Learners have transitioned into a
+cloud computing role as a fresher or
+moved on a higher paying job and profile
+if you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box to find a cloud
+computing program that fits your
+experience and areas of interest and now
+I think it would be a good time to talk
+about what ec2 is AWS offers plenty of
+services offered under different domains
+like you know compute storage database
+migration Network management tools Media
+Services security business productivity
+application integration machine learning
+game development and lot more coming up
+out of which ec2 falls under the compute
+capacity so what is ec2 ec2 is a web
+service which aims to make life life
+easier for Developers for providing
+secure and resizable compute capacity in
+the cloud with ec2 it is very easy to
+scale up or scale down our
+infrastructure based on the demand and
+not only that this ec2 service can be
+integrated well with almost all the
+services in Amazon and out of all this
+the best part could be we only pay for
+what we use all right let's talk about
+this use case a use case here is that a
+successful business owner has a bunch of
+users and a successful product that's
+running and now he has developed few
+more products that he thinks will be
+very successful that he thinks his
+customers are going to like now how can
+he advertise his product to his new and
+prospective customers or the solution
+for this question can be addressed by
+AWS in AWS we can use services like
+simple notification service SNS and ec2
+for compute and S3 for storage we can in
+a way integrate them all and achieve
+this business use case and that sort of
+got this business owner very cheered up
+and now he wants to use the service and
+he wants to get benefited from the
+service he wants to advertise or he
+wants to notify his users every time the
+company creates a newsletter all right
+so let's talk about what it would take
+uh to get this environment up and
+running or what it would take to connect
+the environment and put the applications
+on top of it firstly we would require an
+AWS account and then for compute
+capacity we would require an ec2
+instance and here's how we go about
+doing it the first thing is to create an
+Ami which is Amazon Mission image that's
+really the softwares and the application
+packages we would need to run our
+application and the second is to choose
+the hardware in here it's the instance
+type depending on the workload we would
+be choosing the hardware and depending
+on the intense of the workload we will
+be choosing the size of the hardware and
+finally we would uh configure the
+instances and how many instance do I
+want you know which subnet do I want
+them in and what's going to be the you
+know stop or terminate behavior of the
+instance and do I want to update any
+patches when the instance starts running
+all those pie of information go in here
+when we configure the instance and then
+the first three steps is really about
+the OS volume and the Basic Hardware now
+it's time to add additional storage to
+the ec2 instance that would be step four
+here we add additional storage to the E2
+instance and then tags we use tags or we
+would configure tags to easily identify
+an ec2 instance at a later point you
+know we give it some meaningful names so
+we can identify like you know which team
+it belongs to which billing department
+it belongs to what's the purpose behind
+launching this instance stuff like that
+in an environment where we run 700 to
+800 are even more instances identifying
+an instance and trying to understand you
+know who owns the resource for what
+purpose we created it could be an
+full-time work so tagging comes to a
+rescue at that time after tagging as
+step six we would configure the fire
+wall which is also called Security Group
+for the ec2 instance and this is where
+we would allow or deny connection from
+external world to this particular ec2
+instance well it works both ways from
+outside and from inside out this
+firewall blocks the connection based on
+port number and IP address and finally
+at step seven we review all the
+configurations that you have done and we
+make sure that the configurations is
+what we wanted and finally click on
+Summit that's going to launch an ec2
+instance all right this was just an
+overview of how to create an ec2
+instance now let's talk about each and
+every step in detail so to begin with
+let's talk about how to create an Ami
+well the Ami is just a template a
+template that's used to create a new
+instance or an new computer or a new VM
+or a new machine based on the user
+requirement the things that go into an
+Ami are the software the operating
+system the additional applications that
+get installed in it stuff like that the
+Ami will also contain software
+information you know information about
+uh operating system information about
+access permission information about uh
+volumes they all compact in the Ami
+again the Ami is of two types one is
+predefined Amis are called Amazon
+provided Amis the other one would be
+custom Amis the Amis that we create and
+if you're looking at a particular Ami
+that you don't want to create but still
+uh want to get it from Amazon there is a
+place or a portal called Ami Marketplace
+there we get like thousands of Amis in
+there available for us to shop and use
+them on a pay as you go business model
+and use them as pay as you go billing so
+there you can search Ami that you're
+looking for most probably you'll be able
+to get it there now let's talk about
+choosing the instance type the instance
+type is basically the hardware
+specification that's required for a
+machine that we're trying to build and
+the instant types is categorized into
+five main families they are to begin
+with it's computer optimized now
+computer optimized gives us lots of
+compute power or lots of processing
+power so if my application is going to
+require a lot of processing power I
+should be picking computer optimized
+instance and the second one is memory
+optimized now this is very good for
+application that require inmemory
+caching you know there are some
+application that performs well with
+cache or through cache or the
+application would create a lot of data
+that it wants to keep in Cache for
+rereading or for processing you know for
+lengthy processing stuff like that for
+those type of application this memory
+optimized instance that comes within
+memory cache is a very good use case and
+the third one is the instant that comes
+with the GPU otherwise called GPU
+optimized GPU stands for graphical
+process unit and this is very good for
+application that deals with gaming this
+is very good for application that's
+going to require large graphical
+requirements and storage optimized is
+the fourth option just like the name
+says this is very good use case for
+storage servers and the fifth family
+type is general purpose just like the
+name says it's for general purpose if
+you're not particular about the family
+then you generally would end up picking
+the general purpose because here the
+services are sort of equally balanced
+you know you'll find a balance between
+the virtual CPU and the memory and the
+storage and the network performance it's
+sort of balanced all the components all
+the features that needs to go in a
+computer are sort of balanced balanced
+in general purpose now these instant
+types are fixed and they cannot be
+altered because it's Hardware based we
+buy Hardware we do not have much control
+on the hardware that's being used well
+we have options but we do not have
+control on the hardware and these
+instant types are divided into five main
+families they are computer optimized
+memory optimized GPU enabled storage
+optimized and general purpose then as
+third thing we have to configure the in
+instance now here is where I have lot of
+options about uh purchasing you know
+what type of purchasing do I want to do
+do I want to go for a spot instance do I
+want to go for a reserved instance do I
+want to go for an ond demand instance
+these are different billing options
+available and that's available under
+configure instance not only that here is
+where I'm going to put the ec2 instance
+do I want an public IP adders assigned
+to it do I want an IM am Ro attached to
+it IM am Ro is authentication what kind
+of authentication am I going to provide
+and uh the shut on Behavior the shut on
+behaviors include do I want to stop the
+instance when the user shuts down the
+machine from the desktop or do I want to
+Simply terminate the in instance when
+the user shuts down the instance from
+the desktop so those things go in here
+just like the name says configure
+instance lot of instance configuration
+options comes in here that's the third
+step and not only that under the
+advanced details or Advanced tab under
+configure instance I can bootstrap the
+instance with some scripts now bootstrap
+is nothing but the scripts that you want
+to be run in the instance before it
+actually comes online let's say you're
+provisioning the instance for somebody
+else you know instead of you launching
+the instance and then logging in and
+running some commands and then handing
+it over to the other person you can
+create bootstrap shell scripts and uh
+you know paste it in a console option
+available under configuration instance
+and Amazon is going to take those
+commands run it on the instance before
+it hands over to the user that initially
+requested for that instance now it could
+be a different user or just you it sort
+of automates you know software
+installation procedures in the instance
+that we will be launching and not only
+that there are multiple payment options
+available under configure instance the
+user can pick an instance under normal
+price and that instance would apply
+normal rates applied to it and there are
+also options like reserved instance
+where the user can pay for an instance
+upfront before a year or before months
+you know for a span of year or a span of
+months and that way they can pay less
+per hour for using that instance not
+only that you can also go for spot
+instance like bidding for those
+instances whoever bids more they get the
+instance for that particular time well
+these instances are a lot cheaper than
+than OnDemand instances and through
+bidding and buying you can keep the
+instance as long as your bid price
+doesn't exceed the price that Amazon is
+proposing and as the fourth step we will
+have to add storage to the instance that
+we are about to launch and here we have
+bunch of storage options I can go for a
+peral storage which is free or I can go
+for an external elastic block storage
+also called EBS which is paid and it's a
+permanent storage or else I can
+integrate my ec2 instance with S3 for
+its storage needs and the best part
+about storage is a free subscription
+users they get to use 30 GB of SSD
+storage or magnetic storage for the
+whole year in this page where we are
+ready to add storage we will have to
+mention or provide the size in gigabit
+and the volume type is it going to be an
+a provisioned volume is it going to be
+an general purpose volume is it it going
+to be a magnetic volume stuff like that
+they are volume types and we also need
+to give inputs about where the dis will
+be mounted and whether this volume needs
+to be encrypted or not so all these
+options or all these inputs are received
+from us under the adding storage section
+and then the fifth option would be
+adding tags like we discussed some time
+back tags are very helpful to identify a
+machine in an environment where we have
+700 or th000 VMS running and Security
+Group are the actual firewall that sits
+in front of ec2 instance and it protects
+that ec2 instance from unintended
+inbound and outbound traffic now here is
+where I can fine-tune the access to my
+ec2 instance based on port numbers and
+based on IP address from which it can be
+accessed and finally we get to review
+the whole changes or the whole
+configurations that we have made to find
+out whether they are intact with the
+requirement and then click on submit
+that's going to launch launch an ec2
+instance but hold on we're not done yet
+when we're about to launch or before the
+Amazon console actually launches the ec2
+instance it's going to give us an option
+to create a keypad remember I said it's
+key pair you know key pair is two things
+one is public and private the private
+key is downloaded by the user and is
+kept with the user and the public key is
+used by Amazon to confirm the identity
+of the user so just go ahead and
+download the the private key and keep it
+for yourself and this private key gets
+downloaded as a pem file it's a format
+of the file and it gets downloaded as PM
+file and our next step is to access the
+ec2 instance and because the instance
+that we have launched in this example
+let's assume it's Linux instance and
+that's going to require a tool called
+puty to be able to access it and this
+puty tool is really needed when we
+trying to access an Linux instance from
+Windows instance most of the time
+Windows instance will have puty
+installed in them but in some rare cases
+they do not come with puty in those
+cases we can go ahead and download puty
+and puty Generator and we can start
+using it to access the Linux instance
+now you might ask well I understand puty
+what's puty generator now the file that
+we have downloaded is in PM format but
+unfortunately puty does not accept PM
+format as input you know it has to be
+converted into a different format called
+PPK and puty gen is a tool that helps us
+to convert the PM file into PPK file so
+the quick way to do it is download
+generator open it up click on conversion
+and insert the pem key that we have
+downloaded and save the private key and
+this when we save the private key it
+gets saved as a PPK type private key and
+when that's done the next very step is
+to open puty and try to log in and the
+way to log in is to open puty put that
+IP address here and then click on Au you
+know this is where we would input the
+file that we have created so click on op
+and then click on browse and find the
+PPK file that we have converted and
+stored browse it and upload it and then
+click on open now that's going to open
+up a login screen for us and the Amis
+comes with a default username depending
+on the Ami that we have picked the
+username might differ in our case we
+have picked an Ami for which the
+username is E2 hyphen user and this is
+the default by the way let's put the
+username E2 hyphen user and hit enter
+and that's going to open up the Linux
+instance using CLI there are a few other
+things that we can do with the terminal
+that we'll explain it a little later all
+right so we have successfully launched
+an ec2 instance and um yeah give
+yourself a pat on your back launching an
+instance was just one part of the
+solution so let's actually talk about
+how we can notify our customers SNS or
+simple notification service is a service
+or a product in Amazon that helps us to
+notify customers through email so uh
+navigate to SNS in your account and
+create a topic and we're going to use
+this topic for public notification so
+let's make it public and then add
+subscribers to it now these subscri
+subcribers these subscribers are the
+people who you want to be notified about
+the newsletter so we already have the
+email database in there add them to the
+subscribers list and then they will
+start getting new newsletters as in when
+we post them to the topic and as Next
+Step create a bucket in S3 where you can
+store content and in that bucket create
+an event that triggers a notification to
+simple notification service so this is
+how it will be set up and notification
+will be sent to our subscribers anytime
+we put something in our S3 bucket so S3
+bucket is going to create an event for
+the notification and the notification is
+going to make sure that it's delivered
+to your end Customer because they're
+already subscribed to the topic as
+subscribers and finally let's connect
+the S3 with ec2 so the bucket and the
+AWS instance are in sync so we put some
+content in the S3 bucket our email
+system notifies our customers and the
+customers can go online to a website
+that's hosted in ec2 and because S3 and
+ec2 are in sync the items that we put in
+S3 will also show up in ec2 see how this
+is all connected and it's working
+together and once this is all connected
+our subscribers will regularly be
+informed anytime we put new content in
+the S3 bucket and the same content will
+be made available in ec2 instance
+through the website it so what is S3 S3
+stands for simple storage service and it
+is an object storage service in Amazon
+what this means is that it doesn't
+matter what kind of file you upload to
+S3 it will be treated as an abstraction
+meaning an object so you can upload a
+PDF file you can upload a JPEG file you
+can upload a database backup it doesn't
+really matter all that is abstracted
+Away by the use of storing it within an
+object we're going to talk more about
+what composes an object but by doing so
+what happens is is S3 allows us to have
+industry uh leading scalability so it
+doesn't matter if you're going to make a
+request for that database backup let's
+say that object um five times or 10,000
+times that requests that demand will
+scale the underlying infrastructure that
+is implemented behind the scen
+is handled for you so in a sense it's
+kind of like a
+serverless service a storage service
+where you're not implicated in handling
+anything underneath the covers you're
+just uploading your objects and
+accessing them later on in terms of data
+availability very powerful as well
+because it takes those objects and will
+replicate them across at least three
+availability zones of course these
+availability zones have one or more data
+centers attached to them so you have
+lots and lots of copies of your objects
+distributed globally or at least at a
+regional uh in a regional area uh you
+can do this as well globally if you
+enable global
+replication um and you will see that
+your level of dur availability will
+Skyrocket and you're just not going to
+worry about losing an S3
+object data security well we can encrypt
+our data at rest our objects at rest we
+can encrypt it in transit we can also
+come up with security policies at uh the
+Bucket Level which we're going to talk
+about what a bucket is very very very
+soon um these are going to be
+implemented through what's called I am
+policies and you're going to be able to
+control who or what has access to your
+objects and of course because everything
+is handled underneath the covers all the
+servers all the storage nodes are Cloud
+optimized for the best
+possible
+performance so let's continue on our
+journey on what is S3 we're going to
+take a look at what is a bucket and what
+is an object as you can see here you
+have inside this bucket which is a
+logical container for an unlimited
+amount of objects you could have objects
+of different shapes and sizes like I
+said you could have pictures database
+backups Etc so this is what's being
+represented here by different shapes and
+and you can think of a bucket really as
+almost like a folder where objects or
+files are placed within them so there
+are many ways for us to place objects
+within a bucket we can do this through
+the AWS console which I'll be showing
+you very shortly we can do this via the
+command line interface or we can do this
+through a software development kit at
+the end of the day all those three
+options go through an API right so it's
+all about picking the right method that
+is best suited for whatever kind of end
+user or application that needs access to
+these buckets and to these objects now
+once you've got the data or objects
+within this bucket you can control
+pretty much how the data is accessed how
+it's stored whether you want it to be
+encrypted and how it's even managed so
+you can have organizations that have
+specific compliance needs for example
+any objects uh that are placed in there
+perhaps some PDFs are not to be modified
+or not to be touched for 90 days let's
+say we can imply um object locks if we
+want to we can imply security guards we
+can also for example uh record all API
+actions that try to access to list to
+delete any kind of API operations on
+those objects at the Bucket Level or on
+the object level we can record if that
+is some sort of organizational
+compliance need for auditing or for
+whatever internal um auditing reason
+that you may
+have so continuing on here you can see
+that there are many organizations that
+use S3 one in point is Amazon itself S3
+is so popular and so durable that Amazon
+internally uses it to store its own data
+you're guaranteed you know almost that
+you're not going to lose any object in
+there because it has what we call
+119 durability now 119 durability is
+really an extreme amount of durability
+where it's
+mathematically almost impossible for you
+to lose an object once you placed it in
+S3 you're in fact more uh liable to get
+hit by meteorite then you are to lose an
+object in S3 statistically speaking
+which is a pretty incredible statistic
+but it's but it's
+true so if we continue here with the
+benefits of S3 some of these I've
+already uh described but let's talk
+about the full um picture here we see
+the performance scalability availability
+and
+durability um of S3 are really uh you
+know first class in the industry again
+durability we were talking about that
+119 so what that really means is 9
+99.9999 in total if you count all the
+nines that's 11 of those nines so um ex
+most durable in the industry by far and
+again because everything is handled
+underneath the covers it's a
+serverless service uh they ensure the
+scalability and availability and the
+performance of um the inner workings of
+that object level storage now cost is of
+course always important and S3 really
+shows up here with first class support
+again for cost it's got very very low
+cost we can have object level storage
+for um let's say a terabyte of object
+level storage for as little as a dollar
+a month so again it will depend on the
+kind of storage class we're going to
+have a discussion on different types of
+storage classes that we might want to
+transition or move over our objects from
+one storage class to the the next
+depending on how frequently accessed
+that data is as you know data over time
+seems to get less and less accessed as
+you know your needs shift from one place
+to another we're going to talk about
+that coming up very soon so we're going
+to want to really focus on that to
+reduce our end of the month costs for
+storage with S3 of course security is
+always at the Forefront and we want to
+make sure that we either
+simply secure by encrypting everything
+right off the bat either at rest in
+transit or we want to put an object lock
+or just maintain security at the Bucket
+Level maintaining let's say who or what
+has access to that data because by
+default no one has access to the data
+unless we open up the door and also we
+want to make sure that we don't give
+public access to our bucket for obvious
+reasons of of uh giving away important
+information by mistake so AWS makes it
+extremely difficult for you to
+accidentally do this and I'm going to
+show this in a demonstration lab uh
+coming up very
+soon and we can also query in place
+which is very interesting so you can
+imagine you putting let's say um a file
+that's in CSV format or Json format or
+parket format some sort of structured
+format or semi-structured format in S3
+and you could actually use SQL queries
+on the spot to filter that data in place
+at the Bucket Level you can also have
+other services that may want to extract
+some business intelligence uh from that
+data in your S3 bucket directly as well
+so some other more advanced quering
+operations can take place at the S3
+level so this you will learn during your
+journey with simply learn as you're
+covering all the AWS technology stacks
+and here the most widely used storage
+cloud service in the industry uh because
+of all the points that we just covered
+it really is the number one storage or
+object level storage solution in the
+industry let's now take a look at
+objects and buckets and S3 so the
+objects are really the fundamental
+entities that are stored in S3 or the
+lowest common denominator which means
+that we're not really interested in what
+kind of data is within the object at at
+the layer of S3 because S3 doesn't have
+direct access to the data within an
+object like I said before it's an
+abstraction of the data so we don't know
+if it's a cat picture if it's a backup
+of your database it's just treated as a
+fundamental entity aka the object now
+every object is associated with metadata
+so data about itself things like what's
+the name of the object what's the size
+the time and date that the object was
+uploaded things of that nature are
+categorized as metadata so S3 does have
+direct access to that now the data
+within that object of course is
+accessible by other services so it's not
+that once you've uploaded it you've
+totally lost the data and it's only can
+be treated as an object it's just that
+at this
+layer it's simply just assign metadata
+and a version ID a unique version ID and
+if you re-upload the exact same object a
+second or third time to S3 it will have
+its own version ID number so a new
+unique version ID number will be
+generated so really what buckets are are
+there logical containers to store those
+objects so of course at an extremely
+high level a bucket would be like your
+root file system if you want to think
+about it like that but that doesn't mean
+you can't go into this bucket and create
+separate folders now when you create
+separate folders in a bucket because you
+might want to logically organize all
+your
+objects you might be fooled by the fact
+that you think this is a hierarchal
+storage system when in fact it is not
+and I'll talk about that in a second so
+you cannot store an object without first
+storing it into a bucket so of course
+the first step would be for us to create
+a bucket and then upload objects within
+that bucket so an object cannot can
+cannot exist without its container or
+its
+bucket so there's no windows explor view
+like we're used to in an operating
+system because this is not a hierarchal
+view no matter if you create folder
+within folders within folders in fact
+S3's internal architecture is a flat
+hierarchy what we do instead is we
+assign prefixes which are treated as
+folders in order to logically organize
+our objects within our buckets and I'm
+going to Showcase a prefix in one of the
+demonstrations coming up very
+soon so when you create or when you're
+working with S3 first of all you're work
+looking at a regional level you're going
+to have to pick a region for example you
+might pick us East one region or Us East
+2 region and the bucket that you're
+going to be creating will be replicated
+across several availability zones but
+within that region also that data those
+objects can be accessed globally because
+S3 uses the HTTP protocol HTTP protocol
+is very permissive everybody knows how
+to ad administrate it and work with it
+so we just need to give access to that
+object in terms of a permission policy
+and give it the
+proper uh URL or give whoever needs
+access to it the proper URL and they can
+access that VI HTTP globally so first
+when you're creating a bucket you have
+to select the region and the object will
+live within that region but that doesn't
+mean that it still can't be accessed
+globally so let's now take a minute go
+over to the AWS console and actually let
+me showcase how to create uh objects and
+buckets so for our first lab we're going
+to be going and creating an S3 bucket
+and uploading an object to it so we
+first have to log into the AWS console
+which we have up here in the address bar
+let's click on either create free
+account if it's your very first time or
+as an is in my case uh already have an
+account and we're going to sign in
+here you're going to have to pass in
+your um IM username password and your um
+account ID of
+course once you've logged in you can
+search for the simple uh storage service
+S3 either uh by coming up here in the
+search box and typing S3 and you'll find
+it there that's probably the easiest way
+or if you want you can take a look at
+all the services and it'll be under
+storage over here the first one okay so
+pick whichever method you see best for
+yourself once we're here we want to
+create our first bucket now I've already
+have a couple of buckets here so we're
+going to go on and create a new bucket
+the very first thing is you have to
+specify a bucket name now this bucket
+name has to be globally unique if you
+take a look here at the region that
+we're in it doesn't actually select a re
+specific region it selects the global
+option which means that this bucket will
+become globally accessible so that is
+why it needs to have a unique name much
+like a DNS name has to be unique for
+your website right so I'm going to come
+up
+here and pick a name that I think is
+going to be unique so I'm going to say
+simply
+learn S3
+demo all right let's take a look at if
+that's going to work out of course we
+have to pick pick a region but it is
+globally accessible so you either pick a
+region that's closest to your end users
+or in our case since we're just doing a
+demonstration we can do whichever is
+closer to us right now okay and we're
+going to skip these options for now
+we're going to come back to them later
+on we're just going to create the
+bucket now hopefully that was a unique
+name and allowed me to create that and
+it looks like it did so if I scroll down
+you can see that uh it clearly got
+created over over here now we're going
+to click on that and we are going to
+start uploading objects to this bucket
+so let me click on the upload button and
+you can either select one or more files
+or you can select an entire folder so
+I'm going to just go and select a
+specific cat picture that I have
+here okay and again we'll go through
+some of those other options later on and
+we'll just click
+upload now this should take no time at
+all because of the fact that's a very
+small object or file that's being
+uploaded so it is has succeeded we can
+close this up and we see now clearly
+that the object is in our bucket if we
+go to properties we can see the metadata
+associated with this bucket we can see
+the region that it's in we can see the
+Arn which is the Amazon resource name
+which uniquely identifies this resource
+this bucket
+um across the globe so if ever you
+needed to reference this let's say uh in
+an I am policy or whatever other service
+needed to communicate with S3 you would
+need this Arn it's a very important
+piece of information and of course we
+have their creation date so some high
+level metadata so objects as we have
+covered already consist of not only the
+data itself but the metadata so there's
+lots of metadata and there's a lot of
+other features that we can go here and
+enable very easily and this will be the
+basis of the future uh demonstrations
+that I'm going to do all right so just
+to recap what we just did we created a
+unique bucket give it a name of Simply
+learn S3 demo and uploaded our first
+object to
+it so let's now take a look at the inner
+workings of the Amazon S3
+when we upload an object into a bucket
+we have to select which one of these
+storage classes the object will reside
+in so you see have six storage classes
+here at the bottom and each have their
+own characteristics that we're going to
+get into by default if you don't specify
+anything it'll get placed in What's
+called the S3 standard storage class
+which is the most expensive out of all
+these storage
+classes once your object gets colder and
+what I mean by colder is your access
+patterns diminish meaning that you're
+accessing that file less and less over
+the course of time so it gets colder you
+will transition that object from one
+tier to the next all the way to for
+example S3 deep archive so again deep
+archive signifies extremely cold so
+maybe you're only referencing this data
+once a year once every couple of years
+and so you want to have the cheapest
+possible storage available so right now
+you can get about one terabyte of
+storage per month for about a dollar a
+month with S3 uh glacer deep archive so
+you are going to be very interested in
+knowing how to transition from one or
+more of these storage classes over time
+in order to save on your storage costs
+that's really why we're doing this so
+let's go through some of the storage
+classes by default like I said
+whenever you upload an object you
+automatically get placed into the
+standard storage class so any files that
+you're working on frequently daily this
+is the best fit for it you've got the
+highest level of accessibility and um
+durability as well not that the others
+don't have the same level of durability
+however we'll see how when you
+transition from one storage tier to the
+next some characteristics do change in
+in order for you to save on some costs
+we're going to go through some of those
+now this would be considered hot data
+right data that's used all the time
+maybe just by you maybe by everybody
+right so that's the perfect place to
+place it in the standard storage class
+now over time like I said you may find
+yourself working less and less perhaps
+on a document that was due by the end of
+the month that document was submitted
+and then afterwards you don't work on
+that document anymore perhaps you're
+only working on revisions based on
+feedback from your colleagues that are
+asking you to make some corrections or
+some amendments and so only those uh
+Corrections or amendments come in
+perhaps once a month and so in that case
+you might find yourself um finding a
+justification for moving that document
+from the standard tier to the standard i
+a or in frequently accessed here maybe
+any objects U not modified for more than
+30 days are a good fit for that and
+that's really the criteria for IIA
+inactive access is that S3 or AWS itself
+recommends to only put objects in there
+if they haven't been as access for at
+least 30 days so you get a a price
+reduction a rebate for putting objects
+that are not accessed frequently in here
+of course if you remove objects let's
+say before the
+30-day uh limit then you are charged a
+charge for retrieving an object that you
+said was infrequently accessed but it
+really was not so bear that in mind if
+you're going to place objects in
+infrequent access be somewhat uh
+reasonably assured that you're not going
+to be going there and accessing them you
+can still access those files no problem
+just as quickly they have the same level
+of accessibility and durability however
+like I said anything less than 30 days
+you'll get a price in on that if you
+want to have long-term storage we're
+talking about Amazon Glacier so this is
+more anything um over 90 days that
+hasn't been modified or 180 days there's
+two subcategories of Amazon Glacier that
+we're going to get into and this is the
+cheapest storage by far and Amazon
+Glacier doesn't really operate through
+the AWS console as the same as the
+standard and the infrequent access you
+can't really upload objects to Glacier
+via the um console in the browser you
+can only do so let's say through the
+commandline interface or through an SDK
+the only thing you can do on the web
+console with Glacier is actually create
+what's called a vault which is a logical
+container for your archives but then
+after that you have to go through the
+CLI or the SDK to do the rest of the
+work
+there if we continue on there's some
+gray areas between between uh the S3
+standard in the glacier one is the one
+zone in frequently accessed storage
+class so if we go back to the regular uh
+standard and IIA storage class all of
+these objects are stored across a
+minimum of three availability zones if
+you want a further price reduction you
+can store your objects in a one zone IIA
+storage class which means that instead
+of taking that object and replicating it
+across three or more availability zones
+it will only store it in a single
+availability Zone therefore
+reducing uh the level of availability
+that you have to that object so in this
+case here if that single availability
+Zone would go down for example you would
+not have access to that object once it
+would come back up of course you would
+the other thing is is if there was a an
+immense catastrophe where the actual
+availabilities Zone was destroyed well
+of course then your object is also gone
+so if that's something that doesn't
+worry you because you have already many
+copies of this object may be lying
+around on premise then this is a good
+option for you because it's data that
+you're willing to lose or lose access to
+for short periods of time if ever that
+single availability Zone goes down so
+it's about an extra 20% off the price
+from already the normal uh IIA standard
+price there is another one called the
+standard reduced redundancy
+storage this one is kind of getting
+phased out as we speak because the same
+price for this storage class is about
+the same amount you're going to pay for
+the normal IIA standard class what this
+does is again is a good fit for um your
+object that you're not really worried
+about losing if there is some sort of
+catastrophe that happens in an
+availability Zone there's less copies of
+it that are stored and so if that data
+center and that availability Zone goes
+down then you lose your object so of
+course it offered at the time the
+highest price reduction uh possible but
+now the difference between this one and
+the normal IIA standard storage class is
+so small in terms of price that you're
+probably not going to uh migrate to um
+or navigate to this storage class but it
+is still there in the documentation and
+it may very well come up still in the um
+certification exam so at least be aware
+of
+that let's now take a look at some
+individual features of S3 starting off
+with life cycle management so life cycle
+management is very interesting because
+it allows us to come up with a
+predefined rule that will help us
+automate the transitioning of objects
+from one storage class to another
+without us having to manually copy
+things over of course you could imagine
+how time consuming that would be if we
+had to do this
+manually so we're going to see this very
+soon in a lab however let me discuss how
+uh how this works so once we uh it's
+basically a graphical user interface
+it's very very simple to use once you
+come up with these uh life cycle
+management rules but you're going to
+Define two things you're going to define
+the transition action and the expiration
+action so the transition action is going
+to be something like well I want to
+transition an object from maybe it's all
+objects or maybe it's just a specific
+type of object in a folder example that
+has a specific prefix from one storage
+class let's say standard to standard
+inactive or infrequent access maybe only
+after 45 days after at least a minimum
+of 30 days like we spoke of before and
+then maybe after uh 90 days you want to
+transition the objects in IIA to right
+away Glacier deep archive or 180 days
+you come up with whatever combination
+you see fit okay it doesn't have to be
+sequential from S3 to IIA to one zone
+etc etc because like we discussed before
+it depends what kind of objects that
+you're interested in putting in one zone
+objects that you don't really mind
+losing if that one availability Zone
+goes down so you're going to be deciding
+those rules it ends up that this even is
+not a simple task because you have to
+monitor your usage patterns to see which
+data is hot which data is cold and
+what's the best kind of life cycle
+management to implement to reap the
+benefits of the lowest cost so you have
+to put somebody on this job and and make
+the best informed uh decisions based on
+your axis patterns and that is something
+that you need to consistently monitor so
+what we can do is we can instead opt for
+something called S3 intelligent
+taring which basically analyzes your
+workload using machine learning
+algorithms and after about a good 30
+days of analyzing your access patterns
+will automatically be able to transition
+your objects from s 3 standard to S3
+standard in frequent access okay it
+doesn't go past the iia1 doesn't go
+after the glacier and whatnot okay so it
+can then offer you um that at a reduced
+um price overhead so there is a
+monitoring fee that is introduced in
+order to uh implement this feature it's
+a very nominal very very low monitoring
+fee and the nice thing is is if if ever
+you take out an object out of the
+infrequent axis before the 30-day limit
+as we spoke of before you will not be
+charged um an overhead charge because of
+that why because you're using the
+intelligent tearing you're already
+paying an overhead for the monitoring
+fee so at least in that sense the
+intelligent tearing will take the object
+out of IIA and put it back into the S3
+standard class if you need access to it
+before the 30 days and in that case you
+w be charged that overhead so that is
+something that is
+very um that is very um good to to to do
+in order not to have to put somebody on
+that job so yes you're paying a little
+bit of overhead for that monitoring Fe
+but at the other side of the spectrum
+you're not investing in somebody uh
+working many hours to Monitor and put
+into place a system to monitor your data
+access patterns so let's take a look at
+how to do this right now let's Implement
+our own life cycle management
+rules so let's now create a life cycle
+rule inside our bucket first off we're
+going to need to go to the management
+Tab and the bucket that we just created
+and right on the top you see right away
+life cycle rule we're going to create
+life cycle rule and we're going to name
+it so I'm just going to say something
+very uh simple like
+simply learn
+uh life cycle
+rule and we have the option of creating
+this rule for every single object in the
+bucket or we can limit the scope to a
+certain type of file perhaps with a
+prefix like I could see one right now
+something like log so anything that we
+categorize as a log file will transition
+from one storage tier to the next as per
+our instructions we're doing this
+because we really want to save on costs
+right it's not so much of organizing
+what's your older data versus your newer
+data it's more about reducing that
+storage cost as your objects get less
+and less used so in this case logs are a
+good fit because perhaps you're using
+your logs for the first 30 days you're
+sifting through them um you're trying to
+get insights on them but then you kind
+of move them out of the way because they
+become old data and you don't need them
+anymore so we're going to see how we can
+uh transition them to another pricing
+tier another storage tier uh we could
+also do this with object tags which is a
+very powerful feature and in the life
+cycle rules action you have to at least
+pick one of these options now since we
+haven't enabled versioning yet what I'm
+going to do is just select transition
+the current version of the object
+between these storage classes so as a
+reminder of what we already covered in
+the slid our storage classes are right
+over here so the one that's missing is
+obviously the default standard storage
+class which all objects are placed in by
+default so what we're going to say is
+this we want our objects that are in the
+default standard storage class to go to
+the standard inactive access storage
+class after 30 days and that'll give us
+a nice discount on those objects being
+stored then we want to add another
+transition and let's say we want to
+transition them to Glacier after 90 days
+and then as a big finale we want to go
+to Glacier deep archive you can see the
+rest are grayed out would it make sense
+to go back and maybe after 180 days we
+want to go there okay now there's a
+little bit of um a warning or call to
+attention here they're saying if you're
+going to store very small
+files um into glacier not a great idea
+there's an overhead in terms of metadata
+that's added and also there's an
+additional cost associated with storing
+small files in Glacier so we're just
+going to acknowledge that of course for
+the demonstration that's fine in real
+life you don't want to store very big
+tar files or zip files that had you know
+one or more lock files in there okay
+that would bypass that that search
+charge that you would get and over here
+you have the timeline summary of
+everything we selected up above so we
+have here after 30 days the standard
+inactive access after 90 days Glacier
+and after 180 days Glacier deep archive
+so let's go and create that
+rule all right so we see that the rule
+is already enabled and at any time you
+could go back and disable this if ever
+you had um a reason to do so we can
+easily delete it as well or view the
+details and and edited as well so if we
+go back to our bucket now what I've done
+is created that prefix with the slash
+logs since we're not doing this from the
+command line we're going to create a
+logs folder over here that will fit that
+prefix so create
+logs create folder and now we're going
+to upload our let's say Apache log files
+in here so we're going to upload one
+demonstration Apache log file that I've
+created with just one line in there of
+course just for demonstration purposes
+we're going to upload
+that and now we have we're just close
+that and now we have our our Pache log
+file in there so what's going to happen
+because we have that life cycle rule in
+place after 30 days anything any file
+that has the logs prefix or basically is
+placed inside this folder will be
+transitioned as per that life cycle Ru
+policy that we just created so
+congratulations you just created your
+first first S3 life cycle Ru
+policy let's now move over to bucket
+policies so bucket policies are going to
+allow or deny access to not only the
+bucket itself but the objects within
+those buckets to either specific users
+or other services that are inside the
+AWS Network now these policies fall
+under the category of IM am policy so IM
+stands for identity and access
+management and this is a whole other
+topic that deals with security at large
+so there are no services in AWS which
+are allowed to access other services or
+data for example within S3 without you
+explicitly allowing it through these IM
+policies so one of the ways we do that
+is by attaching one of these policies
+which are written in a Json format so
+it's a text file that we write at the
+end of the day that's the artifact and
+that's a good thing because we can use
+that artifact and we can configuration
+control it in our source control and
+version it and put it alongside our
+source code so when we deploy everything
+it is part of our deployment package so
+in this case here we have several ways
+of doing this we can use What's called
+the policy generator which is a
+graphical user interface that allows us
+to Simply click and point and populate
+certain text boxes which will then
+generate that Json document that will
+allow us to attach that to our S3 bucket
+and that will determine like I said
+which users or Services have access to
+uh whatever API actions are available
+for that resource so we might say we
+want certain users to be able just to
+list the contents of this bucket not
+necessarily be able to delete or upload
+new objects into that bucket so you can
+get very fine grained permissions based
+on the kind of actions you want to allow
+on this resource so in order to really
+bring this home let's go and perform our
+very own lab on this
+let's now see how to create an S3 bucket
+policy going back to our bucket we're
+now going to go into
+permissions so the whole point of coming
+up with a bucket policy is that we want
+to control who or what the what being
+other services have access to our bucket
+and our objects within our bucket so
+there are several ways we can go about
+doing this let's edit a bucket
+policy one we can go and look at a whole
+bunch of preann examples which is a good
+thing to do two we could actually go in
+here and code the Json document
+ourselves which is much more difficult
+of course so what we're going to do is
+we're going to look at a policy
+generator which is really a form-based
+graphical user interface that allows us
+to generate through the answers that
+we're going to give here the Json
+document for us first question is we got
+to select the policy type of course
+we're dealing with S3 so would make
+sense for us to create an S3 bucket
+policy the two options available to us
+are allowing or
+denying access to our S3 bucket now in
+this case here we could get really um
+fine grain and specify certain kinds of
+services or certain kinds of users but
+for the demonstration we're just going
+to select star which means anything or
+anybody can access this S3 bucket all
+right now depending on uh also the
+actions that we're going to allow so in
+this case here we can get very fine
+grain and we have all these check boxes
+that we can check off to give access to
+certain kind of API action so we can say
+we want to give access to you know just
+deleting the bucket which obviously is
+something very powerful uh but you can
+get more fine grain as you can see you
+have more of the Getters over here um
+and you have more of the the the listing
+and the putting new objects in there as
+well so you can get very fine grain now
+for demonstration purposes we're going
+to say all action so this is a very
+Broad and wide ranging permission
+something that you really should think
+twice about before doing we're basically
+saying we want to allow everybody and
+anything any service all API actions on
+this S3 bucket so so that's no uh small
+thing we need to specify the Amazon
+resource name the Arn of that bucket
+specifically so what we're going to do
+is go back to our
+bucket and you can see here uh the
+bucket Arn okay so we're just going to
+copy
+this paste it in this policy generator
+and just say add statement you can see
+here kind of a resume of what we just
+did and we're going to say generate
+policy and this this is where it creates
+for us and make this a little bit bigger
+for us it creates that Json document so
+we're going to take this we're going to
+copy it and we're going to paste it
+into the generator okay now of course we
+could flip this and change this to a
+deny right which would basically say we
+don't want anybody to have access or any
+thing any other service to have access
+to this S3 bucket we could even say
+slashstar to also encapsulate all the
+objects within that bucket so if I save
+this right
+now you have a very
+Ironclad S3 bucket policy which
+basically denies all access to uh this
+bucket and the objects within of course
+this is on the other side of the
+spectrum very very secure so we might
+want to for example host a static
+website through our S3 bucket so in this
+case here allowing access would make
+more sense right so if I save changes
+you see that we get an errror here
+saying that we don't have permissions to
+do this and the reason for that is
+because it realizes that this is
+extremely permissive so in order to give
+access to every single object within
+this bucket as in the case that I was
+stating of a static website being hosted
+on your S3 bucket it would be much
+better to also at first enable
+that option so I'm just going to
+duplicate the tab
+here and once you go back to the
+permissions tab one of the first things
+that shows up is this block block Public
+Access setting right right now it's
+completely blocked and that's what's
+stopping us from saving our policy we
+would have to go in here unblock it and
+save it right and it's also kind of like
+a double clutch feature you have to
+confirm that just so you don't do that
+by by accident right so now what you've
+effectively done is you've really opened
+up the floodgates to have public access
+to this bucket it's something that can't
+be accidentally done it's kind of like
+having to perform these two actions
+before the public access can be granted
+now
+historically this was something that AWS
+was um
+was guilty of was making it too easy to
+have Public Access so now we have this
+double clutch now that this is enabled
+or turned off we can now
+save our changes here successfully and
+you can see here that now it's publicly
+accessible which is a big red flag that
+perhaps this is not something that
+you're interested in doing now if you're
+hosting a public website and you want
+everybody just to have read access to
+every single object in your bucket yes
+this is fine however please make sure
+that you um pay very close attention to
+this uh type of access flagged over here
+on the console so congratulations you
+just got introduced to your first bucket
+policy a permissive one but at least now
+you know how to go through that
+graphical user interface through the
+policy generator and create them and
+paste them inside your S3 bucket policy
+uh
+paint
+so let's continue on with data
+encryption so any data that you place in
+S3 bucket can be encrypted at rest very
+easily using an ases 256 encryption key
+so we can have server side encryption we
+could have AWS handle all the encryption
+for us and the decryption will also be
+handled by AWS when we request our
+objects later on but we could also have
+have client side encryption where we the
+client that are uploading the object
+have to be responsible for also passing
+over our own generated key that will
+eventually be used by AWS to then
+encrypt that object on the bucket side
+of course once that happens then the key
+is discarded the client key is discarded
+and you have to be very mindful that
+since you've decided to handle your own
+own encryption client side encryption
+that if ever you lose those keys well
+that data is not going to be recoverable
+in that bucket on the AWS Network so be
+very careful on that
+point we can also have a very useful
+feature called versioning which will
+allow you to have a history of all the
+changes of an object over time so
+versioning sounds exactly how it's named
+and every time you make a modification
+to a file and upload that new version to
+S3 it will have a brand new version ID
+associated with that so over time you
+get a sort of stack of a history of all
+the file changes over time so you can
+see here at the bottom you have an ID
+with all these ones and then an ID with
+one
+121212 So eventually if ever you wanted
+to revert back to a previous version
+you could do so by uh accessing one of
+those previous versions of course
+versioning is not an option that's
+enabled by default you have to go ahead
+and enable that yourself it is an
+extremely simple thing to do and so
+there may be a situation where you
+already have objects within your buckets
+and you only then enable versioning well
+versioning would only apply to the new
+objects that would get uploaded from the
+point that you enabled versioning the
+objects that were there before that
+point will not get a specific version
+number attached in fact they will have a
+sort of null marker um version number
+that will get attached to them it's only
+after that you modify those objects
+later on and upload a new version that
+they will get their own version
+numbers so right now what we're going to
+be doing is a lab on actual uh
+versioning so let's go ahead and do that
+right
+now in this lab we're going to see how
+to enable versioning in our buckets
+enable versioning is very easy we're
+simply going to click on our bucket go
+into properties and there is going to be
+a bucket versioning section we going to
+click on edit and enable
+it once that's done any new objects that
+are uploaded to that S3 bucket will now
+benefit from being tracked by a version
+number so if you upload objects with the
+same file name after that they'll each
+have a different version number so
+you'll have version tracking a history
+of the changes for that object let's
+actually go there and upload a new
+file I'll upload one called
+index.html so we're going to simulate a
+situation where we've decided we're
+going to use an S3 bucket as the source
+of our static website to deploy one and
+in this index.html file if you take a
+look uh right now let's take a look at
+what's in there you can see that we have
+welcome to my website and we're at
+version two okay so if I click on this
+file right
+now and I go to
+versions I can clearly see that there's
+some version activ ity that's happening
+here okay we have here um at 1456 which
+is the latest one the latest one is on
+the top the current version we have a
+specific version ID and then we have a
+sort of history of what's going on here
+now I purposely enabled versioning
+before and then try
+to delete versioning or disable
+versioning but here's the thing with
+versioning you cannot disable it fully
+once it's enabled you can only suspend
+it right now suspending means that
+whatever version numbers those objects
+had before you decided to suspend it
+will remain so you can see I have an
+older version here that has an older
+version number and at this point here I
+decided to suspend versioning and so
+what it does instead of disabling the
+entire history it puts what's called a
+delete marker okay you could always roll
+back to that version if you want now in
+the demonstration when we started it
+together I enabled it again so you can
+see this is actually the brand new
+version number as we did it together but
+you don't lose the history of previous
+versioning if ever you had suspended it
+before so that's something to keep in
+mind right and it'll come up in the exam
+where they'll ask you can you actually
+disable versioning once it's enabled and
+the answer is no you could only suspend
+it and your history is still maintained
+now we have that version there and let's
+say I come to this file and I want to
+upgrade this I don't know I say version
+three right and now what's going to
+happen is if I click on this version
+this is the current one with version two
+and I open this we should see version
+two which is fine that's that's that's
+expected if we go back to our bucket and
+up upload that new version file that has
+version three in there want I just
+modify
+it we should now see in that index.html
+file a brand new version that was
+created under the versions Tab and there
+you go 1458 just 2 minutes after you
+could see here we have a brand new
+version ID right and if I open this
+one you can see version three so now you
+have a way
+to enable versioning very easily in your
+buckets and you also have seen what
+happens when you want to suspend
+versioning what happens to the history
+of those versions files before just to
+actually go back here to the
+properties uh where we enabled
+versioning in the first place if I want
+to go back in here and disable it like I
+said you can't disable you can only
+suspend and that's where that delete
+marker gets placed but all your previous
+version
+retain their version ID so don't forget
+that because that will definitely be a
+question on your exam if you're
+interested in taking the certification
+exam so congratulations you just learned
+how to enable
+versioning let's move on to cross region
+replication or crr as it is known there
+will be many times when you find
+yourself with objects in a bucket and
+you want to share those objects with
+another bucket now that other bucket
+could be within the same account could
+be within another account within the
+same region or could be within a
+separate account in a different region
+so there's varying levels of degree
+there the good thing is is all of
+those um combinations are available so
+crr if we're talking about cross region
+replication is really about replicating
+objects across regions something that is
+not enabled by default because that will
+incur a replication charge because it's
+sinking objects across regions of course
+you are spanning a very wide area
+network in that case so there is a
+search charge for that now doing so is
+quite simple to do but one of the things
+that we have to be mindful of is to give
+permissions for the The Source bucket
+which has the
+originals to allow for this copying of
+objects to the destination bucket so if
+we're doing this across regions of
+course we would have to come up with IM
+policies and we would also have to
+exchange credentials in terms of uh IM
+user credentials in terms of account IDs
+and and the such um we're going to be
+doing a demonstration in the same
+account in the same region but largely
+this would be the same steps if we were
+going to go cross regions so this is
+something you might find yourself doing
+if you want to share data with other um
+entities in your company maybe you're a
+multinational and you want to uh have
+all your lock files copied over to
+another bucket in another region for
+another team to analyze to extract
+business insights from or it might just
+be that you want to aggregate data in a
+separate data Lake uh in an S3 bucket in
+another region or in like I said it
+could be even in the same region or in
+the same account so it's all about
+organizing moving data around across
+objects across these boundaries and
+let's actually go through a
+demonstration and see how we can do
+crr let's now see how we can perform
+cross region replication we're going to
+take all the new objects that are going
+to be uploaded in the simply learn S3
+demo bucket and we're going to replicate
+them into a destination bucket so what
+we're first going to do is create a new
+bucket okay and we'll just tack on the
+number two here and this will be our
+destination bucket where all those
+objects will be replicated too we're
+going to demonstrate this within the
+same account but it's the exact same
+steps when doing this across
+regions one of the requirements when
+performing cross region replication is
+to enable versioning so if you don't do
+this you can do it at a later time but
+it is NE necessary to enable it at some
+point in time before coming up with a
+cross region replication rule all right
+so let me create that bucket and now
+after the bucket is created I want to go
+to the source bucket and I want to
+configure under the management tab here
+a replication rule so I'm going to
+create a replication rule call
+it simply
+learn rep rule
+and I'm going to enable this right off
+the bat the source bucket of course is
+the simply learn S3 demo we could apply
+this to all objects in the bucket or
+perform a filter once again let's keep
+it simple this time and apply to all
+objects in the bucket of course caveat
+here this will only now apply to any new
+objects that are uploaded into this
+Source bucket and not the ones that are
+already pre existing there okay now in
+terms of the a destination bucket we
+want to select the one we just created
+so we can choose a bucket in this
+account or if we really wanted to go
+cross region or another account in
+another region we could specify this and
+put in the account ID and the bucket
+name in that other account so we're
+going to stay in the same account we're
+going to browse and select the newly
+created
+bucket and we're also going to need
+permissions
+for the source bucket to dump those
+objects into the destination bucket so
+we can either create the RO ahead of
+time or we can ask this user interface
+to create a new role for us so we'll opt
+for that and we'll skip these
+additional uh features over here that
+we're not going to talk about in this
+demonstration we're just going to save
+this so that will create our replication
+rule that is automatically enabled for
+for us right
+now so let's take a look at the overview
+here you can see it's been enabled just
+to double check the destination bucket
+is the demo 2 we're talking about the
+same
+region and again here we could opt for
+additional um parameters like different
+storage classes in the destination
+bucket that that object is going to be
+deposit in etc etc for now we just
+created a simple rule now if we go back
+to the original Source bucket which
+we're in right now and we upload a new
+file which will be transactions file in
+a CSV
+format once this is
+uploaded that cross region replication
+rule will kick in and will eventually
+right it's not immediate but will
+eventually copy the file inside the demo
+to bucket now I know it's not there
+already so what I'm going to do is pause
+the video and come back in 2 minutes and
+when I click on this the file should be
+in
+there okay so let's now double check and
+make sure that object has been
+replicated and there it is been
+replicated as per our rule so
+congratulations you just learned how to
+perform your first same account S3
+bucket region replication
+rule
+let's now take a look at transfer
+acceleration so transfer acceleration is
+all about giving your end users the best
+possible experience when they're
+accessing information in your bucket so
+you want to give them the lowest latency
+possible you can imagine if you were
+serving a
+website uh and you wanted people to have
+the lowest latency possible of course
+that's something that's very desirable
+so in terms of traversing long distances
+if you have your bucket that is in for
+example the US East one region in the
+United States in the Virginia region and
+you had users let's say in London that
+want to access those objects of course
+they would have to Traverse a longer
+distance than users that were based in
+the United States and so if you wanted
+to bring those objects closer to them in
+terms of latency
+then we could take advantage of What's
+called the Amazon cloudfront delivery
+Network the CDN Network which extends
+the AWS backbone by providing what's
+called Edge locations so Edge locations
+are really data centers that are placed
+in major city centers where our end
+users mostly are located more densely
+populated areas and your objects will be
+cached in those locations so if we go
+back to the example of your end users
+being in London
+well they would be accessing a cached
+copy of those objects that were stored
+in the original bucket in the for
+example Us East one region of course you
+will get most likely a dramatic
+performance increase by enabling
+transfer acceleration it's very simple
+to uh enable this just bear in mind that
+when you do so that you will incur a
+charge for using this feature the best
+thing to do is to show you how to go
+ahead and do this so let's do that right
+now let's now take a look at how to
+enable transfer acceleration on our
+simply learn S3 demo bucket by simply
+going to the properties tab we can
+scroll down and look for a heading
+called transfer acceleration over here
+and very simply just enable it
+so what does this
+do this allows us to take advantage of
+What's called the content delivery
+Network the CDN which extends the AWS
+Network
+backbone the CDN network is
+strategically placed into more densely
+populated areas for example major city
+centers and so if your end users are
+situated in these more densely populated
+areas they will reap the benefits of
+having transfer acceleration enabled
+because the latency that they will
+experience will be severely decreased so
+their performance is going to be
+enhanced if we take a look at the speed
+comparison page for transfer
+acceleration we can see that once the
+page is finished loading it's going to
+do a comparison it's going to perform
+first of all what's called a multi-art
+upload and it's going to see how
+fast that upload was done
+with or without transfer acceleration
+enabled now this is relative to where I
+am running this test so right now I'm
+actually running it from Europe so you
+can see that I'm getting very very good
+results if I would enable transfer
+acceleration and my users were based in
+Virginia so of course now I have
+varying uh differences in percentage as
+I go closer or further away from my
+region where my bucket or my browser is
+being um is being referenced so you can
+see here United States I'm getting
+pretty good uh percentages as I go
+closer to Europe it gets lower of course
+but still very very good Frankfurt again
+this is about as probably the worst I'm
+going to be getting here since I'm
+situated in Europe and of course as I go
+look more towards you know the Asian
+regions you can see once again it kind
+of scales up in terms of better
+performance
+so of course this is an optional feature
+once you enable it as I just showed over
+here uh this is a feature that you pay
+additionally for so bear that in mind
+make sure that you take a look at the
+pricing page in order to figure out how
+much this is going to cost you so that
+is it congratulations you just learned
+how to Simply enable transfer
+acceleration to lower the late and see
+from the end users point of
+view and with that we have reached the
+end of this session and should you need
+any assistance PP and other resources
+used in this session please let us know
+in the comment section below and our
+team of experts will be happy to help
+you as soon as possible until next time
+thank you and keep learning stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here
