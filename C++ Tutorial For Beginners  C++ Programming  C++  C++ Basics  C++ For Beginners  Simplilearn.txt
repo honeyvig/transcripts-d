@@ -1,0 +1,579 @@
+hi guys this is harsh padraig from
+simply learn and welcome to this
+tutorial on c plus plus basics so let's
+jump in and see what's in it for us
+so we will be covering today the basics
+of c plus plus that is we will learn how
+to write your first program in c plus
+plus then types and variables in c plus
+plus after that topics like arrays
+strings efl statements for loop while
+loop and functions
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's start with the introduction to
+c plus plus programming
+c plus plus is a popular programming
+language introduced by john strawstrom
+in the year 1979. the aim was to make a
+dynamic language that is efficient and
+has some additional features to see
+initially it was called c with classes
+as it was an extension to c language but
+later renamed as c plus plus
+it is general purpose case sensitive
+language and it is called pre-compiled
+language because it converts the source
+code directly to the machine
+understandable code
+it is an intermediate level language
+because it contains both features of
+high level and low level language
+c
+supports the features of object oriented
+language like encapsulation inheritance
+polymorphism etc it also supports
+procedural programming and functional
+programming as well
+now as we have understood about c plus
+plus programming
+let's move on to our first program in c
+plus
+so the first program for beginners is
+hello world program
+in this program hello world is printed
+it is very basic program and in the
+first part of the program we are
+including a header file hash include
+iostream
+header files are generally used to
+import features into the program
+functions like c in which is used to
+take the input from the user and c out
+which is used to display the output are
+defined in this iopin header file
+here using namespace standard means
+we are using all the things which are
+within the standard library
+the second part of the program is main
+function
+this is a special function from where
+the execution of program starts
+inside the main function we are printing
+hello world using the c out which is
+used to print the output
+return 0 on the next line will indicate
+the program that nothing will return and
+program executed successfully
+so let's try this hello world program on
+our code editor that is vs code
+so let's first of all name the file
+hello.cpp
+so first of all we'll include the header
+files
+hash include iostream
+and then namespace standard we'll write
+using namespace
+std
+now we'll write the main function that
+is int main
+now inside this function
+we'll print using
+c out
+and
+we'll write
+hello
+world
+after that we'll write return 0
+all right now let's try to run this
+as you can see hello world is getting
+printed over here
+so this is how it's done
+so now let's move to our next topic
+that is types and variables
+coming to types and variables
+in c plus there are different types of
+data type that acts as a keyword which
+is responsible to define a variable
+first is boolean data type
+this keyword is used when we have two
+values either true or false and these
+values are used when there are
+conditions for example if the condition
+is satisfied then it's true otherwise it
+will return false
+next is character data type
+this character data type is used when we
+are dealing with alphabets and symbols
+and it is used to hold a single
+character within the variable
+integer data type
+this data type is used for integer
+values they can be both positive and
+negative
+next is flow data type
+float is used when we want to store
+values that are in decimal form
+now variables
+variables are used with these data types
+it is generally used to store values
+and this is the syntax to define a
+variable
+first we will mention the data type and
+then the variable name of our choice
+for example int is the data type and
+data is the variable name
+moving to arrays
+errors are one of the most important and
+widely used concepts in c plus plus it
+can be defined as a collection of
+similar kind of elements the elements of
+array are stored in contiguous memory
+locations that is one after the other
+arrays make it possible to store
+multiple values of the same data type
+into a single variable
+the syntax to declare an array is first
+we will mention the data type then the
+array name and after that number of
+elements inside the brackets
+our next topic is strings
+we can define strings as a collection or
+group of characters
+it is basically used to represent text
+in the program
+and we can perform many operations on
+strings in order to manipulate it
+the syntax of string contains a
+collection of characters surrounded by
+double quotes for example here string is
+the type
+str is the name of the string and coffee
+is the value that is assigned to the
+string
+in c plus there are two ways to create a
+string
+first is c style strings
+in c style strings collection of
+characters are stored in the form of
+arrays
+they are basically areas of type
+character
+the second way is using string objects
+we can create string object to hold a
+string
+they are implemented in the standard
+library which we must include in the
+program using hash include
+next is if false statements
+if else are two conditional statements
+that are generally used when we want to
+run the code based on some conditions
+we run a block of code which is inside
+if statement only if the condition is
+true for example
+if the number variable here is equal to
+10
+then only the block of code will execute
+and will print the message you got it
+otherwise it will run the else block and
+display the message written inside that
+block which is not this one
+now coming to loops
+first is for loop
+for loop is the repetition control
+structure
+that allows us to repeat a block of code
+for a fixed number of times
+instead of repeating the same code again
+and again
+the syntax of for loop has three parts
+first is initialization it is used to
+initialize the loop
+next is condition which is used to
+determine when to end the loop and last
+is updation which is used to update the
+loop variables
+for example inside the loop i equal to 0
+means we have initialized the loop from
+0 and i less than 10 means the loop will
+keep on repeating until i becomes less
+than 10
+that is it will repeat for 10 times in
+total from 0 to 9 and i plus plus
+denotes that we are incrementing the
+loop after each iteration by 1.
+another type of loop is while loop
+while loop are used in c plus when we
+don't know the exact number of times the
+loop should repeat
+it repeats the statements till the given
+condition is true the syntax for while
+loop is while keyword and condition in
+the brackets
+and the loop will iterate till that
+condition is true
+and once the condition becomes false
+then the control passes outside the loop
+for example in this while loop the
+condition is number less than 10
+that means the loop will keep nitrating
+till the number is less than 10
+that is till when it becomes equal to 9
+and inside the loop after printing the
+variable number we are incrementing the
+variable because we want to increment
+the variable number after each iteration
+now
+moving on to functions
+functions in c plus are group of
+statements that are designed to perform
+a specific task
+it allows us to write a code inside the
+function and then we can use that code
+every time when we need it
+by simply mocking the function
+we can also pass arguments to the
+function
+the syntax of function is
+type
+function name
+and then the parameters
+inside the function brackets we can
+write the code and we can invoke the
+function by calling it from the main
+function
+so as we have understood these concepts
+so let's move on to our code editor that
+is vs code to do some examples on these
+concepts
+so here we will do an example
+in which we will find the number of even
+elements and odd elements using array
+for loop and if file statements
+so let's first of all
+make a new file
+let's name this file as
+basic dot cpp
+okay so first of all we'll include the
+header files
+now we'll write using namespace standard
+now we will include int main
+and
+int main
+and here we will declare an array
+arr
+and we'll write
+and we'll mention the elements 2
+7 let's say 12 and
+9
+okay
+now
+first of all we'll initialize the
+variables let's say int even
+0 and will initialize
+odd variable
+with 0 as well
+now
+we'll write int length
+because we want to find
+size of the array and for that we will
+write
+sizeof
+arrayname
+then
+divide size of
+array of
+zero
+so now i'll explain this part here we
+have an array which has 5 integers and
+since size of an integer is 4 bytes
+therefore size of array is 5 into 4 that
+is 20 bytes
+now int length we have written int
+length equals size of array divided by a
+size of array of 0 that is 20 divided by
+4
+that is equal to 5
+so 5 is the size
+here size of array of 0 is the size of
+element at index 0.
+we can take any index here like arrow 1
+array of 2 array of 3
+so now we know the length of the array
+so here we will include the for loop
+and
+we'll start with int i equals zero
+we have initialized i with zero
+now i less than
+length
+this one
+here i have written i less than length
+that is i less than 5
+okay
+now i plus plus we are incrementing it
+now we have to
+use if condition because we want to find
+the even elements and the odd elements
+and for that we have to include if
+condition so we'll write if
+array
+of i
+mod 2
+that is
+if
+an element on
+dividing by 2 gives 0 as a remainder
+gives 0 as a remainder then it will it
+is even element
+so
+we'll increment the even variable this
+which we have initialized 0 will
+increment over here
+okay
+so now
+in else block
+we'll write
+odd plus plus
+it means that if this condition is not
+true then the odd variable will
+increment
+all right
+now
+we will
+print the variables
+so
+we'll write
+even numbers
+and we are printing these outside the
+follow so that they
+don't repeat
+with the for loop so that is why we have
+printed these outside the for loop okay
+now
+we'll write the variable even
+and l for the new line
+similarly we'll write odd number
+or numbers
+the variable odd
+and after that we'll write
+return zero
+okay so this is the code
+so now let's try to run this one
+there is some error
+okay
+yeah the spelling is wrong
+okay let's try again
+yeah here it is
+as we can see
+even numbers 2 or numbers 3
+we can
+check it
+like even numbers 2
+12.
+there are two even numbers and 1 7 9
+there are three odd numbers
+so in this question we have
+used array for loop and if else
+so now let's try some other example
+okay
+let's name this as
+basic 2
+dot cbp
+all right first of all we'll include the
+header file
+hash include i stream
+now using namespace standard
+okay now we will do an example in which
+we will print the elements from 1 to 20
+using while loop and with the help of
+function
+so first of all
+we'll start with intermittent
+and inside int main will simply
+call or invoke the function
+by writing the name of the function this
+is the name of the function print
+function
+okay so here we are calling this
+function and after that return 0 will
+write
+ok now we have to make this function
+let's create
+void
+what is the data type print function
+is the name
+and inside this function
+will first of all initialize i
+the variable i with one
+now will use while loop
+and
+we'll write the condition
+i less than equal to 20
+this means that the loop will keep on
+repeating until i becomes less than
+equal to 20
+so basically it will
+move from 1 to 20 times
+in total the loop will repeat for 20
+times
+so now
+all we have to do is
+we'll just print the i variable
+and
+in order to give some space between each
+element
+while printing so that is why we have
+used double quotes with the space
+between them
+now we'll
+increment
+i plus plus
+so that i will increment after each
+iteration
+all right now
+here we have called this function and it
+is getting printed inside the function
+itself so let's try to run this one
+here we can see this is the output
+one two three four five six seven eight
+nine ten
+up to twenty
+as i have told you
+as you have put the condition less than
+equal to 20 so that is why 20 is also
+getting printed
+because we have used equal to over here
+so
+we have called the function print
+function and inside that function we
+have initialized the variable i with 1
+and we have put the condition i less
+than equal to 20
+so that is where the loop is getting
+repeated for 20 times and i is getting
+printed inside the loop and after that
+we have used increment operator so that
+the value of i gets updated everything
+after every single iteration
+so this is the output so now let's move
+on to the next example
+so
+let's make a new file
+and name it as basic three dot cpv
+so here we will do an example of string
+and we'll do some push back and pop back
+operation on it
+so first of all we'll include the header
+file
+hash include iostream
+then using namespace standard
+namespace standard okay
+now
+we'll start with int main
+all right first of all we'll write
+string
+data type
+then the name of the string
+s
+here s is the name of the string
+all right now
+first of all we'll display a message
+to enter a string
+so
+okay enter a string
+now
+get line
+this is the syntax when you want to take
+the input
+of a string
+so
+get line c in is used to take the input
+and s is the name of the string
+so this is how we take the input
+and
+now we will print another message saying
+that
+you have entered
+now here we will print the string so
+next line and then
+okay
+now
+we'll do some operations like s dot
+pushback
+this will add an element at the end of
+the string
+so
+let's say we want to add
+y
+so we'll write y inside the bracket
+s dot push back and inside the bracket
+with single quotes will write
+y
+now
+we'll display a message saying
+after
+after using
+pushback function
+we'll print the string
+that is after using the function push
+back the string would look like this
+and
+now
+we'll use another function s dot pop
+back
+it will delete the element from the end
+so
+we'll write c out
+and we'll display the message
+after using pop back function
+let's write pop back only
+and we'll print the
+string
+okay
+now after that we'll write return zero
+and i think it's done only the spelling
+is wrong over here
+okay
+yeah now let's try to run this
+as you can see the message enter a
+string
+so let's say i have entered
+barcelona
+so you have entered barcelona after
+using pushback barcelona y
+because we have used y
+over here we want to add y at the end of
+the string so after using pushback
+barcelona y
+and
+pop back function after that we have
+used and we know that it will delete the
+element from the end so
+here we can see there is no y pop by
+function have deleted the element
+so this is our output
+and
+these were some basic examples of c plus
+basics it includes the
+examples of array for loop if else
+and functions strings we have covered
+and there are some more examples on each
+of these topics so i suggest you to
+please practice them all
+and that is how you will get a good
+understanding on all of these topics
+so
+you can try some more examples on it
+and alright guys with that we have come
+to the end of this video if you like
+this video please give it a thumbs up i
+hope it really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

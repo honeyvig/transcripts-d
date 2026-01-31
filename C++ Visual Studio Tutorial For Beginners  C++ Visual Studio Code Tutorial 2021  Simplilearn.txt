@@ -1,0 +1,388 @@
+hey everyone this is harsh bhardwaj and
+welcome back to another video by simply
+learn
+and in this video we'll learn about c
+plus visual studio and how can we
+perform some programs in visual studio
+now visual studio is an ide that is an
+integrated development environment from
+microsoft
+used for developing computer programs
+web apps websites etc
+it includes compilers code completion
+tools graphical designers and many more
+tools which helps in software
+development
+it is one of the best code editors for
+developers and designers
+so without further ado
+let's begin
+so the first thing we need to do is to
+download visual studio from its official
+website
+so we will search visual studio on
+google
+we'll
+search visual studio
+now we can open any of these two links
+we'll click on the second
+one so this is the official website of
+visual studio
+and now we can click on this download
+for windows button which is blue in
+color
+so when we'll click on it
+the computer will ask if to download it
+or not so we'll click on download now
+now the downloading is start
+so it will take a while the size of the
+file is 76.2 mb
+the download is almost done
+and the download is complete now we'll
+click on this open folder
+it will open the folder where the setup
+is
+here it
+is visual studio code user setup
+so now we have downloaded the visual
+studio now we have to install this so
+we'll click on this
+so this is the license agreement we will
+accept the agreement and we'll click on
+next
+and now we can change the destination
+folder if you want but
+it is not necessary and make sure that
+294.3 mb of free space is there in this
+destination folder
+okay now we'll click on next
+and now again we can click on next
+we don't need to change this one also
+now these are some additional tasks you
+can check any of them as per your choice
+i'll click on these
+and now we'll click on
+next
+now there is an install button now we'll
+click on this install
+and the installation begins
+and installation is done
+and here we can check this launch visual
+studio it is already checked and when
+will click on this finish
+the visual studio will launch
+so this is our visual studio code this
+is how it look likes
+so
+in this top left side
+this is the activity bar which lets you
+switch between views
+and this is the status bar which tells
+you
+this one is the status bar which tells
+you
+about the open projects and files you
+edited
+and this is the editor where you write
+codes first of all we'll click on new
+file so now this is the editor where you
+write codes and edit files etc you can
+open as many editors as you want
+and
+this is the explorer
+which is used to open manage all files
+and folders in your project you can
+create delete rename and move the files
+etc and you can start immediately by
+opening a file or folder in via studio
+then
+this is search search provides the
+global search across open folder
+all right now this is source control
+source control includes git source
+control by default
+run and debug displays call stacks and
+break points then this is the extension
+extensions we can add extensions by
+installing them within the vs code
+and
+if we want to do a program of c plus
+then we have to configure the visual
+studio code
+and for that first of all we'll click on
+these extensions
+and now we'll search for
+code runner
+this is the one we will click on that
+and now to add the extension we will
+click on this install button
+and it is installed
+now as we have installed this extension
+so let's
+do
+install another extension that is c
+c plus plus
+here it is
+so this extension is by microsoft so
+we'll click on this install button
+and it is installed
+as you can see downloading c c plus
+language components so
+it is in the process
+and it's done uh this extension will
+help us in debugging and code browsing
+so now we can start with our c plus plus
+program
+let's close this
+and this as well
+all right now we can start with our c
+plus plus program so first of all we'll
+create a new file
+we can create it by going to this file
+and now
+to the new file
+and that's how we have created the file
+so i have showed you how to create the
+file now we can save the file by going
+to file again
+and
+save as
+now we can set the location
+so let's name this file now
+let's say
+calc
+dot cpp
+because we are going to do a calculator
+program
+so let's start
+first of all
+we'll write hash include stream
+which is the header file
+now
+we'll write using namespace standard
+which is the namespace standard
+after that
+we'll start with int main
+and inside the int main we'll declare
+the variables
+first of all we'll declare a variable of
+type character and its name will be sim
+that is symbol
+then we'll
+declare two variables n1
+and two
+let's make them float because
+the numbers can be of decimal form
+so we'll declare them of float data type
+all right
+now we'll display a message
+we'll display enter the symbol of the
+operation that you want to perform
+because we are doing
+the calculator program so that is why we
+have to ask the user to enter the symbol
+of addition subtraction or whatever the
+operation he or she want to do
+so
+we'll start
+enter
+the symbol
+of the operator
+that you want
+the operation
+that you want to perform
+all right now we'll take the input of
+the symbol
+so we have declared sym
+symbol
+now all we have to do
+is to take the input of the operators or
+numbers
+so we'll display a message
+please enter the numbers
+and now we'll take the input of numbers
+and one
+and two
+now
+we'll use switch statement
+and inside the switch statement we'll
+put a condition
+that is our variable sim and whichever
+case
+of the switch case matches with that
+same variable
+that particular case will execute
+so we'll write
+sym
+the name of the variable same
+and now we'll create the cases
+so the first case would be
+plus
+if the same variable is plus
+symbol
+then
+then we want to print the addition of
+those two numbers
+so let's do that
+first of all
+in order to make it look good
+we'll write like this
+n2
+now
+we'll simply add
+those two variables
+all right this is the case one
+now case two would be subtraction
+we put the minus sign
+all right
+now we'll do the same for this one
+n1
+subtraction symbol
+we are writing like this because we want
+to
+we want the output to look good
+it's your choice
+now we'll write n1 minus n2
+now case 3 would be
+multiplication
+and one variable
+multiplication sign
+and to variable
+equals sign
+now
+n1 multiply by n2
+the last case would be
+division
+so n1
+division sign
+n2
+equal sign
+semicolon
+and now we will divide n1 and n2
+we forgot to do one thing guys
+to write the break statement after each
+case it will end the case
+after its execution
+we'll write break
+with the semicolon
+all right now
+return 0
+now i'll explain this part one more time
+this sim is the symbol that is entered
+by the user that is the operation which
+user wants to perform
+and whichever symbol matches this
+sim
+like
+if it is
+addition subtraction multiplication or
+division which so ever symbol matches
+with the sim
+that particular case will execute
+like if the user have entered the symbol
+of subtraction then this case will
+execute
+and if the user have entered the
+division symbol then this case will
+execute
+we forgot to
+do this over here
+that is right by showing the error
+and over here as well
+so yeah so this is how we can write the
+program of calculator so now let's try
+to run this one
+okay so first of all before running this
+program we have to save the file we'll
+go to file
+click on save
+and it will get saved
+you can do this by pressing ctrl ns at
+the same time as well
+all right now we'll try to run this
+program by clicking on this play button
+we have clicked the button
+all right i got the error
+so we did something wrong we have used
+double quotes
+let's make it single quotes and
+now save it again by pressing ctrl ns at
+the same time
+now let's try to run this once more time
+here we can see enter the symbol that
+you want to
+perform
+all right now let's try to enter the
+symbol
+i am trying to enter the symbol but it
+is not taking any input
+so this is a problem which can be solved
+by
+going to the file and now going to the
+preference selecting the preference now
+we'll click on settings
+now over here in the settings
+we'll write
+run in
+terminal
+now we'll scroll a little
+and here we can see code runner run in
+terminal
+so we'll tick this one
+and now
+we can cross it
+and
+now we'll save this one by pressing ctrl
+n s and we'll close the
+vs code editor
+all right
+now
+we'll again open the code editor
+now again we'll try to run this one
+so
+let's click on this run button
+here we can see enter the symbol of the
+operation that you want to perform
+so let's say i want to do addition so
+we'll click on the edition symbol here
+we can see we can enter now as we have
+done the changes and we have closed the
+via studio once and again open it so the
+changes are made
+now we have entered the plus symbol
+now we have to please enter the numbers
+so we'll enter the numbers let's say
+10
+plus 76
+as you can see 10 plus 76 equals 86
+now
+let's try another one
+now i want to do
+a multiplication
+over here
+multiplication symbol
+please enter the numbers let's say
+5
+into
+20
+which is equals 200 this is also correct
+so this was an example of a calculator
+program that we have developed in visual
+studio code and it is pretty easy to
+develop and
+create project in visual studio code you
+can try some other languages on visual
+studio code as well
+so this is the way how we can download
+install and configure in visual studio
+and do programming with these
+so that's it for the tutorial i hope you
+got the idea about c
+visual studio thanks for watching stay
+safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,214 @@
+technology has advanced significantly in
+recent years and is having a significant
+impact on careers all of those
+technologies evolved through the
+development of new softwares and
+products that involve a significant
+amount of coding and programming
+coding and programming languages aid in
+development of softwares and products
+c sharp and c plus are examples of such
+languages
+c plus plus is an object-oriented
+programming language whereas c sharp is
+a component oriented programming
+language
+c cluster development must comply to a
+specific architecture or be portable but
+c sharp development must be a simple
+modern general purpose
+object oriented programming language
+on that note hey everyone i am pepper
+khandelwal and i welcome you all to yet
+another exciting video from simply learn
+in this session we will be discussing c
+sharp versus c plus plus
+however before we begin make sure you
+have subscribed to our youtube channel
+and clicked on the bell icon below so
+you never miss an update from simply
+learn's youtube channel let's look at
+the agenda for today's topic
+we shall begin a session by discussing
+what is c hash language
+then we will discuss what is c plus plus
+language
+after that we will dive into differences
+between c sharp and c plus plus language
+finally we will include this session
+with some more key differences between c
+sharp and c plus plus
+so without any further ado let's get
+started with what is c hash or c sharp
+language
+c hash is an object oriented programming
+language
+developed by microsoft that runs on the
+dot-net framework
+its features include strong typing
+imperative declarative object oriented
+and component oriented programming
+c sharp was created by microsoft under
+the direction of anders heiselberg and
+his team
+now let's discuss what is c plus plus
+language
+c plus is also a general purpose
+programming language c plus plus
+supports seven styles of programming
+like functional programming structure
+programming or object-oriented
+programming
+it is also used in creating operating
+systems browsers and games etc
+we now have a brief idea of what c sharp
+and c plus plus is
+now let's discuss differences between c
+sharp and c plus plus
+we will discuss these differences based
+on various parameters let's start with
+memory management
+memory management in c sharp is handled
+automatically by garbage collector if a
+programmer constructs an object and that
+object's duty is completed then the
+garbage collector will immediately trash
+that object
+memory management in c plus is done
+manually by programmer if a programmer
+creates an object he is responsible for
+destroying that object after that
+object's job is completed
+next up platform dependency
+c-sharp code is only compatible with
+windows although microsoft is attempting
+to make it worldwide
+significant systems do not support c
+sharp get
+c plus plus code is portable and can run
+on any platform c plus plus is also used
+when a program needs to connect directly
+with hardware
+next up multiple inheritance
+c hash does not support any multiple
+inheritance through classes
+multiple inheritance is supported in c
+plus through classes this means that a
+class may extend many classes at the
+same time
+next up bound checking
+it's the compiler that does error bound
+checking in c sharp
+if the programmer attempts to access an
+invalid array index by accident it will
+result in a compilation error
+the compiler does not perform bound
+checking for c plus if a programmer
+accidentally attempts to access an
+invalid error index the output will be
+incorrect but no compiler fault will be
+shown
+next up pointers uses
+in c sharp a pointer can be used in
+unsafe mode by default c sharp does not
+support pointer arithmetic however we
+can construct an unsafe environment in
+which pointers can be accessed by using
+the unsafe keyword
+on the contrary pointers in c plus can
+be used anywhere in the program
+next up language type
+c sharp is an high level object oriented
+programming language
+while c plus plus is a low level
+object-oriented programming language
+after that let's discuss the level of
+difficulty
+there are no complex features in c sharp
+it has a simple hierarchy that is
+straightforward to understand
+it has a rich set of library functions
+and data types at structure
+c plus is a programming language with
+many more complex features like dynamic
+memory allocation
+etc
+now next application type
+c shop language is used to develop
+various applications like mobile windows
+and console application
+on the other hand c plus language is
+typically used to develop only the
+console application
+next up compilation result
+compilation a c hash code is translated
+into an intermediate language code using
+jit in asp.net
+as for c plus after compilation it is
+converted into machine code using a c
+plus plus compiler
+next up
+object oriented
+c sharp is pure object-oriented
+programming language
+thanks to the.net framework it is
+strengthened by encapsulation
+polymorphism and inheritance
+whereas c plus plus is not a pure object
+oriented programming language
+due to the primitive data types
+next up access specifier
+access specifier in c-sharp includes
+public private protected internal and
+protected internal
+on contrary c plus plus access
+clarifiers includes public private and
+protected it lacks internal and
+protected internal access modifiers
+next let's discuss types of project we
+can do with these languages
+c-sharp language is majorly used to
+develop modern applications like twitter
+bot atms and driving simulators etc
+whereas the c plus program are typically
+used for application that interact
+directly with the hardware or require
+higher performance than other languages
+can provide
+at last size of binaries
+the c sharp is a programming language
+that has lots of overhead and libraries
+must be included before it is compiled
+on the other hand c plus has much more
+lightweight binaries
+finally let's look at the conclusion for
+this session
+first up
+c plus plus language is a low level
+programming language
+that extends the base c language with
+object-oriented programming capabilities
+whereas c-sharp is a high-level language
+next up c plus plus code is compiled to
+machine code whereas c-sharp code is
+compiled to clr that is common language
+runtime which is then interpreted by jit
+in asp.net
+finally the memory management in c plus
+is done manually whereas in c-sharp the
+virtual machine takes care of it
+automatically
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you like this session then like share
+and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

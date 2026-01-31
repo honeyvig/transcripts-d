@@ -1,0 +1,621 @@
+hey everyone this is harsh bhardwaj
+welcome back to another video by simply
+learn
+in this session we are going to learn
+about c
+gui that is graphical user interface and
+how to configure visual studio and make
+a gui application
+so without further ado let's get started
+to develop c plus gui or c plus plus
+graphical user interface apps we must
+have an ide
+that supports c plus gui applications
+and visual studio is one of the best ide
+for that
+here ide stands for integrated
+development environment
+there are many versions of visual studio
+for gui apps
+but i suggest you to download visual
+studio 2019
+there are three editions of visual
+studio 2019 that is community
+professional and enterprise
+we can download the community edition
+once the visual studio is downloaded and
+installed then you need to launch this
+application
+after that you can select the color
+theme
+and change the development settings to
+visual c plus
+then the visual studio will look like
+this
+then here we will click on this create a
+new project
+and now we have to search for a project
+template named clr
+emptyproject.net framework
+so we'll type
+clr
+emptyproject.net framework
+here it is
+make sure that there is dotnet framework
+over here
+now all we have to do is to click on
+this
+and
+select next
+now here
+we can name our project let's say i have
+named it project2 and we can select the
+location
+and now we can click on this create
+button
+now our project is being created
+so here it is
+so now let's create a form file by going
+to the project
+then add item
+add new item
+now here visual c plus plus
+under visual c plus plus we'll click on
+ui and then windows form
+we'll click on this windows form and
+click on this add button
+so our file is loading
+so it will show you this error but you
+don't need to worry about this one you
+can simply close it
+now we will go to project
+then into properties
+then now we'll click on this linker
+open this linker
+now we'll go to the system
+then inside this subsystem
+over here
+we'll select
+windows
+here it is
+now after doing this then we go to
+advanced
+and in advance we can change this entry
+point to main
+we'll write main main
+this main is the starting function
+now we can
+press ok over here
+now you need to open this myform.cpb
+here it is and you have to copy this
+code
+and just paste it over here
+we will add this code in the description
+you can take this code from there and
+add it
+now make sure to write your project name
+over here
+like my project name is project2
+so i'll write
+project
+two
+yes
+so after doing this we can save it by
+pressing ctrl n s
+and now we can go to my form dot h
+here we can see there is no form so we
+need to
+save it and close this
+visual studio once
+now we need to open the visual studio
+again
+we'll go over here we'll write visual
+studio 2019 here it is we'll click on
+this
+and this is launching
+we can click on this project too
+now
+let's go to
+myform.h
+we'll click on this
+it is getting loaded
+here we can see the form
+earlier we are only able to see the code
+but now we can see this form
+now we can check this by running it by
+clicking on this local windows debugger
+button we'll click on that
+and let's see if it is running or not
+it will take some time
+so here it is it is running properly as
+you can see this is my form
+and
+this is ready to use so it is the
+debugging is going on so if we have to
+close the debugging or stop the
+debugging we can click on this cross
+button
+so the debugging is closed now and we
+have verified that the form is running
+correctly we can also add some buttons
+and labels to this form like this we can
+click on this toolbox
+then we can select this button
+and we can click this over here
+so this is our button and we can select
+some more labels
+all right we can click on this toolbox
+again
+and select another button
+like this over here
+and
+now
+we can select a label let's say
+and click over here
+and we can also adjust the size of these
+buttons
+like this
+and like this we can adjust the size
+and this is the label
+we have to adjust his size by setting
+its format we can
+do it by
+clicking on this label
+and going to properties
+over here we can see as we have clicked
+on the label
+so we can see the text that is label one
+here we can see text
+label one
+so it is this text which is written we
+can change this one
+by clicking on this we can select
+hello there we can write like this and
+it will be shown over this side
+now
+we must click
+the label first then only we can access
+the
+button or label
+so now let's say this is the font so we
+can click on this font
+and adjust this
+here it is let's say
+i have adjusted it to 18 size and
+made it bold now we can click this okay
+on this side so here we can see hello
+there it is bold now
+similarly we can do this for button as
+well
+as we have clicked on this button as you
+can see
+now i can go to this properties
+now
+inside this properties there is text
+that is button one we can see we can
+change this like we can write click here
+and
+we can also adjust its font
+here it is
+let's say 12
+and bold oblique
+click on this okay and here it is
+click here
+we can adjust it over there and suppose
+if you want to delete some
+button or label or something like that
+so we can click on this
+and
+right click on this side and here we can
+see delete we'll click on this late and
+it will be deleted
+there are more options in tool box like
+there is text box
+list box list view
+picture box
+check box etc we can select as per our
+choice
+and we can adjust its layout or editing
+by going to the properties column
+so now let's make a calculator program
+so for that we have to create a
+calculator layout so let's just delete
+all these
+delete this one
+and we'll delete this one as well
+now we'll go to the toolbox
+and select a text box we can search it
+over here
+text box
+here it is we can click on that
+and put it over here
+here it is
+we have to adjust its formatting
+so we'll go to properties and
+we'll go to font
+and click on this font
+now let's say adjust it to
+22
+and
+make it bold
+bold oblique yes
+i will click on this okay
+and
+we have to create another one so
+instead of doing this all we can copy
+this one and to copy this we can go to
+this side and click right click over
+here
+and we can click on this copy
+and then we can paste it
+here it is because we have to enter two
+numbers and for that we need to have two
+text boxes for a calculator
+all right now in between we can mention
+the
+operation or operator whatsoever for
+that we can we have to select the label
+and we go to toolbox
+and
+here it is
+text box
+but we have to select
+label
+all right
+label
+we'll click on this label and
+put it over here
+now we have to adjust it
+now here we will write
+let's say its font would be
+20
+and
+it would be bold oblique
+it will look nice then click on ok
+now we have to adjust what is written
+inside it so we can go to text and click
+on this
+label one now
+we can write operator
+but it would be so long so we can write
+op
+that means operator
+all right
+it gives the idea
+about the operator
+we have to adjust it a bit
+all right here it is
+and
+okay now we have to create a buttons for
+addition subtraction multiplication so
+we'll go to toolbox
+and now we'll
+search for buttons
+we'll click on button and put it over
+here
+and now we'll adjust it by going to
+properties
+and going to fonts
+let's adjust it to
+22
+and make it bold
+now we'll click on ok
+and now we have to change the label of
+it
+first of all let's select
+its layout like this
+it would be
+big
+now we'll go to properties
+and
+we'll go to text
+and we'll make an edition sign over here
+and now we'll click on this so here we
+can see so now we'll copy this button to
+create the
+next three buttons so
+click on this copy and paste it
+we'll do this for the other two as well
+and we'll change the text by going to
+properties later onwards
+here it is
+so first will be addition then here
+let's make it
+subtraction we're going to
+properties we'll click on this
+properties
+now
+let's make this text as
+minus
+all right now we can also change
+the color of this text
+let's say
+we can make this
+this here it is
+blue in color now we'll change this one
+we'll go to properties
+and
+make this as
+sign of multiplication but we'll press
+x
+so that will look nice
+all right now this one
+we'll go to properties and change this
+to
+division sign
+and we can change this one as well
+it will look nice
+let's make it this similar color to the
+subtraction
+all right here it is here are four
+buttons addition subtraction
+multiplication and division
+now we have to display the result as
+well so
+we'll go to toolbox and we'll search for
+label
+we'll click on this label
+and put it over here
+all
+right let's make it like this and
+let's put it
+over this side it will look nice over
+here
+properties now we have to adjust it
+let's make it 22
+bold oblique
+okay
+here is our result and let's name it as
+result as well we'll go to text here it
+is labeled to written
+we'll write
+result
+now whatsoever operation is done its
+result or output is displayed over this
+side
+now all we need to do is to add the
+functionality to these buttons
+so let's do that we'll click on this
+two times
+on this button and the button name
+actual name of that button is button one
+so here it is
+so this part is for button one and we
+know that button one is addition so we
+need to do addition over here
+so let's start
+first of all we'll
+[Music]
+we'll have to declare a variable
+int result or output or
+unser whatsoever we want
+let's write output
+now to add those we need the names of
+those two text boxes
+so we'll go to format design
+and we need these names both of these
+text box names so we'll click on this
+first
+and we'll go to properties so here it is
+text box one we can see
+and we click on this
+and properties this is text box two
+and this is similarly this is button one
+button two button three button four
+we can check this by going to properties
+and by clicking them and going to
+properties so this is text box one and
+this is text box too
+so now we know the names
+now all we have to do
+is to write
+text box
+text box where b is capital
+we have to write the exact name we can
+check it over here that this is text box
+we can check the spelling
+this is text box two this is label one
+this is button one this is button two we
+can
+check the spellings from there now
+now we have to use the
+arrow operator
+we'll write like this this is the air
+operator this will give us the access to
+the members of the object
+all right so
+we have to change the text so we'll
+write
+text
+with t capital
+alright
+now we have to add
+the text box too
+and we'll do it same
+we'll write
+this ad operator
+and text
+now this addition which we have written
+over here is wrong
+because we are actually adding the
+strings
+as you can see
+when we type any number over here it is
+a string and same goes for this part
+so we have to convert it
+first we will convert both of these
+text to integer and then we will
+again convert the result into string
+because we have to display it over here
+and for that we need a string so then
+again we have to convert it to the
+string
+and let's do it
+so what we gonna do is we will write
+system
+and then the scope resolution operator
+convert
+again scope resolution inverter
+operator sorry 2
+and
+16
+i must be capital keep in mind to int
+16.
+all right now here we'll write
+text
+box with b capital
+and then this add operator
+and we'll write text
+all right
+after that sign of addition
+again we'll do the same
+system scope resolution operator
+convert scope resolution operator
+to
+end
+16
+and
+text box 2 here we have to write text
+box 2
+arrow operator
+text
+all right
+here is the addition part now we have to
+display the result
+now to do that
+first check the name of the result like
+this is the result we'll click on this
+and go to properties
+its name is label 2
+so we have to make the changes into
+label two we'll go to this
+format
+now we'll
+have to change the text that is we have
+to change the result that is written
+into the
+output
+so for that we will write
+label
+2 which is the name
+then this arrow operator
+after that we'll write text because we
+have to change it
+and then
+we'll write
+system
+scope resolution operator
+convert
+scope resolution operator
+to
+string because we have to display the
+output into string
+as i have already told you
+all right
+now
+over here we have to write
+output
+this output
+okay
+so let's check if it is working or not
+we'll go to local windows debugger and
+click on this
+hope it works
+here it is
+my form
+so let's try to add
+let's say 5
+plus
+9
+and we'll click on this add button
+14 and we know that 5 plus 9 equal to 14
+so
+it is working fine we can see and now we
+have to do this for all the buttons that
+is subtraction multiplication and
+division so let's go ahead and do that
+let's first close this debugging
+we have stopped the debugging and we'll
+go to this
+now we have to do that for
+the next three buttons so we'll
+all right
+now we'll click on this
+subtraction button two times
+here we can see
+now
+the code is same for all of these
+and
+so we can copy the code from here
+and we have just copied it and we'll
+paste it
+and we'll make the
+changes in the sign like i have used
+here
+minus sign for the subtraction
+and the rest is good yeah
+all right now we'll do it for the next
+one that is
+multiplication
+and double click on that
+and here it is
+we'll copy the code from here
+and paste it
+we'll change the sign
+the subtraction not the multiplication
+sign this is this multiplication sign
+and now
+the next one that is division
+here we go
+we'll again
+select copy
+and paste
+let's change the sign of this as well
+okay
+as we have done the changes so let's
+save it by pressing ctrl n s
+and
+it is saved now let's try to run this
+hope it works we'll click on this local
+windows debugger
+it usually takes some time and here it
+is
+so let's try now
+five
+plus
+six let's do this first of all edition
+11
+now
+we'll do
+20 minus
+6 so we'll click on this minus
+and 20 minus 6 equals to 14 that's right
+and now we'll do 20 into
+3 that is 60
+click on this multiply sign 20 into 3
+that is 60 it is right
+now let's say
+15
+and three yeah
+we click on divide and this is five
+so all of our
+buttons is working fine so this is how
+we can create a calculator
+in visual studio 2019
+you can also create this calculator
+program in your pc all you need to do is
+to download visual studio 2019 and
+install it and you can follow the steps
+and you can create this calculator
+application
+and with that we have come to the end of
+this tutorial if you like this tutorial
+please give it a thumbs up i hope it
+really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

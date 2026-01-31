@@ -1,0 +1,468 @@
+hey everyone welcome to Simply learns
+YouTube channel in this session we will
+be learning about charts and graphs in
+Excel but before we begin let me tell
+you guys that we have daily updates on
+multiple Technologies so if you're a
+tech gig in a continuous hunt for latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+simply learn now without further Ado
+let's get started with our onepoint
+agenda that is graphs and charts in
+Excel now let's quickly get onto the
+Practical mode where we will have some
+data sets over which we will be trying
+to apply the charts now there are
+various types of charts in table and
+those are the pie chart the column chart
+the bar chart column versus line pavier
+chart and Spar line charts so we will
+discuss one after the other first let us
+discuss about the pie chart so as you
+can see we have a small data set on my
+screen which I have personally created
+and uh this deals with the companies and
+this deals with the shares of the
+automobile industry so now for this
+let's create a pie
+chart select all the data and then get
+into the toolbar and inside the toolbar
+you can see various options and inside
+that we're going to use the insert
+option and when you select the insert
+option you will have a ribbon here and
+inside inside the ribbon you can see
+groups tables illustrations addin and
+here you go these are the charts so now
+we needed a pie chart so select on that
+icon and you have various types of pie
+charts you have two dimensional pie
+charts three dimensional pie charts
+donut type of charts Etc right so I
+would like to go with the
+three-dimensional pie chart as it looks
+a little more appealing and easy to
+understand and now there you go this is
+the title of the chart and these are the
+legend of the chart and this is the
+chart area and these are the values now
+we can uh you know kind of add the data
+labels as well so you can just have to
+press the plus icon over here and you'll
+have the options you can add the data
+labels which will give you a lot more
+interesting
+values and uh you can also turn this
+around as you can see we on double
+clicking any part of the pie chart
+you'll get this option which is called
+as format data point and uh let's
+imagine that you wanted to show the
+information related to this particular
+one which is Volvo which has the biggest
+share so this is in front right now now
+what if you wanted to show the
+information related to data which is
+over here right for that you can select
+this particular Arrow key and you can
+just twist it and there you go it is
+coming in front this will be uh a great
+way of presenting your data to your
+clients right
+yeah and there is another option where
+you can directly explode this like you
+can pick it out you can see this right
+Point explosion where you can split it
+out and you can show that especially
+like you can highlight it and show it so
+that's the you know a great way of
+presenting your data so that's how you
+can work with pie charts in Excel now
+let's quickly move to the next one that
+is the column chart and in the column
+chart we have the data related to some
+company and uh the profits of that
+company based on a year so you can see
+that the year has started from 2008 and
+it has gone until 2021 and these are the
+profits of that company year after year
+so since we are dealing with column
+chart I'll tell you the simplest way to
+create a column chart there is a
+shortcut key for that which is alt F1
+and there you go you have the chart
+right on your screen
+now you can uh expand the chart just by
+dragging it like that and you can see
+that there is some problem with this
+chart that is we have numbers here
+instead of ear right you can see that
+the First Column is the years which is
+2008 to 2021 but here you can see we
+have 1 2 3 4 which is not proper right
+so to change the axis that is you can
+see the axis which is 1 2 3 4 from 1 2 3
+before to the years 2008 2009 2010 11
+Etc you just have to make one change
+here and also you can see I have pressed
+the plus icon over here which will open
+the option where you can include the
+access titles if you have and data
+labels everything right so for now I
+think I'll keep it as it is so you can
+include the data table as well as it is
+here and you can include that in the
+chart there are various options that
+Excel provides you so now let's uh focus
+on changing the axis from 1 2 3 4 to the
+ears for that you need to select the
+chart design and inside the chart design
+you have an option called select data
+press that and here you have various set
+of options you can see profits you can
+see ears now we'll select ears and we
+will remove that and now you can see the
+edit option here right select that and
+now it will ask you which column to be
+selected for the access range for that
+let's select this and now let's select
+the ears
+here and press okay and there you go
+again press okay so there you go you
+have the ears over here instead of the
+numbers which you had in the first place
+so that's how you create the column
+chart and we have the next type of chart
+which is really simple now you know you
+kind of change this chart directly into
+bar chart there is no big deal in
+that so uh for that you just need to
+select the change chart type option over
+here you're just changing the chart type
+and you can get the bar graph over here
+column and bar graphs are completely
+same to each other only that you can see
+these uh bars in the horizontal way
+rather than in the vertical way let's do
+that let's not create a new thing for
+that so uh yeah there you go when you
+select the change chart type option you
+have various set of chart type options
+on the menu bar over here so what we
+needed was the bar chart now let's
+select that and there you go let's
+select okay and you have the bar
+chart right and if you want you can
+include the data labels which look a
+little bit more interesting you can also
+include the data table as
+well okay for now I think we have to
+expand the chart to get the Clear
+View yeah that's how you do
+it right now let's move into the next
+type of one yeah we dealt with the bar
+chart so we'll directly enter into the
+column versus line chart so we have
+similar kind of data we just had year
+and profits in the previous part now we
+also have included the expenses right we
+needed another column to showcase the
+line chart compared to the columns right
+so for that I've included a new column
+that is expenses Al as well now just
+let's select the
+data and let's select the option alt F1
+to create our
+chat right now automatically uh Excel
+has provided us the column chart we have
+The Columns of expenses we have the
+column of profits and we also have years
+now let's change the data as we did
+before select uh year and remove it and
+then
+edit select edit and select the ear that
+is from here to
+2021 select okay and we have the ears
+over here now what we needed to do is
+change the chart type right select the
+change chart type option and since we
+wanted to create a column versus line
+chart it is a combination whenever you
+want one or two types of charts included
+in one single chart window then it is a
+combo option so here we need to select
+the combo option and inside that we have
+various types of combination charts we
+have clustered column we have clustered
+line on secondary axis we have clustered
+stat areas clustered column and the
+other one is custom combination so let's
+go with the first one that is clustered
+line let's select that and there you go
+we have the line graph with the column
+so that's how we create the column
+versus line
+and if you want you can include the data
+labels and you can include the data
+table as well yeah okay I think uh we
+need to expand the canvas a little more
+to get a clear
+view
+yeah so you have Legends over here you
+have the data labels and accesses
+everything and chart title you can
+always change the chart title so for now
+let's uh rename it as
+profits versus
+expenses yeah that's that's how it
+goes done okay I think I made a spelling
+mistake
+here yeah it's clear
+now now the next type of chart we're
+going to deal with is the P
+chart so uh we have dealt with P chart
+column chart bar chart and column versus
+line now P chart is a little bit
+different it's like you're going to
+create some active chart which responds
+to the variations you're making to your
+data so to understand that better let's
+create a practical chart over here now
+select all the
+data
+okay yeah I have selected the data now
+to create a pivot
+chart let's
+select the insert option from the
+toolbar and inside the ribbon we have
+charts group and inside that we have PIV
+chart now let's select the P chart
+option and there you go now it's asking
+for range and we have selected the range
+over there and uh we are not going to
+create a new worksheet for the entire
+chart we are going to create the uh
+chart inside the existing worksheet
+itself so for that let's select the uh
+area where we want to select the uh
+chart to be present now for that let's
+select this and U yeah select
+okay okay there is some
+error let's cancel this and try
+again let's select the
+data and prev chart
+again we have selected the
+range
+yeah that's how you select the range and
+now select the position where you want
+to create it existing worksheet we have
+selected that and press okay yeah that's
+that's the way we've got our previous
+chart over here and you can see our
+previous chart is completely blank right
+now it will respond to the changes you
+make to your P chat for now we have uh
+serial numbers and U these are the names
+of the guys who
+have okay so these are the names of the
+guys you who have some dealerships for
+various car makes such as Ford Ferrari
+Honda Kia Alpha Romeo BMW etc etc so uh
+we're GNA change or we're going to see
+um you know we're going to make some
+charts of the persons who own the cars
+or the car brands or dealerships in
+various regions so we're going to work
+on that now let's drag in the
+name and uh let's drag
+region and
+cards and the units
+yep so we have our uh chat over here
+column chart which has the different
+different names and the dealerships and
+some of cars over there right so you can
+see that we can also change some values
+over here what if we wanted to know only
+uh the details regarding Jennifer you
+can do that you can unselect everything
+and you can just select Jennifer and
+press okay now you'll have the details
+of only Jennifer of having the car brand
+so we have the regions as well so
+Jennifer owns dealerships in two
+different regions that is South and West
+and uh the sum of units and count of
+cars as well so that's how the PV charts
+are used in real
+time and now let's select sales and drag
+the sales as
+well yeah it's been dragged and you have
+the sales of uh
+Jenifer the details of her sales and
+let's move the chart a little bit and
+you have the plus icon where you can
+include the data labels for a better
+information yeah so that's how you use
+the P charts so we are on the last type
+of charts which is the spark line chart
+Now to create a spark line chart we need
+to get into the insert option and inside
+we have the ribbon and inside the ribbon
+we have the group that is spark lines
+now to generate a spark line chart we
+need to select this particular column
+and then select the type of spark line
+you want to create for now let's create
+the column type of spark line chart yep
+we have to Club these cells together
+first we forgot that because we're going
+to insert the spark line chart right
+above here now for that let's merge the
+cells
+[Music]
+yeah so uh we wanted to create
+the spark line chart of column type and
+now it's asking for the location where
+we want to create the spark line chart
+so this is the location now let's select
+okay and there you go we have the spark
+line chart right over here now you can
+see that we have a negative Point here
+so if you want you can change that from
+negative to positive and it will
+automatically update that and if you
+want to add the access to this
+particular chart you can select the
+options Park line and there go you have
+certain options like High Point low
+point and if you wanted to add some
+margin you can also do
+that add the data type access and there
+you have the
+access show access yeah you have the
+access now and you can have the high
+point point and low point for that as
+well which is the you know the biggest
+change and the smallest change in this
+particular segment that is few Furniture
+yeah Furniture had the highest sales in
+January and uh home plance had the
+lowest sale and you can also change the
+color and uh let's type of change the
+color again yeah we have a different
+color over here which resembles a little
+bit more better or you can also go with
+this one and if you wanted to add the
+same to all these tables you can do that
+just by dragging it and you have it for
+all the 6
+months now if you wanted to add some new
+data in this row or you wanted to add a
+new complete row then you can do that as
+well and change that and bring that
+change implemented in these charts as
+well now let us try to add a new row
+here which includes the miscellanous we
+have that data right over here let's
+select that copy and and uh let's paste
+it over here so there you go we have the
+extra row here so yeah now we have added
+the miscellaneous row and right now we
+have the spark line chart for only four
+columns or four rows that is Furniture
+technology home appliances and office
+needs and miscellaneous is missing now
+to add that as well let's select spark
+line and inside sparkline just select
+edit Group location and data and now
+let's select the entire your
+data and now select
+okay there's something wrong
+again spot line edit
+data select
+range this should be helping yeah there
+you go we have all the fire rows now
+including Furniture technology home
+appliances office needs and
+miscellaneous now for this particular
+example we going to use the employees
+data now let's quickly get back to the
+Practical mode and enter into
+Excel now you can see that we are on
+Excel sheet right now so let me expand
+my screen a little bit
+so that the data is a little more
+visible yeah so here on my screen you
+can see that we have employees data so
+the First Column is the name of the
+employees and the second column is the
+start dates of the employees that when
+have they started working with the
+organization and when they have ended or
+resigned to their position in that
+particular organization and the duration
+gives us the number of days they have
+worked in that particular organization
+so to create a Gant chart is really
+simple you just have to select the date
+data and then go to the insert option
+and in there you can see the charts icon
+and select all charts and in that select
+the bar chart and here you can see the
+Stacked bar chart select that and press
+okay and there you go you have the
+Stacked bar chart right on your screen
+let's expand this a little more so that
+we have the clear visualization of the
+dates as well now you can if you want
+you can change the title as org data or
+employe
+data and now we are partially done with
+our chart now the next thing we have to
+do is select the bar chart right click
+on it select data and here select the
+add icon now you need to select the
+series name so the series name is
+duration for our Gant chart and series
+values are let's select
+this and select let's move move a
+little yeah so these are the data series
+let's select okay and you can see the
+Gan chat on my screen right here select
+okay and it's done and still now it's
+not complete yet so to finish it you
+need to select the blue colored bars
+here and right click on them and select
+format data series
+go to the fill icon and select no
+fill and it's done for now and you can
+see that there is a difference in this
+particular arrangement we had Joe at the
+first place and Susan at the last place
+but here you can see Joe is in the last
+place and Susan is in the first place so
+we need to make some arrangements here
+for that right click select format
+access and then here you can see
+categorize in reverse order
+and there you go you have your Gant
+chart right on your
+screen now with that we have come to an
+end of this session on graphs and charts
+in Excel if you have any queries
+regarding any of the topics covered in
+this session or if you need the data
+sets used in this session then please
+feel free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,495 @@
+for several decades the model view
+controller mvc design pattern has been
+extensively used across various
+technologies
+this design pattern has been used in
+everything including small talk to c
+plus plus java and c sharp
+dotnet web applications benefit greatly
+from this powerful and straightforward
+method of decoupling issues within
+application
+and on that note hey everyone i am
+pepper khandelwal and i welcome you all
+to simply learns youtube channel today
+we will implement crude operations on
+asp.net mvc but first let me remind you
+that we have daily updates on numerous
+technologies so if you are a tech geek
+looking for the latest technological
+innovation then try subscribing to our
+youtube channel
+and don't forget to hit the bell icon so
+you never miss an update on simply learn
+now without any further ado let's get
+started with agenda for today's session
+we will begin a session with a
+discussion on what is asp.net mvc
+then we will have a brief discussion on
+the need for asp.net mvc
+following that we will implement the
+crude operations on asp.net mvc
+finally we will wind up this session
+with a few takeaways
+so without any further ado let's get
+started with the discussion on what is
+asp.net mvc
+microsoft's asp.net mvc is essentially a
+web design framework
+and asp.net mvc integrates mvc design
+elements the most recent agile
+development principles
+and methodologies and the greatest
+component of the existing asp.net
+platform
+because it is built on top of asp.net
+then developers may use practically all
+of the asp.net capabilities
+while developing the mvc application
+asp.net mvc
+is not something that was created from
+the grounder it is a full replacement
+for the regular asp.net web forms
+next let's discuss the need for asp.net
+mvc
+so when developing a web application
+using asp.net mvc there will be no
+illusions of state no page reload and no
+page lifecycle
+another design aim for asp.net mvc was
+to be extendable throughout the whole
+framework so when we discuss views they
+must be displayed by the specific sort
+of view engine
+the whole point of employing model view
+controller design pattern is to keep
+things separate
+an mvc component instantiate controllers
+so if you don't like how mvc instantiate
+your controller you can do it yourself
+next let's try to implement crude
+operations on asp.net mvc let me open my
+visual studio
+let's create a new project
+we will make
+an asp.net
+web application
+with the dotnet framework
+so we will click next
+then we will name this
+and we see
+group
+make sure you choose dotnet frameworks
+4.7.2
+then we will hit clear
+next we are asked which type of
+template we want to use
+so we will use mvc
+next we will hit create
+we will wait for it to create
+and here we have our first project
+now let's try and connect to a database
+we will connect to
+our same localdb
+ms sql
+local
+tv server
+we will name this
+mvc crude
+we'll click ok
+it will take some time to create it
+and now it is asking us
+to
+create it so let's create it yes
+we go here
+we check tables and there is none
+so we will right click and add a new
+table
+we are waiting for its design to load up
+first
+we will name this one as
+student id
+present id
+then
+next
+we will have
+student name
+we will give this one
+never card care50
+then
+we will have student fees
+this will be
+end
+then we will have
+student city
+and again we'll name it nav backhand 50
+we will also name this table
+so we will copy this and name it student
+now we will update this
+to prepare for database
+now this will create this table
+so we will update database
+and as you can see here the table is
+created
+we can refresh here and as you can see
+here is the table
+so table data
+and there's none
+let's close this
+now what we want to do is apply crude
+operations to this table
+so
+it will automat when we enter it in the
+forms it will automatically register it
+to this table
+now
+we will go ahead and right click here
+and we will click on manage and you get
+package
+here we will install
+entity framework
+we'll click on browse here it will do
+searching
+here the first one
+will click on this and we will install
+the five point open top version
+click on install
+click ok
+then i accept
+and it's installed now
+so now
+we will right click here and we will add
+a new item
+we will go to data and we will install
+ado.net and creator model
+so click on add will select ef designer
+from database
+if you click next it is already selected
+let's make it
+as tp context
+next
+we will choose 5.0
+we will go ahead here
+and select
+the student table
+and we will hit finish
+it will take some time to create files
+here
+as you can see it has created an entity
+data model
+as
+if you look at look here closely it has
+created several files
+let's see this one
+and this is the file it has
+automatically created its student.cs
+which has the complete structure for the
+class
+of all of this taken from directly from
+the table
+next
+let's also check
+our controller
+this is our home controller this is a
+default controller so as you might see
+there are several
+functions already here let's delete the
+alt functions
+we'll click keep index so we because
+we'll making one of them anyway
+delete these we don't need them
+and for the index let's write them
+so we will have the
+list
+of
+data
+equals to
+underscore
+context
+dot
+student
+dot
+do list
+then we will return
+list
+of
+data
+now
+to solve this
+we will need to add a context file here
+we see crew db context
+underscore
+context
+equals to new
+mbc
+true tv context
+and that's it
+we'll save this
+next
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+let's create
+an http
+get
+function
+this will be
+public
+action
+result
+create
+for this
+we will only return
+view
+now
+we will also create
+let me make some space
+here
+now we will also create
+an http
+post method
+and this method
+will be again public
+action
+result
+and this will also have
+the same name
+create
+but
+student
+model
+we will have
+context
+dot
+student
+[Music]
+dot
+add
+model
+then
+we will have
+underscore contacts
+dot
+save changes
+and
+a view back
+dot
+message
+is equals to
+data
+insert
+successfully
+then
+we will return it
+return
+view
+let's save it
+let's add
+all of the pro functions as well then we
+will look at them together
+and here
+now
+we have already created the create
+function
+now i added some more functions so first
+we have edit function
+this is in http get more
+and then we have http post
+here i basically
+what i'm doing for the get part i'm just
+asking for the student id
+to recognize for which
+student i will be updating the data
+then
+in the http post method i'm basically
+copying
+what i am gonna put in
+the text box
+of student city through the name student
+piece
+next we have detail function
+this will basically give us the
+information for that id
+then we have delete function
+this will be able to delete the site
+record
+now
+let's add
+the view for each of these functions so
+we will click on action result for index
+we will right click on it and click on
+add view
+we will select mvc5 view we will click
+add
+then we have this option for the temp
+index mode
+we will
+put list because
+we are trying to create list for the
+index
+for the model class
+we will have student
+db context s
+and we will click on add
+it's ask us
+this file is already existing
+let me show you why
+let me cancel this we will do it again
+if you go into the view folder
+you will see
+these three files these are the ones
+which were already created earlier so
+what we will do now when i will create
+to replace it it will just simply
+replace this index.css html
+so again
+we click on add view
+we'll select this we'll click on add
+we'll select list
+for the model class we will use student
+and for the context class this and we'll
+click on add
+and yes we want to replace it
+and it will be creating the new view for
+us
+let's try rebuilding it first i guess
+there are some errors
+we will rebuild this solution
+and it succeeded
+let's enable it
+let's try it again
+let's add view
+mvc file add
+list
+student
+mvc chrome
+then click on add then yes
+and this is the view for the index
+folder
+now
+let's go back to the home function
+and let's create view for the create
+we will right click on this create
+click on add mvc5
+and
+now we will select create mode
+for the model class we will use student
+then we have db context for this one
+let's add
+and this is
+for the
+create function
+now
+let's go and make
+one for edit
+detail and delete so i'll go add this
+and
+for edit we will use edit
+model
+student
+and we will add
+next
+we will go for detail
+we will add view
+select add
+for detail we will have details
+student
+this and add
+at last we have delete
+so we will add view for this
+we will click on this add
+then we will add delete here
+then we have student then we will click
+on add
+now we have successfully created
+a separate view for each of these
+now
+let's try
+and run it
+it will open it in the chrome
+let's wait for it to load up
+and here is our
+table
+as you can see we have a create new
+function button now let's click on this
+and it's asked us
+for details let's give it 291
+student name as
+let's say my name berber
+student fees as around 20 000
+and for the street city as
+new york
+let's hit click
+and it has created
+let's go back to our list and as you can
+see
+it is already here
+let's create few more few more
+so let's mark it as mark
+um
+id2
+mark
+student fee as
+30 grand
+39
+grand student city as
+las vegas
+and hit create again
+let's go back to list
+and here we are
+let's try hitting on edit
+now
+let's try
+to change this to 40 grand
+and this
+new
+orleans
+let's add it
+and it has changed
+we can also delete this
+now let's get back to our slides
+finally let's look at the final
+takeaways to conclude this session
+first up we have asp.net mvc that makes
+it easier to add interactivity and
+responsiveness to existing project
+next we have asp.net mvc which gives you
+complete control over produce html and a
+clear separation of responsibility
+following that we have direct html
+control also implies improved
+accessibility for established
+conformance and
+developing web standards after that we
+have asp.net mvc
+is ideal for web applications that
+require
+assistance of large teams of developer
+as well as web designer that require
+high level of control over the
+application's behavior
+then
+asp.net mvc simplifies complexity
+management by splitting an application
+into the model
+the view and the controller
+at last
+asp.net mvc
+improves test-driven development support
+that is tdd
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,177 @@
+foreign
+so in today's video we're gonna look at
+the logic of a palindrome program so but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+a number That Remains the Same when
+reversed is known as a palindrome so for
+example it could be one two three two
+one or triple five or it could be one
+triple zero one so these are the few
+examples where the numbers remain same
+even when they are reversed
+so moving ahead let us understand the
+logic to find the palindrome of a number
+so as you can see this is the piece of
+code so let's understand its logic so
+whenever you are entering the number
+that is stored in a temporary variable
+and then it checks the while condition
+so while temp is not equal to zero then
+it will execute this set of code so
+where R is equal to R into 10 so
+initially if R is equal to 0 then 0
+multiplied by 10 will be 0 and that is
+stored in R then again R is equal to R
+plus temp module 10 so whatever is there
+in the temp is module by 10 so that
+again what again here we got R is equal
+to 0 so 0 plus whatever we got here will
+be stored back in the I
+then coming to the third statement here
+we have temp is equal to Temp divided by
+10 so 10 divided by 10 the number what
+we have in the temp is divided by 10 and
+that is that result is stored back in
+the temp variable
+and next
+let us understand the logic to find the
+palindrome of a string so previously we
+saw palindrome of a number now we are
+going to enter the string so whatever we
+are entering a string that we are
+finding the length using Str Ilion
+function so once we find the length of a
+string that will be stored in length Lan
+variable so for I is equal to 0 to I
+less than n it will check if a string of
+I that means the first character of a
+string is not equal to the last
+character of a string then it will break
+that means uh it is not a palindrome if
+it matches if the first character of a
+string
+so suppose this is the string so it will
+check s is equal to n so if it is same
+then it is a palindrome that means you
+check whether s is equal to n then T is
+equal to e r is equal to n if not then
+it is not a palindrome if it is same
+then for suppose let let us keep map m a
+m so as you can see even when a map is
+reversed it will be a palindrome of a
+string right so that is the logic so let
+us understand practically
+so this is the number to find the
+palindrome of a given number so here we
+have a variable number and R is
+initialized to zero and we have a temp
+variable so we are asking enter a number
+to check if a given number is palindrome
+or not so once it enter we enter the
+number that number is stored in
+temporary variable so it is assigned to
+Temporary variable and then we have
+the while condition so while temp is not
+equal to zero then it will execute this
+set of statements
+so we have R is equal to R into 10 so
+what is our value 0 so 0 into 10 it will
+store it uh that result will be stored
+in our variable then again
+R is equal to R plus temp module 10. so
+now R is 0 so then whatever is that temp
+whatever number we have entered that is
+in the temp variable so that way that
+number module 10 we are doing and that
+result again it is stored in r
+then coming to Temp so again whatever
+number we have entered that number
+divided by 10 so the number will be
+decreased and that number again stored
+in temp so finally we have an condition
+if num is equal equal to R if they are
+equal then the given number is palindr
+else the given number is not parallel so
+let's execute this
+so enter a number to check if a given
+number is palindrome or not so let us
+enter one two three four five and check
+so this is not a palindrome number why
+because 1 is not equal to 5 2 is not
+equal to 4 and again so this when we are
+reversing it it's not equal so it's not
+a panel term so let us execute once
+again
+so if we enter 1 triple zero one
+it is a palindrome number because even
+if you reverse this number it it gonna
+be the same
+so yeah
+next Let's uh now let's execute a
+program to find the palindrome of a
+given string so now we are going to
+enter a string
+so Str uh the size is 20 and we have I
+variable and we have length to find the
+string length and then we have a flag
+which is equal to zero
+so printf enter a string so once you
+enter the string we are going to find
+the length of the string using Str Len
+function so once you find the length of
+the string we are going to store it in
+the variable Len so for I is equal to 0
+to I less than length it will check if
+string of I is not equal to string of
+length minus I minus 1.
+that is if this string is
+okay
+yeah so what is string of I is this this
+will be first
+character right and string of length
+minus I minus 1 that that is last
+variable so it will check if this and
+this is same
+okay so if this and this are not equal
+then it will break the condition break
+if if they are same
+then if flag that is if whatever we have
+flag is equal to 0
+then the Stringer the string is not
+palindrome else the string is palindrome
+so
+if it is 1 then it is not a palindrome
+because this the condition will not
+satisfy
+suppose it is string
+so here s and J are not equal so the
+first character and the last character
+are not not equal so it will print like
+a string as not palindrome okay if it is
+m a m then both the characters are same
+like first character and large
+characteristic so then it will check
+each and every character
+and then print the value so let's
+execute it
+so enter a string
+uh let's enter strength
+so here as you can see it's a string
+whatever is there is not a palindrome so
+if you enter
+from
+so it's a palindrome
+so with this we have come to the end of
+this session on palindrome insane I hope
+this session was informative and
+interesting so until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

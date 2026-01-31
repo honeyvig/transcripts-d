@@ -1,0 +1,144 @@
+foreign
+in today's video we're gonna look at the
+logic of a Fibonacci series program but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+so first let's understand what is
+Fibonacci series
+the Fibonacci series where each number
+represents the sum of the two numbers
+before it so here we have the series of
+Fibonacci numbers
+that is 0 1 1 2 3 5 and 8. so basically
+what happened here is it adapts it two
+numbers before it that means the number
+represents the sum of the two numbers
+before it so here we have the number 0
+and 1. so initially they will add this
+both numbers to 0 plus 1 is 1 then 1
+plus 1 is 2 2 plus 1 3 3 plus 2 is 5 and
+5 plus 3 is 8. so in this way it forms a
+Fibonacci series so moving ahead let's
+understand the program logic
+so here as you can see we have a for
+Loop so initially I value can be 0 and 1
+then we are starting with the 2 so 2
+the initial I value is 2 and then it
+checks I less than number so whatever
+number we are uh you know entering it
+could be 5 10 so it checks with I value
+so if 2 is less than that number then it
+will execute this set of statements so
+here N3 is equal to N1 plus N2 so
+basically it add up the previous two
+numbers and store it in entry and print
+the entry value then whatever is there
+in N2 will be assigned to N1 and
+whatever is there in N3 will be assigned
+to N2 so let's understand in Day by
+executing this program
+so this is the program on the Fibonacci
+series
+so here inside the main function here we
+have declared the variables N1 N2 and N3
+and we also have a variable I and number
+so initially N1 is assigned to 0 and N2
+is assigned to 1 the value 1. so enter
+the number of terms here whatever the
+number we are entering suppose we are
+entering 5 or could be 10 so it will
+find the 10 number of Fibonacci series
+so
+okay let's say we have entered 5 okay so
+now num is equal to
+num is equal to 5. then it will enter
+the N1 and into so the I mean it will
+print so initially N1 is 0 so it will
+print the N1 value
+N1 is 0 and then it will also print N2
+which is 1.
+so now N2 value is what 1.
+so we have in uh N1 value as well as N2
+value then coming to for Loop
+we are starting I with 2 because we
+already have 0 and 1 so we are starting
+it with 2. so I is equal to 2 then
+checks I less than num so what is I here
+2 it checks whether 2 is less than the
+number that we have entered that is 5.
+if it's true then it will execute this
+set of statements so what is our N1
+value
+N1 is 0
+plus it will add N2 value that is 1
+okay this is our N1 and N2 value so this
+we are going to add and store it in N3
+so now N3 is what
+N3 is holding
+value 1. and it will print the value
+for entry the value will be printed as 1
+and then coming back to this statement
+here we have N1 is equal to N2 and then
+into is equal to N3 so basically
+whatever is there in into we are
+assigning it to N1 so what is our into
+value 1
+previously N1 value was 0 now we are
+assigning whatever is there in N2 to N1
+so
+now N1 is holding the value
+1.
+then
+coming to the next statement here N2 is
+equal to N3
+what is n 2
+before N2 was 1. now N3 is what 1 so N1
+value is assigned to N2
+so N2 is equal to 1. okay we got it then
+again it will go to the go back to the
+for loop as it has printed the N3 value
+now again if you go back and increment
+the I by 1. so now before I was 2 now I
+is 3 so okay next time when it goes to
+the follow-up it will increment I by 1
+so now I is equal to 3 so it will check
+whether 3 is less than 5 if s then we'll
+come back to this statement and again it
+will continue the same process that
+means again it will
+um add up these values N1 and in this
+these values will be added up and 2 will
+be stored in in the place of Entry there
+will be 2 because it will add 1 plus 1
+it is 2. so again N3 will be printed as
+2 then again whatever is there in N2 is
+given to N1 and whatever is there in N3
+it is given to into and this will
+continue till this whatever here is not
+satisfied if suppose we reach 5. so 5
+less than 5 it's false so it will stop
+executing it will return
+and print all the values so let's
+execute it
+foreign
+enter the number of terms so suppose we
+have entered five so here we got the
+five Fibonacci series numbers that is 0
+1 1 2 and 3. so suppose you want to
+enter 10 so let's enter ten
+or 15 let's enter 15. so as you can see
+we got 15 numbers here Fibonacci series
+all right so with this we have come to
+the end of this session on Fibonacci
+series in C I hope this session was
+informative and interesting until next
+time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

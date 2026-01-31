@@ -1,0 +1,260 @@
+to introduce myself I'm Anana a program
+manager in the visual C plus plus team
+one of my focus areas is to work on
+crossplatform mobile development
+experience for visual studio today
+specifically I'm going to start with
+providing you a very short overview of
+crossplatform mobile development I will
+also follow this up by highlighting the
+key capabilities that visual C++ is
+going to provide to Aid the
+crossplatform development story I will
+also demonstrate these capabilities
+through a help of a short
+demo modern development today requires
+developers to provide their applications
+across multiple device platforms from an
+application development perspective C++
+serves as a great choice as it allows
+developers to reuse their crossplatform
+code across a variety of device
+platforms keeping the development cost
+slow starting with Visual Studio 2015
+visual C++ will provide a great
+experience for crossplatform
+development using visual C++ 2015
+developers will be able to acquire all
+their crossplatform mobile development
+software easily and stay current with
+frequent
+updates visual C++ 2015 will also allow
+developers to build crossplatform mobile
+applications lever leveraging C++ for
+all major mobile
+platforms in addition to this Visual
+Studio experience will also allow
+developers to share and reuse their
+crossplatform code easily and Top This
+by providing the fastest debugging
+experience for all these mobile
+platforms
+with that said let's now demonstrate
+these capabilities through a sh
+demo as a part of the file new project
+menu developers will now see the
+crossplatform node light up under visual
+C++ with this node selected developers
+can view a wide range of templates made
+available to them let's take a look at a
+few of
+them the dynamic shared Library template
+will allow developers to create a
+dynamic shared library for the Android
+platform this Library will contain all
+the cc++ code and can then be used to
+create an end to an application using
+Java or
+samarin the other newly added basic
+application Android template allows
+developers to create an end an
+application in
+Java and the make file project template
+will allow developers to Port over their
+source code easily from other IDs as it
+leverages ndk
+build also notice the crossplatform
+templates which are used to Target and
+share crossplatform code between
+multiple platforms including iOS which
+we enabled
+recently the last template that I want
+to talk about is the native activity
+template Android with API level 9
+release the ability to create a complete
+end an application in C++ this style of
+application is popular with game engines
+and other game like
+things let's further explore this
+template type by looking at an
+example
+so here I have the open dual example
+solution it has two projects the native
+activity project contains all the cc++
+code let us further explore the project
+by taking a look at the project
+properties project properties allow
+users to view edit modify important
+project characteristics for example
+using the target API level project
+property developers can set the API
+level that want to Target for their
+application using the platform tool set
+property developers can choose the
+platform tool set that they want to
+choose for building their application we
+currently support both clang and GCC
+tool
+chains the last property I want to talk
+about here is the configuration type
+project property this property allows
+developers to choose what kind of
+application they're building in this
+case we're building a dynamic sh library
+or ano
+file let's now hit cancel and take a
+look at the other
+project the packaging project is used to
+take the existing Dynamic Shar library
+and create an end to an Android
+application using the an build
+system for the next part of the demo I
+want to bring up some source code to
+demonstrate the feature
+capabilities for doing so I'm going to
+bring up the main. CVP source file and
+Traverse to the Android uncore main
+function Android uncore main function is
+a characteristic function for Native
+activity application type and acts as an
+entry
+point as I play around in this
+function notice some of the code
+authoring features that we've introduce
+for example the Android specific
+intelligence experience lighting up here
+as I want to as I choose the Android
+lock print
+API other featur features for code
+editing and authoring such as code
+navigation work well as well to
+demonstrate this take a look at the peak
+definition feature in action
+here all in all we've ported most of our
+code authoring features from the Windows
+Experience and extended them for the
+Android platform as well this will
+provide you a good Cod experience when
+When developing inside visual
+studio for the next part of the demo I
+want to go ahead and show you the
+debugger capabilities for doing so I
+want to set a bunch of break
+points notice the drop- down debugger
+menu is already populated with the fast
+x66 Microsoft Android
+emulator this emulator is already
+running in the
+background so I'm just going to go ahead
+and hit
+F5 on hitting F5 my application is built
+and then deployed onto the
+emulator notice the breake point that I
+set was
+hit also notice the debugger Windows
+such as the auto
+window the locals
+window the threads window and other
+debugger Windows such as the call stack
+all light up nicely as well
+as I mentioned the Android debugger
+inside of Visual Studio that we've
+developed is the fastest debugger on the
+Windows platform when debugging Android
+code to demonstrate this notice as I
+actually move between different
+breakpoints furthermore using this
+debugger experience developers can also
+pass commands directly to GDB using the
+command window for
+example
+in this case I'm viewing the I'm viewing
+the back trace for my application that's
+currently running using GTP
+exec next I'm going to hit continue and
+let the app
+run this app is a basic opengl app and
+responds to user Touch by changing
+screen color notice that happening as I
+click on the emulator
+screen
+the Elder itself also has other
+capabilities for example you can rotate
+the screen and view how your application
+actually
+operates I'm going to hit continue again
+because my debugger break points were
+hit or you can also leverage other other
+sensors that the debugger actually
+provides we currently support the
+accelerator sensor the location sensor
+the network sensor and so
+on all in all this is our development
+experience for Android when using visual
+C++ in the next part of this demo I'm
+going to show you how to debug a preix
+zixing Android application package file
+that you built in another
+IDE for doing so bring up the file new
+project menu and choose the dynamic
+share library application type
+I'm going to name this project ibug
+pre-existing big Maps APK and click
+okay on doing so this creates the debug
+pre-existing Mig Maps APK project
+type choose the configuration that you
+want to debug for and hit
+build
+next bring up the debugger property
+pages and fill in the following
+information this information includes
+the package to launch which is the pth
+to the
+APK
+the package name
+itself which can be found in the Android
+manifest.xml
+the launch activity which can also be
+found in the Android
+manifest and last the symbol search path
+which
+contains the symbols for your
+application
+type click
+okay the next thing we need to do is
+bring some Source from the big Maps
+application so that we can debug it into
+visual studio for doing so I'm going to
+bring up the map Network manager. CVP
+source file into
+vs since we will be using this project
+only for deploying this application and
+not building I'm going to uncheck build
+in configuration manager and click
+apply
+I'm going to set a breakpoint in this
+begin get URL function which gets called
+during the big Maps
+initialization at this point I'm ready
+to debug my big Maps APK using visual
+studio all I need to do now is hit F5
+notice that this application is getting
+deployed to your
+device the Bing Maps APK is pretty large
+in size and the symbol search path
+contains over 500 MB of debug
+information which is currently getting
+loaded as you can see from the loading
+symbols notice that the brake point that
+I set was hit and the autos and the
+locals window are light up nicely as
+well using this experience developers
+can use the visual studio debugger for
+their pre existing Android application
+package files without moving completely
+into Visual
+Studio thanks for watching this video to
+learn more about crossplatform mobile
+development follow us on visual
+studio.com or VC
+blog

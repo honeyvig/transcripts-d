@@ -1,0 +1,719 @@
+the capacity of a computer program to
+evaluate its behavior and code and make
+changes is known as reflection for
+example in c sharp reflection allows you
+to observe and alter data about your
+program during runtime
+which has immense potential that you may
+not be aware of right now
+c sharp reflection capabilities
+sometimes known as reflection are
+tremendously powerful and surprisingly
+simple to use
+and on that note i'm weber khandelwal
+and i welcome you all to our simply
+learns youtube channel
+today we'll be going over c-sharp
+reflection
+but first let me remind you that we have
+our daily updates on numerous
+technologies so if you are a techie
+looking for the latest technological
+advancement then try subscribing to our
+youtube channel and don't forget to hit
+that bell icon so you never miss an
+update from simply learn
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin our session with the
+discussion on what is metadata
+followed by a brief discussion on c
+sharp reflection
+then we will have an in-depth discussion
+on type class
+following that we will implement some of
+the methods we have learned during this
+session with a simple demo
+finally we will conclude this session
+with a quick look into the applications
+of c-sharp reflection
+so now let's get started with the
+discussion on what a metadata is
+first a metadata is a binary data stored
+in a memory or language runtime portable
+executive file
+data is moved to another file section
+when you build code from a portable
+executable file
+before copying the code to another file
+partition it is transferred to msil that
+is microsoft and intermediate language
+next
+the metadata contains all data types and
+data members specified and referenced in
+the assembly
+the information is loaded from memory
+when c c-sharp code is executed at
+runtime
+then the primary goal of c-sharp
+metadata is to learn about the class the
+data members inheritance and the data
+type among other things
+the files metadata is made up of tables
+and heap data structure
+at last
+it is essential for a simple programming
+paradigm
+and eliminates the need of ideas that is
+interface definition language files and
+header files
+next let's discuss what a c sharp
+reflection is
+first
+reflection
+is defined in a computer science as the
+technique through which the computer
+program may view and pictures its
+structure and behavior
+the system dot reflection namespace
+contains the classes that provides
+access to running programs metadata
+next
+the name space system dot reflection
+allows you to acquire information about
+the loaded assembly and their
+constituents
+such as classes methods and value types
+there are many classes that are found in
+system dot reflection name space
+let's discuss
+repeat
+there are many classes that are found in
+system dot reflection name space
+let's discuss some of them
+first up we have assembly
+an assembly is a recyclable updatable
+and self-describing component of a
+common language runtime program
+or more commonly known as clr program
+and the assembly class will describe it
+the assembly name
+it describes the assemblies and its
+distinguishable name
+next we have member info
+this one retrieves details about the
+members properties and provides members
+metadata
+[Music]
+then we have method info
+this one explains the method class and
+provides its metadata
+next up we have constructor info
+it explains the constructor class and
+provides its metadata
+next we have event info
+it explains the event info and provides
+its metadata
+finally we have property info
+this will identify a property's features
+and makes its data metadata available
+now that we have a good grasp on concept
+like metadata and reflection let's have
+a look at the most commonly used or
+important class the type class
+time declaration for class type
+interface type enumeration kinds array
+type
+and value type and so on are represented
+by c sharp type class it is found in
+system namespace
+it is derived from
+system.reflection.memberinfo class
+type class provides support for various
+methods let's have a look at them
+first up we have get type
+this one give
+the present type
+then we have a get type with a string as
+an argument
+this gives the type of a given argument
+next up we have
+get members
+this one returns all the public members
+for that type
+then we have get members with an
+argument as binding flags
+this one will gets us a list of all the
+members of the type that match the
+specified requirement
+given by binding flags
+then we have get constructor
+this one returns all the public
+constructors for the type get
+constructor
+then we have a get constructor with an
+argument as binding flags
+this will gives gets us a list of all
+the constructors of the type that match
+the specified requirement
+then we have get fields
+this one returns all the public fields
+for the type
+then we have a get field with an
+argument as binding flags
+this one gets us a list of all the
+fields of the type that match the
+specified requirement
+then we have get method
+this one returns all the public methods
+for the type
+next step we have get methods with an
+argument as binding flags
+this one gets us a list of all the
+methods of the type that matches the
+specified requirements specified by
+binding flags
+finally we have credit get properties
+set
+this one returns all the public
+properties for the type
+then we have a get properties with the
+binding flags as its argument
+this one gets us a list of all the
+properties
+of the type that matches the specified
+requirements now that we are familiar
+with some of these methods let's get
+let's go to our visual studio and check
+them out
+let's start by creating a new project
+we will create
+a console
+application
+note that we will be using the one which
+can use a.net course
+so
+as well as fisher so we will use this
+one
+then we will go next
+let's name it
+as
+simply
+reflection
+demo
+then we can choose the location
+according to you i'm using simply
+project
+then i will go click next
+then we can use the target frameworks
+i am using dotnet 5.0
+you can use according to your need you
+can also use 3.1
+then we will hit create
+now this will take some time to create
+the project
+here now we have
+a typical project
+now
+we will right click on the solution
+we will go add
+and select
+new project
+this time we will be creating a class
+library
+make sure you are using a c sharp one
+as well as which one that support dot
+net core
+then we will hit next
+now
+let's name this
+as
+simply
+print
+database
+then we will hit next
+we will again prompt us to choose the
+framework we will be using the same one
+which we used last time
+so if you are using a 3.1 then select
+3.1 if you are using 6.0 then use 6.0
+then we will hit create
+and here we have our first class library
+now
+let's write up some code for the
+this simple simply run print database
+classwork.cl
+so
+that's it enter here
+we will start
+with the private
+string
+employee
+data
+repeat
+we will start with
+private
+string
+employee
+name
+we'll enter
+then we will have a public
+void
+simply
+print
+then in this we will have a console
+dot write line
+here we will be printing
+from
+simply print
+we will create
+another function
+public
+string
+simply
+get
+named
+let's close this to make space
+then we will return
+this
+dot
+employee name
+then
+we will make another
+method
+which will be public
+bold
+simply
+print
+name
+this will have console
+start
+write line
+here we will use dollar symbol
+then we will write
+employee
+name
+past
+as
+then we will have curly braces and we
+will write
+our variable employee name
+then we'll get out of this
+next
+let's write another one of the function
+this will be a private method
+so private
+void
+simply
+print
+private
+then
+here
+we will use console
+dot
+write line
+and return a message
+as
+printing
+from
+simply
+print
+private
+after that
+we will have
+a public
+employee
+name
+arrow
+employee name
+that was our variable
+then
+we have
+a public
+static
+string
+then we will have a static
+employee
+name
+with an arrow pointing to
+a message
+static
+property
+employee
+name
+then we will have semicolon
+now let's save this and go over
+to our program folder
+which is basically
+our simply learn reflection dot demo
+program file
+now let's write a code for this one
+delete this part
+but first let's go back here and build
+this
+we will rebuild solution
+we did that because we wanted
+this part
+simply print database dot dll file we'll
+copy this
+we'll be needing this
+for our next form
+so now we are here
+let's add some
+namespaces so using
+[Music]
+system
+dot
+link
+also we will be using
+system
+dot
+reflection
+so now
+let's get started
+we will go to our main block
+and then we will have
+where
+which we'll name this as
+simply
+assembly
+equals to
+assembly
+dot
+load
+from
+then we will have added
+and we will copy paste this
+path we copy this last time
+semicolon
+then we will hit enter
+then we will have a 4-h
+then we will have
+bar
+type
+n
+simply
+assembly
+dot
+get
+types
+then
+we will print out
+console
+start
+write line
+then we will have a dollar symbol
+then in bracket
+we will write
+as type
+colon
+then we will have type
+dot
+name
+then we will have
+another control line
+dot
+right
+line
+here you will add a simple line to make
+the transition
+next
+we will write
+a variable
+simply
+instance
+which will be equals to
+activator
+dot
+create
+instance
+type
+basically this activator will help us in
+change
+in changing the values at runtime
+now we will write some for each
+statements
+so we will have first four each
+and this one
+will have
+var
+field
+in
+type
+dot
+get
+fields
+now we will have some binding flags
+dot
+non-public
+then
+we will do r
+we have
+binding flags
+dot
+instance
+then
+we have
+binding fly
+dot
+declared only
+then
+in this
+body we will have
+a console
+dot
+right line
+we will have a dollar symbol
+then
+we will write field
+then in curly braces
+we will have
+field
+dot
+name
+now we will be making the similar types
+of 4-h statements again and again
+let's also
+write a command
+to set a value to these fields
+so
+let's have command as field
+dot
+set
+value
+then
+we will have
+simply instant
+comma
+we can write any name here
+let's read write things
+then we'll hit enter
+now let's get out of this 4-h
+and here we will write another one of
+console
+dot
+write line
+then
+we will have another one of those
+dividers
+next
+we will have another for each let's copy
+this
+the earlier one so that we don't have to
+do that again and again
+let's close this
+ctrl z
+now the next one
+will be on method
+so we will change
+password here
+in
+type dot get
+methods
+now
+this one
+we will also have
+a binding flag
+dot
+public
+and for the declared only part
+we also have
+a bear command
+where
+this m
+should be
+not equals to
+m
+dot
+is
+special
+name
+then
+in the body we will have
+our first data as method
+then we will have
+method name
+as per
+let's clear this one up
+now
+let's have f block
+method
+dot
+get
+parameters
+dot
+length
+is
+greater than zero
+then
+we will invoke
+method
+dot
+invoke
+simply instance
+comma
+new
+array
+then in curly braces
+you will give it the name as beta
+else
+if
+method
+dot return
+type
+dot
+name
+is not equals to
+void
+then
+we will have
+bad
+return
+value
+equals to
+method
+dot invoke
+then we will have
+simply instance
+comma
+null
+then we will have an else block
+in the address block we will have
+method
+start
+[Music]
+then we will have
+simply
+instant
+comma
+null
+then we have this console.writelinelife
+similarly
+we will write a code for the property
+so
+let's write a fully for reach
+with that argument as where
+type
+in
+type
+dot
+get
+properties
+then we will have
+console
+start
+write line
+then we will have dollar symbol
+and we will print out property
+curly braces
+property
+dot
+name
+in the next line
+we will have a var
+with
+with that variable name as
+property
+[Music]
+value
+equals to
+property
+dot get
+value
+and it will take the property value from
+simply instance
+then
+we will have another print statement
+console
+dot
+write line
+we have total assemble
+then we will have property
+value
+then
+in the curly braces
+you will have
+property
+value
+sample then
+outside we will have console
+dot write line
+then we will have divider
+now
+let's save this
+and run it
+make sure to save this one as well
+let's run them
+now as you can see
+it has first
+print the type
+as class 1
+which was the name of our class library
+then we have method
+then we have field which was our
+employee name
+then we have created a method which was
+simply print which was printing printing
+from simply print then we also have
+another method as simply get name
+we have method as simply print name
+then employee name was passed as team
+then we have we also have simply print
+private
+which we are printing printing from
+simply print private
+now if you notice
+in the
+binding flags
+for our methods i used a non-public and
+a public
+so
+a non-public is responsible for printing
+out the private method and for the
+public
+is responsible for printing out the
+others
+then
+we have properties
+for properties we have employee name
+then
+its value was changed because we passed
+james as the new name
+then we have a static employee since
+it's a static employee name so
+when we
+changed the name to peter it didn't get
+changed
+and the property value was printed as
+static property employment
+now let's close this and get back to our
+slides
+finally let's discuss some of the
+applications of c-sharp reflection
+first it permits the creation of new
+types
+during runtime and executes various
+actions utilizing those kinds
+then we have attribute information that
+can be seen during a runtime
+following that we also have lead binding
+which
+two functions and attributes are
+permitted
+at last it also enables instantiating
+inspecting numerous kinds within an
+assembly
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1318 @@
+foreign
+at this point the Revolutionary new AI
+based chatbot developed by openai has
+taken the World by storm
+thanks to its near lifelike responses
+and a very intricate pattern of answers
+we have never seen this level of
+expertise from a chatbot before which
+really made us think to what extent can
+we push it there are many questions on
+lead code that even the most experienced
+programmers have difficulty answering so
+we wanted to see how far charge GPD can
+take us hobby finally reached the stage
+where AI is going to replace us let's
+find out so basically here we will be
+listing 10 really difficult questions
+that we found on lead code popularly
+asked while hiring and other Superior
+examinations and see if chat GPD can
+actually answer or solve those difficult
+questions or not but before you like to
+watch more such interesting videos then
+do subscribe to our YouTube channel and
+hit the Bell icon to never miss an
+update from Simply learn so let's get
+started so here is the lead code let's
+see uh in our list which is the first
+question that we are going to implement
+in our chat GPD and see if it's able to
+solve it or not
+mainly we'll focus on hard category
+questions only so
+according to my research there's a
+question of median
+of two sorted arrays
+so as you can see the success rate is
+35.7 percent so let's see the charge
+Equity is able to do this question so
+first let us go through the question
+okay
+press enter let's see what it first
+returns
+uh on a one approach to solving this
+problem is to use a modified binary
+search algorithm to find the median of
+the two sorted arrays so right now it's
+particularly giving the logic which we
+can actually imply to solve this
+question
+and this is a good for the charge GPD is
+that before uh giving the code it's
+actually explaining how they had putting
+the logic in together in the code
+so probably you can use this logic to
+create your own program but let's see
+how sensible this code is
+quite a learning program
+is in Python so if you are looking for
+your Solutions on chat GPD you can
+always opt out or you know mention the
+specific program you want the code in
+so okay it's it's also gives that okay
+that the time complexity will be o log
+Min m or n so let's see if it
+the case or not
+so we have copied it
+and we quickly paste it over here
+as you can see
+uh as we know that python is uh very
+sensitive towards its uh
+syntax and you can see the indentation
+over here is perfect but here it's not
+so I feel that something like this is
+something with lead code
+so let me just quickly Rectify this so
+you can see I have cleared out the
+indentation issue and let's just quickly
+run this program so that we can get an
+idea if this is the correct program
+uh now you can see here we have an error
+let's see copy this and see what chart
+GPD has to say for this
+so if you remember when we actually saw
+this question there were three arguments
+passed through this function which was
+self nums 1 and nums two ask GPT if it
+can write the code with self-argument
+and see if it's correct
+and wait that if it can pass a
+self-argument through that function and
+see if it can generate a new code
+okay now it has cleared that yes it
+takes three arguments
+let's
+copy this code
+that over here again I think we will
+have to go through the indentation
+process
+oh no this time it's fine okay so now
+quickly run this program let's see if
+this time it passes all the test cases
+or not
+okay
+I think it doesn't needs because the
+class is already mentioned over here
+uh
+yeah
+okay the run time is 35 Ms and as we can
+see case 1 and case two is definitely
+passed
+so
+let us see if
+this code can pass all the test cases
+internally mentioned in this question
+now you can see the first three cases
+are actually accepted but the other
+three are not there's a runtime error
+so
+the first question in our list chat GPT
+was unable to solve let's move on to our
+next question
+that is zigzag conversion
+now let me quickly search for it
+this is a question here also you can see
+the success rate is definitely below 50
+and the difficulty level is medium so
+the Hard One charging Beauty was not
+able to solve let's see if this can be
+done
+so it will give a string that will be
+written in a zigzag pattern on a given
+number of rows
+and then you have to read the line in a
+certain
+as you can see over here
+we have to write the code that will take
+a string and make this conversion given
+in a number of row
+has also means a certain amount of
+certificate uh repeat that's also given
+a certain specifications that we exactly
+want so this time we'll make sure that
+we are mentioning everything
+so let's quickly copy this
+okay now that we have mentioned about
+the specifications
+uh let me quickly
+feet
+and paste it now let's see what code it
+has to generate
+it's implementing the code in C plus
+plus so meanwhile it's generating the
+code let's quickly
+select the code oh it's already C plus
+plus okay
+okay it's also suggesting that we can
+definitely use Python and Java
+and it's generating an alternative code
+as well for us
+that's Sharp
+oh
+just quickly copy this code
+[Music]
+we
+the one I think it's a okay so it's
+generating in
+Java
+let's generating we'll definitely have a
+look at its alternative codes as well
+let's quickly have a look at what it has
+to C plus plus one the first code
+generated by it
+uh is correct or not
+case copy the code
+paste it over here
+dilation Arrow
+okay okay
+28 okay
+so let's do this later
+the one thing but definitely this time
+we have mentioned all the constraints
+criteria specifications that we wanted
+in a code but again
+charging
+questions we have implemented till now
+let's see if it has any success rate in
+further
+okay it seems okay
+now it is okay so this time it is uh
+generating the solution
+considering the error in Java
+uh see what it has to say in Java and
+we'll make it specific that the error
+was in C plus plus program so generates
+the correct code
+plus plus program
+what it has to say
+oh this thing is
+let's see so this error is something
+related to the compiler and now it is
+giving the updated code in C plus plus
+is the correct one or not
+apologizing for making errors in their
+Solutions
+quite fascinating
+[Music]
+um
+paste the code over here I don't see
+there's a lot of difference or changes
+over here let's see if it runs or not
+let me see if all the braces are covered
+over here or not
+I think it's missing a brace
+good
+okay so there was a syntax error one
+brace was missing
+um I don't
+want that
+definitely something with the code but
+okay we can give that to charge GPT it
+was partially read quotes issue because
+we were copying still it was not giving
+the error that there is a brace missing
+has passed the first three cases
+mentioned over here and the run time is
+3M is now just let us submit this code
+and see if it passes all the rest of the
+cases or not minded this time we have
+actually mentioned all the constraints
+so let's see if this has to in two
+okay so this time it has passed all the
+test cases but still my conclusion with
+this question is
+uh it was still not able to generate the
+solution in one go
+uh but so I can give that to charge GPT
+because the first error that we faced
+was more of a lead code this issue
+because it was something with company
+and charge gbt was able to give a proper
+oh now let's go back to our problems
+list
+so right now the score is one and one it
+was unable to solve one question and one
+not
+so let's have a look at the third
+question and see if that brings any
+difference to the charge equities
+scoreboard right now or not
+third question that we are going to deal
+with is substring
+with
+concatenation of all words
+this is in the category again and the
+success success rate is 31.1 percent
+which is even lesser than the first
+question that we faced which was median
+of the two sorted Aries
+we dying here we are actually trying to
+cover all the Spectra the huge Spectra
+of different types of
+questions and you know categories
+available in coding and to give you an
+idea of how
+beneficial charging can be for you to
+solve difficult questions which can be
+helpful for your interview base in
+companies or you can say well
+established companies among companies
+so here this video is specifically for
+you to give an idea that whether you can
+use it for your benefit and you know to
+get an idea or you can actually
+compare it with
+your
+subjects uh and you can get a you know
+wider range of different types of
+approaches to a certain question
+so let's start with the third question
+is that you're given a string and an
+array of strings probably words and all
+the strings or words are of the same
+length now a concatenated substring in s
+is a substring that contains all the
+strings of any permutation of words
+concatenated
+here you can see it's given an example
+that if words has a b c d e f then a b c
+d e f basically uh has done all the
+permutation and combinations that can be
+done using that
+specific array
+uh
+a c d b e f is not a concatenated
+substring because it is not the
+concatenation of any permutation of
+words
+so we have to basically return the
+starting indices of all the concatenated
+substring in the S string
+also you can choose any order for it
+here it has also given a
+two examples for you to
+understand the question in a better
+perspective
+now
+really uh copy this question and see if
+what programming language algebra
+chooses to answer this time
+but with no chat again
+or be these constraints
+okay it's just a question
+okay
+this is the solution that we're getting
+right now you requested a model that is
+not compatible with this engine please
+contact us through our help center at
+help
+dot openai.com for further questions let
+me just quickly refresh it if it has a
+something to do with the you know demand
+also sometimes it happens that the
+console is very busy and you're unable
+to implement
+uh your task in it so again let's
+quickly
+paste it over here
+that we want the code the right code
+return now
+press enter
+same definitely it's not giving the same
+error
+let's see it this time at charger PD has
+anything to give as a solution
+okay so it's generating the code in
+Python
+the more thing every time chargeability
+doesn't follows a similar pattern as you
+can see in the first question it
+explained the logic first and then
+implemented the code second time it just
+gave you the approach not the logic and
+then implemented the code in multiple
+languages uh first choosing for C plus
+plus
+and this time it straight away wind for
+the gold so definitely we can say that
+it has some different styles of
+generating their code and explaining the
+code I think it depends on the
+understanding how they want the code to
+be presented in front of the user and to
+give the perspective that if the code is
+understandable or not and if the code
+has multiple approaches I think charge
+if it is capable to capable enough to
+give that
+that the code is generated let's quickly
+copy it
+and
+paste it over here
+I feel the indentation issue is going to
+be there
+but it was not there okay
+F probably I think if we backspeed
+sure let me quickly Rectify this and
+I'll
+do once the indentations are
+well
+the indentation is projected now let's
+have a look
+at the Gold if it's correct or not let's
+quickly run it
+definitely it has a given our first
+syntax error again
+I can see that even a specific video
+question it definitely goes to at least
+one error which is mainly the syntax one
+sure if that is something with the lead
+code or you know with the
+generation
+okay
+now that we have given the error okay it
+seems that the error is caused by the
+use of type hints the function type ends
+were introduced the version we are using
+is lower than that okay so basically
+it's generating now in the python
+version uh probably this code is
+well suited for different version of
+python let's change it then and see if
+that helps
+knit
+is actually generating the code
+okay again
+the other one I think it's again
+something with the self
+uh
+python one the new code generated is
+here
+will definitely come back to that error
+and have a look at the Python 3 code
+also
+uh first let's copy this code
+and
+in giving the same error
+and see what it has to say
+uh you know every time the charge APD
+generates the python code we cannot
+ever takes self as an argument but
+believe that
+as you can see when we start the code
+it's already mentioned what arguments we
+need to pass from
+a particular function so I think that is
+something with the lead code so
+that what all arguments it's passing
+even though we have mentioned everything
+this time we have mentioned over the
+constraints we have mentioned all the uh
+necessary
+specifications that we want in the code
+even then the code is not correct in the
+one go so probably I'll get this point
+to GPT it's something with the lead code
+because it's passing that parameter and
+everything we have to mention that
+parameter pretty much when we do the
+chargeability is able to solve the
+question so let's see let me actually
+mention that
+because self parameter self argument
+from that parameters I'm gonna make it
+one of the parameters
+processing that
+I guess self can be passed as the first
+argument to the given function now let's
+see if that it's able to give the
+correct solution or not again we can see
+it's uh generating the code and you know
+Python 3
+but we can give that to charge GPD that
+either it uses python or Python 3 the
+error is with the self argument
+so once we mention that error and when
+we mentioned that specification that if
+charge GPD can pass self-argument
+through that particular function in that
+code
+the solution is pretty much
+right so here it's also implementing and
+giving
+the answer
+okay it also has mentioned that it's
+important to mention import important
+list and Contour so
+okay
+just copy this because again there will
+be a lot of uh inpatient issues
+okay now that we have it
+copy the code
+because already mentioned so yeah we'll
+just
+copy it from the function
+paste it
+let's run this code and see if it has
+the solution in it or not
+yeah there is an indentation issue
+let me
+again as you can see it is able to pass
+all the test cases here and the runtime
+is 28 MS
+now let us submit this question and see
+if it is able to pass other test cases
+or not
+accepted
+so it is able to pass all the test cases
+and I think this is something with lead
+code again uh whenever we are generating
+the python code we are actually passing
+self argument uh in lead code but charge
+GPD is not assuming it so this solution
+is definitely correct
+uh even though we are specifying
+everything we will have to be more
+specific that we have to run one more
+argument uh from the function so that it
+you know generates the solution in one
+go so let us uh try that in our next
+question
+but we can definitely see charge APD was
+able to solve this so now the scoreboard
+is two one one uh among three questions
+it is definitely able to solve two
+questions even the first question it was
+able to generate a correct solution but
+it was not that accurate to pass all the
+test cases
+to a question list
+the next question that we are going to
+cover is in Queens
+category but still the success rate is
+63 over here again a new genre or
+question we are covering over here let
+us see it foreign
+shows that many people were able to do
+it definitely more than half of people
+who have attempted it so see if the
+question can
+this AI can beat that or not
+so I have to copy this question this
+question mentions that the end Queens
+puzzle is the problem of placing n
+Queens on an N into N Chess board such
+that Noto Queens attack each other given
+an integer n return all distinct
+solutions to the end Queen puzzle
+so basically n is any given number and
+you have to create a puzzle of end in
+and you have to arrange all the Queens
+in such uh you know way also the number
+of Queens in the board will be equal to
+the number
+in and in such a way that it is not able
+to attack each other in any case
+puppet this part of the question
+and the constraint is
+just one let me
+that it would be easy to keep a track of
+what all questions charging beauty is
+able to solve
+so these questions are very popular uh
+in interviews uh whenever you actually
+go to technical rounds and for
+prestigious companies these questions
+are very popular
+they are considered as very suitable
+questions to check to check your you
+know IQ and to check your potential that
+how well aware you are towards your
+coding potential
+now we have pressed enter it is giving
+the logic it is going to implement in
+its code one approach to solve the end
+Queens puzzle is to use backtracking
+ideas to start by placing a queen in the
+First Column of the first row so let's
+see if the codes
+again capable to you know
+solve it or not
+again it's giving the python code
+generating the code let us quickly see
+whether it's python or Python 3
+I can python tree
+okay
+once the code is generated I'll also
+write that you need to pass one more
+argument from the main function
+uh that is self and let let it generate
+the code again and see that code can run
+in one go or not
+should what I want and let the C sure
+here's an example of how you can pass an
+additional parameter self let's see if
+it suits
+the code or not
+so the 12 and queen function is a method
+of the end Queens class and it takes
+self as its first parameter followed by
+the integer n so yes this solution does
+take self as a parameter so let's see if
+this can
+run in one go or not because this time
+we've already covered the most uh
+frequently generated error which is
+syntax error of not mentioning parameter
+self
+let me see the indentation if it's
+correct or not
+this time uh let us quickly run this
+class
+okay there you go now you can see that
+it has actually run the code in one go
+and all the test cases are passed in one
+go even the runtime is 39 Ms so
+definitely charge gbt is able to provide
+the solutions the Logics in a proper
+manner it's just that we have to be more
+specific with what we want exactly from
+chat GPT right now we can see that it
+has been able to successfully generate
+4.5 questions that we have actually
+implemented till now out of which four
+are from hard category
+let us submit this code and see if it
+also covers all the test cases
+internally fed in for this question just
+a second I think I will have to submit
+it again
+it has accepted all the test cases and
+this question is done by child GPT it
+has actually implemented
+this question that we are going to cover
+till now I can say charge gbd has taken
+the lead it is pretty much able to
+implement all the questions uh I think
+there are still some range of questions
+that it is not able to implement as we
+saw the first one was not a huge success
+but
+um I can still give that to charge upd
+as it is in Ai and still in a you know
+developing mode but still if it can give
+you 90 of the output correct it is a
+pretty decent and you know amazing thing
+to do
+Shin is shortest sabare with some at
+least K now let me search
+for it
+again this question is from hard
+category and its success rate is even
+low which is 26.1 let's see if this
+question can be solved by chart GPT
+let's have a look at the question given
+an integer ad in nums and an integer K
+return the length of the shortest non
+empty sub array of nums with the sum of
+at least K so if there is no such sub
+array return minus 1.
+so
+the body is a contagious part of an
+array it has also given a description of
+what an array is or what sub array is
+so now that we have
+written a new chat
+and let me
+explains
+so here is one way to solve the problem
+initialize two pointers uh left and
+right both pointing to the first element
+of the array initialize a variable so
+now this time this it is giving pointers
+to solve this question uh you know a
+perfect approach in a sequential manner
+so that you can also use these pointers
+and the Logics it's giving to actually
+Implement your own code apart from you
+know asking it to generate a code
+so I can see that it has given the
+pointers but not the code
+specific
+so yes uh it's giving an implementation
+of the algorithm in Python uh again we
+can see it's not the Python 3 it's
+python uh little lower version of python
+um
+50
+which do
+python
+then we have to pass self
+so it has generated code and explain
+what all variables and what will
+statements have the individual
+functionality as so we have also asked
+it to pass self parameter through its
+function and then write the code so
+let's see if it adheres to it and
+generates new code with self parameter
+okay so here
+is the new code with self parameter
+passed through the main function
+now I do have confidence on chat GPT
+that it was able to generate logical and
+you know
+pretty much decent solutions for every
+question
+the spouse to the class as an argument
+when an object is created and is stored
+as an instance variable the shortest sub
+array takes K as an argument which is
+the target sum so basically it's trying
+to explain the code at what exactly it's
+doing and what individual statements
+have as an influence on the code
+and whatever parameters they are passing
+what influence or what position they
+hold in the code
+so definitely charge APD is not just
+generating the code uh you know it's
+also explaining the logic and approaches
+towards it
+and when it's generating the code as you
+can see here they have legit explain the
+whole code how it's actually functioning
+that's a good way to you know put
+emphasis on you know put a confidence on
+the solution
+remove this
+type error okay
+so it's apologizing it made a mistake in
+its previous response the init method
+should take two arguments one for the
+nums array and one for key
+so now it's again generating a new code
+or adhering to the syntax error or type
+error generated like
+correct or not
+you mentioned that here direct weather
+takes two arguments one for the nums
+array and one for the K which was the
+error exactly
+and it's again explaining the whole code
+so that one person who watches code or
+you know logic could understand the
+functionality of it
+and say this code can run
+food
+checking for indentation removing class
+and run
+this one more type error
+let's copy it and
+we mentioned that we want self argument
+to be passed
+it is still not able to generate
+you know the correct solution twice
+so let's see this time it can work out
+issue though with the code
+apologize for the confusion seems that I
+misunderstood
+that you are trying to call the function
+directly without creating an instance of
+the class and that
+function outside of the class and simply
+Call It by passing the parameters click
+this okay the code is definitely
+generated by itself so definitely I am
+not calling any function uh the code I
+copied was actually generated by charge
+GPD itself so it's contradicting its own
+pointers Maybe
+but we have copied the question uh sorry
+the code
+let's paste it
+again look for indentation
+and run this code
+okay once again it is not able to you
+know
+us
+I am error is there and now again we
+have to copy this error and paste it
+again according to chart GPD it was
+confused with the context of the
+question
+uh like I said the code was anyway
+generated by Char GPT so yeah
+this time I think GPT is trying to
+contradict its own logics
+let's see if the current code can do the
+miracle of solving this question
+last
+and run
+okay so after four attempts of running
+the goals generated by charge GPD on
+delete code but this particular question
+finally now it's able to pass all the
+test cases so
+I can I have a very contradicting point
+right now uh
+not exactly contradicting more of a
+skepticism that okay Chad gypri does
+generate a proper code or logic but it
+doesn't considers all the criterias or
+it also has a tendency of taking the
+question in a wrong context
+so I feel that when we as a human try to
+solve these questions we definitely try
+to implement all the Logics and if we
+get it we can actually get the code in
+one go
+check or you know demand of the question
+and be AI being Superior version or you
+know trying to be the superior version
+of human brain and going to the extents
+of a human brain
+still faces those issues
+can be a you know drawback for chat GPT
+because you can see for this specific
+question we have faced multiple types of
+error and we have seen charge a pretty
+contradicting its own prior code
+so
+definitely this is something to consider
+or you know something to think about
+submit this code
+and have like I said after giving four
+attempts it is still not able to pass
+all the test cases it is only able to
+six pass 61 out of 97 test cases
+which is almost 70 percent of the test
+cases 30k percent of this test cases are
+still not passed even though we
+mentioned all the constraints we have
+mentioned the garments we have mentioned
+all the errors that but this particular
+code can go through
+still
+it was not able to generate the proper
+code that could go through all the test
+cases
+so
+this was a fail for chart GPT uh at
+least till now we have made out this
+point that charge GPT is definitely not
+able to solve every question
+question
+clicked array with same average
+for it
+array with
+this is from the category of hard
+questions and the success rate is only
+25 percent
+Let me refresh it and remove this code
+now let's have a look at the code what
+it demands so you are given an integer
+array nums now you should move each
+element of nums into one of two arrays e
+and B so can B are non-empty and the
+average of array a is equal to average
+of array B
+now return true if it is possible to
+achieve that
+condition is not justified
+so given a note that for an array uh
+average array is the sum of all the
+elements of array over the length of
+array okay so it is giving the lot of
+how to actually you know find out the
+average of what average is exactly
+and also it is given a few examples to
+give you how the code needs to be
+projected or implemented
+paste copy the code and paste it
+okay it is possible to achieve this by
+checking all the possible subsets of the
+nums array and comparing the averages of
+the subsets so definitely it has given
+you the approach uh the way you can
+actually think of solving this question
+uh however this approach would have a
+Time complexity so it's also giving that
+this approach can have a Time complexity
+of O to the power n so again it's
+suggesting a different approach a more
+efficient approach that will be using
+dynamic programming now that can be used
+to find the subsets with a specific
+average and create a 2d array with the
+length of I and J which that will be the
+length of the two
+we have actually given as input and
+represents whether or not it is possible
+to get a sum of J using the first
+foreign
+[Music]
+so the time complexity of this approach
+would be o and S so definite it is not
+given a code let me ask for it
+not for every question chart GPD is
+generating a code it is also mentioning
+just and the approaches that we can
+actually use uh definitely again we will
+have to mention that what we want from
+them
+as you can see I've mentioned this time
+to write a code for it and now it's
+generating a new code for it
+it's also mentioning comments that what
+every snippet of the code is actually
+for and what it will do like here you
+can see it will fill the 2dr ADP uh DP
+stands for dynamic programming this here
+it has mentioned initialized the First
+Column as true so it is also mentioning
+the comments for better idea of you know
+understanding the code in a better way
+it's also giving the note that this
+implementation assumes that the nums are
+is non-empty and that the elements of
+the nums array are non-negative integers
+okay also the above implementation will
+return the possible subset that can be
+formed by the array to fulfill the given
+condition and not Boolean true and false
+but that's what we want exactly right
+uh still okay let us
+this approach is in Python so let's copy
+this and
+see if this code can run or not
+I can clearly see that again it needs to
+pass self
+uh
+parameter
+indentation
+and
+give it a heads up
+what I have mentioned what I want
+specifically
+uh
+shown here is an example of how you can
+pass the self parameter so now the
+current solution will pass self
+okay
+rate there was an error okay
+and it has generated a new code uh
+considering the
+criteria I just mentioned that I need
+self parameter to be passed through the
+function can partnership
+so I have copied it and let's quickly
+paste it over here
+uh you know pass
+all the cases are not wait uh we need to
+remove this
+okay it's done now quickly just run this
+program
+okay so here is uh
+error attribute error solution object
+has no attribute okay so let me copy it
+and paste it over here and see what
+charge GPT has to say about this error
+okay the error message solution object
+has no attribute
+uh split array same average suggests
+that there is no method named with this
+in the solution class so it is likely
+that the test case is trying to call
+this method but it does not exist in
+your implementation anyway that I have
+not mentioned this method this was given
+by chargeable itself so again we can see
+the condition that it is contradicting
+its own so again it has generated new
+response and it says that it should
+resolve the issue and the test case
+should be able to call this particular
+method correctly
+so that is something for us to decide
+now let us copy this code and see that
+now is it able to run or not and pass
+all these test cases or not
+and click on run
+okay now the new generated response it
+does works for this particular question
+and the runtime is 12 Ms and it
+trespasses the first two cases mentioned
+so let us quickly submit this code and
+see if the code is perfectly you know
+fine to deal with all the test cases
+actually fed by lead code
+okay now again we can see one more
+situation that this code is not able to
+pass all the test cases even though we
+mentioned all the specifications
+constraints and we were pretty precise
+about the questions and parameters that
+we want our code to be done in certain
+form but still it is just able to pass
+68 test cases out of 111 which is almost
+50 to 60 percent of uh total amount of
+test cases
+so let's move on to the next question
+that is find substring with given hash
+value so let me quickly search for this
+question
+find substring
+with
+which value again it's
+it's a question from heart category and
+the success rate is
+22.2 percent so let's have a look at the
+question what it demands so here the
+hash of a zero indexed string of length
+K given integers P and M is computed
+using the following functions now hash
+with parameters SPM
+uh this is the logic given how we want
+our output to be demonstrated in certain
+value or how the hash can be generated
+the particular formula uh how you can
+get the hash value of your you know
+string
+so the question is you are given a
+string and then teachers
+and you have to return the first
+substring of that string of length uh
+given to you here it's K the test cases
+will be generated such that and answer
+always exists we are going to copy this
+course and mention all the
+specifications mentioned here in their
+charging pre console so that it gets
+all the specifications
+foreign
+open the code and
+so I have copied the code and I'll paste
+it over here now let's check for
+indentation it's fine let's remove class
+my class
+and
+again face is a type error so let's move
+on to the next question again we saw
+that Chachi but he was not able to solve
+this particular question coming back to
+our list the next question in the list
+that we are going to cover is partition
+array into two arrays to minimize some
+difference let's quickly search for that
+question
+addition array
+to
+two arrays
+again this question is from hard
+category and the success rate is even
+more low so let's have a look at the
+question first it's partition are into
+two arrays to minimize some difference
+that is generated as the output
+or we can see that there are three
+constraints so now quickly we'll copy
+this question and see if it is able to
+solve this question or not first we have
+to create a new
+copy
+all the constraints
+let's see what charging Beauty has to
+say for this particular question
+let's
+ask it to generate a code this time it
+has only generated a logic not exactly
+Logic the approach indeed they are going
+to follow or anyone can follow to solve
+this question
+let me ask if it can generate a code
+be definitely taking longer time to
+generate this code okay here is the code
+which is possible python implementation
+and
+[Music]
+okay the code is generated and it's
+mentioning that the code takes in an
+input an array of integer called nums so
+basically uh it's explaining that what
+it actually is doing which is pretty
+much explained in the question itself
+that what exactly it needs to function
+like and what will be the variables and
+what will be the inputs and how it needs
+to be segregated to uh obtain our
+Optimum result
+so
+let's copy this
+and
+paste it over here again like I said we
+can see that it's generating you know uh
+again we could see that
+pass self parameter
+okay
+attribute error let's quickly copy it
+paste it over here
+see what chart GPT has to say about it
+okay
+that you have seen that after placing
+the error it's giving that error message
+you're seeing suggests that there's a
+problem with the function name in your
+code so the error message is indicating
+that there is no function called minimum
+difference within the solution uh also I
+have seen that apart from the function
+name it doesn't have a self parameter so
+let me just write it down
+argument
+apps let me copy it that will be better
+and write the
+new code with it
+let me see if it can generate a new code
+this time
+so yeah it has a great show there is an
+example and here's the code
+I have copied this
+and
+pasted over
+be any such huge difference in the
+syntax or the logic of the code
+but yeah we can definitely think of
+running now
+let's run this code
+we copy it and paste it over here again
+and error has popped out I
+don't know how valid
+code will get after projecting this
+error over here in charge GPD
+oh yeah definitely considering the error
+message you are seeing is indicated that
+the function is returning INF which is
+not a valid value for the expected
+return type integer
+so in the base case where I and J are
+both 0 the value of is set to float
+which is positively Infinity however the
+expected output is an integer so this
+valid this value is not valid so again
+considering this change the charge
+Deputy is giving a new code so let us
+see how valid this new code is
+okay I can see that it has changed the
+logic over here instead of float INF it
+has changed it has uh written a new
+syntax a new logic over there now and
+also chargeable reality guarantees that
+this may solve the issue of returning
+ilf as the value let's see how accurate
+charge GPT here is
+now okay we have pasted the logic
+as
+oh yeah sorry I need to remove these two
+lines
+now let's quickly run this program
+okay so now as you can see it could only
+pass one test case
+but not the first two so there's no
+point of submitting this code as we can
+see that the logic for the score or this
+code and as a whole is not
+well moving on next in the list we have
+is
+longest common subpar now let's see
+longest
+common
+so this question also comes from
+category of hard questions and the
+success rate is 27 now let's see what
+this question demands actually now let's
+quickly copy this question with all the
+constraints and what whatever apart from
+example is left on the screen we need to
+copy it as you can see over here you can
+not just miss out on any specifications
+talking about the constraints copy
+and paste
+now enter
+giving the approach to solve this
+question which is dynamic programming
+approach okay we didn't want any code
+over here so let's try
+that if it can present a code
+I guess I have asked to write a code for
+this and yes charge GPT has definitely
+agreed to provide me a code for it uh
+chargeable is done with its explanations
+I'll type it out and wait for the new
+code which will contain self as a
+parameter that it's the score is pretty
+similar to the previous one it's just
+that it's using the self argument in the
+function as it was mentioned by me
+so let's quickly copy this code
+paste it over here
+check for the indentation
+we run this code
+I should be in yet
+okay I spoke too fast here we have
+another error let's see what charging
+Beauty has to say about this
+okay the list index out of range error
+is likely occurring
+on line 10 because the indices I and J
+are being properly bounds checked before
+being used to access elements in the
+path and TP arrays okay so we have found
+a new code let's quickly copy this code
+and see if this code is capable of you
+know
+eliminating the errors we
+probably found
+click copy and paste
+let me check for the rotation
+done and run
+then we got our error over here even
+though after providing so many
+specifications and criterias and errors
+and conditions yet charging was not able
+to provide a perfect solution for the
+code
+uh moving on to the last question of our
+list
+that is going to be uh sum of total
+strength or Wizards hopefully this
+question does from marry for child GPT
+and prove itself lucky which rgbt graph
+for this video because for now we can
+see it's a 50 50 scene uh half of the
+question chargible was able to provide
+Solutions with and half of the questions
+charging Beauty couldn't actually figure
+out what
+uh needs to be done even the logic and
+approach was correct still
+implementation of the code was not
+correct
+so let me search for this
+question some of total
+strength of wizards again a hard
+category question so let's have a look
+at the question first
+let's copy this question
+create a new chat
+paste it over here
+and
+look for constraints now that we have
+copied it paste it and enter
+he is giving an approach how you can
+actually think of a solution for this
+particular question chargeability has
+not generated any code
+uh let me ask for it
+okay
+so here's an example again they have
+implemented the code in Python now it is
+also giving a note that the approach is
+valid only if you're allowed to modify
+the original array and also we are not
+working on down over
+lunch and and then write this
+code so let's see if we can do it with
+self argument
+okay so yeah there's an example it's
+generating the code
+okay so let's see
+what's the update with the code
+here
+yes
+episode r e
+let's add
+solution
+and run the code
+so there's a runtime error let me see
+why
+okay
+this error
+and paste it over here
+you have to say
+the error message solution object has no
+attribute mode suggests that there is a
+class name solution and the code is
+trying to access an attribute named mod
+on an instance or that class with
+attribute doesn't exist we probably need
+to make more specifications and if it
+still doesn't works then it clearly
+classifies that charge Deputy doesn't
+takes every point or a classification uh
+you know in consideration which
+ultimately
+you know reflects on the solution
+the new code is here let me quickly
+paste it
+okay
+let's try running this code let's see if
+this works
+try running it again
+it has a runtime error was unable to
+solve one more question now that we have
+tried and tested a huge spectrum of
+questions from lead code on charge GPT
+we can conclude that though charge GPD
+is an amazing tool with the bright
+future it still has its own limitations
+and maybe it is not ready to replace
+humans or compete with human brains
+these questions were picked from a list
+of frequently asked questions for
+interviews and examinations chart GPT
+does have a potential to generate Logics
+and approaches for the code in an
+effective manner but still its ability
+to analyze the question is weak as
+compared to humans as we know these
+questions are there the success rate
+just shows that a proper solution to
+exist for these questions but still even
+after multiple attempts charging was not
+able to find the correct answer but we
+can also give charging the benefit of
+doubt that it's still it's in its
+initial phase and still there are a lot
+of aspects that need to be worked on so
+probably in future charge GPT can take
+an upper hand over this but for now
+needs to do a lot of work for these
+situations well this was all about this
+video If you like this video and found
+it interesting and informative please do
+like this video and share it with your
+peers also if you are able to find a
+solution for any of these questions then
+do let us know in the comments and if
+you have any questions related to this
+video then please feel free to ask away
+in the comment section our team will
+reach out to you as soon as possible
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

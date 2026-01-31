@@ -1,0 +1,4507 @@
+foreign
+in this video tutorial we will be
+learning about some C plus plus projects
+that would be helpful for you to learn
+and grasp C plus programming language in
+a practical way
+we will not only discuss these projects
+but also will make these projects from
+scratch using some basic concepts of C
+plus
+so we will start with the hotel
+management project in which we will have
+the information of the items or rooms
+that we have what food items are ordered
+by the customer and how many rooms are
+allotted to them Etc
+then we will make another project on
+registration and login form
+in this project we will learn how to
+make the complete structure and
+functionality of the login and
+registration form
+first we will learn how to create a
+login page in C plus in the menu there
+will be different options like
+registration login and forgot password
+Etc
+after that we will make a supermarket
+billing project in C plus
+in this project there will be various
+functions that we will be creating for
+this project like add function to add
+the goods and products in the market and
+delete to delete some products Etc
+and at last we will make an airline
+registration system in C plus plus this
+project on Airline reservation system
+will allow a user to book a flight to a
+particular country of his choice and he
+or she will receive the ticket by
+filling in all the important details Etc
+but before we begin make sure to
+subscribe to our Channel and press the
+Bell icon to never miss an update
+now let's go ahead
+this project will be a hotel management
+project in which we will have the
+information of the items or rooms that
+we have in the hotel and what are the
+food items ordered by the customer
+also we have the information that how
+many rooms are allotted to them
+also this project will tell us about the
+sales and the remaining food stocks we
+have and the total collection of the day
+firstly we'll discuss the first part in
+which we will declare some variables and
+then initialize them after that we will
+enter the quantities of items that we
+have in the hotel
+then we'll make a list of items or menu
+of items and rooms that we have in the
+hotel
+so let's start
+now we'll switch to our code editor that
+is Dev C plus plus
+so this is a code editor so here first
+of all let's make a new file
+we'll click on file and now we'll create
+a new file
+so now let's start with the project so
+first of all inside the main function we
+have to declare some variables but
+before that we will
+write the header files that is Hash
+include I have stream
+and then the namespace standard
+foreign
+so we have included the header files now
+we'll start with the main function
+inside the main function
+we will declare the variable
+so first variable that we'll declare
+would be Quant which stands for quantity
+and the second variable would be choice
+now we will declare those variables that
+store the quantity of food items or
+rooms
+so let's say
+the variable which will store the
+quantity of rooms would be Q rooms
+and
+we have to initialize it also
+all right so similarly we have to do it
+with the food items as well so let us
+suppose one of our food item is pasta so
+we'll write Q pasta that is quantity
+pasta
+will initialize it with zero
+similarly we'll do with the rest of the
+food items
+it is Burger
+noodles
+and Shake
+and chicken
+a chicken would be let's say chicken
+roll
+so these are our food items so these
+variables will hold the quantity of
+these food items
+so now we will declare those variables
+which will hold the value of the number
+of food items that have been sold so for
+example Q pasta holds the value of
+number of pastas we had in a hotel and
+as pasta will hold the value of number
+of pastas that have been sold
+so let's start
+similarly we'll write s rooms that is
+sold rooms
+we have to initialize it with 0 as well
+and as pasta
+similarly s Burger
+as noodles
+as chicken
+all right
+now we'll create some more variables
+that will store the price of the total
+price of each of these food items or
+rooms so let's do that let's say in
+total
+underscore rooms this is the variable
+name it will store the total price of
+the rooms
+we'll initialize it with zero similarly
+total
+pasta
+equals zero
+total
+Burger
+all right so these variables holds the
+quantity of food we have these variables
+holds the quantity of food we sold and
+these variables will hold the price the
+total price of each of the food items or
+rooms so let's
+comment it this holds quantity
+so that it's easy for you guys
+all right so here we have declared these
+variables now now we will make a list
+kind of a structure in which we will ask
+the user to enter the number or
+quantities of food items or rooms that
+we have in the hotel
+so
+all right now let's do this
+first of all we have to display a
+message
+but before that we'll use slash in and
+slash T So slash N means the next line
+and slash T will add a horizontal space
+in the output so we need that horizontal
+space
+so we'll write
+foreign
+let's say items only quantity of items
+we have
+we have in a hotel
+all right
+now
+we'll write rooms available
+so we'll add slash n and
+rooms
+available
+all right so after this
+we will write C in and take the input of
+quantity of rooms we have because here
+we are asking to enter the number of
+rooms we have
+so we will write C in
+Q rooms because it holds the quantity of
+rooms we have
+we have initialized it with zero
+similarly we'll do it for the rest like
+quantity of pasta like this will do
+inside the
+slash in
+now we'll write the quantity of pasta
+C in
+Q pasta
+all right
+now similarly
+let's copy paste and save some time
+so this first was the pasta then Burger
+foreign
+then there was noodles
+shoe noodles
+similarly we'll do it for Shake
+and then
+hit chicken is the chicken roll
+so quantity of chicken roll
+Q chicken
+all right
+so
+one by one Q room the quantity of rooms
+we have to add cue pasta the quantum
+pasta we have to add then Quantum Burger
+we have
+all right now we have to create a menu
+to select the pasta Burger room all the
+items we have to create a menu like that
+and for that let's do this
+we'll write C out again we'll use
+slash in
+slash and then
+again slash T slash
+D because we want some horizontal space
+in that
+will display a message saying that
+please select from the given menu
+options
+foreign
+so it's a message for the users
+or the customers I would say
+now again we'll use slashing
+because I want to add some new lines
+so I'll use two selection
+now
+foreign
+secondly we'll use only one slation
+and
+here we are creating the menu to select
+the food items or rooms
+so now we will write
+pasta
+and similarly we'll copy paste
+foreign
+chicken roll
+we also have to change the numbering
+that this is one this is two then this
+is three we are doing the numbering
+because the customer will press the
+number
+and then he can order
+five
+six
+and now again we'll
+in seventh position We'll add the
+details or information
+regarding the collection in sales
+so
+we'll write
+press 7 if you want to see the
+information
+regarding
+sales
+and collection
+this option would be used by the owner
+of the hotel to check the total
+collection for the day
+all right now again
+the eighth number
+this word
+then we want to exit
+yeah
+so this is done now after that we'll
+display a message saying that
+please enter your choice
+so we'll use slash and slashing and
+right
+please enter your choice
+now I will write C in choice we have
+already declared this variable
+now based on this Choice your order is
+selected like if you press 2 then this
+pasta would be selected like let's say
+if you want to order noodles then you
+have to select four and if you want to
+order Chicken Roll then you have to
+select six and if you want to check the
+total sales and connect collection of
+today
+that is for a particular day then you
+have to click seven and eight for the
+exit
+so a first part is done now in the
+second part we have to add the
+functionality to the choice part that is
+if a user enters the first number that
+is number one then rooms is selected and
+then he or she have to add the numbers
+of rooms they want
+similarly for the other food items as
+well like if they want to take two
+burgers or three burgers instead of one
+and we only have one Burger left then
+also we have to display a message saying
+that only so and so burgers are left
+so now let's start with it
+so now we'll write switch case
+statements so when the user will select
+a particular number
+so that particular case would be
+executed
+so now let's do that
+right switch
+and
+inside the switch statement
+we'll write choice
+now the choice can be one two three four
+five six seven eight
+all right so now we have to create eight
+cases for that
+so case one would be
+we'll start with it there's a space
+between case and one all right so case
+one would be
+first of all inside the case one
+that is the case when rooms have to be
+selected so first of all we'll display a
+message saying that enter the number of
+rooms you want
+so let's do that
+use slash n
+now
+enter the
+number of rooms you want
+all right
+now after that
+the user will enter the number of rooms
+that is the quantity of rooms
+so now we'll take the quantity in the
+quantity variable that is Quant variable
+so the user will enter the number of
+rooms that is the quantity of rooms he
+or she wants
+now we'll use a if statement and if
+statement inside this if statement now
+inside this if statement we'll check do
+we actually have that many rooms in our
+hotel or do we actually have that many
+pastas or burgers in our hotel right now
+so for that we have to write down a
+condition that is
+Q rooms minus s rooms
+is greater than equal to Quant
+that is
+Q rooms is the quantity of rooms that we
+have and S rooms the number of rooms
+that we have sold
+so if we minus both of these that is if
+you subtract the quantity of room we
+have
+minus the rooms we have sold we'll get
+the remaining rooms now if the remaining
+rooms it's greater than equal to the
+quantity of rooms that have been ordered
+by the customer then we can give the
+room to them otherwise we have to
+display a message saying that we don't
+have that many rooms or something like
+that
+so let's do that so we'll write s rooms
+that is the rooms that we have sold so
+initially its value is zero so we have
+to add the values of quantity that have
+been
+entered by the user so we'll add the
+Quant variable that is if the user have
+entered two rooms he or she wants then
+we'll add the add those two values to
+this sold rooms
+all right after adding the quantity to
+the sold rooms now
+we will do the total price of the room
+or rooms and for that we have the
+variable total
+room
+so we'll add this Quant into the price
+of a one room to this total room
+so we are simply adding
+total room Plus
+Quant
+into the price of a single room that is
+let's say 1200 is the price of a single
+room
+if a person orders two rooms then it
+would be like Quant that is 2 2 into
+1200 2400 will be added to this total
+room this total room is the total price
+of a room
+all right
+now we also have to display a message
+saying that these many rooms have been
+allotted to you so for that let's
+display a message first of all we'll use
+slash n like two times now
+we'll add some horizontal space as well
+all right now we'll display this Quant
+variable
+and write a message that these many
+rooms
+have been
+allotted to you
+let me let's make it rumor rooms
+room or rooms have been allotted to you
+so this message will be displayed
+all right now this is the if block
+now we'll have to make the else block
+that
+if the
+amount or quantity of room entered by
+the user is more than the remaining
+rooms then we'll display a message
+saying that only so and so rooms are
+left in the hotel
+so we'll use slash n then again slash d
+now we'll write
+only
+Q rooms
+minus s rooms that is hit Q root minus s
+room is the remaining rooms are the
+remaining rooms so subtracting both of
+these variables will give us the
+remaining rooms
+so these were the remaining rooms
+and
+Hotel
+all right
+and let's not add this as there's a
+single statement
+also we have to use break
+so we'll use break statement now
+similarly we have to create case two
+this case was for the room
+so whenever a user click on this one
+then this case will be executed so
+similarly we'll create case two
+so let's
+we'll copy it now we'll paste it
+so
+I will case to
+so in this case enters the number of
+rooms you want to become we can't write
+that so we'll write pass the quantity so
+let's do that
+we'll write
+enter
+pass the
+quantity
+all right so in this case the C in would
+be same that is quantity variable we
+have so now in this case the different
+thing would be the Q rooms instead of Q
+rooms will use the Q pasta that is the
+quantity of pasta
+minus sold pastas
+it must be greater than quantity of
+pasta we have
+then only if block will execute
+otherwise similarly as that of this
+block will display a message
+so now the S rooms instead of s rooms
+here will use as pasta
+which is initially zero
+so we'll add the quantity of pasta to
+this variable that is We'll add the
+quantity of pasta that is ordered by the
+customer to this variable
+now total pasta that is a total price of
+the pasta
+so the number of pastas ordered by the
+customer into the price of a single
+pasta let's say the price of a single
+pasta is around 250.
+so quantity into 250.
+now
+rooms instead of rooms let's do here
+pasta is the order
+so Quant
+so Quant will display the
+quantity so it will display like if you
+have ordered two pastas will it will
+display two
+pass the
+is the
+order
+and
+Q rooms here we have to display the
+remaining so we'll do the Q pass the
+minus
+as pasta
+and here we'll do is pass the remaining
+in hotel or stock
+pass the remaining in hotel
+so it will display the remaining pasta
+remained in the hotel now
+so
+else everything is fine now similarly
+we'll do for the next
+we'll copy it it will save some time
+and paste it now this is case three the
+case three is of burger
+so we will write
+Burger
+quantity of burger minus
+sold burgers
+similarly as Burger
+now the total price of burger
+so let's say the price of a burger is
+around 120
+and so
+the remaining burgers
+Q value minus Asperger
+the fourth case now
+that is the noodles case
+so enter noodles quantity
+now case five
+now case 5 is of shakes
+so we'll write enter shakes quantity
+now
+case six we have to create
+in the case six there was chicken rule
+so let's do that
+Q chicken
+minus s chicken
+also we have to change the price of each
+meal like chicken roll
+would be of around 150
+and this shake would be
+120
+noodles
+140 let's say
+Burger is okay then
+pasta is also okay
+so we have created six cases as of now
+so our second part of the program is
+done now we'll start with the third part
+of the program
+so the third part will contain the case
+7 case 8 and the default case that is if
+the user enters any other number which
+is not in the list that will come under
+default case
+in case 7 we have to display the
+information of sales and collection that
+is how many
+money we have collected for the day and
+the remaining food items Etc
+so now let's start with the case seven
+so when the user will enter 7 that is
+case 7
+then he want to see the details of the
+information of sales and collection
+so we'll display a message saying that
+details
+of sales
+and
+collection
+all right
+so after this message let's add slashing
+slash T slash t
+all right so after this message
+we have to display the number of rooms
+we had the number of rooms we gave for
+rent and then the remaining rooms that
+is minus the quantity of rooms minus the
+sold rooms then the total rooms
+collection for the day
+so similarly we'll do for all the meals
+like pasta Burger Noodles Etc so let's
+do it
+so we'll start
+display
+first of all We'll add slashing
+now
+number of rooms we had
+we'll display Q rooms that is the
+quantity rooms we had
+now
+similarly
+number of rooms
+we give for rent
+all right
+so we'll write
+s rooms
+now we have to display a message
+similarly we'll write slash and slash n
+meaning
+rooms
+so for that we have to Simply subtract Q
+rooms with s rooms that will give us the
+remaining rooms
+after that
+the total price that the room has
+collected or number of rooms have
+collected
+so we'll write
+total rooms
+collection
+for the day
+now
+it is stored at total rooms
+this variable is stored in the total
+drives of rooms
+this is the complete information of
+rooms similarly we have to do it for the
+burger noodle pasta Etc
+so we can copy we'll copy this part
+and we'll do
+copy and paste
+and paste
+again we'll paste now number of rooms we
+had instead of this we'll simply write
+number of pastas we had
+number of pastas
+we have to change that number of pastas
+we
+sold
+yeah that would be right now remaining
+past us
+there are few minor changes that we have
+to do
+total pasta collection
+also make sure to change the variables
+total hasta
+then
+Q pasta
+all right now
+after pasta it was Burger
+Burgers we have number of burgers we
+sold
+all right so it would be Q Burger
+and that's Burger
+remaining burgers
+total Burger collection for the day
+all right now we'll do same for
+noodles
+all right now shakes
+number of shakes we had
+number of shakes we gave
+we sold
+remaining shakes
+now there is chicken roll
+number of chicken rule we had
+all right now the case eight the case
+eight we have used four this was the
+case seven and the case eight we have
+used for exit as you can see here
+this is the exit case
+and for that
+we'll simply use
+the exit statement the exit statement is
+used to terminate the program to shift
+the control out of the program or exit
+the program
+so here we'll use that so case 8 would
+be
+exit and inside that will use 0 0 will
+mean that zero millisecond
+and now after that we'll have to use the
+default case that if the user enters any
+other number that is not present in the
+menu list then this default case will be
+executed so in this default case we'll
+display a message saying that please
+select from the numbers that are
+mentioned above
+so we'll use lesson
+please
+select the numbers
+mentioned above
+so this message will be printed
+and also one more thing is there
+we have to use a go to statement
+and we'll have to label a part with m
+now I'll explain to you that why have we
+used this jump statement that is go to
+statement
+so after making a choice we again want
+to choose another option that is if I
+have ordered two pastas then I also want
+to order two burgers as well so we will
+Mark or label menu with M so this is a
+menu please select from the menu options
+so here we will label m
+and
+in the last we have used the go to
+statements so the go to statement here
+will transfer the control to the menu
+after making a choice
+so again m is the label we have used for
+the menu and we will use a go to
+statement to transfer the control to the
+menu after making the choice so that we
+can make more choices
+go to is a jump statement basically that
+is used to jump from one part to another
+part having a specified label
+so we have labeled menu with M and this
+go to jump state will help us in jumping
+to the menu after every choice
+all right so our code is done we have
+done all the things that we need now we
+need to run it and for that firstly we
+need to save it
+all right so let's go to files and save
+it
+and now let's
+select the destination folder
+let's name it as management
+.cpp
+foreign
+all right
+so the program is saved now let's try to
+compile and run this program
+so there are some errors I can see
+Okay so
+we have used the semicolon
+now this will take care of many errors
+now let's try to again compile and run
+let's check Q noodles
+all right I think uh
+Q noodles
+so we have two Backspaces now
+let's try to
+compile and run again
+hope it works now
+so quantity of items we have as we can
+see
+so rooms available let's say we have 10
+rooms
+and quantity of pasta
+we have 25 Pastors in our hotel and
+around 50 burgers
+and 30 noodles
+and 30 shakes
+Chicken Roll we have 40
+so this is the menu please select from
+the menu options as we can see First
+rooms then pasta Burger noodles Shake
+Chicken Roll information regarding sales
+and collection and then eight to exit so
+first of all let's say I want to order
+two rooms so I'll click one
+please enter your choice I have clicked
+one and I'll press enter now enter the
+number of rooms you want and let us
+suppose I want two rooms
+so as we can see
+two room or rooms have been allotted to
+you now again the menu is displayed on
+the screen now let's say I want
+Burgers so I'll click on three
+and I want two burgers
+and two Burger is the order it is
+displayed now again I want uh
+pasta let's say
+I want six pastas
+and six past ID order I want to order
+now shakes
+let's have something to drink I want to
+order nine shakes
+nine shakes is the order
+and let's say so as we know that we have
+only 10 rooms now let's try to enter 11
+so first of all we'll enter one that is
+rooms now let's try to order 11 rooms
+as you can see only eight
+eight rooms available or remaining in
+hotel so we forgot to add some space
+over this part
+but we can easily read it now as of now
+so it is displaying the message that
+only eight rooms are available because
+already we have ordered two early it was
+10 then now only eight rooms are
+available so this is showing that if we
+order
+more than the quantity then it will
+display this message
+now let's say I want to
+check the information regarding sales
+and collection of two days
+rooms and as well as meals so I'll
+simply click on seven
+now as we can see it will simply display
+all the
+sales and collection
+rooms and meals as you can see number of
+rooms we had 10 number of rooms we gave
+for rent two remaining rooms are eight
+so total rooms collection for the race
+2400 as one room is of 1200 so similarly
+number of pastas we had 25 number of
+pastas we sold six remaining pastors we
+had 19 so the total pasta collection is
+1500 so and so the Burger and then
+noodles and then shakes and chicken roll
+so this is the total Chicken Roll
+collection for the day
+that is that is we haven't ordered a
+single Chicken Roll also we can do one
+more thing we can simply
+display the total result of all the
+collections of rooms and meals
+so let's do that
+so now so to display the total
+collection of the day all we need to do
+is to add all the totals of pastas
+burgers and rooms
+so for that we have to go to case seven
+foreign
+three times
+so here we'll write total collection for
+the day
+and after that
+total rooms
+Plus
+total
+total burgers
+total pasta
+this total
+Burger
+total
+chicken
+all right after this we will use the
+break statement
+now let's run the program
+so here it is Rooms available
+let's write 10
+quantity of pasta 30
+Burger 50.
+quantity of noodles 30.
+shakes 30
+chicken roll
+40.
+so first of all I'll book two rooms
+click on one and now two rooms
+and again if I'll click on
+rooms
+and then if I try to click
+10 rooms because already we have two
+sold we sold two rooms and it will
+display that only eight rooms remaining
+in hotel now I'll
+click on two to order pasta let's say I
+have ordered five pastas
+and
+five pasta is the order now let's say if
+we click on nine although we know that
+only one to eight numbers are available
+but if we click on 9
+so it will display message please select
+the numbers mentioned above
+all right now let's say I have I want to
+order chicken roll
+10 chicken rolls I want
+so 10 chicken roll is the order now I
+want to check information regarding
+sales and connection for the day
+right click on 7
+and then here I can see
+number of rooms we had number of rooms
+we gave for rent remaining rooms and
+total collection for the day similarly
+for the pasta similarly for the burger
+similarly for noodles
+shakes and
+Chicken Roll as well
+and this is the total collection for the
+day five one five zero exit and if we
+click on it we can exit
+so as we can see this is our hotel
+management project
+and this is how it's done
+the code is bit long but it's worth it
+you can also try this project on your
+own this project will be a login and
+registration system in C plus plus
+in which a user can register login and
+also if he or she forgets the password
+then also it can be recovered
+we will make this project using the
+fundamentals of C plus plus like switch
+case statements and file handling
+operations
+Etc
+so let's go ahead and understand this C
+plus plus project of login and
+registration system
+in this project first of all we will
+make a menu page in which there are
+options like login registration for good
+password and exit
+then we'll ask the user to select anyone
+among those options
+once the user has selected a particular
+option then we have to continue with the
+functionality of that
+so now let's switch to a code editor and
+do its practical implementation
+so this is a Dev C plus plus code editor
+and now let's create a new file
+now first of all we will include the
+header files
+the hash include iostream
+then there is
+F stream class or file handling
+operation
+hash include fstream
+then there is string dot Edge
+for string
+then we will include the namespace
+standard
+now we will do the forward declaration
+for three functions that is login
+function registration function and
+forgot function
+and after that inside the main function
+we will make the menu for the login page
+so let's start
+first of all we are doing the forward
+declaration
+this is the login function
+this is the registration function
+and this is the forward function
+now inside the int Main
+first of all we'll make a variable C
+which stands for Choice C for choice
+so now
+we will make the menu page
+so let's create
+we'll use
+slash t for adding the horizontal space
+now in the end we will use slash n
+all right similarly we'll do here
+welcome to
+the login page
+now again we'll do the same
+slash t
+slash T slash t
+and now
+underscores
+menu
+slash and slashing
+all right now we will make the options
+so we'll do the slash t
+now after slash T we'll add vertical bar
+then
+we'll right press one
+to login
+let's make it capital
+press 1 to login
+and after making some space then
+vertical
+drag it again
+then handle
+similarly
+we'll copy it and do for option two
+press two
+register
+all right
+let's maintain the symmetry
+press three
+if you forgot your password all right
+press 4 to exit
+foreign
+so this is done now after that we will
+ask the user to enter your choice and
+for that we'll display a message saying
+that
+please enter your choice
+but before that we'll use slash in and
+some slash D's
+all right now we'll ask the user please
+enter your choice
+all right
+now we'll take the input of the choice
+that is C that we have already declared
+next line now we'll use switch case
+statements for example if the user
+selects two to register first of all
+then inside the switch case statement in
+case 2 we will call the registration
+function
+and if the user enters one then we will
+call the login function
+so let's do that
+let's create a switch statement
+and see that is choice
+now inside the switch statement first of
+all we'll create a case one
+inside this case there would be login
+we are calling this login function and
+then there is break statement
+all right similarly now we will
+create case two
+so case 2 would be registration
+here we are calling the registration
+function
+and then there is break statement
+in case three there is forgot function
+that is if the user forgets the password
+then this function will be implemented
+now
+there is a default case no now there is
+a case for
+in case 4 there would be a message
+saying that thank you
+because ks4 would be exit
+so we'll display a message saying that
+now we'll also have to make the default
+case
+that is if the user selects five six or
+any other number that is not in the menu
+then we will display a message saying
+that
+please select from the options given
+above
+so before that we'll add the slash t
+please select
+from the options
+given above
+after that we'll use slash n
+and L
+after that we'll call the main function
+so that the control goes back to the
+main function and
+will also use
+system
+CLS that is clear screen
+it means every time the code is
+processed it will clear up the screen
+now all we need to do is to create the
+login function
+so we'll write void
+login
+and inside this function first of all
+we'll create some variables and so let's
+do that and count
+uh user ID no this user ID would be of
+string
+right
+string
+user ID
+then there would be password
+then ID
+then pass
+all right so these are the variables
+that we have created
+now again we'll use this
+system CLS
+that is clear screen
+we have to
+write CLS inside the double quotes
+all right now we will display a message
+that please enter the username and
+password
+so we'll do that
+and we'll write slash T slash T slash d
+and
+please enter
+the username
+and password
+all right now
+will again display a message saying that
+username
+now we'll take the input
+so here user ID is the username that the
+user will enter
+now again we will display a message
+saying that password
+let's make it capital
+again we'll take the input
+now as the user has entered the username
+and password now we will check that if
+that username and password already exist
+in our records
+and for that we will use the file
+handling operation of if stream class
+because if stream is used to read the
+data so we will use if strain
+and if stream class
+this will read the data from the file
+input is the object name
+and the file name would be records
+Dot txt
+all right we'll have to
+make it inside the double quotes
+all right so now this if stream will
+check inside the file that if that login
+password exists or not
+and to check that we will have to use
+the while loop
+inside the while loop we'll write
+input that is the object name
+then there would be ID
+and there
+pass
+so this is the ID and password and this
+is how we read in file handling
+operations here what we are doing is we
+are reading that if
+that ID and password is there and then
+we will match those ID and passwords
+with the ID and password that is entered
+by the user
+so for that we will have to use the if
+condition inside the while loop
+so let's do that we will write if
+ID equals user ID
+and
+pass equals password
+then
+count would be
+1.
+and then we will use system CLS to clear
+the screen
+here we have assigned 1 to count because
+in the next part we will use an if
+condition that if the count is 1 then we
+will display a message saying that your
+login is successful that is the password
+or username entered by the user matches
+with the record that is the user has
+already registered
+so now before that we have to close this
+file
+so
+let's do that
+we'll to close this file we will use the
+object name that is input Dot close this
+is how we can close the file
+all right now we'll use the if condition
+and inside this if condition
+as I have said if count equals 1
+all right if count equals one
+then we will first of all display the
+user ID that is the username
+and then we will display a message that
+your login is successful
+so let's do that
+your login
+is successful
+now thanks for logging in
+now again we will
+shift the control to the main
+because there is the main menu
+and now
+inside the else block
+we will display a message
+that is if the user and password is not
+found inside the file then it means that
+the user is not registered so he can't
+log in he has to register it first so
+we'll display a message
+saying that
+foreign error
+please check your username
+now again
+main function now we have to create
+another function that is the
+registration function
+that is if the user press 2 then this
+registration function
+would be called
+so let's create this function
+void registration
+now inside this function we will first
+of all create some variables then after
+that we'll ask the user to enter the
+username and password pretty much the
+same as that of the previous function so
+first of all string
+are for registration user
+ID our user ID
+then r
+password
+then our ID and R pass
+system CLS again clear screen
+all right
+now we will display a message saying
+that enter the username
+again
+enter the password
+or password
+all right so in the previous function we
+have used if stream class but in this
+function we will use off stream class
+because we want to write inside the file
+and offstream helps us with that
+so for that we will use off stream
+and the object name would be F1
+and Records user file
+and we will use the
+app mode this iOS mean the input output
+stream and app will open the file and
+append the output in the end
+so this is our app mode there are
+different modes so here we are using
+this app mode
+so after this we'll put the semicolon in
+the end
+now we have to write inside the file so
+we'll do the F1
+and this is how we write inside the file
+F1 here is the object name and our user
+ID
+is the username and after that we'll add
+some space
+and then
+are
+password
+that is the password
+we want some space between the username
+and password that is why we have
+use the single quotes and
+this is how we write inside the file and
+after that we'll again use the system
+CLS that is the clear screen
+all right
+now I will display a message that
+registration is successful
+as we have already written inside the
+file so now we can display this message
+saying that registration is successful
+now again
+control back to the main function
+so now we will create the forgot
+function
+this is the last function
+void forgot
+so this function
+would be called when the user forgots
+the password or username
+so first of all we will create a
+variable
+option
+now we will ask the user that you forgot
+your password no worries then we'll ask
+the user to press 1 to search your ID by
+by your username and press 2 to go back
+to the main menu
+so let's start
+before that we will use system CLS
+all right now we'll display the message
+saying that
+you forget the password
+no worries
+and then
+leave slash in
+now press one
+to search
+your ID
+by username
+all right now
+press 2 to go back to the main menu
+all right now after that
+we'll use slash d
+all right now enter your choice
+now we'll take the input C in
+option
+after that using the switch case
+statement
+option
+now inside the switch case
+we will create cases
+so case 1
+that is when the user selects option one
+then
+hint
+will use bracket over here because there
+will be
+multiple lines
+all right now end count
+will initialize it with zero
+now some more variables we will declare
+this string
+s user ID
+and
+S ID
+then s pass
+so these are some string variables and
+count is the integer variable after that
+we'll display a message that enter the
+username which you remembered
+so let's do it
+to the username
+if you remembered
+all right
+now
+we will take the input from the user as
+user ID
+so once the user entered the username
+then we will check
+that if that username exists in the file
+using the if stream object as we know if
+stream is used when we want to read from
+the file or check from the file so we'll
+create the if stream class
+and the object name would be F2
+and
+records.txt is the file
+all right now using the while loop
+we will check that if
+the username is there inside the file or
+not
+so S ID
+and S pass
+so now
+if
+S ID equals
+as user ID
+then
+count equals 1.
+so we will assign one to count and
+after that we will close the file it is
+F2
+load close
+so here what we are doing is we are
+checking inside the file using the
+stream object that if that ID or
+password is there and if that ID is
+there then we'll assign one to the count
+as initially it was 0 and then again
+we'll do the same as that we have in the
+pre as we have done in the previous
+function that if count equals to 1 then
+we will
+print a message that your account is
+found
+so let's do that
+so as we have closed the file now after
+that
+we'll use an if statement
+with a condition that if
+count equals 1
+then we will print a message saying that
+your account is found
+foreign
+so it will display the password
+again the control will be shifted to the
+main
+where there is the main menu
+and inside the else block now
+inside the else block will display a
+message
+saying that
+sorry your account is not found
+sorry
+your account
+is not found
+so as the case one ends we will use the
+break statement
+now we will create case two
+in case 2 as we have said that it will
+simply call the
+go back to the main menu so
+all we'll do is
+call the main function
+so that the control will go back to the
+main menu
+and now also we have to create the
+default case
+in the default case we'll simply print a
+message saying that wrong choice please
+try again
+so we'll use slash T slash slash t
+wrong choice
+please try again
+foreign
+we'll call the forgot function so that
+the user can try again with the correct
+option
+all right so
+we forgot to save this
+so let's name it as
+register
+dot CPP
+and save it
+now let's try to run this
+go to execute and compile and run
+there is some error
+all right so it must I must be capital
+as we have declared
+let's try again
+so as you can see welcome to login page
+this is the menu and this is press one
+to login press 2 to register press 3 if
+you forgot your password press 4 to exit
+so now we will enter our choice first of
+all we need to register so we'll write 2
+and our username as
+Sam at the rate email
+this is a username
+and now our password
+sam123 is a password
+so as we can see the message
+registration is successful
+after that we will login
+as we have registered now we'll try to
+login
+Sam Android email is our username
+and Sam
+one two three other password
+so as you can see your login is
+successful thanks for logging in
+now let's say I forgot my password
+so I'll press three as if you forgot
+your password you have to press three
+so there is a message you forgot the
+password nowhere is please press one to
+search your ID by your username so I'll
+press one
+now I'll write my username the last
+username I remembered
+Sam at the rate
+email
+so your account is found your password
+is this as you can see
+so let's say
+again if I forgot the password and by
+chance I write
+Sammy
+at the rate email
+then sorry your account is not found is
+displayed as Sam at the rate email is
+the registered customer and not Sammy at
+the rate email so it will display this
+message that sorry your account is not
+found
+and let's say
+again if we try to press let's say 5
+then we can see that please select from
+the options given above actually we have
+to make it below options given below but
+we can do that else everything is
+working fine so now we will click on
+exit that is four
+and this is a message thank you
+so as we can see this is our
+registration and login
+system in C plus plus and this is how we
+can do it we have created these three
+functions that is login function
+then there is registration function
+after that there is a forgot function if
+you forgot the password and the code is
+pretty easy and not that much long so
+you can try this code on your own so in
+this session we will learn how to create
+a supermarket billing project in C plus
+we will create this project in small
+parts as there are various functions
+that we will be creating for this
+project like the add function to add the
+goods and products in the market and
+delete function to delete some products
+Etc
+also we will create a buyer site where
+the buyer can buy the products or food
+items of his choice
+now we will move to our code editor that
+is Dev C plus plus
+so now let's create a new file
+and we'll start with adding the header
+files first of all we'll add hash
+include I have stream
+then we'll include the app stream file
+right hash include fstream because here
+we have to do the file handling
+operations as well so we'll add the
+fstream file
+now we'll write the namespace standard
+now let's save this one and name it
+billing one dot CPP
+all right so we have named this file
+now first of all we'll create a class
+and we will declare some variables and
+functions
+so let's create a class and name the
+class as shopping
+inside the class shopping first of all
+inside the private scope we will create
+or declare some variables
+P code
+then float type
+price
+then another variable discount or flow
+type
+then name which would be string
+all right let's name it P name
+P stands for product
+all right now inside the public scope we
+will declare the functions
+so
+let's name this function as menu
+because we have to create the menu then
+administrator function
+foreign
+function
+a buyer or customer whatsoever
+all right now let's create add function
+then the edit function
+these definitions of these functions we
+will create later first of all here we
+are declaring these functions after that
+we have to remove some products for that
+we will create remove function and then
+the list function to display the list
+and at last
+receipt function
+all right so here we have declared the
+functions and the variables
+so now we'll put semicolon in the end of
+the class
+and we'll start with the first function
+that is the menu function
+so we'll write wide class name
+then the scope resolution operator
+and menu function
+foreign
+so now inside this function
+first of all we will create a
+variable
+that is choice
+and some more variables like let's say
+email
+and password
+because here we will need email as well
+as password for the login purpose
+so now we have to create this menu and
+for that we have to first of all display
+Supermarket main menu and after that we
+will display that administrator buyer
+Etc and
+all that so now let's start with that
+for that we have to display and you can
+display in your own style like I usually
+do like this
+slash T to add some horizontal space
+it's just for formatting and
+after that same will do
+thank you
+to save some time let's just copy and
+just paste it
+and but now we will here we will write
+supermarket
+main menu
+reduce some space
+foreign
+[Music]
+now let's just copy and paste this part
+all right now again some space
+stuff
+all right now we'll create a menu in
+which the user have to select the
+customer have to select whether he is an
+administrator or a buyer
+so let's do that
+and for that
+right C out
+slash T slash T slash D to add some
+horizontal space
+and
+all right now
+administrator
+now similarly I will do for
+we'll add some space over here
+just remove this one
+in number two we'll write buyer
+the person who wants to buy stuff
+from the market
+all right
+no
+let's format it
+we'll add some space over here
+now in number three we'll write exit
+all right it's pretty much done
+after that again if you want to add some
+space we can
+add some
+it's just for formatting purposes you
+can do it in your own way and after that
+we have to display a message saying that
+please select
+so we'll display a message
+for good to use semicolon
+now we'll take an input from the user
+that
+whatsoever he wants to click on like if
+he is an administrator he'll click on N1
+if he's a buyer then he'll click on Two
+And if he wants to exit you can click on
+three
+so we will take an input of choice now
+we have to use switch case
+and let's create that
+switch and inside this will write choice
+we all know how switch case works
+all right now for case 1 that is
+administrator case
+we will ask the user to enter the login
+credentials if he or she is an
+administrator
+so let's just do that
+so first of all we'll display a message
+saying that please login
+so slash T slash t
+enter email and then
+we'll take the input of email we already
+declared this variable
+email and now we'll take the password
+from the user
+now I will take the input of the
+password
+so as we have taken the email and
+password from the user now we will set
+an email and password that only admin
+knows and no other person can enter that
+and let's say
+for that we have to use if else
+statements so if
+email
+equals
+now let's set the email first of all
+Robbie at the rate email.com
+you can write the email and password as
+of your choice
+and I'll set the password now as
+Robbie at the rate one two three
+now inside the if block if the user
+enters this that means it is the
+administrator
+and we will call this administrator
+function
+all right now in the else block
+will simply display a message saying
+that invalid username password
+invalid username
+invalid email password
+all right after that we'll use the break
+to end the case
+now we will create case 2 case 2 is for
+the buyer so we'll write case
+2 and in this case we'll simply call the
+buyer function
+so this is the case too and now we have
+to create the case three
+inside the case three
+case three is for exit so we'll do Exit
+0
+it means successful termination of the
+program
+Now default case
+foreign
+so inside the default case we'll simply
+display a message saying that
+please select from the given options
+default case will execute if a person
+selects any other option
+rather than one two three
+so we'll have to instruct him that
+please select from the given option
+select from the
+given options
+now after this we'll use a go to
+statement
+after the switch statement
+so go to is a jump statement so it will
+help us in jumping to the main menu
+again
+after the completion of this switch case
+and this m is a label we have to put
+this label at the starting of this
+menu
+so let's do that
+right m
+now coming back to the next function
+so this function is done
+so we'll close this function
+all right so now we will create an
+administrator function in which there
+will be different options inside the
+administrator menu so now let's start
+with that
+so we will write
+void shopping that is the class name
+crop resolution operator
+administrator
+so our function name is admined in
+straight up
+so inside this function first of all we
+will declare a variable choice
+now after that we will
+create a menu in which there will be
+different options
+so
+let's do that
+first of all we'll write slash in
+then slash D some horizontal spaces
+so that administrator
+menu
+all right
+after that
+will be our first option
+so first of all we'll write slash and
+then slash D's
+just to make it bit fancy we can do this
+add the product
+so the user can select this option if he
+wants to
+add the product not user the
+administrator
+now we will add some space in this one
+foreign
+we'll copy it from here then paste it
+so here we will change it to the modify
+the product
+modify the product and
+we have to adjust it as well
+all right now again we'll add some space
+so we can copy this one
+now here we'll be right delete the
+product
+now here again
+three and make this four
+four will be off back to main menu
+all right
+now after that we will ask the user to
+please enter your choice
+so we'll display a message saying that
+please enter your
+choice
+all right
+now the user will enter the choice
+now again we have to use the switch case
+statements
+inside this first case first of all
+we'll make and inside this first case
+we will call the add function
+after that we'll use break statement
+now we'll create case 2.
+in case 2 we will call the modify
+function or the edit function
+so we'll write
+edit
+and again the break
+now
+we'll create case three
+in case three
+there would be delete function
+so we'll name this function as remove
+REM stands for remove
+now ks4 would be back to main menu
+so for that
+we'll simply call the menu function
+now after case 4 there would be default
+case
+so we'll write default
+and we'll print a message saying that
+invalid choice
+all right so after the switch case
+statement again as we have done in the
+previous function we will mark
+M with a go to statement which is a jump
+statement and label it over here
+all right so administrator function is
+done
+after this function now we will create
+another function let's say buyer
+function
+so for that
+word shopping
+scope resolution operator
+buyer
+all right so inside this buyer function
+first of all we'll declare the variables
+and choice
+now inside this function we'll ask the
+user that he or she wants to buy the
+product or go back so let's create that
+first of all here we'll write
+by the product now first of all we'll
+write buyer
+yeah
+after that
+no
+first with me
+login space let's copy it and paste it
+over here and
+all right selection
+okay
+go back
+so the second option is go Mac
+and we're going to the next one
+space
+[Music]
+all right so these were some options
+after that we will ask the user to enter
+your choice
+then the user will enter his choice
+so we are taking the input
+after that we'll use the switch
+statement
+and
+choice
+so inside the switch statement first of
+all we'll create case one
+inside this case we will call the
+receipt function inside the receipt
+function all the operations of the buyer
+will take place
+so this is the receipt function and
+after that we'll use break
+now we'll create case two
+in case 2 will write
+or call the menu function as
+2 would be go back as we can see Now
+default case
+we'll write invalid choice
+now after this again we'll use the go to
+jump statement
+and Mark here m
+all right so after this function now we
+will create the add function
+so as we know if the user over here the
+administrator over here will click on
+this add the product that is the first
+case then this add function will be
+called so now we'll create this add
+function
+so we'll write void shopping
+add
+so inside this function we will use some
+file handling operations
+so create an object of app stream class
+so data is the name of the object now
+we'll create some variables like in C
+and
+token equals zero and
+float p
+float
+d
+and
+string n
+so these are the variables that we have
+declared now we have to create a menu
+kind of a structure in which we will ask
+the user to enter the product code of
+product the name of the product price
+discount Etc
+so let's do that
+so let's write
+add new
+product
+all right after that we will write the
+product code of product will ask the
+user to enter the product code of the
+product
+so we'll write slash and selection and
+on slash d
+will
+take the input in P code we have already
+declared these variables at the top of
+our code now we will write another
+message saying that name of the product
+for that right name
+of the product
+now we'll take the input in P name
+now we'll display
+price of the product
+we'll take the input and price
+now we'll ask to enter the discount
+so we'll write
+discount of the discount on the product
+all right so here we are asking the user
+to enter the product code of the product
+and the user will enter the product code
+then the name of the product then he
+will enter the name then the price and
+then the discount
+so after that now we will have to open a
+file because as this add option is being
+used by the administrator so we have to
+store these product details inside a
+particular file so that we can display
+to the user that we have these products
+in our supermarket
+all right so for that
+you'll have to use the file handling
+operations data is the name of the
+object as you can see and with the help
+of data dot open
+we can open the file
+and
+the name of the file we can write here
+database
+Dot txt
+all right
+after that
+we want
+to open this file in reading mode
+iOS in will open the file in reading
+mode and iOS out will open the file in
+writing mode
+so now
+we will use if statement and we'll write
+if not
+data that is if this file
+doesn't exist then
+inside this function we'll write
+data dot open
+database Dot txt
+we will open this basically we will open
+this file in writing mode if this file
+doesn't exist
+and if this file exists then in else
+block we'll do that
+iOS out IOS app stands for append mode
+and iOS trunk out stands for right mode
+now
+in order to write inside the file
+will give some space and now we'll write
+P code
+this is how we can write inside a file
+after that pname
+then again some space
+after that there is price
+then again some space
+after that
+this for Discount
+then we'll use slash n
+all right so after that we have to close
+the file as well
+.close
+data Dot close after that
+in else block
+that is if the fight exists then
+we will read from the file so this is
+how we can read from file
+and
+p
+D these are the variables here we are
+initializing the file because after that
+we have to use the while loop to iterate
+through the file
+so let's do that
+first of all I'll write this part and
+then I'll explain
+foreign
+statement and if C equals to P code
+then
+token will be incremented
+and
+4
+initialization
+or for iteration
+we'll again do that
+so here what we are doing is first of
+all we are initializing the index of
+file here we are initializing the index
+because after that we will use the while
+loop inside this while loop we have
+written
+not data.eof this eof is the end of file
+function this while loop will make sure
+to check every content of the file by
+iterating it so one by one each content
+of the file is checked if the code
+matches with the p code that is if there
+is a duplicacy then the token variable
+which we have
+we can see initialize with 0 will be
+incremented
+it will become 1 basically after that
+for the iteration purpose we are reading
+from the file
+and after that now
+we will close the file data dot Clues
+all right
+now
+we'll use if statement that if token is
+1 As We Know
+if token gets incremented that is if
+there is a duplicacy
+then again
+it will go back to the menu that is if
+the product code entered
+by the administrator already exists then
+he have to enter another product code
+because if
+the administrator enters the duplicate
+code then it will again go back to this
+menu
+so this go to m
+we have to label it over here
+all right now in the else block
+that is
+if
+the token value is not incremented that
+is the product code entered by the
+administrator is unique and Not
+Duplicate then we can enter the product
+the product that is its product code its
+product name its price
+so for that we can just copy paste this
+part
+it's the same
+and
+you can paste it over here
+so here we are writing inside the file
+so this is how we can write inside the
+file and here we are opening the file in
+append and writing mode
+to write inside the file we have to open
+the file in writing mode
+so after that
+we will display a message saying that
+record inserted
+this bracket error the else block will
+close over here
+all right
+now this add function is done
+we have done this part
+now we have to create another function
+named the edit function
+as the add function is used for adding
+the products in the market
+based on their price
+names discounts Etc now edit function
+will edit the products like if you want
+to edit some product like choose instead
+of milk or something like that you can
+do it with the help of edit function so
+we'll do that functionality in edit
+function so let's do that
+we'll write void
+shopping
+edit the name of the function
+so inside this function we will create
+two objects
+of f stream class that is data 1 and
+data 2.
+it is data and data one
+all right so these two are the objects
+of a stream class
+now we will declare some variables
+foreign
+all right
+now we'll write
+a message displaying modified the record
+so we'll write slation
+now we will ask to enter the product
+code
+so we'll write
+now we will open the file and check if
+that file exists or not
+yes
+now if
+that file doesn't exist
+then
+we'll simply display a message
+saying that file doesn't exist
+and in else block
+we will open the file but not the same
+file the other file this file would be
+database one and we will open this file
+with the help of this object that is
+data one
+so we'll write
+data 1 dot open
+the name of the file would be
+database
+1 Dot txt
+and we will open this file
+in append mode
+and writing mode
+so here what we are doing is we will
+save our edited data in this file and we
+will rename it to the original name that
+is database.txt the name of this file is
+database one dot txt we will save the
+edited data in this file and then we
+will rename this file as database.txt
+that is the original name of the file
+so now we will write data
+P code
+then P name
+price
+and then this
+so we are initializing this file
+basically we want to iterate this file
+so
+not data dot end of file
+it will check each and every content of
+the file
+all right now
+using if statement
+we will check if P key equals to P code
+P key is the code that is entered by the
+administrator
+which he wants to edit
+so if that matches
+then inside the file
+right slash n
+slash T slash t
+and then product
+of new code
+product new code
+here we are asking the administrator to
+enter the new code for the product
+so
+CNC
+he or she will enter the code then we
+will ask
+to enter the name
+so let's slash and slash in
+name of the
+product
+P name
+and
+now the price
+so we'll write
+foreign
+now all the updated details of the
+product will be entered with the help of
+data one object
+again some space
+then
+n
+again some space
+and here p
+then here D
+all right
+now we'll write
+a message saying that record edited
+record edited all right
+after that we'll increment the token
+that is token plus plus
+now this was the if block now in else
+block
+gain data 1
+that is if
+the product key would product code
+entered by the administrator doesn't
+matches with
+any of the product code within the file
+then
+the hold variables that is
+P code
+B name
+price
+and after that discount
+that is this
+all right after that
+yeah
+we'll do that selection
+now outside this else block we'll write
+that
+e-code P name
+just for increment purpose
+we want the while loop to iterate so
+that is why we will use this one
+so that this while loop can I trade
+all right after this
+we will close both the objects that is
+data Dot close we are closing both the
+files
+and data one
+Dot close
+now as I already discussed that we have
+to rename that database one back to the
+original name that is database so we
+will use two functions in C plus plus
+that is remove function and rename
+function with the help of remove
+function we will remove the list that is
+the database.txt file we will remove the
+database.txt file and then with the help
+of rename function we will rename
+database1.ext to database.txt
+so let's do that
+remove inside remove we will write the
+name of the file
+it will basically remove all the list
+inside the file
+all right now rename function
+inside the rename function first of all
+we have to write the old name
+that is database
+1 Dot txt
+then the new name
+that is database
+Dot txt
+so now using this function
+this name will be changed to
+database.txt
+all right
+now if
+token value is not incremented or we can
+say is zero
+then
+it will display a message saying that
+record
+not
+found
+sorry
+and with that we are done with the edit
+function and now we will create remove
+function
+so we'll write
+void
+shopping
+REM remove
+this remove function will be bit similar
+to that of the edit function so now
+let's start with that
+F stream we'll create two objects
+data in data one
+now
+hint P key
+and int token
+he'll initialize it with zero
+now
+will display
+slash d
+delete
+product
+now we'll display
+to enter the product code so we'll write
+similar to previous function
+and data dot open
+database Dot txt
+we are opening this file
+in reading mode
+and then we will check if this file
+exists or not
+so we'll write
+so here we will write
+if
+not data
+then inside will display
+file doesn't exist
+all right
+now in else block
+inside the else block we will open the
+data one file
+and the file name would be database 1
+Dot txt
+and we will open this file
+in append and writing mode
+all right now after that
+a VSP code to initialize over iterate
+the while loop we will write this
+this is how we read from the file and
+here we will use data because we will
+iterate through data.us that is data
+file
+now inside the while loop
+again we'll do the same as that we have
+previously done
+data Dot eof and file
+now use if
+P code equals to
+P key
+then
+will simply display the message saying
+that
+product
+deleted
+successfully
+all right and now we will increment the
+token
+now in the else block we will write
+data one
+space
+then P code
+then P named then price then discount
+now we name
+then
+price
+then discount
+here the peaky entered by the
+administrator will check for the first
+product code if it matches the if block
+executes
+in the second iteration it will not
+match an else block will execute and
+database 1 file will be displayed
+in other words in else block all the
+products will be displayed except the
+one which you want to remove or delete
+so we will show this file database 1 and
+then rename it with the previous one
+that is database
+alright so now let's go ahead
+we'll do the same in order to iterate
+this while loop
+now
+as you done previously
+data Dot close as we have to close the
+files
+data one
+Dot close
+and after that again the remove function
+to remove the database file
+and rename function
+firstly we will write the database one
+that is the old name
+make sure to put semicolons then
+database
+then database
+dot txt the new name
+all right after that if
+tokens is not incremented
+that is if token is zero then it will
+simply display a message
+saying that record cannot found
+or record not found
+so as we have created three major
+functions now we will create another
+function named list
+it will help us in showing the list to
+the customer or the buyer right shopping
+now we'll write
+list
+inside this function
+we'll write
+the data the object of the Upstream
+class
+then data dot open
+will open the database file
+Dot txt
+in the reading mode
+all right after that
+we will format it a bit
+so after that again
+you have to write the product number
+name price Etc so we'll write
+product number
+and then we can use slash t
+again name
+then
+price
+and then we'll use slation
+please put them inside the double quotes
+and now again we'll copy this part
+you can design it in your own way
+and
+now we can do
+the Reading part data
+P code
+then the name as we have done previously
+price
+this
+while loop inside the while loop again
+we'll use
+not data dot EOS
+now inside this file
+we'll write the product code product
+name and the price we'll start with 2.
+code
+then product name
+that is p name
+after that
+price
+for the iteration purpose we'll write
+again P code
+P name
+price
+discount
+all right now after that we will close
+the file by writing data Dot
+close
+all right so we are done with this
+function as well after this now we will
+create the receipt function in which all
+the customer operations will take place
+so now let's create this receipt
+function
+so we'll write void shopping
+our ecipdrecept
+and now inside this function first of
+all we'll create the object of app
+stream class then we'll declare some
+arrays because we have to store multiple
+product keys and multiple quantities of
+those products so that is why here we
+have to use arrays and then we will
+declare some variables
+so let's start
+first of all F stream class the object
+of this class is data
+now after this we'll create
+array
+array c means array of codes
+so I'll declare it in that way
+now after that
+now we'll decline another array
+array of q that is quantity
+now
+Choice variable
+then there would be
+a counter variable let's say
+then discount variable
+will initialize it with zero
+and we'll initialize amount with 0 as
+well
+all right now
+total variable
+now we will display a message saying
+that receipt
+so that the user will know that this is
+the receipt
+foreign
+a file that is data.open will open the
+database.txt file and then we'll check
+if that file or database exist or not
+so
+we have done this previously data dot
+open
+database
+Dot txt
+will open this file in reading mode
+now we'll use
+block and inside this if block will
+write not data we are checking that if
+this filo database exists or not
+all right
+if it doesn't exist if not data that is
+if this file doesn't exist over this
+database doesn't exist then we will
+print the message saying that empty
+database
+empty with a p
+now as this
+now in else block we'll write if that
+file exists
+then first of all we'll close the file
+that we already opened
+now in else block we will call this list
+function that we have created because if
+the file is created then we have to call
+the list function and we'll show the
+user or the customer that these are the
+products available in the supermarket
+and for that we are calling this list
+function
+now we'll
+design the structure and ask the user to
+place the order
+so let's do that
+please place the order
+now again we'll copy this part
+all right so now we'll use do while loop
+the purpose of using this do while group
+is that we have to run a specific part
+of the code every time and the other
+part of the code we have to run based on
+the choice
+so now let's start with that
+inside the do block first of all we will
+ask the user to enter the product code
+and enter the product quantity
+so first of all
+right
+product code
+enter product code
+we'll take the input in the array
+okay
+now we'll ask the user
+to enter
+the quantity
+all right now
+we'll take the product quantity let us
+see in
+ARR Q
+C
+now
+we will check that If the product code
+entered by the user matches with the
+product code that is being already
+entered then we will display a message
+saying that duplicate product code
+please try again
+so for that we have to use the for Loop
+first of all and inside the for Loop
+we'll initialize I with 0 I less than C
+we have already initialized C with 0.
+now I plus plus
+so inside this
+for Loop use if condition and check if
+the product key or product code entered
+by the user matches with the product
+code that already exists in the file
+then we will display a message saying
+that duplicate product code so we'll
+write
+if
+RAC of
+C that is entered by the user equals
+array of C
+I
+so I will keep on iterating as we have
+used for Loop
+so inside this if we will display a
+message saying that
+duplicate product code
+please
+try again
+all right
+now we'll write go to m again jump
+statement as we have already discussed
+now after this
+we will increment C plus plus that is
+If the product key is Not Duplicate then
+C will increment that is the counter
+will increment
+all right now
+we'll display a message saying that do
+you want to buy another product or not
+we'll write
+all right so as we have displayed this
+now we will take the input of the user
+see in choice that whether he wants to
+buy the product or not
+so this is our do Loop now we'll have to
+use after this do block we'll have to
+use while loop as we are using a do
+while loop now here is the condition
+that if the user will press yes that is
+why
+then this Loop will execute
+all right now
+we'll make a design structure so we'll
+write C out
+and
+slash and Slash and slash d slash T
+slash t
+and now we'll write receipt
+all right now after that
+now we'll write product number
+Sorry by mistake we write
+capital N now we'll write product number
+then now we'll write
+product quantity
+product name sorry
+now
+product quantity
+then the price
+now we'll use the for Loop to iterate
+through the file so we'll write
+4 and I equals 0 I less than c i plus
+plus
+so now inside this for Loop first of all
+because we have to do the iteration we
+will open the file data dot open
+database
+double quotes database Dot txt
+and we'll open this file in reading mode
+so iOS
+in
+all right so after that
+we will kind of initialize this file
+we'll write P code
+pname then price after that there was
+discount
+all right now as we have done previously
+while not
+data dot eof that is end of file
+and inside this while loop we will check
+we are actually matching if the code
+entered by the user that is
+arrci is equal to the code present in
+the file and if so then we will do the
+calculations and add those file in the
+customer basket
+so let's do that P code equals array of
+C of I
+here we are checking
+if so then
+we'll do the amount amount equals to
+price of the product into the quantity
+of the product
+all right after that we'll have to do
+the discount part
+so in this part we know that the
+discount is calculated by multiplying
+amount with discount divided by 100
+and then we have to subtract it from the
+amount
+so let's do that amount minus
+amount
+into
+discount
+divided by 100.
+all right now after that as we are done
+now we'll have to add discount to the
+total variable
+because in this part the total amount
+after getting discount is stored in this
+disk variable now we'll add this
+variable to the total variable
+all right so as this is done now we will
+print this part
+so in this part we are just printing so
+we'll
+do the slash in and now then P code
+then pname
+then array of q05
+array of Q
+I
+all right now after that price
+and then amount
+and amount after discount or we'll write
+discount only
+because we have to write the variable
+all right now we'll have to add the
+slash keys in between them
+so let's do that part
+all right so we have added the slash T's
+in between them for the formatting
+purpose now to iterate the file for the
+iterating purpose we'll do the same that
+P code
+P name
+price
+discount
+all right now after this while loop
+now we will have to close the data file
+so we'll write data dot Clues
+so after this data Dot close we have to
+print the total amount so let's do that
+first of all we will do some
+designing part like let's say selection
+selection
+now
+just for design purpose
+now we'll simply print the total
+variable
+we'll write first of all total amount
+now the variable
+total
+all right so everything is done except
+the main function now in the main
+function
+we'll write
+so int main now inside this main
+function as we know we have created the
+class shopping class so we will create
+the object of that shopping class and we
+will call
+the menu function with the help of that
+object as we know that is the first
+function that must be called so we'll
+write shopping
+and let's say the object of this is s
+and s dot
+menu function
+so as we know the menu function is the
+topmost function
+so this menu will display when we run
+the file
+so now everything is done
+and now let's run this file
+let's press compile and run
+I hope it works
+there are some errors
+all right so 335 okay
+so this is the error and now
+57 line
+number 57
+yeah we have to use double equal to
+and one more error is there I think
+now let's try to run this
+there might be some more errors
+as you can
+all right after this 386
+okay so we haven't labeled this one
+we have to label m
+now let's try to run this
+so here we can see Supermarket main menu
+first is administrator then second if
+you're a buyer three to exit
+so first we'll log in as an
+administrator
+so as you can see please log in
+so now we'll enter the admins email
+so we'll write
+Robbie at the rate
+email
+.com
+now the password
+one two three
+now this is the administrator menu as
+you can see first is the add product if
+you want to add the product second to
+modify the product three to delete the
+product and four to back to main menu
+so now I'll click on
+like I want to add the product so I'll
+write one I'll press one and enter add
+new product so now I have to add product
+code of the product
+like let's say the product code of
+product is one
+name of group product let's say juice
+and price is 70.
+and discount on product is
+two percent record inserted
+now again I want to add so I'll click on
+one product code of product would be two
+now name of product would be let's say
+bread
+price 30
+discount again to
+record inserted now again
+product now would be let's say butter
+three
+inverter
+price of product would be 60.
+discount would be four
+now fourth product
+sorry add product Now product could be
+fourth
+and this would be
+let's say X
+price would be 170
+discount three percent
+record inserted so now we will check
+that these records are inserted or not
+so we can cross check it by
+going here and open this database file
+so as we can see one juice
+product code one is Juice price is
+seventy two is the discount then second
+is bread third is butter 4 is egg so
+first this is the product code this is
+the price and this is the discount on
+that product
+now let's come back and modify the
+product
+let's say first product was juice
+and we want to modify that product
+so what we'll do is We'll add the
+product code one and the new product
+code would be one only let's say we
+don't want to change that and name of
+the product would be
+chips we'll replace it with chips
+price would be
+20
+and discount would be 2 percent
+so record edited as we can see here
+record edited and now we can check
+so now we'll open this database file so
+as you can see
+as you can see one Chips
+two bread three butter four eggs so the
+first product that was used is replaced
+by chips
+so this function is done now let's try
+the delete function
+we'll click on 3 for delete
+and now we have to enter the product
+code of the product which we want to
+delete so let's say we want to delete
+the fourth product
+and we can see product deleted
+successfully we can check that
+as you can see
+there are three products left the fourth
+one got deleted
+so now let's go back and let's check if
+the customer wants to buy the product
+how can he or she buy so let's first of
+all we click on phone to go back to the
+so now let's click onto as a buyer to
+buy some products now we'll click on one
+to buy the product
+so as you can see our products are chips
+bread and butter
+so product numbers are one two three and
+their price are 20 30 60 respectively
+and now we'll enter the product code of
+the product which we want to buy so I'll
+click on one
+and the quantity I say to
+want to buy another product or not they
+are asking if you want to buy another
+product if yes then press Y and if no
+then press n
+so we'll click on why because we want to
+buy another product so now I'll click on
+2 that is bread
+product quantity I'll add product
+quantity as four breads
+and now butter so for that first of all
+why for butter I will click on three
+product code of butter is three now
+quantity would be two
+now I don't want to buy any other
+products so I'll click on n
+so as you can see
+product numbers product name their
+quantity price amount and amount with
+discount
+and the total is there that is 272
+and if we wish to buy another product so
+we can click on one else we can click on
+two to go back
+so this is our receipt our total amount
+is there
+so this is our complete project on
+Supermarket billing in C plus plus you
+can try it although the code is bit long
+approx 400 to 450 lines of code
+but it is worth trying this project will
+allow a user to book a flight to a
+particular country and he or she will
+receive the ticket by filling in all the
+important details
+different concepts of C plus plus will
+be used in making this project which
+will help you in understanding the
+concepts of C plus plus in a practical
+manner
+so now let's go ahead
+so now let's go to our code editor that
+is Dev C plus plus
+so this is our code editor now let's
+create a new file
+and let's start with it
+so let's add some header files hash
+include
+iostream
+now we will add another header file that
+is f stream for file handling operations
+now hash include
+i o manip
+so this header file is used for floating
+Point values
+so now we'll add the standard namespace
+now we'll write the main function
+now inside this main function we will
+create an object of a class
+our class name is management
+and
+the object name would be m-o-b-j
+after that returns 0
+now we have to create this class
+so we'll write
+class
+management
+and inside this class we will make a
+Constructor because we have created the
+object of this class so Constructor
+would be called and inside that
+Constructor we will call the function
+so let's do that first of all we'll
+write the public scope
+now under this public scope we'll write
+management
+so this is our Constructor management
+and inside this Constructor we will call
+a function let's say the name of the
+function is main menu
+all right so now the class ends so we'll
+write the semicolon in the end
+now inside this function
+main menu we have to create a menu that
+will display on the screen
+and also we have to use this function
+many times inside this program so we
+have to declare this function globally
+so we'll write
+void
+mean menu
+so this is the function prototype
+now after that
+we can create this function
+so let's write void mean menu
+and now we'll declare some variables L
+choice
+int s choice
+and another variable let's say back
+now we have to create a layout or a
+structure for a menu so let's do that
+slash t
+ail Airlines
+you can write any name as of your choice
+now we will write main menu we'll write
+slash t
+foreign
+now again we'll add some space for some
+lines
+let's add slash t
+foreign
+now we'll create a structure in which
+we'll ask the user to press a particular
+button to open a particular
+functionality like press one to open the
+customer details press 2 for flight
+registration press C for ticket and
+charges
+so let's do that
+foreign
+copy paste
+I'll copy this part and paste it over
+here
+and second one we'll write press 2
+for flight registration
+foreign
+so we are done with the layout now we'll
+take the input from the user
+so let's do that
+foreign
+Choice the variable that we have
+declared
+now for all three of them we'll make a
+separate classes that is what customer
+details will make a detailed class for
+flight registration will make a
+registration class for ticket and
+charges will make a ticket class
+and to to call the functions of these
+classes will have to make the object of
+these classes so let's do that
+so we'll write
+details
+d d is the object name
+registration
+r r is the object name
+ticket is the class name t is the object
+name so we have created these objects D
+R and T
+now we'll use a switch statement a
+switch case statement
+and now we'll write
+L choice
+now inside the switch case first of all
+we'll create a case one
+now inside this case we'll have to call
+a function of detailed class
+so let's do that but before that we'll
+write
+C out
+customers
+so that it looks nice now we'll call the
+function let's say the name of the
+function is information
+and now
+we'll ask the user
+to press one to go back to the main menu
+like if the user wants to go back to the
+main menu
+after filling the details or something
+like that then he or she can click on
+this one button
+all right now we'll take the input
+back this is the variable that we have
+declared now
+if
+back equals one
+then
+we'll call the main menu function
+that is the main menu will display
+and also in else block we'll do the same
+we'll call this function only
+and here we'll write
+press any
+key to go back to main menu
+now
+here we'll do the break
+case one ends
+now we have to create a case too
+case two is for flight registration so
+we'll simply
+display a message and call the function
+we'll write
+book a flight
+using this system
+all right after that we'll use slash n
+foreign
+all right now we'll call this function r
+dot flights R is the name of the object
+and flights is the name of the function
+that we will create afterwards
+now we'll write break
+now we'll have to create case three
+no case raise for Ticket collection now
+all we need to do is to display a
+message saying that get your ticket
+all right now we'll use slash n
+ope now we'll call the function
+T is the object name Bill is the name of
+the function let's say
+now
+will display a message saying that your
+ticket is printed
+you can get it
+or you can collect it
+foreign
+press 1 to display your ticket
+we'll take the input and
+if back equals to 1
+then inside if condition
+will call this function display
+T is the object name displays a function
+now after that we'll display a message
+press 1 to go back to main menu
+or press any key to go back to main menu
+so we'll write
+press
+Enter key to go
+back
+to main menu
+all right now after that we'll take the
+input of this
+and if back equals to
+1
+then we'll write
+main menu that is recall this menu
+function
+foreign
+else
+we're going
+again we will call this menu function
+to display the menu
+right after this
+break to end the case
+closing bracket and now here is the
+starting bracket
+all right so now we have to create a
+case for
+inside case 4 first of all we'll display
+a message saying that see out thank you
+because in case 4 as we can see
+press 4 to exit so
+if a user press 4 will display a message
+saying that
+legislation installation and then again
+a slash d
+now thank you message will be displayed
+after that and I'll
+now we'll write break
+and after that
+there would be a default case
+now in this default case a message would
+be displayed like
+invalid input or something like that
+right
+invalid input
+please try again
+right after that we'll use slash n and
+handle
+now
+to go back to main menu so that the user
+can try once again so we'll call this
+function main menu
+now after that
+break
+now we have to create classes like first
+of all we have to create this
+detail class in which we are calling the
+information function
+so this is the information function and
+now let's create its class that is class
+detail
+so let's do it
+class
+details
+now in the public scope
+you will declare some variables and
+static
+string
+name
+and let's say gender
+both of these would be string
+and
+now after that let's create the variable
+phone number
+and
+gender
+not gender age we have already created
+gender now age could be integer then
+there is
+address we'll write add
+then there is another variable
+static end
+customer ID so let's see ID
+now
+an array we have to create
+let's give it 100
+now let's create this function
+information
+so inside this information function
+first of all we'll ask the user to enter
+the customer ID
+so
+slash n
+enter the customer
+ID
+after that
+now the user will enter the customer ID
+CID
+as you can see
+now
+will ask the user
+to enter the name
+foreign
+then we'll ask the user to enter the
+edge
+then there is address
+foreign
+gender
+now once the user has entered all these
+details then we'll display a message
+saying that your details are saved with
+us
+I will write your details
+are saved
+this
+[Music]
+all right so we have to end the class
+over here so we'll use semicolon
+now we'll create another class
+now we will create the registration
+class but before that we have to use
+some of the variables of the detailed
+class in the ticket class
+so for that
+we'll write in detail
+scope resolution operator
+C ID
+this is the variable that we want to use
+then the name variable write string
+name
+then that variable gender so write
+string
+all right so now we can create this
+class so let's do this right class
+registration
+and now inside this class first of all
+we'll declare some variables under the
+public scope we'll write in declare a
+static variable choice
+foreign
+let's say then
+another variable back
+then
+a static float variable
+named charges
+all right so these are the variables now
+we have to create the function flights
+that we have called from the mean menu
+function
+so this is the flight function now
+inside this flight function
+there is a character array
+named flight and
+now after that
+inside this array we'll put the name of
+the countries as the elements so let's
+start
+first of all is Dubai
+after that there is
+Canada
+then let's say another one is
+UK
+then there is
+USA
+after that there would be Australia
+then let's say Europe
+all right now
+using a for Loop
+we will display each of these countries
+one by one
+so we'll write int a equals 0
+a less than
+six
+a plus plus
+now inside this for Loop
+we'll write
+a plus 1
+.
+Dot
+flight
+to
+so here what we are doing is this a plus
+1 that is 0 plus 1 so Dubai will be
+displayed then one by one Canada UK US
+Australia all of these
+will get displayed and now after that
+we'll write
+flight n
+kernel
+now
+all these countries will be displayed to
+the user so now the user have to select
+a country so first of all we'll write
+welcome
+to the
+Airlines
+then
+handle after that
+will ask the user to press the number of
+the country or which you want to book
+the flight
+so we'll write
+press the number
+so we'll take the input from the user
+see in choice
+now after that we'll use switch
+statements we'll write
+switch
+inside we'll write choice
+and now I will make some cases
+case one will be of Dubai case tool we
+have Canada then UK US Australian then
+Euro so let's start with Dubai
+so we'll display a message
+we'll write welcome to Dubai merits
+thank you
+all right now selection
+now again we'll display a message saying
+that
+your comfort
+is our priority
+enjoy the journey
+now we'll display following are the
+flights
+following are
+the flights
+all right so
+now
+we'll display first flight so we'll
+write
+this is the name of the flight and now
+and L and now we have to display also
+that the timing and the date of the
+flight and how many hours will it take
+and the price
+so let's do that
+so here we'll write
+slash d
+then we'll write
+the date
+after that the timing
+there is 10 hours flight
+rupees 14 000 let's say
+similarly
+let's copy and paste let's say there are
+three flights
+that are going to Dubai
+and
+let's change the model numbers
+658
+and the time and the date also
+all right so these are the flights now
+we will ask the user to select the
+flight
+right
+select the flight you want to book
+[Music]
+see in Choice One
+now if the user chooses one
+then we have to create the condition
+you can use the switch case or you can
+do if else as well
+so let's start if Choice One
+equals equals one
+that is if the user or the customer
+chooses the first flight flight then
+charges will assign the flight charges
+like 14 000
+and
+display message
+saying that you have successfully booked
+the flight
+okay
+[Music]
+you can go back to menu and take the
+ticket
+will display this message
+so this is our if statement
+now we have to create else if statement
+as well
+for the condition we'll write if Choice
+1
+equals equals to
+then what we'll do is
+let's just copy and paste to save time
+you can copy this part and paste it over
+here
+charges as we know the charges of this
+slide is ten thousand
+it will write 10 000.
+and its number was
+658
+all right similarly
+for the third flight as well we'll do
+the same
+the charges was nine thousand
+so let's do that
+the number was 498
+we have to change this one
+let's say 508
+so that the flight numbers are unique
+now in else block
+we'll write
+invalid input shifting to the previous
+menu so we'll simply display that
+foreign
+function
+after that
+if the user wants to go back to the main
+menu so we'll display a message for that
+press any key to go back to the main
+menu
+[Music]
+thank you
+if the user chooses one that is if back
+equals equals one
+then the main menu function would be
+called
+and same otherwise
+similarly we'll create case two
+so let's do that
+in case two we'll just copy and paste
+this one to save some time
+all right the changes we have to do is
+welcome to Canadian
+Airlines
+and now your comfort is a priority
+it's all right following other flights
+so
+the model number and number of flights
+we have to change let's say
+and the timings like
+and the dates and time
+it's
+2 pm
+you can change that as per your choice
+you can do whatsoever you want
+20 hours
+foreign
+book
+then similarly in the first flight was
+of 34 000
+ca198
+and if you choose two then there would
+be 29 000
+forty thousand
+the rest is all good shifting to the
+previous menu as we have done previously
+and now again
+after this else
+we can create case three
+so inside this case three we'll write
+welcome to
+UK Airways so we'll write
+so now let's say to UK there are only
+two flights
+let's say there are only one flight
+to UK I'll write
+UK
+and its flight number is 798 let's say
+and the timings are
+and date is first of all 12. and the
+timing is 10 am
+it will take around 14 hours
+14 hours
+and 44 000. rupees select the flight you
+want to book this is same and here I
+have to change 44 000.
+all right so to UK there is only one
+flight so we not need to create these
+Health statements so we can just cut it
+and in else block the rest is same
+so now after that we have to create case
+three
+sorry Case 4
+and we can copy and paste this one as
+well so our fourth flight was of us that
+is U.S Air Base
+all right now we will change the name
+right
+us 567
+and the dates
+it's a choice
+because I need 39 000 here and
+there is 42 000.
+after this
+now case 5 would be of Australian
+Airlines so we'll write case five
+and copy paste this part
+and he will write
+Australian
+Airlines
+foreign
+so let's change we'll write
+yes
+and
+698 timing date would be
+18
+9
+44
+000.
+foreign
+[Music]
+everything is done in this part
+now we'll create case six
+in case six
+all we need to change is
+welcome to Dubai my rates and we'll
+change it to European airlines
+European airlines then will change its
+name to
+EU
+498 instead of 498.98
+and the date let's say to
+time is 2 am
+18 hours of flight and its price is 36
+000.
+31
+000
+.
+10 AM and
+all right now we have to change its
+model number as well
+all right so EU
+898
+and its price is 36 000.
+its price is 37 000.
+all right rest everything is done in
+this part
+now let's create the default case
+all right
+in the default case we will write
+invalid input
+please
+no shifting to the main menu
+foreign
+menu function
+now we'll write break
+and close the switch statements
+all right so uh this registration
+function is done
+it's pretty long as we have created six
+cases
+of all the countries named
+Dubai Canada UK US Australia Europe
+now only one function is or class is
+left that is ticket class
+so let's create this ticket class
+all right so now after this registration
+class we'll have to use the semicolon
+so now before this ticket class we need
+to know that we have to use some
+variables of registration class and the
+details class in this ticket class so we
+will do the multiple inheritance and
+before that let's do the same thing as
+we did earlier
+float registration because we have to
+use these variables so we'll write
+the class name then scope resolution
+operator
+charges
+is the variable then another variable
+would be
+choice
+both of these variables is of
+registration class so that is why we are
+doing this
+all right now we will start with the
+class ticket
+we'll write class
+ticket then we have to inherit both of
+these classes that is we have to use
+multiple inheritance right public
+registration
+and then details
+so here we are using the multiple
+inheritance because we have to use the
+variables of both of these classes in
+this class ticket
+now in the public scope
+we'll start with the function that is
+Bill
+void bill
+and now inside this function first of
+all we'll declare a variable name
+destination
+and will left it like this because
+we have to assign it
+a choice that is being made by the
+person who wants to travel to the
+country
+so now off stream as we know is used to
+create or write information in the files
+the object of is off stream is out f
+we have created now
+let's say the file is records.txt you
+can name it as per your choice
+in which the data
+of the flights is being stored
+now we'll write inside this records.txt
+file
+so as We Know
+to right inside the file the object name
+and
+then whatsoever we want to show inside
+the file
+XYZ Airlines
+okay
+thanks
+details that is class name
+scope resolution operator CID
+then handle
+similarly we'll do that for name and
+gender as well
+foreign
+people
+now
+when it comes to destination as we have
+left the empty space now the user if the
+user will press one then it will go to
+Dubai if if two then Canada 3 then UK 4
+then USA so we'll have to do that as
+well so we'll write if
+registration as the class was
+registration
+scope resolution operator Choice equals
+equals one
+then destination variable equals
+Dubai
+and
+let's copy this part because we have to
+use else if statements as well you can
+just copy and paste all we need to do is
+else if
+now we can change it to choice 2.
+and name to Canada
+now after that we'll simply print or
+write the destination
+so first of all we'll write destination
+and then we'll print the variable
+let's do slash D to add some horizontal
+space
+now
+destination variable
+all right now
+foreign
+the flight cost
+because it is a variable of registration
+class
+all right now
+we have to close this
+object or file outf Dot
+close
+we have closed the file
+now
+we have to display the receipt as well
+so for that we have to create another
+function within this class only we'll
+create void disk build that is display
+bin
+so inside this function
+we will create an if stream class and
+its variable let's say will be ifs we
+all know it if stream class is used to
+read from the file so we are actually
+reading here so
+we'll write records.txt file
+now we'll use the if condition
+inside this so we'll write if
+not ifs that if it doesn't exist
+then it should show an error that is
+let's say
+file error
+foreign
+Loop and we'll check not ifs dot end of
+file that is here we are checking the
+file till the end that is every content
+of the file will check and ifs dot get
+line
+array
+100
+here we have used get line to read the
+content from the file and while loop
+will help us in doing that after that
+we'll print
+array and then enter
+all right after that we have to close
+this file as well
+so we'll do that ifs Dot close
+now we have to close the class as well
+semicolon
+so yeah our code is pretty much done
+after this
+there was main menu and
+the main function
+so now let's try to run this one
+before that let's save it
+and let's name it as
+flight dot CPP
+all right now let's try to run this
+there are a few errors
+all right so
+first error is
+this one and
+let's check them all
+flight dot CPP
+66 line 66 there's an error
+all right function name is wrong flight
+we missed the T then line 466
+foreign
+[Music]
+526
+this one is associated with the previous
+one error that is information error
+let's go to 561
+T dot display
+all right so we wrote the wrong name it
+was disp Bill
+all right now let's try to run this
+again
+semicolon we forgot
+now
+as you can see XYZ Airlines main menu
+press 1 to add the customer details
+there's a little bit formatting error
+you can figure it out yourself
+press 1 to add customer details press 2
+for flight registration 3 for ticket and
+charges and four to exit so let's say a
+new customer I am so I'll press one and
+I'll write customer ID
+1.
+now the name of the customer let's say
+Raj
+of the customer is 23
+and address is
+Chandigarh
+all right
+now gender is male
+foreign
+all right now press any key to go back
+to the main menu we can press any key
+two three one
+then this is the main menu again
+now I want to register a flight I'll
+press 2.
+so these are the flights fly to Dubai
+Canada UK USA we forgot to add some
+space we must add some space over here
+so these are the flights to Dubai Canada
+UK US Australia Europe and welcome to
+Airlines they are asking us to press the
+number of the country of which you want
+to book the flight let's say I want to
+go to USA
+so
+4
+so these are the flights us 567 us-658
+us 508
+and these are the timings and these are
+the dates let's say I want to go to
+658 us 658 then I'll press 2.
+so there's a mistake by us we forgot to
+change the name of this flight we'll
+change this later and now let's go back
+to the main menu
+now let's say we know that we have
+booked this year 658 but there was some
+writing error we by mistake forgo to
+write us 658 over here instead we write
+tub
+e now as we know that we have this
+flight that is booked so we want to go
+for ticket and charges so we'll click on
+three
+your tickets ticket is printed you can
+collect it
+all right plus one
+to display your ticket
+as you can see
+customer ID 1 customer name Raj mail
+description destination USA flight
+course 39 000 as we know this is the 39
+000 flight
+so this is how
+you can build this project and now let's
+correct a mistake
+let's go to
+Australia US flight sorry so here it is
+let's change it to
+U.S
+and now let's save it
+so now it will work fine
+so this was a project on Airline
+reservation system
+you can also try this project on your
+own
+in this video session we will be
+creating a c plus project
+this project will be a security system
+in C plus plus
+here we will create a system in which we
+can register login and if we wish to
+change the password then also we can do
+that
+we will try to keep things easy and
+basic so that each and every one of you
+can understand the security system in C
+plus project before moving forward let
+me ask you a quick question
+what was the previous name of C plus
+plus option A C option b c with classes
+option C C plus or option D C with
+objects
+please leave your answers in the comment
+section below and stay tuned to find the
+correct answer
+now let's switch to our code editor
+which is Dev C plus plus
+so this is our code editor now let's
+save this file first of all
+let's name this file as
+system
+dot CPP
+all right so we have named this file now
+we'll start with header files so first
+of all we'll add the header files so
+we'll write
+hash include
+IO stream for input output operations
+all right now we'll add another header
+file which is
+hash include fstring
+now
+the third header file which we will be
+adding that would be S string
+so this app stream Library the f-stream
+library is used because we have to work
+on files and this Library allows us to
+do so it is used for file handling
+operations
+now the second one that is the sstream
+library this header file provides
+templates and types that enable
+interoperation between string buffers
+and string object
+so this was it now we will have to add
+another header file
+all right and let's do that
+hash include
+string all right
+so iostream app stream as stream and
+string we have added the added files Now
+using namespace STD
+all right now we will create the main
+function that is int Main
+now inside the main first of all we will
+be creating variables so let's do that
+int a let's say now we'll initialize I
+with 0
+now we will be creating some strings
+let's say
+string text all these variables we will
+be using it later in the project so
+let's create them
+password let's say password one
+password to
+let's name it pass
+name
+password 0
+age
+user
+word and
+word one
+so we will be using these variables
+later in our project
+all right now
+let's create some string array
+so
+creds that is credentials
+will make an array
+all right CP
+2.
+all right
+now we'll display
+an interface and in that interface we
+will show uh four options like register
+login change password and end program
+so let's just do that
+all right
+so let's name it security system
+handle
+so as we are creating a interface so
+let's make it look good like
+we can do some things like that
+and then for extra space now
+here we can do one thing like
+you can do like this
+it's up to you how you want to beautify
+your interface that's all upon you
+so I'm basically doing that
+register
+foreign
+ly we will do
+for others
+like we can just copy paste it will save
+our time
+so basically
+first would be register
+second would be login
+and third would be change password and
+fourth would be n program
+and we can do one more thing
+all right now let's make it two
+this would be login
+3 would be change password
+foreign
+would be
+end program
+all right so register login change
+password and end program
+so we have created four of these
+so we have created the four choices now
+after this we will be asking the user to
+enter any choice like if you want to
+register login or change password or end
+the program so he can select one two
+three or four for that we have to take
+an input from the user
+so we will do that first of all to add
+some space we can do handle
+all right
+yeah
+so now we will use a do while loop so
+inside the do
+we will again use handle twice so that
+there would be some difference between
+this register login interface and the
+choice that we will be asking
+all right now C out
+enter
+your choice
+so here we are asking the user to enter
+one two three or four
+as per his or her choice
+all right
+all right
+so C in
+here we will be taking the input let's
+say a is the input
+now we'll use a switch case
+right switch and inside the choice that
+the user will enter
+all right now
+case one would be there first of all
+case one
+and inside case one let's scroll it a
+bit all right so inside case one
+first of all we will be printing
+something like register as as the user
+has pressed one so he want to register
+first of all so we'll create an
+interface over here as well
+so let's do that okay see out
+like we previously did it's your choice
+like how you want to do it
+right now we can
+write
+foreign
+all right
+after that again
+let's leave some space here
+or we can do it above as well like
+here also we can do this
+and let's do this here
+foreign
+so register here we have created
+now we'll use two Vandal because we want
+to create some Gap in between enter your
+choice and this interface so right
+so we will print a message enter your
+username it's like please
+enter
+username
+all right so after that the user will
+enter the username
+so we'll take the input of that
+so here we will write name
+all right now the user
+will have to enter password also so
+right please
+enter the
+password
+so after this the user will enter the
+password so we will be taking the input
+of that
+so
+we have already created these variables
+as you can see name we have created and
+password 0 also we have created so we'll
+use that password 0.
+all right now we'll ask the user to
+enter his or her age
+so like please
+enter
+your age and whatever credentials you
+want them to enter you can do that you
+can also take the input of the address
+or something personal that you want to
+store you can also do that
+so all right
+so please enter your age
+see in
+huge all right this name password 0 and
+age we have already created these
+variables we have initialized these
+variables all right now
+now we will store these details that is
+now name password 0 and age
+into some file and for that we have to
+use the file handling operations
+so we'll use those like we will create
+off stream class we'll create an object
+of offstream of one
+and
+to F1
+so we will use of1 as it is the object
+of offstream class
+and why we have used the offstream class
+because it is used to open a file to
+write something in it so here we want to
+store name password H in that file so
+basically we have to use off stream only
+and if stream class is used when we want
+to open a file for reading purpose but
+now we want to open the file for writing
+purpose so that because of that we have
+used offstream Class
+so here we will write of1 that is the
+object of Upstream class dot open
+so
+inside this we will write the name like
+that file dot txt it will open the file
+all right
+now inside the if block we'll write o f
+1
+dot is
+open
+underscore open this is a function
+all right
+whoever this is open it will keep on
+moving till
+all the details will be entered in the
+file so we'll write of1
+so here basically we are writing the
+details inside the file
+we'll use slashing because we want the
+username and password in different lines
+so that is why we have used slash n here
+all right of one
+password
+all right password zero it was sorry
+no
+we have stored the name and password
+only
+now we'll write
+registration
+successful
+all right registration successful
+now as we can see break statement we
+have already written
+all right
+so basically everything is done in this
+case here we have taken the input of
+username password age and stored all
+these details in the file
+so that we can use it later
+now this was the case one registration
+is done in case one now we can move on
+to case two
+similarly we will create a case too
+now inside this case two
+all right now inside this case two first
+of all we will initialize I with 0 why
+we are doing this I'll explain that
+later
+so similarly we will create
+the interface that we previously created
+in registration so let's do that
+foreign
+so we have created this
+now here we will use if stream because
+we want to read
+so as I previously told that if steam is
+used to read from files open and read
+from files so we will create if stream
+class and object if stream
+if one or let's say of of2
+so this is the object of if stream class
+Now using this object we will open the
+file of2 dot open
+now of
+sorry here we will write file Dot txt
+all right so here we have opened this
+file and now
+we'll take the input like we'll have to
+match it whether it is the same personal
+node so we'll take the input we'll write
+please
+enter the username
+see in
+user the other variable that we have
+created
+now see out
+please enter the password
+all right so
+here also we'll take the input from the
+user we'll write the other variable that
+is pass that's why we have created so
+many variables
+all right now
+let's roll it a bit
+now if similarly that we have done
+previously of2 dot is underscore open
+so it will check all the files basically
+is open then
+here we will use a while loop
+dot o f
+2
+dot end of file so here we are using the
+end file function
+from this eof or end of file function we
+can detect when the Endo file is reached
+it returns non-zero when the end of file
+has been reached otherwise it will
+return 0.
+all right inside it now we will create
+another while loop
+while
+get line
+of2 that is the object
+and text that is a variable
+all right
+now inside it we will write
+I String
+string
+ISS
+text
+all right now I'll explain the part
+so here in this part get line part so a
+while loop together with the get line
+function is used here to read the file
+line by line
+so using this the getline function the
+file will be red line by line and this I
+String stream object
+so I String stream object is used to
+stream the string and store it using the
+extraction operator
+after this we will be using an
+extraction operator where we will store
+the string
+all right
+here we have used the extraction
+operator and here we are storing
+now in the grids array that we have
+created
+we will be using
+yeah here we were
+all right so in credits array
+we have already declared this
+we will store the word first of all
+and then we will increment because one
+by one
+the in the zeroth position first of all
+first username will be stored then
+the password will be stored in the
+second position so we need to increment
+that
+all right
+now
+we will match if the
+registered username matches with this
+username or not and similarly we will do
+for password so we can do like if user
+equals to creds at zeroth position that
+is the username username the user has
+entered first so it must be at the
+zeroth position
+and the password would be at the first
+position
+and index one so for that we can use if
+password equals to
+grid set
+index one
+then
+we can print a message
+saying that login
+successful
+all right
+now to add some space we can use handle
+now after displaying this login
+successful sign we can print the details
+like
+we can write
+details
+we can write C out
+username
+name
+handle
+all right similarly for the password
+will do
+foreign
+so here we will show the username
+password age details to the user
+now in the else block so where the
+password and login credential will not
+match in that case now we'll do
+so for that case we will write first of
+all let's create some distance
+so that it looks nice
+all right so first of all we will write
+incorrect credentials
+all right incorrect credentials
+after that we can do one more thing
+so
+we will write
+press
+two
+let me just do this press 2
+to login
+press 2 to login
+and
+here similarly we'll write
+change password
+so
+press three
+to change
+password
+so here we go
+so if the details are incorrect so the
+user can log in again try or
+he or she can try to change the password
+now we'll add the break statement also
+so here we have added the break
+statement now
+as you can see our case 3 is also done
+so what we have done in case three is
+like
+we have taken the input of username and
+password and then we tried to store it
+at credentials that is an array
+so at credentials zeroth position that
+is index 0 the username will be stored
+and at credential first index the
+password will be stored then we will try
+to match the username that the user has
+entered while registering with the creds
+at zeroth position and password with the
+password
+so if it matches the login will be
+successful and the details will be shown
+and if it will not it if the details are
+not matched then it will show an error
+in correct credentials and press 2 to
+login and press C to change password
+so this was the case too
+now let's move on to case 3.
+from here we will create the case three
+foreign
+again we will first of all initialize I
+with 0
+now here let's scroll it a bit
+yeah so here we can write like
+change password so
+let's do this
+change
+password
+so
+now after displaying this again we will
+open the file using that if stream here
+if stream
+of0
+Now using this object 4 F 0 will open
+the file.txt
+file Dot txt
+all right so here we will write
+file Dot txt
+after opening this file we will display
+a message to enter the old password so
+because we are changing the password so
+first of all we'll ask them to enter the
+old password
+so
+enter the
+old password
+now we'll take the input pulled this is
+the variable
+now we'll use an if condition
+that similar to that that we have
+previously used os0 dot is open
+this file will remain open
+now again we'll use end of operation
+function
+is underscore
+end of file
+all right now inside this while loop
+again second while loop will be used
+similarly that we have done previously
+get line function again
+all right
+I String stream
+ISS
+text
+ISS
+word one here basically we are storing
+the data in word one
+then CP another array
+so we'll store word one at the zeroth
+position
+then we'll increment
+CP by mistake we wrote Co
+all right
+now we'll increment so that the password
+will also get stored
+all right
+now
+we'll use if condition
+if if old password is equal to cp1 as we
+know at cp0
+the username is there but we have to
+compare the password so if old password
+is equal to cp1 that is the new password
+that the user has entered then
+first of all we'll close the previous
+file
+to free up the memory space
+all right now we will open another file
+with off stream object of one
+because off stream is used when we want
+to write something
+open and write so now we'll use
+of one object
+dot is underscore open
+now
+double actually
+all right now C out
+enter your new password we are basically
+asking them to enter the new password
+we will take the input of the password
+one
+then we again display another message
+saying that enter your password again
+so enter your password
+again
+again we'll take the input
+saying that password to
+now if
+password 1
+equals to
+password to
+then
+we will overwrite
+CP
+0
+that is we are storing the zeroth index
+of CP at of1 we will basically
+overwriting this slash and so that the
+username and the password
+displays in different lines in the file
+that is being created
+of one
+password one here we are basically
+overwriting now will display the message
+after this that password
+changed successfully
+all right
+now in else block that is if password
+one is not equal to password 2 in that
+case what we will be doing is of1
+CP 0 after CP 0
+will again use slash n
+all right of one
+old that is the
+old password
+so it doesn't get override here
+so now we'll display
+password
+do not
+match
+now for the previous if
+we'll create else condition
+in this else we will print
+please enter valid password
+that is if the old password entered by
+the user is wrong please enter a valid
+password
+all right once this is done we can use a
+break here
+all right
+now the break statement is already there
+now
+as we can see there were four
+things like four options login change
+password and end program fourth one is
+end program now we'll have to create
+case number four
+and inside that case we can do one thing
+like we'll
+just print one thing and use the break
+statement we can write like thank you
+a little look nice
+all right so the fourth case is also
+done
+now we can also create a default case
+in the default case we can write like
+enter a valid Choice like if the user by
+chance entered five six seven other than
+one two three four then this message
+will be displayed
+all right now we'll use a while loop
+not equals to 4.
+so
+so this is the while loop of this dude
+that we have created as we can see this
+do we have used the do while loop so it
+keeps on repeating until a that is the
+choice is not equal to 4 Once the user
+entered 4 that is the end program
+then it will not show the options so
+that's why we have used
+a this while
+return
+0.
+all right our code is done let's try
+to run this program
+I believe some errors must be there
+let's see
+so
+it is showing some error over here
+so we have used
+level codes with endl which we can't use
+all right now let's save this one
+and now let's try to run this
+before got to close this one there must
+be some errors
+again so again we'll have to
+make it double equal to
+and one more energy is there I figured
+that out a not equal to 4. forgot to add
+equal to sign
+now I'm sure that
+I'm pretty sure that all the errors are
+resolved let's try to run this again
+all right as you can see
+one for register two for login three for
+change password four four and program
+all right so
+first of all we will register let's say
+we want to register enter your choice
+one
+let's say AK
+one at the red Gmail
+so this is the username
+let's set the password AK
+123
+right age 24
+registration successful now we have to
+press 2 to login
+again the username we will have to enter
+we will write AK
+1 at the rate Gmail
+now the password is
+ak123 As We Know
+so as you can see the details are here
+username is this password is this and
+age is 24.
+now let's say we want to change the
+password
+we'll click on 3 as it is measured to
+change the password you'll have to click
+on three
+so we have clicked on three
+so first we'll have to enter the old
+password which was ak12
+3.
+now the new password
+ak321 let's say
+for the confirmation we will have to
+enter the password again ak321
+as you can see password change
+successfully now just to check that
+if this password is really changed or
+not we'll log in again
+we'll press 2 to login and enter the
+username ak1
+at the rate Gmail and try to log in with
+the new password which is ak321
+as we can see the login is successful
+username is this password is ak3221
+three to one age is 24.
+now let's say
+if we try to login with the wrong
+password
+so let's say AK one at the rate Gmail
+this was our username
+now the password let's say
+ak456 let's try to login with the wrong
+password
+as you can see incorrect credentials
+press 2 to login press 3 to change the
+password
+so now it's your choice if you want to
+login again
+then you can do that if you want to
+change the password you have to click on
+three
+and as we know that
+we know the right password so will not
+do that
+password change thing
+all right now
+we'll click on four to
+end program as you can see thank you
+message is displayed
+now we can also try one more thing like
+let's try to run this again
+as you can see uh first of all let's
+register
+let's see
+Sam
+at the rate Gmail
+this is the username the password is
+sam123
+and the age is 24.
+so as you can see the registration is
+successful
+now we'll try to login
+so while logging in we'll put the wrong
+password
+so let's see
+Sam
+at the rate
+Gmail
+Sam
+three to one
+so as you can see incorrect credentials
+again press 2 to login and press C to
+change password
+so you can click on two or three if you
+want to
+if you want to login or change password
+respectively
+I don't want to do that so I'll simply
+click on four
+to end the program so thank you message
+will be displayed
+so guys this was about this
+security system in C plus plus it is
+quite basic topic and all the concepts
+that are being used is intermediate
+level you can create this on your own
+you can add some functionality some more
+functionality to this security system
+also and uh doing projects like this
+will enhance your knowledge in C plus
+plus and will give you
+or show you the Practical aspect of C
+plus plus
+you can try this project on your own so
+previously a question was asked about
+what C plus plus previous name was
+the correct option was C with glasses
+earlier C plus plus was also known as C
+with classes
+also are you aiming to get certified in
+full stack Java developer course and
+want to build a full stack Development
+Career in that case you can check the
+full stack Java developer course by
+simply learn with job guarantee which
+will open the doors for the best career
+opportunities
+to find the details of the course check
+the link in the description box below it
+could be the ideal solution to help you
+build your career in the right direction
+if you like this video then please give
+it a thumbs up I hope it really help you
+all thanks for watching stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

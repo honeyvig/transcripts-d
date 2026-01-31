@@ -1,0 +1,494 @@
+hey everyone welcome to simply loans
+youtube channel in today's session we
+will be talking some of the important
+topics in seashop that is c sharp loops
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+now without further ado let's get
+started with the agenda for today's
+session
+in this session we will be introducing
+you to the c-sharp loops then we will go
+over all the different loops in c sharp
+with detailed explanations and code
+examples
+so i hope i made myself clear with the
+agenda now let's get started with
+introduction to c-sharp loops
+programming frequently necessitates the
+repeated execution of a sequence of
+operations a loop is a basic programming
+construct that allows the execution of a
+piece of software code to be repeated
+depending on the loop's type its code is
+repeated a set of number of times or
+until a certain time is reached the
+condition is correct
+next we will look at the various types
+of loops in c sharp
+first we will look at while loop then we
+will have do while loop after that we
+have follow following that we have for
+each loop in c sharp then we have nested
+loops after that then break and continue
+and finally we will have switch
+statements in c sharp
+we will look at these different types of
+c sharp loops in depth including an
+introduction syntax flowchart diagram
+and code example first we will look at
+the while loop while the condition is
+any expression that returns a boolean
+result true or false and one is the
+simplest and most used loops is known as
+the loop condition because it determines
+how long the loop body will be repeated
+the loop body in this example is the
+programming code executed at each
+iteration of the loop that is whenever
+the input is true here is the syntax of
+a while loop we have the keyword while
+we have the condition we have the code
+body inside the brackets
+the while loop flow diagram is shown
+below now let's look at how a while loop
+works
+in the while loop the boolean expression
+is first calculated and if it's true the
+sequence of operations in the loop body
+are executed the input condition is then
+checked again and if it's true the loop
+body is executed once more all of this
+is repeated until the conditional
+expression returns false at some point
+at this point the loop is terminated and
+the program proceeds to the next line
+immediately following the loop's body
+if the cycle condition returns false at
+start the body of the while loop may not
+be executed even once if the cycle's
+condition is never broken the loop will
+continue indefinitely
+let's look at a simple example of why
+loop in action the loop's purpose is to
+print the numbers 1 through 15 in
+ascending order on the console
+let's put the program to test and see
+how it performs
+in this program we have a constructor
+variable called i and we initialize it
+to 1 and execute the loop body while the
+loop condition is true after that we run
+our while loop up to 15 times and then
+we print that counter variable and
+increment by 1 at the same time now
+let's quickly execute the program and
+say the output
+there you go the program got
+successfully executed and you can see
+the output right on my screen
+next we will look at the do while loop
+and try to understand it
+the do while loop is like a while loop
+but it checks the condition after each
+loop body execution
+this loop type is also known as loop
+with the condition at the end or post
+test loop
+a do while loop appears as follows here
+is the syntax
+in the do while syntax we have the
+keyword do first then the code body to
+execute and finally the condition
+following the while keyword
+here is the flow diagram of do while
+loop let us see how do while flow
+diagram works
+the loop body is executed first and its
+condition is evaluated later if it is
+true the loop's body is repeated
+otherwise it is terminated this logic is
+repeated until the loop's condition is
+broken
+the loop's body is executed at least
+once if the loop's condition is always
+true the loop will never end
+let's look at an example of do while
+loop
+in this example we will calculate the
+factorial of given number x again but
+instead of an infinite while loop we
+will use a do while loop
+let's put this program to test and see
+how it performs
+in this program we have a number x we
+have to find the factorial of this
+number we initialize the factorial
+number as 1 and then a loop to perform
+the factorial of the given number and
+decrease the number by 1 simultaneously
+after we have determined the variable x
+must be greater than 0 we will compare
+the factorial to the given number of the
+value x
+now let's execute this program and say
+the output there you go the program got
+successfully executed and now it is
+asking for the value of x let us provide
+5 instead of 1.
+the factorial of 5 is 120 so that's how
+the factorial and the do-while loop
+executes
+now let's look at the next type of loop
+the next type of loop is the for loop
+while the functionality of a for loop is
+like that of a while loop the syntax is
+a little different when loop statements
+are to be executed are known ahead of
+the time for loops are preferred the
+loop variable initialization condition
+to be tested and increment or decrement
+of the loop variable are all done in one
+line in the for loop resulting in a
+shorter easier to debug looping
+structure
+the following is the scheme that
+describes for loops the syntax is given
+below in this loop syntax we have the
+loop initialization test condition
+increment or decrement and statements to
+be executed
+let's go over the syntax of for loops
+the variable controlling the loop is
+initialized here which defines variable
+loop execution it's the starting point
+of a for loop a previously declared
+variable can be used or a new variable
+that is only local to the loop can be
+declared and then we have a testing loop
+the testing condition asserts the
+circumstance in which loop statements
+are executed it is used to test the exit
+condition of the loop it must either
+return true or false when the condition
+is false the control is removed from the
+loop and program is terminated and
+finally we have increments or decrements
+as well as the loop variable is
+incremented or decremented as needed and
+the control is returned to the testing
+condition let us look at how the flow
+diagram of for loop works
+first the initialization statement is
+executed typically the variable is
+declared and initialized here this
+variable is a count of lag because it
+controls the number of iterations the
+for loop will perform
+the following steps in evaluating the
+for condition the condition is a boolean
+expression which returns true or false
+the statements or programs within the
+for loop are executed if the condition
+is true these iterations are repeated
+until the condition is determined to be
+false when the condition evaluates to be
+false the flow shifts from the inside to
+the outside of the loop
+let's look at the example let's look at
+an example we will write a program that
+raises the number a to power of b and we
+will use a for loop to accomplish this
+in this example we have two variables a
+and b with a base number and b as
+exponent next we ask the user to enter
+the value for a and b and we run the
+loop for 0 to exponent b then we perform
+how can we calculate the power of a rise
+to b and finally we will display the
+power of given numbers
+let's execute the program and see the
+output
+there you go the program was
+successfully executed now it's asking to
+enter a number let's enter 2
+let's enter another number that is power
+let's enter it as 2 to the power 3 there
+you go the answer is 8
+that's how the for loop works
+now following that we have for each loop
+let's try to figure out what is for each
+loop
+for each loop and c sharp iterates
+through a collection of items an array
+or a list when each loop is executed it
+executes a block of code on a collection
+of items passing through the items in
+the collection and finally displaying
+them one by one the syntax for for each
+loop is as follows we have the for each
+keyword then we have
+type of variable in collection then we
+have a code for execution that resides
+inside the braces
+the flow diagram of forage loop is shown
+below let's look at how the flow diagram
+of for each loop works the forage loop
+iterates through the elements in a
+collection when using a for each loop it
+is mandatory to enclose statements in
+curly places
+when declaring a lower counter variable
+we can use same type of as array based
+type
+let's look at an example for for each
+loop
+in this example we create an array of
+numbers which is then looped through and
+elements are printed on the console then
+the array of town names strings is
+created and proceeds in the same way
+with elements printed in the console as
+a result of the example let's get back
+to the practical mode and execute a
+practical one in this program we have an
+array as the number we have numbered as
+2 4 6 8 10 12 14 and 16 then we have for
+each loop while we run for an array of
+numbers with counter variable i then we
+have the town name as london paris usa
+and new york again we have for each loop
+we have while for running town names and
+finally we will print both arrays and
+string let's quickly execute the program
+and see the output
+so there you go the program got
+successfully executed and we have our
+outputs on our screens
+following that we have our next c sharp
+loop that is nested loop let's try and
+understand nested loops in c sharp
+nested loops are programming constructs
+made up of several nested loops within
+each other the innermost loop is
+executed more frequently while the auto
+most is executed less frequently let's
+look at two nested loops the syntax of a
+nested for loop is same as that of a for
+loop with two for loops with the same
+variable initialization testing
+condition and increment or decrement
+here is the flow diagram of nested for
+loops and we will now see how it works
+following the initialization of first
+follow the execution of its body which
+contains the second nested loop we will
+begin
+its variable will be initialized its
+condition will be checked and the code
+execution within the body is executed
+following by the variable being updated
+and execution containing until the
+condition is false following that the
+second iteration of the first for loop
+will continue its variable will be
+updated and the entire second loop will
+be repeated the inner loop will be
+executed as many times as the outer loop
+body is true here is an example of
+printing the triangle shape of a given
+number x to triangle with x lines on the
+console app using for each loop
+now let's get back to the practical mode
+in this program we attempted to create a
+right angle triangle with an asterisk
+and height of five we have value five
+because we will make a triangle
+up to five we have two variables that
+will handle row and column and finally
+we will have k for height so the first
+for loop is running for row and the
+second for loop is running for column
+then we have another loop that will run
+up to five that is the height of the
+triangle finally we will print the hash
+trick to create a right angle shaped
+triangle
+now let's quickly execute the program
+and see the output
+so there you go we have a right angle
+triangle made up of hash tricks
+after the nested loop we have the
+continue and break statements we will
+see what the continued statement is
+continue as one of many conditional
+statements in c programming language
+that can be used inside a conditional
+loop block to function as a clause to
+continue the loop execution after the
+iterative condition is executed to move
+on to the next execution of the next
+iteration in the conditional loop it is
+commonly used with iterative conditional
+loops such as four while loop or do
+while loop and for each loop let's look
+at the flow diagram of the continue
+statement and to see how it works
+when the loop begins if there is a
+continue statement it will stop at the
+current iteration and pass control to
+the next iteration by returning to the
+loop beginning we will look at
+using the continue operator in the
+following example using the for loop we
+will compute the sum of all odd integers
+in the range 1 to x that is not
+divisible by 9.
+now let's execute the example for
+continue followed by that we will go
+ahead with break
+so there you go the program has executed
+and you have the output on my screen now
+let's continue with the break
+first we set the variable of loop to 1
+because it is the first odd integer in
+the range 1 to x after each loop
+iteration we check to see if we have yet
+exceeded n i is equals to x
+in the expression for updating the
+variable we multiply it by 2 to ensure
+that it only passes through odd numbers
+we check whether the current number is
+divisible by 9 within the loop body
+if this is the case we use the continue
+operator which escapes the rest of the
+loop's body adding the current number to
+the sum if the number is not divisible
+by 9 the sum is updated to the current
+number after that we will have a break
+statement let's go over what it is the
+break statement is used at the end of
+the for loop and that is present in if
+it is present the control will be passed
+to the statements that flow the big
+statement if the break statement is
+present in the nested loop it only
+terminates the loop that contains the
+break statement the syntax is as follows
+it is very simple because we only need
+to write break keyword following that we
+have the flow diagram of the break
+keyword and we will try to understand
+how it works it checks for the specific
+condition at the start of the flow if it
+is satisfied the loop is continued at
+the point where the loop gets break
+statement or the condition where it gets
+out of the loop with break statement
+let's see an example of using break
+statement first we initialize the
+variable factorial with 1 and rate x
+from the console we construct an endless
+while loop by using true as condition of
+the loop we use the break operator to
+terminate the loop when x reaches a
+value less than or equal to 1. otherwise
+we multiply the current result by x and
+reduce x with one unit practically the
+first iteration of the loop the variable
+factorial has a value n in the second
+that is x into x minus 1 and so on in
+the last iteration of the loop the
+factorial value is the product of x into
+x minus 1 into x minus 2 and so on which
+is the desired result of factorial x
+let's quickly execute the program and
+see the output
+so there you go the program got
+successfully executed and we have 5 into
+4 into 3 into 1 which is equals to 120.
+finally we have the switch statement the
+switch statement in c sharp is a
+multi-wave branch statement it provides
+an efficient method for transferring
+execution to different parts of a code
+based on the expression value the switch
+expression is an integer type end care
+byte short enumeration or string type
+the expression is checked for various
+causes and only one which matches is
+executed here the syntax of switch
+statement where the switch keyword
+follows an expression then we have
+different cases starting with case 1 and
+go on up to case n then we have break
+keyword and finally with the default
+case which generally has default set of
+sequences here in this statement flow
+diagram and let us try to understand how
+it works
+with a switch statement and expression
+is passed equally to one of the case
+values if the value is not equal the
+default case is used this expression
+value is then compared to the case
+identifier or the first case if the
+first case matches the code associated
+with that case is executed when you
+reach break the execution will halt and
+exit the switch statement if the case
+does not match the execution moves on to
+the next case if the case matches the
+second code block is executed otherwise
+the flow proceeds to the next case in
+the same manner finally the default code
+block is executed if no case matches
+let's see an example of switch case the
+user is asked to enter an alphabet in
+this example if the alphabet is in
+uppercase it is converted to lowercase
+using the to lower method now we are on
+the practical mode and that's the code
+on my screen the switch statement checks
+to see if the alphabet entered by you as
+any of the given that is a eiou
+if you have the cases matched then the
+given character is a vowel then it is
+printed as output otherwise the control
+returns the default block and the given
+character is not available and that
+message will be printed on your screen
+now let's quickly execute the statement
+and see the output
+so there you go the program got
+successfully executed now let's enter
+a e i o u any of the one of those so
+i'll enter a
+and there you go the given character is
+a vocal and if i had entered any other
+than eiou the
+default message would have been printed
+that is the alphabet entered is not
+available now that's how the switch
+statement works with that we have
+reached the end of this video if you
+have any queries regarding any of the
+topics covered in this session or if you
+need the code examples we have executed
+in this session then please feel free to
+let us know in the comment section below
+and our team of experts will be happy to
+resolve all your queries until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

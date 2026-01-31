@@ -1,0 +1,130 @@
+hi my name is Mark Goodner and I'm here
+today to talk to you about using
+developer containers in visual studio
+for C plus development
+to begin with developer containers are
+great for packaging and running
+applications and I think a lot of people
+know about that there's another concept
+called Dev containers and these
+basically expand the concept of just
+running the application in a container
+to also Encompass developing and
+building your application in the
+container itself these are very popular
+for reprodu for reproducible build
+environments so that from Dev to CI to
+even potentially running the application
+in the container you have the exact same
+environment and this this is really
+great particularly for C plus
+development where you often have many
+complex requirements that you need to
+satisfy so getting them all
+containerized is a great way to get
+everybody on the same Dev environment
+these have been popular in vs code for
+some time now it's part of the remote
+development workload workloads in Visual
+Studio code and starting in Visual
+Studio 17.4 we've enabled cmake precepts
+projects for C plus to also be able to
+use Dev containers and that's what I'm
+going to be showing you today day so I'm
+going to give you a quick demo of using
+a cmake project in Visual Studio using a
+Dev container
+here I've got a project opened up in
+Visual Studio that has a Docker file
+with it that defines the dev container
+itself it's not much it's really just a
+C plus plus Dev container from the
+Microsoft container registry here's a
+Dev container.json file it's pretty
+standard so this is a pretty generic Dev
+container that just has a basic C plus
+environment set up in it
+and that gold bar there was telling me
+that the project had a Dev container and
+so I clicked reopened the project in Dev
+container and what that did it started
+the dev container on my machine and you
+can see there the status bar at the
+bottom that's telling me that the dev
+container is starting up on my machine
+and so now the dev container is started
+and now cmake activation kicks in inside
+of the dev container
+and so there we go it's generating the
+cement cache
+and now once all of that's ready
+now we can go and take a look at the
+source code this is a pretty simple app
+but basically just a hello world so you
+can see here intellisense warming up
+inside the context of the dev container
+so we're getting intellisense from uh
+within that environment that Linux
+environment of the container itself
+so I could set a break point there so
+and now what I can do is come over here
+and select my target which is the my CPP
+app coming from cmake and click Start
+and now this is actually building and
+running inside of the container that
+Visual Studio is connected to
+and there we go we've hit our break
+point uh this is you know hit the
+breakpoint inside the dev container that
+we're attached to from Visual Studio
+and I've got all of my normal debugging
+commands and you can see it it acts just
+as any Linux app running inside the
+context to visual Studios and you can
+also right click on the dev
+container.json and say open container in
+terminal and what that's going to do is
+allow you to connect to that running
+container in uh the terminal in
+integrated terminal in visual studio so
+that you can actually run commands
+directly in that running container
+environment if there's things that you
+need to check out that are going on in
+there
+um so that's great so now we've got it
+connected to a Dev container nvs now I
+can stop that and because it's a
+cross-platform project I can use my
+normal connection methods and switch to
+local machine and because there's
+nothing platform specific in this code
+now my cmake environment is running on
+my local machine it's not running in the
+container anymore and now it's just a
+regular cmake application and I can
+click build and run that and it's
+launching just as any other windows
+application on my machine so a lot of
+great cross-platform functionality here
+foreign
+how that all works I'm sure you're going
+to want to learn more these are some
+links to resources that you can learn
+more about this Dev container support's
+been enabled in Visual Studio 2022 it's
+part of the Linux and embedded workload
+so go grab the latest and you can try
+this out that's a link to our blog where
+you can track all of our announcements
+for the C plus team as well as the
+specific blog post that talks about the
+dev container support there's a second
+blog post that's referenced there that's
+a much more advanced demonstration that
+actually shows multiple build and deploy
+targets if you really want to sink your
+teeth into this and finally if you want
+to get in touch with us you can always
+reach us at that email address thanks a
+lot

@@ -1,0 +1,391 @@
+hey everyone welcome to simply launch
+youtube channel today we will be talking
+about an interesting topic that is c
+weight but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with the agenda
+for today's session
+first we will define what exactly c
+sharp weight is and which header file
+and the assembly we use to define c
+sharp weight later
+the time it takes to complete execution
+is defined as c-sharp weight the name
+space or library used to declare c-sharp
+weight is system dot threading task and
+the assembly used to declare weight and
+c-sharp as system dot runtime dot pll
+we'll look at some
+c-sharp weight overloads in our next
+topic so five types of c-sharp weight
+overloads are disabled
+first we have a wait time span second we
+have a weight cancellation token third
+we have c sharp weight in 32 fourth we
+have weight in 32 cancellation token and
+finally we have a weight int 32
+cancellation token
+let's try to define all five c sharp
+bait overloads so the first overload is
+the wait time span defined as waiting
+for the task to finish execution within
+a given time interval the second
+overload we have is a weight
+cancellation token defined as waiting
+for the task to finish its execution if
+a cancellation token is cancelled before
+the task is completed
+the weight is terminated
+the third overload is weight in 32 which
+states that wait for the task to finish
+execution in each number of milliseconds
+the next overload c-sharp wait function
+is defined as waiting for the task to
+finish execution the weight is
+terminated if a timeout interval expires
+or a cancellation token is cancelled
+before the task is completed the fifth
+and the final overload of c-sharp weight
+is weight
+the wait for the task to finish
+execution
+now in this tutorial we'll go through
+all the five of these overloads in a
+great detail complete with the code
+examples
+so first as shown on my screen
+we have the wait time span
+the parameters we use for the wait time
+span are timeout and time span
+representing the number of milliseconds
+to wait or minus 1 milliseconds to wait
+indefinitely
+the return type for this wait time span
+is boolean
+which will be true if the task has
+completed within the time limited
+otherwise false
+next i will talk about exceptions used
+in the wait time span so we use the
+three exceptions in wait time span first
+we have an object disposed exception
+which indicates that the task has been
+disposed of
+the second exception is the argument
+order fringe exception used when the
+timeout is less than -1 milliseconds
+representing an infinite timeout or the
+timeout exceeds maximum value
+the third exception is an aggregate
+exception used when the assignment was
+cancelled a task cancelled exception
+object or an exception thrown during
+task execution can be found in the inner
+exceptions collection
+the information about the exception or
+exceptions is contained in an inner
+exceptions collection
+now we will have some information about
+wait time span wait time span is a
+synchronization method that causes the
+calling thread to wait for the current
+task instance to finish until one of the
+following condition is met that is task
+is met successfully
+task is cancelled or an exception is
+thrown you handle an aggregation
+exception exception
+in this case
+timeout interval has expired the current
+thread resumes execution and the
+method returns false in this case next
+examine the wait time span code
+now on my screen we have an example for
+the wait
+the following example begins with a task
+that generates 2 million random integer
+ranging from 0 to 100 and computes their
+mean
+the wait time span method is used in
+this particular example to wait for the
+application to finish within 120
+milliseconds
+if the application finishes normally the
+task displays the sum and the mean of
+the random numbers generated if the
+timeout interval expires the example
+displays a message before exiting
+now let's execute this code and see the
+output
+so there you go the code got
+successfully executed and the total sum
+of the numbers has been displayed here
+and the mean value of the numbers has
+been displayed here now with that let's
+get back to the presentation next as
+shown on my screen we have weight
+cancellation token with the parameter
+cancellation token defined as while
+waiting for the task to finish keep an
+eye out for cancellation token next we
+have written type which is void use
+written type word to indicate that
+method or a local function does not have
+a written value
+finally we have exception handling
+finally we have exception handling the
+first exception is operation cancelled
+exception the cancellation token was
+deactivated the second exception is the
+object disposed exception used when the
+task has disposed off the final
+exception handling is aggregation
+exception which is used for cancelled
+assignments
+now we have some important information
+about a weight cancellation token weight
+cancellation token generates a cancelled
+weight which causes the current threat
+to wait until the following events occur
+one the task has completed and next the
+cancellation token has been revoked in
+this case
+the call to the weight cancellation
+token method throws the operation
+cancelled exception now let's try to
+execute an example based on weight
+cancellation token
+the following example shows how to use a
+cancellation token to cancel waiting for
+a task to finish the cancellation token
+source is called when a task is launched
+the cancel method is used to cancel any
+of the token's source cancellation
+tokens followed by two second delay it
+should be noted that the task has not
+been passed the cancellation token and
+thus not cancelable
+the application thread calls the task
+the wait method is used to wait for the
+task to finish but it is cancelled once
+the cancellation token is cancelled and
+an operation cancelled exception is
+thrown
+the exception handler locks the
+exception and then sleeps for three
+seconds
+as the example output demonstrate the
+delay allows the task to complete in a
+run to complete state
+now let's execute the example
+so there you go you can see the weight
+has been cancelled task is running and
+task ended delay
+and you can see the rand 2 completion
+exception has been thrown
+now let's look at the third overload of
+c sharp weight which is int 32 as shown
+on my screen
+we have a parameter called milliseconds
+timeout in 32 defined as the amount of
+time to wait in milliseconds or and
+finite that is -1 to wait indefinitely
+the next return type is boolean which
+returns true if the task was completed
+within the time limit otherwise it
+returns false following that we have
+exception handling so we use three
+exception handlers here first we have
+object disposed exception the task has
+been completed the second exception
+handling is argument out of range
+exception which is defined in
+milliseconds the timeout in a negative
+number other than minus 1 representing
+an infinite timeout
+third we have an aggregate exception
+defined as the task was cancelled the
+task cancelled exception object is found
+in the inner exceptions collection an
+exception was thrown during the task
+execution the inner exceptions
+collections contain information about
+the exception or exceptions
+some critical considerations for
+weighting int 32 token
+weight in 32 is a synchronization method
+that causes the calling thread to wait
+for the current task instance to finish
+until one of the following conditions is
+met the task is completed the task is
+cancelled or an exception is thrown you
+handle an aggregate exception in this
+case
+the milliseconds timer interval has
+expired the current thread resumes
+exception and the method returns false
+in this case now let's execute an
+example based on
+weight in 32 the following example
+begins a task that generates 2 million
+random integers ranging from 0 to 100
+and computes their mean the weight in 32
+method is used in this example to wait
+for the application to finish within 120
+milliseconds if the application finishes
+normally the task displays the sum and
+mean of the random numbers generated if
+the timeout interval expires the example
+displays a message before exiting
+now let's execute the program and see
+the output
+so there you go the total of random
+numbers generated between 0 200 is here
+which is the split over here which is 10
+lakhs 11 454 and the mean is 50. now the
+timeout expires and it is 20 lakhs
+now let's discuss the next one
+which is
+the fourth overload int 32 cancellation
+token
+the parameters for this overload are
+cancellation token and n32 which are
+already defined
+the next we have a boolean value
+that returns true if the task is
+completed within the time limit
+otherwise returns false following that
+we have exception handling the first
+exception to be handled is the operation
+cancelled exception which is thrown when
+the cancellation token is cancelled
+when the task is disposed of the second
+exception is object disposed exception
+the third exception is the argument out
+of fringe exception which is thrown when
+the milliseconds timeout is a negative
+number other than minus 1 which
+represents an infinite timeout finally
+when the task is cancelled we got an
+aggregate exception the task cancelled
+exception object can be found in the
+inner exceptions collection an exception
+was thrown while the task was being
+carried out the information about the
+exception or exceptions is contained in
+the inner exceptions collection
+let's look at some key points
+about the weight cancellation token in
+32
+weight in 32 cancellation token is a
+synchronization method that causes the
+calling thread to wait for the current
+task instance to finish until one of the
+following conditions is met the task is
+completed the task is canceled or
+exception is thrown you handle an
+aggregate exception in this case the
+cancellation token has been deactivated
+the call to the wait in 32 cancellation
+token method throws an operation
+cancelled exception in this case the
+milliseconds timeout interval has
+expired and the current thread resumes
+execution and the method returns false
+in this case
+now let's look at an example based on
+end 32 cancellation token
+the weight in 32 cancellation token
+method is used in the following example
+to provide both a timeout value and a
+cancellation token that can be used to
+end the wait for a task completion a new
+thread is started and the cancellation
+token method is executed which was us
+before calling the cancellation token
+source to cancel the cancellation tokens
+we use the cancel method the task is
+then launched after a 2 second delay
+the wait method is then called to wait
+for the task completion and is provided
+with both a brief timeout value and
+cancellation token
+now let's try to execute this program
+and see the output
+as you can see the program got
+successfully executed and about to wait
+completion of task 3 cancel the
+cancellation token from thread 7
+weight completed normally false and the
+task time is still running
+now finally we have the fifth and final
+overload which is the wait function as
+shown on my screen there are no
+parameters for this overload and the
+return type is set to boolean use the
+return type to void to indicate that the
+method or local function does not return
+any value
+finally we have exception handling for
+the wait function which is object
+disposed exception
+and thrown when the task is disposed of
+the second exception is an aggregate
+exception thrown when the task is
+cancelled a cancelled exception object
+can be found in the inner exceptions
+collection or an exception was thrown
+while the task was being carried out the
+information about the exception or
+exceptions is contained in the inner
+exceptions collection
+now let's look at some points about the
+wait function
+the wait function is a synchronization
+method that tells the calling thread to
+wait until the current execution is
+finished
+if the current task hasn't started yet
+the wait method removes it from the
+scheduler and executes it in line on the
+current thread
+if it is unable to do so or if the
+current task has already begun execution
+it blocks the calling thread until the
+task is finished for a better learning
+experience let's go and execute a code
+demonstration of the wait function
+the following example begins a task that
+generates 2 million random integers
+ranging from 0 to 100 and computes their
+main the wait method is used in this
+example to ensure that the task is
+completed before the application is
+terminated now let's execute the code
+and see the output
+so there you go the code got
+successfully executed and the output is
+displayed on the screen
+let's get back to the presentation
+and with that we have come to an end of
+this video
+if you have any queries regarding any of
+the topics covered in this session or if
+you need the code that we have executed
+in this session then please feel free to
+let us know in the comment section below
+our team of experts will be happy to
+resolve all your queries until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

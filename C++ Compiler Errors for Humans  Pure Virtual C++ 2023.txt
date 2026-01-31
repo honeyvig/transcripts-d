@@ -1,0 +1,814 @@
+welcome everybody to Pure virtual C plus
+2023 this is our fourth year running
+it's a free annual virtual C plus plus
+conference for the whole C plus plus
+community and today we have five talks
+for you we have myself who's gonna start
+off with C plus plus compiler errors for
+humans then we're gonna have Jim Radigan
+on address sanitizer
+um with the continue on error mode uh 20
+van air is our guest speaker for today
+who will be talking about value-oriented
+programming in c plus uh Cena mckinja
+and David Lee will talk about productive
+cross-platform and game development in
+visual studio and then Gabriel dos race
+is going to finish us off with build
+time reflection with C plus in year
+2023.
+um I will have chat open during my talk
+so I can see all of your comments seeing
+hey everyone feel free to say hi tell us
+where you're coming from and uh I'm
+gonna kick us off with my session on
+compiler errors
+so for those of you who don't know me
+I'm Sai brand I am
+um the CBS plus team at Microsoft's
+developer Advocate and today I'm going
+to talk to you about how we can make
+simple spot compiler errors for humans
+rather than for robots or something else
+so to start off with I wanted to
+um
+give you a quote from one of the from
+someone who runs the Diagnostics team on
+Rust
+says compilers are an error reporting
+tool with a code generation side gig
+now you may agree with this you may not
+but
+the important thing is that error
+reporting matters the compilers have to
+tell us
+how we can solve our issues and to make
+us understand what we've done wrong
+otherwise we can't get anything done
+so with that in mind this is what I'm
+going to be talking about today
+what makes a diagnostic good I reckon we
+judge Diagnostics what criteria can we
+use how can we improve them
+what do other languages do people in
+chat are already talking about rust and
+how we can learn from rust and I'll talk
+a little bit about that and see
+what other people in the industry are
+doing and how we can learn from them
+I'll talk about the developments our
+team has been making in msvc on compiler
+errors
+I'm going to talk about some more work
+we're planning in the future we're doing
+some prototyping work at the moment and
+then if we have time we will have some q
+a feel free to drop questions in in the
+YouTube comments
+just while I'm talking I will keep an
+eye on them if you do want to get
+involved in the conversation please go
+over to AKA dot Ms slash pure virtualcpp
+slash watch or go to the visual studio
+YouTube channel and you can join in the
+chat that way
+okay so what makes a diagnostic good
+I asked myself this question and spend a
+bunch of time thinking about it and then
+I thought well maybe I could write a
+paper which talks about
+what makes a diagnostic good what are
+people in Academia studying in
+Diagnostics what are people across the
+industry doing in production compilers
+so I did exactly that I wrote this paper
+Concepts error messages for humans this
+was focused primarily on Concepts but it
+is applicable more generally to compiler
+errors and I sent this to wg21 which is
+the the iso C plus plus committee
+and you can go read it there if you like
+uh a lot of what I'm talking about today
+comes from this paper
+um so you can go to wg21. link
+p2429 to read all of the details it's a
+fairly lengthy paper but my idea was I
+wanted to prompt discussion about what's
+desirable and feasible for improving the
+Diagnostics by C plus plus tooling so I
+spent
+days weeks
+um reading as much academic literature
+as I could find on compiler errors
+looking at uh production compilers from
+across the industry
+and seeing what I could clean
+but first on the importance of compiler
+Diagnostics I had that quote the start
+that there are reporting tools of the
+code generation side gig I did find a
+paper which did empirical analysis into
+the importance of Diagnostics using
+actual experiments with students and
+they noted that programmers do read
+error messages as much as you might see
+people on stack overflow
+fitting forth a question where the error
+message tells them exactly what's gone
+wrong programmers do read their error
+messages
+furthermore the difficulty of reading
+these messages is comparable to the
+difficulty of reading source code now
+reading C plus source code is a bit more
+difficult than some other languages and
+our error messages are kind of similar
+it's generally more difficult to read a
+C plus plus compiler error than
+something coming from
+um from many other languages
+difficulty reading error messages
+significantly predicts task performance
+I.E if you're struggling with your error
+messages you're going to struggle to get
+anything done
+and then participants allocated a
+substantial portion of their total task
+to reading error messages people spend a
+bunch of time reading these things and
+trying to work out what they've done
+wrong so the easier we can make that the
+better
+so I'll talk about a few of the criteria
+on which Diagnostics can be judged
+one is cognitive load
+how much does this diagnostic weigh on
+the mind
+and in C plus plus we're great at this
+yeah we get compiler errors like this
+uh if I expand this out you can see it's
+basically just a massive template
+instantiation failure
+ah this is the kind of thing where you
+know we we run compile we see this in
+our
+um in our terminal output and we just
+want to go to sleep for
+or go learn a different language
+it's not great
+but what are some of the things which we
+can do to uh lower cognitive load if I
+find one paper which specified that we
+can lower cognitive load by placing the
+relevant information near the offending
+code this could mean uh printing out
+some source code like interspersed with
+our error it could mean putting our
+error directly in the editor with some
+squiggles or something like that
+we can also lower cognitive load by
+reducing redundancy trying not to repeat
+ourselves we can also lower cognitive
+load by reducing redundancy trying not
+to repeat ourselves
+and then finally we can use multiple
+modalities to provide feedback I.E we
+can use the editor window we can use uh
+an output window we can have an error
+list with different ways of telling the
+user what has gone wrong because
+different people will want to get this
+information in different ways the more
+ways which we can reasonably
+communicate in an effective manner the
+better
+context
+we need to know
+as much about the errors as we can
+I read this paper from 1974 people have
+been studying this stuff for a long time
+what the compiler should tell the user
+and says one of the hardest things to
+remember in designing error Diagnostics
+is you don't know what the error was the
+compiler knew what was wrong it would
+just help
+some pieces of information have been
+found to be inconsistent but it cannot
+be said with certainty where the error
+lies maybe in some situations the
+compiler can say hey maybe this is what
+you meant but in general it's not
+possible
+it also has this piece of advice the
+safest safest strategy is to describe
+the symptoms as clearly as possible
+before attempting to make any
+suggestions about the nature of the
+error
+so making a suggestion is all well and
+good hey maybe semicolon here hey maybe
+you meant this function
+but in general it's best to give the
+user as much information
+as they need to diagnose the error
+before then making any suggestions
+foreign
+Concepts what would users need to know
+it's like an example of how we're
+thinking about what context to give our
+users well I think the one thing to know
+which constraints failed and why if you
+decorate some function with some
+function template with a constraint
+maybe you have multiple constraints so
+you need to know which one failed and
+why it failed what was found to be the
+issue furthermore if you have an
+overload set you have multiple
+candidates considered which ones were
+considered and why was each candidate
+discarded because if we just look at one
+of them well maybe we didn't even mean
+to call that overload we need to look at
+the entire set and understand why they
+all failed
+readability readability with this really
+annoyed me I looked at so many papers in
+about compiler errors and all of them
+were like you have to make your error
+messages readable and none of them said
+what that means none of them said like
+here's how to increase the readability
+of your error messages or or here's the
+criteria we're judging readability by
+um it's very frustrating but I did find
+a paper which I think found some some
+good ways to judge this one said the
+experts non-experts and students assess
+the readability of messages the
+readability of messages differently I if
+I have some domain knowledge some
+specialized domain knowledge maybe a
+given error is more readable to me
+because I can quickly understand oh well
+there's some complex Concepts here but I
+already have an understanding of this
+yes this video is live I'm seeing your
+comments
+um
+so if I have that domain knowledge it's
+more readable to me however if I'm a
+student if I'm coming at this without
+that necessary knowledge then I'm having
+to parse a lot of
+um complex
+Concepts in order to understand this
+message therefore it's less readable
+error messages from different languages
+are perceived to have different levels
+of readability which we're very familiar
+with the C plus plus programmers
+shorter messages tend to be more
+readable if I don't have to parse a huge
+amount of text on the screen then it's
+going to be more clear and
+understandable to me
+interestingly for me this one messages
+phrased positively tend to be more
+readable
+um so trying to avoid negative phrasings
+actually makes it easier for us to parse
+our errors
+and then messages with more jargon and
+acronyms tend to be less readable if I'm
+writing a C plus plus program and I see
+an error with Sven a in it or something
+maybe I'm going to know what that means
+but someone else will not
+um
+so you need to think about who your
+audience is who you're writing your
+errors for
+going back to that positive phrasing
+positive tone I found this delightfully
+named paper how should how a computer
+should talk to people from 1982
+it says we learn about and use the
+computer more effectively when we feel
+secure and experience Success With It
+think about times where you know just be
+having a great day getting a ton of code
+out there when it's all working you feel
+great about it if you're just banging
+your head against error Messengers all
+day not so great
+what helps us feel at ease with a
+computer program or a system
+friendliness
+or put it in a slightly different way
+from the folks on the elm team
+compilers should be assistance not
+adversaries I really like this quote
+this is something to live by either our
+compilers should help people it
+shouldn't be something which you're
+constantly fighting against to convince
+that your code is valid they should be
+helping you express what you want
+okay and then there's a bunch of other
+ones
+um
+providing examples if the compiler says
+hey you've got this error uh here's
+something which presents the same error
+but is maybe a little bit more cut down
+because often there's a lot of context a
+lot of code that we're having to deal
+with it's not just the pure error itself
+having a small distilled example can
+really help
+providing
+um Solutions and hints saying hey maybe
+you meant this but maybe you had a typo
+in your function call maybe you missed a
+semicolon this kind of thing
+Dynamic interaction being able to say
+I'd like more information about this
+error please and have the compiler delve
+deeper into the issue
+logical argumentation this means walking
+you through
+um
+what the compiler thought when it was
+diagnosing your issues saying hey you
+can
+um you can't call this function or this
+overload set because all of these failed
+and here's why each of them failed
+walking you through the steps you need
+to know to say okay this is why this
+error happened if you don't have that
+context that logical argumentation it
+can become very difficult
+the topic of this is on compiler errors
+for humans
+diagnosis time when are we diagnosing
+errors are we doing it while the user is
+typing or are we doing it when they run
+a build are we doing it in CI there's a
+bunch of different times where we get
+back these errors and thinking about
+which areas we're producing when can
+help aid in lowering cognitive load
+all right let's talk about other
+languages
+talk about l
+so element is a functional language for
+the web it's very quiet
+I've played around with it a bit it's
+really really fun and this function
+um well this program just says that our
+main function is print 4 to the screen
+using this text function
+however there's an issue here text takes
+a string not an integer we need to
+convert the integer to a string so
+hopefully our diagnoses this for us hey
+Kenya
+it says the first argument text is not
+what I expect note that
+um
+first person pronoun in there not what I
+expect the compiler again talking about
+itself as a
+as a being some people like that some
+people don't I I think it's kind of fun
+um it helps to it aids that friendliness
+aspect that positive tone
+um then it gives us our context it gives
+us our our code right there helping
+lower cognitive load we don't have to
+jump around
+it says this argument is a number of
+type number
+but text needs the first argument to be
+a string so this is logical
+argumentation telling us exactly what
+has gone wrong and why and then it gives
+us a hint
+as try using string Dot from it to
+convert it to a string
+very helpful this is a good error I
+think very readable very understandable
+another one from Elm which I found is
+this tweet thanks Elm Lang for the most
+useful error message I've ever seen
+and it says it's a little bit more
+complex this type Alias is recursive
+forming an infinite type this is like if
+you are in C plus and you have a struct
+which you've tried to contain in itself
+not going to work
+um so it has a type Alias and so when I
+expand a recursive type Alias it just
+keeps getting bigger and bigger so d
+aliasing results in an infinitely large
+type try this instead and then um you
+can use a create a new a new type
+instead of using a type Alias and this
+solves the problem
+then it says this is kind of a subtle
+distinction I recommend the naive fix
+but you can often do something a bit
+nicer so I'd recommend reading more at
+this URL so this is giving you the
+opportunity to go read more about
+exactly this issue
+it's giving you a suggestion it's giving
+you more details about specifically the
+error which you're
+um you're looking at I really like this
+then I want to look at recent ml recent
+ml is like a recent taxing of all camel
+basically
+um this is what their errors used to
+look like they did a bunch of
+refactoring and it's it's kind of fine
+it says you know this expression has
+some type but we expected something of a
+different type
+um because there's an incompatibility
+but it's kind of just a blob of text
+it's it's not very easy for me to read
+so what they did is they pretty much
+kept the same content of the errors they
+just
+changed how they're presenting it to the
+user
+so this is their old version and then
+the new version looks like this we found
+a bug for you and again lowering
+cognitive load by placing that code
+right next to the error so you can see
+exactly what it's talking about
+then they thought about how to format
+this nicely so it's readable they
+thought about making sure that
+everything is well defined
+um visually the they're using short
+blocks that there's some coloring there
+to Aid in comprehension
+um it's not like fundamentally different
+from the error which was presented
+before but I think it's
+many times better many times more
+readable understandable lower cognitive
+load
+I want to spend a bit of time on this
+rust code
+so
+you don't have to understand rust I'll I
+will explain this basically what's doing
+it's taken in Array of three integers
+zero one two
+it's taking an iterator into it which is
+like a range in C plus and then it's
+trying to intersperse the value 100
+between all of these
+then what it's doing is trying to
+partition this result in place so not
+allocating more memory uh between odd
+and even
+however there's a couple of issues with
+this code
+one is the partition in place requires
+uh bi-directional or double-ended
+iterator and intersperse is not one
+furthermore partition in place because
+it's doing it in place it requires the
+range to the iterator to be mutable and
+interspersed is not mutable so there's
+two issues there and ideally we want to
+get diagnoses of both
+and that's exactly what Russ does so
+split this up into a few slides
+focusing on that first one
+um
+here we go the trade bound intersperse
+double-ended iterator is not satisfied
+okay and it shows us exactly in the
+where in the code it has even has those
+little Chevrons underneath to point out
+exactly the function call where this
+happened and says the trait double-ended
+iterator is not implemented for
+intersperse and the this is a problem
+because it's required by abandoned
+partition in place
+so this is pretty readable it's giving
+us a lot of context and logical
+argumentation
+then it diagnoses our next issue says
+furthermore we expected this
+interspersed thing to be an iterator
+that yields a mutable reference but it
+yields a regular reference to an integer
+it says the type's different mutability
+at this position and again that we
+expected a mutable reference but found a
+regular one
+then and this is the bit which I find
+really cool it gives us more information
+about
+um our call chain
+says that the method called chain might
+not have had the expected Associated
+types
+so just in case you had expected
+something to be mutable like halfway
+through it actually walks you through
+the call chain not line by line but
+expression by expression telling you
+what these types are
+which I find really really cool like it
+tells us that the the array is of type
+um an array of three integers that
+iterate your item is a regular reference
+here there remains a regular reference
+through the call to intersperse and then
+through the call to
+um
+into itter
+so this gives us really really nice
+logical argumentation
+and then finally it tells us okay we're
+aborting due to our previous two errors
+some errors have more detailed
+explanations and you can go and find out
+more about these so this is giving us
+that Dynamic interaction
+okay I want to talk about compiler
+improvements which we have been making
+in msvc
+let's look at some code so I've got some
+CBS Plus Code I've got a dog and a cat
+and of course I want to be able to pet
+my dog and my cat
+let's say I also want to be able to call
+pet on some other types which are
+defined elsewhere
+maybe I want to be able to call pet as a
+non-member function as long as a type
+has a DOT pet member function so I could
+express this using C plus 20 Concepts
+like so
+say we have a concept petable
+um don't really have to be able to read
+Concepts that this basically says
+something is petable some type T is
+petable so long as given an object T of
+this type you can call T dot pet
+foreign
+and then we have a function template
+down here called pet which we say
+we accept anything which is petal which
+satisfies this petable constraint okay
+what happens if we call Pet zero
+zero is neither a dog nor cat nor does
+it have a DOT pet member function so
+this is an error
+this is what we used to print out so pet
+none of the two overloads could convert
+the argument types it could be the cat
+one it could be the dog one it can't be
+the dog one because you can't convert
+into dog because there's no relevant
+Constructor it doesn't tell you what was
+wrong with the cat one it doesn't even
+mention the function template
+if we get rid of the cat and dog
+overloads and just keep that function
+template it says that uh we couldn't
+call Pet it could be that template
+version but the associated constraints
+are not satisfied it doesn't tell us
+what constraint wasn't satisfied doesn't
+tell us why
+uh that's all the information we get
+so this is kind of where we were with
+the old version with overload resolution
+like sometimes it would only list the
+last candidate sometimes it would list
+all the candidates but not explain why
+they all failed sometimes it would often
+ignore template candidates like you saw
+just there
+uh with constraints we would just say
+hey constraint not satisfied you
+wouldn't get any details about why and
+additionally sometimes the line
+information was correct or missing
+so for this we've been focusing on
+context and logical argumentation and
+trying to fix all of these issues so now
+if you do this you get an error like
+this which says
+couldn't call Pet it could be the cat
+version but was not valid or it could be
+the dog version not valid because of
+these reasons and then for the template
+version it says well the associated
+constraints aren't satisfied because
+petable intervaluated to false because
+the left adopt pet must be a class or
+structure Union but the type isn't so
+this is giving you all the necessary
+contacts you need to solve your issue
+one thing to note here is that there is
+there's a hierarchy here there's a
+structure which isn't necessarily
+represented in this textual format it
+looks something like this where we have
+our top level entry is our our no
+overloaded function convert the argument
+types and then we've got our different
+overloads the cat the dog the template
+version and we've got all of the
+associated reasons those couldn't be
+called
+so there's a structure here which isn't
+represented just in the text so what
+we've gone and done is supported
+outputting serif information serif is a
+json-based format for
+um code analysis errors and compiler
+errors and it looks something like this
+don't want to spend too much time on
+this but uh basically we have a message
+that says well no overload function
+could convert the argument types and
+then we have a related locations field
+and that is where we can represent our
+hierarchical information
+so this can now be produced by our
+compiler and we're planning to use this
+for some future work
+so future work what we would kind of
+like to see this is just a mock-up for
+now it's something like this where in
+your error list we have we don't have
+all of that hierarchical information
+taking up space we put the top level
+entry in the error list and then there's
+a details field where you can click so
+if you you see an error and you're like
+okay well I want to dig deeper into this
+error you can click this problem details
+button and this will open up
+all of that hierarchical information so
+that you can navigate it and click
+around
+see your editor go to the correct place
+all kinds of stuff which you would
+expect and this gives you a way to
+navigate through your hierarchical
+errors
+very quickly I'm going to show you uh a
+demo of a prototype we have of this so
+this is basically what I had before I've
+you know I've got my dog and my cat
+types and my functions I've expanded
+this a little bit Now petable concept as
+well it's either has a member pet
+function or it tells you that there's a
+default implementation to use and then
+these are defined like as member pet
+says what you can call Dot pet on it and
+default petable says the T
+has some is petable static door member
+so then what happens if we try and pet a
+donkey well if I run a build here
+[Music]
+then
+there we go we get
+top level entry here
+and if I click on this then it opens up
+um
+my location here and my related
+locations so now I can step through this
+and I can say hey well it could be the
+cat version but I can't convert argument
+one from Donkey to cat why well because
+there's no user to find conversion
+operator available
+or it could be the um the template
+version but the associated constraints
+are not satisfied okay why well because
+petable donkey evaluates it to false
+okay why
+because because this is a disjunction
+both has member pet donkey and default
+petable evaluated to false okay why
+because pet is not a member of donkey
+and then we can click on this to see the
+definition of donkey
+so this gives you a really nice way to
+be able to navigate through very complex
+errors in a way which we simply
+haven't had before
+so that is
+I'll have to show for today if you have
+any feedback about this or things you
+would like to see in these kinds of
+features please let me know you can drop
+me an email at cybrand microsoft.com and
+this has been C plus compiler errors for
+humans thank you very much
+foreign
+okay we have two minutes scheduled and
+I've got I left a five minute leeway so
+we've got some time for
+um for Q a if anyone has any questions
+feel free to drop them in the chat
+and then we will move on to the next
+session
+this thing by the way has been a
+lifesaver for me remind me when to drink
+water because otherwise I just forget
+thank you
+and you can of course go and uh and look
+at my
+paper
+which is at
+p
+2429 wd21.link
+p2429 if you'd like
+more details
+I summarize a lot of the literature
+which I went through and have a lot of
+links to
+to academic papers if you'd like to to
+have a look how are you feeling so I'm
+feeling good
+I'm looking forward to the rest of the
+sessions
+what was the demo about the demo was
+showing
+um
+prototype work which we've been doing in
+Visual Studio to
+um surface these hierarchical errors and
+give you a better way of navigating them
+easier way to access our context and
+logical argumentation and comprehend
+your messages with less cognitive load
+[Music]
+just wait for a few more questions and
+then we'll move on to Jim's talk Jim is
+going to be talking about adjust address
+sanitizer and
+um
+then you continue on error support which
+is something I'm very excited about
+what sort of time scale are you looking
+at for preview
+so we still have some I can't share
+exact time scales but we still do have
+time to integrate
+um feedback from all you folks so if you
+for example looked up my
+um
+the mock-up here and immediately thought
+this is terrible for my workflow or
+something like that or if you looked at
+the the Prototype and saw ways which
+um
+you thought would work better for for
+the kinds of Errors which you're dealing
+with we have time to integrate that
+feedback so
+um please do let us know if you if you
+have any of that
+Rusty saying thank you for driving the
+effort to improve error messages please
+don't stop yeah uh it's not just me it's
+also um folks are clang in GCC have been
+doing a lot of great work in this area
+as well and and other folks on our team
+as well so this is a I think a an
+industry-wide effort to try and improve
+the state of
+of compiler errors in
+in C plus plus in which version of
+Visual Studio can we test this
+um so you you can test it right now
+um keep your eye out on the the visual
+Studio C plus plus blog for
+um
+for when we we announce the the
+availability or also in the the release
+notes for official Studio well I think
+that
+we are good for questions so we can move
+on to the next talk

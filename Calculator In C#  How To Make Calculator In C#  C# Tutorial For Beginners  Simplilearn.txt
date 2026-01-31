@@ -1,0 +1,193 @@
+hey everyone i am bravo khandalwal and i
+welcome you all to simply launch youtube
+channel
+in this session we will learn to create
+a basic calculator using c sharp
+but before we begin make sure you
+subscribe to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so let's get started with the demo
+we will be using a visual studio to
+create it
+at the end of this tutorial you can
+expect a calculator to look like this
+we will be programming these buttons to
+give an arithmetic capabilities to this
+calculator
+now let's get started with the
+calculator let's move on to our visual
+studio
+we will start by creating a new project
+while creating a project we will select
+windows app form and then we will get
+this window
+let's change the windows label from form
+1 to calculator
+now we will start with adding some
+labels to understand the gui
+so we will start by getting a toolbox
+you can get that from going to view
+and selecting toolbox
+here on search toolbox write label
+we will use these labels
+let's change the text
+to calculator
+and let's give it some color
+highlight
+and some font
+like mono type cursor italic bold
+and of size 20.
+now
+we will start by adding some more labels
+the toolbox
+label
+label
+will show
+the value one
+we will increase its size to 12 and bold
+we will make similar labels
+by simply copy pasting
+we will get three of these labels
+we we'll change the second label
+to
+value 2
+and the third label as output
+now increase
+this size
+now
+we will add some text box
+this text box will be used to get inputs
+for value one
+let's increase its one size
+from 8
+to 12.
+let's give it bold
+okay
+now we will copy paste the same text box
+for value 2
+and we will add another text box for
+output to get the output for this value
+now let's add some buttons to showcase
+the arithmetic capabilities
+so button
+we will have its size at 12
+to show it better
+and we will change the label
+from button 1 two plus
+let's resize this stack button
+let's give it bold as well
+now we will replace this button to get
+different buttons
+one for the subtraction
+one for multiplication
+one for
+division and one for percentage
+let's change the name labels as well
+minus
+division
+multiplication
+and percentage
+now let's start with some coding
+we will first code for the button
+plus
+we will start with
+getting some text from the value 1 and
+value 2.
+so
+double
+val 1
+is equals to
+convert
+dot 2 double
+text box 1
+dot
+text
+here we are taking them as double to get
+them the flexibility of decimal numbers
+we will do that for the same for the
+value 2 as well so double
+val 2
+is equals to
+convert textbook to text
+now
+double
+and we will have sum
+equals to
+as val one
+plus
+val2
+since these text box only recognize the
+string values so we will have to convert
+this sum from double to string
+so
+text box 3
+dot text
+is equals to
+sum
+dot
+tostring
+open parenthesis
+now let's code for the negative one
+we can just simply copy paste the above
+code
+because it will be
+almost similar
+we will do some tweaks
+for the difference
+so
+if
+here we will get minus
+and here it will change to f again
+let's do the same for the multiplication
+division and percentage
+sort of division
+ctrl v
+let's give it
+division
+let's do that for multiplication
+product
+your product
+and at last
+for percentage
+it will be percent
+here we will group them
+division
+and bracket
+and then multiply it with 100
+to get the
+percentage we will change the step to
+percent
+now let's compile
+and see if this code works
+this will take some time
+and here is our calculator
+let's give it some values to check if it
+works fairly
+let's take 5
+and 10.
+let's do addition
+yes it is giving us 15 let's do a
+subtraction yes 5 minus 10 is minus 5
+a division it is 0.5 a multiplication is
+50. a percentage it is also 50 so let's
+take some other example let's change the
+value to 200
+and see
+yes it is giving us five percent
+now let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

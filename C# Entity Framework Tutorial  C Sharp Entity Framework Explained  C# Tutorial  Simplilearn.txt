@@ -1,0 +1,474 @@
+hey everyone i am bravo kandaval and i
+welcome you all to simply learns youtube
+channel today we will talk about c-sharp
+entity framework but first let me remind
+you that we have daily updates on
+numerous technologies so if you are a
+tech geek looking for the latest
+technological innovation then try
+subscribing to our youtube channel and
+don't forget to hit the bell icon so you
+will never miss an update on semteron's
+youtube channel
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin our session with a
+discussion on what is an entity
+framework
+then we will have a brief discussion
+on the need for an entity framework
+following that we will try to explain
+various features of entity framework
+then we will have a discussion on entity
+framework architecture
+where we will be defining the entity
+data model
+finally we will try to implement the
+entity framework in the visual studio
+now
+let's start with what is entity
+framework
+an integrity framework is a free and
+open source object relational mapper
+that is orm that allows dotnet
+developers to interact with databases
+using dotnet objects
+it allows developers to deal with data
+using domain specific objects rather
+than the underlying
+database tables and columns where the
+data is kept
+when working with data developers may
+work at a higher level of abstraction
+with the entity framework allowing them
+to construct and manage data oriented
+systems with less code than a
+traditional program
+it also eliminates the requirement for
+most data access layers
+that developers typically have to write
+now after understanding c sharp entity
+framework let's discuss what is the need
+for an entity framework
+first an orm is an entity framework and
+the goal for the orm is to boost
+developers efficiency by minimizing the
+number of duplicate tasks in the program
+next
+if you are inquiring
+we may use link to entity to specify our
+queries against the domain of the object
+then entity framework will run the
+required query in the database and then
+materialize the results into domain
+object instances per use with the app
+at last we have entity framework that
+can construct and execute the
+appropriate database commands for
+reading or writing data in the database
+now let's go over the features
+of c sharp entity framework
+first we have cross platform
+an entity framework core is a cross
+platform framework that may be used on
+windows linux and mac
+next we have modeling
+an entity framework generates an edm
+that is entity data model based on plain
+old clr object entities with get set
+data types attribute
+it employs the paradigm of querying and
+saving entity data to the underlying
+database
+after that we have query
+an entirely data framework
+enables us to get data from the database
+using link queries these link queries
+will be translated by the database
+provider into the database specific
+query language that is
+sql for the relational database
+an entity framework also enables us to
+run row sql queries on the database
+then we have change tracking
+an entity framework maintains track of
+changes to instances of entities
+property values that must be published
+to the database
+then we have
+saving
+when we call sync changes function an
+entity framework performs the insert
+update and delete commands to the
+database based on the changes that
+occurred to the entities
+the asynchronous save changes async
+function
+is also available in an entity framework
+after that we got concurrency
+entity framework by default employs
+optimistic concurrency to prevent
+another user from overwriting
+modifications
+made when data is retrieved from the
+database
+next we have transaction
+an entity framework streamlines
+transaction management when requesting
+or storing a data
+it also allows you to personalize the
+transaction management
+after that we have caching
+an entity framework comes with first
+level of caching
+by default as a result repeated queries
+will return data from the cache rather
+than the database
+then we have built-in conventions an
+entity framework adheres to the
+standards of configuration programming
+pattern and contains a set of default
+rules that set up the entity framework
+model automatically
+next we have configuration an entity
+framework allows us to configure the
+entity framework model by overriding the
+default conventions with the data
+annotation property or the fluent api
+at last we have migration
+to establish or manage the database
+schema entity framework provides a set
+of migration commands that can be
+invoked on the enugate package manager
+console or the command line interface
+next let's discuss the entity framework
+architecture
+now let's go over the entity data model
+we have conceptual model we have storage
+model
+and mapping
+let's discuss them one by one
+first up conceptual model
+the model cases and their connections
+are represented in the conceptual model
+the database design table has no bearing
+on the conceptual model
+next we have storage model
+the database design model
+contains the storage model which can
+include
+tables views store procedures
+their associations and keys
+at last we have mapping
+mapping the information describes how
+the conceptual model is transferred to
+the storage model
+next
+let's try to implement this individual
+studio
+now let's try to create a new project
+we will use
+asp.net web application
+we will click on next
+then we will name this
+as
+simply
+learn
+ef
+then we will click on create
+make sure you are using dotnet framework
+4.7.2 and we will click empty
+and create
+we'll wait for it to create the project
+now
+we will
+right click
+on this and click on manage and you get
+packages
+we will go to browse
+and search
+entity
+framework
+work
+and we will take this first one this
+entity framework
+we will install
+the 5.0.0 version
+so click on
+install you click on ok
+and i accept
+and it is installed
+now let's close this
+now let's connect to a database
+so for the server we will use
+local db
+then we will have
+ms sql
+local
+tv
+and for the database name
+you will have
+simply
+learn
+ef
+db
+and we'll click on okay
+we will wait for it to make the
+connection to the database
+it is asking us
+to
+create it because it does not exist or
+maybe it exists but we don't have
+permission to say it so let's create our
+own
+just click on yes
+let's open it here we have table let's
+try to expand but there are none
+so right click on it
+and
+we will have a new query
+let's write the query
+so first we will go and write create
+table
+departments
+first one we will have an id
+and in parameter
+which is also primary key so we will
+have primary key
+here
+and we will give it identity as
+attribute
+then we will click comma
+then we will have nam
+and
+for its
+data type we will use anywhere care
+of size 50
+then we will also have a location
+this will also be
+an n where
+care
+of location
+of size 50.
+next we will also create a table called
+student
+student
+this will also have
+an id as a primary key so let's copy
+some of this
+since we will be using the same kind of
+things so we will have id
+we can have
+the first name
+ctrl c
+ctrl v then we can have
+last name
+make sure to add table here i forgot to
+add it
+that's right it was giving us those red
+lines
+then we can have a gender
+this will also be an n where
+50
+then we will have a fees
+and
+then we will have a foreign key that
+will be a department
+id
+this will be an end
+and
+a foreign
+key
+which references
+departments
+id
+now let's try to insert details in these
+queries i've already prepared some of
+these details let's cop let me copy them
+and here
+we have our queries
+let's go over them
+[Music]
+one by one
+so first we are inserting into
+departments a value of engineer
+and a location of block b as you can see
+we have
+we have already named these two
+properties this id will be automatically
+assigned
+and if you look closely since we only
+have three so it will go from one two
+and three
+now we have entries for the student
+table
+so now we will have first name
+last name
+gender the fees
+and which department id it is given
+so
+for one we have this
+engineering for three we have
+love oh sorry commerce then
+for
+two
+we have law
+so let's run these
+and as you can see one row was affected
+one row that means it has created the
+two tables
+so let's refresh that and here you can
+see two tables
+so show data
+we have this
+for student show data
+and we have these
+let's close them
+and
+once build this solution
+now we will right click here
+and add
+a new item
+we will go to data
+and select ado.net entity data model
+we will name this one
+as
+student
+model
+then we will click add we will select
+the first option from database
+we will click next
+our database is already created because
+we have already created so it is already
+selected here otherwise you can
+come here again and select on this new
+connection
+then we have we will we need to click on
+yes
+to save the connection settings in
+web.config
+let's change this
+we will have it as
+student
+tv
+context
+then we will click next
+we are using entity framework 5.0
+so we will select this and click next
+here
+we can expand on to this and we will
+select both of these
+then for the model
+namespace
+we can have something as simple as
+student
+model
+then we'll click on finish
+it will take some time to create it and
+here we have
+it is created
+and this is
+a student model this is what we call an
+entity
+data model
+our entity is department
+then in properties we have different
+things as id name and location then in
+navigation properties we have
+a student which is also called mapping
+of some sort
+these properties are what we have as a
+storage models
+now
+let's try to create a platform so we
+will right click here
+we will click on add a new item
+we will go to web and select web form
+we can leave the name as is we'll click
+on next
+let's close these references to make our
+lives easier
+now this is our
+form
+let's go ahead
+and
+go to view and open
+our toolbox
+here's our toolbox
+we will add something called grid view
+that's right it is the decision part
+and we also need
+an npt
+data source
+let's add this one also here
+now
+we will click on this design button
+first let's build it
+now we will go to design button
+now
+we will right click on entry data source
+and click on show smart tag
+we can either do that or we can just
+simply click on this button
+we will go to configure data source
+we will choose student db contacts
+default container as student db contacts
+click on next
+then we will select department
+use this and then finish
+then we will have this
+and we click on auto format
+we can choose any of these colors
+i will go for the professional
+and click ok
+next we will choose our data source
+and here we will click on
+add new column select template field
+and add it
+for the header text we will name it
+students
+then click on ok
+now we will add a template
+and we will add something called
+grid view
+now we will click on edit bindings
+we will go to customize bindings
+we will write it as eval
+and we will
+put it as do that
+and we will click ok
+now we will go to this
+and we will end
+template editing
+now what we will do is we will right
+click on this and go to properties
+let me change the camera position
+and here
+if you go down here
+then we have include
+here we will put it as students
+will save it
+now let's try and run it
+it is opening on chrome
+and here as you can see we have
+each department by name then we have
+location then we have a student tab
+which will have
+the different entries according to
+the work
+now let's close this and get back to our
+slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

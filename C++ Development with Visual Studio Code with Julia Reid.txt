@@ -1,0 +1,708 @@
+hi everyone my name is Julia I'm a
+program manager on the visual C++ team
+at Microsoft I focus specifically on the
+vs code C++ extension thank you for
+joining my session today I'm really
+excited to talk about how to use vs code
+for C++ development so let's go ahead
+and get started so I'll start by going
+over the topics that I'm going to talk
+about today one thing is I want to show
+you the things that you can do with vs
+code the beauty of vs code is that you
+can customize it to use it however you'd
+like
+whether that is strictly as a
+lightweight text editor or as a full IDE
+with built in debug support there are
+also a bunch of non C++ specific
+features that vyas code has such as the
+remote development extensions and the
+live share extensions so I'm going to
+talk a little bit about those today as
+well I will also talk about which tools
+we recommend for cross-platform
+development in BS code cross-platform
+development is a super popular scenario
+these days and vs code is a great option
+for that because it can be run on Linux
+Windows and Mac OS I will also talk
+about VC package today which is an open
+source cross-platform c++ package
+manager it is consistently reported that
+package management is a huge pain point
+for C++ developers we see this in the
+stack overflow survey results the ISO
+cpp survey results and more so I want to
+show you how you can use VC package to
+make managing your project dependencies
+easier across all platforms VC package
+also can be integrated with PS code
+which we will go over in the demo this
+part of the demo also includes a preview
+of an exciting new feature it has not
+officially been released yet so I'm
+going to show you what we have in the
+works and you can get a feel of what's
+coming
+with VC package and some enhancements
+you can expect to see in the near future
+so let's talk about the things that you
+can do with vs code as I mentioned it's
+up to you how extensive you want your BS
+code experience to be if you prefer to
+use it strictly as a lightweight text
+editor and take care of your building
+and debugging outside of es code that
+works if you would like to use as a full
+IDE it can do that too vs code has great
+C++ language support it has intellisense
+code completion a bunch of productivity
+features such as find all references
+rename go to definition and more you can
+build and debug your C++ projects in vs
+code it will find whichever compiler
+debugger you have installed on your
+machine we also have native C make
+project support in vs code as we
+recently started maintaining the C make
+tools extension C make is one of the
+most popular build systems for C++
+projects especially for open source
+projects and the C make tools extension
+makes it super easy to configure C make
+projects in vs code vs code has great
+remote development extensions as well
+this includes the SSH extension the
+containers extension and the wsl
+extension which is windows subsystem for
+linux finally I'll talk about the
+collaborative development features of BS
+code vs code has a live share extension
+pack which enables you to start a
+collaborative session from vs code share
+the URL to that session with anyone that
+you trust and then they can join that
+session from their instance of BS code
+on their machine and you can work
+together you can even do a collaborative
+debugging session alright so for my
+demos today I'm going to use the super
+tux project it is an open source classic
+2d game you can clone the github
+repository which is what I did and super
+tax has a great community of developers
+that
+contribute new levels to the game so
+it's a great open source project for
+demos because it is cross-platform
+alright let's get started alright so I
+have my super tux project open in vs
+code on my laptop right now and I'm
+going to show you some of the cool C++
+language features that we have in BS
+code so let's start with the final
+references I want to find all references
+of this end state variable here and my
+bad guy header file so I can just do a
+right-click and then select find all
+references or you can do shift out f12
+if you prefer to use a keyboard shortcut
+and this will find both confirmed and
+not confirmed references for this
+variable so a confirmed reference means
+it's not only a text match it's also a
+semantic match and non confirmed
+references mean it's a text match but it
+might not be a semantic match it could
+be in a comment in a string and an
+inactive code block etc so here you can
+see in this references pane on the left
+in the top section these are all of my
+confirmed results and down here these
+are other references results that cannot
+be confirmed so now let's do a rename so
+let's say I want to rename this variable
+to X state so I can again do a
+right-click and then select rename
+symbol from the context menu or I can
+simply click f2 which will prompt me to
+rename the variable all right so I'm
+gonna type in X state but I want to
+preview all of these changes before
+committing them so I'm gonna do shift
+enter to preview and again this is doing
+a find all references before showing me
+the references that will be renamed
+cool so in this refactor preview tab I
+can look at all of the references that
+are candidates for my rename and select
+which ones I want to include or exclude
+in my changes so let's go ahead and go
+through these and then once once you
+feel good about the changes that you are
+committing you can just select this
+check mark right here to apply
+refactoring all right so now I'll show
+you go to definition go back to my files
+all right so let's say I want to know
+where this set flip function is defined
+so I will do a right-click and select go
+to definition or you can just do f12 for
+the keyboard shortcut and you can also
+go to declaration so I will show you
+that as well and this should take me to
+the header file there we go
+it's also worth calling out that if you
+want to see the definition or the
+declaration but you don't want to
+actually navigate to a new file then you
+can use the peek capability by doing
+control click selecting peek from the
+contents context menu and then let's do
+peek definition there we go so this
+gives me a little preview of where this
+is defined without actually taking me to
+that file alright so now that you've
+seen some of the core C++ language
+features in vs code let's talk a bit
+about cross-platform development
+cross-platform development is super
+popular these days
+we see in a lot of survey feedback that
+people are developing for more than one
+platform they are developing for a
+platform that is different from their
+host OS and vyas code is a great option
+for both of those scenarios it runs on
+Linux Windows
+Mac OS as I mentioned before it has
+native support for C make and C make is
+a cross-platform meta build system and
+because V s code has such great support
+for C make projects you can have your C
+make project as a cross-platform project
+and configure on vs code regardless of
+what OS you're using vs code also
+integrates well with VC package and we
+see package works across all platforms
+as well so if you're using C make and
+you're using PC package and your project
+that sets you up to be able to configure
+your project easily in vs code across
+Windows Linux and Mac also vs code
+enables targeting different platforms
+through remote development extensions I
+briefly mentioned these before but
+there's the SSH extension the containers
+extension and the windows subsystem for
+Linux extension in today's demo I am
+going to show you how to use the C make
+tools extension to configure build and
+debug your C make projects I will show
+you how I've integrated VC package with
+C make tools extension to manage all of
+super tux's dependencies and I will then
+use the remote SSH extension to SSH into
+my Linux VM and show you that we can
+configure everything following the same
+exact steps on Linux and it just works
+it'll use GCC and gdb but all of the
+steps that you'll take to configure and
+build your project are exactly the same
+the C make tools extension makes it very
+easy to configure C make projects in vs
+code you can create a new seeming
+project from scratch you can turn an
+existing project into a C make project
+or you can configure an existing see
+make project in other words if your
+project doesn't already have is C make
+list.txt this extension will create one
+for you and if it does have one the
+extension will find it and use it so
+this project super tux already has a C
+make list txt so let's just go ahead and
+start configuring the project there are
+two things that we need to do to
+configure this project
+using CMake jewels the first is select a
+kit a kit contains the project agnostic
+configuration agnostic build
+instructions for your code such as the
+name of the compiler that you're using
+so at the bottom of the screen and the
+blue status bar you'll see the no active
+kit button I can go ahead and click that
+and I see an option of kits that I can
+use the first time you do this you'll
+have to click scan for kits which will
+search for compilers on your computer
+it'll search the path environment
+variable it'll look for visual studio
+instances if for some reason after
+scanning for kids the compiler you want
+to use is not showing up you can
+actually edit this see made kits JSON
+file directly and add it yourself so
+I've already scanned for kids which is
+why you see a list of compilers on my
+computer so I'm going to select the one
+that I want to use you can see it's
+loading the kit great it's loaded the
+second thing I need to do is select a
+variant these are instructions for how
+to build the project so by default C
+make tools extension will show you four
+variants that you can use each
+corresponding to a default build type
+click right here
+we can see what they are so I'm going to
+select debug and now it is configuring
+my project alright so now that our
+project has been successfully configured
+our build files have been written to
+this new build folder in our project
+directory so right here super tux build
+you can see it in the left build folder
+and these are the files that see make
+tools generated for us so now we can go
+ahead and build our project so one thing
+we can do is select which targets we'd
+like to build so if we select this
+button here at the bottom that says all
+you'll see a list of targets I'm going
+to select all
+so you can go ahead and build by just
+clicking that command in the blue status
+bar
+it's also worth calling out that all of
+these commands in the blue status bar
+that are provided by the sea make tools
+extension can be invoked from the
+command palette so if you just do
+control shift peeth to open the command
+palette and then type C mate you'll see
+all of the C make tools extension
+commands right here all right so we have
+a successful build now we can debug so
+you see I set a breakpoint in the main
+dot CPP file and down here at the bottom
+we can select the target to lunch which
+we have as super tux too and we can just
+click to bug and it'll start the
+debugger we can also click on the C make
+tab on the left and you'll see your C
+make target here as well super tux too
+and you can right click and select a bug
+from this context menu as well alright
+so now we have launched the debugger and
+you can see it's stopping at the
+breakpoint that I set and on the left in
+the debugger panel we show the values of
+local variables of registers you can add
+a watch variable which is a variable
+whose value you want to watch change
+over time we show the call stack and the
+list of breakpoints so you can disable
+breakpoints directly from here you can
+add a new breakpoint type the name of
+the function you want to break at and
+there you go so I'm gonna disable this
+breakpoint I'm going to continue uh
+stepping over and finish running the
+program and our super tux GUI should
+lunch and there it is
+let's just take a moment alright so
+there we have our game so we just
+successfully built and run super tux and
+vs code using the C make tools extension
+and those are the general steps for
+configuring a seeming project in vs code
+so now let's take it one step further
+and look at how we integrated VC package
+with CMake tools to manage all of super
+tucson's dependencies so first I'll give
+you a little bit of information about BC
+package VC package is a cross-platform
+command-line package manager for C++
+there are over 1300 libraries supported
+in the VC package catalog across Windows
+Mac and Linux it is open source and
+there are a bunch of benefits to using
+VC package to manage your C++ packages
+first is it simplifies the acquisition
+and installation of third-party
+libraries all you need to do is run VC
+package install and then the name of the
+library from the command line also the
+libraries are all routinely tested
+against each other for compatibility to
+ensure a high quality catalog the last
+thing I'll mention is that you can
+integrate C make with VC package so that
+C make can find all packages that were
+installed through that instance of VC
+package when configuring and building
+your project installing Beauty package
+is very simple and it is the same
+experience on Linux Mac and Windows the
+first thing you'll do is clone the
+github repository and see the link in
+the slide then you run the bootstrapper
+in the vc package root folder and
+finally you can run vc package in a
+great install to integrate VC package
+with Visual Studio and BS code so let's
+take a look at how this works with super
+tux
+alright so as I mentioned in the slides
+once you clone the VC package github
+repository and bootstrap it you can run
+VC package integrate
+salt and a great PC package with BS code
+so let me show you what that looks like
+in my terminal I'm going to navigate to
+the instance of BC package that I'd like
+to use and I'm going to run vc package
+integrate install so now this integrates
+vc package this specific instance of vc
+package with vs code so that vs code can
+use it for configuring intellisense for
+source files it also tells you what you
+need to set the C make tool chain file
+path to be such that C may can find the
+packages installed with this instance of
+vc package by invoking the find packages
+command so in order to hook this up with
+the C make tools extension we just need
+to edit the C make tool chain file
+property for the C make tools extension
+and we can do that in the workspace
+settings JSON so the workspace settings
+JSON lives in a dot PS code folder for
+your project if you don't see it that
+just means you haven't configured any
+workspace specific settings yet and you
+can get there from the command palette
+so let's do control shift P
+typing preferences open workspace
+settings so this opens a UI where you
+can edit settings for your workspace you
+can also edit settings at the user level
+and you can edit settings specific to
+the extensions that you're using so
+we're interested in the C make tools
+configuration settings so some of these
+settings you can edit directly in the UI
+others you'll see it'll tell you to edit
+in settings on JSON so that's what we
+did in order to set the C make toolchain
+file path so i can show you that here we
+go
+c make configure settings so I just
+clicked edit in settings JSON and it
+created this C make configure settings
+object whereas I specified the C make
+tool chain file path and I added the VC
+package build property
+and marked it as on so how VC package
+works today is customers have to
+manually install all of their project
+dependencies using BC package and
+configure them so that C make can find
+them we're working on a new feature
+which we are very excited about and it
+has not officially been released yet but
+I'm going to demo what we currently have
+in the works right now so you can get a
+feel of where BC package is heading and
+some enhancements that are coming soon
+so this new feature is a manifest file
+and in your project folder so VC package
+JSON file that lists all of your project
+dependencies and then BC package will
+detect that VC package.json file and
+take care of installing all of the
+listed dependencies any dependencies
+that those libraries have and
+configuring them so that C make can find
+them all automatically and I'll show you
+what that looks like so we have this VC
+package.json file for super tux so these
+are all of the dependencies that super
+attack size and so yes VC package
+physics today you would have to go in
+and manually install these PC package
+install each of these packages but the
+new experience is that from your project
+directory so let me navigate to my
+project directory I can call VC package
+so install my triplet as x64 windows
+specify binary caching so what this will
+do is it'll find that VC package JSON
+file that manifest file in my super tux
+project
+and it will go ahead and install all of
+these dependencies if they're not
+already installed and configure them so
+that see make can find these packages so
+let's click enter there we go
+so all of these packages were already
+installed which is why I was able to
+successfully configure and build the
+project earlier on in the demo but just
+to show you how this works let's add in
+another item to our dependencies list
+that I don't already have installed okay
+so now if we run this command again
+there we see that it builds the FMT
+package and it's using the cached binary
+package which makes it faster and it
+sells it and yeah it's as easy as that
+so this is a really great new feature
+that we're excited about because it
+makes it really easy to just share this
+manifest file in your project and then
+anyone who's using this project can just
+run the VC package command from their
+command line and it will take care of
+installing all the dependencies and
+configuring them with CMake it's a very
+automated seamless experience and very
+excited about it so I want to reiterate
+that one of the benefits of using vs
+code and C make npc package is that it
+allows you to configure your project in
+a way that switching to a different
+platform is seamless all of these tools
+work across Windows Linux and Mac so I
+just showed you how it works on Windows
+now I'm going to use the vs code remote
+SSH extension to SSH into my Linux VM
+and show you that it works the same on
+Linux I'm going to show you how to use
+the remote SSH extension in vs code to
+connect to a Linux VM so the first thing
+you'll have to do is install the remote
+SSH
+extension from the extension marketplace
+once you do that then you'll see this
+remote Explorer icon on the left so if I
+click on that then I'm presented with a
+list of ssh targets that i have
+previously connected to through this
+remote ssh extension in this drop-down i
+can select between ssh WS l vs online
+containers these are all different
+remote extensions in vs code and if you
+download the remote extension pack then
+it will include all of these extensions
+with it so I'm going to connect to this
+host right here I could also add a new
+one by clicking on this plus sign but
+this one down here this is where my
+super text project is let's open a new
+window all right and you can tell that
+you are in your remote window based off
+of this ssh target IP address in the
+bottom green corner alright so let's
+open a folder and it's important to call
+out that the remote SSH extension in vs
+code works differently than remote
+development and visual studio because
+all of my source files are already on my
+Linux VM nothing is copied over from my
+Windows laptop so before this demo I had
+connected to the Linux VM and cloned the
+super tux github repository so let's
+open that
+all right there we go and you can see
+that intellisense
+is working properly on my linux again so
+we can start by making sure that all of
+the project dependencies are installed
+on this VN by running the vc package
+install command it has the vc package
+JSON manifest file right here let's all
+the dependencies so all we need to do is
+run this command you see package
+installed binary caching from my project
+folder and there we go all of these
+packages are installed so then we can
+just follow the same steps to configure
+the project using C make tools you'll
+notice that when I select a kit these
+are all compilers that are found on my
+Linux VM so this time I am using GCC so
+let's configure and then we can build
+and we can debug and this time it'll use
+gdb which you can see right there
+executing gdb all right so there we have
+it it's all working properly on Linux
+followed the same exact steps that I did
+on Windows except that it's using GCC
+and gdb under the hood so now you've
+seen how to successfully use vs code the
+C make tools extension and BC package to
+configure our super tux emic project on
+all platforms the takeaways from this
+demo are that vs code C make tools
+extension and VC package are all tools
+that we recommend to ease your
+cross-platform development experiences
+additionally you should use the vs code
+remote extensions if you would like to
+develop for platforms other than your
+host OS so now I'm going to dive into
+how vs code can be used for
+collaborative development vs code has a
+live share extension pack which enables
+you to start live collaboration sessions
+directly in vs code directly in that
+text editor so it makes it really easy
+for you and your teammate to quickly
+collaborate on the same code base
+because you don't have to worry about
+replicating code or adjusting
+configuration or environment settings
+what happens is that your teammate
+actually sees a context of your
+workspace in their editor and they get
+all of the language features such as
+intellisense and go to definition rename
+and so on so once you are both in the
+same collaborative session you can both
+open files and navigate through the code
+make changes and these changes will be
+reflected in real-time for both of you
+and you can even do collaborative
+debugging sessions so you can both
+independently use the debugger features
+such as setting breakpoints or watching
+local variables so now I will give you a
+little demo
+of how the live show extension works
+it's worth calling out that normally it
+wouldn't be the same person joining the
+session from their computer and their VM
+you would use this with a co-worker or a
+class member or anyone that you trust
+but it could be it could be any two
+machines right so in this in this demo I
+will be using both of the machines but
+if you're using this extension it would
+likely be your computer and someone
+else's computer
+so on the my Windows laptop I'm going to
+start my collaboration session and
+before recording this demo all I did was
+installed the live share extension pack
+on both my laptop and my VM if the
+extension pack has any OS specific
+dependencies that aren't already
+installed on your machine
+vs code will let you know and will give
+you the option to let it just install
+those for you and take care of
+everything so on my Windows laptop I
+will click on this live share icon on
+the left to open this live share pane
+and then I can click a start
+collaboration session and this will give
+me a URL that I can share with whoever I
+want and by using that URL they can join
+the session from their own device
+alright so the invitation link has been
+copied to my clipboard so now I'm going
+to go onto my VM and in the same live
+share pane on the Left I'm going to
+click join collaboration session and
+then paste the URL for the session that
+I just started ok so this is just
+joining the live share session from my
+VM it might take a moment since I'm
+doing this remotely
+there we go so now you can see in my
+Explorer on the Linux VM I have this
+visual studio live share workspace and
+it is loading the super tux project from
+the collaborative session that I started
+on my Windows laptop so now I can
+actually see the cursor of where the
+other person in the collaborative
+session is and if I highlight something
+it will show up on that other person
+screen they'll be able to see how I'm
+interacting with the code let's say we
+want to debug something together I can
+start a debugging session so let's do
+that I'm just I have my breakpoint set
+in main we'll click debug
+and you can see it launch the debugger
+in both my windows laptop and my Linux
+we have so here I can debug with my
+coworker directly from my own instance
+of BS code as we wrap up our session
+today I want to talk a little bit about
+what's coming next for a VC package and
+for the C++ extension in vs code so
+there are a few enhancements that we're
+currently working on for VC package the
+first is support for a manifest file
+which is the VZ package JSON that I
+demoed for you today we're also working
+on a first-class experience for managing
+private libraries with VC package
+customers will also be able to bring in
+additional libraries outside of what's
+supported in the catalog VC package will
+use binaries to update rather than
+pulling from source every time and we
+also will support versioning which means
+you can specify exactly which version of
+a package you would like to use so if
+your project has a dependency on an
+older version of a package that's fine
+you'll be able to use that as for the
+C++ extension we're currently working on
+support for Linux on arm and arm 64
+devices
+we'll start by releasing intellisense
+modes for cross compiling and then we'll
+have the full remote development and
+debugging on arm experience if you are
+interested in when these features are
+being released you can stay tuned to the
+C++ team blog as I said these are things
+that we are currently working on and
+planning for so I don't have specific
+dates to give you today so the best
+thing you can do is check the C++ team
+blog for announcements of new features
+and that is the link to the blog in the
+slide also please give us your feedback
+the C++ extension the C make tools
+extension and VC package are all open
+source which means you can find all of
+their repos on github
+we turn to our github repositories
+frequently when we are creating our
+roadmaps for new features we check out
+the open issues pages on each of these
+repos and see which open issues
+have the most up boats and that tells us
+what our customers care most about so I
+have the links to the github repos on
+the slide please if you have a bug or an
+issue
+check out the issues page and create an
+issue if you don't already see the one
+that you're looking for but feature asks
+that you care about so we know what to
+prioritize and of course feel free to
+contribute to the repositories yourself
+we are always looking for contributors
+alright well thank you for coming to my
+session and I'm excited to answer your
+questions in the live Q&A

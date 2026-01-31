@@ -1,0 +1,234 @@
+hello my name is Raman Sharma and I'm a
+program manager with the visual C++ team
+here at Microsoft in this video I'm
+going to talk briefly about some of the
+work we have done in Visual Studio 2015
+to enable building C++ apps for Windows
+10 this is the agenda for today I'll
+provide an overview of some of the new
+Concepts that Windows 10 introduces for
+developers and how C++ interacts with
+these features
+then we're going to look at a quick demo
+of some of these features followed by
+some useful links to resources about
+Windows 10
+development now one very important thing
+Windows 10 enables for developers is
+this concept of universal apps which
+means building your apps once and
+running them on multiple devices like
+desktops tablets phones Xbox and even
+beyond that this concept existed even
+for Windows 8.1 and Windows 4one 8.1
+apps but in a slightly different form
+windows 10 goes a step further and
+enables creation of universal apps at a
+common binary level which means that API
+surface of Windows 10 has converged
+enough across multiple device types to
+allow for creation of a single binary
+that will run on multiple devices now
+since this is native code we are talking
+about the common binary really means one
+binary per architecture which is a huge
+improvement from the
+past another New Concept Windows 10
+introduces is this notion of API
+contracts for window Windows runtime API
+if you have done any net programming you
+might be already familiar with this
+concept the idea really is that when
+you're building an App instead of
+specifying a hard dependency on a
+specific API you specify a dependency on
+a bundle of functionality called an API
+contract Windows 10 allows your app to
+declare what all API contracts it needs
+and it can then use this information to
+determine which all devices your apps
+can run on in addition to this API
+contracts also allow you to check for
+the present of some device capability at
+runtime and dynamically change the apps
+Behavior at runtime based on this
+information and lastly in addition to
+all the windows 10 specific changes
+visual C++ also provides several new
+features in the C++ language and
+libraries conforming space we've done a
+lot of work to provide major pieces of
+the C++ 11 and C++ 14 standards by
+adding these features we allow our
+customers to write crossplatform C++
+code that can be built with any
+conformant compiler on any platform this
+also expands the list of crossplatform
+Open Source libraries that are commonly
+used for other mobile platforms like IOS
+and Android and can now easily be used
+in Windows apps now let's jump into the
+demo and look at a product in the
+action so here I have Visual Studio 2015
+running on a Windows 10 machine let us
+go ahead and create a universal C++ app
+project if you go to file new project
+you'll see that under visual C++ Windows
+Windows Universal there are a number of
+uh project templates for zaml for
+directex for dlls static libraries
+Windows runtime components and so on for
+now I'll just go ahead and create a
+blank zaml C++
+app once the project has been loaded
+inside the IDE you will notice there
+there are a few things that are new for
+Windows 10 Universal apps so in the
+solution Explorer if you look under the
+references you see these new things
+called API
+contracts now from a developer's
+perspective these API contracts are
+nothing but Windows metadata files which
+live somewhere inside the windows SDK
+Windows 10 exposes a number of API
+contracts however these three are a part
+of the universal app platform which
+means that they are always present on
+any device which means that every time
+you create a universal app project using
+visual studio these API contracts are
+always added to your project at build
+time these API contracts are passed
+along to the C++ compiler the compiler
+understands the format of these contract
+vmd files and allows the user to call
+any API specified inside these uh vmd
+files the second new thing is inside
+this file called package. aex manifest
+so this file is basically what
+determines the shape and the target of
+your application package so if you
+notice there's a new thing here called
+Target device family what this is saying
+is that your app package can Target any
+device which is a part of the windows.
+universal Target device family which
+means the same app package can be
+installed and run on Xbox desktop as
+well as mobile
+apps so let us close these
+files and go
+ahead and write some simple zaml code by
+opening up the main page. zaml
+file so in this file let us go ahead and
+add some simple zaml
+code so this code what it does is it
+just brings up a text Block in the
+center of the window and we'll see how
+the how this text blog appears both on
+desktop as well as a mobile emulator so
+let us go ahead and save this file now I
+know that I can write the same UI which
+appears in a device appropriate fashion
+for both desktop as well as mobile
+device but what if I want to write some
+code inside my app so that my app does
+something specific while working on a
+mobile device how do I do that so the
+first step to do that is by adding a
+reference you add a reference to
+something called Microsoft mobile
+extension SDK for Universal
+apps and once you do that you'll notice
+that under the references node a whole
+new set of API contracts now show up all
+of these are phone specific API
+contracts which allow your app to call
+into some phone specific
+functionality now you can open up your
+code file which is the main page. zl.
+CPP file and you can directly write some
+code to to call some phone specific API
+but at the same time you still want to
+make sure that your app continues to do
+the right thing when it is running on a
+desktop so how do you do that you do
+that by using a new functionality
+introduced in Windows 10 called runtime
+API checks let's see how to do that so
+I'll again copy some simple
+code in the Constructor of the main
+page so what this code essentially does
+it's calling a new API called API
+information and it's checking for the
+presence of a type called Hardware but
+buttons in the runtime Target and
+depending on whether hardware buttons
+are present or not we'll go ahead and
+add an event handler to the camera
+pressed event inside the hardware
+buttons so let's go ahead and do
+that
+so this is the event that I want to add
+an event handler to now adding an event
+handler inside the IDE is actually very
+simple all you need to do
+is hit tab twice and it goes ahead and
+actually even creates a dummy
+implementation for the event
+handler so I don't want a dumy
+implementation so I delete this code and
+instead I write some simple
+code
+again to throw up a message dialogue
+every time the button is hit so that's
+it let's go ahead and build the
+app once the app is built let us launch
+the app on on the local
+machine so the app actually Launches on
+the local machine and you see that
+Windows 10 the text is centered inside
+the window um the one different thing
+you'll notice here is that this is not a
+full screen app which is a new thing uh
+in Windows 10 for Universal apps running
+on on desktop devices so let's close
+this and instead of running on the local
+machine let us launch on a mobile
+emulator this
+time select the mobile
+emulator and hit run so you'll notice
+that Visual Studio did not have have to
+rebuild the app it basically takes the
+same set of binaries and deploys them to
+the phone emulator and launches the app
+you'll see that here Windows 10 the text
+actually appears in the center of the
+window but in a full screen window
+because that is what makes sense on a
+mobile
+device additionally if I go ahead and
+press this Hardware button which is
+present on the mobile emulator itself
+you'll see the message box called uh
+camera pressed pops up
+so that was a really quick overview of
+the new features there is much more to
+the story and here are some useful
+resources if you want to learn more
+about Windows 10 developer experience or
+visual C++ in general there is the
+visual C++ blog where we blog about all
+the work that C++ team does building
+apps for Windows blog is where you'll
+find useful information about Windows
+developer experience the last one is the
+link to the windows Insider program
+through which you can find out how to
+get quick access to early builds of both
+Windows 10 and the associated developer
+tools that's all we have for today we
+hope you will like these new features we
+look forward to your feedback thanks for
+watching

@@ -1,0 +1,273 @@
+hey everyone i am rebecca khandelwal and
+i welcome you all to yet another
+exciting video from simply learn in this
+session we will be discussing c-sharp
+design pattern
+however before we begin this session
+make sure you have subscribed to our
+youtube channel and clicked on the bell
+icon below
+so you never miss an update from simply
+runs youtube channel
+look at the agenda for today's topic
+we shall begin our session with an
+introduction to c-sharp design
+then we will discuss types of design
+patterns
+first we will discuss the creational
+design pattern
+then we will have a look at the
+structural design pattern and then at
+last we will have a brief discussion
+about behavioral design pattern finally
+we will conclude this session with some
+disadvantages of design pattern
+so without any further ado let's get
+started with what is design pattern
+design patterns are reusable solution to
+typical software design issues that
+arise frequently in real-world
+application development
+patterns are employed by developers to
+tackle challenges in their individual
+designs understanding design patterns is
+more important than memorizing their
+classes methods and attributes
+individual needs and difficulties
+influence pattern selection and uses
+among numerous design patterns
+now let's discuss types of design
+pattern
+there are three types of design patterns
+available
+creational design pattern structural
+design pattern and behavioral design
+pattern
+let's start up with creational design
+pattern
+the creational design patterns deal with
+object creation and initialization
+the creational design pattern gives the
+programmer more flexibility in deciding
+which objects need to be created for
+give for a given case
+we have five types of design patterns in
+this
+abstract factory builder factory method
+prototype and singleton
+let's discuss each of them in detail
+first up abstract factory
+the abstract factory design pattern
+allows you to create families of linked
+items without having to declare their
+classes
+next up builder pattern
+builder is a design pattern that allows
+you to build complicated objects in
+stages
+this patterns enables you to create many
+types of representations of an object
+while using the same creation code
+next up factory method
+a factory method is a creational design
+pattern that provides an interface for
+creating
+objects in superclass while allowing
+subclasses to choose the type of object
+created
+next up prototype
+prototype pattern is a design pattern
+that allows you to imitate existing
+objects without making your code land on
+their classes
+the prototype patterns provides a basic
+interface for working with all objects
+that permits cloning to the client code
+at last singleton
+the singleton pattern ensures that a
+class has only one instance while also
+giving a global access point to that
+instance
+next up
+let's discuss the structural design
+pattern
+the structural design pattern is
+basically used to manage the structure
+of classes and interfaces
+as well as manage the relationship
+between the classes
+we have seven types of design patterns
+in this
+adapter
+bridge composite pattern decorator
+pattern a cat pattern fly weight pattern
+and proxy
+pattern let's discuss each of them in
+detail
+first up adapter
+the adapter design pattern is a
+structural design pattern that allows
+items with conflicting interfaces to
+work with one another
+we use this pattern to reuse many
+existing subclasses that lacks common
+functionality that cannot be added to
+the super class
+next up bridge
+this pattern is a structural design
+pattern that allows you to split large
+class or a collection of related classes
+into two independent hierarchies
+abstraction and implementation
+next composite pattern composite is a
+structural design pattern that enables
+you to organize parts into three
+structures
+and manipulate them independently of one
+another
+the composite pattern provides two basic
+element kinds with a shared interface
+simple leaves and complex containers
+after that decorator
+decorator is a structural design pattern
+that allows objects by wrapping them in
+special wrapper object this pattern uses
+the decorative technique to add extra
+behaviors to objects without disrupting
+the code that utilizes them
+next up facade
+for cad is a structural design pattern
+that simplifies complex libraries
+frameworks and class interfaces
+when you require a simple but limited
+interface to a complicated subsystem we
+use the phycat pattern
+at last proxy pattern
+proxy is a structural design pattern
+that enables you to substitute an item
+a proxy control access to a source
+object allowing you to do actions before
+or after the request
+next up is a behavioral design pattern
+the behavioral design pattern deals with
+communication between classes and
+objects that means if you want to change
+the behavior of a class and again you
+want it to affect other classes of the
+project as well
+we have 10 types of design patterns
+available in this
+chain of responsibility iterator memento
+speed template method command
+mediator
+observer strategy
+and visitor
+let's discuss them in detail
+first up the chain of responsibility
+a behavioral design pattern called the
+chain of responsibility allows you to
+pass requests along the chain of
+handlers
+when a request is received each handler
+determines whether to process it or send
+it to the next handler in the chain
+next up iterator
+iterator is a behavioral design pattern
+that allows you to traverse components
+of a collection without revealing the
+representation below that is list stack
+tree etc
+iterators can be used to traverse
+composite trees
+next up is memento
+memento is a behavioral design pattern
+that saves and restores an object prior
+straight
+without revealing its implementation
+when you need to take pictures of an
+object's state in order to store it to a
+previous state we use memento pattern
+next up state pattern
+state is a behavioral design pattern
+that allows an entity to change its
+behavior in response to the changes in
+its internal state
+it appears that the object's class has
+changed
+then the template pattern
+template method is a behavioral design
+that lets subclasses
+alter steps of an algorithm without
+changing its structure
+we use the template method to allow
+customers to extend specific types of an
+algorithm
+not the entire method or its structure
+then we have
+command pattern
+command is a behavioral design pattern
+that turns a request into a standalone
+object
+this transformation supports
+unachievable operations and passing
+request
+as method argument
+after that mediator mediator is a
+behavioral design pattern that reduces
+object dependency to collaborate the
+objects must first communicate to a
+mediator object
+next up is observer pattern
+observer is a behavioral design pattern
+that allows you to establish a
+subscription mechanism to allow alert
+numerous objects about an event that
+occur to the item being observed
+when some objects in your app must
+monitor others for a limited time or in
+specific circumstances we use this
+pattern
+next up strategy pattern
+strategy is the behavioral design
+pattern that allows you to construct a
+family of algorithms
+classify them and make them object
+interchangeable
+when you have a bunch of similar classes
+that just differ in how they perform
+some behavior then we use the strategy
+pattern
+at last visitor the visitor pattern is a
+behavioral design pattern that allows
+you to decouple algorithms from the
+objects they act on
+when you need to perform an operation on
+all elements of a complicated object
+structure we use the visitor
+finally let's conclude this tutorial
+with some advantages of design patterns
+first up abstract factory classes are
+frequently based on set of factory
+methods although the method on these
+classes can also be composed using
+prototype
+next up to reduce ram we can use
+flyweights to construct shared composite
+tree leaf nodes
+finally you can treat a visitor as a
+powerful version of the command pattern
+its objects can execute operation over
+various objects of different classes and
+this was all for today's session hope
+you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

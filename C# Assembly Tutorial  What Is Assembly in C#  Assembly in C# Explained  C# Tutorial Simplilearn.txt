@@ -1,0 +1,270 @@
+foreign
+and I welcome you all to Simply learns
+YouTube channel
+today we will be going over the assembly
+in C sharp
+but first let me remind you that we have
+a daily update on numerous Technologies
+so if you are a tech geek looking for
+the latest technological innovation then
+try subscribing to our YouTube channel
+and don't forget to hit that Bell icon
+so you never miss an update on simply
+run
+so now without any further Ado let's get
+started with the agenda for today's
+session we will begin our session with
+the discussion on what is assembly
+we will also go over the content of the
+assembly
+after that we will discuss what an
+assembly cache is
+then we will have a look at the types of
+assembly along with the global assembly
+cache
+finally we will write wrap this session
+with the demo on private assembly
+so
+without without further let's get
+started with the simple trivia
+so now what is a metadata is it a data
+about data creation a data about author
+a data about the data type or all of the
+above
+make sure to comment down below
+to answer your response
+so now let's get started with the
+discussion on what is c-sharp assembly
+first an assembly is a combination of
+types and resources intended to work
+together to form a coherent block of
+capabilities
+based on the scope an assembly can be a
+dll or an EXE
+next for dotnet based application
+assemblies are the primary components of
+implementation versioning repurpose in
+slash
+installation scoping and privacy
+authorization
+reflection can be used to obtain
+information about an assembly
+programmatically
+at last assembly provides the necessary
+information for the common language
+runtime that is CLR to be informed of
+type implementation
+a type does not exist anywhere except
+the context of an assembly according to
+the runtime
+next let's go over the content of
+assembly an assembly comprises of
+seventh content first up manifest the
+Manifest contains the data about all of
+the parts that are considered to be the
+part of the assembly itself
+the data in the Manifest
+is also referred to as a metadata
+next up we have assembly name
+now it helps inversion control and
+visibility scope then we have version
+information
+the assembly's identity
+it includes the version number
+next type next is types the types Define
+the scope and the boundary of methods
+class six
+properties events and attributes after
+that we have locate which defines the
+information about the language or the
+culture
+then we have cryptographic hash
+it is the public key encoded hash acting
+as the version security check
+finally we have security permissions
+the permissions that can be permitted
+for all facets of the assembly's content
+are determined by the Privileges within
+the assembly
+next up we have assembly cache
+now when you install the dotnet SDK the
+framework creates a repository on your
+system
+the assembly cache is the term coin for
+this Repository
+also the cache is divided into two
+sections the private and global now
+shared assemblies
+are stored in the global cache
+the private section may be may contain
+restricted files for an application so
+the files are downloaded by our
+application during runtime are also
+saved in this cache by private section
+finally all assemblies in the global
+cache must be shared and have distinct
+name spaces
+the folder name holds the information
+about the assembly's distinct identity
+the assembly Cache can be identified in
+your windows directory in the assembly
+subfolder
+next let's go over the types of assembly
+now there are two types of assembly in
+dotnet
+the process assembly
+and the library assembly
+process assembly hash dot exe files
+while the library assemblies has dot dll
+files
+the library assemblies are of two types
+we have a private assembly and shared
+assembly or a public assembly
+first up private assembly
+private assemblies must be copied
+separately in all applications folder
+where the assembly's functionality are
+to be used without copying
+we cannot access the private assembly's
+features and Power
+now when we have a private assembly we
+can only copy into the bin folder of
+each application folder
+next we have shared a public assembly
+now it is not necessary to copy into
+each application folder separately
+the shared assembly is another name for
+a public assembly
+at the system level only one copy is
+required there is no need to copy the
+assembly into the application folder
+next we have Global assembly cache when
+an assembly is needed for more than one
+project our application then we must
+create it with the strong manager and
+keep it in GSE or the assembly folder by
+installating installing it within the
+GSE util command
+finally lets us understand the
+assemblies by a demo
+so we will move over
+to our Visual Studio now here let's
+create a new project
+we will create a class Library
+make sure it is of the C sharp type not
+the F sharp
+we will click next let's name this
+a private Library
+private assembly
+then we will hit next
+we will use the dotnet code 3.1 the long
+term support
+and we will hit create
+first we will be creating some using
+statement so we will be including some
+libraries using using command
+first we will have
+system dot collection
+dot generic
+then we will have using
+system
+dot link
+then we have using
+system
+dot text
+next up
+let's write up the code for this class
+but first let's rename this class
+to make it easier for us to understand
+for the latest Regis let's name it
+private assembly
+this will ask us to change the class as
+well so we will go ahead and click yes
+and this will change the class as well
+now let's write up some functions for
+this private assemblies
+so let's first have a public function
+public and
+let's have it an addition function
+let's have argument here as well end and
+one
+comma and
+N2
+now
+let's introduce a variable address to
+store the result
+N1 Plus
+N2
+next we will return
+this rest
+let's write another function similar to
+this let's have a subtraction function
+so public and
+subtraction
+so end
+N1 comma
+and and do
+similarly we will introduce rest
+function plus variable to store the
+result
+N1 minus N2
+and we will return
+dress
+let's save this
+now we will add another project
+this will be a web application
+so we'll head next
+let's name this one as
+private assembly web application
+let's use the framework as 4.7.2
+and hit create we will use the web form
+so
+let's click create
+foreign
+the web application
+now let's
+build both of these
+okay so first what we will do is we will
+right click this and go on open folder
+in File Explorer
+this is the folder
+we will go into this bin folder
+now what we are looking for here is the
+privateassembly.dll which signifies that
+the private assembly is now present
+in our web application as well
+so we have private assembly web
+application.dll but not the private
+assembly.dll so to do that we will go
+back to our Visual Studio
+laughs
+so now what we will do is we will right
+click on private assembly web
+application
+we will add
+a reference
+now
+you might first see this assemblies
+we will go to the project
+the solution and we will see we have a
+private assembly so we will right click
+on it and click ok
+now we will right click on this and go
+back to that folder
+then we will go to bin and here now we
+have the private assembly.dll present
+now let's go back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+Simply learn
+foreign
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

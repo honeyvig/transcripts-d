@@ -1,0 +1,5470 @@
+hey everyone welcome to simply learns
+youtube channel today we will learn
+about c plus plus basics
+in this tutorial we will be learning
+about all the important fundamentals of
+c plus plus programming
+but before we begin make sure to
+subscribe to our channel and press the
+bell icon to never miss an update from
+simply learn
+so in this c
+basics tutorial first we will be
+learning about the basics of c plus plus
+programming that is types variables and
+if else etc
+then we will understand how to download
+and install c plus in windows 10.
+after that we will cover topics like
+loops in c plus plus arrays and
+functions in c plus plus
+then we will go through object oriented
+programming in c plus plus and concepts
+of oops like inheritance and
+polymorphism
+we'll also learn about pointers
+constructors and destructors in c plus
+and at last we will cover c plus plus
+enumeration
+so without further ado let's get started
+and welcome to this tutorial on c plus
+plus basics so let's jump in and see
+what's in it for us
+so we will be covering today the basics
+of c plus that is we will learn how to
+write your first program in c plus plus
+then types and variables in c plus after
+that topics like arrays strings if else
+statements for loop while loop and
+functions
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's start with the introduction to
+c plus plus programming
+c plus plus is a popular programming
+language introduced by john strawstrom
+in the year 1979. the aim was to make a
+dynamic language that is efficient and
+has some additional features to see
+initially it was called c with classes
+as it was an extension to c language but
+later renamed as c plus plus
+it is general purpose case sensitive
+language and it is called pre-compiled
+language because it converts the source
+code directly to the machine
+understandable code
+it is an intermediate level language
+because it contains both features of
+high level and low level language
+c plus plus supports the features of
+object oriented language like
+encapsulation inheritance polymorphism
+etc it also supports procedural
+programming and functional programming
+as well
+now as we have understood about c plus
+plus programming
+let's move on to our first program in c
+plus
+so the first program for beginners is
+hello world program
+in this program hello world is printed
+it is very basic program and in the
+first part of the program we are
+including a header file hash include
+iostream
+header files are generally used to
+import features into the program
+functions like c in which is used to
+take the input from the user and c out
+which is used to display the output are
+defined in this ifc header file
+here using namespace standard means
+we are using all the things which are
+within the standard library
+the second part of the program is main
+function
+this is a special function from where
+the execution of program starts
+inside the main function we are printing
+hello world using the c out which is
+used to print the output
+return 0 on the next line will indicate
+the program that nothing will return and
+program executed successfully
+so let's try this hello world program on
+our code editor that is vs code
+so let's first of all name the file
+hello dot cpp
+so first of all we'll include the header
+files
+hash include iostream
+and then namespace standard we'll write
+using namespace
+std
+now we'll write the main function that
+is int main
+now inside this function
+we will print using
+see out
+and
+we'll write
+hello
+world
+after that we will write return zero
+all right now let's try to run this
+as you can see
+hello world is getting printed over here
+so this is how it's done
+so now let's move to our next topic
+that is types and variables
+coming to types and variables
+in c plus there are different types of
+data type that acts as a keyword which
+is responsible to define a variable
+first is boolean data type
+this keyword is used when we have two
+values either true or false and these
+values are used when there are
+conditions for example if the condition
+is satisfied then it's true otherwise it
+will return false
+next is character data type
+this character data type is used when we
+are dealing with alphabets and symbols
+and it is used to hold a single
+character within the variable
+integer data type
+this data type is used for integer
+values they can be both positive and
+negative
+next is flow data type
+float is used when we want to store
+values that are in decimal form
+now variables
+variables are used with these data types
+it is generally used to store values
+and this is the syntax to define a
+variable
+first we will mention the data type and
+then the variable name of our choice
+for example int is the data type and
+data is the variable name
+moving to arrays
+arrays are one of the most important and
+widely used concepts in c plus plus it
+can be defined as a collection of
+similar kind of elements the elements of
+array are stored in contiguous memory
+locations that is one after the other
+arrays make it possible to store
+multiple values of the same data type
+into a single variable
+the syntax to declare an array is first
+we will mention the data type then the
+array name and after that number of
+elements inside the brackets
+our next topic is strings
+we can define strings as a collection or
+group of characters
+it is basically used to represent text
+in the program
+and we can perform many operations on
+strings in order to manipulate it
+the syntax of string contains a
+collection of characters surrounded by
+double quotes for example here string is
+the type
+str is the name of the string and coffee
+is the value that is assigned to the
+string
+in c plus there are two ways to create a
+string
+first is c style strings
+in c style strings collection of
+characters are stored in the form of
+arrays they are basically areas of type
+character
+the second way is using string objects
+we can create string object to hold a
+string
+they are implemented in the standard
+library which we must include in the
+program using hash include
+next is if fell statements
+if else are two conditional statements
+that are generally used when we want to
+run the code based on some conditions
+we run a block of code which is inside
+if statement only if the condition is
+true for example
+if the number variable here is equal to
+10
+then only the block of code will execute
+and will print the message you got it
+otherwise it will run the else block and
+display the message written inside that
+block which is not this one
+now coming to loops
+first is for loop
+for loop is the repetition control
+structure
+that allows us to repeat a block of code
+for a fixed number of times
+instead of repeating the same code again
+and again
+the syntax of for loop has three parts
+first is initialization it is used to
+initialize the loop
+next is condition
+which is used to determine when to end
+the loop and last is updation which is
+used to update the loop variables
+for example inside the loop i equal to 0
+means we have initialized the loop from
+0 and i less than 10 means the loop will
+keep on repeating until i becomes less
+than 10
+that is it will repeat for 10 times in
+total
+from 0 to 9 and i plus plus denotes that
+we are incrementing the loop after each
+iteration by one
+another type of loop is while loop
+while loop are used in c plus plus when
+we don't know the exact number of times
+the loop should repeat
+it repeats the statements till the given
+condition is true
+the syntax for while loop is while
+keyword and condition in the brackets
+and the loop will iterate till that
+condition is true
+and once the condition becomes false
+then the control passes outside the loop
+for example in this while loop the
+condition is number less than 10
+that means the loop will keep nitrating
+till the number is less than 10
+that is till when it becomes equal to 9
+and inside the loop after printing the
+variable number we are incrementing the
+variable because we want to increment
+the variable number after each iteration
+now
+moving on to functions
+functions in c plus are group of
+statements that are designed to perform
+a specific task
+it allows us to write a code inside the
+function and then we can use that code
+every time when we need it
+by simply mocking the function
+we can also pass arguments to the
+function
+the syntax of function is
+type function name
+and then the parameters
+inside the function brackets we can
+write the code and we can invoke the
+function by calling it from the main
+function
+so as we have understood these concepts
+so let's move on to our code editor that
+is vs code to do some examples on these
+concepts
+so here we will do an example
+in which we will find the number of even
+elements and odd elements using array
+for loop and if else statements
+so let's first of all
+make a new file
+let's name this file as
+basic dot cpp
+okay so first of all we'll include the
+header files
+now we will write using namespace
+standard
+now we will include int main
+and
+int main
+and here we will declare an array
+arr
+and we'll write
+and we'll mention the elements
+2
+7 let's say 12 and
+9.
+okay
+now
+first of all we'll initialize the
+variables let's say
+int even
+zero and we'll initialize
+odd variable
+with 0 as well
+now
+we'll write
+int length
+because we want to find
+size of the array and for that we will
+write
+size of
+array name
+then
+divide size of
+array of
+zero
+so now i'll explain this part
+here we have an array which has five
+integers and since size of an integer is
+four bytes therefore size of error is 5
+into 4 that is 20 bytes
+now int length we have written int
+length equals size of array divided by
+size of array of 0 that is 20 divided by
+4
+that is equal to 5
+so 5 is the size
+here size of array of 0
+is the size of element at index 0.
+we can take any index here like arrow 1
+array of two or array of three
+so now we know the length of the array
+so
+here we will include the for loop
+and
+we'll start with int i equals zero
+we have initialized i with 0
+now i less than
+length
+this one
+here i have written i less than length
+that is i less than 5
+okay
+now i plus plus we are incrementing it
+now we have to
+use if condition because we want to find
+the even elements and the odd elements
+and for that we have to include if
+condition
+so we'll write if
+array
+of i
+mod 2
+that is
+if
+an element on
+dividing by 2 gives 0 as a remainder
+gives 0 as a remainder then it will it
+is even element
+so
+we'll increment the even variable this
+which we have initialized 0 will
+increment over here
+okay
+so now
+in else block
+we'll write
+odd
+plus plus
+it means that if this condition is not
+true then the odd variable will
+increment
+all right
+now
+we will
+print the variables
+so
+we'll write
+even numbers
+and we are printing these outside the
+follow so that they
+don't repeat
+with the for loop so that is why we have
+printed these outside the for loop okay
+now
+we'll write the variable even
+and l for the new line
+similarly we'll write odd number
+or numbers
+the variable odd
+and after that we'll write
+return zero
+okay so this is the code
+so now let's try to run this one
+there is some error
+okay
+yeah the spelling is wrong
+okay let's try again
+yeah here it is
+as we can see
+even numbers 2 or numbers 3
+we can
+check it
+like even numbers 2 12.
+there are two even numbers and 1 7 9
+there are three odd numbers
+so in this question we have
+used array for loop and if
+else so now let's try
+some other example
+okay
+let's name this as
+basic two
+dot cpp
+all right first of all we'll include the
+header file
+hash include i stream
+now using namespace standard
+okay now we will do an example in which
+we will print the elements from 1 to 20
+using while loop and with the help of
+function
+so first of all
+we'll start with intermittent
+and inside into main we'll simply
+call or invoke the function
+by writing the name of the function this
+is the name of the function print
+function
+okay so here we are calling this
+function and after that return 0 will
+write
+okay now
+we have to make this function
+let's create
+void
+what is the data type print function
+is the name
+and inside this function
+will first of all initialize i
+the variable i with 1.
+now we'll use while loop
+and
+we'll write the condition
+i less than equal to 20. this means that
+the loop will keep on
+repeating until i becomes less than
+equal to 20.
+so basically it will
+move from 1 to 20 times
+in total the loop will repeat for 20
+times
+so now
+all we have to do is
+we'll just print the i variable
+and
+in order to give some space
+between each element
+while printing so that is why we have
+used double quotes with the space
+between them
+now will
+increment
+i plus plus
+so that i will increment after each
+iteration
+all right now
+here we have called this function and it
+is getting printed inside the function
+itself so let's try to run this one
+here we can see this is the output
+1 2 3 4 5 6 7 8 9 10
+up to 20
+as i have told you
+as you have put the condition less than
+equal to 20 so that is why 20 is also
+getting printed because we have used
+equal to over here
+so
+we have called the function print
+function and inside that function we
+have initialized the variable i with 1
+and we have put the condition i less
+than equal to 20 so that is where the
+loop is getting repeated for 20 times
+and i is getting printed inside the loop
+and after that we have used increment
+operator so that the value of i gets
+updated everything after every single
+iteration
+so this is the output so now let's move
+on to the next example
+so
+let's make a new file
+and name it as basic three dot cpv
+so here we will do an example of string
+and we'll do some push back and pop back
+operation on it
+so first of all we'll include the header
+file
+hash include iostream
+then using namespace standard
+namespace standard
+okay now
+we'll start with int main
+all right first of all we'll write
+string
+data type
+then the name of the string
+s
+eras is the name of the string
+all right now
+first of all we will display a message
+to enter a string
+so
+okay enter a string
+now
+get line
+this is the syntax when you want to take
+the input
+of a string
+so
+get line c in is used to take the input
+and s is the name of the string
+so this is how we take the input
+and
+now we will print another message saying
+that
+you have entered
+now here we will print the string s
+next line
+and l
+okay
+now
+we'll do some operations like s dot
+pushback
+this will add an element at the end of
+the string
+so
+let's say we want to add
+y so we'll write y inside the bracket
+s dot push back and inside the bracket
+with single quotes we'll try it
+y
+now will display a message saying
+after
+after using
+pushback function
+will print the string
+that is after using the function
+pushback the string would look like this
+and
+now
+we'll use another function s dot pop
+back
+it will delete the element from the end
+so
+we'll write c out
+and we'll display the message
+after using pop back function
+let's write pop back only
+and we'll print the
+string
+okay
+now after that we'll write return 0
+and i think it's done only the spelling
+is wrong over here
+okay
+yeah now let's try to run this
+you can see the message enter a string
+so let's say i have entered
+barcelona
+so you have entered barcelona after
+using pushback barcelona y
+because we have used y
+over here we want to add y at the end of
+the string
+so after using pushback barcelona y and
+pop back function after that we have
+used and we know that it will delete the
+element from the end so
+here we can see there is no y
+power back function have deleted the
+element
+so this is our output
+and
+these were some basic examples of c plus
+plus basics it includes the
+examples of array for loop if else and
+functions strings we have covered
+and there are some more examples on each
+of these topics so i suggest you to
+please practice them all and that is how
+you will get a good understanding on all
+of these topics
+so
+you can try some more examples on it how
+you can install c plus plus on vs code
+and dev c plus
+after we are done with installation
+we'll also learn how to run a program on
+both of these code editors
+so we'll start with visual studio code
+to download vs code let's go to google
+and search for visual studio code
+or vs code
+we'll click on this first link this is
+the official web page for downloading
+the visual studio code
+and we'll now click on this download for
+windows blue button
+and now we'll click on download now
+here it is getting download and
+as you can see
+thanks for downloading visual studio
+code for windows
+once we are done with the download we
+can click on this open folder
+here it is
+now we need to install this file so
+we'll double click on this file
+and this is the setup wizard
+we'll click on this i accept the
+agreement
+and we'll click on next
+as we have accepted the licensing
+agreement now
+we can select our destination folder or
+we can leave it as it is but make sure
+there must be 293.2 mb of free space on
+that particular disk space
+now
+we'll click on next
+here we can again click on x there is no
+need to change over here
+and now
+you can click on this create a desktop
+icon button or anyone else as per your
+choice
+now we'll click on next
+and now we'll click finally on install
+it is getting installed it will take
+some time
+now we can click on this finish button
+launch visual studio we have marked it
+it is already marked so when we click on
+this finish button it will launch the
+visual studio code
+so as we can see this is the visual
+studio code
+so as we have installed vs code now we
+have to configure it so that the c plus
+plus programs can run in this code
+editor
+so in order to do that we need to add
+some extensions so we'll click on this
+extensions button
+now here we will write code runner
+extension
+write code runner
+and this is extension
+when click on this install
+and it is getting installed
+there are some instructions we can click
+on control plus alt plus n
+or press f1 and then select type run
+code
+but we'll deal with that later
+now
+[Music]
+we'll add another extension that is
+c
+slash c plus
+plus here it is
+we'll click on this install
+here we can see downloading visual
+studio windows debugger
+it is getting installed and i think it
+is installed now
+so as we have added both the extensions
+so let's move on and do a program of cps
+plus in this code editor
+okay
+so first of all we'll create a new file
+we'll go to file and click on this new
+file
+now in order to save this one we can
+click on control s or we can go over
+here and click on this save as
+now we can select the location
+like
+let's keep it over here only
+let's name it as
+visual
+dot cpp
+dot cpp is the extension which is used
+when we want to do a program in c plus
+plus
+now we'll click on this save button
+now let's do a simple program to check
+whether the program is running on this
+code editor or not
+so we'll include the header files
+let's include iostream
+now we'll write namespace standard
+now we'll write int main
+now inside intman will display a message
+welcome to this video
+okay now return zero
+make sure to
+save this after making changes or you
+can click on control s
+or you can go to file
+and click on this save
+so once you have saved the program now
+you can run it
+we can click on this play button it will
+run the code
+as we can see in the output
+welcome to this video we can see
+here it is so
+it means our program is working it is
+running fine
+now let's do another example in which we
+will take the inputs from the user
+so let's make a new file
+we'll go to file and click on this new
+file
+now
+we'll save as
+and we'll write
+visual
+2 dot cpp
+all right in this program we'll take the
+input from the user
+so start with
+header files hash include iostream
+our spelling is wrong
+hash include iostream after that
+using namespace standard
+now inside int main
+will take the inputs from the user
+will display the message
+enter the
+first
+number
+now using c in
+we'll take the input
+we forgot to mention this
+declare this n1 variable so
+write int n1
+and n2
+and int
+sum equals 0.
+all right here we have taken the input
+of n1 the first number
+now we'll take the input of another
+number
+by displaying the message
+enter the second number
+we'll write n2
+now we'll
+add both of these
+and 1 plus
+n2
+and will display the result
+we'll write n line
+so that it looks good
+all right now we need to save it
+we'll go to file
+and click on this save
+now it is saved now we can run this
+program
+we will click on this run code
+now in order to write the first number
+over here that is in order to write in
+the terminal we have to configure the
+visual studio code and to do that
+we'll go to file
+and we'll now go to preference
+and in the settings we'll click on the
+settings
+and here we will type run in terminal
+all right now we can scroll down
+and here we can see code runner run in
+terminal in my via studio it is already
+marked but you have to mark this if you
+want to
+write in terminal or enter the inputs in
+the terminal
+all right once you have marked this you
+can
+close it and
+then you can control s that is save
+and then you can
+close the va studio and then open it
+again
+once you are done
+now
+let's try to run this
+so now you will be able to write the
+inputs
+like let's say
+4
+the first number is 4
+now the second number let's say
+9
+on addition it becomes 13 which is the
+right answer
+so these were some configurations that
+you need to do if you want to run a
+program of c plus in visual studio code
+so as we have understood how to download
+and configure visual studio code for c
+plus programs so let's move on to learn
+how we can download dev c plus plus and
+run c plus programs in
+that so let's go to google
+and type dev c plus plus
+this is the first link
+we'll click on that now this is the
+green button
+saying download will click on that to
+download devc plus
+as you can see it is getting downloaded
+your download will start shortly
+so now we'll click on download now
+now it is getting downloaded
+it will take a while the size of this
+file is 48.1 mb
+so as you can see the downloading is
+almost done
+so the downloading is complete now we'll
+click on open folder
+here it is dev c plus plus setup
+now we'll click on this
+setup
+we'll click on yes
+the setup is loading
+now here we will select the preferred
+language it is english we'll click on ok
+now
+we'll click on this is the license
+agreement we'll click on i agree
+now
+we'll click on next
+we don't need to change this i think the
+space required is
+346.8 mb
+and we'll click on next
+now if you want to change the
+destination folder you can
+but i don't want to change it so i'll
+click on install
+now it is getting installed
+it will take a while
+it's done and now we'll click on finish
+and it is marked
+so when we click on finish it will
+launch the dev c plus
+so here we have to select the language
+it is english so we'll click on next
+here again we'll click on next and now
+we'll click on ok
+so this is our code editor that is dev c
+plus plus
+so let's write a code
+first of all let's create a file
+we'll go to file and go to new and we'll
+click on source file
+all right now we need to save this one
+and in order to save this we'll click on
+file then we'll go to save as
+and now we'll select the destination
+and name it as
+dev dot cpp
+all right now let's start
+with the header file
+hash include iostream
+we'll do a simple program over here
+using namespace
+std
+because we want to check
+that whether the program is running in
+this editor or not
+name space std
+now we'll write int main
+inside into main will
+display a message
+welcome
+to
+dev
+c plus
+all right after that we'll write return
+zero
+now let's try to run this
+and in order to run this program we'll
+go to execute
+and now we'll click on compile and run
+here this is the pop-up welcome to dev c
+plus plus as we can see this is the
+output
+now press any key to continue it will
+close this window
+so our output is correct welcome to dev
+c plus plus so this is how you can run a
+program in dev c plus
+and
+our program was also working fine in the
+visual studio code
+so this is how you can download both of
+these code editors to run the c plus
+programs loops in c
+so let's begin and see what's in it for
+you
+so we are gonna be learning today about
+why loops
+what is a loop
+then different types of loops like for
+loop while loop do while loop then there
+is nested loop
+after that there are control flow
+statements like break and continue
+but before we begin if you are new here
+and haven't subscribed already make sure
+to hit the subscribe button and the bell
+icon for interesting tech videos
+so let's start with the first topic that
+is while loops
+in order to perform a particular task or
+operation many number of times we need
+loops
+these are used when we want to execute a
+block of statement repeatedly rather
+than just writing those statements again
+and again
+for example imagine you want to display
+your name on the screen 50 times
+now to do that there are two methods
+method 1 is writing your name 50 times
+by doing the hard code
+and method 2 is writing your name once
+with the loop condition and your name
+will be automatically displayed 50 times
+now it is pretty obvious that you would
+prefer the second approach
+because you don't have to put effort in
+writing your name 50 times plus it is
+easy to write code in few lines
+so method two is the functionality of
+loop
+it reduces time in writing the code plus
+it increases the simplicity
+now let's understand what is a loop
+loops in computer programming is a
+series of tasks that are used to run
+some particular code repeatedly until a
+specific condition is met
+loops tells the computer when to start
+the condition and when to stop it
+now this is a basic flow of a loop
+after the initialization the condition
+is checked if it's true then the blog of
+statement will get executed as long as
+the condition is true and if the
+condition is false the loop will
+terminate
+depending on the program different types
+of loops are used in different times
+so let's first see different types of
+loops
+first is for loop
+then while loop then there is do while
+loop after that there is nested loop
+these are four types of loops in c plus
+plus so let's discuss these loops
+first is for loop it is a repetition
+control structure that is used to
+iterate a piece of code based on the
+condition is true or false if the
+condition is true the statement inside
+the loop body is executed and once if it
+returns false the execution of statement
+will get terminated
+and after every execution of for loop
+the increment on decrement parts will
+update the loop counter
+now let's move on to the while loop
+in this loop the condition is evaluated
+first if it's true then the set of
+instructions inside the loop body will
+execute and this will happen repeatedly
+until the condition becomes false
+and when it becomes false the loop will
+end
+now the main difference is we use for
+loops when we know the number of times
+the body of the loop needs to run
+whereas we use while loops when we don't
+know the accurate number of times the
+body of loop needs to run
+now moving to the next loop that is do
+while loop
+this loop is quite similar to the while
+loop in this the loop will execute the
+set of instructions once before checking
+if the condition is true
+after that it will repeat the loop as
+long as the condition is true
+that means
+in do while loop body will execute at
+least once irrespective of the test
+condition now coming to the nested loop
+when one loop is defined inside the body
+of another loop then it is known as
+nested loop
+in c plus plus there are at least 256
+levels of nesting
+and the flow of execution for nested
+loop is first it includes initialization
+of variable followed by condition one if
+it gets satisfied then it will search
+for the second condition if that also
+gets satisfied then it will get
+increment and when the condition gets
+satisfied it will search for the new set
+of statements
+and follows the same flow of execution
+now coming to the control flow
+statements
+first is break statement it is basically
+used to come out of the loop instantly
+whenever a break statement is
+encountered inside the loop the control
+directly comes out from the loop by
+terminating it
+basically break statements are used when
+we are not sure about the number of
+iterations or we want the loop to end on
+some condition
+now we will discuss about continue
+statement
+continue is also a loop control
+statement it is used to skip the current
+iteration of the loop and control of
+program goes to the next iteration
+in other words if continue is mentioned
+inside the loop it skips the current
+statement and transfer the control to
+execute the next citation of the loop
+now as we have discussed these topics
+let's do some examples to understand
+them better in our code editor that is
+vs code
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+now we'll make a new file
+and we'll name that file as
+loops dot cpp
+okay
+oops1.cpp
+now here we will do a program in which
+we have to print the digits from 0 to 10
+using for loops
+it will be a basic program just to
+understand it
+write the header file
+hash include iostream
+now i will write using namespace
+standard
+now here is the int name
+now we will write the for loop with a
+for keyword
+inside the for loop
+we'll initialize i with 0
+now we'll put a condition i less than
+equal to 10
+which means
+the loop will keep on executing until i
+is less than 10.
+now
+we'll put increment i plus plus
+now inside the loop brackets all we have
+to do is to print i
+so that all the digits
+get printed
+so now let me tell you here what we are
+doing is
+we are just making the loop to run from
+0 to 10 as we can see that i have made i
+0
+to i less than equal to 10 that means
+loop will move from i 0 to 10.
+now let's try to run it
+here we can see
+all the digits zero one two three four
+five six seven eight nine ten
+here is our answer and
+let me tell you one thing more to put
+return 0
+after the loop it's a good practice
+now i'll again run it
+the output will be the same but it's a
+good practice to write return zero in
+the end
+zero one two three four five six seven
+eight nine ten
+so instead of writing the hard code we
+can just use the for loop in this case
+it's a basic example of for loop but you
+can try some more examples in order to
+understand it better
+now let's do one example of while loop
+to understand it better
+we'll be doing a basic example of while
+loop in which all we have to do is to
+print happy new year 11 times
+let's start
+first of all let's name this file
+loops2.cpp
+now let's start with the header file
+that is hash include iostream
+now we will write using namespace
+standard
+now here is the main
+now first of all we'll declare n equals
+zero we'll take a variable n and
+initialize it with zero
+now we'll put the while condition with
+the while keyword writing while
+n
+not equal to 11.
+here what it means is
+the loop will keep on executing until n
+becomes
+equal to 11
+now here all we have to do is to print
+happy new year so that it will get
+printed along with the loop 11 times
+and
+now we'll write n plus
+we have written n plus plus so that the
+loop will keep on incrementing every
+single time
+after that now we'll write return 0
+outside the loop
+now we'll try to run this
+so here's our output
+happy new year 11 times so this is how
+it's done
+this is again a basic example of while
+loop but to understand it better one
+must practice some more examples on it
+now let's do one example of do while
+loop also
+let's make a new file
+first of all let's name that file
+loops three dot cpp
+i think the name is already taken
+then we'll write loops for dot cpp
+okay now so we'll write the header file
+first of all
+we'll write
+hash include iostream
+after that using namespace standard
+now in this program all we have to do is
+we have to print the sum of all the
+digits from zero to nine
+so let's start
+we'll write in
+so now let's first of all declare a
+counting variable sum and initialize it
+with zero
+now we will initialize another variable
+i
+with 0.
+now the syntax of do while loop is
+do keyword
+and now we will add some code inside the
+body
+we'll write
+sum equals sum plus i
+here what we are doing is we are simply
+adding some variable
+and i variable and storing it to some
+variable itself
+we are doing this because we want to
+find the sum
+that is why we have to store it in a
+single variable
+now we will need to increment i or else
+loop is going to run forever
+now we will write file
+i less than 10 we have
+written i less than 10 because we want
+to find the sum from 0 to 9
+and make sure to put a semicolon in the
+end in case of do while loop
+now we will print
+some
+in this while loop
+will write sum is
+some variable
+now this loop will keep on executing
+till i is less than 10.
+now in the do while loop sum is
+calculated by repeated addition and
+increment in each repetition it is
+checked whether the number i is smaller
+or equal to the inputted number
+if it is smaller then the loop continues
+but exits the loop if it isn't
+after the control exits from the loop
+sum is printed
+now let's try to run this code
+here it is
+sum is 45
+which is the right answer this is our
+output
+so
+this is how
+it is done in two while loop
+so now let's do one example of our last
+loop that is nested loop
+first of all we'll name the file
+loops
+pipe dot cpp
+now we'll start with the header files
+now using namespace standard
+now in this program all we have to do is
+to print a star pattern of half pyramid
+form
+using nested loop
+so let's try
+we'll write in
+now let's initialize two variables that
+is i
+and j
+now let's say we want to make a half
+ramid of 10 rows
+then it means we need to run a loop
+which runs for 10 times
+so let's write
+or
+initialize it to 0
+i less than
+10
+i plus plus
+now here we have written i less than 10.
+instead of this we will write i less
+than equal to 10 because we want this
+tenth row to be printed also
+now we will print slash n
+in order to insert a new line
+now we'll write another for loop
+which will decide
+number of stars in a particular row
+so we'll write j equal to 1
+because
+this for loop is for the column section
+then j less than equal to i
+which is a row
+then g plus plus
+now we'll print
+star
+now one more thing instead of 0 we'll
+write i equals to 1
+because we want to print stars from 1 to
+10
+so now let's discuss it's working
+initially we have i equals to 1 that is
+the outer loop value
+now for this value a complete run of jth
+loop is happening
+that is j equal to 1 validated by j less
+than equal to i
+now this condition is used because the
+pattern which we are going to build is
+having increment of star as the number
+of rows increments
+so for i equals to 1
+j equals to 1 is executed
+then j plus plus is done
+which increments the value of j to 2
+now j equals to 2 failed to execute as 2
+is less than equal to 1 is false
+therefore only 1 star is printed
+[Music]
+again we go to ith loop now for i equal
+to 2 we'll check every value of j which
+can be executed that is 1 and 2
+since only two values can be true
+therefore 2 star are printed
+similarly we check for i equal to 3 4 5
+and so on till 9 as we have the
+condition i is less than 10
+so now we'll try to run this
+and check
+whether the pattern is printing or not
+here it is
+half pyramid form using stars with the
+help of
+nested loops
+so this is our star pattern
+we can make some more different types of
+patterns using nested loops
+but we have done only one example in
+order to understand the concept
+so now let's move to our control flow
+statements
+and let's do some examples of them
+okay now
+make a new file
+and let's name this file as
+control 1
+dot cpp
+now we'll write the header file and the
+name space standard as we have done
+previously
+so let's do it
+dash include
+live stream
+using namespace std
+now here
+we will write a program in which we have
+to print the numbers from 100 to 200
+like 110 120 130 with a gap of 10
+but after 150 we will terminate the
+ongoing loop
+now how can it be done with the help of
+break statement
+so let's start
+first of all we'll write intermittent
+now we'll take a variable num
+and initialize it with hundred
+now we'll write a while condition
+and we'll write num is less than equal
+to 200 because we want the loop to run
+from 100 to 200.
+num less than equal to 200
+now we'll simply display those numbers
+now we'll write an if condition that if
+num equals 150
+then we'll terminate the loop and for
+that we have to write the break
+statement inside the if statement
+so let's write
+if num equals equals 150
+then we have to break
+the loop
+write the break statement
+now after that we'll increment this
+by 10
+we're incrementing this by 10 because we
+want
+the numbers to be printed like 100 110
+120 like this
+that is why we are incrementing it with
+10 and not with one
+now we'll write out of the loop
+just to be informed that we are finally
+out of the loop
+return 0
+now we'll try to run this
+here we can see yeah here we can see 110
+120
+up to 150 after that we are out of the
+loop
+this means
+the code works fine
+so this is the example of a break
+statement
+now after this we'll do another example
+of
+continue
+so let's start
+let's make a new file
+and name it
+ctrl 2 dot cpv
+now we'll write the header files
+[Music]
+using namespace standard
+now in this program all we have to do is
+to print the numbers from 100 to 90
+only excluding 96 from them
+now how do we do it with the help of
+continue statement
+so let's start first of all we'll write
+into main
+now we'll declare a variable
+num and initialize it with hundred
+now we'll write a while condition
+while loop in which we write the
+condition
+num greater than equal to
+90 because we want the loop to run till
+it is equal to 90
+that is why we have wrote greater than
+equal to 90 basically we want the loop
+to run from 100 till it becomes equal to
+90.
+now inside the loop we'll write the if
+condition
+in order to skip 96
+so we'll write
+if
+num equals 96 num
+quilts equals 96.
+now we'll use a decrement operator
+because our starting point is 100 our
+ending point is 90 that is why we have
+to use the decrement operator
+now continue statement
+after that
+write
+value is
+and we'll write the variable number
+now we'll write num minus minus
+here we are writing minus minus because
+we want it to get decrement after
+printing also
+that is why we have written num minus
+minus after printing num
+now let's try to run this also hope it
+works
+okay i think there are some errors
+so
+[Music]
+some brackets were missing
+and we'll write return zero
+now we'll try to run it
+here it is
+as you can see
+199.98 97
+but 96 is missing
+so this is all we have to do in this
+program and this is the basic example of
+continue statement
+in order to understand these examples
+better you must try more examples on
+each of these loops and control flow
+statements so that it will be easier for
+you all c plus plus array so without
+further ado let's get started
+so what's in it for you
+we will start by understanding why do we
+need arrays then what is an array
+after that types of array like one
+dimension array two dimension array
+multi-dimensional array and then memory
+representation and lastly we'll go
+through our initialization
+so first is need of arrays
+we use arrays because it allows us to
+store similar type of data within
+contagious block of memory
+and it allows us to iterate through
+those variables conveniently using
+indexing
+usually an array is used to store
+similar kind of data like marks code by
+all the students of a class and record
+of attendance of all the employees in an
+organization
+now moving to what is an array
+an array can be defined as a collection
+of similar kind of elements these are
+always stored in contiguous memory
+locations that is one after the other
+the total number of elements in an array
+is called the length of the array
+now this is the way you can visualize
+the n array
+here each block is capable of storing
+data values of some type in sequential
+manner
+and each element can uniquely identify
+by its index in the array
+and this is the syntax of array
+int is the data type
+array is the array name and 5 is the
+size of array
+now there are few types of variant c
+plus plus
+those are
+one dimensional array two dimensional
+array and multi-dimensional array so
+let's first of all discuss one d array
+this is the simplest form of an array in
+this array data items are arranged
+linearly in one dimension having single
+index value to represent data elements
+now this is the syntax of 1d array type
+is the data type then there is array
+name and after that size of array
+and this is example of one dimensional
+array
+now coming to its memory representation
+here we can see 2 7 4 8 1 6 are the
+elements inside the memory blocks
+and 0 1 2 3 4 5 are the indexes
+so by using index we can easily access
+the elements and once the array elements
+are accessed a number of operations can
+be performed
+here area of 0 means 2 and array 1 means
+7 and so on
+as each element is of type int
+that is 2 byte
+that means the array occupies 12
+contiguous bytes because each block
+contain two byte and there are total six
+blocks
+now coming to the two dimensional array
+in this array each element is referred
+by two indexes that is rows and columns
+and they are stored in the form of
+matrices
+the first index shows a row of the
+matrix and the second index shows the
+column of the matrix
+now moving to its memory representation
+as you can see this is a 2d array with
+three rows and three columns
+and we can also say that these are
+basically three 1d array containing
+three blocks each
+combined to form a 2d array in the form
+of a matrix with size of three cross
+three
+the horizontal lines step its rows and
+the vertical lines tap its columns
+and we know that index starts from zero
+so first elements get stored at array
+zero zero that is zeroth row and zero
+column
+then second element is stored at array
+zero one that is zeroth row and column
+one and likewise all the elements are
+stored in the array
+now coming to the multi-dimensional
+array
+these are defined as area of arrays that
+means each element of multi-dimension
+array is an array itself
+they can have any number of dimensions
+and it stores the data in tabular form
+a two-dimensional array is also a
+multi-dimensional array
+and this is the syntax for a
+multi-dimensional array
+here type is the data type of array then
+array name is the name of the array and
+size 1 size 2 up to so on size n are the
+dimension of sizes
+after that this is the basic example of
+a multi-dimensional array
+now coming to the next topic that is air
+initialization
+so there are two ways to initialize an
+array in c plus plus
+first is you can initialize an array
+when you declare it by including the
+initial values in braces after the
+declaration
+while declaring we could use curly
+braces to set the values inside it
+for example in this array of size 6 the
+element 2 is at 0 index
+5 is at 1 index 1 is at 2 index and so
+on
+if we don't mention the size of array
+then the array will only be large enough
+to hold the elements added within the
+curly braces
+other than this we can set the value
+after the declaration by assigning the
+element to the array using its index
+like array of 0 equal to 5
+here we are assigning 5 to index 0 and
+array of 1 equal to 7 here we are
+assigning 7 to index 1 and same goes for
+the array of 2.
+now let's do some examples on array to
+understand them better we'll do these
+examples on our code editor that is vs
+code
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+now we'll make a new file
+and let's name that file as
+array.cpp
+array1.cpp
+now we'll do a basic example in which we
+have to print
+the elements of array
+so let's start first of all we'll write
+the header file
+[Music]
+hash include iostream
+now using namespace standard
+[Music]
+i will write into main
+now we'll start by writing the data type
+int
+now we'll write the array name that is
+let's say coupon
+and
+now the size of array
+let's say 6
+now
+curly braces now inside these curly
+braces will write those elements
+let's say 5
+8
+7
+3
+9
+[Music]
+1.
+so these are those elements and this is
+a
+array declaration
+now
+here int means the data type coupon is
+the array name 6 is the size of array
+and 5 8 7 3 9 1 are the elements of
+array
+now after that
+we'll write the for loop with 4 keyword
+now we'll initialize i
+with 0.
+i less than 6 because it is the size of
+array
+now we'll increment i
+now in this loop all we have to do is to
+print this array
+so how do we do that
+so let's do
+c out
+and inside the bracket we'll write i
+so here we have printed the array inside
+the loop and we have put i inside the
+array bracket
+now the loop will run from i 0 to 6 and
+likewise all the elements from 5 to 1
+will get printed so let's see
+let's try to learn this code
+so this is our output
+5 8 7 3 9 1
+so this is how we can print the elements
+of an array
+and if we want to print a particular
+element from the array all we have to do
+is to write the index number of that
+element inside the bracket
+let's say if we want to print 7
+[Music]
+all we have to do is to print its index
+number that is 2.
+now let's run this
+see
+777 it is because of the loop
+that from i 0 to i 6 that is why it is
+getting printed six times
+now if we remove the loop and try to
+print it then it will get print only one
+time
+let's see
+here 7
+and this is what we want to print
+now let's do another example
+let's name this file
+array2 dot cbd
+now in this example all we have to do is
+to do the sum of all the elements of the
+error
+so let's start by writing our header
+file
+dash include iostream
+[Music]
+now using namespace std
+now we'll write into main
+now here first of all we'll declare a
+variable sum and initialize it with zero
+[Music]
+now we'll declare another variable n
+and n will depict the size of the array
+so first of all in order to scan array
+first of all we have to scan the size of
+it
+so we'll scan n
+[Music]
+now we'll declare the error
+[Music]
+and inside the bracket we will mention n
+because it is the size
+[Music]
+now we'll write for loop
+and we will initialize with i equals 0
+i less than n which is the size of array
+and will increment i plus plus
+we are writing for loop here because we
+want to scan the array and as in this
+array there are more than one element so
+that is why we need
+for loops
+so now we will scan the error
+we'll write c in
+the name of array
+and inside the bracket we'll write i
+now here we have written i inside the
+brackets because we want to take input
+of elements from i equal to 0 to n which
+is the size of error
+now
+we'll take another for loop
+now here we will write another for loop
+in which we are initializing i from 0 to
+n
+and inside that for loop we will do the
+sum of the array
+so we'll write
+equals to 0
+[Music]
+i less than n which is the size
+now we will implement i plus plus
+now inside this for loop
+we'll do the code we'll do the logic of
+adding the elements of the array
+we'll write sum
+as we know that we have already
+initialized sum with 0 we'll write sum
+equals to sum
+plus
+array of 5
+now for this statement sum equals to sum
+plus area of i we are adding each value
+in the array one by one into the sum
+which is initially zero
+when i equals to zero then the sum will
+be equal to zero plus array of zero
+and this sum will keep on getting stored
+inside the variable sum
+as our i increments our sum keeps on
+storing the addition value
+now
+we'll print this sum
+outside the loop
+we'll write c out
+and we'll write sum is
+[Music]
+now we'll write the sum variable
+return
+zero
+let me tell you return zero is optional
+in c plus
+basically return value is exit status of
+the program and 0 is considered as ok
+in c plus compiler includes it
+automatically but it's a good practice
+here we forget to write the data type
+now we'll try to run it
+[Music]
+so first of all we'll write the size
+like
+let's say six
+now the elements of the array
+let's say one
+two
+three
+four
+5
+and 6.
+now we want to find the sum of these
+elements
+sum is 21 let's recheck
+1 plus 2 equals to 3 3 plus 3 equals 6
+6 plus 4 10
+10 plus 5 15 15 and 6 is 21 so this is
+our right answer
+so this is another basic example of
+array
+so after this we'll do one example of
+two dimensionary also
+so let's make a new file
+and we'll write the header file
+let's name this file as
+array3.cpp
+now namespace standard
+now we'll write into main
+now we will declare a 2d array of three
+rows and three columns with elements
+inside it
+three rows
+and second bracket will write three
+columns
+now we'll write the curly braces
+and
+another curly braces
+this is the way to declare
+a 2d array
+now two
+seven
+nine let's say
+now again curly braces
+one
+three
+eight because we are creating a
+matrix of 3 cross 3
+that is why there are total 9 elements
+inside the array
+so now we will create a nested for loop
+where the outer loop i which is for the
+rows of matrix is initialized from zero
+to two
+we'll write
+in i equal to zero
+now i less than three
+i
+plus plus increment
+now we will write inner for loop j which
+is for the column and we will initialize
+it from 0 to 2 as well
+we'll write 4
+and j 0
+j less than three
+j plus plus
+now we will print the array
+in the first bracket we will mention i
+that is the number of rows and in the
+second bracket we will mention j that is
+number of columns
+and in order to add space
+we will add
+space in the output
+now
+outside the bracket we will mention
+handle
+shift the elements to the next line
+after that we'll write it in 0.
+so this is our output 541279138
+in the matrix form that is why i have
+used this space to make the output look
+good and this handle
+so this is our output five four one two
+seven nine one three eight
+so this is how we can print the elements
+of a multi-dimensional array for
+two-dimensional array
+these were some basic examples of array
+and in order to understand these
+programs you must practice more examples
+on it c plus plus functions so let's go
+ahead and look what's in it for us
+first we will discuss what is a function
+then we will understand why we use
+functions
+then types of functions like built-in
+function and user defined function
+then function declaration
+after that function calling
+then function call methods and at last
+we have recursion
+also don't forget to subscribe to our
+channel and hit the bell icon to never
+miss an update
+moving on to the first topic that is
+what is a function
+functions are blocks of code that are
+designed to perform a specific task
+it basically divides the complex problem
+into smaller portions and make the
+program easy to understand and reusable
+and by reusable it means we can define
+the code once and we can use it many
+times
+we can also pass data into the functions
+in the form of parameters
+and this is the syntax
+first is return type of the function
+then we will write function name
+then inside the bracket
+these are the parameters
+now let's discuss why we use functions
+functions make the program less
+complicated because once function is
+defined in the program then it can be
+used over and over again
+which reduces the complexity of code
+and it helps in avoiding the duplicity
+of code and it reduces the amount of
+code
+due to this we can easily debug and
+maintain the code
+now coming to the types of functions
+there are two types of functions in c
+plus plus
+that is built in functions and user
+defined function
+now let's discuss these functions
+first is built-in function
+these are also known as predefined
+functions or library functions
+we don't need to define these functions
+because these are already present in c
+plus plus libraries and the
+implementation of these functions are
+also available in library file
+and to use these functions we don't have
+to write them separately we simply call
+them
+now coming to the user defined functions
+c plus plus allows us to define our own
+functions these functions are created by
+programmers according to their
+requirement
+this allows a way to wrap a set of
+statements to perform a specific task
+and that group of statement is given a
+name so that it can be invoked later
+from any part of the program
+following is the example of user defined
+function
+here club is a user defined function
+with the return type wired and it is
+being called from the main function
+now
+let's learn about function declaration
+function declaration basically acts as
+an identification for the function
+it informs the compiler about the
+existence of function
+function's name
+the number of parameters in the function
+and its return type
+these things acts as an identifier for a
+function
+and this is the syntax for a function
+declaration
+first we will write the return type then
+we will write the name of the function
+after that inside the bracket we will
+write the number of parameters
+for example in this chess function int
+is the return type chess is the name of
+the function
+and inside the brackets these are the
+number of parameters
+although we can write the names of
+parameters but names of parameters are
+not important in the function
+declaration only their type is required
+now let's learn about function calling
+in order to use a function we'll have to
+invoke or call a function
+when a program calls a function the
+control of the program is transferred to
+the called function and when the call
+function completes its task then the
+control is returned back to the main
+program
+so the functions are called by writing
+the name of function and after that
+writing the required parameters inside
+the brackets
+and this is the syntax
+first we will write the function name
+and after that we will write the
+arguments which you want to pass
+for example sum is the function name and
+a and b are the arguments
+now coming to the function call methods
+now if the function is without any
+arguments then it can be called directly
+but if there are arguments within a
+function then there are basically two
+ways to call a function
+one is call by value and another one is
+call by reference
+in call by value we pass the copies of
+values of arguments into the formal
+parameters of the function
+hence the original value of arguments
+remains unchanged and only the
+parameters inside the function changes
+and in call by reference we pass the
+reference or address as arguments inside
+the formal parameters inside the
+function
+so any change inside the function will
+be reflected to the original arguments
+because here we are not sending any
+copies of arguments but we are sending
+the address of the variable as arguments
+so these were the two methods
+now coming to the last topic that is
+recursion when a function calls itself
+again and again until a specific
+condition is met then it is known as
+recursive function
+and the technique is known as recursion
+this enables the function to repeat
+itself several times and it gives out
+the result at the end of each iteration
+and this is the basic syntax example in
+which the function name recursion is
+being called by itself
+now let's do some examples on it to
+understand functions in a better way
+we'll do the examples on our code editor
+that is vs code
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+now here we will do a program in which
+we have to do the sum of two integers
+with the help of function
+so let's first of all
+make a new file
+function dot cpp
+okay so let's start first of all we'll
+declare the header files
+that is hash include iostream
+now the name space standard
+now we will write int main
+now inside end main we will declare a
+variable named s
+here we have declared this variable
+because we want to store the sum of
+those two integers in this variable
+so
+[Music]
+we'll call the function let's say let's
+name the function as sum
+and let's
+assume the variables to be 5 and
+5
+here sum is the name of the function and
+5 comma 5 are the arguments
+now we'll make the function sum
+here end
+is the return type
+sum is the name
+and
+paint a
+comment b
+are the parameters
+so in this function we'll write the code
+to do the sum of these two integers and
+for that we have to store the sum in a
+variable
+for that we will now declare a variable
+c
+now we will write
+c equals
+a plus b
+here we are storing the sum of a plus b
+into the variable c
+now as we know that the return type
+isn't so we have to return the variable
+instead of printing it
+will write
+return
+c
+now in the main function
+we'll print that variable
+we will print the variable s
+because after the function completes its
+task of addition the output will come
+back to the calling function which is
+getting stored in the variable
+s so
+we'll write
+the result is
+now we will write the variable s
+let's see
+hope it runs
+the result is 10
+5 plus 5 on addition we'll get 10
+let's write
+3
+and again
+try to run this
+the result is 8
+5 plus 3 equals to 8 so this is the
+right answer
+now we will do another example
+of c plus function
+in which we have to find the larger
+number or greater number among two
+elements
+so let's do that
+let's create a new file
+function1.cpp
+now we will include the header files
+hash include iostream
+now using namespace standard
+now first of all we'll write the intent
+now the variable n1
+now we will declare another variable n2
+these are the two variables among which
+we have to find the greater number
+so
+we'll display a message saying that
+enter
+the first number
+now we'll take the input
+and one
+now we'll do the same for the other one
+we'll write
+enter the second number
+we'll input the second number
+now
+we have to make a call to the function
+named let's say
+maxi
+and we will pass these arguments
+n1 comma n2
+now let's make this function maxi
+the return type is void
+maxi
+is the name
+we'll write the variables n1
+and 2.
+now we'll write the if condition because
+we have to find the greater number among
+both these elements so we'll write the
+if condition
+if
+n1 is greater than n2
+then it must print the unwanted
+will also display a message saying that
+the larger number is
+n1
+if n1 is greater than n2 then we'll
+display the n1
+and
+if n2 is greater
+then we'll display the n2
+we'll write the variable n2
+so let's see if that runs or not
+i think we have to write the first
+number here we can see enter the first
+number
+enter the first number
+so
+we'll write let's say
+56
+and
+the second number would be
+78
+the larger number is 78
+so
+among both the numbers as we know that
+70's is greater than 56 so this is how
+we can show it with the help of
+functions
+so these were some basic examples of c
+plus plus functions in order to
+understand it better you must practice
+more examples on it
+why we need oops then what is object
+oriented programming
+then we will discuss the difference
+between oops and procedural programming
+then we'll go through basic concepts of
+oops and at last we will learn about the
+benefits of hoops
+but before moving forward make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+now let's move on to our first topic
+that is why oops
+well there were some limitations in
+earlier approaches to programming
+and oops help to fill those gaps
+in object oriented programming it is
+easy to maintain the code with the help
+of classes and objects
+and with the help of inheritance there
+is code reusability that is we don't
+have to write the same code again and
+again which increases the simplicity of
+the program
+now let's understand what is object
+oriented programming
+object oriented programming is a
+programming pattern where the programs
+are structured around objects rather
+than logic and functions
+in other words we basically focus on
+objects that are required to be
+manipulated instead of logic
+for example let us suppose we have made
+blueprint of a mall then that blueprint
+will be a plan that explains what
+properties the mall should have and how
+it should look like etc
+but it is just a blueprint of them all
+we cannot go inside it physically as of
+now
+now the constructors will go through the
+blueprint and they will construct them
+all and they can make as many malls as
+they want with the help of that
+blueprint and each mall can have its own
+different shops and showrooms
+in this case blueprint is the class
+the mall is the object and the show ups
+and showrooms inside the malls are data
+stored in the object's properties
+and these are some basic concepts of
+oops
+first is classes then objects then data
+abstraction and encapsulation then there
+is inheritance polymorphism dynamic
+binding and message passing we will
+learn about these concepts later first
+we will discuss the difference between
+oops versus procedural programming
+procedural programming follows top down
+approach here tope down approach means
+fragmenting a bigger complication into
+smaller chunks
+oops follows bottom-up approach and
+bottom-up approach means
+piecing together smaller tasks to give
+rise to complex tasks
+in procedural programming overloading is
+not possible
+in oops overloading can be done
+in procedural oriented programming there
+are no access specifiers in oop
+they have access specifiers like private
+protected public
+procedural oriented programming is less
+secure
+oops is more secure because of the
+concepts like abstraction and
+encapsulation which are used for data
+hiding
+now
+let's learn the basic concepts of oops
+first is class
+class can be defined as collection of
+objects it is a logical entity
+then there is object
+it is defined as an entity that has
+state and behavior or in other words
+anything that exists physically in the
+world is called an object
+inheritance can be defined as when one
+object acquires properties and behavior
+from its parent class
+it provides code usability
+polymorphism polymorphism is a
+combination of two words poly which
+means many and morphs which means forms
+it is basically an ability to exist in
+more than one form
+next is abstraction
+hiding the internal details and showing
+the functionality to the user is called
+abstraction
+then encapsulation encapsulation is the
+binding of code and data together into a
+single unit
+in dynamic binding dynamic binding is
+the method called at runtime that means
+which code will execute is unknown until
+the program runs
+then there is message passing
+it is basically a communication that
+exists between the objects
+as we have gone through some concepts of
+oops
+now let's discuss some benefits of oops
+in oops code can easily be reused with
+the help of inheritance and object
+we don't need to write the same code
+over and over
+second is with the help of abstraction
+and encapsulation certain parts of
+program can be hidden and it helps to
+make a secure system
+third is
+maintaining and modification of code is
+easy in object oriented programming
+now to do some examples on concepts of
+oops let's move on to our code editor
+that is vs code
+now here we will do a program of
+inheritance in which we will make a
+parent class and a child class and we
+will call the attributes using object of
+child class
+so let's get started first of all
+let's name the file
+oop
+dot cpp
+okay so first of all we'll add the
+header files
+hash include
+iostream
+now adding namespace standard
+now we will write int main
+we want to create the object of side
+class so first of all we'll write the
+name of class child that is child
+let's put c capital
+child and now the name of the object ch
+so now we will call the attributes using
+this object
+so we'll write first of all
+display it so we'll write c out
+ch
+dot
+name
+1
+which is the attribute
+we will declare it later
+so basically we want to write both the
+names of both the classes together so
+that is why
+we are doing like this we'll write name
+two
+name one will be the attribute of the
+parent class and name two will be the
+attribute of child class
+so after that we'll write
+return zero
+now
+we'll make the parent class and the
+child class so first of all let's write
+class
+parent we'll name it as parent
+then we'll write public access specifier
+string
+is the data type
+name
+one
+let's write
+harley
+okay now
+it is mandatory to write the semicolon
+at the end of the class
+now
+we'll write the derived class that is
+child
+we will write the column symbol
+then we will write public
+name of the parent class that is parent
+so here we are writing
+the child class is derived from the
+parent class
+now
+within the bracket we'll
+write public
+then string the data type
+name
+to
+will write ha davidson
+it's a popular bike brand harley
+davidson
+so
+now we'll write the semicolon over here
+now we'll try to run this
+[Music]
+as you can see harley davidson
+here harley is from the parent class and
+davidson is from the child class
+so as we can see that we are calling
+from the object of child class and still
+we are able to access the attribute of
+parent class
+so this shows that the child class
+inherits attributes or properties from
+the parent class
+now as we have done one example of
+inheritance
+so now let's do one example of
+polymorphism also
+let's name it oop
+one dot cpp
+first of all we'll include the header
+files
+flash include iostream
+stream
+now we'll write using namespace standard
+after that we'll write int main
+now here we will do an example of
+polymorphism in which we will make a
+base class and its derived classes and
+inside these classes we will override a
+function which is common in all of these
+classes
+so let's start
+first of all we'll write the name of the
+parent class or base class
+animal
+and we'll make an object a
+after that we'll write the name of the
+child class jeeta
+and its
+object name is c let's say
+now
+another derived class dolphin
+and we'll name the object as d
+now while making these classes we'll
+write a function name speed
+in all of these classes inside all of
+these classes and now in order to
+override that function we'll call them
+so
+first of all we'll call it by the object
+of animal that is a
+a dot
+speed
+now c dot
+speed
+this is the object of cheetah class now
+d dot
+speed
+after that we'll write return 0
+now let's make these classes
+first of all we will make the animal
+class that is the base class
+animal
+now we'll write the access specifier
+public
+now we'll write the function
+void that is the data type speed
+now we will
+display a message inside this function
+let's say
+it displays who is more faster
+who
+is
+more
+faster
+okay
+now
+we'll put a semicolon in the end
+now we will make a derived class that is
+dolphin
+we'll write class
+dolphin
+child of
+animal
+class
+okay so now inside this class
+we'll write public
+and we'll make the same function speed
+and we'll display a message
+saying
+as this class is of dolphin so
+we'll write
+i'm faster
+in
+water
+we'll put semicolon
+now we'll make
+another child class
+class
+cheetah
+okay c is capital cheetah
+public
+animal
+now here we will write
+public access specifier
+and we'll write the same function wide
+speed
+and over here will display a message
+saying that
+i am
+faster on the ground
+semicolon
+so now as we can see that a dot speed is
+calling this speed function
+in animal class
+c dot speed is calling this
+cheetah function
+in cheetah class
+and d dot speed
+d dot speed is calling the dolphin
+speed function in dolphin class
+okay so now let's try to run this
+[Music]
+okay the output is here but it is not
+in very good form so
+let's put slash n in the end
+okay
+slash and
+slash and
+okay
+here it is
+so first who is faster is displayed then
+i'm faster on the ground
+then i'm faster in water
+is displayed
+so as we know that first of all we have
+called the animal class so that is why
+who is more faster is displayed after
+that we have called the cheetah class
+and cheetah says that i'm faster on the
+ground then dolphin class then dolphin
+says i am faster in water
+so
+here we can see that each of the class
+have its different implementation for
+the same function that is speed
+and this is how polymorphism allows us
+to do a single action in variety of ways
+okay now let's do one example of
+abstraction
+let's name it as
+oop
+three dot cpp
+first of all we'll include the header
+files we'll write hash
+include iostream
+now we'll write the namespace standard
+using namespace std
+now as we know abstraction helps in data
+hiding so in this program we will make a
+variable named coupon as private and
+with the help of set coupon function we
+will try to assign some value to the
+coupon variable
+and after that we will display it
+so let's start
+first of all we'll write int main
+now we'll write the name of the class
+that is trade fair
+trade
+fair
+and now the name of the object t
+now with the help of this object we will
+call a function named
+set
+coupon
+i would say coupons
+and we'll pass 50 as an argument to this
+function
+now
+we'll display
+a message
+coupon
+and after that
+we will call getcoupon method in order
+to display the number of coupons
+so we'll write t dot
+get
+coupons
+and
+brackets
+done
+after that we'll write return zero
+now let's make the class and the
+functions
+so let's start first of all
+we'll write
+class
+trade fair
+now we'll write an access specifier
+private
+and
+i private
+now
+we will declare a variable coupon
+and
+as i've already told you we will make
+this variable as private so that is why
+we have used this access specifier as
+private
+now
+after that we will
+write public access specifier
+to write a function
+that is set coupons
+set
+coupons
+and the parameter is c
+as we know that we have passed 50 to
+this
+parameter
+so
+[Music]
+now
+we will write
+the private variable coupon
+equals c
+so here we are basically assigning
+the value of c to the coupon that is we
+are assigning 50 to coupon
+variable
+now
+after that
+we will make another function
+and
+we'll put its data type as int because
+it is returning something
+so
+we'll write and get coupon
+and we will return
+variable
+coupon
+now as the class ends we'll write
+semicolon
+now let's try to run this code
+there is some error
+okay we haven't write s over here
+now let's again try to run it
+coupon
+50
+as i have told you
+so here we have assigned 50 to
+this function and
+the variable c is assigning
+50 to the variable coupon
+now after that we have used getcoupon
+function to return the value of coupon
+and that is why it is getting displayed
+over here
+so
+we got our answer that is coupon 50.
+and as you can see that in this example
+we are not
+allowed to access the variable coupon
+but still somehow we have managed to do
+that with the help of some functions
+so this is an example of abstraction
+and
+it helps to increase the security of the
+program
+so this
+these were some basic examples
+of oops in c plus plus
+in order to understand it better we must
+practice some more examples on it
+c plus plus inheritance so without
+further ado let's get started so in this
+session we will learn about what is c
+plus plus inheritance why do we use
+inheritance in c plus then we will
+understand different modes of
+inheritance and after that we will learn
+about types of inheritance that is
+single inheritance multiple inheritance
+multilevel inheritance and hybrid
+inheritance in c plus but before we
+begin make sure to subscribe to our
+channel and hit the bell icon to never
+miss an update so what is inheritance in
+c plus just like a child inherits the
+behavior and characteristics from his or
+her parents similarly inheritance in c
+plus plus is a process in which the
+derived class acquires all the
+properties and characteristics from the
+parent class that is the base class
+derived class is also known as child
+class and base class is also known as
+parent class
+inheritance is one of the most important
+feature of c plus plus hoops that is
+object oriented programming in
+inheritance there are two types of
+classes the class which inherits the
+properties and behavior from the base
+class is known as derived class and the
+class whose properties or
+characteristics are inherited is called
+a base class
+now let's understand why we use
+inheritance in c plus plus inheritance
+is used in c plus plus because it
+increases the reusability of the code
+and it helps in removing the redundancy
+to understand it let's suppose there are
+two classes two wheeler and four wheeler
+both of the classes contain similar
+functions like color brand and mileage
+now if we create these classes we have
+to create all the three functions in
+both of the classes or in other words we
+have to write the same code two times in
+both of the classes so instead of
+writing that code again and again we can
+use inheritance and create a parent
+class named class michael and both of
+the two wheeler and the four wheeler
+classes will be inherited from this
+parent or base class
+now with inheritance we have inherited
+both the classes from one base class
+that is class cycle now we no longer
+have to write the code again and again
+and we can simply write the functions
+once in the base class as both of these
+classes are inherited from the base
+class vehicle so as we have understood
+about inheritance in c plus plus and why
+we use inheritance in c plus plus so now
+let's go ahead and learn about modes of
+inheritance there are three modes of
+inheritance in c plus plus that is
+public mode protected mode and private
+mode of inheritance so let's start with
+the public mode in this mode of
+inheritance the public members of base
+class remains public in derived class
+and same goes for the protected members
+that means inside the base class the
+class members that are public will
+remain public in the derived class and
+similarly protected class members will
+remain protected in derived class
+now protected mode in the protected mode
+the public and protected members of the
+base class will become protected in the
+derived class that means the class
+members which are public or protected in
+the base class will all become protected
+in the derived class in the private mode
+of inheritance protected and public
+members of class will become private in
+the derived class so now let's go ahead
+to the types of inheritance so there are
+various types of inheritance in c plus
+plus that is single inheritance multiple
+inheritance multi-level inheritance
+hierarchical inheritance and hybrid
+inheritance so let's start with the
+single inheritance in this type of
+inheritance a single derived class is
+inherited from the single base class it
+allows the derived class to inherit
+properties and behavior from the parent
+class the derived class objects can
+access the members of the base class but
+the base class objects cannot access the
+members of the derived class so now
+let's have a look at the syntax as we
+know this is single inheritance so there
+will be only a single derived class and
+a single base class and this is how we
+derive a child class from a parent class
+class keyword then the name of the
+derived class then the colon operator
+after that there is an access modifier
+with the base class now as we have
+understood about single inheritance and
+its syntax now let's move on to multiple
+inheritance multiple inheritance when a
+class inherits from more than one base
+class or multiple base classes then it
+is known as multiple inheritance it
+allows us to inherit properties and
+characteristics from more than one base
+class
+syntax for multiple inheritance is class
+keyword with the name of derived class
+then the colon operator and access
+modifier with the name of the base class
+separated with comma and the name of
+another base class here we have shown
+only two base classes but we can make
+more than two base classes depending
+upon our requirement now coming to
+multi-level inheritance in this type of
+inheritance the derived class is
+inherited from another derived class
+that means when a class extends a class
+that further extends another class is
+known as multi-level inheritance for
+example if there are three classes a b c
+and class c is inherited from class b
+and class b is inherited from class a
+then it can be called as a multi-level
+inheritance syntax of multi-level
+inheritance is as follows base class 2
+is derived from base class 1 and the
+derived class is derived from base class
+2. these base class 1 base class 2 and
+derived class are just the names not a
+syntax you can write whichever name you
+want with the class now let's learn
+about hierarchical inheritance in this
+type of inheritance more than one class
+is inherited from a single base class
+that is there would be a single base
+class and multiple derived classes
+which have the properties and features
+same as that of the base class as we can
+see in the figure and in the syntax the
+derived class 1 is derived from base
+class and similarly derived class 2 and
+derived class 3 are also derived from
+the base class
+so this was hierarchical inheritance and
+our next type of inheritance would be
+hybrid inheritance the hybrid
+inheritance is the combination of more
+than one type of inheritance and it can
+be said that it is a combination of
+multi-level and hierarchical inheritance
+in the figure we can see the base class
+1 is the parent class of derived class 1
+and derived class 1 is the parent class
+of derived class 3 which makes it
+multi-level inheritance but if you look
+at it in this way that the base class 1
+is the parent class of derived class 1
+derived class 2 and derived class 3 then
+it is hierarchical inheritance as
+multiple classes are inherited from a
+common base class so we can say it is a
+combination of more than one type of
+inheritance or a hybrid inheritance so
+as we have understood about inheritance
+in c plus so now let's go to its
+practical aspect and do some examples on
+our code editor that is vs code so this
+is our visual studio code and now we
+will do an example of inheritance we'll
+start by doing the single inheritance
+example in which we will make a parent
+class and a child class and let's start
+first of all we'll create a file and
+let's name this file as
+let's name it inherit
+dot cpp
+so here we'll do an example in which you
+will create two classes a base class and
+a derived class and will create
+functions in those classes like we will
+create one function in base class and
+one function in derived class and using
+the object of derived class we will
+access the member of
+parent class or base class so let's
+start first of all we will include the
+header files
+hash include iostream
+now the name space standard using name
+space
+std
+now we'll create a base class first then
+afterwards we'll create the main
+function
+all right so
+let's create the base class
+let's say the name of the base class or
+the parent class would be beverage
+and inside this class let's make the
+scope public and
+now let's create a function
+as we have said
+drinks
+so this is a function and we will print
+something inside this function so let's
+say we are printing
+uh all rings are available
+all drinks
+are available
+now i will write endl now
+we will use semicolon in the end of the
+class so this is our base class and we
+have created a function drinks and we
+have printed a message all drinks are
+available
+all right now we will create another
+class which is derived class or child
+class
+we will write
+class
+coffee is the
+name of the derived class and use the
+column operator public access specifier
+and the name of
+the base class that is beverage
+all right now we'll write
+public access specifier inside this
+class and we will create a function in
+this class also like let's say the name
+of the function would be mocha
+it is a kind of a coffee so mocha and
+we will print
+that
+mokka tastes good
+tastes the best i would say
+okay
+now
+let's use the corn operator in the end
+of the class
+so here we have created the parent class
+or base class and this derived class of
+child class
+so now we will create the main function
+we will do the calling
+so now we will create the object of
+child class
+so our child class is coffee
+and
+now we will create the object that is c
+the name of the class and the object
+okay now we will use the object with dot
+operator and call this function that is
+drinks
+and now using the same object we will
+call the
+mocha the spelling is wrong yeah now it
+is right
+mocha
+so using the object of child class here
+we are calling the drinks function which
+is of the parent class
+so
+let's see if it works or not
+let's save it and now run it
+as you can see all drinks are available
+and mocha taste the best
+both of these are getting printed that
+means the
+object of child class is able to access
+the member of the parent class
+so this is inheritance when the child
+class
+acquires or inherits the behavior or
+characteristics from a parent class or
+access the members of the parent class
+this is an example of single inheritance
+so now let's do another example of
+multiple inheritance
+so let's create a new file
+and name it as inherit 2 dot cpp
+all right now here we will do an example
+of multiple inheritance in which we will
+create two base classes and a derived
+class as we know that in multiple
+inheritance there are more than one base
+classes to a single derived class
+so let's start first of all we'll
+include the header file
+now we'll use the namespace standard
+and now we will create a class that is
+the base class
+and we'll name it as party so class
+party inside this base class we will
+first of all declare the public scope
+and now we will declare a variable let's
+say meals
+so now we will create a function and in
+this function we will take the input
+from the user about the number of meals
+to enter the number of mails
+so
+let's start void
+food this is the function name and first
+of all we'll display the message
+saying that
+enter
+number of meals
+all right now
+we will take the input
+and meals
+is the variable
+now we will use the semicolon at the end
+of this class
+so in this
+function we are taking the input of the
+number of meals now in this in the other
+class that is another base class
+we will take the input of number of
+drinks from the
+users
+and then in the derived class we figure
+out the total bill of the party
+all right now
+we'll create another base class that is
+drinks
+not drinks
+drinks
+all right
+now we'll write the public scope
+and similarly we'll create
+or declare another variable drink
+and
+then now we will create a function let's
+say the name of the function is
+liquor
+all right now inside this function we
+will take the input from the user
+regarding the number of drinks
+so
+we'll display the message
+enter
+the number of
+drinks so the user will enter the total
+number of drinks used in the party or
+consumed in the party similarly goes for
+the meals now we will take the
+input
+and we'll write
+drink
+drink all right
+now we have created this liquor function
+now we will use the semicolon at the end
+of the class here we have created both
+the base classes that is class party and
+class strings
+now we have to create the derived class
+so this is example of multiple
+inheritance so
+we will create
+the derived class
+and use the
+column operator now we will write the
+public specifier and the name of the
+base class first base class would be
+party
+separated with comma the second base
+class would be drinks
+all right so this is how we can do that
+now inside this class we will first of
+all create three variables
+let's say
+hint
+total
+meals
+in
+total
+drinks
+and int
+total
+bill because in the end we have to find
+out the total bill all right
+now
+inside the public scope
+we will create a function
+name as total
+now inside this total function we'll
+write the logic to calculate the total
+bill
+so what we'll do is first of all write
+the total meal
+total meals
+equals
+meals
+into the price of a single meal let's
+say the price of a single meal is 90.
+so the total product would be stored in
+total meals
+all right now
+we will do
+same for total drinks total drinks not
+frank's equals
+drink
+into
+let's say the price of a single drink is
+60
+yes all right
+now after that we have to compute or
+calculate the total bill
+total bill would be
+the addition of both of these total
+meals plus total rings so we'll simply
+do the addition over here
+total drinks
+so once it's calculated we'll simply
+display a message saying that the total
+bill for the party
+total
+bill for the party is
+and we'll write the variable that is
+total bill
+where the total
+bill is actually getting stored all
+right after this we will use the
+semicolon so this is the derived class
+here we have calculated the total money
+spent in the party
+so now we have to write the main
+function where it all started
+inside the main function
+first of all we will create the
+object of child class so we know that
+our child class or the derived class is
+bill
+so bill is the derived class and b would
+be the object so using this b we will
+first of all call a function
+that is
+food function
+so by calling this we will take the
+input of number of meals now we will
+call another function
+named liquor
+all right using this function calling
+this function will take the number of
+drinks from the user
+now we will call
+this total function
+so this will calculate the total money
+spent in the party
+and after that let's say return 0.
+we are calling all of these functions
+using the object of derived class and
+this is where multiple inheritance is
+going on so let's see whether it works
+or not we will save it and we'll try to
+run this
+enter number of meals as you can see
+enter number of meals let's say the
+number of meals would be 20 it was a
+short party then enter number of drinks
+17 would be so our total bill for the
+party is three two seven zero which is
+the correct answer so this is how we can
+do multiple inheritance and this is a
+fine example of multiple inheritance now
+let's do another example so let's name
+this one as
+inherit three dot cpp
+all right so here we will do an example
+of multi-level inheritance and we know
+that in multi-level inheritance a single
+derived class is inherited from another
+derived class
+or in other words we can say a class
+extends a class which further extends
+another class then it is called a
+multi-level inheritance as the name
+suggests
+so
+we will do example of that in this
+example we will calculate the marks of a
+student scored by him in three subjects
+we will calculate the total marks scored
+by him uh using multi-level inheritance
+so let's do this
+so first of all we will
+include the header file hash include i
+stream then we will write the name space
+standard
+now we will create the class
+base class
+chemistry
+all right in this class
+first of all we will make the public
+scope
+and
+marks one so here we will take the input
+of marks code by that particular child
+in this chemistry subject so we'll
+create the chemistry function white
+chemistry this is of same name as that
+of class so let's take mystery marks
+all right now we will display the marks
+code in chemistry
+enter the marks
+scored in chemistry
+spelling is wrong okay now we'll take
+the input
+marks one so the student will enter the
+marks after that
+let's put semicolon in the end now we'll
+create another class named physics
+which is inherited from chemistry class
+that is chemistry class is its base
+class
+chemistry
+all right so
+in this class
+we will do the same public
+and
+marks 2 print marks 2
+now we'll write void
+physics marks
+we'll do the same as we have done in the
+previous class
+so now we will
+display a message saying that enter the
+marks
+code in
+physics
+all right
+now we will take the input c in
+max2 all right so now we will put
+semicolon in the end of this class as
+well so now we know that this physics
+class is is inherited from this
+chemistry class that is the mystery
+class is the base class of physics class
+now
+we'll do same for maths like class
+maths
+which is in
+inherited
+from the
+physics class
+we will write physics
+inside this class as well we'll do the
+same and as you can see this physics
+class is the base class of maths and the
+base class of physics class is chemistry
+so this is a multi-level inheritance
+so in this class we'll do the same
+public scope and now after public scope
+hint marks three is the variable we have
+declared
+and we will declare another variable in
+this one like total because we have to
+find out the total marks
+now
+function maths
+marks
+inside this one we will display the
+message
+that enter
+the marks yeah enter
+the
+marks scored in
+maths all right now we'll take the input
+marks three and we'll write the
+semicolon in the end
+so here we have created all of these
+three classes which is of multi-level
+inheritance as you can see
+we have taken the input from the
+user of its maths physics and chemistry
+marks
+now
+we'll do the total so
+we have to do the total inside this
+class only so the name would be
+result function
+so
+the total
+func variable that we have declared
+is equal to marks one
+marks two plus
+marks three so physics commission maths
+marks we will add all of them
+and then we will display the total
+all right
+now this is done now we have to go to
+the main function
+now first of all we will create the
+object of child class maths
+once this object is created now we can
+call the functions as it can access
+the base classes
+so
+chemistry marks first of all
+then m dot
+physics
+marks
+m dot maths marks
+and then the total that is result result
+function m dot result
+then we'll write return zero
+so
+return zero so here first of all m dot
+chemistry marks will call this function
+in the chemistry class so the user will
+enter the marks code by him in chemistry
+then this will call physics marks so the
+user will enter the marks code by him in
+physics subject then similarly we will
+match marks they will enter the marks of
+max then we will call the result
+function we will do the total of all the
+marks scored by the student
+we will do the total and then we will
+display that total so pretty much it's
+done now we can save it and now let's
+try to run this one there are some
+errors
+all right that's a silly one
+by mistake we have done this
+all right now let's save it and run it
+again hope it works now yeah another
+error
+marks
+now let's try again now it's working
+fine enter the marks code in chemistry
+let's say 80
+physics
+80
+or math is weak let's say
+75
+235 which is the right answer 80 plus 80
+plus 75 is equal to 235 and using the
+object of child class we have all the
+functions of all of these base classes
+like we have called this chemistry marks
+function and this physics marks function
+which is of base class and this was a
+fine example of multi-level inheritance
+and this is how we can
+do multi-level inheritance so these were
+some examples of c plus plus inheritance
+you can try some more examples on it and
+these were some decent examples
+to understand it better you can start
+with some basic level examples then go
+to the intermediate level c plus plus
+polymorphism
+so let's go ahead and have a look at
+what we'll be covering
+today so we'll start with what is
+polymorphism in c plus plus then types
+of polymorphism in c plus plus that is
+compile time and runtime
+we'll also study function overloading
+and operator overloading under compile
+time polymorphism
+and under runtime polymorphism we will
+learn about
+function overriding and virtual function
+in c plus
+but before we begin make sure to
+subscribe to our channel and press the
+bell icon to never miss an update from
+simply learn
+so what is polymorphism in c plus plus
+polymorphism is an important topic of c
+plus plus oops concept
+the word polymorphism is derived from
+two words that is poly which means many
+and morphs which means forms so
+basically it means many forms
+polymorphism in c plus plus can be
+defined as when the member function or
+the object behaves differently in
+different
+situations or circumstances
+then it can be called as polymorphism
+for example
+a mother has different relationships
+with different family member inside the
+house for example she is a parent to her
+child
+she is a wife to her husband she is a
+sister to her brother and she is also a
+daughter to her parents
+so we can say a mother as a single
+entity has different behavior among
+different members
+and same goes for polymorphism where
+functions behave differently in
+different situations
+now
+let's understand the types of
+polymorphism
+there are two types of polymorphism in c
+plus plus that is compile time
+polymorphism and runtime polymorphism
+so let's start with compile time
+polymorphism
+as the name suggests
+this type of polymorphism occurs during
+the compile time and it is achieved by
+overloading the function or overloading
+the operator
+that is by function overloading or
+operator overloading
+so what is this function overloading
+function overloading is a feature in c
+plus
+where the functions having the same name
+but different in terms of parameters or
+type of parameters can be overloaded
+for example as you can see two functions
+with same name func
+differ in the type of arguments
+one data type is double another data
+type is integer
+so when we make a call to the function
+with arguments of type double it will
+invoke the suitable function and the
+same goes for the other one
+in example 2 there is a difference in
+number of parameters
+among functions
+so while calling the function if we pass
+two arguments it will invoke the first
+function and if we will pass three
+arguments then it will invoke the second
+function
+then
+next is operator overloading
+like functions operators can also be
+overloaded
+in operator overloading we can redefine
+the functionality of the operator
+it helps us in redefining the already
+existing operator
+for example
+instead of writing sum equals
+s1 dot add
+s2 we can easily write
+sum equals s1 plus s2
+that is we can redefine the plus
+operator and use it to add the numbers
+in the operator function
+and we will discuss the syntax of
+operator overloading in the examples
+now
+coming to runtime polymorphism
+in this type of polymorphism the
+functions are invoked during the
+execution of program
+that is during runtime
+this runtime polymorphism can be
+achieved through function overriding
+so let's understand this function
+overriding
+in function overriding the function of
+the base class gets a new definition in
+the derived class
+in this more than one function has the
+same name and same type of parameters
+the only difference is in the definition
+of both the functions
+that is functions have different
+definitions in the parent class and the
+child class
+as you can see in the example
+void message function has a different
+definition in the parent class and in
+the child class
+both have the same name
+but in parent class it is printing hello
+there and in child class it is printing
+nice to meet you
+by using the object of the base class or
+derived class we can invoke the suitable
+function
+so let's move on to our next topic that
+is virtual function
+virtual function is also used to achieve
+runtime polymorphism
+it is a function that is defined in the
+base class and then is redefined in the
+derived class
+the function is defined using the word
+virtual in the base class and the name
+of the function is same as that of the
+derived class having different
+definitions as shown
+it tells the compiler to perform the
+late binding on the function in derived
+class
+the function call is resolved at runtime
+and in late binding
+and the compiler determines the object
+type at runtime
+with the help of virtual function we can
+invoke the derived version of the
+function in the derived class
+so as we have covered the theoretical
+aspect of c plus polymorphism so let's
+go ahead and cover the practical aspect
+of this topic in our code editor that is
+vs code if getting your learning started
+is half the battle what if you could do
+that for free visit up by simply learn
+click on the link in the description to
+know more
+so here we will make a new file
+and let's name it as
+poly1 dot cpp all right
+poly1 dot cpp
+let's save it so here we will do an
+example of function overloading which is
+used to achieve compile time
+polymorphism
+and we know function overloading is a
+feature in c plus first in which two
+functions have saved name
+but differ in terms of parameters or
+number of parameters or the type of
+parameters can be overloaded so let's
+start
+first of all we'll write
+the header file
+hash include iostream
+now using namespace standard
+all right
+so now we will create a class king and
+inside that class we'll do the
+overloading
+so
+the class name is king
+and inside the class first of all
+let's make public scope
+now we'll create a function
+return type is void
+and the name of the function would be
+pro
+inside this function let's say we are
+passing two arguments
+hint a and b
+all right now
+we'll print both of these arguments
+or variables inside this function
+all right and we'll use ndl in the end
+okay
+after that we'll create another function
+and the name of the function is same
+that is pro
+and but in this case we'll make the
+arguments like int a
+and b
+and c
+into d
+and int e
+so there are five arguments in this
+function second function pro
+as we know that the name of the function
+is same
+and now inside this function
+will simply add all of these
+so a plus b plus c plus d
+plus
+e
+all right once we are done with this we
+will use semicolon in the end of the
+class
+all right now we will start with the
+main function inside the main function
+all right inside the main function
+we will create the object of king class
+king and the object would be k
+with the help of this object k
+we will call these
+functions
+as we know the name of the functions are
+same the only difference is in the
+number of arguments
+so
+so i'll call the pro function
+which accepts only two arguments
+so the first pro
+function
+will be invoked
+so i'll pass 10
+and 20
+so these two arguments will be passed
+over here
+all right
+similarly
+now we'll call the pro function again
+but
+now we'll pass five arguments
+so that the second pro function would be
+invoked
+so let's say i'm passing
+12
+23
+20
+and
+62
+6
+these are some random numbers
+all right now return 0
+in the end
+now let's try to run this i think we are
+done with this
+first of all let's save it and now let's
+right run this
+so this is our output 10 20 let's make
+it
+let's multiply both of them
+it will look good let's save it and run
+it again
+as you can see 200 and 123 so this is
+our output
+10 into 20 would become 200 and if we
+add all of these we'll get 123 so this
+is our correct output so this was the
+example of function overloading and
+let's start with another example
+so now let's create a new file
+and name this file as
+only 2 dot cpp
+all right we have saved it
+now here we will do an example of
+operator overloading as we know that in
+operator of loading we give definition
+to already existing operators
+or we can say we can redefine the
+functionality of already existing
+operators
+so let's start
+first of all we'll include the header
+files as we have done previously
+hash include iostream
+then the name space standard
+so first of all we'll start with the
+main function
+and inside the main function
+we will
+write the name of the class that we will
+create
+and
+the object let's say the name of the
+object is one
+and
+will pass
+the arguments to the constructor
+let's say the argument is six and eight
+all right
+then i think we can write return zero
+and we'll do the rest
+afterwards first of all we will
+create the class
+so as we know that the name of the class
+is overload so let's create it
+class
+overload
+and inside this class
+inside the private scope
+we'll start with
+the variables let's say the first
+variable is n1
+and
+let's declare another variable n2
+then we will create the public scope
+inside this we will create the
+parameterized constructor
+so
+it is of same name as that of the class
+that is overload
+and now as the constructor is
+parameterized
+so into num1 and
+num2 are the parameters
+so when will create this object oven and
+we'll pass these arguments so it will go
+here
+and
+all right inside this in the definition
+of this constructor
+we will create a we will declare the
+variable res and we will assign
+num to n1
+will assign
+num2 to n2
+and let's say we'll do the subtraction
+all right
+n1 minus n2
+all right now we will
+display
+the result that is res
+so
+res
+and then the variable res
+after that we'll use zendell
+all right
+so
+once we are done with this parameterized
+constructor then
+we will create a operator function
+so void is the return type then we will
+write
+operator keyword
+this is the syntax of operator function
+then after writing the keyword we'll
+write the symbol let's say minus is the
+symbol
+then the arguments if there are any
+arguments then we can put those
+then inside the function that is in the
+definition
+we can perform whatever the
+functionality we want to perform
+so let's say in this case we'll just
+make the numbers negative
+so we'll do that
+all right
+now we'll do the calling part of this
+we will simply use the symbol and the
+operator
+and this is how we'll call the operator
+function
+this is very simple and after that we
+have to display the
+digits as well as we have made them
+negative in this part
+so we'll
+create a function display
+inside this function we will display
+those
+digits or numbers
+so we will write
+n1
+all right after this we'll write
+we'll do same for n2
+so we'll write n2
+and 2 then
+there is handle in the end
+all right so here we are displaying this
+so once we are done with this the class
+is finished so we can use the semicolon
+in the end
+and we have to call this void function
+as well so
+we will write
+one dot display
+o1 dot
+display
+all right we are done
+let's
+see whether it works or not
+let's save it
+and check it
+so as you can see the result is minus 2
+that is 6 minus 8 equals minus 2
+that is correct and n 1 is minus 6 and n
+2 is minus 8 because we have made them
+negative inside this operator function
+we forgot to add some space in n2 and n1
+so that is where it is looking like this
+but the answer is correct
+and this is how we can do the operator
+overloading
+in this part we have use the return type
+then the operator keyword then the
+symbol and if there are any elements
+then we can pass those arguments
+and if there are not we can put it like
+this
+so this is our example of operator
+overloading let's do another example so
+now we'll do an example of function
+overriding
+so let's name this
+poly3.cpp
+so in function of writing the function
+of base class gets a new definition in
+the child class and when we call the
+function of the child class using the
+object of child class
+then the function of base class gets
+overridden
+so now let's do the example of this
+function overriding
+i think we have named it wrong
+poly3 dot cpp
+all right
+let's name it four
+only four dot cpp all right now let's
+save it
+now include the header files
+using namespace standard
+now
+we'll start with the class parent
+so this is
+the base class
+and we have named it parent
+inside the parent class we will create a
+function
+for that we will create the public scope
+inside
+inside the public school we will create
+the function print
+and
+we will display the message
+this is the function of parent class or
+base class what server
+all right
+so this is class parent and semicolon in
+the end of the class
+now we'll clear the child class
+child
+derived from
+parent class
+name of the class is parent
+similarly we'll do the public scope and
+create the function
+void print
+so it is same function as that of the
+above class
+and
+inside this function we will display
+this is
+the function of
+child class
+derived class let's say
+all right once we are done with this
+semicolon in the end and semicolon in
+the end of the class as well
+then we can create a main function
+and inside the main function
+we will create the
+object of child class
+child obj
+so as we have created the object of
+child class or derived class so with the
+help of this we will override the
+function of the base class
+so we'll write obj
+dot
+print
+which is the name of the function so as
+we have created the object of child
+class so it will call the
+derived class or child class function
+and in the end let's say return 0
+now save it
+and try to run this
+this is the function of derived class
+so as we have expected so it is calling
+the child class function
+so this function of the parent class
+gets overwritten as we have used the
+object of child class and call this
+function print which is of same name
+so this function which is in the child
+class gets to print
+derived class
+so this is our output
+so now let's do an example of virtual
+function in c plus
+virtual functions are defined in the
+base class to ensure that
+the functions gets overwritten
+and
+when we use the base class pointer to
+hold the derived class object or the
+child class object the base class
+pointer will always call the base
+version of the function and not the
+derived version
+so to solve this problem we use the
+virtual keyword in z plus plus so now
+let's start with it
+first of all we'll write hash include
+iostream
+now the name space standard
+now we will create the base class class
+base
+and then we'll use the public scope
+inside the public scope we will create
+the virtual
+function
+use the
+virtual
+the return type
+then the name of the function that is
+print
+and we have created this virtual
+function inside the base class now we'll
+print
+this is the function inside the base
+class as we have done previously in the
+previous question
+this function
+this is the functional base class here
+it could be right
+all right once we are done with this
+we'll close the class by using semicolon
+now we'll create the derived class and
+we'll name it derived
+from the base class whose name is base
+itself
+now
+here we will use the public scope
+and we will create the function
+of derived class
+print function
+and will print
+this is the function of derived class
+all right
+now we'll use the semicolon
+to end the class
+now inside the int function into main
+function
+first of all we will create the pointer
+of base class
+base
+d reference operator b
+so we have created the pointer of base
+class now we will create the object of
+derived class
+derived d
+so now we will store the address of
+derived class object to the pointer of
+base class
+so let's do that
+b which is a pointer of base class
+address of operator
+the object of derived class
+so now we will call the print function
+using the pointer of base class and it
+will print the derived class function
+because
+the pointer of base class which we are
+using to call the functions points to
+the derived class object
+so now let's do the calling part
+all we need to do is
+the pointer and the arrow operator
+and the name of the function
+that is print
+after that we can write return 0
+now everything is done let's save this
+and
+run it
+as we can see this is the function of
+derived class here we can see
+so the derived class function is getting
+called which we wanted
+so this is an example of virtual
+function in c plus
+we have used this virtual keyword over
+here and
+using the
+base class pointer
+we have code this function
+and
+and these were some examples of
+different topics in polymorphism in c
+plus plus you can try some more examples
+on these topics it will help you in
+understanding this topic in a better way
+pointers in c plus and in today's
+session we will learn about
+what is a pointer
+reference and d reference operator
+then declaration and initialization of a
+pointer
+then there is pointer arithmetic
+and after that we'll go through pointers
+and functions pointers and arrays and at
+last we have areas of pointers
+so hello everyone
+this is hajj bhardwaj and welcome to the
+video on pointers in c plus plus
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's go to our first topic that is
+what is a pointer pointer can be defined
+as a variable that contains the address
+of another variable
+it basically stores the memory address
+which means
+it points to an address of a particular
+value
+and like a regular variable pointers
+have a data type also
+now coming to reference and dereference
+operators
+reference operator or address of
+operator is defined as that operator
+which is used to get the address of the
+variable
+it can be easily obtained by preceding
+the name of the variable with an
+ampersand sign
+now dereference operator the reference
+operator basically returns the content
+stored in the variable pointed by the
+specified pointer
+for example if we write asterisk a
+then it will return the value of
+variable pointed by a
+now let's see how to declare and
+initialize a pointer to declare a
+pointer first of all we will write the
+data type
+after that we will write the name of the
+variable with an asterisk sign
+for example
+int asterisk sign a
+float asterisk b
+care asterisk c
+suppose if we want to store the address
+into a pointer
+then we will write int that is the data
+type
+then ptr that is the name of the pointer
+with an asterisk sign
+equals to a variable a with ampersand
+sign
+which means
+ptr will contain the address of the
+variable a
+now moving to a pointer arithmetic
+c plus plus allows us to perform
+addition and subtraction operations on
+pointers
+a pointer is basically an address that
+is it's a numeric value therefore
+operations like addition subtraction can
+easily be done on pointers
+there are four types of arithmetic
+operations that can be used in pointers
+that is increment operator decrement
+operator addition and subtraction
+each time a pointer is incremented by 1
+it points to the memory location of the
+next element
+but if the pointer is an integer pointer
+its value on ptr plus plus would
+increment by 4 bytes because of the size
+of in data type
+for example assume an integer pointer
+with current value of 10.
+now after the increment its value would
+be 14 instead of 11 because int is of 4
+bytes
+now let's learn about pointers and
+functions
+like a normal variable has an address
+similarly every function has an address
+also and we can easily access the
+function using its reference or address
+only if we know the address of the
+function
+function pointers are similar to that of
+normal pointers
+when pointers are passed to the function
+the address of actual arguments in the
+calling function is copied into the
+formal arguments of the called function
+and this is the syntax for a declaration
+of function pointer
+here ent is the return type and
+parenthesis around function pointer
+tells the compiler that it is a pointer
+to function
+and after this
+they are argument lists now
+let's discuss pointers and arrays
+arrays and pointers are very closely
+related to each other and both of them
+are objects
+when an array gets declared the compiler
+assigns a continuous block of memory so
+that all the elements of an array can be
+stored in the memory
+and c plus treats the name of the array
+as a pointer that contains the address
+of first element
+which is known as base address
+so basically array name is the base
+address of the array
+and if we have to assign the address or
+first element of array in a variable x
+then instead of writing x equal to
+ampersand array of 0
+we can simply write the name of the
+array only
+now
+moving to the last topic that is array
+of pointers
+like in array we can store similar type
+of elements it is same in case of area
+of pointers
+but the only difference is instead of
+storing the elements the address of
+similar type of element is stored
+in other words it stores the pointers
+which point to the similar data type
+and this is the syntax first is data
+type then name of array with an asterisk
+sign
+then in the brackets it is the size of
+array now
+let's do some examples in our code
+editor that is vs code if getting your
+learning started is half the battle what
+if you could do that for free visit
+scale up by simply learn click on the
+link in the description to know more
+here we will do one example of pointer
+to understand reference and dereference
+operator
+we will print the values of variable
+and the address of that variable also
+and it will give us an idea about
+reference and reference operator
+let's start first of all we'll make a
+new file
+and name this file as
+pointer1.cpp
+so first of all we will import the
+header file
+cash include iostream
+now we will include namespace standard
+after that we'll make int
+main and now we will declare a variable
+val
+and assign it a value let's say 105.
+now we will declare a pointer variable
+ptr
+now we will store the address of the
+variable val
+into the pointer variable
+so we will write ptr equals
+ampersand well
+now
+[Music]
+we'll display a message
+before
+printing val variable will display a
+message saying
+value is
+value of
+val is
+now
+let's see what is the value of ptr
+for that we will have to print ptr also
+and we'll write
+value of
+ptr
+is
+now we will print the pointer variable
+ptr also
+although the value of val and ptr would
+be same but in order to check we will
+print that also
+so we'll write
+see out
+value of
+specific ptr
+is
+now as we have printed variable val
+ptr and asterisk ptr
+so now let's check
+all these values
+let's
+write return 0
+now let's check all these values
+here we can see value of variable val is
+105
+and the value of ptr is this this is
+actually the address
+and
+the value of pointer variable ptr is
+105. as we know that the value of vl and
+the pointer variable is same because we
+have assigned this value
+the address of variable val to ptr
+and then the dereference operator
+as we know returns the actual content of
+the variable so that is why the value of
+variable val
+gets printed when we print the pointer
+variable ptr
+and the address over here
+is the address of the val variable which
+we are assigning to the ptr so that is
+why this address is getting printed
+now we will do another example
+let's name it
+pointer two dot cpp
+now we'll include the header files
+dash include iostream
+after that
+using namespace standard
+so here we have an example of arithmetic
+operations in c plus plus
+so
+first of all we'll write intent
+now here we will take four variables and
+two pointers
+so let's do it
+and
+num1
+command num2
+and
+sum equals
+0
+and in
+sub
+equals 0 will initialize it with 0.
+now i will declare the pointers
+ptr1
+ptr2
+so let's take input of the required
+variables num1 and num2 and after that
+we'll do some mathematic operations on
+them
+so let's just write
+first we'll display a message
+enter two numbers
+enter
+two numbers
+now we'll take the input
+after this we will store the address of
+num1 and num2 into ptr1 and pdr2
+respectively let's do it
+ptr1 ampersand
+num1
+ptr2
+ampersand num2
+now we will increment pointer ptr1 and
+ptr2
+we'll do in a bracket
+and we'll use the reference operator
+also
+ptr1 plus
+the reference operator dtr2
+plus plus
+here we are using dereference operator
+because we want to increment the value
+only
+and as we can see
+we have used increment operator so by
+incrementing ptr1 and ptr2
+the values of num1 and num2 will
+increment and after that we will print
+those values so let's do it
+before printing we'll just print a
+message
+after increment
+now we will print
+ptr1
+and line
+now ptr2
+now we will do the sum of these
+incremented values so we will write sum
+equals
+the reference operator ptr
+1
+plus
+the reference operator ptr2
+now we will simply print it
+we'll write addition
+and we'll print some variable
+which we have already initialized as
+zero earlier
+and we'll write and line
+so this will give us the sum of the
+incremented values of
+num1 and m2
+now let's talk about decrementing the
+value of pointers using decrement
+operator
+here by using this operator the value of
+the ptr1 and pta2 gets decremented so
+let's start
+and write
+decrement ptr
+1
+minus minus
+that is the decrement operator
+now
+ptr2
+and s minus
+now we will write
+after decrement
+the values of ptr1 and ptr2 so we'll
+display a message saying
+after decrement
+now we will print ptr1 and ptr2
+this will display the values of ptr1 and
+pdr2 after decrement
+and at last we will find the subtraction
+of two
+so we'll write sub
+decrement operator ptr1 minus decrement
+operator ptr2
+and
+c out
+will display first subtraction we'll
+write subtraction
+then we'll write the variable sub
+let's see how it
+before that i think we forgot to mention
+the dereference operator
+while printing
+we have to mention this because we want
+to print the values
+the reference operator
+and
+let's put some space over here
+now let's try
+enter two numbers so let's say we'll
+enter four
+and five
+as you can see we have entered four and
+five after increment it becomes five and
+six
+and on addition it becomes eleven
+after decrement it becomes four and five
+again
+then
+4 minus 5 that is equal to minus 1 so
+this is the right answer
+and this is how it's done
+this was the basic example of arithmetic
+operations and pointers
+now let's do another example
+name this file as pointer 3 dot cpp
+now we will include the header files
+hash include
+iostream
+using namespace standard
+now we'll write endman
+now we will do an example of pointer and
+arrays in which all we have to do is to
+print an array with the help of pointers
+so let's start
+first of all we will declare a pointer
+now we'll declare an array
+named a rrey
+and let's add some elements inside it
+5
+17
+[Music]
+sorry 20
+7
+9
+4
+6.
+i think these are seven elements
+now we will assign array arr to pointer
+ptr so we'll write ptr
+equals arr
+after that we'll run a loop from i equal
+to 0 to i
+less than 7 because we won't white rate
+our elements
+so
+let's write for loop
+and i equals 0 i less than
+7 i plus plus
+now we will display
+using the reference operator with
+pointer
+we want to display the values that is
+why we have used the reference operator
+now we will do
+ptr
+plus plus
+we have used ptr plus plus because we
+want the pointer to move to the next
+position after each iteration
+and ndl will help to print the output in
+the next line after each iteration
+so after this we'll write
+return 0
+and let's try to run it
+i think there is some error
+yeah
+namespace
+now let's again try to run it
+instead of ferry we have used arr
+hope it works now
+here it is
+twenty seven nine four six
+five seventeen twenty seven nine four
+six
+so these are
+our array elements which we want to
+print
+so this is how we can print the array
+elements with the help of pointer
+so these were some basic examples of
+pointers in c plus constructor and
+destructor in c plus plus
+in this session we will understand
+what is a constructor in c plus its
+declaration and how a constructor is
+different from the function
+then we will cover
+types of constructors that is default
+constructor parameterized constructor
+and a copy constructor
+and then we will discuss constructor
+overloading and destructor in c plus
+but before we begin
+make sure to subscribe to our channel
+and hit the bell icon to never miss an
+update
+so first is what is a constructor in c
+plus plus
+in c plus constructors are special
+functions that are different from normal
+functions
+they are used to initialize objects of a
+class
+whenever an object is created the
+constructor is invoked or called
+automatically even if we do not create a
+constructor the compiler automatically
+creates a default constructor
+now let's move to the declaration of the
+constructor
+constructors are the member functions of
+a class that has the same name as that
+of the class and it doesn't have any
+return type
+a constructor can be defined inside the
+class and outside the class as well
+using the scope resolution operator
+the syntax of a constructor is as
+mentioned
+inside the class cons we can see there
+is a constructor which has the same name
+as that of class
+that is cons and we can initialize
+variables inside it
+this constructor will be invoked
+automatically when the object is created
+now let's understand how the constructor
+is different from functions
+there are some differences between
+constructors and functions
+so the first is constructor doesn't have
+a return type unlike function which has
+a return type
+next is the name of the constructor must
+be the same as that of the class and it
+is not so in case of function
+third is whenever an object is created
+then a constructor is invoked
+and the last one is
+function can be a virtual function but
+it is not so in case of constructors
+so these are some differences between
+constructor and a function
+now coming to types of constructors
+there are actually three types of
+constructors in c plus that is default
+constructor parameterized constructor
+and a copy constructor
+so let's start with the default
+constructor
+a default constructor is a constructor
+that doesn't have any arguments inside
+it it can either be declared explicitly
+or can be generated automatically which
+means even if we do not define the
+constructor
+then also it is generated by the
+compiler
+for example here
+cons is the default constructor
+in this case the name of the class would
+have been cons that is why the name of
+the constructor is cons
+now coming to the parameterized
+constructor
+a parameterized constructor is similar
+to that of the default constructor the
+only difference is we can pass the
+arguments to the parameterized
+constructor
+the constructor can be overload and also
+be used to initialize elements
+here is an example of the parameterized
+constructor
+cons is the name of the constructor and
+n1 and 2 are the parameters of the
+constructor
+now
+coming to the copy constructor a copy
+constructor is a type of constructor
+which initializes an object using
+another object of the class
+in this constructor properties of one
+object is copied to another object
+this copy constructor is invoked when an
+object is passed as a parameter
+if a class has pointers or there is some
+dynamic memory allocation then it is
+necessary to have a copy constructor
+its syntax is as follows
+here cons is the name of the constructor
+and ampersand obj is the reference of
+the object as we have understood all of
+these three constructors so let's go
+ahead to our next topic that is
+constructor overloading
+like functions constructor can also be
+overloaded
+and it is pretty much the same as
+function overloading
+the constructor must have the same names
+and the difference in the number or the
+type of arguments will decide
+which constructor should be called
+here in the example we can see two
+constructors with the same names as that
+of the class are being overloaded
+here the difference in the number of
+parameters will determine which
+constructor will be called
+now coming to the last topic that is
+destructors in c plus
+just like the constructor the destructor
+is also a special function
+which deletes or destructs the object as
+soon as the object goes out of scope
+it basically delocates the memory that
+has been assigned to the variables
+the name of the destructor is same as
+that of the class name with a tilt sign
+the destructor doesn't have a return
+type and it also doesn't take any
+arguments
+and here is the syntax of the destructor
+so as we have covered the theoretical
+aspect of this topic so let's go ahead
+to our code editor and cover the
+practical examples on this topic as well
+so this is visual studio code and here
+we will do some examples
+of constructors and destructors in c
+plus plus so let's start with default
+constructor example first of all we'll
+create a new file
+and we'll name it
+cons
+one dot cpp
+all right so now first of all we'll
+write the header files
+hash include iostream
+now i'll write the using namespace
+standard
+now we will start with the main function
+and inside the main function
+we will create an object
+so now we will create an object of a
+class let's say the name of the class is
+book
+and object is b
+all right
+let's write this
+now
+we have to create the class
+so let's create the class
+class book which is the name of the
+class
+and inside the class we'll declare a
+variable
+which is private
+so let's start
+pages
+is the name of the variable
+and
+we'll make this variable as private
+all right
+after this
+we'll write the public access specifier
+and
+now we will create a constructor and
+inside the constructor we will
+initialize this variable pages
+so all right
+and make sure to
+make the constructor inside the public
+access specifier
+all right now
+we'll assign
+let's say 250 to
+this variable pages that is the number
+of pages is 250 let's say
+now
+we will display a message
+like let's say
+the name
+of the book
+is
+the compound effect
+it's a famous book
+and
+after that we'll write endl
+for the next line
+now again
+you will display a message which will
+display number of pages so we'll write
+number of
+pages
+and now we will write the variable pages
+all right
+and after the class we'll put semicolon
+and
+let's try to understand it again
+when we create this object b
+this constructor will be called and this
+variable that is pages will be
+initialized
+with the value 250
+then this message will be displayed and
+then
+the value of this variable pages will be
+displayed
+as we can see we haven't passed any
+arguments to this constructor it is a
+default constructor
+we have created an object of the class
+book and
+that's how the constructor is
+getting called and let's try to run this
+hope it works firstly we have to save it
+by pressing ctrl and s
+now let's try to run it
+as you can see the name of the book is
+the compound effect
+and number of pages is 250 is that we
+have initialized it
+250
+so this is the example of a default
+constructor
+now let's do another example
+now we'll do an example of parameterized
+constructor
+so let's name this first
+cons 2 dot
+cpp
+all right now
+we'll include the header file
+hash include iostream
+using namespace standard
+now
+we'll start with the main function so
+we'll write int main
+and inside the main function
+we will create an object of a class
+let's say bar
+the object of this class would be b
+and will pass the arguments let's say
+40 and
+35
+all right
+by mistake we have wrote this
+all right now after that we'll write
+return 0
+now let's create this class bar
+so we'll write
+class
+bar
+and inside the class we will
+here we will declare two variables which
+will be private so
+let's say
+private
+and
+and the name of the variable is drink
+and
+another variable would be people
+all right
+now we have to create the constructor
+so we'll write the public access
+specifier
+and now we'll create the constructor
+which is of the same name as that of
+class that is bar
+and
+now
+the
+parameters would be d
+and
+b
+so we are passing these parameters that
+is 40 and 35 to this constructor as this
+is a parameterized constructor
+so now we will assign
+these parameters to the to the private
+values
+that is drink and people that is the two
+variables so we'll write
+drink
+equal
+d
+that is we are assigning the value of d
+to the variable drink
+so and we will do the same for
+p variable
+we'll sign the value of p to the people
+variable
+once we are done with this
+then we have to compute it or do
+something about it so let's say
+we have to
+multiply it so
+it would be
+total
+cash like the number of drinks into
+number of people that how many cash is
+collected by selling those drinks so
+we'll create this variable
+int total cash
+this is a function
+inside this function
+we will multiply the cost of a single
+drink with the number of people
+so let's say
+as the
+return type is end so
+we have to return
+we can't display over here
+so
+drink
+into
+people
+drink into people
+all right
+now
+semicolon in the end
+and
+we have to call this function as well
+so let's do that
+we'll write c out
+and
+then we will display a message let's say
+total cash
+collected
+then
+now we will call this
+function
+total cash
+b dot total cash
+b is the object and total cash is the
+function
+all right
+after that we have already mentioned
+return zero
+so now save it by pressing control and s
+and let's try to run this
+as you can see total cash collected 1400
+and we know 40 into 35
+will get 1400 that is the right answer
+so as we can see here we have created
+this object b and pass these arguments
+40 and 35
+and this is the parameterized
+constructor bar
+these values are then assigned to these
+variables drink and people
+and then we have called this function b
+total cash this function over here
+and the value
+by multiplying drink into people
+is 1400 that is 14 to 35 equals to 1400
+so this is the example of a
+parameterized constructor
+now
+let's create a new file
+and we'll do an example of constructor
+overloading
+so let's name it
+first cons three dot cpp
+so here we will do an example of
+constructor overloading so first of all
+we'll create
+we'll write the header files
+cash include iostream
+then namespace standard
+then again we will start with the main
+function
+and inside the main function we will
+write the name of the class let's say
+the name of the class would be overload
+and
+the name of the object is one
+so here we will
+create a parameterized constructor
+so that is why we will send
+two arguments let's say 20 and four
+and we will create another object
+overload
+o2
+because we want to do constructor
+overloading so we have created o2 object
+and here we will pass let's say three
+arguments
+so we'll pass let's say 50
+comma 65
+comma 30
+in the first object
+in the first constructor we are passing
+two
+arguments that is twenty and four in the
+second constructor will pass three
+arguments fifty sixty five and thirty
+all right now let's write return zero
+and now we can create the class
+let's say
+class
+overload
+now inside this class
+first of all we will
+create this variable
+result res
+all right
+inside
+this after this we will declare
+public access specifier and we will
+create the constructors
+the constructor would be a parameterized
+constructor because we are passing the
+arguments
+so
+overload is the name of the constructor
+within capital o
+and we are passing two arguments in the
+first constructor
+so
+and x comma into y
+now in this we will multiply
+and we will store it in this
+res variable
+so x into y
+all right after this
+the second
+constructor and in this constructor we
+are passing three arguments
+and as you can see the name of both the
+constructors are same as that of the
+class but the only difference is the
+number of arguments
+in this constructor we're passing three
+arguments
+and
+now
+we will store
+the sum of all of these three variables
+x plus y
+plus
+z
+once it is done we will put a semicolon
+in the end
+and now
+we have to somehow display the result
+so we will create
+a function
+into the data type
+result is the name of the function
+and
+we will simply
+return
+the variable res
+and now we will
+call this function
+inside the main class
+so before that
+we will display a message let's say
+result
+of
+multiplication
+is
+right one
+one dot res
+one dot result sorry
+because the result is the name of the
+function and we are calling the function
+after that and line
+then we'll write
+result
+of
+addition
+is
+then we'll write o2
+dot
+result
+and
+semicolon
+and we have already mentioned return
+zero so
+let's save it by pressing ctrl s
+and
+let's try to run this
+there is some error
+okay this is scope error
+we have to include this function inside
+this class
+so
+let's say
+now let's try to run this by
+after saving this let's
+run it
+all right
+uh by mistake we
+write this wrong all right now let's
+save it
+and now let's try again
+here it is result of multiplication is
+80 and result of addition is 145
+as you can see
+and 20 into 4
+is 80 and when we add 50 plus 30 80 80
+plus
+65 would be for 145
+so our result is
+right and we have successfully compiled
+the program and run it
+so in this example we have
+we are doing the constructor overloading
+as we are passing these two
+arguments to this constructor with same
+name as that of this constructor and we
+are passing three arguments to this
+constructor
+and
+we are not actually calling them we are
+just creating the object and passing the
+arguments
+okay now let's do an example in which we
+will use destructor as well
+so let's create a new file and name this
+as
+cons4.cpp
+all right now let's include the header
+files
+now name space standard
+all right now
+we'll write into main
+inside int main we will
+write the name of the function let's say
+the name of the function is formula one
+and f is the object
+and now we will pass the parameters
+let's say 370
+and four
+here we are passing the speed and the
+pickup of a particular car and let's
+make it
+f instead of d
+so f is the object and formula one is
+the name of the class
+after that for now let's say return 0
+and now
+we will create a class
+class formula
+1.
+we'll declare
+two variables
+which are private
+int
+speed
+and end
+pickup
+now we will create a constructor
+which is parameterized before that we
+will
+use
+public access specifier and
+now we will create this constructor
+formula one
+and the parameters are int as comma int
+p
+now inside it
+first of all we will display a message
+saying that this is a constructor
+all right after that we'll write endl
+now we will assign
+the parameters to these variables we
+will assign the value of s to speed
+and the value of p to pick up
+all right
+after that
+we'll
+make a function
+display
+and we can display inside this function
+as the data type is void
+and so we'll write
+speed
+is
+then we'll
+write the speed variable
+and end l as well
+then you will write
+pick up is
+pickup variable
+then handle
+all right
+now we can create a destructor
+we'll use tilt sign then
+formula 1 which is the name of the
+constructor
+then
+here we'll write a message
+so that we get to know that we are
+inside the
+destructor so right
+formula one inside it will write this is
+a
+destructor
+and the sign is
+here it is
+now
+write semicolon
+after the class and
+so first of all as the object is created
+the parameterized constructor is called
+370 and 4 would be assigned to these
+variables speed and pickup
+and then
+using the function
+here we will call this function display
+so we'll write f which is the object dot
+display
+which is the name of the function
+and that's it
+then once the values are assigned then
+these values
+will be displayed when this function is
+called
+using the object f
+and then this is a destructor is called
+as
+the destructor is called in the end of
+the function when the scope ends
+so when the scope of class object is
+ended then this is a destructor is
+displayed that is why we have
+displayed this message
+so
+after
+saving it
+let's try to run this
+you can see this is a constructor
+first this is getting printed
+then speed is 370 speed is 370. pickup
+is 4
+and this is a destructor as we can see
+is getting printed in the last
+and if we just
+cut it over here and just paint it here
+and we can just paste it over here
+and
+save it and let's try to run this again
+this variable by mistake we have
+all right now save it and run it again
+as you can see this is a constructor
+speed is 370 pickup is four
+this is a destructor it is again getting
+printed in the last
+so this shows that the destructor
+deletes
+the object as soon as the object goes
+out of scope
+that is in the last
+so these were some examples of
+constructors and destructors in c plus
+plus you can try some more examples on
+it it will help you in understanding
+this topic in a better way c plus plus
+enumeration
+so let's go ahead and have a look at
+what we'll be covering today
+first is why enumerations are used in c
+plus then we'll understand what is
+enumeration and its syntax and after
+that we will learn how to use enums with
+flags
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so first is why enums are used in c plus
+enums are short for enumerations
+these are basically used when we have
+some set of possible values and we have
+to select one out of it
+for example suppose you are the shop
+owner and you have four types of coffee
+in your coffee machine
+that is cold coffee hot coffee black
+coffee and mocha
+and you don't want the trouble of
+customer putting any other coffee name
+in the machine
+which is not there
+then in situations like these
+enumerations are used
+because in enumerations we have to
+choose from predefined values
+and it is also helpful for documentation
+and readability purpose
+now let's understand what is enumeration
+enum or enumeration is a user defined
+data type in which a set of values are
+specified for the variable and the
+variable can take out any value from the
+set of values
+and it is also a way to use integers to
+represent values
+we can assign values to enum but if we
+do not assign any value
+then the compiler assigns value to them
+starting from 0.
+coming to its syntax
+which is enum that is the keyword for
+enumerated type then enumerated type
+name is written then under brackets
+possible values of type enum are written
+for example here enumeration name is
+player and values are ronaldo
+messi neymar which are the names of
+players
+in this example by default ronald is
+zero salah is one messy is two neymar is
+three
+because we know by default compiler
+assigns them value which start from zero
+and so on
+but we can change these default values
+by assigning values to them
+like here ronaldo's value is now 4
+salaha's value is 2
+messi's value is 8 neymar's value is 1.
+now let's have a look at an example in
+which we will print the default value of
+months
+so in this example we have enum name as
+months and enumerated values as january
+february march and so on
+and in order to access these values we
+have written enumeration name and after
+that the variable
+as we can see inside main function m is
+the variable and its type is months
+now here we have assigned the month
+march to the variable m
+and then we are printing the variable m
+plus one
+here plus one will print the value next
+to the month march that is three and
+similarly if we write plus two then it
+will print then one next to it that is
+four
+these values are default integer values
+after printing the output value is 3
+because we have printed m plus 1 where m
+is 2 and plus 1 makes it 3.
+now
+let's understand how to use enum with
+flags
+in this example we will choose a mobile
+having any of the two features among
+three
+here the name of enumeration is mobile
+and its enumerated values are battery
+capacity camera quality large storage
+and we have assigned values to them
+1 2 and 4 respectively
+and because we are doing this example of
+enums with flags that is why we are
+using integer values of power 2
+because it avoids the overlapping
+inside the main function we are using
+bitwise or operator because we want to
+choose the mobile having both camera
+quality and large storage capacity and
+we know that bitwise operator adds the
+binary of two integers
+so the value of camera quality is 2 and
+value of large storage is 4.
+when we use a bitwise or operator in
+between these two features so it will
+add up their binary giving the decimal
+number as 6
+so the output 6 is showing both the
+camera quality and large storage are
+used
+now let's do some examples of
+enumeration in our code editor that is
+vs code
+okay now let's make a new file
+and name the file as
+enum.cpp
+in this example the enumeration name
+will be captain and the enumerated
+values will be the team members out of
+which we will select one member as
+captain
+and with if condition we will verify if
+he is the selected captain or not
+it will be a basic example so first of
+all let's write hash include iostream
+now we'll add the namespace standard
+okay now we'll write
+enumeration enum
+captain which is the name of the
+enumeration type
+and now we will write the enumerated
+values
+which is
+let's say
+avi
+said
+robbie
+sammy
+and jake
+these are the team members
+now we'll write int main
+now here we will first of all write
+captain which is the name of the
+numerator type
+then we'll make the
+variable out of it cap
+and let's say avi is the captain so
+we'll write a v
+now here we will write if condition
+will write
+if
+equal to av
+then we'll display
+our captain is away and its value is
+whatever the value is avi's value here
+is zero so we'll display that
+so we'll write
+our captain
+is a v
+and its value
+is
+then we'll write av
+as we know that av is at first position
+then its value would be default value
+would be zero
+okay so
+here we will write endl
+now in else
+here if we put said robbie sammy jake as
+captain or we if we declare them as
+captain then this message would be
+declared which will be writing in
+else so the message would be
+he is not our captain
+then over here we will write return 0
+ok now let's try to run this
+our captain is away and its value is
+zero
+because here
+captain we have declared av so that is
+why this is printing if we write
+let's say
+sammy over here
+then it will print the else part
+he is not a captain
+and if we write jake or said
+then also it will print the same
+he's not a captain only in case of a v
+it will print our captain is away and
+its value is
+avi's value
+so this was the basic example of
+enumeration now let's move on to one
+another example
+now
+let's make a new file
+and name it as enum2
+dot cpp
+okay
+now we will add the header files hash
+include iostream
+and using namespace standard
+so here we will do an example in which
+enumeration name will be supercars and
+to the values we will assign some
+integers to them
+which will be the speed of those cars
+and then we will compare them using
+comparison operator in terms of speed
+so
+we will write enum
+the name of enumeration that is let's
+say supercars
+okay
+now inside the bracket
+we'll write the name of the cars which
+are the values
+and we will assign
+some integers
+these integers are actually speed of
+these cars
+268
+then
+valkyrie
+speed is 240
+now
+roadster
+250
+okay now
+as you have created the enum now we will
+start within main
+so we will write the numerator type name
+supercars
+now the variable speed
+one because we want to create two
+variables in order to compare them so
+first we will create speed one
+now again
+speed two
+now we will assign the two cars that we
+want to compare to these variables
+so
+speed one will be
+valkyrie
+and speed 2 would be
+roadster
+okay
+now we will write the if condition
+and inside the f condition we will
+compare the speed of these two cars
+so we will write speed 1
+if speed 1 is less than
+speed 2
+okay
+then we will print
+that it's a win for roadster
+because speed 2 is roadster and speed
+one is valkyrie so we'll write it's a
+win for roadster
+with the speed we'll also write the
+speed with the speed
+of
+this speed 2 will display the speed of
+roadster that is 250
+okay now
+else condition
+so here we will write
+it's a win for
+valkyrie
+with the speed
+of here we will write speed one
+okay
+now we have to write into main but
+before that we will write the bracket
+which we forgot to mention
+return zero
+okay i think it's done
+now let's try to run this
+here we can see it's a win for roadster
+with the speed of 250 as we know that
+the speed of roadster here is 250 and
+the valkyrie speed is 240
+so when we compare it
+speed 2 that is roadster wins because
+roadster is 250
+so this was the second example now let's
+do one last example
+let's name this
+okay
+enum3.cpp
+we'll write hash include iostream
+now name space standard
+now in this example we will see how to
+use switch statement with the
+enumeration okay so
+first of all
+inside int main
+we will write
+enum
+color is the name of the enumeration
+type
+then we'll write the values
+red
+blue
+green
+and yellow
+these are the values
+now
+here we will use swiss statement
+but before doing that we have to assign
+one color to a variable
+so first of all we have to create that
+variable
+and in order to create the variable we
+will write the numeration type name
+color
+and then
+the variable name select
+now we will assign
+one color from the above colors
+let's say
+yellow
+now in switch statement we will write
+first of all we will write switch
+statement
+switch
+and
+we will pass here the variable that is
+select
+basically we are passing yellow
+because yellow is assigned to the
+variable select and that is why it is
+getting passed
+so now
+case one that is case
+red
+first of all we'll write the case red
+with a colon in the end
+now we will
+print that it is red
+now we'll write the break statement
+break statement basically ends the case
+or terminates the case
+so after that
+the second case that is case blue
+colon
+now here we will print
+it is blue
+and similarly
+break statement
+we will do same for all of these colors
+green and yellow also
+and switch statement will help us to
+find which color is passed and will
+display the message of that color
+so here we will write
+green
+it is
+green
+break statement
+now case yellow
+now we'll write it is yellow
+now he will write break
+okay now at last we have to write return
+zero
+now as we know that we have we have
+passed a particular color
+to the variable select and select
+is the expression and switch statement
+will help us
+in comparing the variable select value
+to the value of different blocks and one
+which matches that particular block will
+execute
+okay now let's try to run this one
+here we can see
+it is yellow is being printed
+which is the right answer because we
+have passed the color yellow to the
+select
+and that is why only the case yellow
+output is being printed
+so
+this is how you can use switch statement
+with the enumeration
+so these are some basic examples of c
+plus plus enumeration you can try some
+more examples on it in order to practice
+it
+so these were some important topics of c
+plus programming
+and with that we have come to the end of
+this video if you like this video please
+give it a thumbs up i hope it really
+helped you all thanks for watching stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,911 @@
+the concept of development is never
+static better software solutions are
+being implemented every day with the
+help of ever emerging technologies
+apis are essential if you want to build
+a system with multiple functions and are
+well documented on that note hey
+everyone i am vavo khandelwal and i
+welcome you all to our simply launch
+youtube channel we will talk about
+c-sharp rest api
+but first let me remind you that we have
+our daily updates on numerous
+technologies so if you are a tech geek
+looking for the latest technological
+advancements then try subscribing to our
+youtube channel and don't forget to hit
+the bell icon to never miss an update on
+simply launch youtube channel so now
+without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+discussion on what is rest api
+then we will have a brief discussion on
+http verbs
+following that we will have a look at
+some http status code
+then we will take a deeper look at the
+res api constraints
+after that we will create our own
+rest api project
+finally we will wind up this session
+with a few takeaways
+now let's start with what is c sharp
+rest api
+rest is an acronym that stands for
+representational state transfer
+rest is architecturally styled for
+distributed system based on ideas
+refining and addressing network
+resources
+http is used to communicate between
+restful services where http stands for
+hyper tax transfer protocol
+the rest systems communicate with
+external systems using uri identified
+web resources where uri stands for
+uniform resource identifiers
+after understanding the c sharp rest api
+let's discuss http works
+the restful web api relies heavily on
+http verbs
+post cat
+put and delete are the most typical http
+verbs used for crude that is create read
+and delete
+and update activities
+now let's discuss each of them in detail
+first we have post
+if we need to insert data into the
+database then method
+the method
+must be defined as the post method we
+decorate this method with http post
+method
+next we have get
+retrieving data or information is
+possible through get work
+we decorate a method with http get to
+define a get method
+then we have put
+if we need to update or modify the data
+in the database then the method must be
+defined as the put method we decorate
+method with http port to define a put
+method
+at last we have delete if we need to
+delete the data in the database then the
+method must be defined as the delete
+method
+we decorate method with http delete tag
+to define as the delete method
+next let's have a look at the sum http
+status codes
+there are five types of status quo
+series
+first the hundred series
+this represents the information status
+codes
+after that we have 200 series
+this represents success status codes
+fine after that we have 300 series
+that represents the dire redirecting
+status codes
+then we have the 400 series which
+represent the client side error status
+scores
+at last we have the 500 series which
+represent the server side error status
+code
+now our main focus will be on success
+client and server error only
+so let's have a look at three of them
+first up 200 series at number 200 we
+have ok status
+then at 201 we have created
+at 202 we have accepted at 204 we have
+no content
+next we have 400 series which is client
+side error status code so at 400 we have
+bad request letters
+at 401 we get unauthorized status
+at 403 we get forbidden at 404 we get
+not found
+next we have 500 series which is
+which represent
+server side error
+at 500 we have internal server error
+at 501 we get not implemented five or
+three we are getting service unavailable
+and at five or four we get a gate away
+timeout
+next let's discuss the constraints of c
+sharp rest api
+constraints of c sharp rest api
+there are five constraints for this
+uniform interface
+stateless client server
+cache level and layered system
+let's discuss each of them in detail
+first up we have uniform interface
+the uniform interface requirements
+specify how client and server must
+interact
+it simplifies and decouples the design
+allowing each component to evolve
+independently
+next we have stateless
+a single client can send many requests
+to the server but each request must be
+independent
+each request must contain all of the
+essential information for the server to
+interpret and process
+in this situation the server must not
+save any client state information
+such as sessions
+and only these data should only remain
+on the client
+then we have client server
+the uniform interface separates clients
+and server because of this separation of
+concern clients for example are not
+concerned
+with data storage which stays internal
+to each server improving the mobility of
+client program
+then
+servers do not care about the user
+interface or user status allowing them
+to be simpler and more scalable after
+that
+we have cacheable
+since multiple clients visit the same
+server and frequently request the same
+resources these responses must be cached
+to save wasteful processing and
+considerably increase speed
+at last layered system
+normally a client cannot know whether it
+is connected directly to the end server
+or through an intermediary
+in terms intermediary server can improve
+system scalability by facilitating
+load balancing and providing shared
+caches
+layers can also enforce security
+policies
+now these were the constraints for
+c-sharp rest api
+so now let's try to implement them with
+the help of a project
+this will be our end result for this
+demo
+now let's go to our visual studio
+we will use asp.net core web api
+which hit
+we'll name it student
+rest
+api
+then we'll click on next
+make sure to remember which dotnet
+framework version you are using
+since we will be installing some
+packages which will be only available
+for certain versions
+since i am using 5.0 so i will be only
+installing packages which are compatible
+with the 5.0 framework let's hit the
+create
+this will take some time to create a
+project
+now
+let's install
+some packages so we will right click
+here
+and
+select manage and new get packages
+we will go to browse and search
+microsoft
+entity framework dot tools
+we will select this
+we will use
+since we are using 5.0 so we will only
+be using
+the version starting with 5.0
+so i selected this and i hit install
+click ok and accept
+we'll wait for it to install
+then we will go
+and install
+ntd framework dot co
+we will also install it
+as 5.0.0
+here click on install
+click on ok
+ixr
+we'll wait for it to install
+we have tools installed
+and
+we also have
+a microsoft entity framework core also
+installed we also want to install
+dot sql
+server
+we will use this
+to interact with the server to make a
+database
+we'll click ok and i accept
+and it's installed
+we are close that
+we also want to make one folder
+so we will go to add
+and click
+on folder
+we'll name it models
+now
+now let's start by creating a class file
+we will go to this we will go to add and
+click on class
+we will name this class
+as students
+click on add
+now we will write
+the members for the student class
+we will start with public
+and
+student
+id
+we will give it get
+set
+as the method functions
+then we will have public
+string
+as
+first
+name
+we will give a get
+and set
+similarly we will create
+public
+string
+last
+name
+we will give it get
+set
+then we have
+public
+string
+email
+will give it get
+set
+then we have
+public
+we will also use
+an enum called gender
+we will be defining this later on
+so gender
+get
+set
+so now public
+and
+we have a department id as well
+this will also have get
+and set functions
+then
+we will have one last member
+as public
+string
+photo path
+we have
+get
+and set
+we will save this
+now let's create the enum gender
+so we will right click here we'll go on
+add
+and select
+class
+we will name it
+as
+gender
+now add
+we will remove class from here and make
+it enum
+then we will go here and type in
+members as male
+then we also want females
+and we can also have others
+let's save this
+now if we go to the student class
+you can see gender is now green which
+means it is representing an enum
+as you can see
+so now
+let's create
+an db context file
+so we will go to models right click here
+add a class
+we will name this one as app
+db
+context
+we will add
+now to save up some time i will add in
+the prebig code
+here's some prereq code
+as you can see we are getting some
+errors so let's rectify them first
+first let's consider db contacts
+we'll press ctrl period to check what we
+can what's the problem
+since we didn't include the
+microsoft entity framework code so it's
+giving us this error so we will include
+it
+and it's it removed db context error
+we are not getting any other error
+anymore now
+so let's save it now let me go over the
+different
+so at start we are using
+we are inheriting this appdb context
+class from db contacts which is the part
+of entry framework core
+what this lets us is use db set
+which will help us in creating the on
+model builder
+to create a table
+so
+now
+let's start with our table
+for the first member we have a student
+id we have given it a student id one
+first name last name email database
+gender
+department id and photo path
+similarly we are also giving using the
+model builder we are giving
+to student 2 sam matthews then model 3
+christina frost then model 4 racial
+stone
+now next we have to create an entity
+framework layer which we can create
+using repository but before that we need
+to include this db context in our
+startup file
+so we will go to startup file
+we will go to services configure
+services
+we will type in services
+dot
+add
+db
+context
+then we will add f
+db
+context
+then we will have
+here as
+options
+switch to
+options
+dot
+use
+sql server
+then
+you will have
+configuration
+dot
+get connection string
+then in bracket we will have
+db
+connection
+now we will rectify this error so for
+fdb context we will include student rest
+api models
+and for use sql server we will include
+microsoft entity framework core
+we also need to
+go to our app setting json
+and add
+a connection string
+so
+we will add
+connection string
+db
+connection
+then we have server
+equals to
+local
+db
+then mss ql
+local
+db
+database
+equals to studentdb
+trusted
+connection
+equals to
+true
+let's see this
+let's go to our student.cs
+now our entity framework is now complete
+now we will create a repository an
+abstraction layer
+between our application and data access
+layer
+which in our instance is app db context
+but before that
+let's create a server
+so we will go
+to
+view
+and open other windows and select
+package manager console
+here
+we will type in
+add
+dash migration
+initial
+create
+this will build up our server
+and build succeeded
+we can
+enable it
+now
+we will update
+now we will update a database
+so we will type in update
+data
+and hit enter
+this will initiate build started and
+will succeed
+as you can see we have got a new folder
+as migration here
+let's close intellicode
+and we can close the package now
+now let's go ahead and create
+an interface
+so we will go
+new item
+interface
+we will name it
+i
+student
+repository
+we will add
+will make it public
+we will start
+with task
+i
+innumerable
+in that we will have students
+and
+then we can have search
+with arguments as
+string
+name
+comma
+gender
+within question mark
+small gender
+then let's have some more functions
+as task
+students
+okay student
+and
+student id
+then we have task
+as
+i in a miracle
+student
+get student
+we also have
+a task
+student
+cat
+student
+by
+email
+with the argument as
+trying
+email then we have task
+student
+as
+ad students
+next we will add
+task
+by the name update student
+and we will pass an
+student
+student
+at last we have task
+as
+delete
+student
+we will pass on
+an argument as student id
+so that when we will pass
+and student id in this release student
+function it will delete that entry
+let's save it
+and see if there are any error
+there or not
+so now let's make an class
+called
+student repository
+now to save up some time i will add some
+pre-baked code
+here is our code for a student
+repository let's go over
+let's go over each function
+first we have add student this function
+is responsible for creating as entry
+in
+the database
+then we have delete student
+it is getting an error so let's rectify
+it first we will click on control period
+it's asking us to include ntd framework
+let's add it
+and it has removed
+in the first statement it is requesting
+student id from us
+when we'll provide the student id it
+will compare it
+if it's not null then it will find the
+student id
+and remove that result
+and then it will save the changes
+then we have get student by id
+so we will provide the id then it will
+basically
+print that student
+then we have student get student by
+email where it is email so it will just
+take the email from us
+and compare the database with the email
+and provide us
+the result for the same
+then we have get student
+this will
+basically list
+each and every entry in the database
+then we have search
+this will ask for us ask us for the name
+and the gender
+then it will basically search
+if those two things are available
+the entry which have both of these
+common
+it will list out all of them
+here we have search
+which will ask us for the name and the
+gender
+it will basically compare each and every
+entry for both of them
+and give us the common
+common list between them
+next we have update student
+this function is responsible for
+updating entries in a function
+however this will not be able to change
+the student id of a person
+and that's it let's save it
+we also want to add scope
+of these in the startup so let's go to
+startup
+we will go here we will go services
+dot
+add
+scope
+i
+student
+repository
+comma
+student
+repository
+let's save it
+and with that the student repository
+part is over
+now we will construct a rest api
+controller
+so we will go to controller we right
+click here we will add a controller
+we will select an empty
+we will name this controller
+as
+students
+controller
+let's add it
+now to save up some time i will add the
+pre-baked code
+now let's start
+with this code
+first we will remove some error so we
+will control period
+it's asking us to include these models
+then we have
+an error here so we will add some http
+now let's go over
+each function one by one
+so first we have search
+http
+so for the search it is asking us
+for a name and agenda as argument
+if you look closely we are using try and
+catch functions so that
+we will be handling the exception
+easily so that if any error occur the
+whole database don't go corrupt
+so in the trial we are getting result
+for each entry which have
+the name and the gender given in the
+argument
+if result if any then we will give an
+okay status and print out the result
+otherwise it will print out not found
+now in case of any x exception like
+internal server error
+it will print out the error retrieving
+data from the database
+as you can see the status 500 internal
+server error is simply http status code
+500
+then we have another http get function
+it is get students
+this will basically
+return okay
+and get
+and print out all the students
+or else if it encounters a 500 internal
+server error then it will print out
+error retrieving data from the database
+then we have an http gate which will
+basically ask us for an id and only
+show us the entry representing that id
+now
+if the result is null then it will
+return us not found
+now in case an exception it will print
+out error retrieving data from the
+database
+next we have an http post request this
+is a create student request so it will
+be responsible for creating new entries
+so let's say if student is null
+basically the end we didn't provide any
+entry
+in the
+during the time of creation so it will
+just give us a bad request
+now in case if we are providing
+a valid entry but
+we have
+the email already stored
+in our database
+so it will say student email already in
+use and it will give a bad request again
+now in case everything it goes by
+smoothly then it will create the student
+and it will automatically provide an id
+to that student
+now there could be an exception so then
+it will give us 500 internal server
+error
+which will return as error creating new
+student record
+now as you can see we are already giving
+the bad request so when will this occur
+so basically if none of the criteria for
+the above matches
+and it still gives us an error then it
+will automatically redirect it to an
+error creating new student record
+next week we have http report this will
+be
+responsible for updating student data
+so first it will ask us for an id
+it will compare this id if student id
+is
+does not match with the data we are
+trying to
+update
+then it will give us a bad request
+if it gives us the right request but
+the id does not exist then it will gives
+us student with this id does not count
+if everything goes right then it will
+just update the
+method in case if still some error
+occurs then it will print out error
+updating student record and it will give
+us 500 internal server error status
+then we have delete
+for this it will always request an id so
+that it doesn't go and delete whole
+database
+now if
+an id doesn't is not present then it
+will say id not found
+otherwise it will delete that id
+and if we print out student with this id
+is related
+now in case
+some error occur otherwise then it will
+gives us a 500 internal server error
+and gives us error deleting record
+now let's go ahead
+and save it
+and run this
+as you can see we are using a swagger
+interpreter
+so let's
+use this function first
+let's try it out and execute
+and as you can see it is printing out
+every entry
+from student id 1 akash
+let me zoom in
+send id 1 akash guptas akash
+simplyrun.com
+and all that
+then we have sam matthews and have we
+have christina first then we have rachel
+stone
+now let's say
+we want to add
+a new entry
+let's copy this
+as a sample
+let's try it out
+we don't need student id here because
+the system will give it its own
+for the first name
+let's add my entry so let's add that uh
+then we have for the last name
+kendall
+then for the email
+let's get a webhub
+at the right simplylearn.com
+then for the
+date
+let's add 1998 let's leave everything
+else as it is for the gender it should
+be 0 0 for the mean
+then we have department id as 2
+and for the photo path
+we can give it as
+images slash
+web hub
+dot png
+now let's execute
+and it has basically worked so to check
+that
+we will again go
+and use our getting
+we have executed and as you can see it
+has a fifth entry student id five baba
+kundal
+so we have tried our post we have tried
+our get
+let's use our search one as
+well so to try it out
+we need to give it a name so let's
+search the latest entry we created so
+that
+for the gender we have zero
+and for the path
+we can give it
+let's give it email id so that
+at the right
+simply learn
+so let's execute
+and as you can see it is giving us this
+entry
+so
+we have used get cat we have used post
+now we have this get method with the id
+let's try this one as well
+let's search for the third one
+and it is giving us the christina that's
+the fifth one which we just made and it
+is giving us the web hub
+so after that let's try to update an
+entry let's try it out
+let's do
+fifth one which is what's mine
+we can remove the student id
+for the first name
+let's change it to
+let's make it simpler
+simply
+then for the last name
+we can have
+learn
+as email
+we can have
+simply learn
+at the rate
+simplylearn.net
+we can
+let the data part be same
+let's give it two cents for others
+department id
+for
+photo path
+images
+slash
+simply
+dot png
+let's execute this
+if a success
+it says student id mismatch
+like
+maybe we have to
+give the student id
+copy here
+let's give it
+and execute
+and it works right
+so to check it
+we can simply go
+to get api with id and execute
+and as you can see it has changed the
+first name is simply last name learn and
+email date of birth and everything
+now
+let's go ahead and delete an entry
+to delete an entry we need to just give
+it an id
+let's try it with the three
+let's execute
+student id with three is deleted
+so to check that we can go here and
+execute
+now if you look closely
+we have with akash then sam then we have
+student id 4 ratio
+we have lost the christina for frost id
+let's also try
+for the fifth one which we made so 5
+execute
+to index id5 is deleted
+let's execute this
+and it has lost the r as well
+let's try to execute the five again
+and it says not found
+let's go back to our slides
+now let's look at some of the takeaways
+from this session
+first
+we have
+rest api with serve as the interface and
+communication between the client and the
+server which takes place over http
+then
+we have
+the rest api which also serves as the
+gateway or a single point of access
+into the system
+we also learn that when a client
+requests a restful api it sends a
+representation of the resource state of
+the requester
+to the endpoint
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

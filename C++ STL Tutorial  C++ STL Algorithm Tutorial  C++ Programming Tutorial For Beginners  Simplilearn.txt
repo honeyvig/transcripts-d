@@ -1,0 +1,539 @@
+hey everyone welcome back to another
+video by simply learn and in today's
+session we will learn about c plus stl
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's go ahead and have a look at
+what we'll be covering today
+in this session we will learn about what
+is stl then we will understand the
+components of stl like containers
+iterators algorithms and function
+objects
+so without further delay let's get
+started
+stl stands for standard template library
+it is a set of template classes that
+provide us data structures and
+algorithms or containers
+it allows the programmer to use
+predefined functions which helps them to
+write the code quickly and in an
+efficient way
+for example you are solving a problem
+that needs sorting now instead of
+writing the code to sort you can make
+use of stl
+now stl mainly consists of four
+components that is containers iterators
+algorithms and function objects
+so first is containers
+these are collection of objects that
+store data of similar type in stl we
+have different types of containers some
+of them are array vector set map and
+these containers are generic in nature
+so further these containers are of three
+types that is sequence container
+associative container and container
+adapters
+sequence containers these are those
+containers that can be accessed
+sequentially for example vector dq list
+are some of the containers that store
+data in a linear form
+next is associative container
+these are those containers that
+implement sorted data structures in this
+elements are retrieved via keys and each
+associative container maintain its keys
+in sorted order
+example set multi-set map and multi-map
+after that container adapters these
+containers are like sequential
+containers but they are implemented by
+modifying their interface to provide the
+desired behavior for example stack queue
+and priority queue are some examples of
+container adapters
+now coming to iterators in stl iterator
+plays an important role as it links
+algorithms and containers iterators are
+those entities that helps in traversing
+through containers
+they are used to point at the memory
+address of the steel containers
+iterators also helps in traversal from
+one element to the next element in the
+range using operators like increment
+operator
+iterator contains two functions that is
+begin function and and function the
+begin function returns the iterator to
+the first element and the and function
+returns the iterator to the last element
+now coming to algorithms
+algorithms in stl can be defined as
+procedure that are applied to the
+container and provides some operations
+on the content of the container
+and because stl algorithms are built in
+so that is why they save considerable
+amount of time
+in algorithms we just have to make a
+function call and we don't have to write
+the lines of code to implement it
+now let's have a look at types of
+algorithms
+first is modifying algorithm
+non-modifying algorithm sorting
+algorithm searching algorithm
+and numeric algorithm
+modifying algorithms are those
+algorithms that make changes to the
+sequences
+swap and reverse functions are some
+examples of it
+then non-modifying algorithm
+non-modifying algorithm are basically
+read-only function they do not modify
+the data on which they work on
+some examples are count equal and search
+functions
+then sorting algorithms
+this algorithm is used to sort the
+container elements its example is sort
+function
+next is searching algorithm
+as the name suggests this algorithm
+searches for the element binary search
+algorithm is mostly used search
+algorithm
+last is numeric algorithm
+this algorithm work on numeric values
+or we can say it solves some numeric
+problems examples are accumulate
+function and partial sum functions
+now coming to function objects
+function objects are also known as
+functors a function object is an object
+of template class that implements call
+operator
+this call operator allows the object to
+be used with same syntax as regular
+function call
+for example suppose you have declared an
+object obj of a class in which operator
+is defined
+then you can use the object obj just
+like a normal function
+function objects also helps in
+generating the data and it also helps in
+testing purposes
+now in order to do some examples let's
+move to our code editor that is vs code
+so here we will do an example of vector
+container
+so let's make a new file
+and
+let's name it stl.cpp
+now we'll add the header files
+now writing namespace standard
+now
+we will add before namespace standard we
+have to add
+the header file for vectors because we
+are doing the example of vector so that
+is why we have to add the header file of
+vector
+okay now
+we'll write int main
+now first of all we'll declare the
+vector so we'll write vector
+int
+within the angle brackets
+now we will write
+the name of the vector that is v
+okay now we have to push
+some elements inside the vector for that
+we have to use for loop
+so we'll write for keyword
+and i equals
+let's say 1
+i
+less than
+equals 10
+i plus plus that is increment operator
+okay now we have to push the elements
+one by one so we'll write v dot
+push
+back
+and inside the bracket
+we will put i
+so the elements
+will keep on adding one by one at the
+end of the vector
+so now we will check the size of the
+vector
+so we'll write
+we'll write the message size
+and then the function v dot size
+it will tell us the size of the vector
+that is the number of elements inside it
+as you can see they that we have put 10
+elements inside the vector one by one so
+it must be 10
+so in order to check it we have used
+this function v dot size
+okay now
+we'll use another function
+that is v dot resize
+it will resize the size of the vector
+so whatever we put inside this bracket
+like let's say i've put seven so its
+size now would be seven
+and we need to check this also
+so
+we'll again use the function
+size so first of all we'll display the
+message
+after
+resizing
+it becomes
+v dot size
+it will print the size of the vector
+after resizing okay
+now
+we use another function v dot empty for
+that we have to use if condition
+so we'll write
+v dot empty
+brackets
+we know that if v dot empty equals true
+then it means it is empty and if it
+equals false then it means it is not
+empty so we'll simply display the
+message that
+it is not empty
+all right see out
+and now we will
+write
+it slashing
+not
+empty
+before go to
+write the
+commas over here okay
+now
+in else
+we will write
+it is empty
+it is empty
+we can also do this the other way around
+like we can put widow tempt equals to
+true and then inside that bracket we can
+write it is empty but it's your choice
+okay now
+we'll display the elements of the vector
+that we have to first
+write the
+message so we'll write
+elements of vector
+then after this using for loop and
+iterator we will print those elements
+so let's do this
+we'll write for
+and inside for loop we'll write
+auto
+id
+here the auto keyword specifies the type
+of variable that is being declared will
+be automatically deducted from the
+initializer and i t is the iterator
+now we'll write i t equals v dot begin
+and we know that v dot begin function
+will point to the first element of the
+vector
+so
+after that we'll write
+i
+t not equal to
+v dot end
+and it will point to the last element of
+the vector
+now i will write i t plus plus
+now
+we'll print the iterator using the
+reference operator
+and in order to make some space we'll
+write this
+now return
+zero
+okay now
+let's try to run this
+okay
+here is the problem i think
+now let's try one another time
+here it is
+size 10
+after that after resizing it becomes 7
+firstly we add the elements by pushing
+one by one using the pushback function
+10 elements were added so size is 10
+after that we have resized it so after
+resizing it becomes 7
+and then we have used the function
+empty
+so it was not empty so that is why
+the message display is not empty
+then the elements of vector
+before go to pits space over here
+and elements of vector 1 2 3 4 5 6 7
+and
+that is correct
+okay
+now we'll do one example of iterator
+in this example we'll simply
+print the elements of a vector using
+iterator
+so first of all let's name this
+stl2.cpp
+now we'll write the header files
+hash include iostream
+in this will add three header files
+now we'll write
+hash include
+iterator
+because we have to use iterator so that
+is why we are doing this
+and we also have to use the vector so
+we'll write hash include
+vector
+now we'll write namespace standard
+now we'll start with int main
+so first of all we'll declare a vector
+in which there are some elements
+as in previous question we already
+learned how to add elements in a vector
+so in this question we'll simply declare
+those elements inside a vector
+so we'll write vector
+inside the angle brackets
+now let's say ar is the name of this
+vector
+now we'll write the
+elements
+five five elements are there
+now we have to declare iterator to a
+vector so
+this is how
+we'll do it we'll write vector
+then
+the data type inside the angle brackets
+then after this we'll write the scope
+resolution operator
+like this
+now
+iterator
+keyword
+then the name of the iterator that is
+ptr
+now we will display the vector elements
+using for loop and using the functions
+uh begin and end
+so right
+first of all we have to display a
+message
+okay
+we'll write
+the elements
+of
+vector
+r
+okay
+now semicolon
+now using for loop
+we'll write
+the ptr that is the iterator
+ar
+dot begin
+as we know that ar is the name of the
+vector
+a r dot begin begin function will point
+to the first element of the vector
+then
+p t r
+less than
+a r dot
+end
+we know end function
+and function will point to the last
+element of the vector
+okay now we'll write
+ar plus plus
+sorry ptr plus plus
+now we have to display it
+and
+we'll display it using the reference
+operator
+and the name of iterator that is ptr
+make some space
+now at last we'll write return zero
+now let's try to run this
+the elements of vector r as you can see
+the elements of vector are one two three
+four five
+so this is how you can print the
+elements of a vector using the iterator
+here is the vector and with the help of
+iterator we have printed these elements
+one two three four five
+now we'll do one simple example of
+algorithm
+first of all let's name this
+stl three dot cpp
+now in this example we'll use swap
+algorithm
+to swap two integers
+and we know that swap is an template
+function so let's do this
+first of all we'll write
+hash include iostream
+now using namespace standard
+we'll start with int main
+now first of all we declare a variable
+let's say
+seven and
+second variable
+let's say 10
+first of all we'll display the value of
+these variables that
+before swapping and after swiping so
+that is where
+we will write
+value of i
+now here we'll write
+value of j
+and l
+okay now we'll use the swap
+algorithm
+and here we'll mention
+the elements we want to swap i comma j
+it will simply swap the contents of
+these two elements
+now we will write
+after swapping
+and l
+will do same for
+j
+this is a very basic example but we have
+to see the functionality of it
+we'll write
+and l
+okay
+now we'll write return zero
+now we'll run this
+yeah
+value of i
+7 value of j is 10
+after swapping i 10 j7
+it will look
+better if we have
+root like this
+let's make it look good
+yeah value of is7 value of j is 10 after
+swapping i becomes 10 and j becomes 7
+so this is how we can swap the elements
+using swap algorithm there are some more
+algorithms you can try those as well
+and now at last we'll do one example of
+function object
+let's name this as stl4.cpp
+all right now
+we'll add the header file
+hash include iostream
+now
+we'll write namespace standard
+now in this question first of all we'll
+start with the function
+first of all we'll make a class
+class
+function
+obj
+now we'll write access specifier public
+hint
+here we'll write the
+call operator
+as we know the syntax
+operator bracket
+then
+another bracket
+for the arguments
+and x
+comma and
+y
+so this is the syntax of it and now
+whatever we want to do with these two
+variables
+let's say we want to multiply
+so i'll write return x
+into y
+all right
+as this is a class so we have to write
+the semicolon
+now we'll write int main
+okay now i will write input after inpane
+here we will write the name of the class
+because
+we have to define the object of it
+now the object is
+f4
+so here class name is function obj
+and its object is fo and as i have
+explained earlier here i can use f4
+object like a normal function because f4
+is the object of class function obj in
+which call operator is defined so it
+will act like a normal function
+so now
+we'll make a variable let's say multiply
+so we'll write mult equals f4
+and because it acts like a normal
+function so we'll pass the parameters
+four and seven
+now in order to display will write c out
+and
+we'll write
+multiplication
+of x
+and y
+is
+now we'll write the name of the variable
+mult
+because
+the result is getting stored in mult
+variable
+now
+we'll write return 0
+now let's try to run this
+here we can see multiplication of x and
+y is 28
+and that is true 4 into 7
+equals 28
+so it is working and
+this is the example of functor or
+function object
+so these were some basic examples of
+components of stl you can practice some
+more examples on them in order to learn
+all right guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it will help you all thanks for watching
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

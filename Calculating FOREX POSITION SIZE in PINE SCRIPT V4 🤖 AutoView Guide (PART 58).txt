@@ -1,0 +1,1223 @@
+hi traders welcome back to another video
+in my auto view
+series today's video is going to be
+showing you how you can create a
+4x position size calculator in
+pinescript
+so this script that we are going to
+create today will calculate our position
+size
+for us automatically based on the
+distance
+from our entry to our stop loss so
+today's script is not about our entries
+i'm simply detecting engulfing candles
+whenever a engulfing candle occurs
+at the 15 bar low so the script is
+counting 15 bars to the left
+and if this bar happens to be the lowest
+bar over the past 15 bars and it's an
+engulfing candle
+we enter theoretically on that bar so
+this is not a profitable strategy by any
+stretch of the imagination i would not
+trade this
+this is just purely for demonstration
+purposes but if you look up here
+at these plots see how the script is
+plotting these numbers here
+we'll go over what these numbers are as
+we write out the script
+but the last two numbers are the ones i
+want you to pay attention to right now
+the gray number is our distance from the
+closing price of this engulfing candle
+to this red line which is our stop loss
+which is simply just one atr below
+the swing low so we're calculating the
+distance from our entry
+to the low and then adding on one atr
+to that distance and that gives us our
+stop-loss
+distance and our stop-loss price which
+in this case is nine
+one zero two three cents on us swiss
+so the gray number is the pip distance
+the purple number here is our position
+size
+so the purpose of today's script is for
+automating
+our position size calculation through
+order view
+so by now you should be familiar with
+what order view is if you're not make
+sure to go back and watch
+the previous videos in this series where
+i explain in detail
+what order view is and what all the
+commands are and how it works
+but you should know by now that all of
+you can talk
+to oanda but oanda
+cannot talk back to autoview so autoview
+has no idea what our account balance is
+we need to tell autoview through our
+script settings what our account balance
+is
+what our account currency is and what
+our risk per trade percentage is so this
+is how much we want to risk per trade
+of our account balance based on our stop
+loss we give our script
+these three parameters and the script
+automatically calculates
+how many units to trade on this
+particular setup
+so in this case based on our entry to
+our stop loss
+which is 34.6 pips we would trade
+a 26 341 unit
+sized position in order to risk just one
+percent
+of our 10 000 usd account
+on this setup you see here now this
+number is not
+100 accurate but it's pretty damn close
+i think from my testing that i've done
+across all of the
+pairs that i can trade with autoview
+it's typically depending which time
+frame you're using this on
+within 0.003
+accurate so it's 99.997
+accurate on most currency pairs so right
+now i'm on my paper trading
+account through trading view if i open
+up my
+order window here and i click stop loss
+if i type in this number here 34.6
+which is already in there from testing
+earlier so
+i want a 34.6 stop loss on this
+particular trade
+and i want to risk one percent of my
+account but type that in
+notice that our units box here is
+extremely close
+to our purple number here so tradingview
+was saying in order to risk one percent
+on a 34.6 pip stop loss trade
+we need to risk 26413 units
+our position size up here is 26 341
+units
+so if i quickly bring up the calculator
+here
+and we divide these numbers 2 6 4 1 3
+divided by 2 6 26341
+equals 3-1 off of that we are within
+0.0027 percent accurate
+in regards to our position sizing so now
+if we find a script that we like so
+let's say that either you find a script
+on the trading view
+website that is profitable and you would
+like to automatically trade it on the
+forex markets or you write your own
+script
+to auto trade the forex markets the code
+i'm going to show you today
+will enable you to be able to risk a
+certain amount
+of your account balance per trade
+instead of just using a fixed position
+size if i highlight this number up here
+and hover my mouse over this setup
+there's a big difference between 26 000
+units
+of risk on a trade and let's say 47
+000 units that's double the position
+size so if we were to use a fixed
+position size
+in our trading our risk will not be
+consistent
+on one setup we might be risking three
+percent per trade or five percent per
+trade and on another setup we might be
+risking 0.5 percent
+per trade that is not going to lead to
+consistent results and it could in fact
+break a potentially profitable strategy
+it could turn a profitable strategy
+into a disaster that will blow your
+account
+by using the source code that i'm going
+to teach you today we can turn
+autoview from borderline useless
+considering
+trading a fixed position size with a
+dynamic stop loss
+just simply doesn't work to something
+that we can actually
+feasibly use to auto trade the forex
+markets so
+that all sounds interesting to you make
+sure to hit the subscribe button if you
+haven't already because i have three
+more videos in this auto view series to
+come
+today's video covers position sizing the
+next video will cover
+automating one of my personal profitable
+scripts with everything we've learned so
+far
+and then the video after that is going
+to cover inconsistency mitigation
+uh basically that will cover time
+filters so that your script doesn't
+trade
+during certain times of day when the
+spread might be a bit too wild
+we're going to cover gtds for limit
+orders so good till date
+and good till time so time limited limit
+orders that have an expiry
+that can mitigate risk when it comes to
+auto trading and we're also going to
+cover how to use multiple order view
+aliases
+or sub accounts through oanda so that
+you can trade multiple strategies
+across multiple accounts on your broker
+and then the final video
+we will cover how to set up a virtual
+server to run autoview 24
+7 because you do need to leave this
+plugin running 24 7 in your browser in
+order for it to auto trade and
+detect the trading view alerts which is
+a big limitation of order view if you
+can't leave your computer running
+at all times but i'll show you a way
+that you can easily
+set this up on a virtual server to run
+24 7
+in the background while you're at work
+while you're at school while you're
+sitting by the pool drinking cocktails
+whatever your lifestyle is we can have
+an auto view script running in the
+background or multiple scripts running
+in the background no matter what you're
+doing how busy you are
+now it's not as easy as simply just
+setting up a few parameters and clicking
+the go button there is a lot involved
+in profitable auto trading but this
+video series should give you a very
+comprehensive introduction to how this
+all works
+now last year i recorded a youtube video
+on how to calculate your position size
+in pan script
+none of that information has changed so
+i'm going to replay
+part of that video from last year
+explaining the source code to this
+position size calculator then we're
+going to come back and apply this source
+code to a practical
+example so that you can go and play
+around with this stuff in your own
+scripts
+all right so in this lesson i'm going to
+show you how i created my position
+size calculator script down here
+so open up the settings menu here you
+can see i can input my account
+balance my account currency the risk
+per trade is a percentage of my account
+balance that i want to risk
+and my stop loss size in pips
+and then this script will calculate my
+position size which is this number here
+in red
+the number here in orange is the
+exchange rate between
+my account currency and the market that
+i'm currently trading
+so right now my account currency is set
+to us dollars
+and i'm on the us dollar versus the
+swiss franc
+and so the exchange rate that i'm seeing
+here
+is this current rate right now but
+later in the video i'll show you
+examples of using different account
+currencies on different markets
+and we'll break down how the script
+works so let's quickly just go over some
+theory
+relating to position size calculations
+in forex trading so here i am over
+at babypips.com and they have a good
+article here
+explaining uh the different nuances
+between calculating your position size
+based on certain parameters so
+a good example of this is you want to
+buy
+euro pound and your account is
+denominated in u.s
+dollars this is where it gets tricky
+because now if you're going to calculate
+your risk as
+a dollar amount or even a percentage
+amount as a matter
+you need to calculate that risk in u.s
+dollars
+while taking into consideration the
+exchange rate between
+the us dollar and the pound and the euro
+and the pound now obviously if you're
+trading a currency pair using the same
+same currency as the quoted pair so say
+you're trading us
+dollar against the swiss franc and your
+account is denominated in us dollars
+then the math behind
+calculating your position size is a lot
+simpler but the problem i was having is
+that a lot of my currency pairs in my
+portfolio
+do not contain my account
+australian dollar denomination and so i
+had to come up with
+a clever way to calculate that risk
+accurately
+and so what my script is doing is it's
+following this
+step-by-step formula the first thing it
+does is we tell it
+a percentage risk amount that we want to
+risk and we tell it our account balance
+and then the script will determine what
+that percentage
+value of our account balance is in the
+currency that our account is in so in my
+case if it's an australian dollar and i
+want to risk one percent
+of a thousand uh dollar australian
+dollar account
+then this number would be ten ten
+dollars is one percent of a thousand
+dollar australian
+dollar account but then i need to
+convert that risk
+amount so in this case it's 50 u.s
+dollar
+in my case in my example it would be 10
+australian dollars
+we need to convert that risk amount into
+british pounds so we convert our risk
+amount
+into pounds british pounds and then we
+get our
+risk amount in the quote currency then
+the next thing we need to do is divide
+that amount
+by how many pips our stop loss is and
+that will give us our value
+per pip so every pip
+that this currency pair moves will be
+worth 0.14 pounds
+in this particular example and then we
+use that information
+to calculate our position size and so
+let me go over back to the pine script
+editor and i'll show you exactly how my
+script works
+so let me hide the script for now since
+we're not
+focused on that we're focused on this
+one down here the position size
+calculator let me open up the source
+code
+to it and the source code will be below
+this video if you want to follow along
+with me
+but here it is and so what we're doing
+here
+is first of all we're getting our
+account balance
+from the settings menu and pull this
+down a little bit
+from the settings menu so we're getting
+our
+account balance we're getting our
+account currency
+we're getting our risk per trade as a
+percentage
+and we're getting our stop-loss size in
+pips as a whole number the next thing we
+need to do is
+check if our account currency
+is the same as the base or the quote
+currency
+which is used for converting our
+risk amount if needed so if
+the account currency is the same as the
+counter currency
+then this will return true so we're
+checking our account currency variable
+which is just a string variable
+and here's the list of options to choose
+from all the major pairs
+if that account currency is the same as
+whatever currency we have loaded onto
+our chart
+which is what info.currency will give us
+as you can see here the currency for the
+current symbol returns the currency code
+usd eur etc
+if our account currency is the same as
+the currency we have loaded onto our
+chart
+at this first currency sorry
+this currency here is our counter
+currency
+so we're checking is our account
+currency the same as the counter
+currency
+and then this boolean down here is
+checking if our account
+currency is the same as the base
+currency which is this guy on the left
+and then we use these booleans later
+if we need to in order to convert at
+risk once we determine these two
+boolean values we can use them to
+determine whether our account is in
+neither of these so if i set my account
+balance
+to australian dollars then this would
+return
+true so if i do that now come up here
+and set this to aud
+that changes how our position size is
+calculated
+but moving on the next couple of
+variables we're getting here
+is the currency conversion rates
+so first we need to get what currency
+pair
+we are converting our risk amount into
+if applicable so in this case i've set
+my account balance to aud
+so this block of code in here will be
+getting executed
+since my account currency requires
+conversion in order to get the
+appropriate
+risk amount so we're checking first is
+our account currency the same as the
+counter currency
+and if it is then we just want to set
+our conversion currency pair to this
+pair here the pair that we're currently
+on
+because the next thing we're going to
+check is is our account
+currency neither the counter currency or
+the base currency
+and if this is true then our conversion
+currency pair is going to be set to
+whatever we've set our account currency
+to so in this case it would be aud
+as a string plus the sim info dot
+currency which is this guy here so
+if our account currency is not in the
+currency pair that we're trading
+then our conversion currency pair is
+going to be set
+to our account currency versus
+the counter currency value and then we
+use that on the next line to get the
+conversion rate the currency rate
+between our account currency and the
+counter currency i hope you're following
+along sorry i know this
+is i'm saying the word currency a lot
+starting to sound funny to me
+as well it is a bit confusing but if you
+play around with this code
+i'm sure it'll make sense to you and
+then finally if
+neither of these are true then it will
+just
+set the conversion currency pair
+to the same thing as this so actually
+looking at this code i could optimize
+this further
+by removing this
+second conditional statement here which
+i'll show you what i mean
+right now so because this conditional
+the second conditional statement
+no matter what this is will return the
+same thing
+i can just remove this conditional
+statement here
+and save the script and it shouldn't
+change anything
+so there we go and so now we're just
+checking is the account currency the
+same as
+our counter currency if it is
+then we reference this ticker
+that we're currently loaded on otherwise
+we
+combine our account currency in this
+example aud
+with the counter currency so we would
+have aud
+versus the swiss franc and that would
+give us our current
+currency conversion pair and therefore
+the currency conversion
+rate so let me set my account back to
+aud for this example
+and let's move on to the next line which
+is this one here
+where we're using the security function
+to
+pass it our symbol which is our
+conversion currency
+pair which is determined by this line
+above it that we just went over we're
+using the daily resolution
+to get that currency value and we're
+just referencing the close the closing
+price
+of whatever our conversion currency pair
+is
+once we have this information we know
+our account balance our account currency
+we know whether or not it's included in
+the
+symbol we're trading and we have our
+risk percentage and our stop loss size
+in pips then we can use all of that
+information
+to calculate our position size which is
+what this
+custom function here does and so let me
+just run you quickly
+through this function here so i'm just
+creating a new custom function called
+get position size and it only has
+one input parameter which is the stop
+loss
+size in points not pips but points
+so if i'm using a 10 pip stop loss
+as i do in this example then we need to
+convert this number into 100 because
+10 pips in a 4x market is
+100 points and our stop loss is being
+calculated using
+points in this function so that's why
+when i'm drawing this data
+i convert our stop-loss size from pips
+to points
+by just multiplying it whatever value
+this is
+by 10. but anyway
+the custom function here first it
+determines our risk amount so it
+multiplies our account balance so in
+this example 1 000
+australian dollars by our risk per trade
+as a percentage so this little block of
+code here this risk per trade divided by
+100
+is converting our one percent whole risk
+into 0.01 because 0.01
+is 1 in mathematical terms but i have
+my risk per trade as a whole number in
+the settings menu because it makes more
+sense it's more intuitive
+to users of the script so i could
+change this to 0.01
+and remove this divide by 100 bit of
+code
+but then it's a little bit less
+intuitive for traders
+who were using the script so that's why
+i did that same with the stop loss pips
+we could have
+just had this in points and just change
+that to 100
+but again it's counterintuitive because
+most traders would operate using pips
+and not points
+so anyway moving on once we have our
+risk amount
+in our account currency so in this case
+one percent of 1000 aud is
+10 aud then we're multiplying
+that 10 aud that this code here
+calculated
+by our currency conversion rate
+which we got up here
+so if our account is the same as
+the base currency or it's neither
+currency
+then it will time multiply our risk
+amount
+so in this case 10 aud by our conversion
+rate
+otherwise if our account currency
+is the same as the counter currency
+then it just multiplies it by one and
+doesn't change the risk amount
+because if we're calculating our account
+balance risk amount against
+the same counter currency pair as our
+account
+balance then we don't need to perform
+any conversion at all
+so i hope that makes sense we only need
+to convert our risk amount
+if our account currency is not in
+the currency pair we're trading so next
+up we calculate
+our risk per point so we're multiplying
+our stop loss size
+in points by the point symbol point
+value sim info dot point value will give
+us
+the value of a point on this market
+we're multiplying that by our stop loss
+size and once we have all this
+information
+our risk amount and our risk per point
+we can use that info to calculate our
+position
+size in units and to do that we just
+divide
+our risk amount which takes into account
+our conversion if necessary or if
+applicable
+and then we're dividing that by our risk
+per point
+and then dividing whatever that is by
+this
+symbol info sim info dot minimum tick
+value
+and that will give us our position size
+in whole numbers
+and then finally we just output remember
+the last line of code in a custom
+function
+is the output expression and in this
+case we're just outputting
+the position size value we just
+calculated but we're rounding it before
+we return it because we don't want any
+decimal places after it
+since you can't trade a fraction of a
+unit
+at least not through roander which is
+the only forex broker that autoview
+works with
+at the moment and then finally once
+we're done there we're just drawing
+that data to the chart very simple
+that's the simplest part of this entire
+script and all we're doing is we're
+plotting
+our position size using the the get
+position size function that we
+just went over we're passing it our stop
+loss size from pips to points which
+simply multiplies our stop loss size
+from here in the settings by 10
+to get our stop loss in points and then
+just for debug purposes
+when i was working on the script i also
+wanted to plot
+our conversion currency rate so let me
+go over
+uh this in practical terms right now so
+it makes a little more sense
+so in this particular example we are on
+us
+swiss so us dollar against the swiss
+franc
+my account balance is in aud australian
+dollars
+and i have a thousand dollars in there
+and
+down here what we're getting is our
+position
+position size and i'm gonna come back up
+here and change this back to one percent
+because it should be more than 66 units
+there we go
+66 000 units so
+by hovering my mouse here on this
+current candle you can see that
+this orange number remember our account
+balance is in australian dollars which
+is not in the
+market currency pair that we're trading
+and so we need to convert our risk
+amount
+into uh the quote currency i mean
+the account currency in this case swiss
+franc and so this orange number down
+here
+is showing the conversion rate between
+aud
+and swiss franc so it says here six five
+six six
+nine if we go over to aud
+swiss franc and i'll load that under my
+chart so you can see here
+six five six eight eight that's the
+conversion rate
+let's go back to us dollar swiss franc
+and let's open up the
+trade window and uh confirm
+that our position size is correct so we
+want a 10
+pip stop loss we want to risk one
+percent
+of our account which is 10 australian
+dollars we need to convert that risk
+into swiss franc and let's
+confirm that this is working so
+over here i'll set a buy order
+for a 10 pip stop loss and i want to
+risk 1
+of my account and my account balance on
+this account
+is 9832.84
+so if i come up here and i change this
+to 9832.84
+click ok now you can see that
+our units uh that trading view is
+telling us to trade
+in order to get one percent of our
+account balance
+is very very close to what our script
+is calculating so i'm not sure why it's
+not 100
+accurate but we're only what's that 17
+points off
+17 units off this value
+so that's close enough for me and so the
+script is working
+and just to prove it let me change my
+account to
+an account in us dollars now
+so this account is 9975.01
+usd so let's type that into here 997
+change this to usd click ok
+now open up a new order 10 pip stop loss
+1
+risk that gives us 91 788
+units and that's pretty close to what
+our script is calculating
+991 779
+units so this one's only about 10 units
+off
+very very very close very accurate it's
+as accurate as we're going to get with
+this script
+so our position size calculator is
+working the script
+is working that's great so now let me
+show you
+how i use this in practice in a
+practical manner
+all right so now we're back with the
+script i showed you at the beginning of
+the video
+i have copied and pasted everything from
+the
+section of the lesson you just watched
+so we have our user inputs here
+just the account balance account
+currency risk per trade
+let me comment this to get user input to
+be consistent
+so the only difference here between this
+code and the code from
+last year's video is i added this
+section down here at position
+size so this position size calculation
+code
+is intended to only work for the forex
+markets
+so if the current market is not a forex
+market
+then we set our position size to zero
+this is just a safety mechanism to stop
+this script from trading on any market
+other than forex so if you try to trade
+this on the stock market or something
+like that
+your position size will always be zero
+this is just to stop people who don't
+know what they're doing from
+accidentally
+blowing an account by using this code on
+the wrong market
+in theory you should be able to
+calculate your position size for any
+market crypto stocks
+commodities you name it but the
+techniques you use will be different
+and maybe i'll cover that in a different
+video because i don't want this video to
+be too long
+but for today we're sticking with forex
+we have our position size calculation
+code
+you can literally copy all of this code
+here paste it into your own scripts
+and you are ready to go all you need to
+do is calculate your stop loss
+price work out the distance from your
+entry to your stop-loss price
+and then use this get position size
+function to calculate your position size
+which is what i'm about to show you how
+to do now so the first thing we need to
+do is detect
+a setup and as i said at the beginning
+of this video we're not detecting an
+actual profitable setup
+here because that just adds an extra
+layer of complexity to this lesson
+we're just going to detect simple
+long-only bullish engulfing candles
+and then we're going to base our
+stop-loss based on the low
+of that entry candle and we're going to
+calculate our position size
+and confirm that that's all working
+properly the purpose of this
+is to demonstrate the theory and in the
+next lesson
+i'll show you how to use this on a
+practical actual profitable strategy
+script
+but first we need to wrap our heads
+around how this works in theory so the
+first thing we're going to do here is
+detect
+our setup and i need a bunch of
+variables here we need about six
+variables here
+that are all var variables so they're
+persistent variables
+the first one is are we in a long trade
+that's going to be set to false by
+default the next one is our desired risk
+reward ratio that's going to be set to
+one to one by default
+and of course you could turn this into a
+user setting but we're not going to do
+that today
+because it's not important for today's
+lesson the next thing we need to save is
+our trade stock price
+that's going to be set to 0.0 by default
+and then we need to save
+our trade stop distance which will also
+be set to 0.0
+then we need our trade target price
+which will also be initialized to 0.0
+and then we need our trade position size
+which will be set to zero by default so
+the next thing we need to do is detect
+our actual setup that's
+pretty easy we're just going to create a
+new variable
+called long setup and this is not a var
+variable because we want this to be
+recalculated on every new bar on our
+chart
+and this is just going to be a basic
+engulfing candle but the first thing we
+want to check is that is the current low
+the lowest low over the past 15 bars and
+then we check if it's an engulfing
+kettle so
+and the current closing price is greater
+than or equal to the previous opening
+price
+and the previous bar closed lower than
+it opened
+so it's a bearish bar and the current
+bar's
+open is greater than or equal to the
+previous bar's low
+so this will prevent the script from
+detecting gap candles
+as engulfing candles next up we
+calculate our stops and targets this is
+the important part of the lesson
+so we're calculating our stops and
+targets
+if we have a long setup and
+we are not already involved in a long
+trade
+then we want to calculate our stop loss
+our target our position size and save
+that information to draw to the chart
+until our target or our stop loss is hit
+so
+first of all we need to set our trade
+stop
+to the current bar's low minus the atr
+so this will give us our stop-loss price
+next up we need to calculate the
+stop-loss
+distance in pips so that will be our
+entry price our close the current bar's
+closing price
+minus the trade stock price
+so this gives us our stop distance in
+pips the next thing to do is
+determine our trade target price which
+will be the entry price the closing
+price
+plus our trade stop distance
+multiplied by our risk reward which by
+default is just going to be
+one to one you could turn this into a
+user input if you want to like i said
+earlier finally let's calculate our
+trade position size
+so this is going to be set to get
+position size
+and then we need to pass our trade stop
+distance as a whole number
+so convert trade stop distance into a
+whole number
+and then multiply it by 10 to convert
+that distance from pips to points
+because our code uses points to
+calculate our risk amount
+not pips so far so good the final thing
+we need to do is set
+in long trade to true because we are now
+involved in a long trade we've detected
+a long setup and we weren't already in a
+long trade
+so now we set long trade to true the
+next thing we
+need to do is exit trade when
+appropriate so the first check will be
+if we are involved in a long trade
+and the current bar's high is greater
+than or equal to our trade target
+then we set in long trade to false
+and we start looking for a new signal
+and we could put this in brackets
+and check or the current bar is lower
+than or equal to
+our trade stop so if our trade target is
+hit by the high of the current bar
+or our trade stop is hit by the low of
+the current bar
+then we exit our long position and start
+looking for a new one so if i save the
+script that should compile without any
+errors
+if i haven't made any typos there we go
+but i did forget to use the assign
+operator
+in this if statement so let's add a
+colon there
+otherwise we're just creating a new
+variable called tread stop distance
+within the scope of this if statement
+and that is not what i want to do i want
+to reassign
+trade stop distance to this value save
+the script
+that should compile now without any
+problems
+next up let's draw our setup info to the
+chart
+and for that i'm going to use a plot
+shape to
+identify which candle is our entry
+candle i'm only going to plot the shape
+if long setup is true and we're going to
+set the color to color.green
+i'll give it a style of shape.triangle
+up
+and a location of location.below bar
+and i'll title it long setup because why
+not
+let's save the script and now
+we should be detecting our entry candles
+as signified by our green arrows up
+arrows
+next up let's plot our stops and targets
+so plot
+and then we need to check are we
+involved in a long trade currently
+if so let's plot our trade stop
+otherwise plot
+nothing and then set the color to red
+since it's a
+stop loss set the style to plot dot
+style
+underscore line break so that the line
+breaks between setups otherwise
+we get these weird uh connecting lines
+so the stop-loss will draw here
+gets hit by this bar here and then the
+line will connect to the next stop-loss
+we don't want this connection thing we
+just want the line to break
+and then start a new line so we use the
+style line break
+plot style to achieve that and finally
+let's title this
+trade stop and i can copy this line of
+code
+paste it in there change this to trade
+target
+change the color to green and the title
+to target
+now if i save the script this should
+compile
+and now we're drawing our stops and
+targets until they are hit
+now i'm guessing that this setup here is
+not drawing the stops and targets
+because it happens to be the bar that
+stopped us out
+i'm not going to fix that in today's
+lesson because it's not important
+we're still detecting this setup here
+and
+so we're pretty much done now the final
+thing to do is
+plot our trade position size to the
+chart
+and confirm that it's accurate in the
+order box
+so let's add that section of code here
+draw position size we use the plot
+function
+again if we are involved in a long trade
+then
+let's plot our trade stop distance
+in pips otherwise plot nothing
+we'll set the color to color.gray we'll
+set transparency to 100
+because we don't want this actually
+drawing under the chart we just want to
+have the number drawing
+in our indicator values we'll set the
+title to trade
+stop distance um i'll copy this line of
+code
+and change this to trade size this is
+our position size
+change the color to purple and change
+this to
+just say position size
+so that should be all we need if i save
+the script now
+we should be drawing our stops our
+targets our trade
+stop size and pips and our position size
+so now
+let's find a market that is currently
+involved in a trade
+here's one so on pound yen we are
+currently still involved in this setup
+this pretend setup remember we're not
+actually trading this data we're just
+using it to confirm our script is
+working
+if we come up here and look at these two
+values here the gray number is our stop
+loss size in pips
+so 2.251 is 225 pips and our purple
+number
+is our position size so let's open up
+this
+order panel here and plug in a 225 225.1
+pip stop loss let's risk one percent per
+trade
+and you can see that our units here say
+4849
+and our purple number is very close to
+that 4831.
+so we are within 0.004 percent
+accurate which is as accurate as we're
+going to get with this script
+so that's a successful test let's check
+a different time frame on a different
+market
+first of all we are currently involved
+in a trade here 90 pip stop loss
+12 000 units roughly so let's put in 90
+with 1
+risk 12 128 units up here it says
+12 130 so within two units of accuracy
+there
+let's check a few more markets to make
+sure
+everything's working here's another one
+on euro aussie
+49.3 pips
+one percent risk is 26 050 units
+26 039 let's try increasing our risk
+let's try
+2.8 percent risk just as a weird number
+to see if this
+matches uh changes to 2.8
+risk we have 72 940 units
+72 910 units so i think that's a
+successful
+test the script is working as desired
+and that about concludes today's lesson
+on how to calculate your forex position
+size
+based on the distance from your entry to
+your stop loss
+in the next lesson i'll be giving you
+the source code to a script
+i wrote recently that i've been using to
+auto trade
+the forex markets on the daily chart so
+it's quite a simple script but it is
+profitable
+doesn't take many trades per month but
+it is fully automated through autoview
+to work with oanda
+um but before i wrap up this lesson
+let's open the source code to my
+ultimate pullback indicator
+and i will show you how i use this code
+in a premium script of mine this is a
+private script that i've spent years
+working on
+and i also use this script to
+automatically trade the forex markets
+through orlando using this position size
+code so if i scroll down to the bottom
+of
+our user settings here you can see all
+of my auto view settings
+so we have account balance currency risk
+per trade and a bunch of other options
+here such as
+how to use limit orders days to leave
+limit orders minutes to leave limit
+order
+whether we want to use and a demo or an
+order view subaccount alias
+let's scroll down to the position size
+portion
+of my code here it is determine position
+size
+so here i've basically copy and pasted
+the block of code
+from today's lesson into my script and
+i've also got a little bit of code here
+on how to set up my gtd or good till day
+orders which we'll go over in one of the
+videos to come as well
+but if i scroll down to where my entries
+happen
+here's where we detect a valid long
+entry or short entry
+and here is my order view alert
+so you can see here that this alert
+contains all of my order view syntax
+commands
+and here i have q equals which is our
+quantity parameter our position size
+parameter
+and this is set to trade position size
+so we convert
+our trade position size to a string so
+that we can send this message this
+string message
+to order view but i'm passing q equals
+trade position size and trade position
+size
+is right here on line 397
+and this simply calls the get position
+size
+function just like we did in today's
+lesson and this is how i'm able to
+automatically calculate my position size
+when i'm auto trading through autoview
+using any script that i've ever written
+that happens to be profitable
+so that's it for today's lesson i hope
+you found this interesting if you did
+again make sure to hit the subscribe
+button if you haven't already because
+i'll be back very soon with a new lesson
+where i will give away one of my private
+profitable scripts
+for you to play around with if you want
+to shortcut a lot of this process
+head over to panscriptmastery.com where
+you can find
+my indicators course it is a bit pricey
+but it does contain every
+single script that i've ever written in
+my career as a trader
+and a pine scripter there's literally
+thousands of hours of work
+in that course and i give away the
+source code to this script as well as
+every other script that i've ever
+written that was worth publishing
+i go into much more detail about
+automation and how to use order view in
+your scripts so if you're interested in
+that go over there and use the promo
+code
+youtube to get 10 off the current price
+and if you're not interested in that i
+also have a free panscript basics course
+covering the fundamentals of pine script
+and i also have my panscript mastery
+course which is my flagship program with
+100 lessons and counting and over 17
+hours of high quality pine script
+educational content
+and last but not least i recently
+published the art of trading podcast
+which is a podcast i'm going to be
+working on over the years to come
+it's already available on spotify but
+it's taking a little bit of time to get
+published on google podcasts
+and the apple store but on this podcast
+i'm going to be covering
+a lot of trading psychology subjects and
+just general trading techniques to get
+the best results out of your trading
+that's it for today's video
+thank you very much for watching best of
+luck with your trading
+take care everybody
+[Music]
+you

@@ -1,0 +1,162 @@
+c sharp it is a popular programming
+language that may be used for range of
+purposes such as mobile application
+game development and enterprise software
+c-sharp brings up a lot of opportunities
+for you as a developer
+c-sharp was introduced by microsoft
+together with the dot net framework and
+visual studio
+c-sharp was recognized as an
+international standard by ecma in 2002
+and by iso in 2003.
+and on that note hey everyone i am
+rebecca khandelwal and i welcome you all
+to yet another and exciting video from
+simply learn
+in this session we will be discussing
+c-sharp interfaces
+however before we begin make sure you
+have subscribed to our youtube channel
+and clicked on the bell icon below so
+you never miss an update from simply
+learnt's youtube channel
+let's look at the agenda for today's
+topic
+we shall begin a session with an
+introduction to interfaces in c sharp
+after that we will discuss why do we
+need interfaces in c sharp
+finally we will conclude this session
+with an implementation of c sharp
+interfaces
+let's get started with what is
+interfaces in c sharp
+interfaces in c sharp is like a
+blueprint of a class
+it is like an abstract class because all
+the methods which are declared inside
+the interface are abstract methods
+it cannot have a methods body and cannot
+be instantiated
+we name an interface with a capital
+letter i in the syntax as you can see
+here
+next
+let's discuss why do we need interfaces
+in c sharp
+since in c shaft we can use inheritance
+using classes
+so to overcome that issue we use
+interfaces
+interfaces are basically used to build
+loosely coupled application this means
+that components are not dependent on
+each other and any altercation will not
+impact that application itself
+let's say for example there are two
+classes drawable in shape
+now this drawable class is dependent on
+shape class since it can only draw
+shapes if there are said shape defined
+in the class
+this dependency is due to them being
+tightly coupled
+now let's say we have an interface
+drawable
+now this interface can easily
+communicate with different classes and
+it will not affect the main goal to draw
+the shape
+finally let's implement this interface
+in c sharp
+let's start with using
+system
+let's start with creating an interface
+so public
+interface
+drawable
+we always use capital i in front of the
+name
+as in common nomenclature
+for interface
+these interfaces don't have excess
+specifier like in classes like
+public private or protected so we will
+simply define void
+a function draw
+now we don't define any
+methods in the interface itself
+so we will now create a class so public
+class
+rectangle
+drawable
+now we will call the function draw so
+public
+void
+go
+now to draw
+we will write console
+dot
+write line
+and we will print
+drawing
+rectangle
+to give the proof that we are accessing
+this
+drawing function for that from rectangle
+now let's write another class circle
+so public
+class
+circle
+and we will call public
+void draw
+and we will print using console
+dot
+write line
+and we will print
+drawing
+circle
+now
+let's make another class
+public
+class
+test
+now we will declare our main here so
+public
+static
+void
+main
+now we will declare an object for the
+interface
+now this object
+will use
+to create an object for the rectangle
+and then we will call draw
+d dot row
+to access rectangle
+now let's define this d
+for the circle so d is equals to
+new
+circle
+and then we will again call draw
+to draw this circle
+now let's save this
+and run it
+as you can see here
+we are able to call rectangle in circle
+classes using draw function with the
+help of interfaces now let's get back to
+our slides and this was all for today's
+session hope you guys found it
+informative and helpful if you like this
+session then like share and subscribe if
+you have any question then you can drop
+them in the comment section below thanks
+for watching and stay tuned for more
+from templars
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

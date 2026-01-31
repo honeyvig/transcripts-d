@@ -1,0 +1,396 @@
+hey everyone i am vivo khandelwal and i
+welcome you all to yet another exciting
+video from simply learn in this session
+we will be discussing c c-sharp
+dependency injection however before we
+begin make sure you have subscribed to
+youtube channel and clicked on the bell
+icon below so you never miss an update
+from simply learn's youtube channel
+let's look at the agenda for today's
+topic
+we shall begin a session with an
+introduction to dependency injection
+then we will discuss the ways to
+implement the dependency injection
+first we will discuss the constructor
+dependency injection with the code
+implementation
+then we will have a look at
+property dependency injection and then
+at last
+we have method dependency injection
+finally we will conclude this session
+with some advantages of dependency
+injection
+so without any further ado let's get
+started with what is dependency
+injection
+dependency injection is a software
+design pattern that enables the creation
+of loosely coupled softwares
+di is an excellent method for reducing
+tight coupling between software
+components
+di also allows us to more effectively
+handle future updates and other
+complexities in our product
+the goal of dependency injection is to
+make code more manageable now let's
+discuss
+what are the other ways to implement
+dependency injection
+we can implement dependency injection in
+three ways
+constructor dependency injection
+property dependency injection and method
+dependency injection
+let's start with constructor dependency
+injection
+the constructor dependence injection
+usually has only one parameterized
+constructor
+there is no default constructor in
+constructor dependency
+we need to pass the specified value
+during object creation
+we can use the injection component
+anywhere within this class
+let's try to implement it in the
+correlator
+we have already included some system
+libraries which will be needed in this
+code
+now let's start this code with the name
+space
+property
+injection
+we will introduce an
+interface text
+here we will be declaring
+a function void
+print
+then
+we will be creating a class
+format
+which will answer to text
+now we will write a definition
+for the print function
+so
+public
+void
+print
+console
+dot
+right line
+and we will type in
+subscribe
+to
+simply learn
+now
+let's write a constructor
+so
+public
+class
+constructor injection
+then we will create a private interface
+text
+for the text interface
+then public
+constructor
+injection
+and we will pass on
+text as t1
+we will store t1
+in this dot underscore text
+and then
+we will call
+print function
+underscore
+text
+dot
+print basically whenever this function
+will be run it will call its constructor
+then that constructor will automatically
+take the text as its input and then
+print the same text
+now
+let's write the class
+constructor
+and we will write
+the main function so static
+void
+main
+string
+args
+then
+we will call constructor injection
+and make an object cs
+new
+instructor injection in brackets
+new
+format
+then
+we will use this object to call print
+function
+and then
+the console
+dot
+read key
+this will close the function
+whenever we press any key
+let's save it ctrl s
+and then run it
+as you can see when this function is run
+the constructor was called and that
+constructor has initiated
+the text t1
+then this t1 is caused to print this
+this t1 was
+the subscribe to simply learn
+now let's get back to our slide
+next up the property dependency
+injection
+the property is typically used when we
+need parameter less constructor
+it could even work without changing the
+object's state
+let's try it in the code editor
+let's start with creating a interface
+so public
+interface
+i
+notification
+action
+void
+act
+on
+notification
+and we will give it the parameter as
+string
+message
+next we will
+have a class
+simple
+then we will call
+the interface
+i notification action
+task
+equals to
+null
+then
+public
+void
+notify
+function
+then i notification action
+this will be 80
+comma
+string
+messages
+and then
+we will store this 80 in task so this
+dot task
+equals
+80.
+and then
+[Music]
+task
+will call
+act
+on notification
+messages
+now
+we will start a class
+event
+log
+writer
+i
+notification action
+then
+public
+void
+add
+notification
+and
+string messages
+here we can write anything which we want
+to print out
+so console
+dot
+right line
+and we will write
+click
+on
+the bell icon
+to get
+notifications
+next we will write a class
+program
+now we will call the main function so
+static
+void
+main
+string
+args
+we will call
+event
+logwriter
+and
+make
+an object elw equals to
+new
+event log writer
+now
+simple
+add
+is equals to
+new
+simple
+and then this will call the notify
+function
+with elw
+comma
+to
+log
+now we will write
+console
+dot
+read key
+this function helps to terminate the
+code with a single key press
+let's run this code
+as you can see it is printing click on
+the bell icon to get notification
+now let's go back to our slides
+at last
+its method dependency injection
+we only need to pass the dependency in
+the method
+when using method injection
+we do not use constructor injection
+because it would create a dependent
+object every time the class is initiated
+let's try this in the code editor
+let's start with the namespace
+property
+injection
+we will write up an interface
+public
+interface
+i
+set
+void
+print
+then
+we will call a class
+so public
+class
+service
+i
+set then we will write the definition
+for the print function
+[Music]
+so public
+void
+print
+in console
+dot write line
+and then we will print
+now
+we will call
+public
+class
+client
+we will call private
+i set
+and underscore
+i set
+public
+void
+run
+i set
+serve
+and we will store this serve in
+underscore i set
+so this
+dot
+underscore i set
+is equals to
+serve
+then we will write
+console
+dot
+write line
+and we will print
+start
+and then
+this
+dot
+i set
+dot print
+so first it will print start
+and then
+it will run the print function which
+will print
+the above text which is print dot dot
+dot dot
+we will write up a class
+method
+now we will write up the main function
+so public
+static
+void
+main
+then client
+cn
+equals to
+new
+client
+then we will run
+cn
+dot run
+in brackets
+new
+cervic
+then we will call
+console
+dot
+read key
+to terminate the code
+when it reads the key
+now let's save it
+and run this code
+as you can see it's first
+writing this command start and then it
+is calling the sprint function which
+then prints this print
+statement
+let's get back to our slides
+finally
+let's conclude this tutorial with some
+advantages of dependency injection
+first up
+dependency injection helps in reducing
+the class coupling
+next up
+it increases
+the reusability of the code
+next the dependency injection helps to
+improve code maintainability
+at last the dependency injection makes
+it feasible to conduct unit testing
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

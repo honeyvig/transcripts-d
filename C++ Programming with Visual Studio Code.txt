@@ -1,0 +1,503 @@
+[Music]
+hi welcome to visual studio tool box I'm
+your host Robert Greene and joining me
+today is wrong Lou hey wrong hi Robert
+we're gonna kick off the new year by
+talking about C++ and Visual Studio code
+yeah this is a combination that many
+people might not think about we know
+about Visual Studio code but it seems a
+lot of people using it for web stuff for
+c-sharp people know a lot about C++
+we've talked about that with Visual
+Studio you've been on the show talking
+about Visual Studio in a very long time
+welcome back yeah today we're going to
+talk about C++ and Visual Studio code
+yeah absolutely
+so Visual Studio code as many of you
+already know had booting support for
+many web languages Java Script
+typescript and other languages are also
+supported via extensions actually and
+C++ is one of those languages so we are
+the videos C++ team we actually ship an
+extension for C++ for views to the code
+providing another alternative tool for
+developing sequences code both on
+Windows and now Windows platforms so it
+makes sense they you know in Visual
+Studio code you want you don't want a
+full-featured IDE just want something
+that's just you and your code right to
+writing various languages C++ is a
+language so it kind of makes sense yeah
+this new code is meant to be a
+lightweight editor as opposed to a fully
+featured IDE and there are cases where
+you just want to write some quick code
+or just read code or your program is so
+simple that you don't really need the
+complex complexity of an IDE but just
+want to simply compile your code and do
+something for debugging that's if that's
+all you want and you're looking for
+lightweight editor via studio code is
+definitely a good option that could be
+faster mmhmm yeah notes fast stalling
+the C++ workload individual studio just
+yeah absolutely is code yeah a much
+lightweight experience say of all and
+however even though Vince 2d code is
+meant to be a code editor to start with
+and a lot of experience is focusing on
+editing experience it does provide
+buting support for integrating external
+tasks so you can not only do building
+but also integrate your external tasks
+to do testing packaging and some of
+those things you wanna if you want to
+bring the whole workflow into visual
+studio code it's all possible but you
+don't have to so that's the beauty of it
+it comes with it a very lightweight tool
+but it has been it is fully extensible
+and has the flexibility for bringing
+more functionalities if you want some
+yeah so yeah as I mentioned it runs on
+Windows Mac and Linux
+everywhere where Visual Studio code runs
+our extension runs so it's definitely
+option there out there whether you're
+building on Windows or Mac or Linux
+platform so yeah today I'm gonna show a
+demo X on a MacBook cool all right so
+here I am
+in Visual Studio code so to do our to do
+C++ development it is highly recommended
+that you go get the C++ extension that
+we ship so if you go to the extension
+tab and search for C++ and find one
+that's shipped by Microsoft and just
+install right from here it takes a few
+seconds to get everything installed and
+I already have this one installed on my
+machine and that's all I need for this
+demo today so now let's switch back to
+my folders view what I'm gonna do is to
+open the folder that contains some C++
+code so this is a project I downloaded
+from github this is called box2d which
+is a physics physics engine for building
+games and I'm just going to open that
+folder so first thing you'll notice are
+the Box you start getting some basic
+intelligence even without any
+configuration on your part so right here
+I have one of the C++ file open which is
+this one Oh
+by the way this is a pretty sizable
+project so you actually see a bunch of
+CPP and head of housing here lots of
+folder structures in here I'm just
+opening one of them but if you started
+looking at the code if you would just
+want to read the code you started
+getting quickly info to tip you hover
+over and some basic autocomplete feature
+as well so if I want to hover over some
+of these things here you get a list of
+possible matches okay so that is the
+basic intelligence experience other box
+but if you also know there is something
+here on the screen which says there's a
+info bar that says config in crew path
+for better intelligence results which
+means if you're willing to configure in
+crew path and to help our intelligence
+engine to have more knowledge of your
+include files we will be able to give
+you a much better experience is there a
+reason you wouldn't want to do that
+um it's work yeah so if yeah it's
+something you have to go and and spend
+some time figuring out and yeah if there
+have been cases where you just don't
+have the time to do that or do you have
+you don't have the information but other
+box you get the basic things but if you
+want to try out better intelligence we
+definitely recommend you to go and
+config in few paths so I'm just gonna oh
+let me show you real quick so so on our
+github repo for the CPP tools there's a
+documentation there that tells you
+exactly what you need to do to configure
+incra paths which is going to be some of
+the stuff I'm going to demo here okay so
+first of all the intellisense incra
+paths are defined in this file this is
+called CCPP practice JSON file so
+already have the hero let me just get
+this one there's a way
+let me show it real quick so it's going
+to be command P and look for c /c PP
+edit configurations which takes you that
+to that file now in this file there are
+multiple configurations by default
+there's one configuration for each OS so
+look for the section where your host OS
+is up so for example here I'm looking at
+Mac configuration and this is where the
+include path is defined so by default we
+look at your we generated system
+defaults based on your host OS so for
+example in on Mac we have because I have
+also have Xcode installed then I get the
+default ones which should already
+include a lot of the system headers so
+we don't have to worry about those but
+we would need to know if there are other
+libraries you're using we wouldn't know
+where your header files are we wouldn't
+know so it'll be helpful if it can tell
+us how the intellisense engine where to
+find those files so of course you can go
+through the manual steps and figure out
+everything and put everything here by
+ourselves but we figured users might
+want some help in figuring out where
+those paths could be because it's a
+tedious process for to figure out every
+single folder so one thing we do here is
+we have light bulbs suggestions so if
+you look at all these green squiggles
+and click on one of those and we show a
+light bulb click on light bulb the label
+actually provides suggestions for where
+this header could be located basically
+there's a background process that
+searches recursively in the root folder
+like it looks for every possibility in
+the folder and provide suggestions if it
+is able to find one so for example in
+here I can just simply click on the menu
+and all the squiggles just went away
+because what happened was we
+automatically and it is passed to
+include paths so if you go through the
+light bulb and suggestions you I could
+never have to hopefully never
+have to manually edit this file but this
+is the file if you need to do it
+manually so now I have that path edit
+and intelligence engine is actually will
+be able to give us better results no
+just for comparison remember I was
+looking at this member here now we have
+the exact match because we know where to
+find it now of course there's more
+intelligence features that we provide so
+that is that was the quick info of
+course we do member list as well so now
+you get the full member list if you do
+have errors in your code
+we will now start to red squiggle your
+code yes your shows real issues in the
+code so that's real helpful some of the
+intelligence engines to help you write
+your code more efficiently and the other
+scenario we target is reading code so a
+lot of times you open an RC pacifist
+project and you want to understand how
+the code works and we do provide code
+browsing features for example if I
+wanted to see the definition of this
+member function I can right click on it
+and I do provide go to definition and
+declaration and one thing I like to use
+is to pick definition instead of go to
+so we can bringing the definition into
+the context of the current file can you
+edit it from in there oh yeah okay
+that's like a full window cool so we and
+in addition to the go-to functions we
+also provide code formatting if you
+select code and you can say format
+document and format selection we
+actually use clear format tool to help
+you formatted to format your code okay
+so that's a little bit of intelligence
+and composing how to help you to recode
+so beyond that you might ask what if I
+want to compile my code or build my
+project like I mentioned earlier Visual
+Studio
+made possible to build a code from
+winning the the window without having to
+leave the whole window so this
+particular project is let me open this
+file first so to do a building in via
+studio code the one file you need to
+config is tasks JSON file and
+essentially it's pretty straightforward
+you just want to pass passing your
+command if you're dealing with one
+single file you can even passing the
+compiler name here and the file you want
+to compile and that's all you need to
+config and for it be more complex
+projects you might want to use something
+like another beauty or something like
+that for example in this particular case
+this is conflict to use Xcode Bute to
+beaut so what I did here using a mass
+build no no this is complete on Mac I'm
+using Xcode and I'm calling the Xcode
+view command from within video studio
+code so sync so what I have here is a
+script file
+so I basically go to this directory and
+call this command that's why having the
+script file then I just have to passing
+this script to the command and that's
+what I config and then I can start
+building my whole project from here I
+can say run Bute ask and Visual Studio
+code is going to call this command and
+you see here actually successfully
+viewed my project in here
+so that's building now beyond building
+so at this point I already have the
+output of my project and I'm ready to
+run this project and you can of course
+just simply run launch this AXI from
+winning here and that's the file you
+want to edit which is launched or JSON
+and the only thing well two things I
+guess primarily you want to edit here is
+tell vias code what the program is you
+that you want to launch and what is your
+current working directory that's the two
+things I can fit
+and launching is just one snare of
+simply run program what if you want to
+debug the program if there's a bug you
+want to quickly debug through the code
+and the C++ extension provides support
+for LDB and gdb debugger on a Windows
+platform and on Windows you can still
+use gdb and the visual studio debugger
+as well so in here in this case because
+I'm a Mac I'm gonna config my
+configuration to use the LDV debugger
+and here's the type of the debugger
+that's what all the configuration I need
+to do ok now I can go back to my code
+and I can set a breakpoint here and this
+method is called a B to collide circles
+essentially when two circles cry with
+each other this is going to be this
+function it's going to be called now
+we're all ready to switch over to this
+debug menu I already have this selected
+since I only have one configuration say
+I want active a launch this program and
+debug with the ODB debugger and all I
+need to do at this point is just to hit
+f5 or this arrow here and this is going
+to launch our program which is showing
+us some physics in here and what I'm
+gonna do is to get another circle in
+here and let them flight now we're
+hitting the breakpoint you will still
+your code and here are some things you
+can look at as you would expect local
+variables we can even do expression
+evaluation and you got full call stack
+here I even support multi-threading as
+well now you can step over your code and
+look at all these variable changes
+here or you can do a run to cursor if
+you want to run to another line and
+everything just works like you would
+expect it and with very simple
+configuration here yeah so basically run
+through all the way from how you open
+the folder getting telethons browsing
+features and building and debugging the
+for cycle so we do support all those
+things in bins to decode with our
+extension so this one more scenario that
+I can demo here regarding intellisense
+that's what a lot of people ask because
+the setting up in crew path is hard like
+I mentioned a lot of manual steps even
+though we do provide lighbulb
+suggestions it may not help you to get a
+hundred percent so the question is hey
+since I'm able to sometimes the projects
+already conflict to build with another
+buta like see make the view system
+already has the knowledge of which in
+which headers you want to include
+because otherwise it wasn't Bute can we
+leverage that information and pass that
+back to intellisense and let them figure
+out the right incra path to include yeah
+so that is the scenario we're turning
+here let me do a real quick demo here so
+first of all I'm gonna open another
+project by adding another folder to the
+workspace so that's something brand-new
+supported invest in your code in last
+month release which is now you can open
+many different folders in the same
+instance of Visual Studio code you don't
+have to switch between windows anymore
+and we do support multiple folders in
+the in the C++ extension as well so now
+you can have multiple folders open and
+our intelligence engine operates
+independently for different folders so
+it wouldn't confuse analysis from one to
+the other so knows what Cody yeah so now
+in here I have a little old as the
+right so they are independent so in here
+in this in this project let me close the
+other project and here's again the the
+JSON file if you want to do the manual
+steps but let me open
+code code real quick
+again we're seeing this message and you
+get to go the individual file level is
+there a way to do it at the folder level
+you mean in your project it is per
+folder that you open her folder so this
+file always lives you right there's a
+dot vs code folder which is portfolio
+right so is there a way do you have to
+go into each individual CPP file and
+configure the include path for that file
+or can you configure the include path
+for the entire project so this is this
+file in here this is configuring for
+this whole folder which is containing
+lots of CPP files so to answer your
+question this is not profile this is
+perf older you open right so but if you
+go in your in this file you get a
+lightbulb saying that you can configure
+right yeah if you go into another CPP
+file would you also get a light bulb you
+will might have different suggestions
+right because they are these are
+different headers and is there a way is
+there a need to instead of having to go
+into every CPP say I want the JSON file
+I want this configured for everything in
+the entire project all at once yeah
+that's a very very good suggestion but
+no so right now they need a light bulb
+suggestions is per
+translation unit okay if you can think
+of translation unit as almost equivalent
+to a file but it would pooling files
+that it's it is dependent on like right
+as far it's gonna pick up along with the
+header for example but yeah but right
+now I'm gonna show you a much quicker
+way to config intellisense at once okay
+for all the files in this folder as I
+mentioned this project is already config
+with Simek build system so this is or
+they set up to butte with c make
+everything works so now the question
+how do we bring that information back to
+intelligence it is actually really
+straightforward go back here and copy
+this this is a flag that see make
+supports essentially this tell see make
+when you when you are build up when you
+build this project mm-hmm
+also export a file that's named compiled
+commands
+essentially it's a an XML file that has
+an array of objects each object defines
+how each translation how each source
+file CPP file should can be compiled in
+the project which means it's going to
+have information for which files to
+include okay so now all I have to do at
+this point is to rerun this beaut
+process and I am gonna have the
+additional output which is this compiled
+command store JSON file this is probably
+gonna take a few minutes so I'm just
+gonna show you one that's already
+generated earlier this is the one
+essentially this is defining for each
+CPP file
+what compiler is being used and all
+these defines and passing to the
+compiler and then it has I - I specifies
+the include path so you don't have to
+read through this
+oh I'm gonna start debugging here so
+because that at this point all I have to
+do is go back to the GSL file now
+instead of using the in crew path I am
+going to say I want to use a compiled
+commands and I just need to tell the
+intellisense engine where to find out
+JSON file I just opened
+okay so this is the path of my
+compartment so Jason mm-hmm save this
+file go back clean schools are gone just
+like that
+okay now intelligence works for this
+entire folder that you have a Pacific to
+see make this is Xcode build this is
+specific to see make okay however we
+this could be generated by many other
+buildings like ginger supposed s2 okay
+so this is something the specification
+is actually defined in the Klan
+documentation and Simek is definitely
+one of the popular systems that people
+use today so yeah if your project is
+already perfect with one of those few
+systems definitely take advantage of the
+knowledge there and get JSON file
+generated and we will leverage that cool
+yeah that's all duh all right demos on
+the show today yeah cool so if you're on
+Windows mm-hmm you've got complete full
+support for C++ and Visual Studio
+full-featured IDE Visual Studio you know
+and love if you just want to do if you
+don't have the C++ workload installed
+and you just want to do some simple C++
+this is a nice alternative yeah I'm
+installing the full C++ workload which
+is can be rather large yeah sometimes
+yeah even there are even in cases where
+you do have videos to do on your box and
+and there are times even for logic I
+just want to read it real quick yes yeah
+I do that was a short companion toolset
+all the CS files to open in code because
+it just loads faster I just want to
+look at ya code something quick the
+studio code is great for that yeah and
+then if you're on Mac this is a great
+way to go Visual Studio for Mac doesn't
+currently support C plus and then if
+you're on unit Linux and of course you'd
+be using this yeah great yes yeah thanks
+great thanks so much for coming on yes
+thank you for having me here yeah all
+right enjoy da demo yeah great way to
+kick off the new year of Visual Studio
+toolbox and we will see you next time
+[Music]

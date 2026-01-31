@@ -1,0 +1,582 @@
+hey everyone welcome to simply learn's
+youtube channel in today's session we
+will be discussing about interesting
+topics in c sharp that is trees and
+graphs in c sharp but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you're a tech geek in a continuous hunt
+for latest technological trends then
+consider getting subscribed to our
+youtube channel and hit that bell icon
+to never miss an update from simply
+learn in this tutorial let's understand
+what exactly is the agenda
+first we will see the importance of
+recent graph data structures in c sharp
+after that we will go over the basics of
+trees later we will look at the
+different types of trees in seashore
+following that we will look at some
+basic tree operations and terminologies
+moving ahead we will look into the tree
+traversal and finally in tree data
+structure in c sharp we will look at
+some tree related applications
+following on from the tree data
+structure we will learn about the graph
+data structure in c sharp beginning with
+an introduction
+after that we will look at the various
+types of graphs as well as some basic
+operations that are performed in graphs
+following that we will learn graph
+terminology and then look into graph
+traversal
+next we will look at how we can
+represent graph data structure and then
+we look at some important real-world
+examples of graph data structures let's
+start with the basics and try to
+understand the importance of tree and
+graph data structures in seisha
+the tree and graph data structures in c
+sharp are critical for modern
+programming each of these data
+structures is used to construct a model
+of real-world problems which are then
+solved efficiently using this model
+after understanding the importance of
+tree and graph data structure now let us
+understand the tree data structure to
+proceed with the introduction
+the tree is an hierarchical data
+representation format each node in a
+tree has two components data and
+references the top node of the tree is
+known as root node and the two products
+beneath are known as the left subtree
+and right subtree also they are called
+as children let's look at the real world
+example of a tree data structure
+an organization structure that functions
+as an hierarchy so here's an example of
+how an organization where the ceo works
+as the root of the tree hierarchy of the
+organization then we have children that
+are ceo and cfo which are the chief
+financial officer and chief technical
+officer and we also have cmo that is
+chief marketing officer then we have
+children of cfo as financial assistance
+and cto as software engineering and
+finally we have social media
+following this tutorial we will look at
+the various types of trees so there are
+only five types of trees the general
+tree the binary tree the binary search
+tree the avl tree and the red black tree
+which is a final or fifth type of tree
+let's look at all of these different
+types of trees by defining them all we
+have the general tree first
+when no constraint is imposed on trees
+hierarchy it is referred to as general
+tree each node in the general tree can
+have an infinite number of children this
+tree is a superset of all other trees
+we also have a binary tree a binary tree
+is a tree where each parent can have no
+more than two children
+the children are referred to as either
+the left or right child one of the most
+widely planted trees
+the binary search tree is the next type
+of tree binary search tree is a binary
+tree extension with some additional
+constraints
+in bst or binary search tree the values
+of a node left child must be less than
+or equal to the value of its parent
+while the value of node's right child is
+always greater than or equal to the
+value of its parent the binary search
+tree property makes it suitable for
+searching operations because we can
+determine whether the value will be in
+the left or in the right subtree at each
+node the fourth type is the abl tree the
+avl tree is a binary search tree that
+self balances the acronym avl is derived
+from its creators adolescent welsh and
+landis
+this way the first ring that was
+dynamically balanced each note in an avl
+tree is assigned a balancing factor
+which is used to determine whether the
+tree is balanced or not in an avl tree
+the heights of the node's children
+differ by no more than one the avl tree
+the valid balancing factors are 1 0 and
+-1
+finally we have the red black tree
+another type of self-balancing tree is
+red black the name red black comes from
+the fact that each note is a red black
+tree is either painted red or black
+based on the red black tree properties
+this ensures that the tree maintains a
+balance
+following that we will look into some
+basic tree operations so first and
+foremost we have an insertion operation
+in the tree
+let us try to define it insertion in a
+tree can be accomplished in various ways
+depending on where the new element is to
+be inserted following insertion we have
+deletion operation performed on a tree
+when it comes to deleting a node in a
+tree it can get a little tricky when you
+consider what to do with the nodes left
+and right children finally we have a
+searching operation and are attempting
+to understand it
+when searching for an element determine
+whether the current node's value matches
+the given value
+and then recurses to the left and right
+subtrees repeating the process
+following that we will learn about tree
+terminologies so here are three terms
+which are used in this tutorial a root
+node is the first node from where the
+tree sprouts as an a
+an h is connecting link between any two
+nodes a b and a c are the examples in
+the picture
+following that we have a parent node h
+which has a branch from it to another
+node a children node or a child node j k
+and l is a node that is a descendant of
+another node each child of a node forms
+a subtree recursively in a tree next
+tree structures store a set of values
+known as keys example b following that
+the sibling node is on the same
+hierarchy level as the parent node d
+and f after that the total number of
+children of a node is its degree
+following that the total number of edges
+that lie on the longest path from any
+leaf node to a specific node is the
+node's height a leaf node is a node that
+does not have any children each step
+from top to bottom in a tree is referred
+to as a level of a tree next in this
+tutorial we will learn about traversal
+in the tree data structure
+so in general we have two types of tree
+traversal first we have a breadth first
+search the breadth first search
+algorithm traverses or searches tree
+data structures it begins at the tree's
+root and explores the neighboring nodes
+first before moving on to the
+neighboring at the next level and that
+first search can be used for secondary
+traversal depth first search is a tree
+data structure traversal or search
+algorithm starting at the root one
+travels as far as possible along with
+branch before returning to the root
+depth first search tree traversal has
+been classified into three modes of
+traversals so we have pre-order
+traversal in-order traversal and
+post-order traversal let us try to
+define all these traversal in greater
+detail for example in pre-order
+traversal we first visit the root node
+then the left sub tree and finally the
+right subtree
+for a better understanding consider the
+following example of pre-order traversal
+next we have the in order traversal
+which means that in this type of
+traversal we first traverse the left
+subtree then the root node and finally
+the right subtree so for a better
+understanding here is an example for in
+order traversal finally we have the post
+order traversal in post order we first
+traverse the left subtree then the right
+subtree and finally the root node
+for a better understanding here is an
+example of post order traversal let us
+look at code demonstration for tree
+traversal with pre-order in order and
+post order
+in this program we first define a tree
+node as node 1 with values left and
+right and then we defined a show
+function to display all the three
+traversals and in this function we
+defined a value in square brackets
+following that we created a tree in
+which the root node is null initially
+then we have a function namely
+return root where we will return the
+root value and finally we have the
+insert function and finally we have the
+insert function in which we create a new
+node and insert x value to that new node
+after that we have a condition that says
+if the root node is null we will assign
+the new node as the root node otherwise
+the root node will be assigned as the
+current node defining the parent node
+following that we assign the current
+node to the parent node with the
+condition that if the assigned value x
+is less than the left node we assign
+that value to the left node and if the
+left node is null we will assign a new
+node to that left node
+and the right node if the assigned value
+x is greater than the left node we
+assign that value to the left node and
+if the left node is null then we will
+assign a new node to the left node now
+we will define all three tree traverses
+first we'll have to do pre-order
+traversal which means that if the root
+note isn't null the first will give the
+root node and we will prefer to traverse
+first the left node then the right node
+next
+if the root note is not null we will
+call to traverse the left tree enter the
+root value and call preorder to traverse
+the right tree finally in post order we
+will call post order to traverse the
+first left and right tree and then
+assign the root value if the root is not
+null finally we created a binary search
+tree in the main function then call it
+the insert function to insert all the
+values finally we will call the in order
+function to perform in order traversal
+followed by the pre-order traversal and
+finally we'll call post order function
+to perform post order traversal
+now let's quickly try to execute the
+program and see the output
+there you go the program got
+successfully executed and we have all
+the three types of traversals in order
+traversal pre-order traversal and
+post-order traversal now let's get back
+to the slides
+now the next topic is the applications
+of trees
+we have five applications of tree data
+structures in c sharp the first
+application is the xml parser which
+employs the three algorithms the tree
+second application is a decision-based
+algorithm based on the tree algorithm
+used in machine learning the tree data
+structures are also used in databases
+for indexing the third application of
+trees
+the following use of a tree data
+structure domain name servers also use
+tree data structures that is dns the
+fifth and final application of tree is
+file explorer mobility computer any
+computer bst in computer graphics after
+understanding the tree data structure in
+c sharp we will now try to understand
+graph data structures
+the graph data structure is one in which
+data is stored in a network of
+interconnected vertices nodes and edges
+also called as paths as a result a graph
+data structure
+that is made up of a set of vertices v
+and a set of edges referred as e or
+paths p
+consider the following real world
+example of a graph data structure some
+websites such as wikipedia facebook and
+youtube have
+many incoming links whereas many smaller
+websites may have very few incoming
+links we will look at different types of
+graphs so there are generally six types
+of graphs so first we will have directed
+graphs next we have undirected graphs
+weighted graphs unweighted graphs and
+finally cyclic and acyclic graphs
+let us try to comprehend all these
+graphs in greater depth first and
+foremost we have directed graph edges in
+a directed graph have a direction
+the edges denote one-way relationship as
+each edge can only be traversed in one
+direction
+next edges in undirected graphs do not
+have a direction
+each edge can be traversed in both
+directions indicating
+a two-way relationship a weighted graph
+is defined as if the edges in your graph
+have weights your graph is said to be
+weighted next we have unweighted graph
+which is defined as a graph that is said
+to be unweighted if the edges do not
+have any weights
+after that acyclic graph is a directed
+graph in which at least one note has a
+path back to itself the last type of
+graph is an acyclic graph defined and
+acyclic graph is a directed graph with
+no cycles meaning that no node can be
+traversed back to itself
+in this tutorial we will see some basic
+operations performed on graphs after
+learning about various graph data
+structures so first we have the add node
+operation which is used to add vertices
+to graphs next operation we did in the
+graph was to remove node defined as
+remove node removes graph vertices the
+third operation is the add edge state
+which establishes connections or paths
+between graph vertices
+the fourth operation is remove edge
+which is an function that removes
+connections or paths between vertices
+and graphs following that perform a
+check operation to see if a graph
+contains a specific value the sixth and
+final operation carried out in the graph
+has edges define whether or not there is
+a connection or path between any two
+vertices in a graph after understanding
+some basic graph operations we will look
+at graph terminology
+first a vertex is defined as a vertex or
+node is a name given to each data
+element next we will go over edge graph
+terminology it is the connection between
+two nodes or vertices each edge has two
+ends denoted by starting vertex and
+ending vertex the number of edges in a
+graph connected to a vertex is then
+defined as a degree the total number of
+connected incoming degrees to a vertex
+is defined as in degree while the number
+of outgoing edges that connect to a
+vertex is defined as
+out degree then there's a self loop
+which is defined as
+if the two endpoints of an edge coincide
+it is referred as a self loop finally we
+have an adjacency stage which means that
+if an edge connects with two vertices
+they are adjacent and this tutorial also
+covers the graph traversal which has two
+types of tree traversal
+so the first one is breadth first search
+breadth first search is the first graph
+traversal we have so bfs is an
+abbreviation for breadth first search it
+is also known as level order traversal
+the queue data structure is used for
+breadth first search traversal any node
+can be considered as a root node when
+traversing a graph with the bfs
+algorithm the second kind of graph
+traversal is the depth first search
+abbreviated as dfs in dfs traversal the
+stack data structure is used which
+operates on the lefo or last in first
+star principle the dfs traversing can
+begin at any node and any node can be
+considered as a root node until a root
+node is not mentioned in the problem
+let's look at the code traversal of the
+bfs and dfs graph traversals
+in this program we defined namespaces as
+graph traversal then define the class
+name as graph we defined the vertex
+variable for the graph vertex and
+finally we defined the adjacency list
+array for all vertices after that we
+have graph function object native code
+with v one vertex in the parameter
+where we assign v1 to the vertex vertex
+and assign v one vertices to our
+adjacency then instantiate adjacency
+list for all vertices after that we have
+a loop from zero to v one vertices where
+we assign the vertices to list of
+adjacency after that we added edge v1 to
+w1 to the adjacency list following that
+we defined bfs traversal in a
+parameterized source variable as s1 in
+which we declared an array as a visited
+boolean data value then as we know we
+traverse the breadth first search with
+queue data structure and if the source
+node is in the visited array we enqueue
+the source node to the queue then we
+have a while loop through all the nodes
+in the queue and if the queue is not
+empty we will dequeue or remove a vertex
+from the queue and print it and then we
+use forest loop to get all adjacent
+vertices of s1 after traversing the bfs
+we will now traverse the depth first
+search in the graph as we know stack
+data structures are used to traverse dfs
+so we created a stack with source node
+as s1 and push the first node as the
+source node itself then we have a while
+loop that goes through all nodes in the
+stack and if the stack is not empty we
+pop or remove a vertex from it and print
+it and then we use for each loop to get
+all the adjacent vertices of s1 after
+that we have a for loop that will run up
+to the last vertex in the graph and
+start printing all the elements in the
+adjacency matrix list finally in the
+main function we have a graph where we
+call the edge function and add edges to
+the graph and then we print the
+adjacency matrix and finally we print
+the breadth first search and depth first
+search starting from vertex 1. now let's
+quickly try to execute the program and
+see the output
+so there you go the code got
+successfully executed and you have both
+bfs and dfs traversals from vertex 1.
+now let's quickly get back to the ppt
+following our understanding of graph
+reversal we will look at some graph
+representations in c sharp in computer
+programming there are numerous ways to
+represent graph different
+representations have different
+properties and what should be chosen
+depends on specific algorithm we want to
+use in other words we present the graph
+so that the operations performed by our
+algorithm are fast as possible so the
+first graph representation is an
+adjacency matrix followed by an indices
+matrix and finally an adjacency list let
+us define all three graph
+representations in greater detail
+beginning with the adjacency matrix the
+graph is represented as square matrix
+with the position g i a j containing the
+value of
+1 if there is an edge from v i to v j
+if such an edge does not exist the value
+0 is stored in the field g i j
+if the graph is weighted we record the
+weight of the edge and in the position
+gij and the matrix is called a matrix of
+weights if there is no edge between two
+nodes this matrix a special value
+representing the infinity is recorded
+the adjacency matrix will be symmetrical
+if the graph is undirected
+the next graph representation is an
+indexes matrix a graph can be
+represented using an incidence matrix
+with the following dimensions this
+matrix is filled with zeros once and
+minus ones the value 0 is used to
+represent a row h that is not connected
+to a column vertex the number 1
+represents a raw edge connected as an
+outgoing edge to a column vertex the
+number -1 represents a row edge
+connected as incoming edge to a column
+vertex the last draft representation is
+the adjacency list defined as in this
+representation we keep a list of
+neighbors for each vertex in the graph
+this means that each vertex in the graph
+has a list of adjacency vertices an
+array of vertices indexed by the vertex
+number with each array element pointing
+to the singly linked list
+of these neighbors finally in this
+tutorial we will look at the real world
+examples of graph data structures so
+here are the six real-life examples of
+graphs we have facebook graph api and we
+have google knowledge depth we have
+yelp's local graph following that we
+have path optimization algorithm we have
+google map platform and finally we have
+flight network let us discuss all these
+applications in greater detail facebook
+graph api is defined as facebook's
+graphs api and it perhaps is the best
+example of graph applications in real
+world problems the graph api represents
+a paradigm shift in large scale data
+provision next we have a knowledge graph
+a graph based representation of
+knowledge that involves linking data and
+graphs it is still unclear what it can
+and cannot do after that he helps
+gradually replace the older fusion api
+with graph api the local graph api makes
+it easier for developers to integrate
+yelp data and share great local
+businesses via their apps after that we
+have a path optimization algorithm path
+optimizations are primarily concerned
+with localing the best connection that
+meets predefined criteria such as speed
+safety fuel and so on or a set of
+criteria such as products roots etc next
+we have google maps repeat next we have
+google maps platform application of
+graph defined as the google maps and
+roots api which are examples of classic
+shortest path api this graph problem can
+be easily solved using edge weighted
+directed graphs our digraphs the last
+graph applications is flat network so
+efficient rope optimizations perfectly
+fit graph data structures for flight
+networks airport procedures can be
+efficiently modeled and optimized using
+graph models
+now with that we have reached to the end
+of this tutorial on trees and graphs in
+c sharp if you have any queries
+regarding any of the topics covered in
+this session or if you need the code
+that we have executed in this particular
+session then please let us know in the
+comment section below and our team of
+experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

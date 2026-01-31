@@ -1,0 +1,23 @@
+let's take a look at the new case
+preserving find and replace in Visual
+Studio
+I want to rename the string person with
+the string animal in this file
+so I'm going to open the quick replace
+dialog hitting Ctrl H
+here I'll click the new a b button to
+preserve the case
+and then click replace all
+this replaced all person with animal and
+notice how the casing was preserved
+this works in replace in files as well
+just remember to check The Preserve case
+checkbox and then hit replace all
+the strings were replaced and casing
+preserved
+if you found this video helpful
+and you would like to see more of the
+same type of content in the future
+make sure to like the video and
+subscribe to the YouTube channel down
+below happy coding

@@ -1,0 +1,510 @@
+hey everyone welcome to simply launch
+youtube channel in today's session we
+will be discussing about the delegates
+in c sharp but before we begin let me
+tell you guys that we have daily updates
+on multiple technologies so if you are a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with the agenda
+for today's session
+first and the foremost we will define
+delegates in c sharp we will then learn
+why and when to use delegates in c sharp
+later we will discuss how to declare
+delegates in c sharp
+then we will learn how to initialize and
+invoke delegates in c
+after that we will look at the different
+types of delegates in c sharp finally we
+will see some major differences in how
+delegates work with names and anonymous
+methods
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic that is the definition of
+delegates
+so what exactly are delegates
+a delegate is an object that refers to a
+method or it is a variable of the
+reference type that can hold a reference
+to the methods for example delegates in
+c sharp are analogous to function points
+in c or c plus plus it provides a method
+for specifying which method should be
+called when an event occurs
+delegates are commonly used to implement
+events and callback methods all
+delegates are derived implicitly from
+system.delegate class
+here is a diagram that shows how
+delegates work which is completely
+similar to a pointer to the function for
+example the caller invokes the delegate
+an object that refers to a method or a
+reference type variable that can hold a
+reference to the methods for example if
+you click a button on a form the program
+will invoke a specific method
+in a nutshell it is a type that
+represents references to methods with a
+particular parameter list and return
+type and then calls the method in a
+program for execution when needed for a
+better learning experience here is a
+pictorial representation of the given
+example
+now we will look at some essential
+aspects of delegates in c sharp
+firstly delegates are a good way to
+encapsulate the methods
+next delegates is a library class found
+in the system namespace after that
+delegates can also be used to invoke
+anonymous methods
+following that delegates are primarily
+used to implement call back methods and
+events
+next as two or more methods can be
+called on a single event delegates can
+be chained together
+following that it is unconcerned about
+the class of the object it refers to
+finally in certain context anonymous
+methods of c sharp 2.0 and lambda
+expressions of c-sharp 3.0 are compiled
+to delegate types these features are
+sometimes referred to collectively as
+anonymous functions
+after defining delegates we will look at
+why and when to use them
+programmers are frequently required to
+pass a method as a parameter to other
+methods delegates are created and used
+for this purpose for example a delegate
+is a class that contains the signature
+of a method although it can be used in
+any context it is frequently used as the
+foundation of the c sharp event handling
+model delegates can be thought of as
+giving a name to a method signature here
+is an example of the delegate on my
+screen namely the delegate function
+the delegate can be assigned to any
+method that matches the delegate's
+signature including the return type and
+parameters now let's look at why we need
+delegates in c sharp
+delegates in a nutshell are object
+oriented type safe and very secure
+because they ensure the signature of the
+method being called is correct delegates
+make event management simple and easy
+after determining when and why we
+require delegates in c sharp we will now
+try to figure out how to declare
+delegates in c sharp
+there are three steps in defining and
+using delegates delegate keyword is used
+to create a delegate first we add the
+attribute the modifier the delegate
+keyword the written data type the
+delegate name and finally the formal
+parameter as an argument the modifier
+can be any following keywords or a
+suitable combination of new public
+private protected or internal any of the
+data types we have seen can be used as
+the written type it could also be a void
+data type or the same name of the class
+name parameter must be a valid c sharp
+name because a delegate is a method
+definition you must use the parenthesis
+required for all methods leave the
+parenthesis empty if this method will
+not accept any arguments
+here's an example with an access
+modifier set to public and the
+delegate's name is example delegate with
+the int data type and
+string s as a formal argument
+the preceding delegate can refer to any
+method that accepts a single string
+parameter and returns an int variable
+after we understand how to declare
+delegates in c sharp now we will try to
+know how to initialize and invoke
+delegates in c sharp
+we use the same example while declaring
+the delegate to initialize and the
+delegate with the keyword new as shown
+on my screen we can create two objects
+ex1 and ex2 that is example one and
+example two next we will look at how to
+invoke or call objects in delegates
+we call the objects by using the
+object's name followed by parenthesis
+and finally a colon to end the calling
+procedure let's look at a practical
+demonstration of declaring and
+initializing
+and invoking delegates in c sharp
+now we are on the practical mode and we
+have started our visual studio
+so you can see on my screen we have an
+example this program declares a delegate
+namely a calculator
+this program declares a delegate namely
+a calculator with a formal argument x
+using system we created a delegate
+example class with the access modifier
+public and the static keyword the
+keyword static denotes that a class has
+only one instance of the member
+we then declare a static variable named
+value with the value 10 assigned to it
+we then define a static function
+addition with the same formal argument x
+we calculate addition as the value equal
+to the value of plus x
+finally we return the result of adding
+value
+we then define a static function
+subtraction with the same formal
+argument x then we calculate subtraction
+as the value equal to value minus x then
+we finally return the result of
+subtraction value
+similarly we define a static function
+multiplication with the same formal
+argument x then we calculate the
+multiplication as the value equal to
+value multiplied by x and finally return
+the result of multiplication value
+lastly we declare another static
+function by the name division with the
+same formal argument x then we calculate
+division as the value equal to value
+divided by x and then we return the
+result of the division value
+later we define another function called
+getvalue which displays the results of
+all operations performed in the
+calculator
+finally we enter the main function where
+we see how we initialize and invoke the
+objects and delegates in practice for
+example we created 4 objects
+calculator 1 calculator 2 calculator 3
+calculator 4 and used new keyword to
+perform the 4 operations which are
+addition subtraction multiplication and
+division next we call all four objects
+by assigning values to x such as here we
+assign 20 to x to perform addition
+because the value is initially assigned
+with 10 so the sum will be 30 after that
+we divide addition as 30. next to
+perform subtraction we assign x to 3
+because the value was previously
+calculated as 30 so 30 minus 3 equals
+27. similarly we assign 5 to perform
+multiplication and finally we assign phi
+to x which now has a value equal to 135
+we divide 135 by 5 and get 27
+so now i hope i made myself clear with
+the code let's quickly try to run this
+and see the output
+there you go the program got
+successfully executed and the results
+are on the output terminal
+now in this delegates in c sharp
+tutorial we will look at some different
+types of delegates in c sharp
+in seisha there are three types of
+delegates first type of delegate is a
+single delegate followed by that we have
+a multi-delegate
+and finally we have a generic delegate
+let's look at all these type of
+different delegates in detail
+so first let's try to figure out what a
+single cast delegate is
+this delegate can only refer to one
+method at one time for example single
+cast delegates refer to a single method
+with a matching signature
+the system generates single cast
+delegates.delegate let's see a code
+demonstration for a single cast delegate
+for better understanding
+this single cast delegate program
+includes the single delegate namespace
+then declares delegate1 with formal
+arguments a and b of integer data type
+and public access modifier then we make
+a class program
+in which we define an addition function
+calculate the addition of a and b and
+display the result of the addition
+function similarly we make a subtraction
+function in which we calculate the
+subtraction of two variables a and b and
+show the resultant difference finally
+where is the main function where we
+rename the object of class program to
+obj using the new keyword then we
+created two more objects d1 and d2 d1
+for addition with two values of 100 and
+200 and d2 for subtraction with the same
+100 and 200.
+now let's quickly run the code and see
+the output
+now the next type of delegate is the
+multicast delegate so let us attempt to
+comprehend multicast delegates
+this kind of delicate can refer to
+multiple methods that have the same
+signature at one time let us see a code
+demonstration of the multicast delegate
+for a better understanding this program
+uses the namespace delegate and then
+declares delegate as a multi-delegate
+with formal arguments a and b we define
+the addition and subtraction functions
+in the class program which we declare
+and calculate as plus p and a minus b
+respectively then the main function we
+create the class program object p1 then
+we declare md1 and md2 objects for
+addition and subtraction operations then
+we assign md1 to md1 and md2
+giving the value of 100 to a and a value
+of 200 to b let's try to quickly run
+this program and see the output
+let us now look at the third and final
+type of delicate generic cache delegate
+and try to understand it
+generate delegate was introduced in
+dotnet 3.5 and did not require the
+delegate instance to be defined to
+invoke the methods
+there are three types of generic cache
+delegate which are function delegate
+action delegate and predicate delegate
+now for a better understanding let us
+look at the three generic delegate types
+in greater detail complete with code
+examples let us look at the first type
+of generic delegate the function
+delegate
+in c shaft the function generate
+delegate is found in the system
+namespace this delegate accepts one or
+more input parameters and returns a
+single output parameter the final
+parameter is regarded as the written
+value in c sharp the function
+generateddelegate can accept up to 16
+different input parameters it must only
+have one type of return the return type
+is required but the input parameter is
+optional
+one thing to keep in mind about function
+generic delegate is in c-sharp you must
+use the function generic delegate
+whenever your delegate returns a value
+whether it takes any input parameters or
+not
+let's look at the second type of generic
+delegate that is the action generic
+delegate and try to understand it
+in c sharp the action generate delegate
+can also be found in system namespace it
+accepts one or more parameters and
+returns null this delegate can accept up
+to 16 input parameters of different or
+the same type
+one node to remember about action
+generic delegate is when your delegate
+does not return any value regardless of
+whether it takes any input parameters or
+not you must use the action generate
+delegate in c sharp the last and final
+generic delegate type is the predicate
+generic delegate which should be
+understood
+in c sharp predicate generate delegate
+can also be found in system namespace
+this delegate is used to validate the
+methods criteria and returns the result
+as a boolean either true or false it
+only accepts one input parameter and
+always returns a boolean value which is
+required this delegate can accept a
+maximum of one input and always returns
+the boolean type's value
+one note to remember about predicate
+generic delegate is you must use
+predicate generate delegate in c sharp
+whenever your delegate returns a boolean
+value by taking one input parameter
+now let's get back to the practical mode
+and take a look at the code
+demonstration that will provide a clear
+picture of generic delegates including
+function action and predicate generic
+delegates
+now this is an example for generic
+delegates first we have a main method
+followed by the main method we have our
+sum number the sum number one method
+accepts three arguments and returns a
+double value in this example we'll use
+the function generic delegate to
+accomplish the same thing we did first
+similarly number two that is sum number
+two method this method accepts three
+parameters but returns null in this
+example we'll use the action generate
+delegate to accomplish the same thing
+just what we did
+followed by that the length methods
+check accepts one string argument and
+returns a boolean value in this example
+we will use the predicate generate
+delegate to accomplish the same
+as shown in the preceding code the
+function generic delegate accepts four
+parameters the first three of which are
+input parameters and the fourth one is
+the return value then we pass the sum
+number one method to the function
+generate delegate function object which
+will be executed when the function
+delegate is invoked the preceding code
+shows that the action generate delegate
+accepts three input parameters first we
+pass the sum number 2 method to the
+action generic delegate function object
+which will be executed when the action
+delegate is invoked the preceding code
+shows that the predicate gender delegate
+accepts one string input parameter name
+one we pass the check and the length
+repeat
+we pass the check the length method to
+the predicate generic delegate function
+object which will be executed when the
+predicate generic delegate is invoked
+this delegate can only accept one input
+parameter and zero return values instead
+it returns boolean value by default this
+program's output shows the sum of all
+the three numbers 1 2 3 of the function
+sum number 1 which gives 10 plus 12.15
+plus 14.78 which gives a double value of
+65
+similarly the sum number two function
+returns the sum of all the three numbers
+one two and three as 20 plus
+25.45 plus 12.45 which is 57.90
+and the length check function returns a
+boolean value if true the length string
+hello is less than 10.
+the final topic will go over is
+delegates using the name and anonymous
+methods
+a name method can be associated with a
+delegate when you use a name method to
+instantiate a delegate the method is
+passed as a parameter for example first
+we declare a delegate with the formal
+argument x then we define a named method
+and finally we instantiate the delegate
+with the method as a parameter
+this is accomplished through the use of
+a named method let's go over some
+delegates with named methods
+delegates built with named methods can
+encapsulate either a static or an
+instance method in the older versions of
+c-sharp name methods were the only way
+to instantiate a delegate however if
+creating a new method is unnecessary
+overhead c-sharp allows you to
+instantiate a delegate and immediately
+specify a code block that the delegate
+will process when called a lambda
+expression or an anonymous method can be
+included in the block let's go over some
+delegates with anonymous methods as the
+name implies an anonymous method does
+not have a name for example in c-sharp
+anonymous methods can be defined with a
+delegate keyword and assigned to a
+variable of delegate type here is an
+example for a delegate with an anonymous
+method on my screen anonymous methods
+can access variables defined in outer
+function here's an example of anonymous
+method being passed to a method that
+accepts the delegate as a parameter let
+us now discuss lambda expressions a
+lambda expression is an anonymous method
+for creating delegates or expression
+tree types
+in 2007 microsoft introduced lambda
+expressions in c-sharp 3.0 many
+developers frequently confuse anonymous
+methods with lambda expressions let's
+compare the anonymous method and the
+lambda expressions with code example
+this example will provide at least two
+concepts the first thing about working
+of the parameters delegates and the
+second about comparing anonymous methods
+to a lambda expression you will notice
+that you have passed parameter number
+value 100 but anonymous method can omit
+it and the program will still run it let
+us execute this code and see the output
+there you go the program got
+successfully executed and the message
+inside the function has been displayed
+this is the function
+you will notice that you have passed
+parameter number value 100 but anonymous
+method can omit it and the program will
+still run and similarly the function
+is also displaying the message inside it
+that is this is the function
+now let us see some limitations of using
+an anonymous method
+the first one is it can include jump
+statements such as go to break or
+continue it can access an auto methods
+reference or out parameter it can
+contain or access dangerous code it
+cannot be used on the operator's left
+side
+now with that we have come to an end of
+this tutorial on delegates in c sharp if
+you have any queries regarding any of
+the topics covered in this session or if
+you need the code that we have explained
+during this session then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

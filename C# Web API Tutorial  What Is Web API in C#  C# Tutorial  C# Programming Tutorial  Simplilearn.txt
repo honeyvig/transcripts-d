@@ -1,0 +1,891 @@
+hey everyone i am vabra vanderwaal and i
+welcome you all to yet another exciting
+video from simply learns youtube channel
+today we will talk about one of the
+interesting topics that are c-sharp web
+api
+but before we begin let me tell you guys
+we have our daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for the latest
+technological advancement then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon below so you never miss an update
+from simplylaunch youtube channel
+now without any further ado let's get
+started
+with the agenda for today's session
+in this tutorial we will first define
+web api
+then we will look at what an asp.net web
+api is
+for following that we will go over some
+of the features
+of the c sharp web api
+after that we will look at some versions
+of the c sharp wave api
+then we will discuss the differences
+between c sharp wave api and c sharp wcf
+following that we will look at some of
+the benefits of using c-sharp web api
+finally we will make a web api project
+to further demonstrate the features of
+c-sharp web api
+now without any further ado let's get
+started with the first topic and try to
+understand what a web api is
+an application programming interface is
+a set of subroutine definitions
+protocols and tools
+for developing software and applications
+in computer programming
+api is an interface with a set of
+functions that allow programmers
+to access specific features or data on
+an application operating system or other
+services
+as the name implies web api is a
+web-based api that can be accessed via
+the http protocol
+it is a concept rather than a technology
+we can create web apis using various
+technologies such as java dotnet and
+others
+for example twitter's rest api
+provides programmatic access to read and
+write data allowing us to integrate
+twitter's capabilities into our
+applications
+we will now look at asp.net web api and
+after understanding what a web api is
+the asp.net web api is an extensible
+framework for creating http based
+services that can be accessed in various
+applications on various platforms such
+as web windows or mobile etc
+it functions similarly to an asp.net mvc
+web application except it sends data as
+a response instead of an html view
+it functions similarly to a web or wcf
+services
+except it only supports the http
+protocol
+we will now look at some of the
+characteristics of a c-sharp web api
+after understanding what it is
+the first feature of asp.web api
+is the asp.net web api platform is ideal
+for developing restful services
+second
+the asp.net web api is based on asp.net
+and supports the asp.net request
+response pipeline http verbs are
+translated into method names by asp.net
+web api
+the following features of asp.net web
+api are the asp.net web api accepts a
+wide range of response data formats
+json
+xml and bs on
+format support is preinstalled
+the fourth characteristic is iis
+self-hosted or any other web server that
+supports dotnet 4.0 or higher can host
+asp.net web api
+finally the last characteristic is the
+asp.web api framework includes a new
+http client for communicating with the
+web api server
+http client can be used on the server
+side of asp.net
+mvc and windows form console labs and
+other apps
+next we will discuss
+c sharp web api
+versions
+the first version of web api is web api
+1.0
+it supports dotnet framework 4.0
+then it coincides with asp.net mvc4 and
+finally it supported the 2010 visual
+studio version
+the second version of asp.net web api is
+the web api 2.0
+which we are currently using
+the dotnet framework it supports is
+dotted framework 4.5 and it is
+compatible with asp.net mvc5 and the
+visual studio 2012 and 13.
+following that we will look at the
+differences between asp.net web api and
+wcf which stands for windows
+communication foundation
+the windows communication foundation wcf
+formerly indigo
+is a free and open source runtime and
+set of apis in dotnet framework for
+developing connected service oriented
+application
+the first difference between web api and
+wcf is that web api is open source and
+includes the dotnet framework whereas
+wcf does not
+the second distinction is in web api
+the http protocol is supported whereas
+the wcf support the http tcp udp and
+custom transport protocol
+the following distinction
+that
+web api supported the mapping of http
+verbs of methods whereas wcf did not
+it is attribute based programming model
+that is being used
+the fourth distinction is that with
+asp.net mvc asp.net use a routing and a
+controller concept and wcf contracts for
+service operation and data
+the next difference is that the baby pi
+does not support reliable messaging or
+transaction whereas wcf supports
+reliable messaging and transaction
+the next distinction is in web api
+the html configuration class can
+configure web apis but not web
+whereas in wcf
+use of web to set as of service
+configuration and attributes
+the final difference is that wave api is
+ideal for creating restful services
+whereas restful services are supported
+in wcf but with limitations
+next we will look at when to use windows
+communication foundation
+the first reason is that if you are
+using dotnet framework 3.5 then we use
+wcf this api is not compatible with
+dotnet 3.5 or lower
+next
+we select wcf when using wcf if your
+service needs to support multiple
+protocols such as http tcp and named
+pipes
+following that we choose wcf if you want
+to build services that adhere to ws star
+standards like reliable messaging
+transaction and message security
+finally if you want to use the request
+reply one way or duplex message exchange
+patterns then we go with wcf
+following that we will look at when to
+use asp.net web api in this tutorial
+so the first reason to use web api when
+selecting web api is if you are using
+dotnet framework 4.0 or higher
+the second reason to use web api is when
+web api is the way to go is if
+you only want to build a server
+that supports http protocol
+when creating restful or http based
+services we choose asp.net web api
+the final reason to use asp.net web api
+is when we are choosing web api
+which is similar to asp.net mvc
+now
+we will look at the practical
+demonstration of c sharp web api
+we will start by creating a new project
+we will use
+asp.net core wave api
+we will name it
+emp
+api
+next
+we will use dotnet 5.0
+and create
+then we will install a nuget package
+called microsoft dot entity framework or
+dot sql lite package
+so we will go to manage and you get
+package
+we will browse
+microsoft entity framework or
+sqlite
+we will install the latest version which
+is compatible with our 5.0
+and install
+we will press ok
+accept
+and here the package install we can
+check it in the dependency framework
+and packages
+now let's get started with the coding
+first we will create a model folder to
+store the schema for this project
+so we will right click on emp api
+and then we will add
+a new folder
+called
+models
+then first we will create a class file
+so add
+class
+it will be a class and we will name it
+employee
+add
+we will start by creating different
+properties
+first we will create
+a public
+and
+emp
+id
+and we will get
+space
+set
+this will be a unique identifier so we
+will decorate it with key
+this key
+needs
+a special directory
+we will add
+system dot component model dot data
+annotations
+then we will add
+other properties
+such as
+public
+string
+name
+get
+and
+set
+then another one public
+string
+department
+and get
+set
+and
+another one
+for the address so public print
+address
+okay
+and set
+now the entity framework core also
+requires a contest object class
+a context object allows
+querying and saving data
+so we will make another class in models
+folder
+so we will add class
+and we will name it
+employee
+context
+here
+we will first inherit
+the db
+context
+now
+we will write an object which will be
+the configuration for the this context
+so
+public
+employee
+context
+db
+context
+options
+employee context
+options
+this will inherit
+the base class
+options
+we will write database
+dot
+ensure
+created
+this will ensure that the database is
+created through db context
+now we will acknowledge the db set so
+public
+db set
+employee
+employees
+get
+and set
+now we will update the configure
+services in startup.cs
+so we will go start of cs
+but first of all we will delete this by
+the
+forecast files
+and
+this weather forecast controller
+since they might interfere with our
+project later on
+so in the startup.cs
+we will go to the configure
+services here we will add
+services
+dot
+add
+db
+context
+employee
+context
+then in bracket
+o
+equals to greater than
+o dot sqlite
+data
+source
+equals to
+employees.db
+with this the entity framework is done
+now we will make a repository a
+repository is an abstraction layer
+between our application and data access
+layer which is in our case the employee
+context
+so now
+we will create
+a new folder
+and name it
+repositories
+we will add
+an interface in this
+we'll name this interface as i
+emp
+repository
+and add
+this interface will represent the
+operations which we will be performing
+on the database
+so we will start with
+task
+i
+inaudible
+employee
+okay
+this task will retrieve all the employee
+entries in the system
+now another task
+employee
+that
+with an argument
+and
+emp
+id
+this will retrieve a particular employee
+entry
+now let's write a task to create an
+entry
+so
+task
+employee
+create
+with argument
+as employee
+employee
+this will create the entries
+now task
+employee
+now
+update
+employee
+this will update the current
+entries
+and at the last we will add task
+delete
+and an argument
+amp
+id
+now we will create a class employee
+repository to add implementation to
+these approaches
+so add
+a class
+and we will name it
+employee
+repository
+now this employ repository will inherit
+interface
+i
+e and p
+repository
+we will implement this interface
+we will write
+a public
+employee
+repository
+employee context
+contest
+and we will have
+underscore context
+equals to
+context
+now
+we will write implementation
+for the create method
+underscore
+context
+dot
+employees
+dot
+add
+employee
+and then
+we will add a bet method
+so await
+context
+dot save
+changes pressing
+and we will add
+a same keyword here
+so
+and now we will return
+employee
+now
+let's write code for delete
+first we will use findsync method of db
+set to find the entry
+so
+var
+employee
+to
+delete
+well equals to
+await
+underscore
+context
+dot employee
+dot
+find
+a sink
+for emp
+id
+now we will use remove method of dbset
+to delete this entry
+so
+context
+dot
+employees dot remove
+employee to delete
+then we will update
+underscore context
+dot
+save
+changes async
+and we will add
+sn keyword
+to this
+now we will write
+get function
+here we will use two list assigned
+method of db set to show all the entries
+so we will just write return
+await
+underscore context
+dot employees
+dot
+to list
+async
+and we will add async keyword
+now we will write get matter with an
+argument
+so now we will use find ascend method to
+find the specific entry
+so we will write return
+await
+underscore context
+dot employees
+dot
+find async
+with an argument
+emp
+id
+and we will add sn keyword in this task
+as well
+now we will write update function
+so
+context
+dot entry
+of
+employee
+dot state
+is equals to
+entity
+state
+dot modifier
+then i will avoid
+context
+dot
+save
+changes async
+and we will add
+async
+now let's update the configure services
+in startup cs again
+so here
+i will write services
+dot
+add
+scope
+i
+e
+mp repository
+coma
+employee
+repository
+and with this the repositories are also
+finished
+now we will create a web api controller
+an api controller is a class that is
+responsible for handling requests at
+endpoints
+so
+let's close all these files
+now
+let's go to controllers
+and add a controller
+this will be an api controller
+which will be empty
+and we will add
+api controller empty
+and we will name it
+employees
+controller dot cs
+here this root method
+defines the path where this program will
+end
+and
+a controller is inherited from
+controller base
+so now
+since this controller will need an
+instance of book repository to interact
+with database
+so we will write
+public
+employees
+controller
+and give it the
+i
+emp repository
+appear repository
+we will also add
+the repositories
+now we will create
+a repository
+now we will inject the book repository
+in this constructor
+now let's write methods which will
+handle specific http request and these
+methods are called action methods
+we will start with
+a decoration tag
+http
+cat
+public
+async
+task
+hi innumerable
+employee
+that
+employee
+and i will return
+await
+underscore
+emp repository
+dot duplicate
+here we are using get method to get
+employee data from employee repository
+now let's create new method also called
+getbox
+we will decorate it
+with an http tag
+yet
+but this time
+with an argument in curly braces
+which is our emp id
+so public
+async
+task
+action result
+employees
+and new method
+get
+employees
+with the argument as
+and
+emp
+id
+and we will return
+await
+underscore
+emp repository
+dot
+get
+for
+emp
+id
+now
+let's implement a posting method for an
+employee entry
+this will create
+an employee entry in the database
+so
+we will have
+an http
+post
+decoration to it
+this means it will handle all post
+related http requests
+so we will start with public
+async
+task
+action result
+employees
+post
+employees
+which will take
+from
+body
+which will be employee
+conclude
+so now
+we are
+new
+employee
+will oppose to
+await
+dot underscore
+emp repository
+dot
+create
+in bracket employee
+now we will use the create method to add
+the employee entry
+so we will return
+with
+created
+at action
+in bracket
+name of
+cat employees
+comma
+new
+amp
+id
+equals to
+new
+employee dot
+emp
+id
+comma new
+employee
+now
+let's write a method to update an
+existing employee entry
+so this time
+we will decorate
+the http
+with post
+repeat
+now let's write a method to update an
+existing employee entry
+so
+we will have
+an http tag
+for put
+now public
+async
+task
+action result
+and
+put
+employees
+with argument as
+and
+amp id
+comma
+then
+from body
+it will take
+the data set
+employee
+now
+we will have to make sure that argument
+emp id is the same as the one in payload
+otherwise it will return a bad request
+so we will check it by if
+emp
+id
+is not equals to
+the employee
+dot
+empid
+then
+we will return
+a bad
+request
+otherwise
+we will avoid
+underscore
+emp repository
+dot
+update
+employee
+and we will return
+no
+content
+now
+let's write a method to delete the
+employee entry
+so this time we will decorate it
+with http delete
+this decoration will also have
+an argument
+in curly braces
+it will has
+an emp
+id
+so now
+public
+async
+task
+with action result
+delete
+argument
+and
+emp id
+first we will check
+if the employee entry is existing in the
+database or not so var
+employee
+to
+delete
+is equals to
+update
+underscore
+emp repository
+dot
+get
+emp id
+now if
+it is not found then we will return not
+found
+so if
+employee to delete
+is equals to
+null
+then
+we will return
+not
+found
+otherwise we will delete that entry
+so
+a wait
+underscore empld
+dot delete
+with the argument
+as employee to lead
+dot
+emp id
+and then
+we will return
+no
+content
+let's try and execute this
+as you can see here are all the
+functions
+now let's try to run get
+so we will try it out and execute
+as you can see it has no set
+so now let's try and insert something
+let's try out
+we will give it
+the one
+for the name
+we will try
+josh
+for department
+we will use id
+and for address
+let's use
+las vegas
+let's execute it
+it is working right
+now let's try
+to again check
+and here it is
+it has been recorded
+now let's try to
+to add another value
+so now we will change this emp
+to to
+name
+to rahul
+department
+engineering
+and address
+to be india
+let's execute this
+now let's try
+to get this
+and here it is we have two entries now
+let's try the put method
+this will update
+the values
+so let's try
+here
+let's
+update the entry number two
+we will copy
+this data
+from here
+and
+replace it
+with this
+now let's change
+the address from india
+and write it modifying as new
+delhi
+now let's execute this
+and let's try
+the get method
+for
+this particular number
+so number
+two
+and execute
+and here it is it has changed we can
+also try it in our initial get method
+we'll execute it and here it is also
+changed
+now let's try
+to use
+a delete method
+we will use try it out and we can delete
+number two
+now let's execute
+and it has worked success now let's try
+to access
+these entries so execute
+and here it is we are only getting the
+first emp id equals to one
+and that's all for this demo
+let's get back to our slide
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

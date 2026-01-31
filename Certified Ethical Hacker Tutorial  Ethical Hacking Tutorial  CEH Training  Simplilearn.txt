@@ -1,0 +1,1108 @@
+good morning everyone and welcome to the
+next video in the cyber security space
+in this video we are going to talk about
+certified ethical hacking and the topics
+that we are going to discuss in this
+video are what exactly hacking is the
+types of hackers the classifications
+what is ethical hacking the skills that
+are required of an ethical hacker the
+process that is utilized by ethical
+hackers in their daily activities and
+then lastly we are going to discuss
+cryptography so let's talk about hacking
+and what exactly hacking is hacking
+refers to exploiting weaknesses in a
+computer network to obtain unauthorized
+access to information a hacker is a
+person who tries to hack into computer
+systems now here there are some key
+words that we need to understand first
+and foremost exploit when you are
+exploiting weaknesses weaknesses are
+technically called vulnerabilities which
+are basically design flaws
+misconfiguration errors usage of default
+usernames and passwords which have not
+been modified so any misconfiguration or
+anything that has been left behind by a
+security administrator that can be
+misused which means exploited by a
+hacker to gain unauthorized access so
+the next term is unauthorized access
+something that you're not allowed to do
+and when you say a hacker is a person
+who tries to hack it's basically a
+person with malicious intent trying to
+gain access to a system or a resource
+that they are not authorized to access
+in the first place how do they do it
+they find a vulnerability that is a
+weakness or a flaw and then they misuse
+it to gain access to that particular
+network so here in the diagram you can
+see that a sender on the left hand side
+is trying to send some data to the
+receiver on the right hand side the
+hacker would try to gain unauthorized
+access to the transmission that is being
+sent and would try to capture the data
+packets and read the secrets within
+let's look at a business case scenario
+into hacking now there is an
+organization everybody is going around
+their own business when they realize
+that their systems may have been
+compromised now they are trying to look
+at the customer data to ensure that that
+has not been compromised and trying to
+assure the customers however they do
+realize that some customer data has been
+lost and even the company reports have
+been modified as well now this is the
+scenario where there have been some
+security controls in place and those
+controls have been identified they
+realized that there is an attack that
+has happened and based on that attack
+they have realized that the data has now
+been compromised and the records have
+been modified uh by the hacker which
+means that the data is no longer
+trustworthy and thus cannot be used by
+the business for any legal transactions
+so then the hacker gives a call to the
+organization or gets connected to the
+organization demanding a ransom for the
+data to be replaced to be taken back
+into the original state where it was
+trusted and thus the organization can
+utilize it for business transactions
+the organization has probably no backup
+so they decide that they want to pay the
+lump sum to the hacker to restore that
+data so that they can continue on with
+the business does money exchanges and
+the hacker is able to restore that data
+and the business continues that as usual
+however the activity here of a hacker
+trying to leverage the misconfiguration
+of the weaknesses in the organization's
+security thus being able to hack them
+and
+make these ransomware demands so the
+company then wants to figure out even if
+having a security system in place how
+was the hacker able to hack their
+systems thus one of the employees comes
+up with a brilliant idea of identifying
+vulnerabilities in the network uh to
+proactively search for any flaws that
+have been left behind
+so that they can plug those laws and
+nobody can misuse them
+thus they figure out that they want to
+hire an ethical hacker who would help
+them identify the security posture of
+the organization identify the weaknesses
+vulnerabilities and flaws and help them
+remedy those laws so that in future
+scenarios these scenarios will not
+happen so before we go into an ethical
+hacker let's understand what are the
+types of hackers so what are the types
+of hackers hacker is a technically
+skilled person who is very adept with
+computers they have good programming
+skills they understand how operating
+system works they understand how
+networks work they understand how to
+identify flaws and vulnerabilities
+within all of these aspects and then
+they understand and know how to misuse
+these flaws to get a outcome which would
+be detrimental to the health of the
+organization
+so there are six type of hackers that
+have been identified black hat hackers
+white hat hackers grey hat script
+kiddies nation's players sponsored
+hackers and activists so black hat
+hackers are basic basically
+the malicious hackers who have malicious
+intent and have criminalistic tendencies
+they want to harm the organization by
+hacking into their infrastructure by
+destroying their infrastructure by
+destroying their data so that they can
+gain from it from a monetary perspective
+uh these guys are also known as crackers
+the main aspect of these uh people are
+that they have malicious intent they try
+to do unauthorized activities and they
+try it for personal gain another
+important aspect to remember is that a
+black hat hacker will always try to hide
+their identity they will spoof their
+online digital identity by masking it by
+spoofing their ip addresses mac
+addresses and try to remain anonymous on
+the network a white hacker on the other
+hand is also an ethical hacker or a
+security analyst who is an individual
+who will do exactly the same thing that
+a black hat hacker would do minus the
+malicious intent plus the intent of
+helping the organization identifying the
+flaws and remedying them so that nobody
+else can misuse those vulnerabilities so
+they are authorized to act on the
+company's behalf they are authorized to
+do that activity which would help the
+company identify those flaws and thus
+help the company mitigate those flaws
+improving on their security portion so
+these uh these kind of security experts
+or ethical hackers would help
+organizations defend themselves against
+unauthorized attacks greyhead hackers is
+a blend of both white hat and black hat
+hackers so here they can work
+defensively and offensively both they
+can accept contracts from organizations
+to increase their security posture at
+the same time they can also get
+themselves involved in malicious
+activities towards other organizations
+to personally gain or benefit from them
+by doing unauthorized activity script
+kitties are people uh who are
+technically not much aware about what
+hacking is
+they rely on existing tools that have
+been created by other hackers they have
+no technical knowledge of what they're
+doing it's just a hit or miss for them
+so they just get their hands on a tool
+they try to execute those tools uh if
+the hack works it works otherwise it
+doesn't so these people are basically
+who are noobs or newbies who are trying
+to learn hacking or
+just
+people who with malicious intent who
+just want to have some fun or trying to
+impress people around then we have the
+nation or the state-sponsored hackers as
+the name suggests these hackers are
+sponsored by their government now this
+may not be a legitimate job but most of
+the governments do have hackers enrolled
+in their pay on
+on their
+organizations to spy on their enemies to
+spy on various countries and try to
+figure out the aspirations of those
+countries so this is basically a spying
+activity where you are technically
+trying to get access to other countries
+resources and then try to spy on them to
+figure out what their activities have
+been or what their future plans have
+been and then we have the hacktivist who
+is an individual who has a political
+agenda to promote and they promote it by
+doing hacking so uh these guys what is
+the difference between a black hat
+hacker and a hacktivist the black hat
+hacker may try to hide their identity a
+hacktivist will claim responsibility of
+what they have done so for them it's a
+political agenda political cause and
+they will try to hack various
+organizations to promote their cause
+they would probably do this by defacing
+the website and posting the messages
+that they want to promote on these
+websites so what exactly is ethical
+hacking then we have discussed the types
+of hackers we have identified a
+malicious hacker as a black hat hacker
+with the intent
+of doing harm to an organization's
+network for personal gain we have
+discussed what the ethical hacker is so
+an ethical hacker would be doing the
+same activity but in an authorized
+manner so they would have legal
+contracts that they would be signing
+with the organization it would give them
+a definite scope of what they are
+allowed to do and what they are not
+allowed to do and the ethical hackers
+would function within those scopes would
+try to execute those test scenarios
+where they would be able to identify
+those flaws or those system
+vulnerabilities and then they would be
+submitting a report to the management of
+what they have found they would also
+help the management to mitigate or to
+resolve those weaknesses so that nobody
+else can misuse them later on they might
+use the same techniques and the same
+tools that black hat hackers do however
+the main difference here is that these
+guys are authorized to do that
+particular activity they're doing it in
+a controlled manner with the intent of
+helping the organization and not with
+the intent of personal gains so who's an
+ethical hacker again an ethical hacker
+is a highly intelligent highly educated
+person who knows how computers function
+how programming languages work how
+operating systems work they can
+troubleshoot they're technically very
+adept at computing they understand the
+architecture they understand
+how various components in a computer
+work they can troubleshoot those
+components and they can basically be
+very good with programming as well now
+when i say programming we don't want the
+ethical hacker to be a good developer of
+applications we want them to understand
+programming in such a way that they can
+create scripts they can write their own
+short programs like viruses worms
+trojans or exploits which should help
+them achieve the objective that they
+have set out for so
+here you can see the ethical hacker
+there are individuals who perform a
+security assessment of the companies
+with the permission of cons concerned
+authorities so what is a security
+assessment a security assessment is
+finding out the exact security posture
+of the organization by identifying what
+security controls are in place how
+they've been configured and if there are
+any gaps in the configurations
+themselves so an organization will hire
+a hectic hacker they they would give the
+ethical hacker the information about
+what information is or what security
+controls what firewalls now what idss
+ipss introgen detection or intuition
+prevention systems anti-viruses are
+already in place and then they will ask
+the ethical hacker to figure out a way
+to bypass these mechanisms and see if
+they can still hack the organization
+what is the need of an ethical hacker
+the need of an ethical hacker is
+proactive security the ethical hacker
+would identify all the existing flaws in
+an organization and try to resolve those
+laws to help secure the organization
+from black hat hackers so ethical
+hackers would prevent hackers from
+cracking into an organization's network
+by securing the organization by
+improving on their security on a
+periodic basis and they would also try
+to identify system vulnerabilities
+network vulnerabilities or application
+level vulnerabilities that would have
+been missed or have already been missed
+and then tried to figure out a way of
+plugging them or
+resolving them so that they cannot be
+misused by other hackers they would also
+analyze and enhance an organization
+security policies now what are policies
+policies are basically documents that
+have been created by an organization of
+rules that all the employees need to
+follow to ensure that the security of an
+organization is maintained for example a
+password policy a password policy would
+help users in an organization to adhere
+to the standards the organization has
+identified for a password complexity for
+example a password when a user is
+creating them should adhere to standards
+where they are using random words they
+are they contain the alphabet a through
+z uppercase and lowercase 0 through 9 as
+numerics and special characters and
+they're randomized so that the password
+becomes much more stronger to prevent
+from brute force attacks so what would
+an ethical hacker do at this point in
+time they would try to test the strength
+of the passwords to see if brute force
+attacks or dictionary attacks are
+possible and if any of these passwords
+can be cracked they will ensure that all
+the employees are following the policies
+and all the passwords are as secured as
+the policies want them to be if there
+are any gaps in the policies or the
+implementation of the policy it is the
+ethical hacker's responsibility to
+identify those gaps and warn the
+organization about it similarly they
+would also try to protect any personal
+information any data that is owned by
+the organization that is critical for
+the functioning of the organization and
+they will try to protect it by from
+falling into the hackers hands now what
+are the skills that are required of an
+ethical hacker these are the following
+skills so first and foremost they should
+have good knowledge with operating
+systems such as windows linux unix and
+mac now when we say knowledge about
+operating systems it's not only about
+how to use those operating systems but
+how to troubleshoot those operating
+systems how these operating systems work
+how these operating systems need to be
+configured how can they be secured for
+example securing an operating system is
+not only installing a firewall and an
+anti-virus but you need to configure
+permissions on an operating system of
+what users are allowed to do and what
+users are not allowed to do for example
+limiting the installation of
+applications how are we going to do that
+we need to go into the system center the
+security center of windows and we need
+to configure security parameters over
+there of what are acceptable softwares
+and what are not same with linux and mac
+softwares operating systems so we need
+to know how we can secure these
+operating systems similarly all of these
+would have desktop versions and server
+versions of operating systems as an
+ethical hacker we need to know the
+desktop and server versions both how to
+configure them and how to provide
+services within the organization on
+these servers so that they can be
+consumed in a secure manner by all the
+employees at the same time they should
+also be knowledgeable of programming
+languages or scripting languages such as
+php python ruby html for programming if
+you will because web servers come into
+the picture so again they should not be
+great developers where they can create
+huge applications but they should be
+able to develop scripts understand those
+scripts analyze those scripts and figure
+out what the output should be of those
+scripts to achieve the hacking goals
+that they have set out for an ethical
+hacker should have a very good
+understanding about networking no matter
+whether you're in application security
+you're in network security or you're in
+host-based security since a computer
+will always be connected to a network
+either a local area network like a lan
+or the internet we should know how
+networking works we should know the
+seven layers of the osi model we should
+know which protocols work on those seven
+layers we should identify the tcp model
+and how osi model can be mapped to the
+tcp model we should understand how tcp
+and udp work how how each and every
+protocol is crafted how they are
+supposed to behave for us to analyze and
+understand any network based attacks we
+should be very good in security measures
+so we should know where those
+vulnerabilities would lie what are the
+latest exploits available in the market
+and we should be able to identify them
+we should be able to know the techniques
+and the tools of how to deal with
+security how to analyze security and
+then how to implement security to
+enhance it as well along with that it is
+important that a security analyst or
+ethical hacker is aware of the local
+security laws and standards why is that
+because an organization cannot do any
+illegal activity whatever responses that
+they have whatever security mechanisms
+whatever security controls they will
+implement they need to be adhering to
+the local law of the land they should be
+legal in nature and should not cause
+undue harm to any of the employees or
+any of the third party clients that they
+are dealing with so the ethical hackers
+should be aware of what security laws
+are before they implement security
+controls or even before they start
+testing for security controls and all of
+these should be backed up by having a
+global certification or a globally valid
+certification related to networking
+related to security ethical hacking the
+law of the land anything and everything
+maybe even programming it's good to have
+a certification in php pearl python ruby
+and so on so forth why because most of
+the organizations when they hire ethical
+hackers look out for these
+certifications especially globally valid
+certifications so that they can be sure
+or they can be assured that the person
+that they are hiring has the required
+skill set so let's talk about a few of
+the tools that a ethical hacker would
+utilize in the testing scenarios to be
+honest there are hundreds of tools out
+there what you see on the screen is just
+a few examples of them
+nessus is a vulnerability scanner what
+is a vulnerability scanner it is an
+automated tool that is designed to
+identify vulnerabilities within hosts
+within operating systems within networks
+so they come with the ready-made
+databases of all the vulnerabilities
+that have already been identified and
+the scan the network against that
+database to find out any possible flaws
+or any possible vulnerabilities that
+currently exist on the host or the
+operating system or on the network
+similarly there would be application
+scanners like
+acunetix or arachne that would help you
+scan applications and identify flaws
+within those applications as well now
+all of these are automated tools the
+essence of ethical hacker is when these
+tools churn out the reports the ethical
+hacker can understand these reports
+analyze them identify the flaws and then
+craft their own exploits or use existing
+exploits in a particular manner so that
+they can get access or they can bypass
+the access or security controls
+mechanisms that are already in place how
+can they do that with the tool called
+metasploit you see that big m there on
+the right hand side that m logo is for a
+tool called metasploit which is a
+penetration testing tool what is a
+penetration testing tool it is that tool
+that will allow a ethical hacker to
+craft their exploits or choose their
+exploits for the vulnerabilities that
+have been identified by nessus since we
+are interacting with computers we will
+always be interacting using tools right
+so the first tool nessus identifies the
+flaws and the possible list of
+vulnerabilities we do a penetration test
+using metasploit to validate those flaws
+and to verify that those flaws are
+actually exist and try to figure out the
+complexity of those flaws and that's
+where metasploit helps us do that
+wireshark would be used in the
+background while you are doing both the
+activities using nss or metasploit to
+keep a track of what packets are being
+sent and by received on the network
+which will help us analyze those packets
+so whenever i run an ss scanner i would
+run a wireshark in the background it
+will capture the data packets and i can
+go through those data packets and
+analyze that data packets to identify
+what nessus is actually trying to do
+similarly when i try to attack a machine
+using exploit on metasploit i will keep
+on wireshark running in the background
+to capture the data package that have
+been sent and the responses that i've
+received from the victim so that i can
+also go through those packets and
+analyze the responses and analyze the
+attack whether it was successful to what
+extent was it successful and
+basically will also give me a validation
+of proof of the activity that has
+happened nmap is another automated tool
+that allows me to scan for open ports
+and protocols so why would i use nmap
+because pro ports and protocols become
+an entry point for a hacker to gain
+access to devices for example when we
+connect to a web server we connect
+through a web browser but we
+automatically connect to port 80 using
+http and port 443 is using https so if
+i'm connecting to a web server using
+https it is safe to assume that port 443
+on the web server is open to accept
+those connections similarly there would
+be other services that may be left open
+on the web server because nobody thought
+about configuring it or they
+misconfigured the web server and they
+left unwanted services running so nmap
+will allow me to scan those ports and
+services and allow me to understand what
+services are being offered on that
+server so then i can start analyzing
+that server identify those flaws within
+those services and then try to attack
+them if the application that i'm
+analyzing is connected to a database and
+i want to do a sql injection attack or
+if i if nessus tells me that there is a
+sql injection attack that may be
+possible on that particular application
+i can use an automated tool called sql
+map or sql map that would allow me to
+automatically craft all the queries that
+are required for a sql injection attack
+and help me do that attack at the same
+time so here i do not have to manually
+create my own queries uh the sql map
+tool would automatically create them for
+me what i would do is i would use nessus
+to identify that particular flaw if
+necessary for that flaw i would then go
+use the tool sql map configure it to
+attack that particular web server and
+when i fire off the tool it will then
+automatically start directing queries
+sql injection queries to the database to
+see if those databases are vulnerable
+and if yes what data can be retrieved
+from those databases so all of these
+tools in a nutshell would help me hack
+networks applications operating systems
+and host devices and this is what an
+ethical hacker does they use these kind
+of tool sets they identify what attacks
+they need to do they identify the right
+tool for that particular attack and they
+write their exploits they create those
+attacks and then they start attacking
+analyze the response and then give a
+report to the management providing them
+feedback about how the attack was
+created or crafted what was the response
+to that attack and whether the attack
+was successful or not if successful they
+would also give recommendations of what
+to do to prevent these attacks from
+happening in the future so when we are
+doing these attacks or when we want to
+launch these attacks what is the process
+that we would follow so there are six
+steps that we would do as an ethical
+hacker if you are just a hacker you
+probably wouldn't do the sixth step
+which is a reporting step so the first
+step that would be done is the
+reconnaissance phase which is the
+information gathering phase which is
+very important from ethical hackers
+perspective or a hacker's perspective
+because if i want to attack someone or
+something as a digital device i need to
+know what i'm attacking i need to know
+the ip address of the device the mac
+address of those devices i need to know
+the operating system the build or the
+version of that operating systems
+applications on top the versions of
+those applications so i know what i'm
+attacking for example if i if i want to
+attack a server i assume it's a windows
+based server and i use a particular tool
+to attack it but it actually turns out
+to be a linux based server my attacks
+are going to be unsuccessful so i need
+to focus my attack based on what is
+there at the other end so in my
+information gathering phase i want to
+identify all of that information once i
+have that information done i'm going to
+scan those servers using tools like nmap
+that we just talked about and we're
+going to try to see the open ports open
+services and protocols that are running
+on that server that can give me possible
+entry points within the network or
+within the device or within the
+operating system at the same time along
+with the scanning with nmap i would run
+a vulnerability scanner the nexus
+volumetric scanner we talked about or
+acunetix for applications and then i
+would try to identify vulnerabilities in
+those applications operating systems or
+networks once i have identified those
+vulnerabilities in the scanning phase i
+would then move on to the gaining phase
+where i would then craft my exploits or
+choose existing exploits and start
+attacking the attacking the victim at
+this point in time if my attack is
+successful i will probably have gained
+access
+by either tracking passwords or
+escalating privileges or exploiting a
+vulnerability that i may have found
+during the scanning phase once i have
+gained my access i want to maintain my
+access why because the vulnerability may
+not be there for long maybe somebody
+updated the operating system and hence
+the flaw was no longer exist or existing
+or somebody change the password that we
+i may have cracked does i no longer have
+access so what do i do to maintain my
+access i install trojans or backdoor
+entries to those systems using which i
+can secretly in a covert manner get
+access to those devices at my own will
+at my own time as long as those devices
+are available over the network so that's
+where i maintain my access i have hacked
+them now i want to maintain my access so
+i install a software which would give me
+a backdoor entry to that device no
+matter what once i have done this i want
+to clear my track so whatever activity
+that i've been doing for example
+installing a trojan a trojan is also a
+software that would create directory
+directories and files once installed on
+the victims machine so i want to hide
+that if i have access data stores if i
+have modified data i want to hide that
+activity because if the victim comes to
+know that something has happened they
+would start they would start increasing
+their security parameters they might
+start scanning their devices they may
+take them offline thus my hack would no
+longer be efficient the reason i'm
+clearing my tracks is that the victim
+doesn't find out that they have been
+hacked or they have been compromised or
+even if they do find out that they've
+been compromised they cannot trace the
+compromise back to me so i would be
+deleting references of any of the ip
+addresses or mac addresses that i may
+have used to attack that particular
+device and this is where i will be able
+to identify where those logs were
+created where those traces are once i
+take off those traces the victim would
+not be any visor of whether they have
+been compromised or who compromised
+their system and if i am successful at
+all of these stages or what to whatever
+extent the success that i've achieved in
+any of these stages i would then create
+a report based on that and i would
+report to the management about the
+activities that we have been able to do
+and whatever we have been able to
+achieve out of those activities for
+example we identified 10 different flaws
+there were 20 different attacks that we
+wanted to do what attack did we do what
+was the outcome of that attack what was
+the intended
+or the expected output of that attack
+i'll create a report which would give a
+detailed analysis of all the steps that
+were taken along with screenshots and
+evidences of what activity was conducted
+what was the output what was the
+expected output and i would submit that
+report to the management giving them an
+idea of what vulnerabilities and flaws
+exist in their environment or their
+devices that need to be mitigated so
+that the security can be enhanced so
+these are the six steps that the ethical
+hacking process would take uh just going
+through this the uh recognizance is
+where you're going to use hacking tools
+like nmap hp to obtain information about
+targets there are hundreds of tools out
+there depending on what information you
+want then in scanning again nmap nexpose
+these kind of tools to be utilized to
+identify open ports protocols and
+services in gaining access you're going
+to exploit the vulnerability by using
+the metasploit tool that we talked about
+in the previous slides in the
+maintaining access you're going to
+install back doors you can use
+metasploit at the same time you can
+craft your own scripts to create a
+trojan and install it on the victim's
+machine once you have achieved that
+clearing tracks is where you're going to
+clear all evidences of your activity so
+that you do not get caught or the victim
+doesn't even realize that they have been
+hacked and once you've done all of this
+we are going to create reports that are
+going to be submitted to the management
+to help them understand the current
+security evaluation of their
+organization so now let's see how we can
+hack using social engineering now what
+is social engineering social engineering
+is the art of manipulating humans into
+revealing confidential information which
+they otherwise would not have revealed
+so this is where your social skill and
+your people skills come into the picture
+if you are able to communicate
+effectively to another person they would
+probably give up more information that
+they intended to give out let's take a
+look at examples right if you see on the
+screen fishing activity what is fishing
+we receive a lot of freak meals on a
+regular basis we have always received
+those emails where we have won a lottery
+of a few million dollars but we have
+never realized that we didn't purchase a
+lottery to win a lottery in the first
+place we have always had those nigerian
+frauds where a prince died in some south
+african country and you out of seven
+billion people on the planet have been
+identified where they want to transfer a
+few hundred million dollars through your
+account and they want to give you 50 of
+that money in return as thank you so
+some very basic attacks where you go on
+to websites and there's a banner
+flashing at you saying congratulations
+you're the one millionth visitor to this
+website click here to claim your price
+all of these are social engineering
+attacks phishing attacks fake websites
+fake communications being sent out to
+users to prey on their gullibility most
+of humans always have that dream of
+striking it rich winning a huge lottery
+once and for all and living their life
+lavishly ever after but sadly in the
+real world that's not that doesn't
+happen that often and if you're
+receiving those mails it is very
+important that you first research the
+validity of those those communications
+before you even want to act upon them so
+why are humans susceptible to social
+engineering because humans have emotions
+machines do not try pleading with a
+machine to give you access to a account
+that you have forgotten a password to
+the machine wouldn't even know what
+you're doing try pleading with a human
+sympathy or empathy where you could try
+to create a social engineering attack
+where you can plead with them saying if
+i do not get access to this account
+immediately i might lose my job and then
+that would put my family into problems
+somebody would feel empathy or sympathy
+towards you and help you reset that
+password and give you access to that
+account it's how good the attack is and
+how convincing you are for the success
+of this attack to happen so what is a
+familiarity exploit attackers interact
+with victims to gain information which
+will benefit the attackers to crack
+credentials as passwords if we want to
+reset our passwords what do we have as a
+mechanism to resetting passwords we have
+some security questions that we set up
+those questions are nothing but personal
+information that we would know but
+through a social engineering attack it
+would be easily be able to uh gather the
+information that you have set for your
+security questions the security
+questions can be as simple as the first
+cool that you attended you probably have
+that listed on your linkedin profile
+where per person can just go in there
+and see your academic qualifications and
+identify the school that you were in
+right similarly it might also be a
+question what was your mother's maiden
+name that's a very good attack and
+that's uh i mean if a person can
+interact with you let's say they are
+trying to take a survey and they
+approach you for a feedback on a
+particular product that you have been
+utilizing and they ask you these
+questions you wouldn't think twice
+before giving those answers as long as
+the request sounds legitimate to us we
+are able to justify that request we do
+answer those queries so it's upon us to
+verify the authenticity of the request
+coming in before we answer it phishing
+as discussed would be fraudulent emails
+which appear to be coming from a trusted
+source so email spoofing comes into mind
+uh fake websites and so on so forth
+exploiting human curiosity curiosity
+killed the cat right so there was
+there's so many physical attacks where
+hackers just keep pen drives lying
+around in a parking lot now this is open
+a generic attack whoever falls victim
+will fall victim so if i just throw
+around a few usbs in the parking lot
+obviously with trojans implemented on
+them some people who are curious or who
+are looking for a couple of freebies
+might take up those pen drives plug them
+in their computers to see what data is
+on the pen drives at the same time once
+they plug in those pendrives on their
+computers the virus or the trojan would
+get infected and cause harm to their
+machine then exploiting human greed we
+just talked about the nigerian frauds
+and the lotteries those kind of attacks
+the fake money making gimmicks now
+basically this is where you prey upon
+the person's greed kicking in and they
+are clicking on those links in order to
+get that money that has been promised to
+them in that email so one of the safest
+mechanism to keep data private and to
+keep yourself secure is using encryption
+now encryption can happen through
+cryptography what is cryptography
+cryptography is the art of scrambling
+data using a particular algorithm so
+that the data becomes unreadable to the
+normal user the only person with the key
+to unscramble that data would be able to
+unscramble it and make sense out of that
+data so we're just making it unreadable
+or non-readable by using a particular
+key or a particular algorithm and then
+we're going to send the key to the end
+user the you end user using the same key
+would then decrypt that data if anybody
+compromises that data while it is being
+sent over the network since it is
+encrypted they would not be able to read
+it so the encryption algorithm would be
+something like this now if you see uh
+the computer word once made into
+unreadable format would
+look like e q o r x v gt for an end user
+it wouldn't make any sense but the
+person who has a key to unscramble that
+would be able to convert it back to
+computer and then understand the meaning
+of that word so this is just a
+substitution cipher that is being shown
+on the screen so what is the alphabet
+the key is alphabet plus three so c plus
+three alphabets that becomes e o becomes
+q m becomes o so the key that is
+utilized to scramble the data is the
+character that you are at the third
+character from there would be the
+corresponding key so the encrypted
+message is also known as a cipher the
+decryption is just the other way around
+where you know the key now and you can
+now figure out what that e corresponding
+to
+by going back three characters in the
+alphabet most of the times a certified
+ethical hacker must decrypt a message
+without knowing the secret key so let's
+say a ransomware has affected your
+organization or has affected a device
+and you want to figure out uh or you
+want to decrypt that data now as an
+ethical hacker you wouldn't be for
+paying a ransom to the hacker would you
+so it is now your prerogative of how
+you're going to work around and how
+you're going to try to crack the
+encryption mechanism how to crack the
+cipher to decrypt that message and see
+what's within it right decryption
+without the use of a secret key that is
+known as a cryptanalysis cryptanalysis
+is the reversing of an algorithm to
+figure out what the decryption was
+without using a key so cryptanalysis can
+be done using various formats the first
+one is a brute force attack second is a
+dictionary attack the third one is a
+rainbow table attack a brute force
+attack is trying every combination
+permutation and combination of the key
+to figure out what the key was it is 100
+successful but may take a lot of time a
+dictionary attack is where you have
+created a list of possible encryption
+mechanisms a list of possible cracks and
+then you try to figure out whether those
+cracks work or not rainbow tables are
+where you have an encrypted text in hand
+and you're trying to figure out uh the
+similarities between between the text
+that you have and the encrypted data
+that you wanted to decrypt in the first
+place so in the brute force attack
+you're trying every possible combination
+permutation of what the key would be in
+dictionary attack you have a word list
+that would tantamount to the key and if
+you're you're trying to match all the
+words listed in the text file or the
+word list to see if any of those words
+are going to work to decrypt that data
+here in the rainbow table the cipher
+text is compared with another cipher
+text you find out similarities and then
+you try to work or reverse engineer your
+way accordingly so let's have a quick
+demo on cryptography before we begin
+this session so to begin with the demo
+of cryptography we are on our website
+called spammic.com which will help us
+scramble the message that we created
+into a completely uh format which would
+be unrelated to the topic at hand so if
+i say i want to encode a message and
+turn a short message into spam so what
+this does is you want to send across a
+secret message you type in the secret
+message a short one it will convert that
+into a spam mail you send it across so
+whoever's reading that spam mail would
+never get an idea of the embedded
+message within it so if i want to type
+in a message here hi this is a secret
+message the password is asd at the rate
+one two three four and i want to send
+this out to people or to one of my
+colleagues but i want to send it out in
+a secret manner so that others are not
+aware of this so when i press on encode
+what the algorithm will do is it will
+convert this message into a spam mail so
+my message hi this is a secret message
+the password is at the rate one two
+three four or asd at the rate one two
+three four gets converted into this now
+if you read it dear e-commerce
+professional this letter was specially
+selected to be sent to you this doesn't
+make sense there is nowhere or no
+reference to the actual message that
+i've already said so if i copy this
+entire message and i send it let's say
+via email to the recipient now the thing
+is that the recipient needs to know that
+i've encoded it using spam mimic the
+algorithm remain needs to remain the
+same so once they know that it is spam
+mimic what they can do is now in this
+instance what i'm going to do is i'm
+going to open up a new browser and i'm
+going to go to the same website and at
+this point in time i'm going to click on
+decode when i click on decode i'm going
+to paste the message that i've just
+copied there we are and this message is
+now being copied into a different
+browser and if i decode this you will
+see that it will convert it back to the
+original message that there was so the
+key is there at spam mimic and it is
+embedded within the message so whenever
+we paste the message in the decode
+factor it knows what the key was and it
+can decrypt that message and give me the
+actual message that was embedded within
+it there we are the entire message this
+is what we created in the google chrome
+browser and in the firefox browser we
+decoded similarly if i want to protect
+these kind of messages there is an aspen
+encrypt.com website where let's say we
+use text encryption and
+i want to encrypt the same message this
+is a secret message the password is asd
+at the rate one two three four and then
+i give it a password to protect this
+message let's say the word password and
+i use the cipher to scramble this by
+using let's say aes which is the
+strongest cipher right now and i say
+encrypt so this is what the encryption
+would look like and basically uh if i
+don't have the password over here if i
+decrypt it you would see that the error
+has occurred if i type in the password
+over here and then decrypt it it will be
+able to convert that back into the
+unscrambled text and it will give me
+what the original message was this is a
+secret message the password is asd at
+the rate one two three four so if i want
+to keep my data secure from hackers i
+want to scramble it in such a way that
+they would not be able to crack it or it
+would be very difficult for them to
+crack it and this is one of the first
+mechanisms that would be recommended by
+any ethical hacker to keep the data
+secure so that's it for this video and
+for this demo i thank you for your time
+and your patience and i will see you in
+the next video thank you and bye bye
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

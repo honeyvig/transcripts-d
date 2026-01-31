@@ -1,0 +1,287 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to our simply launch
+youtube channel today we will talk about
+one of the interesting topics that are c
+sharp primitive types and variables
+but before we begin let me tell you guys
+we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for a latest
+technological advancements then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon to never miss an update on simply
+learn
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+variable
+then we will discuss the types of
+variables
+after that we will discuss the primitive
+types of variables in detail
+finally we will wind up this session
+with an implementation on c sharp
+variables
+now let's get started with what a
+variable is
+a variable is simply the name provided
+to a storage location that our programs
+can access
+in c programming each variable has a
+type that governs the size and layout of
+the variable's memory the range of
+values that can be stored inside that
+memory and a set of operations that can
+be applied to that variable
+each variable data type must match the
+data type of the value stored in that
+variable
+when we declare a variable the system
+reserves a piece of memory equal to the
+variable size
+now let's have a look at the types of
+variables
+there are two types of variables in c
+sharp
+first primitive type variables and
+reference or object variables
+in this session we will focus on
+primitive variables and we will only
+discuss strings from the object-based
+variables
+now let's discuss them in detail
+first are primitive types
+the data types which are built in the
+main function are called primitive data
+type
+penetrated data types can be further
+divided into numbers and truth
+values the numbers are then divided into
+signed and unsigned data type
+let's have a look at them in detail
+first up signed data type
+we have tabulated the characteristics to
+differentiate them we will start with
+signed byte its value range tangles
+between -128 to 127
+then we have short
+this one has a lot of memory space
+and its value range is from -32k to
+positive 32k
+after this we have an int or integer
+data type it is the most utilized data
+type in any programming language
+its value goes from -2 billion to
+positive 2 billion
+at last we have long data type
+this can store an incredibly large value
+variable
+now let's have a look at unsigned data
+type
+unsigned data type can only store
+positive values
+we will start with a byte its value
+range tangled between 0 to 255
+then we have unsigned
+short or u short this one has a lot of
+memory space then byte
+and its value range is from 0 to 65
+grand
+after this we have u end or unsigned
+integer data type
+its value goes from 0 to 4 billion
+at last we have u long or unside long
+data type
+this can store an incredibly large value
+variable and these were the integer base
+private data types
+now let's take a look at floating point
+types
+there are three types of floating point
+type variables
+float double and decimal
+now floating points types are after a
+point just an approximate value
+now they are differentiated based on the
+precision digits
+now these fixing points may differ based
+on how big or small a value is
+now let's discuss a few more types of
+data type
+first up care
+this one store characteristics which are
+in theory unicodes essentially a number
+next up boolean this variable stores
+truth and false values
+these are usually used in conditional
+statements
+next up is an honorary primitive type
+which is string usually a string is not
+considered a permitted type but in c
+sharp it is not the case
+string can contain a word or a sentence
+now let's try these variables in a
+correlator
+let's start with signed integer types
+first up s byte
+let this variable be sb
+and equals to negative
+120. next up short
+as
+is equals to
+30 000.
+and
+i
+should be equals to
+let's take a big number so
+around
+2 billion
+next up
+we have
+long
+l
+equals to
+let's check
+a bigger number than the two billion
+now let's try to print them
+so we can use console
+dot
+write line
+sb
+and then
+s
+then we have
+i
+then we have l
+let's save them
+and
+print it
+as you can see it is printing minus 120
+for the s byte
+and thirty thousand for short two
+billion for integer and a big number for
+long
+now
+let's try some different types of
+integers
+let's use unsigned integers
+inside integer
+types
+now we will have byte
+a
+b
+is equals to
+122
+then we will have
+u short
+us
+is equals to
+let's say
+60123
+next we have cue it
+ui
+is equals to
+since we can go
+up to 4 billion
+so
+let's take 400 million
+then we have
+u long
+ur
+is equals to
+we can give it
+a big number
+now let's try and print them
+we can copy these
+and change the variable names
+this is
+b this is us
+this is ui
+this is your
+and let's save them
+let's comment them as well
+to avoid confusion
+now let's save and run them again
+as you can see now they are printing the
+byte byte u short u n
+and u long
+now
+let's comment everything
+now let's discuss the floating point
+types
+let's start with the float
+let's take value as 12.7
+now you have to remember when defining a
+float we need to give f as its
+at last character in its value
+then we have double
+d
+is equals to
+let's say 23.67
+then we have decimal
+dm is equals to
+99.1079
+now this also should end with an m
+now let's try to print them
+this one should be f
+the next one should be d
+then dn
+let's save them and run them again
+now as you can see it is printing the
+float value without an f
+then a double value then a decimal value
+without them
+now
+let's try
+the boolean character and string values
+let's start within care
+care c
+is equals to
+t
+another a boolean
+flag
+and let's give it value as true
+let's also have a string
+str
+is equals to
+welcome
+to
+simply learn
+now let's try to print them
+this time
+let's change the variable to c
+then
+flag
+then we have str
+now let's save them
+and run them again
+now as you can notice that for the
+character it is printing the same as it
+is character
+then the flag is it is printing true
+and for the string it is printing
+welcome to simpler
+we can also change
+the flag
+from true to false by just adding an
+exclamation point behind the number so
+let's save
+and run it
+and now you can see it is toggling
+between false
+now let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

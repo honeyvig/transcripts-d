@@ -1,0 +1,470 @@
+hey everyone welcome to simply launch
+youtube channel today we will talk about
+one of the fascinating topics that is
+the object-oriented programming in c
+sharp but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek and a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without any
+further ado let's get started with the
+agenda for today's session
+first we will define the object oriented
+programming in c sharp
+following that we will discuss the
+differences between object oriented
+programming approach and procedural
+programming approach
+later we will look into object oriented
+programming in csha last but not least
+we will discuss the benefits of
+object-oriented programming in sesia so
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic
+that is understanding the concept of
+procedural programming so what exactly
+is procedural programming procedural
+programming entails writing procedures
+or methods that perform operations on
+data
+whereas object-oriented programming
+entails creating objects that contain
+both data and methods and encapsulated
+together in one single object or a class
+now a best example for precision
+programming would be c programming
+language
+now let us understand what is object
+oriented programming
+object oriented programming is a
+programming paradigm that organizes
+software design around classes and
+objects now let's take a look at what
+classes and objects mean in
+object-oriented programming in c sharp
+classes are blueprints used to determine
+an object's properties and behaviors
+and objects are real-world entities with
+their fundamental properties and
+behaviors now let's look at a real world
+example of classes and objects
+so on my screen we have a car so this
+particular car happens to be an object
+so how can you define classes and
+objects in c sharp using a car
+so here you can see that i have a
+blueprint of the same car
+now blueprint is one single entity
+and using this blueprint i can create n
+number of cars which happens to be
+objects
+so here the blueprint of this car is
+considered as a class and the cars
+actual cars which are constructed or
+built using the blueprint is called as
+the object
+so a class is the foundation of any
+modern object-oriented programming
+language in c sharp in oops languages it
+is required to create a class to
+represent data a class is a blueprint
+for an object that contains variables
+for storing data and methods or
+functions for performing methods or
+functions on that particular data
+now that we have discussed the
+fundamentals of a class and object let's
+move ahead into the next concept
+so each and every object that you create
+will have its own variables and methods
+that are used to manipulate the values
+stored in the variables so here in this
+particular example of car you can
+consider the start drive and stop
+methods which are involved in the object
+functions
+now let's move ahead into the next topic
+that is understanding the four
+fundamental principles of object
+oriented programming concepts in c sharp
+so basically object oriented programming
+and repeat so basically object-oriented
+programming in c sharp is categorized
+into four fundamental principles the
+first one being encapsulation followed
+by that we have inheritance next we have
+abstraction and finally we have
+polymorphism now let us understand each
+one of these concepts in detail
+so first let's get started with
+encapsulation in c sharp
+so at first we have encapsulation
+encapsulation is the process of
+combining a data member and the method
+into one single unit or class
+encapsulation is the process of
+enclosing something in a capsule that is
+having an object-related operations and
+data within that particular object
+now let us have an example so one of the
+most tangible examples of encapsulation
+is a school back our books pen and other
+belongings can be stored in our school
+back
+now to understand encapsulation in a
+much better way let's go through a
+practical example
+so on my screen you can see an example
+for encapsulation in this particular
+example we are going to encapsulate the
+methods for finding the area of the
+given shape
+so here we are considering the rectangle
+shape so in this particular rectangle
+application class you will have all the
+get area functions which calculate the
+area of a rectangle and also the
+variables length and width so now let's
+execute this program and see the output
+so there you go the code has been
+successfully executed and as you can see
+we have provided the length and width of
+this particular rectangle as 4.5 and 3.5
+respectively and the area has been
+calculated as 15.75
+now
+let us go through a simple exercise
+now i have calculated the area of
+rectangle how about you guys calculate
+the area of square
+maybe a circle as well
+and a triangle
+please try these exercises on your own
+and let us know in the comment sections
+below now let's move ahead into the next
+concept of object oriented programming
+with c sharp
+so the next topic in object oriented
+programming in c sharp is inheritance
+so inheritance is a crucial concept in
+c-sharp object-oriented programming
+inheritance is a concept in which parent
+and child classes are defined the child
+class inherits the parent class methods
+and properties but they can also change
+the behavior of the methods if necessary
+if required the child class can define
+its own methods
+here is a pictorial representation of
+inheritance that shows a child class is
+inheriting the properties from the
+parent class or a derived class is
+inheriting the properties of its base
+class
+now let's look at another example
+inheritance is a mechanism by which a
+child object acquires all the properties
+of the parent class here you can see
+that children are inheriting the
+properties and behaviors of their
+parents
+now there are four different types of
+inheritances available in seisha that is
+single inheritance
+multi-level inheritance
+hierarchical inheritance and lastly
+multiple inheritance as you can see in
+single inheritance we have one base
+class or the parent class and one child
+class or the derived class the
+properties and methods of a are been
+inherited by b
+in one single stage and similarly when
+you come across multi-level inheritance
+you have three classes a being the
+parent class and b being the child of a
+class and c being the child class of
+both a and b here c can inherit the
+properties of both a and b classes
+in the third type which is the
+hierarchical inheritance
+multiple child classes acquire the
+properties and behavior of one single
+parent in the last inheritance type that
+is the multiple inheritance
+one child class can derive or inherit
+the properties of multiple parents here
+the child class d is inheriting the
+properties of a b and c pairing classes
+now with that let's go ahead and
+understand each one of them in detail
+so as discussed single inheritance is
+defined as
+having one base class and one derived
+class
+and similarly multi-level inheritance is
+when one class inherits another and that
+particular class is also inherited by
+another parent class you can see c is
+inheriting properties from b and b is
+inheriting properties from a c can also
+inherit properties from a as well by a b
+now let's understand the third one that
+is the hierarchical inheritance
+this is the type of inheritance in which
+multiple classes are derived from single
+base class when a single class feature
+is required by multiple classes this
+type of inheritance is used
+now at last we have the multiple
+inheritance
+multiple inheritance occurs when one
+derived class or child class accesses a
+property of its multiple parent or base
+classes
+now to understand inheritance in a much
+better way let's try to execute an
+example based on inheritance
+now on my screen you can see an example
+for inheritance
+here we have a parent class that is the
+vehicle so this particular class has one
+method that is honking function
+now the child class happens to be a
+program called car and this particular
+program will execute the methods which
+are being derived from its parent class
+that is honking
+here you can see the object created
+using the child class is executing the
+method honked from its parent class now
+let's try to execute this simple program
+and see how it works
+now you can see that the program got
+successfully executed and it is
+executing the two tooth function that is
+honking function
+now that you have understood the
+fundamentals of inheritance
+this is one simple exercise for you
+where you try to execute the single
+inheritance
+multi-level inheritance
+multiple inheritance
+and hierarchical inheritance
+don't worry if you run into some issues
+while executing the code feel free to
+write us down in the comment section
+below and our team of experts will be
+happy to resolve all your queries if
+required for learning purposes we will
+also send the code we have for all these
+examples and also exercises
+now with that we have finished the
+second part of object-oriented
+programming in c
+now let's continue with the next one
+that is the process of abstraction
+so data abstraction is a process of
+displaying the necessary information
+abstraction is the process of showing
+only essential features of an object to
+the outside world while hiding the other
+irrelevant information according to a
+proper definition
+in a nutshell abstraction is a process
+of representing the essential feature
+without representing the background
+details
+abstraction allows you to concentrate
+only on what the object does rather than
+how it does by providing relevant
+information abstraction offers a
+generalized view of your classes or
+objects
+now abstraction is a process of
+concealing an object's working style
+while understandingly displaying its
+information
+now to understand abstraction in a much
+better way let's go through this example
+where we have a coffee machine an
+example of extraction is making coffee
+with the coffee machine to make coffee
+you must learn how to use coffee machine
+you must simply supply water and coffee
+beans and turn it on and choose the type
+of coffee you want you are least
+bothered about how the coffee machine is
+functioning to prepare your coffee all
+you care about is your coffee
+so that's how abstraction works in real
+time now let's go through a practical
+demonstration of abstraction in visual
+studio using c sharp
+so in this particular example on my
+screen you can see abstraction method
+for animal
+and in this particular class you can see
+that the animal sound function and
+animal sleep function are defined
+now in the main class you can see that
+we're just calling the animal sound
+function and animal sleep function
+now we are least spoiled about how the
+function operates we are just worried
+about the operationality of these
+functions
+now let's try to execute the simple
+program and see an output
+now you can see the code got
+successfully executed and here we have
+called the sleep function and sound
+function of an animal called pig
+now with this let's go ahead into the
+next and last type of object oriented
+concepts in c sharp that happens to be
+polymorphism now the term polymorphism
+refers to the presence of multiple forms
+polymorphism is frequently expressed in
+the object-oriented programming paradigm
+as one interface multiple functions
+polymorphism can be static or dynamic
+the response to a function is determined
+at compile time and static polymorphism
+in dynamic polymorphism it is decided at
+runtime now let us look at one real-life
+example of polymorphism
+here you can see one single person who
+performs multiple tasks at one stage he
+works as an employee for a company and
+another stage he is a successful parent
+and at the last stage he is also
+performing some shopping
+so here one person acts as an employee
+at work father at home and a customer at
+shopping malls this can be considered as
+a decent example for polymorphism
+now there are two different types of
+polymorphisms the first one being static
+or compile time polymorphism and the
+second one being dynamic or runtime
+polymorphism now let's look at these in
+detail
+so static polymorphism is exemplified by
+method overloading method or function
+has the same name but different
+signatures while overloading it is also
+known as compile time polymorphism
+because the decision to call which
+method is made at compile time
+and the second type is the runtime
+polymorphism late binding is another
+term for dynamic or runtime polymorphism
+the method name and signature are used
+as number of parameters and parameter
+type must be same and may have a
+different implementation
+dynamic polymorphism is demonstrated by
+method overloading
+now let's understand polymorphism in
+detail using a practical example
+so on my screen you can see an example
+for method overloading or compile time
+polymorphism in seisha so you can see
+here we have edition function
+right we have edition function written
+two times with the same name as well but
+there is one simple difference it is in
+the signature so in the first add method
+we have two parameters and in the
+secondary method we have three
+parameters
+now c will decide which add method to be
+called based on the number of parameters
+you pass so here in the main function
+you can see we are calling the first add
+method by giving only two parameters so
+c sharp will decide this particular add
+method to be called based on the number
+of parameters passed similarly the
+second one it will decide i mean c-sharp
+will decide that the second add method
+will be called based on three parameters
+that you have passed now let's try to
+execute this and see the output
+now you can see the program got
+successfully executed and the output of
+the numbers is also displayed here
+now with that let's try to execute
+another example based on polymorphism
+but this time let us try to execute an
+example for runtime polymorphism so on
+my screen you have an example for
+runtime polymorphism so we have one
+function for drawing and calculating the
+area of all the shapes
+we have three different shapes that is
+circle square and rectangle
+now in the main function we are calling
+the drawing function and also declining
+the area function
+so here c sharp decides which particular
+function to be called or which
+particular function that belongs to a
+particular shape to be called based on
+the runtime data it receives so all the
+three different shapes have three
+different formulae and three different
+datas so according to the data provided
+c sharp will decide which particular
+function to be called in runtime now
+let's try to execute this program and
+see the output
+now there you go the program got
+successfully executed and all the areas
+of three different shapes has been
+calculated here
+now with that we have come to the last
+part of this c sharp oops tutorial that
+is benefits of object oriented
+programming in c sharp
+so the first benefit of object oriented
+programming in c sharp is
+abstraction
+so by using abstraction you can improve
+the problem solving in an effective way
+now the next one is inheritance so using
+inheritance you have one major advantage
+where you can reuse your code
+followed by that you have encapsulation
+so by using encapsulation you can find
+troubleshooting to be easier
+now the last one is polymorphism
+so by using polymorphism you can add
+flexibility to your code not just these
+there are also much more benefits of
+using object oriented programming using
+c sharp now with that we have come to an
+end of this tutorial if you have any
+queries regarding any of the topics
+covered in the session or if you need
+the code that we have executed in this
+particular tutorial or if you need help
+or assistance during your exercises
+discussed during this tutorial then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

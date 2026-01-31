@@ -1,0 +1,296 @@
+hey everyone i am vavo kandalwal and i
+welcome you all to simply learns youtube
+channel today we will talk about one of
+the fascinating topics of c programming
+that is c sharp applications
+but first let me tell you that we have
+daily updates on multiple technologies
+so if you are a tech geek looking for a
+latest technological advancement then
+consider subscribing to our youtube
+channel
+and don't forget to hit the bell icon so
+you never miss an update from simply
+launch youtube channel
+now to understand this topic we will be
+creating a scientific calculator
+but before we get into the code for the
+scientific calculator we should first
+understand what it is and why is it
+essential
+a scientific calculator is a calculator
+that is designed to assist you in
+calculating problems in science
+engineering and mathematics
+it has far more buttons than a standard
+calculator which only allows you to
+perform the four basic arithmetic
+operations like addition subtraction
+multiplication and divisor
+all these extra buttons enable you to
+work with variety of numbers and
+problems
+such as trigonometric problems
+scientific numbers which can be divided
+by 10 to the power of 10
+pi problems
+problems involving logarithmics
+the fractional functions
+and the probability function
+your scientific calculator has some
+special buttons that will assist you in
+writing your equations for example you
+have a special button for scientific
+number that automatically adds
+multiplication by 10 to a specific
+exponent
+the exp button is one you are looking
+for
+you enter your scientific number first
+then press the button and enter your
+exponent value
+you can use these buttons to calculate
+the number to any exponent and find the
+square root or cube root or any other
+root when working with engineering
+problems
+you also have trigonometric buttons like
+sign hatch sine cos edge cos 10 edge and
+type
+so now without any further ado let's
+open visual studio and begin with
+scientific calculator code
+first let's start with the code we have
+added all the necessary namespaces for
+this program initially
+we are utilizing a system library in our
+project as indicated by using the system
+statement
+this includes classes functions such as
+console class and rightline functions
+and method
+following that we have added
+system.collection.generic
+which contains the interfaces classes
+that define generic groups allowing
+users to create strongly typed
+calculations
+with higher type safety and performance
+than non-generic strongly typed arrays
+then we have added system dot component
+model which provides interfaces for
+implementing component runtime and
+design time behavior types
+that are frequently used to include
+system and component model
+then we have system.data a dotnet course
+namespace is the data namespace
+all data providers use these classes
+standard classes from this namespace are
+data view data view manager data set
+data table data row data column and data
+relation
+next is the system drawing
+this class contains methods for drawing
+to a display device
+then there is system.link
+it enables link queries by providing
+various types of classes and methods
+following that we have incorporated the
+dot text
+this contains ascii and unicode
+character encodings abstract base
+classes for converting blocks of
+characters to and from blocks of wide
+a helper class for manipulating and
+formatting the string objects without
+generating intermediate string instances
+next we have included a
+system.threading.tasks
+that provides types that simplify
+writing concurrent and asynchronous code
+finally we have included
+system.windows.form library
+windows form is a graphical user
+interface class library that comes with
+dotnet framework
+and its primary goal is to provide a
+more straightforward interface for
+developing desktop tablet or pc
+applications
+it is also called known as win forms
+then there is form 1 a partial class
+with the public access specifier
+c sharp has a unique feature called
+partial classes it has a unique
+capability of implementing the
+functionality of a single class in
+multiple files
+which are then combined into a single
+class file when the application is
+combined
+finally a partial keyword is used to
+create a partial class
+first we have initialized the component
+function
+in form1 class
+in
+visualstudio.net c sharp or vb.net the
+initialized component method is a method
+that is automatically created and
+managed by the windows form designer and
+defines everything you see on the
+form then we have declared four more
+variables
+first of output and the first number of
+double data types
+then we have created a choice string
+and a casey ptr
+of bool data type
+which is initially set to false
+so for 0 to 9 digits we have event name
+as button 1 click
+then there is a condition that states
+that if a text is equal to zero or
+calcium ptr is false then we clear the
+text box
+then we use variable button of class
+button there is another condition if a
+text box does not contain a decimal
+point then we can text any digit other
+than 0 to 9 except the decimal point
+otherwise we will add the decimal point
+to our text
+next we have a backspace button
+namely the button 22
+which which we use when we had end
+integer variable which contains the
+length of the text and we decrement end
+by one and one removing all the text
+written in the text box
+if no no text is entered into the text
+box the value 0 will be displayed
+next in our scientific calculator we
+have event name button21 which adds the
+text as zero
+then we have an event for plus minus
+button name button 23
+in which we have output variable which
+converted double to a string as output
+is declared double
+initially then if the output is equal to
+output multiplication to minus 1 which
+means if the output is positive
+then it will be negative and if the
+output is negative then it will be
+positive
+then we have event button 24
+click
+where we convert the first number to
+string
+then we have choice assigned as a
+operator button
+and finally calcium ptr is set to true
+next we have a button 39 click event
+where we have switch case for doing
+button operations for plus minus
+multiplication and divisor
+where the first case it's the number
+case 2 defines subtraction which
+subtracts a value then multiplication
+multiplies the value and division
+divides the given number
+following that we have a one click event
+for the off button which is used to exit
+the application
+after that we have a button click event
+for the logarithmic operation in which
+we use the math library to convert our
+outputs to log base 10.
+following that we have button two three
+and four click events for performing
+sign edge cos edge and 10h operations in
+our scientific calculator with the math
+library
+the specified angles of hyperbolic sine
+cosine and tangent are then written
+similarly we have even names as button 7
+8 and 9.
+these will perform the sine
+cosine
+and tangent operations
+the sine cosine and tan of the specified
+angles are then written
+the button 10 has a math click event pi
+and it represents the circumference to
+diameter ratio of a circle
+as specified by constant pi
+the next button five click event
+contains the math dot power
+which returns e raised to the power
+to a specified number
+then we have button 12 click
+which has a math dot power of 2
+which will give us the square of the
+given number
+following that
+we have a click button 14 to reduce the
+given output by 1.
+then we have button 13 which has the
+math tau of 3 which give us the cube of
+the given number
+following that we use the button 15
+click event to perform the modular
+operator which returns the remainder or
+signed reminder of the division after
+one number is divided by another called
+the modulus of the operation
+then we have button 17 click event
+this event uses the math.log library to
+return the logarithmic of a given number
+following that we have button 18 click
+which will give us the percentile of the
+given output divided by the given output
+multiplied by 100
+and the last but not the least we have
+event as button 19 and 20.
+click
+which has match dot ceiling and math dot
+floor library where mat dot ceiling
+returns the smallest integral value that
+is greater than or equal to the
+specified number and math.floor which
+returns the most significant essential
+value that is less than or equal to the
+limited number is returned
+now that we are ready to run this code
+here is our scientific calculator which
+includes the textbook
+labels and buttons
+now
+let's run this code
+here's our calculator
+let's try to do some calculation
+let's add 5 with 4
+equals to which is 9
+then let's take square root which is 3
+then a cube which is 27
+now let's try the off button if it will
+exit us out of this calculator
+and yes
+it does
+let's get back to our slide
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

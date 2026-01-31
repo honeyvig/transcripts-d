@@ -1,0 +1,298 @@
+hey everyone i am bravo khandelwal and i
+welcome you all to our simply learns
+youtube channel today we'll talk about c
+sharp web services but first let me
+remind you that we have our daily
+updates on numerous technologies so if
+you are a tech geek looking for the
+latest technological innovation then try
+subscribing to our youtube channel and
+don't forget to hit the bell icon so you
+never miss an update from simply learn's
+youtube channel
+so now without any further ado let's get
+started with the agenda for today's
+session we will begin our session with
+the discussion on what are c sharp web
+services
+then we will have a brief discussion on
+technologies that support
+said c-sharp web services
+following that we will try to implement
+the c web services in the use visual
+studio
+then we will have a discussion on the
+advantages and disadvantages of web
+services
+finally we will conclude this session
+with a few takeaways on c-sharp web
+services
+now let's start with what are c-sharp
+web services
+a web service is a web-based feature
+that is accessed by a web protocols and
+used by online applications
+web services aren't only for the dot net
+framework platform
+the standards were created before the
+debut of dotnet
+and they are exposed utilized and
+supported by companies other than
+microsoft
+web services across platform
+which means that a service developed in
+one language may be invoked by another
+language written in an application
+the sole prerequisite for using a
+service is an internet connection to
+send an http request
+web services are triggered by other
+programs
+when html pages are displayed in a
+browser for the end user
+now after understanding the c-sharp web
+services
+let's discuss the technologies that
+support web services
+first we have xml
+then we have soap
+then we have wsdl then at last we have
+uddi
+now let's discuss each of them in detail
+first xml
+web services just
+specify the data
+as a result the applications that
+understand the xml
+in terms of programming language or a
+platform can format the xml in many ways
+next we have soap
+soap establishes a communication between
+services and the application
+the wsdl provides us consistent
+technology
+for specifying web services to other
+applications
+at last we have uddi
+uddi may search the web service
+registration using uddi
+next let's try implement this in the
+visual studio
+now let's start by creating a new
+project
+we will go ahead and use asp.net web
+application with the dot minute
+framework in brackets
+here if you come next
+we will name this as
+simply learn
+web
+services
+then we will hit click
+we will choose empty
+and hit create
+make sure you use the dotnet framework
+4.7.2
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+now let's create a web service
+so i will right click on project name i
+will add a new item
+here we will search for a web service
+asmx
+that is this one
+we will name this one
+as simply
+learn
+service
+i will click on add
+and here we have our first web service
+so to start with we have to allow a web
+service to be called from a script using
+asp.net as x
+so to do that we need to uncomment the
+following line so we will go ahead and
+uncomment this line
+next
+we will go ahead and make our own web
+method
+so for the first method
+let's make a public
+sum
+then in bracket i will have int
+x
+comma
+in
+y
+then
+we will have
+return
+x
+plus
+y
+now we have to make sure that we are not
+using the same variables or the methods
+again and again
+so to make sure that we will add
+something called a message name
+so
+and the brackets we will have some of
+numbers
+i forgot to add end here
+now this is a complete web method
+since a web service does not allow
+method overloading so we need to use
+message names
+in case if we want to re-utilize these
+variables
+so let's create few more functions so i
+will just copy this one
+and paste
+next i will have
+difference
+between
+numbers
+i will change this function name
+to
+difference
+and i will change it here
+to minus
+let's make a product
+and a division as well so copy this
+so for this one i will have
+product
+of numbers
+i will change this here
+as
+product
+and here i will have
+for this one i will have division
+for the method name
+we will again have
+division
+name
+then
+here
+now let's save it and run it
+here wait for it to run
+now we are waiting for room to load up
+this service
+and here we have
+first web service page
+if you look closely we are using
+temporary.org as its default name space
+we can change the different name space
+using xml web services if it is made
+public
+so now let's check our service
+description
+it is basically a formal description
+which has
+a complete web-based data
+now let's go back and work on our
+function
+these are the functions which are auto
+ordered according to the names
+if you check its message name we have
+different
+part is basically to specify we have
+made spaces between these words
+so if you don't make spaces
+this will not show
+now let's run one
+each of them one by one so we will go
+with difference
+here let's add
+23
+then we can have 13
+let's invoke it
+and as you can see we are getting 10.
+next
+let's close this one
+and go back to our complete list we'll
+go to division
+let's make it
+30
+and divided by 3
+we will invoke it
+we are again getting 10
+then we can go
+to product
+we can go for
+200
+multiplied by 20
+the failure was 4000
+as you can see we are getting 4 000
+we can go for sum
+we can add any random number here
+for the sum
+so let's select for x so any number
+then for the y we can choose any number
+and we will click and go
+and as you can see we are getting this
+number
+so now let's get back to our slides
+and continue with our slides
+now let's go over the advantages of
+c-sharp web services
+first we have the open text-based
+standard is always used by web services
+all of those components are used by web
+services
+even if they are built in different
+languages for different platforms
+the web services are simple to develop
+yet closely since they rely on existing
+infrastructures and we can repackage
+most of the applications as web services
+web services is an interoperable
+organization with hundred suppliers that
+prefer interoperability
+web service encourage a modular approach
+to development so that the various web
+businesses can connect with the same web
+service
+web services lower the cost of
+enterprise application integration and
+business to business interaction
+now let's discuss the disadvantages of c
+sharp web services
+if we employ a web service for high
+performance situation then the web
+service will get sluggish
+to describe the quality of certain
+online services we use a consistent
+process
+the vendor's ability to keep the
+intellectual property of a given
+standard is also a restriction of the
+web service
+finally let's conclude this session with
+a few pointers on web services
+first web service isn't really reliant
+on any one language
+next a web service a protocol agnostic
+that is it does not rely on any protocol
+then we have a web service is a platform
+agnostic as well that is it does not
+rely on any platform
+finally we have stateless architecture
+which refers to web services these
+services rely only on the information
+provided
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

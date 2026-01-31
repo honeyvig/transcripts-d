@@ -1,0 +1,437 @@
+hey everyone this is harsh bharadwaj and
+welcome back to another video by simply
+learn
+in today's session we are going to learn
+about c plus memory management
+and do check out our other videos on the
+c
+series
+so before we begin if you haven't
+subscribed to our channel already make
+sure to subscribe to it and hit the bell
+icon to never miss an update
+so let's go ahead and have a look at
+what's in it for us
+first is what is memory management
+then we will understand why we need
+memory management in c plus plus
+then we will learn memory allocation and
+deallocation in c plus using new
+operator and delete operator and at last
+we will understand the advantages of new
+operator in c plus
+so without further ado let's get started
+what is memory management
+memory management can be defined as a
+process in which management of a
+computer memory occurs
+for example assigning memory to programs
+variables etc in such a way that it
+doesn't affect the overall performance
+sometimes the computer's data can range
+up to terabytes
+so efficient use of memory is necessary
+so that we can minimize the memory
+wastage and boost up the performance
+now
+let's understand why we need memory
+management in c plus
+memory management is required so that
+there will be no wastage of memory
+and to make sure that allocation takes
+place efficiently
+during the declaration of an array there
+are times when the correct memory is not
+determined until runtime
+and to avoid such cases we usually
+declare array of maximum size
+and because of this maximum size some
+memory remains unused
+for example let us suppose we have
+declared an array of size 30 and after
+declaring the array it turns out that we
+only need space of 10 size
+so the rest of the space is of no use or
+we can say it will get wasted
+to avoid such cases we use memory
+allocation
+so let's understand memory allocation
+and deallocation in z plus plus
+other programming languages like java
+python etc they don't need to allocate
+memory dynamically
+in c language we use the malloc or
+catalog functions to allocate the memory
+dynamically at runtime and these
+functions are also supported by c plus
+but in c plus plus allocation and d
+allocation is done manually
+in c plus there are two operators that
+are used for the allocation and
+deallocation of memory that is new
+operator and delete operator
+so let's understand this new operator in
+c plus
+the new operator in c plus is used for
+the dynamic memory allocation
+it is used to allocate the memory at
+runtime
+the general syntax of new operator is
+pointer variable which is the name of
+the pointer equal to new
+which is a keyword and data type is the
+type of the pointer
+the syntax for arrays is almost the same
+but after the data type we have to write
+the size inside the brackets which
+specifies the number of elements in an
+array
+and here in the example we first of all
+are declaring a pointer ptr of int data
+type
+after that we are dynamically allocating
+the memory using new keyword
+and at last we are assigning the value
+75 to the allocated memory
+coming to the delete operator
+the delete operator in c plus is used
+for the deallocation of memory
+when we no longer need to use the
+variable that means the memory is no
+longer required
+then we have to deallocate or release
+the memory using the delete operator
+syntax for delete operator is
+delete keyword with the name of the
+pointer variable
+the syntax for arrays is delete keyword
+following the empty brackets and then
+name a pointer variable
+as you can see in the example once the
+printing of value is done
+we have deallocated the memory using the
+delete operator
+moving on to the advantages of new
+operator
+the new operator and delete operator can
+be overloaded unlike the malloc function
+next is a return type of the new
+operator is of the same type for which
+the memory was allocated
+we don't need to use the typecasting
+third is the new operator automatically
+computes the size of data object we
+don't need to use the size of operator
+next is
+new operator in c plus allows us to
+initialize object while creating memory
+space for them
+so these were some advantages of the new
+operator
+so now let's move on to our code editor
+that is vs code to do some examples on
+the new operator and delete operator
+here we will do an example using new and
+delete operator in c plus plus that will
+allocate the memory location for three
+values and find their average so first
+of all
+let's
+create a file and name this file as
+mm1 dot cpp
+mm means memory management so now first
+of all we'll include the header files
+hash include iostream
+now using namespace standard
+now we'll start with into main
+okay so first of all we will create
+three pointer variables
+so we'll start
+hint
+star ptr1
+and
+star ptr2
+we are creating three pointer variables
+because we have to find the sum of three
+variables so that is why we have to
+create three pointers also
+and
+now we have to store the sum of three
+variables into some another variable so
+we now will create the variable average
+okay
+now we will allocate the memory
+dynamically
+using the new keyword so write ptr1
+equals
+new
+hint which is the data type
+same we will do for
+2
+equals new keyword
+hint
+here we are allocating the memory
+dynamically with the help of new keyword
+new
+and
+sorry m is there
+now we will print the value that is
+stored in the memory
+but before doing that
+as we have allocated the memory so now
+we will take the input from the users
+of those three variables
+of which we have to find the average off
+so
+we'll display
+enter first number
+after displaying this
+we'll take the input from the user
+write c in
+and using the d reference operator
+we'll write ptr1
+here we are taking the input from the
+user for the first memory location
+now we'll take the input of the second
+number from the user
+for that we have to
+print the message again
+enter the second number
+yeah
+now
+we'll take the input
+using the d reference operator
+with the pointer
+now same goes for the third one
+enter the
+third number
+the reference operator ptr3
+as we have taken all the three numbers
+from the user now all we have to do
+is to find the average of these three
+numbers as we know that d reference
+operator will point to the variable
+so that is how we'll get the access for
+the variable
+now we'll write
+the variable avg that is average
+we know that the reference operator will
+display the value
+that is pointer pointing at
+so
+we are actually adding the values
+ptr1
+plus d reference operator ptr 2
+plus d reference operator ptr3
+divided by 3
+this is how we can find the average
+after that
+all we have to do is to print the
+average
+so
+we'll write
+average is
+avg that is the variable
+as the result is getting stored in this
+variable avg so we'll print that
+variable
+and once everything is done once the
+printing is
+then we have to de-allocate the memory
+and
+we will de-allocate the memory by
+writing delete
+ptr one
+we have to do this for all of these
+three pointers delete ptr2
+because we have allocated the memory for
+all of these three pointers so that is
+why we have to de-allocate for each one
+of them
+okay
+now
+everything is done and let's try to run
+this
+here we can see enter the first number
+so
+[Music]
+let's say
+five
+we have to find the average of three
+numbers so we'll select the easy number
+to
+check whether it is right or wrong
+then we'll write five again
+now we'll write 2
+as we know that 5 plus 5 equals 10
+plus 2 equals 12
+and
+the average of 12 is 4 yeah three fours
+at 12. so this is the correct output
+so
+first of all we have allocated the
+memory over here dynamically then we
+have deallocated the memory using delete
+ptr1 ptr2 and ptr3
+so this is how it's done
+so let's do one another example
+let's name this as
+mm2.cpp
+okay
+we'll write mm4 dot cpp
+i think two and three are already taken
+so we'll start with hash include
+iostream
+hash
+include
+iostream
+then we'll write
+using namespace standard
+so in this question we'll simply enter
+the elements of the array and then we
+will display those elements but we will
+use new operator and delete operator in
+this question
+so let's start first of all we'll write
+int main
+now inside int main first of all we'll
+write the variable size we have declared
+the variable size
+and this variable size is the size of
+the array
+which we will take as an input from the
+user
+so
+first of all
+will display
+enter the size
+enter the size
+now we'll take the input
+size
+after that we will declare a pointer
+variable
+ptr
+all right
+now here we will allocate the memory for
+the complete array so we'll write
+ptr
+new keyword
+int
+which is the data type and
+here size
+okay here we are allocating the memory
+for the complete array of size that we
+will enter
+okay now
+now we will display
+the message saying that enter the
+elements
+as we have allocated the memory
+all we have to do is to enter the
+elements
+we'll use a for loop
+so we'll start with i equal 0
+i less than size
+i plus plus
+now
+we'll write
+element
+and after this we'll take the input from
+the user
+for the elements of the array so we'll
+write c in
+now just like that is we can do it for
+the pointer as well we can write ptr
+and just like that is
+inside the bracket i
+and we can do it
+for the output as well
+so here we are taking the input of the
+elements from the users
+now
+we have to display those elements
+so for that first of all we will display
+a message
+elements
+that you
+have
+entered
+now we'll use for loop again
+and i equals 0
+i less than size
+i plus plus
+now
+we'll
+print those elements so first of all
+we'll write
+element
+now
+ptr
+like just we
+did earlier ptri
+and
+end
+line so that the output looks good
+now everything is done we have allocated
+the memory then we have taken the input
+from the user and displayed the output
+now all we have to do is to delete the
+operator
+so i'll write
+delete
+then empty brackets
+ptr
+all right
+now everything is done
+we have allocated the memory and here we
+are deleting the allocated memory
+okay
+now let's try to run this
+here we can see enter the size let's say
+4
+now enter the elements
+three
+six
+five
+seven
+and here is the output elements that you
+have entered
+three six
+five seven
+that is right but
+it is not looking good
+let's use slash and over here
+and now let's again try to run this
+enter the size
+4
+now
+2
+4
+7
+9.
+uh here is the space between them now it
+is looking good enter elements that you
+have entered are
+two four seven nine
+so this is how it's done
+we have allocated the memory
+to an array of size
+of size variable
+then we have entered the elements
+then we have displayed those elements
+and at last we have deallocated the
+memory using delete
+operator so these are few examples on
+memory management c plus memory
+management you can try some more
+examples on them
+okay guys with that we have come to the
+end of this video if you like this video
+please give it a thumbs up i hope it
+really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

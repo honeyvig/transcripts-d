@@ -1,0 +1,524 @@
+hey everyone my name is Erica I work on
+Microsoft's Visual C++ team and today
+I'm going to be chatting with you all
+about C++ cross-platform development
+with Visual Studio and the windows
+subsystem for Linux so I'm gonna start
+by defining what we mean when we say
+native support for wsl and Visual Studio
+I'm then going to introduce our C make
+support in Visual Studio and then the
+bulk of my time is going to be spent in
+a demo where I configure a seeming
+project to build in a bug both locally
+on windows and on the windows subsystem
+for Linux and then at the end I'm going
+to quickly cover our WSL to story
+so since Visual Studio 2017 we've had
+support for building and debugging and
+C++ projects on remote systems over SSH
+in Visual Studio 2019 we added native
+support for wsl and WSL or the windows
+so system for linux if you haven't used
+it let's developer run a linux
+environment directly on windows when we
+say our native support what we mean is
+that instead of invoking commands on WSL
+as if it were our remote system over ssh
+all commands are executed locally this
+means there's just one single copy of
+your source tree and no need for a
+visual studio to manage file copying or
+maintain to synchronous copies of your
+build tree when on Windows and one on
+your Linux system this leads to no
+dependency on SSH as well as performance
+improvements if you're using Visual
+Studio 2019 version 16.4 or later you
+can also leverage the integrated
+terminal to interact directly with wsl
+from Visual Studio C make is a
+cross-platform open-source Amedda build
+system and it's really popular among C++
+developers especially among those who
+are doing cross-platform development it
+is our recommendation for anything
+platform or with an Ida open source iam
+cmx support in Visual Studio means that
+you can open any folder containing a
+seeming list txt file and edit it build
+it in debug it locally on windows on a
+remote system or on wsl without ever
+generating visual studio project
+installation files you can still
+leverage almost the same full suite of
+intellisense code navigation and a
+bugging features that you might be used
+to when working with Windows based
+solutions as well as some seeming
+specific features that will make it
+easier for you to make sense of edit and
+author your own seeming scripts in
+Visual Studio and all this stuff I'm
+going to be showing and talking about
+more as a part of my demo
+so with that I'm just gonna hop in here
+I had a state project open and Visual
+Studio it looks and behaves very
+similarly to a normal visual studio
+solution with a few key differences the
+C make settings editor is where you can
+specify what system C make will be
+invoked on and where you'll be building
+so again that can be locally on Windows
+that can be on our remote system
+connected over SSH or that can be
+natively on wsl so right now I'm
+building on wsl using the GCC toolset
+the seeming settings editor is also
+where you can specify things like
+configuration type NEC make variables or
+environment variables and pick your
+compilers the seeming settings editor is
+just an overlay on top of the c make
+settings JSON file which can be checked
+in and shared between team members so
+that all of your project specific C mate
+configuration only needs to be done once
+the project that I'm working with right
+now is just a calculator that takes in
+any number of posts ticks expressions
+and evaluates them so I'll go ahead and
+run it and show you how it works
+note that because I am building and
+running on wsl whenever I start
+debugging
+it's using the front end the visual
+studio debugger backed by gdb so here I
+have the Linux console window which is a
+way for me to interact directly with my
+applications running on WSL or on a
+remote system from visual studio it's
+interactive so I can give it some input
+all read in an expression x equals to
+read in another expression X plus X and
+then evaluate the second expression or
+in this case X plus X and it looks like
+I've hit an address sanitizer error so
+addressing the tiser is a runtime memory
+error detector for c and c++ that used
+to be native to linux and mac that we
+have integrated directly with the Linux
+workload in Visual Studio so that
+address Anna Tizer
+airs will surface in the IDE alongside
+your code whenever you are debugging on
+wsl or on a remote system and I say used
+to because we actually recently ported a
+sent over to be used on Windows with the
+MS PC toolset as well but it looks like
+I have a heat buffer overflow issue here
+so I'll dig around and see if I can see
+what's happening so we'll jump over to
+the call stack and start stepping
+through and here it looks like I have an
+array of expressions with two elements
+but we're trying to access the second
+element and it's index at zero so that's
+out of bounds so I want to see if I can
+find where this M expression number is
+being set so I will find all references
+and it looks like these results returned
+at the top is where it's actually being
+set so I'm going to jump to about yeah
+line 8090 ish
+and yeah here it looks like we're
+reading in all of the expressions but
+then we're studying expression number
+equal to read number and for a better
+user experience this should probably be
+read number minus one so that for
+example if the user wants to evaluate
+their second expression or accessing the
+first element of the array so I'll
+change that here and here save the file
+and then I'm also gonna hop back over
+here and set a breakpoint
+where this is actually being evaluated
+so I can make sure it's behaving as I
+want I've you said a normal break point
+but when you're debugging on WSL or a
+remote system with Visual Studio you
+still have the full suite of debugging
+features available to you so I could
+still make this you know conditional
+breakpoint or a trace point which
+doesn't call code execution and with
+that I will restart the debugger right
+back to my learner's console window I'll
+just feed it the exact same input so
+I'll read in x equals two readin X plus
+X evaluate the second expression and
+this time the array still has two
+elements but we are accessing the first
+element so that looks a lot better when
+I continue execution it looks like two
+plus two does indeed equal four this
+time so that's behaving as expected the
+last of bugging features and I want to
+show off to you guys is that you can
+interact directly with the underline
+debugger in this case gdb and execute
+custom gdb commands so if I hop on over
+to the command window and I use the
+command debug dot mi debug exact my
+engine is the open source engine that we
+used to interface with gdb
+then I can execute any gdb command so
+let's say that I want to a view an
+assembler dump of this print postfix
+expression then if I pause little bugger
+I can view that full assembler dump
+right in the command window and
+hopefully this shows you that when you
+are debugging on WS L or a remote system
+with Visual Studio you can still
+leverage the same suite of debugging
+features that you might be used to when
+using an IDE like Visual Studio so a
+really visual way to navigate the call
+stack or set breakpoints as well as us
+bringing native Linux tooling to Visual
+Studio so things like a SAN or the
+ability to execute custom gdb commands
+so so far I've been debugging but now I
+want to add a login library in case
+anyone else who's using this runs into
+issues that they want to send on over to
+me so I'll go over to my cmakelists
+which is where I set dependencies on
+third-party libraries and I'm going to
+use the find package command you can see
+that I'm getting intellisense
+suggestions and tooltips and that's a
+part of the C make in editor
+documentation that we added to surface a
+surface official C McDuck's directly in
+the IDE so I'm going to add G log which
+is the log in library and all add a
+config required so we'll save that to
+regenerate the cache and it looks like
+ste make is yelling at me because I
+don't actually have G log installed on
+wsl but I'm getting this quick action to
+install G log using VC package so I'll
+start that and then kind of walk you
+through what's happening so if you
+haven't had haven't heard of it VC
+package is a cross-platform command-line
+tool that can be used to bring down
+build and install c and c plus libraries
+from source on windows linux and mac OS
+so here you can see i'm installing the x
+x64 linux triplet of g log directly on w
+CEL and all the output is being routed
+to the output window so that I can keep
+an eye on it note that I only got this
+VC package quick action suggestion
+because I already had VC package
+installed on WSL and I've included some
+lengths at the end of my death that
+shows you how to get started with BC
+package if you don't already have it if
+I hover over the library here I can see
+that there's two commands I need to
+include to consume this library the fine
+package command which I just added and
+then the target link libraries command I
+actually already have that as well so
+I'm just gonna add G log I can see that
+I'm inheriting these default linker
+options default compile options and
+default project options if I didn't
+actually know what these default options
+were we've added language services to
+see my scripts so I can do things like
+peak definition and see those default
+linker options enumerated for me no this
+is pulling from a separate file in a
+completely different subdirectory and
+this is really common when you're
+working with large teaming projects
+they're oftentimes structured across
+multiple different sub directories with
+a lot of different cmakelists txt and so
+hopefully this is a way a tool that can
+make it easier for you to make sense of
+edit and author your own C mixed groups
+in Visual Studio so it looks like this
+has been done for a while it's telling
+me G log installation of G log has
+succeeded regenerate the cement cache to
+detect the new package that's why I've
+been getting this gold bar up here so I
+can regenerate the cache and I should be
+good to go over here in the solution
+Explorer the layout of my files
+currently matches the layout of my files
+on disk and that's fine for this project
+because it's pretty small but if I was
+working with a larger project there's
+something called C make targets view
+which is
+or seem eccentric way of viewing your
+code organized by target that can help
+you to more easily make sense of really
+large projects with more complex
+structures we've recently also added si
+make project editing support and visual
+studio and so that is visual studios
+attempt to help you easily add rename
+and remove file and target references to
+existing projects in Visual Studio so
+let's say that I want to add a new
+source file just call it a source CPP
+instead of just dropping that file on
+disk Visual Studio will try to guess
+where you can add a reference to that
+new source file and your si may scripts
+so that it's actually picked up this is
+what Emma still does automatically
+behind the scenes when you're working in
+a VC X approach but because there's a
+million different ways that you can
+offer your own C make scripts Visual
+Studio will make its best guess and if
+it has if there's any ambiguity it'll
+suggest multiple different options as to
+where that reference can be added and so
+you can view and preview them all and
+then only apply the changes that you
+want to see so so far even though C make
+is cross up across platform
+I've only been building and debugging on
+wsl so now I'm going to show you how
+easy it is to get started and retarget
+the same project for Windows so I'll go
+back to the C make settings editor add a
+new configuration this time it's going
+to be an X 64 debug configuration
+there's nothing that I need to specify
+here but again this is where I can
+specify things like configuration type
+and my compilers we have out-of-the-box
+support for both clang CL and MS VC when
+you're targeting windows so let me make
+this my active configuration and then
+select the same executable just so I can
+show you that it's the same application
+running both on wsl and
+doze so here's my calculator I can read
+in an expression x equals 2x plus X
+evaluate the second expression here I'm
+hitting the same break point that I had
+set earlier when I was debugging on
+Linux so you can see it's the same
+source code same everything
+oops so I'll stop debugging in Visual
+Studio 2019 version sixteen point four
+there was support added for an
+integrated terminal and that can be used
+to interface with the developer command
+prompt with CMD or with a local WSL
+installation so here is my post here is
+my local WL installation of boon to it
+trusts me right in my working directory
+which you can see is the mounted C Drive
+so if I take a look at my file structure
+I can again see that I only have one
+source directory one root CMake list txt
+once it makes settings JSON so I'm using
+the same source code to target both
+windows and WSL if I CD into my build
+folder then you can see I have two sub
+directories one for my WSL configuration
+that contains elf binaries and one for
+my x64 debug configuration that contains
+my Windows executables so two different
+executables can be generated from the
+same source code right now I'm just
+using this integrated terminal to
+navigate in my file structure but it can
+use to be used to run command-line tools
+or whatever steps you'd normally need to
+take outside a Visual Studio directly
+from the command line alright so another
+thing that we hear from cross-platform
+developers is that they oftentimes only
+build for one platform locally and then
+they'll rely on their CI system to check
+build errors across
+there are other target platforms after
+they've checked in so we have a feature
+that will hopefully make it easier for
+you to check build errors across
+multiple platforms before checking in so
+let's say that I add something or
+accidentally include something that is
+window specific like including your
+Windows RH then you can see I get these
+purple squiggles which is basically
+telling me hey this is defined for your
+current active configuration my x64
+configuration but it's not defined for
+one of your other configurations in this
+case WSL if I make WSL my active
+configuration then those squiggles
+should turn red because windows on Asia
+is just not defined on Linux but if I
+were to wrap this in an if def so if to
+win32 then you'll see all these
+squiggles go away and I'm back to having
+platform agnostic code so hopefully this
+will let you make it easier for you to
+check build errors across multiple
+platforms before checking in especially
+if you're you know typically a window
+shop and you build for Windows but then
+you also want to make sure that you
+compile on Linux I doing the WSL
+configuration is a really quick and easy
+way to do that all right so the last
+feature I want to show you guys is
+something we call the separation of
+building to bug and that's the ability
+to separate your build system from the
+system that you are deploying to and
+debugging on these two systems don't
+necessarily have to sit have the same
+architecture or instruction set the
+example I'm going to be showing you
+today is pretty simple
+I'm going to keep my same build
+configuration so I will continue
+building natively on wsl but I'm going
+to deploy two and debug on a Linux
+docker container that's running locally
+and connected over SSH so I'm going to
+go ahead and add a new debug
+configuration
+I want launch for Linux with gdb because
+I am going to be debugging on a remote
+host and this
+a new CPP gdb template we very recently
+streamlined the debug templates that are
+used when debugging with gdb on WS L or
+remote system so this might look a bit
+different than what you've seen with
+previous versions of vs the only changes
+that I need to make here is one I will
+add a more friendly name just so I can
+identify this configuration I need to
+add a project target which in this case
+I can just add my calculator it just -
+it needs to be one of your targets
+that's already defined in this drop-down
+and then I'll need to add the key remote
+machine name so by default the value of
+this key is synchronized with your build
+system which is set and same make
+settings Jason
+so by default when I'm debugging I'm
+debugging where I'm building natively on
+WSL only one nice I want to separate
+these two systems do I need to specify
+this remote machine name and launched at
+vs Jason and this will specify the
+machine that I am deploying to and
+debugging on so I'll go ahead and select
+my local host which is my Linux docker
+container running locally and I will
+save that this launch top vs Jason file
+is always well you where you will
+configure debugging sessions for C make
+projects in Visual Studio so let me just
+pull up that docker container real quick
+if I list the running processes you can
+see that my only processes are SSH and
+bash but when I select my custom debug
+configuration and start debugging what's
+happening is that I am continuing to
+build locally on wsl but I will be
+deploying to and start debugging on my
+Linux talker container so from visual
+studios point of view this looks exactly
+the same I still have my Linux console
+window here to interact with the
+application but if I jump back to my
+daugher container then you can see that
+gdb is running and my calculator
+beautiful is running and so I am
+debugging on this system you can also
+see here in my bill directory that only
+the binary folder has been copied over
+there is no intermediate build output
+because the build is still happening
+locally on WSL and this is only the
+things i need to be able to debug
+alright so that kind of wraps up the
+demo session let me jump back to the
+slide deck to quickly summarize some
+things we talked about today our
+debugging features that let you leverage
+the full Visual Studio debugging
+experience with seaming projects when
+you're working on a remote system or WSL
+as well as linux specific to lean like
+the Linux console window a SAN or
+executing custom duty B commands we
+covered cross-platform VC package
+integration for library acquisition I
+only did this on WSL but it works the
+same on Windows or on a remote system we
+covered C make language services and
+project editing that make it easier for
+you to make sense of edit and author
+your seeming scripts we covered
+platform-specific intellisense
+or those purple squiggles which will
+hopefully make it easier for you to
+check for build errors across multiple
+platforms before checking in and we
+covered the ability to separate the
+system that you are building on from the
+system that you are debugging to and
+deploying on one last note that I want
+to make is that this whole demo was done
+with a seeming project but the same
+exact feature set - the C make specific
+features are available with msbuild
+based Linux projects as well and that
+can be an option for you if you're not
+really if you're not writing
+cross-platform code like you're only
+building and debugging on Linux from
+Windows as your host operating system or
+if you just don't want to eat your C
+make and then quickly
+wsl to works in Visual Studio except you
+cannot yet use our native support if
+your source files are stored in the
+Linux root filesystem and the C++ team
+blog is where
+should go for updates on that that's it
+for my demo thank you guys
+the code base that I use is on github if
+you want to play around with anything
+C++ team blog it's a place to go for all
+announcements and then if you want to
+take a screenshot of this this is some
+relevant documentation to get started
+with WSL our CMake support debugging or
+configuring your launch file to beat
+debug in Visual Studio that one should
+be a stock JSON file and VC package

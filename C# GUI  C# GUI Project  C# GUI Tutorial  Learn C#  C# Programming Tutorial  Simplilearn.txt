@@ -1,0 +1,340 @@
+hey everyone i am peppa khandelwal and i
+welcome you all to yet another exciting
+video on simply learns youtube channel
+in this session we will be discussing
+c-sharp graphical user interface
+throughout this session we will take the
+help of visual studio to demonstrate the
+gui features
+however before we begin with this
+session make sure you have subscribed to
+our youtube channel and clicked on the
+bell icon below so you never miss an
+update from simply learn's youtube
+channel
+first let's discuss what is a gui
+the graphical user interface gui is a
+user interface that allows users to
+interact with technologies by using
+graphical icons rather than a heavy code
+the graphical user interface invented by
+xerox palo alto research lab in late
+1970s and is commercially available in
+apple's macintosh and microsoft's
+windows operating system
+the gui design pattern is based on the
+model view controller software
+architecture which separates the
+internal information representation from
+how information is displayed to the user
+now let's get started with the demo
+we will open the visual studio and
+discuss various gui features available
+to demonstrate gui
+let's create a project gui demo
+we will create the windows form
+application project
+so
+windows
+form app
+dot net framework
+we will click next
+we will name it
+gui demo
+and create
+it will take some time to be created
+let's name this
+as gui demo
+let's start with the button
+we will name it as
+click
+here
+let's increase its size to 11.
+let's run it
+as you can see here is the button
+right now it's it doesn't do anything
+when we click it
+let's close this and write up the code
+for it
+we will double click on it
+and here the form one dot cs is
+displayed
+now we will write a code for it so we
+will write message
+box
+dot
+show
+and we will type like welcome
+to
+simply learn
+and we will close it by semicolon
+now let's run this
+now when i click this button it shows
+this box
+with the ok button let's click the ok
+button
+and close it
+now suppose i want to give it more
+interactability
+so now
+i will create a dialog box
+dialog result
+dr
+equals to message box dot show
+welcome to simply
+learn let's change this text as well
+and write it as
+like
+do you
+want
+to close
+this
+window
+we can give it a confirm dialog box as
+well
+now we will use an enum which will be
+the message
+box button
+buttons dot
+yes no
+button we will
+and we will also use
+message box
+icon
+dot questions to give it more icons
+now we will make an if statement
+to ask if we press yes then we will
+cross this form so
+we'll write
+f
+dr
+equals to dialog box dot result
+is equals to yes
+then
+we will
+write this dot
+close
+now let's run this
+now when i click this button it will
+show this box
+now if i press no then it doesn't do
+anything but just close that message box
+now if i press yes
+then it will close that form as well
+now let's use more functions from this
+toolbox
+let's take some labels and textbox and
+another button
+so i will take a label
+a name is a
+username
+i will increase its size
+by 11.
+let's copy and paste this
+now i will change the name to
+password
+now let's add
+now let's add a button
+repeat
+repeat
+repeat
+repeat
+now
+let's add some text box
+we will increase their size
+and
+a button
+i will name it
+as sign up
+and its size as 11.
+now by default this text box takes
+the text value
+but in case of password text box we can
+change it
+we can change its password care as
+anything we want
+let's make it star
+now when i run this code
+here let me write like webhub
+and for the password whenever i type
+anything
+it will show star
+now
+we can also change it
+to a default according to our
+system so we will keep it simple and we
+will use do system password care and
+make it true
+now when we run this
+since my system is a windows operating
+system so whenever write anything
+in this password it will be typed as
+a bold dot symbol
+let's rename this click here as well to
+close
+since it performs a close operation
+now let's add some more features
+let's add some radio button
+and a label
+let this label be
+gender
+and its size
+as 11
+and we will change its size as well to
+11.
+and its name
+to
+male
+and this one to female
+now let's run this
+as you can see we can only select one of
+these so it will give us the opportunity
+to select either one of the option
+now let's add a check box as well
+i will increase its size to 11
+and for the text
+we will use
+like
+i understand
+and
+i
+accept
+terms
+and
+conditions
+now
+let's run this
+as you can see we can write any username
+here
+and password
+as well as we can choose either male or
+female
+and we can also click on this
+now let's suppose i want
+this button to be only a bill available
+when
+i click on this checkbox
+so i will write i will go to this button
+and
+change the enabled
+function
+from true to false
+now when i run this code
+it shows as not enabled
+now i want the functionality when i
+click this check button it gets enabled
+so
+we will write the code for this checkbox
+so button
+to
+dot
+enabled
+is equals to
+check box dot checked
+now
+let's run this
+so web hub
+any password
+i like i can select pl if you will and
+when i click this this button gets
+available
+now let's suppose i have more radio
+buttons
+instead of the only these two
+let's make space for that
+let's add another
+label
+and i will name it as
+payment
+method
+and size to be as 11.
+and i will add
+some radio buttons
+i will increase its size to 11
+same with this one
+this one as well
+now i will name this one
+as
+credit
+slash
+debit
+card
+this one
+is not banking
+and this one
+as paper
+now let's run this code
+now whenever i
+make this code so let's let me write a
+username and a password
+and let me select mail
+now whenever i go to select this payment
+method it unselects the gender so
+basically we can only create one of
+these five radio button
+now
+to make them separate we need to use
+containers
+so
+we will use
+group box container
+so group box
+i can increase its size
+i will remove the name group box from it
+and we will select these buttons and put
+it in this group box
+i will drag it here
+same with this one so i will add another
+group box
+and add these in it
+and also remove the name of
+this group box
+and
+i will drag it to this one
+now let's run this code again
+let me save it and run
+now
+wherever
+the password
+then
+i can now select male or female and i
+can also select any of these payment
+methods and when i click this then i can
+select this sign up button
+now for this signup buttons
+code
+i will write as message
+box
+dot show
+and write
+account
+is
+created
+and
+i will make
+this
+dot
+close
+let's run this
+so now
+i make an account
+password
+then i select mail
+and then in networking then click then
+as a now account is created and it will
+close this function
+now let's get back to our
+slides and this was all for today's
+session hope you guys found it
+informative and helpful if you liked
+this session then like share and
+subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

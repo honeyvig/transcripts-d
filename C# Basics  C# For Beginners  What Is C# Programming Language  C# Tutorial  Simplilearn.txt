@@ -1,0 +1,769 @@
+hey everyone welcome to simply loans
+youtube channel in this session we will
+learn the fundamentals of c-sharp
+programming language but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you're a tech geek in a continuous hunt
+for latest technological friends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now let's get started
+with the agenda for today's session
+first we will learn the history of c
+sharp programming language later we will
+go through a brief introduction of c
+sharp next we will understand the
+variables data types and operators in c
+programming language followed by that we
+will try to understand the structure of
+a c programming language
+once we are done with the fundamentals
+we will try to execute the first c sharp
+programming language later we will try
+to install the best id for c-sharp that
+is the visual studio in the windows
+operating system and try to run a
+program in it
+followed by that we will understand the
+conditional statements in c-sharp next
+we will look into the arrays strings and
+c sharp then we will understand the
+functions in c sharp later we will get
+into the collections in c sharp
+programming language followed by that we
+have enum in c sharp next we will
+understand the object oriented
+programming paradigms of c sharp then we
+will learn the access modifiers
+used in c sharp next we have the file
+operations exception handling and last
+but not the least we will wind up the
+session by learning the new features in
+c sharp
+i hope i made myself clear with the
+agenda now let's get started with the
+first point in our agenda for today's
+session
+so the first topic history of c sharp c
+is a microsoft provided object-oriented
+programming language that runs on a
+framework for internet and anders
+eilsberg was the first person to create
+it
+after learning how the c programming
+language was created we will look at the
+introduction of c programming language
+where it is used and why we should use
+it
+so c sharp is a microsoft provided
+object oriented language that runs on
+the dotnet framework
+c has its roots in the c family and is
+related to other popular programming
+languages like java and c plus plus
+in the year 2002 the first version was
+released c-sharp version 8 is the most
+recent version which was released in
+september of the year 2019.
+sesia programming language is used in
+various fields including mobile
+applications desktop applications web
+applications web services websites games
+database applications and virtual
+reality now we will look at why we
+should use c-sharp programming language
+c sharp is one of the most widely used
+programming languages in the world it is
+simple to learn and use and it has lot
+of community support
+c sharp is an object-oriented
+programming language that gives programs
+a clean structure and reuses code
+lowering development costs
+because c sharp is like c c plus plus
+and java it is simple for the
+programmers to switch to c sharp or vice
+versa
+moving ahead with the fundamentals of c
+sharp we will now look into the data
+types in c sharp data types can be
+classified based on the memory location
+the first data type in sesha programming
+language is value types followed by that
+we have the reference data types and
+finally we have the pointer data types
+we will go through all these three types
+in detail first we will look at the
+value data types in c sharp a data type
+is a value type if it can be stored as
+values in its own memory space
+that means this type of data types
+directly store their data or value in a
+variable for example you can see on my
+screen we have integer variable i is
+storing the value 200 so these type of
+data types are called as value data
+types
+so a few examples of value data types
+are boolean byte character decimal
+double enum float integer long short and
+structure
+next we will see the reference data
+types in c sharp so a reference data
+type unlike a value type does not store
+its value directly instead it saves the
+address where the value is kept in other
+words a reference type contains a
+pointer to another memory location where
+the data is stored an example of
+reference data type is string anime is
+equal to simply learn where the string
+is reference data type
+the following data types are a few
+examples for reference types that is
+strings arrays class and delegate
+last we have the pointed data type in c
+programming language
+a simplest data type is the pointed data
+type its functionality is identical to
+that of a pointer in c programming
+language and it is intended to store the
+address of another pointer an example of
+pointer which is shown on my screen is
+int pointer p
+we will look at the variables in c sharp
+after we understood the data types in c
+sharp
+variables are storage containers of data
+values in c sharp there are various
+types of variables defined with
+different keywords such as first the
+integer data type or integers that store
+values such as 1 2 3 or minus 1 2 3.
+next data type is the double which
+stores floating point numbers with
+decimal places such as 19.99 or minus
+19.99
+followed by that we have the character
+data type which stores single characters
+such as a or b
+to surround character values single
+quotes are used
+the next data type is the string data
+type the stringed data type stores
+string values such as hello world double
+quotes are used to surround the string
+values finally there is boolean type
+data type which stores values such as
+true or false now we will look at how to
+declare variables in c sharp programming
+language
+to make variable you must first specify
+its type and assign its value the syntax
+for declaring variables is as follows we
+have the data type which is data types
+here in this case we are using integer
+then we have a variable name in my case
+we are having a variable with name that
+is name one and the value we are storing
+inside is x y z
+so this is how exactly you try to
+declare variables in c sharp programming
+language
+so followed by the variables in c
+programming language we will learn about
+the operators in c sharp programming
+language operators are used to
+manipulate variables and values there
+are four types of operators in c
+programming language the first one is
+the automatic operators next we have the
+assignment operators followed by that we
+have the comparison operators and lastly
+we have the logical operators
+we will go through each one of these in
+detail beginning with the automatic
+operators
+first we have the additional automatic
+operator which adds values together then
+there is subtraction operator takes one
+value and subtracts it from another
+following that we have the
+multiplication operator which multiplies
+two values following that we have the
+division operator which divides one
+value with another
+next we have the modulus operator which
+returns a reminder of the division
+following that we have the increment and
+decrement operators where increment
+increases the value by 1 and decrement
+decreases the value by 1. next we have
+the assignment operators in the list
+variables are assigned with values using
+the assignment operators following are
+some of the assignment operators to use
+in c sharp
+first we have equal to operator then we
+have not equal to operator later we have
+greater than next we have less than
+following to the assignment operators we
+have greater than or equal to finally we
+have less than or equal to operators
+last but not the least we have logical
+operators which is used to explain
+operators in c programming language to
+determine logic between variables or
+values logical operators are being used
+the first logical operator in c sharp
+programming languages and operator
+and operator provides a result as true
+if only both the values are true if one
+of them is false then it returns false
+next after and operator we have or
+operator it returns a true value if
+either of the values is true if both the
+values are false then the result will be
+false
+finally we have not logical operator not
+basically is the negation of whatever
+the number you provide to it if you
+provide a true value it gives you a
+false value and if you provide a false
+value it returns a true value now that
+we know the fundamentals in c
+programming language that is the data
+types variables and operators we will
+now look into the basic structure of a c
+programming language
+so the basic structure of a c
+programming language looks something
+like this
+so basic structure of a seisha
+programming language includes a class so
+in here we have a class named by simply
+learn you can also have a class name
+based on your decision next we have the
+main function followed by the class
+later we have the void and static data
+types and align string argument and
+finally a print message now that we have
+understood the basic structure of a c
+programming language let us see the
+first c sharp programming language so on
+my screen you can see a basic c sharp
+programming language that is used to
+print a message hello first we'll use
+the system namespace in c sharp and will
+do so because we have namespaces that we
+use to organize classes and the system
+in a namespace using the system imports
+the namespace and you can now access the
+classes in the system namespace next as
+the first program we have the class
+keyword and class name and then we will
+enter the main function and print the
+message hello
+now we will see how to write comments in
+c programming language commands can be
+used to explain and improve the
+readability of c-sharp code it can also
+be used to prevent the execution when
+experimenting with the different codes
+in c sharp there are two types of
+commands the first one is the single
+line command and single line commands
+are
+preceded by two forward slashes c-sharp
+ignores any text between two forward
+slashes and the end of the line does not
+execute it you can see this is the
+command as the command and this command
+has been preceded by two forward slashes
+this particular statement will be
+ignored by c sharp followed by single
+line command we have double line or
+multi-line commands in c sharp so the
+commands that span multiple lines begin
+with forward slash star and end with
+star forward slash can be considered as
+multiline commands c sharp will ignore
+any text between these type of commands
+in this example you can see this is a
+multi-line command and this statement
+will print hello simply learn is a
+command hidden between forward slash
+star and star forward slash so this is a
+multi-line command
+with that we have finished the
+multi-line command synthesia programming
+language moving ahead we will try to
+install the best id for c programming
+language and the tutorial for that is
+linked in the description box below
+please feel free to check it out and
+without further ado let's get started
+with the next topic that is conditional
+statements in c programming language
+the programmer must specify one or more
+conditions to be evaluated or tested by
+the program a statement or statements to
+be executed in the form of a condition
+is determined to be true or optionally
+or other statements to be executed if
+the condition is determined to be false
+the types of conditional statements in c
+programming language are as follows in c
+we start with if statement then we have
+if else statement following that we have
+an if else if ladder and a nested if
+condition statement and finally a switch
+statement we will go through all of
+these conditional statements in c sharp
+one after the other
+we will begin with if condition
+statement
+in c sharp programming language an if
+statement is defined as a programming
+conditional statement that is if true
+performs an operation or displays
+information within the statement block
+and the statement for if statement is as
+follows
+if the condition is true only then a
+block of code will be executed the flow
+diagram of if statement in the
+conditional statements is as shown below
+first we will begin at the start and
+there is a condition if the condition is
+true the following statement will be
+executed next
+we have if else condition statement
+in c sharp the if else statement is used
+to perform the operations based on a
+specific condition if the condition is
+true the operation specified and the
+block is executed otherwise the else
+plot is executed the syntax of if else
+statement is as follows if the condition
+is true the block of code is to be
+executed as true otherwise if the
+condition is false the block of code to
+be executed as false the flow diagram of
+fl statement illustrates as follows
+next after the if else statement we have
+the if else if ladder
+in c sharp if else statement is used to
+perform operations based on specific
+condition if the condition is true the
+operation specified in the if block or
+executed or else the else block will be
+executed the following is the syntax for
+f else if statement or if else if ladder
+if the condition 1 is true the if block
+of code will be executed otherwise if
+condition 1 is false and condition 2 is
+true the else if block will be executed
+and if both the conditions are false
+then the else block will be executed the
+flow diagram for flc statements is as
+follows
+the next type of condition statement
+will look as the nested if statement in
+c programming language a nested if
+statement is defined as a conditional
+programming statement that includes
+another if statement inside the previous
+if statement
+the following is the syntax of nested if
+statement if condition 1 is true the
+first block of code will be executed if
+condition 2 is true the second f of the
+block will be executed and if both the
+conditions are false then the else block
+of statements will be executed the flow
+diagram for the nested if statement is
+as follows
+finally there is switch condition
+statement
+in c sharp programming language the
+switch is defined as programming
+selection statement that checks for a
+possible match to provided condition
+against the available cases if none of
+the cases match the control will run the
+default statement of the block the
+syntax of switch statement is as follows
+first we have an expression after the
+switch k word then we have the following
+cases if a case
+matches expression their code will be
+executed if case b matches the
+expression case b's code will be
+executed and so on if none of the cases
+match the expression then the default
+block code will be executed here is a
+flow diagram of switch conditional
+statement that shows how it works in
+detail so followed by the conditional
+statements in c sharp we have the loops
+in c sharp
+in c sharp the loop control statement
+performs a looping operation until the
+given condition is met when the
+condition is false the controls are
+removed from the loop statements there
+are three different types of loops in c
+sharp programming language as listed
+below the first loop is for loop next we
+have while loop and lastly we have do
+while loop
+the syntax for for loop is as follows
+three statements in parenthesis after
+the keyword for
+statement one is executed once before
+the code block is executed statement two
+specifies the condition under which the
+code block will be executed
+after code block has been executed
+statement 3 is executed every time the
+flow diagram for the for loop is as
+shown below first we will begin then we
+will initialize and then there is a
+condition if the condition is true we
+will increment our decrement accordingly
+and if the condition is false we will
+end the process following that we will
+learn about the while loop while loop is
+a repeat statement or group statements
+if a given condition is true before
+executing the loop body it checks the
+condition the syntax for while loop is
+simple because there is only one
+condition which will be run until the
+condition becomes false the flow diagram
+for while loop is shown as below first
+we will start the loop then if the
+condition is true the statement will be
+executed until the condition is false
+now we have do while loop at the end
+do while loop is an alternative to while
+loop this loop will execute the code
+block once before checking the condition
+is true and then it will loop along with
+the condition is true if the condition
+is false then the loop will stop
+the flow diagram for do while loop is as
+follows
+following that we will learn about
+arrays in c sharp programming language
+a fixed size sequential collection of
+elements of the same data type are
+stored in an array an array
+stores a collection of data but it is
+often more useful to think of an array
+as a collection of variables of the same
+type stored in continuous memory
+locations instead of declaring
+individual variables like array array 1
+array 2 3 4 and 99 you declare one array
+variable like array and use memory
+locations array of 0 array of 1 until
+array of 99 to represent individual
+variables an index is used to ask
+specific element in an array
+here we have an array array 0 is the
+first element and array 99 is the last
+element of the array following that we
+will look into how to declare an array
+in c sharp in c sharp you can declare an
+array using the following syntax we
+start with data type then we have square
+brackets where we specify the size of
+the array and finally we have the array
+name
+an array example is shown in the screen
+where data type is integer and the array
+name is array next we will look into how
+to initialize array declaring an array
+does not cause the array to be
+initialized in memory after the array
+variable has been initialized you can
+assign values to it the syntax is as
+follows because the array is a reference
+data type you must see the new keyword
+to create an array instance in the
+following example we have an array
+called numbers with the data type end
+which we initialize with the keyword new
+we will understand strings in c sharp
+after seeing arrays in c sharp
+so the string in c sharp is a string
+object with the value text the text is
+internally stored as a sequential
+read-only collection
+of character objects because there is no
+null terminating character in the end of
+c-sharp string it can contain any number
+of embedded null characters
+the syntax of string is given below
+where first we have a character string
+followed by a string's name
+as a b c
+an example of string that is simply
+learn there are string functions listed
+below
+first we have the clone function which
+returns a string reference next we have
+a compare function that compares two
+specific strings after that we have a
+concat function that joins two strings
+and stores the results in the first
+string following that we have that
+contains
+return the value of the specified string
+after that we have a copy to which the
+character from the specified position
+the following equals function that
+determines the two string objects we
+have the same value lastly we have a
+trim function that trims the string
+following these c sharp basics we will
+learn about c sharp methods or functions
+in this tutorial
+a method is a collection of statements
+that work together to complete a task
+every c sharp the program contains at
+least one class with the main method to
+use methods in c sharp we must perform
+first to define the method and secondly
+to call the method first we will define
+the methods when you define a method you
+are essentially declaring the elements
+that make up its structure
+the syntax for defining a method is as
+follows
+first we have an access specifier then
+we have a return type then we have a
+method name
+lastly we have a parameter list and
+finally we have the block of code in the
+following example we have a specific
+public access specifier and returns
+types of int
+we have a method with name find minimum
+which finds out minimum number between
+the variables a and b following that we
+will learn how to call a method you can
+call a method using the name of the
+method the following examples
+exemplifies it we have used the same
+example in defining the method so in the
+main function we have called the find
+min function which is assigned to the
+result variable and prints minimum value
+following that we will understand the
+collections in c sharp
+collection classes are specialized data
+storage and retrieval classes stack skus
+lists and hash tables are all supported
+by these classes the interfaces of most
+collection classes are the same
+collection classes serve various
+functions such as dynamically allocating
+memory to elements and accessing a list
+of items via an index among others
+these classes construct collections of
+objects which serve as foundation for
+all the data types in c sha the
+following are some c sharp collection
+classes
+the system system.collection namespaces
+most used classes are listed below to
+learn more about them the link is in the
+description box below
+first we have arraylist classes it
+represents an ordered collection of
+objects that can be individually indexed
+the next class is hash table it makes
+use of key to gain access to the
+elements in the collection following
+that we have sorted list to access the
+items in a list it employs both a key
+and an index after that we have a stack
+class it represents a collection of
+objects arranged in a last and first
+order order next we have queue classes
+it represents a collection of objects
+arranged in a first in first out order
+last but not the least
+bit array it represents a binary
+representation array with values 1 and
+0. after we understand collections in c
+sharp we will see e-nums in c-sharp an
+e-num is a type of class representing a
+collection of constraints variables that
+cannot be changed or read
+use the enum keyword rather than class
+or interface to create an enum and
+separate the enum items with a comma in
+the following example the name of enum
+is direction and all four directions
+which are east west north and south are
+separated by comma we will now look into
+the object-oriented programming in
+seisha oh is an abbreviation for
+object-oriented programming writing
+procedures or methods that perform
+operations on data is what procedural
+programming is all about in contrast an
+object-oriented programming is all about
+creating objects that contain both data
+and methods object-oriented programming
+has several advantages over procedural
+programming including the following
+object-oriented programming is faster
+and easier to implement object-oriented
+programming gives the programs a clear
+structure
+object-oriented programming aids in
+keeping c sharp code dry do not repeat
+yourself and makes it easier to maintain
+modify and debug object-oriented
+programming allows for the creation of
+fully reusable applications with less
+code and shorter development time after
+learning about oops we will learn about
+the object oriented programming
+paradigms in c programming language
+first we must comprehend classes and
+objects
+in c sharp everything is associated with
+classes and objects and their attributes
+and methods a car for example is an
+object in real life the car has
+attributes like size color as well as
+methods like start and stop the class
+functions similarly to an object
+function is a blueprint for creating
+objects
+the following is an example an object is
+a car and its attributes are its size
+and color and starting and stopping are
+its methods
+following that we will go through the
+four fundamental object-oriented
+programming concepts and oops in c-sharp
+the first concept of oops is abstraction
+followed by that we have encapsulation
+inheritance and finally we have
+polymorphism we will learn all these
+four concepts in depth
+first c sharp abstraction
+abstraction processes hiding of internal
+details and displaying only the main
+functionality
+next we have encapsulation encapsulation
+in c sharp is a process of combining
+data members and member functions into a
+single unit after that we have c sharp
+inheritance it is a process by which one
+object automatically inherits all the
+properties and behaviors of its parent
+object and lastly polymorphism it is
+defined as one name many forms
+polymorphism allows a class to have
+multiple implementations with same name
+next we have access modifier so access
+specifiers in c sharp in c sharp access
+modifiers specify the scope of
+accessibility
+of a class member or a type of class
+itself the first access specifier is
+public indicating that the code is
+accessible to all classes the following
+access specifier is private meaning the
+code can be only accessed within the
+same class following that the protected
+access specifier the code is accessible
+within the same class or a class
+inherited from that class finally there
+is an internal access specifier which
+means that the code is only accessible
+within its assembly and cannot be
+accessed from another assembly following
+that we will learn about the file
+operations in c sharp the file mode
+enumerator defines various file opening
+methods the following members of file
+mode and numerations are described first
+there is append function
+text is appended to an end of an already
+existing file the following functions is
+the copy function which duplicates the
+file the third function is the creation
+function which is used to create or
+replace a file following that we have
+the delete function which deletes a file
+the fifth function is the xs function
+which determines whether or not a file
+exists
+following that we have read all text
+function this function reads the file
+contents after that we have replace
+function it replaces one file's contents
+with contents of another finally write
+all text creates a file and writes its
+contents into it so following the file
+handling in c sharp we have the
+exception handling in c sharp
+exception handling is a phrase that
+deals with handling errors and
+exceptions that occur during runtime due
+to coding errors or invalid user input
+in c programming language we use four
+keywords in exception handling we'll
+start with try exception handling the
+try statement lets you define a section
+of code that will be checked for errors
+as it runs the catch statement is used
+for exception handling if an error
+occurs in the try block it allows you to
+define a block of code that will be
+executed following that we have finally
+exception handling the final statement
+allows you to run code after the try
+statement regardless of the outcome of
+catch finally there is throw exception
+handling you can define your error using
+the throw statement finally in this
+video we will learn about the new
+features of c sharp programming language
+so some of the important new features of
+c programming language includes the
+following interface methods by default
+types of nullable references
+enhancements to pattern matching
+asynchronous streams making use of
+declarations interpolated were banned
+team string enhancement assignment of
+null coalition local static functions
+indices and their ranges types of
+unmanaged construction in nested
+expressions use the read-only member
+stackable
+now with that we have reached to the end
+of this video if you have any questions
+about any of the topics covered in this
+video then please feel free to let us
+know in the comment section below and
+our team of experts will be happy to
+resolve all your queries until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,339 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to our simply learned
+youtube channel today we will talk about
+one of the interesting topics that are
+operators and expressions in c sharp
+but before we begin let me tell you guys
+we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for a latest
+technological advancement then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon below so you never miss an update
+on simply launch youtube channel
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with
+what are operators
+then we will learn about what an
+expression is
+now we will dive into the types of
+operators
+then we will discuss the precedence and
+operators
+finally we will wind up this session
+within implementation in a code editor
+let's get started with what a operator
+is
+operators are symbols that can be used
+to perform operations on operands
+and a brand can be a variable or a
+constant
+operators are used to manipulate
+variables and values in c sharp
+c sharp has several operators that are
+classified based on the operations they
+perform
+now let's discuss expressions
+an expression in c sharp is made up of
+operands that are variables literals
+methods calls and operators
+an expression must have at least one
+operand but can have zero or more
+operators
+an expression statement is an expression
+followed by a semicolon
+now let's have a look at the types of
+operators
+there are five types of operators
+in c sharp
+first assignment operator then
+arithmetic operator
+relational operators
+logical operators and urinary operators
+now let's discuss them in detail
+first up assignment operator
+when assigning values to variables the
+assignment operator that is equal
+is used
+and use the syntax for that
+next arithmetic operator
+arithmetic operators are used to carry
+out the arithmetic operations like
+addition subtraction multiplication and
+division
+and here's the syntax for that
+next relational operators when comparing
+two operands the relational operators
+are used
+if the relationship is true then the
+result will be true otherwise it will be
+false
+and here is the syntax for that
+then logical operators
+to perform logical operations logical
+operators such as and and or are used
+based on boolean expression
+the logical operator returns boolean
+values true and false
+logical operators are used in decision
+making and loops
+and here's the syntax for that
+at last urinary operator
+the urinary operator unlike other
+operators have only one operand and
+here's the syntax for that
+now let's discuss the operator
+precedence
+in an expression
+with multiple operators the operators
+with the highest precedence are
+evaluated first
+when an operand is between operators of
+the same precedence then the order of
+operation is determined
+by associativity with the operator
+now let's try these operations in a code
+editor
+let's start by creating some variables
+in
+x
+comma y
+let's try the assignment operators first
+so we can
+assign an operator by using equal sign
+so we will assign the 10 value to x
+let's try
+to print it
+x equals to
+then we will do plus
+x
+simultaneously we can also assign the
+value of x to y by the same method
+let's try to print y as well so console
+dot write line
+y is equals to
+plus
+y
+let's run this
+first save
+then execute
+as you can see it's getting x is equal
+to 10 and when we define y is equals to
+x then it is showing y is equals to 10.
+now let's try to do arithmetic
+operations
+for that we will need another variable
+called res
+we will delete these operations
+or rather
+we will comment them out
+and we will give
+y equals to
+5
+let's try the addition operator
+so res will be equals to
+x
+plus
+y
+we will now try to print it
+console dot right
+line
+so x
+x plus
+y
+here plus
+undress
+let's do the same thing
+let's delete this command to make the
+make it easy
+let's copy
+the last two statement
+and paste it
+now we will change plus to minus
+and multiplication
+and division
+now let's try to print it
+first save it
+and then we will print it
+here as you can see the x is equal to 10
+and y is equal to 5 so x plus 5 it is
+printing 15
+and x minus y is representing 5
+then x multiplied by 5 that is 5
+multiplied by 10 is 50
+and then x divided by y that is 10
+divided by 5 is 2.
+now
+let's try relational operators
+so first
+we will define a boolean variable
+that will be value 1.
+now we will store
+the value
+1
+is equals to
+embraces
+x
+double equals to
+y
+now this text if the x is equals to y
+since x and y are two different numbers
+that is 10 and 5 so it will show us
+false
+so to print that
+console
+dot write line
+x
+greater than
+x equals to
+y
+will return
+plus
+value
+1
+let's try this same operation
+for the cases of
+greater than
+and less than
+let's save this
+and
+run it
+as you can see the x is equal to equals
+to 5 is returning false because 10 is
+not equal to 5
+for the x greater than y
+that is 10 is greater than 5 so it
+returns true
+and
+vice versa it will return false for the
+lesser terms
+now
+let's comment these out as well
+now let's try logical operators
+so we'll again define the x equals to
+30
+and
+y is equals to
+10.
+first we will try the or operator
+let's clip this out
+paste it here so that we can use this
+value and operation again
+so for the or operator we will use value
+1
+is equals to
+f x is equal to equals to y
+and the or or is a vertical dash
+or x is greater than
+5
+so in case of x either one of the
+condition must be true then it will
+return true so since x is equal to
+equals to y is false which we have
+already done that here
+so
+now the x if x is greater than 5 then it
+will also return true
+so
+to check that we will print
+console dot
+write line
+value
+one
+let's do it for the end operator as well
+so
+the value
+let's copy paste it
+this time we will remove these vertical
+dashes
+to
+and and operator
+let's save it and run it
+as you can see in the first case we are
+using an or operator
+in which either one of them is required
+to be true to get a true answer since x
+is greater than 5 is a true answer so it
+is giving us a true answer
+but in case of the end operator
+both of them needs to be true for it to
+give true since x equals to equals to y
+was false which we have checked in our
+relational operation experiment so now
+this will give us the false answer
+now
+let's try
+and do urinary operators
+let's take a different variable so end
+z
+equals to 10
+comma
+a value 2
+and a boolean
+that is flag
+which is equals to
+true
+now first try
+so value
+2 is equals to
+plus 3
+now we will print these
+start
+right line
+plus z
+is equals to
+comma
+plus
+value
+two
+let's copy paste them
+and change
+these values
+now we will use minus z
+here also
+minus send
+another operation where we will use
+double plus
+now we will use minus
+and for the last one
+we will use
+console
+dot
+writeline
+and we will print
+the negation of flag
+since flag is defined as true so this
+one should show
+flag as false
+let's run this
+as you can see it is showing the plus
+that equals to ten and minus that is
+equals to negative ten
+the plus two z increment the value by
+one
+then minus minus z decrement the value
+by 1 so since plus plus z was already 11
+so minus minus z just decreased it to
+10.
+now the flag is showing true because i
+haven't used the negation symbol here so
+now let's add the negation symbol and
+save it and then run it back
+here now it's showing the false
+now let's get back to our slide
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

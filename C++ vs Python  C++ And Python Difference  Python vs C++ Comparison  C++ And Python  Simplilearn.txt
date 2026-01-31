@@ -1,0 +1,314 @@
+hey everyone welcome to this tutorial by
+simply learn in this session we will
+learn about two popular languages
+that is c plus plus and python
+and the major differences between these
+two programming languages
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's go ahead and have a look at
+what we'll be covering today
+first we'll have a look at what is c
+plus plus its syntax and what is c plus
+plus used for
+then we'll move to what is python its
+syntax and what python is used for then
+we'll compare the two languages based on
+different parameters that is features
+performance simplicity of language
+memory management and at last salary
+comparison
+so let's start first is what is c plus
+plus
+c plus plus is a programming language
+that was introduced by john strusstrop
+in the year 1979 at new jersey
+earlier it was called c with classes
+instead of c plus plus because it was
+created as an extension of c language
+c plus is general purpose programming
+language that means it is used to build
+software in a wide variety of
+applications
+it has object oriented features like
+classes inheritance and abstraction
+but c plus plus also supports functional
+programming and procedural programming
+which makes c plus as multi-modal
+programming language
+now let's have a look at the syntax of c
+programming language
+first is class
+it can be defined as a blueprint that
+describes the behavior of object or we
+can say class is a collection of objects
+class is defined with keyword class and
+it has its own members called member
+functions or methods
+then variables and constructors etc
+next is methods or functions
+it is one of the most important part of
+c plus plus programming
+because it is used to write logics data
+manipulation and all other important
+operations take place inside method
+and method can be easily used by
+invoking it whenever we need
+we can give name to the function or
+method along with the return type and
+then inside the brackets we can write
+the operations or logic
+coming to objects
+it can be defined as instance of a class
+if an object is created of a certain
+class then that object can be used to
+access data members and functions of
+that class using the dot operator
+it can be done by writing the name of
+the object preceding the dot operator
+and then function name following round
+brackets
+next is instance variable
+these are those variables which are
+defined inside the class but they are
+outside the methods
+they basically belong to the object and
+every object has its own unique set of
+instance variables
+so now
+let's understand
+what c plus plus is used for
+c plus plus is able to handle the
+complexities of 3d games and it also
+provides multi-layer networking which
+makes it capable for development of
+gaming systems and 3d games
+c plus also used for making advanced
+software applications for example adobe
+spotify and youtube have different parts
+written in c plus
+c plus plus is used for making compilers
+because it is considered closer to the
+hardware
+therefore it is used for making
+compilers
+and as i said that is closer to the
+hardware so that is why it is preferred
+for making gadgets like smart watches
+medical instruments etc
+it is also used for making database
+management software for example mysql is
+written in c plus
+c plus plus also plays a part in making
+or writing the operating systems for
+example microsoft windows operating
+system and mac operating system has some
+of its parts written in c plus
+now let's understand what is python
+python is a programming language that
+was introduced by
+guido von rossum in the year 1991
+it was named after a tv show monty
+python's flying circus
+its 2.0 version was introduced including
+the new features like garbage collection
+for memory management etc
+it is high level object-oriented
+programming language from the starting
+point of the development of python one
+of the main intent was
+that it should be easy to read and
+simple to understand and use
+and python is known for its easy and
+simple learning experience
+python supports multiple programming
+models including procedural object
+oriented and functional programming
+it also contains features like dynamic
+binding and dynamic
+typing python is dynamic language with
+high level data types that means
+development take place faster in python
+than any other programming languages
+like java and c plus
+now let's have a look at the syntax of
+python
+first is line structure
+a program in python is divided into
+number of logical lines
+each logical line ends by a token new
+line
+now a logical line is created from one
+or more than one physical line
+and a physical line is basically a set
+of characters
+in python a new line depicts new
+statements but sometimes we have to
+split the statements and it can be done
+by using backslash and using triple
+quotes around the string
+commands in python is used to store tags
+at right places in the code it is
+basically used to explain sections of
+code
+it is declared using hash symbol
+next is docstring
+docstring is also used to explain the
+code in python
+the programmer can inspect them at
+runtime its boundaries are determined by
+using three double quotes and inside
+these double quotes we can write or
+explain
+next is indentation in python
+indentation means the space is at the
+beginning of code line
+if there are no space it will show
+syntax error
+we can indent using space or number of
+tabs
+quotations quotations are used to create
+string objects in pythons
+if we use single quote at the beginning
+of string then we must end it with
+single quote itself and same goes for
+double quotes as well
+identifiers are used to uniquely define
+an element in python
+now that element can be variable
+function class etc
+there are some rules associated with it
+an identifier can only begin with
+uppercase
+a to z and lowercase a to z or an
+underscore
+that's it
+next is variables
+python is dynamically typed language so
+we don't define type of variable
+it is decided on the basis of value we
+can assign a string to the variable and
+integer to the variable it will print
+them both
+last is string formatters
+this method is used to format a string
+into a nicer output
+now
+let's understand what is python used for
+python is popularly used in robotics and
+is one of the language that is commonly
+used in robotic process automation or
+rpl
+in the field of automation python is
+extensively used because it helps in
+making the automation
+systems fast and efficient
+python is also used in web development
+because it has a lot of frameworks which
+reduces the task a lot and because it's
+easy to learn and use so debugging is
+not difficult for web development in
+python
+python is widely used in modern
+technologies like artificial
+intelligence and machine learning
+because it has a great library and its
+flexible its speed of execution and
+readability purpose give it a plus
+it also acts as a supporting language
+for software development purpose
+dropbox is a fine example of it
+python was used to build dropbox desktop
+app
+libraries like pandas and numphie makes
+it popular for data analysis purposes
+because these libraries support a lot of
+data analytics tasks
+now
+let's move on to the features of c plus
+plus and python
+c plus plus is a portable language here
+portable means we can use same piece of
+code in different environments
+python is a platform independent
+language we can run the same code on
+different platforms and it is an open
+source language
+c plus plus allows dynamic memory
+allocation that is it allows to allocate
+memory dynamically
+python has large standard library and
+because of that we don't have to write
+the code for every single part
+c plus is object-oriented language
+unlike c it has concepts like
+abstraction polymorphism inheritance etc
+python is also object oriented language
+and has high readability features
+c plus plus is fast and efficient
+language
+python is slower than c plus plus but in
+python it is easy to read and maintain
+the code
+now that as we know what c plus plus and
+python are let's go ahead and have a
+look at the major differences between
+the two
+so here we will compare both the
+languages on the basis of performance
+c plus
+is statically typed that means the type
+of its variables are known at compile
+time and its programs are pre-compiled
+which makes it faster than python
+on the other hand python is dynamic
+language
+and is interpreted that means the lines
+of code are transferred to executable
+code at runtime which consumes some time
+coming to simplicity of language
+c plus plus is bit complex when it comes
+to simplicity of language and it has
+more syntax rules as well as program
+conventions
+python has simple and easy to learn
+syntax moreover its features are easy to
+use which allows us to write short and
+readable code
+moving on to the memory management
+in c plus plus memory management takes
+place manually as it doesn't have any
+garbage collector
+moreover it uses pointers which makes it
+more vulnerable to memory leaks
+python provides automatically programmed
+memory management as there is garbage
+collector in python
+coming to the last factor that is
+comparison in terms of salary
+the average salary of c plus plus
+developer is 71
+677 dollars per annum in u.s
+and in india the salary is 8 lakhs 10
+927.
+in case of python
+the average salary of a developer is 78
+sixty seven dollars per annum in u.s
+and in india the salary of mid-level
+python developer is nine lakh nine
+thousand
+eight hundred eighteen
+so this was the comparison between c
+plus plus and python
+and with that we have come to the end of
+this video
+i hope you like this video and please
+subscribe to simplyone channel
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

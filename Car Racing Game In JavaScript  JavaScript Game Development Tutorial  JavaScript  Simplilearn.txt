@@ -1,0 +1,809 @@
+creating a car racing game using HTML
+CSS and JavaScript can be fun and
+challenging way to learn web development
+in this video we'll guide you through
+the process of creating a car racing
+game using these Technologies first
+let's talk about HTML HTML is a markup
+language used to structure web pages
+when creating a car racing game you'll
+need to use HTML to create the game
+board game pieces and rules you'll also
+need to use CSS to style the game board
+and the game pieces CSS Styles web pages
+and is used to give the game a visual
+appeal next let's talk about JavaScript
+JavaScript is a programming language
+used to add interactivity to web pages
+when creating a car racing game you will
+use JavaScript to add actions to game
+pieces and rules to the game Bo you can
+use JavaScript to add animations sounds
+and effects to the game making it more
+engaging and realistic with all these
+Technologies in place you can start
+creating your car racing game you will
+need to create game pieces such as cars
+roads and obstacles you can also create
+rules such as speed limits and points
+for winning once you have all these
+elements in place you can use Javas
+script to add interactivity to the game
+you can create animations sounds and
+effects to make the game more engaging
+so whether you are just getting started
+with web development or you are a Season
+Pro creating a car racing game using
+HTML CSS and JavaScript can be fun and
+challenging way to learn these
+Technologies and if you are looking for
+more resources on web development we
+have a bunch of other videos and
+tutorials on our channel that can help
+you get started also if you eager to
+enhance your coding skills across
+various domains of software engineering
+you might want to consider a celtech
+coding boot camp with a state-of-the-art
+celtech coding boot camp you can learn
+to code and become a fullstack developer
+within 6 months get fully immersed in
+this accelerated coding boot camp and
+become a valued software engineer ready
+to take on any challenges on the job
+this boot camp covers the basics of
+several different Frameworks including
+springbot web services cets and jsps MVC
+JavaScript mongodb and much more these
+skills will Empower you to Kickstart
+your career as a versatile fulltech
+developer so take advantage of this
+opportunity the course link is provided
+in the description box below so let's
+start creating some car racing games and
+build our web development skills before
+we move ahead to this another JavaScript
+game I'll recommend you to go through
+the previous video wherein we created
+Flappy Bird from scratch so I want you
+to go through that video because many of
+the things will remain same in this
+particular video as well so please go
+through that video as well today we'll
+create a car game in which we have to
+save a car from obstacles coming towards
+our vehicle I don't know the exact name
+for this game but let me give you an
+overview of this game real quick so here
+is the game you can can see over the
+screen wherein we have a red car on the
+road and we have to protect this car by
+moving to the left or right all we have
+to do is to protect this red car from
+collision with the blue one now I know
+the graphics for these games are not too
+much appealing but if you want to make a
+high-end Graphics game then JavaScript
+is not the only language you can use we
+have to use many different JS libraries
+and maybe several other programming
+languages along with JavaScript to
+achieve this task so let's focus on
+these small games for now and we'll go
+ahead step by step now in this
+particular game if you see here we have
+three images one is of red car the other
+one is of blue car and a road behind
+them right so let's move on to the
+programming part directly and most of
+the parts will remain the same like that
+of Flappy Birds let's move on to vs code
+so here is our game this is the HTML
+file and then we have a CSS file and
+Javascript file for this game now what
+we'll do first is we'll create a div tag
+we have to protect a block right we have
+to move the container either to the left
+or to the right so for that we have to
+create div Tex so first of all we'll
+write here div we'll take this
+particular div tag for the game and
+we'll write here another div with ID as
+game fine now we have two div tags over
+here now what we'll do first is we'll
+add images for red car and for blue car
+right so what we'll do is we'll take two
+div texts and we'll write here ID as
+blue
+car for the blue car and then we'll
+write
+here
+IMG SRC The Source will
+be blue do PNG so we have a file named
+blue.png which is actually an image and
+what we'll do is we'll write here alt so
+the alternate will
+be blue car fine we'll copy this piece
+of code and we'll do the same for red
+vehicle as well so instead of blue car
+we'll name the ID as red car the image
+source we have in a computer is
+red.png and Alternate will be red car
+fine now we have added the two cars to a
+divtech or we can say to a HTML file
+save it go to the browser so this is our
+document you can see here we have a blue
+car and we have a red car you can see we
+have both images over here but the size
+is different the blue car looks big and
+the red one is pretty small right not to
+worry we'll figure it out in the CSS
+part so let's do the rest of the HTML
+part here what we'll do is we'll move to
+our HTML file again and now one thing
+you might have noticed in the game here
+is on on collision we are getting a card
+for game over so we have to create this
+div tag as well so let's finish the HTML
+part first what we'll do is we'll write
+here div
+again and this time the ID will be
+result so we are preparing for the game
+over part right now what we'll do is
+we'll write here H1 heading so inside H1
+we'll write game over so let me show you
+why we are doing this so if you can see
+here on collision we have game over
+right so game over we have to write here
+now what we'll do is we'll write here
+game over like this the next thing we
+need is the score so what we'll do is
+we'll write here P so we'll use the
+paragraph tag the ID will be
+score and the score will do in
+JavaScript part now what we have to do
+is we have to add the restart button as
+well so for that we'll write here
+button ID is equals to let's say
+BTN and we'll use the on click event so
+on click we'll write
+here location
+Dot reload we'll call this function so
+this is a built-in function in
+JavaScript what this function will do is
+it will refresh the whole page fine the
+game will start again so we have added
+another div tag for the score here we
+have a heading game over and a paragraph
+with ID as score and then we have a
+button to reload the web page now let's
+style these elements and make them look
+like a game so what we'll do is we'll
+move to the CSS file now here's a CSS
+file
+we'll first write here some code for the
+whole HTML document so for inside this
+we'll Define
+margin and the default margin will be
+zero similarly we'll Define padding as
+well so the default padding will also be
+zero now the next thing we have to do is
+we have to write here some code for the
+body fine here what we'll do is we'll
+use two colors at a specific angle of
+45° we have already been through the web
+kit linear gradient property in the
+previous game which is Flappy Bird so
+what we'll do is we'll write here let's
+take a background color let's say the
+background color is this kind of sky
+blue now the next thing we'll do is
+we'll take a background image and inside
+this we'll write webkit linear gradient
+we have already been through this in the
+previous game so we'll write here
+45° this is the angle and then we'll
+Define two colors here so a two colors
+will
+be gray and the next one will also be
+gray but a little bit different from
+this one so we'll write here 45% it will
+take 45% of the screen screen and then
+we'll write here hash so this is the
+code for dark gray color and it will
+take the rest 55% of the screen fine
+save it for now go to the web browser so
+you can see here we have two different
+colors present over here in a web
+browser the colors are divided at an
+angle of 45° what we can do here is we
+can write
+here 50/50 instead for both the
+colors save it now move to the browser
+and here you can see you can clearly
+Spot the Difference here so here you can
+see these two colors are different now
+we'll leave it here you can do this
+thing as you wish so moving ahead we'll
+write here
+Min height will be 800 pixels fine save
+it now move to the browser and here you
+can see we have a background color set
+for this particular web page now
+so after the body tag we'll do some
+styling for the game container so here
+you can see we have the IDS game for the
+first div tag so what we'll do is we'll
+write
+here game we'll we'll write some
+properties here we'll write here height
+so the height will be 500 pixels then
+we'll write here width the width of the
+box is let's say 300
+pixels and the Border will also Define
+so the Border will be
+black and the Border will be 1 pixel
+thick solid and black in color fine save
+it you can see over
+here so we can't see anything for now so
+let's style this first completely what
+we'll do is we'll write here margin so
+the margin will
+be one
+ram
+Auto now
+right here we'll write background image
+so the background image is the one we
+already have in a folder the name for
+that image is road
+one.png now we'll write here
+background size so we'll write here
+contain to fit this image inside the
+container and we'll write here
+overflow as hidden fine save it
+move to the browser and here you can see
+now we have a div tag present over here
+we have a container over here and we
+have the blue image only for now now
+what we'll do next is we'll style these
+images as well so first we'll do the
+same for blue car we'll write here blue
+car and inside this we'll
+write height is 100
+pixels width will be 130 pixels so
+there's a specific reason behind writing
+this 130 pixel we'll understand it later
+now the background color for this car
+will be let's say blue for the blue
+one and we'll write here position so the
+position will
+be
+relative next up we'll write here top
+stop will be 0 pixels so remember the
+value for these properties we'll need
+them later in the Javas script part now
+what we'll do next is we'll write here
+left as 0
+pixels now next up we'll write here text
+align as
+Center and animation so this animation
+we have already been through it now what
+we'll do is we'll write here
+move after 1 second the animation should
+be
+linear and it should be infinite fine
+now this animation we have to Define but
+before that we'll write here blue car
+IMG so here what we'll do is we'll
+Define the height of
+image we'll write your height as 100
+pixels fine now save this go to the
+browser and here you can see we have a
+blue car present at the top left corner
+of a container now what we'll do is
+we'll Define the animation for this
+particular div tag right so here is our
+car present at the top left corner so
+what we'll do is we'll move this box to
+the middle of the screen so we have
+already done it I guess but there is
+some mistake so here you can see we have
+given space between run Ram save it now
+and here you can see we have a box
+present at the center of a screen now we
+are good to go next up we'll Define the
+animation so we'll write here at the
+rate key frame and and instead of
+identifier the identifier we have here
+is move
+fine so inside this we'll write here 0%
+at
+0% the top will be zero fine zero pixels
+and at 100% the top will
+be 5001
+pixels fine now one thing to notice here
+is the total height of the container is
+500 pixels and the animation will go
+till 51 pixels save it now move to the
+browser and here you can see the car is
+still not moving so we have made a
+mistake here so here's a mistake we have
+to write here move only save it now and
+here you can see the animation is going
+swiftly now so the car starts from 0
+pixel and goes till 51 pixel so it will
+happen in in finitely because we have
+used the infinite inside the animation
+property what we'll do next is we'll do
+the same for red car as well fine so
+here you can see we have a red car the
+ID is red car for this so what we'll do
+is we'll write here HH red car and we'll
+start styling this red car as well the
+height will remain the same the height
+will be 100 pixels and then we have the
+width the width will be 130 pixels for
+this car as well the background color
+will be red because the car color is
+also red Position will be relative for
+this as well the top will be 250 pixels
+let's say and the left will be 130
+pixels fine now what we are doing here
+is we are taking the left as 130 pixels
+why so because what we want is we want
+the car to be present at 130 pixels away
+from from the left corner of the box so
+that's why we have written 130 pixels
+over here inside the left property now
+the next thing we'll right here is text
+align and text align will be
+sent fine we'll do the same thing for
+red car as well here we'll write here
+red car
+IMG we have to write here hash as well
+now inside this we'll Define the height
+of this image we'll write here height as
+100 100 pixels
+fine save it now go to the browser and
+here you can see we have a red and blue
+car over here now the Box seems to be a
+little bit less wide for these two cars
+so what we'll do is we'll write the
+width here is 390 pixels so that it will
+be divided equally in three parts save
+it now and here you can see now this box
+looks totally fine we have a red car
+present in the center we can move it to
+the left and to the right so we are done
+with styling these three images next up
+we have to style the result part as well
+right so here you can see in this
+particular game we have a card over here
+with a different background the game
+over color is white and this color is
+gray I guess the button color is black
+and the restart color is sky blue fine
+so we have to keep all these things in
+mind we have to style this box as well
+so what we'll do is we'll write here
+result and inside this we'll write
+height height will be 200 pixels for
+this box then we'll write
+here width and width will be 400 pixels
+so we want a rectangle for this next up
+we'll write here background
+color so let's define the RGB value the
+RGB value for this particular color is
+231
+comma 105 comma
+105 that's because we want to make the
+exact same game so that's why we are
+using the RGB values here save it now
+move to the browser and here you can see
+we have the game over card over here and
+the game over color is black and the
+card color is pinkish we can say now
+we'll move to a CSS file we'll write
+here margin and the margin will be
+one ram
+Auto next up we'll write
+here border radius so we want the box to
+be a little bit round from the edges so
+for that we'll write here border radius
+is 20
+pixels and then we
+have font size is 30 pixels for game
+over then we'll write
+here text we want to align the text at
+the center of this
+box game over color will be white fine
+so we'll write here white and we are
+done with it save
+it and here you can see we have a box
+over here we have a game over card over
+here now what we want is we want to hide
+this thing right so for that we have to
+write here display as none save it now
+and you can see we don't have this game
+over box over here here anymore now
+moving back to our CSS file what we'll
+do is we'll remove this particular
+statement for now save it and here's a
+box again we'll add this property later
+so for now what we'll do is we'll write
+here score now what we have to do is we
+have to write here
+font
+size as 2.2 RM I hope you guys must have
+served first for the ram keyword now
+we'll discuss this keyword again in the
+next video so for now we'll write here
+color and the color will be let's say
+take any color of your choice so we'll
+write here
+gray or we can say let's take Golden Rod
+I don't know which color is it but let's
+take it once save
+it and you are not getting anything over
+here because we haven't find it yet so
+we'll see it later now the last thing we
+have to do here is with the button right
+so we'll use the button ID for that
+we'll write here BTN and inside this
+we'll write pedding so pedding will be
+0.5
+R
+and one RM for left now we'll write here
+border radius for this button is 20
+pixels because the button is a little
+bit round at the
+Corners next up we'll write
+here border is none we don't need any
+border for this particular button then
+we'll write here background color is
+let's
+say
+black we'll write here the color
+is which color we should take let's take
+this one now we'll write here margin top
+so let's say the margin top will be 10
+pixels next up we'll write here cursor
+so cursor will be pointer fine cursor
+will change to pointer on taking it over
+the restart button we'll write
+here text transform we want to transform
+this text to
+uppercase fine save it now move back to
+the browser and here you can see we have
+a game over over here but this tag is
+not working for
+now so let's see what's wrong
+here okay so we have to write here
+restart save it
+now and here you can see we have a
+button over here we have a restart
+button over here the button looks a
+little bit small so what we have to do
+is we have to do some styling change
+here we'll take let's say the font size
+so we'll write here
+font size is let's say 25
+pixels save it now and here you can see
+the button is quite right
+now so we are done with it what we'll do
+is we'll add the display property here
+we'll write here display none save
+it and the box is gone fine now we are
+done with the CSS part as well now we
+have to make this game responsive only
+that will do with the help of JavaScript
+so let's move on to the Javascript file
+first here's a JavaScript file now we'll
+access all the HTML elements here in the
+Javascript file because we need them so
+what we'll do is we'll write here where
+blue car is equals to
+document. get element by ID so the ID
+for blue car
+is blue
+car we'll write here
+where red car
+document dot get element by ID so the ID
+is red car for the red one next up we'll
+write here where a result we'll get
+result as well we'll write here document
+dot get element by ID and inside this
+we'll write result fine we are accessing
+all the elements with the help of get
+element by ID method now what we'll do
+is we'll write here where score
+so the score will write here document.
+get element by ID and again we'll write
+here
+score then we'll write here
+where game document dot get element by
+ID the ID for game is game
+fine we'll take another variable here
+let's say the variable name is variable
+counter to count the number of cars
+passing through the red one to get the
+final score basically so we'll
+initialize the value as zero for this
+counter variable now the next thing we
+have to do is to make the blue car move
+randomly in three positions right for
+that we'll use math. random function
+again we have used this function
+previously in the Flappy Birds game so
+we'll write here blue card. add event
+listener We'll add an event so we'll
+write
+here animation I ation so this is a
+predefined event listener in JavaScript
+so for this we'll create a function here
+we'll write here
+function and we'll Define the function
+as well fine so we'll take a variable
+let's say
+random and we'll write here math dot
+floor math.
+random so this is a predefined function
+in JavaScript we'll write here into
+three and right here we'll write 130
+fine why 130 because 130 is the default
+width which we have taken in a CSS file
+so we'll write
+here blue car dot
+style dot
+left is
+equals to the value of of random in
+pixels
+fine then we'll increase the value of
+counter after every car passes through
+after every blue car passes through the
+red one save it and move to the browser
+you can see the blue car has three
+positions over here can either come from
+the left right or from the center any
+random number from these three numbers
+will get multiplied to 1 30 so we have
+three positions only any random position
+let's say the position is one it means
+that the car is present at the left so
+that particular number will be
+multiplied with 130 and the left value
+of the blue car will change to that
+particular number the logic is simple if
+the number randomly taken is two then
+the random value will become 260 in that
+case and the blue car will have a
+distance of 260 pixels from the left
+side of the container
+so this was the reason behind taking the
+width of container as 390 I hope you
+guys can relate to it now so let's move
+ahead and write the code for moving the
+red car as well so you can see the red
+car is not moving as of now we'll make
+it move so let's write the code for that
+as well we'll move to a Javascript
+file and we'll write
+here window. add event listener We'll
+add an event here
+we'll write
+here key
+down and we'll Define a function here
+fine so we'll take a parameter inside
+this
+function now what we'll do is we'll
+write here
+if e
+do key
+code is equals to is equals to
+39 then what will happen is
+we'll take a variable where red car
+left is equals to we'll write here
+parent window
+dot
+get computed
+style we'll get the computed style of
+red
+car and we'll write here get
+property value fine we'll take the
+property value here as we'll take the
+left value so we'll write here
+left and we'll write here
+if red car
+left is less than 260
+pixels
+then red
+car dot style do
+left will change to red car
+left plus
+130 and the value will change to pixels
+as well fine now we'll write the code
+for another key as well so we have to
+add two keys over here what we'll do
+is we'll write here
+if e do key code
+is equals to is equals to
+37 this key code over here represents
+the left and the right arrow key of our
+keyboard so that's why we are using here
+key code AS 37 and 39 39 is the default
+key code for the right arrow key and 37
+is for the left Arrow key so what we'll
+do here is we'll write here where a red
+car left is equals to parcent so what
+we'll do is we'll copy this from here
+and we'll paste it here
+fine this will remain the
+same now what we'll do is we'll write
+here if red car left is greater than
+zero then it will change the style so
+we'll write
+here this and here what we'll do is
+we'll change the value of red car to Red
+Car left minus 130 pixel so we are
+moving the car to the left or to the
+right
+fine now we are done with it now save it
+and move to the browser and now here you
+can see we are able to move the red card
+to the left or to the right as well fine
+now we are good to go so the next thing
+we have to do is to write the code for
+Collision of these two cars or we can
+say the function for game over as well
+fine so let's head back to our
+Javascript file and we'll create another
+function over here so what we'll do is
+we'll take certain values and pass them
+through some conditions if any of the
+requirements fail then the game is over
+the logic is simple let's implement this
+logic so what we'll do is we'll write
+here set interval so we'll use the set
+interval method and we'll write
+here function so let's say the function
+name
+is game over
+will now Define the body of this
+function now let's discuss some things
+what we need is we need the top property
+of blue car we need the left property of
+blue car and then we need the left
+property of a red car fine so we'll take
+three variables we'll write here
+where blue car
+top then we'll take
+where blue car left and then we'll take
+where red car
+left fine so we have these three
+variables over here now what we'll do is
+we'll write we'll get these values first
+so we'll again use the get computed
+style property and the get property
+value we'll write here par and inside
+this we'll write window dot get computed
+style so the computed style is of the
+blue car then we'll write here get
+property value we'll write
+here top because we need the Top Value
+we'll do the same thing for blue car
+left and for red car left fine so we'll
+change the values here we'll write here
+left for the blue car left and we'll
+write
+here left for the red car fine we are
+good to go we have these three variables
+and we have the property
+right we have the value of these
+particular properties now we'll write
+here certain conditions we'll use the if
+statement again we'll write here
+if blue car left is equals to Red Car
+left let's replace this left with a
+capital
+l and we'll write here and then blue
+card
+top is greater than 2
+250 and blue car top is also less than
+450 so we need the blue car in between
+250 and 450 for Collision right what
+we'll do
+is we'll write here result
+dot style dot display so we'll change
+the display property of a result element
+we'll write here is equals to block now
+we need a game over C over the game and
+we'll also change the display property
+of game as well we'll write here game
+dot style.
+display as none fine we don't want the
+game for this now the next thing we'll
+do is we'll write here score so for that
+we'll write here score do inner
+HTML is equals to let's say it says your
+score four
+is and we'll write here dollar we have a
+variable counter right we'll print the
+value of counter here fine now there is
+an error over here you can see so what
+we have to do is we have to put them
+inside this we'll not use the double
+inverted commas we'll use this instead
+and you can see the error over here is
+gone now so we are good to go now after
+that we'll change the value of counter
+to zero again in case the user wants to
+restart the game the value of counter
+will start from zero again now we want
+to call this function after a certain
+interval of time so we'll write here
+10 and we are good to go so the set
+interval method will be called after 10
+milliseconds now the same thing we did
+for Flappy Birds as well so some
+conditions here are almost same and the
+output is also the same as we had for
+Flappy
+Birds now save it and you can see on the
+browser that our game is completely fine
+now it's working totally fine so we can
+play this game now let's play it once so
+here you can see we can move our red car
+and the blue car is coming randomly from
+any of the three directions it means
+that it can either come from the left or
+from the center or from the right fine
+on Collision you can see it shows that
+the game is over and the score is 13 now
+on clicking the restart button we can
+restart the game the page reloads again
+and it's working totally fine now we
+have to create this particular game and
+we can see that the game is completely
+done we can play this game anytime and
+it's fun as well of course so we can do
+certain things with the graphics as well
+I want you guys to do that thing and let
+us know in the comments below what else
+can we to make this game more appealing
+to the user well that's a wrap on this
+video on how to create a car racing game
+with the help of HTML CSS and JavaScript
+I hope you guys must have got a good
+idea about how to use these Technologies
+to create a game of your own and then
+enjoy playing it if you still have any
+doubts related to any of the topics we
+have covered in this particular video
+then please feel free to drop them down
+in the comment section below and a team
+of experts will definitely answer them
+for you so thank thank you so much for
+being here today we'll see you next time
+until then stay safe and keep learning
+with simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

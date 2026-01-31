@@ -1,0 +1,242 @@
+hello and welcome to connect my name is
+Erica sweet and I'm a program manager on
+the visual C++ team this video will
+highlight what's new in Visual Studio
+2019 for C++ developers we've worked
+hard to build a story of cross-platform
+development and ensure that visual
+studio supports developers who are
+targeting more than just Windows in this
+video I will continue to build on this
+story and use our new start window
+experience to open a cross-platform C
+make application that runs on both Linux
+and Windows demonstrate our improved
+Linux targeting experience and highlight
+new features that push the boundaries of
+individual and team productivity towards
+the end of the video I will invite my
+coworker Augustine to join me as we demo
+more collaborative features to help make
+every C++ developer not just windows
+developers more productive when you
+launch Visual Studio 2019 you'll be
+prompted with a new start window
+experience to the left you can still
+view your recently open projects and
+files and to the right you have four
+entry points to viewing your code you
+can clone or check out code from an
+online code repository open a local
+project or solution file open a local
+folder which supports any folder
+containing C++ code without generating
+visual studio project and solution files
+or create a new project the new project
+dialog has also been simplified so you
+can now filter just for C++ templates
+filter by target platform or by project
+type in this demo I'm going to be
+running a cross-platform C make
+application called pong that runs on
+both Linux and Windows so if I were
+starting from scratch I could search for
+the C make project template but I
+already have saved a copy of the project
+locally so I'm going to open it using
+the open folder experience Visual Studio
+has native support for seat make which
+means that you can open any folder with
+a C make list text file without ever
+generating visual studio project and
+solution files Visual Studio 2019 also
+supports a C make target C which is a
+more seemed eccentric way of viewing
+your file structure organized by targets
+and allows you to build a single target
+at a time run code analysis on one
+target or run code analysis on a single
+file of a time to name a few options
+up here you can manage all of your
+configurations for a cross-platform
+application so let's first get this
+working on Linux if I navigate to the
+connection manager using the new search
+experience I can manage all of my
+connections to remote machines I already
+have a SSH connection set up to my local
+Linux VM but here I could easily add a
+new one all I require for a remote build
+is an SSH connection a working C++ tool
+chain on the remote machine and if
+you're using C m'q than a relatively
+recent version of C make also on the
+remote machine to build using C make on
+any machine you need to pass your
+toolchain file as a seam it command-line
+argument which we support as a part of
+our C make settings JSON file I
+generated this using VC package our
+cross-platform package management system
+I did this because pong has a dependency
+on the library SF ml which pulls in
+several other dependencies and VC
+packaged managed all of this for me so
+now that I have set up my remote
+configuration and set up my remote build
+when I hit run my application will
+automatically be launched on my remote
+machine so I will hit run and launch my
+Linux VM
+and when the builds done I will see pong
+ah
+as a part of the C++ development with
+Linux workload we also support
+intellisense for headers on remote
+connections so here you can see if I
+hover over you can see headers being
+pulled from Linux connections are
+directly from a Linux machine which
+enables intellisense exactly as if I
+were working on my remote machine so now
+let's get things set up for Windows so
+I'm going to switch over to my Windows
+configuration and make a few edits to
+the code so I'll go down here to the
+main function and type sleep
+here I see these purple squiggles which
+is actually platform-specific
+intellisense warning me that what I just
+typed is undefined for another one of my
+configurations so here specifically
+windows H and the sleep function are
+undefined in my linux configuration
+visual studio 2019 also has a new thing
+called intelecom for C++ developers and
+Teleco trains using numerous real-world
+projects on github that have over a
+hundred stars to give you the best
+possible suggestions for this reason it
+gives great suggestions for commonly
+used libraries like STL which we will
+take a look at now so here you can see
+that Visual Studio is giving me unique
+suggestions based upon the context of my
+if statement even if I were to continue
+coding and try to sort my vector
+I would be prompted with V begin and
+then the end and now if I were to go
+back and change this to see begin again
+then I would be prompted instead with C
+end and this shows shows that my
+suggestions are changing based upon the
+context of my code and this is about
+more than just reducing the number of
+keystrokes but is really about helping
+developers understand their workflow and
+understand oh this API gets called next
+or this API gets called from within the
+context of an if statement C++
+developers can also lever it now
+leverage intellisense within class and
+function templates so you can see here
+within this template that I'm not
+getting member lists intellisense
+but if I go up here and I specify that
+the parameter T should be a player a
+type player then the member list prompts
+the relevant suggestions like get name
+and get score if I hover over P I can
+also see that P is a player
+so now let's run the program on Windows
+so it looks good but actually as I'm
+playing the game
+I realize that my paddle won't go all
+the way down on the left-hand side it
+stops a little bit early so I'm going to
+try to figure out what's going on but
+actually I'm going to call in a
+co-worker to help me and we're gonna use
+a live share which is a way for me to
+instantly share my codebase without him
+having to clone a repo or set up his
+local environment so I'm gonna start a
+live share session by clicking the live
+share and generating a link that I will
+pass using Skype over to my coworker
+August in who's gonna come help me join
+this debugging session and diagnose my
+code
+hi Erica let's see if I can help so
+right now I'm actually on a linux
+machine and I'm running Visual Studio
+code but that's not a problem I went
+ahead and I opened your life share link
+and now I'm taking a look at taking a
+look at your code so it looks like I you
+have this file opened up on CPP and it
+looks like you're currently debugging
+with the cursor pause here at the
+beginning of the main function now I
+actually have full intellisense in this
+codebase because I'm basically getting
+the intellisense from your machine so I
+can actually run operations like find
+all references go to definition and I
+don't even have all the tools installed
+that you have installed on your machine
+I'm just getting all this information
+from your machine in this live share
+session and that actually applies to
+debugging as well so I can actually go
+ahead if I would like and actually step
+through a few lines of code and it's
+running things through the debugger on
+your machine and yet I can still control
+things from my end so that's actually
+pretty cool
+but now that I think about it your
+problem here is that the paddle doesn't
+go all the way down to the bottom of the
+screen and since this is a graphical
+application we can't really just step
+our way through things in order to fix
+the problem so actually let's go ahead
+and just stop debugging for a second and
+I think I remember where roughly the
+code for controlling that logic is I'm
+gonna go ahead and go to line 140 I
+think that's somewhere near there and
+okay it looks like we have an if
+statement here checking if the game is
+currently going on and I also see here
+some logics some more if statements
+checking if the user is pressing the up
+arrow key or the down arrow key now I
+know that the problem is happening when
+you try to go to the bottom of the
+screen so I'll look under the down arrow
+key so let's take a look at things here
+it looks like this number is really
+quite a bit too high I'm gonna go ahead
+and lower it to -5 what this is seems to
+be doing is that it's preventing the
+paddle from getting anywhere near the
+edge of the screen so I think if we make
+that smaller it should fix the problem
+why don't we take a look and see if this
+fixes things
+yeah it seems to be better thanks August
+in glad to help
+I hope you have enjoyed this demo and
+please connect with us to try visual
+studio request features report bugs or
+let us know what you think of the
+product this aka OMS link links to our
+C++ blog and will give you more
+information on everything that I've
+talked about today I have also included
+our Twitter handle for you for you to
+reach out to the C++ team directly
+thanks and please enjoy the rest of
+connect

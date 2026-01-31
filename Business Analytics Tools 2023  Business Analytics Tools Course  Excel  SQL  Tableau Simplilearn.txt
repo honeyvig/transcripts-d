@@ -1,0 +1,4879 @@
+welcome to the world of business
+analytics where data holds the key to
+unlocking success in a corporate realm
+in this comprehensive video course we
+will take you on a transformative
+Journey empowering you with the
+Knowledge and Skills to harness the
+immense power of business analytics
+tools whether you're a business
+professional seeking to make data driven
+decisions or an aspiring analyst eager
+to dive into the world of data this
+course is your gateway to becoming a
+master of business analytics tools
+together we will navigate through a vast
+landscape of cutting its tools and
+explore their capabilities and
+functionalities
+we will delve into popular platforms
+like Tableau power bi and Google
+analytics unveiling their hidden gems
+and advanced features but that's not all
+we'll go beyond the basics immersing
+ourselves into Data visualizations
+statistical analysis predictive modeling
+and data storytelling we will unchart
+these sequels to extracting actionable
+insights from complex data sets
+transforming raw numbers into strategic
+Advantage are you ready to unleash the
+power of data and revolutionize your
+business strategies join us on this
+exhilarating Journey as we demystify
+business analytic tools equip you with
+Real World skills and Empire to make
+data driven decisions that drive success
+let's embark on this transformative
+adventure together having said that if
+you're an aspiring business analyst
+looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simply lens postgraduate program in
+business analysis from cardio University
+in collaboration with Amazon Google and
+Microsoft should be a right option for
+more deep details use the link in the
+description box below with that in mind
+over to our training experts it is no
+surprise that business analytics and
+business intelligence are two of the
+fastest growing markets in the world
+organizations today are generating data
+at a rapid rate there is a need to use
+this business data and make smarter
+decisions
+companies are looking for methods and
+tools to turn business data into
+actionable insights this is where
+business analytics and intelligence can
+help play a critical role business
+analytics is the process of collecting
+analyzing and drawing valuable
+conclusions from vast volumes of data
+available it helps to improve business
+performance through fact-based decision
+making on the other hand business
+intelligence or bi is a technology that
+enables data preparation data mining
+data management and data visualization
+it allows you to analyze data with
+queries and create reports and
+dashboards with the help of charts and
+graphs to be used by Business Leaders
+business analytics and business
+intelligence together create
+capabilities for companies to compete in
+the market effectively consider this
+example
+suppose you sell homemade chocolates
+through an online store business
+intelligence provides meaningful
+insights into the past and current state
+of your business bi tells you that sales
+of your milk chocolate have spiked up in
+Texas the past two weeks so you decide
+to manufacture more milk chocolates to
+keep up with demand business analytics
+asks why did sales of milk chocolate
+Spike up in Texas by scrutinizing your
+website data you learned that most
+traffic has come from a post by a food
+blogger based in Texas who like to make
+chocolate
+this Insight helps you decide to send
+complimentary chocolates to a few other
+well-known food bloggers throughout the
+United States
+using cutting-edge business analytics
+and intelligence tools such as Microsoft
+Excel SQL power bi and Tableau can
+enhance customer experience improve
+efficiency conduct competitor analysis
+and accelerate growth I have always been
+passionate about learning new things and
+improving my teaching skills about five
+years ago I realized that I have a gap
+in my knowledge and to fill the Gap I
+needed to have skill myself I chose
+ingredient my upskilling partner because
+of its comprehensive curriculum and its
+connection with Urdu University
+my name is Carlos vinares
+I live in Lexington in the city of
+Kentucky in the United States
+I am an assistant professor at Midway
+University and I hold a PhD in
+management human resources and
+Leadership
+I decided to opt for the post graduation
+program in business analysis from Silver
+which has helped me a lot in my
+professional and personal life
+I have been teaching having before I
+moved to the United States years ago
+I try to use Excel while teaching
+research classes
+but
+since I only had the basic knowledge
+about it and other business intelligence
+tools it was very difficult for me at
+the beginning but after completing this
+class and learning how to use tools like
+Excel Tableau power bi power query
+problem I feel like it has been a total
+game changer for me now I apply these
+skills everywhere
+which has also helped me a lot in my
+yearly review
+I submitted all my certificates to my
+university and based on that my
+University plans to develop a class
+focus on business analysis and starting
+in fall 2023.
+and I am really excited
+when I finally decide to go for an
+online program I research a lot
+and finally I chose simpreneur and I
+must say it has been a wonderful
+experience
+you see how the business works is
+changing now and you're Skilling
+yourself is quite essential to keep up
+with the change everything works on
+numbers now data is more valuable and
+important than ever so
+I encourage you to keep learning
+and keep growing So currently I am on my
+MySQL workbench let me connect to the
+local instance
+so I'll give my password
+I'll click on OK
+all right so this is my my SQL workbench
+query editor so first we are going to
+learn sub queries let me give a comment
+and write sub queries
+all right
+so first of all let's understand what a
+sub query is so a sub query is a query
+within another SQL query that is
+embedded within the where Clause from
+clause or having clause
+so we'll explore a few scenarios where
+we can use sub queries so for that I'll
+be using my
+database that is SQL underscore intro so
+I'll write my command use SQL underscore
+intro now this database has a lot of
+tables I'll be using the employee stable
+that is present inside SQL underscore
+intro Let me just expand this and you
+can see here we have an employee stable
+so let me first show you
+the contents within this table I'll
+write select star from employees
+let me execute it
+okay you can see here we have the
+employee ID employee name each gender
+there's date of joint Department City
+and salary and we have information for
+20 employees if I scroll down you can
+see there are 20 employees present in
+our table
+so let's see you want to find the
+employees whose salary is greater than
+the average salary
+in such a scenario you can use a sub
+query so let me show you how to write a
+sub query
+I'll write the select statement
+in the select statement I'll pass
+my column names that I want to display
+so the column names I want are the
+employee name
+then I want the department of the
+employee and the salary of the employee
+from
+my table name that is employees
+next I'll use a where condition where
+my salary should be greater than the
+average salary of all the employees so
+I'll write salary greater than
+after this I am going to write my sub
+query
+so I'll give select
+average of salary
+from
+my table name that is employees and I'll
+close the bracket and give a semicolon
+so what it does is
+first it is going to find the average
+salary of all the employees that are
+present in our table
+once you get the average salary number
+we'll use this where condition where
+salary is greater than the average
+salary number
+so
+the inside sub query let me run it first
+if I run this
+this gives you the average salary of all
+the employees which is 75 350 dollars
+now I want to display all the employees
+who have salary greater than 75
+350 dollars so let's run our sub query
+there you go so there are eight
+employees in our table who have a salary
+greater than the average salary of all
+the employees
+all right
+next
+let's see another example
+suppose this time you want to find the
+employees whose salary is greater than
+John's salary
+so if we have one employee whose name is
+John
+let me
+run the table once again
+okay if I scroll down
+you see we have an employee
+as John
+you see this our employee ID 116 is John
+and his salary is sixty seven thousand
+dollars I want to display all the
+employees whose salary is greater than
+John's salary so basically all the
+employees who are earning more than 65
+000 I want to print them
+so let's see how to do it I'll write
+select
+I want the employee name comma the
+gender of the employee
+I also want the department and salary
+from my table name that is employees
+I'll write where
+salary is greater than
+I'll start my
+opening bracket inside the bracket I am
+going to give my inner query that is
+Select
+salary
+from employees
+where
+the employee name is John
+So within single quotations I'll give
+John as my employee
+and end with a semicolon
+so
+let me first run my inner query
+so this will give us the salary that
+John has which is sixty seven thousand
+dollars now I want the employees who are
+earning more than sixty seven thousand
+dollars
+so let's run our
+sub query
+okay so you can see
+12 rows returned which means there are
+12 employees in our table who are
+earning more than sixty seven thousand
+dollars you see here all these employees
+have a salary greater than sixty seven
+thousand dollars
+okay
+now
+you can also use sub queries
+with two different tables so suppose you
+want to display some information that
+are present in two different tables you
+can use sub queries to do that
+so
+for this example we'll use
+a database that is called classic models
+you can see the first database
+so let me use this database called
+classic Model so I'll write use classic
+models
+now this database was actually
+downloaded from the internet there's a
+very nice website I'll just show you the
+website me so this is the website that
+is MySQL tutorial.org
+you can see here they have very nice
+articles blogs from where you can learn
+MySQL in detail so we have
+downloaded the database that is classic
+models from this website you see here
+they have a MySQL sample database if you
+click on this
+it will take you to the link where you
+can download the database so they have
+this download link which says download
+MySQL sample database and the name of
+the database is classic models all right
+so we are going to use this classic
+models database throughout our demo
+session if I expand the tables
+section you can see there are a lot of
+tables that are present inside this
+classic models database we have qriket
+customers as employees office there's
+orders order lines and many more
+so for our sub query we'll be using two
+tables that is order details and
+products table first let me show you the
+content that is present inside
+the products table first
+if I run this
+you see here it says 110 rows return
+which means there are 110
+different products that are present in
+our table which has the product code the
+product name
+product line we have the product vendor
+description quantity in stock Buy price
+MSRP
+the other table we are going to use is
+order details which has the details of
+all the orders
+let me show you
+the records
+or the dtl Stables has okay so there are
+thousand records present in this table
+you have the order number the product
+code quantity ordered price of each item
+you have the order line number as well
+okay
+now
+we want to know the product code the
+product name and the MSRP of the
+products whose price of each product is
+less than hundred dollars for this
+scenario we are going to use two
+different tables and we are going to
+write a sub query
+okay
+so
+if you see here in the order details
+table we have a column called price each
+I want to display the product code the
+product name and the MSRP of the
+products which have a price of each
+product less than hundred dollars
+so the way I'm going to do is
+I'll write select
+product code comma
+product name
+now one thing to remember
+that this product name is actually
+present inside our products table
+and product code is present in both the
+tables that is production order details
+here you can see this is the product
+code column
+comma
+MSRP which is present inside the product
+stable again
+from my table that is
+products
+where
+I'll write
+product
+code
+I'm going to use the in operator
+next I'll write my inner query that is
+Select
+product code
+from my table
+order details
+where
+my price of each product
+is less than 100 dollars
+let me run this
+okay so you can see there are total 83
+products in our table which have
+a price less than hundred dollars you
+can see the
+price here
+okay
+now we learn another Advanced Concept in
+SQL which is known as stored procedures
+I'll just give a comment saying
+stored procedure
+okay
+so first let's understand what is a
+stored procedure
+a stored procedure is an SQL code that
+you can save so that the code can be
+reused over and over again
+so if you want to write a query over and
+over again save it as a stored procedure
+and then call it to execute it
+so in this example I want to create a
+stored procedure that will return the
+list of players who have scored more
+than six goals in a tournament
+so I have a database called SQL
+underscore IQ
+these are a few databases that I've
+already created so this database has a
+table called players if I expand the
+tables option you see we have a table
+called players and you can see the
+columns player ID the name of the player
+the country to which the player belongs
+to and the number of goals each player
+has scored in a particular tournament
+so I'll write a stored procedure that
+will return the list of top players who
+have scored more than 6 goals in a
+tournament
+so first of all let me Begin by
+using MySQL underscore IQ database
+will run it
+so now we are inside the SQL underscore
+IQ database
+let me
+select
+star from players to show the
+values that we have in the players table
+you can see there are six players in our
+table
+we have the player ID the names of the
+players the country to which these
+players belong to and the goals they
+have scored
+so I'll write a stored procedure
+so the stored procedure syntax is
+something like this it should start with
+a delimiter
+okay
+in the delimiter I'll write
+Amberson ampersand
+next I'll write
+create
+procedure
+followed by
+the procedure name let's say amount to
+name my procedure as top underscore
+players
+next statement is begin
+after begin I'll write my select
+statement
+I want to select the name of the player
+the country
+and the goals
+each player has scored
+from my table that is
+players
+where
+I'll write goals is greater than
+six
+will give us semicolon
+then
+I'll end my
+procedure with a delimiter that was
+double ambison
+next
+I'll write
+delimiter
+and give
+a semicolon
+now the semicolon suggests
+this is a default delimiter
+and there should be a space
+okay
+now let's run our stored procedure
+there you go so you have successfully
+created our store procedure now the way
+to run a store procedure is
+you need to use the
+call method and give the procedure name
+that is top underscore place in our case
+with brackets and a semicolon
+let's execute it
+okay there is some problem here
+so we made a mistake while creating a
+procedure the name of the column is
+goals are not goal
+let me create that procedure again
+okay it says the procedure top
+underscore player already exists let's
+just
+edit the procedure name instead of top
+player we'll write it as top players and
+similarly we'll edit here as well
+now let's create it again
+okay now to
+call my procedure I'll write call space
+followed by the procedure name which is
+top underscore players
+if I run this you can see we have two
+players in our table who have scored
+more than six goals so we consider them
+as the top layers in a particular
+tournament
+all right
+now there are other methods that you can
+use while creating a stored procedure
+one of the methods is by using an in
+parameter
+so when you define an in parameter
+inside a stored procedure the calling
+program has to pass an argument to the
+stored procedure
+so I'll give a comment
+stored procedure using in parameter
+all right
+so for this example I'll create a
+procedure that will fetch or display the
+top records of employees based on their
+salaries
+so if you have a table
+in our SQL underscore IQ database which
+is called employee details
+I am going to use this table you can see
+we have the name of the employee the age
+sex then we have the date of joint City
+and salary using this table I'll create
+a procedure that will fetch or display
+the top records of employees based on
+their salaries
+and we'll use the in parameter so let me
+show you how to do it I'll write
+delimiter
+this time I am going to use
+forward slash
+I'll write
+create
+procedure
+followed by the procedure name let's say
+SD for stored procedure
+sort by
+salary is the name of my procedure
+and inside this procedure I'll give my
+parameter
+in
+I'll create a variable VAR and assign a
+data type integer
+then I'll write begin
+followed by my select statement where
+I'll select the name
+each
+salary
+from
+my table name that is
+EMP details or employee details
+I am going to order this by
+salary
+descending
+and
+I want to display
+limited number of
+records so I'm using this
+limit keyword and my variable VAR which
+I
+created here
+I learned my select statement
+I'll end my stored procedure with
+forward slash
+and I'll go back to my default delimiter
+that is semicolon
+all right
+so let me
+run this
+there should be a space here all right
+so let's run this
+okay you can see we have successfully
+created our
+second stored procedure which is sp
+underscore sort by salary
+now you can also check whether the
+stored procedure was created or not here
+you have an option to see the stored
+procedures let me just refresh this
+and you can see we have
+three stored procedures that we have
+created so far one is sp underscore sort
+by salary
+the other two were top underscore player
+and top underscore players
+okay
+now let's call our stored procedure I'll
+write call
+space followed by the stored procedure
+name which is sp underscore
+sort
+by salary
+and inside this I'll give my parameter
+which was actually VAR and this VAR
+we have used in limit
+let's say I want to display only the top
+three records of the employees who have
+the top three highest salaries
+okay so let me run it
+there you go so Amy Sarah and Jimmy
+where the top three employees who have
+the highest salary
+so you saw how you could use the in
+parameter in a stored procedure
+we created a variable and that variable
+we used in our select statement and we
+called our stored procedure and passed
+in that
+variable
+okay
+now
+instead of a select statement inside
+stored procedure you can also use other
+statements let's say update
+so I'll create a stored procedure to
+update the salary of a particular
+employee
+so in this procedure instead of Select
+statement we'll use the update command
+in this example we'll use the in
+operator twice
+so let me show you how to do it
+I'll write my delimiter first which is
+going to be forward slash then I'll
+write create
+procedure
+my name of the procedure is going to be
+update salary
+and inside the update salary name
+I'll write in
+and then
+temp
+underscore name which will be a
+temporary name variable and the type
+I'll assign is worker 20
+I'll again use my in parameter I'll
+write in
+next
+my other variable would be new
+underscore salary
+and the data type would be float
+I'll write begin
+and write my update
+command or update statement I'll write
+update
+table name that is employee details
+set
+salary
+equal to
+new underscore salary
+where
+name is equal to
+my temporary variable that is temp
+underscore name
+so this is my
+update command and I'll
+end the delimiter
+all right
+so let's run this
+okay we have successfully created our
+stored procedure if I refresh this
+you can see I have my stored procedure
+update underscore salary
+okay now let's see
+first of all I'll
+display
+my
+records that are present inside
+employee underscore details table okay
+so we have six rows of information let's
+say you want to update the salary of
+employee Jimmy or let's say
+Mary
+from seventy thousand to let's say 72
+000.
+or let's say eighty thousand
+so I'll
+call my stored procedure that is update
+underscore salary
+and this time I'm going to pass in two
+parameters the first parameter will be
+the employee name and next with a comma
+I'll give my new salary that I want to
+so my employee name let's say is Mary
+and the salary I want
+to be updated is let's say eighty
+thousand dollars
+I'll give a semicolon
+and I'll run it
+you can see it says one row affected now
+let's check our table once again
+there you go if you see this record
+for maybe we have successfully updated
+the salary to eighty thousand dollars
+now moving ahead
+we learned to create a stored procedure
+using the out parameter so I'll give a
+comment
+stored procedure using out parameter
+okay
+so suppose we want to get the count of
+total female employees
+will create total employees as an output
+parameter and the data type would be an
+integer the count of the female
+employees is assigned to the output
+variable which is total underscore emps
+using the into keyword
+let me show you how to write a stored
+procedure using the out parameter
+so first I'll declare my delimiter
+to forward slash
+I'll write
+create
+procedure
+followed by the procedure name
+it is going to be SP underscore
+count
+employees
+and inside this I am going to give my
+out parameter and the variable name that
+is total underscore
+emps which is total employees and the
+data type will be integer
+next I am going to write begin
+followed by my select statement that is
+Select I want the
+count of total employees
+and the output I am going to put into
+my new variable that is total underscore
+emps
+from my table that is EMP underscore
+details
+where
+sex is equal to
+F which means female
+algebra semicolon
+next I'll end it
+with the TV limiter and I'm going to
+change the delimiter to a default
+delimiter that is colon
+so let me tell you what I am doing here
+I am creating a new stored procedure
+that is sp underscore count employees
+using this stored procedure I am going
+to count the total number of female
+employers that are present in our table
+EMP underscore details so I've used my
+out parameter and I'm creating a new
+variable called total underscore emps
+the data type is integer here in the
+select statement I am counting the names
+of the employees and the result I am
+storing it in total underscore emps
+I have used my wear condition where the
+gender of the sex is female
+so let's run this
+okay so we have created our stored
+procedure
+let's refresh this
+okay you can see we have a new stored
+procedure SP underscore count employees
+now
+to call it I'll write call
+the name of the procedure that is Count
+underscore SP underscore count
+employees
+within brackets I'll pass in the
+parameter as
+at the rate
+F underscore EMP
+will give a semicolon then I'll write
+select
+at the rate F underscore
+EMP as female employees
+okay
+so as is an alias name
+let's run this one by one first I'll
+call my procedure and then we'll display
+the total number of female employees you
+can see in our table we have three
+female employees
+all right
+now with this understanding
+let's move on to our next Topic in this
+tutorial on Advanced SQL now we are
+going to learn about triggers in SQL
+so I'll give a
+comment here
+reverse in SQL
+so first let's understand what is a
+trigger so a trigger is a special type
+of stored procedure that runs
+automatically when an even occurs in the
+database server there are mainly three
+types of triggers in SQL we have the
+data manipulation trigger we have the
+data destination trigger and login
+triggers
+in this example we will learn how to use
+a before insert trigger
+so we will create a simple students
+table that will have the student's rule
+number the age the name and the students
+marks
+so before inserting the records to our
+table we'll check if the marks are less
+than zero
+so in case the marks are less than 0 our
+trigger will automatically set the marks
+to a random value let's say 50.
+so let's go ahead and create our
+table that is
+students
+all right
+so I'll write
+create
+table
+student
+now this table will have the student
+rule number
+the data type is integer
+will have the age of the students
+again the data type is integer we have
+the names of the students so the third
+column would be
+name
+the data type would be variable
+or bearing character
+size I am giving it as 30 finally we
+have the marks as floating type
+so let's create this table which is
+student
+so we have created our table now
+I'll write my
+trigger command
+so trigger command will start with
+delimiter like how our usual stored
+procedures have
+next
+this time I'll write create trigger
+then you need to give the
+name of the trigger that is Mark
+underscore
+let's say verify
+I am going to use a before insert
+trigger so I'll write before insert
+on my table name that is student
+next I'll write for each row
+if
+Nu Dot marks
+is less than zero
+then
+we'll set
+new DOT
+marks equal to 50.
+so this is my
+condition first we'll check
+before inserting if any student has
+marks less than 0 we'll assign a value
+50 to that student because usually the
+marks are not less than 0 in any exam
+I'll write end if
+semicolon and I'll close the delimiter
+so this is my
+trigger command I'll run it
+it says trigger already exists so in
+this case we need to update the trigger
+name let's say
+I'll write marks underscore verify
+underscore
+student for St
+let's run it again
+okay there is an error here because
+in our table the column name is Mark and
+not marks so here we need to change it
+as Mark instead of marks
+all right let's run it
+okay so we have created our trigger
+now
+let me insert
+a few
+records to the student table
+so I'll write insert into student
+I'll write
+values and give the values as
+501 which is the student roll number the
+age is let's say 10
+the name is it's a Ruth
+and the marks is let's say 75 point
+zero
+give a comma we'll insert our second
+student record
+student rule number is 502
+ages 12
+the name is let's say Mike
+and this time I'm purposely giving a
+value of minus 20.5
+give another comma
+we'll insert the Third
+record
+for student rule number 503
+ages 13
+the name is Dave
+and
+let's say the marks obtained by Dave is
+90.
+now we'll insert our final record for
+student number
+504
+these is 10.
+name I'll enter as Jacobs
+and this time again I'm purposely
+giving the marks in negative
+12 point let's say 5.
+close the bracket
+and give a semicolon
+and I'll run my insert statement okay so
+we have inserted four rows of
+information to our student table
+no
+let me run the select query I'll write
+select star from student
+if I run this you see the difference
+there you go
+so originally we had inserted
+for 502 the marks was minus
+20.5 and for 504 for Jacobs the marks
+was minus 12.5
+our trigger automatically converted the
+negative marks to 50 because when we
+created our trigger we had set our marks
+to 50 in case the marks were less than
+zero
+so this is how a trigger works
+now you can also
+drop a trigger or delete a trigger you
+can just write drop trigger followed by
+the trigger name
+in this case our trigger name is
+St
+I'll just paste this here
+and if you run this it will
+automatically delete your trigger
+I give this as a comment
+okay
+now moving on
+now we are going to learn about another
+crucial Concept in SQL which is very
+widely used
+this is known as views
+so views are actually virtual tables
+that do not store any data of their own
+but display data stored in other tables
+views are created by joining one or more
+tables
+I'll give a comment as views in SQL
+okay
+now to learn views I am going to use my
+table which is
+present inside classic models database
+now this database as I mentioned we had
+downloaded
+we had downloaded it from the internet
+so first of all let me write
+use
+classic models so I'll switch my
+database first
+all right now we are inside classic
+models
+so here
+let me show you one of the tables which
+is called customers so I'll write select
+star from customers
+okay
+I missed s here
+let's run it again so this is my
+customer table which is present inside
+classic models database it has the
+contact last name the contact first name
+the customer name customer number we
+have the address State country and other
+information
+now I'll write a basic view command
+using this customer table the way to
+write is I'll write create
+View
+followed by The View name which is cast
+underscore details
+then you write as
+select
+I am going to select a few column names
+from my original customer table which is
+this one so I need the customer name
+let's say I need the phone number
+and the city so you have this
+information here you have the phone
+number and the City
+all right
+I'll write from my table that is
+customers
+if I run this
+my view that is cast details will be
+created
+let's run it there's some error here
+because the name of the table is
+customers and not customer
+I'll give an S and I'll run it again
+all right so you can see we have created
+our view
+and
+to display the contents that are present
+inside our view I can write select star
+from followed by The View name that is
+cost underscore details
+let's run it
+there you go so we have the customer
+name the phone number and the City of
+the different customers that we have in
+our table
+all right
+now let's learn how you can create views
+using joins so we'll join two different
+tables and create a view
+so for that I am going to use my
+products table and the products lines
+table I am talking about the products
+table and the product lines table
+present inside classic models database
+so before I start let me display the
+records that are present inside the
+products table
+let's run it so these are the different
+products you can see here
+now let's see what we have in product
+lines table
+so we have the product line the text
+description and there's some HTML
+description and image
+so
+I'll create a view by joining these two
+tables and will fetch specific records
+that are present in both the tables
+so let me first start by writing create
+View
+followed by The View name that is
+product underscore
+description
+as I'll write
+select
+product
+name
+comma
+then I'll write
+quantity
+in stock
+I also want the MSRP
+now these three columns are present
+inside the products table and next from
+the
+product lines table I want the text
+description
+of the products
+so I'll write from
+products table
+I'll give an alias as p
+followed by Inner join my other table
+that is
+product lines as let's say PL
+on
+the common column that is product line
+so P Dot
+product line
+is equal to
+I'll give a space
+PL Dot
+product line
+okay
+so here we have used an inner join to
+fetch specific columns from both the
+tables
+and our view name is product underscore
+description let us run it all right so
+we have our view ready
+now let me
+View
+or display what is present inside our
+product underscore description
+View
+I'll add select start from
+product underscore description
+let's run it
+there you go so we have the product name
+the quantity in stock MSRP and textual
+descriptions of the different products
+in the table
+okay now there are a few other
+operations that you can perform let's
+say you want to rename a view instead of
+product underscore description you want
+to give some other name so I'll just
+give a comment rename description
+so to rename a description you can use
+the
+rename statement I'll write rename table
+product
+underscore description Which is my
+old name
+I want to change this name to let's say
+I'll give vehicle description
+since
+all our products are related to some of
+the other vehicle so I'll write vehicle
+description
+okay
+let us run it
+all right so here you can see I have
+renewed my
+View
+so here if I just refresh it
+and I'll expand this you can see we have
+the cash details view and we have the
+vehicle underscore description View
+okay
+now either you can view all the views
+from this panel or you can use a command
+let's say
+I'll write display views
+is the comment
+now to show all the views you can use so
+full tables
+where
+table
+underscore
+type is equal to within single quote
+I'll write View
+so this is the command that will display
+all the views that are present inside a
+database
+there is some
+error here let's debug the error
+this should be
+okay so instead of table types it should
+be table type equal to view
+let's run it
+you can see the two different views that
+we have one is customer details another
+is vehicle underscore description
+okay
+now you can also go ahead and delete a
+view
+so that you can use the drop command
+so I'll write drop
+view followed by The View name let's say
+I want to delete
+customer underscore details or cast
+underscore details view I'll write draw
+View cast underscore
+details
+let's run it
+you can see
+here we don't have the custom details
+view anymore
+all right
+now moving to our final section in this
+demo
+here we will learn
+about Windows functions
+the windows functions were Incorporated
+in MySQL in the 8.0 version
+so Windows function in MySQL a useful
+applications in solving analytical
+problems so using the employees table
+present inside my SQL underscore intro
+database
+so we'll find the total combined salary
+of the employees for each department
+so first let me switch my database to
+SQL underscore
+into database
+I'll run it okay
+I'll display my table
+that is employee
+so here we have 20 employees in our
+table
+using this table
+we are going to find the combined salary
+of the employees for each department so
+we'll partition our table by department
+and print the total salary and this we
+are going to do using
+some windows functions in MySQL
+so I'll write
+select
+I want the employee name
+the age of the employee
+and the department of the employee
+comma
+next I'll write
+the sum of salary
+over
+I want to partition it by
+Department
+so I'll write Partition by Department
+which is Dept
+and I'll give an alias as
+total salary
+so that it will create a new column with
+the name total salary
+from my table that is employees
+the output will be a little different
+this time
+let's execute it and see the result
+there you go so here we have created
+another column in our result that is
+total salary and for each of the
+employees and the respective departments
+you have the highest salary so in
+finance the highest salary of one of the
+employees was
+155 000 dollars
+similarly if I come down we have the
+highest salary from HR if I scroll
+further we have the highest salary from
+it marketing product sales and the tech
+team
+all right
+now we'll explore
+a function which is called row number
+now the row number function gives a
+sequential integer to every row within
+its partition
+so let me show you how to
+use the row number function I'll write
+select
+row underscore number function
+over
+my
+column would be
+salary so I'll write order by salary
+I'll give the
+Alias as ronum
+we give a comma
+and I want to display the employee name
+and the salary of the employee
+from my table that is employees and I'll
+order by
+salary
+so let's see how our row number function
+will create
+sequential integers okay you can see
+here we have a ronum column and we have
+successfully given row numbers to each
+of the records you can see it starts
+from 1 and goes up till 20.
+okay
+now this row number function can be used
+to find duplicate values in a table
+to show that first I'll create a table
+I'll write create table
+let's say I'll give a random name that
+is demo
+and let's see we have in this table the
+student ID which is of type integer and
+we have the student
+name
+which is of type worker
+the size is 20. I'll create the small
+table with a few records
+let's create this table first
+now we are going to insert a few records
+to our demo table so I'll write insert
+into
+demo
+values
+I'll give 101
+the name is
+Shane
+give a comma
+I'll insert the second student name 102
+the name is Bradley
+give a comma
+this time
+for one zero three we have
+two records
+let's say the name of the student is
+hereat
+give a comma I'll copy this
+and we'll paste it again so we have
+duplicated one zero three
+next we have one zero four
+the name of the student let's say is
+Nathan
+then again let's say for
+the fifth student which is Kevin we have
+two records
+I'll copy this
+and I'll paste it here
+let me give a semicolon and we'll insert
+these records to our table demo
+all right
+now
+let me just
+run this table for you I'll write select
+star from demo
+if you see this we have a few
+information that are duplicated in our
+table
+that is for student id103 and student ID
+105.
+now I am going to use my
+row number function to find the
+duplicate
+records present in my table I'll write
+select student underscore ID comma
+student underscore name
+I'll give another comma and write
+Rue underscore number
+over
+within brackets
+I'll write partition
+by
+St underscore ID
+comma
+St underscore name
+okay
+then I'll write
+order by St underscore ID
+close the bracket I'll give an alias as
+runum
+from my table that is demo
+let's just run it
+you can see here
+okay
+let me just
+delete n from here and do it again
+all right now if you see here there is
+just one student in the name Shane we
+have one student in the name Bradley but
+here if you see for herath
+the second record it says to which means
+there are two records for hirath and if
+I scroll down there is one record for
+Nathan and there are two records for
+Kevin which means Kevin is also repeated
+okay
+now we are going to see another Windows
+function that is called rank function
+in MySQL so the rank function assigns a
+rank to a particular column
+now there are gaps in the sequence of
+rank values when two or more rows have
+the same rank so first of all let me
+create a table
+and the name of the table would be a
+random name will give it as let's say
+demo one
+and it will have only one
+column let's say variable a of type
+integer
+we'll create this table first okay
+now let's go ahead and insert a few
+records to our
+table which is demo one so I'll write
+value
+one zero one
+zero two
+let's say one zero three is repeated
+I'm doing this purposely so that in the
+output you can
+clearly distinguish what the rank
+function does
+we have 1 0 4
+1 0 5
+we have one zero six
+and let's say 106 is also repeated
+finally we have
+one zero seven
+okay
+let me insert these values to my table
+that is demo one okay this is done
+now
+if I write
+select
+VAR underscore a
+and use my rank function I'll write rank
+over
+then I'll
+order by my variable that is VR
+underscore a
+as
+an alias name let's say test rank
+from
+my table that is demo one
+let me execute this and show you how the
+rank function works
+now if I run this there you go
+so here if you mark
+so for variable a101
+the test rank is one for one zero two
+the test time is 2 but
+for this value which is 1 0 3 the test
+rank is repeated because there was a
+repetition of one zero three
+so we have skipped the rank 4 here for
+104 the rank is 5 now for one zero five
+the rank is 6 now
+106 again since the record was repeated
+twice we have skipped the eighth Rank
+and
+our rank function assigned the same
+value which is 7 for 106 and for the
+last value one zero seven the rank is
+nine
+all right
+now moving ahead we'll see
+our final Windows function which is
+called first value
+so first value is another important
+function in MySQL so this function
+Returns the value of the specified
+expression with respect to the first row
+in the window frame
+all right
+so what I'm going to do is
+I am going to select
+the employee name
+the age and salary
+and I'll write
+first underscore
+value which is my function and pass in
+my employee name
+and then I'll write over
+order by
+my
+column that is salary descending
+I'll give an alias as highest underscore
+salary
+from my table that is employees
+so let me run this and see how the
+first underscore value function works
+all right so in our table
+Joseph was the employee who had the
+highest salary which was hundred and
+fifteen thousand dollars so
+the first value function populated the
+same
+employee name throughout the table you
+can see it here
+now you can also use the first
+underscore value function
+over the partition
+so let's say you want to display the
+employee name who has the highest salary
+in each department so for that you can
+use the partition
+I'll write select EMP underscore name
+comma
+I want the department
+and the salary
+comma
+I'll use my function that is first
+underscore
+value
+followed by
+the name of the employee inside my first
+value parameter
+I'll write over
+here I am going to use partition
+I am going to partition it by
+department since I want to know the
+employee name who has the highest salary
+in each department
+and I am going to order by
+salary descending
+and I'll give my Alias again as highest
+salary
+from
+my table that is employees
+so let's run this and see the difference
+in the output okay
+so as you can see here
+we have
+the employee who had the highest salary
+from each department so for freelance
+Jack had the highest salary from HR it
+was Marcus similarly in it it was
+William
+if I scroll down for marketing it was
+John a product it was Alice who had the
+highest salary similarly in sales we had
+Joseph
+and in Tech we had Angela so this is how
+you can use the first underscore value
+function using partition
+all right
+so that brings us to the end of this
+demo session on our tutorial
+so let me just scroll through and show
+you what we did from the beginning first
+we learned about sub queries in SQL so
+we initially wrote a simple sub query
+and then we used our classic models
+database which was downloaded from the
+internet and also shown you the link
+from where you can download this
+database here we used two different
+tables and we performed a sub query
+operation
+we learned how to create stored
+procedures
+so we learned how you can use the in
+operator or the in parameter as well as
+the out parameter in stored procedure
+after stored procedure we learned
+another crucial Concept in SQL which is
+called triggers now triggers are also
+special kind of stored procedures so we
+saw how to write a before insert trigger
+you can see it here
+next
+we learned how to delete a trigger we
+also saw how to work with views in SQL
+so views are basically virtual tables
+that you can create from existing tables
+we also saw how you can use views using
+two different tables and an inner join
+and
+we learned how to display views how to
+rename
+view names
+how to delete a view and finally we
+explored a few Windows function
+let's embark on this transformative
+adventure together having said that if
+you're an aspiring business analyst
+looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simply learn sports.jet program in
+business analysis from Purdue University
+in collaboration with Amazon Google and
+Microsoft should be a right option for
+more details use the link in the
+description box below
+hello and welcome to the business
+analytics with Excel course offered by
+simply learn this video will give you an
+overview about the importance of
+analytics in business today why it is in
+demand among a lot of organizations and
+how you can effectively leverage
+Microsoft Excel for data analytics
+it is quite clear that businesses must
+understand the changing market and
+Trends in social media to stay ahead of
+the competition and drive effective
+business decisions
+what can help businesses maintain their
+Competitive Edge the answer lies in
+business analytics the term business
+analytics refers to the skills
+Technologies applications and practices
+that facilitate continuous iterative
+exploration and investigation of past
+business performance customer data and
+competitive landscape data
+the goal is to gain insights and drive
+business planning therefore business
+analytics empowers businesses to
+automate and optimize business processes
+thereby enabling them to sustain the
+competitive advantage
+Microsoft Excel has extensive analytics
+capabilities to perform statistical
+analysis with the added advantage of
+visibility a flat learning curve and
+good reporting functionalities Excel has
+become the tool of choice to start your
+data analytics Journey
+did you know Excel offers intuitive
+analytics features such as find connect
+and shape to model and analyze a
+company's data
+today Excel comes within memory
+technology that makes it easily
+compatible with millions of bytes of
+data enabling companies to perform the
+necessary analysis without being
+dependent on Specialized Solutions
+additionally features such as power
+business intelligence including
+powerpivot power query Power view power
+maps and so on easily integrate with
+Excel
+the sandbox-like Excel environment makes
+data exploration and deriving results
+quite easy it includes features to
+perform powerful data analytics
+processes with just one click instead of
+using a complex set of formulas pivot
+tables and manual steps with
+increasingly diverse tool sets being
+added to excel it's very clear that
+Excel is the business intelligence tool
+of choice and the future of business
+intelligence workflows and is being
+increasingly preferred by analysts
+reporting professionals and bi people
+Excel provides a grid-like interface of
+rows and columns enabling users to
+organize and format data better the data
+can be simple text numbers dates or
+other supported formats excel's
+libraries span a large range of
+functions from basic math to complex
+statistical formula it cannot be said
+enough that Excel is pivotal to
+organizations as it is the leading
+user-friendly analytical tool
+Amazon an American electronic Commerce
+and cloud computing company has been in
+business for more than 20 years
+it has a user base of millions of
+customers
+ever wondered how Amazon predicts
+exactly what customers want to buy it's
+simple or let's just say it's simple
+business analytics that involves
+understanding the patterns of what
+happened in the past to predict what
+might happen in the future currently
+this is a requirement of every business
+simply learns business analytics with
+Excel course introduces you to excel the
+powerful data analysis tool that will
+enable you to collect data and perform
+an in-depth analysis of the data to
+drive effective impactful business
+decisions
+designed to build upon the concepts and
+procedures in data analytics the primary
+focus of the course is to learn how to
+use Excel to perform multivariate
+statistics and to understand how to
+explore experiment and forecast results
+with excel's histograms pivot tables
+statistics and mathematical formulas and
+charts
+after attending this course you should
+be able to understand business problems
+and data sets perform calculations using
+statistical techniques
+conduct a variety of statistical
+analyzes including regressions
+covariance correlation and testing
+hypothesis
+present and interpret the results of
+statistical analysis
+design Dynamic reports and dashboards
+for business consumption
+this highly engaging course features
+concept videos with exercises which will
+Empower you with hands-on experience the
+course covers introduction to business
+analytics with an overview to different
+types of Analytics
+statistical and mathematical functions
+after each lesson practice and revision
+assessments are provided to reinforce
+the concepts learned the course ends
+with detailed case studies outlining
+real life scenarios
+simply learned will offer complete
+support anytime during the course or
+while you're working on the projects if
+you subscribe to the live virtual
+classroom training you can attend an
+ongoing batch and revisit important
+Concepts to seek help for the projects
+visit the simply learn website
+www.simplylearn.com and click help and
+support at the bottom of the page to
+submit queries you can also speak
+directly to the support staff with the
+simply talk or live chat option so are
+you ready to begin
+happy learning
+hello and welcome to the lesson
+formatting conditional formatting and
+important functions in this lesson we
+will learn about custom formatting how
+to use conditional formatting and
+formulas and Implement logical
+statistical and mathematical functions
+let's say we need to differentiate the
+sales value from the given data set as
+above Target below Target and met Target
+as a data set can be huge and complex
+differentiating each value manually
+would consume a lot of effort and time
+here comes the Excel features such as
+formatting and conditional formatting
+which enables us to perform this task
+easily
+formatting as the name suggests helps us
+to format the data using different
+techniques making the data easy to read
+in the required format and analyze them
+the right formatting technique applied
+to the worksheets can help the users
+present the data efficiently conditional
+formatting a type of formatting helps us
+visually explore and analyze data detect
+critical issues and identify patterns
+and trends conditional formatting helps
+to add patterns and Trends to the raw
+information using different colors icons
+and formula Etc
+at times we also need to perform
+mathematical operations and calculations
+within our data set
+Excel provides a large number of logical
+statistical and mathematical functions
+such as vlookup hlookup and if not rank
+quartile and many more that can help the
+users to perform calculations ranging
+from basic to complex operations
+these inbuilt functions help us to
+manage data and perform descriptive
+statistical analysis
+Excel also offers a wide range of
+important formulas that help to perform
+many common tasks these formula may be
+as simple as basic addition or it could
+be a complex combination of inbuilt
+excel functions before going into
+details let us start this lesson by
+defining the objectives of the lesson
+the worksheets appear more polished and
+easy to read if proper formatting
+techniques are applied to it we can
+format the cells in Microsoft Excel
+manually by selecting fonts font color
+font size background colors and borders
+we can also use numerous predefined
+table Styles or quick styles to quickly
+format a table automatically this is the
+basic formatting in Excel
+if these built-in functions do not meet
+our needs or do not display the data in
+the format that we require we can create
+our own custom format in this topic we
+will focus on custom formatting in Excel
+let's say we want to display one million
+five hundred and thirty two thousand as
+1.53 M or the 1st of January 2016 date
+with a weekday as the first Friday
+January 2016. here we can use custom
+formatting feature of excel let's see
+how we can accomplish this in Excel
+in this lesson we shall consider the
+following fields from our master table
+dates order ID
+product salesman region number of
+customers net sales and profit and loss
+here in the given worksheet we have a
+column named net sales
+suppose we want to display the values of
+net sales in terms of thousands for
+example
+7164 should be displayed at 7.16 k
+select the entire column for net sales
+under the Home tab click the drop down
+present in the numbers panel
+select the option more number formats a
+format cells dialog box appears from the
+category list select the type as custom
+in the type text box enter number column
+number number 0 decimal zero zero comma
+open double quote capital K close double
+quote
+here number is the digit holder with
+thousand comma separation
+each comma after decimal 0 0
+indicate divide value by one thousand
+the two zeros after decimal point
+indicate number of value after decimal
+places
+the K component displays a literal K
+character to denote thousands
+here we can see the preview in sample
+box the value shown is 7.16 K
+finally click OK button
+the values in column net sales are now
+displayed in terms of thousands
+now let us consider another example of
+date formatting
+in the column dates we have a date value
+written as first Jan 2012. we want to
+display it as first Sunday Jan 2012.
+first select the column containing dates
+under the Home tab click the drop down
+present in numbers panel
+select the option more number formats a
+format cell dialog box appears
+from the category list select the type
+as custom
+in the type text box enter DD dash dddd
+dash mmm YY
+here d stands for date m stands for
+month and y stands for year
+the first 2dd is the date
+the next four dddd is for weekday say
+Thursday
+then mmm is for the month in short form
+and YY is for year
+here we can see in the preview in the
+sample box the value shown is one Sunday
+Jan 12.
+finally click on OK button
+thus the custom formatting helps us in
+changing the appearance of the cell
+value according to our needs
+a worksheet may contain thousands of
+rows of data by simply examining the raw
+information it would be difficult to see
+patterns and trends conditional
+formatting helps us visualize data that
+make worksheets easier to understand it
+quickly highlights important information
+in a spreadsheet by using colors icons
+and data bars it changes the appearance
+of one or more cells when the cell value
+meets certain criteria to do this we
+need to create a conditional formatting
+rule for example a conditional
+formatting rule can be if value is
+greater than five thousand color the
+cell yellow
+by applying this rule we will be able to
+quickly see which cells contain values
+that are greater than 5000 let us
+understand this with the help of
+examples
+consider the given sales table which
+depicts the amount of sales done by each
+salesman here we want to highlight the
+duplicate order ID values
+first select the order ID column
+clip Home tab
+under Styles panel select the option
+conditional formatting
+from the drop down menu hover the mouse
+over highlight cells rules and select
+duplicate values
+a duplicate values dialog box appears
+select the formatting style from the
+drop down menu in our example we will
+choose green fill with dark green text
+click ok
+here we can see that the conditional
+formatting is applied to the column
+order ID
+Excel highlights all the duplicate cells
+with green fill with dark green text
+we can also explore other options
+available in conditional formatting like
+greater than less than between equal to
+text that contains a date occurring and
+top slash bottom rules
+all these rules work in the similar
+format
+Excel provides predefined styles to
+quickly apply conditional formatting to
+our data they are data bars data bars
+are horizontal bars added to each column
+much like a bar graph
+color scales color scales change the
+color of each cell based on its value
+each color scale uses a two or three
+color gradient icon sets icon sets add
+specific icon to each cell based on its
+value
+let us consider another example to
+explain how icon set rules are used
+consider the given sales table
+here on the basis of the sales amount we
+want to apply the icon set rule
+if sales amount is greater than 8 000
+then a green arrow should appear in the
+upward Direction
+if sales amount is between five thousand
+and eight thousand then show a yellow
+arrow in the horizontal Direction
+and if sales amount is less than five
+thousand then show a red arrow in the
+downward Direction
+to perform conditional formatting select
+the desired cells
+click on Home tab
+under Styles panel select the option
+conditional formatting
+from the drop down menu hover the mouse
+over icon set rules and select the first
+rule
+again click on conditional formatting
+select the option manage rules from the
+drop down a conditional formatting rules
+manager dialog box appears
+go to Icon set Rule and select three
+icon set rule
+click on edit Rule and an edit rule
+formatting dialog box appears
+by default for three icon set rule Excel
+uses the 67th percentile and the 33
+percentile rule this means that it shows
+a green arrow for values greater than 67
+percent
+yellow arrows for values between 67 and
+33 percent and red arrow for values less
+than 33 percent
+now let us customize this rule for our
+criteria
+in the type drop down select the option
+as number
+in the value reference box enter value
+is 8 000 for green color arrow and 5000
+for yellow color Arrow
+Excel automatically picks the criteria
+for the red color Arrow click ok
+in the conditional formatting rules
+manager window click ok
+we can see that the cells are
+highlighted as per our criteria cells
+which have a value greater than 8 000
+have a green arrow in the upward
+Direction
+values between 5K and 8K are highlighted
+with a yellow arrow and values less than
+5K are highlighted with a red arrow
+we can also apply conditional formatting
+rule with the help of formulas consider
+the given table which shows the profit
+done by each salesman here we want to
+highlight the rows in the table wherever
+profit is greater than four thousand
+select the entire table along with
+headings
+click on conditional formatting select
+the option new rule from the drop down a
+new formatting rule dialog box appears
+under select rule type select the option
+use a formula to determine which cells
+to format
+under format values reference box enter
+the formula as equals if Open Bracket
+dollar sign H2 greater than four
+thousand comma true comma false close
+bracket
+this will apply formatting to a cell if
+the profit is greater than four thousand
+click on format button
+from the format cells dialog box select
+the fill tab from the color dialog box
+select the color as green
+finally click ok
+the conditional formatting is
+successfully applied to the cells here
+we can see that the cells with the
+profit greater than four thousand are
+highlighted with the green color
+logical functions evaluate a cell or
+cells for a criteria and returns a
+Boolean value true or false
+in this topic we will cover various
+logical functions like if and or not
+true false
+consider the given sales table
+here on the basis of the sales amount we
+want to determine the commission
+percentage of each salesman
+following is the criteria if net sales
+greater than or equal to ten thousand
+set commission as five percent
+if net sales greater than or equal to
+5000 and less than or equal to ten
+thousand set commission as 2.5 percent
+if net sales less than five thousand set
+commission as one point five percent
+this is a common condition where we're
+required to create a between formula
+that picks all values between the two
+given values in such conditions we use
+if with the and function
+let's write the formula in cell I5
+like any other formula we will start
+with the equal sign then type our
+function e if and then type an open
+parenthesis the first parameter we need
+to pass is a logical test here The
+Logical test is if sales cell G5 greater
+than or equal to ten thousand assign
+value as five percent
+then we will pass the second logical
+test here we will use and function if
+Open Bracket and Open Bracket sale at
+cell G5 greater than or equal to five
+thousand comma cell G5 less than or
+equal to ten thousand comma assign value
+as 2.5 percent
+in the else parameter we will type 1.5
+percent this means that if the first two
+cases become false then the formula will
+assign the value 1.5
+finally close the two braces for the two
+IFS thus Excel Returns the result as 2.5
+percent for cell G5
+now drag the formula with the help of
+the fill handle we can see the results
+for the other cells as well
+the or function returns true if any of
+the conditions are true and returns
+false if all of the conditions are false
+in the given table we are required to
+assign performance remarks for each
+salesman as per the scaling table
+in scaling table we have the criteria
+that if net sales greater than 10 000 or
+profit greater than 5000 set remark as
+good
+else set remark as needs Improvement
+let's write the formula using IF and or
+to check sales and maximum sales in cell
+J5
+so our formula becomes equals if Open
+Bracket or Open Bracket G5 greater than
+ten thousand comma H5 greater than or
+equal to five thousand comma double
+quote good double quote comma double
+quote need Improvement double quote
+close bracket
+let's drag this formula across the cells
+with the help of the fill handle
+this formula returned true if any of the
+condition is true thus in the given
+example the cell j9 returns good even if
+profit is less than five thousand
+our next function is true false true
+slash false returns true and false
+respectively if we write them in any
+cell
+the not function reverses the result of
+the function
+if result is true it returns false else
+true
+let's write formula as equal not open
+bracket K5 close bracket in cell L5
+this Returns the result as false
+let us now study about different lookup
+and reference functions used in Excel
+such as vlookup hlookup match index and
+offset function
+the vlookup function lets us search for
+specific information in the current
+worksheet
+say we have a list of students with
+marks we can search for the marks of a
+specific student if our table is in
+horizontal format and we want to
+determine a specific value then we use
+the hlookup function
+consider the extract from our Master
+sales table
+the table depicts sales information
+based on order ID Products sold salesman
+and net sales now we want to determine
+the net sales corresponding to order ID
+1121
+let's understand how we can accomplish
+this using the vlookup function
+note that vlookup function is only used
+for vertical tables let's use cell I2 to
+add the formula
+like any other formula we will start
+with the equal sign then type our
+function name
+vlookup and then type and open
+parentheses
+now we will add the arguments the first
+argument is lookup value lookup value
+corresponds to the value or item we are
+searching for
+so in our example it will be order ID
+1121 cell H2
+the second argument is table array table
+array is the cell range that contains
+the data in this example our data is in
+cell B2 to e40.
+the third argument is called index num
+column index number the column index
+number is the column number in which we
+are looking for information here in our
+table array net sales is the fourth
+column so our third argument will be
+four
+the fourth argument is range lookup this
+value corresponds if we are looking for
+approximate matches or not and can have
+value either true or false true denotes
+the approximate match and false denotes
+the exact match here we will pass false
+finally close the parentheses
+so our function has the form equal
+vlookup Open Bracket H2 comma B2 colon
+E40 comma four comma false close bracket
+we can see that the function Returns the
+value as 2 2 7 7.
+note that the vlookup function works
+from left to right that means the lookup
+value should always be present in the
+leftmost column of our table array
+if our table is in horizontal format and
+we want to determine a specific value
+then we use the hlookup function
+consider the given table let's write the
+formula in cell I4 we will start with
+the equal sign then type our function
+name
+hlookup and then type open parentheses
+the first argument is the lookup value
+so in our example it will be order ID
+equals one one two one
+cell eight four
+the second argument is table array in
+this example our data is in cell G8 to
+as11.
+the third argument is row index number
+here our table array net sales is the
+fourth row so our third argument will be
+four the fourth argument is range lookup
+here we will pass false finally close
+the parentheses
+so our function has the form equals
+hlookup Open Bracket H4 comma G8 colon
+as11 comma 4 comma fault close bracket
+the function Returns the value to 277
+note that each lookup function works
+from left to right that means lookup
+value should always be in the topmost
+row of your table array
+the match function searches for a
+specified value in an item in a single
+dimensional array and then Returns the
+relative position of that item in the
+array
+let us understand its functioning with
+the help of an example consider the
+given sales table shown here we want to
+determine the position of the
+corresponding date in the original table
+so let's write the formula in cell E5
+type equal sign
+then type the function name
+match and then type an open parenthesis
+the first argument is the lookup value
+so in our example it will be date in
+cell B5
+the second argument is lookup array
+the lookup array is a range of cells
+that contains the value we are searching
+for in this example we will select the
+cells B17 to b1342
+the third argument is match type match
+type can be either -1 0 or 1. the value
+should be 1. if we want to find the
+largest value less than or equal to the
+lookup value
+the value should be zero if we want to
+find the first value exactly equal to
+lookup value
+it should be -1 if we want to find the
+smallest value greater than or equal to
+lookup value
+here we will pass the match type as 0 as
+we require an exact match
+finally close the parentheses
+so our function should look like match
+Open Bracket B5 comma dollar sign B
+dollar sign Seventeen colon dollar sign
+B dollar sign one three four two comma 0
+close bracket
+this Returns the value as three now we
+can drag the formula across cells with
+the help of the fill handle
+similarly we can use the match formula
+in cell E3 to determine the position of
+the shown field name cell C3 in range
+B17 to I17 for example net sales is at
+seventh position in the range B17 to I17
+let's write the function in cell E3
+write formula as equal sign match and
+open parentheses in the first argument
+select cell C3
+for second argument select cells B17 to
+I17
+past third argument is zero finally
+close the parentheses
+so our function looks like equal match
+Open Bracket C3 comma dollar sign B
+dollar sign Seventeen colon dollar sign
+I dollar sign Seventeen comma 0 close
+bracket so for profit loss field the
+value returned is 8.
+net sale the value returned is seven
+the index function Returns value from a
+specified position in a specific column
+in a list
+suppose we want to determine the value
+of a field mentioned in cell C3 from the
+sales table on a specified date
+the table should dynamically fetch the
+value if the value of the cell C3 is
+changed
+if we enter profit loss formula should
+fetch the profit loss value for the
+specified date
+if we write net sales in cell C3 then
+formula should fetch net sales value for
+specified date
+so let's use the index function to
+determine the value in this worksheet
+select cell C5 write formula as equal
+sign index and open parentheses
+the first argument is the array for our
+example enter B17 colon i1342
+the second argument is the row num this
+corresponds to the row number that has
+the value we want to return here we will
+enter E5 which denotes the required date
+the third column is column
+this corresponds to the column number
+that has the value we want to return
+here we will enter E3 which denotes the
+position of the field name in cell C3 in
+table
+finally close the parentheses
+thus our formula Returns the value as
+6528 based on the position at cells E5
+this is the net sales value on the date
+the 2nd of January
+now drag the formula with the fill
+handle to the other cells as well
+the offset function returns a reference
+to a range that is the offset number of
+the rows and columns from another range
+or cell now let's understand how to use
+it select cell D5
+right formula is equal sign offset and
+open parentheses the first argument is
+the reference this denotes the starting
+range from which the offset will be
+applied for our example we will select
+the reference cell as B17
+the second argument is the rows this
+denotes the number of rows to apply as
+the offset to the reference this can be
+a positive or A negative number
+so for our example we will enter E5
+minus 1. here we are subtracting 1 to
+match number of row which have the value
+and the offset from the reference cell
+the third argument is the calls this
+corresponds to the column number that
+has the value we want to return here we
+will enter E3 which denotes the position
+of the field name and subtract by 1 to
+match with the offset referencing
+finally close the parentheses
+the function Returns the value based on
+the position of date from cell B5 and
+field from cell C3
+now drag the formula across the cells
+with the help of the fill handle
+if we enter profit loss formula should
+fetch the profit loss value for the
+specified date
+a variety of statistical functions are
+available in Excel to perform
+calculations ranging from basic function
+mean median and mode to more composite
+distribution and test binomial or
+chi-square
+in this topic we will cover various
+statistical functions like sumif
+countifs percentile quartile standard
+deviation and median
+sumifs and countifs are the most
+frequently used functions in Excel these
+functions allow us to perform count and
+sum based on one or more criteria the
+sumifs function calculates the sum of
+cells based on certain criteria
+let's understand how to use the function
+with the help of an example consider the
+given sales table say we want to
+determine the net sales done by salesman
+Justin
+here we will use the sumifs function to
+calculate net sales so let's write the
+formula in cell N4 type equal sign then
+type the function name sumifs and then
+type an open parentheses the first
+argument is the sum range this is the
+input range that contains the required
+data so in our example we will select
+cells H4 to H 1328
+the second argument is the criteria
+range this denotes the range that
+contains the required criteria here we
+will pass the range that holds
+salesman's name sales E4 to E 1328.
+the third argument is criteria this
+corresponds to our required criteria we
+only require net sales of the salesman
+Justin so we will select cell M4
+finally close the parentheses note that
+we can pass multiple criteria in this
+function the function Returns the net
+sales done by Justin
+countifs function Works in a similar
+manner like sumifs it counts the number
+of cells in a given range when certain
+criteria is met
+say in the given sales table we want to
+determine the total number of sales for
+net sales greater than 8 000. to
+determine the count we will use the
+countifs function so let's write the
+formula in cell N5 type the equal sign
+then type the function name
+countifs and then type in open
+parentheses the first argument is the
+criteria range one this denotes the
+range that contains the required
+criteria here we will pass the cells
+containing net sales H4 to h1328
+the second argument is criteria one this
+corresponds to our required criteria we
+only require entries with net sales
+greater than eight thousand so we will
+enter greater than eight thousand
+finally close the parentheses
+note that the function allows you to
+enter multiple criteria cell N5 reflects
+the total number of sales as 445 for net
+sales greater than eight thousand
+in this topic we will learn how to use
+the function's percentile quartile
+standard deviation and median in Excel
+consider the given sales table let's see
+how to use the percentile function on
+net sales to find its 40th percentile
+select the cell n6 write the formula as
+equal sign percentile Open Bracket
+select the column net sales H4 to
+h1328 as our first argument
+pass the second argument as 0.4 in order
+to find the 40th percentile
+this Returns the result
+5220 this means that 40 percent of the
+net sales is less than or equal to 5220.
+the next function is quartile
+quartile function depicts the results
+for the first second third and fourth
+quartile
+say we want to find the total number of
+sales which are less than or equal to 25
+percent let's use the quartile function
+to calculate this
+select cell N7 to write the formula
+type equal sign function name is
+quartile and open braces
+select net sales column H4 to
+h1328 as the first argument
+type 1 as the second argument
+the second argument must be a number
+between 0 and 4. the function Returns
+the value as
+3822 which means that 25 percent of the
+sale is less than or equal to 3822
+note that here we can use the percentile
+function to perform the same task the
+function percentile H4 to
+h1328 comma 0.25 gives us the same
+result it's up to us which function we
+would like to use for the quartiles
+Excel has a function to calculate sample
+standard deviations stdev
+[Music]
+standard deviation determines how
+dispersed the data is from the mean
+say we want to calculate the standard
+deviation for number of customers
+so write the formula in cell N8 as
+equals
+the function name stdev
+open braces
+select number of customers columns as
+its argument
+the function returns a result 1.4
+the median function Returns the value
+from the range for example we want to
+find the mid value for net sales to
+calculate median in cell N9 write the
+formula as equal sign the function name
+median then open braces
+select net sales column as its argument
+this calculates the mid value of net
+sales as 6192
+rank function is used to compare a
+number from the rest of the numbers in a
+list in any order whether ascending or
+descending this function Returns the
+rank of the number relative to the other
+values in the list let's use rank
+function in cell j4 to calculate rank on
+the basis of net sales
+select cell j4 and write the formula as
+equal sign then type the function name
+rank and then type in open parenthesis
+the first argument is the number
+this is the value whose rank we are
+required to calculate here we will pass
+the argument cell H4
+second argument is ref
+this corresponds to the array or
+reference list here we will select the
+column net sales IE cells H4 to H 1328
+the third number is order this specifies
+how to rank the number zero means
+descending order and 1 denotes ascending
+order
+this argument is optional if we don't
+pass any argument Excel automatically
+takes the argument zero here we will
+pass zero finally close the parentheses
+here we can see that Excel has
+determined the rank for net sales
+7164 as 553
+finally we can drag the formula and can
+see the rank for the other cells based
+on net sales
+let's embark on this transformative
+adventure together having said that if
+you're an aspiring business analyst
+looking for online training and
+certifications from prestigious
+universities and in collaboration with
+leading experts then search no more
+simple lens postgraduate program in
+business analysis from cardio University
+in collaboration with Amazon Google and
+Microsoft should be a right option for
+more details use the link in the
+description box below
+in this session we will start with
+certain exercises which we will perform
+in Tableau in order to understand some
+basic concepts
+now in order to learn Tableau the basic
+first step is to import a sample data so
+in our case what we have done is we have
+imported a sample Superstore which is in
+Excel format a sample superstore.xl
+which has three worksheets in it orders
+people and returns
+so by importing this data into Tableau
+first of all we will create
+relationships between these sheets in
+order to identify who all have placed
+orders and how many people have returned
+the orders we will do some analysis on
+the orders placed by certain set of
+people and Order returned by certain set
+of people
+now as we have imported uh the sheet we
+will make certain joins so the first
+step is to drag the orders
+table the order sheet on the
+relationship canvas here okay and you
+can see the data sample data the first
+100 rows over here
+okay then now we need to create an inner
+join with people's table between order
+and people okay so if you see
+it has automatically detected the field
+names on which the inner join has to be
+created so on the order side you have
+region and on the right hand side which
+is the people data you have also a
+region okay so both these columns are
+common and that's how we have made a
+join between orders and people data
+so if I close this box and go and check
+the people's data
+foreign
+so see the region and the person these
+two columns from the people table have
+now been
+joined with the orders table right so it
+means that these are the orders in a
+particular region which has been placed
+by
+in this region
+let me show you the sample Superstore
+Excel file now this is the structure of
+the file you have a sample list of
+transactions basically the orders which
+are placed by customers
+across multiple regions
+south west of USA South Region west
+region then you have a list of order IDs
+which have been returned so basically
+the order ID in the returns sheet
+matches with those orders in the orders
+table
+and then you have the people
+sheet in which you have region
+and a person associated with that region
+the sales person associated with that
+region okay so basically when we are
+combining joining orders with people we
+are joining that
+which orders
+belongs to which region and who's the
+sales person associated with it so what
+we have done over here is we have made a
+inner join means all the orders should
+belong to particular region and that
+region is in the people's sheet
+and then in the second step
+now we will make a
+left join between returns and orders
+not in a join we'll make a left join
+between returns and orders and we will
+make a join using the
+order ID
+okay so just edit this
+click on left
+and
+select order ID as the join column now
+what does left join means left join mean
+is that consider all the orders from the
+orders table and only consider the
+orders from the returns table which have
+data means which are returned otherwise
+show null for the order IDs which are
+not returned so if you see this is the
+these are the two columns from the
+return statement and these are null
+because this is relevant to the order
+IDs which are not returned okay which
+has been accepted by the customer but
+these are the orders for which you see
+data in the returned and Order ID column
+it means that these have been returned
+now with these joins in place please
+save your book and now we have our
+relations created in the
+um
+in the Tableau now we are ready to
+create certain reports and extract
+certain kpis using this relationship
+model
+now we'll move to sheet 1
+okay
+and first we will place
+state
+and person on the rows
+sheet okay
+then
+I'll go to my
+numbers and
+put the profit or D so per state per
+person how much profit I am making as a
+company okay this is my goal to check
+now sort by highest to lowest
+so California is giving me the maximum
+profit of seventy six thousand six three
+hundred eighty one then New York then
+Washington so this is the sorted order
+in which I have
+listed my profit in descending order
+now I can also check what are the number
+of orders
+placed
+and check the distinct count
+so out of 120 out of the total orders of
+127 okay so this is the number of total
+number of orders which have been
+returned for California is 127.
+it's 16 29 so the sorted order is as per
+the revenue as per the profit and this
+is the details of the orders which have
+been returned per state
+so if you see for connected for a Kansas
+there are zero returns
+so you can also extract data
+foreign
+ERS and identify new rows using order
+date so as and when new data is being
+added you can
+refresh it now say extract
+and now you can save this information
+profit
+by state
+and click save so this is the extraction
+of this particular report which is
+possible in tableau
+so this is the first exercise which we
+have completed for
+reviewing and analyzing the profit per
+state highest to lowest and within that
+per state what are the number of orders
+which have been returned by all the
+customers the distinct count of order
+IDs which have been returned
+now let's start our second exercise on
+creating calculated fields in tableau
+now in this exercise we will be doing
+certain
+activities like we will be creating a
+set to show the states which have more
+than 100 customers then we will be
+creating a calculated field to show an
+average sales per customer okay then we
+will create a calculated field to show
+the sales goals and then show emerging
+and developing stage so these are the
+four kpis which we have to derive
+now the first thing we have our sample
+Superstore data already imported and the
+relationships created in a join with
+people and left joined with returns
+now we have our sheet 2 in which we will
+create the states a list of states which
+has more than 100 customers
+so what we have to do is we have to
+click right click on the customer name
+and click create
+set
+okay
+now we have to give the name as states
+with 100 plus customers
+and then go to the condition tab
+select by field
+and then apply condition as
+count of customer name
+greater than equal to
+100
+and click
+ok
+now we have this set created states with
+100 plus customers
+now to determine average sales by
+customer
+we have to now create a calculated field
+so go to the analysis and click on
+create calculate field
+okay
+now name it as
+average
+sales per customer
+and now we will say average
+we will use a
+foreign
+that per customer we are using a level
+of definition function include which
+means that per customer what is my
+average sales right we've already used a
+function aggregated function called
+average so we are saying per customer
+give me the total and then give me the
+average per customer so we're going to
+click ok
+now create another calculated field you
+can also create from here
+and name is as name it as sales goal
+now in this we are going to type the
+formula if
+minimum
+States
+with 100 plus customers equal to true
+then
+sum of
+sales
+into 1.3
+else
+average sales per customer into
+100 so me we are saying that
+if the customer belongs to the set of
+states with 100 plus customers then the
+sales Target should be
+1.3 times the actual sales as of today
+else it should be 100 of the average
+sales per customer
+now let's create another calculated
+field which we call as
+emerging
+or developing state
+if distinct count
+of customer name
+is greater than equal to 100
+then
+the state is tagged as developing state
+yeah
+else it is called as
+emerging state
+okay so we have now
+three calculated Fields average sales
+per customer emerging or developing
+State and sales goals
+now we will use this in our reporting
+so we will drag sales goal under the
+columns
+and then I'll drop my state
+so now this is the statewise sales goal
+depending whether the state has 100 plus
+customers or not
+then add your customer name
+make the measure as count distinct
+and make it as discrete
+okay so if you see this
+we have the count of customers per state
+and the
+the sales goal
+for that particular state
+and now
+I'll put my sum of sales the total sales
+which I want
+which is there per state
+now go to show me and select
+this particular chart
+bullet graph
+now to bring sales goals to column right
+click on the sales access and select
+swap reference line fields
+now from your left hand panel drag and
+drop emerging or developing State on the
+color panel
+okay so a merging state is the orange
+one and the developing state is the blue
+one
+and save the sheet as
+developing and the emerging States
+so if you see this it's an emerging
+State because its count is less than the
+customer count is less than 100
+its sales goal is
+57384 but the actual sales is
+19511 okay
+so now this is a developing State its
+count is greater than equal to 100 and
+its sales goal and its sales is exactly
+the same it matches so that's why you
+are saying the bar and the blue bar is
+ending exactly where the vertical bar is
+foreign
+so what we are trying to depict is that
+whether the state is going Beyond its
+Target sales goal or it's behind it
+and you can see that using this
+particular vertical bar like for example
+Michigan its sales goal is 71 952 but
+its actual sales is seven six seven two
+seven zero average sales so that's why
+it is be above its Target
+and it's a developing state
+because it has more than 100 customers
+so you can even sort
+by the count of
+the uh customers higher to lower so all
+your developing state will group from at
+the top and the emerging States Will
+Group at the bottom
+or you can sort by
+the sales goal
+so the orange bar is the sales goal or
+the blue bar so depending what sales
+goal
+has been
+derived for each state
+we are going to take example of the
+Netflix database which we have and we'll
+prepare certain reports in order to
+identify what kind of reports we can
+generate from such a data set
+So currently on my screen what you can
+see is the Tableau the Netflix data
+sheets the data sources where you have
+the Netflix shows movies their
+Associated duration what kind of shows
+or movies are there their release here
+are the associated rating description
+and key which is the show ID now this is
+the unique identifier for each show in
+this Netflix title sheet and with this
+show ID all other sheets are related
+like you know who are the directors of
+the show in which country the show was
+released
+what is the cost of each show all that
+information is in this sheet and to
+which particular category basically the
+listed in category is being listed in
+this particular sheets so what we're
+going to do is first we are going to
+import this sheet into tableau
+okay and then create relationship
+between them using the Tableau
+relationship canvas
+so first our the primary transaction
+table the sheet in which all the
+information related to movies is there
+or shows is there is in Netflix titles
+and then we will drag
+sheet like Netflix cast titles cast now
+Tableau has automatically identified the
+relationship between the show ID of
+titles and show ID of titles cast and it
+has made a join
+so if you double click this
+you can see this relationship
+cardinality and the related fields
+similarly I'll drag
+titles category
+countries and directors
+Now by virtue of this all the sheets
+have now been joined with Netflix titles
+and with this relationship ready we can
+start preparing our reports
+now let's create a basic report where we
+can just glance the data like you know
+whatever we were seeing in the Excel how
+it looks in tableau so you have all the
+types of movies then
+for example I drag the release Here
+now first I do not want to consider it
+as a
+Dimension so I'll just
+release year or category per type there
+is a release Here and then I'll drop the
+listed in
+so now these are the categories so per
+year the the details of the categories
+right and then you can
+drag the title and the associated rating
+so this is just a view of your data
+we can name it as shows listing report
+now let's try to create some report for
+some
+measures some numbers
+Etc
+so now let's check in which country how
+many movies or titles were released you
+know what is the count
+so first let's drag the
+country
+so as soon as we dragged the country
+uh
+field it is identified that it has the
+geographical names and identified the
+latitude and longitude details so
+Tableau internally does that
+automatically and it has identified the
+spots across the globe of the relevant
+country
+now let's drag the listed in on the
+color section
+now what it is doing is it is showing in
+which country what different kind of
+uh category wise movies are or shows are
+being released like in Sri Lanka
+documentaries have been released in
+India action and adventure United States
+action and adventure like this
+now let's
+put
+account of
+the titles right so if you see 247
+action adventure
+movies or shows have been released in
+United States
+okay so this is one inference by this
+particular report you can
+identify
+so let's save this report as
+listed
+in
+by country
+okay now let's create another report
+we will call it as the per year
+statistical report in this first I'll
+put the release years in the column
+now
+count of Netflix titles so this is the
+count of Netflix titles per year 2017
+2016-14
+and then count of Netflix titles in the
+countries
+this is the second bar chart okay now
+what I'll do is I'll combine it into one
+so one report
+we are
+moving in the bar creating the bar and
+one in the line now I just have to
+so we will click on the count of Netflix
+titles by country right click Market
+dual access
+so now as soon as you click click this
+both the charts have been combined and
+right click over here and say
+synchronize access
+okay
+okay so now if you can see see right in
+2017 you had uh 2 303 Netflix releases
+across all categories and one one five
+nine
+titles right one zero six three titles
+in 2017. so this is a descending
+representation of the count of titles
+release per year across category and
+across titles
+so let's call this as
+per year
+stats
+now let's create another report
+number of shows
+per title okay
+so or or sorry per rating so we will
+drag the rating column
+and
+we will
+count of titles
+unique count of titles and unique count
+of show IDs
+okay
+one is bar and one is line
+okay
+so this is a report which shows rating
+wise titles and the show IDs
+so in the tooltip you can see the
+listing count of Titus and show ID for
+rating
+okay so let's call it
+shows our rating
+now let's create another sheet call it
+as
+shows
+by cost
+so in this
+what we're going to do is first drag the
+cast column on the rows section you have
+name all of all the cast and then we
+drag the
+show ID on the column section and put a
+count d
+and sort it okay
+you can remove the null cast
+and this is your
+sorted order and on the labels section
+you can say show Mark labels and you
+will see the count that don't pump care
+has done the maximum then Shahrukh Khan
+om Puri nasruddin Shah so this is the
+details on this sorted order that who
+has done how many shows okay
+then next is
+shows by director similar to shows by
+cast
+drag
+director into rows
+or differently if you want to prepare
+into columns and then count off
+show ID
+okay sorted
+and you can actually filter out the null
+director value
+and this is the account put the label
+so you can see Jan's Twitter has the
+maximum shows
+okay
+then create another report
+shows by category
+now similarly drag the listed in
+in the rows and show ID count
+remove the null category
+and sort
+labels show Mark labels so International
+movies are the highest category dramas
+the next comedy International TV shows
+this way
+you have your category
+now let's create a dashboard in which we
+want to bring combine all these reports
+and
+take a common view so first let's drag
+listed in by country
+then
+shows by director
+also please let's set the size as
+automatic
+then let's drag shows by category
+and shows by cast
+now these four reports are on a single
+dashboard we will link them to each
+other so go to worksheet actions
+add action
+filter
+select dashboard one
+only select shows by category here
+and in Target dashboard one
+except shows by category keep everything
+else
+and in the source sheet just select
+click select
+click ok
+now whatever category you will select
+over here
+that related category data will
+automatically be shown in other reports
+like see International movies across the
+globe across countries directors of only
+International movies who has done the
+maximum
+Johnny Tow and uh shows by caste right
+that who has done the maximum
+International movies or dramas
+or comedies
+travel has a maximum number of comedies
+and then if you see the comedy movies uh
+you know these are the count of comedy
+movies released across the countries and
+the who is the director
+another a very interesting report which
+you can prepare is that for example you
+want to check in which country maximum
+duration of
+uh your
+maximum duration of
+movies have been released so
+first let's create a measure
+remove this
+okay
+so if you see
+maximum duration of the movies or the
+entire Netflix content is maximum United
+States then in India these many minutes
+next is United Kingdom and you can also
+change the colors
+whatever you feel is as per your
+standards or as per the convention you
+can change the color combination
+so there are multiple ways you can
+generate reports and uh hope you have
+understood how you can leverage such a
+data to create your reports
+so let's discuss what's in it for us
+today
+now we will first talk about why power
+bi you know why it's a popular tool and
+what problem it solves what is power bi
+and what are the primary features of
+power VI which you can use in your
+day-to-day data analytics visualizations
+creating fancy reports creating
+meaningful intelligent reports
+for your organization for your personal
+use for crunching numbers for generating
+reports real time Etc
+now the most popular tool for power bi
+is the power bi desktop uh I'll show you
+certain uh aspects of power bi desktop
+and then I'll show you the steps how to
+install power bi desktop on your machine
+and then definitely power bi desktop is
+a free tool provided by Microsoft but
+then you can also subscribe for an
+Enterprise version which is primarily
+used uh by Enterprises for publishing
+their data uh so we'll see the
+difference and then overview of our
+dashboards which can be created uh you
+know what kind of dashboards can be
+created in power pi
+so this is the agenda for us today
+now why power bi so generally uh you
+know visualization tools reporting tools
+are required in order to create and
+prepare and analyze meaningful data it
+could be a data for an organization it
+could be a social media platform data it
+could be a data from iot devices but
+something which needs to be analyzed and
+some intelligent inferences and data
+mining has to be done on top of it now
+imagine there is today we are in a world
+where terabytes of data and information
+is getting generated on an instantaneous
+basis on minute-by-minute basis so it
+becomes very essential to churn out
+something meaningful something
+intelligent out of it in the market
+there are a lot of other tools which are
+available like clicks uh all tricks
+Tableau and power bi so power bi is a
+Microsoft product which is one of the
+most popular products and it comes as a
+free to download product Microsoft power
+bi desktop which is available and I'll
+show you a couple of ways how you can
+install it on your machine but why power
+bi is uh popular is because it provides
+a lot of out of the box features drag
+and drop features which we will talk
+about in our subsequent sessions and you
+know classes but today's session is
+primarily focused on giving you guys an
+introduction on what is the purpose of
+power bi and what all problems it solve
+uh in the in the real world so power bi
+allows you to view analyze and visualize
+huge quantities of data and the data
+could be in any format Excel CSV text or
+it could be a direct connection to a
+database like SQL MySQL Azure Oracle
+anyone IBM db2 so it supports n number
+of uh you know data types or data sets
+and it's very powerful in terms of data
+connectivity
+so it uses powerful compression
+algorithms to import and Cachet the data
+within the dot pbix file so it's as
+convenient as a simple software if
+suppose you import a data and then you
+prepare a report and then you can easily
+share the reports with your peers or
+someone who's co-developing with you
+either through Power bi cloud services
+or even you can share the pbix file in
+an email
+or through any other means and you can
+share the data set with the concern and
+they can then work on the report
+independently so there are different
+ways there is no uh kind of a limitation
+for you know working on power bi there
+are multiple ways and it is very fast it
+is the most fast uh tool to work with
+Excel because definitely Excel is also a
+Microsoft Technology so it works very
+fast on Excel based data and gives you
+numbers and Reporting at a very high
+speed
+so now once you have imported the data
+power bi allows you to model the data
+allows you to work intelligently on the
+data it allows you to model data in a
+way that if you are importing data from
+multiple Excel sheets importing data
+from multiple tables you can easily
+create a relationship between those
+tables or data sets in power bi and then
+create visually appealing reports
+meaningful reports as I've been
+emphasizing and make sense out of that
+data no data in silos is of any use data
+in Silo means a single worksheet or a
+single data set will not churn out any
+meaningful information until unless you
+basically join it Club bit merge it
+Union it append it with some other data
+sets because a single data set will
+never be able to hold that much amount
+of information which is generally
+required for a you know important report
+so it has easy drag and drop
+functionality with features that allow
+you to copy all formatting across
+similar visualizations so just like in
+Microsoft Excel we use format painter to
+copy the format of one cell to another
+similar features very very similar to
+excel products or Microsoft product they
+have provided that if you have applied
+uh a particular thing on a report you
+can easily replicate that on any other
+report the font uh the header size the
+background color you don't need to do it
+again and again so there's a lot of
+reusable features which are also
+available okay now
+as I said Excel is a Microsoft product
+power bi is a Microsoft product so they
+have intercompatibility you can publish
+data from Excel to power bi now with the
+latest developments and enhancements
+as of today pixel has also plugged in a
+new feature called Power pivot which
+I'll uh show you later down the line but
+that also allows you to do a quick
+analysis no you can't create of course
+complex reports or uh fancy reports like
+power bi but Power pivot allows you to
+create you know quick measures quick
+functions quick calculations on your
+data quickly only in Excel so it's an
+Excel plugin but whereas you know you
+can power bi is also compatible with
+Excel so when you create a report in
+power bi it gives you inbuilt feature to
+export your power bi report into Excel
+format directly you don't need to do any
+programming for it also
+you can easily publish when you publish
+your power bi reports it allows you to
+give some inbuilt intelligence of
+analyzing your reports in Excel and it
+gives you all those of all those
+features of exporting your power bi
+reports into Excel which is not
+available in any other tool or otherwise
+those tools have to create plugins
+create add-ins and probably they might
+charge for it but Power bi comes with
+lot of out of the box features which are
+very very helpful for analyzing data in
+Excel and vice versa
+Azure Cloud now Azure itself again is a
+Microsoft cloud Tech stack so using
+power bi with Azure allows you to
+analyze and share large volumes of data
+so Azure basically Azure database or
+Azure Cloud servers are meant to hold
+huge amount of data and power bi allows
+you to have seamless connection you can
+easily connect to Azure data Lake
+you can reduce the time it takes to get
+insights and increase collaboration
+between business analysts data engineers
+and data scientists so azure
+data Lake becomes the central focal
+point where all your analysts Engineers
+can keep working on on the centralized
+piece of data and churn out their
+reports data scientists primarily job is
+to keep the data in a structured way
+optimized way optimize the input output
+operations disk operations and memory
+utilization so that the reports also get
+churned out in a faster manner so every
+uh you know every person has their own
+role in order to give a quick
+refreshable report a quick rendered
+report any report which is taking huge
+amount of time to get rendered will not
+eventually be used by the business users
+because then it does not solve the
+purpose the report should be fast
+reports should have uh you know
+appropriate filters slices and dices you
+should be able to you know create the
+reports or dynamically or you should be
+able to analyze visualize the data
+dynamically so all those visualization
+features are available in power bi and
+it works seamlessly either it is small
+data or huge data it allows that you to
+work on those kind of data in a seamless
+fashion
+right so this is just a very uh quick uh
+example of how our typical dashboard
+looks like dashboard is nothing but you
+know you have clubbed a couple of
+multiple reports on a single page and
+you know if you change a filter uh a
+single filter on the page all the
+reports will honor that filter and the
+numbers will change accordingly so if
+you see the in this example there is a
+filter or a drop down or product ID
+product name employee name or supervisor
+or a date range so whatever date range
+or filter you will apply all the reports
+on this dashboard will get changed based
+on the filter you have selected so power
+bi allows you to get insights from data
+and turn insights into action to take
+data driven business decision and that
+is the ultimate goal of any
+visualization tool that is the purpose
+for which visualization tools are bought
+uh and purchased by the organizations
+and data is fed into them
+Now power bi fetches data from Factory
+sensors social media sources to get
+access to real-time Analytics so that
+you are always ready to make timely
+business decisions so so basically there
+is a a feature of live connection or cut
+off data connection so either you can
+work on data which is residing on a
+machine and you can just work on the
+cutoff data like for example it's
+there's a data which is available for
+sales 2017 2018 and you're just working
+on a historical data it's a cut off data
+or it could be possible that you want to
+be connected live uh to a real-time iot
+based sensor based data or social media
+data like Twitter Facebook feeds or you
+know you're connected to live Google
+worksheets that is also possible you
+just need to publish your Google sheet
+for a public domain embed that you are
+in into Power bi and then whoever
+updates that Google sheet automatically
+the power bi report will also start
+honoring and consuming the new data
+which is added in the Google sheet so
+all those kind of real-time streaming
+analytics is also possible and that is
+one big feature and very important
+feature of power bi which is widely used
+and has a very huge uh you know Market
+acceptance and Market utilization
+now what is power bi
+power bi is a business analytics service
+provided by Microsoft that lets you
+visualize your data and share insights
+right so earlier
+you know uh
+Microsoft used to have a technology
+called ssas now they have replaced
+actually ssas and SSRS with power bi so
+basically you can use power bi on the
+data which is there in your Excel or any
+other data source and the power bi
+service or power bi desktop basically
+creates a connection to those data sets
+and import it cache it and give you a
+handle to it in order to work with it so
+you can create these fancy meaningful
+visualizations like for example there's
+a geographical map if you are importing
+data for a country or a continent or a
+region power bi will automatically
+detect that it's a geographical
+information and give you a map with
+latitude longitude information and you
+just need to plot uh your uh your
+numbers on the map either you can use
+bubbles or or either you can use
+triangles or whatever data structure you
+want to use but all the mapping will be
+available geographically then you can
+create pie charts which is shown in this
+visualization you can create dream apps
+you can create cards where you know you
+can highlight the most important numbers
+like sales total sales of your company
+across all the regions or the growth
+chart or the month on month uh you know
+sales of your organization or number of
+total number of products or units sold
+so whatever is important and to be
+highlighted for the management to take
+any meaningful decision or any insights
+you want to share power bi visualization
+tool the power bi visualization uh
+uh chart allows you to drag and drop and
+create wonderful reports okay
+so what are the features of power bi so
+power bi desktop is something a
+standalone tool which you need to
+install on your machine it allows you to
+build reports by accessing data easily
+you do not need Advanced report
+designing or query skills to build a
+report though yes it is beneficial that
+if you know some SQL programming
+analytical programming or you are aware
+of advanced features of any analytical
+tool that might help you but that's not
+a showstopper you can easily build
+reports in quick turnaround time without
+needing any technical background you
+just need to have some analytical uh
+mindset and you can create uh Savvy
+visualization and you know analytical
+reports
+stream analytics as I mentioned you can
+create a live connection uh with any
+kind of data it could be iot it could be
+media social media it could be Google
+Docs it could be uh you know any other
+kind of uh you know live connection it
+could be a live database connection
+itself so any insertions or updations or
+deletions happening will automatically
+reflect in your report
+yes multiple data sources and that has
+to be the primary criteria for any tool
+to be popular if any visualization tool
+is limited to certain data sets then you
+know it will not be highly acceptable in
+the market
+and custom visualizations right so as I
+showed you certain uh examples in the
+past in the previous presentation uh
+that feature is very important because
+someone might want to look the kpis look
+at the kpis from a different perspective
+some management might want to look at
+the kpis from a different perspective so
+you need to you need to have that
+capability to create different
+visualization from the same data set now
+let's take a look at how
+to install power bi desktop on your
+machine
+so basically what you need to do is
+you need to go to this URL
+power bi dot microsoft.com en US desktop
+okay
+and you need to just
+enter this
+now you can download it for free so just
+click over here and
+it will open Microsoft store so
+basically now what Microsoft have done
+in the latest operating systems is that
+when you are trying to download you can
+actually directly go to the Microsoft
+store
+and search for Power bi
+so let's wait for a couple of seconds
+right here so power bi desktop in
+Microsoft store for me it's already
+installed so it's asking me to open it
+I'll open it in a while but for you for
+anyone who is not installed he will see
+the button of install over here and it
+will automatically install in your
+machine and then you can easily go and
+open power bi desktop now if I click
+open over here
+now this is the
+uh UI of the power bi desktop
+I'm not going to go right now in
+creating reports right away we will talk
+about that in a subsequent session with
+sample data sets and we will cover the
+features of power bi desktop one by one
+but this is what it is this is the whole
+tool of power bi which is having the
+visualization pane all the different
+visualizations are you know can be
+created from this pane
+then this is the pane which allows you
+to select the data data fields then
+there is a report view data View and
+relationship view the data model view
+where multiple relationships you can
+create you can view the data in the grid
+of the tables which you will create and
+the reports so you can create multiple
+reports on multiple Pages you can keep
+adding pages either you can drag create
+multiple reports on a single page and it
+will become a dashboard or you can
+create separate independent reports on
+the single page
+and these are the menu options which we
+will talk about how you can change color
+scheming you can do data modeling you
+can create new reports and you can also
+transform data which is the biggest
+feature extract transform and load the
+data apply different logic changing data
+types massaging the information creating
+new joins appending the data you know
+adding new columns etc etc uh we that is
+what you can do in transform data so
+this itself is a whole different world
+it's a dedicated topic so we will talk
+about that in our subsequent sessions so
+what's in it for us today we will be
+learning how to connect to data
+different data types data files like
+Excel PDF then what are the different
+data importing modes and then I will
+also show you practically different sets
+how to import them in power bi and use
+it for your visualization purpose now
+what are the steps to connect to data so
+now we will go directly into Power bi
+and try to import one by one few most
+commonly and popularly used data sets
+which are most commonly used in a
+day-to-day activity rest of course there
+are power bi supports n number of data
+sources but we will do something
+practical on the most popular ones so
+let's let's open our power bi
+now this is my power bi and first I want
+to show you that how can I import data
+directly from a web page and import the
+data now it is asking for a URL in order
+to import data so what I have done is I
+have created a Google Excel sheet with
+simple data with rows and columns and
+what I have done is I have shared this
+sheet as published to web
+okay so you just need to say publish to
+the web the link as web page and
+say done it's it's automatically
+published and say link so copy the link
+which you have published on the web copy
+this link
+and then go back to your tableau
+paste that link over here and click ok
+Now power bi will try to establish a
+connection with this Google doc sheet
+because it's published on the web
+you need to wait for a while while it is
+reading
+okay now it has read one of the HTML
+tables I'll select this one now you can
+see it has it is showing me a preview of
+the table which is there on my
+Google sheet right it has 11 rows so it
+has all showed all the 11 rows so now I
+can go and transform this data because I
+can see my headers are there starting
+from the second row so there's an
+opportunity for me to transform the data
+so I'll go and transform it so that it
+looks clean
+okay so first is I need to remove the
+first row which is the
+null row remove the top rows
+okay and then I need to use the first
+row now as a header so you just click
+this option use first row as headers
+that's it so now if you see my row ID
+order ID order date ship date all my
+data is now ready so I can say close and
+apply
+click apply changes
+now this is an example of web data
+import you can go and preview your data
+right now the biggest advantage of this
+data connection is that it's a live data
+so for example I insert another row
+let me change the order ID
+some some I've sub change some basic
+stuff and I
+it's Auto saved
+Ctrl s now I'll go to my tableau and
+I'll refresh
+now you can see as I refreshed my
+power query editor I click refresh all
+and I got my new row which is there in
+the live data I got that fetched from my
+okay I got that row the row number ID
+number 12 so I have to say close and
+apply
+now you can see the new row the row
+number 12 is now available in my new
+data set in the data set because it's a
+live connection it's a live connection
+with the web based Google sheet okay so
+this is one
+important way in which you can import
+data
+now let's try to import data from a text
+file
+now I have already prepared our text
+file called
+sub categories Dot txt
+now let me just open it in a notepad now
+it's a very plain simple file tab
+separated file in which you have product
+subcategory ID subcategory name and
+product category key so basically to
+which product category this particular
+sub product belongs to right so what I'm
+going to do is I'm going to go back to
+my get data option
+and I'm gonna select text slash CSV
+option
+and I'm gonna select option mod product
+subcategories Dot txt
+okay so now power bi has identified that
+it's a tab delimited file it has
+recognized the headers
+Etc right and I can now directly load
+this file
+okay
+so now once the data is imported in
+power bi it is like
+irrelevant to me it's a composite data
+in in Port I'm doing right so in my
+presentation when I'm talking about
+importing data there are different
+importing modes right import our data
+import can happen through different ways
+okay
+one is direct query mode in which I
+create a live connection to the database
+which I'll also show you uh using MySQL
+and Ms SQL server and also you can do a
+composite mode in which you can have
+data imported from Excel plus you can
+have direct query modes so you can have
+multiple uh modes to connect and create
+a composite data model and that's what
+we are doing right now in our practical
+so what we are doing over here is one we
+have imported data from the web second
+we have to imported data from a text
+table
+now after doing text now our next task
+is to import from CSV let's try another
+one so now I have imported product
+subcategory now I'll import
+a CSP file so again I'll choose the
+option Text slash CSV and now in this
+CSV file let me open this CSV file and
+show you what it is it
+so this is a list of all my products
+product key products sub category Key
+Products stock keeping unit Etc a simple
+CSV file and I'm gonna import that
+okay so now it is identified the
+delimiter is comma rather than a tab and
+it has already recognized the headers
+correctly so I load it
+okay so now my products are there
+product subcategories are there for
+product categories now what I have done
+is I have created as Excel mode now so
+now Excel I am using to import my
+product category
+so now I have to click on the option of
+import data from Excel and I'll say
+product categories
+select the sheet load
+and now so my products product
+categories product subcategories do with
+different uh data storage types but
+still now the data is imported into
+Power bi it is a composite data model
+now another very important data type
+which you can import is the PDF also
+right so what I have done is I have
+created a PDF called customers my
+customers data is lying in a PDF so what
+I've done is I've created a PDF
+which has data for some columns are
+there like you know customer key prefix
+first name last name birth date marital
+status gender email address annual
+income total children etc etc so this is
+the data set
+which I have created in PDF so what I'm
+going to do is
+I'm going to select PDF now
+and import customers.pdf
+and see it has recognized my table on
+page one which I'm gonna load
+okay
+you can rename this as PDF
+table
+okay so this basically these are the
+different type of
+data
+types we have imported PDF Excel text
+CSV and web page
+now let's take a look at another
+interesting data set which you want to
+import is the my SQL Server data set
+so what I have done is I've already
+installed MySQL server on my local
+instance and there's already a schema of
+SQL live tutorial over there and I have
+certain tables already
+prepared over there like Department
+employee Etc so my goal is now to import
+this data or create a live connection
+with this data set
+now in order to import
+my SQL database Connection in power bi
+you need to First
+download a
+connector MySQL power bi connector so
+you need to go to this link
+and then click on download and install
+the MySQL connector based on the
+operating system you have you click on
+download and install it
+after you have done this go back to
+Power bi
+and then give
+the IP address of the database in my
+case it's there in this local machine
+and the schema which I want to import is
+SQL live tutorial so I'll give the name
+click connect
+okay now it's connected so now it is
+asking me which particular tables you
+want to create a connection with I am
+choosing department and employee
+and I'm just loading them
+okay so now this is the exact data which
+is there in the employee and Department
+in MySQL okay so this is one example of
+how to create connectivity between power
+bi and MySQL
+now I want to do the same thing using
+SQL Server Microsoft SQL Server so I
+have also installed Microsoft SQL server
+on my machine
+and I have used the SQL Express so this
+is the name of my server so which I'll
+copy the server name
+and
+go to get data
+select SQL Server
+and for now database is optional I can
+say direct query click ok
+now it is showing me what all tables I
+can import so in my SQL Server tutorial
+in my SQL Server I have
+I have these three tables customers
+employee attrition Olympic events so I
+can use probably the customers one which
+is
+now you can see this is the data the
+customer's data which is lying in my SQL
+Server okay so I can preview it and load
+it
+so now you can you can preview the data
+in uh Power bi that is this is the data
+so I can rename his customers from
+mssql
+and this is from
+MySQL
+and
+okay so now
+this is not the only data
+sets you can import now if you take a
+look at the options which power bi gave
+what different type and variations of
+data it can it has compatibility to
+import from
+okay so we can just take a look at the
+categorization on the left hand side
+first there are five ways like Excel
+text XML Json is also possible you can
+evenly directly import an entire folder
+and within the folder whatever uh data
+types of files are there it will detect
+it PDF power key or even SharePoint
+folder which is itself or Microsoft uh
+technology then different kind of
+databases SQL server and MySQL we just
+saw but it's not only limited to this
+you can connect to Microsoft Access
+ssas Oracle database IBM db2 postgres
+cybase teradata and then sap
+databases Amazon redshift Impala vertica
+Snowflake and N number of databases
+which are there in the market today
+Amazon
+Etc
+then it also allows you to connect with
+its own power platforms power bi
+platforms data mods power bi data flows
+dataverse Etc Azure there are different
+kind of storage
+mechanisms in Azure and Azure itself is
+a Microsoft Technology so it has a
+compatibility of a lot of azure uh based
+data storages like Azure SQL database
+blob storage uh Azure data breaks right
+Azure HD insights path so if you have
+those kind of services running on your
+observed cloud services you can even
+import them over here
+now online services like you know you
+have erps running uh or some data which
+is shared on the internet if you want to
+import it uh that is also possible
+through certain products uh Dynamics 365
+Microsoft Exchange online Salesforce
+Google analytics Adobe analytics GitHub
+LinkedIn sales if you want to do some
+analysis of some social networking uh
+you know feeds that also you can import
+and then other miscellaneous are also
+their web-based hive R script python
+script if there's something to import
+get data from uh Google Sheets like we
+saw one example in our video right now
+so there are multiple options available
+now once you have imported the data
+which is relevant to you in our
+subsequent sessions we will see how to
+create relationships but just giving you
+a glimpse that whatever data you are
+importing power bi Auto detect certain
+relationships and it will create for you
+but then you can go and manually also
+change so this is the composite data
+model which is getting created in the
+back end while you are importing the
+data you can easily go and manage these
+relationships either keep them as is you
+can delete and create new ones manually
+so there is no limitation in that
+so this is what we have witnessed we
+have imported data from different files
+types data types and then you know we
+have tried once it is imported into uh
+Power bi then there is no limitation of
+how you use it you can create
+visualization across different data sets
+and then create your
+standard reports
+so this is the example of importing data
+from web importing data from a database
+from a PDF
+and then once you have data you can
+shape and combine data you can basically
+do what whatever transformation you want
+to do you want to uh make joins merge
+the data so for example if we go back to
+our power bi and if I go back to my
+transform data section
+now as I have now different data sets
+available with me I have I can do any
+kind of you know operation
+transformation on the data right uh
+so like I showed you I uh upgraded the
+header row because one of the imported
+data was not showing the header
+correctly uh or this columns like this
+exact one column is extra I can remove
+the column
+right all those Transformations whatever
+I do in the back end gets captured in
+the applied steps section right
+this is the customer data you can create
+uh you can merge it you can append it uh
+you know with other data sets right
+looks for example I want to create a
+merge data set of my categories and
+subcategories so I can say mer selectors
+two data sets and say merge queries as
+new
+and
+I can select product categories and
+products are categories select
+product category key on both the sides
+and then they do a left Auto Zone so
+whatever product categories are there
+I'll get the subcategories associated
+with it and I'll create a new table
+which will have
+now I have the table which has the
+category and the subcategory and
+subcategory in one table itself so I can
+rename it now to as
+category
+sub category
+table it's a it's a merge basically it's
+a join between category and subcategory
+now I have a common table right and I
+can close and apply
+so imagine I have created a
+new table which is imported created from
+one data set is which is Excel page
+another data set which is text based
+see this category subcategory table so
+now I can use it
+the way I want in my visualization
+reports so that's what the presentation
+says right that once you have uh the
+imported data you can shape you can
+combine you can adjust you can do
+whatever transformation you want to do
+and create your visualization okay so
+what topics we are going to cover today
+we are going to talk about different
+types of data modeling and the most
+important part
+and aspect of data modeling is the
+cardinality the cardinality which you
+basically decide after reviewing the
+nature of data and after you've imported
+it what kind of cardinality you have to
+basically highlight right and there are
+different type of cardinalities which
+you might have heard earlier also if you
+are from PL SQL background like one is
+to one one is too many Etc we will we
+will talk about that
+now what are the different types of data
+modeling now dimensional data modeling
+is one of the most popular and most uh
+you know widely used uh modeling in
+dimensional data modeling you have
+Master data uh like for example customer
+data date store data product data so
+these are like you know uh less
+frequently changing data sets so there
+is an organization right and you have
+set of customers their email ID phone
+numbers
+Etc that will change less frequently as
+compared to the sales transactions
+because transactions are happening every
+day every minute so sales is a more fast
+changing data set in dimensional
+modeling which is in the terminology of
+data uh is also called as a fact and
+customer store product which are like
+more of static data and less changeable
+data is sometimes called a diamond
+attention so this is a typical
+dimensional data model which is
+typically used uh sometimes right and
+then there is another model which is
+relational model this is a typical model
+which we have been using in database
+design like you know primary key foreign
+key relationships so for example you
+have a customer who has purchased a
+product so probably he might have the
+customer might have the details of the
+product which is processed and you will
+make a join between customer and product
+table and even you can make a join
+between product or product type or
+customer or product types customer table
+will also have a key to the product type
+so this is less conducive for reporting
+but it is more of a transactional
+relational model but of course this is
+also feasible but from the power bi
+perspective when we talk about reporting
+and visualization this is the most
+extensively used dimensional data model
+and this is what we are going to see in
+our example now so what I'm going to do
+is I'm gonna show you certain data sets
+first we will prepare and create certain
+offer data sets and then we will Import
+in our sample power bi file and then
+slowly slowly we will create the
+relationships
+now one important thing which you need
+to understand that in power bi if you go
+to Power bi there is an option that that
+power bi Auto detect new relationships
+after data is loaded and import
+relations from the data source on first
+load so for example if you are importing
+the data from a database where you have
+already defined the primary keys and the
+foreign key relationships so uh that is
+the first option which power bi will
+Auto detect and secondly if suppose you
+are importing two different kind of data
+sets one is Excel one is CSV and if
+power bi detects a common column key
+columns it will auto detect a
+relationship which you can go and later
+change modify manage in your
+relationship
+menu manage relationship menu in power
+bi which I'm gonna show you okay so if I
+open a power bi and this is where the
+option lies go to file
+go to options and setting options
+data load
+and these are the two options which are
+by default check you can uncheck it and
+auto and manually prepare relationships
+there's no limitation to that but if you
+uh keep it checked then power bi will do
+its job to detect the relationships okay
+now coming to the next important factor
+cardinality
+now before I start playing around with
+my data and start showing you certain
+relationships it's very important to
+understand these four types of
+cardinalities one is many to one right
+so basically
+many to one means that many orders
+contain data of One customer so per
+order one customer is there so from
+customer to order or product or delivery
+address it's a one-to-man relationship
+and from the other side from order to
+customer perspective it's a many-to-one
+relationship
+okay
+second other cardinality is one is to
+one one is to one relationship is only
+applicable when you are saying it's an
+extension of the current table so for
+example in one table you have employee
+details and you are extending the
+details of the employee in another table
+like employee address employee ID so
+that is like one is to one there is no
+multiple records of a single employee in
+the address table only one employee ID
+exists right
+now one is too many as I said is the
+reverse side of many is to one okay so
+in customer table only one customer
+record exists per customer and one
+customer can place many orders for
+multiple products and can also have
+multiple delivery addresses so that way
+this is a typical one is too many
+relationship we will be seeing this
+example also in our sample data set
+and last is the many-to-many
+relationship now many to many is a very
+typical example so which I'm going to
+show you practice practically and in our
+case we will see that like for example
+you have placed an order for a
+particular product uh you know but there
+are multiple fulfillments which has
+happened so suppose you made order for
+10 products but at the back end when the
+company is fulfilling it is first
+fulfilling the first two products then
+the rest three so basically you the
+Fulfillment is happening in batches so
+one order ID might have a multiple
+fulfillments for the same order ID so
+there will be a multi many to many
+relationship which I'll show you
+practically so now with this background
+let's
+start importing our data now the first
+important thing which we need to import
+is the Master data so first I'll import
+all my master Dimensions which are uh
+which I'm going to you know use in my
+example so first is the customers table
+customers data
+so this is the customer details the
+customer key prefix first name last name
+birth date marital status and gender
+some redundant columns are also present
+but we'll remove it
+so my customer data is loaded now
+today's session is all about this
+section of modeling so we will keep our
+Focus over here
+okay now some columns probably some
+blank columns are there I can select
+them and say delete from model
+yes
+okay so now this is my customers data
+with the relevant columns and the key
+per customer customer key
+now there's no relationship in this
+model right now right because only
+single table is there and the associate
+data is only imported now let me also
+import my another important master table
+is the products
+select the products data product key
+product sub category product SKU product
+name model name product description
+color size so just see all the relevant
+information only specific to the product
+is available so I reported
+okay now see there's no relationship
+between product and customers directly
+because until unless a customer makes an
+order places an order for a particular
+product there is no join right so now
+between these two tables the most
+important now another table which will
+now make sense is the sales order table
+sales table
+now I I'm assuming that power bi have
+Auto detected the relationship now you
+can see that because I've already uh
+ticked that check box now let's see what
+power bi what relations power bi has
+Auto detected let's first say check the
+relation between customer and sales I'll
+double click this
+join now what it has done is it has
+created a join of many to one
+between sales and customer so what does
+that mean is that one customer has can
+place many orders right and that is that
+it is detected by the quality of the
+data and the data sampling which power
+bi has done you can also reverse this
+relationship here I can select customers
+and I can select sales now it has become
+one too many so that you can also do
+manually so that is what I said whatever
+power bi is detected it is up to the
+description of power bi internal uh
+configuration and algorithm but you can
+go and change it so this is now you can
+this is by default active so we want to
+keep it active One customer many sales
+orders cross filter Direction means that
+only from customers to sales is the
+filter applicable not reverse I'll come
+to this with my another example but
+first let's
+change the relationship so one is too
+many means from One customer and many
+sales orders
+similarly let's see what has happened at
+the product site
+of the relationship
+similarly power bi many sales orders for
+one product you can for simplicity's
+sake you can say products
+sales
+product key is the join now just focus
+one more thing please also see the the
+column on which the join is is the grade
+column grade out column product key is
+also here and product key is also there
+and it is what we wanted so one is too
+many relationship from product to sales
+table and act
+now looks fine this is something which
+is looking logical and probably now we
+can
+proceed further to create a report
+now let me explain the cross filtering
+with an example
+now for example I want to check in a
+report
+that what is the count of products which
+uh which a particular customer has
+ordered
+okay so what I'll do is I'll select the
+product count of product name
+now if you see
+the and for each customer in front of
+each customer name the count is coming
+as 293 293 it is getting repetitive
+because because there is a one-way
+filter Direction filter between
+customers and sales and sales and
+products right so this join
+is single sided it means that from
+customer to product you can't find a
+relationship because it's a single side
+cross filter right what does this if I
+change it to both it means that it is
+equal to a join between product and
+sales and every product detail now is
+appended to the sales table so if I want
+to make you visualize this you need to
+go here
+I'll first open my sales table
+we can also open it here let's make
+click it says okay now if I click OK you
+can see the single arrow is changed to
+Double Arrow it means it's a it's a both
+side filter
+So when you say a both side filter it
+means that implicitly within power bi
+you can imagine that all the product
+columns now will get appended because of
+both ways filter you have applied and if
+you go to your report now see the change
+of the numbers now for T20 so the total
+count of products across all my
+customers come out to be 293 now the
+report looks uh correct if I change the
+relationship from back to single between
+product and sales then you can't make a
+join between customers and products
+basically you can't derive the product
+count from the product table see this
+if you have to live with it then you
+would have to go to the sales table get
+the product key and get the value of
+count of product key but that is not
+correct
+okay
+so if you want a report in which you
+want the count of product name
+and even if you want a count of distinct
+product name so this will not come
+correctly you would have to go and
+change the
+direction of the filter which is from
+single to both so this is a typical
+example they where you want to use a
+two directional filter
+now let's proceed further and import
+other data set in order to show you
+another example
+now I want to show you an example of
+one is to
+1.
+so I have another table which is called
+customer details so the key in this
+table is again customer key but only
+email address annual income total
+children education level Etc other
+details of the customer is there
+so I'm loading the customer details now
+you see it has Auto detected a one is to
+one relationship
+what is the meaning of one is to one
+means One customer key only has one
+entry in customer details there is no
+multiple entry so if you click this
+button
+it's a one is to one and the cross
+filter can be both or single doesn't
+matter because one customer will have
+only one value you can make this as
+active okay and if you go to the
+customer report table you can now easily
+associate a
+email address with the first name you
+will get one is to one
+record
+so now you can see that with one is to
+one relationship
+with the first name I have Associated
+the email ID and for each email ID
+there is a Associated first name method
+so this is an example of
+one is to one relationship so in this
+example what we have explained is that
+for each customer there is an Associated
+customer detail right uh so you have the
+first name email address education level
+homeowner occupation and total children
+count
+so in this report what we have done is
+uh if you click over here so the first
+name and the email address okay so
+there's a one is to one relationship
+and then
+and if you drag
+the customer key
+report takes time to render and even if
+you can
+so this is the reporting output you have
+the customer key first name associated
+email address and the count of product
+names uh which the customer has ordered
+now this is an example of 1 is to 1.
+now I want to show you an example of
+many too many now for that I'll import
+my
+fulfillment data set
+huh
+okay now in my fulfillment data set
+there is a column for
+order number so basically what I'll do
+is I'll drag order number from here to
+here
+okay so now what has
+um
+uh Power bi detected
+I'll do one thing I'll select sales over
+here
+fulfillment over here and order number
+to odd number
+okay so it's a many-to-many relationship
+so it means that per order I have
+created multiple batches to fulfill that
+particular order now
+many-to-many relationship is a
+definitely a candidate for both ways
+cross filter detection uh a Direction
+but you can you can check that but
+definitely uh Power bi shows a warning
+that this relationship has cardinality
+to many to many and this should only be
+used if it is expected that neither
+column contains unique values okay so we
+know that fact that's why we are
+accepting this relationship as many to
+many because we know there are multiple
+order numbers over here in the sales
+table which are mapped to the multiple
+order numbers in the Fulfillment table
+we'll click ok
+now you want to keep uh the uh
+uh direction as both ways or One
+Direction that is up to you the way you
+want to map the report so I can double
+click over here
+and you can even click so now you can
+select from which way single filter you
+want from fulfillment to sales or sales
+to fulfillment I'll prefer sales to
+fulfillment and click ok
+okay now we have our all our different
+kind of relationships over here uh which
+we have tried to shortlist one to many
+many to one one to one which is uh this
+example and many too many
+now if I show you further relationships
+which you can keep on adding like for
+example I have uh the example of
+territories
+now in which particular territory the
+sales was done
+I put over here
+okay so now it's a typical one is too
+many relationship because territory is
+my master table uh where I have a static
+list of continent country region and it
+is mapped to the uh territories which
+are for in which my orders have been
+placed so it's a typical one is too many
+so that way you know you can keep on
+adding data then you have
+uh details of returns
+now this is another transactional table
+which is about the orders which have
+been returned rather than being you know
+returned by the customers so you have a
+product key
+and so automatically power bi has
+detected a relationship between the
+product key and the product uh table
+right and even if you can join the
+territory key in which territory the
+return has happened
+right so mostly the most common
+relationship which you will observe is
+the one is too many because
+as I told earlier the most common
+relational model is the dimensional
+model uh the static data the slow
+changing Dimensions the scds are the
+master tables and the most frequent
+changing are the fact tables so if I
+talk about a typical dimensional model
+the Fulfillment table sales table and
+the territory stable sorry the
+Fulfillment table sales table and my
+returns table are the fact tables of my
+data model now so far what we have done
+as per our last session is that we did
+data modeling on the different data sets
+which we had imported in power bi like
+products sales data returns fulfillment
+customer details and customer Master
+data calendar details Etc so in the last
+session we prepared a data model and
+established the relationships between
+these different data sets like one is to
+one one is too many many to one one is
+to one Etc and we saw the examples now
+once our relational model is prepared
+our data model is prepared now our next
+activity is to create certain additional
+columns which we want to derive basis
+the data which we have imported
+so for example I'll start with my
+product data set now in my product data
+set I want to introduce a column which
+basically
+categorizes that if any product which
+has a color uh you know red black or
+gray I am going to tag it as a colored
+product rest I'm gonna say not a colored
+product right so all these are like
+example of byte type product skus so for
+that now in order to introduce a new
+column you just need to do what you need
+to select the table in the data grid go
+to the table tools and say new column
+okay so column will get appended to the
+rightmost part and you will start seeing
+a uh formula section typical to like you
+get in your Excel now I'm gonna say that
+the name of my column is going to be
+byte type color okay and I'm just
+creating a if condition if
+product
+color
+is equal to
+black
+okay
+or
+or if it is equal to red
+or if it is equal to
+Gray
+then
+say yes it's a colored product I'll say
+no
+okay so now you can see this is the
+product color red and black they are
+saying by type color Yes blue is no
+multi is no etc etc so this is a classic
+example of an if and else condition
+based conditional column
+okay so you can create such columns now
+second column custom column which I want
+to create is I'm going to call as
+discount
+now this is the pricing of my products I
+want to associate certain discounts
+which I am ready to give to my customers
+this is the product category like what
+is the pricing of the category again I'm
+going to use make use of if else but in
+a nested way so if I am saying if my
+product
+price is less than 100
+then I will give
+zero percent off
+uh zero percentage of discount so 0 into
+product price just to keep it consistent
+now I am saying
+else
+if less than 100 and 0 else I'll check
+again that
+if
+the price is
+less than
+500 then I'm ready ready to give one
+percent discount
+on the product price
+else
+I'll move further so like this
+I have created a formula
+so what I'm saying is if product price
+is less than 100 give zero percent if it
+is less than 500 then give one percent
+less than 2 000 then 1.5 percent less
+than three thousand then two percent and
+otherwise else less than three thousand
+if a two percent else three percent
+right now after this column is created
+now you can check right so this C the
+product price for this particular
+product it is less than 100 so that's
+why there is no discount it is uh
+between 100 to 200 then this has been
+given a one percent discount so like
+this all the discount column is now
+calculated now this column is available
+just like a regular column in my product
+table
+now after this I'll go to my sales table
+now in sales table I want to identify uh
+create a column called as cost
+there is no product cost column over
+here so that will be derived
+so let's create a column
+called as cost
+and it is derived by order quantity
+into now the cost of the product
+is in the product table and I know I
+have already created a relationship
+between product and sales table
+so I just need to select the product
+cost column now only keyword which I
+have to use in power bi is the related
+keyword so this will pick up the
+relation
+and now for this particular sale order
+the cost has already been derived so
+this order number this is the cost for
+which uh the product is is the costing
+of the product for this particular order
+you do
+okay
+now I'm gonna create another conditional
+column over here called as
+order status
+I'm saying if
+any order whose order quantity is
+greater than 2
+then for my organization it's an urgent
+order
+else it is a
+normal order
+oh sorry
+lost it
+so this is my
+order status column and I have my order
+quantity
+urgent or normal
+so any order which has order quantity
+one is normal any order which is having
+order quantity as greater than
+2 is
+urgent you can see this
+so there's a this whole power bi
+tabs and sheets allow you to also review
+the data what you're doing so it's very
+convenient
+now
+I have my sales data now what I want to
+bring within the sales is my discount
+column so here also I want to bring the
+discount which I have created
+so I'll say discount
+[Music]
+will be order quantity
+into
+related
+product discount right so the discount
+calculated column which I had created
+under products I'll bring over here
+now I am creating the order level
+discount so if you see for this
+particular order there's a 25 uh
+uh you know for 25 rupee discount at the
+cost is hundred thousand rupees okay
+and what is the order price now so I
+have taken the order cost the discount
+now I have to create a column call as
+price order price so that will be
+again order quantity
+into related
+price which is per product
+price enter
+okay so now I have the cost the discount
+and the price right available with me
+now I want to
+calculate the total
+uh
+total revenue total profit and loss
+right
+per order how much
+so first I'll calculate per order how
+much revenue I am generating so now I
+have to generate a column called as
+Revenue
+revenue is price
+minus discount
+so 1700 minus 25
+1700 minus 25 2071 minus 42 and if I
+want to calculate the profit per order
+then it is
+Revenue
+Minus cost
+okay so now you can see you know typical
+custom columns calculated columns which
+we have created are all playing around
+with the number numeric values numeric
+data primarily and trying to give
+inferences into per order cost discount
+per order price revenue and profit so
+typical calculation columns which I have
+prepared in front of you
+now let's take a look at other different
+variations of custom columns I'll create
+certain columns for text based custom
+columns calculated columns using Text
+data
+so I'm now moving towards my customer
+table in which I have customer key
+prefix first name last name birth date
+marital status and gender
+now I want to create a new column in
+which I want to derive the age of each
+customer as of today right so I'll use
+another function a date function called
+as
+date div
+now date div so I want the difference
+between the birth date of the customer
+and as of today
+in years
+okay so this customer as of today 68
+year old one is 74 68 57 Etc so this is
+one derivation of a calculated column of
+age
+let's take another example now this is a
+text based column where I want to
+derive the full name of the customer
+now here I'll say first
+lowercase in lower case I'll concatenate
+the prefix
+then ampersand
+space
+ampersand
+first name
+Ampersand space
+ampersand
+last name
+and closing brackets
+Etc
+full name
+okay so this is an example of full name
+in low cases
+now another
+calculated column conditional column at
+the customer level
+I want to identify a flag which says who
+is my Target customer base is the
+demographics shared over here Target
+customer
+so I'll say
+if
+the marital status is equal to
+m
+and
+total children
+hurry
+and total children annual income
+so okay so let me change the logic a bit
+so marital status is M and
+age
+is
+less than
+50
+these customers are my Target customers
+okay so I would say
+yes
+else no
+see this
+he's a marital status is married Logan
+Diaz and age is less than 50 else
+everyone so if I try to filter
+so these are the my Target customers
+69 out of 1178 so this is just a
+conditional column but a logical
+condition an example which I am trying
+to highlight over here
+okay now
+let's look at certain calendar
+date oriented columns calculated columns
+very typical like now I have a simple
+date column now I'll keep adding certain
+columns which are you know which help
+you which will help you understand how
+we can uh
+you know do some calculations on the
+dates so like for example I want a date
+which is 12 days after the current date
+the date in the column so just simple 12
+Days After
+select the date and add 12.
+now if you see the date format you can
+go and change the format at the top
+and if whatever you feel like like this
+now see 12 days after first Jan 2015 is
+13 Jan 2005. you can go and change the
+format and other details
+let me also show you if I go to my cost
+and other columns I can go and change
+the format this is like a currency cost
+is currency so I can go and
+select the
+change the currency type and you can
+even show the dollar value or whatever
+currency type it is
+so for numbers you can do currency or
+text or dates you can select the format
+so this is available at the column tools
+level
+now in customers
+like we had our
+column of full name so now what all
+things are available format as text okay
+data type text so very minimal options
+are there with date you have options of
+the date format
+now next
+I want a column which defines the expiry
+date okay so eight months prior
+to the
+expiry date with this which is coming up
+in eight months so I'll create a column
+called as eight months expiry
+and then there is a e date function I'll
+use that I'll use my
+date in the data set
+comma I'll say eight so now this date
+column will append eight months to my
+actual date and again I can go and
+change the format
+correct
+now another important column like I want
+to know the date name
+so I'll use a function called as
+format
+and I'll select my calendar date column
+and I'll say give me the DDD
+format of it so it will give me the day
+name the day the day name of on that
+particular date
+next
+years in between
+so I want the years in between the
+today's date and the date of my calendar
+so equal to
+D Def
+the calendar date
+comma today
+comma year
+end
+seven years 2015 to 2022
+then last date of the month
+so if I want what is the last date of
+this particular calendar month
+I will use a function EO month which is
+there and label in the
+power bi so I'll say
+last date of the month
+equal to
+e o month
+then
+just select the calendar CSV date
+comma
+0 in months and enter
+change the format
+then similarly start of the month
+so I'll use a function called start of
+month
+so for for all January dates end of the
+month is 31st Jan and start of the month
+will remain 1st of Jan
+change the format
+foreign
+next I want to know what is the weak
+number of that particular date so now
+there is an inbuilt function called
+week number week num and just pass the
+date and you will get
+the weak number first week of the year
+second week of the year Etc
+now another very
+good example is whether the weak
+day is a weekday or a weekend right so
+what is it's a weak type okay
+so I'll check I'll put a if condition
+and there is a function called weekday
+and I'll pass the calendar
+if it is less than 6
+it means it's a weekday as it's a
+weekend
+so all Saturday
+and Sunday D names will come as weekends
+or else everything else will come as
+weekly
+so these are very different variations
+of different column types calculated
+columns which is a very important
+utility and uh and any Bravo bi project
+you will definitely be ending up
+creating n number of calculated columns
+to derive your numbers to prepare your
+reports but it's important to understand
+what all things we can do yes there are
+n number of functions available in power
+bi but uh what I have tried to Showcase
+over here is some important functions
+but basis your utility basis your
+problem statement you can look up for a
+relevant function in the power bi
+dictionary
+now with this
+introduction to calculated column this
+is the base for us to now get into our
+next session where we'll be talk we will
+be talking about creating dacs measures
+and Dax functions we will be using power
+bi Dax functions which is much more
+powerful than simple uh calculated
+columns where you can do more uh complex
+calculations uh you can calculate totals
+and then use them in the reports so for
+that we will look up into our next
+session let's embark on this
+transformative adventure together having
+said that if you're an aspiring business
+analyst looking for online training and
+certifications from prestigious
+universities are in collaboration with
+leading experts then search no more
+simply learn sports.jet program in
+business analysis from Purdue University
+in collaboration with Amazon Google and
+Microsoft should be a right option for
+more details use the link in the
+description box below we have reached
+the end of this session on full business
+analytics course should you need any
+assistance PPT project code and other
+resources used in this session please
+let us know in the comment section below
+and a team of experts will be happy to
+help you as soon as possible until next
+time thank you and keep learning stay
+tuned for more from Simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

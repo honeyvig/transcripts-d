@@ -1,0 +1,229 @@
+the process of transforming one data
+type to another occurs during the
+assignment
+automatic tag conversion
+occurs in c sharp if the two data types
+are compatible
+if they incompatible then explicit type
+conversion must be performed assigning a
+value suitable for n to a long variable
+is an example
+on that note i am and i welcome you all
+to simply learn's youtube channel today
+we will be going over the boxing and
+unboxing
+but first let me remind you that we have
+our daily updates on numerous
+technologies so if you are a tech geek
+looking for the latest technological
+innovations then try subscribing to our
+youtube channel and don't forget to hit
+the bell icon so you never miss an
+update on simply learn
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+discussion on what is boxing
+for like that
+we will have a brief discussion on
+unboxing
+next we will have a comparison between
+boxing and unboxing
+following that we will implement what we
+learned during this session with a
+simple demo
+finally we will conclude this session
+with a quick pointers on boxing and
+unboxing
+so now let's get started with the
+discussion on what is
+boxing first up
+boxing is a process of turning a value
+type to a object type or any interface
+type that this value type implements
+many people mistake boxing for
+converting a value type to a reference
+type although this is not the case
+because if that were true that integer
+values should be able to be transformed
+into a string or an array which are
+reference types
+next up we have boxing is an implicit
+translation technique that employs
+object type that is a super type
+then we have
+when the clr boxes a value type it wraps
+the value into a system.object
+and saves it on the managed heap
+at last
+making a duplicate of a value being
+boxed is conveyed by a boxing conversion
+this is a unique
+from a reference type to a type object
+conversion
+in which the belly continues to point to
+the same instance and is just treated as
+the lost derivative type object
+next up let's discuss what a c sharp
+unboxing is
+first up unboxing is a technique of
+transforming an object type variable
+into a value type variable
+you must double cast if you want to
+unbox an object into a different type
+than its predecessor
+unboxing is an explicit conversion
+process requiring us to explicitly
+mention the data type during unboxing
+then
+you must a double cast if you want to
+unbox an object into a different data
+type than its predecessor
+finally an unboxing operation
+involves first determining if the
+observed instance is a box value of the
+specified value type and then
+duplicating the value from the instance
+now that we have a good grasp on
+concepts like boxing and unboxing let's
+have a discussion on the difference
+between boxing and unboxing
+first let's check the base definition
+so boxing is basically a conversion of
+value type to an object type
+then we have a conversion type boxing is
+classified
+as an implicit conversion technique
+whereas
+the unboxing is an explicit conversion
+factor
+finally let's go over an example
+as you can see in boxing we first define
+an integer value
+and then assign its value to an object
+variable obj
+now in case of unboxing we are defining
+a new integer variable to store the
+current object variable
+so to do that we are test casting the
+object variable to an integer type
+now that we are familiar with the
+process of boxing and unboxing then
+let's go to visual studio code and
+implement them
+let's start by creating a double
+so we will have a double
+x
+equals to
+10.3 then
+we can create an object
+obj
+equals to
+x
+and now
+this process of writing object obj
+equals x is called boxing
+next
+let's try to unbox this back
+so we will have
+another double
+y
+equals to
+double
+x
+double obj
+now this process is called
+unboxing
+let's try to print this
+so console
+dot
+write line
+and we'll print one
+then also have
+a console
+start
+read
+line
+let's save this and run it
+here as you can see it has printed 10.3
+now
+let's try something different
+let's try
+typecast this double
+into an end
+so
+let's have this end
+and change
+this
+as you can see it is giving us
+an unhandled
+exception
+that is invalid cast exception
+now to get around that
+we need to double cast it
+so
+first
+we will typecast this
+to our turbo
+then we are
+retype casting it to an end so that to
+store it in y
+now let's save it and run it
+and as you can see it is now printing
+10.
+why is it printing 10 instead of 10.3
+well because
+we have now converted a turbo into an
+end and in doesn't have decimal points
+so that's why it is printing 10.
+let's get back to our slides
+finally let's discuss some of the
+pointers on boxing and unboxing
+first up there are two forms of data
+storage in a computer programming a
+reference type which keeps tracks of the
+location of their values in a place
+called a heap
+and the value types which simply keeps
+the values themselves on the stack
+then we have the tank system unification
+which gives the value types the
+advantages of objectness without adding
+unneeded cost
+int values are just 32-bit values in
+application
+that do not require int values to
+operate as objects
+the functionality is accessible on
+demand for applications that require int
+values to act as objects this ability to
+consider value type as object mediates
+the relationship that occurs in most
+languages between type values and
+the reference types
+following that it is a waste of time to
+box and unbox something as it decreases
+the performance
+it should be avoided at all cost
+boxing and unboxing can be avoided with
+the use of collections like generics
+so you can try substituting
+list for an error list
+at last
+exceptions are thrown when a null object
+is unboxed or an object is cast as an in
+compatible data type
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

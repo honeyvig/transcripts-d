@@ -1,0 +1,1027 @@
+hey everyone this is harsh bhardwaj and
+welcome to this c plus plus tutorial for
+beginners by simply learn
+in this session we will learn about
+history of c plus uses of c plus plus
+programming language its features then
+we learn about variables and types after
+that we will cover arrays in c plus plus
+later we will go through loops in c plus
+plus then switch case statements
+followed by strings then there are
+functions in c plus plus then pointers
+after that oops concept and finally we
+learn about recursion
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update
+so let's go ahead to our first topic
+that is history of c plus plus
+c plus plus programming was created by
+john strawstrom in 1979 at bell labs
+it was created as an extension to the c
+programming language the goal was to add
+object oriented features to the c
+language
+and back then it was called
+see with classes
+in the year 1982
+several new features were added
+the most important were virtual
+functions operator overloading constants
+single line comments etc
+and the name of the language is changed
+from c with classes to c plus plus
+here plus plus is the increment operator
+which gives the idea that c plus plus is
+evolved from the c language
+now coming to uses of c plus plus
+c plus plus programming language has
+many uses
+some of them are
+it is used in developing operating
+systems operating systems like windows
+mac operating system etc all of these
+have some parts that are written in c
+plus
+c plus helps in making web browsers it
+helps the browsers to carry out the task
+with speed and efficiency
+mozarella firefox google chrome safari
+are some examples of it
+c plus plus is widely used for
+developing games because it is fast
+programming language
+c plus plus is used for creating games
+like counter strike and gaming consoles
+like xbox and playstation
+c plus plus is generally used for
+embedded systems like medical devices
+tvs smart watches etc it helps the
+programmers to control how these systems
+run more efficiently
+now moving forward to features of c plus
+c plus plus is regarded as simple
+language because it has a rich library
+with a variety of data types and its
+syntax is almost similar to c language
+c plus is object oriented programming
+language that makes it easier to manage
+and features like polymorphism
+abstraction etc helps in making the
+application secured and efficient
+c plus is portable language we can
+easily write the same code on different
+operating systems but it is not fully
+platform independent like java
+it has both the features of low level
+and high level language it can easily be
+used to develop applications or software
+based on the required level of
+programming language
+and that is why it is called mid-level
+language
+c plus programming language is way
+faster than any other programming
+language its compilation time and
+execution time is fast
+memory management is easy in c plus it
+supports dynamic memory allocation and
+we can free memory anytime we want by
+using the free function
+c
+has rich library it has a lot of inbuilt
+functions that helps in programming by
+making things easy for developments and
+save time for development purpose
+now let's learn about variables and
+types
+a variable in c plus is used to store
+values and every variable has a data
+type
+some of the basic data types includes
+integer
+double
+character
+float and next is void
+so let's start
+integer
+this data type is used when we want to
+store numeric values like 2
+4 5 8 20 30 etc
+second is double or double floating
+point
+this data type is used for storing
+double preceding floating point values
+example
+24.75
+5.94 etc
+next is character
+as the name suggests character data type
+is used for storing characters for
+example a b c etc
+then there is float or floating point
+this data type is used for storing
+single precision floating point values
+for example 2.1 5.7 4.2 etc
+next is void
+this word data type is used when there
+is nothing to return
+in mind that every variable is declared
+with its type
+now syntax of variable is
+data type of variable
+then the name of the variable
+here int num is the example
+and over here in the integer variable
+var
+we are storing the value 10
+and in character variable ch we are
+storing the character e
+now let's move to arrays in c plus
+an array can be defined as collection of
+variables of a similar data type
+that are stored sequentially
+it is easy to access elements of an
+array using its index number
+and each element of the array is
+identified by the index number which
+starts from 0.
+elements are placed at these index
+numbers for example first element of
+array that is 12 is stored at index 0
+and second element that is 4
+is at index 1 and so on
+the syntax for array declaration is type
+then array name
+along with the size of array
+here type is the data type of elements
+that are stored in the array
+array name is the name of the array
+and size is the number of elements that
+are stored in the array
+now
+coming to loops in c plus
+loops are repetition control structures
+that are generally used to repeat the
+block or section of code instead of
+repeating the entire code
+there are three types of loops in c plus
+plus
+for loop
+while loop and do while loop
+so let's start with for loop
+for loop is used when we know the exact
+number of times the loop should repeat
+its syntax has three parts
+initialization
+condition and updation
+first the initialization take place
+in this part we initialize and declare
+loop control variables
+this part takes place only once
+second part is condition
+in this part the condition of the loop
+is evaluated if it's true then only the
+body of loop executes
+once the condition evaluates to be true
+and the blue body is executed
+then updation takes place
+this part
+increments or decrements loop variables
+for example here in i equal to 0 is
+initialization
+i less than 10 is the condition and i
+plus plus is the updation
+now next is while loop
+this loop is used when we don't know the
+exact number of times the loop should
+repeat
+this loop execution terminates based on
+the test condition
+the syntax while loop is
+while keyword and the test condition
+in this part the condition is checked
+if it's true
+then the body of loop executes and goes
+to the updation part
+the updation part is responsible for
+continuation of loop
+this part increments or decrements the
+loop variable
+for example
+here first we have initialized variable
+n with 0
+and then we have used while loop and put
+the condition n less than 4
+now the loop will execute till the value
+of n is less than 4
+and after every iteration the value of n
+will increment because we are updating
+it using the increment operator
+coming to do while loop
+in do while loop test condition is at
+the bottom of the loop and the body of
+loop comes before the test condition
+hence the body of loop execute at least
+once before the condition is even
+evaluated
+this loop is used when we don't have the
+idea about the number of iterations and
+the loop must execute for it at least
+once
+its syntax is do block and after the
+block there is while with the condition
+this do block executes first before the
+condition is checked and after that the
+condition of while is evaluated
+if it's true then only the loop will
+further execute
+it means even if the condition is not
+true then also the loop will execute for
+once
+now coming to switch statements
+switch statements helps in checking the
+quality of variable against some number
+of values and these values are called
+cases
+it compares the value of the variable
+with these cases and whichever case
+matches with the variable that
+particular case will execute
+this is the syntax for switch case
+statement here variable is the one for
+which the comparison is to be done
+case refers to the different cases with
+which the comparison will take place
+break keyword prevents the execution
+from going to the next case statement
+now coming to strings in c plus
+a string is a sequence of characters
+they are used to represent text in the
+program
+there are two types of strings
+c style strings and string class
+c style strings in c programming the
+collection of characters are stored in
+the form of arrays
+c plus plus also allows this style
+it is a one dimensional array of
+characters followed by a null character
+now string class
+c plus plus string is an object of
+string class
+this is a part of standard namespace
+and is defined in the header
+let's have a look at the syntax
+c style string declaration
+care keyword then the name of string
+and size inside the brackets then there
+are four characters
+s a m i semi following a null character
+the size of string is 5 the one extra
+space is for holding the null character
+now in order to use string class of c
+plus we must include string as a header
+the syntax is string keyword
+the name of string
+then we can write whatsoever string we
+want to store for example here we are
+storing semi
+now let's move on to c
+functions
+functions can be defined as a group of
+statements designed to perform specific
+tasks and return an output
+we can also pass arguments to the
+function
+the intent of the function is to combine
+common task and perform them
+we can invoke the function by calling it
+using the name of the function and round
+brackets
+these are user defined functions
+we can also pass arguments to the
+function if you want to
+the syntax of a function definition is
+data type
+along with the function name then
+arguments inside the brackets
+every c plus program has at least one
+function known as main function
+this is where the execution of program
+starts from
+there are both built-in and user-defined
+functions in c plus
+the built-in functions are in the c plus
+standard library if you want to use them
+then we can simply call them
+now let's have a look at this example
+in this example over here we are
+defining the function add is the name of
+the function integer is the data type
+and n1 and 2 are the arguments
+this function is doing the addition of
+two variables and is returning the
+output
+and inside the main function we are
+calling this add function and passing
+the arguments
+coming to pointers in c plus
+pointers can be defined as reference to
+a variable it holds the memory address
+of another variable
+now this memory address is a particular
+location in a computer's memory
+where the data is stored and the pointer
+stores these memory addresses
+pointers must have the data type that
+matches with the reference variable
+the reference operator returns the
+memory address of the variable and the
+dereference operator displays the value
+that is stored at that memory address
+the syntax of the pointer is
+data type
+then the dereference operator with the
+variable name
+now coming to object oriented
+programming
+object-oriented programming or oops is a
+programming model that uses the concept
+of classes and objects
+in oops programming revolves around
+objects rather than logic and functions
+now let's have a look at the oops
+concept
+that is polymorphism inheritance
+encapsulation
+abstraction
+let's start with polymorphism
+polymorphism is the ability to perform a
+task in more than one way
+it provides different meanings to
+operators and functions or in other
+words it redefines the way how things
+work
+next is inheritance it can be defined as
+a process in which one object acquires
+all the properties and behavior of a
+parent object
+the inherited class is called base class
+and the class that inherits is called
+the derived class
+now coming to
+encapsulation
+it can be defined as binding data
+variables and functions together into a
+single unit now coming to abstraction
+abstraction can be defined as hiding the
+internal details and showing the
+functionality to the user
+in c plus it is easy to access class
+variables and methods and abstraction
+keeps them hidden from direct access
+now moving to the last topic that is
+recursion
+recursion can be defined as a process in
+which a function calls itself again and
+again until a certain condition is met
+we can define the condition using if
+else statements or similar approaches
+for example here we are calling a
+function named data which is calling
+itself again within the same function
+here we are calling the function data
+and here is the function data calling
+itself
+this part where the function data is
+calling itself is called recursive call
+and
+the part where we are calling data
+function from the main
+function is function call
+so as we have covered all these topics
+so let's go ahead and do some examples
+on these topics in our code editor that
+is vs code now here we will do a basic
+example of array in which we declare and
+initialize an array and print the
+elements of array using for loop
+so let's start
+first of all let's create a new file
+now let's name this file
+c plus plus tube dot cpp
+so first of all we'll include the header
+files
+hash include iostream
+then we'll use using namespace standard
+now we'll write int main
+now we'll declare and initialize an
+array
+the array name is err
+the size of array is 5
+and now the elements of array
+let's write 12
+40
+22
+any random elements 75
+and 80
+all right
+now
+[Music]
+we'll write the for loop because we want
+to print the elements so we have to
+write for loop and i equal to 0 we'll
+initialize the for loop with 0
+then we put the condition
+i less than
+5 which is the size of array
+i plus plus increment operator
+now we'll display the elements to
+display those elements we'll write arr
+and inside the bracket we'll write i
+after that and line
+here we are printing array of i
+this means one by one each and every
+element from 0 to five will get printed
+as the loop will execute further
+like first zero will be there
+then
+one index will be there then two index
+three index four index up to five
+so one by one all the elements of array
+12 to 80 all the elements will be
+printed
+now after that let's try to return 0
+and let's try to run this program
+we'll press this play button
+to run the program
+so here is our output
+elements 12 40 20 to 75 80.
+these are the elements which you want to
+print
+so this is how we can do it
+and if we want to print a particular
+element as well so we can do that also
+all we have to do is to write the index
+number of that particular element
+let's say i want to print 40 so i will
+write the index number of 40 which is
+one
+now
+i'll save this by pressing ctrl s
+and now i'll run this
+here it is
+40 40 40 it is because
+we are using the for loop so that is why
+it is printing 45 times but if we don't
+use for loop
+let's say
+and now if we try to run this by
+pressing ctrl save
+and
+running the program
+see the output here it is 40.
+as you can see we have wrote the index
+number of a particular element
+and that element is getting printed
+let's try
+three
+at index 3 we can see 75 is there 0 1 2
+3 75
+is the element at index 3
+so let's save it and run again
+75 will be printed
+here it is 75
+now let's move on to our next example
+let's create a new file
+and let's name it
+c plus plus
+tute
+2 dot cpp
+we'll save this
+okay now here we will do a program
+of array in which we will do the sum of
+all the elements of the area
+so let's start
+first of all hash include iostream enter
+file
+now using namespace standard
+now we'll write the main function
+and we'll initialize an array
+two
+i'll write random numbers to four
+uh 10
+8
+3
+11
+and again 2.
+all right now
+there are total seven elements then i'll
+write
+the size equals seven
+we can also take the input from the user
+but let's do it in this way
+all right now
+we'll declare a variable sum and
+initialize it with zero
+now we'll write the for loop
+now we'll initialize it with zero
+i less than size
+which is the size of array
+now we'll increment the loop i plus plus
+now
+as we know that we have initialized the
+variable sum equal to 0
+because we want to store the sum of all
+the elements of array into this variable
+so let's write down sum equals
+sum plus
+array of i
+now here one by one all the elements
+from zero to the size of the array that
+is 7 all the element
+will be added to this sum variable one
+by one
+so
+now let's print this variable
+we'll write the message the sum
+[Music]
+of
+array is
+sum variable
+now
+return 0
+over here from 0 to
+7 all the elements will be added to this
+sum variable we know sum is 0
+but when 2 will be added then the sum
+becomes 2 and then 4 will be added to it
+then 10 will be added to it so as 8 3 11
+and 2. so one by one all the elements
+will get added to the sum variable and
+here we are printing the sum variable
+so let's see how it works
+now let's save this by pressing ctrl and
+s together
+and now let's try to run this program
+as you can see the sum of array is 40
+so let's count
+2 plus 4 6 6 10 16
+16 plus 8
+equals 24
+24 plus 327
+27 plus 11 equals 38 plus 240
+so this is the right answer
+so now let's do another example of if
+else statement
+so let's make a new file
+we'll go to new file and let's name it
+tut3 dot cpp
+we'll save it
+now we'll write the hash include
+iostream
+now we'll write the namespace standard
+now we'll start with the main function
+in this program we'll use the if-else
+statement
+to check whether the person is senior
+citizen or not
+so let's start
+first of all we'll declare the variable
+age
+so now we'll take the input from the
+user
+so we'll ask them to enter the age so
+we'll write the age variable
+the user entered the age now we'll use
+the if condition
+that if the age of a person
+is greater than
+60
+then
+will print the person is senior citizen
+so let's write
+person is
+senior
+citizen
+we have put the condition age greater
+than 60 and so it means that if a person
+enters
+the number greater than 60 then he is a
+senior citizen
+okay now
+in the else block
+will print
+the person is not a senior citizen
+person
+is not
+a senior citizen
+now we'll write return 0
+so this is a basic example to understand
+if else statements so let's try to run
+this program but let's first save it by
+pressing ctrl and s together
+now let's
+run this program
+so here we have to enter the age of the
+person let's say the age of the person
+is 67
+and now we'll press enter
+as you can see person is a senior
+citizen we can see
+now
+let's try
+to run it again
+now this time we'll enter the age 50.
+so here we can see person is not a
+senior citizen when we enter 50 age
+all right so this is
+the right output
+so let's do an example of for loop
+let's name this one as
+for
+dot cpp
+let's save it
+now here we will do an example in which
+we will enter a number and the sum of
+all the numbers up to that number will
+be its output for example let's say we
+have entered 4
+so its output would be 4 plus 3 plus 2
+plus 1
+that is equal to 10 the sum of all the
+numbers up to that number
+so let's start we'll do this example
+with for loop and while loop as well so
+let's start it
+hash include iostream
+now using namespace standard
+now we'll start with the main function
+right and main
+now
+we'll declare two variables into num
+and
+end sum and initialize sum with zero
+all right
+now
+we'll display a message that enter a
+positive number
+and we'll take the input
+num
+all right
+now here we have to write the for loop
+because we want to do the sum of all the
+numbers
+so we have to write for keyword
+and i equals one
+we'll start with one
+i
+less than equal to num
+this is the condition
+and this is the
+updation
+now
+all we have to do is write sum equals
+sum plus
+i
+because we know that we have initialized
+sum
+as 0 earlier and
+the loop is running from i equal to 1 up
+to the number we have
+entered like let's say 5 then the loop
+will run from 1 to 5
+and sum is 0
+so when 1 will be there then sum becomes
+1 and then plus 2 that is 3 plus 3 that
+is
+5 up to so on so this is the way how
+this loop will work
+now
+after this all we have to do is to print
+the sum variable
+so we'll write first of all we'll write
+sum
+equals
+and now some variable
+and l
+now at last return 0
+now let's try to run this
+and first
+we'll save it by pressing ctrl ns
+enter a positive number
+all right
+let's say
+5
+sum is 15 so let's check
+1 plus 2 equals to 3 3 plus 3 equals to
+6 6 plus 4 equals to 10
+and 10 plus 5 equals to 15 so this is
+the correct output
+so this is how we can do this example
+with the help of for loop
+now let's try the same example this
+example only with the help of while loop
+so
+let's remove this part
+now
+we'll write
+while keyword
+and num
+which is the variable
+that is the positive number that is
+entered by the user
+will write not equal to
+zero
+explain this
+now
+here we'll write sum equals
+sum
+plus
+num
+and then
+num equals to num
+minus 1
+here what we are doing is
+we have taken the input from the user
+that is num let's say it is 5
+and we have put the condition inside
+while that num not equal to 0
+and inside the loop we have used the
+decrement we are decrementing num by 1.
+so 5
+will be added to the sum variable which
+is initially 0
+after that num will be decremented as we
+can see num equal to num minus 1 so it
+will become 4 and now
+4 is added to sum
+so sum becomes 5 plus 4 equal to 9
+and then again
+num will decrement and this goes on
+till num becomes equal to 0 because in
+while loop there is a condition saying
+the loop will keep on repeating till n
+is not equal to 0
+and when it becomes equal to 0 the loop
+will terminate
+so now let's try to run this program
+by pressing ctrl s and now
+click on this play button
+enter a positive number
+let's write 5 again
+to check whether it is
+so it's correct sum is 15
+so this program can be done with the
+help of for loop as well as while loop
+and let's move to another example
+so now let's do one another example
+in this example we'll simply swap two
+numbers
+using function
+so
+let's save this first of all name it c
+plus plus
+two
+four
+dot c people
+so let's start with header files
+hash include iostream
+now namespace standard
+now we'll start with the main function
+inside the main function first of all we
+will declare both the variables
+n1 and n2
+now
+we'll display a message saying that
+enter two numbers that you want to swap
+so we'll write enter
+two numbers
+that you want to swap
+all right
+now we'll take the input from the user
+of those two numbers so we'll write
+n1
+n2
+c in n1 n2 here we are taking the input
+from the user
+now
+all we have to do is to display the
+numbers that we have taken the input off
+from the user because we want to compare
+it later
+so let's write
+n1
+and
+and one variable
+after that end l so that
+looks good
+now
+same for n2 will do
+now we have to call a function let's
+name that function swap and we'll create
+that function later onwards
+and
+in this function we are passing the
+arguments n1 and n2
+this is the calling part now we have to
+create
+we have to define the function
+so let's start we'll write void which is
+the data type swap
+is the name of the function
+now inside the function
+we are
+writing the arguments int n1 n2 which we
+have passed from swap over here
+these are those arguments
+now here we will swap the both the
+numbers
+for that we have to create a temporary
+variable t
+and now
+will pass the value of n1 to this
+temporary variable t
+so when n1 gets empty
+will pass the value of n2 to n1
+now n2 gets free
+now we'll pass the value of t temporary
+variable to n2
+so this is how it is getting swapped
+now
+we'll print a message
+slash and first of all we'll write
+slash in
+and
+after swapping slash and we have used
+because of
+we want to create some space so that it
+looks good
+now after swapping
+now
+will display the variables that is n1
+and n2
+we will do it the same way
+n1
+and now the variable n1
+and line
+so that looks good now
+same for n2
+and it's done now all we have to do is
+run this program
+so first of all let's save this program
+by control and s
+now let's try to run this
+here we can see enter two numbers that
+you want to swap
+so let's write
+6
+and
+8.
+so n1 is our six and two is our eight
+after swapping n1 becomes eight and n2
+becomes six
+so our output is correct and the program
+is working fine
+so now let's do one example of
+inheritance
+so let's
+create a new file
+and now
+name this file
+c plus plus tute5
+dot
+cpp and let's save this
+so as we know that in inheritance there
+is a parent child relationship between
+two classes
+so let's start
+first of all let's include the header
+file
+hash include iostream
+now we'll use using name space
+standard
+now
+in this question we'll start with parent
+class so let's write class keyword
+now let's name the class as parent
+itself
+all
+right now
+the access modifier public
+and
+the function let's say
+car
+void car
+now in this function we will print
+access to car
+access to cars
+all right this is one function let's
+create another one
+wide
+villa
+these both are the properties of a
+parent class
+so
+here i'll write
+access to
+the villa
+so these are the two functions in the
+class
+and make sure to put the semicolon in
+the end of the class
+now we will create the child class and
+we know that the child class inherits
+the parent class so it can access the
+functions and variables
+all right
+so let's create this
+child class
+right class keyword
+and name it as child itself
+now we'll put colon
+and write the parent class
+this shows that the
+child class is inherited from the base
+class that is parent
+now
+we'll write public access modifier
+now write a function
+savings
+now the savings function is inside the
+child class
+so
+so here we'll
+display
+access to the savings
+and line
+now here we'll put the semicolon as the
+class is ending
+now we'll start with int main
+inside int main
+will create an object of child class
+and will try to access the
+functions of the parent class
+so let's do this
+child
+name of the class now the object of
+child class
+c1
+now we'll try to call this
+parent class functions that is car and
+villa
+let's see if the child class has access
+to
+the functions of parent class that is
+car and villa
+all right
+c1
+object name dot
+car that is the function name
+now
+object name dot function name
+that is villa
+here we are calling these two functions
+and after that c1 dot savings
+which is the
+function of child itself child class
+now return
+0. now let's see that
+if child class can access these two
+functions of parent class
+let's save it by pressing control and s
+at the same time
+now let's run this
+as you can see access to cars access to
+will and access to savings
+access to cars access to villa and
+access to savings
+so this proves that
+child class inherits from the parent
+class because here we have created the
+object of child class and we are calling
+the functions of parent class
+and
+the functions of parent class whatsoever
+is written or displayed inside those
+functions is getting printed so this
+proves that
+child class inherits from the parent
+class
+so this is the example of inheritance
+and we have done five to six examples on
+different topics
+you can try some more examples on these
+topics
+alright guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

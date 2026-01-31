@@ -1,0 +1,628 @@
+hey everyone welcome back to another
+video session by simply learn
+in this session we will learn about c
+plus polymorphism
+so let's go ahead and have a look at
+what we'll be covering today
+so we'll start with what is polymorphism
+in c plus plus then types of
+polymorphism in c plus plus that is
+compile time and runtime we'll also
+study function overloading and operator
+overloading under compile time
+polymorphism
+and under runtime polymorphism we will
+learn about
+function overriding and virtual function
+in c plus but before we begin make sure
+to subscribe to our channel and press
+the bell icon to never miss an update
+from simply learn
+so what is polymorphism in c plus plus
+polymorphism is an important topic of c
+plus plus oops concept
+the word polymorphism is derived from
+two words that is poly which means many
+and morphs which means forms so
+basically it means many forms
+polymorphism in c plus plus can be
+defined as when the member function or
+the object behaves differently in
+different situations or circumstances
+then it can be called as polymorphism
+for example
+a mother has different relationships
+with different family member inside the
+house for example she is a parent to her
+child
+she is a wife to her husband
+she has sister to her brother and she is
+also a daughter to her parents
+so we can say a mother as a single
+entity has different behavior among
+different members
+and same goes for polymorphism where
+functions behave differently in
+different situations
+now
+let's understand the types of
+polymorphism
+there are two types of polymorphism in c
+plus plus that is compile time
+polymorphism and runtime polymorphism
+so let's start with compile time
+polymorphism
+as the name suggests
+this type of polymorphism occurs during
+the compile time and it is achieved by
+overloading the function or overloading
+the operator
+that is by function overloading or
+operator overloading
+so what is this function overloading
+function overloading is a feature in c
+plus plus
+where the functions having the same name
+but different in terms of parameters or
+type of parameters can be overloaded
+for example as you can see two functions
+with same name func differ in the type
+of arguments one data type is double
+another data type is integer
+so when we make a call to the function
+with arguments of type double it will
+invoke the suitable function and the
+same goes for the other one
+in example 2 there is a difference in
+number of parameters
+among functions
+so while calling the function if we pass
+two arguments it will invoke the first
+function and if we will pass three
+arguments then it will invoke the second
+function
+then
+next is operator overloading
+like functions operators can also be
+overloaded
+in operator overloading we can redefine
+the functionality of the operator
+it helps us in redefining the already
+existing operator
+for example
+instead of writing sum equals
+s1 dot add
+s2 we can easily write
+sum equals s1 plus s2
+that is we can redefine the plus
+operator and use it to add the numbers
+in the operator function
+and we will discuss the syntax of
+operator overloading in the examples
+now coming to runtime polymorphism
+in this type of polymorphism the
+functions are invoked during the
+execution of program
+that is during runtime
+this runtime polymorphism can be
+achieved through function overriding
+so let's understand this function
+overriding
+in function overriding the function of
+the base class gets a new definition in
+the derived class in this more than one
+function has the same name and same type
+of parameters
+the only difference is in the definition
+of both the functions
+that is functions have different
+definitions in the parent class and the
+child class
+as you can see in the example
+void message function has a different
+definition in the parent class and in
+the child class
+both have the same name
+but in parent class it is printing hello
+there and in child class it is printing
+nice to meet you
+by using the object of the base class or
+derived class we can invoke the suitable
+function
+so let's move on to our next topic that
+is virtual function
+virtual function is also used to achieve
+runtime polymorphism
+it is a function that is defined in the
+base class and then is redefined in the
+derived class the function is defined
+using the word virtual in the base class
+and the name of the function is same as
+that of the derived class having
+different definitions as shown
+it tells the compiler to perform the
+late binding on the function in derived
+class
+the function call is resolved at runtime
+and in late binding and the compiler
+determines the object type at runtime
+with the help of virtual function we can
+invoke the derived version of the
+function in the derived class
+so as we have covered the theoretical
+aspect of c plus polymorphism so let's
+go ahead and cover the practical aspect
+of this topic in our code editor that is
+vs code if getting your learning started
+is half the battle what if you could do
+that for free visit scale up by simply
+learn click on the link in the
+description to know more
+so here we will make a new file
+and let's name it as
+poly1 dot cpp all right
+poly1 dot cpp
+let's save it so here we will do an
+example of function overloading which is
+used to achieve compile time
+polymorphism and we know function
+overloading is a feature in c plus
+source in which two functions have saved
+name
+but differ in terms of parameters or
+number of parameters or the type of
+parameters can be overloaded so let's
+start
+first of all we'll write
+the header file
+hash include iostream
+now using namespace standard
+all right
+so now we will create a class king and
+inside that class we'll do the
+overloading
+so
+the class name is king
+and inside the class first of all
+let's make public scope
+now we'll create a function
+return type is void
+and the name of the function would be
+pro
+inside this function let's say we are
+passing two arguments
+into a and b
+all right now
+we'll print both of these
+arguments or variables inside this
+function
+all right and we'll use ndl in the end
+okay
+after that we'll create another
+function and the name of the function is
+same that is pro
+and but in this case we'll make the
+arguments like int a
+and b
+and
+c into d
+and int e
+so there are five arguments in this
+function second function pro
+as we know that the name of the function
+is same
+and
+now inside this function
+we'll simply add all of these
+so a plus b plus c plus d
+plus e
+all right once we are done with this
+we'll use semicolon in the end of the
+class
+all right now we'll start with the main
+function inside the main function
+all right inside the main function
+we will create
+the object of king class king and the
+object would be k
+with the help of this object k we will
+call these
+functions
+as we know the name of the functions are
+same the only difference is in the
+number of arguments
+so
+so i'll call the pro function
+which accepts only two arguments
+so the first pro
+function will be invoked
+so i'll pass 10
+and 20
+so these two arguments will be passed
+over here
+all right
+similarly
+now we'll call the pro function again
+but
+now we'll pass five arguments
+so that the second pro function would be
+invoked
+so let's say i am passing
+12
+23
+20
+and 62
+6
+these are some random numbers
+all right now return 0
+in the end
+now let's try to run this i think we are
+done with this
+first of all let's save it and now let's
+right run this
+so this is our output 10 20 let's make
+it
+let's multiply both of them
+it will look good let's save it and run
+it again
+as you can see 200 and 123 so this is
+our output
+10 into 20 would become 200 and if we
+add all of these we'll get 123. so this
+is our correct output so this was the
+example of function overloading and
+let's start with another example
+so now let's create a new file
+and name this file as
+only 2.cpp
+alright we have saved it
+now here we will do an example of
+operator overloading as we know that in
+operator overloading we give definition
+to already existing operators
+or we can say we can redefine the
+functionality of already existing
+operators
+so let's start
+first of all we'll include the header
+files as we have done previously
+hash include iostream
+then the name space standard
+so first of all we'll start with the
+main function
+and inside the main function
+we will
+write the name of the class that we will
+create
+and
+the object let's say the name of the
+object is one
+and
+will pass
+the arguments to the constructor
+let's say the argument is six and eight
+all right
+then i think we can write return 0
+and we'll do the rest
+afterwards first of all we will create
+the class
+so as we know that the name of the class
+is overload so let's create it
+class
+overload
+and inside this class
+inside the private scope
+we'll start with
+the variables let's say the first
+variable is n1
+and
+let's declare another variable n2
+then we will create the public scope
+inside this we will create the
+parameterized constructor
+so
+it is of same name as that of the class
+that is overload
+and now as the constructor is
+parameterized
+so into num1 and num2 are the parameters
+so when we'll create this object oven
+and we'll pass these arguments so it
+will go here
+and
+all right inside this in the definition
+of this constructor
+we will create a we will declare the
+variable res
+and we will assign
+num to n1
+we'll assign
+num2 to n2
+and let's say we'll do the subtraction
+all right
+n1 minus
+n2
+all right now we will
+display
+the result that is res
+so
+res
+and then the variable res
+after that we'll use zendell
+all right
+so
+once you're done with this parameterized
+constructor then
+we will create a operator function
+so void is the return type
+then we will write
+operator keyword
+this is the syntax of operator function
+then after writing the keyword we'll
+write the symbol let's say minus is the
+symbol
+then the arguments if there are any
+arguments then we can put those
+then inside the function that is in the
+definition we can perform whatever the
+functionality we want to perform
+so let's say in this case we'll just
+make the numbers negative
+so we'll do that
+all right
+now we'll do the calling part of this
+we will simply use the symbol and the
+operator
+and this is how we call the operator
+function
+this is very simple and after that we
+have to display the
+digits as well as we have made them
+negative in this part
+so we'll
+create a function display
+and inside this function we will display
+those
+digits or numbers
+so we'll write
+n1
+all right after this we'll write
+we'll do same for n2
+so
+we'll write n2
+and 2 then
+there is endl in the end
+all right so here we are displaying this
+so once we are done with this the class
+is finished so we can use the semicolon
+in the end
+and we have to call this void function
+as well so
+we will write
+one dot display
+o1 dot
+display
+all right we are done
+let's
+see whether it works or not
+let's save it
+and check it
+so as you can see the result is minus 2
+that is 6 minus 8 equals minus 2
+that is correct and n 1 is minus 6 and n
+2 is minus 8 because we have made them
+negative inside this operator function
+we forgot to add some space in n 2 and n
+1 so that is why it is looking like this
+but the answer is correct
+and this is how we can do the operator
+overloading
+in this part we have use the return type
+then the operator keyword then the
+symbol and if there are any arguments
+then we can pass those arguments
+and if there are not we can put it like
+this
+so this is our example of operator
+overloading let's do another example so
+now we'll do an example of function
+overriding
+so let's name this
+poly3.cpp
+so in function of writing the function
+of base class gets a new definition in
+the child class and when we call the
+function of the child class using the
+object of child class
+then the function of base class gets
+overridden
+so now let's do the example of this
+function overriding
+i think we have named it wrong
+poly3 dot cpp
+all right
+let's name it four
+poly4 dot cpp all right now let's save
+it
+now
+include the header files
+using namespace standard
+now
+we'll start with the class parent
+so this is
+the base class
+and we have named it parent
+inside the parent class we will create a
+function
+for that we will create the public scope
+inside
+inside the public school we will create
+the function print
+and
+we will display the message
+this is the function of parent class or
+base class what server
+all right
+so this is class parent and semicolon in
+the end of the class
+now we'll clear the child class
+child
+derived from
+parent class
+name of the class is parent
+similarly we'll do the public scope and
+create the function
+void
+print so it is same function as that of
+the above class
+and
+inside this function will display
+this is
+the function of
+child class
+derived class let's say
+all right once we are done with this
+semicolon in the end and semicolon in
+the end of the class as well
+then we can create a main function
+and inside the main function
+we will create the
+object of child class child obj
+so as we have created the object of
+child class or derived class so with the
+help of this we will override the
+function of the base class
+so we'll write obj
+dot
+print
+which is the name of the function so as
+you have created the object of child
+class so it will call the
+derived class or child class function
+and in the end let's say return 0
+now save it
+and try to run this
+this is the function of derived class
+so as we have expected so it is calling
+the child class function
+so this function of the parent class
+gets overwritten as we have used the
+object of child class and call this
+function print which is of same name so
+this function which is in the child
+class gets to print
+derived class
+so this is our output
+so now let's do an example of virtual
+function in c plus
+virtual functions are defined in the
+base class to ensure that
+the functions gets overwritten
+and
+when we use the base class pointer to
+hold the derived class object or the
+child class object the base class
+pointer will always call the base
+version of the function and not the
+derived version
+so to solve this problem we use the
+virtual keyword in z plus plus so now
+let's start with it
+first of all we'll write hash include
+iostream
+now the namespace standard
+now we will create the base class class
+base
+and then we'll use the public scope
+inside the public scope we will create
+the virtual
+function
+use the
+virtual
+the return type
+then the name of the function that is
+print
+and we have created this virtual
+function inside the base class now we'll
+print
+this is the function inside the base
+class as we have done previously in the
+previous question
+this function
+this is the functional base class here
+it could be right
+all right once you are done with this
+we'll close the class by using semicolon
+now we'll create the derived class and
+we'll name it derived
+from the base class whose name is base
+itself
+now
+here we will use the public scope
+and we will create the function
+of the right class
+print function and will print
+this is the function of derived class
+all right
+now we'll use the semicolon
+to end the class
+now inside the int function int main
+function
+first of all we will create the pointer
+of base class
+base
+d reference operator b
+so we have created the pointer of base
+class now we will create the object of
+derived class
+derived d
+so now we will store the address of
+derived class object to the pointer of
+base class
+so let's do that
+b which is a pointer of base class
+address of operator
+the object of derived class
+so now we will call the print function
+using the pointer of base class and it
+will print the derived class function
+because
+the pointer of base class which we are
+using to call the functions points to
+the derived class object
+so now let's do the calling part
+all we need to do is
+the pointer and the arrow operator
+and the name of the function
+that is print
+after that we can write return 0
+now everything is done let's save this
+and
+run it
+as we can see this is the function of
+derived class here we can see
+so the derived class function is getting
+called which we wanted
+so this is an example of virtual
+function in c plus
+we have used this virtual keyword over
+here and
+using the
+base class pointer
+we have code this function
+and
+and these were some examples of
+different topics in polymorphism in c
+plus plus you can try some more examples
+on these topics it will help you in
+understanding this topic in a better way
+all right with that we have come to the
+end of this video if you like this video
+please give it a thumbs up i hope it
+really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
