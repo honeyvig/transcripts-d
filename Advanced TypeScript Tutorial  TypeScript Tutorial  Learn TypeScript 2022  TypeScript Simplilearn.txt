@@ -1,0 +1,393 @@
+hey guys welcome to another video by
+simply learn in this video we will look
+at advanced typescript concepts here is
+a list of topics what are covered in
+this video
+so we'll first look at type assertions
+type aliases
+typescript generics
+in operator
+nullable types
+index types
+index signatures
+map types
+similarly conditional types
+supporting libraries from node modules
+the awaited type and promise type
+a search signature
+top level await and recursive type
+aliases
+so these are the some of the advanced
+concepts which we'll cover in this video
+before we begin make sure you have
+subscribed to our youtube channel and
+click on the bell icon so you never miss
+an update from simply learn
+watch the video till the end so that you
+don't miss out on any concept
+so without wasting any further time
+let's get started with advanced
+we will first look at type assertions
+type assertion is similar to typecast in
+other languages but it does not do any
+additional verification or restructuring
+it has no effect on runtime and is only
+used by the compiler typescript expects
+that you the programmer have completed
+the necessary and specific checks
+so there are two types of assertions
+one is the
+asyntax and the other one is the angle
+bracket syntax both versions are
+identical choosing one over the other is
+primarily a matter of preference
+however only as style assertions are
+allowed when combining typescript with
+jsx
+type aliases type aliases give type a
+new name
+type aliases are similar to interfaces
+in that they can be used to name
+primitives unions tuples and any other
+kind that you would have to define by
+hand otherwise
+aliasing doesn't truly create a new type
+instead it gives the type a new name
+aliasing a primitive isn't very useful
+however it can be used for documentation
+purposes
+type aliases like interfaces can be
+general all we have to do is add type
+parameters and utilize them on the right
+side of the alias declaration
+this is the syntax for type aliases
+type generics
+type generics is a tool for creating
+reusable components in typescript
+rather than working with a single data
+type it builds a component that can
+interact with various data kinds it
+enables users to consume these
+components while also using their kinds
+genetics ensure that the software is
+both adaptable and scalable over time
+consider the below code without generics
+the identity function is a function that
+returns whatever is sent in as a
+parameter you could either provide the
+identity function with a specific type
+or the identity function with any type
+while the use of any is generic when you
+use any the function accepts any kind
+for the type of argument
+as a result when the function returns
+you lose the information about what the
+type was
+the only information you have is that
+any type could be produced if you pass a
+string
+so for that we need the means to capture
+the argument type in such a way that we
+can use it to signify what is being
+returned as well
+we will utilize a type variable here
+which is a form of variable that deals
+with the types rather than values
+the identity function now has a type
+variable called type
+this type allows you to capture the type
+of data the user supplies
+for example
+a number or a string so that you can use
+it later you are going to utilize type
+as the return type once more
+next we'll look at the in operator
+the in operator serves as a type
+narrowing expression
+the true branch narrows to types that
+have an optional or required property n
+and the false branch narrows to the
+types that have an optional or missing
+property n
+for a n in x expression
+where n is a string literal or a string
+literal type and x is the union type
+below is an example code for inoperator
+null and undefined are two special types
+in typescript that have the values null
+and undefined respectively they are not
+particularly useful much like void
+null and undefined are subclasses of all
+other types by default that means you
+can give things like number null and
+undefined values
+when the strict null checks flag is set
+however null and undefined can also be
+assigned to unknown any and the
+respective types
+this helps you avoid a lot of frequent
+errors you can use them as union type
+string null and undefined if you want to
+send in either a string null or a
+undefined
+next we have index types
+using index types we can get the
+compiler to check code that utilizes
+dynamic property
+names by using index types a typical
+javascript pattern for example is to
+select a subset of an object's property
+we may build and use this function in
+typescript using the index type query
+and index access operators
+let us jump into visual studio code and
+understand index types more better
+so consider this code as an example for
+index types here key of t the index type
+query operator
+for any type t e of t is the union of
+non-public property names of t
+and t of k the indexed access operator
+is the second operator
+the type syntax reflects the expression
+syntax in this case
+and t of k can be like index type
+queries be used in generic environment
+which is where its truly potential can
+be seen
+all we have to do now is make sure that
+the type variable k
+extends e of t
+in get property o
+t and property name k so that means of
+property name the compiler will initiate
+the actual type of the key after you
+return t of k result therefore the
+return type of get property will change
+depending on which property you request
+index signature
+index signature interact with the key
+off and the t of k
+the type of an index signature argument
+must be either a string or a number
+if your type has a string index
+signature key of t will be a string or a
+number
+because in javascript you can access an
+object property using either a string or
+number
+t of string is simply the index
+signature type
+below is the syntax for index signature
+if you have a type with number index
+signature e of t will just be a number
+map types
+taking an existing type and making each
+of its property optional is a typical
+undertaking because this happens
+frequently enough in javascript
+typescript has a new feature called map
+types that allows you to define new
+types based on existing ones
+the new types turn each property in the
+old type in the same way in a map type
+for example make all the properties
+optional or the read-only type
+it's important to note that this syntax
+refers to the type rather than the
+member you can use an intersection type
+to add more members
+this is the simplest map type and its
+parts the syntax is similar to the index
+signature with a 4 in the middle
+there are three sections in total
+the type variable k is assigned to each
+property one by one
+the little union of string the names of
+the properties to iterate over a stored
+in case
+and third one the properties type is the
+result
+next we have conditional types
+based on the condition given as a type
+relationship test
+a conditional type chooses one of the
+two alternative types when t can be
+assigned to u the type is x and when it
+can't the type is y
+because the condition depends on one or
+more type variable a conditional type t
+extends u
+so x is to y and is either resolved to x
+or y or delayed
+whether to resolve to x or y or to
+differ when t or u contains type
+variables is determined by whether the
+type system has enough information to
+conclude that t is always assignable to
+you
+in conditional types we also have
+distributive conditional type
+that is a conditional type in which the
+check type is beta type parameter
+during instantiation distributive
+conditional types are automatically
+distributed over union types
+supporting libraries from node modules
+typescript includes a series of
+declaration files to guarantee that
+typescript and javascript support works
+well right out of the box
+and typescript includes a series of
+declaration files however there are two
+drawbacks to using these declaration
+files with typescript
+one drawback is since while upgrading
+typescript
+we must also deal with the changes of
+typescript built-in declaration files
+which can be difficult when the dom apis
+change so regularly
+and the other
+drawback is that customizing these files
+to meet your needs and the demands of
+project dependencies is difficult
+so to overcome this a new feature
+like types
+was added that allow us to override a
+specific built-in library
+then we can update typescript and lock
+the file in dependency management
+ensuring that it utilizes the same
+version of dom types as a result we can
+update the types on our own schedule
+then with
+then with typescript 4.5 we can update
+typescript and log file in our
+dependency management
+await type and promise improvements
+the weighted type is the new utility
+introduced in typescript
+this type is intended to represent
+activities such as await in async
+functions and the then method on
+promises notably the way they
+recursively unwrap promises
+existing apis such as javascript
+built-in like promise.all
+promise.race and others can benefit from
+awaited time in fact some of promise
+that all inference concerns provided as
+foundation for awaited promise that all
+combine certain traits with awaited to
+produce far superior inference results
+tail recursion elimination on
+conditional types
+when typescript identifies potential
+infinite recursion or any type expansion
+that take a long time and damage your
+editor experience
+it oftenly fails
+as a result typescript includes
+heuristics to ensure that it doesn't run
+off the tracks while deconstructing an
+indefinitely deep type or working with
+types that provide a lot of intermediate
+results
+let's jump into visual studio code and
+look at an example
+the trim left type for example removes
+spaces from the beginning of string like
+time when provided a string type with
+space at the beginning trim left returns
+the reminder of the string to the user
+this type is handy but it will throw an
+error if a string contains more than 50
+leading spaces
+this is problematic because these types
+are frequently used in modeling
+operations on strings
+such as parsers for url routers
+to make matters worse a more powerful
+type useful generates more type
+installations resulting in even
+additional input length restrictions
+trim left is written in such a way that
+it is tail recursive on one branch when
+it calls itself again it returns a
+result instantly and does nothing with
+it
+because these types don't require any
+intermediate outcomes they can be
+constructed more rapidly and without
+activating many of typescript built-in
+type recursion heuristics
+next we have assert signatures
+the set signature features allow us to
+construct functions that operate as type
+cards as a side effect
+instead of returning their boolean
+result explicitly
+consider a below example
+after a search ring typescript has no
+way of knowing if you have guaranteed
+the type of input
+to prevent this most people just make
+the parameter input string which is fine
+but it also moves the type checking
+problem somewhere and in circumstances
+where you just want to fail hard having
+this option is beneficial
+if this function ever returns typescript
+can filter the type of input to string
+exactly like it would be if it were
+inside an if block with a type card
+to make this safe the asset function
+must either give an error or not return
+at all if the asset assertion isn't true
+and lastly we have recursive type
+aliases
+the ability to recursively reference
+type aliases has been limited
+the reason for which is because each
+type aliases must be capable of
+substituting itself for whatever it
+aliases
+because this isn't always possible the
+compiler rejects some recursive aliases
+interfaces can be recursive but their
+expressiveness is limited and type
+aliases cannot that involves combining
+the two creating a type alias and
+extracting the types recursive
+operations into interfaces
+interfaces can be recursive but their
+expressiveness is limited and type
+aliases cannot
+that involves combining the two creating
+a type alias and extracting the type's
+recursive portions into interfaces it's
+effective
+by establishing an interface users may
+write what was practically the same code
+typescript has no trouble working with
+the interfaces and other object types
+because they introduce a level of
+indirection
+and their whole structure does not need
+to be eagerly built up
+however many found the work around of
+introducing the interface to be
+inconvenient and there was nothing wrong
+with the old version of value or array
+that used array directly in concept
+so with that we have reached the end of
+this video like and share it if you
+found it interesting
+thank you so much for being here keep
+learning and stay tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,522 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+be learning about the top arduino
+projects for 2022 but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you're a tech geek in a continuous hunt
+for latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply
+now without further ado let's get
+started with the agenda for today's
+session so we will get started by
+understanding what exactly is arduino
+and followed by that we will get started
+with top arduino projects for 2022
+and once we are done with the top
+montana projects we will understand the
+fundamental differences between arduino
+and raspberry pi i hope i made myself
+clear with the agenda now without
+further ado let's get started with the
+first topic that is what exactly is
+arduino all to our experts in this video
+we will be discussing about arduino
+projects the different domains where
+arduino can be used and how
+let's look at today's agenda
+we'll first look at locking projects
+using arduino then we will look at some
+of the rover projects using arduino
+game projects using arduino then
+automation projects using arduino
+followed by which we will look at
+robotics projects and help projects
+then we will look at some of the drone
+projects audio projects iot projects and
+lastly we will look at sensor projects
+using arduino
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell like so you never
+miss an update from simpler
+so without wasting any further time
+let's get started
+blocking projects using arduino
+frequently we need to secure a space in
+our home or business so that no one can
+enter without our permission and our
+valuable accessories and assets are
+protected from theft or loss
+there are many different types of
+security systems available today
+but they all rely on fingerprints retina
+scanners ir scanners face id tongue
+scanners rfid readers password pins
+patterns and other biometrics for
+authentication
+the most cost effective solution is to
+utilize an arduino-based password or pin
+based system
+some of the locking projects using
+arduino are arduino door lock system
+rfid and keyboard lock system
+we have unlocked door with knock system
+push button lock system and gesture
+control log using arduino
+then we have rover projects using
+arduino
+the arduino robot is the world's first
+arduino powered vehicle on each of
+robot's two boards there are two cpus
+the motor board is in charge of the
+motors while the control board is in
+charge of reading sensors and deciding
+how to run them
+each board is a complete arduino board
+that can be programmed using arduino ide
+using arduino we can create many rover
+projects like voice control rover
+line follower rover
+gesture control rover
+survey rover
+ir remote control rover
+and similarly
+we have autonomous rover and many more
+game projects using arduino
+some remarkable arduino based game
+projects ranging from retro gaming
+played on a limited screen to more
+sophisticated projects requiring some
+assembly some of the arduino gaming
+projects are
+snake game
+then we have chess game
+pinball
+spaceship simulator
+and claw machine
+automation projects using arduino
+the robust characteristics of arduino
+are well suited to a popular section of
+applications that is automation
+the arduino board can be used to create
+a wide variety of automation
+applications
+automation has brought convenience to
+whole new level from controlling room
+lights with your smartphone to
+automatically organizing events instead
+of using mechanical switches you can now
+operate all of your home electronics
+from the palm of your hand
+some of the automation projects using
+arduino are
+home automation and sanitizer dispenser
+automated shower boiler
+automatic motion sensor trash
+and ir remote controller home appliances
+health projects using arduino
+any medical equipment that has internet
+connectivity and can measure one or more
+health data of a patient who is
+connected to the device such as
+heartbeat body temperature blood
+pressure ecg steps etc is referred to as
+arduino based patient health monitoring
+system
+if there is a rapid change in patients
+health the equipment can record and
+transmit the data
+iot encompasses everything from smart
+watches to fitness tracker to hospital
+equipment that can link to the internet
+arduino-based health projects have been
+developed to create new medical gadgets
+it may be used to measure body factors
+such as ecg temperature moisture and
+heartbeat it also identifies the
+patient's physical state and location
+some of the health projects using
+arduino are
+smart bridge band smart bioware
+portable ecg
+ultrasonic site
+and smart health kit
+drone projects using arduino
+drone are airborne vehicles that range
+in size from micro to multi-rotor
+quadcopters a camera is sometimes
+included with a drone allowing the users
+to watch and record the bird's eye
+perspective
+a drone is made up of numerous parts one
+of the most significant of which is the
+flight controller which acts as the
+drone's brain
+the arduino development board is great
+for this purpose especially because
+there are variety of models available
+ranging from the tiny arduino nano to
+arduino mega all of which are small
+enough to fit into the design of a drone
+some of the drone projects using arduino
+are
+quadcopter
+autopilot drone
+mind control drone
+guide power drone
+and hover craft
+robotics project using arduino
+we can learn about electronics mechanics
+and software using the arduino robotics
+project it includes a number of project
+examples that you can easily copy as
+well as robust robotics platform that
+you may have to execute a variety of
+jobs
+some of the robotics projects are
+robotic arm
+drawing robot fire fighter robot
+ball tracking robot and spider robot
+if getting your learning started is half
+the battle what if you could do that for
+free visit skill up by simply learn
+click on the link in the description to
+know more
+audio projects using arduino
+if you enjoy working with both hardware
+and software arduino is the perfect
+hobby for you arduino is a programmable
+logical controller that can do a variety
+of cool things depending on your
+programming skills
+using the arduino to make music is a
+special genre of projects
+if you will some are straightforward to
+implement while others are more
+difficult
+so some of the arduino projects for
+audio are
+paper piano with arduino
+vfo or rf generator
+arduino mp3 player
+arduino uno guitar pedal and arduino
+beat detector and we even have mini
+vintage internet radio most good
+communication using arduino and many
+more
+iot projects using arduino
+arduino iot cloud is a tool that allows
+creators to create connected products
+quickly easily and securely multiple
+devices can be linked together and data
+can be exchanged in real time you can
+also keep an eye on them using a simple
+user interface from anywhere
+some of the iot or bluetooth projects
+using arduino are
+iot bicycle radar iot pet feeder
+telegram bot
+arduino bluetooth camera and smart
+parking system
+sensor projects using arduino
+one of the aspects that make an arduino
+so valuable is the simplicity with which
+it can retrieve sensor information
+sensors are devices that transform a
+physical quantity into an electrical
+quantity such as light intensity or
+temperature
+the different types of sensors that are
+available are
+light sensor motion sensor temperature
+sensor magnetic field sensor gravity
+sensor humidity sensor
+moisture vibration and pressure sensor
+electrical field sensor sound sensor and
+position sensor
+manufacturing machinery aircraft
+vehicles medicine and robotics are just
+few of the use cases of these sensors
+so the different sensor projects that
+can be made using arduino are
+temperature monitoring
+smoke detection using gas sensor
+3d scanner
+smart plant incubator and water quality
+monitoring system
+in this video we will be discussing
+about raspberry pi projects
+the raspberry pi has a wide range of
+uses
+the microcomputer has grown to
+accomplish many odd activities in
+addition to many standard tasks
+raspberry pi was created with the intent
+of allowing people to play with the
+circuit board and to aid in the
+development of new computing skills
+the internet is huge amount of
+information about the raspberry pi's
+various applications and projects
+as well as recommendations on how to
+execute them
+we will go over a few projects that
+demonstrate the microcomputer's wide
+range of capabilities
+this video will show you the most
+popular and useful projects
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply now
+so without any further ado let's get
+started
+the first project is web server
+the raspberry pi serves as a web server
+for multiple users
+there are numerous web server packages
+to choose from however in the most
+circumstances the raspberry pi's
+performance is insufficient for reliably
+hosting large amount of dynamic online
+content
+instead the mini computer is
+significantly better suited for local
+testing environment simple static
+websites with low visitor accounts on
+the other hand might be hosted on
+raspberry pi server
+scanner server
+setting up your raspberry pi as a
+scanner server using same is a terrific
+way to bring your old scanner up to date
+instead of purchasing a wi-fi capable
+scanner you can use a device like
+raspberry pi 0 to provide that
+capabilities scanner access now easy is
+the acronym for same this program serves
+as a standardized method of gaining
+access to the scanners
+xbox cloud gaming on raspberry pi
+microsoft's xbox cloud gaming service
+allows you to stream various video games
+from their servers to another device
+in this project we will be streaming
+these games from the xbox cloud gaming
+service to the raspberry pi
+using the chromium web browser you can
+broadcast xbox cloud gaming to your
+raspberry pi in a reasonably simple
+manner
+this project will even show you how to
+turn your raspberry pi into pure xbox
+cloud gaming machine
+the xbox cloud gaming service isn't the
+only game streaming option for your
+raspberry pi you can also broadcast
+games to use pi using google's gaming
+service
+game console
+we can turn your raspberry pi into a
+retro gaming console also we can now
+simulate practically any classic game
+from 1970s to the 1990s using this
+little computer
+retropie a piece of software that solves
+all of your emulation needs is now
+available it's simple piece of software
+to setup and it also offers a user
+friendly interface
+you may now play old games with retropie
+you can use any raspberry pi model for
+this project however the raspberry pi 4
+model such as the raspberry pi model 4b
+that is 4gb is strongly recommended
+remote control 3d printer
+octoprint which is one of the most well
+known 3d printing program can also be
+used on raspberry pi this software lets
+you collect statistics and even monitor
+your 3d printer from afar
+this software lets you collect
+statistics and even monitor your 3d
+printer from afar
+you can now control your 3d printer
+remotely rather than using an sd card
+aside from that you can connect a webcam
+to a 3d printer to monitor the progress
+of your printing
+you will need a wi-fi adapter like the
+model tl
+wn725n to make your 3d printer work
+because you will need to connect it to
+the internet
+language translator
+this project necessitates some coding
+and programming experience
+we can utilize the google translate
+library or any other python translating
+tool to make this project much easier
+you will need to know how to set up text
+to speech speech recognition translation
+apis and so on because this project has
+many layers
+overall it's still a worthwhile project
+that you can do with your raspberry pi
+and add to your achievements of
+raspberry pi projects
+security camera
+you may have observed that different
+raspberry pi models are compatible with
+different camera modules
+the raspberry pi 8 megapixel camera
+module for example is only compatible
+with raspberry pi 1 2 and 3 versions
+you may now make your own security
+camera for your home with this camera
+model another advantage of this project
+is that you can add whatever other
+features you like
+for example we can access video feeds
+from afar and have them immediately
+uploaded to a server for backup
+a number of package or library
+prerequisites are already available on
+the internet on your raspberry pi you
+can simply download or alter it
+wi-fi extender
+a wi-fi extender is another simple
+project it's a low cost and effective
+solution to increase wifi range
+if you have a bad wifi signal in your
+garden or even your room you may utilize
+your raspberry pi to boost your signal
+it's an excellent substitute for
+commercial wi-fi repeater furthermore
+because this is a diy project you can
+always alter it and add new features
+because this job has already been
+completed by many people you can just
+search the internet for the finest and
+most convenient way to complete it
+running android tv on raspberry pi
+android tv is specialized version of
+google's famous mobile operating system
+it has a
+in revised face that better accommodates
+the horizontal nature of television
+screens
+because the operating system is better
+suited to white horizontal screens and
+remote controls it's the best option for
+connecting the pi to your tv the google
+play store also gives you access to many
+downloadable apps
+the most significant difficulty with
+running android tv on a raspberry pi
+right now is that builds lack hardware
+video decoding and encoding capabilities
+the pi 4 mod will be pi 400 and the
+compute module 4 are the only devices
+that can run android tv
+running zoom on the raspberry pi
+we can utilize the feature to set up
+meetings so that people can readily
+connect with you
+the individual hosting the meeting on
+the other hand will need their own zoom
+account
+the person who creates a meeting has the
+authority to determine who is allowed to
+speak and share resources such as the
+computer screen
+with the free plan you can connect up to
+100 additional individuals for total of
+40 minutes because the raspberry pi does
+not contain any arm binaries it is
+difficult to run zoom on it
+we will use a handy piece of software
+called box 86 to get around this
+box 86 is an emulation program that
+transforms
+86 instructions to arm instruction set
+which the raspberry pi recognizes
+raspberry pi bluetooth speakers
+you may greatly expand the capabilities
+of your raspberry pi by connecting it to
+a set of speakers
+this project gives you the opportunity
+to stream audio directly to any vintage
+speakers or hi-fi system making them
+more modern
+we can add support for apple airplay
+spotify connect and synchronize multiple
+room audio to raspberry pi in addition
+to bluetooth audio
+we are going to utilize a balina image
+named balinas sound to bring all of
+these extra capabilities to our
+raspberry pi
+this instruction from balina greatly
+simplifies the setup process and should
+lessen the chances of making mistakes
+home assistant using raspberry pi
+home assistant is an open source home
+automation program that was created
+using raspberry pi based device the
+software was created with the goal of
+protecting your privacy and retaining
+control in the hands of the user
+you can monitor the status of all of
+your devices in your house with the home
+assistant you can even automate your
+interactions with them
+we can program home assistant to turn on
+all of the lights automatically when it
+gets dark and you're at home when you
+cast a movie on your chromecast you can
+even program it to dim the lights in
+your giving room
+raspberry pi is an excellent platform
+for home automation it's compact
+inexpensive has many networking
+functions and consumes little power
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+minecraft using raspberry pi
+for this project we need to install a
+custom version of minecraft designed
+just for raspberry pi minecraft pi
+edition is a name of this version of
+minecraft
+this version of minecraft is much older
+than the current version it does however
+have an advantage it is entirely free
+additionally this version of minecraft
+includes a python library for
+interacting with the game environment
+now with that we have come to an end of
+this session on top arduino projects for
+2022. if you have any queries regarding
+any of the topics covered in this
+session or if you require the resources
+that we used in the session then please
+feel free to let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+your queries at the earliest until next
+time thank you stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,40 @@
+we wanted to create a game of such
+massive scale that's never been created
+before we really wanted it to run
+naturally in the browsers anyone can
+play it immediately whether it's your
+laptop or your phone or your PC we were
+Building A system that could cope with
+huge demand and huge concurrency huge
+availability around about the same time
+service fabric came about say two
+alliances suddenly decide to go to war
+on a whim they all meet in space at the
+same time to Duke it out our
+microservices in azur service fabric
+will automatically scale up begin
+unfolding space and seamlessly
+distribute the load across all the nodes
+in the system we've tested it up to
+50,000 concurrent players in the same
+battle arena we were handling 267
+million application messages a second
+our game microservices are built using
+asp.net core it gives us Superior
+performance asp.net core is an open
+source that allows us to contribute back
+to it if we have any performance issues
+which then Microsoft review and together
+we make a better product our
+contributions to castal have reduced
+allocations lowered latencies and
+allowed it to be already
+2,300 faster than previous incarnations
+of asp.net and more than six times
+faster than no. JS we run public player
+versus player Alpha play tests once a
+month where anyone can just drop in all
+you need is a modern browser that runs
+webgl turn up at the website and you can
+play the game against other players
+around the world

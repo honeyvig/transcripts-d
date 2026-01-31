@@ -1,0 +1,400 @@
+hello and welcome to this video on edge
+AI for artificial intelligence if you
+are interested in learning more about
+how AI is revolutionizing the world
+around us this video is for you AI is a
+New Concept in the world of AI that
+refers to devices and sensors at the
+edge of the network they can collect and
+process data in real time
+this allows for faster more accurate
+decision making and greater efficiency
+in a variety of applications such as
+self-driving Vehicles Smart Homes and
+health monitoring so how is AGI
+different from cloud computing and cloud
+computing AI the main difference is the
+location where the data is processed LGA
+enables devices at the edge of the
+network to process data locally without
+having to send it to the cloud this can
+lead to faster more responsive systems
+and can help you preserve bandwidth and
+reduce latency in contrast cloud
+computing AI processes data in the cloud
+where it can assess vast amount of data
+and compute resources but also requires
+a reliable internet connection and can
+be slow as AGI becomes more advanced it
+has the potential to transform many
+Industries such as Healthcare
+Transportation manufacturing and a lot
+it can enable new applications such as
+autonomous vehicles remote surgery and
+real-time monitoring of machines and
+equipments while cloud computing AI has
+many benefits AGI offers the advantages
+of faster decision making reduced
+latency and improve efficiency so if you
+are interested in learning more about
+the future of AI Aji is definitely a
+topic worth exploring on that note hello
+everyone and welcome to Simply learn in
+today's video we'll understand what Edge
+Computing is and how it is different
+from traditional cloud computing but
+before we begin make sure to subscribe
+to our channel to stay updated with all
+the latest Technologies and hit that
+Bell icon to never miss any updates from
+us so without any further delay let's
+get started but wait if you want to
+become an expert in Edge Computing then
+look no further than calcium in machine
+learning offered by simply learn which
+is an online program designed to provide
+students with a comprehensive
+understanding of AI and machine learning
+Concepts tools and techniques this
+program is created in collaboration with
+caltex ctme and IBM and it is designed
+to provide Learners with a strong
+foundation in Ai and machine learning
+Concepts this program covers various
+topics such as data science statistics
+deep learning computer vision and NLP
+and help you gain the right skill set on
+various tools such as care as matpatlib
+tensorflow Django and many more
+furthermore the curriculum is structured
+around interactive online classes live
+sessions with industry experts and
+Hands-On projects so why wait hurry up
+enroll now and Caltech postgraduate
+program in a and machine learning and
+create your own successful career link
+is added in the description box below so
+make sure you check that out so without
+any further Ado let's jump directly into
+our today's topic so firstly let us
+understand what is Edge Computing the
+term Edge Computing for AI refers to the
+process of running air computations and
+processing close to the data source or
+Edge devices at the edge of a network as
+opposed to relying on centralized
+cloud-based servers in order to enable
+real-time data analysis pick a response
+times and a decreased Reliance on cloud
+infrastructure it deploys AI models and
+algorithms directly on edge devices or
+local servers
+here it's Computing typically entails
+the deployment of lightweight AI models
+designed to use on edge devices with
+constrained computational power then
+these models are frequently deployed to
+the edge after being trained using
+cloud-based resources The Edge devices
+gather data from their sensors or from
+outside sources process the data locally
+using the a models that have been
+deployed and give prompt responses or
+start processes based on the data but
+water to the rise of Hai well with rapid
+advancement in technology in every
+sector and businesses are looking to
+increase automation to increase workflow
+productivity and security and for that
+computer programs must be able to
+identify patterns and Carry Out tasks
+repeatedly and safely in order to assist
+people now the range of tasks that human
+perform however covers different
+situations that are impossible to fully
+describe in quotes and rules because the
+world is very unstructured well with the
+help of developments in Hai machines and
+gadgets can Now function with the
+intelligence of human cognition whenever
+they may be smart applications with AI
+capabilities can learn to carry out the
+same tasks under various conditions just
+like in real life and here are the three
+recent innovations that explain why
+using AI models at the edge is on the
+rise well first on the list we have
+advancement of neural networks now over
+the years as you know neural networks
+and related AI infrastructure have
+advanced unmatured allowing for more
+generalized machine learning
+capabilities this means organizations
+have to gain a deeper understanding on
+how to train a models effectively and
+deploy them in production at the edge
+development in computational
+infrastructure now running AI at the
+edge requires substantial computational
+power the field has witnessed notable
+advancements in computational
+infrastructure to support AI at the edge
+particularly recent strikes in highly
+parallel graphic processing units or
+gpus and CPUs have enabled efficient
+execution of neural networks gpus are
+specifically designed to handle complex
+parallel computation making them a
+suitable choice of processing Ai
+workloads and finally widespread usage
+of iot devices now the widespread
+adoption of Internet of thing devices
+has generated vast amounts of data these
+devices such as industrial sensors smart
+cameras and Robotics provide a rich
+source of data that can be utilized for
+AI analysis at the edge the availability
+of diverse iot devices and their ability
+to capture real-time data has
+facilitated the deployment of AI models
+at the edge but why deploy AI at the
+edge what are the benefits of edge
+Computing now Edge Computing for AI
+addresses the limitations and challenges
+associated with conventional cloud
+generic AI methods so here are some of
+the advantages which it offers firstly
+decreased latency Now by performing AI
+processing at the edge there is a
+significant reduction in network latency
+since data no longer needs to be
+transmitted to the cloud and back this
+is particularly beneficial for
+applications that demand real-time
+responses or decision making let's say
+like autonomous vehicles or Industrial
+Automation secondly real-time data
+analysis it's Computing for AI enables
+emea data analysis and inference
+directly on the edge devices themselves
+this is especially valuable for time
+sensitive applications that require
+real-time insights or predictions
+eliminating the need for Reliance on
+cloud connectivity
+enhance privacy and security well Edge
+Computing enhances privacy and security
+by keeping data and air processing local
+sensitive information can be processed
+on the edge devices without being
+transmitted to the cloud minimizing the
+risk of data breaches and ensuring
+compliance with data privacy regulations
+next we have bandwidth optimization Edge
+Computing reduces the volume of data
+that needs to be transmitted to the
+cloud sending only relevant or let's say
+summarized data now this optimization
+minimizes bandwidth requirements reduces
+Network cost and even lightens the load
+on the cloud infrastructure in total and
+finally it offers offline functionality
+Edge Computing enables a models to
+function even in situation which limited
+or no internet connectivity this
+capability is crucial for scenarios that
+require continuous operation in remote
+or disconnected environments such as
+certain iot applications or field
+deployments so these were some of the
+reasons why we need to deploy AI at the
+edge and the benefit it's offering now
+comes the main question how exactly does
+Edge Computing works well Edge Computing
+is primarily focused on the proximity
+and location of data processing and
+storage the fundamental principle is
+simple then it's not feasible to bring
+data to a centralized data center the
+alternative is to bring the data center
+close to the data now in order to enable
+machines to perform tasks like let's say
+a visual perception object detection
+driving cars understanding speech
+speaking walking and emulating other
+human skills they need to replicate
+human intelligence in a functional
+manner so for that AI uses a deep neural
+network as a data structure to emulate
+human cognition these dnns undergo
+training in data centers are exposed to
+numerous examples of specific tasks or
+question type along with their correct
+answer and once the training is complete
+the model advances to become a inference
+engine capable of addressing real world
+questions now from there on here's how
+it typically Works firstly deployment
+kind of inference engine now in AJ
+deployments the inferencing Gen which is
+the component responsible for making
+predictions or performing AI tasks is
+deployed on local computers or devices
+located in device environments like
+factories hospitals cars satellites
+homes and much more
+problem identification and data upload
+now while the inference engine operates
+at the edge it may encounter situation
+where it struggles to provide accurate
+predictions or encounter challenging
+scenarios in such cases the problematic
+data associated with these instances is
+commonly identified and applied to a
+centralized Cloud structure now from
+there on there is a continuous
+cloud-based model training now the cloud
+infrastructure typically in a data
+center receives the problematic data
+from Edge devices data scientists and AI
+experts can then utilize this data to
+refine and train the original a models
+further this involves using the clouds
+computational resources larger data sets
+and collaboration tools for model
+training and Improvement now and finally
+with the updated model deployed at the
+edge after being retrained the AI system
+continues to operate gaining new data
+and insights from its environment the
+Aja model can collect further additional
+data which can be periodically uploaded
+to the cloud and further training and
+continuous Improvement this feedback
+loops enjoy that the AGI models become
+progressively smarter over time so this
+is in a nutshell how Edge Computing for
+AI Works hope you have understood well
+let us talk some of the use cases of
+edge Computing for AI in real world well
+the combination of AI iot and Edge
+Computing has opened up a multitude of
+opportunities for Edge AI
+revolutionizing the various aspects of
+our daily lives so let's delve into some
+key areas where Edge AI is making a
+significant impact first on the list we
+have Healthcare Hai is enhancing medical
+Diagnostics and patient care for
+instance by deploying AI algorithms on
+medical imaging devices Radiologists can
+accurately and efficiently identify and
+analyze pathologies wearable devices
+with local Edge analytics enable
+real-time monitoring of patient data
+facilitating any early detection of
+anomalies And Timely interventions
+next autonomous vehicles Edge air plays
+a pivotal role in enabling real-time
+navigation and decision making for
+autonomous vehicles a algorithms running
+on edge devices within Vehicles process
+sensor data analyze the environment and
+make Split Second decisions to ensure
+safe and efficient driving
+agriculture hji is being used to address
+agriculture challenges as well such as
+pollination autonomous drones equipped
+with Hai capabilities can identify and
+pollinate plants aiding in crop
+cultivation and maximizing yields this
+application demonstrates the diverse
+potential of edge AI Beyond traditional
+domains next we have smart home and
+cities now Edge AI enhances the
+functionality and efficiency of Smart
+Homes and cities local processing and
+Analysis of data from iot devices enable
+real-time automation Energy Management
+security surveillance and personalized
+user experience hji power system adapt
+to individual preferences optimized
+resources usage and respond to events in
+real time
+next we have industrial applications
+Edge AI is transforming Industries
+thoroughly through real-time monitoring
+predictive maintenance and process
+optimization Edge devices equipped with
+AI algorithms analyze sensor data detect
+anomalies and predict equipment failures
+reducing downtime and improving
+efficiency
+next we have security and surveillance
+well AJ placed a crucial role in
+security and surveillance which Empires
+real-time video analytics for security
+and surveillance applications Edge
+devices with a capabilities can analyze
+video feeds locally detect suspicious
+activities like theft identify objects
+or individuals of interest and Trigger
+alerts or responses enhancing security
+measures and reducing response types
+finally we have personal devices Hai is
+increasingly being integrated into
+personal devices such as your
+smartphones laptops variables and smart
+home assistants this allows for
+on-device a processing enabling faster
+and more personalized experience without
+relying heavily on cloud connectivity
+which can support voice recognition
+facial recognition among other features
+as well well as more businesses and
+industries recognize the advantage of
+Hai its adoption is rapidly growing the
+ability to process data locally enhance
+privacy reduce latency and make
+real-time decision impulse organizations
+in various sectors to enhance operations
+deliver better services and improve user
+experience so these are some of the
+real-time applications of agile and with
+that we've come to the end of today's
+session on what it's Computing for AIS I
+hope you understood thank you for
+watching the video guys if you found
+this tutorial informative and helpful
+give it a thumbs up and share it with
+your friends and colleagues if you have
+any further queries regarding any of the
+the concepts are topics out in today's
+tutorial feel free to let us know in the
+comment section below and a team of
+experts will be more than happy to help
+resolve all your queries at the earliest
+until next time stay safe thank you and
+keep learning staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

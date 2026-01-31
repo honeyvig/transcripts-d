@@ -1,0 +1,834 @@
+hi welcome to visual studio tool box I'm
+your host Robert Greene and joining me
+today is ed Charbonneau thanks for
+having me thanks for coming on Ed's
+going to show us a couple ways that you
+can using asp.net core from inside
+Visual Studio of course take advantage
+of angular so the marrying of angular
+and asp.net core right so when you think
+of JavaScript frameworks the first thing
+that might not come to mind is Visual
+Studio right we're not used to
+developing JavaScript applications in
+Visual Studio we're used to C sharp and
+F sharp and sam'l applications but the
+JavaScript frameworks that are out today
+like angular are very popular and they
+work really well with a dotnet back-end
+cool so we're gonna look at three
+scenarios first we're going to look at
+how to create an angular application in
+Visual Studio using the new templates
+that the visual store the.net team is
+releasing with asp.net core 200 and then
+we're going to look at how you would
+create an angular application using a
+Web API back-end with an angular
+front-end without that templating okay
+and then we'll look at how to use the
+template with an open source framework
+called native script so we'll use the
+template to build an angular web
+application and then we'll use angular
+to build a native iOS and Android
+application cool using JavaScript code
+that we're sharing between the native
+application and the web application so
+three interesting scenarios and they're
+they're all just a little bit different
+right they fit different development
+types or different team types you know
+depending on how friendly your your team
+is with front-end development you may
+want to choose one scenario over the
+other all right cool so let's look at
+the first way to do this I've already
+generated the project but I want to walk
+through the steps of how it's done I
+won't do it live here because it takes
+quite a while to pull in all those
+dependencies but what we do is go to
+file new project and when we do file new
+project in the latest bits of Visual
+Studio now the lay-by latest do you mean
+I am on Visual Studio preview for
+asp.net core 2 oh okay
+so a lot of time people watch this it
+will have released
+you'll be using this is Studio 2017 15.3
+and asp.net car 2.0 right yes okay
+and this this tooling should be
+available and when you go to asp.net
+core web application and click OK
+normally we see Web API and web
+application this would get our MVC
+application going now we have these
+JavaScript applications in here so we
+have angular react in this case we
+choose angular ok and this is gonna spin
+up a brand new project for us that is an
+all-in-one application so we're
+essentially removing the view from MVC
+and replacing that view with angular ok
+so we still have we still have models
+and still have controller we still have
+models we still have controllers and
+you'll see just a little bit of you in
+there and that's just a bootstrap up the
+application we're not gonna be writing
+any razor so if you're a big fan of
+razor
+like I said depends on what your team is
+like if you're big fan of razor it's
+probably isn't the approach that you
+want to go ok angular is probably not
+the approach you want to go so with that
+said well we'd go ahead and click OK
+this would pull all of our dependencies
+and we don't want to do that for a live
+audience here but what we'll do is show
+a project that I already have created so
+we'll go ahead and open this project up
+and you can see here let me collapse
+this down we'll start from the beginning
+we open this up and you'll see
+controllers and views in here we don't
+have any models yet because we haven't
+gone to any databases or anything in
+this template but you would normally see
+models in here if you're connecting to a
+data on a back-end so we have our
+controllers and our views if we go into
+our views I'm just going to go into the
+shared layout here and we'll notice
+there's just a little bit of code in
+here and stuff that we're used to like
+render body and if we go into the index
+this is just the bootstrapper for
+angular so we're not going to write any
+views into this folder at all with this
+approach we could potentially use some
+views if we had things that weren't
+going to apply angular but for the sake
+of the conversation we're talking about
+angular development so let's close
+this up and look where the actual client
+side of the application revs since we're
+point you've brought down a whole bunch
+of angular code mm-hmm javascript code
+and it's got to be sitting somewhere
+right right absolutely so if we go into
+our client app here's where you'll find
+all of the typescript for the
+application now it's important that I
+said typescript because angular is
+actually built on type script right and
+we have to compile that typescript down
+to JavaScript and then use it that way
+so I'll get to that more in a moment but
+let's look at some of the files that we
+have in here the the main one I want to
+dig into here is the app folder and into
+components when we spin up this
+application this is the views that
+you're gonna see in the application so
+mainly we'll look at fetch data here in
+this counter component so let's give
+this guy a run and then we'll kind of go
+back and forth between the running
+application and look at the code okay
+so visual studio now is you know booting
+up the server and loading the
+application in and there's a lot of
+magic going in behind the scenes so
+we'll talk about that in a second but
+when this application loads up we'll
+have a counter view where we can press a
+button in increment a counter okay and
+then we'll have a fetch data component
+where we can fetch some weather okay so
+here's the application all right this is
+out of the box what you get with the
+template
+I haven't modified it in any way first
+we have this incremental counter we can
+click on a button and just increments a
+counter for us very simple but what just
+is exciting the hundredth time first
+what we're demonstrating here though is
+the the model binding in angular yep and
+the ability to click on a button have a
+full page refresh just to increment a
+piece of user interface and then we have
+our weather forecast
+this is actually going back to a Web API
+endpoint Wow polling I don't live there
+76 24 37 784 holy holy cow 76 is
+sweltering seven is chilly but I'm gonna
+be from like the Arctic or something so
+we're generating some random
+data in a Web API controller and passing
+JSON back to angular and then angular
+populates the view for us okay so this
+is again all being done as a single page
+style application so let's go look at
+the code that's running this view first
+let's look at the counter component so
+again this is typescript it's written in
+angular so you'll see a lot of angular
+syntax around this component and it's
+just as simple as this so typescript
+written in angular typescript and we're
+writing angular specific syntax okay
+so you'll see like the component
+directive the component directive is its
+wiring up the tag that is going to be
+output from this component the HTML tag
+and then it's specifying the the view or
+the HTML template you also see things in
+here like CSS and you'll see dependency
+injection and things like that being
+introduced here as well
+so a lot of angular workflows you'll see
+in here but for the most part this is
+typescript right and all we're doing is
+incrementing this value and this value
+updates this field and then the field is
+bound to the HTML so if we look at this
+current count right here this binds to
+our backing field that is right here
+okay being exposed so it's very very
+simple stuff but let's actually take a
+look at something that's going on here
+so if we increment this counter you see
+it goes up and our application is
+running it's already the type scripts
+already been compiled and the
+application is being served if we go
+back here and we change this to
+decrement instead of increment and I
+save that and we'll give this a second
+because what it's actually going to do
+is it's going to compile that behind the
+scenes and then re update this view with
+the new code and you'll see the counters
+actually reset
+that's because our counter component
+initializes at zero okay
+so when it sent the JavaScript back to
+the webpage and it updated the codebase
+it reset that counter to zero but now
+when I hit increment it's gone down I
+didn't have to recompile I didn't have
+to refresh the page yep
+so what's happening and what is that a
+function of is that a ASB core thing is
+that an angular thing is that a Visual
+Studio 27 thing so Steve Sanderson part
+of the.net team he's built what is
+called JavaScript services which a
+subset of that is something called node
+services with node services we can
+actually run from within visual studio
+colors within c-sharp code a JavaScript
+library because running a node so we can
+call out to no js' and call a function
+in JavaScript and we get the return
+values from JavaScript in in our c-sharp
+code okay and then we can utilize that
+so we can do things like kick off web
+pack which is a bundling minification
+compiler like javascript tool so that's
+exactly what it's doing when I save that
+file there's a watch in the background
+that picks up the save it recompiles
+that JavaScript and nodejs is actually
+running in the background and it's
+recreating that view using the angular
+server-side can during and everything
+sending that back to the view okay so is
+that a visual studio feature or it is
+feature as far as if we were doing this
+in Visual Studio code do we get the same
+behavior yes okay so this is a feature
+of the code that's running on the server
+okay so this is a a piece of middleware
+that's running as a service and it's
+called node services and that's the
+ability to talk to no js' from within
+our code okay we have the best of what
+we were doing hanging over waiting we
+owed so angular uses node.js okay to
+create server-side rendering so we're
+used to doing server-side rendering at
+dotnet
+through razor and the htmls built up on
+the server and sent down to the client
+with angular the the same thing is
+happening with JavaScript and HTML and
+angular components but when it's
+happening on the server it's happening
+in node.js cool got it
+so with that piece of middleware we able
+to we're able to talk to a node j/s
+instance without having to serve
+directly to the client through node.js
+so we can still serve through our
+application all right so that's the
+magic that's happening under the hood
+there I can actually demo that in a
+minute
+but let's walk through the rest of this
+template first so we have the counter
+component in and you saw how I can
+update that code in real time and if we
+go back and look at our application here
+with the typescript for the fecha data
+component this is going out to our API
+and it's calling API sample data
+weather forecast so this endpoint
+actually exists in the same project in
+our controller so if we go to controller
+and look at sample data this is where
+that fun and weather data that you're
+having some fun with this is where
+that's generated so if we look at our
+API we're out here we have our API slash
+controller so it grabs the controller
+name which is sample data controller
+whacks the controller name off the end
+so we get sample data and then our
+action is weather forecasts so that's
+where you see that API on the fetch data
+component ok so this is actually going
+out to a c-sharp back-end Web API call
+Jason is is returned from it and then
+angular parses that and repopulate the
+webpage with the appropriate HTML and
+data that's being bound ok ok so this
+JavaScript services component that I was
+talking about this is this is really
+cool stuff that's been built and I'll
+just demo this really quick because it's
+such a neat
+of software this project that I've just
+pulled up here
+this is just a bare-bones web app
+there's nothing going on here except
+we're spinning it up so you'll see we
+have a simple service layer being spun
+up and then I'm making a call to to get
+this node services package here so I've
+got our service being registered as add
+node services that's at service I talked
+about that goes out to no js' and runs
+modules and can get back to the code and
+you'll see I am invoking a JavaScript
+method here with node services dot
+invoke and then it's going to return a
+string and it's good return other things
+like an integer and so on and then the
+name of the script is just going to be
+greeter and I don't have to tack on the
+j/s it knows that it's understood that
+that's what it's going to be and if you
+look in the root of the application I
+have a greeter dot J s file so let's
+open this guy up so this is just using
+module syntax and it's saying we have a
+function and it's going to take a
+parameter of a callback and a parameter
+of a name and we're going to just
+concatenate something onto hello from
+node okay okay and then our callback
+will will be received in our c-sharp
+code here and we can use that and we're
+just going to write that out to the to
+the web application so when I run this
+you can see I'm calling invoke async
+greeter with Visual Studio toolbox as
+the parameter when the application spins
+up
+we should get hello from node Visual
+Studio toolbox so we actually ran
+node.js code from within our c-sharp
+application this is very cool stuff
+yeah and that's how that template works
+is it's got that built in behind the
+scenes very nice very nice so this is
+actually a really good starting point
+for our strategic web and c-sharp seems
+to be very interesting it does it kind
+of lead into the web assembly
+conversation
+when elated webassembly is kind of
+different
+okay webassembly we're talking about
+running the app compiling the code onto
+something that the browser can
+understand write directly on the browser
+this is kind of more magic
+we're running nodejs in the background
+node already understands javascript and
+we're just calling out to that and
+getting the results back from it okay so
+it's a little bit different and it's
+actually running that that instance is
+running on the server not on a browser
+anymore okay
+so we're actually running server-side
+JavaScript code through c-sharp okay so
+this template that that I showed you to
+be in with it's very good starting point
+for most people you don't have to know
+all of the bits and pieces that are
+working behind the scenes you can learn
+those gradually as you need to add more
+functionality to the application so
+where I work I'm a developer advocate
+for progress we make the telluric UI
+components we are keeping very close eye
+on this because it lets our customers
+get up to speed on using our UI tools
+much more quickly we have we have a
+brand new package called kendo UI for
+angular so we have charts and graphs and
+grids and all those rich UI controls
+that are built for angular applications
+so in dotnet too Oh
+dotnet core - oh there's a new
+templating system so we can easily
+generate templates based on existing
+projects so what we're doing is we're
+going to piggyback off of the the
+template that already exists here and we
+have a similar startup experience so
+this is something that we're working on
+it's it's not quite released yet
+and we hoped off of this pretty soon
+waiting for those final bits of dotnet
+to be released there's still some things
+with the templating system that are
+being worked out before the release so
+we're watching that very closely
+but the startup experience here will be
+almost identical except the components
+that are generated in the application
+will be our UI components okay and we
+have rich charting UIs that are
+our friendly at any resolutions you can
+pull them up on a mobile phone and you
+can have that responsive behavior on
+your devices without any additional
+coding and stuff like that so this is
+the project template that we are working
+on and you see very familiar we have the
+counter component we have our themed
+button in here we have our fetch data
+component and this is using our kendo UI
+grid and then we've added additional
+components in here like a chart and
+we're still loading some things here in
+the background so there we go nice
+beautiful chart there we can hover over
+the different data points and then we
+even have additional drop-down
+components where we can create you know
+tag like interfaces and things like that
+so that's what we're taking it the the
+new templating system in dotnet core is
+really cool essentially you can just
+target a piece of code package it up
+with nougat and then you can go to the
+command line and run dotnet new in our
+case would be like angular - ng you get
+a whole new angular application with our
+stuff built in nice
+so that was scenario one okay so we've
+got an all-in-one package one server
+that's doing everything serving the
+views from both angular client-side
+rendering and Visual Studio sorry and
+asp.net it's doing that little
+bootstrapping
+piece of razor markup that gives us the
+introduction into angular on the client
+side next we're going to look at the
+scenario of what if we don't use the
+template okay so there's a lot of people
+that like using the angular command-line
+tools so we can actually use the angular
+command-line tools to generate the front
+side of the application and then that
+changes how our back side of the
+application works and we're actually
+going to need to server instances to
+deliver all of the content to the client
+one one piece of it will deliver the UI
+and then the UI will talk to a web api
+server on the backend okay
+so again to keep this brief we'll just
+kind of walk through the steps of
+spinning this up let me stop this
+previous demo from rolling and we'll get
+into the file new project again so we'll
+do a file new project Web API mm-hmm and
+then once we've created that application
+will do a angular command line ng an
+init and start up a new application in
+the command line and then we just pull
+those projects together okay and our
+debugging process is misbehaving so it's
+giving us a little struggle shutting
+down here but we'll we'll spin this guy
+up here shortly okay here we go so we
+can do file new project asp.net core web
+application and then instead of choosing
+angular this time we would choose Web
+API okay so that gives us our back-end
+once we hit OK we generate that back-end
+and we'd go into our application and we
+would Bill we would go into the command
+line we would do an a new angular
+project and then we'd add that project
+and I've pulled up the wrong one here
+let's go back to this guy and do our
+back-end for angular project loading all
+the dependencies in on these is pretty
+pretty lengthy over Wi-Fi even so it's
+easier just to show you projects that
+I've set up already so the file new web
+API would be this project here this is
+our Web API controller we have
+controllers and I've recreated that
+sample data controller so this is our
+fun weather service again and then to
+add the client app the angular client
+app into Visual Studio here we would
+just right click and to add existing
+website so because you created it in the
+command line first yes you create that
+in the command line using the ng
+and it or in jeez I think his ng in it
+if I remember correctly to generate that
+template for an angular application once
+we do that we can do add existing
+website okay and because it's all web
+code Visual Studio understands that
+perfectly right so there's no additional
+steps to configure anything once it's in
+Visual Studio and again I've rebuilt the
+same type of application now when I say
+rebuilt I've modified this because the
+initial angular application is very
+bare-bones you get almost nothing so
+remember that that first experience you
+get at least some template code to you
+know click a button and see how things
+bind together and call a web service
+with this approach you get nothing
+you're starting from scratch now some
+people like that that's fine it gives
+you the opportunity to make choices and
+build what you need to build and not
+have to take anything out that's been
+added previously for you so there's
+there's pros and cons to each approach
+if we run this application the
+experience of running it's going to be
+slightly different so we don't have that
+all-in-one approach when we run the
+application from visual studio we're
+running a Web API application so notice
+we get just data dump to the screen
+right so this is just JSON data now to
+run the angular portion the client side
+of the application we need to call on
+the command line I'm not going to step
+out of the command line I like to be in
+visual studio it's preference of mine
+you could use this in tandem with the
+command line if that's how you choose to
+operate it instead of installed a
+plug-in for visual studio called NPM
+task runner mm-hmm now in the latest
+versions of Visual Studio we have a task
+runner Explorer and task corner Explorer
+basically takes anything that is in this
+project JSON file in a node application
+or package dot JSON file any of these
+scripts that you see here in the package
+JSON file you'll notice are in the tasks
+runner Explorer
+window mm-hmm so to start my web client
+experience I can just double click right
+here so normally I'd go out to the
+command line and you can see it actually
+running it in here ng serve and then it
+I'll explain this proxy configure in
+just a second so something I've had to
+modify to make it work with the Web API
+back-end so let's go into the browser
+and it's on localhost 4200 now let me
+hit this 5,000 here real quick again so
+when we spun up our our asp.net Web API
+we had API backslash let's see here let
+me actually restart this it'll pull it
+back up then we can we can come into it
+from this way so when we started up our
+Web API project we're hitting that raw
+endpoint there it is localhost 5,000 and
+then our API endpoint it's important to
+note that because our client app is
+running on a different port so when we
+spun up the client app in the console
+here it says go to the browser on
+localhost 4200 okay so if I go to
+localhost 4200 I've got hello world and
+I can click on fetch data notice not
+beautiful like the last app again I had
+to start from scratch so I just did the
+bare minimum to get this going okay now
+like I said localhost 4200 the code is
+going to be looking for an API on
+localhost 4200 look our API is actually
+on 5,000 so what we have to do in this
+situation is we have to create a file
+called proxy config so this is port
+forwarding for angular so it's telling
+the angular application our API is
+actually on a different port so when you
+see this slash API path come through
+we're going to afford that request over
+to localhost 5000 that ties the two
+together for our development experience
+okay okay so it's a little more ceremony
+here to get started but there's teams
+that work separately building the API
+infrastructure and then you have your
+front-end developers that are building
+angular they might use Visual Studio
+code they might use you know vim some
+other thing but this lets you have that
+that scenario where you can work with
+both okay okay so just different
+approaches for different teams with
+different skill sets so far the next
+thing I want to show is an application
+that's actually sharing some code with a
+native application so we're still using
+angular right but we're building a
+native application there's no web views
+there's no magic we're taking an angular
+application with with typescript and
+it's compiling down to JavaScript that's
+being translated to native API calls on
+the devices and we're using an
+open-source framework called native
+script for that so let's take a look at
+how that operates and again I'm going to
+use all Visual Studio Tools and native
+script native script is is by progress
+the company that I work ok so again
+we're in Visual Studio and to get this
+project up and running I would do a file
+new project and then click on the
+angular template that we originally
+looked at okay okay so that gives us our
+all-in-one angular application with our
+counter and our fetch data component
+I've modified it slightly
+you'll also notice another solution in
+here called native application now
+they're all web technologies that are
+being used to create these native
+Android and iOS applications since
+they're all web-based pieces of code we
+can come in and do file add existing
+website even though it's a native
+application so the native application
+was written in is done in what
+it's angular JavaScript CSS and XML okay
+that's the native application yes okay
+so they're all web-based pieces of
+technology okay so we can do file add
+existing website and it works just fine
+in Visual Studio yeah okay so in this
+scenario I've got again this application
+I'll run it and we have our counter
+component and our fetch data component
+and all of that code is very similar to
+what we saw initially except for one
+thing the ability to run angular on a
+native application means I can share
+some code between the two applications
+they're both using angular the bolts
+using typescript so I can come in to my
+application and open up this client app
+and I still have my same folders as
+before I have components fetch data and
+counter mm-hmm if I open up my counter
+there's actually not a lot of code in
+here so if I look at this I have exports
+class counter component extends counter
+component base so what I'm doing here is
+I'm using inheritance so I'm inheriting
+from counter component base and that's
+coming from my shared library counter
+component base so in this project I have
+a counter component base class and that
+has my ability to increment this this
+counter variable and if I look in my
+native application under app shared
+libraries you'll notice I have the
+counter component base in there as well
+and it's the exact same code as the
+angular web application okay now for
+this simple demo I'm just using a copy
+script so it's an ex copy it just goes
+out to my web application copies the
+shared library over to my native
+application so I can use it there in a
+more advanced scenario I could use NPM
+packages or you know advanced CI CD pipe
+or whatever to share code that way but
+just to keep things simple I just have a
+script that I run and again I'm using
+then the NPM task runner for that so if
+you look down here I have this shared
+libs script if I double click on that it
+just pulls that new code from my web
+application to my native app so this
+application should be running you can
+see that I'm I'm pulling it up on this
+IP address here
+there's a reason I'm pulling up on an IP
+address and not localhost so the backend
+or the native part of the application
+needs to talk to the backend if I'm on
+an emulator or another device doesn't
+know what localhost is ok so I need to
+have an IP address and some firewall
+ports need to be open ok now I can go
+into my counter component you can see I
+can count like it could before
+and then also fetch data works the same
+way
+however the fetch data code has been
+abstracted a little bit so if I look at
+my fetch data component instead of just
+going directly out to the web and
+hitting that endpoint I'm using a
+surface and I can share that service
+between both the native and the web
+application so in my shared code if I go
+into shared you'll see I have a weather
+forecast interface that's shared between
+both apps and I have my weather service
+that's shared between both apps so this
+is the same code both apps on LAN to
+write at once cool so now another handy
+visual studio tool is I can come in to
+tools and I can add this Visual Studio
+emulator for Android this is something
+that you have to add on it's a free
+component to Visual Studio and it works
+very well with this so I have my devices
+here and I've already spun up an
+emulator the next thing I want to do is
+run my new native app that I built so
+again use my npm task runner and i'm
+going to click on live sync live sync is
+going to call TNS run android that's the
+command line operator to kick
+of the build process for my native
+application and it's gonna load it on to
+the emulator and then it's going to
+create what's called a live sync
+connection with the device you remember
+that experience I had on the web or I
+can update the increment counter and
+decrement instead I can do the same
+thing with a native application I can
+update that code it'll recompile from
+native script and it will send that new
+compiled code up to the device and swap
+that out for me so I don't have to
+recompile manually and go through that
+process and there's my native
+application mm-hm and I have my counter
+component and it had my fetch data
+component cool now the parts that I
+can't share between two the two pieces
+native script runs XML not HTML okay so
+the actual view code the view markup
+can't be shared there's some
+similarities we're using angular
+directives so if you're writing angular
+some of the things like creating
+templates and looping over objects is
+the same in the view code but it is xml
+markup it is nothing like HTML right and
+then the if you need some code that is
+custom to ios and android that's
+possible as well so if i wanted to have
+a view for iOS i could name that view
+whatever the view is dot iOS HTR xml and
+it would compile only for iOS okay so I
+can target specifically if I want to
+otherwise it's shared between the two
+operating systems and those are native
+views as well so when we write an XML
+component let's pull one up there
+they're actually the extension I'm using
+is is HTML because it's more friendly
+with visual studio and visual studio
+code otherwise you get a lot of red
+squiggly underlines if you just try XML
+it looks for namespaces and things and
+it gets kind of crazy but you'll see I
+have a label it's not like an HTML label
+but it's a label when I
+right label in this XML format it maps
+to the native label control that's on
+iOS and the native label control on
+Android so it's pulling up native view
+code on those devices so there's no
+webview being run in the brow and like
+in a browser module or anything like
+that it's not Apache Cordova and this is
+actual native development got it so
+that's another scenario where you can
+reuse web skills if you have a strong
+web team they have limited native
+experience this is a way to get started
+building a native application using
+angular individual studio with a c-sharp
+Web API back-end very nice cool cool
+stuff thank you all right it's a lot to
+take in but it's a couple pointers as to
+where people can go to learn more about
+this we'll put some stuff in the show
+notes but if they're new to angular or
+new to native new to matching to mixing
+and matching native with web so if you
+want to learn more about native script
+go to native script org ok if you want
+to learn more about the template that I
+showed you and how to integrate that
+with our UI controls go to blogs at
+Telekom and search for cooking with
+angular that's an easy one to remember
+just you know put that in Google or or
+Bing and do cooking for angular you
+should find an article that I wrote all
+about the template and how to add
+components to it it should get you
+familiar with the processes that are
+involved there all right cool thanks for
+coming on absolutely thanks for having
+me all right hope you enjoyed that and
+we will see you next time on visual
+studio toolbox
+[Music]

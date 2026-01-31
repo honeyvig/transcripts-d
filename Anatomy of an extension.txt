@@ -1,0 +1,81 @@
+a visual studio extension project is a
+normal c-sharp project but with a few
+things that make it unique
+so let's go through
+and highlight some of those to get a
+better understanding of what makes a
+visual studio extension
+we'll start by creating a new v6 project
+by searching for the v6 community
+templates and we'll select the one
+with a command
+this is one of the more commonly used
+templates
+we'll also give it a name let's call it
+my demo
+the c sharp project is created and we
+can see we have a bunch of nuget
+packages already referenced
+it also contains a command class
+an extension icon
+and a v6 manifest
+this is where we keep metadata about our
+extension such as a name
+make sure to specify a descriptive name
+here
+we also need to specify a unique product
+id it can be any string
+and make sure to give your extension a
+good description
+you can specify a license
+as many comma separated tags as you want
+and a url to your github repository
+next we'll look at the visual studio
+command table file it's an xml file that
+lets us define
+commands menus groups key bindings and
+other things about our extension
+a group can contain multiple menus and
+commands and a button here is just a
+different word for command
+i can also set my key bindings to
+automatically trigger
+one of these buttons
+the package class is the entry point for
+most extensions
+here we can register services tool
+windows and in our case
+commands
+this will automatically find all
+commands and register them with visual
+studio
+and if we look at our command we can see
+it's a very simple class
+that handles the command click the same
+command that we defined in our xml
+command table file
+i'll build the project like any
+other.net project
+and that will produce the output in the
+bin directory
+the output of an extension project
+is a file called
+a v6 file and that is my extension
+i can simply double click
+the v6
+file to start the visual studio
+extension installer
+this is the extension file that i want
+to publish to the visual studio
+marketplace or share with my colleagues
+if you're curious to see what's inside a
+v6 file
+simply rename it to sip
+and open it in the file explorer and
+that will show you everything inside
+the v6 container file
+so now that you know what makes an
+extension project an extension project
+you're now ready to build your first
+extension
+you

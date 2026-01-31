@@ -1,0 +1,586 @@
+hey Traders first of all happy New Year
+hope you're off to a great start for
+today's video I'm going to do something
+a bit different I recently saw a clip on
+Instagram posted by SMB Capital I'll
+play the clip in a moment um but first
+of all for those of you who don't know
+SNB Capital uh they're a reputable Wall
+Street prop trading desk and they have
+an Instagram page where they share
+trading Concepts ideas strategies and in
+this particular clip let's have a look
+at what they have to say a very very
+simple but often misunderstood trading
+opportunity if the range after
+12:00 is greater than the range before
+12:00 so 9:30 to noon noon to four if
+the range in the afternoon is greater
+than the range in the morning there is a
+very low likelihood of continuation in
+the direction of the trend a very low
+likelihood of that it can happen and
+when it happens it happens with intense
+magnitude but there's a very low
+likelihood of that happening based on
+the back testing we've done so there's a
+few things I want to mention about this
+first of all I was skeptical about this
+concept purely because as a Trader we
+often hear things where Traders will
+just rattle off things as if they're
+fact and there's no way for us to verify
+that usually in this case we can and in
+today's I'm going to write a script that
+analyzes this exact hypothesis and we
+can see if this is in fact true the
+other thing I want to mention is that in
+this particular example this sample size
+is pitifully small that's why I was
+skeptical when I first saw this clip I
+thought we don't even have 100 trades
+here 26 examples and 28 examples that's
+not a comprehensive statistical data set
+that's that's like um the amount of
+Randomness that can occur in a sense
+sample size that small negates any any
+findings really from that test and so I
+thought you know what I'm going to write
+a script I'm going to run it through
+pinescript on a bunch of stocks and
+we'll see if this hypothesis is true and
+I didn't expect it to be true so anyway
+let's get into today's script and let's
+see what we can find by trying to
+emulate this back test so let's jump
+over to the charts and I'll break down
+exactly what we're trying to analyze
+here so what we're looking for
+is this first of all we have a bullish
+day price action opened here in the
+morning closed up here on the final bar
+of the day so that's a bullish close on
+the daily chart the next thing we're
+looking for is range expansion so we
+need to get the highest and lowest point
+in the afternoon session which is after
+12:00 p.m. New York time we measure from
+the low approximately to the high gives
+us 160 points if this afternoon range is
+larger in distance than the morning
+range so in this case that would be from
+um this low up to this High about 74
+points the afternoon range is clearly
+larger than the morning range what this
+means is that
+tomorrow there should be theoretically a
+very low
+likelihood of price action closing Above
+This High because we had range expansion
+in the afternoon on a bullish day if
+this was a bearish day we'd be looking
+for bearish continuation we'd be looking
+for a close below the low or I should
+say we'd be looking for this not to
+happen the the odds of this happening
+are a lot lower than price action
+consolidating or reversing that's the
+idea the concept the hypothesis so I've
+made a script that analyzes this exact
+pattern in price action and we can see
+the numbers we can see if this is in
+fact true so we go to spy unhide my
+script and what you see here this isn't
+intended to be a trading script we don't
+use this the script to trade this is
+purely to gather data to gather
+statistics so it's a bit messy there's a
+lot of colors going on but that's okay
+what we're concerned with are these
+numbers up here and what's happening
+here I'll give you an example this red
+line is plotting the open to the close
+and if it's red then that means that
+this day closed
+bearish the green
+background is the morning session the
+red background is the afternoon session
+so 9:30 a.m. open to 12:00 noon and then
+from 12:00 noon to the market close this
+green line you see here is the morning
+range so that's from this high down to
+this low and then this red line here is
+the afternoon range shifted up to the
+morning range is high so we can directly
+compare them we can actually see at a
+glance what the size is so here we can
+clearly tell the afternoon range is
+clearly larger than the morning range
+and it was bearish day so we have
+bearish range expansion and so now on
+the next day's trading we're expecting
+price to not close below the previous
+days low very often in this case it did
+and we get this big red bearish
+continuation label this red line here is
+the previous days low and we did in fact
+get a close below that low so we did
+have a case of bearish continuation but
+what we should see if we go back over
+historical price action is that about
+60% of the time we'll get range
+expansion but no continuation and we
+have a much larger sample size here of
+145 trades instead of 50 or so like on S
+SMB capitals video so there is something
+here to this concept and at the end of
+the video we'll cycle through a bunch of
+stocks and we'll see just how often this
+actually happens so let's go through the
+source code really quick for this script
+it's a little bit complicated there's a
+lot of lines of code here but the
+concept's not complicated but the way I
+went around doing this is probably a
+little bit convoluted but it's the way
+that made sense to me there's probably a
+much better way to do this but this is
+how I did it first of all we need two
+sessions we need the morning session
+9:30 to noon and noon to 400 p.m. these
+are our two trading sessions we're going
+to compare to each other then I have a
+start date end date filter I don't use
+this um I just added this in um because
+it helped with building the script and
+and and uh verifying the numbers I could
+test over a shorter range and make sure
+the numbers added up properly next we
+have a custom function that just
+determines if a bar Falls within the
+specified session so if we pass in one
+of our sessions here we're passing In
+Session 1 which is 9:30 to noon uh this
+custom function will return true if that
+bar Falls within this time session and
+these numbers here are just days of the
+week so we're testing on every single
+day you could just put weekdays in here
+since we're trading or testing the stock
+market but whatever doesn't matter we're
+highlighting our sessions so green as I
+said is the morning session red is the
+afternoon session that just gives us a
+visual aid to see what our script is
+doing next we're getting the higher time
+frame data so we're getting yesterday's
+high and yesterday's low this allows us
+to check if we had bearish or bullish
+continuation which I already went over
+what that looks like uh next we need to
+detect when the session starts so when
+the 9:30 a.m. session starts we need to
+detect that so we know that we're now
+tracking that morning session and then
+we have a different Boolean a true false
+value for tracking session 2 now the way
+we detect if a session has just started
+one way we can detect this there's
+multiple ways to do this but this is the
+one the way I usually use is we just
+check was the previous bar not in our
+trading session and is the current bar
+in our trading session that gives us the
+crossover so this first trading bar of
+9:30 a.m. the previous bar was not in
+our session the 9:30 a.m. bar was we can
+use that information in our script to
+know that this is the bar we need to
+reset um some of our variables next up
+we have our analysis variables so this
+is the number of times each um situation
+occurred so bullish range expansion this
+counts how many times we had a larger
+range in the afternoon than the morning
+on a bullish day and how many times we
+actually got continuation in the trend
+next we have our first session variables
+and second session variables so in order
+to draw a lot of this visual stuff I
+needed to track a few extra variables um
+purely for drawing purposes so we're
+tracking the bar index of the the first
+bar our morning session so that we can
+draw this line here that connects the
+open to the close that's the only reason
+we track the index same with the second
+bar index that's just used to shift our
+second Bar's range size from this bar
+all the way back to the start of the
+second session so that we can compare
+these session sizes the range sizes side
+by side we need to track the opening
+price and the session low session high
+so this is the morning sessions low and
+high and I'm just realizing we don't
+actually need to track the the previous
+sessions low and high um that's from
+earlier iterations of this code um I no
+longer use this information so we can
+get rid of some of this code before we
+continue um so we're tracking The First
+session's beginning buer index the
+opening price for the day and the
+morning session low the morning session
+High the next session needs to track the
+same beginning buer index for drawing
+purposes we need to track the low and
+the high and a couple of bullan values
+so we're checking did we have range
+expansion on this day in the afternoon
+and then we have a Boolean value that
+checks on the next day if we had Trend
+continuation and this should actually be
+called um check
+continuation that's what we're actually
+doing with this Boolean so let me rename
+this that will be more intuitive so this
+Boolean tracks if we had afternoon range
+expansion so in this case that's this if
+that's true then we do have range
+expansion and we are checking for
+continuation so here we get range
+expansion and then up here we have these
+green squares that means that we are now
+tracking bullish continuation and if
+this bar this daily bar this next day
+closes higher than the previous day's
+High then we did in fact have bullish
+Trend continuation after range expansion
+that's what these two variables here
+these two flags track for us next we
+have our analysis variables and I can
+get rid of a couple of those as well um
+so all we really need is to check was
+yesterday bullish or bearish if it's
+true then it was bullish if it's false
+then it was bearish and are we
+monitoring the first session currently
+if this is true then we're tracking the
+first sessions high and low if it's
+false then we're tracking the second
+sessions high and low so next up is our
+first sessions analysis so first we need
+to detect the start of day's first
+session that's this Boolean value here
+which we already went over start session
+one if that is true then we check did we
+have a bullish close so remember the
+start of session one is on the first bar
+of the next day so close with a
+historical operator of one will
+reference the close of the bar one bar
+back from the first bar of the next day
+that gives us yesterday's closing price
+so if yesterday's closing price is
+greater than yesterday's opening price
+then we had a bullish day then we draw a
+line between the open and the close and
+we color the line based on whether it
+was a bullish or bearish day then we
+check if the afternoon sessions high and
+range size so this gets our range size
+in points if this range is greater than
+the range in the morning then we did
+have range expansion so that's set to
+true and we plot a label that this blue
+label that just signifies that we had
+range expansion on that day this
+afternoon session was larger than the
+morning range expansion label is is
+drawn if this is not true if we did not
+get range expansion then we set range
+expansion to false and we just wait to
+see how the next day plays out so at the
+end of each day or more accurately at
+the beginning on the first bar of a new
+day we check if yesterday had range
+expansion ideally we would check this on
+the last bar of the trading session but
+it's a lot easier to detect this first
+bar of a new day because we can have
+different trading hours on some days
+some days the market closes sooner than
+other days and you know we have holiday
+days Etc that can throw things off so by
+waiting for the start of a new day we
+always get the closing price of
+yesterday
+accurately so after we check if we had
+range expansion we save the first bars
+index and we reset our session low and
+session high and we set our flag for
+monitoring the first session so that we
+can track our morning sessions low and
+high as it unfolds and we save today's
+opening price so so remember this code
+is being executed on the very first bar
+of a new day so if we save the open of
+that bar we're getting today's open
+price next up we check did we have range
+expansion yesterday if so check if we
+continued in Trend so if check
+continuation is true then we check was
+yesterday bullish if so then we check if
+yesterday's closing price was greater
+than the day before high that gives us
+uh Trend continuation so in the case of
+a bullish trade we're looking for price
+to close
+here we just barely barely barely get
+Trend continuation see this closing
+price is above this green line the green
+line is yesterday's high we barely got
+bullish continuation there so
+yesterday's close was greater than
+yesterday's high we increment or add one
+to our bullish expansion count so that's
+uh this counter here we add one to this
+number we draw a line signifying
+yesterday's high so we can see visually
+if price closed above yesterday's high
+and we color that line based on where
+the price actually closed above or below
+it if price closed above it the line's
+green if it closed below it it's um gray
+and for bearish continuation the line is
+red if we got bearish continuation or
+it's uh gray if we didn't so just
+another way to visually analyze what our
+script is doing so here we had bullish
+range expansion on the previous day but
+price closed below our high for that day
+so remember this is a whole new day
+we're analyzing what happened on this
+day compared to yesterday we're tracking
+yesterday's high we did not get a close
+above that high so we did not get
+bullish continuation on this day so
+that's what all this code here does and
+then we do the same thing for the
+bearish side so check continuation will
+be set to true if we had range expansion
+then we need to check if that day that
+created the range expansion was a
+bullish or bearish day then we need to
+check if today's closing price continued
+in the trend of the day that created the
+range expansion it's bit hard to to wrap
+our heads around I know if you're
+anything like me your head's probably
+spinning right now took me a lot longer
+than it should have to even write this
+script because um just wrapping your
+head around all the different things
+we're tracking in Pine script is a
+little bit um tricky but anyway the
+concept is simple as I said all this
+code is doing is tracking range
+expansion and then seeing if we had
+Trend continuation on that next day so
+if this Line's green and we got bullish
+range EXP men we want to see the next
+day close Above This High uh anyway
+moving on we then reset our check
+continuation variable and we save
+whether or not today was a bullish or
+bearish day next we track the first
+sessions range so this is very simple
+all we're doing is saying are we
+tracking the first session if so our
+chart will be green if the chart is
+green we are just saving the highest and
+lowest value throughout that session and
+then we do the same thing further down
+for the second session so if we're not
+monitoring the first session the morning
+session then we must be monitoring the
+second session and then we just track
+that session's high and low so that we
+can get our range sizes when the next
+day starts uh but finally the last thing
+we need to do is detect the start of the
+day's second session the afternoon
+session we need to save the previously
+monitored sessions range and actually we
+can get rid of step two that's not
+accurate all we are doing is detecting
+the start of the second days range and
+resetting uh the second range as
+variables na so the session low and
+session high and then we're saving the
+session bar index for drawing purposes
+and then we're tracking if we need to
+check for continuation on uh when this
+second session ends so at the end of
+this red period of time that's when we
+track if we had continuation and that's
+it for this script the all the rest of
+this code is just drawing code so we
+have um the analysis of our range
+expansion information so we have the
+total expansion range count which just
+adds up the bullish the bullish days
+with expans expion and the bearish days
+with expansion and then we calculate the
+total expansion chance so we combine
+these two metrics to get this percentage
+chance and then we calculate the bearish
+and bullish odds individually then we
+have our debug data window plots so this
+is purely for tracking what the script
+is doing all of these plots here draw
+exclusively into this debug window where
+we can track um the different metrics so
+I can hover my mouse over here for
+example and we can see the numbers
+change we can see that on this green bar
+our total bullish range expansion count
+goes up but our bullish range
+continuation counter does not go up
+because we did not get continuation and
+so this is just a way to debug our
+script and just see what it's doing on a
+bar by bar basis and then down here we
+have our table this is the code that
+displays all of this information up here
+in into our table and that that is the
+code for this script I know it's a bit
+convoluted I probably didn't do the best
+job of explaining this because um it's
+it's quite a complicated thing to do in
+Pines scripts the concept is simple but
+the code um has a lot of overlapping
+analysis over two different sessions and
+then the previous day price action um so
+it's it's a bit tricky to write this in
+a way that's intuitive to understand but
+as always the source code will be below
+in the pin comment below so if you want
+to better understand the script go and
+um copy the source code into your editor
+and play around with it but anyway let's
+wrap up the video by having a quick look
+at how this performs in practice so what
+I'm going to do here just to save time
+ideally what we would do is just go
+through a bunch of markets and track the
+percentage um chance properly uh but
+what I'm going to do just to get a rough
+idea of how accurate this hypothesis is
+I'm going to cycle through 30 or 40
+maybe 50 of these stocks and I'll write
+on a notepad on my desk two columns any
+Market or stock that has a total
+continuation chance after range
+expansion of 50% or higher will go in
+the right column any markets that are
+below 50% will go in the left column and
+we'll just see out of curiosity how many
+markets out of that sample size do in
+fact continue in Trend After
+experiencing afternoon range expansion
+and how many didn't so I'll fast forward
+through this and give you my findings at
+the end
+all right so I just went through 100
+markets here and this is an outdated a
+couple of months out of date but this
+list here tracks the S&P 500
+constituents so the the members of the
+S&P 500 so I just went over them
+whatever order this list is in I don't
+know it's not very important but out of
+100 stocks we had 12
+stocks have a 50% or higher chance of
+continuation in the trend after range
+expansion in the afternoon so I think
+it's safe to say that this hypothesis is
+true ideally I'd like to do the full 500
+would be a great sample size but 100
+stocks 12 of them had a chance of 50% or
+higher and two of them were right on 50%
+which is obviously neutral so maybe we
+shouldn't even include those two so in
+that case we only had 10 stocks with it
+greater than than 50% chance of
+continuing in the trend after range
+expansion in the afternoon so in other
+words when a stock trades more distance
+in the afternoon than it did in the
+morning there is a statistically
+significant chance that it will not
+continue in that Trend the next day it
+will not close higher than its previous
+day's High that's useful information to
+know I'm sure you will all agree if
+you're a day trader in particular like
+the guys at S&B Capital tend to be uh I
+mean it's pretty useful to know that if
+if this happens you've got a better
+chance of trading against momentum the
+next day you've got a better chance of
+price moving in your favor if you trade
+against momentum after afternoon range
+expansion on that next day that's pretty
+useful information to know it's not
+obviously not going to work all the time
+a lot of these numbers were close to 40%
+on most stocks so there's still a 40%
+chance that the market will close higher
+but just in general good to know that
+this hypothesis is true basically this
+lesson was just to show you guys the
+power of validating things you hear from
+Traders especially if you're skeptical
+when I first heard this I um looking at
+their sample size I was not convinced
+that this was true but now I am and now
+I personally don't day trade um US
+Stocks because trading starts at
+midnight for me where I live so I just
+don't trade the US market on an intraday
+basis I do on a daily end of day basis
+but anyway that's outside of today's
+lesson scope but for those of you who do
+trade the US market especially intraday
+keep this in mind um it might be worth
+downloading the script the source code
+and adapting it so that you can be aware
+when a market had this afternoon range
+expansion on the previous day and you
+know that there's a statistically
+significant chance that price will not
+continue in yesterday's Trend it will
+not close higher than the yesterday's
+high in the case of bullish range
+expansion I thought this was interesting
+hopefully you guys did too I'll speak
+with you in the next video best of luck
+with your trading and your coding take
+care a very very simple but often
+misunderstood trading opportunity if the
+range after
+12:00 is greater than the range before
+12:00 so 9:30 to noon noon to 4: if the
+range in the afternoon is greater than
+the range in the morning there is a very
+low
+likelihood of continuation in the
+direction of the trend a very low
+likelihood of that it can happen and
+when it happens it happens with intense
+magnitude but there's a very low
+likelihood of that happening based on
+the back testing we've
+done

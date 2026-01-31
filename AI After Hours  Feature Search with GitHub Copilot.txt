@@ -1,0 +1,518 @@
+okay Erin one more time are you sure you
+can do this you're confident right you
+know what the menu item is called yes I
+have a secret
+weapon okay what's your secret weapon
+well I am currently searching through
+menus to see which one has the Vibes I'm
+looking
+for yeah not good Aron the secret weapon
+you no no no no welcome to after hours
+with the visual studio team and today
+we're going to show upcoming
+improvements to feature search in Visual
+Studio it takes your search query and
+uses GitHub co-pilot to elaborate on
+instructions help you find settings and
+more because we as developers all know
+the visual studio is quite powerful and
+sometimes you just forget what a menu
+item is called uh new capabilities get
+added to new versions and there's always
+maybe a better way uh to complete a task
+in visual studio right well with this
+being feature search which is already an
+empty text box sometimes text boxes that
+you don't know how to use or aren't
+giving the results you're looking for
+can be a little bit intimidating yeah
+absolutely like do I talk to it in full
+sentences do I type keywords like I
+usually do of control q and expect
+co-pilot to make sense of it like do I
+go straight to the AI to help me find
+what I'm looking for in Visual Studio um
+how is this better than feature search
+itself these are all things I need to
+figure out all good question so let's
+explore the experience and the
+engineering behind the upcoming
+improvements we're making to feature
+search in Visual Studio I'm Leah and I'm
+a product manager for search in Visual
+Studio I'm Ain a product manager working
+on get a co-pilot in visual
+studio and I'm Sandy I'm a developer who
+works on search in Visual
+Studio here I am in Visual Studio I'm
+going to go ahead and hit the search
+button up here that's going to bring up
+feature search which can also be summon
+with control Q this has been around for
+a while you may be familiar with it you
+can type something like I want to see
+all of my breakpoints so you type the
+breakpoint window and there it is hit
+enter there your break points wonderful
+uh but we know that sometimes users
+don't know the name of the thing that
+they're looking for especially newer
+users they might bring up feature search
+and they might type something like uh I
+want to change my short Cuts so let's
+edit
+shortcuts but the responses that come
+back aren't really what the user is
+looking for it's a bunch of you know
+commands shortcuts that exists under the
+edit menu so we're going to try this new
+button that has shown up under their
+search we're going to click ask
+co-pilot and that same query that the
+user types is being sent to co-pilot
+chat and co-pilot chat is going to
+respond and give actually a pretty
+accurate response about exactly where to
+go go to tools options find the keyboard
+section of the options dialogue it's
+described quite thoroughly knows about
+the assign button uh it even offers
+follow-up questions so actually a really
+useful way to ask questions without
+having to leave the IDE um you know
+these are nuanced
+questions um another similar sort of
+scenario would be maybe you've come from
+you know net core and you're used to
+doing stuff on the command line and you
+don't actually know how to do a nougat
+ReStore in the IDE maybe it's one of
+these things you could click it and
+explore
+or you could go ahead and you could just
+ask
+co-pilot same thing send it straight to
+the chat wait a little bit and
+co-pilot's going to respond and let us
+know that you can just right click on
+the solution and that there's a restore
+n packages option uh it also tells you
+other ways that you can achieve the same
+functionality even talks about using the
+package Manor console if that's sort of
+a way that you like to
+develop historically co-pilots you know
+mostly known about kind of
+long-established features in Visual
+Studio but you know we're adding things
+all the time and so you know we've
+updated co-pilot to be able to
+understand about newer features coming
+into the IDE so for example if you are a
+um uh user who has you've seen on blogs
+or on Twitter or something about rainbow
+colored parentheses seems really cool so
+you come into the chat or you come into
+the feature ser search and you type
+rainbow pns and there's nothing useful
+here that's because you don't know what
+it's actually called again you ask
+co-pilot send the question to chat wait
+for its response and all of a sudden it
+says yeah yeah you can totally turn on
+Rainbow parenthesis but in Visual Studio
+we call that brace bear colorization
+says go to tools options go to General
+under the editor and Bam enable brace
+bear
+colorization so that is um
+co-pilot chat integrated with feature
+search hope you enjoy it so I know that
+when I watch any demo as a developer I
+have to wonder how do I know that this
+AI works well for my situation or that
+it can be trusted to provide answers
+that aren't going to confuse me more uh
+so I'm curious um what have we done
+to the future search in visual studio
+with get up co-pilot that's different
+from a web search and different from
+other
+AIS yeah definitely one thing that's uh
+different from online search engines is
+that with online search engines there's
+a much broader scope of things that it's
+looking at so if you're trying to search
+for something that's a feature in Visual
+Studio it's really easy to come across
+results that are actually about Visual
+Studio code instead because it's the
+similar naming scheme and there's even
+confusions with people online who don't
+know the difference between the two
+products so the answers that you get
+from places like stock overflow or
+elsewhere might not be entirely accurate
+and there's also a lot of out ofd
+information online which we don't have
+in the model as much because we're able
+to provide it with upto-date information
+about what are the features that are
+currently available in the version of
+Visual Studio that you're currently
+using yeah and because of that uh
+additional knowledge it knows more about
+the newer features that the other models
+and other uh AI models doesn't know
+about because it's trained on much older
+data and doesn't have that direct access
+to the information that we
+have I thought it was really interesting
+that you've
+mentioned up to-date and specific
+information that you've added to the ask
+co-pilot feature in visual studio uh
+because I can relate to out-of-date
+information and settings or feature
+names changing so could you talk about
+exactly what it is we've added um to
+bring this upto-date awareness to get up
+Co
+pallet yeah well I think a lot of Visual
+Studio users are are pretty used to
+being able to uh navigate to settings uh
+commands new features what's new all
+those sorts of things uh using the
+control Q feature search that we've had
+for a long time um and so what's going
+on here is we've got an integration
+between that existing feature search uh
+and co-pilot chat where if you are in
+control q and you're not finding what
+you're looking for now you've got a
+button to take you to co-pilot chat to
+have a more nuanced discussion and then
+on the chat side uh we're able to pull
+in all of that stuff that Visual Studio
+already knows about itself uh and make
+that context available instead of um you
+know as Leah mentioned when you're
+talking to chat GPT or another
+uh AI it's trained on older data because
+training is an expensive thing usually
+the models are fairly out of date so you
+might get really great information for
+things that have been in Visual Studio
+forever but you might not be able to get
+good answers about the latest and
+greatest and so that's where bringing in
+the information from feature search
+helps you better find Niche features new
+features uh things like that and um yeah
+you get a little more um uh you get a
+more carefully crafted sort of EXP
+experience um that's really tailored to
+what a visual studio user is probably
+asking about whether they're starting in
+the search or in the
+chat V so it sounds to me like we've
+done some rag like retrieval augmented
+generation where we added an awareness
+of keywords of settings and features
+from feature search um and also other
+resources like what's new information
+that someone might have written for a
+new release is that right
+right um you know it's a we're starting
+with uh settings and commands and uh
+some other sources uh what's new is
+coming down the pipe and we also have
+aspirations to bring in other uh sources
+using what you mentioned retrieval
+augmented generation where you you bring
+in uh known good information into uh the
+AI and so it's able to give more
+accurate responses uh for a really
+specific scenario in our case asking
+about visual studio um so yeah
+I see and when I often look up
+instructions for
+something on the web I notice that I
+have to first understand it and then
+figure out where to click in the editor
+um or how to do something myself because
+they may say go do a new get restore and
+I have to figure out hey what does this
+mean how do I do that um and so could
+you tell me more about how this feature
+um helps
+me spend less time translating something
+that I've understood and actually making
+something happen in visual
+studio um sure well the idea is that you
+know even if you don't know the name
+that Visual Studio uses for some feature
+um one thing that an AI is really great
+at is understanding what you're trying
+to say and so having that um pipeline
+from you know your your brain uh to what
+does a feature kind of look like in an
+IDE and the AI understands that to
+bringing in the specific uh terms for
+things in visual studio uh we're able to
+provide nice accurate instructions you
+know even if you don't really know uh
+how the right way to describe what
+you're looking for as long as you get
+close uh having an AI helps you get a
+little bit closer instead of spending
+you know 20 minutes on Google searches
+and still not quite finding exactly what
+it is you're looking for right and these
+link outs of these settings we we link
+out to the actual setting right so if
+you tell me to change a setting there
+should be a link for me that will take
+me to that
+setting yeah that's the idea um you know
+when we detect that you know something
+in the in the response from the AI is is
+a setting that we know about we provide
+a link so that you can get directly
+there without necessarily have to follow
+step one two three four five although
+sometimes it's nice to see those
+explicit steps if you're trying to
+understand uh how to teach uh the
+feature that you're uh looking
+for right and so Switching gears a
+little bit from the data science work to
+the experience itself um from what we're
+seeing today in preview what do you
+think is left for room for improvement
+that we want to build or work on in the
+future yeah there's a lot of ways to
+look about it so there's the basic
+feature search experience that we've
+already had in the product so there is
+definitely room for us to improve to
+make sure that it's covering the right
+scenarios there make sure it's handling
+differently formatted queries correctly
+and that's like without AI even in the
+picture but on the side with the work
+that we've been doing with AI there's
+definitely more opportunities like we
+discussed before to bring in more
+context from different sources to make
+sure that the answers we're providing is
+accurate and it provides the right
+details but at the same time we don't
+want to provide too much information to
+overwhelm the model or confuse it or
+bias it in a certain way so there needs
+to be some work done to make sure that
+we're picking the right context to send
+over to them model and provide correct
+responses from that and on the that note
+there's also um more ux work that we
+need to finish up with the flow that
+we've been working on because there's
+some things that aren't uh exactly
+smooth with the experience so we wanted
+to work on with the uh the links that it
+provides the way that it works the
+responses we want to make sure that it's
+actually providing helpful information
+there and actionable information that
+the user can figure out what to do with
+and it's not just providing things that
+they don't know how to act
+on yeah I I mean that sounds great
+because we would want feature search to
+work well within without co-pilot and it
+sounds like any improvements that we
+make to that will also improve
+co-pilot and you know speaking with the
+team that's building a feature that
+helps you um resolve any unit test
+failures they they also spoke about you
+know being really selective with your
+contacts so you can provide a good
+precise answer for our listeners if you
+haven't already tried it the default
+shortcut for using feature search is
+control Q um so do give that a try um is
+there any specific feedback or kinds of
+feedback that we're looking for from our
+customers um as they try feature search
+and feature search with get up co-pilot
+that can help us build a better feature
+yeah so uh the accuracy of results is
+definitely one thing that we're
+continuing to figure out how to measure
+and figuring out ways to improve with a
+feature search on its own that is
+available in the product for everyone to
+try out but the integration with
+co-pilot is still an internal only
+feature because we're trying to iron out
+some of the details with the user
+experience and make sure we're providing
+uh results that are high enough quality
+that we're ready to share to external
+users so uh one way
+to I guess test the accuracy the AI is
+to try asking the chat directly if it's
+able to figure out things but that
+wouldn't have the context that we're
+bringing into search I'm not really sure
+what else we can answer with this
+question gotcha so in the meantime give
+control q a try see if it's able to
+provide a result for something that
+you're looking for and if you're not
+leave us a comment below or use the
+report a problem feature in the top
+right of Visual Studio so that we can
+keep track of scenarios that aren't
+working well for you um and that's also
+one way um to make sure that we have a
+direct line of communication with you as
+a
+user thing that we'll do is that if you
+subscribe um or if you take a look at
+the description in this video uh once we
+do have um what we demoed available for
+you to try we will have the instructions
+in the
+description um so Switching gears a
+little bit to the overall search space
+it's great that we've got AI to improve
+feature search but what about code
+search I know that sometimes when I'm
+hopping between different solutions and
+projects that I'm not always familiar
+enough with a codebase to know what
+keywords to use uh with the existing
+code search and control T um but also
+find um and Def find and replace
+experiences um so can we speak to
+perhaps any thing that we're thinking
+about with L natural language code
+search yeah definitely for our team
+specifically since we own a lot of those
+search features like the uh code search
+experience and find and files we're sort
+of actively thinking about ways that AI
+might be able to fit in and help users
+find the answers that they're looking
+for without having to do a normal
+keyword search because there are some
+scenarios that are better form as a
+natural language query or are sort of
+too complex to figure out a keyword
+search or even a regular expression
+query to find the answers that you need
+so we definitely want to look into that
+space in the future and explore what
+technology is available to help provide
+those answers and figure out the right
+user experience for it as well because
+we don't want to interfere with the
+existing scenarios that people have
+grown really accustomed to with finded
+files and the existing code search so we
+need to um sort of ideate do some more
+investigation work on our end to figure
+out what's the right way to bring in
+these sorts of AI powered experiences
+without to taking away from the existing
+keyword searches
+today gotcha so it sounds like the
+keyword searches are very well loved and
+that we are thinking about natural
+language code search but if we do it we
+have to make sure that um it doesn't
+disrupt the current experience while
+feeling in the user's flow
+right and what about some of the other
+experiences outside of control T um
+what's happening there
+Sandy yeah so I mean there are other
+places where natural language search is
+becoming a part of the visual studio
+experience so for example in in co-pilot
+chat you can you know make a direct
+reference to your solution uh and this
+works uh across languages um the context
+from your solution is kind of brought in
+when you make a query uh to co-pilot and
+so you're able to ask a question like
+like uh where's the codee that processes
+uh customer invoices um and you know
+that might that code might have an
+obscure name and you're not sure how to
+find it in control T because you're new
+to the codebase but by asking a a
+contextual question like that and by
+bringing in that reference to the
+solution uh the AI is often able to help
+and and not tell you not only like where
+it is but to give you a nice description
+of how this code works and what are the
+methods and other types that are
+involved right and even though when we
+think about code navigation we have find
+all
+implementations I feel like there's
+still a gap where hey I'd like to find
+all my synchronous methods because I'd
+like to refactor them to be asyn or
+maybe I'd like to find all asynchronous
+methods that don't take a cancellation
+token or maybe something as simple as
+hey where are the various authentication
+handlers because I want to understand
+the different flows of authentication
+token in my code base that we have
+started releasing internally and we're
+going to be asking people to dog fotage
+soon to help us uh build that to uh
+quality and make sure we're getting it
+to a point where it is actually ready
+for users to start consuming and
+providing feedback to as as you know we
+still need to do a lot of work to make
+sure that the model is providing
+accurate responses that it's utilizing
+the context that we're providing
+correctly and that the user experience
+for um handling responses is smooth and
+seamless as well so that users are
+actually able to act on it and not AR
+aren't only provided with a response
+that they don't know what to do with
+right I feel like one of my frustrations
+with using search engines or other forms
+of AI is some when it gives you an
+answer that's actually inaccurate you
+burn Cycles trying to figure out whether
+you are wrong or right um but in the
+meantime since this uses feature search
+would it be valuable for users to
+provide feedback on feature search
+scenario so control Q uh that doesn't
+give them the answers or settings that
+they're looking
+for yeah definitely we're actively
+working on building test cases and
+exploring different scenarios to make
+sure that the work that we are doing is
+actually impactful and is actually
+solving real customer problems so any
+feedback you can provide about what
+scenarios aren't cover today in the ID
+or scenarios that you would like to see
+covered would be really helpful for
+helping us determine what to do next

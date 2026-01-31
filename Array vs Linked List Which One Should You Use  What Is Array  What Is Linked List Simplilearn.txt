@@ -1,0 +1,358 @@
+hello everyone welcome to simply learn's
+youtube channel
+today we will be discussing about array
+versus linked list but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies
+so if you are a tech geek in a
+continuous hunt for the latest
+technological advancements then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+now without any further delay let's get
+started with the agenda for today's
+discussion
+we will start this discussion with a
+brief understanding of array in data
+structure
+following which we will deal with linked
+list and data structure
+and finally we will cover the comparison
+between array and linked list based on
+different parameters
+i hope the agenda is clear for today's
+session now let's get started with our
+first topic which is array in data
+structure
+basically an array is a data structure
+that contains homogeneous elements what
+i mean by that is an array will only
+store the elements having the same data
+type
+additionally the memory location in the
+case of arrays is static and contiguous
+that means a declaration of an array
+must be made at compile time the command
+that we use to declare an array in data
+structure consists of three fields
+the first one is data type
+the second one is name of an array and
+the third one is its size
+for example int array 5
+further if you want to pass some values
+into an array you can pass the list of
+elements as shown
+once we do that an array structure gets
+created with the data elements at
+contiguous memory locations
+the next important property of an array
+conveys that the elements of a created
+array can be accessed using the indexes
+of data elements
+for example consider this array it
+consists of five data elements
+and if we want to return the element at
+index 0 to the console then we can use
+the command printf percentage of d array
+0
+which will return the element at index 0
+that is 4.
+on that note let's discuss a few
+essential properties of linked list as
+well
+the linked list is a collection of data
+elements that we call nodes these nodes
+are stored at non-contagious locations
+in memory
+additionally each node contains two
+fields one to store data and another to
+store the address to the next node or
+the reference node to the next node
+let's assume that nodes in this figure
+are at addresses 200 400 500
+respectively
+i have filled these addresses in address
+fields as well
+the identity of the linked list that we
+always keep with us is the address of
+the head node
+we often name a pointer or reference
+variable at which we store this address
+as head
+and as the definition of a linked list
+says the linked list is a dynamic data
+structure whose size can be changed at
+runtime
+that means we can either decrease or
+increase the size of the linked list at
+any instance in our program
+for increasing the size of linked list
+we use the malloc function in c
+programming language
+malloc is a library function that
+allocates a block of memory on the heap
+the program accesses this block of
+memory via a pointer that malloc returns
+further when the memory is no longer
+needed the pointer gets passed to the
+free function in c in order to
+deallocate the memory provided by the
+maillock function
+the function free must be called
+explicitly in order to do that
+if you want to understand the
+implementation of a linked list or any
+of its functionalities we suggest you go
+through our video on the linked list in
+data structure it might help you grab a
+better understanding of linked list
+in this video we are going to stick to
+the comparison between these two data
+structures and analyze which one is most
+favorable in different conditions
+having said that let's get started with
+the comparison between array and linked
+list
+the first parameter that we want to talk
+about is the cost of accessing an
+element
+irrespective of the size of an array it
+takes constant time to access an element
+in the array and this is because an
+array is stored as one contiguous block
+of memory
+so if we know the starting address or
+the base address of this block of memory
+we can traverse the whole array to
+access the element that we want
+so let us say what we have here is an
+integer array and the base addresses for
+this is 200
+that means the first byte in this block
+is at address 200.
+further if we want to calculate the
+address of an element at index i then it
+will be equal to 200 plus i into the
+size of an integer in
+bytes and as we know the size of an
+integer is typically 4 bytes
+hence it will be 200 plus 4 into i
+which means knowing the addresses of an
+element in an array is the only
+calculation part our compiler will need
+to perform
+that is why accessing elements in an
+array cost is constant time this
+constant time is also represented as big
+o of 1 in terms of average case
+complexity notation
+and in the case of linked list we have
+multiple blocks of memory at different
+addresses
+out of which our compiler just remembers
+the head node using the pointer variable
+so in order to read any element out of
+this linked list we will have to
+traverse all the elements until the
+element that we are looking for gets
+found
+due to this the average case complexity
+for accessing an element in a linked
+list is big o of n
+now the second parameter that we want to
+talk about is memory usage
+in the case of an array we need to
+declare its size at the compile time
+which means we will have to know the
+size of an array before even creating it
+hence to avoid an overflow error what we
+typically do is we create a large enough
+array to store all the elements
+for example in this particular case we
+have only three elements to store but we
+create an array with size phi to remove
+overflow error
+while we achieve to do that we waste
+eight bytes of memory as we have two
+empty fields in our array
+meanwhile in the case of a linked list
+we do not lose any memory due to its
+dynamic nature
+even if we use extra memory space we can
+empty it at any time using the free
+function in the c programming language
+the only factor that utilizes extra
+memory in case of a linked list is
+pointers
+however it remains the best solution
+when it comes to memory management
+another point with memory allocation
+that i want to discuss with you guys is
+that sometimes when we create an
+exceptionally large array maybe memory
+may not be available as one large block
+this problem that we have with arrays is
+also called as memory fragmentation
+problem
+but if we use a linked list the memory
+will be available as multiple small
+blocks so for memory management linked
+list is far better than array
+now the third parameter that we will
+talk about is the cost of inserting an
+element at the beginning remember when
+we talk about arrays here we are also
+talking about the possible use of an
+array as a dynamic list
+well for insertion at the beginning of a
+dynamic list we will have to swap the
+locations of the element at current
+positions
+the complexity for this swapping
+operation will be big o of n itself
+meanwhile the complexity to insert an
+element at the zeroth index will be big
+o of 1.
+hence the overall complexity for this
+insertion will become big o of 1 into n
+which is big o of n
+for the insertion at the beginning of a
+linked list we need a constant time
+because a compiler just remembers the
+address of the head node and inserting a
+new node does not require any extensive
+computation
+thus the complexity of insertion at the
+beginning of a linked list is big o of
+1.
+next up is the cost of inserting an
+element at the end
+for this insertion to happen in the
+array we will face big o of 1 time
+complexity as arrays need constant time
+to access any of their indexes
+for example in this representation of an
+array inserting an element at index 4
+will just cost us big o of 1.
+meanwhile in the case of a linked list
+this operation is comparatively costlier
+than arrays
+for instance consider this structure as
+a linked list and we want to insert an
+element at the end of this linked list
+so to do that we will need to traverse
+the whole linked list until we reach the
+tail node once we get there the
+reference part of the previous tail node
+gets linked to the new node and the
+element gets inserted
+but the traversal for this operation
+cost us big o of small n itself
+also the insertion for a given ith index
+cost us big o of big n in the case of
+both data structures
+the next parameter that we will talk
+about is a deletion in the case of
+dynamic array and linked list
+the complexity for deletion at front and
+the ith index cost as big o of small n
+whereas the complexity for deletion at
+the end of the dynamic array remains
+mysterious
+by that what i mean is the complexity
+for insertion in a dynamic list is
+dependent on the programming paradigm
+for example it is big o of one for java
+and big o of n for c and c plus plus
+whereas there is no such confusion for
+linked lists even though it is also a
+dynamic data structure
+the time complexity of deletion at the
+start of a linked list is big o of one
+whereas it is big o of small n in the
+other two instances
+now let's also discuss deletion in a
+static array
+for static arrays the deletion at the
+end cost us big o of one and in contrast
+to that
+the other two scenarios cost us big o of
+n due to the swapping activity that we
+have discussed earlier
+the last parameter that we are going to
+talk about is the ease of implementation
+an array is comparatively easier to
+implement than the linked list as it
+only requires a few lines of code
+but arrays take more time to execute
+operations such as insertion and
+deletion whereas link lists are quicker
+to perform these operations like
+insertion and deletion
+the only difficulty we have in the case
+of linked list is that its execution is
+dependent on the programming environment
+in the case of c and c plus plus linked
+lists are more prone to errors like
+segmentation fault and memory leaks
+that is why working with linked lists
+necessitates caution
+whereas aries are more user-friendly and
+error-less for their coding
+implementations
+having said that let's have a look at
+which data structure to use in different
+conditions
+as we have seen earlier insertion and
+deletion and linked list can be achieved
+in constant time thus when you require
+your application to handle data
+insertion and removal at a rapid speed a
+linked list is the way to go
+whereas if you want to traverse your
+list faster arrays are preferred over
+linked lists
+next up is size declaration when you are
+clear about the number of items in your
+list an array is the suitable data
+structure for you
+otherwise if you aren't familiar with
+the number of items in your list link
+list will be the better option for you
+as with arrays you may need to
+re-declare and copy memory if the array
+grows too big
+next is accessing an element if you want
+to access any element by its index in
+your program then array will be the
+ideal option for you
+because in the case of a linked list you
+will need to traverse the whole list
+from its head node for each insertion
+which is not a good practice due to
+higher complexity
+insertion is the last scenario on our
+list
+if you want to insert elements at the
+end of a list an array is the ideal
+option because it takes constant time
+and if you wish to insert elements in
+the middle of the list linked list will
+be the best alternative
+so this is all about array versus linked
+list i hope this video was informative
+and interesting if you have any queries
+regarding this topic do let us know in
+the comment section below and we will
+get back to you
+thank you so much for being here and do
+watch out for more videos from us until
+then keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

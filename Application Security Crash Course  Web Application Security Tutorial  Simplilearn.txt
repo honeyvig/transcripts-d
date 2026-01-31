@@ -1,0 +1,3468 @@
+so hello everyone my name is my and
+welcome to S YouTube channel in today's
+Digital World keeping application and
+web app secure is crucial as cyber
+threats become more advanced protecting
+sensitive information and Software
+System is essential for both businesses
+and individuals so in this video we will
+explore the basics of application and
+web application security including
+common vulnerabilities and best
+practices to prevent them so we will
+discuss cure coding authentication
+encryption and the importance of regular
+Security checks and updates whether you
+are a developer looking to improve your
+security skills or a business owner
+wanting to safeguard your digital asset
+this video offers practical advice and
+tips to strengthen your application so
+join us to learn how to make security an
+integral part of your development
+process and build a strong secure
+software solution craving a career
+upgrade subscribe like and and comments
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back and if you an aspiring Cy security
+professional looking for online training
+and certification from the prestigious
+universities in collaboration with
+leading experts enhance your credibility
+then search no more simply L
+postgraduate program in cyber security
+from MIT University in collaboration
+with EC Council should be your right
+choice designed to accommodate a diverse
+range of Learners this score require
+just a bachelor degree with 50% average
+marks no prior programming experience is
+required so for more details use the
+link in the description box below and
+the pin comment so without any further
+Ado let's get started starting with the
+introduction before that let's have a
+little course
+introduction so we'll be uh doing an INT
+ruction to application security what is
+application
+security where it is used so as the name
+says application security includes all
+tasks that introduce a security software
+development life cycle development teams
+its goal is to improve security
+practices and find fix and prevent
+security issues within applications how
+it is done why it is done that we will
+learn along the journey along with
+practical
+examples application security
+is not confined to a certain area it's
+not confined to it as it seems that it's
+it might be uh confined to IT industry
+only but no uh you might have heard
+about attacks uh cyber security attacks
+on government institutes energy and U
+utilities Healthcare institutes banking
+institutes so yes it impacts application
+security impacts all of these
+sectors how they impact we will be
+seeing it while the journey is going on
+our course would start with the
+introduction which we are doing then the
+Core Concepts what's software security
+how secure software testing is done what
+is cryptography a very important topic
+and secure software life cycle
+management skills that we'll be covering
+would be web app scanning and crypt
+application monitoring error logging
+oasp top 10 and API security the agenda
+for
+today web app
+Security application and web app
+security all right so what are the
+learning objectives for today again the
+basics Core Concepts of
+security we'll be able
+to classify the best practices
+we will be analyzing one case
+study that would be of uber we will see
+what went wrong or what went good how
+application web application security
+would have done it better and we will
+categorize the
+requirements for a foolproof
+security team what are the requirements
+we'll be seeing it so say if you have
+joined any organization as a cyber
+security
+specialist where would this course help
+you see you you are given the following
+tasks which you'll be able to do after
+this
+session
+understand the vulnerability
+stack what are vulnerabilities how they
+are
+classified which application is impacted
+where to see which
+vulnerabilities uh where on the net they
+are visible is there any database for
+vulnerabilities how many of the these
+are there what about the vulnerabilities
+which were there in the history can we
+find them we will be able to
+understand the
+organizations security
+policy so whatever organization you are
+working in currently you will be able to
+understand their security
+policy then you'll be able to
+review the core security
+requirements whenever we talk about any
+software so we talk about a
+software we know it is something that we
+use in our daily to day today life
+uh it is a firmware with which we access
+applications what is secure software now
+the same software or same application is
+secured by means
+of following attributes which
+attributes
+reliability resiliency
+recoverability when I talk about
+reliability as the name says that is the
+software
+Dependable it fulfills the purpose for
+which it was
+created for example if I talk about
+social uh networking sites the social
+networking softwares so we know we at
+once our mind will
+okay you are talking about soft social
+connection softwares so it's either
+WhatsApp Facebook Instagram so these
+companies or these softwares have made a
+reliability mind setup so whenever we
+talk about social engineering these
+softwares would revolve in our
+mind when we talk about
+resiliency resiliency me
+means that the software does not viate
+any security
+policy
+so it's able to withstand the actions of
+threat agents resiliency means I
+downloaded the software today and
+tomorrow it's demanding ransomware to
+use my files are encrypted it's saying
+that you cannot move forward from this
+point so resiliency should be the here
+it does not violate
+[Music]
+any any security
+policy re reliability was the software
+is
+Dependable
+recoverability as the name says so if I
+remove any of the application from my
+phone
+uh I have some restore point or backup
+point from where I will get the
+entire think
+back in same setup without any loss of
+data
+so software is able
+to restore
+operations when you buy a new
+phone you simply have to login into your
+ID which is mage it is if it is Android
+you have to use your Gmail ID and entire
+backup of applications from your
+previous phone to your new phone it
+clones it so that talks about the
+recoverability after software or secure
+software we talk about web
+applications what are web
+applications these are nothing but
+software programs that run on web
+browsers if I open uh say any website
+simply
+learn what is
+this this is a web application which is
+running in my browser so anything any
+application or any software which runs
+on browser which runs on web is web
+application
+talking about the flow let's talk
+about the flow how the data
+flows I'll be
+using
+different symbols
+here so let's
+say this is my database
+server or I call it
+DB this is my application
+server this one is the web
+server so all these things combined
+together they work in background so
+these would be the backend
+thing all three of these
+are backend
+when I talk about the applications if
+I'm seeing this so this all is in front
+end because it's directly on UI on which
+I'm interacting with
+it so front end would
+be this would be
+my web
+browser and the system on which it is
+running
+laptop or
+mobile whatever device it
+is so I I won't be using Cloud here but
+yes this is front
+end how would be the flow move my
+database server will
+fetch the address I searched for simply
+learn application server will respond
+that yes this is simply learn
+application it
+will the application server will respond
+and the web server will then be showing
+this to web
+browser so now simply learn is visible
+on web browser and
+that is reflected on
+my device which is either laptop or
+mobile and this thing is fronted so just
+an overview how web applications
+work which main components are in action
+starting from database server in which
+entire uh
+applications entire simply learn things
+are hosted application server on which
+the application is
+hosted web
+server responding on web browser to your
+laptop or mobile
+application vulnerability
+stack if we talk about
+application vulnerability stack or
+AVS as the name
+says it will talk about
+application irrespective it is web
+application mobile
+application Cloud
+application any vulnerability that is
+impact impacting this
+application would be a part of
+application vulnerability
+stack so when you talk about
+vulnerability what is
+vulnerability anyone want to answer it
+uh I won't be judging over it but yes uh
+just to see how many of
+you can answer what is a
+vulnerability if I say
+uh any application say if I say I won't
+be naming any other application if I say
+simply learn application is having some
+vulnerability what does that
+means does mobile app also require web
+server in the back
+end how is web server different from web
+browser all right so I'll firstly answer
+these two questions from vhan and VV so
+Wan says how is web different from web
+browser we done web server is on which
+the application is hosted which is in
+the back end from where my web browser
+which is Chrome it is fetching that
+detail from some web browser on which
+simply learn is hosted
+so answering your question web browser
+is
+either
+Chrome uh the one which is obsolete
+Internet Explorer which is now not used
+in its place we
+have Microsoft
+Explorer
+Firefox so Opera Mini so all these are
+web browsers
+while web servers
+are
+Apache Apache web server we have some
+web servers from Oracle Microsoft has
+its own web servers Google has its web
+servers AWS has its web
+servers so that's the difference between
+web server and web
+browser does mobile app also require web
+server in the backend uh vev yes the
+answer is if because you also use web
+browsers on your mobiles so if you're
+using uh browser say you want to see
+your report card and you want to access
+uh the website of your University or
+college if you are using your mobile
+browser you again are accessing
+their web server in the back
+end pradep says web application and
+website what is the major difference uh
+both of them work on www
+so web site and web application both
+works on our browser
+in Android Studio we use web view which
+is like a server uh that's true
+veran vulnerability is the thing which
+happens integrity and availability for
+data so that that shows that uh you have
+been good in the module one because
+that's from where you are answering it
+that's good all right answer to this in
+two different scenarios one scenario the
+one I discussed uh where you are using
+mobile application say which is mobile
+Chrome which is Chrome or Firefox inside
+your mobile now it is the mobile
+application it runs on web servers uh
+Edge again these are mobile applications
+and they do have we servers on which
+they will show you the
+answers because they are browsers so yes
+they have servers in the background
+talking about other applications uh
+although this answers your
+question google.com is a
+website yes yes it uh Google ultimately
+uses servers database server google.com
+when you search
+so searching here although it is my
+default page but yes google.com it is
+talking to its server in the back
+end and showing me this this page so
+this page is web page of Google or
+website of Google so now you got your
+answer web application would be if
+you're using that Google application in
+your phone that's the
+application while anything which you see
+on web browser is a website web app
+server mobile app server do they run on
+same server that depends upon company to
+company if I'm having a big company like
+Google or Microsoft I'll have different
+servers so that if my web app is down my
+mobile app is running it doesn't impact
+it while uh if I'm a a small cap company
+or medium cap company I might have both
+on same physical server of same Cloud
+Server so I might use AWS with different
+instances running for mobile and web app
+or I might have even if I'm smaller than
+that with low budget I be having single
+physical server with both of them
+running on it so depending upon the
+budget I having we were talking about
+stack when we talk about stack let's
+start from the network
+part when we talk about networks what
+are the things that are under
+attack we either talk about routers or
+firewalls
+when we talk about operating
+systems and these all are the things
+that you need to know to be successful
+in cyber security domain knowledge of
+each one of
+these applications would either
+be either be open
+source or licensed which are commercial
+database when you talk about DB there
+are certain database that run in the
+background we have
+Oracle
+MySQL
+[Music]
+db2 and so on the list goes on but these
+are the major on which the attacks
+are
+targeted what are the
+components web
+server either
+Apache
+Microsoft
+IAS custom web
+application what issues do we see in
+custom web app applications this
+generally happens when uh there is an
+application already placed there uh
+there's a mark uh application working
+and its source code is available uh say
+in
+gitlab so when you talk about it's
+source code is there in gitlab you try
+to customize it according to your wish
+say Uber uh is there already placed in
+gitlab the code is there I make some
+changes according to my requirement
+and uh generate a new taxi application
+with some name say my name is her so let
+Let It Be Herre cabs or blue cabs Yellow
+Cabs whatever
+so I'm
+using Code which is already there but
+now I have made it customized according
+to my needs
+we can have business logic
+flows
+or we can have technical vulnerabilities
+if I'm not into uh security thing I
+might change something which could
+induce a vulnerability in that
+application in that customized
+application not the original one because
+I'm now playing with it so I might
+induce some technical ability in it with
+with the changes I'm trying to do but
+again that that depends upon what kind
+of service you are taking from the cloud
+provider if the security is managed by
+them then you don't have to fear
+anything if anything happens your data
+is lost the cloud providers would
+compensate you but that typically never
+happens does web scrapping comes in
+to strapping comes into this issue as we
+try to extract info without permission
+of the company uh if you
+notice uh when I'm trying to answer your
+questions I'm revolving around simply
+learn only due to same uh thing what you
+are trying to question veran uh yes uh
+when you try to say even even when we
+will be attacking
+uh websites it would be mostly simply
+learn only because we won't be attacking
+any other website of any other company
+that could lead us in trouble or jail so
+yes that's a very good
+question if you try to fingerprint we
+call it fingerprinting or
+footprinting uh when you try to collect
+data of any website or any company
+through these means their sock team
+their security team would come to know
+that something is something fish is
+happening and yes that might lead you in
+trouble so permission of company is
+necessary in most of the
+cases all right
+next point
+is single page
+applications as the name
+says applications which run on a single
+page
+they they are called single page
+applications how they
+work
+uh say it's it's it's a design approach
+that generates web pages dynamically
+with new data from the web server
+instead of loading entire new
+pages
+so every time you open single page
+application D it autog generates the
+data from web server and it uh
+doesn't always go back to web server for
+fresh
+linkages uh which could impact in its
+loading so for faster loading Spa
+generally uses ax to exchange data with
+the server and JavaScript to manipulate
+the elements on the existing
+page so what does do it use Spa
+uses Ed
+X why to
+exchange
+data with
+server what else
+is
+use
+JavaScript to
+manipulate the
+objects now uh how can I know that
+what elements are there on any website
+so let me show
+you
+so talking about single page application
+this is simply learn I want to know uh
+what things what are the back end things
+working on this page I either I go to
+inspect element and uh use inspect
+element to go one by one or I use some
+bookmarks The Bookmark I will be using
+would be Vaper and
+shown talking about
+weizer it
+shows that simply learn is using
+Microsoft
+advertising for performance priority
+hints for marketing automation they are
+using web engage sales
+Loft Amazon Cloud front is is the WAP
+which is
+CDN personal personalization is done on
+web engage version
+six so they are using pass platform as a
+service so simply learn is hosted on web
+application uh Amazon web services now
+you know from
+where it's fetching the data from the
+analytics they using Facebook pixel
+Google analytics Microsoft clarity
+loadable components
+jQuery
+cryptojs so it these are the Javas
+JavaScript
+libraries if you want more click on more
+info I guess it would be paid yes it's
+paid you can export this entire
+information if you
+want you can use same thing for other
+application the
+other application or extension that I'll
+be using is Shodan it
+shows so I didn't know the IP address
+from weizer so Shodan showed me that
+okay this is
+the IP address of Simply
+learn it's on cloud we know that it is
+AWS open ports are 80 and 443 uh in
+network you will be I'm not YES Network
+you have already done Enterprise
+infrastructure so you know open puts 80
+is for HTTP 443 is for
+https so you can view IP details view
+domain
+details moving ahead it will show you
+more details I'm not sure if it is paid
+now no it is
+not so it's on
+Amazon it's the ISP
+using Cloud
+front Port 0 which is HTTP
+https so these datas you can get from
+some extensions if you are good at
+coding that is always a plus point
+because uh in web application sec there
+are two types of testing one is static
+analysis and the other is dynamic
+analysis when we are doing static
+analysis static analysis is nothing but
+source code review you review the codes
+for that you should be good in coding
+while if you're doing Dynamic testing
+that means websites in motion for those
+you you just need know how of coding and
+not the entire code structure so better
+if you are
+having uh Java or python
+knowledge if don't know coding that much
+if you are a fresher then you can learn
+it by heart that would help you uh in
+long run but if uh your job your current
+job doesn't require it so you may even
+not go along with it I'm currently okay
+you are in network side so I started uh
+with networks
+only uh I started with networks then uh
+wireless networks data networks wireless
+networks and now I'm in cyber security
+it it doesn't necessarily require you to
+know the
+website uh the programming but yes it
+could help
+you all right brief on it
+okay so ax is a it is a set of web
+development techniques uh when I'm using
+edx on my client site on my system it's
+used to create asynchronous web
+applications so we can send and receive
+data from server without interfering
+with the display and behavior of
+existing page even though uh this is
+working on your uh we are using using
+the chat within this application it is
+not impacting any other functionality
+while we are doing this session so this
+is Ajax we are using Ajax it is just
+utilizing a bit of the entire thing
+without impacting anything that Dynamic
+thing is called
+ax so it is not changing behavior of the
+existing page but we are still able to
+check any example of spa if
+possible
+single uh this one example is the zoom
+learning that we are doing uh we are
+using meeting chat without impacting any
+other thing in simply learn uh this
+application is again Spa when I search
+anything random it will provide me the
+answer although I know harit is nowhere
+inside it it will just throw an error
+without without impacting anything else
+on the
+page so your search did not match any
+content it take it took a second or so
+so without impacting this it's Spa using
+ax after single page
+application all right let's talk more
+about a bit more
+about how single page application works
+let's see
+I don't want to save it all
+right so
+again this is my
+browser this is my
+server this is my
+application this is the
+response so my browser will send
+request what it is doing it is sending a
+request server will respond
+with HTML
+file that okay this is in response to
+your request let this the
+file now the application sends an aex
+request to fetch data from the server
+just keep
+correlating you open your Google Chrome
+you searched for see simply
+learn server provided HTML file at
+first then the
+application
+sends ax request
+why it is sent to fetch data from the
+server so now it is just sending ax so
+that additional data from server is
+requested without any impact on this
+page which is already showing on
+browser the final step would
+be web page is
+updated
+using Json data
+so Json data is received which is then
+updated on
+your web browser so this is how it is
+functioning in the
+background of a single page
+application is payment system with UPI
+also Spa because once we reach to
+payment page then it sends a request to
+up and keeps polling if we have made the
+payment or not
+so
+uh there's another thing running in UPI
+systems because there it
+works uh two ways once it is uh
+interacting with a server which checks
+that if payment is made another it is
+interacting with the server which checks
+if you have provided the proper mpin or
+OTP third it is interact with your bank
+from which the payment has been made so
+it's a little different uh it's not
+entirely Spa but combination of Spas at
+three different
+levels all these three levels that I
+talked is server and application
+generating running on same system or
+different is server and application
+generating edx running on same system or
+different since I'm using this web
+browser simply Lear wants to to talk
+with me but I don't so if I'm
+using this website on my local machine
+that means ax is running on this client
+system so this answers your question
+that ax works on the same system on
+which the web browser or web app is
+running Json how it works
+Json is a message that that
+you get say if you
+are all right so if any response you are
+getting in Json format you can simply
+use uh Json
+viewer uh I don't have Json sample
+currently but let me see if I can get it
+from
+somewhere okay so
+say if this is the Json data that we are
+getting simply use it in
+viewer it will show you data in this
+format in tabular format that okay the
+employee name is this salary is this and
+it's he or she is Merit so this was the
+code Jason VI were simplified it
+in a tab
+form so if this helps you in your daily
+work what are the most common commonly
+used Frameworks for developing Spas so
+all these Frameworks that we are talking
+you might have heard about it especially
+if someone of you is a
+developer
+reactjs which is
+Javascript view Js
+Angular
+JS so all these Frameworks are used for
+developing Spas because Spa is a front
+end technology there therefore all these
+are the frontend utilities that we are
+using so all right uh give me if you
+could just to check kindly provide me
+example of Spa uh in your from your
+daily
+life from your daily
+life provide me an example of
+spa very easy even if
+[Music]
+you that that's that's the uh that's the
+definition of spa but uh provide an
+example all right one example is
+Facebook you edit change anything you
+see video use but it
+doesn't change the basic
+functioning what
+else share prices display if it is a
+good application then
+yes
+okay otherwise if it is lagging then it
+is not
+ASP Gmail right Google Drive Right
+WhatsApp WhatsApp
+web okay the answer Twitter
+perfect the answer which I am searching
+for
+SharePoint okay all right can say
+because real time changes are there okay
+perfect the answer which I wanted
+to Google
+Maps uh no because we are not changing
+anything over
+it uh okay
+uh the answer which I was expecting from
+you
+people otd platform which is
+Netflix yes venkatesh uh location can be
+changed dynamically but during that time
+uh once your location start and stop is
+set it doesn't have
+to fetch anything uh anything new uh
+since you are connecting to internet
+so that's that's what it requires that's
+the ultimate thing it
+requires talking about otd
+platform uh yes Gio uh Netflix Amazon
+Prime all these hundreds of people if if
+there's uh match of Indian cricket team
+uh hot star yes so it CS load of a
+billion people billion devices
+connecting to it and still it is working
+without going down or showing any
+symptoms of uh of disconnection so
+that's that's where
+Spas come into existence you are even uh
+some someone who is not keen into uh
+cricket they are working they are
+watching some other thing over the same
+application which might uh have some
+different load level so cering to
+different loads at same time YouTube yes
+yes so all these are
+Spas all right one question I saw
+currently is what is the difference
+between single page and multi-page
+applications uh okay madri says should
+shows TLS 1.2 for security is this not a
+risk the latest is 1.3 very good
+question badri but uh sometimes it's the
+compatibility issues
+say the company in which I currently
+working they are also using TLS 1.2
+because maximum of the infra inside the
+company they support TLS 1.2 they
+haven't shifted to 1.3 due to
+compatibility issues of support so
+that's why some companies are still
+working on DLS 1.2 rather than 1.3 but
+yet yes they do have the security team
+working behind keep check which is
+checking it regularly that nothing of
+that sort happen uh any vulnerability
+which is there for 1.2 they not
+exploited by
+anyone uh was uh that is also secure but
+every version every latest version is
+more secure than the earlier one DLS 1.1
+transformed into 1.2 due to more
+security the version 1.3 is more secure
+but it's not very compatible to the
+infrastructures
+yet 1.2 is widely used so chanit the
+answer Sunil attempted the answer and it
+he is pretty much right single page
+application will interact for any new
+changes from the web server it will not
+uh load the entire page again and again
+while multi-page applications
+will for any change they will reload the
+entire application so they are more slow
+than single page
+applications if that answers
+yes uh badri answered that also it is
+new page every time with user
+actions CRM is multipage application
+true I guess this uh you are talking
+about the sap CRM
+right are we having hybrid uh where
+where
+uh where are we having hybrid I I mean
+I'm not
+getting the question Yahoo Gmail is
+single
+page they do not reload on receiving a
+new mail they just keep new mail
+updated I mean both SP spa and
+MPA if people prefer multipage
+application uh they are uh preferred
+while using heavy applications so for
+Spas are preferred for heavy
+applications just as we discussed about
+the OT things again the budget thing if
+you don't have much budget you use
+multipage application MPA example would
+be anything uh say I'm not sure how many
+of you have used medium which is a blog
+site technical blog site so if you talk
+about medium it is MPA any blog any
+e-commerce website which is Amazon flip
+cart
+which goes to a new page if you go to
+Amazon regular it is one page go to
+Amazon Fresh yes s answered zato swii
+these are all
+mpas Wikipedia is MPA very nice example
+of it are we having hybrid solution
+between single page and multi-page
+applications uh no
+no uh no issues
+uh uh if and application is Spa it is
+completely Spa if an application is MPA
+it is completely MPA we cannot have a
+part of it as spa and a part of MPA
+because that part itself is divided into
+multiple pages so if it is MP it is
+completely MP if it is sp
+completely all right just one question
+which one is faster spa
+or soan that is Spa no doubt about
+it Amazon Prime and Amazon mini all of
+MSP so you all know Spa is
+faster okay we know that the advantages
+of using Spa is it is paid most of
+resources loaded only
+once uh data is preserved we require
+less data what are the disadvantages of
+using
+Spa whenever you click on that minv
+thing it will redirect you to Spa rather
+than the MP part what about desktop
+application which
+application we we are talked about spa
+and uh MP already which application
+which desktop application you are
+talking about again that depends which
+application you're using if you're using
+anun uh if you're using team viewer
+those are those come
+under mpas if you are using Netflix uh
+application desktop application then
+again it's
+Spa navigation is maybe the issue with
+Spa sir uh no okay what in navigation
+you are not exact on the point but yes
+near about loading uh akib it it is
+faster so loading is not an issue for
+spa loading is an issue for mpa what are
+the disadvantages of using Spa
+applications since it is faster in
+execution which do you think is more
+prone to attacks is it SP or MP no there
+are dis advantages answer Sunil has
+already answered it
+so the there are kind of attacks uh
+injection attacks accss attacks which
+we'll be seeing in uh
+further uh when is it is not the exact
+thing but yes while while navigation
+while in uh the data is in trans that
+there's there's scope of attacks because
+uh not the entire thing is reloading not
+the entire data is being fed but only uh
+the data which is being transmitted can
+be manipulated by
+attackers they can simply inject
+malicious scripts into
+it so there was uh there
+was there was recent attack which was
+called that was a vulnerability in
+JavaScript Java which is called log 4J
+if anyone of you remember that
+4J this was a
+vulnerability which was there in every
+Java it was a zero day
+vulnerability every Java logging
+framework was having it so whenever we
+talk about vulnerability and it it
+attacked any and every application which
+was working on JavaScript so this is one
+of
+the
+uh example
+where how it got vulnerability how it
+got vulnerable okay uh long story short
+uh JavaScript was
+having some a single line in the code
+which was talking about the logging
+thing a little change in
+that line or that code or that script
+made it vulnerable to changes in entire
+Globe wherever Java was being used uh so
+that resulted in this vulnerability
+which was already present there but was
+never
+exploited next is
+microservices when we talk about
+microservices so
+microservices are shorter Services which
+are running inside bigger Services it is
+an approach in which a single
+application is composed of many Loosely
+coupled independent services so
+microservices emerged to address the
+limitations of Monolithic architectures
+which we will initially using such as
+scalability flexibility
+productivity to answer all those
+things we got the concept of
+microservices so what are the advantages
+of microservices when a single code is
+divided into multiple shorter codes so
+updating the codes is more easy now
+updating is
+easier what
+else scaling can be
+done of each unit independently
+what else fault
+isolation if a part or a unit is in
+fault it will not impact the entire uh
+structure one point which I want to see
+say updating is easier scaling can be
+done independently fold
+isolation what else okay I will give you
+a
+hint since these are different units
+okay I'll just uh ask in yes or no since
+these are in different units can we use
+multiple programs in it multiple Pro
+programming
+languages so the answer
+is yes
+so basic and most advantageous thing of
+microservices we can use different
+programming languages defining different
+structures different component
+structures what do you think about
+disadvantages hetrogeneous language that
+is good yes that's the
+answer uh chanji did you get the answer
+now why it is
+yes all right so think
+about uh brainstorm on the disadvantages
+what are the disadvantages the answer
+lies here
+only so the disadvantage number one
+is disadvantage number one which you can
+feel if you are using different
+languages in a set would yes so the
+answer is
+complex
+structure complex or complicated we can
+say what
+else what will this turn
+into so if we talk
+about Sunil badri harender
+all of them they are pointing to one
+thing which
+says testing can become
+complicated so when you have made a
+complex or complicated structure and QA
+has to test it then they have to test it
+for different languages different things
+different
+services
+so now let's let's talk about a case
+study uh case study of
+uber we are talking about Uber uh the
+taxi application of
+course so Uber like other startups it
+created monolithic architecture for its
+application but it forgot to include
+stability and stability in its software
+uh I guess because it didn't know it
+would be very popular worldwide so it
+missed that scal scalability
+part so it
+used monolithic
+structure when I talk about monolithic
+structure what is what it is it is a
+single tired application that compiles
+all components
+all components in a single
+program that means it was not working on
+microservices all components were on in
+a single
+program what are those
+components what were those
+components client side user interface
+server side business
+logic
+Integrations data access
+layer so all of these components were
+now in a single program rather than
+running on a different services so that
+made the application very
+heavy and it now started making problems
+for
+Uber so for why because for even a short
+Change uh in the application they had to
+go through the entire program see where
+that particular function is change it
+and failure of one
+program failure of of one
+component could bring
+down
+entire
+system so as the
+services increased it became very
+difficult for Uber to
+sustain that's when they shifted
+from single program monolithic structure
+to
+microservices so now when they shifted
+to
+microservices the load was less because
+now it was
+decentralized every unit was
+independently functioning without
+impacting the
+other so now because they were
+independent dependency on other features
+was removed and from that from that
+phase onwards Uber benefited by shifting
+its architecture from monolithic to
+microservices and that was a Learning
+lesson for other uh applications which
+were their competitions in Global
+Market so talking about security
+policy as the name says security policy
+is an overall general statement produced
+by Senior Management that dictates
+security within the organization
+so what is it what it
+is an
+aggregate of
+directives
+regulations
+[Music]
+rules
+practices all of these are aggregated
+that prescribes how an organization
+manages protects and distributes the
+information
+manages
+protects and
+distribute the information for any
+company you are currently working in
+they have their own set of
+policies some says you cannot plug in
+USB uh
+in your
+laptops some says you can plug in but it
+won't
+work some says no media connection is
+allowed be at your own phone to the
+laptop because you can steal the
+information so this is uh how
+different companies frame different
+policies based upon their sense of
+security how are these uh how to make
+flowchart here let's see
+okay what are the how can we divide it
+into strategic and tactical let's see
+so we start
+with
+laws
+directives and regulations
+followed
+by the
+policies followed by they call it
+mandatory
+standards these are further followed
+by detailed procedures
+[Music]
+recommended
+guidelines and
+baselines top they follow top to bottom
+bottom approach
+so till
+here it's all
+strategic and this
+part this part is
+strategic that means the core or VIPs
+they make these things ciso CTO
+CDO they sit together to make laws
+directives and
+regulations
+policies while the mandatory standards
+detail procedures these
+are tactics
+based so when we called about tactic
+based that means the techical team which
+is there to see on mandatory standards
+the guidelines and baselines they are
+responsible for these parts the lower
+one talking about standards all right
+talking about
+standards standards are nothing
+just okay I'll just write it here
+only when you talk about
+standards standards
+are m mandatory
+activities
+actions or
+rules designed
+to
+support higher level
+policies so stand stands are
+basically designed to support these
+higher level laws directives regulations
+and security
+policies they are very
+specific technical they include
+specifications for what Hardware you'll
+be using what software you'll be
+using examples of standards that we talk
+about in uh cyber security is
+aasp
+M these are the standards that we look
+after when we talk
+about cyber security so aasp MIT s25
+these are the
+standards talking about procedures what
+is the difference between standard and
+procedure
+[Music]
+it's generally called sop if you hear
+about sop it is they are not talking
+about the soap or anything else it
+is standard operating
+procedure
+standard operating
+procedure what it is it is a detailed
+stepbystep sequence of activities that
+are necessary to perform a specific
+security
+task if someone some of you are working
+in endpoint
+security then you know that there's
+certain procedure with which you check
+for uh the end Point Security uh so we
+have Network guys here so there are
+procedures with which you check for
+firewall rules there are procedures with
+which you check for the routing
+table there are procedures with which
+you change the routes if you are given
+that access you cannot just go and
+change the routes uh without opening a
+change so first it will go to cab which
+is change management board and then if
+it is approved then you can change the
+routes so that's the soap or procedures
+or standard
+operating procedure that we call
+it procedures are at a lower level than
+standards so
+standards are at a higher level than
+procedures as we can see in this flow
+diagram
+so answer procedures and policies are
+Dash are
+the
+uh policies and procedures are Dash
+option
+a option A
+is
+unimportant option b is
+mandatory option C
+is
+casual option D
+is none of these
+so talking about
+guidelines what are guidelines you know
+what is procedure what is standards so
+these are important
+when you set an interview
+for these are more of information
+security things rather than cyber
+security things they ask you for
+standards procedure guideline what are
+the
+differences in
+guidelines you
+have guidelines as the name says they
+are just recommendations they
+are the recommendations on
+on
+how standards and Bas
+line are
+implemented
+whoops so guidelines are the
+recommendations on how standards and
+baselines
+are
+implemented so that's why
+uh guidelines are at the lowest end
+because it doesn't talk about something
+very necessary or
+immediate what does it talk about the
+guidelines talk about of different
+levels
+let's talk from the base which says why
+we are doing
+it what are we doing when we talk about
+why it is defined in
+policy when we say what are we doing
+those are defined by
+standards how are we doing
+it that is done by
+procedures and guidelines are just for
+your information FYI
+is guidelines or recommendations
+see how we
+develop a security policy where can we
+get uh an idea from where we
+can make a security
+policy so let's see
+let's do a short
+activity
+so we can have a Little Help
+From A Tool uh a web browser only so
+what we are going to do we are going to
+develop an application security policy
+uh using a template from where we are
+going to get the template
+we are going to get that template from
+sans.org
+which template okay it's free policy
+templates is already
+there so we need to have information
+security policy so just click on
+it home security policy project
+so which policy do we
+need we are talking about application
+security so let's go to application
+security we have web application
+security policies you can download as
+PDF or doc but since uh we will be
+making changes according to our company
+company name and all I will download doc
+so it is getting
+downloaded you can do it sideways so
+let's do it
+together so once you have done
+it simply open it from the downloads We
+web application security
+policy so you see
+it the entire
+policy you can remove the things you
+don't
+want so web application security policy
+change the company name your company
+name change it
+here wherever it is company name just
+filter it out you can remove the footer
+header and Footers as per your
+requirement so it will will talk about
+everything if any new or major
+application is released third party or
+acquired web application patch releases
+emergency releases annual
+review how we uh Define the severity
+which are the high severity medium sity
+low sity
+issues the standards that we are using
+is a wasp
+so here you will just whatever tools you
+using just mention it here you're using
+Color Linux as operating system any
+other tool that you're using mention it
+here compliance policy is
+here so you see standards policy and
+processes here testing guide is
+provided change these dates according to
+how you want it responsible would be
+your security
+team just make summary of change what
+have you changed is it
+application
+uh
+updation or anything related to it so
+this is from where you can make your own
+web application security policy
+okay wants to know from where should we
+download it as if it is sans.org
+so once you move to sans.org
+I'll just share
+this all right oasp is the standard that
+we
+used oasp is the standard that we used
+for uh taking care of the
+vulnerabilities in our domain when we
+talk about aasp aasp has top 10
+vulnerabilities which keep on changing
+every four years so latest one was in
+2021 so this is was top
+10 for 2021 it was so I told you it
+changes every four years so before 2021
+it was 2017 before 2017 it was 2013 so
+when we talk about top 10 it says what
+are the most impacted vulnerabilities in
+any web application we talk about
+initially it was injection which was
+mostly uh impacting any web application
+now it is at number three now the most
+impacted one is broken Access Control
+cryptographic failures is number
+two insecure design is number four and
+so on
+on I guess you people have done it in uh
+Enterprise the first module that you had
+covered with the other trainer I guess
+it was part of that module not
+sure so our next topic
+is
+what's secure your
+software
+requirements when we talk about uh core
+security requirements what are the core
+security requirements with which your
+training
+started what are those three
+requirements which should be there in
+any case what are those
+Triads so the core software requirements
+are
+CIA
+exactly it
+says
+[Music]
+confidentiality
+Integrity
+availability so uh everything in cyber
+security or information security
+revolves around these core
+values for confidentiality
+uh okay apart from these three there are
+three
+extra
+uh add-ons which says
+authentication we call it AAA
+authentication
+accounting and authorization
+when you talk
+about
+confidentiality that
+means any sensitive data should be
+protected at any cost
+so sensitive data should be
+protected how we protected by using
+some encryption
+mechanisms we mask passwords other
+sensitive information we we mask it we
+do not store passwords or sensitive keys
+in clear text we have key pass or
+something like those type of tools where
+we uh
+save sensitive data like
+passwords we use TLS to protect against
+attacks just we had a short discussion
+about DLS 1.2 and 1.3 they are just the
+security measures we do not store any
+sensitive information in log files
+because it's easily visible the logs are
+very easily
+accessible when we talk about integrity
+Integrity says okay as a person when we
+talk in lame language in Integrity is
+your actions should match your words
+that's that's how you say how integral a
+person
+is and cyber security that means any
+data any data that was actually intended
+to be
+sent any data that was actually intended
+to be
+sent from client side
+to the server
+side should be
+intact free of errors and send as it
+is so if my
+client had to
+send ABC that two in caps the receiver
+should receive ABC that to in same
+format in caps
+and not uh some
+other content which is unrelated XYZ or
+something like
+that should not
+be so in other words all user inputs
+must be validated for Malicia or
+disallowed content before
+processing all published software should
+provide a computed digital signature to
+validate its correctness and
+completeness so let's add that
+requirement here digital
+signatures so digital signatures are
+tested to check if the content to be
+delivered is integral and it is not uh
+it is not amended on the
+way when we talk about
+availability availability
+says it should be available 24 cross
+7 so the software must meet all the
+requirements of the SLA of 59 that means
+should be available
+at
+99.9999% of the time these are the slas
+that most companies uh adhere
+to if I'm providing a service to any
+other company so I would say that my
+service availability would
+be up with the
+0.1% downtime so so that's the
+availability that I'm ensuring to my
+client the software must be able to
+support up to 300 users at any point
+and point of time it should not be the
+case as the load increases my
+application is crumbling so availability
+is availability also defines that
+application do not crumbles under the
+load
+what else should be under availability
+what do you think should be under the
+availability one is
+restoration as early as possible if it
+is a P1 or high priority issue the
+restoration should be within 1 hour of
+the
+disruption the last point
+is no adulteration no modification
+allowed during transition that is true
+Disaster Recovery how do you do it how
+how is disaster recovery
+done you are very near to it but
+backups what's the other name uh okay
+backups
+is uh if you are getting impacted and
+you have some backup what during the
+attack snapshots okay a little far away
+but all right one
+word run more than multiple side what is
+the one word for it fail
+over so STI has answered it we call it
+either failover or
+redundancy yes uh that's that's that
+only Network guy will understand badri
+yes High
+availability that's uh failover or
+redundancy would be the uh main cost say
+if I'm having two routers one of them
+fails I still have the other router of
+some other company working for me so
+that ensures the availability of
+services in case BT goes down AEL is
+still working tataa goes down BT is
+still
+working so that's where redundancy comes
+into place moving forward
+Authentication all right what do you
+understand by
+[Music]
+authentication it
+says only authorized persons would be
+allowed
+uh I have
+some endpoint security
+for my
+company if I want uh some third party to
+use it only those some other person from
+other company to use it for any reason
+it should be my responsibility and only
+that person who it is who who it belongs
+to the credentials for which the
+credentials are created only he is
+allowed to use it again using MFA
+multiactor authentication so that
+provides the authentication
+part for external users I'm talking
+about MFA for internal users it could be
+single sign on because we know that they
+are using the company's domain if I'm
+using at theat simply learn.com I'm able
+to use engage X and learning learn
+simply learn both with single sign
+on
+authorization says all right you have to
+be very very clear the difference
+between what is the authentication and
+authorization talking about
+authorization
+uh only users with admin roles will have
+permissions to execute
+operations so authorization means the
+level of access you are
+having authentication means if you are
+allowed to do
+it authenticator users will have read
+and write permissions at regular users
+because they are allowed authorized
+would be having the maximum scope of
+XS if we talk about
+accounting so I saw someone talking
+about non-
+reputation that comes
+under accounting part why I made a
+change uh in some server or some route
+and routers or some firewall uh rule I
+made a change and then I'm denying it I
+haven't done it so accounting says we
+will simply check the logs it will show
+the user name of the person who has made
+the changes and thus supporting
+non
+reputation I cannot deny that I have not
+done it because logs are showing it
+so accounting is nothing
+but
+logs and what does log show it shows
+identity what action you have taken on
+which object you have taken the action
+what is the time
+stamp next part we will be discussing
+about General
+Security
+requirements so the General Security
+requirements
+are session management we don't want our
+session to be
+hijacked nor we want it to get compromis
+in between we are doing our
+work errors and ception
+management
+config
+parameters
+management so when we talk about session
+management so session management says
+AAA
+protocols summary on AAA protocols
+sure so you
+have
+AAA this one is good
+best is
+Wikipedia I was at session management
+when we talk about session management
+requirements it says each user activity
+must be uniquely
+dragged so if I'm doing something I'm
+being traged what I'm doing in what
+application say if I'm using identity
+access management then again it is
+tracked what I'm in there if I'm using p
+which is privilege access management
+what I'm doing there there is being
+traged the user should not be needed to
+provide their credentials once
+authenticated so if I'm once
+authenticated it would be very
+irritating if they if uh it's asking for
+credentials again and again user session
+must be explicitly invalidated when user
+logs off or closes closes the browser
+so if I talk about uh when
+you use your mobile applications or web
+app for banking
+requirements even if you click on the
+back button or refresh button by mistake
+you have to relog in again and again so
+that's a best of session management
+thing I have seen where you have to
+relog in again if you
+want to take any
+action which reloads the page so that's
+a security thing which safeguards you
+from any mm man in the middle attack
+session identifiers used to identify
+session must not be easily guessable not
+been clear text so whatever cookies that
+are being sent from your system they
+should not be in clear text no one no
+one if someone is using men in the
+middle tools like BB Suite they should
+not be able to see what data you are uh
+you are transacting with your banking
+website in clear
+text error and exception management uh
+so all the exceptions must be explicitly
+handled using blogs error messages
+displayed to the end user will reveal
+only the needed
+information security exception must be
+audited and monitored uh
+why we are doing error and exception
+management when we will be talking about
+the SQL injection attacks uh we were
+talking about from where we will
+know uh that the back end is an SQL
+Server so the error that we are we would
+be getting it would be showing that all
+right uh SQL syntax error nothing found
+in the DB something of that that so
+something of that sort you'll be getting
+so that shows me that okay first thing
+that it's an SQL syntax error that means
+the database is SQL all my attacks now
+would be SQL based there are certain
+payloads uh which use SQL attacks uh
+injection attacks Boolean algebra and
+all we will be uh learning about it in
+our main course
+so that provides
+me a hint that SQL is running in the
+background so I will just move to as a
+blue teamer as a defense teamer I will
+move to
+the programmer or developer and ask him
+to not show this exception or this error
+that we have SQL running in the
+background so attemp SQL injection right
+away so I will ask him to remove that
+error by any means it should not be
+visible on the
+UI so that's how Ern and exception
+management is
+done when we talk about config
+parameters management the configuration
+file or web application such as database
+connections they should be encrypted to
+prevent unauthorized disclosure so
+sometimes uh some files the config files
+for web apps
+are open in plain text rather than
+encrypted or even some passwords are
+hardcoded in this software code that it
+cannot uh this this was one of the
+recent example I uh came forward while
+doing source code evaluation that
+username password was hardcoded in the
+code itself so
+that uh any attacker would have this as
+a cherry on the cake that just open the
+source code you have your username
+password there only just use them log
+into the system and do whatever you
+want all initialization and disposal of
+global varibles should be carefully
+monitored so wherever you are declaring
+Global variables in the code you should
+be very carefully declare those because
+those could be called from anywhere in
+the
+code operational security requirements
+so operational security
+requirements most critical flaw that can
+impact any business or brand must be
+addressed
+immediately
+whenever okay what is the environment in
+which uh we test the web apps before
+deploying them on
+prod what is that environment
+called
+uad testing environment or simulated
+environment staging
+environment sandbox yeah uh correct
+sandbox so any flaw that can impact the
+business and the brand must be addressed
+immediately after thoroughly testing in
+simulated or testing environment all
+security incidents must be handled
+following an incident management process
+root cause of the incident must be
+identified I'm not sure how many of you
+have worked on root cause analysis so if
+there is any incident uh either in cyber
+security or networks or whatever domain
+generally the stakeholders demand for
+RCA root cause analysis so that includes
+every step from the very start to the
+very end how it was discovered what
+steps were taken how it got missed what
+are the Improvement
+plans so these things are a part of
+operational
+security
+operational security
+so what are
+the requirements in deployment
+environment we have uh talked about the
+testing environment or
+uat or sandbox what are the requirements
+in deployment
+environment first of
+all in deployment environment I will
+check
+if software is deployed
+on
+internet
+externet or
+Internet Internet is which can be
+accessed from anywhere intranet is your
+company's Network inside your company's
+intranet Extranet is governed by the
+firewall determine if the software will
+be hosted in
+DMZ so what is
+DMZ
+if the
+software is hosted in
+DMC and which ports are
+available which ports are open or
+available
+DMZ is nothing but demilitarized
+zone very important de
+mized very important word and when you
+are part of infra team you must know
+what is
+DMZ so talking about
+DMZ just to check if we are having any
+questions
+de militarized Zone yes but what it
+is
+say all
+right say this is the
+internet this is the internet flowing to
+your
+company here it's a firewall
+all right let it be a router
+first it's a
+router then a connection to
+firewall although I guess DMZ was
+also uh discussed should have been
+discussed in the infrastructure part but
+again
+I'll share it with you what DMZ is
+because it is an important
+[Music]
+ter so anything between the internet
+which is your
+ISP anything between is
+ISP and
+your inet or your local
+net
+is DMZ or d militarized
+z it do
+contains router to router connection
+this router is from your ISP this router
+is from your company so this entire
+region in between these is called
+this entire region is DMC between this
+router which is of B AEL or Tata or
+BT and this router which belongs to
+Simply Lear say this is firewall or
+switch and it further connects to the
+systems inside
+it is separated from rest of the infra
+or it it is not I won't say separated
+but it is a shared Zone it is a shared
+zone between you and ISP so anything
+happening here would be decided by ISP
+and uh your company that who would be
+responsible for it so this entire zone
+is DMZ Zone which is mutually shared
+between it's just like the Z Z zone
+between any two company any two countes
+border this border lies with country
+a this border lies with country
+B this Zone in between is DMZ
+demilitarized if that helps giving an
+example that this plays between
+your uh your network and the internet
+the space in between is
+DMZ so if you are hosting
+any
+software back to a point if you are
+hosting any software in DMZ if you are
+hosting any software in this space then
+again uh this is one of the risky uh
+things to do so if it is here you should
+have this internet uh this this subnet
+whatever subnet is this you have to keep
+it under scan so you can use Nessa scan
+or buite scan to keep checking about any
+uh vulnerabilities that could impact
+that
+software here in
+DMZ which privileges that will be
+allowed in production environment very
+important what privileges are allowed
+generally privileges uh the admin or
+root privileges are provided only to
+the very important VIP of that project
+and not to
+all we have to
+determine
+if
+sensitive data is
+floating so determine if the software
+will use a load balancer and or a
+cluster
+architecture so if we are using any load
+balancer these all questions should come
+into our mind when we are talking about
+the operational security and development
+environment so uh we still have 7
+minutes for this class I will
+be asking few questions to all of you
+try kindly try to answer them tomorrow
+we will be
+starting
+uh from a topic called anti-piracy
+requirements
+archiving and anti-piracy
+requirements the website I'm using is
+wayb back
+machine in Wayback machine talked about
+Uber I searched how Uber used to look
+from the very
+start I search it browser
+history it showed me every Uber website
+Uber geek Uber humor but I was concerned
+about Uber caps which is here uber.com
+it says that it
+has more than 3 l captures from 1998 to
+2016 so I'm interested to see
+it when I click on 1998 December 12 1998
+this is how it looked like just like any
+normal uh startup taxi
+service clients Services
+press uh mind it it is just a snapshot
+it won't be interactive if you click
+over it it won't interact when I clicked
+on March
+2014 this is how it showed me that login
+sign up get it done sign up for
+Uber
+reliable feedback
+matters and after that if I want to see
+in
+2019 so this is how it looked like in
+2019 and we know that now it was working
+on Spa after 2016 and
+17 you click on ride you click on fried
+you click on Transit it will work in
+that element
+without uh reloading all the PES so this
+is how it looked
+like similarly if you want to look in
+currents date say last year
+July June 23 Uber looked like
+this it's still loading since it's
+fetching it from archive the loading
+speed is
+slow so this is what it shows
+you
+currently not only Uber you can have any
+website have
+it any website say want to see
+facebook.com
+or google.com any website that you want
+to
+see so since it's working in the
+archives loading speed is slow now you
+see it's showing you
+Facebook this is how it shows in 2024
+how it was back in time in 201
+and6 in 2006 this is how Facebook looked
+like email and password were on left
+side
+corner now what is the main use of
+Wayback machine uh although it is a part
+of the data collection of any uh Target
+but uh just to let you know sometimes
+uh during uh the upgradation of any
+website or any portal say if you are
+uh targeting any company uh I'm not
+talking about Facebook or uh Uber just
+an example
+uh sometimes when you see the old
+captures of any Target say even I'll
+take an example of Simply learn even
+though simply learn never existed that
+time but yes uh sometimes in
+initial
+uploads initial snapshots you would find
+find any email address of uh of any ex
+employee of the CEO or some important
+figure so that email address could be
+used to move inside that company I can
+use that email address to start my
+fishing attack to provide any payload
+inside the company so that's why Wayback
+machine is used and what it shows now
+you know what it shows it shows
+the older and the newer versions of any
+website talking about the extensions
+that I asked you to download yesterday
+how to download them simply use Shan
+extension
+download and you'll be able
+to download it for Chrome for Firefox
+whatever you you are
+using similarly for webalizer
+S go here download
+it so that's how you will be downloading
+the extensions loopholes unintentional
+yes uh if you have shared any number
+which I can use that is it safe to
+download on office laptop I guess uh no
+one would question it because it is not
+you are not attacking anything you're
+just getting the information say uh I'm
+using it on my office laptop only but I
+do have some other extensions also I
+have grammarly n and safe
+web n and safe web provides
+you an idea which uh which link is safe
+to use and which is which might be uh
+fishy so if you're having these kind of
+extensions I don't think any uh company
+would have any issue with it because
+it's not used for attacking anything but
+just to get knowledge of the page you
+are visiting you would be questioned
+when you try scanning any uh any company
+any website or any Target then you'll
+come into action because that would be
+visible in their infrastructure someone
+is trying to do that and very impressed
+that people are coming outside their
+comfort zone outside their main domain
+and uh trying to learn about the
+security things that that was very
+impressive of this
+batch uh back to the topic that we were
+doing so we had to discuss archiving
+requirements and anti-piracy
+requirements when I talk about archiving
+requirements archiving requirements ISS
+uh if we want to Archive something any
+data if we want to Archive does it
+comply with regulatory requirement or
+organizational policy can I archive
+anything and
+everything so first is has to be in
+accordance
+with organizational
+policies next is the parameters it
+should Define
+uh the
+location
+duration
+format uh generally as a cyber security
+engineer I recommend my office or my
+team to Archive the data for 3 to 5
+years only because anything after five
+years at the team level is irrelevant it
+might be relevant at the upper uh
+stakeholders level but at the base
+workers level anything more than 3 to
+five years is obsolete it cannot be
+used so when we talk about archiving
+requirements
+we will firstly think
+of the
+data or
+information that needs to be
+stored so our scope is
+fixed after that we will determine the
+storage space needed for
+it what else
+uh if the data is transactional that is
+remote and online or will it be offline
+storage that means
+data at
+rest or
+motion
+or
+online and offline
+data we will be categorizing it on these
+basis if you want to store dat
+you want to Archive data what would what
+would be the best way to do it would it
+will it be good to store it as read
+write or will it be good to store it as
+read only archives are always read only
+because if it is read right anyone can
+distort the actual
+data so third one
+is
+ensure the dat data is not
+rewritable that means it should be only
+read
+only so one mistake that companies
+generally do they ignore the speed of
+retrieval so when you are archiving data
+you should keep in mind uh how fast you
+can retrieve the data it it won't be a
+good idea that you are backing up data
+you are archiving data but you have
+to uh it takes years to get it back or
+months to get it back then it is of no
+use so speed of retrieval is another
+thing that should be in your mind uh
+while thinking about archiving
+requirements what what what
+else the one point which I I shared
+earlier
+is
+duration duration to store 3 years 5
+years depending upon what your company
+finds
+good what else any regulatory
+requirement that is required to store
+that
+data generally any data which talks
+about Finance or stocks or something
+like that those are under regulatory
+requirements otherwise it it might
+simply be used for insiding trading uh
+which is illegal so the data that has to
+be archived has to be under regulatory
+requirements and last but not the
+least determine
+the format you want to store it as CSV
+you want to store it as PDF you want to
+store it as Excel sheets only talking
+about anti piracy
+requirements so we all know what is
+piracy uh creating a clone or duplicate
+from a legitimate copy that comes into
+piracy it's done for movies videos
+games
+so how to to uh not fill a trap of
+piracy digitally sign it
+digitally sign the
+software so if you digitally sign a
+software there are very less chances
+that it could be tempered or reverse
+engineering could work on it increase
+the complexity of source
+code so if if you
+increase the complexity of source
+code that would if you increase the
+complexity of source
+code that would make it difficult for uh
+anyone who wants to uh clone it because
+he knows he don't knows uh which how
+many microservices are running inside it
+uh which micro service is talking about
+which
+unit what
+else if anyone of you have uh
+anyways used piracy did piracy you know
+that there's the license key if if
+anyone had ever used pirated operating
+system you know that license keys are
+either hardcoded inside that license
+file or you find it over the Internet so
+next part is do not hard
+code the license Keys when you hard code
+it it's easy to use those those license
+keys to make it look like
+original Implement a dynamic license
+verification checks
+why Dynamic checks because if uh someone
+is using license key of some other
+product on
+his example would be operating system
+only then if Dynamic checks are there
+and we see uh license key missing for
+actual product being used on pirated
+product then uh the pirated product
+would face a
+blackout so last would be
+Dynamic
+license
+verification check
+process okay Dynamic license
+verification check process says uh how
+to check if the actual license key is
+being used somewhere say if you are just
+checking it once passively uh once in
+year or once just when it was launched
+you checked it once that okay license
+key is at right place doing good
+Dynamics is you have to keep repeating
+that check process after every random
+number of months days so that you got to
+know that yes license is being used on
+the actual or legitimate software and it
+is not misused somewhere else so that
+that whats Dynamic
+checks after that we have
+sequencing and time
+requirements when you talk about
+sequencing and time
+requirement sequencing means uh there
+shouldn't be any reason uh in the loop
+uh in the code that it results in a loop
+uh sometimes there are infinite Loops
+that can occur due to programming or
+logic errors so if there's a loop
+preventing the program from reach reach
+its exit condition for example sometimes
+your system is not having any physical
+issue but you start it it shows you your
+uh manufacturer say if it is HP it shows
+you HP reboots again starts again shows
+HP reboots again starts again shows HP
+so these kind of infinite Loops from
+where you cannot uh get out just by
+restarting the
+systems it utilizes your resources like
+CPU and memory uh which may cause system
+crashes or performance
+problems sometimes it's it's your
+operating system as a software which is
+the culprit sometimes it is something
+that you have downloaded say uh you were
+using some application which was having
+some issues which is interacting with
+the operating system and a loop is
+created these kind of things impact the
+resource utilization and these Loops
+have to be
+killed now uh if I talk about python as
+a
+language it has a while uh
+okay how would a python show any Loop
+any statement if it is
+true while true it will
+show say I said if it if the statement
+is true
+print this is an
+infinite Loop
+now this could be anything which I say
+if it is true then infinite Loop will
+start
+so these kind of things in a code can
+invite these kind of disrupting things
+which could lead to your system
+crashes
+so how
+to avoid
+these we talk about need for data
+classification when data is
+classified it
+enhances the Triad the Triad is nothing
+but
+Cia focuses on
+Pro proper
+control and
+implementation if you have proper
+control and implementation these things
+would be under check sequencing would be
+under
+check
+hit standardize
+the
+requirements so how to ensure that that
+these things are taken care
+of how to make sure that these are taken
+care
+of uh if I don't want anyone to touch my
+code or to include anything like this in
+my code which is uh which I have
+authored what I will do I will talk
+about techniques like anti
+tempering anti
+reversing anti tempering anti reversing
+and code signing
+if any could if anyone could answer
+ofation what is offers cation what is
+the code of
+fation so when we talk about code of
+fation uh in the similar way that you
+answered it's just making it making our
+code hard to read uh or hard to
+manipulate so if you make your code
+complex or hard to read to secure yes to
+avoid tempering or to secure it from uh
+any attacker it's called code of fation
+even if it get Le leagued or attacked by
+attacker since it is off
+fiscated no uh an encryption in a lay
+language is password protection so we
+are not uh provide it providing it
+password protection yet we are just
+making it complex to read so
+securing from attacker it is a type of
+security yes type of security but how we
+are providing that security we are just
+making the code more complex or
+unreadable
+for anyone else means only I know which
+microservice is running where how to
+call which function in which place
+making it more complex that only I know
+how it is
+executed yes yes that's that's the exact
+in English meaning of what we are
+studying but same in in similar way
+office means making it hard for anyone
+to guess your password so generally for
+corporates password ofation means it's
+it should be we have the GRC people here
+they know what password of first is it
+it is making it 18 digits it uh it
+should be 16 to 18 digits it should
+contain
+capitals special characters Smalls yes
+making it mix of all of these correct so
+let me show you uh how you ofate any
+code use of paraphrase with special
+characters yes you can use paraphrase
+paraphrase is nothing that password only
+with special characters
+numerics let me show you one example
+how can we off uscate any code
+say I want I have something written in
+JavaScript but I want to offis skate it
+do we have any tool the answer is yes we
+do have it how we can do it let's
+see off skater
+W
+do
+first so this tool is
+for okay so this is just an example uh
+this is a
+code uh which says hello world the basic
+code that we all always is talk about or
+we started our coding with these kind of
+codes if I ask it to off uscate this so
+now do you know what was written inside
+it so this is how the codes get offers
+skated you just know that it's some
+function is starting and here it's a
+semicolon
+rest you don't
+know it's showing hello world somewhere
+here
+distorted so this was my example if you
+want to have any other code just try it
+off skate it you will see the output
+here so you want to you don't want to
+copy paste just upload your file
+confiscate it share it to anyone you
+want ask the
+to
+uh
+to recode it and it will show the entire
+actual
+code so this one is a good tool for code
+ofation you can choose your options
+according to you you want to change it
+to something other mangled dictionary so
+it will do that
+so now it's just in dictionary
+errors because I changed it
+here change it to something other
+mangled so it is mangled it will now
+offis skate in mangled
+manner so any way you like you will be
+able
+to generate any application server
+security or network security incident
+handling
+related policy from this
+page talking about ENT reversing
+techniques so as the name
+says can you show one more example
+uh example of code or on off first
+skater sure
+uh just have any sample code you can get
+any code from gitlab but say any sample
+code in
+python python program to convert Celsius
+to Fahrenheit
+okay so we have this code with
+us let's
+have so this is the code
+using office
+skater okay this is Javascript code
+offers sker so I
+[Music]
+will check for any JavaScript sample
+code in Js
+JavaScript
+example to swap two variables so we have
+some code
+for swap swapping two
+variables I'm taking the comments along
+so comments are
+included using off office
+skater simply pasting it here
+it could be my original
+code or something from stack
+Overflow off uscate
+it this is the output that it is
+generating you see you cannot understand
+what it
+is so this is another
+[Music]
+example so these are JavaScript example
+similarly you can find Python and other
+code examples
+all right your query was that what is
+the requirement of doing it why are we
+uh offer skating the code in the very
+first place so we are doing offer cation
+uh to make it confidential between if I
+don't want my code to be read by anyone
+else I want to be read only by
+anab I would share it even if I share it
+in group chat this one it would be in
+offer skated form no one would know what
+it is written but you know that I would
+communicate it with you that it's offer
+sked just use any ND offer skater and
+retrieve the actual code back so that's
+where it is being used
+perfect the offer skater itself is using
+uh encoding it's encoding it into
+whatever you are asking it
+to encode in so if you see here what is
+this it is nothing just want to encode
+it in hexad decimal it will encode it in
+exod decimal if I want to encode it in
+some dictionary thing it will encode it
+in dictionary dictionary
+thing all right so talking about anti
+reversing techniques as the name
+says perfect uh anti divers techniques
+as the name says reversing techniques
+that means somewhere it's talking about
+reverse engineering now what is reverse
+engineering reverse engineering is the
+process of analyzing software to
+understand how it works towards gaining
+knowledge to duplicate or enhance the
+software when we talk
+about anti reversing for that firstly we
+need to know what is reverse
+engineering reverse engineering
+is a term which you will very casually
+uh listen while working in cyber
+security field what does it
+mean it's nothing but how you
+analyze the
+software software is already built it is
+already there functioning well you
+analyze the
+software to
+understand how it works
+gaining knowledge to duplicate or
+enhance it so if there are clones of
+say if you go on uh if you clone some
+software say if
+there's swiggy we also have
+Z we also have
+other examples
+like easy sh
+which are relatively newer
+so if you see they are pretty much alike
+these softwares are pretty much alike
+they work on similar model they work of
+similar base similar examples
+are
+Ola
+Uber in Drive
+blue cabs if you
+see all of these
+have similar UI structure even
+Rapido these these they are one point
+they are competitors another point they
+have similar applications they know that
+they have
+understood the customer requirement the
+customer psyche even if it was started
+by one here it's Uber here it's either
+sgy or Z don't know which one started it
+uh but once the code was
+there one programming one programmer of
+the entire
+team put in
+efforts the code was
+out
+cloned made it for any other term any
+other uh company so even if you search
+for any of these codes as a programmer
+you might find them
+online the earlier versions or off
+firsted versions but that would be
+enough for you to clone it so this is
+nothing but reverse engineering you are
+trying
+to make it from something that is
+already there generally programmers what
+what do programmers do for any
+application they have have an idea from
+gitlab or stack Overflow the codes are
+already there they have it from there
+customize it according to our
+requirement and then that's where
+reverse
+engineering is used
+so me as a person working in sui orato
+or Uber I won't I won't feel good if my
+code is
+reversed or if reverse engineering is
+being done on those codes for without
+giving me any monetary benefit another
+companies's made using those codes so
+that's where ENT reversing comes into
+play that's where reverse
+Engineers
+are are stopped making these uh things
+because that's again is illegal because
+the copyright thing is already with the
+original author of that code so what do
+you think is the best defense against
+this reverse engineering things what
+have we
+studied it's called copy
+paste okay in Layman it's called copy
+paste right you copy paste and then you
+customize it according to your wish okay
+Aran says what is stack overflow stack
+overflow
+it gives you an idea of uh codes means I
+have heard that programmers use tack
+overflow to get an idea of codes they
+are trying to
+develop uh in other words we call it
+inspiration we got inspired from that
+code and that's why we
+are making it better in our own infra so
+code ofation is required if we copy
+paste code C code ofation is required to
+stop that copy base thing so this is the
+answer of my question my question was
+what is the best defense technique
+against reverse engineering so answer is
+offers skate the codee you offers skate
+it no one would would know what it is
+written there so reverse engineering
+would be bit harder
+okay I remember a question was there
+from someone uh that if everyone knows
+that the code is offers skated and how
+to decate it what is the benefit of
+it if I'm sharing the offers skated code
+I will not let you know that it is a
+code why would I let you know that it is
+a code that's the uh that's the gist of
+sharing that with you so
+only that only the actuality would be
+shared with anyone I would like to share
+my code with for rest of all it is just
+crap which we do not understand what it
+is written just a random pair of strings
+while the one say if I want Aran or
+badri to know that it is actually a code
+so I would let them know that just de
+offers skate
+it's uh offers skated in hexa or binary
+de offers skate it and they will get the
+code even if I'm sharing it in
+public how would that be offis
+skated
+using D offed using the same you will
+just upload the
+file here where it's written offers can
+just use it and if I have already shared
+that it's in hexa used hexa and it will
+show you the exact
+code otherwise there's uh decoder in BB
+Suite once we will be doing BB Suite I
+will show you there also how uh these
+kind of encoded things you can decode so
+we have multiple ways of doing it one of
+this is using office skater de off
+skater the other one is using encoder
+decoder which is again a part of BB
+Suite those who are already working in
+cyber security field uh they know what
+BB Suite is and how it's working we will
+we will know it with the course of time
+while we complete this
+course hope uh the pace of the class is
+good today I got feed that it was fast
+yesterday but I try to make it little
+lighter
+today so in anti tempering we were
+having anti
+reversing in anti tempering we were
+having anti-
+reversing code
+signing and off forcation
+offer you know ENT reversing you know
+what is code
+signing anyone want to attempt code
+signing what is code signing the name
+says it
+all so code
+signing
+perfect uh sign on code simple right
+copyright
+exactly so
+code signing is the process of digitally
+signing the code for example if it is
+having some executables or scripts I
+will have some private key of the code
+author code signing ures that authent
+authenticity of published code besides
+proving integrity and anti- tempering
+protection
+uh
+uh example of it is how to show that you
+are the other
+yes yes hashing is part of it uh signing
+on code that those things the private
+and uh what digital signing is that
+would be covered under
+cryptography
+after after
+this officiation things and
+all there's a there's an application
+called
+grabify only if my company allows it to
+run what is not
+running how it is done code
+signing talks about uh as as we saw an
+answer from arpen it talks about the
+sharing of keys so there are a
+combination of keys that are shared so
+once you digitally
+signed uh the code you are it order the
+private key remains with you only you
+would be able to execute that code even
+if you share it with others it would be
+only read only and it it won't be
+executed unless and otherwise you share
+your private key which would be uh
+checked with the public key and executed
+so how that is done we all will
+so cryptography will talk all about
+hashing md5 hashing
+sha256 all those things we'll be
+covering
+there depends uh because there are
+different algorithms you can use variety
+of them uh DH key
+exchange uh I believe is
+what earlier uh coders used now they
+prefer use hash algorithm for 250
+256 yes
+uh s 256 is used
+currently so I was talking about
+grabify just want to show
+you if it runs here
+okay I believe this is uh the URL which
+is not responsive on any
+URL connection time
+out so since we are talking about uh
+cyber security
+uh and you people want to have a little
+hands on let me show you something
+uh for hacking since hacking module is
+far away just an
+overview there's a thing called ghdb or
+Google hacking
+database so in when we talk about Google
+hacking
+database we have variety of things there
+present
+online you can see vulnerable servers
+here you can see index of confidential
+files with you see
+information again vulnerable servers are
+there what El fil you can get filtered
+things
+uh web server error
+message
+footholds let's see various online
+devices
+it would show any online device so using
+one of these
+exploits this is what we got
+so this is some camera which is a live
+recording
+camera of Le
+MC College I'm not sure where it is but
+with the time it shows 8:55
+a.m. 3rd March 8:55
+a.m. that most possibly is
+us or
+Canada you can
+stop sometimes uh you even get the
+controls of the camera you can rotate it
+in left or
+right so now you
+have you can see somewhere in the world
+using Google hacking database this is
+one of the use one of the many
+uses it provided you a hold of an online
+device so you now as an attacker can
+have
+so all of this is for education purposes
+kindly do not misuse anything try to go
+overboard in things till you get
+more about it you know more about it so
+this is uh what I wanted to show you
+just to uh keep your interest intact in
+the
+topics we'll be starting with the new
+topics next we going to
+start next topic would
+be so this would be
+software security Now we will be talking
+more
+about software
+security so I was trying to show you
+what Google is capable of doing other
+than searching for our
+queries so when you talk about Google
+hacking
+database it shows you all the exploits
+uh which are
+available I will just reset the filters
+because it's showing filtered content so
+it shows you vulnerable
+servers files containing juicy
+information but these are of no use for
+me currently since I just want to show
+you what Google hacking database is
+capable of doing so to show you that
+part I will just filter it with any
+online machine I will filter it for any
+online machine so it's showing me the
+different online
+machines there's Brother
+printer zerox printer laser jet
+printer even in in these I will just
+want to see
+cameras so not using much I will just
+open first
+few exploits one is from Shilpa one is
+from S
+takur one is
+from yes
+now you click on
+these
+URLs so this is someone using this URL
+for something
+else no IP
+camera I'm not
+robot here it's requesting you for login
+credentials if you want to brute force
+it try uh generally available default
+username
+passwords but that would
+involve okay it says root password might
+be
+password okay I don't want his camera to
+be
+logged so we have other cameras also
+so now you have got control of some
+camera in
+some IC area snowy area with controls
+here you can move it the
+right okay it is requiring a sign in so
+for controls you would require sign
+in similarly here here's another camera
+in
+bushes do you have
+admin no we don't have admin
+so this is one of the thing that you can
+do
+using uh okay when you talk about t
+browser uh you think when you are
+visiting the dark web you safe
+uh when when you enter to browser your
+IP is broadcasted so when you try that
+uh when you think that you would be
+trying to attack someone meanwhile you
+see that your Gmail is
+misbehaving so this is my personal
+experience I tried using Tor that was
+the first and last time uh you you will
+see something fishy at your end after
+you try using to browser yes I'm talking
+about to browser
+only uh how to use the DB as a hacker we
+will see it this is just this is just uh
+this is just a
+trailer these sites record our logins
+also uh no these are just the cameras
+which they forgot to encrypt forgot to
+provide encryption so even if I provide
+you the IP address of my home camera you
+won't be able to log
+in uh that's true WESH uh we need to be
+very careful in terms of handling that's
+why I keep reminding that it's only for
+education purposes no one would try
+exploiting
+anything what about Deep Web Deep Web is
+nothing just uh one way to reach Web
+Store browser which is also called Anyan
+browser uh I won't recommend you to
+download it or to move around t
+uh
+because very professional hackers are
+already using those things there so you
+won't even know where you get a victim
+while you serve Deep Web all right so
+any more questions we are heading to our
+next
+topic software
+security so as the name
+says as the name says software
+security software we already know what
+software is
+how uh they are used why they are
+used uh they are just firmwares that
+we used for for our day-to-day
+work what we will be learning in
+software
+security we will be talking
+about what
+are broken access
+controls and their related
+vulnerabilities
+we will
+explain cryptographic
+failures we will classify various
+applications issues
+using we will talk about what are CV
+e what are
+cwe this these are nothing but common
+vulnerabilities how are they named what
+is their
+nomenclature and we will discuss some
+real world
+scenarios so a bit more interesting
+topic than what we were doing
+earlier here we would be talking about
+aasp top
+10 Sans
+25 in better
+detail I will remove all these tabs uh
+let's see what AAS top 10 says
+so it is nothing just a standard that we
+people use and it is a globally
+recognized
+standard globally
+[Music]
+recognized
+standard used for
+making websites secure
+just to let you know uh even though it
+is not part of your curriculum but I
+will let you know that aasp top
+10 is not just
+for web applications but even
+for mobile
+applications so
+covering because we are talking about
+softwares web applications so this is
+what we'll be working we do have similar
+things for mobile also so if anyone of
+you is more having more interest in
+Mobile security mobile app security then
+this is what you can refer to
+and for web one point that
+we talks about major
+vulnerabilities
+globally in how many years these are
+refreshed so the answer was in front of
+of you only when I opened that
+link talking more about web
+applications but for
+mobile I'll just share you the link that
+these are the was top 10
+for mobile let me share the latest
+one we have a a was top 10 for cicd also
+yes yes we do
+have so even when we talk about was top
+10
+2013 so these were the a to in
+2013 which talked
+about injection broken authentication
+session management cross-site scripting
+insecure D serialization these were
+were the things that were impacting
+corporates in 2013 with injection at the
+top broken authentication and session
+management and other things following
+it when we talk about
+2017 injection is still on the top
+broken authentication is at second while
+other in 2021 broken exess control is at
+number one now what all these uh
+loopholes are what these vulnerabilities
+are and how it impacts our working in
+cyber security we will be discussing it
+in the session that's that we are going
+to complete since we are talking about
+aasp
+2021 2021 would start with broken Access
+Control cryptographic
+failures cryptographic
+failures injection insecure design
+security Mis
+config vulnerable and outdated
+components
+identification and authentication
+failures you will be uh knowing it
+knowing them one by
+one software and data integrative
+failures
+security logging and
+monitoring and
+ssrf before I move into explaining all
+this the place from where you will get
+the best ideas of of everything which is
+Port
+sger so if you write any issue say csrf
+is one of the issues I will just say
+csrf ports
+figer this tutorial would be providing
+me enough detail of everything and
+anything related to the issue uh this is
+just to let you know if in case uh you
+are trapped somewhere so that's where
+you can simply use ports figure to your
+defense
+so back to where we were broken Access
+Control when we talk about broken access
+control as the name says that the access
+control is broken somewhere so
+unauthorized access to system
+functionality that
+resources
+uh and resources that creates
+exploitable weakness
+so when there's some unauthorized exess
+to the system and it could impact that
+system's functionality entirely
+that's where broken Access
+Control we say it is there
+so what is example of it uh I don't
+want anyone to login into uh a
+website but again someone who is very
+skillful
+he checked out some loophole and was
+able to access it uh uh we'll see how we
+do it uh there are certain vulnerable
+websites available on the internet which
+we will be using to see how we can
+uh take advantage of loopholes
+and do this broken exess control thing
+if I'm logged in with an ID of herit say
+this engage x.s simply.com
+although this is some Zoom meeting but
+yes if you say that I'm logged in into
+my account
+currently is it a way that I change here
+something and I'm able to log into any
+one of yours account so any these if I'm
+able to do that that means the access
+control is broken broken
+somewhere usually it happens if there is
+user ID present in the URL so we try to
+change those IDs with some other user
+IDs if you are able to login with that
+user not this URL but if some URL is
+having an ID which belongs to her prit
+say this is some ID which belongs to her
+prit you change
+it use someone else say Chiran jit's ID
+I know that Chiran jit's user ID is XYZ
+whatever it is I placed that ID here
+pressed enter and now this same
+page says that the logged in user is not
+her prit but
+chiranjit so these kind of things we can
+do using broken Access Control we will
+see how we do
+it uh but before doing the Practical
+part we will be understanding how
+uh these we will understand the theor
+theory part first before we move into uh
+doing the attacks understanding what
+it's done how it is done when we talk
+about excess control vulnerabilities
+what are the most common
+things uh that
+we keep in
+mind so I'm talking about about access
+control
+things when I talk about access control
+vulnerabilities the example that I just
+shared if I'm allowing the primary
+key to to be
+changed to another users's
+account in this example it was harprit
+and chanit but you can use anyone's ID
+to get access to that users's
+account and how it was
+done I used bypassing
+the access
+control checks by
+using what did I modify by
+modifying
+the what did I modify here in this
+example uid where did I modify
+it where was this
+modified in Link and Link is called as
+Ry said arip said modifying the
+URL so I modified the URL and I was able
+to
+bypass the control the excess
+control what else does it
+mean say uh if I'm am changing this
+account uh I'm using srishti's account
+and srishti is having admin access I'm
+just a normal user and sishi is having
+admin access so does this mean that I'm
+able to elevate my
+privilege simply changing the IDS in the
+URL I would be able
+to elevate the
+privilege because now I'm the admin
+so there's one application
+available uh which is a vulnerable
+application I'll side by side I'll try
+to exploit that
+also it is called a wasp Juice
+Shop so here we have this application
+it includes certain
+challenges we
+will do it one by one uh although this
+is bonus than what you you are provided
+from Simply learn we will be doing those
+labs also side by
+side all right so when I talk about this
+account
+thing I want to log in it says all
+right uh just provide
+your email
+password okay I'll first say that I'm
+not a customer yet let's see if I find
+any fault here then we will move
+forward trying to register
+so Herre theate yopmail.com yopmail is
+disposable
+email and some
+password say my password is
+harprit h
+capital H A
+harprit 123 all right I repeat the
+password h a r
+her 1 2 3
+it says password matches now I remove 1
+2
+3 password doesn't match
+perfect and if I remove one 2 three from
+here so I have
+removed it from here now you see that
+there's misconfiguration so even though
+I have changed my password it still says
+that both are matching and we can move
+ahead
+so let's move
+forward it will take my password even
+though it's eight digits and it is 11
+digits so one of theas top 10
+which
+says
+misconfiguration so you are seeing
+misconfiguration here that even
+though the condition is not met okay
+let's see will will
+it allow me to
+register registration completed
+completed successfully you can now login
+all right registration is successful you
+can now login now problem for me is I
+don't know which password will it take
+so let's
+see
+her
+123 it says
+no removing 1 2
+3 so so you see that the confirmed
+password was not
+taken but the
+one which I supplied earlier was taken
+as a
+password just to show you that I'm with
+the same email address that I showed
+you all right so that
+was misconfiguration part
+let's
+see if we could find something else
+let's see for injection
+okay trying to log
+in
+generally we
+have some
+some developers hard code the default
+credentials uh which is either admin
+admin either admin
+password all right it is not taking any
+of these it is not taking admin it is
+not taking
+password can I try
+uh some payload I will try doing SQL
+injection here for SQL those who know
+what SQL is the language is it works on
+queries it checks for your query in the
+backend database that your query is true
+it will execute it if the query returns
+false it will not execute that query so
+let me see
+if I'm using Boolean algebra it says
+either
+admin or 1 is equal to
+1 my password is
+password it says it it identifies that
+it is an object okay I will
+use hyphens to ignore anything after
+this and I am inside as an
+admin so what what is this this is an
+injection attack I'm using SQL injection
+here this is how we are doing
+it
+so this one is an injection okay I would
+be providing you one more
+example uh what else can we do
+[Music]
+here what else can I do here
+customer feedback complaint
+support let me log out and I will do
+something
+else customer
+feedback
+Anonymous I hated your
+apple
+juice and when I say this I HTE your
+Apple
+Juice 621 62 12
+okay what least rating I can give it it
+is
+one but the apple juice was not even
+worth it for one so can I change it
+control shift
+I can I change that
+rating where is it reflecting
+here
+e e
+one way is you make changes
+in the code
+itself but I'll show you a
+more unique way uh we will be using BB
+suite for this information to pass
+through I'll just
+be let me use my BB Suite
+so one uh thing would be to check in
+inspect
+element the other one would be using BB
+Suite I'll
+just turn on the BB suite and
+connect from another site okay
+all right so anubhab wants example from
+another site so since we are not
+attacking any main site we are uh using
+vulnerable websites so let's let me show
+you another site as
+requested there's a site called
+test.php
+which istics
+so test.php is the other
+site so
+here if you try to use
+any because for injection you would
+require something to put your payload
+inside so you see your payload
+executes these kind of executions these
+kind of injection attacks are
+called
+xss
+or cross site scripting
+text the one that we already saw for the
+other payload that was SQL injection
+attack
+for admin
+part
+and this one was xss or cross-site
+scripting here we used cross-site
+scripting we used script what script did
+we use and where do we get these kind of
+scripts you get these from gitlab so if
+I use payloads
+for
+xss you will get all these lists
+available online on
+GitHub similarly for SQL
+injection so just go there
+and use these
+for injection attacks kindly do not use
+any kindly do not use any of these on
+live web
+applications I don't want anyone of you
+to be suffering legally never use these
+on live applications without
+permission what codes to use for
+injection uh for injection we are using
+these payloads that I shared you uh you
+have to check which payload works on
+which website so cyber security is a
+field where you have to invest ample
+amount of time so so using payloads from
+these list would require you to invest a
+lot of
+time so these are for xss similarly if
+you don't want xss attack you
+want SQL
+injection you will get that payload list
+here so these payload list for SQL
+injection
+attacks when you have provided your
+scope you have to go through it which
+payload works over it and yes
+that's that's the most time consuming
+thing which you'll see as
+Reda what is payload payload is anything
+uh which you use for the destructive
+process so you
+want your scope to destroy you use
+payad so where else we uh use word
+payload if you know we use payload in
+defense system so payload is whatever is
+inside the rocket whatever is inside the
+missile those things are payloads so
+similarly
+payload means that data portion payload
+is used in a sense of
+Destruction anything that you use
+to yes in networking terms it is part of
+the data payLo
+yes you talk uh in uh header things that
+payad is there in part of in
+headers as Rajiv ran said it is the
+capacity to carry malicious script query
+to Target location for
+sure okay
+so this is a tool called BB site on
+which I'll be showing you uh the method
+that I I was showing you how to disrupt
+the
+rating on any website we were doing that
+on aasp Juice
+Shop so bub site is again from Port
+sger it has its
+inbuilt
+browser so I'll be opening the
+[Music]
+browser once the browser is open I'll
+restore because it will open do shop
+only one feature of BB s is you can
+intercept the traffic that means you
+control what traffic is
+going
+so here if
+I say intercept is on that means
+whatever
+traffic is going here I'll be able to
+see that
+traffic in my proxy So currently
+let's currently I'm turning on
+off simply moving to the page where I
+have have to give the
+rating
+so we were at customer
+feedback I had their say orange
+juice so I didn't want to give them even
+a single
+rating but I know by Bard Mass the
+result for this
+is
+six now when I'm trying to submit this I
+will intercept I will turn on The
+Intercept BB suit works as man in the
+middle so you see the entire traffic it
+is capturing it
+is it is seeing that as man in the
+middle it says okay you say orange juice
+is sugary it's Anonymous all
+right let's change this rating to
+zero here it is not possible I rate zero
+but now let's see I submit
+it forward this
+traffic thank you for your feedback the
+feedback has been
+taken so when the feedback has been
+taken let's see if that feedback is
+visible
+anywhere
+so I will turn off The Intercept
+again so it would be
+either all right so someone says I love
+this some says great shop nothing useful
+available here they all are having one
+to five
+ratings but let's see if our rating is
+somewhere
+here orange juice was sugary by
+Anonymous and it is showing null
+rating so this is how you can change the
+course of things
+uh which
+[Music]
+browser how do we connect all right I'll
+just show it again this
+is inbuilt browser in BB Suite so when
+you move to proxy you have this open
+browser this will open Chromium browser
+here so Chromium browser is the inbuild
+browser for BB Suite
+there are two ways in which you can use
+BB Suite it is either professional you
+can buy licensed version or just for
+practice you can use
+BBU uh Community version so some
+features are available only in licensed
+version
+so you won't you you would have 50% of
+these in community
+version this is on the same ju site yes
+uh this was the one that I got
+interrupted in so yes it's in AAS Juice
+Shop the same one in which we did that
+admin part
+and what else now since I'm using BBU we
+still have 10 minutes let's see what
+else we can do using BB Suite another
+part
+so what else we can use
+I forgot to turn on
+The
+Intercept click
+here it is showing me something that
+okay
+uh uh harjinder BBU is not a site BBU is
+a tool
+BBU is a tool uh it's not a site you can
+download
+BBS
+online please share the process to
+download the BB Suite okay
+simply BB
+suit just download it from here it will
+download the Community
+Edition guys sharing the uh processes uh
+step by step would be uh hard better
+would be if we we are just revising it
+through video that would be impressive
+right what exactly we are trying to do
+uh all right anyone who could answer
+this why are we doing
+it oh what uh what why are we doing it
+what is the
+agenda because we are studying aasp top
+10 and this is we are trying
+to uh study a was top 10 using these uh
+just like we did security
+misconfiguration injection
+attacks broker Access Control uh we were
+able to
+take over the admin account so using
+injection so broker access control all
+these
+things that's why we are studying BB
+suite
+and deliberately vulnerable
+application yes it is man in the middle
+attack yes we are doing
+mitm and mitm is taking Q of
+what uh communication is going on
+between two sender
+Ander so where I
+was yes I was trying to show you
+something else if I send this to
+repeater repeater is something that
+repeat
+things uh it shows me that okay there is
+something called FTP legal. MD do not
+take stress this is core things uh
+because you stressed that you want
+something practical I'm showing it but
+yes uh this is something bonus apart
+from what you you are actually having in
+your curriculum but I'm always happy to
+uh share more than uh you expect so just
+something from my end uh what I'll do
+here I will will see okay it is talking
+about
+FTP it's it's showing me that okay uh
+FTB protocol is running and we are
+getting a file legal. MD the file on
+which I
+clicked I clicked on legal. MD here
+which says check out our boring terms of
+conditions all right it was legal.
+MD I would send
+it and see response here okay it is
+generating some
+response what and response is the legal
+information there's a legal file which
+says I guess it is in some other
+language it is talking about something
+okay here it is in English no some other
+language all right no issues what I'll
+do and see if we have anything else uh
+inmd one file is is legal on
+which uh so when I change this legal
+thing I remove legal with
+MD and see if we are having some other
+files here uh do empty
+files okay
+if I remove even
+FTP are we able to get MD
+something doesn't Works what if FTP is
+back
+and MD is removed we will see any file
+any file transfer protocol
+here let's see
+200 okay that means it is
+successful all
+[Music]
+right if we are having any other file
+404 not
+found any other file which is using
+FTP 200 okay
+so you see if I search for MD we have
+got another
+file Acquisitions
+MD it says 12 matches all right
+announcement which is an encrypted file.
+MD coupons.
+MD legal. MD we already have seen let's
+see if we are able to see Acquisitions
+MD because Acquisitions MD is not
+visible on their web page so let's see
+if it is visible to see what's written
+in Acquisitions
+MD so you have find out a confid itial
+document this document is confidential
+do not
+distribute it shows their planned
+Acquisitions this is the planned
+Acquisitions we will be doing more
+practicals but yes uh just to give you a
+chist of how cyber security
+works this session was was necessary uh
+so
+that you know where we are heading
+to and if this uh Sparks interest in you
+that this is what we do in cyber
+security
+field thank you for joining us today in
+the exciting Journey Through the world
+of cyber security remember knowledge is
+your super power and with the right
+training and you can become the guardian
+of the digital world should you need any
+assistant PPD project and and other
+resources used in this session please
+let us know in the comment section below
+our team of expert we're happy to help
+you as soon as possible until next time
+thank you and keep learning with simply
+learn staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you if you like this
+video subscribe to the simply learn
+YouTube channel and click here to watch
+similar videos to nerd up and get
+certified click here

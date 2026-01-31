@@ -1,0 +1,270 @@
+deep learning Falls within machine
+learning and machine learning is a
+component of artificial intelligence the
+interconnectedness of these concept can
+be linked to the concentric circles
+where artificial intelligence
+encompasses the broadest scope followed
+by the machine learning and finally the
+Deep learning while these terms are
+commonly used interchangeably they hold
+distinct meaning Beyond merge buzzb
+associated with futuristic Technologies
+like self-driving cars for those not
+emerged in the world of data science the
+term artificial intelligence machine
+learning and deep learning may sound
+elusive the video aims to domestify the
+relationship between machine learning
+and deep learning shedding light on
+their unique characteristics and
+dispelling any confusion surrounding
+their usage hello guys I am mang and in
+this video we will explore the
+intricacies of these Technologies and
+kick start your journey into
+understanding of fascinating world of AI
+just a quick info for you before moving
+on what machine learning is if you want
+to switch careers with AI and ml by
+learning from the expert then try giving
+simply learns postgrad program in Ai and
+machine learning from P University in
+collaboration with IBM this Ai and ml
+course was delivered in collaboration
+with P University and IBM learn in
+demand skills such as machine learning
+deep learning NLP computer vision
+reinforcement learning generative AI
+prompt engineering chat GPT and many
+more the link in the description box
+should get to the homepage where you can
+find a complete overview of the program
+being offered so take action upskill and
+get ahead so without any further Ado
+let's get started so what is machine
+learning these days we usually ask Siri
+hey Siri how far is the nearest fuel
+station whenever we ask something to
+City the powerful speech recognition
+system gets into work and converts the
+audio into its textual form this is sent
+to the Apple servers in the further
+processing and then machine learning
+algorithms are run to understand the
+user intent and then finally CD tells
+you the answer well this is happening
+because of this machine learning machine
+learning is a subart of artificial
+intelligence the art of making computers
+to learn and act like humans by feeding
+data and making prediction based on the
+experience as you saw in the previous
+example when the data comes in machine
+learning immediately start analyzing the
+data and eventually get strained on it
+and learns it when new data points come
+in machines accurately make prediction
+and decision based on the past data now
+that we have understand what machine
+learning is let's move forward and
+discuss different types of machine
+learning and algorithms 2024 so types of
+machine learning machine learning is
+classified into supervised learning
+unsupervised learning and reinforcement
+learning so now let's see some major
+machine learning algorithms for 2024 so
+there are two sort of problems in
+supervised learning the first first one
+is classification and regression so
+certain types of machine learning
+algorithms falls under the
+classification are the first one is
+decision algorithm KNN algorithm
+logistic algorithm Nave based algorithm
+support Vector machine svm and in
+regression types of machine learning
+algorithms are the first one is linear
+regression the second one is regression
+trees nonlinear regression basian linear
+regression so moving forward so there
+are two sorts of problems in un wise
+learning the first one is clustering and
+the second one is Association so in
+clustering there are different types of
+machine learning algorithms like first
+one is K means clustering algorithm the
+second one is principal component
+analysis algorithm and the types of
+machine learning algorithm that fall
+under Association problems are the first
+one is aiy algorithm the second one is
+FP growth algorithm so the last
+reinforcement learning in reinforcement
+learning there are two types positive
+reinforcement the negative one so
+reinforcement learning are mainly used
+in AI application and gaming application
+the main use are Q learning State action
+reward State action s r sa and in
+negative one the Deep Q naral Network
+and the mark of decision process so
+moving forward let's discuss what is
+deep learning so deep learning is a
+subfield of machine learning that deals
+with algorithm inspired by the structure
+and the function of the brain and which
+is part of artificial intelligence deep
+learning is widely used to make weather
+predictions about rain earthquakes and
+the tsunamis it helps in taking
+necessary precautions with deep learning
+machines can comprehend speech and
+provide the required output it enables
+the machine to recognize people and
+object in the mes to Fed to it deep
+learning also help advertisers leverage
+data to perform realtime biing and
+targeted display advertising so now
+moving forward let's discuss type of
+neural network in 2024 the first first
+one is feed forall Neal Network this is
+the simplest form of Ann artificial Neal
+network data travels only in One
+Direction input to Output the second one
+is radial basis function neural network
+this model classifies the data point
+based on the distance from a center
+point if you don't have training data
+for example you will want to group
+things and create a center point the
+network looks for data point that are
+similar to each other and groups them
+one of the application for this is power
+restore ition system the third one is
+cohon self-organizing neural network so
+in this vectors of random input are
+input to a discrete map comprised of
+neurons vectors are also called
+dimensions of planes application include
+using it to recognize patterns in data
+likee medical analysis the fourth one is
+RNN recurrent neural network in this
+type the hidden layer saves its output
+to be used for future prediction the
+output become part of its new input
+application include text to speech
+conversion the fifth one is CNN
+convolutional neural NW in this type the
+input features are taken in badges as if
+they pass through a filter this allows
+the network to remember an image in
+parts so application include signal and
+image processing such as facial
+recognition the sixth one is modular
+neural network this is composed of
+collection of different neural network
+working together to get output so this
+is Cutting Edge and is still in the
+research phas so moving forward we will
+discuss some key differences between
+machine learning and deep learning the
+first one is human intervention in
+contrast to traditional machine learning
+where humans manually code features deep
+Learning System autonomously learn
+features like edges and facial component
+in task such as facial recognition this
+self trining process utilizing neural
+networks a keen to the human brain
+eliminates the need for human
+intervention in recoding resulting in
+improved accuracy over time the second
+one is Hardware deep Learning System
+demand more robust Hardware due to the
+extensive data processing and complex
+mathematical calculation in their
+algorithm graphical processing unit gpus
+are a specific type of Hardware employed
+for deep learning whereas simpler
+machine learning programs can operate on
+less powerful machines the third one is
+time given the extensive data and
+numerous parameters involved deep
+Learning Systems take a considerable
+amount of of time to train while machine
+learning may take seconds to hours deep
+learning can span from hours to weeks
+the fourth one is approach while machine
+learning algorithm process data in parts
+and combine them for a result whereas
+deep Learning Systems stackle entire
+problem at once for example identifying
+objects in an image involves two steps
+with machine learning object detection
+and the recognition in contrast a deep
+learning program after training provides
+both identify object and their location
+in the image in a single result so the
+last one is application given the
+distinctions mentioned earlier it's
+clear that machine learning and deep
+learning serve different purposes
+machine learning finds use in predictive
+program like email spam detection and
+evidence-based medical treatment plans
+on the other hand deep learning
+examplified the application like Netflix
+music streaming and the facial
+recognition is prominently featured in
+high-profile domain such as self-driving
+cars here deep learning employs layer
+neural network for task like object
+recognition traffic light identification
+and decision making so moving forward
+let's see some machine learning and deep
+learning future Trends so the future
+hold Limitless possibilities for machine
+learning and deep learning expects
+increase use of robot not just in
+manufacturing but also in enhancing our
+daily lives in healthcare deep learning
+may enable early concept prediction or
+detection potentially saving lives
+financially both machine learning and
+deep learning apposition to Aid
+companies and individuals in saving
+money making wiser investment and
+allocating resources efficiently so
+these Trends are just the starting point
+developers imaginations are sparking
+innovation in numerous areas yet to be
+explored so we have come to end of this
+video if you have any question or doubt
+you can comment down below our team of
+experts will reach out to you as soon as
+possible thank you for watching stay
+safe and keep learning with
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

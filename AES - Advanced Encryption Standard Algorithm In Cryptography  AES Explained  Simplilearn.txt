@@ -1,0 +1,361 @@
+with so much of our personal data
+flowing through the internet today it
+has become imperative that we secure it
+from prying eyes
+we have taken a look at how encryption
+works and its importance in today's
+world if you haven't seen that video yet
+we recommend giving it a view before
+moving further the link of which you can
+find in the description
+in our last video we saw how the data
+encryption standard also known as des
+became the global standard for
+encryption and data security
+eventually with so much computing power
+growth the need for a stronger algorithm
+was necessary to safeguard our personal
+data
+as solid as des was the computers of
+today could easily break the encryption
+with repeated attempts thereby rendering
+the data security helpless
+to counter this dilemma a new standard
+was introduced which was termed as the
+advanced encryption standard or the aes
+algorithm
+let us see what are the topics we are
+hoping to cover today
+we take a look at what is the advanced
+encryption algorithm and the origin
+we learn about the features of aes and
+the multiple steps that comprise the
+working of this algorithm
+finally we go to the applications of the
+advanced encryption standard and
+differences between the current and past
+global standard for data security that
+is the ds algorithm
+let's learn what is advanced encryption
+standard
+the aes algorithm also known as the
+raindial algorithm is a symmetric block
+cipher with a block size of 128 bits
+it is converted into cipher text using
+keys of 128 192 or 256 bits
+it is implemented in software and
+hardware throughout the world to encrypt
+sensitive data
+the national institute of standards and
+technology also known as nist started
+development on aes in 1997 when it was
+announced the need for an alternative to
+the data encryption standard
+the new internet needed a replacement
+for des because of its small key size
+with increasing computing power it was
+considered unsafe against entire key
+search attacks
+the triple ds was designed to overcome
+this problem however it was deemed to be
+too slow to be deployed in machines
+worldwide
+strong cases were present by the mars
+rc6 serpent and the two fish algorithms
+but it was the rindal encryption
+algorithm also known as aes which was
+eventually chosen as the standard
+symmetric key encryption algorithm to be
+used
+its election was formalized with the
+release of federal information
+processing standards publication 197 in
+the november of 2001. it was approved by
+the u.s secretary of commerce
+now that we understand the origin of aes
+let us have a look at the features that
+make aes encryption algorithm unique
+the aes algorithm uses a substitution
+permutation or sp network
+it consists of multiple rounds to
+produce a ciphertext
+it has a series of linked operations
+including replacing inputs with specific
+outputs that is substitutions and others
+that involve bit shuffling which is
+permutations
+at the beginning of the encryption
+process we only start out with a single
+key which can be either a 128-bit key a
+192-bit key or a 256-bit key eventually
+this one key is expanded to be used in
+multiple rounds throughout the
+encryption and the decryption cycle
+interestingly aes performs all its
+calculations on byte data instead of bit
+data as seen in the case of the ds
+algorithm
+therefore aes treats 128 bits of a clear
+text block as 16 bytes
+the number of rounds during the
+encryption process depends on the key
+size that is being used
+the 128 bit key size fixes 10 rounds
+the 192 bit key size fixes 12 rounds and
+the 256 bit key holds 14 rounds
+a round key is required for each of
+these rounds but since only one key is
+input into the algorithm the single key
+needs to be expanded to get the key for
+each round including the round zero
+with so many mathematical calculations
+going on in the background there are
+bound to be a lot of steps throughout
+the procedure
+let's have a look at the steps followed
+in aes
+before we move ahead we need to
+understand how data is being stored
+during the process of aes encryption
+everything in the process is stored in a
+4 into 4 matrix format
+this matrix is also known as a state
+array and we'll be using these state
+arrays to transmit data from one step to
+another and from one round to the next
+round
+each round takes straight array as input
+and gives a straight array as output to
+be transferred into the next round
+it is a 16 byte matrix with each cell
+representing one byte
+with each four bytes representing a word
+so every state array will have a total
+of four words representing it
+as we previously discussed we take a
+single key and expand it to the number
+of rounds that we need the key to be
+used in
+let's say the number of rounds are n
+then the key has to be expanded to be
+used with n plus 1 rounds because the
+first round is the key 0 round
+let's say n is the number of rounds the
+key is expanded to n plus 1 rounds
+it is also a state array having four
+words in its vicinity
+every key is used for a single round and
+the first key is used as a round key
+before any round begins
+in the very beginning the plain text is
+captured and passed through an xor
+function with the round key as a
+supplement
+this key can be considered the first key
+from the n plus 1 expanded set
+moving on the state array resulting from
+the above step is passed on to a byte
+substitution process
+beyond that there is a provision to
+shift rows in the state arrays
+later on the state array is mixed with a
+constant matrix to shuffle its column in
+the mix column segment
+after which we add the round key for
+that particular round
+the last four steps mentioned are part
+of every single round that the
+encryption algorithm goes through
+the state arrays are then passed from
+one round to the next as an input
+in the last round however we skip the
+mix columns portion with the rest of the
+process remaining unchanged
+but what are these byte substitution and
+row shifting processes let's find out
+regarding each step in more detail
+in the first step the plain text is
+stored in a state array and it is
+absorbed with the k0 which is the first
+key in the expanded key set
+this step is performed only once on a
+block while being repeated at the end of
+each round as per iteration demands
+the state array is xored with the key to
+get a new state array which is then
+passed off as input to the sub bytes
+process
+in the second stage we have byte
+substitution
+we leverage an x box called as a
+substitution box to randomly switch data
+among each element
+every single byte is converted into a
+hexadecimal value having two parts
+the first part denotes the row value and
+the second part denotes the column value
+the entire state array is passed through
+the s box to create a brand new state
+array which is then passed off as an
+input to the row shifting process
+the 16 input bytes are replaced by
+looking at a fixed table given in the
+design we finally get a matrix with four
+rows and four columns
+when it comes to row shifting each bit
+in the four rows of the matrix is
+shifted to the left
+an entry that is a falloff is
+re-inserted to the right of the line the
+change is done as follows
+the first line is not moved in any way
+the second line is shifted to a single
+position to the left
+the third line is shifted two positions
+to the left and the fourth line is
+shifted three positions to the left
+the result is a new matrix that contains
+the same 16 bytes but has been moved in
+relation to each other to boost the
+complexity of the program
+in mixed columns each column of 4 bytes
+is now replaced using a special
+mathematical function
+the function takes 4 bytes of a column
+as input and outputs 4 completely new
+bytes
+we will get a new matrix with the same
+size of 16 bytes and it should be noted
+that this phase has not been done in the
+last round of the iteration
+when it comes to adding a round key the
+16 bytes of the matrix are treated as
+128 bits and the 128 bits of the round
+key are xor
+if it is the last round the output is
+the cipher text
+if we still have a few rounds remaining
+the resulting 128 bits are interpreted
+as 16 bytes and we start another similar
+round
+let's take an example to understand how
+all these processes work
+if our plain text is the
+string 2 1 9 2 we first convert it into
+a hexadecimal format as follows
+we use an encryption key which is that's
+my kung fu and it is converted into a
+hexadecimal format as well
+as per the guidelines we use a single
+key which is then later expanded into n
+plus 1 number of keys in which case is
+supposed to be 11 keys for 10 different
+rounds
+in round 0 we add the round key the
+plain test is xor with the k0 and we get
+a state array that is passed off as an
+input to the substitution by its process
+when it comes to the substitution bytes
+process we leverage an s box to
+substitute the elements of each byte
+with a completely new byte
+this way the state array that we receive
+is passed off as an input to the row
+shifting process on the next step
+when it comes to row shifting each
+element is shifted a few places to the
+left with the first row being shifted by
+zero places second row by one place
+third row by two places and the last by
+three
+the state array that we received from
+the row shifting is passed off as an
+input to mix columns
+in mixed columns we multiply the
+straight array with a constant matrix
+after which i receive a new state error
+to be passed on onto the next step
+we add the new state array as an xor
+with the round key of the particular
+iteration
+whatever state array we receive here it
+becomes an output for this particular
+round
+now since this is the first round of the
+entire encryption process the state
+array that we receive is passed off as
+an input to the new round
+we repeat this process for 10 more
+rounds and we finally receive a cipher
+text
+once the final state array can be
+denoted in the hexadecimal format this
+becomes our final ciphertext that we can
+use for transferring information from
+the sender and receiver
+let's take a look at the applications of
+aes in this work
+aes finds most use in the area of
+wireless security in order to establish
+a secure mode of authentication between
+routers and clients
+highly secure mechanisms like wpa and
+wpa2 psk are extensively used in
+securing wi-fi endpoints with the help
+of frindell's algorithm
+it also helps in ssl tls encryption that
+is instrumental in encrypting our
+internet browser sessions
+aes works in tandem with other
+asymmetric encryption algorithms to make
+sure the web browser and web server are
+properly configured and use encrypted
+channels for communication
+aes is also prevalent in general file
+encryption of various formats ranging
+from critical documents to the media
+files
+having a large key allows people to
+encrypt media and decrypt data with
+maximum security possible
+aes is also used for processor security
+in hardware appliances to prevent
+machine hijacking among other things
+as a direct successor to the des
+algorithm there are some aspects that
+aes provides an immediate advantage in
+let us take a look
+when it comes to key length the biggest
+flaw in des algorithm was its small
+length was easily vulnerable by today's
+standards aes has managed to nab up 128
+192 and 256 bit key lens to bolster the
+security further
+the block size is also larger in aes
+awing to more complexity of the
+algorithm
+the number of rounds in des is fixed
+irrespective of the plain text being
+used in aes the number of round depends
+on the key length that is being used for
+the particular iteration thereby
+providing more randomness and complexity
+in the algorithm
+the des algorithm is considered to be
+simpler than aes even though aes beats
+des when it comes to relative speed of
+encryption and decryption this makes
+advanced encryption standard much more
+streamlined to be deployed in frameworks
+and systems worldwide when it compares
+to the data encryption standard
+hope you learned something interesting
+today feel free to ask us in the comment
+section if you have any questions and
+subscribe to our channel for more videos
+like this thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,269 @@
+hi my name is Augustine Popa and I'm a
+product manager on the Microsoft C++
+team working on VC package VC package is
+a free and open- Source CN C++ package
+manager it is designed with Simplicity
+in mind solving many common problems
+that come up when managing Library
+dependencies some of these problems are
+intrinsic to these programming languages
+and require a more creative solution
+than you perhaps may be used to with
+package managers for other languages in
+this video I will give an overview of VC
+package
+and how it can support you as a
+developer in just under 10
+minutes whether you are a student
+hobbyist developer or professional in
+the industry I hope you will find this
+tool helpful for your CN C++
+development VC package is supported on
+Windows Mac OS and Linux and can run on
+your local machine or your preferred
+continuous integration environment you
+can also use it with your preferred
+compiler or build system as VC package
+is designed to be as flexible as
+possible it also builds packages from
+Source meaning you can choose your
+preferred build configuration including
+platform architecture and compiler Flags
+so that it matches your development
+environment in CN C++ this is important
+because a project cannot depend on a
+library that is compiled in a different
+way with that said you can absolutely
+download pre-built libraries using the
+binary caching feature this feature
+allows you to point to a package feed
+like iub packages Azure artifacts or a
+Nate feed HTTP provider or other cloud
+storage provider that allows you to
+upload and store Buy binaries and other
+files once this link is active VC
+package will automatically cach
+libraries and builds and subsequently
+download them from the cache when
+someone else on your team or your
+continuous integration system needs a
+new copy in other words you only need to
+build from Source once then cash the
+output for reuse later BC package will
+verify if something has changed in your
+build configuration and do a fresh build
+only if
+necessary in VC package a port is a
+build recipe that produces a package
+package a port has a version number for
+the corresponding package it produces as
+well as a port version that is used when
+you want to make changes to the build
+recipe itself VC package also has
+triplets a triplet captures the target
+build environment such as the CPU OS
+compiler and runtime in a single
+convenient name VC package provides over
+70 default tripl lists that you can
+build with but you can also Define your
+own to install a package on your system
+VC package runs a port file which is a
+cake script the script typically
+contains steps to download source code
+or run a build but can do a lot more as
+it is highly
+customizable BC package comes with a
+massive open- Source Library registry
+that is actively maintained by the CN
+C++ Community you can download over
+2,000 unique customizable and publicly
+available CN C++ libraries you can
+choose with versions or features of
+these libraries you wish to install and
+as stated earlier VC package can produce
+a custom build based on your desired
+Bill configuration VC package will
+automatically install any transitive
+dependencies that is dependencies of
+dependencies without you having to list
+every single one out furthermore the VC
+package open source registry is
+Thoroughly tested by a continuous
+integration process the CNC Plus+
+Library ecosystem is very fragmented and
+diverse many libraries depend on each
+other and sometimes they disagree about
+things like what version of another
+Library they want VC package resolves
+all of this in the open source registry
+the registry is a git repo and at any
+point in time in the history of that
+repo acts as a baseline tracking a set
+of libraries that are each set to a
+particular version whatever Baseline you
+choose to follow you can download the
+libraries of your choosing without
+having to manually resolve version
+conflicts
+yourself there are two ways to install
+libraries using VC package classic Mode
+allows you to run console commands
+specifying which libraries you want
+these libraries are then installed under
+the VC package inst directory this is an
+easy way to get started with VC package
+if you're just looking to get up and
+running fast however for most users we
+recommend manifest mode in this mode VC
+package takes a manifest file called VC
+package.json as input and builds
+packages in a subfolder of your actual
+project the Manifest file can list your
+library dependencies library features
+version constraints and other relevant
+inputs since this is a basic text file
+you can check it into your Source
+control repository so your whole team
+can make use of it furthermore it is
+very useful for achieving reproducible
+builds VC package will strictly follow
+the instructions in the Manifest file
+and will never change the libraries
+versions or features it installs
+afterward if you want to make a change
+to your dependencies in the future you
+must edit the Manifest file accordingly
+to give VC package new
+instructions VC package versions
+packages differently than most package
+managers as I mentioned earlier you can
+list out your desired packages and point
+to a baseline which provides you with a
+reasonable set of default package
+versions
+but you can also Define a minimum
+version constraint or an override a
+minimum version constraint lets you set
+a particular package to a version
+greater than the Baseline there's no
+such thing as a maximum version
+constraint in VC package as it will
+always choose the minimum one that
+agrees with your manifest file if you
+set a minimum version constraint it will
+only attempt to download a higher
+version if VC package detects that the
+minimum version won't build successfully
+with your other
+dependencies but given a particular
+manifest file as input VC package will
+always build the exact same set of
+dependencies every time whether you do
+it today or five years in the
+future lastly VC package supports
+overrides overrides let you ignore VC
+package's normal version resolution and
+opt for more traditional package
+management experience where you can pick
+and choose exactly which versions of a
+package you want to install however this
+does leave it up to you to resolve any
+version conflicts that may arise we
+recommend using overrides only when
+absolutely
+necessary I me mentioned earlier that VC
+package comes with a large open source
+registry of libraries but you can also
+Define your own custom Registries for
+other libraries this works fundamentally
+the same way as the open source registry
+for instance you can set up a registry
+as a git repo and take advantage of the
+versioning and manifest features that VC
+package provides a registry can also be
+configured as a basic file system a
+common application of Registries popular
+with professional teams is to Fork the
+open source registry so you have your
+own private copy this lets you tight
+control everything that goes into the
+registry and what your developers can
+access you can run your own custom scans
+and ensure you are meeting any
+compliance or security requirements for
+your organization and since it's a fork
+you can pull from the VC package public
+registry anytime you want to get updates
+you may also want to set up a registry
+for your own private libraries you can
+organize these as you see fit and give
+your team the same user interface to
+install these libraries as they would be
+using for open source
+ones now I mentioned earlier that VC
+packages build system agnostic you can
+configure it with your preferred
+environment with that said VC package
+has some additional support for Ms build
+and cmake projects that is worth calling
+out in manifest mode you can configure
+your project system to automatically run
+VC package so that it can restore any
+dependencies that are needed on the fly
+at build time in Ms build this is done
+by setting some project properties in
+cmake this is done by pointing to the VC
+package cic tool chain file another
+benefit of doing this configuration step
+is that these build systems will become
+aware of the locations where VC package
+is installing libraries so you don't
+have to manually point to where your
+library headers and binaries will be
+located next let's talk about IDE and
+editor support as a VC package has grown
+in popularity it has been adopted by
+several different coding environments
+the visual studio IDE actually SS
+actually ships with VC package if you
+choose to include C++ components during
+the installation process but you can
+also use an external copy of VC package
+which is necessary if you want to use
+classic mode and install libraries to
+location of your choosing outside of
+your project in Visual Studio
+installation directory VC package is
+also supported in Visual Studio code you
+will need to use an external copy of VC
+package and install the Microsoft CN C++
+extension and if you are a cmake user we
+recommend also installing the cmake
+tools extension lastly the jetbrain cine
+IDE also added VC package integration
+you can find documentation about this
+experience on their website another VC
+package feature useful for professional
+development teams in particular is asset
+caching asset caching allows VC package
+to work in an offline build environment
+which some organizations prefer for
+security reasons it is also useful if
+you have continuity of business rules to
+comply with it uses download mirrors to
+upload and restore assets like source
+code and build tools needed to install
+packages and that's it this video
+covered all the major features currently
+available in VC package keep in mind
+that VC package is an active open source
+project and we are continuing to add to
+it over time if you want to learn more
+there are a few resources available
+first you can check out our website at
+VC
+package. our documentation can be found
+at learn.
+microsoft.com VC package lastly our main
+GitHub repo can be found at github.com
+Microsoft slvc package

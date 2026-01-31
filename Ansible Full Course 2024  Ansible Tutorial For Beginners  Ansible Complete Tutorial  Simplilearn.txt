@@ -1,0 +1,1884 @@
+anable is a powerful automation tool
+used to manage and configure computer
+systems it's important because it
+streamlines task improv scalability and
+supports infrastructure as code saving
+time and resources jobs related to
+anible include anible administrator
+devops engineer system administrator
+Cloud engineer and network engineer
+salaries vary but can range from $60,000
+to
+$150,000 and above per year depending on
+the role and location if you are looking
+to learn anable then check the wide
+range of devops courses from Simply
+learn in collaboration with Top Notch
+universities across the globe with these
+devops courses you will learn the
+essential tools Us in devops like
+terraform Maven anible Jenkins
+kubernetes Docker and much more to
+enroll into these courses one year of
+experience is preferred so hurry up and
+enroll Now find the ca Link in the
+description box so before we move ahead
+in this video consider subscribing to
+Simply learn and hit the Bell icon to
+never miss any updates from us over to
+our tutors this is Matthew from Simply
+learn and we're going to be covering
+anable today as one of the key tools
+that you would have within your Dev Ops
+environment so the things that we're
+going to go through today is we're going
+to cover why you would want to use a
+product like anore what anible really is
+and how it's of value to you in your
+organization the differences between
+anible and other products that are
+similar to it on the market and what
+makes anible a compelling product and
+then we're going to dig into the
+architecture for anible we're going to
+look at how you would create a Playbook
+how you would manage your inventory of
+your server environments and then what
+is the actual workings of anable as a
+little extra we're going to also throw
+in anible Tower one of the secret Source
+solutions that you can use for improving
+this Speed and Performance of how you
+create your anible environments and
+finally we're going to go through a use
+Case by looking at hoot Suite social
+media management company and how they
+use anible to really improve the
+efficiency within their organizations so
+let's jump into this so the big question
+is why anable so you have to think of
+anable as another tool that you have
+within your Dev Ops environment for
+helping manage the servers and this
+definitely fall on the operations side
+of the dev Ops equation so if we look
+here we have a picture of Sam and like
+yourselves Sam is a system administrator
+and he is responsible for maintaining
+the infrastructure for all the different
+servers within his company so some of
+the servers that he may have that he has
+to maintain could be web servers running
+Apache it could be database servers
+running MySQL and if you only have a few
+servers then that's fairly easy to
+maintain I mean if you have three web
+servers and two database servers and
+let's face it wouldn't we all love just
+to have one or two servers to manage it
+would be really easy to maintain the
+trick however is as we start increasing
+the number of servers and this is a
+reality of the environments that we live
+and operate in it becomes increasingly
+difficult to create consistent setup of
+different infrastructures such as web
+servers and databases for the simple
+reason that we're all human as if we had
+to update and maintain all of those
+servers by hand there's a good chance
+that we would not set up each server
+identically now this is where ANP really
+comes to the rescue and helps you become
+an efficient operations team anable like
+other system Solutions such as chef and
+puppet uses code that you can write and
+describe the installation and setup of
+your servers so you can actually repeat
+it and deploy those servers consistently
+in into multiple areas so now you don't
+have to have one person redoing and
+reowing setup procedures you just write
+one script and then each script can be
+executed and have a consistent
+environment so we've gone through why
+you'd want to use anible let's step
+through what anible really is so you
+know this is all great but you know how
+do we actually use these tools in our
+environment so anable is a tool that
+really allows you to create and control
+three key areas that you would have
+within your operations environment first
+of all there's it automation so you can
+actually write instructions that
+automate the it setup that you would
+typically do manually in the past the
+second is the configuration and having
+consistent configuration imagine setting
+up hundreds of Apache servers and being
+able to guarantee with Precision that
+each of those Apache servers is set up
+identically and then finally you want to
+be able to automate the deployment so
+that as you scale up your server
+environment you can just push out
+instructions that can deploy
+automatically different servers the
+bottom line is you want to be able to
+speed up and make your operations team
+more efficient so let's talk a little
+bit about pull configuration and how it
+works with anable so there are two
+different ways of being able to set up
+uh different environments for server
+farms uh one is to have a key server
+that has all the instructions on and
+then on each of the servers that connect
+to that main Master server you would
+have a piece of software known as a
+client installed on each of those
+servers that would communicate to the
+main Master server and then would
+periodically either update or change the
+configuration of the slave server this
+is known as a pull configuration an
+alternative is a a push configuration
+and the push configuration is slightly
+different the main difference is as with
+a pull configuration you have a master
+server where you actually put up the
+instructions but unlike the pull
+configuration where you have a client
+installed on each of the services with a
+push configuration you actually have no
+client installed on the remote servers
+you simply are pushing out the
+configuration to those servers and
+forcing a restructure or a fresh clean
+installation in that environment so
+anible is one of those second
+environments where it's a push
+configuration server and this contrasts
+with other popular products like chef
+and puppet which have a Master Slave um
+architecture with a master server
+connecting with a client on a remote
+slave environment where you would then
+be pushing out the updates with anal
+you're pushing out the service and the
+structure of the server to remote
+hardware and you are just putting it
+onto the hardware irrelevant of the
+structure that's out there and there are
+some significant advantages that you
+have in that in that you're not having
+to have the extra overhead weight of a
+client installed on those remote servers
+having to constantly communicate back to
+the master environment so let's step
+through the architecture that you would
+have for an anible environment so when
+you're setting up an anible environment
+the first thing you want to do is have a
+local machine and the local machine is
+where you're going to have all of your
+instruction and really the power of the
+control that you'd be pushing out to the
+remote server so the local machine is
+where you're going to be starting and
+doing all of your work connected from
+the local machine are all the different
+nodes pushing out the different
+configurations that you would set up on
+the local machine the configurations
+that you would write and you would write
+those in code are within a module so you
+do this on your local machine for
+creating these modules and each of these
+modules is actually consistent playbooks
+the local machine also has a second job
+and that job is to manage the inventory
+of the nodes that you have in your
+environment the local machine is able to
+connect to each of the different nodes
+that you would have in your Hardware
+Network through SSH clients so a secure
+client let's dig into some of the
+different elements within that
+architecture and we're going to take a
+first look at playbooks that you would
+write and create for the anable
+environments so so the core of anle is
+the Playbook this is where you create
+the instructions that you write to
+define the architecture of your Hardware
+so the Playbook is really just a set of
+instructions that configure the
+different nodes that you have and each
+of those set of instructions is written
+in a language called yaml and this is a
+standard language used for configuration
+server environments did you know that
+yaml actually stands for yaml a markup
+language let's just a little tidbit to
+hide behind your ear so let's have a
+look at one of these playbooks it looks
+like and here we have a sample uh yamamo
+script that we've written so you start
+off your yamama script with three dashes
+and that indicates the start of a script
+and then the script itself is actually
+consistent of two distinct plays at the
+top we have play one and below that we
+have play two within each of those plays
+we Define which nodes are we tying in so
+here we have a web server in the top
+play and in the second play we have a
+database server that we're targeting and
+then within each of those server
+environments we have the specific tasks
+that we're looking to execute so let's
+step through some of these tasks we have
+an install patchy task we have a starter
+patchy task and we have an install MySQL
+task and when we do that we're going to
+execute a specific set of instructions
+and those instructions can include
+installing Apache and then setting the
+state of the Apache environment or
+starting the Apache environment and
+setting up and running the MySQL
+environment so this really isn't too
+complicated and that's the really good
+thing about working with ymo is it's
+really designed to make it easy for you
+as an operations lead to be able to
+configure the environments that you want
+to consistently create so let's take a
+step back though we have two hosts we
+have web server and datab Bas server
+where do these names come from well this
+takes us into our next stage and the
+second part of working with anable which
+is the inventory management part of
+anible so the inventory part of anible
+is where we maintain the structure of
+our Network environment so what we do
+here is part of the structure and
+creating different nodes is we've had to
+create two different nodes here we have
+a web server node and a database server
+node and under web Ser node we actually
+have the names that we actually pointing
+to specific machines within that
+environment so now when we actually
+write our scripts all we have to do is
+refer to either web server or database
+server and the different servers will
+have the instructions from the yamas
+script executed on them this makes it
+really easy for you to be able to just
+point to new services without having to
+write out complex instructions so let's
+have a look look at how anible actually
+works in real world so the real world
+environment is that you would have the
+ansible software installed in a local
+machine and then it connects to
+different nodes within your network on
+the local machine you'll have your first
+your playbook which is the set of
+instructions for how to set up the
+remote nodes and then to identify how
+you're going to connect to those nodes
+you'll have an inventory we use secure
+SSH connections to to each of the
+servers so we are encrypting the
+communication to those servers we're
+able to grab some basic facts on each
+server so we understand how we can then
+push out the Playbook to each server and
+configure that server remotely the end
+goal is to have an environment that is
+consistent so this ask you a simple
+question what are the major
+opportunities that anable has over chef
+and puppet really like to hear your
+answers in the comments below pop them
+in there and we'll get back to you and
+really want to hear how you feel that
+anible is a stronger product or maybe
+you think it's a weaker product as it
+compares to other similar products in
+the market here's the bonus we're going
+to talk a little bit about anible Tower
+so anible Tower is an extra product that
+red hat created that really kind of puts
+the cherry on the top of the ice cream
+or is the icing on on your cake anible
+by itself is a commandline tool however
+anable Tower is a framework that was
+designed to access anible and through
+the anible tower framework we now have
+an easyto use guei this really makes it
+easy for non-developers to be able to
+create the environment that they want to
+be able to manage in their devops plan
+without having to constantly work with
+the command prompt window so so instead
+of opening up terminal window or command
+window and writing out complex
+instructions only in text you can now
+use drag and drop and mouse click
+actions to be able to create your
+appropriate playbooks inventories and
+pushes for your nodes all right so we've
+talked a lot about anel let's take a
+look at a specific company that's using
+anel today and in this example we're
+going to look at hoot Suite now hoot
+Suite if you've not already used that
+products and they have a great product
+hoot is a social media management system
+they are able to help with you managing
+your pushes of social media content
+across all of the popular social media
+platforms they're able to provide the
+analytics they're able to provide the
+tools that marketing and sales teams can
+use to be able to assess a sentiment
+analysis of the messages that are being
+pushed out really great tool and very
+popular
+but part of their popularity drove a
+specific problem straight to hoot Suite
+the challenge they had at hotu is that
+they had to constantly go back and
+rebuild their server environment and
+they couldn't do this continuously and
+be consistent there was no standard
+documentation and they had to rely on
+pure memory to be able to do this
+consistently imagine how complex this
+could get as you're scaling up with a
+popular product that now has tens of
+thousands to hundreds of thousands of
+users this is where ano what came in and
+really helped the folks over at
+HootSuite today the devops team at
+HootSuite write out playbooks that have
+Specific Instructions that Define the
+architecture and structure of their
+Hardware nodes and environments and are
+able to do that as a standard product
+instead of it being a problem in scaling
+up their environment they now are able
+to rebuild and create new servers in a
+matter of seconds the bottom line is
+anible has been able to provide hoot
+Suite with it automation consistent
+configuration and free out time from the
+operations team so that instead of
+managing servers they're able to provide
+additional new value to the company
+anible provides you with one of the
+easiest ways to automate your
+application and it infrastructure on
+that that note hi guys welcome to this
+complete anible tutorial by simply learn
+in this video we'll be covering some of
+the most important Concepts relating to
+the devops tool anible we'll take you
+through how you can install anible and
+how you can use the tool to automate
+your processes first we have anel to
+tell us how to install anible on your
+system a very warm welcome to all our
+viewers I'm Angelie from Simply learn
+and today I'll be showing you how you
+can install the configuration management
+tool and sible so let's have a brief
+about why one would use anable and what
+exactly is anable so if you consider the
+case of an organization it has a very
+large infrastructure which means it has
+more than probably hundreds of systems
+and giving one or even a small team of
+people the responsibility to configure
+all these systems makes their work
+really tough repetitive and as you know
+manual work is always prone to errors so
+anible is a tool which can automate the
+configuration of all these systems with
+anible a small team of system system
+administrators can write simple codes in
+gaml and these codes are deployed onto
+the hundreds and thousands of servers
+which configures them to the desired
+States so Anil automates configuration
+management that is configuring your
+systems it automates orchestration which
+means it brings together a number of
+applications and decides an order in
+which these are executed and it also
+automates deployment of the applications
+now that we know what answers does let's
+move on to the installation of anible so
+here is my Oracle VM virtual box manager
+I'll be using two systems there's the
+note system which is basically my client
+system and there's the server system or
+the Master System so let's begin at our
+server
+system so this is my Master System guys
+so the first thing we do is we download
+our anable
+tool so one thing we must remember with
+anable is that unlike Chef or puppet
+anible is a push type of configuration
+management tool so what this means is
+that the entire control here lies with
+your master or your server system this
+is where you write your configuration
+files and these are also responsible for
+pushing these configuration files onto
+your node or client system as in when
+required great so anible tool is
+installed now we need to open an anible
+host file and there we'll specify the
+details of our node or client
+machine so this is the anable host file
+as you can see here the entire file is
+commented but there's a certain syntax
+that You' observe for example here we
+have a group name web servers under
+which we have the IP addresses or
+certain host name so this is about how
+we'll be adding the details for our our
+client system first we need to give a
+group
+name under this group basically we add
+all the clients which require a certain
+type of configuration since we are using
+just one node we'll give only the
+details for that particular node first
+we need to add the IP address of our
+client machine so let's just go back to
+our client
+machine and this here is the IP address
+192.168
+2.11 once you have typed in your IP
+address give a space and then we'll
+specify the user for our client
+machine so all Communications between
+the server or the Master System and the
+client or the node system takes place
+through SSH ssh basically provides a
+secure channel for the transfer of
+information follow this up with your
+password in my case it's the roots
+password and that's it we are done so
+now we save this file and go back to our
+terminal so now that our host file is
+written the next thing we do is we write
+our Playbook so Playbook is the
+technical term used for all the
+configuration files that we write in
+anible now playbooks are written in yaml
+yaml is extremely simple to both write
+and understand it's in fact very close
+to
+English so now we'll write our Playbook
+The Playbook or any code in yaml first
+starts with three dashes this indicates
+the beginning of your file next thing we
+need to give a name to our Playbook so
+name and I'm going to name my playbook
+sample book we next need to specify our
+host systems which is basically the
+systems at which the configuration file
+or the playbook in our case will be
+executed so we'll be executing this at
+the client machines mentioned under the
+group anable servers so we had just one
+cent machine under it we'll still
+mention the group
+name we next need to specify the
+username with which we'll be logging
+into our client machine which is Root in
+my case and become true specifies that
+you need to become the root to execute
+this Playbook so becoming the roots
+called a privilege escalation next we
+need to specify our task so these are
+basically the actions that the Playbook
+will be performing so you would have
+noticed every so far is aligned that is
+name host remote user become and task
+because these are at one level now
+whatever comes under task will be
+shifted slightly towards the right
+although yaml is extremely simple to
+understand and read both it's a little
+tricky while writing because you need to
+be very careful about the indentations
+and the
+spacing so my first task is install
+httpd which is basically a Apache server
+so now my command yum and this will be
+installing the httpd
+package and the latest statee of it will
+be installed so that's our first task
+now our second task would be running our
+Apache service so name run
+httpd and the action which is
+service will be performed on httpd hence
+the name
+httpd and state must be started now we
+come to our third
+task so here we'll create a very simple
+web page that will be
+hosted so create content is the name of
+our
+task and the content that we are
+creating here will basically be copied
+to our node system at a particular file
+location that we'll
+provide our content will be
+congrats and then we'll provide the
+destination at which this file will be
+copied
+so this is the default location for all
+our HTML
+files and that's it we are done writing
+our Playbook just save this and go back
+to your
+terminal before we execute the Playbook
+or push the Playbook onto our node
+system let's check the syntax of our
+Playbook so the command for doing so
+is and if everything's fine with your
+playbook the output would be just your
+playbook name so our syntax is perfectly
+fine now we can push on the Playbook to
+our node or the client
+machine and that's the Syntax for doing
+so now as your playbook is being sent
+over to the client machine you can see
+that first the facts are gathered that
+is the current state of your client
+machine is first fetched to check what
+all is to be changed and what is already
+present so the first thing is installing
+httpd so our system already had httpd so
+it says okay because this does not need
+to be changed our next task was running
+httpd now Although our system had the
+Apache service it was not running so
+that is one thing that was changed the
+next was there was no content available
+so the content was also added so two
+tasks were changed and four things were
+okay now everything seems fine and
+before you move any forward it is very
+important that you check this one line
+of documentation provided by anel you
+have all kind of information available
+here regarding which all tasks were
+executed if your client machine was
+reachable or unreachable and so on so
+now that everything's fine here we can
+move on to our note system and we'll
+just go to our browser so if our
+Playbook has been executed here what
+should happen is that the httpd service
+must be in the running State and the web
+page that we created should be hosted so
+let's just type Local Host and great
+everything's working fine so our web
+page page is displayed here so we come
+to an end for our installation and
+configuration video for the
+configuration management tool anible if
+you have any doubts please post them in
+the comment section below and we'll
+definitely get back to you as soon as
+possible thanks Angelie now we have
+Matthew and Angie to take us through how
+to work with anible anible today as one
+of the key tools that you would have
+within your Dev Ops environment so the
+things that we're going to go through
+today is we're going to cover why you
+would want to use a product like ano
+what anible really is and how it's of
+value to you in your organization the
+differences between anible and other
+products that are similar to it on the
+market and what makes anible a
+compelling product and then we're going
+to dig into the architecture for anable
+we're going to look at how you would
+create a Playbook how You' manage your
+inventory of your server environments
+and then what is the actual workings of
+anable as a little extra we're going to
+also throw in anible Tower one of the
+secret Source solutions that you can use
+for improving the the Speed and
+Performance of how you create your
+anible environments and finally we're
+going to go through a use Case by
+looking at hoot Suite social media
+management company and how they use
+anible to really improve the efficiency
+within their organizations so let's jump
+into this so the big question is why
+anable so you have to think of anable as
+another tool that you have within your
+Dev Ops environment for helping manage
+the service and this definitely F on the
+operations sides of the dev Ops equation
+so if we look here we have a picture of
+Sam and like yourselves Sam is a system
+administrator and he is responsible for
+maintaining the infrastructure for all
+the different servers within his company
+so some of the servers that he may have
+that he has to maintain could be web
+servers running Apache it could be
+database servers running MySQL and if
+you only have a few servers then that's
+fairly easy to maintain I mean if you
+have three web servers and two database
+servers and let's face it wouldn't we
+all love just to have one or two servers
+to manage it would be really easy to
+maintain the trick however is as we
+start increasing the number of servers
+and this is a reality of the
+environments that we live and operate in
+it becomes increasingly difficult to
+create consistent setup of different
+infrastructures such as web servers and
+databases for the simple reason that
+we're all human as if we had to update
+and maintain all of those servers by
+hand there's a good chance that we would
+not set up each server identically now
+this is where anible really comes to the
+rescue and helps you become an efficient
+operations team anible like other system
+Solutions such as chef and puppet uses
+code that you can write and describe the
+installation and set up of your servers
+so you can actually repeat it and deploy
+those servers consistently into multiple
+areas so now you don't have to have one
+person redoing and reowing setup
+procedures you just write one script and
+then each script can be executed and
+have a consistent environment so we've
+gone through why you'd want to use
+anible let's step through what anible
+really is so you know this is all great
+but you know how do we actually use
+these tools in our environment so anible
+is a tool that really allows you to
+create create and control three key
+areas that you would have within your
+operations environment first of all
+there's it automation so you can
+actually write instructions that
+automate the it setup that you would
+typically do manually in the past the
+second is the configuration and having
+consistent configuration imagine setting
+up hundreds of Apache servers and being
+able to guarante with Precision that
+each of those Apache servers is set up
+identically and then and then finally
+you want to be able to automate the
+deployment so that as you scale up your
+server environment you can just push out
+instructions that can deploy
+automatically different servers the
+bottom line is you want to be able to
+speed up and make your operations team
+more efficient so let's talk a little
+bit about pull configuration and how it
+works with anable so there are two
+different ways of being able to set up
+uh different environments for Server
+farms uh one is to have a key server
+that has all the instructions on and
+then on each of the servers that connect
+to that main Master server you would
+have a piece of software known as a
+client installed on each of those
+servers that would communicate to the
+main Master server and then would
+periodically either update or change the
+configuration of the slave server this
+is known as a pull configuration an
+alternative is is a push configuration
+and the push configuration is slightly
+different the main difference is as with
+a pull configuration you have a master
+server where you actually put up the
+instructions but unlike the pull
+configuration where you have a client
+installed on each of the services with a
+push configuration you actually have no
+client installed on the remote servers
+you simply are pushing out the
+configuration to those servers and
+forcing a restructure or a fresh clean
+installation in that environment
+so anable is one of those second
+environments where it's a push
+configuration server and this contrasts
+with other popular products like chef
+and puppet which have a Master Slave um
+architecture with a master server
+connecting with a client on a remote
+slave environment where you would then
+be pushing out the updates with anel
+you're pushing out the service and the
+structure of the server to remote
+hardware and you are just putting it
+onto the hardware irrelevant of the
+structure that's out there and there are
+some significant advantages that you
+have in that in that you're not having
+to have the extra overhead weight of a
+client installed on those remote servers
+having to constantly communicate back to
+the master environment so let's step
+through the architecture that you would
+have for an anible environment so when
+you're setting up an anible environment
+the first thing you want to do is have a
+local machine and the local machine is
+where you're going to have all of your
+instruction and and really the power of
+the control that you'd be pushing out to
+the remote server so the local machine
+is where you're going to be starting and
+doing all of your work connected from
+the local machine are all the different
+nodes pushing out the different
+configurations that you would set up on
+the local machine the configurations
+that you would write and you would write
+those in code are within a module so you
+do this on your local machine for
+creating these modules and each of these
+modules is actually consistent playbooks
+the local machine also has a second job
+and that job is to manage the inventory
+of the nodes that you have in your
+environment the local machine is able to
+connect to each of the different nodes
+that you would have in your Hardware
+Network through SSH client so a secure
+client let's dig into some of the
+different elements within that
+architecture and we're going to take a
+first look at playbooks that you would
+write and create for the anable
+environments so the core of anable is
+the Playbook this is where you create
+the instructions that you write to
+define the architecture of your Hardware
+so the Playbook is really just a set of
+instructions that configure the
+different nodes that you have and each
+of those set of instructions is written
+in a language called yaml and this is a
+standard language used for configuration
+server environments did you know that
+yaml actually stands for yaml a markup
+language let's just a little tidbit to
+hide behind your ear so let's have a
+look or one of these playbooks it looks
+like and here we have a sample yamamo
+script that we've written so you start
+off your yamama script with three dashes
+and that integrates the start of a
+script and then the script itself is
+actually consistent of two distinct
+plays at the top we have play one and
+below that we have play two within each
+of those plays we Define which nodes are
+we targeting so here we have a web
+server in the top play and in the second
+play we have a database server that
+we're targeting and then within each of
+those server environments we have the
+specific tasks that we're looking to
+execute so let's step through some of
+these tasks we have an install patchy
+task we have a starter patchy task and
+we have an install MySQL task and when
+we do that we're going actually execute
+a specific set of instructions and those
+instructions can include installing
+Apache and then setting the state of the
+Apache environment or starting the
+Apache environment and setting up and
+running the MySQL environment so this
+really isn't too complicated and that's
+the really good thing about working with
+Theo is it's really designed to make it
+easy for you as an operations lead to be
+able to configure the environments that
+you want to consistently create so let's
+take a step back though we have two
+hosts we have web server and dat datase
+server where do these names come from
+well this takes us into our next stage
+and the second part of working with
+anible which is the inventory management
+part of anible so the inventory part of
+anible is where we maintain the
+structure of our Network environment so
+what we do here is part of the structure
+and creating different nodes is we had
+to create two different nodes here we
+have a web server node and a database
+server node and under web we server node
+we actually have the names that were
+actually pointed to specific machines
+within that environment so now when we
+actually write our scripts all we have
+to do is refer to either web server or
+database server and the different
+servers will have the instructions from
+the yamas script executed on them this
+makes it really easy for you to be able
+to just point to new services without
+having to write out complex instructions
+so let's have a look at how anible
+actually works in real world so the real
+world environment is that you would have
+the anible software installed on a local
+machine and then it connects to
+different nodes within your network on
+the local machine you'll have your first
+your playbook which is the set of
+instructions for how to set up the
+remote nodes and then to identify how
+you're going to connect to those nodes
+you'll have an inventory we use secure
+SSH connections to each of the servers
+so we are encrypting the communication
+to those servers we're able to grab some
+basic facts on each server so we
+understand how we can then push out the
+Playbook to each server and configure
+that server remotely the end goal is to
+have an environment that is consistent
+so this asks you a simple question what
+are the major opportunities the anable
+has over chef and puppet really like to
+hear your answers in the comments below
+pop them in there and we'll get back to
+you and really want to hear how you feel
+that anible is a stronger product or
+maybe you think it's a weaker product as
+it compares to other similar products in
+the market here's the bonus we're going
+to talk a little bit about anible Tower
+so anible Tower is an extra product that
+red hat created that really kind of puts
+the cherry on the top of the ice cream
+or is the icing and on your cake anable
+by itself is a command line tool however
+anable Tower is a framework that was
+designed to access anible and through
+the anible tower framework we now have
+an easyto use guey this really makes it
+easy for non-developers to be able to
+create the environment that they want to
+be able to manage in their devops plan
+without having to constantly work with
+the command prompt window so instead of
+opening up terminal window or command
+window and writing out complex
+instructions only in text you can now
+use drag and drop and mouse click
+actions to be able to create your
+appropriate playbooks inventories and
+pushes for your nodes all right so we've
+talked a lot about Ansel let's take a
+look at a specific company that's using
+anel today and in this example we're
+going to look at hoot Suite now hoot
+Suite if you've not already used that
+their products and they have a great
+product hoot is a social media
+management system they are able to help
+with you managing your pushes of social
+media content across all of the popular
+social media platforms they're able to
+provide the analytics they're able to
+provide the tools that marketing and
+sales teams can use to be able to assess
+a sentiment analysis of the messages
+that are being pushed out really great
+tool and very po popular but part of
+their popularity drove a specific
+problem straight to hoot Suite the
+challenge they had at hotu is that they
+had to constantly go back and rebuild
+their server environment and they
+couldn't do this continuously and be
+consistent there was no standard
+documentation and they had to rely on
+pure memory to be able to do this
+consistently imagine how complex this
+could get as you're scaling up with a
+popular product that now has tens of
+thousands to hundreds of thousands of
+users this is where ano what came in and
+really helped the folks over at
+HootSuite today the devops team at
+HootSuite write out playbooks that have
+Specific Instructions that Define the
+architecture and structure of their
+Hardware nodes and environments and are
+able to do that as a standard product
+instead of it being a problem in scaling
+up their environment they now are able
+to rebuild and create new servers in a
+matter of seconds the bottom line is
+anible has been able to provide hoot
+Suite with it automation consistent
+configuration and free out time from the
+operations team so that instead of
+managing servers they're able to provide
+additional new value to the company a
+very warm welcome to all our viewers I'm
+Angeli from Simply learn and today I'll
+be taking you you through a tutorial on
+anible so anible is currently the most
+trending and popular configuration
+management tool and it's used mostly
+under the devops approach so what will
+you be learning today you learn why you
+should use anible what exactly is anible
+the anible architecture how anible works
+the various benefits of anible and
+finally we'll have a demo on the
+installation of Apache or the httpd
+package on our client systems we'll also
+be hosting a very simple web page and
+during this demo I'll also show you how
+you can write a very simple playbook in
+yamon and your inventory file so let's
+begin why should you use anible let's
+consider a scenario of an organization
+where Sam is a system administrator Sam
+is responsible for the company's
+infrastructure a company's
+infrastructure basically consists of all
+its systems this could include your web
+servers your database servers the
+various repositories and and so on so as
+a system administrator Sam needs to
+ensure that all the systems are running
+the updated versions of the software now
+when you consider a handful of systems
+this seems like a pretty simple task Sam
+can simply go from system to system and
+perform the configurations required but
+that is not the case with an
+organization is it an organization has a
+very large infrastructure it could have
+hundreds and thousands of systems so
+here is where Sam's work gets really
+difficult not only does it get tougher
+Sam has to move from system to system
+performing the same task over and over
+again this makes Sam bored not just that
+repeating the same task leaves no space
+for Innovation and without any ideas or
+innovation how does the system grow and
+the worst of it all is manual labor is
+prone to errors so what does Sam do well
+here is where anable comes in use with
+anable Sam can write simple quotes that
+are deployed onto all all the systems
+and configure them to the correct States
+so now that we know why we should use an
+let's look at what exactly is anible
+anible is an IT engine that automates
+the following tasks so first we have
+orchestration orchestration basically
+means bringing together of multiple
+applications and ensuring an order in
+which these are executed so for example
+if you consider a web page that you
+require to host this web page stores all
+its values that it takes from the user
+user into a database so the first thing
+you must do is ensure that the system
+has a database manager and only then do
+you host your web page so this kind of
+an order is very crucial to ensure that
+things work right next an will automate
+configuration management so
+configuration management simply means
+that all the systems are maintained at a
+consistent desired State other tools at
+automate configuration management
+include puppet and Chef and finally
+anible automates deployment deployment
+simply means the deploying of
+application onto your servers of
+different environments so if you have to
+deploy an application on 10 systems with
+different environments you don't have to
+manually do this anymore CU anible
+automates it for you in fact anible can
+also ensure that these applications or
+the code are deployed at a certain time
+or after regular intervals now that we
+know what exactly anible is let's look
+at anel's architecture anible has two
+main compon compents you have the local
+machine and you have your note or the
+client machine so the local machine is
+where the system administrator sits here
+she installs anible here and on the
+other end you have your node or the
+client systems so in case of anible
+there's no supporting software installed
+here these are just the systems that
+require to be configured and they are
+completely controlled by the local
+machine at your local machine you also
+have a module a module is a collection
+of your configuration files and in case
+of anable these configuration files are
+called playbooks playbooks are written
+in yaml yaml stands for yaml ain't a
+markup language and it is honestly the
+easiest language to understand and learn
+since it's so close to English we also
+have the inventory the inventory is a
+file where you have all your nodes that
+require configuration mentioned and
+based on the kind of configuration they
+required they also group together so
+later in the demo we'll have a look at
+how the Playbook and the inventory is
+written and that will probably make it
+clearer so of course the local machine
+needs to communicate with the client and
+how is this done this is done through
+SSH ssh is your secure shell which
+basically provides a protected
+Communication in an unprotected
+environment okay so we saw the various
+components of anible now how does anible
+exactly work you have your local machine
+on one end this is where you install
+anible if you have gone through any
+previous material on anible you would
+have come acoss across the term
+agentless often being associated with
+this tool so this is what agentless
+means you're installing anible only on
+your local machine and there's no
+supporting software or plug-in being
+installed on your clients this means
+that you have no agent on the other end
+the local machine has complete control
+and hence the term agentless another
+term that you would come across with
+anable is push configuration so since
+the local machine has complete control
+here it push PES the playbooks onto the
+notes and thus it's called a push
+configuration tool now the playbooks and
+the inventory are written at the local
+machine and the local machine connects
+with the notes through the SSH client
+this step here is optional but it's
+always recommended to do so it's where
+the facts are collected so facts are
+basically the current state of the node
+now all this is collected from the node
+and sent to the local machine so when
+the Playbook is executed the task
+mentioned in the Playbook is compared
+against the current status of the note
+and only the changes that are required
+to be made further are made and once the
+playbooks are executed your nodes are
+configured to the desired States so as I
+mentioned before Anil is currently the
+most trending tool in the market under
+the configuration management umbrella so
+let's have a look at the various
+benefits of anible which gives it this
+position well anible is agentless it's
+efficient it's flexible simple it
+important and provides automated
+reporting how does it do all this let's
+have a look at that agentless as I
+already mentioned before you require no
+supporting software or Plugin installed
+on your node or the client system so the
+master has complete control and
+automatically this means that anable is
+more efficient cuz now we have more
+space in our client and notes systems
+for other resources and we can get
+anible up and running real quick anable
+is also flexible so an infrastructure is
+prone to change very often and anable
+takes no amount of time to adjust to
+these changes anable cannot get any
+simpler with your playbooks written in a
+language such as yaml which is as close
+to English as you can possibly get IR
+important basically means that if you
+have a Playbook which needs to be run n
+number of systems it would have the same
+effect on all of these systems without
+any side effect and finally we have
+automated reporting so in case of anible
+your playbook has number of tasks and
+all these tasks are named so whenever
+you run or execute your playbook it
+gives a report on which tasks ran
+successfully which failed which clients
+were not reachable and so on all this
+information is very crucial when you're
+dealing with a very large infrastructure
+and finally we reach the most exciting
+part of our tutorial the Hands-On before
+we move on to the actual handsone let me
+just brief you through what exactly
+we'll be doing so I'll be hosting two
+virtual boxes both both Cent 7 Operating
+Systems one would be my local machine
+and other my node or the client machine
+so on my local machine first I'll
+install anible we then write the
+inventory and the Playbook and then
+simply deploy this Playbook on the
+client machine there's just one thing
+that we need to do is that we need to
+check if the configurations that we
+mentioned in our Playbook are made right
+so we'll now begin our demo this is my
+Oracle virtual box here I have my master
+system which is the local machine and
+this is the client machine so let's have
+a look at these two machines this is my
+client machine the terminal is open
+right now so the client machine terminal
+has a black background with white text
+and the Master machine terminal has a
+white background with black text just so
+you can differentiate between the two so
+we'll start at the Master machine the
+first thing to do is we need to install
+our anible so yum
+install anible hyphen Y is the command
+to do
+so
+so this might take some
+time yeah so anable is installed the
+next step we go to our host file so our
+host file here is basically the
+inventory it's where you'll specify all
+your nodes in our case we just have one
+node
+that's the path to your host
+file as you'll see everything here is
+commented so just type in the group for
+your client notes so I'm going to name
+it anable
+[Music]
+clients and here we need to type the IP
+address of a client machine so my client
+machine's IP address is
+192 168
+2127 so before you come to this it's
+advised that you check the IP address on
+your client machine the simple command
+for that is if config now once you type
+the IP address put a space and here we
+need to mention the username and the
+password for our client so I'll be
+logging in as the root
+user so this is the
+password and then the
+user which is Root in my
+case that's it now you can save this
+file just clear the
+screen next we move on to our Playbook
+we need to write The
+Playbook so the extension for our
+Playbook is yml which stands for
+yaml and as you can see here I have
+already written my playbook but I'll
+just explain to you how this is done so
+a yaml file always begins with three
+dashes this indicates the start of your
+yaml
+file now the first thing is you need to
+give a name to the entire Playbook so I
+have named it sample book host is
+basically where this would be executed
+so as we saw earlier in our inventory I
+mentioned client group name as anable
+clients so we use the same name
+here the remote user is the user you'll
+be using at your client so in my case
+that's root and become true is basically
+to indicate that you need to set your
+privileges at rote so that's called a
+privilege escalation now A playbook
+consists of tasks so we have here three
+tasks the first task I've named it to
+install httpd so what we doing here is
+we are installing our httpd package
+which is basically the Apache server and
+we're installing the most latest version
+of it hence the state value is latest
+the next task is running httpd so for
+the service the name is httpd because
+that's the service we need to start
+running and the state is started our
+next task is creating content so this is
+the part where we are creating our web
+page so copy because this is the file
+that will be created at the client the
+content will be welcome and the
+destination of the file will be V www
+HTML index.html as you know this is like
+a default path that we use to store all
+our HTML files now as you can see here
+there's quite a lot of indentation and
+when it comes to yaml although it's very
+simple to write and very easy to read
+the indentation is very crucial
+so the first Dash here represents the
+highest stage that is the name of the
+Playbook and all the dashes under task
+are slightly shifted towards the right
+so if you have two dashes at the same
+location they basically mean that they
+are siblings so the priority would be
+the same so to ensure that all your
+tasks are coming under the tasks label
+make sure they are not directly under
+name so yeah that's pretty much it so
+when you write your yaml file the
+language is pretty simple very readable
+indentation absolutely necessary make
+sure all your spaces are correctly
+placed we can now save this
+file next thing we need to check if the
+syntax of our yaml file is absolutely
+right because that's very crucial so the
+command to check the syntax of the yaml
+file is anable
+Playbook the name of your
+playbook
+syntax
+check so we have no syntax errors which
+is why the only output you receive is
+sample. yml which is the name of your
+playbook so our Playbook is ready to be
+executed the command to execute the
+Playbook is anle
+Playbook and the name of your
+playbook so our playbooks executed as
+you can see here Gathering facts that's
+where all the facts of the note that's
+the present state of the note is
+collected and sent to the local machine
+so it's basically to check that if the
+configuration changes that we are about
+to make is already made so it's not made
+we do not have the httpd package
+installed on our node so this is the
+first change that's made also if it's
+not installed of course it's not running
+that's a second change that's made so
+it's put into the Run running State and
+a final task which is create content is
+under the okay State this means that the
+contents already present in the client
+machine so I made it this way so that
+you can at least see the different
+states that's present so over here we
+have okay four so four things are all
+fine the facts are gathered two things
+are changed and one is already present
+two changes are
+made zero clients are unreachable and
+zero tasks have failed so this is the
+documentation that I was referring to
+previously that anible provides
+automatically and is very useful as you
+can see so our next step we need to just
+check on our client machine if all the
+changes that we desired are made so
+let's move to our
+client so this is my client machine so
+to check this since we are installing
+the httpd package and hosting a web page
+the best way to do it is open your
+browser and type in Local
+Host so there you go your Apache server
+is installed and your web page is
+hosted so let's go through the scenario
+of why you'd want to use these tools so
+let's meet Tim he's our system
+administrator and Tim is a happy camper
+putting and working on all of the
+systems in his network but what happens
+if a system fails if there's a fire a
+server goes down well Tim knows exactly
+what to do he can fix that fire really
+easily the problems become really
+difficult for Tim however if multiple
+servers start failing particularly when
+you have large and expanding networks so
+this is why Tim really needs to have a
+configuration management tool and we
+need to now decide what what would be
+the best tool for him because
+configuration management tools can help
+make Tim look like a superstar all he
+has to do is configure the right codes
+that allows him to push out the
+instructions on how to set up each of
+the servers quickly effectively and at
+scale all right let's go through the
+tools and see which ones we can use the
+tools that we're going to go through are
+Chef puppet anpal and salt stacks and we
+have videos on most of the software and
+services that you can go and view to get
+an overview or a deep dive in how those
+products work so let's go and get to
+know our contestants so our first
+contestant is Chef and Chef is a tool
+that allows you to configure very large
+environment it allows you to scale very
+effectively across your entire ecosystem
+and infrastructure Chef is by default an
+open-source code um and one of the
+things that you find as a consistent
+metaphor for the tools that we recommend
+on simply learn is to use open-source
+code the code itself is actually written
+in the language of Ruby and Earline and
+it's really designed for heterogeneous
+infrastructures that are looking for a
+mature solution the way that Chef works
+is that you write recipes that are
+compiled into cookbooks and those
+cookbooks are the definition of how you
+would set up a node and a node is a
+selection of servers that you have
+configured in a specific way so for
+instance you may have Apache Linux
+servers running or you may have a MySQL
+server running or you may have a python
+server running and Chef is able to
+communicate back and forth between the
+nodes to understand what nodes are being
+impacted and need to have instructions
+sent out to them to correct that impact
+you can also send instructions from the
+server to the nodes to make a
+significant update or a minor update so
+there's great communication going back
+and forth if we look at the pros and and
+cons the pros for Chef is that there is
+a significant following for chef and
+that has resulted in a very large
+collection of recipes that allow you to
+be able to quickly stand up environments
+there's no need for you to have to learn
+complex recipes the first thing you
+should do is go out and find the recipes
+that are available it integrates with
+Git really well and provides for really
+good strong Version Control some of the
+conso are really around the learning
+speed it takes to go from beginner user
+with Chef to being an expert there is a
+considerable amount of learning that has
+to take place and it's compounded by
+having to learn Ruby as the programming
+language and the main server itself
+doesn't really have a whole lot of
+control it's really dependent on the
+communication throughout the whole
+network all right let's look at our
+second Contender puppet and puppet is
+actually in many ways very similar to
+Chef there are some differences but
+again puppet is designed to be able to
+support very large heterogeneous
+organization it is also built with Ruby
+and uses DSL for writing manifests so
+there are some strong similarities here
+to Chef as with a chef there is a Master
+Slave infrastructure with puppet and you
+have a master server that has the
+manifests that you put together in a
+single catalog and those catalogs are
+then pushed out to the clients over an
+SSL connection some of the pro
+with puppet is that as with Chef there
+is a really strong Community around
+puppet and there's just a great amount
+of information and support that you can
+get right out of the gate it is a very
+well-developed reporting mechanism that
+makes it easier for you as an
+administrator to be able to understand
+your infrastructure one of the cons is
+that you have to really be good at
+learning Ruby again as with sha you know
+the more advanced tasks really need to
+have those Ruby skills and as with Chef
+the server also doesn't have much
+control so let's look at our third
+Contender here anable and so anable is
+slightly different it is the way that
+anible works is that it actually just
+pushes out the instructions to the
+server environment there isn't a client
+server or Master Slave environment where
+anible would be communicating backwards
+and forwards with its infrastructure it
+is merely going to push that instr
+instuctions out the good news is that
+the instructions are written in yaml and
+yaml stands for yaml a markup language
+yaml is actually pretty easy to learn if
+you know XML and XML is pretty easy if
+you know XML you're going to get yaml
+really well as does work very well on
+environments where the focuses are
+getting servers up and running really
+fast it's very very responsive and can
+allow you to move quickly to get your
+infrastructure up quick very fast when
+we're talking second and minutes here
+really really quick uh so again the way
+that anable works is that you put
+together a Playbook and an inventory or
+you have a Playbook so the way that
+anable works is that you have a Playbook
+and the Playbook it then goes against
+the inventory of servers and will push
+out the instructions for that Playbook
+to those servers so some of the pros
+that we have for anible we don't need to
+have an agent install on the remote
+nodes and servers it makes it easier for
+the configuration yaml is really easy to
+learn you can get up to speed and get
+very proficient with the ymo quickly the
+actual performance once you actually
+have your infrastructure up and running
+is less than other tools that we have on
+our list now I do have to add a provisor
+this is a relative less it's still very
+fast it's going to be a lot faster than
+individuals manually standing up servers
+but it's just not as fast as some of the
+other tools that we have on this list
+and yaml itself as a language while it's
+easy to learn it's not as powerful as
+Ruby Ruby will allow you to do things
+that at an advanced level that you can't
+do easily with the Amo so let's look at
+our final Contender here salt stack so
+salt stack is a CLI based tool it means
+that you will have to get your command
+line tools out or your terminal window
+out so you can actually manage the
+entire environment via salt sack the
+instructions themselves are based on
+python but you can actually write them
+in yaml or CSL which is really
+convenient and as a product it's really
+designed for environments that want to
+scale quickly and be very resilient uh
+the way that salt snap works is that you
+have a master environment that pushes
+out the instructions to what they call
+grains which is your network and so
+let's step through some of the pros and
+cons that we have here with salt stag so
+s is very easy to use once it's up and
+running it has a really good reporting
+me mechanism that makes your job as an
+operator in your devops environment much
+much easier the actual setup though is a
+little bit tougher than some of the
+other tools and and it's getting easier
+with the newer releases but it's just a
+little bit tougher and related to that
+is that sorts stack is fairly late in
+the game when it comes to actually
+having a graphical user interface for
+being able to create and manage your
+environment other tools such as anible
+have actually had a UI environment for
+quite some time all right so we've gone
+through all four tools let's see how
+they all stack up next to each other so
+let the race begin let's start with the
+first stage architecture so the
+architecture for most of our
+environments is a server client
+environment so for Chef puppet and salt
+snack so very similar architecture there
+the one exception is anible which is a
+client Only Solution so you're pushing
+out the instructions from a server and
+pushing them out into your netork networ
+and there isn't a client environment
+there isn't a two-way communication back
+to that main client for what's actually
+happening in your network so let's talk
+about the next stage ease of setup so we
+look at the four tools there is one tool
+that really stands out for ease of setup
+and that is anle it is going to be the
+easiest tool for you to set up and if
+you're new to having these types of
+tools in your environment you may want
+to start with anible just to try out and
+see how easy is to create automated
+configuration before looking at other
+tools now and so with that said Chef
+puppet and scec aren't that hard to set
+up either and you'll find there's
+actually some great instructions on how
+to do that setup in the online community
+let's talk about the languages that you
+can use in your configuration so we have
+two different types of language with
+both chef and answerable being
+procedural and that they actually
+specify at how you're actually supposed
+to do the task in your instructions with
+puppet and salt stack it's decorative
+where you specify only what to do in the
+instructions let's talk about
+scalability which tools scale the most
+effectively and as you can imagine all
+of these tools are designed for
+scalability that is the driver for these
+kind of tools you want them to be able
+to scale to massive organizations what
+do the management tools look like for
+our four contenders so again we have a
+two-way split with anible and sort stack
+of management tools are really easy to
+use you're going to love using them
+they're just fantastic to use with
+puppet and Chef the management tools are
+much harder to learn and they do require
+that you learn some either the puppet
+DSL or the Ruby DSL to be able to be a
+true master in that environment but what
+does interoperability look like again as
+you'd imagine with the similar to
+scalability interoperability with these
+products is very high in all four cases
+now let's talk about Cloud availability
+this is increasingly becoming more
+important for organizations as they move
+rapidly onto cloud services well both
+anable and Sal stack have a big fail
+here neither of them are available in
+the most popular Cloud environments and
+puppet and Chef are actually available
+in both Amazon and AIA uh we've actually
+just haven't had a chance to update our
+Chef link here but Chef is now available
+on Azure as well as Amazon so what does
+communication look like with all of our
+four tools so the communication is
+slightly different with them Chef has
+its own knife Tool uh whereas puppet
+uses SSL secure sockets layer and anible
+and sort stack use secure socket hashing
+SSH as their communication tool bottom
+line all four tools are very secure in
+their communication so who wins well
+here's the reality all four tools are
+very good and it's really dependent on
+your capabilities and the type of
+environment that you're looking to
+manage that will determine which of
+these four tools you should use the
+tools themselves are open source so go
+out and experiment with them there's a
+lot of videos our team has done a ton of
+videos on these tools and so feel free
+to find out other tools that we have
+then covered so you can learn very
+quickly how to use them but consider the
+requirements that you have and consider
+the capabilities of your team if you
+have Ruby developers or you have someone
+on your team that knows Ruby your
+ability to choose a broader set of tools
+becomes much more interesting if however
+you're new to coding then you may want
+to consider yamel based tools again the
+final answer is going to be up to you
+and we'll be really interested on what
+your DEC decision is please post in the
+comments below hi guys welcome to this
+video on the interview questions of
+configuration management tools chef
+anible and puppet Chef is a
+configuration management tool written in
+Ruby and erlang which provides
+continuous deployment increases system
+robustness and provides Cloud
+integration anible is another
+open-source software tool for
+provisioning configuration management
+and application deployment and puppet is
+a configuration management tool that can
+also be used as a deployment tool and
+implements infrastructure as a code in
+this video we have compiled the most
+important interview questions of
+configuration management tools chef
+anible and puppet that you might face in
+a devops interview so without further
+Ado let's get started so let's just get
+into the first section which is
+configuration management so one of the
+questions that you'll get asked right
+away is why do you have slsl
+certificates used for Chef really
+fundamentally your immediate answer
+should be security SSL provides for a
+very high level of private security and
+private and public key pairing this
+really is essential to ensure that you
+have a secure environment through out
+your entire network the second part
+should be that if you're using SSL and
+you're using the private public key
+model within SSL you're able to
+guarantee the systems on your network
+that the chef that you'll be able to
+validate that the nodes within your
+network that Chef is validating against
+actually are the real nodes themselves
+not imposters so you will also be asked
+um some questions um such as the
+following which of the following
+commands would you use to stop or
+disable the HTTP servers when the system
+boots and you'll typically get four
+responses and there'll be hash systemctl
+disable htpd do service or is it system
+disable htpd do service system disable
+httpd or the final option which is
+system CTL disable httpd dos service
+your answer should be the first one
+which is # system CLD disable
+httpservice so Chef comes with a series
+of tools that allow it to function
+effectively and one of the tools that
+you're going to be asked about is what
+is Test Kitchen and Test Kitchen is
+essentially a command line tool that
+allows you to be able to test out your
+cookbook before you actually deploy to a
+real node so some of the commands that
+you would use are for instance if you
+want to create an instance of Test
+Kitchen you would do kitchen create if
+you want to destroy an incense after you
+created it you do kitchen destroy and if
+you want to be able to combine multiple
+instances you would do kitchen converge
+so a question you'll get is around Chef
+is how does Chef apply differ from Chef
+client so fundamentally the difference
+between them is that Chef apply will
+valid Val the recipe that you're working
+on whereas Chef client looks to apply
+and validate the entire cookbook that's
+run in your server environment so one is
+focused on the recipe and the other is
+focused on the entire cookbook so there
+are some differences when you're working
+with different command lines so for
+instance when you're working with a
+puppets and you're working with one
+version of puppet and you want to do
+what is the command to sign a requested
+certificate the top example here is for
+puppet version 2.7 whereas the lower
+option here is for puppet version 3 and
+something to bear in mind when you're
+going through your interview process is
+that the tools that are used within a
+continuous integration continuous
+delivery devops model do vary and so you
+want to be able to talk knowledgeably
+about the different versions of the
+tools so that when you're talking to
+your interviewer you're able to show the
+Deep knowledge that you have which open
+source or Comm Community tools do you
+use to make puppet more powerful and
+essentially this question is going to be
+asking you to look beyond the core
+Foundation of puppet itself and so the
+three options you have is being able to
+track configurations with jir which you
+should be doing anyway but it's a great
+way to be able to clearly communicate
+the work that's been done with puppet a
+Version Control can be extended with G
+and then the changes should be passed
+through Jenkins so the three tools you
+want to be looking at integration with J
+git and Jenkins so what are the
+resources in pubit well fundamentally
+there are four the resources are a basic
+unit of any configuration management
+tool they are the features of the node
+they are the written catalog and the
+execution of the catalog on a node so as
+we dig deeper into puppet one of the
+things that you are likely to be asked
+regarding puppet is what is a class in
+puppet and so a class in puppet is
+really the name blocks in your manifest
+that contain the various configurations
+and this can include Services files and
+packages and we have on the screen here
+an example of what a class would look
+like when you write it out and you may
+want to memorize just one class don't
+memorize just a whole set of classes
+just memorize one the person that's
+interviewing you is just really looking
+for someone who has a working knowledge
+they're not looking for you to have
+memorized complete massive class classes
+but having one small class to be able to
+illustrate the experience you have is
+extremely valuable to the interviewer
+particularly if it's a technical
+interview so as we move into anable one
+of the things that you're going to be
+asked around anable is what is anable
+role so a rooll is an independent block
+of tasks and variable files and
+templates embedded with inside of the
+Playbook so example we have here on the
+screen actually shows you one role
+within a Playbook and in this role it is
+to install Tom Cat on a node again as
+with previous question within puppet of
+a class it's probably good to have
+memorize just one or two roles so you
+can talk knowledgeably about anable when
+you're having your interview so when
+you're working with anable when should
+you be using the curly brackets and so
+just as a frame of reference uh there's
+often two different ways that these kind
+of brackets are referred to now they're
+either referred to as French brackets or
+curly brackets ET either way and what
+you'll be wanting to ask is when would
+you use these specific types of brackets
+within an support and really the answer
+comes down into two things one is that
+it makes it easier to distinguish
+strings and undefined variables and the
+second is for putting together
+conditional statements when you are
+actually using variables and the example
+we have here is this prints the value of
+and we have Fu and we have to then put
+in the variable conditional statement of
+fu is defined as something so what is
+the best way to make content reusable
+and redistributable with anable and
+there's really essentially three the
+first is to include a subm module or
+another file in your playbook the second
+is to import an improvement of an
+include which ensures that a file is
+added only once and then the third is
+roles to manage the tasks within the
+Playbook so a question you will be asked
+is provide a differences between anable
+and puppets so if we look at anel it's a
+very easy agentless installation it's
+based on python you can configure it
+with yaml and there are no support for
+Windows in contrast puppet is an agent
+based installation it's written in Ruby
+the configuration files are written in
+DSL and it has support on all popular
+operating systems so we dig deeper into
+the actual architecture and it has a
+much more simple architecture and it's
+definitely a pushon architecture and in
+contrast to puppet it's a more
+complicated but more sophisticated
+architecture where you're able to have a
+complete environment managed by the
+puppet architect so here we wrap up the
+answerable course for beginers if you
+have any questions please feel free to
+add it in the comment section and our
+experts will be happy to help you do
+like share and subscribe to Simply learn
+to never miss any updates from us till
+then thanks for watching staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

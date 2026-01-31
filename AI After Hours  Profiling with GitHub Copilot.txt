@@ -1,0 +1,399 @@
+hey you're watching after hours with the
+visual studio team and I'm really
+excited about this episode because when
+I'm trying to improve the runtime and
+memory performance of my code base
+there's always been this really big gap
+between understanding the profiling
+results and actually improving my code
+uh I'm Aaron I'm a product manager for
+get up copilot in visual studio and
+we're joined by herada hi I am har I'm a
+product manager at visual Studios
+profiling team and Nick and I'm Nick
+kinsky I'm the dev lead for the visual
+studio
+profiler yes so today for this podcast
+we will be going deep dive into
+engineering behind the GitHub copilot
+features in profiling and then before
+that we will have a quick demo for you
+to set the
+stage so here I am in Visual Studio
+2022 and the entry to AI helping in your
+profiling is actually the same as before
+this should feel really familiar because
+it's the the bugger it's the profiler
+that you know and love but
+wait what's this we see that there's no
+top insights um because previously we
+showed a version of this feature where
+you had to have a top insight for
+co-pilot to help you but I'm seeing now
+that even without a top Insight that
+we're able to provide assistance so R
+what does ask co-pilot do here yeah so
+this uh this is a new option which our
+users will have this is a Asko pilot
+button where users can when when user
+click it and co-pilot will actually use
+the information from the profiling um
+insights so they will use the top
+functions the hot part and other
+information provided they uh the copilot
+will also go look into the source code
+and then we'll generate some generic
+suggestions based on all these details
+which will help optimize your code these
+is more like a human readable format for
+your insights human readable format
+insights
+sorry yeah and then once you get to this
+point uh we take those suggestions from
+co-pilot and then we generate those top
+insights like you would normally see on
+um traces that trigger one of these top
+insights and then from here it gives you
+a very actionable issue that uh it tells
+you that uh what the issue is it tells
+you a potential description of the issue
+and then from there you can go the
+normal ask co-pilot route where you can
+either jump into the source code or you
+can just hit ask co-pilot at which case
+it'll take you over to the source code
+and then we'll ask co-pilot based on
+this source code based on this
+performance data how would you go about
+optimizing this method to resolve this
+specific issue
+gotcha so this is so we've extended what
+we offered before because now we can use
+AI based understanding of the
+overall um profiling
+result exactly exactly and it's almost
+as if you have uh what you can imagine a
+co-pilot performance expert with you
+that's actually looking at the data and
+trying to help guide you through to
+specific regions of your um application
+to help you optimize and get the most
+amount of benefit with the time that you
+invest here I feel like whenever I use
+an AI tool I always wonder how much it
+actually knows about my code and my
+scenario so we'll have to get into that
+more in a bit but I'm also seeing a new
+analyze method with co-pilot button on
+this call tree so it sounds like hey
+even if you know I don't ask for a top
+ins sight or there's no top Insight I
+can kind of Click through my call tree
+and ask for an analysis of my method to
+better understand how it works kind of
+explaining the code which we know is a
+really popular featuring co-pilot in
+general but also that adds the
+performance data that we have here right
+exactly and this is great if you're
+let's say you're working on a feature
+and you've gone and you've done your
+duty due diligence to actually go and
+profile your application after you've
+added your feature um your new feature
+might not show up in the top functions
+or in the hot path but you still might
+be interested in while I'm here and I'm
+authoring this code what sort of
+optimizations can I do in it well you
+can go and you can find your function in
+the call tree you can dig into it and
+then once you find your function you can
+then turn around and ask co-pilot okay
+we have this performance data we have
+this function how do I go about and
+optimize this even further and from
+there it can guide you on further
+optimizations you can
+do so before it was just hey the
+profiler already has a top Insight you
+can ask it to explain what's happening
+and help you make it actionable but now
+it's hey you can always have co-pilot
+generate top
+insights based on the performance
+profiling results and even if your a
+method or function interested in is not
+in the hot path you can still go through
+the call tree and ask for an analysis
+and recommendations
+for that exactly
+exactly so diving a little deeper into
+how this AI that we built by combining
+Visual Studio awareness of your program
+State and your profiling results with
+get up Copilot
+how does this work better than a web
+search and chat
+GPT yeah it's a great question so a lot
+of the web searches with chat GPT you
+can almost think of this as like a code
+review where it's looking at your code
+and it's trying to oide best practices
+to go ahead and try and optimize your
+code whereas what we're doing here is we
+can do that same review but we also have
+all of this performance information that
+we've captured so we can funnel that
+into the llm and we can give it so much
+more uh Rich context in state and we can
+really drive it towards these are the
+lines in the method that are the most
+expensive please Focus your
+optimizations here so that we're going
+to get the most amount of impact for the
+optimization that we're
+doing so other AIS aren't aware of this
+line by line performance or the um or
+should I say the CPU or memory usage of
+each line of code and with the web
+search it's always hey there was this
+message and I still have to translate
+what someone wrote on say stack Overflow
+or YouTube about this message and figure
+out how that applies to my code exactly
+exactly and it not that those sorts of
+optimizations are bad like we all know
+that repeatedly concatenating strings in
+a method is probably going to be
+expensive we should use a string Builder
+but now that we have the actual
+performance information we we know this
+is where you're spending the most amount
+of time and if we're going to focus our
+optimizations this is where you should
+focus it and then we can fill that
+context over to the llm as well so that
+when it's doing its optimizations we can
+really dial it down into where it's
+going to have the most amount of impact
+so when you talk about context and the
+context package that we as Visual Studio
+are sending get up co-pilot what are
+what did we find helpful to add to the
+context
+package so probably the most helpful
+part is the source code concatenated
+with all of the performance information
+so that we could really tell uh the llm
+you know at line 37 there is a substring
+please Focus your investigation on that
+as that is what's taking 25% of the CPU
+in this function and then it knows to
+optimize specifically that instead of
+potentially like a link query that's
+earlier that maybe that isn't what's
+actually impacting the time in that
+method gotcha and speaking with other
+teams we know that in some scenarios
+that providing too much context
+sometimes leads to a worse result um
+have you had to make any decisions about
+context to
+exclude yeah it's another great question
+great point is uh we tried to explore
+kind of the callers and the Coles who's
+calling into my method and then who in
+My Method am I calling and can we fill
+in the source code there as well so that
+we could try and give it even more
+context as we started kind of expanding
+this we found that we were just
+supplying so much state that it was
+trying to micro optimize across
+different methods and it really wasn't
+having a very um it wasn't returning a
+good set of results for the optimization
+so we've really tried to focus it down
+into how do I specifically optimize this
+one method now it is interesting to see
+like in the future could we get better
+with the callers and call E because then
+you can almost think we're not just
+optimizing a method but we could start
+making larger architectural um changes
+to your code uh but right now we just
+haven't been as successful with that and
+that's why we've really tried to focus
+it in and narrow it in on this one
+method gotcha so zooming out a little
+bit uh what point should I think about
+using ask
+co-pilot in the profiler do we know from
+user studies and other customer research
+um that developers prefer to use this
+feature at this point in their
+flow so right now we're noticing that
+it's really quick to kind of just ask
+co-pilot you know based on what you're
+seeing what do you suggest and it it's
+gotten to the point where we're almost
+considering just enabling this by
+default we automatically ask co-pilot
+because it gives good suggestions and
+then if you're not interested in the
+suggestions you don't have to follow
+them anymore you can keep going with
+your performance investigation like you
+were but by following some of these
+suggestions you might actually learn a
+little bit more about uh writing
+performant code in the language that it
+is that you're
+optimizing gotcha so it sounds like
+really as soon as your recommendation
+and what we know from customer studies
+is
+as soon as you run your
+profiler if you've got GI up co-pilot
+installed in this feature enabled that
+you should really try using it to more
+quickly help you get a good
+understanding of um the performance of
+your
+scenario yeah totally I think as
+mentioned in the start uh this is kind
+of your personal performance
+expert gotcha and so what's left to
+build can I use this
+today so this is going to be shipping in
+our uh 1711 exper uh release uh and so
+you you should already see the um ask
+co-pilot for the specific insights that
+the uh profiler highlights and then this
+more ask co-pilot to generate insights
+will be coming in
+17711 uh and so you'll be able to start
+using
+that gotcha
+so we've talked about you know room for
+improvement with our analysis for
+callers and col e where else do we think
+there's room for improvement today this
+is still like a new experience right
+like I think we will get to know more
+firstand experience as you guys tried
+out and then have uh like a real real
+feedback from our customers and um
+that's what I was going to try to say if
+that's okay I see so so it's sounds like
+there's really an ask that for anyone
+who's trying AI features with ghetto
+co-pilot in profiling that any feedback
+about scenarios that worked really well
+or didn't work very well would be really
+helpful yes give it a try uh AI is new
+for everyone so we all are trying to
+learn here and we all are trying to see
+how we can make it better for and useful
+for everyone so yeah give it a try see
+and provide us the honest feedback you
+have right and the way we think how do
+you think about success here when as an
+outsider to this feature team I feel
+like success
+is giving is reducing the amount of time
+it takes for a developer to feel
+comfortable with the performance of
+their
+code or maybe it's the time between
+running your profiler and actually
+improving your
+code like how do how do you two think
+about this I think that those are both
+good measures of success my measure of
+success has always been how can I
+democratize profiling for everyone I
+want to really Empower any developer
+that's in Visual Studio to run the
+performance profiler to get some
+insights about the code that it is that
+they're profiling and then be able to
+make a positive change and improve the
+performance uh a lot of times we we have
+these kind of performance experts who
+are on the team who have been here
+forever and they know all the various
+tips and tricks and things to do um and
+performance profiling has been kind of
+gated Behind These experts I would love
+to see it where more customers are
+running the profiler they're starting to
+see some of this data and they're using
+co-pilot to help them learn about
+performance investigations and learn
+about other areas that they can improve
+the performance and so you can almost
+imagine a new developer on a team can
+take the tool they can run a performance
+analysis on their code base ideally they
+can have a quick turnaround time with
+co-pilot and see oh hey I can add this I
+can make a change here I should save
+hopefully five or 10 percent and then
+have that impact on that team
+soon any comments
+s uh like what is success to you I would
+say I would add to what Nick mentioned
+uh if uh if a new developer is able to
+use a profiler without any assistance
+you know not not even without any
+assistant it's super easy for them to
+learn from co-pilot and then use those
+tools and even improve the performance
+and overall health of their application
+by certain percentage I would say that's
+success for me as a product manager
+gotcha so improving performance
+more
+developers using profiling and feeling
+comfortable with profiling and learning
+from profiling sounds like pretty
+awesome
+Vision
+yeah okay let's
+see and so when we think about profiling
+what can you tell me a little bit about
+what the team's thinking about
+next yeah I I think one of the biggest
+things that the team is looking forward
+to in the future is this idea of being
+able to Benchmark various uh components
+of your product and then be able to uh
+run performance analysis on those
+benchmarks and then ensure that once you
+make those performance improvements you
+don't necessarily regress them in the
+future we've seen lots of users kind of
+Leverage unit tests in this way uh they
+have unit tests we have our profile unit
+test scenario they can improve the
+performance and then then it they have a
+nice small reproducible Benchmark that
+they can optimize and measure repeatedly
+and gain that performance now we want to
+see how do we take and deliver a similar
+scenario as well as then put that in
+place as an artifact so that users can
+protect that performance that they've
+gained and not lose that in the future
+to various changes in the
+product that's pretty exciting so
+looking forward to any progress on in
+the benchmarking space looking forward
+to customer feedback as we roll out
+profiling insights where users can click
+ask co-pilot for insights on their
+overall profile or or on a
+method yeah cool thanks for your time
+cool thank you

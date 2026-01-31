@@ -1,0 +1,671 @@
+Oh perfect yes whoo perfect can't you
+know what if we push enough buttons and
+something will happen right all right
+now take it away let's talk about graph
+QL and data core excellent
+I'd like to basically talk about graph
+quality in sort of an introduction of it
+in dotnet core most of the talks I've
+seen around the internet mostly focus on
+this around sort of the dot no dqo
+system I thought it'd be good to talk
+about it from a sort of a a dotnet
+perspective so we're going to talk about
+today we're going to talk about sort of
+the basics of graph QL in terms of the
+introduction to why we want to use it
+and how it kind of works and then we'll
+talk about how to sort of build up
+within a dotnet core ecosystem and using
+sort of the hot chocolate graphical
+library so let's get into it
+my name is Nigel Sampson I work at a
+company called push Bay here in New
+Zealand and we're using graphical across
+the number of our micro services and
+applications my github handle and
+Twitter handle there so if I don't get a
+chance to answer your questions later on
+hit me up on Twitter so does graph dwell
+it's a specification originally written
+by Facebook really quick can you close
+you a little box over Skype on the upper
+right-hand side done excellent so as I
+said a specification for querying data
+from the service Facebook originally
+wrote this internally and initiated as
+an open source they also shared a
+implementation in JavaScript of that
+specification and since then it's been
+picked up by the open source community
+and there's a number of libraries almost
+almost every language that support graph
+QL
+in.net we've got probably two major
+libraries are likely to see one is hot
+chocolate and the other one there's one
+called a graphical dotnet so what's
+really interesting my graph QL is that
+it supports a set of strongly typed
+schema with a curable API so this means
+that you can actually look at the schema
+of a service you're gonna know what that
+are you're gonna get back from it you
+know what fields it has and what sort of
+types you expect from it and the
+graphical server actually enforces that
+type specification
+so you're not going to have a problem
+where the or the docks say one
+thing in the service actually returns
+something else in terms of databases or
+storage graphical spec has absolutely
+nothing to do with it you can store your
+data in anything it's a database the
+graph database relational database flat
+files or even hard coded or even
+delegate them out to risk calls in other
+ways so let's get into it it's an actual
+demo so the tall I've got in front of me
+here is one called insomnia what this is
+is basically a normal sort of request at
+all much like postman where you can use
+it to send requests to a server I'm
+using it because it's got some excellent
+graphic Yass support so for this
+scenario we're going to talk about this
+idea of you know a blog most of us
+understand that domain what a lot of
+blog in terms of posts authors comments
+images etc so for our normal front page
+scenario we're going to want to click
+get the collection of posts we're going
+to get the date the title the author
+important thing is we don't want things
+like say the HTML content of their post
+for the front page scenario so on the
+left here is the the graphic your query
+so this is what we end up hosting to our
+server in orders up here we're actually
+just sending this to a single end point
+to /ql and we post this query and on the
+back here on the right hand side as the
+results we get so as you can see at the
+top we're marking this as a query and
+we're going to query from the posts
+field on top of the posts in point and
+that's gonna return a collection of
+posts and from each post we're gonna ask
+for the ID the title other fields the
+image which in the URL for that image
+the author and their name it's you
+notice on the right hand side here the
+data that we get back is in the same
+shape or structure as the fields on the
+left so we can send this we get back the
+data nice and easily what some really
+important here is that we're we're
+deliberately querying for the fields we
+want the specification for graphic or
+has no way to say get me all the fields
+all the equivalent of slick star and
+that's really important from her from a
+huge point of view and we'll get into
+reasons why in a minute
+so another scenario for a slightly more
+advanced query the users clicked on a
+post and we want to actually I get the
+details for that post and shove it in a
+page so again it's a query and recurring
+from the post fields now rather than
+posts and this post takes an argument
+called ID and what we're doing here is
+called a variable so at the top here
+we've declared a post ID variable of
+type ID and here we're using that
+variable let's slip the post we're
+asking for the title of author and name
+again but this time we're asking for the
+HTML and the comments on that post down
+here in the bottom insomnia is where
+we're actually providing the value for
+that variable the post ID so why we want
+to use this idea of variables is that
+what that means is that query up the top
+here can be static it won't change in
+terms of usage we can have this this
+query then stored in some sort of
+resource document file whatever that
+becomes constant and it's only the
+variables that need to change this means
+we're not trying to build up our query
+via strings how only think like that
+which could be susceptible to some sort
+of injection problem again image this
+time were actually providing an argument
+for the size and we can go from here
+comments we can invoke a list of
+comments and here we can see the again
+the data on the right returns the shape
+of the data on the Left which is
+excellent so why a formally sort of
+introduction point in graph to our why
+is it why is any of this a good thing
+well from an application point of view
+we're only ever getting back the data
+that we care about for any given
+scenario we're not getting extra data
+and we're not we're able to get all the
+data we care about within a single
+request so most times when people talk
+about graph QL and the problem it solves
+they talk about it in this idea of under
+selection and over selection if we
+imagine a post like this trying to do
+this via a sort of a deep very
+denormalized wrist request we might end
+up doing a number of requests wanting to
+get the post content I want to get the
+comments on the post
+want to get the the details of the
+author of the post etc this is this idea
+of sort of under selection that a single
+request can't get us all the data we
+care about so we have to wish a multiple
+requests to multiple resources to get
+our data conversely in the first
+scenario if we were getting all the
+posts and that posts in point in a
+normal restaurant was actually returning
+HTML which I was promptly discarding
+this is this idea of over selection that
+I'm getting more but data back on the
+response that I actually care about for
+my scenario you know that may not seem
+like much but when you're building
+things like mobile applications this
+means you're consuming bandwidth you're
+consuming someone's data care poor
+battery life we're doing a lot more work
+on on the wire than you need to so this
+is one of the main benefits in terms of
+applications is being able to get all
+the data you need for a given scenario
+in a single request and making sure you
+only put the data on the wire that you
+really care about for your application
+for not probability point of view this
+is also really good this idea that you
+don't have this notion of select star
+means that applications are neither
+going to query for the key they care
+about and let's say we wanted to remove
+a field off a post for instance we could
+market its deprecated put out an API
+notice to say hey we want to remove this
+field and you can actually monitor via
+your logs which applications which
+queries are still querying for that
+field and you can make a considered if
+it to migrate those applications across
+to use in a different field or whatever
+you're doing for your migration strategy
+here and then again once you've got no
+logs or people using that field you can
+kind of remove it safely knowing that
+you're not going to cause breaking
+changes with an application so as I said
+before the graph QL is a strongly typed
+system and so most graphical
+implementations have a way for you to
+pull the schemer in some way so this is
+called the SDL or the schema definition
+language it's part of the Facebook Graph
+QR spec we'll go into some detail about
+it in a moment but this is essentially
+that at the more human readable version
+of the schema we can see here types
+authors comments etc and we'll go into
+some more detail and oner they're sick
+and really interesting thing is or
+growth cool
+in points implement an introspection
+schema so this lets me actually inspect
+the schema itself I can say give me all
+that in this career it's giving me all
+the types the name of that type the
+fields on that type in their names and
+so if we go down here we can see things
+like post hopes there's an author and
+comments in HTML and so on this is
+essentially a really good way for
+software tools to to get access to that
+schema and they can do it all sorts of
+number of things with it one in use case
+is generating typescript so typescript
+can use these introspection schemas to
+essentially generate strong types types
+and your client side in thoughts like
+insomnia here provide intelligence of
+other things and what's doing under the
+covers essentially is that insomnia is
+using this introspection API making a
+request to your graphic your schema to
+pull back all the information it needs
+in order to better provide intellisense
+and last but not least we have our
+mutations mutations are a way for you to
+modify state photograph ql they're
+clearly marked at the top it's been a
+mutation different than a query and
+ultimately though that the only thing
+that is actually the mutation is that
+top-level thing that in this case it's
+submit post the rest of this queries and
+she's a query on the result of that
+submit post which is obviously the post
+itself again we're using a variable here
+in this case a complex variable of type
+submit post input and I've got their
+properties for that and put down here
+and all the result of that mutation on
+this side cool there is a third thing
+that queries mutations just now but
+there is subscriptions but it's probably
+out of the scope of a 25 minute 101 talk
+so the graphical schema as I've said has
+a stronger type schema like this the
+other thing it also consists of is a
+resolver
+so the resolver is what happens when
+each of these fields is queried so when
+you're implementing a graphic your
+service
+you're basically declaring a schema
+and attaching resolvers to that schema
+but first let's take a little bit more
+of an in-depth dive into what these
+schema looks like so here you can see
+we've got things like types really
+simple types like author and these are
+just sort of what we call object types
+all types have fields these fields can
+be of type scalars su scalars are things
+like ID string boolean and the like or
+they can be more complex objects so if
+we look at something like a post it has
+an author which references back to the
+author type you can also if you want
+create your own custom scale as if needs
+to be we have enough support as well you
+notice there's a lot of exclamation
+marks through the schema so what that is
+is that um most graph you're now the
+graphical spec has the the notion of
+null ability so if we have an
+exclamation mark here it means that this
+property cannot be null so an author
+must always have an ID it must also
+always have a name if it's no
+exclamation mark it means that it may
+not so it might it might be no in this
+case a post has a knowledge tml it might
+not have HTML in the moment we also have
+this notion of lists so in here we have
+a don't go this one post of comments and
+the square brackets indicate that this
+is a list so a post obviously is a list
+of comments and it kind of gets a bit
+confusing with these double exclamation
+marks what this essentially means is
+that the comments field on the post
+can't be null and the values within that
+list can't be null so it's a non null
+list of comments or sorry a non null
+list of non null comments which is a
+little confusing but it doesn't matter
+too much excuse me the last thing is the
+input type so the input type is
+essentially the complex types that we've
+only posting to our mutations or posting
+to more complex queries and that defines
+separately than sort of your regular
+types because they've got slightly more
+restrictive rules and what you can do
+with them and last but not least we have
+as a receiver declaration
+and this defines our top level query in
+our top level mutation right so let's
+jump in to see how we can build some of
+this stuff so I've got a normal sort of
+dotnet core web the blank web app that
+have kind of added a lot to so we're
+going to be calling using EF core and
+talking to a local Postgres database
+running out of docker for our data but
+ultimately the data source is I hope
+you'll see is kind of irrelevant for
+this so what I've done is referenced a
+hot chocolate asp net core and then
+obviously a few other libraries for some
+fake data some markdown rendering and
+again EF core in order to talk to
+Postgres so that's all we're going to
+need to reference the first thing we're
+going to do is set up our endpoints so
+in a configuration we're going to create
+two different endpoints here the first
+using graphic quality to do post and
+setting up the actual service itself
+we're going to post our queries to I've
+just got that out / graphic UL and I've
+got this here use graft HTML it's schema
+which is essentially set up a second
+endpoint where I can get to a request to
+get that STL which is this thing here so
+I want to set that up because I think
+it's quite easy quite good for
+developers to call that a look at this
+schema so that's all the setup we need
+now we need to kind of start defining
+our schema and our resolvers so let's
+take a look at a really simple one first
+what you're gonna see is a pretty common
+pattern of things like a type in this
+case author
+so this is our my EF core model within
+our obviously an ID and a name and we're
+gonna see a matching typist we've got an
+author class up here and we're gonna see
+an author type down here so this is how
+we're using code to define the the
+author type with an ax graphic yo schema
+jumping back of it there's actually two
+ways we can define this schema and
+graphic you are the first is are what's
+called schema first and if you watch a
+lot of dotnet a sort of node ecosystem
+graphic or talks they
+to do what's called schema first see
+this is where you define your schema
+using using the SDL define a define it
+basically is one big string that's your
+schema and then we're gonna you bind
+resolve this to that which we'll get
+into in a minute what this works and
+it's pretty actually really good for
+demos but it gets pretty unwieldy as the
+as the schema gets larger and larger and
+so one of the other approaches you can
+do is code first
+it's a code first is what we should kind
+of showing here this is using c-sharp to
+define the schema of our graph QR
+library and you can mix and match the
+approaches but you tend to find ya all
+in on one or the other one of the other
+benefits for me in terms of code first
+it means that some of these types can be
+shared between different micro-services
+in different ways especially when we get
+down to sort of custom scalars right so
+we've got this author an author type
+here so again author is my normal EF dto
+my entity and also type is the
+declaration or definition of that author
+within a schema now hot chocolates got
+some real good capabilities around this
+idea of sort of inferring this schema so
+if I didn't do anything and I didn't
+create this class at all or for hot
+chocolate could still run for a lot it
+would probably still get out and further
+be a type called author it's gonna have
+a property called ID and a property
+called name but what it might get not
+quite right for me is I want the in my
+schema I want the type of the ID to be
+ID not int and I want the string to be
+non malleable so this is why I've
+created this author type here and I've
+defined for the field ID it's a non null
+type of ID type and again you see the
+sort of type suffix happening here and
+for the field name it's a non null type
+of string
+so this lender is actually really
+important it's gonna do it's doing two
+things right now
+why does it's telling hot chocolate what
+the name of this field is it's inferring
+it from this expression ID and name
+respectively and the second thing is
+this is actually what the resolver so
+this is the bit of code that gets
+executed when this field is requested so
+when someone asks for the author ID it's
+this land
+they get executed which pulls the ax
+from the ID property on the author and
+returns that integer or string in the
+case of name so let's move on to a
+pretty um but more complex scenario so
+let's look at the top level query we're
+actually getting our post and posts from
+the database so here we've got a query
+class it's got two methods get posts and
+get post and you'll see it's basically
+just using the DB context to pull from
+that data what's interesting is more of
+the arguments to this so we're actually
+doing this what's called a service level
+and a method level injection to the
+method for the DB context and I've
+marked this up with an attribute from
+hot chocolate to basically say this is a
+service I want you to inject this using
+dependency injection the reason I'm
+getting injecting this if the method
+level rather than the constructor level
+is because DB context is a sort of
+scoped dependency I want one a new one
+per request it's why I don't want to do
+constructor level injection at this
+point if I had some sort of singleton
+dependencies then I might declare this
+constructors but in this case I want
+them to be scope dependencies so I'm
+gonna inject at the method level you'll
+also notice for the get post that we
+have an ID and it's automatically going
+to be injected from that argument on
+that field back of here this value will
+automatically be injected into them if
+they call for us so again because we
+have our query class we have a query
+type describing this within the schema
+again we have get posts so this is the
+same this is the method to call when
+this field is recalled and hot
+chocolates smart enough to get removed
+to get interned get posts into this
+posts and again this is we said this is
+a non null list of non null posts and
+again forget post we're saying that is
+going to be an argument called ID and
+it's a non null ID so we're just doing a
+bit more of sort of tweaking that
+inference that hot-chocolate can do so
+this has been more pretty standard stuff
+we basically just sort of mapping things
+that already exist and tweaking them on
+the way for let's look at a more
+interesting
+example so we have our post type and
+we're gonna be doing a number of extra
+things to this again so we're doing some
+extra things I've got a helper method
+here to tweak some of that syntax to get
+rid of the non null ID stuff but
+ultimately this is the same thing I'm
+tweaking the ability for ID and name I
+don't want the author ID that's on a
+post to be in my graphic well I want an
+actual fully strongly typed author so I
+told in this case
+author ID ignore it don't put it in the
+schema and this is the really
+interesting one here it's HTML so on my
+post in my database
+I don't store the HTML I'm destroying
+the sort of edited markdown but I would
+want to return the HTML as part of my
+schema so I'm cutting a new field here
+and you thought that exists in the
+schema but not in the database called
+HTML it's a string and I'm attaching a
+resolver to it so this is what I want to
+call when someone requests the HTML and
+it's simply taking the parent post
+getting the markdown coming into HTML so
+now we have this sort of in computer on
+the fly and only when requested we and
+we don't repeating this pattern for
+another rubber things as well so here
+we're adding a resolved comments said
+Court resolved comments we're going to
+name a comments and it's going to return
+a list of comments if we go down here
+again we have a method we're doing
+service level injection to inject the DB
+context we're going to ask for the
+parent post at the same time so hot
+chocolates going to inject both for
+those and I can go to the database and
+retrieve the comments so this is where
+I'm in sort of attaching more complex
+types to my my post and I'm getting some
+good sort of strong structure to a lot
+of my graph QL this calm more complex
+scenario here for resolve author is
+using a data loader I don't want to get
+into too much of the implementation of
+this right now probably a bit much for a
+half hour talk but ultimately using data
+loaders is a way to prevent sort of n
+plus one problems with in graphic UL so
+if you have this idea that I
+doing a query that's gonna put multiple
+posts from the database and those posts
+are asking for author I don't want to
+have a hundred and one course the
+database to get a hundred authors out so
+a data loader is way to solve this but
+sort of the implementation of this I
+don't think really we've got time for
+after that let's quickly look at
+mutations they're pretty much the same
+thing we have a method here called
+submit post again taking a DB context
+and that strongly typed that input we've
+defined in this case it's submit post
+input so it's just you know what want an
+author ID he's entitled markdown and
+we're my create a new post saving at the
+database and returning it up here you
+can see I need a clock from another time
+and so this is where every time I
+construct a level injection of that so
+this is a custom of a common pattern
+you'll see you'll see things like
+mutation mutation type post a post type
+this code first sort of approach code
+sorry
+yeah code first approach in order to
+define our schema from there we just
+need to register it so I got going back
+to startup code where do we now work
+here so we're doing a couple of things
+we're calling the ED like a de l'eau de
+registro which you don't need to go into
+right now but ultimately the important
+part here is at graphic where we using a
+schema builder and we're registering
+that query type and the mutation type
+we've defined is the top-level queries
+and mutations and I've got a custom
+scalar here which we can a little bit of
+time to go into which is essentially a
+new class to represent offset take time
+set another time and it's a way to kind
+of it's using extended ISO to render
+them down as strings this means we can
+have sort of the idea strongly-typed
+off set date time within our schema
+going back to our startup you'll notice
+here we're not registering things like
+the post type or the author type and
+when we we get that basically by the
+fact that query type talks about posts
+and post type if we go back to that
+talks about comments and authors and
+lists and images so we don't need to go
+through and be meticulous about making
+sure we've registered everything because
+ultimately as long as everything is
+reachable through the other types then
+we only need to register post level
+things once we've done that we create
+our schema and give it back to graph QL
+and we're done so we had this notion of
+a schema we've defined G's in c-sharp
+and we have this idea that we're
+attaching resolvers or methods to each
+one of these fields to call now some of
+these resolvers are complex if they go
+into databases to do work or file
+systems or whatever and a lot of these
+resolvers can be pretty small right a
+lot of the merges go into properties to
+get values or they do in some in memory
+computation for read her computed fields
+in effect if you try and start up a
+service in hot chocolate that doesn't
+where a field doesn't have a resolver
+this would be an error every field needs
+to have a resolver essentially you know
+to know to know what happens when it's
+called so that's it we've now got a sort
+of out of the box
+EF core to Postgres database happening
+we've got graphic you all saw at the top
+of that in a pretty strongly typed away
+taking mutations as well as doing
+queries so jumping back that's gonna
+give you a couple of links the first is
+for hot chocolate itself it's great
+library I'd highly recommend you go
+check it out and the second is the
+github repo that will contain all the
+source code from this talk so is it put
+more in it and I've gone over today so
+never ever play around have a look and
+see what it see what you like is this
+it'll be around on Twitter for questions
+but I think we've got some time now as
+well I can
+so the the constructor injection or
+actually all of its provided by hot
+chocolate but the notion of sort of
+attributing a service the resolver level
+injection with service like this is a
+thing from hot chocolate itself the the
+reason why you want to do this is a
+sailor's because of scope dependencies
+but ultimately it's hot chocolate that's
+using the DI container to construct or
+to sort of create these these classes
+for you and ultimately it's the thing
+that's gonna be responsible for working
+out where where these injection points
+come from and so on

@@ -1,0 +1,304 @@
+in this lesson I'm going to address a
+question I got from Jason from over at
+the Chart guys calm so the problem he's
+trying to solve is that he is a stock
+market trader and he has a script that
+triggers alerts for trading setups but
+the script is triggering alerts during
+pre market and aftermarket hours so
+outside of regular trading hours when
+the stock market is closed to the public
+and he wants his script to not trigger
+alerts outside of regular trading hours
+so in this lesson I'll show you how to
+use the time function to detect whether
+the current candle falls within a
+specific time and if it does then we're
+going to not trigger our lurtz and then
+at the end of the lesson I'll also show
+you how to trigger your alerts if the
+bar falls within a time session so right
+now I've got a blank script all I've
+done is change overly to true and let's
+get started the first thing I'm going to
+do is get user input and the first input
+variable I'm going to get is the
+free-market hours time session so this
+is going to use the input function with
+a title of pre market a type of input
+session for time session and a default
+value of the u.s. stock markets pre
+market hours which are from 4:00 a.m. -
+which means until 9:30 a.m. and this is
+in 24 hour time so we need to use 0 400
+for 4 a.m. and 0 930 for 9:30 a.m. which
+is when the regular trading hours begin
+so there's our pre market session
+defined let's define our aftermarket
+session which will also use an input
+function and we're going to call this
+after market for the type of input
+session and the default value for this
+one is going to be 1600 or 4:00 p.m.
+until 6:00 p.m.
+1800 so there's our two time sessions
+defined our pre market and aftermarket
+hours and of course if you wanted to you
+could just hard code this you don't need
+to have this as an input if you're
+trading the US markets and your free
+market and aftermarket hours never
+change you can just get rid of all of
+this and not have an input so now if I
+save these scripts let me come up to the
+settings menu
+you see we have in after-market hours
+but if we didn't want to allow our user
+to adjust this time period you could
+just hard code it like this but I'll
+leave the input in for now and now in
+the settings menu we have our two pre
+market and aftermarket inputs and we can
+change these if you want to so let's
+move on the next thing I'm going to do
+here is I'm going to create a function
+for detecting if the current bar falls
+within a specified time period and so
+the syntax for declaring a custom
+function is you need to give it a name
+and then give it some parentheses for
+function parameters and the this
+function parameter that we're creating
+is only going to take one input
+parameter which is session and now when
+you're creating custom functions
+remember you don't need to define what
+data type this is because when we go to
+use it whatever we treat this as - trip
+will interpret it and automatically
+define what datatype this input
+parameter is so remember in order to
+declare a custom function we need to use
+the declare function operator which is
+an equal sign and then a write our and
+then the next line occurred is just
+whatever this function returns so when
+we go to use it what do we want the
+calculation to be that it returns and in
+this case this is going to be a boolean
+function so it's going to return a true
+or false value and in order to check if
+a current bar falls within a certain
+time period we need to use this n/a
+function which will check whatever input
+parameter we give it and if it is not a
+valid number then it returns true and if
+it is a valid number it returns false so
+now we use the inbuilt time function so
+we passed the time function to the n/a
+function whatever we put in this time
+function in this case it'll be our time
+frame which is going to be 15 minutes
+because we're on the 15-minute chart and
+our session that we want to check if
+this current 15-minute bar falls within
+the session that we pass into this
+custom function so first of all we're
+going to pass our time frames up period
+which will just give this function
+whatever we've set our chart to
+currently so if I change this to one
+hour chart then this will change to one
+hour and it
+consistent with whatever timeframe we're
+on the next thing you want to do is pass
+in our session parameter and now close
+off those parentheses we are now
+checking if the current bar falls within
+this time frame this time session on our
+current time frame period and if it does
+then this na variable will return false
+because the time function will return a
+number but if the current bar does not
+fall within the time session that we
+specify then this n/a function will
+return false so what we need to do here
+is if we add on this comparative
+operator and we say does this function
+this n/a function return false if it
+does then our in session variable will
+will return true and I know that's a
+little confusing especially if you're a
+beginner but what we're basically doing
+here is if this value is false then this
+whole statement will return true and our
+in session variable will return true so
+when we use this function and we pass it
+a time session in this case it'll be a
+pre market or aftermarket session and
+the current bar falls within that
+session then this will return true so
+let's move on it'll make more sense when
+we actually use this function so the
+next thing we need to do is check if the
+current bar falls within pre market
+or aftermarket hours so the first
+boolean variable we're going to declare
+here and define is our is after closed
+variable I'm going to use our in session
+function our custom function we just
+created here and we're going to pass out
+after market time period into here and
+so this boolean variable will be set to
+true only if the current bar on the
+current time frame falls within our
+aftermarket hours so between 4:00 p.m.
+and 6:00 p.m. if the current bar does
+not fall within that time session then
+this variable will be set to false and
+so the next boolean variable we need to
+declare is is pre open so this is for
+our pre market and this will also use
+the in session function and we're going
+to pass our pre market time session so
+this variable will turn to true only if
+the current bar falls within the 4:00
+a.m. to 9:30
+time session so that's pretty much all
+we need to do in order to detect if the
+current bar falls within either of these
+time sessions but now I'll show you how
+to disable alerts if either of these
+conditions are met so first of all we're
+going to change the bar color if the
+current bar falls within After Hours
+time just this is just for visual sake
+so that we can confirm that our
+variables our boolean variables are
+working and in order to do this I'm
+going to create one more boolean
+variable here which is called is after
+hours and this is just going to be set
+to either of these so is the current bar
+after the market is closed or is it in
+the pre open free market hours if either
+of these are true there now is after
+hours boolean variable will be set to
+true so now we can change the bar color
+of the current bar to is after hours a
+question mark if so set the color to
+color dot black otherwise leave the
+color alone and set it to any so now if
+I save the script it compiles without
+any errors that's good let's come down
+here and turn on our extended hours and
+now this stock market I'm on right now
+can it be growth corporation is not a
+great example because it's prima our pre
+market and post market data is very
+limited so let's go over to something
+like Apple for example here we go so now
+see any bar that falls within our pre
+market session is turned to black our
+detection is working and here this after
+our session actually went a little
+longer than I expected it to it went
+until 7:45 at night so let's extend now
+after market hours from 4:00 p.m. until
+let's say 20 p.m. so we can just add on
+to here 20 if we save the script these
+will all turn black there we go
+so now we are detecting any candles
+within after market hours and turning
+them black so our conditions are working
+so now how would you disable alerts
+after this condition is met
+well that's the easy part now let's
+create a very simple alert trigger just
+for an examples sake here we'll say
+trigger alert only if the bar is outside
+of after-hours time and the alert
+trigger can be anything whatever you
+create in your own scripts but for this
+example sake let's just set it to
+something simple like a bullish candle
+so any candle that closes high or equal
+to its open will trigger this alert so
+that's right out our alert condition
+function this is what will trigger the
+alert when we set it in our alerts
+dialog and now all we need to do is pass
+in our alert trigger condition in this
+case a bullish candle and make sure that
+it is not after-hours so this will only
+trigger an alert if we get our alert
+condition met and the current bar is not
+within after hours time so now we set a
+title to alert title whatever you want
+to call it and your message to alert
+message you can replace these whatever
+you need to if I save these scripts and
+we come up to the alert box and we
+select our script now no matter what you
+set this alert to any of these settings
+it will not trigger if the current bar
+is outside of normal trading hours and
+that's all there is to it we can get rid
+of this plot now since we're using a
+drawing function here this bar color and
+so that's our script completed but
+before I end this lesson while we're
+here we have this code to work with
+let's say you wanted to trigger alerts
+only between certain hours like the
+first hour of the market open for
+example well let's get rid of one of
+these and change this to say just time
+session and let's say we want it to be
+between 9:30 a.m. and 10:30 a.m. and
+we'll call this just session and we can
+get rid of this now and just change this
+to say falls within our session and then
+we can paste session in here and change
+this to say is in session
+now we can just copy paste that down
+here paste that there
+remove the not save these scripts and
+now you can see that we are painting any
+bars that fall within the session we've
+specified black so within the first hour
+of market open we have our candles
+turning black and how alert condition
+will only be triggered if we get our
+alert trigger and the current bar is
+within our session which is demonstrated
+on the chart by these black bars so
+that's how you would only trigger alerts
+within a certain session instead of
+outside of After Hours time within
+session change this to within session
+and there we have it and so that's it
+for this lesson
+we have successfully if I go back a few
+versions this version of the script here
+will disable alerts if the current bar
+falls outside of regular trading hours
+or in other words if it falls within the
+pre market or aftermarket hours and this
+version of the script will only trigger
+alerts if the current bar falls within
+the time session we tell it instead of
+outside of it so that's it for this
+lesson I hope you found that helpful if
+you did and you want to learn more about
+pine scripts head over to pine circuit
+mastery com here you'll find my advanced
+pine script courses and my basics course
+which is free so if you want to learn
+more about pine script head over here
+and you'll find out a little bit more
+about me and a little bit more about
+pine scripts I hope you found this
+lesson interesting and helpful I'll see
+you the next one
+[Music]

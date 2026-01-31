@@ -1,0 +1,1665 @@
+hello everybody and welcome you all
+so this is your host amarjeet and i'll
+be taking you once again to the similar
+tour of angular
+and you know it very well previously we
+have developed a lot of projects in
+angular and this time also we will like
+to make sure that we offer you some very
+consistent project this time where it
+will help you to connect all the dots of
+whatever you have learned in an angular
+so this particular session will be more
+specific towards the project so stay
+tuned with me because this time we'll be
+offering you a lot of beautiful gui
+which can combine together
+to understand how angular can be best
+suitable for the front-end application
+and to make it happen you understand
+like in this particular project we'll be
+having a basic angular setup ready so
+you know it very well to develop an
+angular application we have used a
+similar technique called
+uh downloading the angular cli version
+and we have used ngnu and the name of
+the project is project and this
+particular project does nothing has only
+one single component name called app as
+you can see it right now here
+under the src you have a got app folder
+app component dot html and here you see
+appcomponen.ts
+so that is one of the very very basic
+component angular can hold in
+so
+this edge table contains a very simple
+message called welcome and component.ts
+contains nothing special it is just
+holding one title and
+app.module.ts if you see it contains
+nothing special whatever it comes as a
+predefined preloaded it contains only
+those particular type of modules
+and in my
+app.module.ts sorry
+yeah if you talk about call package.json
+inside my package.json we have some
+additional dependency added
+which i will tell you like what
+dependencies a part of angular which
+comes as a preloaded are by default
+available now you can see here
+animation compiler core forms localized
+these are all by default are there a
+part of that we have also taken this
+bootstrap as an additional dependency so
+we talk about called ng bootstrap
+okay which is the additional dependency
+we have taken bootstrap jquery copper.js
+rxjs which anyways comes by default and
+here
+these dependencies will be playing
+additional role during your development
+time
+okay rest everything gonna be remain
+same as it is but yes these additional
+dependencies like in jquery poker and
+your save tslip
+and you talk about like in bootstrap
+okay jquery these libraries are
+additional to those the one which comes
+as a by default
+okay so once you have those additional
+dependencies added into your project do
+not forget that in your angular.json
+you need to have
+additional declarations to be get added
+okay as you can see now under the
+scripts part
+okay under the styles part you see the
+under the styles we have kept our
+bootstrap.min.css
+and under the scripts we have kept all
+those necessary
+dependencies with regards to our js
+called demo
+chart pie chart by demo you talk about
+bootstrap you talk about jquery so these
+are the additional dependencies we have
+kept under the scripts part which is
+here under your wrangler.json
+okay and under the styles we have about
+bootstrap through which we can directly
+include these bootstrap related stuff
+directly into my project
+so that would be
+the first thing which will start with
+okay so
+if i want to start my application i will
+certainly say npm space start let me say
+npm space
+start
+if it is launching my application
+okay please use sudo
+now it is launching
+and under the port number 4200 my
+application will be
+starting up now it is saying port maybe
+this application is ready somewhere
+so
+let me check if it is available
+okay so application is already running
+so inside my 4200 if i try to run i can
+see
+this by default message welcome appears
+so that's the only thing with regards to
+your project so nothing fancy it is just
+a basic stuff your application have some
+basic set of dependencies added and
+along with this
+uh you have some
+new dependencies and you just you say
+npm space start and under the localhost
+4200 your project will get ready
+okay so in my previous example you
+remember like we have created and
+done with our basic setup and now it's
+time for us to go back and create some
+new component into my project
+now what are the first component i'm
+looking forward for that is called
+navbar for creating a navigation so
+inside this first of all i want to open
+a new one
+okay so i want to say ng space g space c
+space
+nav bar
+so let the new component get ready okay
+so we have got never component ready
+with me
+so this is what my navbar is and inside
+this navbar i want to add some
+additional dependencies inside my html
+okay so here
+i may have lot of tags associated with
+me
+but here i want to start with my body
+tag
+okay so this is what i want to start
+with my body tag
+okay and here onwards we want to start
+all my development so within my body tag
+i will be writing a lot of other tags
+too but first of all let me try to have
+some additional dependencies to get
+added here
+so i want to add the div
+and here
+i would like to have some additional
+dependencies to be get added as you can
+see right now it is for jquery it is for
+your bootstrap it is a scripts
+okay this is for
+charts this is for chart areas data
+tables so these dependencies are very
+much required in order to start your
+basic development
+okay and i want to continue
+developing this example by adding some
+new logic one by one
+okay now what logic i want to add it now
+so i will be using bootstrap as a basic
+code
+okay so first of all i want to use the
+body
+with some body
+class equal to i want to give this name
+called sb hyphen
+nav
+hyphen fixed
+that is actually the bootstrap class
+which we're associating with here
+and here after that
+we'll be starting with my div tag
+so after body
+here see this is the sb hyphen nav
+hyphen fix which we have used now i'll
+be using some
+nav tag now
+and inside my nav tag i want to say
+class
+equal to
+sb
+hyphen
+top nav
+space
+nav navbar
+space
+nava hyphen
+expand
+okay space nav bar
+hyphen we want to use the dark theme so
+i'll be using
+naval hyphen dark and space bg
+hyphen
+dark
+so this is the first thing we are using
+it now now inside my nav
+okay we want to use few more important
+details like i am saying like anchor
+okay so with this anchor i want to say
+a
+before hdf we want to say class
+equal to navbar
+never hyphen brand
+okay space nav bar
+or else we can say hrx
+we can use this
+just add this single quotation and just
+say href hr is equal to
+index dot
+html to go back
+and after this will be also using
+this img tag also so we just use this
+img
+src will be using some logo
+okay which will be there under the
+assets
+okay under the assets i'll be having
+logo dot
+png
+okay and we would like to also
+uh say some controlling this
+some width and height so we just use
+width equal to what 80 percent
+okay and we want to use
+height
+equal to 120 percent
+so where's 80 percent height 120 percent
+alt is maybe something optional you want
+to give it i just want to leave it now
+we do not want to give art as an
+alternative
+and if you also want to give style
+so i say style
+equal to now i say padding
+hyphen top
+colon
+here i say
+10
+pixels
+okay that's it so that's where exactly
+the main logic is let me try to bring
+this back
+okay and here the anchor tag is closed
+after this i'll be using my
+button tag now
+with this button we want to add some
+class
+class equal to btn
+space btn
+hyphen
+link followed by btn
+hyphen sm because i want to have a small
+size button and i want to say order
+iphone one
+space
+order iphone
+lg
+hyphen 0
+okay
+followed by id
+equal to
+sidebar toggle
+what i'm saying sidebar toggle and after
+that some more new properties like an h
+ref i do not want to go anywhere so i'm
+just saying
+hrf equal to what
+hash
+in the single quotes
+like this
+okay and that's it
+so within this button
+i would like to offer
+some i class so here i say i class
+i
+class
+equal to
+[Music]
+okay fas fa hyphen bars
+okay this is a special class available
+and
+that's it
+which is there
+now here the i class is getting close
+and here the button is getting close now
+okay so this is the first part of my
+code now
+okay now we talk about call navigation
+on nav bar search so here i'm starting
+with my
+never
+search
+okay so inside my navbar search we would
+like to offer some more new number of
+fields so called form
+okay so i start with my form
+now with this form
+i
+may not say action for a time being so
+i'm just removing this action from this
+instead we are saying form class
+equal to
+d
+d hyphen
+none
+space md
+hyphen
+inline
+okay hyphen block
+hyphen
+block
+okay so md hyphen inline hyphen block
+after that you have to suggest form
+hyphen
+and here you see inline because i want
+to go ahead with the inline form
+and also ml
+hyphen auto
+space mr hyphen 0
+space mr iphone md
+hyphen
+3
+my iphone
+2
+space my iphone md
+hyphen 0
+so this is what all about our form but
+within this form is not a closed it is
+just a first portion of the form plus
+along with this will be also offering
+the dip class so we just use
+them here i say
+class equal to
+input hyphen
+group
+input hyphen group
+and
+now inside this input item group i want
+to use input class
+input type equal to text
+and here i say class
+input
+class equal to
+form
+hyphen
+control
+for hyphen control we would like to add
+few more classes here first it is form
+control type equal to what type it is a
+type text and now we say
+placeholder equal to
+search
+for
+okay this is the property for me where i
+want to use it
+and
+a part of that
+search for we're giving it so since it
+is giving so we do not need to give
+double quotes
+search for us single quotes is okay now
+and now
+area
+hyphen
+level equal to
+search
+one second let me try to make it
+okay search here and uh followed by a
+few more properties
+so the first property i'm trying to use
+it a part of this area search we say
+area
+hyphen
+okay
+described by and here we give the value
+called basic iphone
+hyphen
+add-on to
+okay so this is how we are trying to add
+it now
+after this what next
+after this we would like to use another
+div tag now
+div
+and here we say
+class
+equal to
+inside this class we may offer a few
+more details
+uh okay like i can see input group
+input iphone
+hyphen group
+iphone
+append okay that is a div class and
+inside this dip class
+i would like to use also another button
+here we say
+class equal to
+btn space btn hyphen
+primary okay type equal to what it is a
+button
+so
+that's it
+and after that within this button i
+would like to use
+i
+class
+equal to
+fs space fa hyphen
+search
+that's it so this is how we are making
+it
+first and now we'll be going ahead with
+the next level okay so let's get started
+with the next point now so we have
+finished our div and dip form now let me
+try to organize it properly
+okay
+now the div div and this part is getting
+close and now we would like to talk
+about our navbar part
+okay so here
+i'm starting with the nav point so here
+accelerometry
+and here i give the name called bar
+just to tell you like this would be the
+navbar related
+stuff
+here i'll start with my url tag now so
+inside my ul i say you will space
+class equal to
+number
+okay so we have a call navbar hyphen
+nav
+okay space ml
+hyphen
+auto
+space ml hyphen
+md
+iphone 0
+so that is for my ul so within this url
+i'll be having
+some li class also so we have got li
+within this li i am saying
+class
+equal to
+now what are the details i want i say
+nav hyphen
+item
+okay nav hyphen i item space
+drop down
+okay so now hyphen item space what a
+drop down now
+now within this
+li tag okay i want to use lot of other
+tags too
+so first tag i'm using this for anchor
+tag
+okay
+so
+in this anchor tag we want to say a
+and followed by
+class equal to
+well i'm saying nav hyphen
+link
+followed by drop down
+hyphen toggle
+okay after this space
+id
+equal to
+user
+drop down
+okay id equal to what user drop down
+href
+equal to we just make it as just a hash
+because i'm not taking anywhere
+after this hash we say roll
+equal to
+button so roll will be a button type
+and the job doesn't get over here we
+also have some option called
+data hyphen
+toggle
+okay data hyphen toggle equal to drop
+down
+equal to drop down
+space we also want to use some area
+has popup
+okay you can see there's a property
+called idiot has pop-up so i just said
+true
+use exactly it does have
+and we also want to say area hyphen
+expanded you see now area hyphen
+expanded we're also saying
+false
+apart of that
+we also want to use some image within
+this
+so
+image
+so
+in this image we want to say src src
+will be entered
+okay
+assets under the assets it will be under
+id
+dot
+png this is already sorry jvg
+there's already one value available
+inside this id png alt we don't want it
+as of now
+if you want you can add it otherwise i'm
+just leaving it blank i'm just using
+this option called style equal to
+now
+border hyphen
+border
+hyphen radius
+okay this hyphen border it is how much
+you want to give i'm saying fifty
+percent
+that is a css style okay and followed by
+width
+how much weight you're giving it i'm
+saying 50 pixels
+50
+pixels
+okay
+that's the whole idea for this
+now the anchor tag is getting closed
+okay so here the anchor tag is closed
+after the ignite tag is closed we would
+like to give another tip class now for
+the drop down
+so we say
+this div class will have some of the set
+of properties which is available i say
+div
+class equal to
+drop down
+okay hyphen menu
+and
+followed by
+iphone
+menu
+hyphen
+right
+okay
+and
+followed by we want to use area
+area
+hyphen you can see this option called
+label by
+okay equal to give the option name
+called user
+drop down i'm just giving the value user
+drop down
+value has been given now within this div
+tag itself we'll be adding some new more
+values
+what those values will be i'm saying
+anchor tag
+class equal to
+now that is an anchor tag
+class
+equal to drop down
+drop down hyphen item
+okay space
+href
+equal to hash
+href equal to what hash
+we are giving the value called what
+settings
+okay now i just copy this line
+okay and uh
+let's have only two for a time being so
+drop down hyphen item hdf settings and
+we give it a give
+activity
+lock
+that's the value
+for activity log
+okay anchor tag is getting close now
+here after that we use another tab tag
+here it's called nested tip tag
+okay so in this div tag we want to use
+class
+equal to drop down hyphen item
+drop down hyphen
+item and
+i would say better drop an iphone
+divider
+drop down hyphen
+divide it as a value and
+in the same div tag
+this div tag is getting closed here and
+we're using one more okay
+and class
+equal to drop down hyphen
+item
+dropdown item item hrf equal to
+give the value the one which you want to
+give it i am saying hash
+okay
+it's difficult to what hash
+let me close this
+yeah hdf equal to hash and
+we just use router link
+equal to as you know it very well
+in typical navigation we always use the
+router link rather than normal href and
+here we're giving the name call what
+login
+okay and here we can use
+router link active equal to
+active
+okay
+and here we get the name called log out
+log
+[Music]
+out
+okay so that's the value which we're
+giving it now anchor tag is closed and
+here the div tag is closed li ul and nav
+so let me organize it
+this one
+this one
+this one
+and lab tag
+let me format this
+okay so that's what my file is
+okay so let's continue to this so we
+have created the value till now and we
+want to start with this div diagonal
+now with this div tag
+we would like to have few more classes
+added now
+we say div id equal to
+you can just give the name call layout
+site info
+layout
+sidenav
+so this is the first value we are taking
+it now
+with this layout side now
+a part of this would like to use another
+div tag now
+and inside this div we would like to
+offer the id
+equal to
+layout
+site nav
+whatever name we have used it
+underscore now
+that is a
+second div type we have it now
+now within this we want to use the nav
+okay with this snap we want to say class
+equal to
+sb hyphen sidenav
+sidenav
+hyphen
+menu
+that value we are passing it to this
+okay that is for
+sb hyphen sidenav view
+or along with this rather than menu i
+can have another option with me to make
+it even more better sb hyphen sidenav
+space
+accordion
+accordion
+okay
+so
+according we're going to give you the
+kind of flipping type of moment one
+after another sp hyphen
+site nav
+sb iphone sidenav hyphen
+dock
+and space id equal to
+side neverword
+side
+accordion
+so this value we are using it now with
+this nav
+so within this snap
+we would like to bring another div class
+now by saying live
+and inside this div we will say class
+equal to
+uh i would say sp
+hyphen side
+nav hyphen
+menu
+okay
+now within this div tag we want to use
+another dev diagram
+so you might be thinking so many tips i
+guess that is why we want to make it
+more organized we said dev
+class
+equal to
+nav
+okay now within this div tag we would
+like to use another div
+do class equal to
+here you want to say sp hyphen
+sp iphone site name
+hyphen menu
+hyphen heading
+site name hyphen menu hyphen heading
+okay and in this we just given the value
+called
+code this is the value
+of this
+okay so this is what for the first dip
+tag
+now within this div tag
+when this step tag is closed we want to
+use the anchor tag now
+a
+class equal to
+nav hyphen
+link
+okay nav hyphen link followed by
+href equal to give the name called
+index dot
+html
+so this is your href one second
+hdf equal to index.html
+now now within this anchor tag we want
+to use the div tag now
+okay and in this div we would like to
+say class
+equal to
+sp hyphen
+nav hyphen link
+hyphen icon
+so div class equal to sp hyphen nav
+hyphen link hyphen icon this is a class
+of my tip tag right
+now okay
+now
+this particular
+class inside this we want to use
+the
+i class something i
+plus
+equal to fs
+space fa
+hyphen
+tachometer
+tachometer hyphen alt
+okay
+and we are closing this i tag is getting
+close the tip tag is getting close
+okay and within this i'm giving the
+value call what dashboard
+okay
+so a class equal to
+giving this call
+nav link
+and hsf equal to index dot
+html and here we have the div tag which
+is
+getting close now and here the anchor
+tag is closed
+and after the anchor tag is closed we
+can use few more div tags inside this
+okay let's see about which of the div
+tags are now left with here we start
+another div tag
+now inside this div we say
+class
+equal to sb
+hyphen
+site nav
+okay sb hyphen site name iphone menu
+hyphen heading
+hyphen heading and now we want to use
+one tool name called interface
+so here we have a called dev diagram
+after this we would like to use another
+anchor tag
+okay and now with this anchor tag we
+want to say class
+[Music]
+equal to
+now
+um as we know it very well we have given
+this call menu heading so we get nav
+link collapse so we say now
+hyphen link
+space
+collapse
+okay so that is a
+class which we're using it now with my
+anchor tag
+okay collapsed after that we are saying
+href
+equal to hash
+okay href equal to what hash and
+data hyphen
+toggle
+equal to
+collapse
+so that's the value we're giving it to
+my data toggle now
+after that we are giving some more
+values here
+one where we are giving is called data
+target
+yeah data target equal to
+here we're giving this id
+by saying collapse layout
+collapse
+that is a daily target and we just want
+to say area
+hyphen expanded
+area hyphen expanded equal to
+false
+and one more property i want to give it
+is called area hyphen controls
+area hyphen
+controls
+okay
+equal to collapse layer
+collapse layouts
+one second let me try to add it here
+and edit it here
+collapse layouts
+okay so anchor tag is there so within my
+anchor tag where it is getting closed i
+just want to give
+one more
+dev tag inside this
+yeah so here we have
+okay got within this div tag
+we want to give some additional property
+to this div
+so
+we know it very well what type of
+details we're talking about so we said
+if
+class
+equal to
+sp
+hyphen nav link
+usb hyphen
+nav link
+okay hyphen icon
+there is another class we're using it
+now
+and sorry
+sv hyphen nav hyphen link
+that's the first property we have taken
+let me close this
+and
+okay so sb hyphen nav hyphen link
+and
+a part of this you can just use hyphen
+icon
+iphone
+icon
+okay within this
+i can use
+i class
+so here i'm using i
+class equal to
+so which class you want to use it i'm
+saying fs
+space fa iphone
+angle
+okay
+hyphen dom
+so this is your i class which we are
+defining it right now
+okay closing this the i tag is getting
+closed along with the tip tag now
+okay and anchor tag is getting closed
+okay anchor tag is getting close here so
+inside this we would like to give with
+the dev tag is getting close we want to
+give home
+any value which you want to give so
+we're giving what over here
+and this is where it's getting
+close right now
+okay
+so after the dip tag is getting closed
+we're using this and
+so later on we can go back and try to
+implement more ideas okay so we have
+finished in one point of
+areas now we would like to go back and
+start working with the rollable now so
+now here with my application we want to
+use
+another div tag now
+so within this div tag we want to use
+some classes we set the
+space
+class equal to
+row
+okay after this i use one more div tag
+and in this div tag we want to use one
+more property here called
+[Music]
+class equal to call
+hyphen excel
+hyphen six
+so six columns layout we are trying to
+add it now here we are trying to say
+div and with this div we say class
+equal to
+now see the properties now do class
+equal to we're using card
+space
+mb hyphen 4.
+card space mb hyphen four we're using
+this property
+now after that we would like to use
+another div tag
+with using div
+plus equal
+to header
+i would rather say card hyphen header i
+will say
+card hyphen header so this div class
+and inside this we want to say i
+i class equal to
+some addition
+declaration i'm saying fs space
+fa hyphen
+chart
+hyphen
+area
+space mr hyphen 1
+so
+closing this so i tag is getting closed
+here we're going to give the value name
+called weekly analysis
+weekly
+weekly analysis okay so with this div
+tag it is getting closed i want to bring
+another tip tag inside this
+now with this div tag
+we want to write another class here
+that is known as call class equal to
+card hyphen body
+so we want to give class equal to card
+hyphen
+class equal to
+card hyphen
+body
+okay
+and
+this classical cardiacs and body we want
+to bring
+another thing inside this that is called
+img
+equal to now here
+from the assets we want to use
+area
+chart
+area chart dot
+png so that location we want to use it
+now followed by
+width equal to 100
+okay
+and
+[Music]
+height
+equal to 280
+okay and here the tip tag is getting
+closed
+okay
+so we're talking about this dev tag and
+there's another tip tag is getting close
+below this the third div tag is also
+getting close now
+okay so we totally have three div tag is
+getting close and we would like to use
+another tab diagonal
+we want to set them
+class equal to once again
+call hyphen
+xs
+excel
+hyphen six
+so six columns layout you're talking
+about
+and after that we say div class
+div class
+equal to
+card
+space mb iphone 4.
+okay dev classical card space mb hyphen
+4 and again we use another div tag
+okay and inside this div we say class
+equal to
+header
+name class equal to what
+header rather i would say card hyphen
+header
+card hyphen header now
+now within this dev tag we want to use
+another i class
+yeah so within this card hyphen header
+we want to use the
+another
+chart so as we've already seen we have
+used this uh
+assets
+hyphen chart area.chat png in a similar
+way we would like to use the same
+technique now for the monthly report
+also
+okay so
+we have a call called sn6 card mp4
+okay we're using what card header so
+in this
+the way we have used weekly analysis
+i just copy this the same
+okay and i pasted it here
+okay and here what i try to offer
+not weekly analysis i would rather offer
+monthly reports
+okay monthly report and after the div
+title is close card body
+and now we talk about call bar chart.png
+bar
+chart.png width equal to 100
+the div tag is getting closed here
+so this is how we're trying to use it
+now so just like that we can keep on
+using some another properties too
+now
+here
+we want to use one more table
+okay
+in this div tag
+we feel class
+equal to
+now let's provide another property here
+so we said deb class equal to card
+okay space mb
+iphone
+4
+and other details too
+we were on this position called card
+hyphen mv
+[Music]
+header so that is another div class we
+are using it now so inside this dev
+class we want to use another i
+i
+class
+equal to here i am using once again fas
+space fa
+hyphen
+table
+space
+mr
+hyphen one
+okay that's the position we are using it
+right now okay
+and
+after this i tag here we define this
+option name called employee data
+employee data
+so here the div tag is getting closed
+okay so
+now what three properties we have taken
+it now weekly monthly report
+employee data now we would like to
+create a table now
+so whatever you are looking forward for
+let's start we are saying div
+class equal to
+card hyphen
+body
+okay now within this div class equal to
+called hyphen body we're using another
+tab tag here now
+okay and inside this div tag will say
+class equal to
+table hyphen
+responsive so we want to use table
+hyphen responsive
+fine
+now after this we want to create a table
+okay within this table
+okay we would like to create table
+headed multiple things
+but let me add some classes here i'm
+saying table
+class equal to we want to use table
+space
+table
+hyphen border
+border and after that we use id equal to
+just give the name called data table
+after this data table we say width
+equal to 100
+100
+and also we want to use cell spacing
+cell
+spacing
+so some spacing we are giving equal to
+zero that is for my table and inside
+this table i can have
+table head
+okay under the table head i will be
+using tr
+so tr under which should be having
+ph which is called table heading
+so we're giving the first property
+yeah so here i give name
+like this i just copy this
+and take few more property
+name position
+here we give call office
+then age
+then we keep started
+and one more
+and that is on salary
+so these are part of table heading
+tr is closed the head is closed now we
+would like to use t body
+we would like to use keyboard you know
+inside the t body we want to use tr
+which is your table row under this we
+want to use what
+td that is called a table data so here
+we can give the name
+so the first value we are giving is
+called tiger
+nexon let me copy
+and paste it
+so that is the first value second is
+nonstop position so we are saying
+system architect
+okay system architect that is what my
+table data
+next we're looking forward for office
+we give the office name called edinburgh
+next it is asking for
+your age let's give the age call
+61
+next is asking for the start date so we
+just give
+slash 0 4
+25 and we can give it
+last which is asking for the salary and
+just say
+dollar
+any random value i've given it now
+okay so this is the first stable row is
+basically closed
+like that we can have multiple records
+with me
+i copy this
+and have another
+and have another
+so as my number of records you want you
+can basically have it now
+okay let me quickly change the name
+this value called accountant
+next value which we have it is called
+tokyo
+age
+63
+okay same
+and here we can give
+okay
+and here you can change the values
+later on if you want but for the display
+purpose
+it's okay
+okay so here
+the
+multiple things are getting closed your
+tea body is getting close
+your table is getting closed
+your tip tag is getting close your div
+tank is getting closed and
+after this we have got one more
+that is the other
+okay after closing the last dip tag we
+would like to also close
+the main
+okay after this main
+uh we would like to start working with
+this photo part now
+in this footer
+we would like to add some new classes
+here i'm saying class equal to
+py
+iphone 4
+space bg hyphen
+light space empty
+hyphen
+auto
+okay
+followed by we can use the another div
+tag
+and inside this div we can use
+class
+equal to
+container hyphen fluid
+container hyphen fluid
+now there's another div tag
+okay inside this div we want to use what
+class
+equal to
+d hyphen flex
+okay space
+align hyphen
+items hyphen
+center space
+justify
+hyphen content
+hyphen between
+space
+small
+okay now inside this div we would like
+to use another div
+reset the
+class
+equal to text mounted
+text
+hyphen
+muted
+okay and we would like to
+offer
+here let's go copyright
+copyright
+okay and
+copy
+okay
+space
+give the name
+dot
+simply here or else
+like this
+okay so div tag is getting closed here
+now after that you can use
+tether f
+equal to you can just give hash
+okay
+and now you can give the value call what
+privacy policy
+privacy policy
+okay and here in privacy calls you can
+just give
+ampersand
+okay
+and
+okay
+and after this again href
+so after this
+we can use but first anchor tag is
+getting closed here after this privacy
+policy
+okay
+so now another href here hash
+rather than privacy policy i'm gonna
+give terms
+okay in terms
+give space
+okay
+conditions
+okay terms and conditions
+you don't need this numb
+and that's it so david
+photo is also getting closed dev tag is
+also getting closed
+so
+photographs also and there's another div
+tag is getting closed and after that
+another day will be included
+okay
+and that's it body will be closed post
+that
+okay so there are a lot of space let me
+try to remove
+that's it so now let me format it
+let's see what this is always
+confusion so guys our navbar component
+is ready and after that we go back and
+try to add few more things into my code
+now we will create few more components
+into my code so first component a part
+of this
+what we have seen i'm going to create
+one more component name called toggle so
+ng space g space c
+space
+toggle
+okay a part of that we want to create
+few more components here there is one
+route
+so ng space g space c space
+routes
+okay
+so this component is ready along with
+this
+as we know it very well
+like there are certain components which
+we have created we also would like to
+create few more components into my
+application
+okay by saying
+ng
+space g space c
+space uh
+[Music]
+let's see
+so under the routes we have got what
+charts is another component which we
+have seen now
+okay now in a similar way i would like
+to create one more component under the
+routes and that is for login
+component is ready along with this login
+we would like to create a register
+and
+along with this we would like to also go
+back and create one more component here
+that is called
+password
+so charts login register password
+so four components are ready now and
+they're all inside what they're all
+inside under the roots
+okay so these all components are now
+ready with me and we'll be basically
+making all those components as
+associated inside my routes part
+clear now so which component used what
+that we have to basically consider it
+now so since they're all of the
+components now
+so under my
+app.routing.model.tx we have to
+basically provide a routings here now so
+here we know conspire routes equal to
+blank so let me try to say
+path
+okay path colon
+if nothing has been given so the by
+default component will be what
+component
+will be
+navbar
+component
+so this network components automatically
+comes up here
+after that
+if
+path is of what
+is static
+component
+is what
+toggle component okay and here we are
+saying
+path match
+colon
+full
+okay
+along with this we're giving one more
+path
+colon login
+so here
+component
+colon
+login component
+i'm going to put comma
+component c small
+okay now like this next we talk about
+call path
+colon
+register
+okay and here
+component colon
+register component
+now let's talk about what path colon
+what
+change
+password
+so here we say
+component
+comma
+component colon
+which command we are trying to say
+password component
+also
+next
+we want to say path
+colon
+charts
+then
+so these are the components are now
+available to me so these components are
+now all set and later on we'll be
+combining all the files together
+in my system one by one
+okay everybody so our all components are
+now all ready so you see like we have
+got navbar
+which contains all the necessary
+tags whichever is required for my
+application
+here we have a basically the login and
+this login.component.html
+actually contains all the relative part
+which is
+related to your login like you can talk
+about call
+email you talk about your password you
+have a call remember me and forgot
+password these type of details are
+available inside your
+logincomponent.html now so this is
+basically the code okay which contains
+your login related stuffs now
+so it contains only few properties like
+you talk about like email address
+it contains what a password and only the
+buttons through which user can
+login through
+followed by when i see my
+password so this
+password
+file that is called
+password.component.html
+it contains the details
+regarding to your password so that the
+user can
+give the password details or in case the
+user has
+or want to change the password so we can
+give the details like okay you can enter
+your email id
+address where i can send the password to
+you so here
+we have this email address we haven't
+implemented
+your
+i would say any kind of
+sending the email to your
+uh registered email id that logic hasn't
+been implemented but it's just for the
+demo like how exactly you can bring this
+password
+forgot condition inside your system now
+so this is what the password and here we
+have a link for the login and here we
+have a registration
+followed by if you think about call
+register register contains that
+register.component.html and here if you
+see there are a few details which are
+expecting from the user like in first
+name last name email password confirm
+password so these are the quick fields
+which i'm expecting from the user to
+enter
+and here it's a button for
+you know
+confirming a password and this is what
+exactly the links which are available
+for the login
+okay and for the login.html file so this
+is a simple registration form which is
+available to me
+and that is last which is available for
+me for that for me that is called
+toggling part
+in toggle part we are just offering
+the details with regards to your how in
+case if you want to toggle you can
+change the settings okay based on
+between the settings and activity
+okay so these are the links which are
+available through which you can change
+all different type of toggling part
+whether you would like to enable or not
+enable
+this is something which is related to
+your page in case if you click on that
+link so 401 page 404 page 500 page which
+will be available to us
+now let's try to run the code and check
+how the final application really looks
+like in
+okay so now i'm trying to run my
+application
+by
+saying
+npm space start
+once again
+okay
+okay
+and now i'm trying to say
+in game space start
+let the project start now
+and we'll see how it really looks like
+it
+so it is compiling all the files
+okay and finally let's try to execute
+localhost 4200
+let me see what is an issue right now
+okay let me check meanwhile try to run
+it run it again
+okay now i finally uh i'm into my
+current project right now so
+it was the wrong location where the
+project was available so
+i just like to say npm space start and
+let the project run
+so project is picking up till the time i
+say localhost 400.
+and beautiful guys this is how exactly
+projects really looks like it
+isn't isn't amazing right now
+see how beautiful your project really
+looks like it
+this is what exactly the dashboard you
+have it and this is the nav bar which is
+available to you
+getting it now see how better and
+beautiful it looks and organize so this
+is like in real time dashboard which is
+available you can see the birthdays you
+have it
+you talk about
+you know company announcement
+quick links these are all basically
+available these are the charts which you
+can see can give some dummy values and
+these are the charts will be really
+available to you
+so this is how the employee records
+which we had it which we are displaying
+it right now and this is how exactly the
+chat looks like it
+so weekly analysis and monthly analysis
+this is the dashboard
+and here the links are there but they're
+all dummy links we haven't made it but
+you can certainly make it further
+okay you can search for
+anything but it is not working right now
+because it is just for the display
+because nothing more than that it is a
+home which you can see written like in
+profile
+this is like the profile which we have
+created
+by default the name is called kate adams
+uh and this is designation like an
+account it
+and uh
+like you can talk about like home under
+the home you have a profile we have
+called settings
+so nothing is the research in the
+settings so it is just a static record
+attendance
+it will be bringing you back to the same
+page we have a call confirmation travel
+expenses these are basically the dummy
+links which are available we haven't
+made it
+which you can
+see new development
+okay part of that you see like profile
+we have it settings
+account activity if you see we have
+called login and register this three
+page if you remember we have created it
+under this system
+so you can see we have a got login we
+have a call register we have a call
+password so these are you are able to
+see this now when you say change
+password you see like
+how they have given to you they're not
+actually working but they're just like
+in dummy option and you can see it will
+be taking you directly to the sign up
+option
+okay
+now here in your
+settings once again you can look forward
+for the login
+it works like in
+a typical model how it comes
+apart of that we also have this
+call register
+so these are the fields of registration
+form
+and
+you see about activity activity we have
+because these pages are available there
+are basically dummy pages which we have
+created download confirmation so really
+it this project really gives you the
+kind of sense of in real time how
+your
+application angular application can
+really
+make your
+ui more attractive which are more
+competitive in market so i hope you guys
+love this project so we have developed
+most of the codes by our own
+except few
+which we have taken it from
+online that is nothing but call uh
+especially those images as well as
+uh what to say some javascript related
+libraries if you see which we are using
+it right now here you think about think
+about this uh
+your
+navbar.com.html if you see like these
+are the libraries we have taken it from
+internet
+because certainly we don't type it
+because it is taking long time to type
+certainly we have taken from internet
+and some images also we have taken it
+from the internet
+which are there under the assets folder
+too
+so if you see under the assets we have a
+lot of images like an area chart bar
+chart chart so this we have downloaded
+from the internet
+so hope you guys love this project thank
+you very much and happy learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

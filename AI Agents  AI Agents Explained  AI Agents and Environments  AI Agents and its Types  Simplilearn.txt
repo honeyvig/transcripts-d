@@ -1,0 +1,446 @@
+when you think of AI agents do you
+picture a personal assistant like Tony
+sock Javis or the Cal Under Pressure
+task from the interstellar fear not
+today's aitech isn't quite science
+fiction till now currently AI agents
+leverage models like GPD to understand
+goals generate tasks and complete the
+automating work and handle complex
+cognitive task they can seamlessly
+integrate into your favorite apps
+creating a team of robotic
+co-workers with rapid advancement in AI
+models and no code platforms now is a
+perfect time to experiment and see what
+AI can do for you with that said guys I
+welcome you all to our today's tutorial
+on AI agents in this tutorial we are
+going to explore what AI agents are
+their functions types how they are
+transforming various industries by the
+end of this tutorial you're going to
+have a comprehensive understanding of
+what AI agents are exactly craving a
+career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we move on just a quick
+info guys simply learn has got a
+post-graduate program in collaboration
+with P University and IBM in a enl you
+can learn the in demand skills such as
+machine learning deep learning NLP
+computer vision reinforcement learning
+generative AI prompt engineering chat
+gbt and many more so hurry up now and
+join the course the course link is
+mentioned in the description box so guys
+before we move on I request you all that
+do not forget to hit the Subscribe
+button and click the Bell icon for
+further updates so let's get started so
+guys before you move on let us discuss
+our evolution of AI so guys in 2022
+there was an era of large language
+models these models like gpt3 became
+very much popular the could write emails
+generate code and answer questions but
+were limited to specific task without
+broader integration in 20123 there was
+introduction of compound agents compound
+agents appeared combining multiple AI
+models to handle very very complex task
+they could perform several actions based
+on the data and context provided making
+them more useful than single purpose
+model and in 2024 we will be seeing a
+rise of integrated AI agents in agents
+will become a key part of our business
+processes they could perform task
+independently learn from interactions
+and adapt to new requirements providing
+a comprehensive approach to automation
+like you see Google assistant or Siri
+working for you to pick up the call
+scheduling a Google meet in your
+calendar and
+Etc now let us move on and understand an
+example first so let us study about a
+problem first so guys suppose I have a
+question that how many leaves I can take
+in this year so what I'll do guys I'll
+put up a query okay and shoot it to the
+model which is a basically a large
+language model and it's going to give me
+a solution but do you think the answer
+will be correct because this model does
+not know me exactly so definitely it's
+going to give a wrong answer so guys
+this model will not give me a right
+answer definitely because the model does
+not understand like how many leaves I
+have okay how many leaves are I lotted
+so there is no data this model has about
+me so this is basically a traditional
+shf model now let us understand about a
+compound AI system how it is going to
+integrate with a database study about my
+data and then it's going to give it us a
+query so guys let us see this
+scenario so suppose I give a query like
+how many leaves I can take so it is
+going to generate a search query first
+okay next what will happen this model or
+llm is going to search the database okay
+it's going to search study about the
+entire data and then it is going to
+predict like how many leaves I can take
+so this is how generally compound AI
+systems work okay and the solution which
+I'm going to get will be definitely
+correct now let us understand quite
+frankly what basically is an AI agent so
+guys AI agent is a tool that can perform
+task on its own by understanding and
+reacting to its surrounding you can
+think it of as a self-driving car which
+navigates without the human help a
+agents can use Technologies like
+generative AIS large language models and
+naal language processing to typically
+give you an answer or react according to
+the environment they just typically need
+one instruction to get started another
+example can be a customer support
+organizations where you see AI agents
+act as an additional type agent within
+the existing systems to help customers
+these agents utilize Advanced
+Technologies and large amount of
+propriety data and brand history to
+provide personalized experiences
+they can be continuously updated and
+customized by analyzing the current data
+and ensuring they remain effective and
+relevant so guys we have seen about
+shift model and compound AI systems so
+you would have got a brief idea
+regarding this now let us move on and
+understand about the key functions of AI
+agents so guys if you talk about the key
+functions the first is that AI agents
+continuously monitor their environment
+such as data fluctuations or customer
+Behavior suppose course we have an
+e-commerce AI agent tracking sales
+Trends to adjust inventory levels okay
+now the second task would be its
+responsive actions they act based on
+their perceptions to influence their
+environment suppose an AI agent is
+adjusting the product prices in real
+time based on the market trends so you
+can see how AI agents are working in
+this scenario third thing you can ask
+about reasoning and interpretation AI
+agents are interpreting complex data
+sets to extract meaning ful insights for
+example analyzing social media data to
+understand customer sentiment next thing
+what we can see is problem solving and
+inference learning now they can excel in
+finding solutions to complex challenges
+suppose optimizing a Supply Chain by
+predicting and mitigating potential
+disruptions then AI agents can draw
+inferences from the data to predict
+future outcomes suppose predicting
+customer preferences to personalize
+marketing strategies and finally we are
+going to get action and outcom analysis
+they determine the best actions to
+achieve desired outcomes example
+planning marketing campaigns based on
+the potential ROI analysis okay so these
+were some of the key responsibilities or
+key functionalities what AI agents can
+do now let us study about types of AI
+agents so guys our first one is simplex
+reflex agents these agents basically
+react to the immediate perceptions
+without an internal model for example a
+thermostat adjusting temperature based
+on the current readings okay so this can
+be one example based on this so these
+are Simplex reflex agents the next one
+can be model based reflex agents so
+basically what they do they use an
+internal model to handle partially
+observable environments example a robot
+vacuum mapping a room to navigate
+efficiently this can be a very good
+example of a model based reflex agents
+third one can be goal- based agents
+suppose they make decisions based on
+achieving specific goals Suppose there
+is a navigation system finding the
+fastest route to a destination so that
+can be a goal- based agents now fourth
+one can be utility based agents who
+basically deal with maximizing
+performance using a utility function
+Suppose there is an investment AI
+selecting portfolios to maximize the
+returns okay now the fifth one can be
+the learning agents what they do guys
+they improve performance over time
+through experience a recommendation
+engine refining suggestions based on
+user
+interactions next one is multi-agent
+systems or Mas if I talk about
+multi-agents they work together towards
+a common or individual goals a network
+of AI agents managing a smart City's
+infrastructure can be one of the example
+of multi-agent systems and finally we
+have hierarchial agents basically guys
+they are organized in a hierarchy with
+specific roles at each level Suppose
+there is a management AI oring other
+agents in a manufacturing plant
+so these were the type of Agents I hope
+so you would have got a brief idea
+regarding this now let us study about a
+case scenario and see how a agent is
+going to work so so suppose guys there's
+a company which aims to enhance its
+website performance and Boost customer
+engagement to achieve this this company
+utilizes an AI agent integrated with
+Google analytics now the first task what
+they are going to do guys the first task
+would be monitoring the website traffic
+so in this scenario the AI agent role
+will be that it is going to continuously
+monitor the website traffic data using
+Google analytics and the key metrics
+would be it is going to track crucial
+metrics such as page views bounce rates
+and user demographics to understand how
+visitors interact with the website
+suppose if I talk about the page views
+the number of times page on the websites
+are viewed like providing insights into
+which pages are attracting attention
+Okay if talk about the bounce rates it's
+going to tell about the percentage of
+visitors who leave the site after
+viewing only one page or indicating any
+potential issues with the engagement or
+relevance then there will be a role
+about user demographics so there will be
+information about like visitors such as
+age gender and location helping tailor
+content and marketing strategies to the
+audience so guys basically in this case
+study what parameters we are going to
+look the first one will be perceiving
+the dynamic changes responsive actions
+reasoning and inter ration so these
+first three tasks would be performed by
+then AI agent next task would be its
+problem solving then inference learning
+and finally action outcome and Analysis
+we have discussed the first phase that
+is perceiving the dynamic changes where
+we discussed about the page views bounce
+rate and user
+demographics now let us move on to the
+next stage that is the responsive
+actions here the task will be
+identifying underperforming pages so an
+AI agent's role would be like
+identifying pages that are not
+performing well based on the traffic
+patterns so it is going to give
+suggestions for improvement like it is
+going to provide actionable insights
+such as content updates layout changes
+SEO improvements to enhance the user
+engagement now if I talk in details like
+in content updates what is going to do
+it will be responsible for refreshing
+outdated content and adding new
+information to keep user engaged and
+informed then it could go for layout
+changes where it is going to adjust the
+design and structure of the pages to
+improve user experience making
+navigation little bit easier and more
+intuitive the third one can be an SEO
+improvements where it will be involved
+in enhancing the Page search engine
+optimization so that you have an
+increase in visibility and you can
+attract more visitors now the third
+would be reasoning and interpretation
+now here the AI agent role is going to
+be that it is going to analyze the user
+Behavior to understand what drives the
+conversions like the action that
+fulfills the website scod like purchases
+or signups then here it's going to
+interpret the data where from like
+Google analytics to pinpoint High
+performing content and strategies so you
+can see like how these things are being
+done by an AI agent okay in this Cas
+while doing the reasoning and
+interpretation he will also come to know
+there's a problem to solve basically so
+here in this scenario it could be like
+the AI agent is going to tackle issues
+like high bounce rates by optimizing the
+landing page to retain the visitors or
+can perform AB testing to test the
+different versions of pages to determine
+the most effective design and content so
+you can see the AI agent is doing these
+tasks simultaneously suppose reasoning
+and interpretation at the first go and
+then going for the problem solving now
+let us move on to the next phase that is
+inference and
+learning now here in the scenario the AI
+agent is going to learn from user
+interactions and continuously refine it
+strategies to improve recommendations so
+here we be the continuous updates where
+it is going to update its suggestions
+based on the latest data to stay
+effective so you can see in this case we
+have the user interaction learning then
+we have adaptative recommendation so
+these are the things which is generally
+given by the AI agent so basically in
+the scenario the AI agent is going to
+implement the suggested changes and
+closely monitor the results to gge their
+effectiveness now here what it can do
+guys here it can use the user
+interaction learning okay and it can
+give you the outcome based adjustments
+suppose if I talk about the first one
+what is going to do it is going to track
+the impact of implemented changes on key
+metrics like page views bounce rates
+conversions using this information to
+assess the success of the interventions
+and the next part it is going to modify
+the strategies based on what works and
+what doesn't to keep improving the
+website performance and user engagement
+so you can see all over here I showed
+you an example that how AI agents will
+be involved in the business processes to
+move more streamline the business and
+improve the revenue so this was one of
+the examples and by following these
+steps AI agents helps the company
+optimize its website leading to better
+performance and high customer
+engagement so guys this was an overall
+case study and I hope so you would have
+got some brief idea regarding what AI
+agents will be capable of now let us
+discuss about some of the future trends
+of AI agents the first one that comes up
+to my mind is AI enable customer
+experience so guys there will be
+enhanced personalization and interaction
+AI will be revolutionizing customer
+experiences by using intelligent
+chatbots and virtual assistance these AI
+systems can understand and response to
+customer queries in real time then it's
+going to offer personalized
+recommendation based on individual
+preferences and past behavior for
+example there will be an online retailer
+using AI powered chat boards to assist
+customers with product recommendations
+like order tracking and resolving issues
+instantly
+the next one that we have all over here
+is Automation and Robotics so here what
+you can expect guys suppose factories
+using robotic arms for assembly fire
+lines warehouses using AI to manage
+inventory and automate the Sorting
+process and also self-driving cars
+navigating the streets so these were
+some of the examples in Automation and
+Robotics then we could see an example of
+generative a suppose you going to see a
+tool like Del generating artwork based
+onch Tex descriptions or AI composing
+original musics that artists can use as
+a foundation for New pieces then you can
+get AI assisted decision-making suppose
+in a scenario where doctors are using AI
+to analyze medical images for quicker
+and more accurate diagnosis Financial
+analysts leveraging AI to predict market
+trends and Engineers using AI for
+optimizing design and
+processes next phase would be ethical AI
+so guys this is also one of the most
+interesting domain of AI agent so here
+what what is going to happen guys we are
+going to get an responsible transparent
+and unbiased AI operations in the
+scenario as AI will become more
+pervasive it is crucial to ensure that
+the development and deployment are done
+ethically so ethical AI will focus on
+creating systems that are transparent
+accountable and free from bias this
+involves by setting guidelines standards
+for AI development to protect users
+privacy rights and ensure fair treatment
+for example impl M rigorous testing and
+validation process to detect and
+mitigate biases in AI models and
+ensuring transparency in how AI
+decisions are made so in this scenario
+the ethical AI agents are also going to
+intervene in the market so guys that was
+all for today's session I hope so you
+would have enjoyed our today's session
+on AI agents at simply staying ahead in
+your career requires continuous learning
+and upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

@@ -1,0 +1,287 @@
+hey everyone welcome to another video by
+simply learn
+in this video we will discuss about
+arduino and raspberry pi
+the arduino and raspberry pi platforms
+have grown in popularity among those
+just getting started with electronics
+and making real time projects
+watch the video till the end we will
+look at in-depth comparison between them
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simplyla so without
+any further ado let's get started what
+is arduino
+arduino is an open source electronic
+gadget that treats input such as light
+on a sensor a finger on a button or a
+tweet and generates output based on
+those inputs such as turning on an led
+or activating a motor
+arduino was created at the design
+institute as a simple tool for students
+with no clear experience with
+electronics or programming
+arduino boards are microcontrollers not
+entire computers with operating system
+of their own like the raspberry pi
+arduino just run c or c plus plus code
+that is stored in the firmware
+the arduino ide is free software that
+allows you to create and upload code on
+an arduino board
+why arduino
+arduino has been used in millions of
+projects and applications due to its
+simple and accessible user interface
+the arduino software is simple to use
+for beginners but it is customizable for
+advanced users
+it works on mac windows and linux
+systems
+arduino is a valuable tool for learning
+new skills anyone including youngsters
+amateurs artists and programmers can
+begin tinkering by simply following the
+step-by-step instructions
+it can be used by teachers and students
+to create low-cost scientific equipments
+to demonstrate chemistry and physics
+principles and to begin learning
+programming and robotics
+designers and architects create
+interactive prototypes
+while musicians and artists create
+installations and try out new
+instruments
+features of arduino
+arduino has microcontroller of omega 328
+and the operating voltage is 5 volts
+whereas the input voltage is recommended
+to be from 7 to 12 volts and input
+voltage limits from 6 to 20 volts
+we have digital input output pins
+that is we have 14 pins
+and we have analog input six pins and we
+have dc current per input output pin 40
+milliampere
+and dc current for 3.3 volt pin is 50
+milliamperes and we have flash memory of
+32 kilobytes
+and we have sram of 2 kb
+and eep rom of 1 kb
+and we have block speed of 16 megahertz
+now let us look at the different types
+of arduino boards present
+firstly we have arduino uno
+arduino uno includes everything you will
+need to get started it has 14 digital
+input output pins 6 analog input a usb
+port a power jack and a reset button
+among other features it comes with
+everything you will need to get started
+with the microcontroller plug into a
+computer with usb cable or power it with
+an ac to dc adapter or battery
+next we have lilypad arduino lillypad is
+variable e-textile device created by lee
+and designed in collaboration with
+sparkfun each lily pad was cleverly
+constructed with large connection pads
+and a flat back to sew conductive thread
+into garments
+in addition the delhi pad features its
+own set of input output power and sensor
+boards designed exclusively for e-text
+styles and can even be washed
+arduino mega the arduino mega is the
+larger brother of arduino uno it
+contains many digital input output pins
+that is 54
+and 16 analog inputs a usb connection a
+power jack and a reset button it comes
+with everything you will need to get
+started with microcontroller plug it
+into a computer with usb cable or power
+it with ac to dc adapter or a battery
+red board arduino
+the arduino ide can program the red
+board over the use of mini b connector
+it will run on windows 8 without
+requiring changes to your security
+settings
+because of the usb chip we used it's
+more sturdy and it's fully flat on the
+back making it easier to integrate into
+your projects
+and we have arduino leonardo
+the leonardo is arduino's initial
+development board with a single
+microcontroller and usb port
+as a result it may be less expensive and
+easier additionally because the board
+handles usb directly code libraries are
+available that allow the board to
+imitate a computer keyboard mouse and
+other components
+now let us look at the advantages of
+arduino
+in comparison to the other
+microcontroller system arduino boards
+are comparatively affordable the
+arduino's module is cheapest version can
+be assembled by hand and even pre-made
+arduino module cost less than 50 dollars
+for windows macintosh os x and linux the
+arduino software ide is provided the
+vast majority of microcontroller systems
+are windows only compatible
+the arduino software is simple for
+beginners but it's also flexible enough
+for advanced users
+for experienced programmers the arduino
+software is available as an open source
+tool to extend
+people who want to learn more about the
+language can use c plus libraries and
+those who want to learn more about
+technicals specifics can switch from
+arduino to avrc programming language
+the arduino is an open source and has
+hardware that can be expanded the
+arduino board blueprints are made
+available under creative common license
+allowing experienced circuits designers
+to create their module version extending
+and upgrading it
+at last we will look at the
+disadvantages of arduino
+arduino cannot run multiple programs at
+a time
+no memory safety checks expensive for
+cpu power and memory
+it has lack of built-in communications
+lack of built-in peripherals
+the limited number of programming
+languages
+and a limited number of ides
+the raspberry pi is a small low-cost
+computer the size of a credit card that
+connects to a computer monitor or
+television and utilizes a conventional
+keyboard and mouse
+raspberry pi can do everything a desktop
+computer does including accessing the
+internet
+using raspberry pi we can watch high
+definition videos access spreadsheets
+word processing and play games
+the raspberry pi can communicate with
+the outside world and has been used in
+variety of digital maker projects
+raspberry pi is also used in music
+machines and parent detectors as well as
+weather stations and tweeting bird
+houses with infrared cameras
+raspberry pi use cases
+raspberry pi is using computer desktop a
+simple desktop can be built using a
+raspberry pi a micro sd card and a power
+source an hdmi cable and a suitable
+display such as an old monitor are also
+required you will also need a usb
+keyboard and a mouse
+robotics controller there are numerous
+raspberry pi robot controller projects a
+specific robotics package for pi is
+available which is powered by the device
+battery and can be used to interface
+with and control robots
+printing using a raspberry pi with the
+raspberry pi we can print anything all
+we need is raspberry pi that's connected
+to your home network as well as some
+print server software this is
+accomplished by first installing the
+samba file sharing program then cups cup
+stands for common unix printing system
+includes printer drivers as well as
+management console
+game server
+the basic operating system for raspberry
+pi has a special version of minicraft
+game pre-installed the raspberry pi
+applications can be used as a game
+server it's fantastic minicraft game
+server a wonderful gaming experience can
+be created by using many raspberry pi
+game machine
+as a retro gaming machine the raspberry
+pi is perfect it is one of the machine's
+lightest components the raspberry pi
+zero in particular is a variant that can
+fit into small locations and be used for
+gaming projects the raspberry pi may
+also be used to restore many popular
+16-bit game systems
+now let us look at the types of
+raspberry pi
+the different types of raspberry pi are
+raspberry pi model b
+raspberry pi model a
+raspberry pi model b plus raspberry pi
+model a plus raspberry pi zero raspberry
+pi 2 raspberry pi 3 model b and
+raspberry pi 0w
+the different applications of raspberry
+pi are it is used as media streamer
+tablet computer internet radio
+home automation
+robotics command
+arcade devices
+cosmic computer
+and different raspberry pi projects
+now let us look at the advantages of
+raspberry pi
+raspberry pi is about the size of a
+credit card
+the raspberry pi is inexpensive
+using raspberry pi to function as a
+server is more efficient than using a
+regular server
+the raspberry pi is ideal for adaptive
+technology because it can display
+visuals as well as play movies
+the micro computer can be used by small
+businesses on a tight budget to use
+their product or build new technology
+that integrates the product
+now let us look at the disadvantages of
+raspberry pi
+raspberry pi is not a computer
+replacement and the processor is not as
+fast downloading and installing software
+takes time
+so you won't be able to do any intricate
+multitasking
+other operating systems such as windows
+are
+incompatible this product will not be
+beneficial for large-scale businesses
+that already have large servers which
+can perform all the tasks that raspberry
+pi can
+as a result it would not be worth it and
+putting everything together it would
+take time
+so with that we have reached the end of
+this video thank you so much for being
+here keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,357 @@
+all right everybody how's it going down
+Netcom 2019 we got Hamidah here to taco
+talk to us about micro service that net
+micro services and docker take it away
+Hamidah hello hello everybody hello my
+name is hameed are very I am Microsoft
+MVP in developer technologies and today
+I will present a session about
+architecting mile marker services in
+dotnet car and using the Kuroko system
+so I will share my screen to start not
+shown up yet up there it is
+so during this session we learned how to
+work with the microservice architecture
+pattern and docker containers using
+the.net car 3 platform to build the
+distributed system we will start by
+talking about the transition from
+monolithic architecture to an
+architecture that consists out of small
+and independent services that you can
+scale and dependently on your difference
+software cycle from development tests to
+production environments and before
+talking about micro services we need to
+understand the difference between
+traditional application approach and
+micro services application approach any
+application is built as a collection of
+services and can be the development
+tested version and deployed and skillitz
+for monolithic application scales is
+done by cloning the app on multiple
+server here which pieces server we means
+VM several machines but for micro
+services scale is done by deploying each
+server and dependently with multiple
+instance across servers or VN we will
+start by presented monolithic up a
+predication approach based it on a live
+application here we have the
+presentation value that presents for us
+do all user interface it can be web
+mobile or desktop application the
+service flier is responsible for
+handling HTTP requests and they're
+responding with in either HTML or John
+or XML for with api's for example the
+business logic is here with the
+treatment though we can say the
+processor of our application the
+database access layer is the data access
+object responsible for access to the
+database despite having illogical
+modular architecture the application
+inspect packages and deployed as a
+monolith monolithic application arm all
+of single complete package having all
+the related needed components and
+service encapsulated on one package but
+for micro services the idea it's really
+some
+it can't set to sleep to split your
+application into a set of smaller enter
+connected services instead of building a
+single monolithic application and each
+maker servicer is a small application
+that has that has its own eggs egg on
+architecture consisting of business
+logic along with various adapter so
+microservices can expose or Esper for
+example for the case of api air pc or
+massage basic api and most services
+consume and he is provided by other
+services and micro servers are deployed
+and dependently with their own database
+their service saw the underline here as
+you can see we have many technologies
+and many patterns but if you won't use
+micro service we have mam more and more
+patterns like bounded context that we
+know before I use it like domain driven
+design secure ace and domain even the
+main events mediator we have many many
+patterns that we still can use a few
+micro services and we have many
+technologies today we will present
+docker containers for example and we
+talked a little bit about Orchestrator
+developer consider micro service as
+architecture style that promotes the
+development of complex applications as a
+suite of small services based on
+business capability and multiple and
+diffident subsystem in the form of
+anonymous services and the following
+pictures show the micro services
+architectural style here we can find the
+various components that we can find in a
+micro service architecture for example
+we start from the clients that
+communicate with API get way that is
+sure that serve as a client and ponds or
+we've talked about that after and we
+have the identity provider that managed
+the identity information it's related
+about authentication
+within a distributed network and the API
+gateway is communicated
+our services here we have poor for
+example services and we we find service
+discovery management's that static
+continent it's like page and CDN here I
+will talk about the importance of API
+gateway in micro services it's sit
+between the client and services it act
+as a reverse proxy routing requests from
+the client to the services it may also
+perform various cross-cutting tasks such
+as authentication we find SSL offloading
+SSL termination rate limiting etc if you
+don't deploy gateway the client must
+send request directly to the front end
+services it creates two coupling between
+the client and the back ends and the
+client needs to know how do individual
+services are decomposed that makes it
+harder to maintain the client and also
+harder to refactor the services now we
+need to deploy our services we consider
+that we created a each service so we
+build our our micro service architecture
+and to do that we will use for example
+docker container so what's local doaker
+its technology that allow the creation
+and use of container and local developer
+and this is admin to so easy deploy that
+application is sandbox to run on the
+host operating system to start our demo
+we need to have a Windows 10
+professional and enterprise because we
+can't understand the docker desktop for
+windows in Windows 10 home
+we need Visual Studio 2019 but 2017 it
+support docker and docker for a desktop
+for Windows and docker tools now we will
+try to start creating a speed net car 3
+solution but before we will try to
+architecture I will go now to the demo
+here I have an old solution created from
+four years ago this old solution I base
+it on on Web API create by with API the
+old the old way of with API as you can
+see here we have the service line it
+includes many controllers
+I had many controls to manage my
+application here and we have the
+business part here it's divided by
+application and domain we have the
+oppressed actually this is the database
+it's a layered application and I live
+the web parts it's it's a web angularjs
+inside in dc4 it's all the application
+as I said and I would like to react at a
+to do micro service architecture here
+and to start here I created a blank
+project here it's a blank project and
+ready created some Web API for my AP is
+but we will do that again now so here in
+Visual Studio 2013 I have a blank
+solution and I will add a project here
+and we'll choose is P dot net web
+application for example for me I choose
+here I have configuration service user
+accounts I go back to the old one I will
+choose for example here contacts API I
+would like that this the control will be
+separate services as API sorry say here
+contacts service for example and here
+create and here we have any speed net
+car 3
+but already launched it from today's we
+will use this and here as you can see in
+advance its parts we we are requested to
+to say enabled docker support here
+requires dhoka dhoka the desktop here i
+have the application the docker
+application desktop as you can see here
+it's docker is already running
+and here we can choose between Windows
+and Linux for me I will keep windows
+because I am in I'm in Windows container
+here but if we change near pullings we
+need to switch to a Linux container in
+docker desktop here I will choose API
+API and we click on create here and here
+as you can see our docker file is
+already created and if you want to check
+yeah absolutely
+so we have on what we need to lunch
+token and here we can launch docker here
+you click on docker to be able to see to
+to deploy my web api on docker might
+will be in my machine locally in doha
+desktop so here the rate around
+okay but because it's not there we need
+to do to say that so do set up projects
+to be primarily one
+so first it was on the web but here we
+can launch docker and again so we were
+waiting just to see so
+when you try to check out the image in
+docker waiting to hear we can comment
+line we say docker images and here we
+have our complexes the our image this is
+the image on docker and we can create
+more than one image for the same web api
+basis it's really important than one of
+advantage of docker containers and
+micro-services
+and we can do the same thing for whip-it
+for for the presentation layer for
+example if you want to create if you
+want to create for example here I want
+to create empty see your project and we
+can do the same thing here and you can
+say for example here this is webparts
+microservice for example create and we
+can choose NV severe and we check naval
+check naval doctor support but you can't
+create and you can have the same thing
+here the for docker file will be created
+we set it as start projects and we can
+mash it on docker it will be a web
+application but we know T if we check
+again token image we will find this
+project
+yes
+this one
+and we try to check here
+so we go back to our presentation here
+so in previous movie movie are we
+started from an old application that
+include many many layers many services
+to in a service layer and we created a
+new solution blank solution and we added
+four we are able to add more and then
+API and the web application and this is
+one to start my our micro services and
+we deploy this in a local but in a we
+need to deploy this in within the clouds
+and in Asia we talked about cloud we
+talked about eager containers in angel
+here we have the alpha services that we
+know to deploy many many application the
+service fabric is it's an important
+container and Orchestrator to kubernetes
+- it's another Orchestrator and
+container and we have a container
+instance and back in our case we will
+try to use the registry container
+registry in asia to deploy it's easy
+from from the vision so we go back to
+our application just to show you how we
+can do that so start from here we can
+choose web or any web api application
+here we choose publish and as you can
+see here we find all all publish target
+but that we can use it we have the opt
+services the container registry the
+containers s3 is dedicated to deploy our
+images to push them into Asia and we can
+create a new one here from from visual
+studio it will be created in our
+reporter or we can select from exist
+think a jerk on the container if we
+already have the containing created in
+Asia portal we can add it and we can use
+the docker in the curve it's dedicated
+it's an open source litigated to docker
+or we can use a custom server that
+configure it in in the hostel so here we
+click create we create our profile and
+we give Venice prefix because here you
+it creates a name and our subscription
+we define research group and we click
+and on three days for here
+so it's deploying step it takes few
+times because it's deploying into Asia
+to create our container container
+resistant include or company that you
+need it can be grouped using your
+research group here and it's here when
+we leave to publish it will be published
+in our portal importer of leisure and we
+can after go through see ICD pipeline or
+create up services if it's it's a web
+application to show it or if we include
+throughout the program for IP I to
+display our API what you have so you go
+back to our our invitation here sorry we
+talked when we talk about contains
+docker we need to talk about
+Orchestrator in Asia or here for example
+here we have two known Orchestrator in
+Asia but the youth is different so if we
+use the kubernetes with the with docker
+or service public you need to know to
+choose it depend from your micro service
+it's really based on container only or
+it's based on plain process state of
+services and you find the mullennix and
+the windows it's the same it's not a
+problem
+and as now here are Cuba natives it's
+open source for automation deployment
+scaling and operating of application and
+we can we can pay in a jeweler for VMs
+in cluster and you key to create to have
+this place pay-as-you-go here and it's
+is container after structure and the
+same for syllabus fabrics so this
+session was an overview about micro
+services with docker
+micro services allow to in to evolve
+deploy and scale part of application and
+dependently but we can't use this
+architecture for small application
+because it's dedicated to distributed
+the software challenge
+and a challenge and the for scalable and
+long-term evolving application thank you
+if you have any questions please and you
+can send your questions to my Twitter
+and you can found more detailed at the
+source code in my kit about this this
+example and other example hey I mean
+thank you so much
+we've been looking on the chat and we
+don't see any questions so well thank
+you for sharing your Twitter so again if
+anybody has any questions go ahead and
+use Twitter to ask Amita those questions
+the github repo is right there so we can
+share that thank you so much that's
+great and thank you so much for taking
+the time to share your knowledge and
+your experience with us we really
+appreciate that it's you know people
+like you is what makes our community
+strong and it makes us better all right
+so or yet awesome so all right everybody
+we are going to be going into our next
+speaker and let me check that here we
+have Santosh talking about cosmos DB for
+asp.net so we'll get that going here
+we'll be right back

@@ -1,0 +1,537 @@
+g'day Traders welcome back to another
+pine script lesson today's lesson I'm
+going to be answering a question from a
+student in the Mastery course now the
+student Connor wants to know how to get
+the bar index of an intraday bar based
+on a condition that's met on a higher
+time frame now I don't know how many of
+you guys out there will need to do this
+sort of thing in your own scripts it's
+the first time I've ever had this
+challenge in pinescript but I think the
+techniques I used to get this to work
+are quite interesting so I think you
+guys will appreciate my thought process
+and the techniques I used to analyze
+that higher time frame on intraday pass
+so in Connor script he's pulling the
+previous days high and he wants to get
+the corresponding bar index for when the
+lower time frame bar creates this high
+and that's exactly what this script here
+is doing alright so here I am with a
+pretty much blank script I've just
+written out the steps we need to take in
+order to achieve our goal today so the
+first thing we need to do is get the
+higher time frame highs value so if I
+drop out to the daily chart that is
+going to be this Bar's High here this
+green bar that's the first step
+obviously the Second Step however is a
+little more complicated now we need to
+to calculate how many bars we need to
+look back on our intraday time frame to
+find which bar generated this high or
+created this high so to do that we
+actually need to add up how many bars
+have printed today and how many bars
+printed yesterday and then that's our
+Loop count so we need to loop from this
+bar here all the way to this bar here
+between these two time frames and now
+that looks like the world's worst smiley
+face hopefully that makes sense so we
+need to add up how many bars printed
+today how many bars printed yesterday we
+need to start our loop our for loop from
+this bar here Loop over all of these
+bars on our chart to find which one
+created yesterday's high and now this is
+an even worse smiley face
+uh anyway this is the mind of
+programmers we get a little crazy so we
+calculate how many bars we need to look
+back and then we loop from the start of
+yesterday's session or the higher time
+frame session if a higher time frame
+session is a weekly chart then We're
+looping from the start of last week to
+today but in this case we're going to
+stick with the daily chart for now and
+what we need to do is loop from this bar
+to this bar find that highest high once
+we've found that highest high so once
+the bar we are looping over equals
+yesterday's high we save the loop
+counter and exit our Loop and then this
+Loop count is going to be how many bars
+printed since that intraday bar created
+yesterday's high so in this case that's
+14 bars so if we subtract 14 from this
+Bar's current bar index that will give
+us the bar index of this bar so
+hopefully that makes sense but we'll
+start writing some code now and I'll
+show you how we do this in practice
+because I think it's quite interesting
+like I said many of you might not ever
+need to do this in your scripts but
+there will be parts of the techniques I
+use here that will be useful to you in
+other use cases so I think you'll still
+find this video interesting so the first
+thing we're doing here is getting a user
+input we're just getting the higher time
+frame by default it's the one day time
+frame the next thing we need to do is
+get our higher time frame high now in
+the past I would usually do something
+like this
+is confirmed question mark zero
+otherwise one
+and I would use this approach for
+getting our high time frame high and
+this would eliminate repainting however
+this works on most markets but in some
+markets it doesn't work I'll show you
+what I mean in a second you would have
+seen in a lot of my previous videos this
+is the method I used to use but I use a
+different method now and I'll explain
+why so first of all let's plot this onto
+our chart
+now if I save my code we should be
+getting yesterday's High drawing there
+we go it's not repainting it's not doing
+anything funny however if I go to a
+stock market like apple you can see this
+here
+um I'm not entirely sure why it does
+this but on the final bar of yesterday's
+or last night for me this is a US market
+and I'm in Australia obviously if you
+can't tell by my accent on the very
+final bar of yesterday's trading session
+in the US for whatever reason this bar
+began a new day and now we're drawing
+this bar is high
+and that's incorrect this should be
+yesterday's high and then around
+midnight tonight a new bar should open
+and that becomes the new day anyway to
+be completely honest I'm not sure why
+this happens but I do know how to fix it
+and the way we fix it according to the
+paint script documentation is this code
+here so if I copy this code and paste it
+above
+um
+I'll just shorten this up a bit so and I
+don't know why they say index let's just
+call it Market we're getting two integer
+values Market higher time frame a market
+current time frame that's what CTF
+stands for current time frame so for
+Market higher time frame we're checking
+is the current bar a real-time bar is it
+currently active if so we want to
+reference yesterday's bar to eliminate
+repainting otherwise if it's not a
+real-time bar that means it's a
+historical bar and we can reference the
+current bars index and then we do the
+same thing for Market current time frame
+except if the bar is real time we're
+referencing the current bar otherwise
+we're referencing the previous bar and
+now I can replace this
+ternary operator here with Market higher
+time frame so the security function
+expression is going to run on the daily
+chart and so this expression will be
+passed into the daily charts high value
+and if the current bar the current daily
+bar is real time or active then we'll be
+referencing yesterday's market data
+instead of today's market data and that
+will stop the script from repainting if
+I go back to euro dollar here and I get
+rid of this and I save my code
+this will now repaint and what that
+means is throughout price action today
+if we come up here this red line will
+move with price action as we generate
+new highs there are times when you will
+want that to happen but in this
+particular case we don't want repainting
+we just want to draw yesterday's high
+over today's price action and then when
+a new day starts tomorrow we want to
+draw today's high over tomorrow's price
+action so to eliminate repainting
+properly we're going to use these two
+values like so and now if I go back to
+Apple and I save my code this will no
+longer be drawing like this we'll be
+drawing yesterday's high properly there
+we go so anyway that's how we get
+the higher time frames High
+without repainting
+now that we have that value the next
+thing we need to do is count how many
+bars I'll go to euro dollar again for
+this we need to count how many bars have
+printed today and how many bars printed
+yesterday now I need to move these blue
+lines because I forgot that my time zone
+is obviously out of whack with the
+exchange time zone so technically at 8
+am a new day starts for Forex for where
+I live so this is how it should look so
+we ignore the dates down here
+technically a new day started at
+midnight here but as far as the Forex
+markets are concerned we're basing our
+new days off the exchange time zone so
+what I need to do now is count how many
+bars I've printed today and how many
+bars printed yesterday add them up that
+gives us our look back period but that's
+easier said than done the way I do it in
+this particular example is borrowed from
+my aval by time indicator and the way I
+go about this is like so I'm just going
+to copy this block of code over and
+break it down for you guys so the first
+thing we do is detect a new session on
+our higher time frame so when a new
+higher time frame session begin new
+session will be true and the way we do
+that is we detect a change in the
+timestamp of the open of this higher
+time frame period so in this case when a
+new daily bar begins new session will be
+set to true then we have two counters
+here we have a counter for how many bars
+printed this session and how many bars
+printed in the last session of our
+higher time frame so in this case this
+will be how many bars printed yesterday
+this is how many printed today so if we
+are not starting a new session then we
+add one to our bars this session counter
+and so every time a new bar begins we
+add one to our counter for today however
+if new session is true then this will
+not get executed but this code will and
+what this does here is it saves how many
+bars printed across yesterday and then
+it resets our bar count for this session
+and so now we have two values how many
+bars I've printed today since the new
+day began or a new higher time frame
+period began and how many bars printed
+during yesterday's higher time frame
+session in this case yesterday if I
+change this to weekly then now we're
+looking at this week how many bars
+printed this week and adding up how many
+bars printed last week to get our look
+back period so hopefully that makes
+sense and you're following along here so
+once we have this information the next
+thing to do is calculate how many bars
+we need to look back so this is our look
+back period bars total across our higher
+time frames and that's going to be how
+many bars printed this session plus how
+many bars printed yesterday or in the
+last higher time frame session now we
+can Loop through all of the intraday
+bars that are relevant to this look back
+period and check if the intraday
+condition is met in this case if the uh
+let me change this back to daily so
+we're going to loop from this bar to
+this bar and detect which of these bars
+equals our higher time frame High and
+the reason we need to start looping from
+here to the current bar instead of from
+the current bar backwards is because if
+there are multiple bars here that equal
+the highest high of yesterday then this
+bar will be incorrectly detected as the
+bar that generated the high we want the
+first bar that touched that high to be
+identified as the intraday bar that
+created yesterday's high so we start
+with the bar counter this is how many
+bars have printed since this high was
+created and now we can Loop so if I
+paste this code in we're creating a for
+Loop and I our Loop index is going to be
+set to the total bar count for today and
+yesterday so this bar here
+I'm going to loop from that bar to zero
+so in this case we'll be looping from 30
+bars ago to zero
+and in each iteration of this loop we're
+going to check if that bar is high is
+equal to the previous day's high if this
+condition is met then we found our
+candle or bar that created yesterday's
+high so we assign our bar count since
+high to the loop index and we break out
+of our Loop so we stop looping because
+we don't need to finish our Loop anymore
+we've already found the bar that we're
+looking for so now that we have that
+information we have everything we need
+to calculate what the bar index is of
+this bar here
+so we copy the server
+what we're doing here is creating a new
+variable called higher time frame bar
+index technically this should be a
+intraday bar index of our higher time
+frame high and it's going to be set to
+the current bar index so this bar here
+will have a bar index that equals the
+total number of bars loaded onto our
+chart and then if we subtract this
+number this Loop index from that bar
+index so in this particular case that'll
+be 15 bars if we subtract 15 from the
+current bars index that will give us
+this Bar's index and so now if I draw
+all of this information onto my chart so
+here we have one plot and two plot cars
+or plot charts plot characters we're
+plotting the previous days high or
+previous higher time frame bars High
+we're plotting the current bars index
+and we're plotting the current bar size
+now I'll show you why we're plotting the
+current bar size in a moment now notice
+that we're using the plot character
+function here instead of a plot the
+reason we're doing that as you would
+have seen if you watched my previous
+lesson on debugging scripts these two
+values here are p really for debugging
+so we don't need to actually have them
+drawing onto the chart like this red
+line is
+but if we use a plot to draw these
+values depending on your chart settings
+if you have this turned off scale price
+chart only then your chart scaling is
+going to get Warped and your child looks
+something like this it'll squish up
+price action and because we'll be
+plotting a bar index that'll be in the
+thousands so our chart here will scale
+all the way until we see thousands on
+the chart and we are also plotting the
+bar size which will be in Pips so
+that'll be a tiny number and so we'll
+just end up with this really squished up
+chart So to avoid that we can use the
+plot character function instead so now
+if I save my code we will be getting
+those values drawing up here so the
+green number is the bar size the blue
+number is the bar index that I'm
+hovering over and the red number is
+yesterday's high so the final thing we
+need to do is draw this information onto
+the chart with the debug label so that
+we can verify that we're getting the
+correct information so I'm going to
+paste this code in here now don't worry
+this is scary at first glance if you're
+new to working with labels and text in
+multiple lines but I'll break it down
+it's not that complicated or we're doing
+here is we're checking if the current
+bar is the last bar on our chart if that
+is the case then this code gets executed
+and what we're doing is we're
+calculating the bar size of the bar that
+generated the intraday high so that'll
+be this bar here we're subtracting this
+Bar's low from its high and that gives
+us the bar size of that bar so this is
+just an example of how we can use the
+information we've collected up here to
+analyze the bar that created yesterday's
+high now what you do with that
+information is obviously up to you that
+I didn't actually ask the student Connor
+what he wants to do with this
+information but I'm sure there's plenty
+of good reasons why you might want to
+analyze the bar that generated
+yesterday's high depending on your
+trading system or the way you analyze
+charts this could be important
+information so anyway the next thing we
+do is generate a label we just create a
+new label on the current buyer index I'm
+placing the label 500 points or 50 Pips
+above the current bars High just so that
+it draws appear somewhere away from
+Price action I don't want a big label
+drawing over the top of price and then
+we're generating a giant string so the
+string is going to include our Market
+type it's going to include the intra bar
+count so how many bars I've drawn today
+or plotted today and a bunch of other
+information and then we're just giving
+it a background color of black and a
+text color of white so now if I saved my
+code we'll be getting a label drawing
+with all this information so it's
+telling us our Market type it's telling
+us how many bars printed today so six
+bars have drawn since this day began or
+this daily time frame session began on
+euro dollar based on my exchange time
+zone so in this case we're on oanda's
+price feed so at 8 AM my time a new day
+began on eurodollar and we've had six
+bars or six hours plot since then we're
+also getting how many bars printed
+yesterday so we're on the hourly time
+frame here we're on a Forex market and
+Forex markets are open 24 hours so we
+should have 24 bars so the new day began
+here if we count all the way back to the
+previous new days beginning we have 24
+bars and so we're adding these two
+numbers together to get our look back
+here period so six bars today plus 24
+bars yesterday gives us 30 bars and
+that's our blue line here so I can
+verify that by counting back to the Blue
+Line you can see we have 30 bars there
+and then the last couple of uh
+parameters here drawing on our label is
+how many bars have printed since the
+high was created yesterday so if I count
+back to that bar there 15 and 15. so so
+far so good then finally we get the bar
+index which is what the student wanted
+to get in his script he wanted the bar
+index on this time frame the alley time
+frame of the bar that created
+yesterday's high in this case that's
+25931 if we look at this blue number up
+here when I hover over that bar you can
+see that it is in fact 25
+931 and then finally we're calculating
+the bar size of the bar that created
+yesterday's high if I zoom in here it
+should be 22.3 Pips so if I measure from
+the high down to the low close enough
+22.4 Pips so that is how we go about
+well this is one way we can go about
+getting the intraday bar index of a high
+time frame condition now there are many
+ways we could go about doing this it's
+probably simpler ways we could we could
+go about doing this we could just have a
+set look back period we could loop back
+like 100 bars or so and just check which
+bar matches the higher time frame High
+here but I know it's super rare but what
+if we had several bars over the past
+several days that touched that high
+value exactly how do we know which one
+generated yesterday's high we don't know
+unless we loop back the correct number
+of bars so that's why I went to the
+trouble of counting that look back
+period properly and the cool thing about
+this method is that it's robust so if we
+go to the stock market now we're still
+on the one hour time frame the
+difference here is that the stock market
+is not open 24 hours a day and so if we
+want to get the bar index of this bar
+here the generated yesterday's high we
+we need to loop back 13 bars in this
+case instead of whatever it was on euro
+dollar so now it says here by since high
+is nine so if I count back nine bars
+from the current bar we get nine and the
+bar index up there
+is two one three four seven two one
+three four seven and now if I jump over
+to something like crypto
+this label should also be correct still
+so this is the bar that generated
+yesterday's high
+if I count back it should be 20 bars ago
+20 bars ago and the bar index is 27 725
+27 725. so there you have it we have a
+script that is correctly identifying
+which bar met our high time frame
+condition now this condition could be
+anything it doesn't need to be the
+highest high it could be an indicator
+value like an RSI for example it could
+be the bar that touched an EMA it could
+be the first bar that set the higher
+time frame overbought the applications
+of this check here you could replace
+this code here with almost anything
+uh you you get whatever higher time
+frame value you want to analyze and then
+in this for Loop you check which bar
+created that condition and then you can
+correctly identify and isolate that bar
+and analyze it however you need to so
+that'll do it for today's lesson I know
+it was a bit of a esoteric lesson this
+is the first time out of hundreds
+hundreds of questions I get that
+anyone's ever wanted to do this but I
+thought it was an interesting challenge
+it took me a few hours to figure out the
+solution and I think there's a lot of
+interesting techniques involved in this
+script in this solution that can be
+applied to all kinds of use cases in
+pinescript so I'll wrap this lesson up
+here I hope you found it interesting as
+always the source code will be below
+don't forget to subscribe if you've got
+value out of this video I'll be back
+probably next week maybe the week after
+a bit busy next week with some stuff but
+I will try to get a video out if I can't
+it'll be next week and in the meantime
+I'll stay in touch with you with the
+Weekly Newsletter if you're not aware of
+that go to the art of trading.com and
+check out our free Weekly Newsletter
+where I share information techniques
+advice books podcasts things that I've
+found useful in my own trading and
+coding journey and even business and
+investment techniques mindset psychology
+all that stuff go and sign up to the
+newsletter if you want there's no
+marketing there it's just free there is
+some Amazon links thrown in there from
+time to time but really that's just a
+fun the giveaways I do sometimes when I
+plan to give away free books and stuff
+like that with all that said I'll speak
+with you soon I love you guys have a
+great weekend and good luck with your
+Trading

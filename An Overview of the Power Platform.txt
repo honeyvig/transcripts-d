@@ -1,0 +1,793 @@
+>> On today's Visual Studio Toolbox,
+April joins us to give us an overview
+of the Power Platform and we
+start to explore how Visual Studio
+developers can join the fun.
+[MUSIC].
+Hi, welcome to Visual
+Studio Toolbox.
+I'm your host, Robert Green.
+On today's episode, we're
+going to start our look at
+the Power Platform and
+April Dunnam is going
+to join us. Hi, April.
+>> Hey, Robert.
+>> How are you?
+>> Pretty good happy to be here.
+>> Happy to have you.
+This is the first in
+a three-part mini series
+on the Power Platform,
+which I think a lot of
+people have heard about it,
+certainly seen about it,
+heard about it, maybe watched
+the keynote demo or so.
+But I keep hearing these
+phrases like no code and
+citizen developer and
+easy and .NET developer,
+Visual Studio guy, my
+first slide as well.
+This is no code.
+What role do I play?
+The answer is there is a role for
+Visual Studio and.NET developers
+in the Power Platform.
+I think it's a very important
+one and what we want to do on
+this series is direct this
+at .NET developers and
+explain to them what
+the Power Platform is and
+where they can fit in.
+We're going to do that
+in these three episodes.
+Episode 1, today will
+just be an overview
+of the Power Platform with April.
+Next week, Greg Hurlman will be
+on to do a more of a
+deep dive and show
+how to build apps that include
+Web APIs that are written
+by .NET developers.
+Then in our third and final episode,
+we're going to do a one hour live
+show where we actually build
+a Web API that is then consumed
+in Power Platform apps.
+I think you guys,
+people watching this, just watch
+these and really understand,
+I don't think we're necessarily
+breaking any new ground,
+but we're approaching this
+from the .NET developer
+inside instead of the
+business side building app.
+Same content, just a
+different spin on it.
+Hopefully at the end of the three
+episodes, you guys will say,
+"Yeah, that's something
+I definitely want to
+do and now I know
+how to get started."
+That's the goal and
+with that you're up.
+>> Awesome. Thanks for having me,
+this is something I'm super
+passionate about as a .NET Dev and
+SharePoint dev myself that
+got into Power Platform.
+We sharing a story of
+how, like you said,
+we often hear of Power Platform
+talked in terms of being
+no code, low code.
+Where do we as Pro Devs and
+done a dev student to this?
+Actually I'm going to share a screen
+here on the slide deck that I
+have that shows a really good
+visual of this whole story,
+the holistic story of the Power
+Platform and what it has to offer.
+Just setting the stage here.
+When we talk about
+the Power Platform,
+if you haven't really
+dug into it a lot,
+we have four main products
+that we can use that are
+part of the Power Platform.
+There's Power BI that
+you might have heard
+for your dashboards and reporting.
+We have Power Automate,
+which is the glue where we can
+do some workflow automation,
+even robotic process automation.
+Power Virtual Agents is one
+of the newest features of
+Power Platform for building
+low code chatbots,
+and then Power Apps,
+probably one you might
+have heard talked about
+a lot in some capacity
+with new traditional
+developers because
+that allows us to build
+low code applications.
+Those are the components
+of the Power Platform,
+but what really makes it
+powerful is the fact that yes,
+it can tackle those no code and
+low code scenarios for
+citizen developers,
+but there's a great code-first
+pro dev integration story
+with extensibility points that
+we can leverage for this.
+It's all about really
+increasing your efficiency as
+a developer and letting you focus on
+what you actually want to focus on.
+You don't have to worry
+about the UI, for example.
+You can focus on building
+that .NET API or whatever that
+you're trying to build in
+the backend and all that and
+let citizen developers handle
+some of that frontend stuff and
+tackle these things together.
+>> You get to own the data
+logic, the business logic,
+the data layer, and not have to
+do these boxes and grids anymore?
+>> Exactly. It's all about making
+your life better and easier and let
+you focus on what you
+really care about.
+Really what this ties into is
+the whole concept, the
+fusion development.
+You might have heard us talk
+about that a lot here lately.
+It's nothing that's really new.
+Fusion development teams
+have been around a while.
+I think, what's the stat there?
+About 84 percent of companies
+have some fusion
+development team in them.
+It's really all about IT Pros,
+devs and low code
+developers and some guys,
+whatever you want to call them,
+working together to
+create software faster.
+There's something in
+this truly for everyone.
+You can have those low code devs
+that know the business
+process and the solution,
+what they're trying
+to solve really well.
+Get in there, be able to determine
+the requirements and what's
+actually needed in the software
+that you needed to build and even do
+a prototype of the UI and
+how you want it to look.
+All you have to do as a developer
+is help bridge the gap in
+some of the planning and security
+and being able to pull in data,
+for example, say from internal
+systems APIs that you
+might have in facilitate that
+extension and integration.
+It really makes the process
+very user-friendly,
+collaborative and helps everyone
+focused on what they actually care.
+>> Cool.
+>> Yeah. Those are the metric,
+they're about 84 percent of companies
+do have these fusion teams,
+like I said, so many benefits
+of embracing this fusion
+development approach.
+An example of how this
+could work in action.
+I really want to focus here
+on Power Apps because that's
+the application
+development standpoint
+used for the Power Platform.
+You are the ability
+for an end user to be
+able to come forward
+with these requirements
+that you want to solve,
+having a citizen developer build
+that frontend in a Power App.
+Then if you need, like I
+said, to integrate data
+from one of your legacy
+or on internal systems,
+being able to go
+plug-in as a pro-dev,
+add in that functionality,
+and be able to have
+this seamless process.
+How we do that plugin is with
+something that Power Platform
+offers called custom connectors.
+Custom connectors, a connector
+is something the Power
+Platform that they have,
+which is just a wrapper
+around an API that lets us
+communicate between services
+in the Power Platform.
+It's one of the things
+that really makes
+building applications on
+the Power Platform so easy,
+because we have about 500
+different built-in connectors
+that we can just plug
+and play right now.
+These are services like
+Microsoft Services,
+as you might expect,
+SharePoint and all that.
+But other services like
+third party SaaS services like
+Box and Salesforce and all that.
+We even have the ability with
+the connector model to plug
+into on-prem data with
+an on-prem gateway
+and to be able to
+develop and register
+your own custom connectors
+to build building blocks
+for citizen developers.
+If you have an API,
+maybe you want to be able to extend
+a legacy application
+that you have in
+its infinitive backlog
+forever to add
+some additional functionality
+or screens to it.
+What if you could just expose
+that API and custom
+connector and let
+your Citizen Devs consume that
+information and build out
+a simple three-screen Power
+App to connect to that data?
+Saves you a bunch of time,
+all you have to do is just make
+an API that you already have
+built probably available and you
+can do so much more with it.
+>> If I have a simple Web API that
+talks to SQL Azure for example,
+would I connect that to
+the Power App or would I
+just let the Power App talk
+directly to SQL Azure?
+>> You can technically do both.
+That's one of those 500 connectors
+that the Power Platform offers
+as a connector to Azure SQL.
+You could do that, but if it's
+any other RESTful API
+that you have that
+maybe doesn't have talk with SQL,
+maybe it's stored somewhere else,
+whatever it might be
+and you want to be
+able to interface with that API,
+you can just register it as
+a custom connector to
+your service to be able to
+have that building block.
+The cool thing about that is
+you build this connector once,
+and you can use that same
+connector in a Logic App,
+which is what Power Automate
+is actually built on top of,
+Power Apps, and Power Automate.
+You can use it for
+workflows scenarios,
+Logic App scenarios, and application
+scenarios, and Power Apps.
+>> Can I hook it into Power BI?
+Is Power BI considered a Power App?
+>> Yeah. You can have Power
+Apps embedded in Power BI.
+I buy the way that design,
+we could integrate
+that all in there.
+What's going on behind the
+scenes with the connector model
+just to level set that is you
+have the connector itself,
+which is really what knows
+your Web API and
+the operations and that
+host details and all that,
+but when a user goes to
+use your connector inside,
+say of a workflow in Power Automate
+or an application of Power Apps,
+they create a connection
+to your connectors.
+That's why it has the
+actual credentials and
+the reference information
+to the connector and
+facilitates that communication
+to your Web API.
+>> Okay.
+>> With custom connectors,
+a few different ways
+that we can create these and I
+know you'll be getting into this in
+some of the future
+sessions in more detail,
+but we have a built-in
+wizard-like experience,
+but we can also import directly
+from OpenAPI definition.
+Either a file or
+directly from a URL.
+It's really pretty easy
+and seamless to create one
+of these custom connectors if
+you're already using OpenAPI.
+>> Then if I already have
+my Web API sitting up in
+an Azure service is there
+a preview connect
+directly to that service?
+>> Yes. That goes into the integration
+with Azure API Management.
+There's a native connector
+and integration with that.
+If you're using that,
+you can just connect
+directly and it will
+export a connector
+for you from Azure API
+Management hosted APIs.
+>> Cool.
+>> I thought that we show
+briefly just how easy it works.
+You have an API.
+I'm here on the Power Apps portal.
+If I'm a user and I want
+to be able to use this,
+all I did is I went into
+Custom Connectors as the
+developer of the API,
+and I registered a new connector.
+I've went to New Custom Connector,
+I saved from an open API file
+that I already have exported.
+It takes you through
+this process here.
+It gets all that information down,
+and you can specify a
+name for your connector,
+description, the scheme,
+and all of that.
+Then here on the definition,
+this is all of the
+actions for the API.
+It automatically
+import that for you.
+If you need to override anything,
+we can do that here
+from this portal.
+We can even have built-in testing,
+before we try to use
+this inside of an application
+to make sure it works.
+We can do a simple
+test as the operation,
+and it will return since it'll have
+an accept header, it's
+probably going to come back,
+for example, with maybe
+an error message here.
+Let me know what happened,
+and if it worked or not so I can
+do that built-in validation.
+Now, that's all I need
+to do as a Pro Dev
+or a citizen dev who wants to
+come in and use this in an app.
+I have this app here.
+I'm just going to open
+this in edit mode.
+You'll see how easy it is
+to integrate the connector
+as an end-user inside of an
+application you're trying
+to build to extend it.
+This is an application for Farm
+Plant Inventory Management,
+it's really the purpose of this.
+The API that we have interfaces with
+our database to retrieve
+information about different plants.
+If I want to use this, I just
+have to go up to the data source,
+and do a search for that
+API, that custom connector.
+Add that in with one click,
+as you can see, we already
+have that API in there.
+Then now if I want
+to go into search,
+all I'll I do is on this button,
+I'm going to have that call my API.
+I'm going to pass it in
+what I want to search for.
+That's going to return
+the results for me.
+I just had to do this very simple
+Excel-like formula as an end-user.
+Now it's returning data as
+respecting all the
+security and everything,
+that we put in place with their API,
+so we don't have to
+worry about that.
+Now I'll just unlock all
+these possibilities to be
+able to search for something there.
+It's just really pretty seamless.
+>> Wow. Now you could obviously
+build this app as a .NET app,
+whether it's a Web App,
+or WinForms, or WPF,
+or WinUI, or Xamarin,
+or Blazer or blah, blah, blah.
+You've got the same Web API that
+you would use for each of those.
+Here you just register that API.
+Pip create a connector
+for it, and then,
+your low code/citizen developers
+come in and make
+this app themselves,
+or if you wanted to you could
+build it yourself
+more traditional way.
+>> Exactly. You have
+the flexibility there,
+or yes you can build it
+the traditional way,
+but by being able to have this as
+a connector available as well,
+you're just giving even
+more ways that we can
+accomplish the same goal and
+more integrations possible.
+>> If I was still in
+charge of building the UI,
+when will I choose to
+build it as a Power App
+versus just a regular
+UI that I'm used to,
+is one easier than the other?
+Obviously, if I build it
+entirely from scratch you can
+do everything I can code,
+but for relatively
+straightforward apps,
+what's the sweet spot?
+>> Obviously, this is going
+to be super user-friendly.
+Power Apps, as you're seeing,
+I like to describe it as a
+PowerPoint and Excel had a baby,
+because the interface is very
+PowerPoint-esque, I mean,
+you're drag and
+dropping your controls,
+and here for what you need is very
+seamless the formulas
+are Excel-like.
+It's going to be really
+quick to build this.
+The other thing that you
+want to keep in mind is,
+I built this Power App right now
+and you notice that it's
+running on my desktop.
+The same app would run
+seamlessly on my mobile
+device or my tablet.
+I build one application once.
+I don't have to worry about
+targeting it for iOS and
+Android and the desktop
+and all of that.
+I just build one user experience,
+and it works accordingly.
+That saves a lot of time.
+The other thing that you need to
+point out about Power Apps is,
+this is a Canvas application.
+The intention of this
+being to be used within
+the firewall within your
+Microsoft 365 Tenants.
+Decision point where you might
+just go, the custom route,
+the traditional way would
+be if it needs to be
+anonymous or external
+or something like that.
+But for those enterprise or just
+a specific application needs,
+Power Apps is pretty hard to
+be in a sweet spot
+because it's just so
+fast to build and to get
+something up and running.
+>> If I wanted to build one
+that my wife and I would use,
+I could do that and
+we've got 365 family.
+Is that the equivalent of a tenant
+that we can use Power Apps in?
+>> The family doesn't
+but what you can do
+is use the Power
+Apps developer plan.
+That's a new plan there,
+and we can test and build
+all the Power Apps,
+that we want their
+most in 365 plans like
+the Business Premium and all
+the eight skews and all that,
+include a license for Power Apps.
+We actually have that
+myself, my husband and I,
+and I built an application
+of Power Apps to
+do manage when he needs to do
+the lawn and when he needs
+to water and all that stuff.
+We have actually did
+that with Power Apps.
+>> Cool.
+>> There are other
+integration points
+to that, I thought I'd point out.
+That's a big one, especially for
+.NET developers is being able to
+consume your APIs in
+there and saving time.
+But there's a lot of
+other extension points
+that I don't want to point out.
+Let me just pull something
+up here real quick,
+because this is a great slide here.
+Sorry for all the back-and-forth.
+There you go.
+This shows the whole scope.
+Besides Custom Connectors,
+what else can we do from
+a product standpoint
+with a Power Platform,
+specifically, Power Apps.
+With Power Apps we can even
+integrates with things like IoT Edge.
+It has built in mixed reality,
+which is pretty cool.
+This is one of the things
+I did at Hackathon.
+It has a 3D viewer mixed reality
+control where you can place
+objects in mixed reality and even
+measure and do things like that.
+We can have geospatial mapping,
+even integrate with the HoloLens,
+the applications that
+we build in Power Apps,
+again without having
+to worry about a lot
+of heavy code just very quick use.
+Artificial intelligence. This is
+another good integration point
+from a product standpoint.
+Now, the Power Platform has
+some built-in lightweight
+AI capability
+with some pre-built models.
+There's going to be
+some extension points
+where that might not cut it,
+you might need to do something
+even more customs to being able to
+integrate with Azure
+Cognitive Services easily,
+and robotic process automation,
+in even GitHub and Power
+Apps Portals API Management.
+There's just so many
+possibilities to be able
+to extend what we can
+natively do with the no code,
+low code by integrating some
+professional development skills.
+The other great thing
+that I always like to
+bring up and we're
+talking about this, "Man,
+this is just like another thing
+I have to learn that if I want
+to start integrating or
+working with this."
+Well, it's really
+not because the way
+that the framework works or
+how everything works here is,
+is you can leverage the
+existing tools that you
+already know and just plug and
+play into the Power Platform.
+That stuff I was showing
+with the custom connectors.
+I really didn't need to do anything.
+I had to go, export it.
+It's even easier if
+you're exporting from
+Azure API Management. I
+didn't have to do much there.
+I just used the existing tools I
+have to create and host my API.
+But another extension
+point that we can do
+is something called
+Power Apps components.
+When we're looking at that screen,
+you notice that we had a
+few built-in controls.
+Well, we have the ability to inject
+some product like
+TypeScript in HTML and CSS,
+JavaScript, all of that, to be
+able to create custom controls.
+If we need like a custom
+map widget or whatever
+might be that's not natively
+there in Power Apps,
+we can use TypeScript
+like we are using and be
+able to build that and
+integrate that within our apps.
+There's built-in integrations
+with Visual Studio Code.
+We just released a VS Code extension
+for the Power Platform
+to help you be able to
+manage your source code
+for those Canvas Apps
+and manage from administration
+side and all that.
+There's tools that you're
+already familiar with we
+can use to integrate with that,
+and the command line tooling,
+and all of that's built in.
+One thing I did want to point out is
+the underlying data
+structure like how this
+works because Power
+Platform is a platform and
+it sets on something
+called dataverse.
+That's more than just
+a database that we can
+use to store data in
+the Power Platform.
+It's really facilitates all kinds
+of things we've been able to do
+some standard data operations
+and transactional book stuff.
+That's where the assets
+that you create are stored.
+As Power Apps that you store,
+whether you use dataverse as
+a database to hold that or
+not, are stored in there.
+We have built-in APIs
+to be able to consume
+information and do
+automated deployments
+and things like that
+with a dataverse.
+It's even more powerful when
+you're integrating within that.
+Dataverse itself, the thing
+I always like to point
+out for the Pro Dev
+audiences that it
+actually runs on Azure
+and extends with Azure.
+It has built-in integrations.
+You're able to extend it with
+Azure functions Event Hubs,
+service bus Kubernetes,
+and it has support
+with data flows for
+all different types
+of data to be able to
+pull data into dataverse.
+We can handle relational
+data like SQL,
+non-relational data like
+Cosmos and all that.
+It really is pretty robust and
+supports a lot of extensions.
+>> Right on. It tends to
+be probably a good place
+to stop for Episode 1.
+It's been a great intro and I
+think people should at
+this point hopefully be
+itching to learn more.
+Again, we'll come back next
+week and see how you actually
+build some apps using the
+things that you just showed us.
+In the meantime, where
+can people go to learn
+more just to get involved with this?
+>> We recently, a team here
+on the Cloud obviously did
+a fusion development learning
+path on Microsoft Learn.
+If you go to aka.ms/learn-fusiondev,
+that's a really great
+path walking you
+through the fusion
+development approach,
+how you can integrate custom
+connectors and all that.
+>> Right on. Thanks
+so much for this.
+I know we could talk
+for hours on this,
+but I think 20 minutes that
+was a really good overview.
+Thanks so much. Next week,
+we will start diving in.
+Then a couple weeks after that
+we'll get really hardcore.
+Thanks so much, April.
+>> Yeah, I think it was fun.
+>> Hope you guys enjoyed
+that and we will see you
+next time on Visual Studio Toolbox.
+[MUSIC]

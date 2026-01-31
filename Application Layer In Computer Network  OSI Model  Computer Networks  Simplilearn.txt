@@ -1,0 +1,167 @@
+foreign
+models the application layer is
+responsible for maintaining a smooth
+interaction between the application and
+the user it is also responsible for
+maintaining the network services that
+the user use over the Internet services
+hi guys I'm welcome to yet another
+trusting video by simply learn but
+before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update from us now without further Ado
+let's take a look at the agenda for
+today's session where the first topic is
+what is an osr model
+continuing with what is the application
+there moving forward with the functions
+of the application layer in a network
+model and the last topic is protocols in
+the application layer let's take a look
+at the first heading that is what is an
+osm model The OSI or Open System
+interconnection model is a specifically
+designed set of protocols that govern
+communication channels through which
+network devices share information and
+data this task of sharing and dividing
+among the seven layers of the USM model
+for micro level is known as the Osa
+functioning now let's move on to the
+main heading for this session that is
+what is an application layer
+the application layer acts as an
+interface for the user and the
+application being accessed
+it manages the protocols required by the
+application to present the data to the
+user
+they apply HTTP and SMTP and similar
+protocols for the data transmission over
+the network channel now let's move
+forward with the next setting that is
+functions of the application layer
+but before we begin let's take a look at
+the brief working of the application
+layer in an osm model to begin with the
+application layer we share data unit
+with the lower layers where the work of
+application layer is that it acts as an
+interface between the user and the
+system applications it is responsible
+for applying multiple Network functions
+and protocols to better understand the
+data
+and edit them for the lower layers
+it applies multiple protocols in the
+network channel
+some of which are telnet DNS DHCP
+now let's move on to the functions of
+the application layer
+where the first function is Network
+virtual terminal
+then we have file transfer access and
+management
+addressing
+and mail and directory services
+let's move forward with the first
+Network function
+Network virtual terminal
+the application allows the user to
+connect user system to a Remote device
+to access functions and services
+to establish remote access for the user
+the application layer stimulates a
+terminal at the remote host
+let's take a look at the second function
+file transfer access and management
+the application layer through remote
+accessing can transfer and manage files
+for the user system in a Remote device
+the file access of files is handled in
+terms of file attributes such as file
+structure and the functions applied to
+the files along with the features
+included in the file system over the
+network channel
+now let's move forward with the next
+function of the application layer
+that is addressing
+the application layer to establish the
+connection between the network devices
+requires a need to access addresses
+the application layer handles requests
+from the client to the server device
+this is possible by using the server and
+the client address
+the server will reply to the client's
+address using the DNS service
+for addressing reasons
+now let's move forward with the next
+function of the application layer
+mail and directly services
+the application layer function is also
+responsible for handling email
+forwarding and Storage
+this function of the application layer
+is also responsible for handling access
+rights for Global Information on the
+network services
+with this we have completed all the
+important functions applied in the
+application layer in an osm model let's
+move forward with the next setting that
+is
+the protocols of the application layer
+the application layer provides multiple
+protocols providing software with
+multiple protocols for handling data
+transmission and accessing the received
+data over a remote access channel in the
+network model
+some of the application layers applied
+in a network model are
+telnet telnet refers to the
+telecommunication Network this
+application lab protocol is responsible
+for handling access filing over the
+internet
+telnet protocol uses port number 23. in
+the network channel
+then we have DNS DNS stands for domain
+name system
+the DNS service protocol is designed to
+translate the domain name into
+corresponding IP addresses over the
+network channel
+the DNS protocol uses port number 53 in
+a network model
+then we have DHCP
+DHCP stands for dynamic host
+configuration protocol
+which is responsible for assigning IP
+addresses to the host Network
+the DHCP protocol uses port number 67
+and 68 in a network model
+the last protocol for the application
+layer is
+SMTP the smtv protocol stands for simple
+meal transfer protocol as the name
+suggests this protocol is designed to
+handle meal transmission from one user
+to another user
+the smtv protocol uses port number 25
+and 587 over the network model for
+transmission purposes
+with this we have covered all the
+important points regarding the
+application layer in a nosm model if you
+have any questions regarding the topic
+you can ask them in the comment section
+thank you for watching
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,810 @@
+so we're gonna be talk about application
+insights today my name is Isaac Levin
+I'm an application development manager
+at Microsoft and what I do for my job is
+I work with customers so I work with
+customers to better the developer
+experience so one of the things that I
+like to talk about with my customers is
+how we can do better as it pertains to
+getting data from our applications to
+help us fix issues iterate faster and
+bring value to our customers so I have a
+website it's listed and I also have a
+Twitter and github if you'd like to
+follow me there I would greatly
+appreciate it so I'm gonna say this word
+a lot over the course of this talk so
+the word telemetry so what is the
+definition of the word telemetry so the
+Wikipedia / Webster you know definition
+is telemetry is a collection of
+measurements or other data at remote or
+inaccessible points and their automatic
+transmission to receiving equipment from
+monitoring that is a very long
+definition but how Isum s it for
+applications is all the data that our
+application creates that's not
+immediately related to things that the
+user sees on the screen so we know what
+we say that what kind of questions do we
+consider when we can think about
+telemetry and how we can do better by
+our customers I'm not gonna drain these
+obviously but you know one of the things
+that I like to see from a customer's
+perspective is how we can report on how
+our application functions and some of
+this data to provide insights that are
+going to better the business so you know
+we're here to talk about app insight so
+maybe we should talk about what is app
+insights so app insights in its purest
+form it's a REST API so it's a REST API
+that's hosted in Azure that allows you
+to collect telemetry related to your
+applications so it's a REST API and the
+data is stored behind the scenes in a no
+sequel data store so you send your JSON
+data from your application to the REST
+API it goes through a process to
+aggregate the data and make it available
+in that data store and obviously from a
+dotnet perspective since read Netcom you
+know
+is an existing SDK owned by Microsoft
+for application sites both for the web I
+believe that there's one for the desktop
+it's create was created by Orrin Novotny
+and for every other application that
+uses app that wants to use application
+sites there's either an SDK forward or
+you could create one yourself so when we
+talk about telemetry what kind of
+telemetry we were referring to
+so out-of-the-box application sites
+collects all of the telemetry that you
+see here so request response information
+third-party calls such as sequel or HTTP
+page views for browser-based
+applications and everything that you see
+here one thing to call out is wealth is
+really exciting about the release of
+dotnet core is that application insights
+now collects event counter data so for
+instance like garbage collection and
+more intricate performance data around
+dotnet core applications so that's
+available as of dotnet core 3 oh and one
+of the great things about application
+side since it's a no sequel solution you
+can basically use or pass any data that
+you like in tap insights and be able to
+report on it so you know think about you
+know domain data that you could use to
+be able to report on in some capacity I
+like to show this slide when I talk
+about application insights because it's
+really valuable think about what
+application is it at a holistic level
+way up top right so on the left hand
+side you have your web pages and your
+services and then all of your
+dependencies right web pages of client
+apps that would be like your static site
+or a front-end only app like a spa and
+web service obviously is any you know
+back-end type of service that's use and
+then dependencies or all the things I
+mentioned here mostly sequel and HTTP so
+all that data that gets sent into app
+insights and it gets massaged in a way
+that allows you to report on in a bunch
+of different capacities so you can build
+power bi reports or you can look at the
+data in Visual Studio and you also
+there's an arrest API that's available
+for application size they can you can
+get the raw data out and do with it
+whatever you like so the first thing
+you're probably thinking is okay this
+sounds interesting you know I imagine it
+costs a lot well what if I told you
+that the cost for applications that are
+actually in it scale are pretty pretty
+inexpensive right so you get five
+gigabytes per customer per month so what
+that means is that putting data into app
+insights and taking data out of app
+insight so you get five gigabytes of
+flattened jacent per month and if you
+need additional storage it's two dollars
+and thirty cents per gigabyte per month
+one thing to call out about the data
+retention as well is that application
+insights just recently changed the data
+retention so let's now configure a role
+in the portal so you have the ability to
+change how long you want that data to be
+stored for so we're moving on how do we
+actually get application insights turned
+on in our applications so for a.net
+developer you most more than likely the
+easiest way for us to do it is inside a
+visual studio you have other ways to do
+it especially if you're in the IT pro
+world you can install an extension on
+Azure app service or add your VM
+especially and if you have an
+application that's hosted on Prem you
+can still take you can still leverage
+application insights by using a status
+monitoring tool which instruments you
+know a nice application i as web server
+so when you configure it through Visual
+Studio all you have to do is right-click
+on your CS proj go to add add
+application insights telemetry it'll
+come up with a UI or wizard that looks
+like this right so it asks you to
+specify what your as your subscription
+is and what you want the resource to be
+but one thing to call out at the bottom
+is that you can just add the SDK to try
+local only so what that allows you to do
+is play around with that application
+insights and see if you actually are
+going to get the value out of it that
+you know is warranted by sliding it up
+in Azure so what that I'll do is it'll
+just add the SDK and the wiring for it
+and then in the situation where you do
+want to deploy to the cloud you would
+just kind of follow this you want this
+wizard again and create the resource
+inside of the azure portal so once you
+click register it goes through a couple
+of things that in the.net core world
+it's going to add some new get packages
+obviously and it's going to add a line
+to your startup so yes and we'll see
+what that looks like in a second but
+when you're all done it's going to give
+you a No
+percent and three green bars meaning
+that you're ready to go so I think this
+is a good time to actually show how easy
+it is to turn on application insights so
+what I'm going to do is I'm gonna go
+into my Windows terminal and what I'm
+going to do is I'm just going to create
+a new dotnet project so if I go dotnet
+new web app which is going to create a
+razor pages application I'm gonna call
+it no insights and then I'm going to
+specify the output folder as no insights
+so what that's going to do is that's
+going to scaffold out a razor page
+application and dotnet core 3 oh and I I
+should probably type a bit not as fast
+so Dada new web app note no insights so
+again this is gonna scaffold out razor
+page for us and what I'm gonna do is I'm
+going to hop in here and I'm going to
+open it up in visual studio and then I'm
+going to instrument app insights on this
+application so if I go inside here and
+you know one of the cool things I like
+using it the visual studio terminal I'm
+not a visual studio command line or
+PowerShell is I can actually just point
+it dev NV which is the executable that
+runs Visual Studio at my CS proj so I
+don't have to then hop out of my command
+line and go into Windows Explorer to
+find that particular file so what this
+is going to do is it's gonna load up
+Visual Studio for me and visually is not
+responding but it's it's back now so as
+you can see here this is just a really
+really basic application if I go into my
+dependencies there's nothing really
+fancy in here so there's some analyzers
+and some frameworks and we'll wait for
+this to be restored and available in
+Visual Studio and if you look inside of
+my startup
+all I do is all in my configure services
+I just had razor pages and then some
+static files right
+so once I actually want to light up
+application insights I just right click
+on it right click on the CS proj
+well maybe right-clicks not gonna work
+right now but if you right-click on the
+CS progeny you go down to ad and then
+you can actually specify ad application
+insights and then go through the process
+of setting up that wizard so it seems
+like Visual Studio is hanging so one of
+the things that I can do is I have a
+similar version of this talk actually
+available on YouTube that you can take a
+look at as well for whatever reason
+Visual Studio is just having a hard time
+and I don't want to have everybody look
+at Visual Studio lagging or whatever so
+we're gonna just move on to kind of how
+we can consume our application data
+using application science so what do I
+do with this data so you know one of the
+things that we have the ability to do in
+a pin sites is take a look at some of
+the rich reporting that exists inside of
+the azure portal so it this dashboard
+that you see here this is a one button
+click from your app insights resource so
+once you click that button it'll
+generate a dashboard for you that's
+going to give you a lot of really
+valuable information so you also have
+the ability to see application map which
+is a holistic at a high level all the
+dependencies and services instances that
+you have for your application running
+you also have the ability to look at
+profile information so in the situation
+where you have a low performant call you
+can take a look and see line by line
+execution by execution
+what's taking all the time to run and
+you know that gives you a ton of insight
+into ok where can I clean up this
+application code flow to be a bit more
+performant one thing that's great as
+well about looking at a pin size data in
+the azure portal is you have the ability
+to create these visualizations using
+metric Explorer so these are you can
+build them either using kql instead of
+log analytics which is the querying
+language for application insights data
+or you can just do it in a WYSIWYG sort
+of fashion
+also since application insights it does
+do some things behind the scenes once
+you send the data into it the data that
+you see it does take you know it can
+take a couple of minutes to get in there
+but if you need to see what's going on
+your application in real time you have
+live metric stream which is over the
+wider viewing of the telemetry that's
+being passed into your app insights
+resource
+and obviously in the world of reporting
+you know we have the ability to export
+our application insights telemetry into
+power bi and do all sorts of things with
+it this is just a default user report
+that's built out for you when you
+connect application insights to it so
+you have the ability to see some
+demographic information like where the
+users are coming from as well as what
+operating systems that are using I was
+going to show pulling this up
+individuals pulling up applications I
+did in Visual Studio one of the things
+that you can do is while you're
+debugging locally you can actually see
+all of the data that's being passed into
+the app insights resource at runtime
+while you're collecting all this and be
+able to see some of the details and
+operations that are flying around and
+then finally you know I mentioned one of
+the things that there is a file a data
+retention the application size doesn't
+hold on to your data forever so if you
+do value having long term storage of
+your application telemetry you have the
+ability to use what's called continuous
+export which frankly what it does is it
+exports the data into an azure blob
+storage container and from there you're
+able to do whatever you like with it for
+as long as you like so I think now we've
+took we took a look at how you light up
+an application that's kind of like a
+dotnet new what I want to show is a more
+baked solution so I have an application
+here which is a angular 8 application
+that uses the dotnet core 3 Web API
+back-end so as you can see here this is
+just a tour of Heroes and some of the
+heroes here some of the folks that were
+familiar with in the.net comp
+so if I take a look here I can fly
+around them but one thing that I see is
+that whenever I do a search I get an
+exception and I don't know why however
+if I wanted to just look at this at
+application insights I can fly over to
+live metrics stream right here and what
+this will do is this will actually pull
+up the over the wire viewing of what's
+going on with my application and I can
+actually jump around here and you'll see
+some of the things on the left-hand side
+start to light up so you'll see that
+there's dependencies information going
+on there's incoming requests and there's
+I can see the CPU utilization for my app
+service and the community member
+but one thing is well that's really
+valuable is I can actually see sample
+Channel Emma tree over the wire so if I
+do a search here for Scott for a Miss
+type name and it'll show oh there's a
+request that returned to 500 and I can
+see that exception here if I drill into
+this exception it says that it's an
+argument out of range and if I scroll it
+gives me line numbers right so that's
+really really valuable so in taking a
+look at some of the ways that we can
+help triage issues in production you
+know that's really really valuable and
+what's the data is actually in app
+insights I can click investigate in
+application map and it'll show at a
+holistic level all the things that are
+going on right so I have one central
+instance it's hitting a sequel database
+I really have some availability tests
+that are checking the application if I
+drill on the sequel side here I can take
+a look and do an investigation of some
+of the performance for some of these
+calls so the average duration for my
+sequel calls is actually very good at
+seventy-seven point one but if it was
+milliseconds but if that was too slow I
+can have the ability to drill in and
+then look at sample data for these
+particular sequel calls so if I click on
+one of these end-to-end transactions I
+can actually see the sequel query that
+gets executed on my database behind the
+scenes so obviously this is just a
+select but if you had a more complex
+database database call it would be all
+in there and that's one of the really
+valuable things that you can do with app
+insights is you can see kind of the end
+to end transaction so let's take a look
+at a particular example here so if I go
+into this back into that app insight
+resource and if I look at my failures I
+can see all the failures that have
+happened over a particular x time slice
+so as you can see here I have two types
+of exceptions a file not found in
+argument out of range I saw earlier when
+I looked at a live stream that I was
+getting some argument out of range
+exceptions when I do a search and what I
+can do is I can click on the operations
+and then view one of these particular
+end-to-end transaction details and I'll
+tell me what's going on so if I minimize
+all of this it'll see that it made a
+call and then there's an exception
+before you know it will hit the database
+and
+click on that it gives me a bunch of
+information about the exception which i
+think is really valuable but if I scroll
+away to the bottom I got a call stack
+and you know since I'm doing a lot of
+this all these I'm using async to do a
+lot of this some of the sometimes the
+call stack can be confusing to read
+so if I click just my code it'll
+actually show the code right so line 53
+and my hero service in line 31 in my
+heroes controller so it gives me the
+ability to get a ton of value for when
+I'm triaging application issues in
+production and finally one of the great
+things about application insights that
+you can take view of is you can look at
+all this data great in tools but
+sometimes people just want to see the
+data so if I click on view and logs I
+can take any of these things top
+exception types for instance and view
+them in log analytics directly so like I
+said earlier log analytics is the
+storing mechanism for all application
+size data as well as all as your monitor
+data which application insights is a
+part of so as you can see here it's
+gonna load up a query and then it's
+gonna show me that particular data let
+me just maximize this and scroll all the
+way over all right so as you can see
+here I have 139 argument out of range in
+24 files that's really really valuable
+but let's say for instance the business
+comes to me for with a particular
+request and they say hey Isaac I really
+want to get a slice over the last day
+where our users are from and I could
+easily say okay well I know that all
+requests are stored and maybe I want to
+summarize that account of all the unique
+clients or countries by that client or
+country
+so right and then they say and I can run
+this and then it gives me a table in the
+last 24 hours so 23,000 folks from the
+United States but also looks like we
+have people from Brazil and the
+Netherlands and Singapore viewing our
+application and they say well this is a
+data table I really don't like that way
+rather prefer is that rather prefer a
+chart and then you provided in this
+chart and they say well this is a bar
+chart and I drill are stacked column I'd
+really don't
+that you know in the past when we've
+been building reports for customers this
+process of just building reports takes a
+long time but they say I want to donut
+and then one-click and you have a donut
+for them so just think of how quickly
+you were able to provide that request to
+your user and they say well I don't
+really want to go to this particular
+page to see this report and you say okay
+that's fine I can just export it to
+power bi or if you want to look at the
+data yourself I can export to CSV for
+you so again we're talking about adding
+tools to our tool belt that are gonna
+make things more successful one thing is
+well like like I mentioned earlier with
+especially with dotnet cores you can
+collect extra performance data so I want
+to show you what that looks like
+so if I look at just the performance
+counters table or collection I'm sorry
+it's gonna show me all sorts of
+information right so I have exceptions
+thrown per second I have private bytes
+and system run time but then as you see
+here I have information about garbage
+collection so in the situation where
+your application isn't handling memory
+very well you can take a look and see
+what are the GC count values in
+particular situations what the thread
+pool count is and this gives you the
+ability to get even deeper into why our
+application isn't performing the way you
+want so that's how some of them what
+quick ways that we can take a look at
+telemetry in our application to be more
+successful
+so moving on to the final part of this
+talk one of the things that I think the
+application has a ton of value in is per
+you know thick our triaging production
+issues so I showed some of the cool
+things that you can do there but there's
+additional tools that exist inside of
+app insights and visuals to do
+enterprise that gives you even more
+tools to be successful so how many times
+have we been in a situation where
+somebody comes to our desert says
+there's an issue in production I don't
+care what you're doing fix it now right
+so what are the first things that we
+think of that can cause production
+issues right so I think of the primary
+things is there's change to the
+environment there's some data that's
+causing issues with code and you have
+scaling issues but really anything else
+can cause issues in production and when
+we look to actually try to fix these
+things what are some of the things that
+we actually do we can copy
+some form of production data to a local
+environment to test you know in some
+situations that's just not scalable
+especially for large applications you
+know in some in other scenarios we have
+the ability to look at a production
+staging environment which maybe has more
+telemetry turned on or we can actually
+you know spin up an environment to
+actually look at things a bit better we
+can read logs if we really don't like
+our lives we can read IAS logs and DB
+logs and what-have-you and then you know
+at the end of the day sometimes it's
+just really really valuable to see
+what's going on live so a lot of people
+will do something like this right
+they'll attach a debugger to production
+and there's a ton of reasons as to why
+you don't want to do that the biggest
+one is that if anybody wants to use your
+site they can't anymore so I'm gonna say
+that's not a good idea right we don't
+want to be in a position where we're
+affecting the experience of our users to
+fix an issue right we want to be able to
+create an environment where we can
+outside of the scope of that production
+application get more information and one
+of the ways that you can do that is
+using snapshot debugger so snapshot
+debugger like I said it's a tool inside
+of Visual Studio Enterprise that allows
+you to connect to a point in time
+exception for your application that's
+lit up with a pin sites so that doesn't
+mean that it's only an add your only
+feature so you can have a VM hosted on
+Prem and still take advantage of
+snapshot debugger so let's snap shot
+debugger actually look like so you have
+the when you go in through the azure
+portal you have the ability to look at
+the call stack as well as some of the
+local variables that existed for a
+particular point in time of the
+exception and one of the things that's
+important to call out here is you can
+actually download that snapshot so what
+I want to do is I want to show you what
+that looks like because I think it's
+really really awesome
+so if I open up whoops clicked on the
+wrong thing so if I go to one of these
+failures right one of these failures we
+saw earlier I'm going to drill into that
+and when we reset our intent transaction
+details for an exception we can take a
+look and there's a little button here
+that says open debug snapshot so what I
+can do is I can click on that and what's
+going to do is it's going to initialize
+a gateway and it's actually going to
+start to
+process what's going on so what actually
+is snapshot debugger so snapshot
+debugger is a process that runs side by
+side with your application and what it's
+doing is it's basically collecting
+information while your application is
+running and then it's taking the PD B's
+that are deployed to your production
+server and it's massaging them into a
+way that you can take a look at the
+exception so as you can see here on the
+left hand side I have a call stack and
+I'm gonna click into right here
+so it looks like I did a search for
+Scott and it threw an argument out of
+range exception so that's really really
+valuable but maybe the exception is a
+bit more complex one of the things that
+I have the ability to do is I can
+actually download that snapshot if I
+click download snapshot it's gonna start
+to download a file so that download can
+take some time so what I did is I
+actually downloaded one herb from
+earlier today about 45 minutes ago when
+you open up that file which add I
+accession file you get this very
+interesting message I always that you
+know think it's kind of cute that you
+know we get a warning that you know we
+got something from us a source intercept
+source and that source just happened to
+be a sure in this case you open up this
+file in Visual Studio and what it's
+going to do is it's going to give you a
+mini dump summary and what that mini
+dump summary is is it's a collection of
+all the data related to this exception
+so as you can see there's modules here
+there's times when the exception
+occurred so the OS and the CLR version
+and I have this ability to click debug
+with managed only and what that's gonna
+do is it's going to load all the symbols
+that exist for this particular exception
+and it's going to actually spin up an
+experience similar to when you're
+breaking an application in production
+and one thing the call-out here is that
+the actual exception was thrown inside
+of throw Hobart CS which is part of
+system core Lib that might be not be
+valuable to a lot of folks but I have
+the ability to look at the call stack
+and I see my heroes there and I see an
+exception was thrown on line 53 of this
+particular class and was this exception
+actually doing so it looks like I pass
+in a name a string and then I make a
+query from a database and then I tried
+to get the the fourth item in that array
+what could possibly go wrong when you're
+trying to access the specific number of
+array that array might not have that
+particular instance so you get an
+argument out of range exception so this
+is obviously a silly example but I just
+want to show the thing that you have so
+you have the ability to use tooltip and
+as you can see the name is Bill if I
+take a look at the heroes I have tooltip
+here I also have watch an immediate
+window so I can actually pull up watch
+and type in name and it's a bill and
+then if obviously I can go into the
+immediate window as well and type in
+name and that's gonna give me bill so
+again really really simple scenario but
+it just shows you just the power of what
+snapshot debugger can do so we have
+about five minutes left so I want to
+take some time for questions so if you
+have you know if you want to take a look
+at some of the samples or additional
+documentation for this applet for this
+talk you know I'm using the URL list so
+shout out to Burke and sessile for
+putting that together I use it all the
+time so if you click on that particular
+URL or not click on it but if you go to
+that particular URL it's it'll take you
+it'll give you a handful of links so you
+know access to the github repository to
+see the tour of Heroes demo as well as
+some really valuable documentation on
+Doc's on Microsoft calm about snapshot
+debugger and application insights so we
+have about five minutes left like I said
+so let's take some questions
+perfect hey I say thank you so much
+Shane you got any questions we had a we
+had one question that came up sooner but
+looks like I got answered and I'll just
+let you speak to it real quick and the
+initial an't question was is it only for
+web apps I think we we kind of know the
+answer no it's not just for web apps but
+if you want to kind of expand on maybe
+some of the capabilities of the SDK
+that's out there for other types of apps
+other than web apps yeah so so one in
+particular so there is an SDK for
+WinForms so that that was built by the
+community and what that gives you is it
+gives you additional telemetry tracking
+for when you switch views in an in a win
+form right so that's one example
+you know there's is well one thing to
+call out is that even though we talked
+about dotnet a lot here any programming
+language can take advantage of a pin
+sites and there's SDKs that exist
+just for dotnet but for Java nodejs PHP
+and a lot of the SDKs are either owned
+by Microsoft or owned by major community
+members one good question that came up
+too is can I use a snapshot the bugger
+in docker yes you can so you have the
+ability to connect to I believe you it's
+and I believe that the AKS is in preview
+currently but you should be able to
+connect to docker applications even
+hosted in Linux school and I think your
+URL URL list that you had up there does
+that have some links to the docs about
+finding out more about snapshot and
+websites and all that
+it sure does okay and one last question
+I think we might have some time for here
+is how can i migrate normal logging to a
+pin size is it just a matter of using
+the SDK and things that are in the docs
+yeah so that so there's some
+documentation around that so if you're
+using like a pretty well-known library
+like an log or log Fernet or serial log
+so there are actually adapters that
+exist which will basically log all of
+the N log data into a pin sites as well
+so it's not a matter of you having to
+rewrite your login mechanism from
+scratch you can just append on to that
+by adding it into a pin sites and then
+obviously if you want to extend app
+insights you have the ability to do so
+with you know code and dotnet so you can
+write like track events and track
+exceptions and all that sort of thing to
+get all the telemetry you want I can add
+something to you know so I said I'm not
+sure if you know this but we're actually
+using a pin sites on the.net comp
+website so I would hope so cuz it's
+awesome yes it's awesome so we used it
+because for it tonight talk about might
+whoa originally was written dotnet and
+dotnet framework with nbc5 and so forth
+so we migrated it down at court - - and
+in case we wanted to figure out what's
+the performance are we missing anything
+so by using app insights we were able to
+figure out where we had missing files
+because we can actually see the 404 so
+we were doing we can look at our browser
+performance JavaScript performance so it
+was great for us to kind of fine-tune it
+and go as we like so it's a great tool
+especially for like migration or just to
+figure out what's going on your app and
+and really all we did is we deployed it
+to an azure app service when
+the left-hand side and said app insights
+emailed and that was it and the magic
+happened yeah exactly so then that's one
+of the great things about app in sites
+is that lighting it up is really easy so
+even if you don't have an application
+that's hosted in Azure it's pretty easy
+on Prem as well so there's a UI based
+instrumentation tool without code and
+there's also a PowerShell driven one as
+well so you don't need the code to
+actually turn on tap insights which is
+great yeah I know and that's some people
+in the chat I was as you were talking
+about while also bringing about Google
+Analytics sounds like you used Google
+Analytics app insights and like for us
+we're using both yeah why not yeah for
+us analytics is great to figure out how
+many people they're at where they're
+coming from and it's a nice quick little
+dashboard overview but it provides some
+information not all information that we
+care about how the act website is
+performing like we were able to see CPU
+a good example of this when the Kino
+started the CPU was getting hotter
+hotter and hotter and hotter we were 75
+80 % CPU and a fairly large app service
+instance and we were able to get those
+details thanks to app insights yeah
+that's awesome sweet all right we're
+right on time so we're gonna get
+finished here so thank you so much I
+said we got syed here talking about
+vicious vicious to do for mac so we're
+gonna flip here a little bit and we'll
+be right back

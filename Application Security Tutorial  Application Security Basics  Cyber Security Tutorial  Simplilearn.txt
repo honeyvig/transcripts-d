@@ -1,0 +1,296 @@
+security was traditionally considered an
+afterthought in software development it
+is becoming an increasingly important
+concern for all aspects of app
+development from design to deployment
+and Beyond the number of programs
+produced distributed deployed and
+patched across Network continually
+increases as a result application
+security features must deal with with a
+wide range of risks let's take an
+example a malicious script may be
+mirrored on the victim's web browser or
+kept in a database and run whenever the
+user contacts the proper function
+depending on the kind of attack in
+question here this allows malicious code
+to be entered in the case of an output
+the major cause of this attack is faulty
+user input validation which allows
+malicious input to enter the final
+output an evil user can enter a script
+that will be injected into the website
+code the browser will then be unable to
+determine whether the process code is
+harmful as a result a malicious script
+is performed on the victim's browser or
+a bogus form is shown to the users are
+you aware of which attack this is if not
+do stay till the end to find the correct
+answer are you aware of which attack
+this is if not please stay till the end
+of the video to know the correct answer
+hey everyone welcome to today's video on
+application security before we move
+forward subscribe to our Channel and hit
+the Bell icon to never miss an update
+from us let's take a look at the topics
+to be covered today we start by learning
+about application security and its
+different types we learn about the most
+common vulnerabilities in appsc followed
+by the importance of application
+Security in today's cyber security
+space next we cover some attacks against
+application layer security and end the
+video with some protection techniques to
+enforce application security parameters
+so let's start by learning about
+application security from a Grassroots
+perspective application security which
+is often known as appet protects
+application software from external
+security threats by utilizing security
+software Hardware methodologies best
+practices and different processes
+organizations require application
+security technologies that Safeguard all
+of their programs from internal to
+popular external apps on consumer mobile
+phones these Solutions must address the
+whole development cycle and provide
+testing after an application has been
+deployed to detect possible issues
+application security mechanisms must be
+capable of testing web pages for
+possible and exploitable vulnerabilities
+analyzing code and assisting in the
+administration of development and Safety
+Management processes the testing
+Solutions must also be simple and easy
+to install for system administrators
+worldwide consumers utilize hundreds of
+applications Del to access theoretically
+important and favored services such as
+e-commerce banking music Etc to be
+productive these professionals use a
+variety of software Solutions as well
+ranging from online word Checkers to
+tablet based creative tools among other
+things backend software of course exists
+to automate essential operations and
+processes and decreases human labor but
+to make matters worse the quantity and
+complexity of these apps and their
+backend code is increasing the software
+security problem 10 years ago was about
+securing desktop apps and static web
+pages that were natively harmless and
+easy to scale through and
+defend because of Outsource development
+the number of Legacy programs and
+in-house development that uses
+thirdparty open source and
+commercialized off the shelf software
+modules the software supply chain has
+become considerably more
+convoluted now that we understand
+application Security on a general level
+let us go through some of the different
+categories or the types of application
+security the three major types to be
+covered in this section web application
+security API security and Cloud native
+application
+security a web application is a program
+available through the internet and it
+operates on a web server the client is
+accessed using a web browser the
+applications by definition must allow
+connections from clients across
+unsecured Network this exposes them to a
+variety of risks many online apps are
+mission critical and include sensitive
+customer data making them an attractive
+Target for attackers and a top concern
+for any cyber security program or
+framework the Advent of https which
+offers an encrypted channel of
+communication Gods versus man in the-
+Middle attacks or mitm attacks has
+addressed several online application
+weaknesses many weaknesses though still
+persist many security providers have
+created Solutions specifically geared to
+safeguard online applications in
+response to the rising challenge of web
+application security a web application
+firewall is an example of a security
+technology meant to identify and prevent
+application layer sols in the case of
+web
+applications and it comes to apis apis
+that have security flaws are the root of
+many major data breaches they have the
+potential to reveal sensitive data and
+disrupt vital corporate processes API
+security flaws include insufficient
+authentication unintended data
+disclosure and a failure to apply rate
+restriction which allows API abuse the
+requirement for API security like the
+necessity for web application security
+has led to the creation of sophisticated
+equipment that can discover API
+vulnerabilities and protect apis in
+production level the third type is cloud
+native application security
+infrastructure and environments are
+often built up automatically in Cloud
+native apps depending on declarative
+configuration which is known as
+infrastructure as code or
+IAC developers are tasked to developing
+declarative settings and application
+code both of which which should be
+secure because practically everything is
+defined during the development stage
+shifting left is even more crucial in
+Cloud native setups traditional testing
+techniques can help Cloud native apps
+but they are insufficient dedicated
+Cloud native Security Solutions are
+mandatory at this point of time which
+are capable of instrumenting vessels
+container clusters and serverless
+operations reporting on security
+concerns and providing developers with a
+quick feedback loop now that you have
+covered the different types of
+application secur
+let us go through some of the most
+common vulnerabilities that these
+Frameworks face on a daily basis first
+is cryptographic failure when data is
+not adequately safeguarded in transit
+and at rest cryptographic failures which
+are forly known as sensitive data
+exposures occur it has the potential to
+reveal credentials health information
+credit card details and personal
+information as well depending on the
+type of data being protected in that
+particular case injection
+C actors can use injection
+vulnerabilities to convey malicious
+information to a web application
+interpreter it has the potential to
+assemble and execute this data on the
+server SQL injection is a popular type
+of injection which I've already covered
+in an introduction for this
+video another major vulnerability are
+outdated components vulnerable and out
+ofate components inass any vulnerability
+caused by obsolete or unmaintained
+software it can happen if you construct
+or even use an application without first
+learning about its core components and
+versions authentication failures
+identification and authentication
+failure which are previously known as
+broken authentication enpass any
+security issue involving user identities
+identity attacks and exploitation may be
+avoided by implementing secure session
+Administration authentication and
+validation for all identities in the
+organization in the next section let us
+cover some of the protection mechanisms
+employed by cyber security firms and
+thirdparty automated software to prevent
+the application layer from being
+bombarded with SQL injections and other
+attacks the first is a web application
+firewall or
+WF a web application firewall monitors
+and filters HTTP traffic between a web
+application and the worldwide web web
+application firewall architecture does
+not address all risks but it may be used
+in conjunction with other defense mechan
+mechanisms it can use to the portfolio
+of Security Solutions to provide a
+comprehensive defense against diverse
+attack Roes it is a protocol layer 7
+protection in the open systems
+interconnection or the OSI model
+Paradigm that helps defend online
+application against attacks such as
+cross-side scripting cross-side fraud
+esap injection and file
+infusion unlike a proxy server which
+conceals the identity of client
+computers by an intermediary a functions
+as a reverse proy shielding the server
+from exposure it acts as a barrier in
+front of a web application protecting it
+from the internet so clients must pass
+through the web application firewall
+before they can access the
+application the second is threat
+assessment a list of sensitive assets to
+safeguard will assist you in
+understanding the threat to your firm
+and how to minimize them considering how
+a hacker can infiltrate an application
+if existing security protections are in
+place and whether additional tools or
+defense capability are required it's
+also crucial to keep your security
+expectations in check nothing is
+impenetrable even if the most stringent
+security measures it would be best if
+you were realistic about what you
+believe your team can handle in the long
+run when pushed to aggressively safety
+regulations and procedures might be
+disregarded remember that safety is a
+lengthy and time-taking project that
+requires the collaboration of other
+employees and sometimes even your
+customers the next topic is privilege
+management
+limiting privileges is vital especially
+for Mission critical and sensitive
+systems the least privileged principle
+states that access to programs and data
+should be limited to those who require
+them when they require them for two
+reasons the least privileged principle
+is absolutely
+critical the first is that hackers May
+compromise less privileged accounts and
+ensuring they do not acquire access to
+highly sensitive systems is
+critical the second is that internal
+ders are equally harmful as external
+adversaries if insiders go bad it's
+critical to ensure they never have more
+power than they need minimizing the harm
+that they may be able to cause to the
+organization that's the end for this
+video hope you learned something new
+today if you have any doubts or any
+issues with the topic feel free to let
+us know in the comment section below and
+we will get back to you as soon as
+possible with some solutions subscribe
+to our channel for more informative
+videos like this thank you for watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

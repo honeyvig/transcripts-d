@@ -1,0 +1,951 @@
+>> On today's "Toolbox", Matt
+and Wendy are going to show us
+the latest goodness being sent
+away of WPF and Winforms apps.
+[MUSIC]
+>> Hi, welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green,
+and joining me today are Matt
+Cornwell and Wendy Lee. Hey guys.
+>> Hey, how's it going.
+>> Good. Welcome the show.
+>> Thanks for having us.
+>> Happy to be here.
+>> Matt and Wendy are
+in App Center Land,
+and we're going to talk
+about App Center today.
+Now, App Center has been
+around for a while,
+and we've done an episode
+or two on this show and of
+course James has covered
+it on the Xamarin Show,
+and you think about App Center
+as DevOps for mobile apps.
+Right. But it's expanding,
+and you guys are going to talk about
+App Center for WPF
+and Winforms. What?
+>> We are. But really,
+we're hoping to be App Center
+for distributed Apps, right?
+Things that are not
+co-located where you
+are and maybe multiple instances
+around the world.
+>> Cool. So I guess that immediately
+brings to mind two questions.
+One is, how does that work?
+Which you'll show us, but two, why?
+Because we already have
+DevOps for WPF and
+Winforms is called Azure
+DevOps Services, right?
+>> So you don't have to answer
+right now but as we talk about it,
+those are the two questions
+I want to cover.
+How does it work and why?
+Then which one would I choose
+as a WPF or Winforms developer.
+>> Yeah, absolutely. So App Center
+is actually very different,
+and it's a great supplement to
+users already using Azure DevOps.
+So we've kind of realized there's
+not a great tool in the space that
+allows Windows Developers to
+easily manage their releases,
+look at their crash reports
+and just better understand
+who's using their application,
+and got the analytics
+that they need to
+really deliver
+the best user experience.
+>> Okay.
+>> So if you're already using
+Azure DevOps, fantastic,
+continue using that build
+your app and Azure DevOps,
+and App Center will help you release
+those apps that you
+build in Azure DevOps.
+So we really think about
+those two products as
+a compliment to one another.
+>> So use one, and then
+use the other use them
+side-by-side basically.
+>> Yeah. Absolutely.
+>> There really is
+when we said they they
+fill different gaps and that
+really speaks to the why.
+Is that as a Windows Developer,
+there are lots of
+tools at my disposal,
+but I really believe there isn't
+a set of tools that brings
+this piece of the puzzle together
+in a comprehensive way, right?
+You can build things
+with Visual Studio,
+you can do your DevOps stuff
+on Azure DevOps,
+you can run it on Azure,
+but how do you manage your app
+when it's on a million
+devices in the wild?
+How do you see who's using it?
+How do you track logs?
+All these pieces are
+things that there
+really is not a turnkey solution for,
+and we hope that's what
+we're bringing to folks.
+>> Okay. Cool.
+>> Yeah. So I guess for those
+of you who don't know
+what App Center is,
+we are end-to-end solution for
+developers, so like you mentioned,
+James have talked
+about it probably on
+Xamarin with prior iOS, Android,
+and most recently we expanded
+our platforms to support
+desktop apps as well.
+So WPF and Winform Applications
+targeting dot Net
+framework as of today.
+So today we can go over the top
+three most requested services,
+so I'll be doing a quick overview of
+what these services actually
+looked like on App Center,
+and then Matt will
+actually show how to
+get this up and running
+under five to 10 minutes.
+>> Cool.
+>> Yeah.
+>> All right.
+>> So cool. So you can
+see my screen here this
+is a sample app that we have.
+The screen you're looking at is
+just an overview of
+how to get started
+with some SDK instructions that
+Matt will actually be
+going over in a bit.
+First off, we have distribute.
+This is a service that
+allows you to easily manage
+how to release your
+apps to your end users.
+So over here you can see
+the releases I've made
+to the Beta Testers and to
+myself in the past day.
+I'm able to see
+how many downloads I have,
+how many unique downloads I have,
+and I can also sort this table
+by what's most relevant to me.
+Under "Groups", I can create
+a new distribution group.
+These can be your Beta
+Testers, your end-users,
+really anyone you want
+to download your app,
+all I have to do is add
+their e-mail address here,
+click "Create Group",
+and then I'll see
+a Group appear in this screen.
+>> In the why section to
+keep sticking with that one,
+this is I think one of
+the fundamental pieces that
+is very different than what
+Azure DevOps would offer.
+Getting that app to either testers or
+end-users did not a compelling story
+for that that I'm aware of elsewhere,
+and so this starts to
+become super valuable.
+>> To putting setup dot exe on
+a jump drive and walk it over
+to another computer and
+having somebody run that,
+you don't consider that compelling?
+>> I mean, it is totally
+compelling if you're co-located.
+but we found it really
+interesting our team is
+actually we got 15 or so time
+zones around the world, right?
+People working on these things,
+and so this kind of
+centralized push model where I can
+control who sees what and when,
+and let things go to customers.
+While we don't yet supported
+for the Windows story,
+we do have in-App updates
+where you can basically
+help auto-update a user
+from within App Center,
+really is a game changer
+to be honest.
+>> Okay.
+>> Yeah. So yeah.
+Looking at distribution,
+I can click here for a new release.
+Like Matt was saying, if you're
+using Azure DevOps that's great.
+Build your app in Azure DevOps,
+and then upload your
+app package here.
+So we support dot zip, MSI,
+and a lot of different package
+formats that can meet your need.
+So once you upload your package here,
+I just click" Next",
+I specify some release notes,
+who I want to distribute my
+app to, and then I'm done.
+>> Can I do the build-in
+App Center as well?
+>> Not yet.
+>> Okay.
+>> So right now in Azure DevOps
+you can build those apps.
+So we definitely encourage users
+to use Azure DevOps for that,
+and if we decide there's
+a need to support that
+in-App Center as well,
+that is something that we
+can look into as well.
+>> Over time, eventually these tools
+will probably coalesce into
+a single location. I mean
+>> You'd have to ask someone with
+more knowledge of
+the discipline than I,
+but I don't think it'll be
+unreasonable to picture
+what would that happened.
+>> Okay.
+>> Yeah. So that's
+our distribution service,
+the next one we have is diagnostics.
+So this is a service allows
+you to see when your apps are
+crushing and it gives you
+a good overview of the different
+types of crashes and errors.
+I can click into a crash group and
+get a little bit more details.
+I can look at my stack traces,
+look at the individual reports,
+see which devices are crashing,
+and got some other data that
+will help me understand what's
+actually going on once my app
+is being used by my end users.
+>> Right. Then in
+that world where you've
+walked as it drive
+around to a 100 people,
+and traditionally
+working through e-mails,
+asking people to send
+your logs, right?
+Even if you've got your logs
+going to a central location,
+looking at logs as raw data is very
+different than looking at
+rich data that has been
+grouped in augmented and
+provide it in a way to
+help you as a developer to
+figure out what's wrong, right?
+There are some other tools
+in this space that do this,
+I don't think any of
+them hit the mark
+with this kind of
+complete end-to-end picture,
+and so really at
+this point you've got
+your ability to send your
+app out across the world,
+and you've got your ability to
+get that data brought back to you
+and presented it and I
+hope a really useful way.
+>> Yeah. With features like
+events or attachments,
+we really allow you to
+customize what you need in
+a crash reporting tool
+to really understand what's
+going on in your app.
+So that's what we
+have for diagnostics.
+Last but not least,
+we have analytics.
+So all this data you see
+right here is out of the box.
+All you need to do is
+integrate our SDK,
+and you'll start seeing
+these metrics flow in.
+So you see how many users you have,
+the daily sessions,
+where your users are,
+what devices they're using,
+a lot of really great stuff
+for you to understand who
+your user base is and
+what features are using,
+and how you can really deliver
+the best experience for them.
+So all this nice data is here,
+and then you can go into
+our "events" tab and
+actually set specific events
+that you want to track.
+So if you care about
+a very specific set of features,
+or you care what buttons users
+are clicking on and those are
+things that you can track
+using our SDK as well.
+>> Cool.
+>> Yeah. Those are the three
+services that we decided to
+introduce WPF and
+Winforms Support first,
+and Matt will go ahead and actually
+show us how to get started.
+>> Yeah. If we want to flip over
+to my machine for a minute.
+>> So if all you did was
+use the distribution,
+it seems like that's
+pretty cool for starters.
+That's all you did
+to get the app onto
+other people's machines easily
+when they're ready to do it,
+and you just push up
+the latest build.
+So if you then make
+a change to the app,
+anybody can go get it,
+they'll get notified if
+there's updates, right?
+So you just have
+a central location that's
+not sitting on a drive somewhere.
+>> Yeah.
+>> Right.
+>> Must be cool.
+>> I really do think
+it changes the way
+Windows Developers can start
+thinking about shipping this stuff.
+>> Yeah.
+>> Right.
+>> I know we're talking
+about Winforms and WPF,
+and so we're not necessarily
+talking about the store.
+At least there are other other
+broader options out there,
+but I don't think anything
+targets it with this kind of
+focus from a really developer
+first mindset, right?
+As developers, we want make
+other developers lives easy,
+and this is I think a really good
+first step for the Window space.
+>> Cool. People can go to
+aka.msappcenter Windows
+to learn more about this.
+>> Yeah. Well have links
+to the documentation,
+and I'm actually
+going to just walk us
+through the initial documentation.
+Just so people can see
+it, I know as a developer
+seen that actually played out
+is a lot easier than
+reading the docs sometimes.
+So hopefully, this will
+work it makes sense.
+>> Yeah. Cool.
+>> Cool. So the aka MS link
+will take us to,
+I'm just going to click everywhere,
+take us through
+the Getting Started page,
+which essentially says
+Create an app in app center,
+follow a couple of
+steps to integrate it.
+Start making your App crash
+and go from there.
+So here I am over an App Center.
+I have a few apps ready.
+I'm going to create a brand new app.
+Let's call this VS Toolbox,
+and I'm going to say
+it's a Windows app.
+WPF and add a new app.
+>> So UWP is already supported I see.
+>> UWP is partially support.
+>> Partially.
+>> We'll actually talk
+about that at the end.
+We have plans to get UWP up
+and running all the way in,
+but I think right now WPF and
+Winforms are the for the store.
+>> Okay.
+>> Yeah. So I'm adding new app,
+assuming the network and everything
+is working, there we go.
+So dropped into the same page,
+we saw Wendy looking at
+a few minutes earlier,
+and here on my machine I've
+got Visual Studio open,
+and I'm just going to go "File",
+"New". Let's just close
+it and start fresh here.
+All right. I'm going to
+"create a new project"
+I want to do WPF app targeting .NET
+framework is when he said right now
+we target.NET framework standard.
+We do have changes coming.
+So in the wild introduction today,
+you can use WPF with .NET framework.
+Our next SDK release which I
+believe is mid to late August,
+will target.NET Core 3 for
+WPF and then forms apps.
+That won't be cross flat,
+it's still Windows because that's
+where the UI framework runs,
+but we are definitely moving to
+that OS agnostic platform versions.
+All right so I'm going to
+get this app up and running.
+It's Toolbox, put it in there.
+Then to get this up and running,
+I think our main steps
+are going to be just
+following the guideline
+which is going to be
+adding your NuGet packages
+as it says right here.
+I put this code into
+the start of my app to
+initialize the SDK with the
+information about my app.
+>> Then do it in the Azure app SQL.
+>> Yes, that's your actual value.
+>> So app center knows which
+app data's coming from.
+>> Correct, where to
+route it on the backend.
+>> Is it actually a secret or
+was it just an identifier?
+>> So it's a really good question.
+It is just an identifier
+that is named a secret.
+I don't think we publish it
+a lot of places in the UI,
+I don't think it's
+a common reference points.
+But it's a good question
+without a great answer.
+>> But if you don't treat it
+like a secret and people use
+your ID in their apps or you use
+the same ID in multiple apps,
+then you lose the ability
+to really know what
+app caused the problem, right?
+>> Certainly.
+>> It's an a unique
+identifier for the app.
+>> It is. Our intention
+would be that as
+every time you create a new
+app here in App Center,
+you would get a new one of
+these and you would
+see it through there.
+So I think as you get in and use it,
+it becomes pretty
+clear that an app is
+a sandbox for all the data
+of the distribution,
+the diagnostics, the analytics.
+So it's really up to you.
+I mean, it could theoretically,
+I suppose you could have
+the same app secret
+in several different executables,
+but I'm not sure that
+pattern would make sense for
+use cases we thought out,
+maybe there are other use cases
+out there. So I want.
+>> You just want to know
+how many users you have
+total and you're too
+lazy to do the math.
+>> One way to go about it. So I've
+included pre-release on our SDKs.
+Right now the SDKs are
+in pre-release version
+that will be changing.
+So we're going to
+install these. Also, I
+want to go ahead and change.
+I don't remember if I just picked it
+out on and change the.NET version
+to 4 or 5 because
+that's what we found out
+this morning was on your machine.
+So we want to make sure
+this runs as we do it.
+So I'm installing the crashes.
+>> You'll see that Matt is
+installing two separate
+packages because
+their services are actually modular.
+Meaning, if you want
+a crash reporting
+to on analytics, that's fine,
+you can just import the crashes
+NuGet package and everything
+will work just as well.
+But we do want to put
+everything in one spot.
+So it is easier if you
+do want distribution,
+diagnostics, and
+analytics all in one.
+>> It would also seem like
+this would be a handy place
+to create an extension
+that just says,
+"Set up my app for App Center."
+>> Yeah, something with that.
+>> All the packages that adds
+that line of code and then you just
+copy the secret in and
+the unique identifier
+and you're ready to go.
+>> Yeah, that's great idea.
+We would love to hear
+more ideas like that.
+I'm definitely drop
+as a feature request,
+any feedback that you have.
+>> We do keep our roadmap and
+our iteration plans on
+our public [inaudible] depo.
+So Microsoft/AppCenter under
+GitHub, I believe it is.
+We'll put the official link
+and the details,
+but all we feature requests,
+these are the roadmap
+where we're going
+or things what's coming when,
+it's all on there, trying to keep
+that living in transparency.
+So we've got our two
+packages installed.
+So I'm going to go
+over to my main window
+and actually I'm going
+to go to my App CS,
+because that's where
+the start of the app is,
+and so I'm as developer here.
+I'm just going to find out
+which keywords on my Mac.
+That's not it. Let's see.
+There we go, generate overrides.
+I don't need all of them,
+I just need on startup.
+So I've overwritten startup,
+so I can put the App Center's
+specific code in there
+and I go copy in the us ins,
+even though do it for me,
+I don't trust my keys,
+my fingers on these keys,
+and paste, and back one more time.
+Copied in, like you said,
+it's convenient that
+this is my data and
+everything is good there. Paste it.
+I'm going to go ahead and build real
+quick before I do anything
+else to make sure I
+didn't mess anything up this
+far that'll hamstring us later.
+Build worked. So I've
+got that up and running.
+If I run my app, we should
+see that it starts and
+it's just a blank window.
+So far, nothing
+particularly noticeable.
+>> Oh. that's beautiful.
+>> I know this is this looks like
+every UI I've ever
+designed in my life.
+>> Sharp white.
+>> Right here. All right.
+So the next step,
+I'm going to cheat just
+a little bit rather than trying
+to type this out from memory
+because lose in mind.
+Just go ahead and put this in.
+So let me go to the main Window XAML.
+Bring in a couple of buttons.
+Now, I don't normally
+build absolute buttons
+that say crashed them.
+No judgment if that's a good thing,
+but that makes this easy right here.
+So I've got the buttons,
+I've got the code behind,
+and there we go,
+skip those in there.
+All right. So we've got
+all those in and running.
+As you can see these three buttons,
+actually exhibit
+a couple different things
+in the App Center world.
+So we have a concept of
+crashes and errors when
+your application crashes
+and has to restart,
+if you divide by zero error
+and unhandled exception.
+There is also a concept of
+what we called handled errors.
+Just think of it as
+a robust error.log.
+So rather than the user app crashing,
+you might identify that there
+was no network connection
+or you couldn't find the right
+version of a file on a server is.
+Something that is manageable
+but you want to know about,
+we allow you to track
+is handled errors
+and see those in that
+same diagnostics UI.
+Then they will actually give
+you the full stack trace and
+the other memory data
+at the same time,
+so you can go a little bit
+deeper than a real log.
+So these are up and running.
+I think I'm going to need to add.
+>> You see the crashes, right?
+>> Yeah, and I'm just going
+to copy it from over here.
+Copy. Come on, you can do it.
+Put that in there. All right.
+So let's go ahead and run this app.
+So this would work from my machine
+and debug, this will work in release.
+As we'll see in a little bit,
+we'll send it over to
+Winnie's machine and it
+should work over there.
+>> Okay.
+>> So if I come in here and
+I say "Throw Handled Error",
+I didn't put in the UI in there,
+but we can validate if
+that did it thinks.
+When I go back to my
+app under diagnostics,
+give it just a minute to work
+its way through the pipes
+of the internet.
+>> Obviously, if you
+don't have conductivity,
+they're all cached and then gets
+sent up when you're connected.
+>> Yes. I believe
+that's the case for handled error
+is definitely for crashes.
+So as we'll see in a minute
+when an app crashes,
+we actually send it on next restart.
+>> Okay.
+>> So what we've learned
+through our time in
+the mobile space is that trying to do
+any processing when something's
+gone favorably wrong in
+an app is a good way
+to make things worse.
+So we capture a text file
+actually of what happened.
+Then when the app next starts,
+it seeds if there's a thing there,
+and we'll send that data back
+sooner than so when you
+back in a healthy state.
+So I'll click it a couple more times.
+It should show up relatively soon.
+You can do it. There
+we go. All right.
+So we see that today,
+we had one error.
+If I come in here and look at
+that error that I just got like
+you said, in this case,
+this is all the statuaries
+that was there because that's
+what we've put in there.
+I see the reports.
+I can go into this one.
+I can see this one, we
+know it was running on
+a virtual machine.
+See the main thread.
+I didn't really give
+it much data here,
+but this is the general idea.
+Also under analytics,
+I'm going to see that
+I had one unique user show up today.
+>> Yeah.
+>> I haven't gone in and done
+much of the other data write,
+I'm just in English write.
+There's not a lot of writing here
+but this is the basic feedback.
+So the other thing to show
+then is to see a crash.
+So in this case, it's
+going to stop the app.
+When I restart it, you'll
+get some off to App Center.
+>> Cool.
+>> All right. So that's
+the diagnostics piece.
+What I think takes this
+really to other level is
+being able to shift that
+over to somebody else.
+>> Right. Yeah.
+>> So with just I hope
+a few clicks here,
+we can do the same thing
+on Winnie's machine as in
+real life end user and see the
+diagnostics and analytics come in.
+>> Let's see that.
+>> So let's do this.
+The easiest way is to just go
+ahead and publish this app.
+I'm just published it
+to my desktop for now,
+and let's get it in "Desktop",
+let's make a new folder.
+In there, "Open" that,
+"Finish", let it do its thing.
+All right. There I am.
+I'm going to "Add"
+this folder to a zip file,
+click in it a couple times.
+So it's the virtual thumb drive
+that we're using in this instance.
+>> Right.
+>> So we do support MSI,
+we do support app actions from
+other platforms for
+the sake of this demo.
+It's the easiest to go. So I'm
+going to go over to "Distribute".
+>> If you build it in Azure DevOps,
+can you just point
+App Center to that build?
+>> You can't. As of yet,
+you have to download
+it and bring it over.
+>> Okay. All right.
+>> But that is definitely to flow.
+In fact, for a lot of
+the other platforms that are
+a little bit further down the road,
+it just happens automatically.
+>> All right.
+>> If you build in
+either Azure DevOps
+or App Center, there's
+nothing else to do.
+>> Right, okay.
+>> So we'd like to get to that point.
+>> Yeah, cool.
+>> So you say, I haven't
+send my app to anybody yet.
+I'm going to "Upload" the zip.
+Then over here, let's
+just give it "1.O.O".
+Then Y-U-L-I-1 is your,
+"this is my app it doesn't crash",
+but it does. Works on my box.
+>> Yet.
+>> There we go. All right.
+So it knows when it is
+engaged in App Center.
+As a tester, must send
+it over. All right.
+So you can see this
+there. So if we can
+flip back over to Winnie's machine,
+she should get an e-mail
+in the next minute or two.
+>> Right here.
+>> That's already there.
+>> So I'm very excited to install
+this app that does not crash.
+So you'll see it takes me
+to the install screen.
+So see Matt's very
+truthful comment here.
+>> It worked on my box.
+>> I mean click "Download",
+just going to "Open" it,
+and then you'll see
+the app right here.
+So if I click here,
+let me just open up the executable.
+So it give me some warning.
+>> Yup. Just to address this Yahoo.
+>> Yeah.
+>> Yeah, it's Yahoo.
+>> I'm going to install that,
+and now I have the app on my machine.
+>> Cool. Nice.
+>> So why don't you give us a
+handled error and then crash maybe.
+>> All right. Let's see.
+So we hit "Handled Error".
+Let's do a "Stack Overflow" crash.
+>> It takes a second to [inaudible].
+>> Now, if you open the app backup.
+>> Let's see.
+>> Then we didn't give you access
+to the app as a collaborator.
+So as a tester, I don't
+believe you're able to see
+all the diagnostics information
+because that's my business.
+I just asked for you to test it.
+>> Yeah.
+>> So we could flip back to
+my machine one last time,
+and I go back into diagnostics.
+We should see in a minute
+when they process through
+the pipeline that we
+have a number of
+crashes and a number of
+handled errors coming
+from Winnie's machine.
+There's the issue you did,
+the stack overflow exception.
+I did the other one there.
+Under "Analytics", we
+should now see that I
+have two users coming in and
+let me know what's going on.
+So take that and extrapolated
+out across tens, thousands.
+We have apps with millions of users,
+tens of millions of users.
+This starts to really just take
+that distributed debugging for
+about historical debugging.
+Clearly, we're not
+actually debugging.
+But we are providing information
+that will allow you to
+understand how to
+prioritize what effects,
+and hopefully, how to have
+enough information to know effects.
+>> Right. That is so cool.
+>> Yeah.
+>> Awesome.
+>> So this is in preview,
+available for anyone to use.
+>> It's out there in the wild today.
+>> All right, aka.ms/AppCenterWindows
+for more information.
+You guys got to check this out.
+Give it a shot, and let
+these guys know how you like it,
+and what new things
+should go into it.
+This is really cool.
+>> Awesome. Yeah. I'm
+pretty excited about it
+as someone who spent a lot
+of years in this space.
+Before I got the App Center,
+we really are doing things that
+are not really brought together
+anywhere else, which is awesome.
+With the coming support
+for .NET Core 3,
+that's another step in
+the right direction.
+We've got some future plans
+there to take that,
+I think a little bit further
+even outside of the UI section.
+But we're not quite
+efficiently there yet,
+so we'll leave that for another day.
+>> All right. Cool. Thanks so
+much for coming on the show.
+>> Awesome.
+>> Thank you very much for having us.
+>> Thanks for having us.
+>> Hope you guys enjoyed this,
+and we will see you next
+time on Visual Studio Toolbox.
+[MUSIC]

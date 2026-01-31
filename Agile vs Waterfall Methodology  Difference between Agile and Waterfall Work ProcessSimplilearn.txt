@@ -1,0 +1,336 @@
+in the fastpaced world of software
+development two methodologist often
+dominate the conversation agile and
+Waterford picture this it's the early
+2000s and a room full of developers is
+hedly discussing the next big project on
+one side you have proponents of the
+waterfall methodology with its
+structured linear approach where each
+phase of development Cascades into the
+next like a series of predictable
+controlled folds every requirement is
+defined upfront aiming for a project
+course as smooth and predictable as a
+well-charted river across the room agile
+supporters advocate for a more Dynamic
+approach imagine a team of jazz
+musicians where the plan evolves through
+short improvisational Sprints adapting
+to new information and customer feedback
+like a river effortlessly adjusting its
+course around tropes agile is built on
+the principles of flexibility continuous
+Improvement and direct collaboration
+with customers which often leads to
+innovative solutions that more rigid
+methodologies might miss the debate
+between these two methodologies is not
+just academic it has real world
+implications consider the statistics
+according to the project management
+Institute agile projects are 28% more
+successful than traditional projects
+this statistic alone Sparks the question
+is agile always superior or do certain
+projects benefit from the predictability
+of waterfall as you dive deeper into
+agile versus waterfall debate you
+explore how choosing the right
+methodology can be akin to choosing the
+right tools for a journey sometimes you
+need the reliability of a well paved
+Road and other times the flexibility of
+an off-road vehicle and before we
+commence guys just a quick info for you
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to Fast Track Your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back you can elevate your career as a
+sort after certified scrum Master
+through immersive training by globally
+renowned csts uncover scrum secret and
+enhanced teamwork transparency and
+results with CSM certification get
+expert coaching a the CSM exam and
+Propel your career to new heights unlock
+higher salaries and discover exciting
+opportunities this course demonstrate
+the accomplishment of corrum knowledge
+to employers and are highly valued
+across Industries since the have
+verified skills CSM professionals gain
+access to local groups networks and
+resources available only to scrum
+alliance members and don't forget to
+check out the course link from the
+description box and the pin comment with
+that guys let's get started what is
+agile agile is a project management
+methodology that emphasizes iterative
+development where requirements and
+solutions evolve through the
+collaborative effort of self-organizing
+and cross functional teams and their
+customers and users it Advocates
+adaptive planning evolutionary
+development early delivery and continual
+Improvement and it encourages flexible
+responses to change and now have a look
+at diagram the diagram is a visual
+representation of the agile software
+development cycle it illustrates the
+nonlinear iterative approach of agile
+methodology consisting of five key
+phases plan identify the project goals
+scope and what needs to be done during
+the Sprint design work out how the
+features or functionality will look and
+how they will work develop build the
+actual features based on the design test
+check the new features for bugs and
+ensure they work as intended review
+evaluate the progress and work done
+often with stakeholders to get feedback
+the central part of the diagram labeled
+agile methodology indicates that these
+phases are part of a cycle that repeats
+with each Sprint or iteration after the
+review phase the cycle Can Begin Again
+with a new plan phase where the feedback
+received is used to improve the next
+iteration the arrows demonstrate the
+continuous movement from one phase to
+another in a loop reflecting the dynamic
+nature of Agile development the arrows
+outside the circle plan design develop
+and launch could signify the broader
+stages of the project from inception to
+the final launch providing a general
+context for the iterative Cycles within
+now let's understand what is waterfall
+definition waterfall is a linear and
+sequential project management
+methodology where each phase of the
+Project Life Cycle must be completed it
+fully before the next phase can begin
+this method is characterized by a strict
+procedural flow making it
+straightforward and predictable now
+let's have a look at the diagram this
+diagram outlines the phases of a typical
+software development process often
+referred to as a life cycle here's a
+concise explanation suitable for a
+beginner requirement gathering this is
+where you decide what the software
+should do collecting all the necessary
+requirements analysis in this step you
+examine the requir ments to understand
+them thoroughly and to identify any
+potential issues or areas needing more
+clarity design based on the requirements
+and Analysis you create a blueprint or
+design for the software detailing how it
+will work and what it will look like
+coding this is where developers write
+the actual code for the software turning
+the design into a functioning program
+testing the software is rigorously
+tested to find and fix any errors or
+bugs to ensure it meets the original
+requirements and of high quality
+operations finally the software is ready
+for use and goes into operation this
+stage also includes maintenance and
+updates as needed now let's start with
+the difference between agvs aut ofall
+methodology first on the basis of
+process agile the process is iterative
+which means it repeats with adjustments
+over time development is cyclical
+allowing for revisiting and revising any
+step as needed waterfold the process is
+linear proceeding through a sequence of
+steps that flow downwards like a
+waterfall from requirements Gathering to
+deployment with no return to previous
+steps flexibility agile agile is very
+flexible it not only allows but expects
+requirements to evolve and change which
+it can accommodate at nearly any stage
+of the project waterfall waterfall is
+inflexible after the initial stages once
+requirements are defined and the project
+has begun changes are disruptive and
+often lead to increased cost customer
+collaboration agile continuous customer
+involvement is crucial for agile
+projects regular feedback is s to ensure
+the product meets the customer's needs
+and expectations waterfall customer
+involvement is typically limited to the
+beginning requirements Gathering and the
+end acceptance testing of the project
+delivery agile agile delivers work in
+small usable segments validated by the
+customer often resulting in a series of
+incremental releases that build up to
+the final product waterfall waterfall
+delivers the Complete product at once
+after it has passed through all the
+sequential phases and is fully complete
+team structure agile teams and agile are
+usually made up of members with varied
+skills that collaborate throughout the
+project this cross functionality
+encourages Innovation and Rapid problem
+solving waterfall waterfall teams often
+work in phases or silos where each
+team's work is dependent on the previous
+phases completion collaboration across
+different functions is more structured
+and formal testing agile testing in
+agile is ongoing and occurs concurrently
+with development this allows for
+immediate feedback and issue resolution
+waterfall in waterfall testing is a
+distinct phase that happens after the
+development phase is complete which can
+delay the discovery of issues
+documentation agile documentation is
+kept as lean as possible to save time
+and resources emphasizing the working
+product over comprehensive documentation
+waterfall waterfall requires thorough
+documentation before any design or
+development begins serving as a
+blueprint throughout the Project Life
+Cycle Embrace of change agile agile
+methodologies is Embrace change viewing
+it as an opportunity to improve the end
+product continuously waterfall waterfall
+methodologies resist changes post the
+initial stages due to the high cost and
+time required to accommodate them risk
+management at
+agile allows for early detection of
+issues and risks due to frequent testing
+and customer feedback facilitating more
+effective risk management waterfall
+risks in waterfall are usually
+identified and managed during the
+testing phase or if a risk becomes a
+reality often leading to more
+significant overhauls at a later stage
+Focus agile agile focuses on delivering
+a product that satisfies the customer's
+current needs by accommodating changing
+requirements throughout the process for
+waterfall waterfall focuses on strict
+adherence to the initial project plan
+with an emphasis on delivering the
+project within the plan schedule and
+requirements these explanations should
+provide beginners with a clear
+understanding of the two methodologies
+highlighting not just what they are but
+also the Practical implications of
+choosing one over the other for a given
+project now let's examine choosing
+between agile and what of all
+methodologies depends on the specific
+context of the project the requirements
+of the stakeholders and the nature of
+the work to be done he has a guideline
+on when to use each use agile when
+requirements are unclear or expected to
+change if the project scope isn't fully
+understood or if you expect changes
+during development agile allows for
+flexibility and adaptation client
+collaboration is important projects
+where frequent client feedback is
+desired or necessary benefit from
+agile's iterative approach the product
+needs to go to market quickly if there's
+a push for the minimum viable product
+MVP to be released quickly agile allows
+for faster and incremental releases the
+project is complex and high risk for
+projects where risks need to be
+identified and addressed quickly AEL
+facilitates rapid issue identification
+and Resolution Team empowerment is a
+priority agent support self-organizing
+teams that can make decisions on the
+fight which can lead to higher
+satisfaction and productivity use
+waterfall when requirements are clear
+and stable if the project Tex
+requirements are well understood and
+unlikely to change aall provides a
+structured approach regulatory
+documentation is required in Industries
+where detailed documentation is required
+for compliance EG Healthcare
+construction Aerospace waterfalls
+emphasis on documentation is beneficial
+the client prefers to see the Complete
+product some clients may be more
+comfortable with reviewing and approving
+the final product rather than being
+involved in every iteration project
+complexity is manageable for simpler
+projects or projects where the
+technology and solutions are well
+understood waterfall can be more
+efficient sequential nature is required
+projects that need to be executed in a
+linear fashion for instance when one
+phase truly cannot start before the
+previous one is complete align well with
+waterfall it's important to note that
+some Modern project management practices
+involve blending agile and waterfall
+into a hybrid approach taking elements
+of both to suit the Project's needs for
+instance a project might be with a
+waterfall approach for establishing
+clear specifications and then switch to
+Agile to develop incremental portions of
+the product this combination can
+leverage the strong planning Foundation
+of waterfall with the flexibility and
+adaptability of agile with that guys we
+have come to the end of this session in
+case of any queries feel free to drop
+your questions in the comment section
+thanks for watching if you like the
+video do appreciate it with a thumbs up
+and stay tuned for more information
+staying ahead in your career career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and to corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to n up and get certified click
+here

@@ -1,0 +1,226 @@
+hello everyone welcome to another video
+by simply learn
+in this video we will see arduino vs
+raspberry pi
+let us look at today's agenda
+we'll first start with understanding
+what is arduino
+after that we will look at what is
+raspberry pi
+then we will see a comparison between
+arduino vs raspberry pi on the following
+parameters
+control unit
+architecture
+specifications
+operating system licensing applications
+and types of boards
+and at last we will see which is better
+arduino or raspberry pi
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn so
+without wasting any further time let's
+get started
+what is arduino
+arduino is an open source electronic
+gadget that reads inputs such as light
+on a sensor a finger on a button or a
+tweet and generates output based on
+those inputs such as turning on the led
+or activating a motor
+arduino was created at a design
+institute as a simple tool for students
+with no prior experience with
+electronics and programming
+arduino boards are microcontrollers not
+entire computers with operating systems
+of their own like the raspberry pi
+arduino just run c c plus plus code that
+is stored in the firmware
+the arduino ide integrated development
+environment is free software that allows
+you to create and upload code to an
+arduino board
+now let us see what is raspberry pi
+raspberry pi is small low cost computer
+the size of a credit card that connects
+to a computer monitor or television and
+utilizes a conventional keyboard and a
+mouse
+raspberry pi can do everything a desktop
+computer does including accessing the
+internet
+using raspberry pi we can watch high
+definition videos access spreadsheets
+word processing and play games
+raspberry pi has a dedicated processor
+memory and a graphics driver just like a
+pc it also comes with its own operating
+system raspberry pi operating system
+which is a modified version of linux
+raspberry pi is also used in music
+machines parent detectors as well as
+weather stations and tweeting bird
+houses with infrared cameras
+let us look at the comparison between
+arduino versus raspberry pi first let us
+look at the control unit
+arduino is a member of atmega family of
+microcontrollers
+microcontroller chip common on arduino
+uno boats is atmega328
+the 8-bit
+avr microcontroller family includes
+atmega328 microcontrollers
+a surface mount at mega chip is seen on
+some arduino uno boards
+the raspberry pi is an arm controller
+unit
+broadcom chips based on arms cortex a
+application processor have powered
+raspberry pi from its release
+the raspberry pi 3 is the latest version
+of the raspberry pi launched in february
+2016.
+it has 1.2 gigahertz arm cortex a53 cpu
+making it compatible for the arm 63.
+it has 1.2 gigahertz arm cortex a53 cpu
+making it compatible for the arm 64
+architecture
+architecture
+the harvard architecture is used by
+arduino cpu which means that the program
+code and the program data have distinct
+memory
+it is made up of two types of memories
+program memory and data memory
+the data is saved in the data memory
+while the code is kept in the flash
+program memory
+whereas in raspberry pi raspberry pi
+contains a single core arm v6 processor
+running at 700 megahertz
+a video core 4 gpu and 512 mb of ram
+its operating system and data are stored
+on sd card
+raspbian a lightweight linux operating
+system based on debian is officially
+supported by the raspberry pi
+licensing
+arduino is an open source electronics
+platform that uses simple hardware and
+software to make it easy to use
+it's for everyone who wants to make
+interactive projects
+arduino perceives the environment by
+receiving data from a variety of sensors
+and actuators to influence its
+surroundings
+raspberry pi's hardware and software are
+both proprietary raspberry pi has never
+claimed to be open source
+many aspects of it particularly the
+software are open source but not all of
+it is
+the raspberry pi has been criticized for
+having closed source components
+operating system
+arduino boards are single board
+microcontrollers with firmware and no
+operating system
+a firmware program is a piece of
+software that is installed on hardware
+device
+it doesn't have an operating system but
+it does have a firmware which can be
+programmed using several ides including
+the arduino ide
+raspberry pi operating system for pc and
+mac is dbn with raspberry pi desktop
+it installs a raspberry pi operating
+system desktop on pc or apple mac as
+well as most of the recommended software
+that comes with raspberry pi operating
+system
+now let us look at the specifications
+so we look at the specifications between
+arduino uno r3 and raspberry pi 3 model
+b plus
+so if you look at the system arduino has
+microcontroller system whereas raspberry
+pi has single boarded computer processor
+arduino has avr at mega 328p
+and raspberry pi has broadcom
+ram
+in arduino uno we have ram of 2 kb
+whereas in raspberry pi model 3 b plus
+we have 1gb ram
+clock speed 16 megahertz in arduino and
+1.4 gigahertz in raspberry path
+execution in arduino single program can
+be executed at a time
+whereas in raspberry pi multiple
+programs can run at a time
+current
+current is 5 milli ampere in both
+arduino and raspberry pi and gpu io pins
+arduino has 20 and raspberry pi has 40.
+and power consumption in arduino is 175
+milli watt and in raspberry pi it is 700
+milli watt
+applications
+arduino is used in waving machines
+traffic light countdown timer parking
+lot counter embedded systems home
+automation industrial automation medical
+instrument and emergency light for
+railways
+whereas raspberry pi is used in desktop
+pc wireless usage game servers retro
+gaming machine robot controller
+stop-motion camera and time-lapse camera
+now let us look at the different types
+of arduino and raspberry pi
+in arduino we have arduino uno
+lily pad arduino arduino mega arduino
+leonardo arduino red board and arduino
+shields
+whereas in raspberry pi
+we have raspberry pi one model b
+raspberry pi 1 model a
+model b plus model a plus
+then we have raspberry pi 0 raspberry pi
+2 raspberry pi 0 w and raspberry pi 3
+model b
+and we know a raspberry pi which is
+better the arduino and raspberry pi have
+their own set of benefits and drawbacks
+the best option for you will be
+determined by the requirement of your
+project and your budget
+arduino is ideal for automating
+repetitive operations such as opening
+and closing doors turning on and off
+lights and so on
+arduino should be the first pick if your
+project has any repeating elements and
+just requires generating output
+depending on sensory inputs
+raspberry pi is ideally suited for
+complex activities such as controlling
+complex robots weather monitoring and
+internet publishing among others if your
+project necessitates advanced
+functionality as well as internet access
+then the raspberry pi is the option
+so with that we have reached the end of
+this video thank you so much for being
+here keep learning and stay tuned to
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

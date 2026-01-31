@@ -1,0 +1,610 @@
+hi there we go there's our camera and
+can you share your screen sure let's see
+so good is he an angle sharp yeah yeah
+so Florian we've we've talked over over
+the years here you're when angle sharp
+joins on that foundation
+big fan thanks Shirley I'm quite happy
+to share now what angle shop is about I
+mean for me it's anyway like Christmas
+two best events of the year coming
+together dotnet Kampf happening globally
+and the Oktoberfest is just around the
+corner here the stage is yours
+Thanks so without further ado I will
+just jump into topic and hopefully and
+make it in time
+the topic is angle sharp which aims to
+be a dotnet headless browser let's see
+where we are and before I jump into it
+fully in the water a few words about
+myself Microsoft MVP for developer
+technologies I'm also a contributor to
+open source projects mostly Anka top of
+course and I'm very enthusiastic about
+writing some articles of technical
+nature and speaking at events if the
+time allows it always be happy to be
+invited and appreciate that
+professionally I'm a solution architect
+at a small start-up called SMAP yacht
+and they are specialized in distributed
+web applications and the web is also the
+topic of this session one word of remark
+since this is an online session I cannot
+see all your faces so excuse me for
+being either too fast or too slow I hope
+that the recording will then at least a
+little bit well give you a payback on
+this one otherwise you can always reach
+me on github or on Twitter if you have a
+specific question now yeah
+yeah thanks thanks alright now what is
+on our plate today we will first start
+by a quick introduction what is Engel
+shop why could it be helpful for you
+since angle shop is an HTML app browser
+we will also need to have a small
+excursion html5 we will do that by
+example I selected three examples that
+should be Lestrade why HTML parsing is
+not so simple as just putting out a
+regular expression then we will go into
+topic of extensions this is one of the
+things that makes English up special and
+we try to to always improve our reach
+and what we can do with it and finally a
+small outlook what the future of bangle
+shop will bring so what is angle shop
+has already told you it's a library for
+parsing HTML but it's in fact a little
+bit more than that what we try to do in
+order to pass HTML 5 correctly I mean
+there's the core specification but there
+are all kinds of specifications actually
+and if you want to really get across on
+what's on the web you should not
+consider just one specification but all
+the side specifications also play a very
+important role like for instance this
+one little thing called JavaScript right
+I mean many websites are unfortunately
+these days only accessible if you also
+have a JavaScript engine running or part
+of the information may only be displayed
+in conjunction with special CSS rules or
+may make only sense which diseases Luis
+so there are all these different
+technologies that come together and form
+what we call the web today and if we
+really want to get access to that
+information we need also a browser
+engine that's capable of doing that of
+course your stand-up browser can do it
+but can you do it in god net without any
+let's say RPC calls or whatever and
+that's the mission of English shop now
+what we can do is we have a full stream
+processing unit like a standard web
+browser does which means we do not
+stop when whites arrive we always
+evaluate them we don't wait until all
+the content was received we do it on the
+fly we have a collection of web
+utilities for that most notably in the
+encoding space but also for instance we
+have our own URL parser
+that's just because the URI type that's
+Internet
+unfortunately it's not capable of well
+parsing all the available URLs that are
+out there this URL parsing that we
+included follows the specification by
+the heart and therefore can handle all
+the cases what else we can do besides
+HTML CSS already remarked that Java
+Script plays an important role yes we
+have a solution for that unfortunately
+at the moment it can only deal with
+simple JavaScript and the vision is of
+course to improve the reach here and
+this is where customizations and
+extensions come in because at the end of
+the day we don't want to create as one
+giant monolithic library we want
+actually to foster a whole ecosystem of
+plugins where everyone can say oh this
+is one of the things angle shop cannot
+do or does not do well at the moment but
+I can just customize this and come up
+with my own plug-in now looking at the
+history of the project it always started
+I think round in 2012 it was actually
+after an MVP summit I was on the plane
+and I saw yeah that's that's right an
+html5 pause I mean what else could be
+could be done on a plane honestly it was
+a different angle so to speak back in
+the day on the project but I realized an
+html5 parser is one of the things that's
+missing in the.net ecosystem you have
+another HTML parsers right but none of
+them have been following the html5
+specification by the heart at this point
+in time
+in 2013 I put it out of github and
+initial reaction was quite good I was
+really surprised so there seem to be
+some kind of a demand and so I kept on
+going and in 2015 grid and
+important milestone with integrated
+extensibility we demonstrated that
+scripting engine can be brought in which
+was quite cool because suddenly you had
+not only just a static document object
+model a static representation of the
+page you're the linguist but actually it
+could be made alive
+what JavaScript brings for instance to
+the table and then from that point on
+just a lot of bug fixes a lot of
+improvements and a major refactoring of
+the API to the end user also happen and
+the milestone here is the version 0 10
+so right now we are at 0 13 and we want
+to hit the 1 0 milestone all the major
+breaking changes that happen since 0 10
+all quite minor but still breaking in
+one or the other area now from 0 9 - 2 0
+10 that was a huge change so there we
+really made a drastic direction change
+but I think it was for the better and
+the ecosystem also lives now on top of
+the 0 10 version and of course the
+successes now one short claims that what
+how parsing HTML looks like it's like
+any kind of parsing so if we could draw
+pretty much the same picture for let's
+say even programming languages like C
+sharp they of course may have what this
+thing called a back end with
+optimizations etc and coding machine
+happening that's not the case here but
+nevertheless the parsing stages alone
+the front end is pretty much the same so
+we start with a stream a stream of just
+bytes and they are interpreted in a
+special way by a preprocessor that also
+does some sanitization in the end the
+goal of this pre-processors actually to
+get us characters that we can work with
+then a tokenizer
+comes into play no the tokenizer takes a
+bunch of characters as oh now that's a
+valid token for instance an opening tag
+or a closing tag or an attribute or text
+or a comment all these kinds of
+different building blocks that we have
+now until this point we are still in the
+linear phase where we say okay we
+started with a linear stream of bytes we
+have done a linear stream of characters
+and now we have a linear stream of
+tokens now where does the tree the
+document object model come from well
+that's done by the tree constructor so
+that is fed on the tokens coming from
+the tokenizer and now here is the
+semantic information it says okay I've
+seen that opening tag I can now close it
+that's valid or here there is no content
+allowed I will just place it on the
+sibling element so all these things
+happening in the tree constructor and
+then we have a dynamic object model
+which is called the Dom so at the end of
+the day this is all what what's included
+in English after then need to do
+anything you just for instance present
+the stream to English art and English
+afters all the rest at the end you get
+an eye doc you meant for instance
+instance and with this instance you can
+actually play around you can serialize
+it back that's what we will see you can
+append new elements or get further
+information out of it so let's just look
+at some examples learning a little bit
+what makes html5 so so complicated first
+very simple piece of HTML code what do
+you should recognize here is I left out
+some of the let's say standard elements
+like we don't see an HTML tag here we
+don't see head we also don't see body
+well that's not an error that's actually
+a valid html5 document and there are big
+sides for instance the Google arrow page
+out there which use exactly these rules
+to save a few bytes here and there so
+what invalid HTML 5 part should do it
+should insert these things for us so it
+should automatically insert for us an
+HTML opening tag it should insert for us
+and
+head opening tech it should also close
+the head and it should also when the
+magenta coat is reached create a body
+element for us all these things should
+just happen automatically that's by the
+specification anguish of does that we
+will see that in a second
+now a second example where it gets a
+little bit tricky is there are some
+special kind of stopping rules in HTML
+for instance there could be in a
+unsorted list and entered a space of a
+list item now if we are in a list item
+we can just write another list item with
+the first one or the formal one being
+implicitly closed so that's all by the
+specification simple possum may not like
+this because here the pre constructor
+needs to have all the additional logic
+as an example if we look at raiser for
+writing fuse in asp.net core MVC we will
+recognize that we need to close the list
+item now that may have been a good
+design choice for performance reasons
+but on the other hand of course it
+limits the output that can be generated
+because you can never output an HTML
+like this using razor unfortunately now
+the same rule that applies to list item
+can also apply for instance a paragraph
+there are multiple of these cases again
+this these are not arrows these are not
+even warnings this is just well it HTML
+and the automatic closing just happens
+for you a third example I want to give
+is in a table space well tables are one
+of the most complicated parts of the
+html5 specification because there's so
+much that could go wrong and every edge
+cases essentially handled there's
+another space which has to do with
+formatting elements but since formatting
+elements are more or less a legacy thing
+especially with the edge cases described
+in there I will just focus on table with
+the simple example now what a protein
+here is there have been some elements
+inserted magenta ones
+so we've
+break row here and we have an iframe
+there just inside the table note also
+there is no tea body element for
+instance which is also something that
+needs to be inserted automatically by
+the html5 parser in addition to these
+let's say misplaced elements we also
+have an invalid closing tag so it's not
+even an invalid Tec I mean web
+components or angular or any any kind of
+spar framework these days uses custom
+tag so that's that's that's no problem
+and then we have also in green the table
+row which is just that's saying often
+here it needs to be placed in the table
+itself and it isn't so what should we do
+is death so let's have a look and all
+these three cases in the demonstrate
+demonstration of angle shop all the
+demos you'll see today available on
+github the URL is on the screen right so
+for the first demo we'll just briefly
+explain what the angle Sharpe are does
+what we do here is we create a new
+so-called browsing context browsing
+context you can think of as a like a tap
+in your standard browser so that's one
+instance where now a page can live what
+makes a browsing context special is that
+you can configure it you can tell it
+what it can do and what it cannot do
+like when you say in your browser to
+your current app well you are not
+allowed to run JavaScript you can do
+that here too so we can do browsing
+context we don't specify any
+configuration which means it's the
+default one and then we open a new page
+as the stream may be well evaluated
+asynchronously we need to do that in an
+async method but luckily c-sharp a
+discovered here what we use for
+simplicity is not now some remote remote
+source we use actually the small snippet
+that's on top of here so we just apply
+the
+content via what is called in English up
+a virtual response so we say oh so you
+don't have an address where your page
+lives you don't even have anything like
+that so you can just construct how the
+response to our request would look like
+and we say yeah our response has the
+following content it's this source and
+it also comes from a certain address so
+the address is completely optional I
+just included it here because we will
+see it in the document object model
+appearing as the base URI and base URIs
+are very important because they give
+relative URLs well the base that's
+required for resolving them all right
+mmm so when we do that we end up with
+this i document instance and what we can
+now do is to illustrate that angle shop
+did everything right we sterilize it
+back to an HTML string again using the
+to HTML method so if I use this and run
+the code you see the output it's pretty
+much the same document that I inserted
+except will suddenly get the HTML we get
+the head
+we also close the head we open the body
+and at the end of our whole HTML
+document we also close everything that
+was still open but that's all done by
+angle shop now the second example we had
+we use the same code just a different
+HTML snippet we should see that the list
+items will be closed before we open a
+new one or before we close obviously the
+unsorted list and the same applies here
+with the paragraph we also need to close
+them properly so let's just run it and
+we see same action else on example one
+except now of course in addition we see
+all the stopping correctly evaluating so
+far so good
+let's also have a look at the third one
+and here let's also debug what actually
+the document looks like so
+before we write it to the console let's
+just see what's in there could be a
+little bit too small so I will just make
+it a little bit larger I hope Skype
+plays with me here so what we do is we
+have all these capabilities that if you
+are familiar with the document object
+model API from JavaScript will look very
+familiar right
+so for instance we have an old property
+and that will contain all the elements
+in here we can also iterate over them
+there could be a cookie for instance or
+we see of course our base URI that was
+successfully applied so all these things
+are there and it's it's a full document
+object model just done in c-sharp
+without any remote procedure calls to to
+chrome or any other evergreen browser
+happening now regarding the output
+that's what we expected so the the table
+Road it was outside of the table that
+was completely omitted otherwise we see
+the standard construction happening the
+break row and the iframe have been put
+in front of the table and we see the
+insertion of the tea body happening so
+all done for us by English shop it would
+have been done of course by Chrome or
+Firefox or any other evergreen browser
+out there too so this is a specification
+dictates okay now let's talk about
+extensions for a moment so what you saw
+is what the core of any shop can can do
+for you in a nutshell so it really makes
+sure that whatever the HTML looks like
+on the page is interpreted 100% as a
+real browser would do right and that's
+of course important because you don't
+want to end up with something that's
+well not what you would expect from just
+for instance
+packing it in in Chrome now the English
+up core doesn't deal with JavaScript
+English of course doesn't deal with with
+CSS but they are luckily these plugins
+and how the ecosystem looks like is we
+have this base layer of English up core
+providing the common utilities and then
+we place on top of it useful libraries
+like for instance English up CSS which
+deals with the CSS object model and we
+try also here to be fully w3c conform
+which means whenever they came up with
+suspect how an API should look like we
+follow that spec so it's not only about
+behavior it's also about what the API
+looks like and that should give you some
+kind of a learning improvement because
+if you know it already from JavaScript
+you can apply it directly in in angle
+shop if you know it from English shop
+and someone asked related to do it in
+JavaScript well you can also apply the
+knowledge there and this too in one say
+in my opinion as always it's great to
+have we also have English a file which
+will demo in a second this brings
+additional io capabilities like
+requesters or cookie providers and then
+we have libraries that are either an
+experimental stage like English up
+jeaious is one of these or which are
+just planned like English a media could
+be one of these things that would also
+support certain kind of streaming
+capabilities and could also be quite
+cool if you say oh I got this site and
+there is a video stream on it I can log
+in and then suddenly I can bring this
+video stream to I don't know WPF that
+would be quite quite awesome but we are
+not there yet but that's part of the
+vision all right so let's have a look at
+persistent cookies using anger shop io
+so a little bit of background to this
+demo I got a web server running locally
+a really simple one
+the page which needs a locking mechanism
+to display a secret now all the locking
+mechanisms in the web pretty much work
+these days
+video is of course some api's but then
+we are anywhere in the safe side if you
+have a che WT or anything like that or
+we have a cookie based authentication
+that's for most of the sites that are
+relevant for angle shop the case so when
+we have this cookie problem we
+potentially need a cookie solution right
+out of the box angle shop already brings
+a cookie provider but that's based on
+the cookie container of thought net that
+has several disadvantages most notably
+it doesn't work with all the cookies out
+there on the web it may crash it may
+complain you know this stateful model do
+not recognize so what we did in one of
+the extension library is called angle
+shop IO we created a cookie provider
+following the official specification and
+we even went further what we have in
+there are two ways of using it one way
+is in memory where you say okay when the
+application closes cookies are lost it's
+good and the other way say oh you can
+persist it or however you want to by
+default on the local file system and
+that's what it should show so we use a
+custom configuration now that's done
+like this you have the configuration
+class and we just say we will start with
+the default one and then we add
+additional capabilities so what we do is
+we add the persistent cookie capability
+and we say oh yeah you need to store it
+somewhere the sync file path is in My
+Documents to file demo cookie we also
+add additional requesters like an HTTP
+request that's based on the HTTP client
+that's just more modern and the one that
+comes with anguish up out of the box and
+then we say yeah English are you allowed
+to actually make requests to the network
+so is a with default loader
+now when we run this thing what will
+happen is we just switch to
+authentication
+we will have different kinds of stages
+oh sorry I'm still need to remove this
+little file so let's run it again sorry
+for that if different kinds of stages so
+we start not being locked in so the page
+looks like this you need to login for
+obtaining the secret luckily we have to
+log in link here so we navigate there
+then this page contains a form we fill
+out the form with the user and the
+password press login it's all done and
+then we automatically redirect it and
+here we see the secret
+so obviously proves Wayne is Batman what
+but yeah so that's just how the word
+works and this was the the angle shop
+order the code that we used in C shop
+using angle shop say okay we can use a
+query selector if it's there we navigate
+to it then we submit the form and then
+we're locked in now if I run it again
+this cookie file is created has been
+graded and so we are already locked in
+so we see it the secret directly I'm
+Batman
+parade and the reason how it works is
+because sorry it's because yeah we have
+this file that follows the old Netscape
+cookie file specification and that
+actually includes all these different
+cookies that have been used now for the
+localhost domain and we just transported
+over alright so going into the final
+stages I also want to show you
+JavaScript before wrapping up now
+JavaScript all said is also just a
+library in an experimental stage we only
+need to use with chess and then we can
+apply some simple JavaScript let's just
+make the demo before we run out of time
+[Music]
+pretty much the same thing now what we
+will change is the document title
+because that's right now sample and it
+will be changed to simple manipulation
+what we will also do Israel right out
+this special kind of a spawn element so
+let's just run it and what we can see is
+the title changed now in the
+serialization it's now simple
+manipulation and we got this spawn break
+so this simple JavaScript pose applied
+correctly evaluated correctly again
+angle job chase is experimental and you
+will not be able to run let's say
+large-scale single page applications
+with it at the moment okay so next steps
+obviously is shipping one zero is very
+important
+improving huge is super important and
+then refining things of the ecosystem
+like angle shop CSS or bringing up new
+additional libraries like one is for
+instance saying especially with Swiss
+blaze around the block that could be
+really interesting English of media is
+said but also things like English of
+renderer could be quite interesting
+especially if you want to say everything
+is just managed code I don't need a web
+browser for displaying HTML which could
+open a lot of interesting use cases in
+my opinion we are always looking for
+contributors would be much appreciate if
+you have a look any kind of contribution
+maybe finding a bug fixing something on
+the documentation or also discussing how
+the API improved would be superb I
+appreciate all your time you'll find
+more information about the project at
+English architect at i/o and you can
+always give me a tweet or reach us via
+via for instance I'll get that chat
+thanks a lot alright Florian that was a
+great much yeah that was great
+I've I tried parsing HTML with some
+regular expressions back and it's a
+badness it's just math it's
+it works for the simple ones though but
+once you don't know what you are
+receiving you're just out of luck I
+guess it's got so many quirks as you
+showed and and we're thankful that
+you're doing the hard work so we don't
+have to appreciate it appreciate it
+all right well thanks so much Florent
+you have a good day and enjoy
+Oktoberfest enjoy to a base take care
+they can't buy

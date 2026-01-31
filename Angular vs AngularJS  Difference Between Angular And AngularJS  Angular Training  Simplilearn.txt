@@ -1,0 +1,115 @@
+hey guys welcome back to another video
+by simply learn in this video we'll look
+at some of the key differences between
+angular and angularjs
+now if you haven't watched our videos on
+angular go check them out i'll link it
+in the description box below now angular
+and angularjs are used interchangeably
+but they're not the same
+so to learn about the differences
+continue watching the video
+oh but wait before we begin if you
+haven't subscribed to our channel
+already make sure to hit the subscribe
+button and the bell icon to never miss
+an update now here's what we're going to
+be learning
+first we'll look at what exactly angular
+is
+then we'll understand what angularjs is
+finally we'll differentiate the two
+based on architecture
+language
+expression syntax
+dependency injection
+routing and speed
+so let's
+begin now what exactly is angular
+angular is an open source javascript
+framework written completely in
+typescript and maintained by google
+now angular provides a standard
+structure for developers to work with
+it enables users to develop large
+applications in a maintainable manner
+so what exactly is angularjs then
+now angularjs was initially developed by
+misco hevery in 2009
+it was built to ease the development and
+testing of applications it was developed
+to address challenges faced in forming
+single page applications
+now although subsequent versions of
+angularjs are what are collectively
+called angular they have some
+differences so let's go ahead and look
+at them
+first up is architecture
+now angularjs supports a model view
+controller architecture
+the view processes the information
+available in the model to generate the
+output
+in case of angular it uses components
+and directives now components are the
+directives with a template
+next we have languages
+now angularjs was written in javascript
+while angular is written in typescript
+now typescript offers features like type
+declarations and benefits of es6 like
+iterators and lambdas the next
+difference is with respect to mobile
+support
+now angularjs was not built with mobile
+support in mind
+whereas in case of angular this feature
+is supported
+moving on is expression syntax
+now to bind an image or a property or an
+event with angularjs you have to
+remember the right ng directive
+in case of angular it focuses on the
+parenthesis for event binding and the
+square brackets for property binding
+talking about dependency injection
+angularjs does not use dependency
+injection while angular implements
+unidirectional tree based change
+detection
+and uses the hierarchical dependency
+injection system
+this significantly boosts the
+performance of the framework
+next up is routing
+now angularjs uses the route
+provider.when
+method to configure routing while
+angular uses the route config object
+lastly we have speed by providing
+features like two-way binding angularjs
+reduce the development effort and time
+however by creating more processing on
+the client side page load was taking
+considerable time
+while in case of angular
+it provides a better structure to more
+easily create and maintain big
+applications and a better change
+detection mechanism
+now angular 4 is the fastest version yet
+so with that we come to the end of this
+session
+these were some of the key differences
+between angular and angularjs if you
+have any doubts or queries regarding
+this topic let us know in the comment
+section below thank you so much for
+watching and stay tuned for more from
+simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,342 @@
+hey guys welcome to yet another
+interesting and informative video by
+simply learn in today's video we're
+gonna be learning all about adjacency
+but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update
+so now without any further delay let's
+begin
+this session will help you understand
+what an array in c is
+after that let's look at the array
+declaration and initialization in c
+followed by how to access an array of
+elements and finally the types of arrays
+in c now let's begin by understanding
+what an array in c is
+an array is a homogeneous collection of
+elements of this same data type
+that means similar type of elements are
+stored under one name call it as array
+name and also the array of elements
+stored in a consecutive blocks of memory
+suppose you want to store 50 numbers so
+for that you must create 50 variables
+separately to hold the values
+instead you can use arrays that contain
+more than one value under a single array
+name which becomes easy to access the
+elements randomly and also avoids the
+memory overflow
+let's look at the diagram to see how the
+array elements are stored one after the
+other
+consider yen elements to be stored in an
+array and in that case all elements are
+stored one after the other
+element one
+is the first element and the nth element
+is the last element of an array
+in memory whenever the consecutive free
+space is available the memories are
+located as per the mentioned array size
+moving ahead let's understand the array
+declaration in c
+array declaration is similar to the
+variable declaration
+but in the array declaration we
+mentioned the array size
+let's have a look at the syntax
+we have data type followed by array name
+and the array size
+for example
+data type could be any type like int
+double float cad etc in this example the
+data type is int and array name is a and
+the size of an array is 5.
+once the array is declared the memory is
+allocated as per the mentioned array
+size
+in arrays the index starts with 0 to n
+minus 1. so to store 5 elements the
+index starts from 0
+then 1
+2 3 and 4.
+always the index will be 1 less than the
+mentioned array size
+next we have array initialization in c
+one way of initializing the array of
+elements is during the declaration let's
+look at the following syntax
+first data type followed by array name
+and size and by using assignment
+operator equal to list all the elements
+separated by the comma operator inside
+the curly brackets and semicolon at the
+end
+for example
+int year 5 is equal to the elements are
+10 15 20 25 and 30.
+as i said the memories are located after
+the array declaration
+and array elements are 10 15 20 25 and
+30 will be assigned starting from the
+index e of 0
+followed by 15 at the index e of 1 and
+so on till the index year 4.
+next up we have how to access array
+elements in c
+we can access the elements randomly by
+specifying the array index
+the syntax to access the elements is
+mention the array name and the index of
+an element
+suppose you want to access element 15
+and even though it is the second element
+the index would be 1. so specify the
+array name and the index that is a of 1
+next if we want to access the first
+element of an array then the index would
+be 0
+similarly to access the last element we
+specify a of 4
+and to access the third element give
+year 2 followed by a of 3 to access the
+element 25
+now we know what an array in c is and
+its declaration initialization and the
+way to access the array elements
+let's move ahead and understand the
+types of arrays in c
+arrays are classified into three types
+first we have one dimensional array
+next two dimensional array and finally
+multi-dimensional arrays
+let us go through them in detail
+first let's start with one dimensional
+array
+one-dimensional arrays are also linear
+arrays that accept one subscript to
+mention the size of an array
+look at the given representation of
+one-dimensional array
+the elements are stored consecutively in
+the memory
+and we have already discussed the array
+declaration however let us go through
+the syntax once again
+we have a data type array name and size
+for example
+int as a data type
+a as an array name and the size is 15.
+now let us try to execute a simple
+program to understand the
+one-dimensional array and let's see how
+to access and change the array elements
+using one-dimensional array we're gonna
+print the array elements
+and for that we have declared the array
+and we have mentioned the array size
+four
+and we have also initialized the array
+elements and they are 5
+10 15 and 20.
+and using the for loop
+i is equal to 0 till i less than 4
+that means the index less than 4 it
+gonna print all the elements
+so now let's run the program
+and here is the output the array
+elements are 5
+10 15 and 20.
+next let's try to access the array
+element
+so suppose you want to access the second
+element of an array so you can mention
+the array index using the printf
+function so for the second element
+the index would be 1.
+so let's run it
+and here we go the second element that
+is 10.
+so suppose you want to change the array
+elements like for example you want first
+element to be two and not five so for
+that mention the array name ea
+and the size sorry the index 0
+and equal to the new element that is 2.
+so let's print all the elements and
+check whether the element is changed or
+not
+so save the program and run
+so as you can see
+the element is changed from 5 to 2 so
+now the elements are 2 10 15 and 20.
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+next we have two dimensional arrays
+a 2d array is similar to a
+one-dimensional array but it accepts two
+subscripts
+in 2d array the data is stored in rows
+and columns so using a 2d array we can
+perform matric arithmetic operations
+like addition subtraction multiplication
+etc
+now let's look at the given
+representation of a two dimensional
+array
+the index of the 2d array starts with 0
+0 then 0 1 0 2 and followed by the next
+row 1 0 1 1 and 1 2.
+let's have a look at the syntax to
+understand it in a better way
+we have a data type array name followed
+by two subscripts the first subscript
+describes the number of rows and the
+second subscript describes the number of
+columns present
+for example
+if we have two rows and three columns
+the index would be zero zero zero one
+zero two and one zero one one and one
+two
+this indicates the first element is at
+the index zeroth row zero column and the
+second element at zeroth row first
+column and so on
+now let's execute a program using 2d
+array by taking inputs from the user
+so using a for loop variables i and j
+are used to take the inputs of rows and
+columns
+followed by that we are going to
+represent the elements in a matrix
+format
+so first
+i is equal to 0 that is i is initialized
+to 0 and checks i less than 2
+and if the condition is satisfied the
+control comes to the inner follow
+and the j is equal to 0 and checks
+whether j is less than 3
+and if the condition is satisfied it
+will print the first element
+a of i j
+and again the control goes back to the
+inner for loop
+and increment the column by 1 that is j
+by 1
+and now i value is same that is 0 and j
+is incremented by 1
+and it prints the second element of the
+matrix that is the first row and second
+column element
+and this process will continue till j
+less than three condition is invalid
+again the control goes back to the order
+for loop
+and increment the i value by 1
+and prince's second row first column
+element and this process repeats it
+reaches the second row third column
+now let's run and see the output
+so enter the random elements
+okay
+and here we got the output the elements
+are represented in a matrix format
+now let's perform the addition operation
+on the two matrices
+we have matrix a and b of the size 2
+into 3
+and the elements of matrix a is 1
+2 3 4 5 and 6 and the elements of matrix
+b is 6 2 3 4 5 and 1.
+so this
+elements are
+added up and store it in the matrix c
+so for that we have a statement c of i j
+is equal to a of i j plus b of i j
+so that means the element of a matrix c
+a
+is added with the elements of matrix b
+and store it in the matrix c
+so the process happens the first element
+of the matrix a
+is added with the first element of
+matrix b
+and this will repeat till it reaches the
+second row third column
+so now let's run it
+and here we got the output
+so the element 1 plus 6 is added that is
+7
+and stored in the matrix c
+similarly 2 plus 2 4
+three plus three six
+and four plus four is added and the
+value is eight
+five plus five ten
+six plus one seven
+up next we have a three dimensional
+array
+a 3d array is a multi-dimensional array
+that accepts three subscripts
+which is represented by the block size
+row size and column size
+the example for 3d array could be a cube
+and the syntax is data type array name
+followed by three subscripts
+the first subscript represents the
+number of blocks and the second one is
+the number of rows and the third
+subscript represents the number of
+columns
+for example
+int data type array name as a
+block size 2 row size 3 and the column
+size is 4.
+so now let's execute a program to
+understand the working of 3d array
+so we are going to execute a program
+using 3d array and for that we have rna
+and we have the variables
+i j and k
+so i represents the number of block and
+the size we have given is 2 j the number
+of rows and the size is 3 and k for the
+number of columns and the size is 3.
+so first it will take the inputs from
+the user and then
+print the
+output
+the working is similar to 2d array the
+only difference is that when i is equal
+to 0 it prints the first block of
+elements and when i is equal to 1 it
+prints the second block of elements and
+here the working is similar to the 2d
+array
+so let's run it
+so let's enter the random numbers
+and here we go the output
+so the first block of elements are
+one two three four five six seven eight
+nine and the second block of elements
+are one two three four five six and
+seven eight one
+so with this we have come to the end of
+this session on a recency i hope this
+session was informative and interesting
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

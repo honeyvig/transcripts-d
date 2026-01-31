@@ -1,0 +1,503 @@
+>> On today's Visual Studio Toolbox,
+we wrap up our
+mini-series of ML.NET.
+Veronika is going to show us
+how to do image classification.
+[MUSIC]
+>> Hi. Welcome to
+Visual Studio Toolbox.
+I'm your host Robert Green.
+Today we're going to wrap up our
+three-part series on ML.NET,
+and my guest is
+Veronika Kolesnikova,
+there she is. Hey, how are you?
+>> Hey, Robert. Good
+to see you again.
+>> The first episode,
+you provided us with a
+really nice overview of
+machine learning and where it fits
+in the grand scheme of things.
+Last week, we saw how easy it was.
+I've seen this many many times,
+but it still just shocks me
+how it is easy it is to do.
+We built the model and we did some
+sentiment analysis and it was
+a handful of lines of code
+and it's just so cool.
+Then today, we're going to do
+a bit more advanced scenario,
+we're going to do
+image classification,
+which I know people have
+seen a bunch of times,
+but it's the next one that is
+an obvious thing that you might
+want to be able to do in your app.
+We're going to do that today
+and that'll make our nice
+little three-part series,
+and then, of course, we'll have you
+back on the show later
+on to do more stuff.
+>> Thank you, Robert. I
+can share my screen again.
+Here we have the same project
+we were working on last time,
+that empty console application with
+that ML.NET model connected
+to it and also the
+sample console application
+where we actually
+tested the ML.NET model that we
+created using the model builder,
+and now I want to move to
+a more advanced scenario and
+show them image classification.
+You can start by again,
+hitting machine learning model.
+Here again, you can
+update your name.
+It is definitely
+recommended to do that,
+but I am not going to do
+it just for demo purposes.
+Here, we see that beautiful ML.NET
+model builder's screen with
+all available scenarios.
+Last time we used
+data classification,
+but today we'll be using
+image classification and going
+back to those little labels here.
+You can see Azure and local,
+it is definitely beneficial
+for that type of scenarios
+to have that option.
+Sometimes you are using
+just more high-quality
+high-resolution images or
+just lots of images for
+training and you don't have
+enough that machine power on
+your local machine so Azure
+is there to help you.
+I'm going to pick
+that scenario here,
+and actually we're
+not only two options,
+we're getting three options here,
+that local GPU,
+that is something that
+was introduced recently.
+You need to actually do
+a separate set up in
+order to use that local GPU option.
+It is all documented,
+so if you're interested
+in trying that option,
+you can definitely set it up,
+connect to your GPU, and use it.
+I know some people they are hesitant
+to use features in preview,
+and that's totally normal.
+If you don't feel like you want to
+use that in production or
+with production-level models,
+then you don't have to use it.
+Then Azure is also in
+preview right now,
+but it's just amazing how easy
+it is to connect to Azure
+and use all the power of the Cloud
+right from your Visual Studio.
+Today I will just move forward
+with the local CPU option.
+It's not in preview,
+it is widely used everywhere
+so you don't need to worry about
+changes there or
+something not working.
+You can see the environment
+settings here just so you can make
+sure that you have enough compute
+power to manage your data set.
+Here, I really like that screen
+because they have really
+good example on the right,
+how you can organize your images.
+You need to have the
+top-level folder
+with images and then sub
+folders with categories
+>> What you're doing is you're
+taking the images
+that you're going to
+use to build the model and
+you're organizing them.
+You put all the pictures of
+dogs in the dog's folder,
+all the pictures of cats
+in the cat's folder,
+all the pictures of lamas
+in the llama's folder,
+and then that's how it knows
+what a dog looks like,
+what a cat looks like,
+what llama looks like,
+and that's how you build
+your model, right?
+You take all the images
+you're going to base
+the model on and
+organize it like that,
+and then with future images,
+then it's trained on how
+to detect things, right?
+You pick the categorization upfront.
+>> Yes.
+>> Okay
+>> Really, good thing here
+is that you don't need to
+go through each and every
+image and tag them separately.
+I know that for object
+detection scenario,
+you need to actually do relatively
+a lot of work ahead of time.
+You need to tag your images,
+you need to select objects
+using special tool,
+and then you can use
+that document with
+tags for your machine
+learning and training.
+It's a little tricky
+there that's why
+I'm really happy with this scenario,
+how easy it is to
+organize your data.
+Here, I can select
+that top-level folder,
+make sure that you have
+images that are compliant with
+those supported file formats.
+I have two categories,
+cats and dogs,
+and I am choosing that
+top-level folder here.
+Here the data preview is great.
+You can see all the images.
+I have only five, so you can
+see all of them, but obviously,
+if you have more than
+probably seven or eight,
+then you won't see all of them,
+but at least you see the preview,
+you see what images you have.
+You can see I have five images
+of dogs and five images of cats.
+They are high-resolution images.
+I just got them from Internet.
+Here, I can go to next step.
+You can see the difference with
+the previous scenario that you
+actually don't have
+that time set up,
+it's not up to you anymore
+to set up the amount of
+time because with images it
+gets more complex and it
+is really hard to figure out
+how long you need to train
+it and it might
+be expensive to actually train
+it and retrain it several times,
+especially when you are connected to
+Azure then it is
+consuming resources.
+Even in this scenario where
+you use in your local CPU,
+it is still consuming
+your local resources
+and just might stop
+some ongoing processes.
+That's why you don't have
+options to set up the time,
+it will do it automatically.
+It is easier,
+you don't need to worry
+about one more thing.
+>> Cool. In general,
+how long does it take
+to train images?
+>> Usually it takes quite some time.
+It depends on how
+many images you have.
+With high-resolution images,
+it takes longer,
+with lower-resolution images,
+it takes a little faster.
+I tried it with 10
+images in each category,
+it took around maybe 20 minutes.
+>> We won't watch
+this for 20 minutes,
+so we'll come back when it's done.
+>> We can see that
+training is complete.
+We see the output with
+that magic completed word,
+some specifics of
+what happened there.
+>> It is just edification
+that took about five minutes.
+We just chatted for five
+minutes while waiting for that.
+>> Yeah, and it gives see training
+time right here in seconds.
+If you want to convert it,
+feel free to do it.
+>> Five minutes, that
+was my estimate.
+Neural models pretty done with.
+>> Good job.
+One model was explored.
+That is definitely not enough,
+but again that is because
+we don't have enough data.
+As I mentioned before,
+I tried a similar process with
+10 images in every category that
+definitely went way longer.
+Properly around 20 minutes but it
+provided better accuracy because
+you can see the accuracy is
+zero percent and also it
+checked more models and found
+the best model for the data.
+As we can see and learn
+from this example that
+five images are just not enough
+both for the demo purposes.
+We're just going to go ahead and
+use the model that was created.
+Here, we can see a
+similar screen as we
+saw with the previous scenario
+where we can evaluate the model.
+You can see the model type,
+it's image classification,
+but less convenient but
+a better thing is that we actually
+need to browse for an image,
+it is not going to
+provide any images
+here by default, which is good.
+We're just forcing that model
+that I mentioned before where you're
+supposed to separate your data.
+One data set you use
+for model training
+and the second data set
+use for evaluation.
+That is a good thing here.
+I have a separate data set
+with different images,
+I call that folder test.
+I can pick an image,
+that image wasn't used for training.
+Again, it's really convenient here.
+Really convenient that you see
+the image that you chose.
+>> It's not clear what
+that is apparently.
+>> That's not good.
+>> I guess, when it said zero
+percent accuracy it wasn't kidding.
+>> It wasn't, yeah.
+>> With more images,
+it would do a better job?
+>> Definitely. As I mentioned,
+I had tried it before
+with 10 images,
+and with 10 images,
+it provides you the result.
+I even tried to trick it and
+try an image with both a cat
+and a dog on the same image,
+and then the percentage was 60
+percent cat and 40 percent dog,
+which was probably accurate.
+Sixty percent of the image was
+the cat and then 40 was the dog.
+But here because the
+accuracy is really low,
+that is unusually low,
+it can't detect whether
+it's a cat or a dog.
+Also, a good example
+of what you're suppose to do when
+you see something like that,
+so maybe you can ignore the
+accuracy in the previous step,
+but when you get to evaluation,
+you'll get those weird numbers
+here and then you
+understand that, okay,
+that didn't go well and I
+need to add more images or
+the images were really low quality
+and the model wasn't trained enough.
+>> That's good
+learning. But the code
+to consume it is still
+exactly the same.
+Let's just pretend
+this is a good model.
+>> I'm sure everyone can
+go and try it themselves,
+use more high-quality images
+and figure out how it works,
+but the process is the
+same better images there.
+Here, you can copy the code snippet
+if you are planning to use it
+in your existing
+application or you want to
+see how it's going to work,
+see all the code and examples.
+You can add a console
+application or web API here.
+>> Cool.
+>> I'm going to add another
+console application,
+and now I'm going to have
+two test console
+applications and one empty,
+but you can see the model that
+we created is already here,
+and it's the second model
+here in a ZIP file.
+You don't have to use it here,
+you can move it around,
+use it with other applications,
+so that ZIP file is the model.
+Here we have the same
+model MLmodel2.zip.
+Then when we go to the program file,
+we get that image
+source for testing,
+then we're passing it to the model,
+and then predicting label so
+it's the same as the
+previous scenario.
+>> It is the same code,
+that is really cool.
+It is just so easy to use.
+>> You can create one of those
+scenarios see how it works,
+and then reuse that code with
+different types of models.
+>> Then you can decide what
+to do with the answer,
+is it validating that it's
+a picture of what you think
+or is it more elaborate
+shooting off an email or even taking
+the picture and moving it
+to a different folder that
+says code you can write
+once you have the result?
+>> Yeah. Another really
+interesting part
+is that you have that
+code-behind here,
+you can see how it was all built.
+Next time if you feel
+adventurous and you want to use
+ModelBuilder and you wanted to
+try to build them from scratch,
+you can use it as an
+example how it actually was
+built and then reuse the code
+from the training file and
+then consumption file and
+just recreate the training
+process without ModelBuilder.
+>> Doing image classification
+just been thinking about
+a lot of scenarios.
+I take a lot of pictures,
+and let's say I go to the
+zoo and I take pictures of
+lions and tigers and
+giraffes and monkeys,
+then I take a lot of pictures.
+Let's say I go to the zoo and I take
+200 pictures and I want to have
+all the pictures of lions in one
+folder and giraffes and another,
+I would just need to
+build a model and then I
+could just write a little simple app
+that just goes into that folder,
+looks at every picture,
+classifies it, then moves
+into the right folder.
+So rather than having
+to do that by hand,
+I could create a model
+and create a little program
+that moves on the
+pictures for me, right?
+>> Yes, exactly.
+Or you can also filter out maybe
+some inappropriate pictures,
+depends on what kind of application
+you are building maybe it's
+a public forum where people
+post pictures and you
+need to have that option
+to filter some things out.
+>> Very cool,
+and again, very easy to
+use. That's awesome.
+In just these three episodes,
+we've gotten a really
+good overview of ML.NET.
+Last time we saw how to
+do sentiment analysis,
+today we looked at image
+classification and what we're
+learning is the code is
+pretty straight forward,
+you just need to build the model,
+and the better your data,
+the better the model.
+We saw last time with
+sentiment analysis,
+with a modest amount of data,
+we can do pretty well.
+Here today we learned that if you
+just have five pictures of dogs,
+five pictures of cats,
+your model's not going to
+be that good so you need
+a lot more data which
+just means it takes
+longer to train the model,
+but ML.NET does all of that hard
+heavy lifting and work for you.
+Then to use the model in your code,
+handful lines of code, so cool.
+Thanks so much for coming
+on the show and doing this.
+>> Thanks, Robert.
+It's great to be here.
+>> Hope you guys enjoyed
+that and we will see you
+next time on Visual Studio Toolbox.
+[MUSIC]

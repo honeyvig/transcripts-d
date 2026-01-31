@@ -1,0 +1,312 @@
+hey there welcome to another insightful
+video brought to you by simply learn
+today we'll take you through the
+exciting road map of becoming an AI
+engineer if our content picks your
+interest and helps feel your curiosity
+don't forget to subscribe to our Channel
+hit that Bell icon so you never miss an
+update now let's embark on this AI
+journey together as artificial
+intelligence continues to
+revolutionalize various Industries AI
+Engineers stand at the Forefront of of
+this technological wave these
+professionals are essential in crafting
+intelligent systems that address complex
+business challenges AI projects often
+stumble due to poor planning Sapar
+architecture or scalability issues AI
+Engineers play a crucial role in
+overcoming these hurdles by merging
+Cutting Edge AI Technologies with
+strategic misus insights so in this
+video we'll guide you through the
+essentials of becoming Ani engineer
+let's start with the basics what does an
+AI engineer do an AI engineer builds
+their models using machine learning
+algorithms and deep learning neural
+networks these models are pivotal in
+generating business insights that
+influence organizational decision making
+from developing applications that
+leverage sentiment analysis for
+contextual advertising to creating
+systems for visual recognition and
+language translation the scope of an AI
+engineer's work is vast and impactful so
+to succeed as an AI engineer you need a
+blend of Technical progess and soft
+skills so now let's break down this 8th
+month plan craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to Fast Track Your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back month one computer science
+fundamentals and beginners python so
+before we delve into AI it's crucial to
+establish a strong foundation in
+computer science this month you should
+focus on the following topics data
+representation
+understanding bits and bytes how text
+and numbers are stored and the binary
+number system is foundational for
+everything in Computing this knowledge
+helps in comprehending how computers
+interpret and process data now next
+comes computer networks learn the basics
+of computer networks including IP
+addresses and internet routing protocols
+it's essential to understand how data
+travels across networks using UDP TCP
+and HTTP which form the backbone of the
+internet and the worldwide web next
+comes programming Basics begin with the
+basics of programming like variables
+strings numbers conditionals loops and
+algorithm Basics these fundamentals will
+allow you to write and understand simple
+programs simultaneously you'll also
+start with python the preferred language
+for AI so learn about variables numbers
+strings lists dictionaries sets tuples
+and control structures like if
+conditionals and for loops and then move
+on to functions and modules understand
+how to create functions including Lambda
+functions and work with modules by using
+pip install to add functionality to your
+projects next comes file handling and
+exceptions you should also practice
+reading from and writing to files as
+well as handling exceptions to make your
+programs more robust finally graphs the
+basics of classes and objects which are
+crucial for writing organized and
+efficient code so this comprehensive
+overview sets the stage for more complex
+programming tasks that you'll encounter
+in the following months now in month two
+you'll move on to data structure
+algorithms and advanced python so
+building on the foundations from month
+one we now delve into data structure and
+algorithm so familiar ize yourself with
+the concept of biger notation to
+understand the efficiency of different
+algorithms and data structures learn
+about arays Ling list hash tables Stacks
+cues trees and graphs mastering these
+structures will allow you to store and
+manipulate data effectively now next
+comes algorithms you should explore
+algorithms such as binary search bubble
+sort quick sort mer sort and recursion
+these are essential for optimizing your
+code and parall you'll Advance your
+python skills so you can dive into
+inheritance generators itation list
+comprehensions decorators
+multi-threading and multi-processing
+these topics will enable you to write
+more efficient and scalable code so this
+month's learning prepares you to handle
+complex data operations and enhance your
+coding efficiency now in month three
+you'll move on to Version Control SQL
+and data manipulation so in the third
+month the focus shifts to collaboration
+and data management number one Version
+Control so understand the importance of
+Version Control Systems especially git
+and GitHub so learn basic commands such
+as ADD commit and push you should also
+also learn how to handle branches reward
+changes and understand Concepts like
+head diff and merge so these skills are
+invaluable for tracking changes and
+collaborating with other developers next
+pool requests Master the art of creating
+and managing pool requests to contribute
+to collaborative projects next we'll
+dive into SQL for managing databases so
+first we'll start with SQL Basics so
+learn about relational databases and how
+to perform basic queries and then you'll
+move on to Advanced queries understand
+complex query techniques such as CT
+subqueries and window functions and then
+comes joints and database management so
+study different types of joints like
+Left Right inner and full joint we
+should also learn how to create
+databases manage indexes and write
+stored procedures Additionally you will
+use numai and pandas for data
+manipulation and learn basic data
+visualization techniques this
+comprehensive skill set will be crucial
+As you move into more advanced data
+science topics so now in month four
+you'll deal with maths and statistics
+for AI so mathematics and statistics are
+the backbone of AI and this month is
+dedicated to these critical subjects so
+first learn about descriptive versus
+inferential statistics continuous versus
+discrete data nominal versus ordinal
+data measures of central tendency like
+mean median mode and measures of
+dispersion like variance and standard
+deviation after that understand the
+basis of probability and delve into
+normal distribution correlation and
+cience after which you should move on to
+advanced concepts so you can study the
+central limit theorem hypothesis testing
+P values confidence intervals and so on
+in parallel you should also study linear
+algebra and calculus so in linear
+algebra learn about vectors metrices
+Egan values and Egan vectors and in
+calculus cover the basics of integral
+and differential calculus so this
+mathematical Foundation is essential for
+developing and understanding AI models
+setting you up for success as you
+transition into machine learning now in
+month five comes exploratory data
+analysis which is Eda and machine
+learning so with a solid foundation in
+math and statistics you are now ready to
+delve into machine learning number one
+pre-processing learn how to handle na
+values treat out layers perform data
+normalization and conduct future
+engineering you should also understand
+encoding techniques such as one hard and
+label encoding we'll also explore
+supervised and unsupervised learning
+with a focus on regression and
+classification and learn about linear
+models like linear and logistical
+regression and nonl models like decision
+tree random Forest Etc and then
+understand how to evaluate models using
+metrics such as mean squared error mean
+absolute error me for aggression and
+accuracy precision recall Etc then comes
+hyperparameter tuning learn about
+techniques like git search CV and random
+search CV for optimizing your models
+after which we'll move on to
+unsupervised learning here you can study
+clustering techniques like K means and
+hierarchical clustering and delve into
+dimensionality reduction with PC so this
+month's focus on Eda and model building
+will prepare you for more complex AI
+applications transitioning to the next
+phase you'll begin to work on deploying
+these models and real world scenarios so
+in month six comes mlops and machine
+learning projects so this month we'll
+cover the operational aspects of machine
+learning and work on practical projects
+so in mlops Basics learn about apis
+particularly using fast API for Python
+and server development understand devops
+fundamentals including cicd pipelines
+and containerization with Docker and Cub
+needs you should also gain familiarity
+with at least one Cloud platform like
+AWS or aure now in month 7 comes deep
+learning so in this month we delve into
+the world of deep learning so number one
+comes noodle Network so learn about
+noodle Networks including forward and
+backward propagation and build
+multi-layer perceptrons after which
+we'll move on to Advanced architectures
+so here explore convolutional neural
+networks which are CNN for image data
+and sequence models like rnns and lsdm
+so this deep learning knowledge will be
+crucial As you move into specialized
+areas of AI in the final month now in
+the final month the eighth month comes
+NLP or computer vision so the final
+month you have the option to specialize
+in either natural language processing
+NLP or computer vision so first we leave
+with NLP track so here you learn about
+rejects text representation methods like
+count vectorizer tfidf b word TUC
+embeddings and text classification with
+Nave base and familiarize yourself with
+the fundamentals of libraries like spacy
+and nltk and work on end to end NLP
+project and talking about computer
+vision track focus on basic image
+processing techniques like filtering
+Edge detection image scaling and
+rotation utilize libraries like open CV
+and build upon the CNN Knowledge from
+the previous month practice data PR
+processing and augment ation so by the
+end of this month you should have a
+solid foundation in your chosen
+specialization ready to embark on your
+AI engineering career so in conclusion
+adopting AI is more than just a trend
+it's a strategic move that can transform
+your organization's approach to machine
+learning so do check out our
+professional certificate course in Ai
+and machine learning which is designed
+to equip you with the skills needed to
+excel in this Dynamic field through live
+classes led by industry experts master
+classes from IIT khur faculty and
+Hands-On projects you'll gain a
+Competitive Edge in AI to enroll in this
+program candidates should have a
+bachelor's degree with a 50% or higher
+average preferably two or more years of
+work experience and foundational
+knowledge in programming and Mathematics
+check out the course Link in the
+description box below so that's all for
+today's video on becoming an AI engineer
+we hope you found this guide valuable
+and informative if you have any
+questions or need further clarification
+drop them in the comments below and our
+experts will be happy to assist thanks
+for tuning in stay safe and keep
+exploring staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

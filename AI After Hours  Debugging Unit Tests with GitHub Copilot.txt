@@ -1,0 +1,702 @@
+Wendy how many developers are you gonna
+talk to
+today a
+million you're watching after hours with
+the visual studio
+team and we know from talking to
+developers that fixing failing unit
+tests is critical to get the product
+into
+production right and that's this feature
+here okay demo
+uh yes if you click ask co-pilot on a
+failed test GitHub co-pilot explains why
+it thinks a your unit test failed and so
+we launched that feature we ran some
+customer studies where we watch
+developers use the product what did we
+learn success here is about assisting
+users in their flow and directing their
+attention to the code that's really
+cusing the failure right and I remember
+from watching developers fixed failing
+unit tests that they always always debug
+the test after it
+fails exactly many people are debuggers
+first and so we're working to bring
+co-pilot to every developer those of you
+who like to launch right into the
+debugger to make it easier for you so
+two things that stood out in our
+customer research around test debuggers
+is they want to know where to place
+their break points and they want to help
+identifying key variables and values
+during the debug
+session so with our first iteration co-
+pilot would explain the failure now it's
+going to guide you towards a fixed cool
+so let's this sounds great let's jump
+into a more detailed demo um and we'll
+also dig a little deeper into to some of
+the unique data engineering and data
+science that went into making this work
+reliably uh with John
+afterwards let's go in here and let's
+choose a test in the context menu for
+this test we have debug with
+copilot uh in preview of what's about to
+happen because sometimes it can be a lot
+in a very short amount of time we're
+going to send the stack Trace important
+symbols and a description of the problem
+to co-pilot co-pilot's going to send us
+a debugging plan complete with values
+that we should inspect in the code at
+certain break points now once this
+returns from co-pilot we actually set
+those break points in the code you'll
+see uh that we'll actually go ahead and
+start test debugging automatically we
+open the documents where the break
+points have been set and execution will
+stop on our first break point and at
+that point we'll see a new feature that
+we're playing with and that is the
+displaying of values in the text editor
+uh in addition we've sent those values
+back to co-pilot and said tell us if we
+should keep going or if you found the
+problem and it says please continue
+going so we'll click
+continue the next step through uh
+similar scenario values are displayed
+values are sent back and at this point
+we actually are being told okay here's
+the issue you you don't really have it
+coded
+to increment the thing in the basket so
+let's go ahead and preview
+this let's apply it so let's stop this
+debugging let's go back to the
+test and let's run it and see if it
+turns
+green so that's sort of an optimal
+experience there's obviously plenty of
+interactions you can do with the chat at
+this point
+awesome so we're here with John and John
+works on the testing space my
+introducing
+yourself yeah
+absolutely I um yeah I've been working
+on test infrastructure and visual studio
+for I don't know five or six years now
+um currently working on some more of the
+experimental features with
+co-pilot gotcha and how did we choose to
+start with building
+test resolution uh rather than test
+Generation Well fixing tests or
+diagnosing tests is a very interesting
+area to work in it's especially helpful
+for folks who um don't necessarily have
+a wide uh experience with the particular
+code base that they're looking at fixing
+or changing the other thing that it
+really lends itself well to is the fact
+that it's a very specific context you
+have a very specific stack Trace to a
+very specific set of code subset of your
+repo so it lends itself really well to a
+co-pilot
+Diagnostic and So speaking about a stack
+trace and a test failure um how does
+this feature work better than just
+pasting the error message into Google um
+or onto stack
+Overflow well some of the really cool
+things that we're experimenting with and
+doing in this particular space is is we
+are digesting the stack frame and
+walking the uh symbol um tree to
+actually find important changes to
+variables and including that information
+in our discussion with copilot so a lot
+of this happens behind the scenes it
+would be just a lot of data to flush
+into your chat but it happens behind the
+scenes and we actually uh try to steer
+copil to a very specific set of code to
+consider um and it's the you know the
+more specifics we can give copile the
+more direction we can give a large
+language model to to focus on a specific
+area the more exacting the answers will
+be rather than all the possibilities
+that could potentially affect it so I'm
+hearing a couple
+things uh using the as copilot feature
+when your test fails it's not just
+understanding the multiple causes of why
+the test may have failed but also
+helping you prioritize which ones
+mightly does that sound right yeah I
+mean what we actually will do is we'll
+recommend a debugging strategy which
+will tell you what values to inspect at
+particular break points uh and not only
+that we actually go ahead and set the
+break points and start the debugging
+session for you and at the time you know
+this particular feature we're working on
+when you hit a breako we're actually
+going ahead and telling co-pilot that
+um this is the value of this particular
+expression or of a of a variable or some
+evaluation that you need to make at this
+point and asking copile at that point
+that if these values will actually cause
+the error we're debugging then recommend
+a code fix so we're we're trying to step
+through the whole process typically with
+just the general guidelines that we'd
+want to follow as a developer um to
+solve these problems so it sounds like
+there's actually a lot going on in the
+back background um it sounds like you're
+not only injecting symbol information
+but changes to the
+symbols and also variable values and
+object values as you go through
+debugging yeah we set up the initial
+prompt with information that can be very
+specific to your situation so we do take
+into account the stack Trace as I
+mentioned before and the symbols that we
+can diagnose within the methods of those
+of that stack Trace but we also do if
+you have a get repo we actually look at
+changes that have occurred and if you're
+diagnosing a specific test failure the
+idea would be that we can track changes
+in that repo as relate to the symbols
+that matter to the failure and come back
+with an explanation that will hopefully
+take all those things into
+consideration that sounds like it saves
+me a lot of work um of attempting to
+understand what online guidance is for
+my error and understanding how that
+translates to my specific code scenario
+in
+codebase but I have to
+wonder how should I think about the
+guidance that I'm getting from getup
+co-pilot if it's
+interpreting um my situation or my code
+incorrectly um do we feel that it's is
+still helpful in that kind of a
+situation it's absolutely helpful I mean
+an interesting scenario that that I've
+had run into before demoing this
+particular feature is co-pilot can
+recommend a change that doesn't really
+agree with the strategy you know so it
+detects a new exception like an outof
+index exception or something and
+recommends code to throw an outof index
+scenario rather than execute code in
+some other way and you can using the
+chat because we've integrated this Deb
+feature with the chat you can interact
+with co-pilot at that point and say you
+know I don't want to throw any
+exceptions in this test I want to do X
+and it will rewrite the suggested code
+change to accommodate your request so it
+it isn't you know a hard and fast rule
+it's a it's a dynamic diagnostic where
+you can control and influence the
+suggestions that are made as well as you
+know provide other inputs that you think
+are important to that process so it
+sounds like there's a back and forth
+here where if I as a developer feel like
+the explanation doesn't isn't quite
+accurate or if I have follow-up
+questions about the explanation or if I
+have follow-up questions about the code
+um there can be a back and forth where
+the suggestion or the explanation is
+refined now that's absolutely true I
+mean that's generally the case with with
+this with a large language model is you
+can redirect um and you can provide
+additional contacts as you as you
+respond to the
+agent so I interpret this to mean that
+the assistance that's provided gives me
+as a developer who's debugging a test
+that's failed a very very strong
+start yeah it's one of those deals where
+you know an expert developer who's you
+know grew this codebase a particular
+codebase from scratch may not need the
+basics but definitely just even you know
+the idea of checking all possible values
+which if you're getting a null reference
+if you you know skip over uh checking a
+particular variable in a particular
+debugging scenario you might miss a null
+reference that you know everything's
+there you could inspect it you could
+check the watch window Etc but what
+we're trying to do is ask co-pilot to do
+all those simple checks for us um and so
+you the people who can really benefit
+from a feature like this would be folks
+who aren't well versed in the code base
+or or maybe it's their first time
+looking at it or this is a test they've
+never ran before and they don't know
+what it's trying to do I mean we do try
+to determine the test intent as well as
+the basic um problem that you've
+encountered with a failure so we try to
+put those things together semantically
+in a way that will drive us to a process
+that we can use for debugging
+right so it sounds like it's not just
+hey we think this is why this test
+failed but it's also hey let me help
+gather different
+information so that you we can help
+direct your attention to one place um to
+understand the test failure faster and
+perhaps more easily um I'm curious um
+what did in user interviews and watching
+users debug tests that that um shape
+this feature to become the way it is
+because there are many things we could
+have built to help users the bug test so
+what did we see and why did we built
+because of what we saw yeah it's really
+interesting we did start out with use
+with the idea that let's let's try to
+explain a test failure um to the user so
+the user has the information they need
+to diagnose and potentially fix a test
+and in interactions with users and
+throwing them into scenarios of code
+that they may or may not well understand
+what we found is that there were a lot
+of similar techniques in using the
+debugger but if the codebase was
+unfamiliar then the user might not check
+all the variables that could impact the
+outcome um and could Overlook things
+that were the absolute critical issue to
+check so the idea largely behind this is
+to kind of make that simpler that the
+easy things are are there for you all
+the all the variables you should check
+we're trying to recommend and actually
+check them for you saying okay this
+can't be null it's not null or it is
+null and that's a problem or this value
+divided by three is not going to work
+for you in this situation uh so we're
+trying to do those uh basically do math
+do the simple things up front that um
+you know I wouldn't call it busy work
+but it's trying to be thorough without
+uh necessarily having a thorough
+knowledge yourself of the specific code
+you're
+diagnosing right I remember watching the
+replay of the sessions
+where developers that we interviewed
+just missed that one object value that
+was really causing the test failure and
+I also remember thinking that developers
+who tried this feature got a lot less
+lost um in trying to find the right
+method um in a file to expect um and
+trying to find the right line within a
+method sometimes so really just putting
+the information there seems to have
+helped a lot so I'm kind of curious
+what's left to um in the test the bug
+space well obviously one of the things
+that really interests me is that we can
+get way better at diagnosing tests by
+creating guidance for co-pilot that is
+tailored to specific exception types and
+failures and so building a library of oh
+if you see this kind of problem I mean
+the difference between an outof index
+exception versus a null reference versus
+you know any other type of exception you
+might be interested in versus um you
+know a test failure and assertion where
+you expect things to be equal all of
+those things could have very unique
+guidance that would be quite helpful and
+make the things more specific so lots
+more testing lots more users using it
+and providing feed back and examples
+that copilot doesn't handle well in the
+current scenario um we really want to uh
+further integrate the automation of when
+you hit a break point um we we do
+automatically provide values to co-pilot
+and say okay we've hit your breakpoint
+this is the values that we have here
+this is whether or not we believe these
+values cause the failure that you're
+currently diagnosing so that automation
+um that interaction that ability to um
+automatic you you still control the
+debugger you still step through but to
+automatically update the context of your
+conversation with co-pilot with those
+values super helpful and so if we can
+also update the guidance so that we can
+say well don't stop here again for 50 50
+iterations or you know let's let's only
+stop here if that value is equal to blue
+or whatever we might choose but create
+more interactions for the user more
+Guidance the user can provide in the
+actual debugging process because
+debugging in Visual Studio is not a
+co-pilot thing without this debugging is
+you know right click here add a
+condition and so forth we want to get
+more of that
+integrated so it sounds like there's two
+kind of avenues uh we could choose
+depending on what we see and hear from
+user which by the way if you've tried
+the ASCO pilot feature using debuck test
+uh leave a note in the comments about
+what's worked well um what we think we
+could improve on um to give us more of a
+signal um because more feedback is
+always better and so it sounds like John
+we we can improve our prompting and our
+context package so what we include in
+context depending on the type of failure
+to provide a better answer but also um
+improve the integration between the test
+Explorer and the bugger to be smarter
+which I think is really interesting
+because from customer interviews I've
+seen
+U and we know that the use of
+conditional break points um such as the
+one you mentioned maybe we don't stop at
+this breakpoint for another 50
+iterations um conditional breakpoints
+isn't a super widely used feature um and
+we know that the Diagnostics team is
+also working on um assisting users with
+writing conditions um for a conditional
+breakpoint in C++ so it sounds like
+there's a lot of activity in this area
+um so I'm really
+excited um the other thing I want to
+touch on is kind of the conversational
+or the assistance as I step in and
+manually move the debugging along how
+should I think about the conversational
+assistance um should I be using this all
+the time should I look at the
+assistance as I go through each
+breakpoint before before I understand
+the code um or should I look at the code
+and the change in object values first
+how do you think about this well what
+we've what we've put in place is the
+ability to hit break points and provide
+specific values that copilot is already
+uh deemed to be important to inspect and
+so we will pop that chat window every
+time we have values to inspect now those
+those values are available in your
+watches or your locals uh anything
+automatic the debugging uh but anytime
+debugging is stopped at a breakpoint you
+can interact with the chat and you can
+ask an infinite number of questions
+there's no reason you have to step again
+before you ask more questions so it's
+really a very very user controlled
+environment in the sense that if you hit
+a point that you find interesting and
+you want to ask questions related to the
+code or related to you know data
+structures or related to what you know
+whatever is important to you at that
+particular point you can take the
+conversation in whatever Direction you
+want and then if you hit step into or
+continue debugging again we'll go into
+your next break point and we'll provide
+new values and we'll again assess
+whether or not this current situation
+indicates what the failure is but the
+conversation you carry on at those break
+points is entirely led by the user and
+can go in a lot of directions depending
+on the
+need oh okay so it's not just the
+reference or report it's actually um a
+starting point for any conversation I
+might want to have at a breakpoint to
+understand the state of the code or the
+logic better yeah and we've already
+started work to better integrate with
+the debugging assistant that's in
+co-pilot for visual studio because the
+the thought seems to be that we really
+want to continue these conversations
+across disciplines in the sense that a
+pure debugging scenario isn't really
+separate from testing debugging so we
+want to be able to have a seamless
+movement between those things so yeah I
+mean there's a lot of stuff that that
+the user can do at those points I mean
+you can stop the debugging you can
+interact with that session after the
+fact there's all sorts of control the
+user can do in those
+scenarios right and this sounds very
+open-ended and so my understanding is
+that this is not yet available in the
+product um but the team is going to
+spend the next couple of months um
+learning more about this concept and
+what users are expecting out of a
+conversation as they debug a Fai test
+yeah we're we are daily working on more
+development and experiments that we hope
+will make this feature um extremely
+useful in coming previews um no idea yet
+at this point you know when we're going
+to have that in a preview but it won't
+be long uh from my perspective
+but um yeah we're definitely looking at
+actually getting this more refined more
+spe cfic more helpful um even you know
+additional tool calling additional
+interactions that will smooth the flow
+lots of stuff that we're looking at
+doing in this area yeah I like how
+you've mentioned specificity because I
+remember when we were doing initial
+testing of get up co-pilots explain
+feature in visual studio uh we know that
+the more specific an explanation is um
+the more trust or the more actionable
+um the feedback that we're giving a user
+is from Gib co-pilot right um so can you
+speak to any general challenges of
+building and the test in the bug space
+in Visual
+Studio well in our case we focused a lot
+on being brief um we focused a lot on
+reducing context so that copilot has
+just the right things to consider um and
+those are the cases where we get more
+spefic specific answers and usually
+better suggestions because you know if
+the world's your oyster you could
+suggest anything um you could suggest a
+new database you could suggest whatever
+and that's not really the context we're
+after so debugging tests ends up being
+extremely well suited for this
+particular uh
+implementation um going forward you know
+we are looking at lots of opportunities
+for integration with other aspects um
+we're wanting to do better um
+integration with the chat itself and
+providing potentially um user specific
+tooling requests where you might you
+know continue debugging even right from
+your chat window rather than using the
+normal tool buttons and so forth so
+we're working on a lot of stuff in that
+area um challenges you know
+really I think the biggest challenge
+ahead of us is going to be developing
+that idea of the specific debugging
+scenarios you know understanding not
+just um this particular test failure in
+the context of all the code we might
+have but this this type of failure this
+this type of exception uh you know when
+you build when you write a test you have
+uh assertions of different depending on
+what framework you use whether you use
+fluent or nunit or Ms test or xunit you
+have all different sort of structure
+your tests but to build up a library of
+Diagnostics that is more specific to
+exactly what what we've gleaned from the
+stack trace or the error message I think
+there's a lot to be taken into
+consideration there um those are one of
+the challenges that faces a lot of our
+copon development is how much
+information can you provide in a prompt
+because we're limited the amount of
+information that can be you know
+digested at any given time so test
+failure fortunately for the most part
+gives us an opportunity to identify what
+is most important within what is already
+a subset of your repo what is already a
+subset of your functionality because
+unit tests especially are you know if
+designed well or small portion of your
+code base and focus on a specific item
+to test uh integration tests other types
+of testing can grow larger than that
+require more code uh but unit test
+specifically should if designed well be
+get lend themselves extremely well to
+limited context and specific answers and
+so that's what we're trying to build on
+it's so interesting to hear that
+reducing context actually improves the
+results because we hear about how models
+are extending their context window which
+is very helpful in some scenarios but um
+it's cool to hear that actually in the
+bugging unit test failure that being
+more selective with context actually
+improves the accuracy and precision of
+the
+answer yeah um so other than
+recommending that the developers um who
+have get up co-pilot and the visual
+studio extension and unit test other
+than recommending that they um use
+co-pilot assistance um and ask co-pilot
+for help upon a test failure um is there
+anything you would recommend to
+developers as um we wait for um this
+concept to move its way towards
+something that they can
+try I think the I mean obviously we're
+going to be look
+for as much feedback as we can get when
+these features roll out in preview uh
+specifically filing feedback or
+providing examples that don't give you
+what is expected or super helpful to us
+uh in addition to that just uh
+understanding a wider scope of the
+approach that people would like to take
+you know um understanding that people
+you know debug code in a variety of ways
+and have different styles that's all
+good and the hope would be that we can
+we can build a product that can adapt to
+you know individuals you know particular
+preferences in that regard so those are
+all very helpful feedback um the model
+itself the language model itself is
+something that will continue to grow um
+in the background for us um whether it's
+GPT 35 or four turbo whatever it ends up
+happening to be that will continue to
+grow and we'll continue to look at ways
+that we can optimize that that
+particular experience because you know
+there's a lot of things that go on in
+these large language models that aren't
+necessarily pertaining to code and so as
+we as we narrow down to specifically
+being able to debug the types of code
+and the types of tests that we are
+currently encountering those will be the
+helpful things um that will make this a
+better feature in a specific instance
+gotcha so I'm hearing a couple things I
+think the one thing that we both really
+need from users is more feedback and so
+that's things like report a problem in
+the top right of Visual Studio that's
+the thumbs up thumbs down and get up co-
+palet chat itself um and also perhaps
+the comment section Below on our YouTube
+channel um and specific types of
+feedback could be hey did the
+explanation make sense was it specific
+um does what we
+recommend apply to your workflow or your
+debugging preference
+definitely I think the chat still
+contains the thumbs up thumbs down sort
+of feedback as well I mean that's sort
+of useful in the sense that it's a
+Boolean um but it's getting that
+legitimate feedback that says here's a
+scenario that I think could be handled
+better in a different way um you know
+communicating experiences is hugely
+helpful so I I don't really know you
+know better guidance than that is hard
+to give because you know we can't we
+obviously don't have access to
+everybody's Source we don't have access
+to every problem that people encounter
+so getting those specific feedback and
+and repetitive use that says okay it
+worked for me in this scenario it
+doesn't do this well you know obviously
+our debugging stuff right now has no
+knowledge of database content so I mean
+we're not going to be able to debug data
+changes in your data base so I mean know
+things like that if that matters to you
+we need to know I'm not sure what we're
+going to do about it at the moment but
+if that matters to you we need to know
+environment changes are also something
+that we we don't um particularly know
+about at the moment so there are lots of
+things around testing that are very
+impactful which um we would like to find
+ways to integrate into this process and
+understand overall as a user I mean so
+many times people come to a broken test
+whether it's broken in CI and they have
+no idea that wasn't they didn't change
+the code and so they need to start from
+somewhere so hopefully as we get more
+feedback yeah we can we can make changes
+there that is actually the biggest thing
+just turn on the feature and use it and
+tell us you know the scenarios that you
+like would like to see uh and you know
+any suggestions we can have in that area
+gotcha and we'll add the instructions to
+enable the feature in the Des and
+perhaps at the end of this video as well
+so make sure to check the description
+and if you found uh what John had to
+share what I had to share and what Wendy
+had to share today helpful um please hit
+subscribe um and let us know the one
+thing that you'll remember after
+watching this podcast with us today um
+so that we can tailor our content that
+comes next thank you for your
+time thank you

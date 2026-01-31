@@ -1,0 +1,68 @@
+a big step forward for the AI engine
+here in Visual Studio 22. here's a just
+a very simple.net console app and I want
+to show you some cool things and
+improvements we've done to the AI based
+coding assistant so I'm going to type a
+new line here and notice how Visual
+Studio automatically will suggest that I
+put in a last name which is exactly what
+I want in this case I want the last name
+property to be inserted for me right
+here I also want the full name so let's
+hit enter again and this time it
+suggests age which is it could be the
+accurate one but I want full name so I'm
+just gonna pretend it's not showing me
+anything and just start typing public
+string full name and notice here I can
+just hit Tab and I get my full name and
+it understands that full name is a
+product of first name and last name so
+the AI engine here in Visual Studio
+understands the context I'm in
+absolutely fantastic here let's scroll
+down and you can see here I have a
+method here called remove data and all
+it does it removes some data from the
+list that I have defined above it what's
+missing here is is a method for adding
+data so again I'm going to hit enter
+and visual studio already knows what I'm
+going to do here I'm going to create an
+add data method so notice that based on
+the name remove data it understands what
+remove means and so it suggests that I
+created a method called add but what was
+crazy was that it knew what that would
+do inside the method so it knew that it
+it should not take the list and remove
+something it should add to that list
+this is just absolutely fantastic here
+I'm just coding by tapping enter and hit
+hitting the Tab Key here and we can take
+it a step further let's say that I want
+to create a new method or I want some
+code but I'm not entirely sure how I
+should write it what I can do is that I
+can express it in a code comment like
+this one so here I have a comment it
+says take the two arguments and add them
+together so the arcs
+refers to the arcs that come into the to
+the main method up here so I'm just
+writing here in plain English what it is
+that I would like to have happen I can
+hit enter and visual studio will
+automatically suggest what that code
+might look like it understands what I'm
+saying in English in the code comment
+and can translate that into something
+that might be what I want this is the AI
+engine that is built upon huge data set
+and using machine learning it's able to
+take the context that the AI engine is
+aware of and pair that up with the big
+machine learning model when we pair
+those up together Visual Studio can do
+amazing things like this

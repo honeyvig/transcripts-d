@@ -1,0 +1,44 @@
+finding the features you need and the
+code you're looking for has never been
+easier than with the new all-in-one
+search experience in Visual Studio let's
+take a look we'll start by enabling the
+feature go to tools options
+search for the keyword
+search and select preview features
+now check the checkbox next to New
+Visual Studio search experience and
+restart Visual Studio you now have the
+new all-in-one search experience from
+here you can select code search or
+feature search
+code search lets you search through all
+of your files class names method names
+and so on and it's super fast just hit
+enter to open the file
+code search shows you a preview to the
+right side of the search results but you
+can move that underneath if you prefer
+that or disable it completely
+from the preview you can do code
+navigation such as go to definition
+or refactoring such as rename of
+variables this way I don't even have to
+open the specific file in order to do my
+refactorings throughout the entire
+solution making this a lot more
+efficient feature search or control Q
+allows me to search for features
+throughout the visual studio IDE for
+instance the text Explorer tool window I
+can also search for individual options
+in the tools options dialog directly
+from the feature search
+here I'm searching for a way to change
+the keyboard shortcuts and it takes me
+right to the place I want to be if you
+found this video helpful and you would
+like to see more of the same type of
+content in the future make sure to like
+the video and subscribe to the YouTube
+channel down below happy coding
